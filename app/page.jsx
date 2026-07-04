@@ -304,6 +304,272 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* ══════════════════════════════════════
+            FEATURED APPLICATIONS
+        ══════════════════════════════════════ */}
+        <section className="section border-t border-black/[0.04]" aria-label="Aplikasi unggulan">
+          <div className="container-max px-4 sm:px-6 lg:px-8">
+
+            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-12 gap-4 animate-fade-up">
+              <div>
+                <span className="section-label">Applications</span>
+                <h2 className="heading-xl text-3xl sm:text-4xl text-charcoal-900">
+                  Aplikasi <span className="text-maroon-gradient">Unggulan</span>
+                </h2>
+              </div>
+              <Link href="/applications" className="btn-ghost text-sm group self-start sm:self-auto hover:translate-x-1 transition-transform">
+                Semua Aplikasi
+                <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                { icon: '🛒', name: 'E-Commerce', category: 'Belanja Online', rating: '4.5', downloads: '10K+' },
+                { icon: '📊', name: 'Dashboard', category: 'Analytics', rating: '4.3', downloads: '5K+' },
+                { icon: '📝', name: 'Notes', category: 'Productivity', rating: '4.7', downloads: '25K+' },
+                { icon: '📷', name: 'Camera', category: 'Photography', rating: '4.4', downloads: '8K+' },
+              ].map((app, i) => (
+                <Link
+                  key={i}
+                  href="/applications"
+                  className="group p-6 bg-white rounded-2xl border border-black/[0.05] shadow-mature hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 animate-scale-in"
+                >
+                  <div className="text-4xl mb-4">{app.icon}</div>
+                  <h3 className="font-display font-semibold text-charcoal-900 mb-1 group-hover:text-maroon-700 transition-colors">{app.name}</h3>
+                  <p className="text-charcoal-500 text-xs mb-4">{app.category}</p>
+                  <div className="flex items-center justify-between text-xs text-charcoal-400">
+                    <span>⭐ {app.rating}</span>
+                    <span>{app.downloads}</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ══════════════════════════════════════
+            WHY CHOOSE US
+        ══════════════════════════════════════ */}
+        <section className="section border-t border-black/[0.04] bg-white" aria-label="Mengapa memilih FokusKonten">
+          <div className="container-max px-4 sm:px-6 lg:px-8">
+
+            <div className="max-w-3xl mx-auto text-center mb-12 animate-fade-up">
+              <span className="section-label">Keunggulan</span>
+              <h2 className="heading-xl text-3xl sm:text-4xl text-charcoal-900 mt-3 mb-4">
+                Mengapa <span className="text-maroon-gradient">FokusKonten</span>?
+              </h2>
+              <p className="text-charcoal-500 text-sm leading-relaxed">
+                Kami menggabungkan keahlian teknis dengan kreativitas untuk menghasilkan solusi digital yang berdampak nyata.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                { icon: '🎯', title: 'Fokus pada Hasil', desc: 'Setiap proyek diarahkan untuk mencapai tujuan bisnis yang konkret dan terukur.' },
+                { icon: '⚡', title: 'Proses Cepat', desc: 'Workflow yang efisien dengan AI-assisted development untuk hasil lebih cepat.' },
+                { icon: '💎', title: 'Kualitas Premium', desc: 'Standar kualitas tinggi dalam setiap aspek dari desain hingga implementasi.' },
+                { icon: '🤝', title: 'Kolaborasi', desc: 'Bekerja bersama klien sebagai partner untuk memahami kebutuhan mendalam.' },
+                { icon: '🔄', title: 'Support Berkelanjutan', desc: 'Dukungan teknis dan maintenance setelah proyek selesai.' },
+                { icon: '💡', title: 'Inovasi', desc: 'Selalu mengadopsi teknologi dan tren terbaru untuk solusi modern.' },
+              ].map((item, i) => (
+                <div key={i} className="p-6 bg-canvas-50 rounded-2xl border border-black/[0.05] animate-scale-in">
+                  <div className="text-3xl mb-4">{item.icon}</div>
+                  <h3 className="font-display font-semibold text-charcoal-900 mb-2">{item.title}</h3>
+                  <p className="text-charcoal-500 text-sm leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ══════════════════════════════════════
+            TECHNOLOGY & WORKFLOW
+        ══════════════════════════════════════ */}
+        <section className="section border-t border-black/[0.04]" aria-label="Teknologi dan workflow">
+          <div className="container-max px-4 sm:px-6 lg:px-8">
+
+            <div className="max-w-3xl mx-auto text-center mb-12 animate-fade-up">
+              <span className="section-label">Teknologi</span>
+              <h2 className="heading-xl text-3xl sm:text-4xl text-charcoal-900 mt-3 mb-4">
+                Teknologi & <span className="text-maroon-gradient">Workflow</span>
+              </h2>
+              <p className="text-charcoal-500 text-sm leading-relaxed">
+                Kami menggunakan teknologi modern dan workflow yang teruji untuk hasil optimal.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="p-8 bg-white rounded-2xl border border-black/[0.05] shadow-mature animate-fade-up">
+                <h3 className="font-display font-semibold text-xl text-charcoal-900 mb-6">Teknologi Utama</h3>
+                <div className="space-y-4">
+                  {[
+                    { name: 'Kotlin & Java', desc: 'Android Development' },
+                    { name: 'Jetpack Compose', desc: 'Modern UI Toolkit' },
+                    { name: 'Firebase', desc: 'Backend & Analytics' },
+                    { name: 'Next.js & React', desc: 'Web Development' },
+                    { name: 'Adobe Creative Suite', desc: 'Design & Editing' },
+                    { name: 'AI Tools', desc: 'Development Assistant' },
+                  ].map((tech, i) => (
+                    <div key={i} className="flex items-center gap-4">
+                      <div className="w-2 h-2 rounded-full bg-maroon-700" />
+                      <div>
+                        <div className="font-medium text-charcoal-900 text-sm">{tech.name}</div>
+                        <div className="text-charcoal-400 text-xs">{tech.desc}</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="p-8 bg-canvas-50 rounded-2xl border border-black/[0.05] shadow-mature animate-fade-up delay-100">
+                <h3 className="font-display font-semibold text-xl text-charcoal-900 mb-6">Workflow Kami</h3>
+                <div className="space-y-4">
+                  {[
+                    { step: '01', title: 'Discovery', desc: 'Memahami kebutuhan dan tujuan proyek' },
+                    { step: '02', title: 'Planning', desc: 'Merencanakan arsitektur dan desain' },
+                    { step: '03', title: 'Development', desc: 'Implementasi dengan AI-assisted coding' },
+                    { step: '04', title: 'Testing', desc: 'QA dan testing menyeluruh' },
+                    { step: '05', title: 'Deployment', desc: 'Publish dan launch' },
+                    { step: '06', title: 'Maintenance', desc: 'Support dan improvement' },
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-start gap-4">
+                      <span className="font-display font-bold text-maroon-700">{item.step}</span>
+                      <div>
+                        <div className="font-medium text-charcoal-900 text-sm">{item.title}</div>
+                        <div className="text-charcoal-400 text-xs">{item.desc}</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ══════════════════════════════════════
+            LATEST UPDATES
+        ══════════════════════════════════════ */}
+        <section className="section border-t border-black/[0.04] bg-white" aria-label="Update terbaru">
+          <div className="container-max px-4 sm:px-6 lg:px-8">
+
+            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-12 gap-4 animate-fade-up">
+              <div>
+                <span className="section-label">Updates</span>
+                <h2 className="heading-xl text-3xl sm:text-4xl text-charcoal-900">
+                  Update <span className="text-maroon-gradient">Terbaru</span>
+                </h2>
+              </div>
+              <Link href="/updates" className="btn-ghost text-sm group self-start sm:self-auto hover:translate-x-1 transition-transform">
+                Semua Update
+                <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            </div>
+
+            <div className="space-y-4">
+              {[
+                { version: 'v2.1.0', app: 'E-Commerce', date: '15 Jun 2025', type: 'Feature', desc: 'Dark mode support dan checkout improvements' },
+                { version: 'v1.5.2', app: 'Dashboard', date: '20 Mei 2025', type: 'Bugfix', desc: 'Analytics sync fixes dan performance improvements' },
+                { version: 'v3.0.1', app: 'Notes', date: '10 Apr 2025', type: 'Bugfix', desc: 'Sync issues dan rich text editor improvements' },
+              ].map((update, i) => (
+                <Link
+                  key={i}
+                  href="/changelog"
+                  className="flex flex-col sm:flex-row sm:items-center justify-between p-6 bg-canvas-50 border border-black/[0.04] rounded-2xl shadow-subtle hover:shadow-mature hover:-translate-y-0.5 transition-all duration-300 gap-4 group"
+                >
+                  <div className="flex items-start gap-5">
+                    <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-maroon-100 text-maroon-700 font-display font-bold text-sm shrink-0">
+                      {update.version}
+                    </div>
+                    <div>
+                      <div className="flex items-center gap-2 mb-1">
+                        <span className="font-display font-semibold text-charcoal-900">{update.app}</span>
+                        <span className="px-2 py-0.5 bg-maroon-100 text-maroon-700 rounded-full text-xs">{update.type}</span>
+                      </div>
+                      <p className="text-charcoal-500 text-sm">{update.desc}</p>
+                    </div>
+                  </div>
+                  <span className="text-charcoal-400 text-xs shrink-0">{update.date}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ══════════════════════════════════════
+            FAQ PREVIEW
+        ══════════════════════════════════════ */}
+        <section className="section border-t border-black/[0.04]" aria-label="FAQ preview">
+          <div className="container-max px-4 sm:px-6 lg:px-8">
+
+            <div className="max-w-3xl mx-auto text-center mb-12 animate-fade-up">
+              <span className="section-label">FAQ</span>
+              <h2 className="heading-xl text-3xl sm:text-4xl text-charcoal-900 mt-3 mb-4">
+                Pertanyaan <span className="text-maroon-gradient">Umum</span>
+              </h2>
+              <p className="text-charcoal-500 text-sm leading-relaxed">
+                Jawaban untuk pertanyaan yang sering diajukan tentang layanan FokusKonten.
+              </p>
+            </div>
+
+            <div className="max-w-3xl mx-auto space-y-4">
+              {[
+                { q: 'Berapa lama waktu pengerjaan proyek?', a: 'Waktu pengerjaan bervariasi tergantung kompleksitas proyek. Proyek sederhana bisa selesai dalam 1-2 minggu, sedangkan proyek kompleks mungkin memerlukan 1-3 bulan.' },
+                { q: 'Apakah Anda menyediakan maintenance?', a: 'Ya, kami menyediakan layanan maintenance dan support setelah proyek selesai untuk memastikan sistem berjalan optimal.' },
+                { q: 'Bagaimana cara memulai proyek?', a: 'Hubungi kami via WhatsApp atau form kontak untuk konsultasi awal. Kami akan mendiskusikan kebutuhan Anda dan memberikan proposal.' },
+              ].map((item, i) => (
+                <div key={i} className="p-6 bg-white rounded-2xl border border-black/[0.05] shadow-mature animate-scale-in">
+                  <h3 className="font-display font-semibold text-charcoal-900 mb-2">{item.q}</h3>
+                  <p className="text-charcoal-500 text-sm leading-relaxed">{item.a}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="max-w-3xl mx-auto mt-8 text-center">
+              <Link href="/faq" className="btn-secondary inline-flex items-center gap-2 text-sm">
+                Lihat Semua FAQ
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* ══════════════════════════════════════
+            NEWSLETTER
+        ══════════════════════════════════════ */}
+        <section className="section border-t border-black/[0.04] bg-white" aria-label="Newsletter">
+          <div className="container-max px-4 sm:px-6 lg:px-8">
+
+            <div className="max-w-2xl mx-auto p-10 rounded-2xl bg-maroon-50 border border-maroon-100 text-center animate-fade-up">
+              <h2 className="font-display font-semibold text-2xl text-charcoal-900 mb-3">
+                Berlangganan Newsletter
+              </h2>
+              <p className="text-charcoal-600 text-sm leading-relaxed mb-6">
+                Dapatkan update terbaru tentang artikel, aplikasi, dan promosi eksklusif langsung ke inbox Anda.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <input
+                  type="email"
+                  placeholder="Email Anda"
+                  className="flex-1 px-4 py-3 rounded-xl border border-black/[0.08] bg-white text-charcoal-900 text-sm focus:outline-none focus:border-maroon-700 transition-colors"
+                />
+                <button className="btn-primary px-6 py-3 text-sm whitespace-nowrap">
+                  Berlangganan
+                </button>
+              </div>
+              <p className="text-charcoal-400 text-xs mt-4">
+                Kami menghargai privasi Anda. No spam, unsubscribe kapan saja.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* ── CTA ──────────────────────────── */}
         <section className="section border-t border-black/[0.04]" aria-label="Call to action">
           <div className="container-max px-4 sm:px-6 lg:px-8">

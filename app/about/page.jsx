@@ -229,6 +229,91 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* ── AI-Assisted Development ─────────── */}
+        <section className="section border-t border-black/[0.04] bg-white" aria-label="AI-Assisted Development">
+          <div className="container-max px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto">
+              <div className="mb-12 animate-fade-up">
+                <span className="section-label">Teknologi</span>
+                <h2 className="heading-xl text-3xl sm:text-4xl text-charcoal-900">
+                  AI-Assisted <span className="text-maroon-gradient">Development</span>
+                </h2>
+                <p className="text-charcoal-500 text-sm leading-relaxed mt-4 max-w-2xl">
+                  FokusKonten memanfaatkan Artificial Intelligence sebagai alat bantu untuk mempercepat proses desain, pengembangan, optimasi, dokumentasi, dan publikasi produk digital.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="p-8 bg-canvas-50 rounded-2xl border border-black/[0.05] shadow-mature animate-fade-up">
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center text-maroon-700 mb-6" style={{ background: 'rgba(140,31,31,0.06)', border: '1px solid rgba(140,31,31,0.12)' }}>
+                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                    </svg>
+                  </div>
+                  <h3 className="font-display font-semibold text-xl text-charcoal-900 mb-4">Pendekatan Kami</h3>
+                  <p className="text-charcoal-600 text-sm leading-relaxed mb-4">
+                    AI bukan pengganti kreativitas manusia, melainkan alat untuk meningkatkan efisiensi dan kualitas. Kami menggunakan AI untuk:
+                  </p>
+                  <ul className="space-y-2 text-charcoal-600 text-sm">
+                    <li className="flex items-start gap-2">
+                      <span className="text-maroon-700 mt-1">•</span>
+                      <span>Code generation dan refactoring yang lebih cepat</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-maroon-700 mt-1">•</span>
+                      <span>Automated testing dan debugging</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-maroon-700 mt-1">•</span>
+                      <span>Documentation dan technical writing</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-maroon-700 mt-1">•</span>
+                      <span>Design ideation dan prototyping</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="p-8 bg-canvas-50 rounded-2xl border border-black/[0.05] shadow-mature animate-fade-up delay-100">
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center text-maroon-700 mb-6" style={{ background: 'rgba(140,31,31,0.06)', border: '1px solid rgba(140,31,31,0.12)' }}>
+                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                  <h3 className="font-display font-semibold text-xl text-charcoal-900 mb-4">Manfaat untuk Klien</h3>
+                  <p className="text-charcoal-600 text-sm leading-relaxed mb-4">
+                    Dengan AI-assisted development, klien mendapatkan:
+                  </p>
+                  <ul className="space-y-2 text-charcoal-600 text-sm">
+                    <li className="flex items-start gap-2">
+                      <span className="text-maroon-700 mt-1">•</span>
+                      <span>Waktu pengembangan lebih singkat</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-maroon-700 mt-1">•</span>
+                      <span>Kode yang lebih konsisten dan terstruktur</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-maroon-700 mt-1">•</span>
+                      <span>Dokumentasi yang lengkap dan jelas</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-maroon-700 mt-1">•</span>
+                      <span>Biaya development yang lebih efisien</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="mt-8 p-6 bg-maroon-50 rounded-2xl border border-maroon-100 animate-fade-up">
+                <p className="text-charcoal-600 text-sm leading-relaxed text-center">
+                  <strong className="text-maroon-700">Penting:</strong> Semua output AI selalu direview dan divalidasi oleh tim FokusKonten untuk memastikan kualitas, keamanan, dan relevansi dengan kebutuhan spesifik klien.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* ── CTA ──────────────────────────── */}
         <section className="section border-t border-black/[0.04] bg-white animate-fade-up" aria-label="Ajakan kerjasama">
           <div className="container-max px-4 sm:px-6 lg:px-8 text-center">

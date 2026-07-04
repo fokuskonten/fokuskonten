@@ -39,10 +39,35 @@ const socialLinks = [
 ]
 
 const services = [
-  { label: 'Android Development', href: '/portfolio' },
-  { label: 'Creative Digital',    href: '/portfolio' },
-  { label: 'Fotografi & Videografi', href: '/portfolio' },
-  { label: 'Content Creator',     href: '/portfolio' },
+  { label: 'Android Development', href: '/services' },
+  { label: 'Website Development', href: '/services' },
+  { label: 'Creative Digital',    href: '/services' },
+  { label: 'Fotografi & Videografi', href: '/services' },
+  { label: 'Content Creation',     href: '/services' },
+]
+
+const quickLinks = [
+  { label: 'Applications', href: '/applications' },
+  { label: 'Products', href: '/products' },
+  { label: 'Downloads', href: '/downloads' },
+  { label: 'News', href: '/news' },
+  { label: 'Updates', href: '/updates' },
+]
+
+const supportLinks = [
+  { label: 'Support Center', href: '/support' },
+  { label: 'FAQ', href: '/faq' },
+  { label: 'Contact', href: '/contact' },
+  { label: 'Changelog', href: '/changelog' },
+  { label: 'Release Notes', href: '/release-notes' },
+]
+
+const legalLinks = [
+  { label: 'Privacy Policy', href: '/privacy-policy' },
+  { label: 'Terms & Conditions', href: '/terms' },
+  { label: 'Licenses', href: '/licenses' },
+  { label: 'Disclaimer', href: '/disclaimer' },
+  { label: 'Cookie Policy', href: '/cookie-policy' },
 ]
 
 export default function Footer() {
@@ -51,7 +76,7 @@ export default function Footer() {
       <div className="container-max px-4 sm:px-6 lg:px-8 pt-16 pb-8">
 
         {/* ── Main Grid ─────────────────────────── */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-12">
 
           {/* Brand Column */}
           <div className="sm:col-span-2 lg:col-span-1">
@@ -122,6 +147,44 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Quick Links */}
+          <div>
+            <h3 className="font-display font-bold text-charcoal-900 text-xs tracking-wider uppercase mb-5">Quick Links</h3>
+            <ul className="space-y-3">
+              {quickLinks.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-charcoal-500 hover:text-maroon-700 text-sm transition-colors duration-200"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+ ))}
+            </ul>
+          </div>
+
+          {/* Support */}
+          <div>
+            <h3 className="font-display font-bold text-charcoal-900 text-xs tracking-wider uppercase mb-5">Support</h3>
+            <ul className="space-y-3">
+              {supportLinks.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-charcoal-500 hover:text-maroon-700 text-sm transition-colors duration-200"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {/* ── Secondary Grid ─────────────────────── */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12 mt-12 pt-12 border-t border-black/[0.04]">
+
           {/* Contact */}
           <div>
             <h3 className="font-display font-bold text-charcoal-900 text-xs tracking-wider uppercase mb-5">Kontak</h3>
@@ -157,6 +220,31 @@ export default function Footer() {
                 Indonesia
               </li>
             </ul>
+          </div>
+
+          {/* Legal */}
+          <div>
+            <h3 className="font-display font-bold text-charcoal-900 text-xs tracking-wider uppercase mb-5">Legal</h3>
+            <ul className="space-y-3">
+              {legalLinks.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-charcoal-500 hover:text-maroon-700 text-sm transition-colors duration-200"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Location */}
+          <div>
+            <h3 className="font-display font-bold text-charcoal-900 text-xs tracking-wider uppercase mb-5">Location</h3>
+            <p className="text-charcoal-500 text-sm leading-relaxed">
+              FokusKonten berbasis di Indonesia, melayani klien di seluruh Indonesia dan secara remote untuk klien internasional.
+            </p>
           </div>
         </div>
 
