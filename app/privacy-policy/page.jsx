@@ -72,39 +72,38 @@ export default function PrivacyPolicyPage() {
             <div className="max-w-3xl mx-auto">
 
               {/* Header */}
-              <div className="mb-12">
+              <div className="mb-12 animate-fade-up">
                 <span className="section-label">Legal</span>
-                <h1 className="heading-xl text-3xl sm:text-4xl text-ivory-50 mb-3 text-balance">
+                <h1 className="heading-xl text-3xl sm:text-4xl text-charcoal-900 mb-3 text-balance">
                   Kebijakan Privasi{' '}
-                  <span className="text-copper-gradient">FokusKonten</span>
+                  <span className="text-maroon-gradient">FokusKonten</span>
                 </h1>
-                <p className="text-ink-500 text-sm">Terakhir diperbarui: 4 Juli 2026</p>
+                <p className="text-charcoal-400 text-sm">Terakhir diperbarui: 4 Juli 2026</p>
               </div>
 
               {/* Sections */}
-              <div className="space-y-4">
+              <div className="space-y-6">
                 {sections.map((s, i) => (
                   <div
                     key={i}
-                    className="rounded-xl p-6"
-                    style={{ background: 'rgba(39,39,42,0.3)', border: '1px solid rgba(255,255,255,0.06)' }}
+                    className="rounded-xl p-6 bg-white border border-black/[0.04] shadow-mature animate-scale-in"
                   >
-                    <h2 className="font-display font-semibold text-ivory-200 text-base mb-4">{s.title}</h2>
+                    <h2 className="font-display font-semibold text-charcoal-800 text-base mb-4">{s.title}</h2>
                     {s.content && (
                       <div className="space-y-3">
                         {s.content.map((p, j) => (
-                          <p key={j} className="text-ink-400 text-sm leading-relaxed">{p}</p>
+                          <p key={j} className="text-charcoal-500 text-sm leading-relaxed">{p}</p>
                         ))}
                       </div>
                     )}
                     {s.listTitle && (
-                      <p className="text-ink-400 text-sm leading-relaxed mb-3">{s.listTitle}</p>
+                      <p className="text-charcoal-500 text-sm leading-relaxed mb-3">{s.listTitle}</p>
                     )}
                     {s.list && (
                       <ul className="space-y-2">
                         {s.list.map((item, j) => (
-                          <li key={j} className="flex items-start gap-2 text-ink-400 text-sm">
-                            <span className="w-1.5 h-1.5 rounded-full bg-copper shrink-0 mt-1.5" aria-hidden="true" />
+                          <li key={j} className="flex items-start gap-2 text-charcoal-500 text-sm">
+                            <span className="w-1.5 h-1.5 rounded-full bg-maroon-700 shrink-0 mt-1.5" aria-hidden="true" />
                             {item}
                           </li>
                         ))}
@@ -115,29 +114,28 @@ export default function PrivacyPolicyPage() {
 
                 {/* Contact Section */}
                 <div
-                  className="rounded-xl p-6"
-                  style={{ background: 'rgba(197,168,128,0.04)', border: '1px solid rgba(197,168,128,0.12)' }}
+                  className="rounded-xl p-6 bg-maroon-50 border border-maroon-100 shadow-mature animate-scale-in"
                 >
-                  <h2 className="font-display font-semibold text-ivory-200 text-base mb-4">8. Kontak</h2>
-                  <p className="text-ink-400 text-sm leading-relaxed mb-4">
+                  <h2 className="font-display font-semibold text-maroon-700 text-base mb-4">8. Kontak</h2>
+                  <p className="text-charcoal-600 text-sm leading-relaxed mb-4">
                     Jika Anda memiliki pertanyaan tentang kebijakan privasi ini, silakan hubungi kami:
                   </p>
                   <ul className="space-y-2 text-sm">
                     <li>
-                      <span className="text-ink-500">Email: </span>
-                      <a href="mailto:admin@fokuskonten.my.id" className="text-copper hover:underline">
+                      <span className="text-charcoal-500">Email: </span>
+                      <a href="mailto:admin@fokuskonten.my.id" className="text-maroon-700 hover:underline">
                         admin@fokuskonten.my.id
                       </a>
                     </li>
                     <li>
-                      <span className="text-ink-500">WhatsApp: </span>
-                      <a href="https://wa.me/6285183011318" target="_blank" rel="noopener noreferrer" className="text-copper hover:underline">
+                      <span className="text-charcoal-500">WhatsApp: </span>
+                      <a href="https://wa.me/6285183011318" target="_blank" rel="noopener noreferrer" className="text-maroon-700 hover:underline">
                         +62 851-8301-1318
                       </a>
                     </li>
                     <li>
-                      <span className="text-ink-500">Website: </span>
-                      <a href="https://fokuskonten.my.id" target="_blank" rel="noopener noreferrer" className="text-copper hover:underline">
+                      <span className="text-charcoal-500">Website: </span>
+                      <a href="https://fokuskonten.my.id" target="_blank" rel="noopener noreferrer" className="text-maroon-700 hover:underline">
                         fokuskonten.my.id
                       </a>
                     </li>

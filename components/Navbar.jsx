@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import Image from 'next/image'
 
 const navLinks = [
   { href: '/',          label: 'Beranda' },
@@ -31,7 +30,7 @@ export default function Navbar() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
-            ? 'bg-ink-950/85 backdrop-blur-xl border-b border-white/[0.05]'
+            ? 'bg-white/90 backdrop-blur-xl border-b border-black/[0.04] shadow-subtle'
             : 'bg-transparent'
         }`}
       >
@@ -41,14 +40,14 @@ export default function Navbar() {
             {/* ── Logo ───────────────────────────── */}
             <Link href="/" className="flex items-center gap-3 group" aria-label="FokusKonten - Beranda">
               <span
-                className="w-8 h-8 rounded-lg flex items-center justify-center text-ink-950 text-sm font-display font-black transition-transform duration-300 group-hover:scale-110"
-                style={{ background: 'linear-gradient(135deg, #dda855 0%, #c5a880 100%)' }}
+                className="w-8 h-8 rounded-lg flex items-center justify-center text-white text-sm font-display font-black transition-transform duration-300 group-hover:scale-105"
+                style={{ background: 'linear-gradient(135deg, #ab3333 0%, #751919 100%)' }}
                 aria-hidden="true"
               >
                 F
               </span>
-              <span className="font-display font-bold text-[17px] text-ivory-50 tracking-tight">
-                Fokus<span className="text-copper">Konten</span>
+              <span className="font-display font-bold text-[17px] text-charcoal-900 tracking-tight">
+                Fokus<span className="text-maroon-700">Konten</span>
               </span>
             </Link>
 
@@ -60,8 +59,8 @@ export default function Navbar() {
                   href={link.href}
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                     pathname === link.href
-                      ? 'text-ivory-50 bg-white/[0.06]'
-                      : 'text-ink-300 hover:text-ivory-100 hover:bg-white/[0.04]'
+                      ? 'text-maroon-700 bg-maroon-50'
+                      : 'text-charcoal-600 hover:text-maroon-700 hover:bg-black/[0.02]'
                   }`}
                 >
                   {link.label}
@@ -84,7 +83,7 @@ export default function Navbar() {
             <button
               id="mobile-menu-btn"
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 rounded-lg text-ink-300 hover:text-ivory-100 transition-colors"
+              className="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 rounded-lg text-charcoal-600 hover:text-maroon-700 transition-colors"
               aria-label={isOpen ? 'Tutup menu' : 'Buka menu'}
               aria-expanded={isOpen}
               aria-controls="mobile-menu"
@@ -110,15 +109,15 @@ export default function Navbar() {
           }`}
           aria-hidden={!isOpen}
         >
-          <div className="bg-ink-900/95 backdrop-blur-xl border-t border-white/[0.05] px-4 py-4 space-y-1">
+          <div className="bg-white/95 backdrop-blur-xl border-t border-black/[0.04] px-4 py-4 space-y-1 shadow-elevated">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 className={`flex items-center px-4 py-3 rounded-xl text-sm font-medium transition-all ${
                   pathname === link.href
-                    ? 'bg-white/[0.07] text-ivory-50'
-                    : 'text-ink-300 hover:text-ivory-100 hover:bg-white/[0.04]'
+                    ? 'bg-maroon-50 text-maroon-700'
+                    : 'text-charcoal-600 hover:text-maroon-700 hover:bg-black/[0.02]'
                 }`}
               >
                 {link.label}

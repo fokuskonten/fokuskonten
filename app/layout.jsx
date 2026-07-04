@@ -58,14 +58,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="id" className="dark">
+    <html lang="id">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <meta name="theme-color" content="#09090b" />
+        <meta name="theme-color" content="#ffffff" />
         <meta name="google-adsense-account" content="" />
       </head>
-      <body className="bg-ink-950 text-ink-200 font-sans antialiased">
+      <body className="bg-canvas-100 text-charcoal-800 font-sans antialiased">
         <div className="noise-overlay" aria-hidden="true" />
         {children}
       </body>

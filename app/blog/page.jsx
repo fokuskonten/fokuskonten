@@ -4,11 +4,11 @@ import Link from 'next/link'
 import postsData from '@/content/blog/posts.json'
 
 const categoryColors = {
-  'Android Dev':     { text: '#c5a880', bg: 'rgba(197,168,128,0.08)', border: 'rgba(197,168,128,0.15)' },
-  'Fotografi':       { text: '#9a7a3d', bg: 'rgba(154,122,61,0.08)',  border: 'rgba(154,122,61,0.15)'  },
-  'Content Creator': { text: '#b8924a', bg: 'rgba(184,146,74,0.08)',  border: 'rgba(184,146,74,0.15)'  },
-  'Creative Digital':{ text: '#dda855', bg: 'rgba(221,168,85,0.08)',  border: 'rgba(221,168,85,0.15)'  },
-  'Videografi':      { text: '#c5a880', bg: 'rgba(197,168,128,0.08)', border: 'rgba(197,168,128,0.15)' },
+  'Android Dev':     { text: '#8c1f1f', bg: 'rgba(140,31,31,0.03)', border: 'rgba(140,31,31,0.08)' },
+  'Fotografi':       { text: '#751919', bg: 'rgba(117,25,25,0.03)', border: 'rgba(117,25,25,0.08)' },
+  'Content Creator': { text: '#5e1414', bg: 'rgba(94,20,20,0.03)',  border: 'rgba(94,20,20,0.08)'  },
+  'Creative Digital':{ text: '#ab3333', bg: 'rgba(171,51,51,0.03)', border: 'rgba(171,51,51,0.08)'  },
+  'Videografi':      { text: '#8c1f1f', bg: 'rgba(140,31,31,0.03)', border: 'rgba(140,31,31,0.08)' },
 }
 
 function formatDate(dateStr) {
@@ -33,18 +33,18 @@ export default function BlogPage() {
         {/* ── Header ────────────────────────── */}
         <section className="relative pt-32 sm:pt-40 pb-10 overflow-hidden" aria-label="Blog header">
           <div
-            className="absolute top-0 right-0 w-[400px] h-[400px] blur-[120px] opacity-10 pointer-events-none"
-            style={{ background: 'radial-gradient(circle, rgba(197,168,128,0.4) 0%, transparent 70%)' }}
+            className="absolute top-0 right-0 w-[400px] h-[400px] blur-[120px] opacity-20 pointer-events-none"
+            style={{ background: 'radial-gradient(circle, rgba(140,31,31,0.06) 0%, transparent 70%)' }}
             aria-hidden="true"
           />
-          <div className="container-max section px-4 sm:px-6 lg:px-8">
+          <div className="container-max section px-4 sm:px-6 lg:px-8 animate-fade-up">
             <div className="max-w-2xl">
               <span className="section-label">Blog</span>
-              <h1 className="heading-xl text-4xl sm:text-5xl text-ivory-50 mb-4 text-balance">
+              <h1 className="heading-xl text-4xl sm:text-5xl text-charcoal-900 mb-4 text-balance">
                 Artikel &{' '}
-                <span className="text-copper-gradient">Panduan</span>
+                <span className="text-maroon-gradient">Panduan</span>
               </h1>
-              <p className="text-ink-400 text-base leading-relaxed">
+              <p className="text-charcoal-500 text-base leading-relaxed">
                 Berbagi pengetahuan tentang Android development, desain kreatif, fotografi, videografi, dan strategi konten digital.
               </p>
             </div>
@@ -53,11 +53,10 @@ export default function BlogPage() {
 
         {/* ── Featured Post ─────────────────── */}
         {featured && (
-          <section className="container-max px-4 sm:px-6 lg:px-8 pb-10" aria-label="Artikel unggulan">
+          <section className="container-max px-4 sm:px-6 lg:px-8 pb-10 animate-fade-up delay-100" aria-label="Artikel unggulan">
             <Link
               href={`/blog/${featured.slug}`}
-              className="group block rounded-2xl p-8 sm:p-10 transition-all duration-300 hover:-translate-y-0.5"
-              style={{ background: 'rgba(197,168,128,0.04)', border: '1px solid rgba(197,168,128,0.12)', boxShadow: '0 0 40px rgba(197,168,128,0.04) inset' }}
+              className="group block rounded-2xl p-8 sm:p-10 bg-white border border-black/[0.05] shadow-mature hover:shadow-elevated transition-all duration-300 hover:-translate-y-1"
             >
               <div className="flex items-center gap-3 mb-6">
                 <span className="badge">Unggulan</span>
@@ -72,17 +71,17 @@ export default function BlogPage() {
                   {featured.category}
                 </span>
               </div>
-              <h2 className="font-display font-bold text-2xl sm:text-3xl text-ivory-100 group-hover:text-copper transition-colors duration-200 mb-3 text-balance max-w-2xl">
+              <h2 className="font-display font-bold text-2xl sm:text-3xl text-charcoal-900 group-hover:text-maroon-700 transition-colors duration-200 mb-3 text-balance max-w-2xl">
                 {featured.title}
               </h2>
-              <p className="text-ink-400 text-sm leading-relaxed mb-6 max-w-2xl">{featured.excerpt}</p>
+              <p className="text-charcoal-500 text-sm leading-relaxed mb-6 max-w-2xl">{featured.excerpt}</p>
               <div className="flex items-center justify-between">
-                <div className="flex items-center gap-3 text-xs text-ink-600">
+                <div className="flex items-center gap-3 text-xs text-charcoal-400">
                   <span>{formatDate(featured.date)}</span>
                   <span>·</span>
                   <span>{featured.readTime}</span>
                 </div>
-                <span className="text-xs font-display font-semibold text-copper flex items-center gap-1.5 group-hover:gap-2.5 transition-all">
+                <span className="text-xs font-display font-semibold text-maroon-700 flex items-center gap-1.5 group-hover:gap-2.5 transition-all">
                   Baca Artikel
                   <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -95,14 +94,14 @@ export default function BlogPage() {
 
         {/* ── Post Grid ─────────────────────── */}
         <section className="container-max px-4 sm:px-6 lg:px-8 pb-24" aria-label="Semua artikel">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {rest.map((post) => {
               const col = categoryColors[post.category] || categoryColors['Android Dev']
               return (
                 <Link
                   key={post.slug}
                   href={`/blog/${post.slug}`}
-                  className="group block card-outline p-6"
+                  className="group block card-outline p-6 shadow-mature hover:shadow-elevated transition-all duration-300 animate-scale-in"
                 >
                   <div className="flex items-center justify-between mb-4">
                     <span
@@ -111,15 +110,15 @@ export default function BlogPage() {
                     >
                       {post.category}
                     </span>
-                    <span className="text-ink-600 text-xs">{post.readTime}</span>
+                    <span className="text-charcoal-400 text-xs">{post.readTime}</span>
                   </div>
-                  <h2 className="font-display font-semibold text-base text-ivory-200 group-hover:text-copper transition-colors duration-200 mb-2 text-balance">
+                  <h2 className="font-display font-semibold text-base text-charcoal-900 group-hover:text-maroon-700 transition-colors duration-200 mb-2 text-balance">
                     {post.title}
                   </h2>
-                  <p className="text-ink-500 text-xs leading-relaxed mb-5 line-clamp-2">{post.excerpt}</p>
-                  <div className="flex items-center justify-between pt-4 border-t border-white/[0.05]">
-                    <span className="text-ink-600 text-xs">{formatDate(post.date)}</span>
-                    <span className="text-xs font-display font-medium text-copper/70 group-hover:text-copper flex items-center gap-1 transition-all">
+                  <p className="text-charcoal-500 text-xs leading-relaxed mb-5 line-clamp-2">{post.excerpt}</p>
+                  <div className="flex items-center justify-between pt-4 border-t border-black/[0.04]">
+                    <span className="text-charcoal-400 text-xs">{formatDate(post.date)}</span>
+                    <span className="text-xs font-display font-semibold text-maroon-700/70 group-hover:text-maroon-700 flex items-center gap-1 transition-all">
                       Baca
                       <svg className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -131,7 +130,7 @@ export default function BlogPage() {
             })}
           </div>
 
-          <p className="text-ink-600 text-sm text-center mt-10">
+          <p className="text-charcoal-400 text-sm text-center mt-10">
             Artikel baru akan segera hadir. Pantau terus FokusKonten.
           </p>
         </section>
