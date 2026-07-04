@@ -1,167 +1,152 @@
+'use client'
+
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
+import { useState } from 'react'
+import portfolioData from '@/content/portfolio/portfolio.json'
 
-const categories = ['Semua', 'Android Dev', 'Creative Digital', 'Fotografi & Videografi', 'Content Creator']
+const categories = ['Semua', 'Android Development', 'Creative Digital', 'Fotografi & Videografi', 'Content Creator']
 
-const projects = [
-  {
-    title: 'E-Commerce Android App',
-    description: 'Aplikasi belanja online dengan fitur real-time tracking, payment gateway, dan admin dashboard.',
-    category: 'Android Dev',
-    tags: ['Kotlin', 'Jetpack Compose', 'Firebase', 'Midtrans'],
-    gradient: 'from-accent-500/10 to-accent-700/5',
-    border: 'border-accent-500/20',
-    status: 'Publikasi',
-  },
-  {
-    title: 'Social Media Dashboard',
-    description: 'Aplikasi monitoring dan analitik media sosial multiplatform.',
-    category: 'Android Dev',
-    tags: ['Java', 'MPAndroidChart', 'Firebase'],
-    gradient: 'from-accent-500/10 to-accent-700/5',
-    border: 'border-accent-500/20',
-    status: 'Publikasi',
-  },
-  {
-    title: 'Brand Identity FokusKonten',
-    description: 'Perancangan identitas merek, logo, dan panduan visual untuk personal brand.',
-    category: 'Creative Digital',
-    tags: ['Adobe Illustrator', 'Photoshop', 'Brand Guideline'],
-    gradient: 'from-vibrant-500/10 to-vibrant-700/5',
-    border: 'border-vibrant-500/20',
-    status: 'Selesai',
-  },
-  {
-    title: 'Social Media Templates',
-    description: 'Set template Instagram, TikTok, dan YouTube dengan konsep modern dan dinamis.',
-    category: 'Creative Digital',
-    tags: ['Canva', 'Photoshop', 'After Effects'],
-    gradient: 'from-vibrant-500/10 to-vibrant-700/5',
-    border: 'border-vibrant-500/20',
-    status: 'Selesai',
-  },
-  {
-    title: 'Pre-Wedding Photography',
-    description: 'Sesi foto pre-wedding dengan konsep outdoor dan indoor profesional.',
-    category: 'Fotografi & Videografi',
-    tags: ['Sony A7III', 'Lightroom', 'Photoshop'],
-    gradient: 'from-pink-500/10 to-rose-700/5',
-    border: 'border-pink-500/20',
-    status: 'Selesai',
-  },
-  {
-    title: 'Product Photography',
-    description: 'Foto produk untuk katalog e-commerce dengan pencahayaan studio dan styling.',
-    category: 'Fotografi & Videografi',
-    tags: ['Studio Lighting', 'Lightroom', 'Photoshop'],
-    gradient: 'from-pink-500/10 to-rose-700/5',
-    border: 'border-pink-500/20',
-    status: 'Selesai',
-  },
-  {
-    title: 'YouTube Content Series',
-    description: 'Produksi konten video pendek untuk YouTube Shorts dan TikTok dengan strategi viral.',
-    category: 'Content Creator',
-    tags: ['Premiere Pro', 'After Effects', 'SEO'],
-    gradient: 'from-yellow-500/10 to-orange-700/5',
-    border: 'border-yellow-500/20',
-    status: 'Tayang',
-  },
-  {
-    title: 'Instagram Campaign',
-    description: 'Manajemen konten Instagram dengan strategi engagement dan growth organik.',
-    category: 'Content Creator',
-    tags: ['Copywriting', 'Canva', 'Analytics'],
-    gradient: 'from-yellow-500/10 to-orange-700/5',
-    border: 'border-yellow-500/20',
-    status: 'Tayang',
-  },
-]
-
-export const metadata = {
-  title: 'Portfolio',
-  description: 'Portfolio FokusKonten — Karya dalam Android Development, Creative Digital, Fotografi & Videografi.',
+const categoryColors = {
+  'Android Development':    { dot: '#c5a880', bg: 'rgba(197,168,128,0.06)', border: 'rgba(197,168,128,0.15)' },
+  'Creative Digital':       { dot: '#dda855', bg: 'rgba(221,168,85,0.06)',  border: 'rgba(221,168,85,0.15)'  },
+  'Fotografi & Videografi': { dot: '#9a7a3d', bg: 'rgba(154,122,61,0.06)', border: 'rgba(154,122,61,0.15)'  },
+  'Content Creator':        { dot: '#b8924a', bg: 'rgba(184,146,74,0.06)', border: 'rgba(184,146,74,0.15)'  },
 }
 
 export default function PortfolioPage() {
+  const [active, setActive] = useState('Semua')
+
+  const filtered = active === 'Semua'
+    ? portfolioData
+    : portfolioData.filter(p => p.category === active)
+
   return (
     <>
       <Navbar />
       <main>
-        <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-20">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-vibrant-500/5 rounded-full blur-3xl" />
-          <div className="container-custom section-padding">
-            <div className="text-center max-w-2xl mx-auto">
-              <span className="text-accent-400 text-sm font-semibold tracking-wider uppercase">Portfolio</span>
-              <h1 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-white text-balance">
-                Karya & <span className="gradient-text">Proyek</span>
-              </h1>
-              <p className="mt-4 text-dark-200">
-                Beberapa proyek yang telah dikerjakan oleh FokusKonten. Setiap proyek dikerjakan dengan penuh dedikasi dan perhatian terhadap detail.
-              </p>
-            </div>
 
-            <div className="flex flex-wrap items-center justify-center gap-3 mt-10 mb-12">
-              {categories.map((cat) => (
-                <button
-                  key={cat}
-                  className={`px-5 py-2 rounded-xl text-sm font-medium transition-all duration-300 ${
-                    cat === 'Semua'
-                      ? 'bg-accent-500/20 text-accent-400 border border-accent-500/30'
-                      : 'bg-dark-600/50 text-dark-200 border border-dark-400/20 hover:border-accent-500/30 hover:text-accent-400'
-                  }`}
-                >
-                  {cat}
-                </button>
-              ))}
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              {projects.map((project, index) => (
-                <div
-                  key={index}
-                  className={`relative rounded-2xl overflow-hidden border ${project.border} bg-gradient-to-br ${project.gradient} p-6 hover-lift group cursor-pointer`}
-                >
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-xs font-semibold text-accent-400 bg-accent-500/10 px-3 py-1 rounded-full">
-                      {project.category}
-                    </span>
-                    <span className="text-xs text-dark-300">{project.status}</span>
-                  </div>
-                  <h3 className="text-lg font-display font-semibold text-white mb-2">{project.title}</h3>
-                  <p className="text-dark-200 text-sm leading-relaxed mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag) => (
-                      <span key={tag} className="text-xs text-dark-300 bg-dark-600/50 px-2 py-1 rounded-md">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
+        {/* ── Hero ──────────────────────────── */}
+        <section className="relative pt-32 sm:pt-40 pb-10 overflow-hidden" aria-label="Portfolio header">
+          <div
+            className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] blur-[120px] opacity-10 pointer-events-none"
+            style={{ background: 'radial-gradient(ellipse, rgba(197,168,128,0.5) 0%, transparent 70%)' }}
+            aria-hidden="true"
+          />
+          <div className="container-max section px-4 sm:px-6 lg:px-8 text-center">
+            <span className="section-label">Portfolio</span>
+            <h1 className="heading-xl text-4xl sm:text-5xl lg:text-6xl text-ivory-50 text-balance mb-5">
+              Karya &{' '}
+              <span className="text-copper-gradient">Proyek</span>
+            </h1>
+            <p className="text-ink-400 text-base max-w-xl mx-auto leading-relaxed">
+              Setiap proyek dikerjakan dengan dedikasi penuh dan perhatian terhadap setiap detail — dari konsep hingga publikasi.
+            </p>
           </div>
         </section>
 
-        <section className="section-padding bg-dark-800/50">
-          <div className="container-custom">
-            <div className="text-center">
-              <h2 className="text-2xl sm:text-3xl font-display font-bold text-white text-balance">
-                Punya Proyek?
-              </h2>
-              <p className="mt-3 text-dark-200 max-w-xl mx-auto">
-                Mari wujudkan ide Anda menjadi karya nyata bersama FokusKonten.
-              </p>
-              <a
-                href="https://wa.me/6285183011318"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 mt-6 px-8 py-3 rounded-xl bg-gradient-to-r from-accent-500 to-vibrant-600 text-white font-semibold hover:shadow-xl hover:shadow-vibrant-500/25 transition-all duration-300"
+        {/* ── Filter Tabs ───────────────────── */}
+        <div className="container-max px-4 sm:px-6 lg:px-8 mb-10">
+          <div className="flex items-center gap-2 flex-wrap justify-center" role="tablist" aria-label="Filter kategori portfolio">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                role="tab"
+                aria-selected={active === cat}
+                onClick={() => setActive(cat)}
+                className={`px-4 py-2 rounded-xl text-sm font-display font-medium transition-all duration-200 ${
+                  active === cat
+                    ? 'text-ink-950'
+                    : 'text-ink-400 hover:text-ivory-200'
+                }`}
+                style={
+                  active === cat
+                    ? { background: 'linear-gradient(135deg, #dda855, #c5a880)', boxShadow: '0 0 20px rgba(197,168,128,0.25)' }
+                    : { background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)' }
+                }
               >
-                Diskusikan Proyek
-              </a>
-            </div>
+                {cat}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* ── Grid ─────────────────────────── */}
+        <section className="container-max px-4 sm:px-6 lg:px-8 pb-24" aria-label="Daftar portfolio">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {filtered.map((item) => {
+              const col = categoryColors[item.category] || { dot: '#c5a880', bg: 'rgba(197,168,128,0.06)', border: 'rgba(197,168,128,0.12)' }
+              return (
+                <Link
+                  key={item.id}
+                  href={`/portfolio/${item.id}`}
+                  className="group block rounded-2xl p-6 transition-all duration-300 hover:-translate-y-0.5"
+                  style={{ background: col.bg, border: `1px solid ${col.border}` }}
+                >
+                  {/* Top */}
+                  <div className="flex items-center justify-between mb-5">
+                    <div className="flex items-center gap-2">
+                      <span
+                        className="w-2 h-2 rounded-full"
+                        style={{ background: col.dot }}
+                        aria-hidden="true"
+                      />
+                      <span className="text-ink-500 text-xs font-display">{item.category}</span>
+                    </div>
+                    <span
+                      className="text-xs font-display font-semibold px-2.5 py-1 rounded-full"
+                      style={{ background: 'rgba(197,168,128,0.10)', color: '#c5a880', border: '1px solid rgba(197,168,128,0.20)' }}
+                    >
+                      {item.status}
+                    </span>
+                  </div>
+
+                  {/* Content */}
+                  <h2 className="font-display font-semibold text-lg text-ivory-100 group-hover:text-copper transition-colors duration-200 mb-2">
+                    {item.title}
+                  </h2>
+                  <p className="text-ink-400 text-sm leading-relaxed mb-5">{item.description}</p>
+
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-2 mb-5">
+                    {item.tags.slice(0, 3).map(tag => (
+                      <span key={tag} className="tag">{tag}</span>
+                    ))}
+                  </div>
+
+                  {/* Footer */}
+                  <div className="flex items-center justify-between pt-4 border-t" style={{ borderColor: 'rgba(255,255,255,0.05)' }}>
+                    <span className="text-ink-600 text-xs">{item.year}</span>
+                    <span className="text-xs font-display font-medium text-copper flex items-center gap-1 group-hover:gap-2 transition-all">
+                      Detail
+                      <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </span>
+                  </div>
+                </Link>
+              )
+            })}
+          </div>
+        </section>
+
+        {/* ── CTA ──────────────────────────── */}
+        <section className="section border-t border-white/[0.05]" aria-label="Diskusi proyek baru">
+          <div className="container-max px-4 sm:px-6 lg:px-8 text-center">
+            <div className="copper-line mx-auto mb-6" aria-hidden="true" />
+            <h2 className="heading-xl text-3xl text-ivory-50 mb-3 text-balance">Punya Proyek?</h2>
+            <p className="text-ink-400 text-sm max-w-sm mx-auto mb-7">
+              Mari wujudkan ide Anda menjadi karya nyata bersama FokusKonten.
+            </p>
+            <a
+              href="https://wa.me/6285183011318"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary inline-flex"
+            >
+              Diskusikan Proyek
+            </a>
           </div>
         </section>
       </main>

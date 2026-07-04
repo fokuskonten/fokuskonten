@@ -1,0 +1,90 @@
+[
+  {
+    "id": "ecommerce-android-app",
+    "title": "E-Commerce Android App",
+    "description": "Aplikasi belanja online native Android dengan fitur real-time tracking, integrasi payment gateway Midtrans, push notification Firebase, dan admin dashboard berbasis web.",
+    "category": "Android Development",
+    "tags": ["Kotlin", "Jetpack Compose", "Firebase", "Midtrans"],
+    "status": "Publikasi",
+    "year": "2025",
+    "featured": true,
+    "color": "#c5a880"
+  },
+  {
+    "id": "social-media-dashboard",
+    "title": "Social Media Dashboard",
+    "description": "Aplikasi monitoring dan analitik media sosial multiplatform. Menampilkan statistik real-time, grafik engagement, dan laporan performa konten.",
+    "category": "Android Development",
+    "tags": ["Java", "MPAndroidChart", "Firebase", "REST API"],
+    "status": "Publikasi",
+    "year": "2025",
+    "featured": true,
+    "color": "#c5a880"
+  },
+  {
+    "id": "brand-identity-fokuskonten",
+    "title": "Brand Identity FokusKonten",
+    "description": "Perancangan identitas merek secara lengkap: logo, palet warna, tipografi, panduan visual, dan aplikasi merek di berbagai media.",
+    "category": "Creative Digital",
+    "tags": ["Adobe Illustrator", "Photoshop", "Brand Guide"],
+    "status": "Selesai",
+    "year": "2024",
+    "featured": true,
+    "color": "#dda855"
+  },
+  {
+    "id": "social-media-templates",
+    "title": "Social Media Template Pack",
+    "description": "Set 50+ template premium untuk Instagram, TikTok, dan YouTube Thumbnail dengan konsep modern, dinamis, dan mudah dikustomisasi.",
+    "category": "Creative Digital",
+    "tags": ["Canva", "Photoshop", "After Effects"],
+    "status": "Selesai",
+    "year": "2025",
+    "featured": false,
+    "color": "#dda855"
+  },
+  {
+    "id": "prewedding-photography",
+    "title": "Pre-Wedding Photography",
+    "description": "Sesi foto pre-wedding dengan konsep outdoor golden hour dan indoor studio profesional. Hasil foto diedit dengan tone warm yang elegan.",
+    "category": "Fotografi & Videografi",
+    "tags": ["Sony A7III", "Lightroom", "Studio Lighting"],
+    "status": "Selesai",
+    "year": "2025",
+    "featured": true,
+    "color": "#9a7a3d"
+  },
+  {
+    "id": "product-photography",
+    "title": "Product Photography",
+    "description": "Foto produk profesional untuk katalog e-commerce dengan pencahayaan studio presisi tinggi, post-processing detail, dan styling produk kreatif.",
+    "category": "Fotografi & Videografi",
+    "tags": ["Studio Lighting", "Lightroom", "Photoshop"],
+    "status": "Selesai",
+    "year": "2024",
+    "featured": false,
+    "color": "#9a7a3d"
+  },
+  {
+    "id": "documentary-film",
+    "title": "Film Dokumenter Sekolah",
+    "description": "Produksi film dokumenter kegiatan sekolah secara penuh: pra-produksi, pengambilan gambar, hingga pasca-produksi dan distribusi digital.",
+    "category": "Fotografi & Videografi",
+    "tags": ["Premiere Pro", "After Effects", "Color Grading"],
+    "status": "Selesai",
+    "year": "2024",
+    "featured": true,
+    "color": "#9a7a3d"
+  },
+  {
+    "id": "youtube-content-series",
+    "title": "YouTube Content Series",
+    "description": "Produksi dan manajemen konten video pendek untuk YouTube Shorts dan TikTok dengan strategi konten terencana untuk peningkatan reach organik.",
+    "category": "Content Creator",
+    "tags": ["Premiere Pro", "CapCut", "SEO Konten"],
+    "status": "Tayang",
+    "year": "2025",
+    "featured": false,
+    "color": "#b8924a"
+  }
+]

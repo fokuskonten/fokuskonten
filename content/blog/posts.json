@@ -1,0 +1,68 @@
+[
+  {
+    "slug": "memulai-android-development-kotlin",
+    "title": "Memulai Android Development dengan Kotlin",
+    "excerpt": "Panduan lengkap dari nol untuk membangun aplikasi Android native menggunakan Kotlin dan Android Studio modern.",
+    "content": "Kotlin adalah bahasa pemrograman modern yang direkomendasikan secara resmi oleh Google untuk pengembangan Android...",
+    "date": "2026-07-01",
+    "category": "Android Dev",
+    "readTime": "5 menit",
+    "author": "FokusKonten",
+    "featured": true
+  },
+  {
+    "slug": "tips-fotografi-produk-ecommerce",
+    "title": "Tips Fotografi Produk untuk E-Commerce",
+    "excerpt": "Teknik dasar hingga lanjutan untuk memotret produk yang menghasilkan gambar tajam, bersih, dan meningkatkan konversi toko online.",
+    "content": "Kualitas foto produk adalah faktor utama yang mempengaruhi keputusan pembelian konsumen online...",
+    "date": "2026-06-25",
+    "category": "Fotografi",
+    "readTime": "4 menit",
+    "author": "FokusKonten",
+    "featured": true
+  },
+  {
+    "slug": "strategi-konten-media-sosial-2026",
+    "title": "Strategi Konten Media Sosial 2026",
+    "excerpt": "Cara menyusun dan menjalankan strategi konten yang efektif untuk meningkatkan engagement organik dan membangun komunitas yang loyal.",
+    "content": "Di era algoritma media sosial yang terus berubah, konsistensi dan relevansi konten menjadi kunci utama...",
+    "date": "2026-06-18",
+    "category": "Content Creator",
+    "readTime": "6 menit",
+    "author": "FokusKonten",
+    "featured": false
+  },
+  {
+    "slug": "desain-ui-ux-android",
+    "title": "Prinsip Desain UI/UX untuk Aplikasi Android",
+    "excerpt": "Memahami Material Design 3 dan prinsip-prinsip desain antarmuka yang menciptakan pengalaman pengguna Android yang optimal dan intuitif.",
+    "content": "Desain antarmuka yang baik bukan hanya soal tampilan visual, tetapi juga tentang bagaimana pengguna berinteraksi...",
+    "date": "2026-06-10",
+    "category": "Creative Digital",
+    "readTime": "7 menit",
+    "author": "FokusKonten",
+    "featured": false
+  },
+  {
+    "slug": "optimasi-performa-android",
+    "title": "Mengoptimalkan Performa Aplikasi Android",
+    "excerpt": "Teknik-teknik proven untuk membuat aplikasi Android lebih ringan, responsif, hemat baterai, dan memiliki rendering yang mulus.",
+    "content": "Performa aplikasi berdampak langsung pada rating di Play Store dan kepuasan pengguna...",
+    "date": "2026-06-02",
+    "category": "Android Dev",
+    "readTime": "5 menit",
+    "author": "FokusKonten",
+    "featured": false
+  },
+  {
+    "slug": "editing-video-premiere-pro-pemula",
+    "title": "Editing Video dengan Premiere Pro untuk Pemula",
+    "excerpt": "Langkah-langkah sistematis belajar Adobe Premiere Pro dari dasar hingga mampu menghasilkan video berkualitas profesional.",
+    "content": "Adobe Premiere Pro adalah standar industri untuk editing video profesional...",
+    "date": "2026-05-25",
+    "category": "Videografi",
+    "readTime": "8 menit",
+    "author": "FokusKonten",
+    "featured": false
+  }
+]

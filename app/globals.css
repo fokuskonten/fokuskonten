@@ -2,81 +2,212 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+/* ────────────────────────────────────────────────────────────
+   Google Fonts Import
+──────────────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
 
+/* ────────────────────────────────────────────────────────────
+   Base Layer
+──────────────────────────────────────────────────────────── */
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #09090b;
+    color: #e4e4e7;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Scrollbar */
   * {
     scrollbar-width: thin;
-    scrollbar-color: #1a1a40 #0a0a1f;
+    scrollbar-color: #3f3f46 #0c0c0e;
   }
+  *::-webkit-scrollbar { width: 5px; }
+  *::-webkit-scrollbar-track { background: #0c0c0e; }
+  *::-webkit-scrollbar-thumb { background: #3f3f46; border-radius: 99px; }
+  *::-webkit-scrollbar-thumb:hover { background: #52525b; }
 
-  *::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  *::-webkit-scrollbar-track {
-    background: #0a0a1f;
-  }
-
-  *::-webkit-scrollbar-thumb {
-    background: #1a1a40;
-    border-radius: 3px;
-  }
-
-  *::-webkit-scrollbar-thumb:hover {
-    background: #2a2a50;
-  }
-
+  /* Text Selection */
   ::selection {
-    background: rgba(0, 180, 230, 0.3);
-    color: #fff;
+    background: rgba(197, 168, 128, 0.25);
+    color: #fafaf9;
   }
 }
 
+/* ────────────────────────────────────────────────────────────
+   Component Layer
+──────────────────────────────────────────────────────────── */
 @layer components {
-  .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-400 via-vibrant-400 to-accent-500;
-    background-size: 200% 200%;
-    animation: gradient 8s ease infinite;
+
+  /* ── Typography ─────────────────────────── */
+  .text-copper {
+    color: #c5a880;
   }
 
-  .gradient-border {
-    position: relative;
+  .text-copper-gradient {
+    background: linear-gradient(135deg, #dda855 0%, #c5a880 50%, #e9c07e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
-  .gradient-border::before {
-    content: '';
-    position: absolute;
+  .heading-xl {
+    @apply font-display font-bold tracking-tight leading-[1.06];
+  }
+
+  .heading-label {
+    @apply text-xs font-display font-semibold tracking-[0.14em] uppercase;
+    color: #c5a880;
+  }
+
+  /* ── Cards ─────────────────────────────── */
+  .card-surface {
+    background: linear-gradient(145deg, rgba(39,39,42,0.55) 0%, rgba(24,24,27,0.75) 100%);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .card-surface-hover {
+    @apply card-surface transition-all duration-300;
+  }
+  .card-surface-hover:hover {
+    border-color: rgba(197, 168, 128, 0.22);
+    box-shadow: 0 0 30px rgba(197, 168, 128, 0.08), 0 20px 50px rgba(0,0,0,0.4);
+    transform: translateY(-2px);
+  }
+
+  .card-outline {
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 16px;
+    background: transparent;
+    transition: all 0.3s ease;
+  }
+  .card-outline:hover {
+    border-color: rgba(197, 168, 128, 0.25);
+    background: rgba(39,39,42,0.30);
+  }
+
+  /* ── Buttons ────────────────────────────── */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-display font-semibold text-sm text-ink-950 transition-all duration-300;
+    background: linear-gradient(135deg, #dda855 0%, #c5a880 100%);
+    box-shadow: 0 0 20px rgba(197, 168, 128, 0.20);
+  }
+  .btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 30px rgba(197, 168, 128, 0.35), 0 8px 24px rgba(0,0,0,0.3);
+  }
+  .btn-primary:active {
+    transform: translateY(0);
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-display font-semibold text-sm transition-all duration-300;
+    border: 1px solid rgba(255,255,255,0.10);
+    color: #d4d4d8;
+    background: rgba(39,39,42,0.4);
+  }
+  .btn-secondary:hover {
+    border-color: rgba(197, 168, 128, 0.30);
+    color: #c5a880;
+    background: rgba(39,39,42,0.6);
+    transform: translateY(-1px);
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200;
+    color: #a1a1aa;
+  }
+  .btn-ghost:hover {
+    color: #fafaf9;
+    background: rgba(255,255,255,0.05);
+  }
+
+  /* ── Dividers ──────────────────────────── */
+  .divider {
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .copper-line {
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, #c5a880, #dda855);
+    border-radius: 99px;
+  }
+
+  /* ── Sections ──────────────────────────── */
+  .section {
+    @apply px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-32;
+  }
+
+  .container-max {
+    @apply max-w-6xl mx-auto;
+  }
+
+  .section-label {
+    @apply heading-label mb-3 inline-block;
+  }
+
+  /* ── Inputs ─────────────────────────────── */
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl text-sm text-ivory-100 placeholder-ink-400 transition-all duration-200;
+    background: rgba(39,39,42,0.5);
+    border: 1px solid rgba(255,255,255,0.08);
+    outline: none;
+  }
+  .input-field:focus {
+    border-color: rgba(197, 168, 128, 0.4);
+    box-shadow: 0 0 0 3px rgba(197, 168, 128, 0.08);
+  }
+
+  /* ── Misc ──────────────────────────────── */
+  .noise-overlay {
+    position: fixed;
     inset: 0;
-    border-radius: inherit;
-    padding: 1px;
-    background: linear-gradient(135deg, #1ac8ff, #8c1aff, #1ac8ff);
-    background-size: 200% 200%;
-    animation: gradient 8s ease infinite;
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0.025;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
   }
 
-  .glass-card {
-    @apply bg-dark-600/50 backdrop-blur-xl border border-dark-400/20 rounded-2xl;
+  .badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-display font-semibold tracking-wide;
+    background: rgba(197, 168, 128, 0.10);
+    border: 1px solid rgba(197, 168, 128, 0.20);
+    color: #c5a880;
   }
 
-  .hover-lift {
-    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-vibrant-500/10;
-  }
-
-  .section-padding {
-    @apply px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24;
-  }
-
-  .container-custom {
-    @apply max-w-7xl mx-auto;
+  .tag {
+    @apply inline-flex items-center px-2.5 py-1 rounded-md text-xs font-mono tracking-wide;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.06);
+    color: #71717a;
   }
 }
 
+/* ────────────────────────────────────────────────────────────
+   Utility Layer
+──────────────────────────────────────────────────────────── */
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+  /* Animation delay utilities */
+  .delay-100 { animation-delay: 0.1s; }
+  .delay-200 { animation-delay: 0.2s; }
+  .delay-300 { animation-delay: 0.3s; }
+  .delay-400 { animation-delay: 0.4s; }
+  .delay-500 { animation-delay: 0.5s; }
 }

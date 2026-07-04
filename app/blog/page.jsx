@@ -1,119 +1,139 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
+import postsData from '@/content/blog/posts.json'
 
-const posts = [
-  {
-    title: 'Memulai Pengembangan Aplikasi Android dengan Kotlin',
-    excerpt: 'Panduan lengkap untuk memulai development Android native menggunakan Kotlin dan Android Studio.',
-    date: '1 Juli 2026',
-    category: 'Android Dev',
-    readTime: '5 menit',
-    gradient: 'from-accent-500/10 to-accent-700/5',
-    border: 'border-accent-500/20',
-  },
-  {
-    title: 'Tips Fotografi Produk untuk E-Commerce',
-    excerpt: 'Teknik dasar fotografi produk yang bisa meningkatkan nilai jual dan konversi di toko online.',
-    date: '25 Juni 2026',
-    category: 'Fotografi',
-    readTime: '4 menit',
-    gradient: 'from-pink-500/10 to-rose-700/5',
-    border: 'border-pink-500/20',
-  },
-  {
-    title: 'Strategi Konten Media Sosial 2026',
-    excerpt: 'Cara menyusun strategi konten yang efektif untuk meningkatkan engagement dan reach organik.',
-    date: '18 Juni 2026',
-    category: 'Content Creator',
-    readTime: '6 menit',
-    gradient: 'from-yellow-500/10 to-orange-700/5',
-    border: 'border-yellow-500/20',
-  },
-  {
-    title: 'Desain UI/UX untuk Aplikasi Android',
-    excerpt: 'Prinsip desain antarmuka yang baik untuk menciptakan pengalaman pengguna yang optimal.',
-    date: '10 Juni 2026',
-    category: 'Creative Digital',
-    readTime: '7 menit',
-    gradient: 'from-vibrant-500/10 to-vibrant-700/5',
-    border: 'border-vibrant-500/20',
-  },
-  {
-    title: 'Mengoptimalkan Performa Aplikasi Android',
-    excerpt: 'Tips dan trik untuk meningkatkan performa aplikasi Android agar lebih ringan dan responsif.',
-    date: '2 Juni 2026',
-    category: 'Android Dev',
-    readTime: '5 menit',
-    gradient: 'from-accent-500/10 to-accent-700/5',
-    border: 'border-accent-500/20',
-  },
-  {
-    title: 'Editing Video dengan Premiere Pro untuk Pemula',
-    excerpt: 'Langkah-langkah dasar editing video menggunakan Adobe Premiere Pro untuk content creator pemula.',
-    date: '25 Mei 2026',
-    category: 'Videografi',
-    readTime: '8 menit',
-    gradient: 'from-pink-500/10 to-rose-700/5',
-    border: 'border-pink-500/20',
-  },
-]
+const categoryColors = {
+  'Android Dev':     { text: '#c5a880', bg: 'rgba(197,168,128,0.08)', border: 'rgba(197,168,128,0.15)' },
+  'Fotografi':       { text: '#9a7a3d', bg: 'rgba(154,122,61,0.08)',  border: 'rgba(154,122,61,0.15)'  },
+  'Content Creator': { text: '#b8924a', bg: 'rgba(184,146,74,0.08)',  border: 'rgba(184,146,74,0.15)'  },
+  'Creative Digital':{ text: '#dda855', bg: 'rgba(221,168,85,0.08)',  border: 'rgba(221,168,85,0.15)'  },
+  'Videografi':      { text: '#c5a880', bg: 'rgba(197,168,128,0.08)', border: 'rgba(197,168,128,0.15)' },
+}
+
+function formatDate(dateStr) {
+  const d = new Date(dateStr)
+  return d.toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })
+}
 
 export const metadata = {
   title: 'Blog',
-  description: 'Blog FokusKonten — Artikel tentang Android Development, Creative Digital, Fotografi, Videografi, dan Content Creator.',
+  description: 'Artikel dan panduan seputar Android Development, Creative Digital, Fotografi, Videografi, dan Content Creator dari FokusKonten.',
 }
 
 export default function BlogPage() {
+  const featured = postsData.find(p => p.featured)
+  const rest     = postsData.filter(p => !p.featured || p.slug !== featured?.slug)
+
   return (
     <>
       <Navbar />
       <main>
-        <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-20">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-accent-500/5 rounded-full blur-3xl" />
-          <div className="container-custom section-padding">
-            <div className="text-center max-w-2xl mx-auto mb-12 lg:mb-16">
-              <span className="text-accent-400 text-sm font-semibold tracking-wider uppercase">Blog</span>
-              <h1 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-white text-balance">
-                Artikel & <span className="gradient-text">Konten</span>
+
+        {/* ── Header ────────────────────────── */}
+        <section className="relative pt-32 sm:pt-40 pb-10 overflow-hidden" aria-label="Blog header">
+          <div
+            className="absolute top-0 right-0 w-[400px] h-[400px] blur-[120px] opacity-10 pointer-events-none"
+            style={{ background: 'radial-gradient(circle, rgba(197,168,128,0.4) 0%, transparent 70%)' }}
+            aria-hidden="true"
+          />
+          <div className="container-max section px-4 sm:px-6 lg:px-8">
+            <div className="max-w-2xl">
+              <span className="section-label">Blog</span>
+              <h1 className="heading-xl text-4xl sm:text-5xl text-ivory-50 mb-4 text-balance">
+                Artikel &{' '}
+                <span className="text-copper-gradient">Panduan</span>
               </h1>
-              <p className="mt-4 text-dark-200">
-                Berbagai artikel seputar Android development, desain kreatif, fotografi, videografi, dan strategi konten.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {posts.map((post, index) => (
-                <article
-                  key={index}
-                  className={`relative rounded-2xl overflow-hidden border ${post.border} bg-gradient-to-br ${post.gradient} p-6 hover-lift group cursor-pointer`}
-                >
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-xs font-semibold text-accent-400 bg-accent-500/10 px-3 py-1 rounded-full">
-                      {post.category}
-                    </span>
-                    <span className="text-xs text-dark-300">{post.readTime}</span>
-                  </div>
-                  <h2 className="text-lg font-display font-semibold text-white mb-2 group-hover:text-accent-400 transition-colors">
-                    {post.title}
-                  </h2>
-                  <p className="text-dark-200 text-sm leading-relaxed mb-4">{post.excerpt}</p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs text-dark-300">{post.date}</span>
-                    <span className="text-xs text-accent-400 font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
-                      Baca <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-                    </span>
-                  </div>
-                </article>
-              ))}
-            </div>
-
-            <div className="text-center mt-10">
-              <p className="text-dark-300 text-sm">
-                Artikel lainnya akan segera hadir. Pantau terus FokusKonten untuk konten terbaru.
+              <p className="text-ink-400 text-base leading-relaxed">
+                Berbagi pengetahuan tentang Android development, desain kreatif, fotografi, videografi, dan strategi konten digital.
               </p>
             </div>
           </div>
+        </section>
+
+        {/* ── Featured Post ─────────────────── */}
+        {featured && (
+          <section className="container-max px-4 sm:px-6 lg:px-8 pb-10" aria-label="Artikel unggulan">
+            <Link
+              href={`/blog/${featured.slug}`}
+              className="group block rounded-2xl p-8 sm:p-10 transition-all duration-300 hover:-translate-y-0.5"
+              style={{ background: 'rgba(197,168,128,0.04)', border: '1px solid rgba(197,168,128,0.12)', boxShadow: '0 0 40px rgba(197,168,128,0.04) inset' }}
+            >
+              <div className="flex items-center gap-3 mb-6">
+                <span className="badge">Unggulan</span>
+                <span
+                  className="text-xs font-display font-semibold px-2.5 py-1 rounded-full"
+                  style={{
+                    background: (categoryColors[featured.category] || categoryColors['Android Dev']).bg,
+                    color: (categoryColors[featured.category] || categoryColors['Android Dev']).text,
+                    border: `1px solid ${(categoryColors[featured.category] || categoryColors['Android Dev']).border}`,
+                  }}
+                >
+                  {featured.category}
+                </span>
+              </div>
+              <h2 className="font-display font-bold text-2xl sm:text-3xl text-ivory-100 group-hover:text-copper transition-colors duration-200 mb-3 text-balance max-w-2xl">
+                {featured.title}
+              </h2>
+              <p className="text-ink-400 text-sm leading-relaxed mb-6 max-w-2xl">{featured.excerpt}</p>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-3 text-xs text-ink-600">
+                  <span>{formatDate(featured.date)}</span>
+                  <span>·</span>
+                  <span>{featured.readTime}</span>
+                </div>
+                <span className="text-xs font-display font-semibold text-copper flex items-center gap-1.5 group-hover:gap-2.5 transition-all">
+                  Baca Artikel
+                  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </span>
+              </div>
+            </Link>
+          </section>
+        )}
+
+        {/* ── Post Grid ─────────────────────── */}
+        <section className="container-max px-4 sm:px-6 lg:px-8 pb-24" aria-label="Semua artikel">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {rest.map((post) => {
+              const col = categoryColors[post.category] || categoryColors['Android Dev']
+              return (
+                <Link
+                  key={post.slug}
+                  href={`/blog/${post.slug}`}
+                  className="group block card-outline p-6"
+                >
+                  <div className="flex items-center justify-between mb-4">
+                    <span
+                      className="text-xs font-display font-semibold px-2.5 py-1 rounded-full"
+                      style={{ background: col.bg, color: col.text, border: `1px solid ${col.border}` }}
+                    >
+                      {post.category}
+                    </span>
+                    <span className="text-ink-600 text-xs">{post.readTime}</span>
+                  </div>
+                  <h2 className="font-display font-semibold text-base text-ivory-200 group-hover:text-copper transition-colors duration-200 mb-2 text-balance">
+                    {post.title}
+                  </h2>
+                  <p className="text-ink-500 text-xs leading-relaxed mb-5 line-clamp-2">{post.excerpt}</p>
+                  <div className="flex items-center justify-between pt-4 border-t border-white/[0.05]">
+                    <span className="text-ink-600 text-xs">{formatDate(post.date)}</span>
+                    <span className="text-xs font-display font-medium text-copper/70 group-hover:text-copper flex items-center gap-1 transition-all">
+                      Baca
+                      <svg className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </span>
+                  </div>
+                </Link>
+              )
+            })}
+          </div>
+
+          <p className="text-ink-600 text-sm text-center mt-10">
+            Artikel baru akan segera hadir. Pantau terus FokusKonten.
+          </p>
         </section>
       </main>
       <Footer />

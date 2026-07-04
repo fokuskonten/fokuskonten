@@ -2,12 +2,16 @@ import './globals.css'
 
 export const metadata = {
   title: {
-    default: 'FokusKonten — Android Developer & Creative Digital',
+    default: 'FokusKonten — Creative Digital Studio',
     template: '%s | FokusKonten',
   },
-  description: 'FokusKonten — Android Developer, Creative Digital & Content Creator, Fotograf & Videografi. Official website for portfolio and digital services.',
-  keywords: ['FokusKonten', 'Android Developer', 'Content Creator', 'Fotograf', 'Videografi', 'Creative Digital', 'Portfolio'],
-  authors: [{ name: 'FokusKonten' }],
+  description: 'FokusKonten adalah studio kreatif digital yang bergerak di bidang Android Development, Fotografi & Videografi, Desain Grafis, dan Content Creator. Berbasis di Indonesia.',
+  keywords: [
+    'FokusKonten', 'Android Developer Indonesia', 'Creative Digital Studio',
+    'Content Creator', 'Fotografi Profesional', 'Videografi', 'Desain Grafis',
+    'Jasa Aplikasi Android', 'Jasa Foto Video', 'Portfolio Digital'
+  ],
+  authors: [{ name: 'FokusKonten', url: 'https://fokuskonten.my.id' }],
   creator: 'FokusKonten',
   publisher: 'FokusKonten',
   metadataBase: new URL('https://fokuskonten.my.id'),
@@ -16,23 +20,39 @@ export const metadata = {
     locale: 'id_ID',
     url: 'https://fokuskonten.my.id',
     siteName: 'FokusKonten',
-    title: 'FokusKonten — Android Developer & Creative Digital',
-    description: 'Android Developer, Creative Digital & Content Creator, Fotograf & Videografi.',
-    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630 }],
+    title: 'FokusKonten — Creative Digital Studio',
+    description: 'Studio kreatif digital untuk Android Development, Fotografi & Videografi, Desain Grafis, dan Content Creator di Indonesia.',
+    images: [
+      {
+        url: '/assets/brand/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'FokusKonten — Creative Digital Studio',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'FokusKonten — Android Developer & Creative Digital',
-    description: 'Android Developer, Creative Digital & Content Creator, Fotograf & Videografi.',
-    images: ['/images/og-image.jpg'],
+    title: 'FokusKonten — Creative Digital Studio',
+    description: 'Studio kreatif digital untuk Android Development, Fotografi & Videografi, Desain Grafis, dan Content Creator di Indonesia.',
+    images: ['/assets/brand/og-image.jpg'],
   },
   robots: {
     index: true,
     follow: true,
-    googleBot: { index: true, follow: true, 'max-video-preview': -1, 'max-image-preview': 'large', 'max-snippet': -1 },
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
   verification: {
     google: '',
+  },
+  alternates: {
+    canonical: 'https://fokuskonten.my.id',
   },
 }
 
@@ -42,9 +62,11 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <meta name="theme-color" content="#09090b" />
         <meta name="google-adsense-account" content="" />
       </head>
-      <body className="bg-dark-900 text-dark-100 font-sans antialiased">
+      <body className="bg-ink-950 text-ink-200 font-sans antialiased">
+        <div className="noise-overlay" aria-hidden="true" />
         {children}
       </body>
     </html>
