@@ -1,4 +1,5 @@
 import postsData from '@/content/blog/posts.json'
+import postsContent from '@/content/blog/content'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -18,11 +19,15 @@ export function generateMetadata({ params }) {
 }
 
 const categoryColors = {
-  'Android Dev':     { text: '#8c1f1f', bg: 'rgba(140,31,31,0.03)', border: 'rgba(140,31,31,0.08)' },
-  'Fotografi':       { text: '#751919', bg: 'rgba(117,25,25,0.03)', border: 'rgba(117,25,25,0.08)' },
-  'Content Creator': { text: '#5e1414', bg: 'rgba(94,20,20,0.03)',  border: 'rgba(94,20,20,0.08)'  },
-  'Creative Digital':{ text: '#ab3333', bg: 'rgba(171,51,51,0.03)', border: 'rgba(171,51,51,0.08)'  },
-  'Videografi':      { text: '#8c1f1f', bg: 'rgba(140,31,31,0.03)', border: 'rgba(140,31,31,0.08)' },
+  'Android Dev':      { text: '#8c1f1f', bg: 'rgba(140,31,31,0.03)', border: 'rgba(140,31,31,0.08)' },
+  'Fotografi':        { text: '#751919', bg: 'rgba(117,25,25,0.03)', border: 'rgba(117,25,25,0.08)' },
+  'Content Creator':  { text: '#5e1414', bg: 'rgba(94,20,20,0.03)',  border: 'rgba(94,20,20,0.08)'  },
+  'Creative Digital': { text: '#ab3333', bg: 'rgba(171,51,51,0.03)', border: 'rgba(171,51,51,0.08)'  },
+  'Videografi':       { text: '#8c1f1f', bg: 'rgba(140,31,31,0.03)', border: 'rgba(140,31,31,0.08)' },
+  'Desain Grafis':    { text: '#7b2d8e', bg: 'rgba(123,45,142,0.03)', border: 'rgba(123,45,142,0.08)' },
+  'Kerajinan Kayu':   { text: '#6b4c3a', bg: 'rgba(107,76,58,0.03)',  border: 'rgba(107,76,58,0.08)'  },
+  'Aset Digital':     { text: '#2d6a4f', bg: 'rgba(45,106,79,0.03)', border: 'rgba(45,106,79,0.08)' },
+  'Template Blogger': { text: '#5c6bc0', bg: 'rgba(92,107,192,0.03)', border: 'rgba(92,107,192,0.08)' },
 }
 
 function formatDate(dateStr) {
@@ -84,16 +89,13 @@ export default function BlogDetailPage({ params }) {
                 {/* Divider */}
                 <div className="maroon-line mb-8" aria-hidden="true" />
 
-                {/* Content Placeholder */}
-                <div className="prose-custom space-y-4 text-charcoal-600 text-[15px] leading-relaxed">
-                  <p>{post.content}</p>
-                  <div
-                    className="rounded-xl p-6 my-6 bg-maroon-50 border border-maroon-100"
-                  >
-                    <p className="text-maroon-700 text-sm font-medium">
-                      ✍️ Konten artikel ini sedang dalam penyusunan. Pantau terus FokusKonten untuk artikel lengkap yang akan segera hadir.
-                    </p>
-                  </div>
+                {/* Content */}
+                <div className="prose-custom text-charcoal-600 text-[15px] leading-relaxed">
+                  {postsContent[post.slug] ? (
+                    <div dangerouslySetInnerHTML={{ __html: postsContent[post.slug] }} />
+                  ) : (
+                    <p>{post.content}</p>
+                  )}
                 </div>
 
                 {/* Author */}

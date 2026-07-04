@@ -4,23 +4,24 @@ import Link from 'next/link'
 
 const skills = [
   { category: 'Android Development', items: ['Kotlin', 'Java', 'Jetpack Compose', 'Android SDK', 'Firebase', 'AdMob', 'Play Store'] },
-  { category: 'Creative Digital',    items: ['CorelDraw', 'Adobe Photoshop', 'Adobe Illustrator', 'Canva', 'Figma', 'Brand Identity'] },
-  { category: 'Fotografi & Videografi', items: ['Sony A7III / DSLR / Mirrorless', 'Lightroom PC', 'Adobe Premiere Pro', 'After Effects', 'CapCut'] },
-  { category: 'Content Creator',     items: ['Strategi Konten', 'Copywriting', 'SEO Dasar', 'YouTube', 'TikTok', 'Instagram'] },
-  { category: 'Operasional Digital', items: ['Google Admin', 'Firebase Console', 'Google Ads', 'Marketplace (Shopee, Tokopedia)', 'Domain & Hosting'] },
-  { category: 'Teknis & Hardware',   items: ['Rakitan PC', 'Maintenance Printer', 'Setup Live Studio', 'Woodworking & Furnitur', 'Elektronik Konvensional'] },
+  { category: 'Desain Grafis', items: ['CorelDraw', 'Adobe Photoshop', 'Canva', 'Brand Identity', 'Percetakan', 'ID Card', 'Banner'] },
+  { category: 'Fotografi & Videografi', items: ['Sony Kamera', 'Lightroom', 'Adobe Premiere Pro', 'CapCut', 'Foto Produk', 'Video Acara'] },
+  { category: 'Content Creator', items: ['YouTube @fokuskonten', 'TikTok', 'Instagram', 'Strategi Konten', 'Copywriting'] },
+  { category: 'Template Blogger', items: ['XML Blogger', 'SEO On-Page', 'Mobile First', 'Responsive', 'Dark Mode'] },
+  { category: 'Kerajinan Kayu', items: ['Kayu Pinus', 'MDF', 'Jati Belanda', 'Handmade', 'Organizer', 'Furniture Custom'] },
+  { category: 'Aset Digital', items: ['Preset Lightroom', 'Overlay', 'Tekstur', 'Sound Effects', 'Template Desain'] },
 ]
 
 const stats = [
-  { value: '50+', label: 'Proyek Selesai' },
-  { value: '30+', label: 'Klien Puas' },
-  { value: '5+',  label: 'Tahun Pengalaman' },
-  { value: '10+', label: 'Platform Dikuasai' },
+  { value: '79', label: 'Aplikasi' },
+  { value: '3+', label: 'Kursus' },
+  { value: '50+', label: 'Kategori Kayu' },
+  { value: '5+', label: 'Tahun Pengalaman' },
 ]
 
 export const metadata = {
   title: 'Tentang',
-  description: 'Kenalan dengan FokusKonten — studio kreatif digital Indonesia yang menggabungkan Android Development, Fotografi, Videografi, dan Creative Digital dalam satu platform.',
+  description: 'Kenalan dengan FokusKonten — studio kreatif digital Indonesia yang menggabungkan Android Development, Desain Grafis, Fotografi & Videografi, Content Creator, Template Blogger, dan Kerajinan Kayu dalam satu platform.',
 }
 
 export default function AboutPage() {
@@ -31,7 +32,6 @@ export default function AboutPage() {
 
         {/* ── Hero ─────────────────────────── */}
         <section className="relative pt-32 sm:pt-40 pb-16 overflow-hidden" aria-label="Tentang FokusKonten">
-          {/* Ambient */}
           <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full blur-[120px] opacity-25 pointer-events-none"
             style={{ background: 'radial-gradient(circle, rgba(140,31,31,0.06) 0%, transparent 70%)' }}
             aria-hidden="true"
@@ -40,7 +40,6 @@ export default function AboutPage() {
           <div className="container-max section px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-20 items-center">
 
-              {/* Text */}
               <div className="animate-fade-up">
                 <span className="section-label">Tentang</span>
                 <h1 className="heading-xl text-4xl sm:text-5xl text-charcoal-900 mb-6 text-balance">
@@ -49,13 +48,13 @@ export default function AboutPage() {
                 </h1>
                 <div className="space-y-4 text-charcoal-600 text-[15px] leading-relaxed">
                   <p>
-                    <strong className="text-charcoal-900 font-semibold">FokusKonten</strong> adalah personal brand dan studio kreatif digital yang bergerak di bidang Android Development, desain grafis, fotografi & videografi, serta strategi konten. Didirikan oleh <strong className="text-charcoal-900 font-semibold">Muhari</strong>, seorang praktisi digital yang telah menekuni industri teknologi dan kreatif selama lebih dari 5 tahun.
+                    <strong className="text-charcoal-900 font-semibold">FokusKonten</strong> adalah personal brand dan studio kreatif digital yang bergerak di 6 bidang: Android Development, Desain Grafis & Percetakan, Fotografi & Videografi, Content Creator, Template Blogger, dan Kerajinan Kayu / Kaila Mebel. Didirikan oleh <strong className="text-charcoal-900 font-semibold">Muharie</strong> — seorang praktisi multi-talenta yang juga dikenal sebagai <strong className="text-charcoal-900 font-semibold">Devplover</strong>.
                   </p>
                   <p>
-                    Kami percaya bahwa karya digital terbaik lahir dari kombinasi antara ketelitian teknis, kepekaan estetis, dan pemahaman mendalam terhadap kebutuhan klien.
+                    Dengan 79 aplikasi Android terpublikasi di Google Play Store, pengalaman menangani desain grafis untuk percetakan, dokumentasi acara fotografi & videografi, serta produksi kerajinan kayu handmade — FokusKonten hadir sebagai solusi one-stop creative digital studio.
                   </p>
                   <p>
-                    Dengan pengalaman lintas disiplin — dari membangun aplikasi Android hingga merekam momen sakral pernikahan, dari merancang brand identity hingga woodworking — FokusKonten menghadirkan sudut pandang yang unik dan komprehensif dalam setiap proyek.
+                    Setiap proyek dikerjakan dengan pendekatan lintas disiplin: ketelitian teknis dalam coding, kepekaan estetis dalam desain, dan sentuhan personal dalam setiap produk kayu. Kami percaya karya terbaik lahir dari keberanian untuk terus belajar dan berinovasi.
                   </p>
                 </div>
                 <div className="flex flex-wrap items-center gap-3 mt-8">
@@ -73,7 +72,6 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              {/* Visual Card */}
               <div className="relative animate-scale-in delay-200">
                 <div
                   className="aspect-square rounded-3xl flex items-center justify-center relative overflow-hidden bg-white shadow-elevated"
@@ -86,10 +84,9 @@ export default function AboutPage() {
                     >
                       <span className="font-display font-black text-5xl sm:text-6xl text-maroon-gradient">FK</span>
                     </div>
-                    <p className="text-charcoal-600 text-sm font-display font-semibold">Muhari · Founder</p>
-                    <p className="text-charcoal-400 text-xs mt-1">FokusKonten</p>
+                    <p className="text-charcoal-600 text-sm font-display font-semibold">Muharie · Founder</p>
+                    <p className="text-charcoal-400 text-xs mt-1">Devplover / FokusKonten</p>
                   </div>
-                  {/* Decorative corner lines */}
                   <div className="absolute top-4 left-4 w-8 h-8 border-t border-l border-maroon/20 rounded-tl-lg" aria-hidden="true" />
                   <div className="absolute bottom-4 right-4 w-8 h-8 border-b border-r border-maroon/20 rounded-br-lg" aria-hidden="true" />
                 </div>
@@ -125,7 +122,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="font-display font-semibold text-xl text-charcoal-900 mb-4">Visi</h3>
                 <p className="text-charcoal-600 text-sm leading-relaxed">
-                  Menjadi studio kreatif digital terpercaya yang menghubungkan teknologi dan kreativitas untuk menciptakan solusi digital yang berdampak nyata bagi klien di Indonesia dan beyond.
+                  Menjadi studio kreatif digital multi-disiplin terpercaya di Indonesia yang membuktikan bahwa satu individu bisa menguasai teknologi, desain, dan kerajinan tangan untuk menciptakan solusi nyata.
                 </p>
               </div>
               <div className="p-8 bg-canvas-50 rounded-2xl border border-black/[0.05] shadow-mature animate-fade-up delay-100">
@@ -136,10 +133,10 @@ export default function AboutPage() {
                 </div>
                 <h3 className="font-display font-semibold text-xl text-charcoal-900 mb-4">Misi</h3>
                 <ul className="text-charcoal-600 text-sm leading-relaxed space-y-2">
-                  <li>• Menyediakan layanan digital berkualitas tinggi dengan harga terjangkau</li>
-                  <li>• Mengedukankan klien melalui solusi yang mudah dipahami dan digunakan</li>
-                  <li>• Terus berinovasi mengikuti perkembangan teknologi dan tren kreatif</li>
-                  <li>• Membangun hubungan jangka panjang berbasis kepercayaan dan hasil</li>
+                  <li>• Menyediakan layanan digital dan kreatif berkualitas tinggi dengan harga terjangkau</li>
+                  <li>• Menghadirkan solusi lintas disiplin — dari aplikasi Android hingga furnitur kayu handmade</li>
+                  <li>• Terus berinovasi dengan AI-assisted development untuk efisiensi dan kualitas terbaik</li>
+                  <li>• Membangun hubungan jangka panjang dengan klien berbasis kepercayaan dan hasil nyata</li>
                 </ul>
               </div>
             </div>
@@ -157,10 +154,10 @@ export default function AboutPage() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { title: 'Kualitas', desc: 'Komitmen pada excellence dalam setiap karya' },
-                { title: 'Integritas', desc: 'Transparansi dan kejujuran dalam setiap kerjasama' },
-                { title: 'Inovasi', desc: 'Terus belajar dan mengadopsi teknologi baru' },
-                { title: 'Kolaborasi', desc: 'Bekerja bersama klien untuk hasil terbaik' },
+                { title: 'Kualitas', desc: 'Komitmen pada excellence dalam setiap karya — dari kode hingga kayu' },
+                { title: 'Integritas', desc: 'Transparansi dan kejujuran dalam setiap kerjasama dengan klien' },
+                { title: 'Inovasi', desc: 'Mengadopsi AI dan teknologi terkini untuk hasil maksimal' },
+                { title: 'Kolaborasi', desc: 'Bekerja bersama klien sebagai mitra, bukan sekadar vendor' },
               ].map((value, index) => (
                 <div key={index} className="p-6 bg-white rounded-2xl border border-black/[0.05] shadow-subtle hover:shadow-mature transition-all duration-300 animate-scale-in">
                   <h3 className="font-display font-semibold text-lg text-maroon-700 mb-2">{value.title}</h3>
@@ -171,8 +168,58 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* ── Devplover ────────────────────── */}
+        <section className="section border-t border-black/[0.04] bg-white" aria-label="Devplover Identity">
+          <div className="container-max px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto">
+              <div className="mb-12 animate-fade-up">
+                <span className="section-label">Identity</span>
+                <h2 className="heading-xl text-3xl sm:text-4xl text-charcoal-900">
+                  Devplover — <span className="text-maroon-gradient">Developer Identity</span>
+                </h2>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div className="animate-fade-up">
+                  <div
+                    className="w-20 h-20 rounded-2xl flex items-center justify-center mb-6"
+                    style={{ background: 'rgba(140,31,31,0.06)', border: '1px solid rgba(140,31,31,0.12)' }}
+                  >
+                    <span className="font-display font-black text-3xl text-maroon-gradient">DV</span>
+                  </div>
+                  <h3 className="font-display font-semibold text-2xl text-charcoal-900 mb-4">Devplover</h3>
+                  <p className="text-charcoal-600 text-sm leading-relaxed mb-4">
+                    <strong className="text-charcoal-900">Devplover</strong> adalah nama pena developer yang digunakan oleh Muharie di GitHub, platform pengembangan, dan komunitas teknologi. Identity ini mencerminkan kecintaan pada dunia development — <em>developer + lover</em>.
+                  </p>
+                  <p className="text-charcoal-500 text-sm leading-relaxed">
+                    Di bawah nama Devplover, telah dipublikasikan puluhan aplikasi Android open-source dan utility tools yang dapat diakses oleh siapa saja.
+                  </p>
+                </div>
+
+                <div className="p-8 bg-canvas-50 rounded-2xl border border-black/[0.05] shadow-mature animate-scale-in">
+                  <h4 className="font-display font-semibold text-lg text-charcoal-900 mb-4">Devplover Ecosystem</h4>
+                  <div className="space-y-4">
+                    {[
+                      { label: 'GitHub', value: 'github.com/devplover' },
+                      { label: 'Play Store', value: 'FokusKonten' },
+                      { label: 'YouTube', value: '@fokuskonten' },
+                      { label: 'TikTok', value: '@fokuskonten' },
+                      { label: 'Instagram', value: '@fokuskonten' },
+                    ].map((item, i) => (
+                      <div key={i} className="flex items-center justify-between py-2 border-b border-black/[0.04] last:border-0">
+                        <span className="text-charcoal-500 text-sm">{item.label}</span>
+                        <span className="text-charcoal-900 text-sm font-medium">{item.value}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* ── Timeline ─────────────────────── */}
-        <section className="section border-t border-black/[0.04] bg-white" aria-label="Perjalanan">
+        <section className="section border-t border-black/[0.04]" aria-label="Perjalanan">
           <div className="container-max px-4 sm:px-6 lg:px-8">
             <div className="mb-12 animate-fade-up">
               <span className="section-label">Perjalanan</span>
@@ -182,12 +229,12 @@ export default function AboutPage() {
             </div>
             <div className="max-w-3xl mx-auto space-y-8">
               {[
-                { year: '2019', title: 'Awal Mula', desc: 'Memulai perjalanan di dunia digital development dan kreatif' },
-                { year: '2020', title: 'Ekspansi Skill', desc: 'Mengembangkan keahlian di Android Development dan fotografi' },
-                { year: '2021', title: 'Proyek Pertama', desc: 'Menangani proyek komersial pertama untuk klien lokal' },
-                { year: '2022', title: 'Brand FokusKonten', desc: 'Resmi mendirikan FokusKonten sebagai personal brand' },
-                { year: '2023', title: 'Pertumbuhan', desc: 'Meningkatkan portofolio dan memperluas layanan' },
-                { year: '2024', title: 'Official Website', desc: 'Meluncurkan website resmi untuk profesionalisme dan reach yang lebih luas' },
+                { year: '2019', title: 'Awal Mula Coding', desc: 'Mulai belajar Android Development otodidak. Eksplorasi Java dan Kotlin untuk membuat aplikasi sederhana.' },
+                { year: '2020', title: 'Ekspansi ke Kreatif', desc: 'Mengembangkan keahlian di desain grafis (CorelDraw, Photoshop) dan fotografi. Mulai menerima proyek kecil.' },
+                { year: '2021', title: 'Proyek Komersial', desc: 'Menangani proyek Android dan desain untuk klien lokal. Publikasi aplikasi pertama di Play Store.' },
+                { year: '2022', title: 'Brand FokusKonten', desc: 'Resmi mendirikan FokusKonten sebagai personal brand. Mulai merambah Content Creator di YouTube & TikTok.' },
+                { year: '2023', title: 'Multi-Disiplin', desc: 'Menambah lini kerajinan kayu (Kaila Mebel) dan Template Blogger. 50+ aplikasi terpublikasi.' },
+                { year: '2024', title: 'Official Website', desc: 'Meluncurkan website resmi. Mencapai 79 aplikasi di Play Store dengan berbagai kategori.' },
               ].map((item, index) => (
                 <div key={index} className="flex gap-6 animate-fade-up">
                   <div className="flex flex-col items-center">
@@ -206,7 +253,7 @@ export default function AboutPage() {
         </section>
 
         {/* ── Skills ───────────────────────── */}
-        <section className="section border-t border-black/[0.04]" aria-label="Keahlian">
+        <section className="section border-t border-black/[0.04] bg-white" aria-label="Keahlian">
           <div className="container-max px-4 sm:px-6 lg:px-8">
             <div className="mb-12 animate-fade-up">
               <span className="section-label">Keahlian</span>
@@ -230,7 +277,7 @@ export default function AboutPage() {
         </section>
 
         {/* ── AI-Assisted Development ─────────── */}
-        <section className="section border-t border-black/[0.04] bg-white" aria-label="AI-Assisted Development">
+        <section className="section border-t border-black/[0.04]" aria-label="AI-Assisted Development">
           <div className="container-max px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <div className="mb-12 animate-fade-up">

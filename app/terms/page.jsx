@@ -1,10 +1,9 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import Link from 'next/link'
 
 export const metadata = {
-  title: 'Terms & Conditions',
-  description: 'Syarat dan ketentuan penggunaan website dan layanan FokusKonten.',
+  title: 'Syarat & Ketentuan',
+  description: 'Syarat dan ketentuan penggunaan website fokuskonten.my.id dan aplikasi Android FokusKonten.',
   alternates: {
     canonical: 'https://fokuskonten.my.id/terms',
   },
@@ -16,108 +15,120 @@ export default function TermsPage() {
       <Navbar />
       <main className="min-h-screen">
         <div className="container-max px-4 sm:px-6 lg:px-8 py-20">
-          
+
           {/* Header */}
           <div className="max-w-3xl mx-auto mb-12 animate-fade-up">
             <span className="section-label">Legal</span>
             <h1 className="heading-xl text-3xl sm:text-4xl text-charcoal-900 mt-3 mb-4">
-              Terms & Conditions
+              Syarat & Ketentuan
             </h1>
             <p className="text-charcoal-500 text-sm">
-              Last updated: {new Date().toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' })}
+              Terakhir diperbarui: {new Date().toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' })}
             </p>
           </div>
 
           {/* Content */}
           <div className="max-w-3xl mx-auto prose prose-sm prose-charcoal">
             <section className="mb-10 animate-fade-up delay-100">
-              <h2 className="font-display font-semibold text-xl text-charcoal-900 mb-4">1. Introduction</h2>
+              <h2 className="font-display font-semibold text-xl text-charcoal-900 mb-4">1. Ketentuan Umum</h2>
               <p className="text-charcoal-600 leading-relaxed mb-4">
-                Welcome to FokusKonten. By accessing and using this website and our services, you agree to comply with and be bound by the following terms and conditions of use.
+                Dengan mengakses dan menggunakan website fokuskonten.my.id serta aplikasi Android yang dikembangkan oleh FokusKonten, Anda menyetujui untuk terikat dengan syarat dan ketentuan berikut.
               </p>
               <p className="text-charcoal-600 leading-relaxed">
-                If you disagree with any part of these terms, please do not use our website or services.
+                Jika Anda tidak menyetujui sebagian atau seluruh syarat ini, harap tidak menggunakan website atau aplikasi kami.
               </p>
             </section>
 
             <section className="mb-10 animate-fade-up delay-200">
-              <h2 className="font-display font-semibold text-xl text-charcoal-900 mb-4">2. Use License</h2>
+              <h2 className="font-display font-semibold text-xl text-charcoal-900 mb-4">2. Produk Digital</h2>
               <p className="text-charcoal-600 leading-relaxed mb-4">
-                Permission is granted to temporarily download one copy of the materials on FokusKonten&apos;s website for personal, non-commercial transitory viewing only.
+                Produk digital yang dibeli dari FokusKonten (seperti template, desain, kode, dan aset digital lainnya) bersifat non-refundable setelah diunduh atau diakses.
+              </p>
+              <p className="text-charcoal-600 leading-relaxed mb-4">
+                Semua produk digital dilindungi hak cipta dan tidak boleh didistribusikan kembali, dijual kembali, atau dibagikan kepada pihak lain tanpa izin tertulis dari FokusKonten.
               </p>
               <p className="text-charcoal-600 leading-relaxed">
-                This is the grant of a license, not a transfer of title, and under this license you may not:
+                Pelanggaran terhadap ketentuan ini dapat mengakibatkan tindakan hukum sesuai dengan peraturan perundang-undangan yang berlaku di Indonesia.
               </p>
-              <ul className="list-disc list-inside text-charcoal-600 leading-relaxed mt-3 space-y-2">
-                <li>Modify or copy the materials</li>
-                <li>Use the materials for any commercial purpose</li>
-                <li>Remove any copyright or other proprietary notations</li>
-                <li>Transfer the materials to another person</li>
-              </ul>
             </section>
 
             <section className="mb-10 animate-fade-up delay-300">
-              <h2 className="font-display font-semibold text-xl text-charcoal-900 mb-4">3. Services</h2>
+              <h2 className="font-display font-semibold text-xl text-charcoal-900 mb-4">3. Aplikasi Android</h2>
               <p className="text-charcoal-600 leading-relaxed mb-4">
-                FokusKonten provides various digital services including Android development, creative design, photography, videography, and content creation.
+                Aplikasi Android FokusKonten tersedia di Google Play Store dan tunduk pada Persyaratan Layanan Google Play serta kebijakan Google Play Console.
               </p>
               <p className="text-charcoal-600 leading-relaxed">
-                Specific terms may apply to individual services. These will be provided separately before service engagement.
+                Pengguna bertanggung jawab penuh atas penggunaan aplikasi di perangkat masing-masing. FokusKonten tidak bertanggung jawab atas kerusakan atau kehilangan data akibat penggunaan aplikasi.
               </p>
             </section>
 
             <section className="mb-10 animate-fade-up delay-400">
-              <h2 className="font-display font-semibold text-xl text-charcoal-900 mb-4">4. User Accounts</h2>
+              <h2 className="font-display font-semibold text-xl text-charcoal-900 mb-4">4. Hak Kekayaan Intelektual</h2>
               <p className="text-charcoal-600 leading-relaxed mb-4">
-                If you create an account on our website, you are responsible for maintaining the confidentiality of your account information.
+                Seluruh konten, fitur, dan fungsi di website dan aplikasi FokusKonten merupakan milik eksklusif FokusKonten dan dilindungi oleh undang-undang hak cipta serta kekayaan intelektual Indonesia.
               </p>
               <p className="text-charcoal-600 leading-relaxed">
-                You agree to accept responsibility for all activities that occur under your account or password.
+                Ini mencakup namun tidak terbatas pada teks, grafik, logo, desain, gambar, perangkat lunak, dan kode.
               </p>
             </section>
 
             <section className="mb-10 animate-fade-up delay-500">
-              <h2 className="font-display font-semibold text-xl text-charcoal-900 mb-4">5. Intellectual Property</h2>
+              <h2 className="font-display font-semibold text-xl text-charcoal-900 mb-4">5. Layanan Kustom</h2>
               <p className="text-charcoal-600 leading-relaxed mb-4">
-                All content, features, and functionality on this website are the exclusive property of FokusKonten.
+                Untuk layanan kustom seperti pembuatan aplikasi, desain, fotografi, videografi, dan pembuatan konten, ketentuan spesifik akan dibahas dan disepakati bersama sebelum pekerjaan dimulai.
               </p>
               <p className="text-charcoal-600 leading-relaxed">
-                This includes but is not limited to text, graphics, logos, designs, images, software, and code.
+                Biaya, jadwal pengerjaan, dan ruang lingkup pekerjaan akan dituangkan dalam perjanjian terpisah antara FokusKonten dan klien.
               </p>
             </section>
 
             <section className="mb-10 animate-fade-up delay-600">
-              <h2 className="font-display font-semibold text-xl text-charcoal-900 mb-4">6. Limitation of Liability</h2>
+              <h2 className="font-display font-semibold text-xl text-charcoal-900 mb-4">6. Pembayaran</h2>
               <p className="text-charcoal-600 leading-relaxed mb-4">
-                In no event shall FokusKonten be liable for any indirect, incidental, special, consequential or punitive damages.
+                Semua transaksi dilakukan dalam mata uang Rupiah (IDR). FokusKonten menerima pembayaran melalui:
               </p>
-              <p className="text-charcoal-600 leading-relaxed">
-                This includes but is not limited to loss of profits, data, use, goodwill, or other intangible losses resulting from your use of our services.
+              <ul className="list-disc list-inside text-charcoal-600 leading-relaxed mt-3 space-y-2">
+                <li>Transfer Bank: BCA, Mandiri, BRI, BNI</li>
+                <li>E-Wallet: GoPay, OVO, DANA, LinkAja</li>
+              </ul>
+              <p className="text-charcoal-600 leading-relaxed mt-4">
+                Pembayaran harus dilunasi sesuai dengan kesepakatan sebelum produk atau layanan diberikan, kecuali disepakati lain.
               </p>
             </section>
 
             <section className="mb-10 animate-fade-up delay-700">
-              <h2 className="font-display font-semibold text-xl text-charcoal-900 mb-4">7. Governing Law</h2>
+              <h2 className="font-display font-semibold text-xl text-charcoal-900 mb-4">7. Batasan Tanggung Jawab</h2>
+              <p className="text-charcoal-600 leading-relaxed mb-4">
+                FokusKonten tidak bertanggung jawab atas kerugian langsung, tidak langsung, insidental, khusus, atau konsekuensial yang timbul dari penggunaan atau ketidakmampuan menggunakan website, aplikasi, atau layanan kami.
+              </p>
               <p className="text-charcoal-600 leading-relaxed">
-                These terms shall be governed by and construed in accordance with the laws of Indonesia, without regard to its conflict of law provisions.
+                Ini mencakup namun tidak terbatas pada kehilangan keuntungan, data, penggunaan, reputasi, atau kerugian tidak berwujud lainnya.
               </p>
             </section>
 
             <section className="mb-10 animate-fade-up delay-800">
-              <h2 className="font-display font-semibold text-xl text-charcoal-900 mb-4">8. Changes to Terms</h2>
+              <h2 className="font-display font-semibold text-xl text-charcoal-900 mb-4">8. Hukum yang Berlaku</h2>
               <p className="text-charcoal-600 leading-relaxed">
-                FokusKonten reserves the right to modify these terms at any time. Continued use of the website after changes constitutes acceptance of the new terms.
+                Syarat dan ketentuan ini diatur oleh dan ditafsirkan sesuai dengan hukum Republik Indonesia.
               </p>
             </section>
 
-            <section className="animate-fade-up delay-900">
-              <h2 className="font-display font-semibold text-xl text-charcoal-900 mb-4">9. Contact</h2>
+            <section className="mb-10 animate-fade-up delay-900">
+              <h2 className="font-display font-semibold text-xl text-charcoal-900 mb-4">9. Perubahan Syarat</h2>
+              <p className="text-charcoal-600 leading-relaxed">
+                FokusKonten berhak mengubah syarat dan ketentuan ini sewaktu-waktu. Penggunaan website atau aplikasi secara berkelanjutan setelah perubahan merupakan bentuk penerimaan Anda terhadap syarat yang baru.
+              </p>
+            </section>
+
+            <section className="animate-fade-up delay-1000">
+              <h2 className="font-display font-semibold text-xl text-charcoal-900 mb-4">10. Kontak</h2>
               <p className="text-charcoal-600 leading-relaxed mb-4">
-                If you have any questions about these Terms & Conditions, please contact us:
+                Jika Anda memiliki pertanyaan tentang syarat dan ketentuan ini, silakan hubungi:
               </p>
               <div className="space-y-2 text-charcoal-600">
                 <p>Email: <a href="mailto:admin@fokuskonten.my.id" className="text-maroon-700 hover:underline">admin@fokuskonten.my.id</a></p>
                 <p>WhatsApp: <a href="https://wa.me/6285183011318" className="text-maroon-700 hover:underline" target="_blank" rel="noopener noreferrer">+62 851-8301-1318</a></p>
+                <p>Website: <a href="https://fokuskonten.my.id" className="text-maroon-700 hover:underline" target="_blank" rel="noopener noreferrer">fokuskonten.my.id</a></p>
               </div>
             </section>
           </div>

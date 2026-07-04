@@ -3,7 +3,7 @@ import Footer from '@/components/Footer'
 
 export const metadata = {
   title: 'Kebijakan Privasi',
-  description: 'Kebijakan privasi FokusKonten — informasi tentang pengumpulan, penggunaan, dan perlindungan data pribadi pengunjung website.',
+  description: 'Kebijakan privasi FokusKonten — informasi tentang pengumpulan, penggunaan, dan perlindungan data pribadi pengunjung website fokuskonten.my.id dan pengguna aplikasi Android FokusKonten.',
 }
 
 const sections = [
@@ -11,6 +11,7 @@ const sections = [
     title: '1. Informasi yang Dikumpulkan',
     content: [
       'Kami mengumpulkan informasi yang Anda berikan secara sukarela saat menghubungi kami melalui formulir kontak, email, atau WhatsApp. Informasi tersebut dapat mencakup nama, alamat email, nomor telepon, dan pesan yang Anda kirimkan.',
+      'Untuk aplikasi Android yang dikembangkan oleh FokusKonten dan tersedia di Google Play Store, kami dapat mengumpulkan informasi perangkat seperti model perangkat, versi sistem operasi, dan ID iklan (Advertising ID) melalui layanan Google AdMob untuk keperluan iklan dan analitik.',
       'Kami juga dapat mengumpulkan informasi non-pribadi secara otomatis seperti alamat IP, jenis browser, halaman yang dikunjungi, dan data analitik lainnya untuk meningkatkan pengalaman pengguna.',
     ],
   },
@@ -20,28 +21,31 @@ const sections = [
     list: [
       'Menanggapi pertanyaan, permintaan, atau pesan yang Anda kirimkan',
       'Mengirimkan informasi terkait layanan dan pembaruan',
-      'Meningkatkan kualitas website dan layanan',
-      'Keperluan analitik dan statistik pengunjung',
+      'Meningkatkan kualitas website dan aplikasi Android',
+      'Keperluan analitik dan statistik pengguna',
+      'Menampilkan iklan yang relevan melalui Google AdMob',
       'Mematuhi kewajiban hukum yang berlaku',
     ],
   },
   {
-    title: '3. Penggunaan Cookie',
+    title: '3. Cookie',
     content: [
-      'Website ini menggunakan cookie untuk meningkatkan pengalaman pengguna, menganalisis traffic, dan untuk keperluan iklan (Google AdSense). Cookie adalah file kecil yang disimpan di perangkat Anda. Anda dapat mengatur preferensi cookie melalui pengaturan browser Anda.',
+      'Website fokuskonten.my.id menggunakan cookie untuk meningkatkan pengalaman pengguna, menganalisis traffic, dan untuk keperluan iklan (Google AdSense). Cookie adalah file kecil yang disimpan di perangkat Anda. Anda dapat mengatur preferensi cookie melalui pengaturan browser Anda.',
       'Pihak ketiga, termasuk Google, menggunakan cookie untuk menayangkan iklan berdasarkan kunjungan sebelumnya ke website ini atau website lain. Anda dapat memilih untuk tidak menerima iklan yang dipersonalisasi melalui pengaturan iklan Google.',
     ],
   },
   {
-    title: '4. Google AdSense',
+    title: '4. Google AdMob',
     content: [
-      'Website ini menggunakan Google AdSense untuk menampilkan iklan. Google AdSense menggunakan cookie DART (DoubleClick for Publishers) untuk menayangkan iklan yang relevan berdasarkan kunjungan Anda ke website ini dan website lain di internet.',
+      'Aplikasi Android FokusKonten menggunakan Google AdMob untuk menampilkan iklan. AdMob dapat mengumpulkan ID iklan (Advertising ID) perangkat Anda serta data penggunaan aplikasi untuk menayangkan iklan yang relevan.',
+      'Data yang dikumpulkan oleh AdMob tidak digunakan untuk mengidentifikasi pengguna secara pribadi. Anda dapat mereset ID iklan Anda kapan saja melalui pengaturan Google Play di perangkat Android Anda.',
     ],
   },
   {
-    title: '5. Perlindungan Data',
+    title: '5. Pihak Ketiga',
     content: [
-      'Kami berkomitmen untuk melindungi informasi pribadi Anda. Kami menerapkan langkah-langkah keamanan teknis dan organisasi yang sesuai untuk mencegah akses tidak sah, perubahan, pengungkapan, atau penghancuran data pribadi.',
+      'Kami dapat membagikan informasi Anda dengan pihak ketiga yang tepercaya untuk tujuan tertentu, termasuk Google (AdSense dan AdMob), penyedia hosting, dan layanan analitik. Pihak ketiga ini memiliki kebijakan privasi mereka sendiri dan diwajibkan untuk melindungi data Anda.',
+      'Kami tidak menjual informasi pribadi Anda kepada pihak ketiga mana pun.',
     ],
   },
   {
@@ -52,12 +56,21 @@ const sections = [
       'Meminta koreksi atau penghapusan data pribadi',
       'Menolak penggunaan data untuk tujuan pemasaran',
       'Menarik persetujuan kapan saja',
+      'Mengajukan keluhan kepada otoritas perlindungan data yang berwenang',
     ],
   },
   {
-    title: '7. Perubahan Kebijakan',
+    title: '7. Keamanan Data',
     content: [
-      'Kebijakan privasi ini dapat diperbarui sewaktu-waktu. Perubahan akan diumumkan melalui halaman ini. Dengan terus menggunakan website ini setelah perubahan, Anda menyetujui kebijakan yang diperbarui.',
+      'Kami berkomitmen untuk melindungi informasi pribadi Anda. Kami menerapkan langkah-langkah keamanan teknis dan organisasi yang sesuai untuk mencegah akses tidak sah, perubahan, pengungkapan, atau penghancuran data pribadi.',
+      'Namun, tidak ada metode transmisi data melalui internet atau metode penyimpanan elektronik yang 100% aman. Kami tidak dapat menjamin keamanan absolut data Anda.',
+    ],
+  },
+  {
+    title: '8. Perubahan Kebijakan',
+    content: [
+      'Kebijakan privasi ini dapat diperbarui sewaktu-waktu. Perubahan akan diumumkan melalui halaman ini. Dengan terus menggunakan website dan aplikasi kami setelah perubahan, Anda menyetujui kebijakan yang diperbarui.',
+      'Kami menyarankan Anda untuk meninjau halaman ini secara berkala untuk mengetahui perubahan terbaru.',
     ],
   },
 ]
@@ -78,7 +91,7 @@ export default function PrivacyPolicyPage() {
                   Kebijakan Privasi{' '}
                   <span className="text-maroon-gradient">FokusKonten</span>
                 </h1>
-                <p className="text-charcoal-400 text-sm">Terakhir diperbarui: 4 Juli 2026</p>
+                <p className="text-charcoal-400 text-sm">Berlaku efektif: 1 Januari 2026</p>
               </div>
 
               {/* Sections */}
@@ -116,7 +129,7 @@ export default function PrivacyPolicyPage() {
                 <div
                   className="rounded-xl p-6 bg-maroon-50 border border-maroon-100 shadow-mature animate-scale-in"
                 >
-                  <h2 className="font-display font-semibold text-maroon-700 text-base mb-4">8. Kontak</h2>
+                  <h2 className="font-display font-semibold text-maroon-700 text-base mb-4">9. Kontak</h2>
                   <p className="text-charcoal-600 text-sm leading-relaxed mb-4">
                     Jika Anda memiliki pertanyaan tentang kebijakan privasi ini, silakan hubungi kami:
                   </p>

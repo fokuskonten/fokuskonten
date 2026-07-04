@@ -1,208 +1,180 @@
+'use client'
+
+import { useState, useMemo } from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import Link from 'next/link'
+import appsData from '@/content/apps/apps.json'
 
-const applications = [
-  {
-    id: 'fokuskonten-ecommerce',
-    name: 'FokusKonten E-Commerce',
-    description: 'Aplikasi belanja online native Android dengan fitur real-time tracking, integrasi payment gateway, dan push notification.',
-    category: 'E-Commerce',
-    version: '2.1.0',
-    size: '25 MB',
-    releaseDate: '2025-06-15',
-    rating: 4.5,
-    downloads: '10K+',
-    features: [
-      'Real-time order tracking',
-      'Multiple payment methods',
-      'Push notifications',
-      'Wishlist & favorites',
-      'Product reviews',
-      'Dark mode support'
-    ],
-    status: 'Published',
-    googlePlay: true,
-    icon: '🛒'
-  },
-  {
-    id: 'fokuskonten-dashboard',
-    name: 'FokusKonten Dashboard',
-    description: 'Aplikasi monitoring dan analitik media sosial multiplatform dengan statistik real-time dan laporan performa.',
-    category: 'Analytics',
-    version: '1.5.2',
-    size: '18 MB',
-    releaseDate: '2025-05-20',
-    rating: 4.3,
-    downloads: '5K+',
-    features: [
-      'Multi-platform analytics',
-      'Real-time statistics',
-      'Performance reports',
-      'Custom dashboards',
-      'Data export',
-      'Scheduled reports'
-    ],
-    status: 'Published',
-    googlePlay: true,
-    icon: '📊'
-  },
-  {
-    id: 'fokuskonten-notes',
-    name: 'FokusKonten Notes',
-    description: 'Aplikasi catatan produktivitas dengan sync cloud, rich text editor, dan organisasi kategori pintar.',
-    category: 'Productivity',
-    version: '3.0.1',
-    size: '12 MB',
-    releaseDate: '2025-04-10',
-    rating: 4.7,
-    downloads: '25K+',
-    features: [
-      'Cloud synchronization',
-      'Rich text editor',
-      'Smart categories',
-      'Search & filters',
-      'Voice notes',
-      'Collaboration'
-    ],
-    status: 'Published',
-    googlePlay: true,
-    icon: '📝'
-  },
-  {
-    id: 'fokuskonten-camera',
-    name: 'FokusKonten Camera',
-    description: 'Aplikasi kamera profesional dengan preset editing, manual controls, dan integrasi media sosial.',
-    category: 'Photography',
-    version: '1.2.0',
-    size: '35 MB',
-    releaseDate: '2025-03-25',
-    rating: 4.4,
-    downloads: '8K+',
-    features: [
-      'Manual camera controls',
-      'Photo presets',
-      'RAW support',
-      'Social sharing',
-      'Video recording',
-      'Gallery integration'
-    ],
-    status: 'Published',
-    googlePlay: true,
-    icon: '📷'
-  }
-]
+const categories = ['Semua', 'Utilitas', 'Edukasi', 'Game', 'Bisnis', 'Religi', 'Kesehatan', 'Produktivitas', 'Hiburan']
 
-export const metadata = {
-  title: 'Applications',
-  description: 'Aplikasi Android resmi FokusKonten — solusi produktivitas, e-commerce, analitik, dan fotografi untuk pengguna Android.',
-  alternates: {
-    canonical: 'https://fokuskonten.my.id/applications',
-  },
+const categoryColors = {
+  Utilitas: 'bg-blue-100 text-blue-700',
+  Edukasi: 'bg-green-100 text-green-700',
+  Game: 'bg-purple-100 text-purple-700',
+  Bisnis: 'bg-orange-100 text-orange-700',
+  Religi: 'bg-teal-100 text-teal-700',
+  Kesehatan: 'bg-red-100 text-red-700',
+  Produktivitas: 'bg-indigo-100 text-indigo-700',
+  Hiburan: 'bg-pink-100 text-pink-700',
 }
 
+const gradientColors = [
+  ['#667eea', '#764ba2'],
+  ['#f093fb', '#f5576c'],
+  ['#4facfe', '#00f2fe'],
+  ['#43e97b', '#38f9d7'],
+  ['#fa709a', '#fee140'],
+  ['#a18cd1', '#fbc2eb'],
+  ['#fccb90', '#d57eeb'],
+  ['#e0c3fc', '#8ec5fc'],
+  ['#f5576c', '#ff6f00'],
+  ['#667eea', '#43e97b'],
+  ['#764ba2', '#f093fb'],
+  ['#00f2fe', '#4facfe'],
+  ['#38f9d7', '#43e97b'],
+  ['#fee140', '#fa709a'],
+  ['#fbc2eb', '#a18cd1'],
+  ['#d57eeb', '#fccb90'],
+  ['#8ec5fc', '#e0c3fc'],
+  ['#ff6f00', '#f5576c'],
+]
+
 export default function ApplicationsPage() {
+  const [activeCategory, setActiveCategory] = useState('Semua')
+  const [searchQuery, setSearchQuery] = useState('')
+
+  const filteredApps = useMemo(() => {
+    return appsData.filter((app) => {
+      const matchesCategory = activeCategory === 'Semua' || app.category === activeCategory
+      const matchesSearch = app.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        app.package.toLowerCase().includes(searchQuery.toLowerCase())
+      return matchesCategory && matchesSearch
+    })
+  }, [activeCategory, searchQuery])
+
+  const getGradient = (name) => {
+    let hash = 0
+    for (let i = 0; i < name.length; i++) {
+      hash = name.charCodeAt(i) + ((hash << 5) - hash)
+    }
+    return gradientColors[Math.abs(hash) % gradientColors.length]
+  }
+
   return (
     <>
       <Navbar />
       <main className="min-h-screen">
-        
+
         {/* Header */}
         <section className="section border-t border-black/[0.04] bg-canvas-100">
           <div className="container-max px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl animate-fade-up">
-              <span className="section-label">Applications</span>
+              <span className="section-label">Aplikasi</span>
               <h1 className="heading-xl text-3xl sm:text-4xl text-charcoal-900 mt-3 mb-4">
                 Aplikasi <span className="text-maroon-gradient">Android</span>
               </h1>
               <p className="text-charcoal-500 text-sm sm:text-base leading-relaxed">
-                Kumpulan aplikasi Android resmi FokusKonten yang dirancang untuk meningkatkan produktivitas, memudahkan aktivitas sehari-hari, dan memberikan pengalaman pengguna yang optimal.
+                Kumpulan {appsData.length} aplikasi Android resmi FokusKonten — dari utilitas, edukasi, game, bisnis, religi, kesehatan, hingga produktivitas.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Applications Grid */}
-        <section className="section border-t border-black/[0.04]">
-          <div className="container-max px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {applications.map((app, index) => (
-                <div
-                  key={app.id}
-                  className="card-outline p-6 shadow-mature hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 animate-scale-in"
+        {/* Filters */}
+        <section className="border-t border-black/[0.04] bg-white sticky top-0 z-10">
+          <div className="container-max px-4 sm:px-6 lg:px-8 py-4">
+            <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
+              {/* Search */}
+              <div className="relative w-full sm:w-72">
+                <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-charcoal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+                <input
+                  type="text"
+                  placeholder="Cari aplikasi..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full pl-10 pr-4 py-2 rounded-xl border border-black/[0.08] bg-canvas-50 text-sm text-charcoal-900 focus:outline-none focus:ring-2 focus:ring-maroon-700/20 focus:border-maroon-700/30"
+                />
+              </div>
+              {/* Count */}
+              <span className="text-sm text-charcoal-400">
+                {filteredApps.length} dari {appsData.length} aplikasi
+              </span>
+            </div>
+            {/* Category filter */}
+            <div className="flex flex-wrap gap-2 mt-4">
+              {categories.map((cat) => (
+                <button
+                  key={cat}
+                  onClick={() => setActiveCategory(cat)}
+                  className={`px-3.5 py-1.5 rounded-full text-xs font-medium transition-all ${
+                    activeCategory === cat
+                      ? 'bg-maroon-700 text-white shadow-sm'
+                      : 'bg-canvas-100 text-charcoal-500 hover:bg-canvas-200 border border-black/[0.05]'
+                  }`}
                 >
-                  {/* App Header */}
-                  <div className="flex items-start gap-4 mb-6">
-                    <div className="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl bg-canvas-100 border border-black/[0.05]">
-                      {app.icon}
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="font-display font-semibold text-lg text-charcoal-900 mb-1">{app.name}</h3>
-                      <p className="text-charcoal-500 text-sm mb-2">{app.description}</p>
-                      <div className="flex items-center gap-3 text-xs text-charcoal-400">
-                        <span className="px-2 py-0.5 bg-maroon-100 text-maroon-700 rounded-full">{app.category}</span>
-                        <span>v{app.version}</span>
-                        <span>{app.size}</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Stats */}
-                  <div className="grid grid-cols-3 gap-4 mb-6 p-4 bg-canvas-50 rounded-xl border border-black/[0.03]">
-                    <div className="text-center">
-                      <div className="font-display font-bold text-lg text-maroon-700">{app.rating}</div>
-                      <div className="text-charcoal-400 text-xs">Rating</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="font-display font-bold text-lg text-maroon-700">{app.downloads}</div>
-                      <div className="text-charcoal-400 text-xs">Downloads</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="font-display font-bold text-lg text-maroon-700">{app.status}</div>
-                      <div className="text-charcoal-400 text-xs">Status</div>
-                    </div>
-                  </div>
-
-                  {/* Features */}
-                  <div className="mb-6">
-                    <h4 className="font-display font-semibold text-sm text-charcoal-900 mb-3">Fitur Utama</h4>
-                    <ul className="space-y-2">
-                      {app.features.slice(0, 4).map((feature, i) => (
-                        <li key={i} className="flex items-center gap-2 text-charcoal-600 text-sm">
-                          <svg className="w-4 h-4 text-maroon-700 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                          </svg>
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {/* Actions */}
-                  <div className="flex items-center gap-3">
-                    <Link
-                      href={`/applications/${app.id}`}
-                      className="btn-primary flex-1 justify-center text-sm"
-                    >
-                      Detail Aplikasi
-                    </Link>
-                    {app.googlePlay && (
-                      <a
-                        href={`https://play.google.com/store/apps/details?id=com.fokuskonten.${app.id}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-12 h-10 rounded-xl flex items-center justify-center bg-canvas-100 border border-black/[0.05] hover:bg-canvas-200 transition-colors"
-                        aria-label="Google Play"
-                      >
-                        <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
-                        </svg>
-                      </a>
-                    )}
-                  </div>
-                </div>
+                  {cat}
+                </button>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Apps Grid */}
+        <section className="section border-t border-black/[0.04]">
+          <div className="container-max px-4 sm:px-6 lg:px-8">
+            {filteredApps.length === 0 ? (
+              <div className="text-center py-16">
+                <p className="text-charcoal-400">Tidak ada aplikasi yang ditemukan.</p>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                {filteredApps.map((app, index) => {
+                  const [c1, c2] = getGradient(app.name)
+                  return (
+                    <div
+                      key={app.id}
+                      className="group card-outline p-4 shadow-mature hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 animate-scale-in"
+                    >
+                      <div className="flex items-center gap-3 mb-3">
+                        <div
+                          className="w-10 h-10 rounded-full flex items-center justify-center text-white font-display font-bold text-sm shrink-0"
+                          style={{ background: `linear-gradient(135deg, ${c1}, ${c2})` }}
+                        >
+                          {app.name.charAt(0)}
+                        </div>
+                        <div className="min-w-0">
+                          <h3 className="font-display font-semibold text-sm text-charcoal-900 truncate">
+                            {app.name}
+                          </h3>
+                          <p className="text-charcoal-400 text-xs truncate">{app.package}</p>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-2 mb-4">
+                        <span className={`text-[10px] px-2 py-0.5 rounded-full font-medium ${categoryColors[app.category] || 'bg-canvas-100 text-charcoal-500'}`}>
+                          {app.category}
+                        </span>
+                        <span className="text-[10px] px-2 py-0.5 rounded-full bg-green-100 text-green-700 font-medium">
+                          {app.status}
+                        </span>
+                      </div>
+                      <a
+                        href={`https://play.google.com/store/apps/details?id=${app.package}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-primary w-full justify-center text-xs py-2.5 gap-1.5"
+                      >
+                        <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
+                        </svg>
+                        Lihat di Play Store
+                      </a>
+                    </div>
+                  )
+                })}
+              </div>
+            )}
           </div>
         </section>
 

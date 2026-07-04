@@ -1,13 +1,5 @@
 import Link from 'next/link'
 
-const navLinks = [
-  { href: '/',          label: 'Beranda' },
-  { href: '/about',     label: 'Tentang' },
-  { href: '/portfolio', label: 'Portfolio' },
-  { href: '/blog',      label: 'Blog' },
-  { href: '/contact',   label: 'Kontak' },
-]
-
 const socialLinks = [
   {
     name: 'YouTube',
@@ -40,34 +32,35 @@ const socialLinks = [
 
 const services = [
   { label: 'Android Development', href: '/services' },
-  { label: 'Website Development', href: '/services' },
-  { label: 'Creative Digital',    href: '/services' },
+  { label: 'Desain Grafis & Percetakan', href: '/services' },
   { label: 'Fotografi & Videografi', href: '/services' },
-  { label: 'Content Creation',     href: '/services' },
+  { label: 'Content Creator', href: '/services' },
+  { label: 'Template Blogger', href: '/services' },
+  { label: 'Kerajinan Kayu / Kaila Mebel', href: '/services' },
+  { label: 'Aset Digital & Presets', href: '/products' },
 ]
 
 const quickLinks = [
-  { label: 'Applications', href: '/applications' },
-  { label: 'Products', href: '/products' },
-  { label: 'Downloads', href: '/downloads' },
-  { label: 'News', href: '/news' },
-  { label: 'Updates', href: '/updates' },
+  { label: 'Aplikasi Android', href: '/applications' },
+  { label: 'Produk Digital', href: '/products' },
+  { label: 'Unduh', href: '/downloads' },
+  { label: 'Portfolio', href: '/portfolio' },
+  { label: 'Blog', href: '/blog' },
 ]
 
 const supportLinks = [
-  { label: 'Support Center', href: '/support' },
   { label: 'FAQ', href: '/faq' },
-  { label: 'Contact', href: '/contact' },
-  { label: 'Changelog', href: '/changelog' },
-  { label: 'Release Notes', href: '/release-notes' },
+  { label: 'Kontak', href: '/contact' },
+  { label: 'Support', href: '/support' },
+  { label: 'Developer Info', href: '/developer-info' },
 ]
 
 const legalLinks = [
-  { label: 'Privacy Policy', href: '/privacy-policy' },
-  { label: 'Terms & Conditions', href: '/terms' },
-  { label: 'Licenses', href: '/licenses' },
+  { label: 'Kebijakan Privasi', href: '/privacy-policy' },
+  { label: 'Syarat & Ketentuan', href: '/terms' },
+  { label: 'Lisensi', href: '/licenses' },
   { label: 'Disclaimer', href: '/disclaimer' },
-  { label: 'Cookie Policy', href: '/cookie-policy' },
+  { label: 'Kebijakan Cookie', href: '/cookie-policy' },
 ]
 
 export default function Footer() {
@@ -93,9 +86,8 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-charcoal-500 text-sm leading-relaxed max-w-[240px]">
-              Studio kreatif digital untuk Android, desain grafis, fotografi, videografi, dan strategi konten.
+              Creative Digital Studio — Android Development, Desain Grafis, Fotografi &amp; Videografi, Content Creator, Kerajinan Kayu, dan Produk Digital.
             </p>
-            {/* Social Links */}
             <div className="flex items-center gap-2 mt-6">
               {socialLinks.map((s) => (
                 <a
@@ -113,24 +105,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Navigation */}
-          <div>
-            <h3 className="font-display font-bold text-charcoal-900 text-xs tracking-wider uppercase mb-5">Navigasi</h3>
-            <ul className="space-y-3">
-              {navLinks.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-charcoal-500 hover:text-maroon-700 text-sm transition-colors duration-200"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Services */}
+          {/* Layanan */}
           <div>
             <h3 className="font-display font-bold text-charcoal-900 text-xs tracking-wider uppercase mb-5">Layanan</h3>
             <ul className="space-y-3">
@@ -149,7 +124,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-display font-bold text-charcoal-900 text-xs tracking-wider uppercase mb-5">Quick Links</h3>
+            <h3 className="font-display font-bold text-charcoal-900 text-xs tracking-wider uppercase mb-5">Navigasi</h3>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.label}>
@@ -160,15 +135,32 @@ export default function Footer() {
                     {link.label}
                   </Link>
                 </li>
- ))}
+              ))}
             </ul>
           </div>
 
           {/* Support */}
           <div>
-            <h3 className="font-display font-bold text-charcoal-900 text-xs tracking-wider uppercase mb-5">Support</h3>
+            <h3 className="font-display font-bold text-charcoal-900 text-xs tracking-wider uppercase mb-5">Bantuan</h3>
             <ul className="space-y-3">
               {supportLinks.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-charcoal-500 hover:text-maroon-700 text-sm transition-colors duration-200"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Legal */}
+          <div>
+            <h3 className="font-display font-bold text-charcoal-900 text-xs tracking-wider uppercase mb-5">Legal</h3>
+            <ul className="space-y-3">
+              {legalLinks.map((link) => (
                 <li key={link.label}>
                   <Link
                     href={link.href}
@@ -222,28 +214,37 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Legal */}
+          {/* Business Pillars */}
           <div>
-            <h3 className="font-display font-bold text-charcoal-900 text-xs tracking-wider uppercase mb-5">Legal</h3>
-            <ul className="space-y-3">
-              {legalLinks.map((link) => (
-                <li key={link.label}>
-                  <Link
-                    href={link.href}
-                    className="text-charcoal-500 hover:text-maroon-700 text-sm transition-colors duration-200"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+            <h3 className="font-display font-bold text-charcoal-900 text-xs tracking-wider uppercase mb-5">Pilar Bisnis</h3>
+            <ul className="space-y-3 text-sm">
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-maroon-700 mt-1.5 shrink-0" />
+                <span className="text-charcoal-500">Creative Digital — 79 Aplikasi Android</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-maroon-700 mt-1.5 shrink-0" />
+                <span className="text-charcoal-500">Kaila Mebel — Kerajinan Kayu Pinus</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-maroon-700 mt-1.5 shrink-0" />
+                <span className="text-charcoal-500">Digital Products — Kursus, Presets, Template</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-maroon-700 mt-1.5 shrink-0" />
+                <span className="text-charcoal-500">MEDIA CETAK — Desain Grafis &amp; Printing</span>
+              </li>
             </ul>
           </div>
 
           {/* Location */}
           <div>
-            <h3 className="font-display font-bold text-charcoal-900 text-xs tracking-wider uppercase mb-5">Location</h3>
+            <h3 className="font-display font-bold text-charcoal-900 text-xs tracking-wider uppercase mb-5">Tentang</h3>
             <p className="text-charcoal-500 text-sm leading-relaxed">
-              FokusKonten berbasis di Indonesia, melayani klien di seluruh Indonesia dan secara remote untuk klien internasional.
+              FokusKonten didirikan oleh <strong className="text-charcoal-800">Muharie</strong>, seorang praktisi kreatif digital dengan pengalaman di Android Development, Desain Grafis, Fotografi, Videografi, Content Creation, dan Kerajinan Kayu.
+            </p>
+            <p className="text-charcoal-500 text-sm leading-relaxed mt-3">
+              Melayani klien di seluruh Indonesia.
             </p>
           </div>
         </div>

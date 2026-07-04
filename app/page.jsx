@@ -2,7 +2,8 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
 import portfolioData from '@/content/portfolio/portfolio.json'
-import postsData    from '@/content/blog/posts.json'
+import appsData from '@/content/apps/apps.json'
+import postsData from '@/content/blog/posts.json'
 
 const services = [
   {
@@ -12,7 +13,7 @@ const services = [
       </svg>
     ),
     title: 'Android Development',
-    desc:  'Aplikasi Android native: Kotlin, Jetpack Compose, Firebase, Play Store.',
+    desc: '79 aplikasi Android native — Kotlin, Jetpack Compose, Firebase, AdMob, target SDK 36. Dari game, utilitas, bisnis, hingga edukasi.',
     number: '01',
   },
   {
@@ -21,8 +22,8 @@ const services = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.871 4A17.926 17.926 0 003 12c0 2.874.673 5.59 1.871 8m14.13 0a17.926 17.926 0 001.87-8 17.926 17.926 0 00-1.87-8M9 9h1.246a1 1 0 01.961.725l1.586 5.55a1 1 0 00.961.725H15m1-7h-.08a2 2 0 00-1.519.698L9.6 15.302A2 2 0 018.08 16H8" />
       </svg>
     ),
-    title: 'Creative Digital',
-    desc:  'Logo, branding, desain grafis, template media sosial, dan visual identity.',
+    title: 'Desain Grafis & Percetakan',
+    desc: 'CorelDraw, desain ID Card, banner, brosur, logo, kartu nama, dan kebutuhan percetakan lainnya.',
     number: '02',
   },
   {
@@ -33,7 +34,7 @@ const services = [
       </svg>
     ),
     title: 'Fotografi & Videografi',
-    desc:  'Foto produk, portrait, pre-wedding, film dokumenter, dan video kreatif.',
+    desc: 'Foto produk, dokumentasi acara, video profil perusahaan, dan video senam hati. Sony kamera, lighting studio.',
     number: '03',
   },
   {
@@ -43,13 +44,34 @@ const services = [
       </svg>
     ),
     title: 'Content Creator',
-    desc:  'Strategi konten, video pendek, copywriting, dan manajemen media sosial.',
+    desc: 'YouTube @fokuskonten, TikTok, Instagram — konten kreatif, video pendek, dan strategi media sosial.',
     number: '04',
+  },
+  {
+    icon: (
+      <svg className="w-6 h-6 animate-float" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+      </svg>
+    ),
+    title: 'Template Blogger',
+    desc: 'Template blog SEO-friendly, mobile first, dark mode, responsive, dan optimized untuk platform Blogger.',
+    number: '05',
+  },
+  {
+    icon: (
+      <svg className="w-6 h-6 animate-float" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+      </svg>
+    ),
+    title: 'Kerajinan Kayu / Kaila Mebel',
+    desc: 'Produk kayu pinus, MDF, Jati Belanda — organizer meja, asbak rokok, furniture custom, dan handicraft unik.',
+    number: '06',
   },
 ]
 
 const featuredPortfolio = portfolioData.filter(p => p.featured).slice(0, 4)
-const recentPosts       = postsData.slice(0, 3)
+const recentPosts = postsData.slice(0, 3)
+const featuredApps = appsData.slice(0, 4)
 
 const categoryColors = {
   'Android Development':    { dot: '#8c1f1f', bg: 'rgba(140,31,31,0.03)', border: 'rgba(140,31,31,0.08)' },
@@ -81,7 +103,6 @@ export default function HomePage() {
               className="absolute bottom-1/3 right-1/4 w-[400px] h-[400px] rounded-full blur-[100px] opacity-30"
               style={{ background: 'radial-gradient(circle, rgba(171, 51, 51, 0.05) 0%, transparent 70%)' }}
             />
-            {/* Grid Pattern */}
             <div
               className="absolute inset-0 opacity-[0.015]"
               style={{
@@ -94,13 +115,11 @@ export default function HomePage() {
           <div className="relative z-10 container-max section px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl">
 
-              {/* Label */}
               <div className="flex items-center gap-2.5 mb-8 animate-fade-up">
                 <span className="w-2 h-2 rounded-full bg-maroon-700 animate-pulse" aria-hidden="true" />
                 <span className="heading-label">Official Website · FokusKonten</span>
               </div>
 
-              {/* Headline */}
               <h1 className="heading-xl text-[clamp(2.8rem,8vw,5.5rem)] text-balance text-charcoal-900 mb-6 animate-fade-up delay-100">
                 Create.{' '}
                 <span className="text-maroon-gradient">Develop.</span>
@@ -108,16 +127,14 @@ export default function HomePage() {
                 <span className="text-charcoal-400">Capture.</span>
               </h1>
 
-              {/* Sub-headline */}
               <p className="text-charcoal-600 text-lg sm:text-xl font-light leading-relaxed max-w-2xl mb-4 animate-fade-up delay-200">
-                Studio kreatif digital — Android Development, Creative Design,
+                Studio kreatif digital — Android Development, Desain Grafis,
                 Fotografi & Videografi, dan Content Creation.
               </p>
               <p className="text-charcoal-400 text-sm max-w-xl leading-relaxed mb-10 animate-fade-up delay-300">
                 Berfokus pada solusi digital yang fungsional, estetis, dan berdampak nyata bagi klien dengan pendekatan minimalis elegan.
               </p>
 
-              {/* CTAs */}
               <div className="flex flex-wrap items-center gap-4 animate-fade-up delay-400">
                 <Link href="/portfolio" id="hero-cta-portfolio" className="btn-primary text-sm px-7 py-3.5 hover:scale-[1.02] transition-transform">
                   Lihat Portfolio
@@ -136,12 +153,12 @@ export default function HomePage() {
                 </a>
               </div>
 
-              {/* Stats */}
               <div className="flex flex-wrap items-center gap-8 mt-14 pt-10 border-t border-black/[0.05] animate-fade-up delay-500">
                 {[
-                  { value: '50+', label: 'Proyek Selesai' },
-                  { value: '30+', label: 'Klien Puas' },
-                  { value: '5+',  label: 'Tahun Pengalaman' },
+                  { value: '79', label: 'Aplikasi' },
+                  { value: '3+', label: 'Kursus' },
+                  { value: '50+', label: 'Kategori Produk Kayu' },
+                  { value: '5+', label: 'Tahun Pengalaman' },
                 ].map((s) => (
                   <div key={s.label} className="hover:scale-105 transition-transform duration-200">
                     <div className="font-display font-bold text-3xl text-charcoal-900">{s.value}</div>
@@ -169,7 +186,7 @@ export default function HomePage() {
                 </h2>
               </div>
               <p className="text-charcoal-500 text-sm leading-relaxed max-w-xs md:text-right">
-                Solusi digital komprehensif dari pembangunan aplikasi hingga strategi konten.
+                Enam bidang layanan — dari pembangunan aplikasi hingga kerajinan kayu handmade.
               </p>
             </div>
 
@@ -326,25 +343,32 @@ export default function HomePage() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {[
-                { icon: '🛒', name: 'E-Commerce', category: 'Belanja Online', rating: '4.5', downloads: '10K+' },
-                { icon: '📊', name: 'Dashboard', category: 'Analytics', rating: '4.3', downloads: '5K+' },
-                { icon: '📝', name: 'Notes', category: 'Productivity', rating: '4.7', downloads: '25K+' },
-                { icon: '📷', name: 'Camera', category: 'Photography', rating: '4.4', downloads: '8K+' },
-              ].map((app, i) => (
-                <Link
-                  key={i}
-                  href="/applications"
+              {featuredApps.map((app, i) => (
+                <a
+                  key={app.id}
+                  href={`https://play.google.com/store/apps/details?id=${app.package}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="group p-6 bg-white rounded-2xl border border-black/[0.05] shadow-mature hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 animate-scale-in"
                 >
-                  <div className="text-4xl mb-4">{app.icon}</div>
-                  <h3 className="font-display font-semibold text-charcoal-900 mb-1 group-hover:text-maroon-700 transition-colors">{app.name}</h3>
-                  <p className="text-charcoal-500 text-xs mb-4">{app.category}</p>
-                  <div className="flex items-center justify-between text-xs text-charcoal-400">
-                    <span>⭐ {app.rating}</span>
-                    <span>{app.downloads}</span>
+                  <div
+                    className="w-14 h-14 rounded-2xl flex items-center justify-center mb-4 font-display font-bold text-xl text-white"
+                    style={{
+                      background: `linear-gradient(135deg, ${['#8B1A1A','#ab3333','#751919','#5e1414'][i % 4]}, ${['#ab3333','#8B1A1A','#5e1414','#751919'][i % 4]})`,
+                    }}
+                  >
+                    {app.name.charAt(0)}
                   </div>
-                </Link>
+                  <h3 className="font-display font-semibold text-charcoal-900 mb-1 group-hover:text-maroon-700 transition-colors">{app.name}</h3>
+                  <p className="text-charcoal-500 text-xs mb-3">{app.category}</p>
+                  <span className="text-charcoal-400 text-[11px] font-mono block truncate">{app.package}</span>
+                  <div className="mt-3 flex items-center gap-1 text-maroon-700 text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span>Lihat di Play Store</span>
+                    <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </div>
+                </a>
               ))}
             </div>
           </div>
@@ -362,18 +386,18 @@ export default function HomePage() {
                 Mengapa <span className="text-maroon-gradient">FokusKonten</span>?
               </h2>
               <p className="text-charcoal-500 text-sm leading-relaxed">
-                Kami menggabungkan keahlian teknis dengan kreativitas untuk menghasilkan solusi digital yang berdampak nyata.
+                Lintas disiplin — dari coding hingga woodworking — semua dalam satu studio kreatif.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { icon: '🎯', title: 'Fokus pada Hasil', desc: 'Setiap proyek diarahkan untuk mencapai tujuan bisnis yang konkret dan terukur.' },
-                { icon: '⚡', title: 'Proses Cepat', desc: 'Workflow yang efisien dengan AI-assisted development untuk hasil lebih cepat.' },
-                { icon: '💎', title: 'Kualitas Premium', desc: 'Standar kualitas tinggi dalam setiap aspek dari desain hingga implementasi.' },
-                { icon: '🤝', title: 'Kolaborasi', desc: 'Bekerja bersama klien sebagai partner untuk memahami kebutuhan mendalam.' },
-                { icon: '🔄', title: 'Support Berkelanjutan', desc: 'Dukungan teknis dan maintenance setelah proyek selesai.' },
-                { icon: '💡', title: 'Inovasi', desc: 'Selalu mengadopsi teknologi dan tren terbaru untuk solusi modern.' },
+                { icon: '📱', title: '79 Aplikasi Nyata', desc: 'Portofolio 79 aplikasi Android terpublikasi di Play Store dengan berbagai kategori dan target SDK 36.' },
+                { icon: '⚡', title: 'AI-Assisted Development', desc: 'Proses pengembangan dipercepat dengan AI tools tanpa mengorbankan kualitas dan keamanan.' },
+                { icon: '🪵', title: 'Multi-Disiplin Unik', desc: 'Gabungan skill digital kreatif dan kerajinan kayu handmade — solusi one-stop creative studio.' },
+                { icon: '🎯', title: 'SEO & Mobile First', desc: 'Template Blogger dan website dioptimalkan untuk SEO, mobile-first, dan performa tinggi.' },
+                { icon: '🤝', title: 'Konsultasi Gratis', desc: 'Diskusikan kebutuhan Anda via WhatsApp tanpa biaya. Tim merespon cepat dan solutif.' },
+                { icon: '🔄', title: 'Support Berkelanjutan', desc: 'Dukungan maintenance, update, dan revisi untuk setiap proyek yang sudah selesai.' },
               ].map((item, i) => (
                 <div key={i} className="p-6 bg-canvas-50 rounded-2xl border border-black/[0.05] animate-scale-in">
                   <div className="text-3xl mb-4">{item.icon}</div>
@@ -408,10 +432,11 @@ export default function HomePage() {
                   {[
                     { name: 'Kotlin & Java', desc: 'Android Development' },
                     { name: 'Jetpack Compose', desc: 'Modern UI Toolkit' },
-                    { name: 'Firebase', desc: 'Backend & Analytics' },
+                    { name: 'Firebase & AdMob', desc: 'Backend & Monetization' },
                     { name: 'Next.js & React', desc: 'Web Development' },
                     { name: 'Adobe Creative Suite', desc: 'Design & Editing' },
-                    { name: 'AI Tools', desc: 'Development Assistant' },
+                    { name: 'CorelDraw', desc: 'Desain Grafis & Percetakan' },
+                    { name: 'Mesin Kayu (Circular Saw, Router)', desc: 'Woodworking' },
                   ].map((tech, i) => (
                     <div key={i} className="flex items-center gap-4">
                       <div className="w-2 h-2 rounded-full bg-maroon-700" />
@@ -450,60 +475,9 @@ export default function HomePage() {
         </section>
 
         {/* ══════════════════════════════════════
-            LATEST UPDATES
+            FAQ
         ══════════════════════════════════════ */}
-        <section className="section border-t border-black/[0.04] bg-white" aria-label="Update terbaru">
-          <div className="container-max px-4 sm:px-6 lg:px-8">
-
-            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-12 gap-4 animate-fade-up">
-              <div>
-                <span className="section-label">Updates</span>
-                <h2 className="heading-xl text-3xl sm:text-4xl text-charcoal-900">
-                  Update <span className="text-maroon-gradient">Terbaru</span>
-                </h2>
-              </div>
-              <Link href="/updates" className="btn-ghost text-sm group self-start sm:self-auto hover:translate-x-1 transition-transform">
-                Semua Update
-                <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
-            </div>
-
-            <div className="space-y-4">
-              {[
-                { version: 'v2.1.0', app: 'E-Commerce', date: '15 Jun 2025', type: 'Feature', desc: 'Dark mode support dan checkout improvements' },
-                { version: 'v1.5.2', app: 'Dashboard', date: '20 Mei 2025', type: 'Bugfix', desc: 'Analytics sync fixes dan performance improvements' },
-                { version: 'v3.0.1', app: 'Notes', date: '10 Apr 2025', type: 'Bugfix', desc: 'Sync issues dan rich text editor improvements' },
-              ].map((update, i) => (
-                <Link
-                  key={i}
-                  href="/changelog"
-                  className="flex flex-col sm:flex-row sm:items-center justify-between p-6 bg-canvas-50 border border-black/[0.04] rounded-2xl shadow-subtle hover:shadow-mature hover:-translate-y-0.5 transition-all duration-300 gap-4 group"
-                >
-                  <div className="flex items-start gap-5">
-                    <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-maroon-100 text-maroon-700 font-display font-bold text-sm shrink-0">
-                      {update.version}
-                    </div>
-                    <div>
-                      <div className="flex items-center gap-2 mb-1">
-                        <span className="font-display font-semibold text-charcoal-900">{update.app}</span>
-                        <span className="px-2 py-0.5 bg-maroon-100 text-maroon-700 rounded-full text-xs">{update.type}</span>
-                      </div>
-                      <p className="text-charcoal-500 text-sm">{update.desc}</p>
-                    </div>
-                  </div>
-                  <span className="text-charcoal-400 text-xs shrink-0">{update.date}</span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ══════════════════════════════════════
-            FAQ PREVIEW
-        ══════════════════════════════════════ */}
-        <section className="section border-t border-black/[0.04]" aria-label="FAQ preview">
+        <section className="section border-t border-black/[0.04] bg-white" aria-label="FAQ">
           <div className="container-max px-4 sm:px-6 lg:px-8">
 
             <div className="max-w-3xl mx-auto text-center mb-12 animate-fade-up">
@@ -518,11 +492,11 @@ export default function HomePage() {
 
             <div className="max-w-3xl mx-auto space-y-4">
               {[
-                { q: 'Berapa lama waktu pengerjaan proyek?', a: 'Waktu pengerjaan bervariasi tergantung kompleksitas proyek. Proyek sederhana bisa selesai dalam 1-2 minggu, sedangkan proyek kompleks mungkin memerlukan 1-3 bulan.' },
-                { q: 'Apakah Anda menyediakan maintenance?', a: 'Ya, kami menyediakan layanan maintenance dan support setelah proyek selesai untuk memastikan sistem berjalan optimal.' },
-                { q: 'Bagaimana cara memulai proyek?', a: 'Hubungi kami via WhatsApp atau form kontak untuk konsultasi awal. Kami akan mendiskusikan kebutuhan Anda dan memberikan proposal.' },
+                { q: 'Apa saja layanan yang ditawarkan FokusKonten?', a: 'FokusKonten menawarkan 6 bidang layanan: Android Development (79 aplikasi), Desain Grafis & Percetakan, Fotografi & Videografi, Content Creator (YouTube @fokuskonten), Template Blogger SEO, dan Kerajinan Kayu / Kaila Mebel.' },
+                { q: 'Bagaimana cara memesan produk atau layanan?', a: 'Hubungi kami langsung via WhatsApp di +62 851-8301-1318. Konsultasi awal gratis — diskusikan kebutuhan Anda, dan kami akan memberikan proposal serta estimasi waktu pengerjaan.' },
+                { q: 'Apakah aplikasi Android FokusKonten gratis?', a: 'Beberapa aplikasi gratis dengan dukungan AdMob, sementara aplikasi bisnis (seperti Apotek Pro, Bangunan Pro, dll) bersifat berbayar. Semua aplikasi dapat diunduh di Google Play Store.' },
               ].map((item, i) => (
-                <div key={i} className="p-6 bg-white rounded-2xl border border-black/[0.05] shadow-mature animate-scale-in">
+                <div key={i} className="p-6 bg-canvas-50 rounded-2xl border border-black/[0.05] shadow-mature animate-scale-in">
                   <h3 className="font-display font-semibold text-charcoal-900 mb-2">{item.q}</h3>
                   <p className="text-charcoal-500 text-sm leading-relaxed">{item.a}</p>
                 </div>
@@ -543,7 +517,7 @@ export default function HomePage() {
         {/* ══════════════════════════════════════
             NEWSLETTER
         ══════════════════════════════════════ */}
-        <section className="section border-t border-black/[0.04] bg-white" aria-label="Newsletter">
+        <section className="section border-t border-black/[0.04]" aria-label="Newsletter">
           <div className="container-max px-4 sm:px-6 lg:px-8">
 
             <div className="max-w-2xl mx-auto p-10 rounded-2xl bg-maroon-50 border border-maroon-100 text-center animate-fade-up">
@@ -571,12 +545,11 @@ export default function HomePage() {
         </section>
 
         {/* ── CTA ──────────────────────────── */}
-        <section className="section border-t border-black/[0.04]" aria-label="Call to action">
+        <section className="section border-t border-black/[0.04] bg-white" aria-label="Call to action">
           <div className="container-max px-4 sm:px-6 lg:px-8">
             <div
               className="rounded-3xl p-10 sm:p-16 relative overflow-hidden text-center bg-white border border-black/[0.05] shadow-elevated"
             >
-              {/* Ambient glow */}
               <div
                 className="absolute top-0 left-1/2 -translate-x-1/2 w-80 h-32 blur-[60px] opacity-40 pointer-events-none"
                 style={{ background: 'radial-gradient(ellipse, rgba(140,31,31,0.15) 0%, transparent 70%)' }}
