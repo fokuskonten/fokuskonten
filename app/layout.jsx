@@ -1,15 +1,19 @@
 import './globals.css'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
+import WhatsAppFloat from '@/components/WhatsAppFloat'
+import BackToTop from '@/components/BackToTop'
 
 export const metadata = {
   title: {
-    default: 'FokusKonten — Creative Digital Studio',
+    default: 'FokusKonten — Kumpulan Aplikasi Android Terbaik',
     template: '%s | FokusKonten',
   },
-  description: 'FokusKonten adalah studio kreatif digital yang bergerak di bidang Android Development, Fotografi & Videografi, Desain Grafis, dan Content Creator. Berbasis di Indonesia.',
+  description: 'FokusKonten adalah publisher aplikasi Android Indonesia. Temukan 79+ aplikasi terbaik kami di Google Play Store — dari game, edukasi, utilitas, hingga bisnis.',
   keywords: [
-    'FokusKonten', 'Android Developer Indonesia', 'Creative Digital Studio',
-    'Content Creator', 'Fotografi Profesional', 'Videografi', 'Desain Grafis',
-    'Jasa Aplikasi Android', 'Jasa Foto Video', 'Portfolio Digital'
+    'FokusKonten', 'Aplikasi Android', 'Android Apps', 'Google Play Indonesia',
+    'Publisher Android', 'Developer Indonesia', 'Aplikasi Terbaik',
+    'Game Android', 'Edukasi Android', 'Utilitas Android', 'Android Studio',
   ],
   authors: [{ name: 'FokusKonten', url: 'https://fokuskonten.my.id' }],
   creator: 'FokusKonten',
@@ -20,40 +24,19 @@ export const metadata = {
     locale: 'id_ID',
     url: 'https://fokuskonten.my.id',
     siteName: 'FokusKonten',
-    title: 'FokusKonten — Creative Digital Studio',
-    description: 'Studio kreatif digital untuk Android Development, Fotografi & Videografi, Desain Grafis, dan Content Creator di Indonesia.',
-    images: [
-      {
-        url: '/assets/brand/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'FokusKonten — Creative Digital Studio',
-      },
-    ],
+    title: 'FokusKonten — Kumpulan Aplikasi Android Terbaik',
+    description: '79+ aplikasi Android buatan Indonesia. Temukan game, edukasi, utilitas, dan aplikasi bisnis di Google Play Store.',
+    images: [{ url: '/assets/brand/og-image.jpg', width: 1200, height: 630, alt: 'FokusKonten — Aplikasi Android' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'FokusKonten — Creative Digital Studio',
-    description: 'Studio kreatif digital untuk Android Development, Fotografi & Videografi, Desain Grafis, dan Content Creator di Indonesia.',
+    title: 'FokusKonten — Kumpulan Aplikasi Android Terbaik',
+    description: '79+ aplikasi Android buatan Indonesia. Temukan game, edukasi, utilitas, dan aplikasi bisnis di Google Play Store.',
     images: ['/assets/brand/og-image.jpg'],
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  verification: {
-    google: '',
-  },
-  alternates: {
-    canonical: 'https://fokuskonten.my.id',
-  },
+  robots: { index: true, follow: true },
+  alternates: { canonical: 'https://fokuskonten.my.id' },
+  verification: { google: 'PLACEHOLDER_GOOGLE_VERIFICATION' },
 }
 
 export default function RootLayout({ children }) {
@@ -61,18 +44,31 @@ export default function RootLayout({ children }) {
     <html lang="id">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/icon-192.png" sizes="192x192" type="image/png" />
-        <link rel="icon" href="/icon-512.png" sizes="512x512" type="image/png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.webmanifest" />
-        <link rel="msapplication-TileColor" content="#8c1f1f" />
-        <link rel="msapplication-config" href="/browserconfig.xml" />
-        <meta name="theme-color" content="#ffffff" />
-        <meta name="google-adsense-account" content="" />
+        <meta name="theme-color" content="#6366F1" />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-XXXXXXXXXX');
+            `,
+          }}
+        />
       </head>
-      <body className="bg-canvas-100 text-charcoal-800 font-sans antialiased">
-        <div className="noise-overlay" aria-hidden="true" />
-        {children}
+      <body className="bg-white text-neutral-800 font-sans antialiased">
+        <Navbar />
+        <main className="min-h-screen">{children}</main>
+        <Footer />
+        <WhatsAppFloat />
+        <BackToTop />
       </body>
     </html>
   )

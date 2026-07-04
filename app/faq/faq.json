@@ -1,0 +1,38 @@
+[
+  {
+    "question": "Apa itu FokusKonten?",
+    "answer": "FokusKonten adalah publisher aplikasi Android Indonesia. Kami mengembangkan dan mempublikasikan berbagai aplikasi Android di Google Play Store — mulai dari game, edukasi, utilitas, kesehatan, hingga aplikasi bisnis."
+  },
+  {
+    "question": "Apakah aplikasi FokusKonten gratis?",
+    "answer": "Sebagian besar aplikasi FokusKonten gratis untuk diunduh dan digunakan. Beberapa aplikasi mungkin menampilkan iklan melalui Google AdMob atau menawarkan pembelian dalam aplikasi (in-app purchase). Informasi lebih detail tersedia di halaman masing-masing aplikasi di Google Play Store."
+  },
+  {
+    "question": "Bagaimana cara mengunduh aplikasi FokusKonten?",
+    "answer": "Semua aplikasi FokusKonten tersedia di Google Play Store. Cukup cari nama aplikasi di Play Store atau klik tombol 'Download di Google Play' di halaman detail setiap aplikasi di website kami."
+  },
+  {
+    "question": "Apakah aplikasi FokusKonten aman digunakan?",
+    "answer": "Ya, seluruh aplikasi FokusKonten telah melalui proses review Google Play Store dan memenuhi kebijakan keamanan Google. Kami juga menggunakan Firebase Crashlytics untuk memantau stabilitas aplikasi secara real-time."
+  },
+  {
+    "question": "Apa saja izin yang diminta aplikasi FokusKonten?",
+    "answer": "Izin yang diminta bervariasi tergantung fungsi aplikasi. Umumnya meliputi akses internet untuk iklan dan analitik, serta akses penyimpanan jika aplikasi memerlukan penyimpanan data. Kami hanya meminta izin yang benar-benar diperlukan."
+  },
+  {
+    "question": "Apakah FokusKonten mengumpulkan data pribadi saya?",
+    "answer": "Kami mengumpulkan data minimal yang diperlukan untuk keperluan analitik dan iklan melalui Google AdMob dan Firebase Analytics. Data tersebut tidak digunakan untuk mengidentifikasi pengguna secara pribadi. Detail lengkap ada di halaman Kebijakan Privasi."
+  },
+  {
+    "question": "Bagaimana cara melaporkan masalah atau bug pada aplikasi?",
+    "answer": "Anda dapat melaporkan masalah melalui WhatsApp di +62 851-8301-1318 atau mengirim email ke admin@fokuskonten.my.id. Sertakan detail masalah, nama aplikasi, versi Android, dan tipe perangkat Anda agar kami dapat membantu lebih cepat."
+  },
+  {
+    "question": "Apakah FokusKonten menerima jasa pembuatan aplikasi?",
+    "answer": "Ya, kami menerima jasa pembuatan aplikasi Android. Hubungi kami melalui WhatsApp untuk diskusi privat mengenai kebutuhan aplikasi Anda."
+  },
+  {
+    "question": "Berapa lama waktu pengembangan aplikasi?",
+    "answer": "Waktu pengembangan bervariasi tergantung kompleksitas aplikasi. Diskusikan kebutuhan Anda melalui WhatsApp untuk estimasi waktu yang lebih akurat."
+  }
+]

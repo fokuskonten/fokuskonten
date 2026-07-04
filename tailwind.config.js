@@ -4,62 +4,65 @@ module.exports = {
     './app/**/*.{js,jsx}',
     './components/**/*.{js,jsx}',
   ],
-  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        // Light Canvas (White / Creamy White / Light Warm Gray)
-        canvas: {
-          50:  '#ffffff', // Pure White
-          100: '#fafaf9', // Ivory/Warm White
-          200: '#f5f5f3', // Off-White
-          300: '#eae9e6', // Soft Light Gray
-          400: '#d5d4d0',
+        brand: {
+          50:  '#EEF2FF',
+          100: '#E0E7FF',
+          200: '#C7D2FE',
+          300: '#A5B4FC',
+          400: '#818CF8',
+          500: '#6366F1',
+          600: '#4F46E5',
+          700: '#4338CA',
+          800: '#3730A3',
+          900: '#312E81',
+          950: '#1E1B4B',
         },
-        // Rich Maroon Accent
-        maroon: {
-          50:  '#fdf4f4', // Soft maroon tint background
-          100: '#fbe5e5',
-          200: '#f7cece',
-          300: '#f0aaaa',
-          400: '#e17b7b',
-          500: '#c94c4c',
-          600: '#ab3333',
-          700: '#8c1f1f', // Primary Maroon
-          800: '#751919', // Darker Maroon
-          900: '#5e1414',
-          950: '#3d0a0a',
+        warm: {
+          50:  '#FFFBEB',
+          100: '#FEF3C7',
+          200: '#FDE68A',
+          300: '#FCD34D',
+          400: '#FBBF24',
+          500: '#F59E0B',
+          600: '#D97706',
+          700: '#B45309',
+          800: '#92400E',
+          900: '#78350F',
         },
-        // Charcoal (for crisp high-contrast dark text in light mode)
-        charcoal: {
-          50:  '#f4f4f5',
-          100: '#e4e4e7',
-          200: '#d4d4d8',
-          300: '#a1a1aa',
-          400: '#71717a',
-          500: '#52525b',
-          600: '#3f3f46',
-          700: '#27272a',
-          800: '#1c1c1f', // Dark Gray
-          900: '#141416', // Near Black
-          950: '#0f0f11', // Pure Black Text
+        neutral: {
+          50:  '#F8FAFC',
+          100: '#F1F5F9',
+          200: '#E2E8F0',
+          300: '#CBD5E1',
+          400: '#94A3B8',
+          500: '#64748B',
+          600: '#475569',
+          700: '#334155',
+          800: '#1E293B',
+          900: '#0F172A',
         },
       },
       fontFamily: {
-        sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
-        display: ['Outfit', 'Plus Jakarta Sans', 'system-ui', 'sans-serif'],
-        mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
       },
       animation: {
-        'fade-up':    'fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
-        'fade-in':    'fadeIn 0.5s ease forwards',
-        'scale-in':   'scaleIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards',
-        'slide-in':   'slideIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards',
-        'float':      'float 6s ease-in-out infinite',
+        'fade-up':       'fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+        'fade-in':       'fadeIn 0.5s ease forwards',
+        'scale-in':      'scaleIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+        'slide-up':      'slideUp 0.4s ease-out forwards',
+        'bounce-in':     'bounceIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards',
+        'float':         'float 3s ease-in-out infinite',
+        'pulse-soft':    'pulseSoft 2s ease-in-out infinite',
+        'spin-slow':     'spin 8s linear infinite',
+        'wiggle':        'wiggle 1s ease-in-out infinite',
       },
       keyframes: {
         fadeUp: {
-          '0%':   { opacity: '0', transform: 'translateY(16px)' },
+          '0%':   { opacity: '0', transform: 'translateY(24px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         fadeIn: {
@@ -67,29 +70,43 @@ module.exports = {
           '100%': { opacity: '1' },
         },
         scaleIn: {
-          '0%':   { opacity: '0', transform: 'scale(0.96)' },
+          '0%':   { opacity: '0', transform: 'scale(0.95)' },
           '100%': { opacity: '1', transform: 'scale(1)' },
         },
-        slideIn: {
-          '0%':   { opacity: '0', transform: 'translateX(-12px)' },
-          '100%': { opacity: '1', transform: 'translateX(0)' },
+        slideUp: {
+          '0%':   { opacity: '0', transform: 'translateY(12px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        bounceIn: {
+          '0%':   { opacity: '0', transform: 'scale(0.9)' },
+          '50%':  { transform: 'scale(1.02)' },
+          '100%': { opacity: '1', transform: 'scale(1)' },
         },
         float: {
-          '0%, 100%': { transform: 'translateY(0px)' },
+          '0%, 100%': { transform: 'translateY(0)' },
           '50%':      { transform: 'translateY(-8px)' },
+        },
+        pulseSoft: {
+          '0%, 100%': { opacity: '1' },
+          '50%':      { opacity: '0.6' },
+        },
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(0deg)' },
+          '25%':      { transform: 'rotate(-3deg)' },
+          '75%':      { transform: 'rotate(3deg)' },
         },
       },
       boxShadow: {
-        // Mature, elegant, soft deep shadows
-        'subtle':  '0 2px 8px -2px rgba(0, 0, 0, 0.05), 0 1px 3px -1px rgba(0, 0, 0, 0.02)',
-        'mature':  '0 12px 34px -10px rgba(122, 28, 28, 0.06), 0 4px 12px -4px rgba(0, 0, 0, 0.03)',
-        'elevated': '0 24px 48px -12px rgba(122, 28, 28, 0.10), 0 8px 24px -8px rgba(0, 0, 0, 0.04)',
-        'focus':   '0 0 0 3px rgba(140, 31, 31, 0.15)',
+        'soft':   '0 1px 2px 0 rgba(0,0,0,0.04)',
+        'card':   '0 4px 16px -4px rgba(0,0,0,0.06), 0 1px 4px -2px rgba(0,0,0,0.03)',
+        'float':  '0 12px 32px -8px rgba(0,0,0,0.08), 0 4px 12px -4px rgba(0,0,0,0.03)',
+        'glass':  '0 0 0 1px rgba(255,255,255,0.1), 0 8px 32px rgba(0,0,0,0.06)',
+        'elevated': '0 20px 48px -12px rgba(0,0,0,0.12)',
       },
-      borderColor: {
-        'light': 'rgba(0, 0, 0, 0.06)',
-        'subtle': 'rgba(0, 0, 0, 0.10)',
-        'maroon': 'rgba(140, 31, 31, 0.15)',
+      borderRadius: {
+        '2xl': '1rem',
+        '3xl': '1.25rem',
+        '4xl': '1.5rem',
       },
     },
   },
