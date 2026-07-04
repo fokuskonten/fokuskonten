@@ -19,9 +19,20 @@ const categoryColors = {
   Hiburan: 'bg-pink-100 text-pink-700',
 }
 
+const fallbackGradients = [
+  ['#667eea', '#764ba2'], ['#f093fb', '#f5576c'], ['#4facfe', '#00f2fe'],
+  ['#43e97b', '#38f9d7'], ['#fa709a', '#fee140'], ['#a18cd1', '#fbc2eb'],
+  ['#fccb90', '#d57eeb'], ['#e0c3fc', '#8ec5fc'], ['#f5576c', '#ff6f00'],
+]
+
+const hashStr = (s) => s.split('').reduce((a, c) => a + c.charCodeAt(0), 0)
+
+const fallbackGradient = (s) => fallbackGradients[Math.abs(hashStr(s)) % fallbackGradients.length]
+
 export default function ApplicationsPage() {
   const [activeCategory, setActiveCategory] = useState('Semua')
   const [searchQuery, setSearchQuery] = useState('')
+  const [brokenIcons, setBrokenIcons] = useState({})
 
   const filteredApps = useMemo(() => {
     return appsData.filter((app) => {
@@ -109,14 +120,24 @@ export default function ApplicationsPage() {
                     >
                       <div className="flex items-center gap-3 mb-2">
                         <div className="w-10 h-10 rounded-2xl overflow-hidden shrink-0 bg-canvas-100 ring-1 ring-black/[0.06]">
-                          <Image
-                            src={app.icon}
-                            alt={app.name}
-                            width={40}
-                            height={40}
-                            className="w-full h-full object-cover"
-                            unoptimized
-                          />
+                          {brokenIcons[app.id] ? (
+                            <div
+                              className="w-full h-full flex items-center justify-center text-white font-display font-bold text-sm"
+                              style={{ background: `linear-gradient(135deg, ${fallbackGradient(app.id)[0]}, ${fallbackGradient(app.id)[1]})` }}
+                            >
+                              {app.name.charAt(0)}
+                            </div>
+                          ) : (
+                            <Image
+                              src={app.icon}
+                              alt={app.name}
+                              width={40}
+                              height={40}
+                              className="w-full h-full object-cover"
+                              unoptimized
+                              onError={() => setBrokenIcons((prev) => ({ ...prev, [app.id]: true }))}
+                            />
+                          )}
                         </div>
                         <div className="min-w-0">
                           <h3 className="font-display font-semibold text-sm text-charcoal-900 truncate">
