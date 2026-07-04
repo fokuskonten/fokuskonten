@@ -1,7 +1,5 @@
 import Link from 'next/link'
 import appsData from '@/content/apps/apps.json'
-import AppCard from '@/components/AppCard'
-import SectionHeading from '@/components/SectionHeading'
 
 const stats = [
   { value: '79+', label: 'Aplikasi Android' },
@@ -10,27 +8,31 @@ const stats = [
   { value: '100%', label: 'Buatan Indonesia' },
 ]
 
-const categories = [
-  { name: 'Game', count: appsData.filter(a => a.category === 'Game').length, color: 'bg-accent-50', textColor: 'text-accent-600', border: 'border-accent-200', icon: '🎮' },
-  { name: 'Edukasi', count: appsData.filter(a => a.category === 'Edukasi').length, color: 'bg-brand-50', textColor: 'text-brand-600', border: 'border-brand-200', icon: '📚' },
-  { name: 'Utilitas', count: appsData.filter(a => a.category === 'Utilitas').length, color: 'bg-purple-50', textColor: 'text-purple-600', border: 'border-purple-200', icon: '🔧' },
-  { name: 'Bisnis', count: appsData.filter(a => a.category === 'Bisnis').length, color: 'bg-blue-50', textColor: 'text-blue-600', border: 'border-blue-200', icon: '💼' },
-  { name: 'Religi', count: appsData.filter(a => a.category === 'Religi').length, color: 'bg-emerald-50', textColor: 'text-emerald-600', border: 'border-emerald-200', icon: '🕌' },
-  { name: 'Kesehatan', count: appsData.filter(a => a.category === 'Kesehatan').length, color: 'bg-rose-50', textColor: 'text-rose-600', border: 'border-rose-200', icon: '❤️' },
-  { name: 'Produktivitas', count: appsData.filter(a => a.category === 'Produktivitas').length, color: 'bg-cyan-50', textColor: 'text-cyan-600', border: 'border-cyan-200', icon: '📋' },
-  { name: 'Hiburan', count: appsData.filter(a => a.category === 'Hiburan').length, color: 'bg-pink-50', textColor: 'text-pink-600', border: 'border-pink-200', icon: '🎵' },
-]
+function AppIcon({ src, name }) {
+  if (!src) {
+    return (
+      <div className="w-16 h-16 rounded-2xl bg-gradient-brand flex items-center justify-center text-white text-xl font-display font-bold shrink-0 shadow-lg shadow-brand-500/20">
+        {name?.charAt(0) || '?'}
+      </div>
+    )
+  }
+  return (
+    <img
+      src={src}
+      alt={`${name}`}
+      className="w-16 h-16 rounded-2xl object-cover shrink-0 shadow-lg shadow-brand-500/20"
+      loading="lazy"
+    />
+  )
+}
 
 export default function HomePage() {
-  const featuredApps = appsData.slice(0, 6)
-
   return (
     <>
-      <section className="min-h-[90vh] flex items-center relative overflow-hidden pt-20">
+      <section className="min-h-[80vh] flex items-center relative overflow-hidden pt-20">
         <div className="absolute inset-0">
           <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-brand opacity-5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
           <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-accent opacity-5 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-brand-500/3 via-transparent to-transparent" />
         </div>
         <div className="container-page relative z-10 w-full">
           <div className="max-w-3xl mx-auto text-center">
@@ -46,77 +48,97 @@ export default function HomePage() {
             </h1>
 
             <p className="text-neutral-500 text-base sm:text-lg leading-relaxed max-w-xl mx-auto mb-8">
-              Jelajahi 79+ aplikasi Android karya FokusKonten — dari game seru, edukasi interaktif, utilitas praktis, hingga solusi bisnis profesional. Dibangun dengan standar tertinggi.
+              Jelajahi 79+ aplikasi Android karya FokusKonten — dari game seru, edukasi interaktif, utilitas praktis, hingga solusi bisnis profesional. Langsung unduh di Google Play Store.
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-3 mb-14">
-              <Link href="/aplikasi" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-display font-semibold text-sm text-white bg-gradient-brand hover:shadow-xl hover:shadow-brand-500/30 transition-all duration-200">
-                Jelajahi Aplikasi
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-              </Link>
               <a
                 href="https://play.google.com/store/apps/developer?id=FokusKonten"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-display font-semibold text-sm text-neutral-700 bg-white border border-neutral-200 hover:border-brand-300 hover:text-brand-600 hover:shadow-lg hover:shadow-brand-500/10 transition-all duration-200"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-display font-semibold text-sm text-white bg-gradient-brand hover:shadow-xl hover:shadow-brand-500/30 transition-all duration-200"
               >
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M1.326 1.973C1.256 2.294 1.22 2.634 1.22 3v18c0 .366.036.706.106 1.027L12 12 1.326 1.973zm.905-.642l11.17 10.736L23.723 3.38c-.443-.269-1-.43-1.607-.43H4.202c-.717 0-1.356.248-1.971.38zM23.66 4.797L13.334 15.05l5.914 5.686 4.02-3.878c.442-.374.732-.932.732-1.558V6.19c0-.515-.121-1-.34-1.394zM12 13.14L1.628 22.21A3.573 3.573 0 004.202 23h15.596c.46 0 .893-.112 1.28-.31L18.87 19.87 12 13.14z"/></svg>
                 Google Play Store
               </a>
-            </div>
-
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
-              {stats.map((stat) => (
-                <div key={stat.label} className="text-center">
-                  <div className="font-display font-bold text-3xl sm:text-4xl text-neutral-900">{stat.value}</div>
-                  <div className="text-neutral-400 text-xs mt-1">{stat.label}</div>
-                </div>
-              ))}
+              <Link
+                href="/aplikasi"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-display font-semibold text-sm text-neutral-700 bg-white border border-neutral-200 hover:border-brand-300 hover:text-brand-600 hover:shadow-lg transition-all duration-200"
+              >
+                Lihat Semua Aplikasi
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="section border-t border-neutral-100 bg-gradient-to-b from-white to-neutral-50">
+      <section className="py-12 border-t border-neutral-100 bg-white">
         <div className="container-page">
-          <SectionHeading
-            label="Kategori"
-            title="Jelajahi Berdasarkan Kategori"
-            description="Temukan aplikasi yang Anda butuhkan dari delapan kategori yang tersedia."
-          />
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl mx-auto">
-            {categories.map((cat, i) => (
-              <Link
-                key={cat.name}
-                href={`/aplikasi#${cat.name.toLowerCase()}`}
-                className={`group ${cat.color} rounded-2xl p-5 text-center border ${cat.border} hover:${cat.textColor} transition-all duration-200 hover:-translate-y-1 hover:shadow-lg`}
-              >
-                <span className="text-2xl block mb-2">{cat.icon}</span>
-                <div className="font-display font-semibold text-sm text-neutral-800">{cat.name}</div>
-                <div className={`text-xs mt-0.5 ${cat.textColor}`}>{cat.count} aplikasi</div>
-              </Link>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+            {stats.map((stat) => (
+              <div key={stat.label} className="text-center bg-neutral-50 rounded-2xl p-5 border border-neutral-100">
+                <div className="font-display font-bold text-3xl text-brand-600">{stat.value}</div>
+                <div className="text-neutral-400 text-xs mt-1">{stat.label}</div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section bg-gradient-to-b from-neutral-50 to-white border-t border-neutral-100">
+      <section className="section bg-gradient-to-b from-white to-neutral-50">
         <div className="container-page">
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-10 gap-4">
-            <div>
-              <span className="label-brand mb-3 inline-block">Terbaru</span>
-              <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-900">
-                Aplikasi Unggulan
-              </h2>
-            </div>
-            <Link href="/aplikasi" className="text-sm font-medium text-brand-600 hover:text-brand-700 transition-colors">
-              Lihat Semua &rarr;
-            </Link>
+          <div className="text-center mb-12">
+            <span className="label-brand mb-3 inline-block">Koleksi Lengkap</span>
+            <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-900 mb-4">
+              Semua Aplikasi{' '}
+              <span className="text-gradient-brand">FokusKonten</span>
+            </h2>
+            <p className="text-neutral-500 text-sm max-w-lg mx-auto">
+              {appsData.length} aplikasi Android siap unduh. Klik kartu untuk detail lengkap atau langsung download dari Google Play.
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {featuredApps.map((app, i) => (
-              <AppCard key={app.id} app={app} index={i} />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+            {appsData.map((app) => (
+              <div
+                key={app.id}
+                className="group relative bg-white rounded-2xl border border-neutral-200/60 shadow-card hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 hover:-translate-y-1.5 overflow-hidden"
+              >
+                <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-brand opacity-0 group-hover:opacity-[0.04] rounded-full -translate-y-1/2 translate-x-1/2 transition-opacity duration-500 pointer-events-none" />
+                <div className="p-5 relative">
+                  <div className="flex items-start gap-3 mb-3">
+                    <AppIcon src={app.icon} name={app.name} />
+                    <div className="min-w-0 flex-1">
+                      <h3 className="font-display font-semibold text-sm text-neutral-900 truncate">
+                        {app.name}
+                      </h3>
+                      <span className="text-[11px] text-neutral-400">
+                        v{app.version} · {app.category}
+                      </span>
+                    </div>
+                  </div>
+                  <p className="text-neutral-500 text-xs leading-relaxed line-clamp-2 mb-4 min-h-[2.5rem]">
+                    {app.description}
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <a
+                      href={`https://play.google.com/store/apps/details?id=${app.package}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl text-[11px] font-display font-semibold text-white bg-gradient-brand hover:shadow-lg hover:shadow-brand-500/25 transition-all"
+                    >
+                      <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M1.326 1.973C1.256 2.294 1.22 2.634 1.22 3v18c0 .366.036.706.106 1.027L12 12 1.326 1.973zm.905-.642l11.17 10.736L23.723 3.38c-.443-.269-1-.43-1.607-.43H4.202c-.717 0-1.356.248-1.971.38zM23.66 4.797L13.334 15.05l5.914 5.686 4.02-3.878c.442-.374.732-.932.732-1.558V6.19c0-.515-.121-1-.34-1.394zM12 13.14L1.628 22.21A3.573 3.573 0 004.202 23h15.596c.46 0 .893-.112 1.28-.31L18.87 19.87 12 13.14z"/></svg>
+                      Download
+                    </a>
+                    <Link
+                      href={`/aplikasi/${app.id}`}
+                      className="flex-none inline-flex items-center justify-center px-3 py-2 rounded-xl text-[11px] font-display font-semibold text-neutral-600 bg-neutral-100 hover:bg-neutral-200 transition-colors"
+                    >
+                      Detail
+                    </Link>
+                  </div>
+                </div>
+              </div>
             ))}
           </div>
         </div>
