@@ -24,6 +24,64 @@ const categoryColors = {
   'Content Creator':        { dot: '#5e1414', bg: 'rgba(94,20,20,0.03)',  border: 'rgba(94,20,20,0.08)'   },
 }
 
+function CategoryIllustration({ category, dot, title }) {
+  const s = 'w-16 h-16 sm:w-20 sm:h-20'
+  switch (category) {
+    case 'Android Development':
+      return (
+        <svg className={s} viewBox="0 0 80 80" fill="none" aria-hidden="true">
+          <rect x="18" y="10" width="44" height="60" rx="6" stroke={dot} strokeWidth="2.5" fill="none" />
+          <rect x="23" y="18" width="34" height="28" rx="3" stroke={dot} strokeWidth="1.5" fill="none" opacity="0.5" />
+          <circle cx="34" cy="58" r="3" fill={dot} opacity="0.4" />
+          <circle cx="46" cy="58" r="3" fill={dot} opacity="0.4" />
+          <line x1="28" y1="52" x2="52" y2="52" stroke={dot} strokeWidth="1.5" opacity="0.3" />
+          <path d="M30 28l10 6-10 6V28z" fill={dot} opacity="0.6" />
+          <text x="40" y="78" textAnchor="middle" fill={dot} fontSize="7" fontWeight="600" opacity="0.4">{title.length > 20 ? title.slice(0, 18) + '..' : title}</text>
+        </svg>
+      )
+    case 'Creative Digital':
+      return (
+        <svg className={s} viewBox="0 0 80 80" fill="none" aria-hidden="true">
+          <circle cx="40" cy="40" r="26" stroke={dot} strokeWidth="2" fill="none" />
+          <circle cx="40" cy="40" r="16" stroke={dot} strokeWidth="1.5" fill="none" opacity="0.5" />
+          <circle cx="40" cy="40" r="6" fill={dot} opacity="0.6" />
+          <path d="M20 20l8 8M60 20l-8 8M20 60l8-8M60 60l-8-8" stroke={dot} strokeWidth="1.5" opacity="0.3" />
+          <circle cx="28" cy="28" r="2" fill={dot} opacity="0.2" />
+          <circle cx="52" cy="28" r="2" fill={dot} opacity="0.2" />
+          <circle cx="28" cy="52" r="2" fill={dot} opacity="0.2" />
+          <circle cx="52" cy="52" r="2" fill={dot} opacity="0.2" />
+        </svg>
+      )
+    case 'Fotografi & Videografi':
+      return (
+        <svg className={s} viewBox="0 0 80 80" fill="none" aria-hidden="true">
+          <rect x="14" y="26" width="52" height="34" rx="6" stroke={dot} strokeWidth="2" fill="none" />
+          <circle cx="40" cy="43" r="12" stroke={dot} strokeWidth="2" fill="none" />
+          <circle cx="40" cy="43" r="5" fill={dot} opacity="0.5" />
+          <rect x="52" y="30" width="4" height="3" rx="1" fill={dot} opacity="0.4" />
+          <path d="M30 22l4-6h12l4 6" stroke={dot} strokeWidth="1.5" fill="none" opacity="0.4" />
+        </svg>
+      )
+    case 'Content Creator':
+      return (
+        <svg className={s} viewBox="0 0 80 80" fill="none" aria-hidden="true">
+          <rect x="16" y="20" width="48" height="34" rx="8" stroke={dot} strokeWidth="2" fill="none" />
+          <path d="M36 32v12l10-6-10-6z" fill={dot} opacity="0.6" />
+          <path d="M58 42a6 6 0 100-12" stroke={dot} strokeWidth="1.5" fill="none" opacity="0.4" />
+          <circle cx="58" cy="36" r="2" fill={dot} opacity="0.3" />
+          <line x1="20" y1="58" x2="60" y2="58" stroke={dot} strokeWidth="1" opacity="0.3" />
+        </svg>
+      )
+    default:
+      return (
+        <svg className={s} viewBox="0 0 80 80" fill="none" aria-hidden="true">
+          <rect x="20" y="14" width="40" height="52" rx="4" stroke={dot} strokeWidth="2" fill="none" />
+          <path d="M32 38l8 8 16-16" stroke={dot} strokeWidth="2" fill="none" opacity="0.6" />
+        </svg>
+      )
+  }
+}
+
 export default function PortfolioDetailPage({ params }) {
   const item = portfolioData.find(p => p.id === params.id)
   if (!item) notFound()
@@ -64,16 +122,19 @@ export default function PortfolioDetailPage({ params }) {
                 </h1>
                 <p className="text-charcoal-600 leading-relaxed mb-8">{item.description}</p>
 
-                {/* Placeholder for project images */}
+                {/* Project visual placeholder */}
                 <div
-                  className="w-full aspect-video rounded-2xl flex items-center justify-center mb-8 bg-white border border-black/[0.05] shadow-mature animate-scale-in"
+                  className="w-full aspect-video rounded-2xl flex items-center justify-center mb-8 overflow-hidden relative bg-white border border-black/[0.05] shadow-mature animate-scale-in"
                   role="img"
                   aria-label={`Pratinjau proyek ${item.title}`}
                 >
-                  <div className="text-center">
-                    <div className="font-display font-bold text-5xl text-maroon-700/10 mb-3">{item.category.split(' ')[0]}</div>
-                    <p className="text-charcoal-400 text-sm">Gambar proyek akan segera hadir</p>
-                  </div>
+                  <div
+                    className="absolute inset-0 opacity-[0.03]"
+                    style={{
+                      backgroundImage: `radial-gradient(circle at 30% 40%, ${col.dot} 0%, transparent 50%), radial-gradient(circle at 70% 60%, ${col.dot} 0%, transparent 50%)`,
+                    }}
+                  />
+                  <CategoryIllustration category={item.category} dot={col.dot} title={item.title} />
                 </div>
 
                 {/* Tags */}
