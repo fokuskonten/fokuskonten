@@ -26,7 +26,7 @@ export async function generateMetadata({ params }) {
 }
 
 const categoryColors = {
-  Game: 'bg-warm-50 text-warm-700 border-warm-200',
+  Game: 'bg-accent-50 text-accent-700 border-accent-200',
   Edukasi: 'bg-brand-50 text-brand-700 border-brand-200',
   Religi: 'bg-emerald-50 text-emerald-700 border-emerald-200',
   Bisnis: 'bg-blue-50 text-blue-700 border-blue-200',

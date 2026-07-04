@@ -2,14 +2,14 @@ import Link from 'next/link'
 import AppIcon from './AppIcon'
 
 const categoryColors = {
-  Game: 'bg-warm-50 text-warm-700',
-  Edukasi: 'bg-brand-50 text-brand-700',
-  Religi: 'bg-emerald-50 text-emerald-700',
-  Bisnis: 'bg-blue-50 text-blue-700',
-  Utilitas: 'bg-purple-50 text-purple-700',
-  Kesehatan: 'bg-rose-50 text-rose-700',
-  Produktivitas: 'bg-cyan-50 text-cyan-700',
-  Hiburan: 'bg-pink-50 text-pink-700',
+  Game: 'bg-accent-50 text-accent-700 border-accent-200',
+  Edukasi: 'bg-brand-50 text-brand-700 border-brand-200',
+  Religi: 'bg-emerald-50 text-emerald-700 border-emerald-200',
+  Bisnis: 'bg-blue-50 text-blue-700 border-blue-200',
+  Utilitas: 'bg-purple-50 text-purple-700 border-purple-200',
+  Kesehatan: 'bg-rose-50 text-rose-700 border-rose-200',
+  Produktivitas: 'bg-cyan-50 text-cyan-700 border-cyan-200',
+  Hiburan: 'bg-pink-50 text-pink-700 border-pink-200',
 }
 
 export default function AppCard({ app, index = 0 }) {
@@ -18,10 +18,11 @@ export default function AppCard({ app, index = 0 }) {
   return (
     <Link
       href={`/aplikasi/${app.id}`}
-      className="group block bg-white rounded-2xl border border-neutral-200/60 shadow-card hover:shadow-float transition-all duration-300 hover:-translate-y-1 overflow-hidden"
+      className="group relative block bg-white rounded-2xl border border-neutral-200/60 shadow-card hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 hover:-translate-y-1.5 overflow-hidden"
       style={{ animationDelay: `${index * 50}ms` }}
     >
-      <div className="p-5 sm:p-6">
+      <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-brand opacity-0 group-hover:opacity-[0.04] rounded-full -translate-y-1/2 translate-x-1/2 transition-opacity duration-500 pointer-events-none" />
+      <div className="p-5 sm:p-6 relative">
         <div className="flex items-start gap-4">
           <AppIcon src={app.icon} name={app.name} size="large" />
           <div className="min-w-0 flex-1">

@@ -84,7 +84,11 @@
   }
 
   .bg-gradient-brand {
-    background: linear-gradient(135deg, #4F46E5 0%, #6366F1 50%, #818CF8 100%);
+    background: linear-gradient(135deg, #7C3AED 0%, #8B5CF6 40%, #F43F5E 100%);
+  }
+
+  .bg-gradient-accent {
+    background: linear-gradient(135deg, #F43F5E 0%, #FB7185 50%, #FDA4AF 100%);
   }
 
   .bg-gradient-warm {
@@ -92,7 +96,7 @@
   }
 
   .text-gradient-brand {
-    background: linear-gradient(135deg, #4F46E5 0%, #818CF8 100%);
+    background: linear-gradient(135deg, #7C3AED 0%, #A78BFA 40%, #F43F5E 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

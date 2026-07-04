@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.webmanifest" />
-        <meta name="theme-color" content="#6366F1" />
+        <meta name="theme-color" content="#7C3AED" />
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"

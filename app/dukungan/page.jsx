@@ -85,8 +85,10 @@ export default function SupportPage() {
             ))}
           </div>
 
-          <div className="rounded-3xl bg-gradient-brand p-8 sm:p-10 text-white text-center max-w-2xl mx-auto relative overflow-hidden">
+          <div className="rounded-3xl bg-gradient-brand p-8 sm:p-12 text-white text-center max-w-2xl mx-auto relative overflow-hidden">
             <div className="absolute top-0 right-0 w-48 h-48 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2" />
+            <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_white_0%,_transparent_50%)] opacity-10" />
             <div className="relative z-10">
               <h2 className="heading-md text-xl mb-3">Masih Butuh Bantuan?</h2>
               <p className="text-white/80 text-sm mb-6 max-w-md mx-auto">
@@ -96,7 +98,7 @@ export default function SupportPage() {
                 href="https://wa.me/6285183011318"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-display font-semibold text-sm bg-white text-brand-700 hover:bg-white/90 transition-all"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-display font-semibold text-sm bg-white text-brand-700 hover:bg-white/90 hover:shadow-xl transition-all"
               >
                 Hubungi via WhatsApp
               </a>
