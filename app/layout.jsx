@@ -72,14 +72,6 @@ export default function RootLayout({ children }) {
       </head>
       <body className="bg-canvas-100 text-charcoal-800 font-sans antialiased">
         <div className="noise-overlay" aria-hidden="true" />
-        <div className="splash-screen" aria-hidden="true">
-          <div className="splash-inner">
-            <div className="splash-logo">FK</div>
-            <div className="splash-dots">
-              <span /><span /><span />
-            </div>
-          </div>
-        </div>
         {children}
       </body>
     </html>
