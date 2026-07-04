@@ -2,8 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
   output: 'export',
-  basePath: '/fokuskonten',
-  assetPrefix: '/fokuskonten',
   trailingSlash: true,
   images: {
     unoptimized: true,
