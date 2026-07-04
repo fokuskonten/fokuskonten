@@ -49,6 +49,7 @@ const footerLinks = {
     { label: 'Lisensi', href: '/lisensi' },
     { label: 'Disclaimer', href: '/disclaimer' },
     { label: 'Hak Cipta', href: '/hak-cipta' },
+    { label: 'DMCA', href: '/dmca' },
   ],
 }
 

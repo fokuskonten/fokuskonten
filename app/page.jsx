@@ -11,7 +11,7 @@ const stats = [
 function AppIcon({ src, name }) {
   if (!src) {
     return (
-      <div className="w-16 h-16 rounded-2xl bg-gradient-brand flex items-center justify-center text-white text-xl font-display font-bold shrink-0 shadow-lg shadow-brand-500/20">
+      <div className="w-20 h-20 rounded-2xl bg-gradient-brand flex items-center justify-center text-white text-2xl font-display font-bold shrink-0 shadow-lg shadow-brand-500/20">
         {name?.charAt(0) || '?'}
       </div>
     )
@@ -20,7 +20,7 @@ function AppIcon({ src, name }) {
     <img
       src={src}
       alt={`${name}`}
-      className="w-16 h-16 rounded-2xl object-cover shrink-0 shadow-lg shadow-brand-500/20"
+      className="w-20 h-20 rounded-2xl object-cover shrink-0 shadow-lg shadow-brand-500/20"
       loading="lazy"
     />
   )
@@ -105,19 +105,19 @@ export default function HomePage() {
                 className="group relative bg-white rounded-2xl border border-neutral-200/60 shadow-card hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 hover:-translate-y-1.5 overflow-hidden"
               >
                 <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-brand opacity-0 group-hover:opacity-[0.04] rounded-full -translate-y-1/2 translate-x-1/2 transition-opacity duration-500 pointer-events-none" />
-                <div className="p-5 relative">
-                  <div className="flex items-start gap-3 mb-3">
+                <div className="p-6 relative">
+                  <div className="flex items-start gap-4 mb-4">
                     <AppIcon src={app.icon} name={app.name} />
                     <div className="min-w-0 flex-1">
-                      <h3 className="font-display font-semibold text-sm text-neutral-900 truncate">
+                      <h3 className="font-display font-semibold text-base text-neutral-900 truncate">
                         {app.name}
                       </h3>
-                      <span className="text-[11px] text-neutral-400">
+                      <span className="text-xs text-neutral-400">
                         v{app.version} · {app.category}
                       </span>
                     </div>
                   </div>
-                  <p className="text-neutral-500 text-xs leading-relaxed line-clamp-2 mb-4 min-h-[2.5rem]">
+                  <p className="text-neutral-500 text-sm leading-relaxed line-clamp-3 mb-5 min-h-[3.75rem]">
                     {app.description}
                   </p>
                   <div className="flex items-center gap-2">
@@ -125,14 +125,14 @@ export default function HomePage() {
                       href={`https://play.google.com/store/apps/details?id=${app.package}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl text-[11px] font-display font-semibold text-white bg-gradient-brand hover:shadow-lg hover:shadow-brand-500/25 transition-all"
+                      className="flex-1 inline-flex items-center justify-center gap-1.5 px-4 py-3 rounded-xl text-xs font-display font-semibold text-white bg-gradient-brand hover:shadow-lg hover:shadow-brand-500/25 transition-all"
                     >
-                      <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M1.326 1.973C1.256 2.294 1.22 2.634 1.22 3v18c0 .366.036.706.106 1.027L12 12 1.326 1.973zm.905-.642l11.17 10.736L23.723 3.38c-.443-.269-1-.43-1.607-.43H4.202c-.717 0-1.356.248-1.971.38zM23.66 4.797L13.334 15.05l5.914 5.686 4.02-3.878c.442-.374.732-.932.732-1.558V6.19c0-.515-.121-1-.34-1.394zM12 13.14L1.628 22.21A3.573 3.573 0 004.202 23h15.596c.46 0 .893-.112 1.28-.31L18.87 19.87 12 13.14z"/></svg>
+                      <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M1.326 1.973C1.256 2.294 1.22 2.634 1.22 3v18c0 .366.036.706.106 1.027L12 12 1.326 1.973zm.905-.642l11.17 10.736L23.723 3.38c-.443-.269-1-.43-1.607-.43H4.202c-.717 0-1.356.248-1.971.38zM23.66 4.797L13.334 15.05l5.914 5.686 4.02-3.878c.442-.374.732-.932.732-1.558V6.19c0-.515-.121-1-.34-1.394zM12 13.14L1.628 22.21A3.573 3.573 0 004.202 23h15.596c.46 0 .893-.112 1.28-.31L18.87 19.87 12 13.14z"/></svg>
                       Download
                     </a>
                     <Link
                       href={`/aplikasi/${app.id}`}
-                      className="flex-none inline-flex items-center justify-center px-3 py-2 rounded-xl text-[11px] font-display font-semibold text-neutral-600 bg-neutral-100 hover:bg-neutral-200 transition-colors"
+                      className="flex-none inline-flex items-center justify-center px-4 py-3 rounded-xl text-xs font-display font-semibold text-neutral-600 bg-neutral-100 hover:bg-neutral-200 transition-colors"
                     >
                       Detail
                     </Link>

@@ -9,7 +9,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/gamepuzzle.png",
-        "description":  "Aplikasi 2048 Puzzle untuk kebutuhan Anda."
+        "description":  "Mainkan puzzle angka klasik 2048! Geser ubin untuk menggabungkan angka dan capai skor tertinggi. Cocok untuk mengisi waktu luang dan melatih logika."
     },
     {
         "id":  "apotekpro",
@@ -21,7 +21,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/apotekpro.png",
-        "description":  "Aplikasi Apotek Pro untuk kebutuhan Anda."
+        "description":  "Aplikasi manajemen apotek lengkap dengan fitur stok obat, transaksi penjualan, dan laporan keuangan harian. Memudahkan pemilik apotek dalam mengelola operasional bisnis."
     },
     {
         "id":  "appmanager",
@@ -33,7 +33,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/appmanager.png",
-        "description":  "Aplikasi App Manager untuk kebutuhan Anda."
+        "description":  "Kelola semua aplikasi di perangkat Anda dengan mudah. Lihat info detail, hapus cache, dan backup aplikasi favorit dalam satu aplikasi praktis."
     },
     {
         "id":  "arabicletters",
@@ -45,11 +45,11 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/arabicletters.png",
-        "description":  "Aplikasi Arabic Letters untuk kebutuhan Anda."
+        "description":  "Belajar huruf hijaiyah dengan metode interaktif dan menyenangkan. Cocok untuk anak-anak yang baru mengenal alfabet Arab lengkap dengan audio pengucapan."
     },
     {
         "id":  "bacaquran",
-        "name":  "BacaQur\u0027an",
+        "name":  "BacaQur'an",
         "package":  "com.fokuskonten.bacaquran",
         "category":  "Religi",
         "status":  "published",
@@ -57,7 +57,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/bacaquran.png",
-        "description":  "Aplikasi BacaQur\u0027an untuk kebutuhan Anda."
+        "description":  "Baca dan pelajari Al-Qur'an kapan saja dengan tampilan nyaman di mata. Dilengkapi terjemahan dan tanda tajwid untuk pengalaman tadarus yang lebih baik."
     },
     {
         "id":  "bangunanpro",
@@ -69,7 +69,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/bangunanpro.png",
-        "description":  "Aplikasi Bangunan Pro untuk kebutuhan Anda."
+        "description":  "Aplikasi manajemen proyek konstruksi untuk mengelola bahan bangunan, tenaga kerja, dan anggaran. Memudahkan kontraktor memantau progres pembangunan secara real-time."
     },
     {
         "id":  "belajarhewan",
@@ -81,7 +81,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/belajarhewan.png",
-        "description":  "Aplikasi Belajar Hewan untuk kebutuhan Anda."
+        "description":  "Kenali dunia hewan lewat gambar, suara, dan nama dalam dua bahasa. Aplikasi edukatif yang sempurna untuk balita dan anak usia dini."
     },
     {
         "id":  "belajaringgris",
@@ -93,11 +93,11 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/belajaringgris.png",
-        "description":  "Aplikasi Belajar Inggris untuk kebutuhan Anda."
+        "description":  "Tingkatkan kemampuan bahasa Inggris dengan materi interaktif dari pemula hingga mahir. Dilengkapi latihan kosakata, grammar, dan percakapan sehari-hari."
     },
     {
         "id":  "belajarwarnabentuk",
-        "name":  "Belajar Warna \u0026 Bentuk",
+        "name":  "Belajar Warna & Bentuk",
         "package":  "com.fokuskonten.belajarwarnabentuk",
         "category":  "Edukasi",
         "status":  "published",
@@ -105,7 +105,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/belajarwarnabentuk.png",
-        "description":  "Aplikasi Belajar Warna \u0026 Bentuk untuk kebutuhan Anda."
+        "description":  "Ajak anak belajar mengenali warna dan bentuk dasar dengan visual menarik dan permainan mencocokkan. Tingkatkan daya ingat dan kreativitas sejak dini."
     },
     {
         "id":  "bmicalculator",
@@ -117,7 +117,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/bmicalculator.png",
-        "description":  "Aplikasi Bmi Calculator untuk kebutuhan Anda."
+        "description":  "Hitung indeks massa tubuh dengan cepat dan akurat. Dapatkan kategori berat badan ideal serta rekomendasi kesehatan berdasarkan hasil BMI Anda."
     },
     {
         "id":  "calculator",
@@ -129,7 +129,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/calculator.png",
-        "description":  "Aplikasi Calculator untuk kebutuhan Anda."
+        "description":  "Kalkulator sederhana dan cepat untuk perhitungan sehari-hari. Dilengkapi mode standar dan ilmiah untuk berbagai kebutuhan matematika dasar hingga kompleks."
     },
     {
         "id":  "catatancepat",
@@ -141,7 +141,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/catatancepat.png",
-        "description":  "Aplikasi Catatan Cepat untuk kebutuhan Anda."
+        "description":  "Buat catatan instan kapan saja dengan aplikasi Catatan Cepat. Dilengkapi fitur teks, checklist, dan pengaturan kategori untuk menjaga ide tetap terorganisir."
     },
     {
         "id":  "cekperangkat",
@@ -153,11 +153,11 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/cekperangkat.png",
-        "description":  "Aplikasi Cek Perangkat untuk kebutuhan Anda."
+        "description":  "Dapatkan informasi lengkap spesifikasi perangkat Android Anda. Lihat detail prosesor, RAM, penyimpanan, baterai, dan sensor dalam satu tampilan informatif."
     },
     {
         "id":  "codeandtexteditor",
-        "name":  "Code \u0026 Text Editor",
+        "name":  "Code & Text Editor",
         "package":  "com.fokuskonten.codeandtexteditor",
         "category":  "Utilitas",
         "status":  "published",
@@ -165,7 +165,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/codeandtexteditor.png",
-        "description":  "Aplikasi Code \u0026 Text Editor untuk kebutuhan Anda."
+        "description":  "Editor kode dan teks ringan untuk menulis dan mengedit file pemrograman. Mendukung berbagai bahasa dengan sintaks highlighting dan tema gelap."
     },
     {
         "id":  "coffeeshoppro",
@@ -177,7 +177,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/coffeeshoppro.png",
-        "description":  "Aplikasi Coffee Shop Pro untuk kebutuhan Anda."
+        "description":  "Aplikasi POS dan manajemen kedai kopi dengan fitur katalog menu, pencatatan pesanan, dan laporan penjualan. Optimalkan operasional coffee shop Anda sehari-hari."
     },
     {
         "id":  "converter",
@@ -189,7 +189,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/converter.png",
-        "description":  "Aplikasi Converter untuk kebutuhan Anda."
+        "description":  "Konversi satuan panjang, berat, suhu, mata uang, dan lainnya secara instan. Dilengkapi puluhan kategori konversi dengan hasil yang akurat dan mudah digunakan."
     },
     {
         "id":  "daftarbelanja",
@@ -201,7 +201,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/daftarbelanja.png",
-        "description":  "Aplikasi Daftar Belanja untuk kebutuhan Anda."
+        "description":  "Buat dan kelola daftar belanja dengan mudah dan praktis. Atur item berdasarkan kategori, tandai yang sudah dibeli, dan bagikan ke keluarga."
     },
     {
         "id":  "digitaltasbih",
@@ -213,7 +213,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/digitaltasbih.png",
-        "description":  "Aplikasi Digital Tasbih untuk kebutuhan Anda."
+        "description":  "Digital Tasbih untuk berdzikir kapan saja dengan hitungan otomatis. Cocok untuk melantunkan tasbih, tahmid, dan tahlil tanpa khawatir kehilangan hitungan."
     },
     {
         "id":  "doaharian",
@@ -225,7 +225,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/doaharian.png",
-        "description":  "Aplikasi Doa Harian untuk kebutuhan Anda."
+        "description":  "Kumpulan doa harian lengkap untuk berbagai aktivitas sehari-hari. Dilengkapi teks Arab, latin, dan terjemahan untuk memudahkan penghafalan dan pengamalan."
     },
     {
         "id":  "ekspedisipro",
@@ -237,7 +237,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/ekspedisipro.png",
-        "description":  "Aplikasi Ekspedisi Pro untuk kebutuhan Anda."
+        "description":  "Sistem manajemen ekspedisi dan pengiriman barang dengan fitur tracking paket, pencatatan, dan laporan. Solusi lengkap untuk usaha logistik dan kurir."
     },
     {
         "id":  "eventorganizerpro",
@@ -249,7 +249,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/eventorganizerpro.png",
-        "description":  "Aplikasi Event Organizer Pro untuk kebutuhan Anda."
+        "description":  "Kelola acara dan event dengan fitur jadwal, daftar tamu, anggaran, dan vendor. Memudahkan EO dalam merencanakan dan mengeksekusi acara profesional."
     },
     {
         "id":  "filemanager",
@@ -261,7 +261,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/filemanager.png",
-        "description":  "Aplikasi File Manager untuk kebutuhan Anda."
+        "description":  "Jelajahi dan kelola file di perangkat dengan tampilan folder rapi dan intuitif. Fitur copy, pindah, hapus, dan rename file dengan cepat dan mudah."
     },
     {
         "id":  "fotografipro",
@@ -273,7 +273,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/fotografipro.png",
-        "description":  "Aplikasi Fotografi Pro untuk kebutuhan Anda."
+        "description":  "Manajemen bisnis fotografi dengan fitur jadwal pemotretan, portofolio klien, dan pembukuan. Bantu fotografer mengelola proyek dan klien secara profesional."
     },
     {
         "id":  "freelancepro",
@@ -285,7 +285,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/freelancepro.png",
-        "description":  "Aplikasi Freelance Pro untuk kebutuhan Anda."
+        "description":  "Manajemen proyek freelance dari proposal hingga pembayaran. Lacak waktu kerja, kelola klien, dan buat invoice profesional dalam satu aplikasi."
     },
     {
         "id":  "furniturepro",
@@ -297,7 +297,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/furniturepro.png",
-        "description":  "Aplikasi Furniture Pro untuk kebutuhan Anda."
+        "description":  "Aplikasi manajemen usaha furniture dengan fitur stok produk, pesanan kustom, dan laporan penjualan. Optimalkan operasional toko furniture Anda sehari-hari."
     },
     {
         "id":  "generatorqr",
@@ -309,7 +309,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/generatorqr.png",
-        "description":  "Aplikasi Generator QR untuk kebutuhan Anda."
+        "description":  "Buat kode QR kustom untuk tautan, teks, kontak, dan Wi-Fi dalam hitungan detik. Pilih warna dan desain sesuai keinginan lalu bagikan langsung ke media sosial."
     },
     {
         "id":  "globalsearch",
@@ -321,7 +321,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/globalsearch.png",
-        "description":  "Aplikasi Global Search untuk kebutuhan Anda."
+        "description":  "Cari file, kontak, email, dan konten di seluruh perangkat dalam satu kolom pencarian. Temukan apa pun dengan cepat tanpa membuka banyak aplikasi."
     },
     {
         "id":  "guruajar",
@@ -333,7 +333,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/guruajar.png",
-        "description":  "Aplikasi GuruAjar untuk kebutuhan Anda."
+        "description":  "Platform belajar mengajar yang menghubungkan guru dengan murid secara digital. Tersedia materi pelajaran, tugas, dan forum diskusi untuk mendukung proses belajar."
     },
     {
         "id":  "gurucircle",
@@ -345,7 +345,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/gurucircle.png",
-        "description":  "Aplikasi GuruCircle untuk kebutuhan Anda."
+        "description":  "Komunitas virtual untuk para guru berbagi materi, pengalaman, dan sumber daya pendidikan. Kolaborasi dan belajar bersama sesama pendidik dari seluruh Indonesia."
     },
     {
         "id":  "guruhub",
@@ -357,7 +357,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/guruhub.png",
-        "description":  "Aplikasi GuruHub untuk kebutuhan Anda."
+        "description":  "Pusat pembelajaran digital untuk guru dengan akses modul ajar, RPP, dan bank soal. Tingkatkan kualitas pengajaran dengan materi terstruktur dan terbaru."
     },
     {
         "id":  "gurukelas",
@@ -369,7 +369,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/gurukelas.png",
-        "description":  "Aplikasi GuruKelas untuk kebutuhan Anda."
+        "description":  "Kelola kelas digital dengan fitur absensi, penilaian, dan jadwal pelajaran. Memudahkan guru memantau perkembangan siswa secara real-time dan terstruktur."
     },
     {
         "id":  "gurutugas",
@@ -381,7 +381,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/gurutugas.png",
-        "description":  "Aplikasi GuruTugas untuk kebutuhan Anda."
+        "description":  "Buat, distribusikan, dan koreksi tugas secara digital. Guru dapat memberikan feedback langsung dan siswa bisa mengumpulkan tugas dari mana saja."
     },
     {
         "id":  "hashtaggenerator",
@@ -393,7 +393,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/hashtaggenerator.png",
-        "description":  "Aplikasi Hashtag Generator untuk kebutuhan Anda."
+        "description":  "Hasilkan rekomendasi hashtag populer untuk konten media sosial Anda. Tingkatkan jangkauan postingan dengan hashtag relevan yang sedang tren terkini."
     },
     {
         "id":  "imagetoolkit",
@@ -405,7 +405,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/imagetoolkit.png",
-        "description":  "Aplikasi Image Toolkit untuk kebutuhan Anda."
+        "description":  "Edit, kompres, resize, dan konversi gambar dengan mudah. Dilengkapi filter, crop, rotate, dan alat manipulasi gambar dalam satu paket lengkap."
     },
     {
         "id":  "kalenderhijriyah",
@@ -417,7 +417,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/kalenderhijriyah.png",
-        "description":  "Aplikasi Kalender Hijriyah untuk kebutuhan Anda."
+        "description":  "Lihat tanggal Hijriyah dan konversi ke Masehi dengan akurat. Dilengkapi jadwal puasa sunnah, hari besar Islam, dan pengingat ibadah harian."
     },
     {
         "id":  "kalkulatordiskon",
@@ -429,7 +429,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/kalkulatordiskon.png",
-        "description":  "Aplikasi Kalkulator Diskon untuk kebutuhan Anda."
+        "description":  "Hitung diskon dan harga akhir dengan cepat dan tepat. Ketahui persentase diskon, jumlah penghematan, dan harga yang harus dibayar dalam sekejap."
     },
     {
         "id":  "kamusretro",
@@ -441,7 +441,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/kamusretro.png",
-        "description":  "Aplikasi Kamus Retro untuk kebutuhan Anda."
+        "description":  "Kamus bahasa dengan tampilan retro yang unik dan nyaman digunakan. Cari arti kata, sinonim, antonim, dan contoh penggunaan dalam berbagai bahasa."
     },
     {
         "id":  "konveksipro",
@@ -453,7 +453,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/konveksipro.png",
-        "description":  "Aplikasi Konveksi Pro untuk kebutuhan Anda."
+        "description":  "Manajemen usaha konveksi dan garmen dengan fitur stok kain, produksi, dan pesanan pelanggan. Kelola proses jahit-menjahit jadi lebih efisien dan teratur."
     },
     {
         "id":  "kuistrivia",
@@ -465,7 +465,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/kuistrivia.png",
-        "description":  "Aplikasi Kuis Trivia untuk kebutuhan Anda."
+        "description":  "Uji pengetahuan Anda dengan kuis trivia dari berbagai kategori seru. Jawab pertanyaan menantang dan kumpulkan skor tertinggi untuk menjadi juara trivia!"
     },
     {
         "id":  "kulinerpro",
@@ -477,7 +477,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/kulinerpro.png",
-        "description":  "Aplikasi Kuliner Pro untuk kebutuhan Anda."
+        "description":  "Manajemen bisnis kuliner dengan fitur menu digital, pencatatan pesanan, dan laporan keuangan. Bantu pengusaha kuliner mengelola usaha lebih praktis dan modern."
     },
     {
         "id":  "langkahku",
@@ -489,7 +489,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/langkahku.png",
-        "description":  "Aplikasi Langkahku untuk kebutuhan Anda."
+        "description":  "Pantau jumlah langkah kaki, jarak tempuh, dan kalori yang terbakar setiap hari. Temani aktivitas sehat Anda dengan grafik perkembangan harian yang jelas."
     },
     {
         "id":  "linkcollection",
@@ -501,7 +501,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/linkcollection.png",
-        "description":  "Aplikasi Link Collection untuk kebutuhan Anda."
+        "description":  "Simpan dan atur kumpulan tautan favorit dalam satu tempat. Kelompokkan link berdasarkan kategori, tambahkan catatan, dan akses dengan mudah kapan saja."
     },
     {
         "id":  "lombamatematika",
@@ -513,7 +513,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/lombamatematika.png",
-        "description":  "Aplikasi Lomba Matematika untuk kebutuhan Anda."
+        "description":  "Latih kemampuan matematika lewat soal-soal lomba yang menantang dan bervariasi. Cocok untuk siswa yang ingin mempersiapkan diri menghadapi olimpiade matematika."
     },
     {
         "id":  "minumanpro",
@@ -525,7 +525,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/minumanpro.png",
-        "description":  "Aplikasi Minuman Pro untuk kebutuhan Anda."
+        "description":  "Manajemen usaha minuman dengan katalog produk, stok bahan baku, dan laporan transaksi. Kelola bisnis minuman kekinian jadi lebih efisien dan menguntungkan."
     },
     {
         "id":  "morseencoder",
@@ -537,7 +537,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/morseencoder.png",
-        "description":  "Aplikasi Morse Encoder untuk kebutuhan Anda."
+        "description":  "Ubah teks biasa menjadi kode Morse dan sebaliknya dengan mudah. Dilengkapi pemutar suara Morse dan panduan belajar untuk penggemar komunikasi klasik."
     },
     {
         "id":  "music",
@@ -549,7 +549,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/music.png",
-        "description":  "Aplikasi Music untuk kebutuhan Anda."
+        "description":  "Pemutar musik lokal dengan tampilan sederhana dan fitur lengkap. Nikmati lagu favorit lewat playlist, equalizer, dan kontrol pemutaran yang mudah digunakan."
     },
     {
         "id":  "numberlearning",
@@ -561,7 +561,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/numberlearning.png",
-        "description":  "Aplikasi Number Learning untuk kebutuhan Anda."
+        "description":  "Belajar angka dalam berbagai bahasa dengan permainan interaktif yang seru. Cocok untuk anak-anak yang baru belajar berhitung dan mengenal angka dasar."
     },
     {
         "id":  "papangambar",
@@ -573,7 +573,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/papangambar.png",
-        "description":  "Aplikasi Papan Gambar untuk kebutuhan Anda."
+        "description":  "Papan gambar digital untuk menuangkan ide dan kreativitas kapan saja. Dilengkapi berbagai kuas, warna, dan kanvas kosong yang siap Anda coret-coret."
     },
     {
         "id":  "pencatatkeuangan",
@@ -585,7 +585,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/pencatatkeuangan.png",
-        "description":  "Aplikasi Pencatat Keuangan untuk kebutuhan Anda."
+        "description":  "Catat pemasukan dan pengeluaran harian dengan mudah dan praktis. Lihat laporan keuangan bulanan dalam bentuk grafik untuk mengontrol anggaran Anda."
     },
     {
         "id":  "penghitunghari",
@@ -597,7 +597,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/penghitunghari.png",
-        "description":  "Aplikasi Penghitung Hari untuk kebutuhan Anda."
+        "description":  "Hitung selisih hari antara dua tanggal atau hitung mundur menuju hari spesial. Cocok untuk menghitung usia, masa kerja, atau countdown liburan."
     },
     {
         "id":  "pengingatminumair",
@@ -609,7 +609,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/pengingatminumair.png",
-        "description":  "Aplikasi Pengingat Minum Air untuk kebutuhan Anda."
+        "description":  "Atur jadwal minum air dengan pengingat otomatis dan lacak konsumsi harian. Bantu Anda menjaga hidrasi tubuh demi kesehatan yang lebih optimal."
     },
     {
         "id":  "pengingatobat",
@@ -621,7 +621,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/pengingatobat.png",
-        "description":  "Aplikasi Pengingat Obat untuk kebutuhan Anda."
+        "description":  "Atur jadwal minum obat dengan pengingat tepat waktu dan tidak terlewat. Catat riwayat konsumsi obat dan dapatkan notifikasi sesuai dosis yang ditentukan."
     },
     {
         "id":  "percetakanpro",
@@ -633,7 +633,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/percetakanpro.png",
-        "description":  "Aplikasi Percetakan Pro untuk kebutuhan Anda."
+        "description":  "Manajemen usaha percetakan dengan fitur pesanan, desain, dan estimasi biaya cetak. Kelola produksi dari pelanggan hingga pengiriman dengan rapi dan efisien."
     },
     {
         "id":  "perikananpro",
@@ -645,7 +645,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/perikananpro.png",
-        "description":  "Aplikasi Perikanan Pro untuk kebutuhan Anda."
+        "description":  "Manajemen usaha perikanan dengan pencatatan stok ikan, pakan, dan hasil panen. Bantu pembudidaya ikan mengelola operasional tambak secara efisien."
     },
     {
         "id":  "permainaningatan",
@@ -657,7 +657,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/permainaningatan.png",
-        "description":  "Aplikasi Permainan Ingatan untuk kebutuhan Anda."
+        "description":  "Asah daya ingat dengan permainan mencocokkan kartu bergambar. Semakin sulit levelnya, semakin banyak kartu yang harus diingat dan dipasangkan dengan tepat."
     },
     {
         "id":  "pertanianpro",
@@ -669,7 +669,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/pertanianpro.png",
-        "description":  "Aplikasi Pertanian Pro untuk kebutuhan Anda."
+        "description":  "Kelola usaha pertanian dengan fitur jadwal tanam, stok pupuk, dan hasil panen. Solusi digital bagi petani modern untuk mengelola lahan lebih produktif."
     },
     {
         "id":  "peternakanpro",
@@ -681,7 +681,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/peternakanpro.png",
-        "description":  "Aplikasi Peternakan Pro untuk kebutuhan Anda."
+        "description":  "Manajemen peternakan untuk mencatat populasi ternak, pakan, vaksinasi, dan hasil produksi. Kelola peternakan Anda dengan data yang akurat dan terpercaya."
     },
     {
         "id":  "pictoguess",
@@ -693,7 +693,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/pictoguess.png",
-        "description":  "Aplikasi Pictoguess untuk kebutuhan Anda."
+        "description":  "Tebak gambar dengan berbagai tingkat kesulitan yang menantang dan seru. Asah ketajaman observasi dan bermainlah bersama teman atau keluarga."
     },
     {
         "id":  "promptbuilder",
@@ -705,7 +705,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/promptbuilder.png",
-        "description":  "Aplikasi Prompt Builder untuk kebutuhan Anda."
+        "description":  "Buat prompt AI yang efektif dengan template dan panduan lengkap. Cocok untuk pengguna AI yang ingin menghasilkan output lebih optimal dan terstruktur."
     },
     {
         "id":  "promptlibrary",
@@ -717,7 +717,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/promptlibrary.png",
-        "description":  "Aplikasi Prompt Library untuk kebutuhan Anda."
+        "description":  "Kumpulan prompt AI siap pakai untuk berbagai kebutuhan kreatif dan produktif. Dari menulis konten hingga coding, temukan inspirasi di perpustakaan digital ini."
     },
     {
         "id":  "puzzleslider",
@@ -729,7 +729,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/puzzleslider.png",
-        "description":  "Aplikasi Puzzle Slider untuk kebutuhan Anda."
+        "description":  "Geser kepingan puzzle untuk menyusun gambar utuh dalam permainan slider klasik. Uji kesabaran dan logika dengan berbagai ukuran papan yang menantang."
     },
     {
         "id":  "qrcode",
@@ -741,7 +741,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/qrcode.png",
-        "description":  "Aplikasi Qrcode untuk kebutuhan Anda."
+        "description":  "Pindai dan buat kode QR dengan cepat menggunakan kamera perangkat. Baca informasi dari QR code apa pun dan simpan riwayat pemindaian Anda."
     },
     {
         "id":  "ranjaupop",
@@ -753,7 +753,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/ranjaupop.png",
-        "description":  "Aplikasi Ranjau Pop untuk kebutuhan Anda."
+        "description":  "Game klasik penghindar ranjau dengan sentuhan modern yang adiktif. Tap kotak dengan hati-hati, hindari ranjau, dan buka area aman untuk memenangkan permainan."
     },
     {
         "id":  "retropedometer",
@@ -765,11 +765,11 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/retropedometer.png",
-        "description":  "Aplikasi Retro Pedometer untuk kebutuhan Anda."
+        "description":  "Lacak langkah harian Anda dengan tampilan retro klasik yang nyaman di mata. Catat jarak tempuh dan kalori dengan pedometer sederhana namun akurat."
     },
     {
         "id":  "salonbarbershoppro",
-        "name":  "Salon \u0026 Barbershop Pro",
+        "name":  "Salon & Barbershop Pro",
         "package":  "com.fokuskonten.salonbarbershoppro",
         "category":  "Bisnis",
         "status":  "published",
@@ -777,7 +777,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/salonbarbershoppro.png",
-        "description":  "Aplikasi Salon \u0026 Barbershop Pro untuk kebutuhan Anda."
+        "description":  "Sistem manajemen salon dan barbershop dengan fitur booking, data pelanggan, dan transaksi. Optimalkan jadwal layanan dan kelola bisnis potong rambut lebih rapi."
     },
     {
         "id":  "senter",
@@ -789,7 +789,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/senter.png",
-        "description":  "Aplikasi Senter untuk kebutuhan Anda."
+        "description":  "Ubah ponsel Anda menjadi senter terang dengan satu sentuhan saja. Dilengkapi mode lampu darurat berkedip dan kontrol kecerahan untuk berbagai situasi."
     },
     {
         "id":  "simonssays",
@@ -801,7 +801,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/simonssays.png",
-        "description":  "Aplikasi Simon Says untuk kebutuhan Anda."
+        "description":  "Mainkan game memori ikonik Simon Says! Ikuti urutan warna dan suara yang semakin cepat. Uji daya ingat dan refleks Anda hingga level tertinggi."
     },
     {
         "id":  "simulasikredit",
@@ -813,7 +813,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/simulasikredit.png",
-        "description":  "Aplikasi Simulasi Kredit untuk kebutuhan Anda."
+        "description":  "Hitung simulasi kredit dengan bunga dan tenor yang dapat disesuaikan. Ketahui estimasi cicilan bulanan sebelum mengajukan pinjaman ke bank atau leasing."
     },
     {
         "id":  "socialmediacaptioncounter",
@@ -825,7 +825,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/socialmediacaptioncounter.png",
-        "description":  "Aplikasi Social Media Caption Counter untuk kebutuhan Anda."
+        "description":  "Hitung karakter caption untuk berbagai platform media sosial. Pastikan teks Anda tidak melebihi batas karakter Twitter, Instagram, atau TikTok."
     },
     {
         "id":  "stopwatchtimer",
@@ -837,7 +837,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/stopwatchtimer.png",
-        "description":  "Aplikasi Stopwatch Timer untuk kebutuhan Anda."
+        "description":  "Stopwatch dan timer presisi untuk olahraga, memasak, atau pengaturan waktu. Dilengkapi fitur hitung mundur dan catatan waktu lap yang akurat."
     },
     {
         "id":  "supertoolkitpro",
@@ -849,7 +849,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/supertoolkitpro.png",
-        "description":  "Aplikasi Super Toolkit Pro untuk kebutuhan Anda."
+        "description":  "Kumpulan alat utilitas lengkap mulai dari kalkulator, konverter, hingga penggaris digital. Satu aplikasi untuk berbagai kebutuhan praktis sehari-hari."
     },
     {
         "id":  "tictactoe",
@@ -861,7 +861,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/tictactoe.png",
-        "description":  "Aplikasi Tic Tac Toe untuk kebutuhan Anda."
+        "description":  "Mainkan Tic Tac Toe klasik melawan AI atau teman. Susun tiga simbol berurutan untuk menang dalam permainan strategi sederhana yang adiktif."
     },
     {
         "id":  "tokokelontongpro",
@@ -873,7 +873,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/tokokelontongpro.png",
-        "description":  "Aplikasi Toko Kelontong Pro untuk kebutuhan Anda."
+        "description":  "Aplikasi kasir dan manajemen toko kelontong lengkap. Catat stok barang, transaksi harian, dan laporan keuangan untuk usaha sembako Anda."
     },
     {
         "id":  "undianacak",
@@ -885,7 +885,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/undianacak.png",
-        "description":  "Aplikasi Undian Acak untuk kebutuhan Anda."
+        "description":  "Alat undian digital untuk memilih pemenang giveaway atau pengambilan keputusan. Masukkan daftar peserta biarkan sistem memilih secara acak dan adil."
     },
     {
         "id":  "utilitytoolbox",
@@ -897,11 +897,11 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/utilitytoolbox.png",
-        "description":  "Aplikasi Utility Toolbox untuk kebutuhan Anda."
+        "description":  "Kotak alat serbaguna dengan fitur penggaris, busur derajat, dan level digital. Solusi all-in-one untuk kebutuhan alat ukur dan bantuan praktis."
     },
     {
         "id":  "warnadandbentuk",
-        "name":  "Warna \u0026 Bentuk",
+        "name":  "Warna & Bentuk",
         "package":  "com.fokuskonten.warnadandbentuk",
         "category":  "Edukasi",
         "status":  "published",
@@ -909,7 +909,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/warnadandbentuk.png",
-        "description":  "Aplikasi Warna \u0026 Bentuk untuk kebutuhan Anda."
+        "description":  "Belajar mengenal warna dan bentuk dengan aktivitas interaktif yang menarik. Aplikasi edukasi anak untuk memperkenalkan konsep visual dasar secara menyenangkan."
     },
     {
         "id":  "waterpass",
@@ -921,11 +921,11 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/waterpass.png",
-        "description":  "Aplikasi Waterpass untuk kebutuhan Anda."
+        "description":  "Gunakan ponsel sebagai waterpass digital untuk mengukur kerataan permukaan. Akurat dan praktis untuk kebutuhan pertukangan, dekorasi, dan perbaikan rumah."
     },
     {
         "id":  "yasindantahlil",
-        "name":  "Yasin \u0026 Tahlil",
+        "name":  "Yasin & Tahlil",
         "package":  "com.fokuskonten.yasindantahlil",
         "category":  "Religi",
         "status":  "published",
@@ -933,7 +933,7 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/yasindantahlil.png",
-        "description":  "Aplikasi Yasin \u0026 Tahlil untuk kebutuhan Anda."
+        "description":  "Baca Surat Yasin dan Tahlil lengkap dengan teks Arab, latin, dan terjemahan. Dilengkapi panduan bacaan dan doa untuk acara tahlilan dan pengajian."
     },
     {
         "id":  "ziparc",
@@ -945,6 +945,6 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/ziparc.png",
-        "description":  "Aplikasi Ziparc untuk kebutuhan Anda."
+        "description":  "Kompres dan ekstrak file ZIP, RAR, dan arsip lainnya langsung dari perangkat. Kelola file arsip dengan cepat dan dukung berbagai format kompresi populer."
     }
 ]
