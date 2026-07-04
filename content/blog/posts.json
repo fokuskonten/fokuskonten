@@ -8,7 +8,8 @@
     "category": "Android Dev",
     "readTime": "5 menit",
     "author": "FokusKonten",
-    "featured": true
+    "featured": true,
+    "tags": ["kotlin", "android", "tutorial", "pemula"]
   },
   {
     "slug": "tips-fotografi-produk-ecommerce",
@@ -19,7 +20,8 @@
     "category": "Fotografi",
     "readTime": "4 menit",
     "author": "FokusKonten",
-    "featured": true
+    "featured": true,
+    "tags": ["fotografi", "produk", "ecommerce", "tips"]
   },
   {
     "slug": "strategi-konten-media-sosial-2026",
@@ -30,7 +32,8 @@
     "category": "Content Creator",
     "readTime": "6 menit",
     "author": "FokusKonten",
-    "featured": false
+    "featured": false,
+    "tags": ["konten", "media sosial", "strategi", "marketing"]
   },
   {
     "slug": "desain-ui-ux-android",
@@ -41,7 +44,8 @@
     "category": "Creative Digital",
     "readTime": "7 menit",
     "author": "FokusKonten",
-    "featured": false
+    "featured": false,
+    "tags": ["ui", "ux", "android", "design"]
   },
   {
     "slug": "optimasi-performa-android",
@@ -52,7 +56,8 @@
     "category": "Android Dev",
     "readTime": "5 menit",
     "author": "FokusKonten",
-    "featured": false
+    "featured": false,
+    "tags": ["android", "performa", "optimasi", "kotlin"]
   },
   {
     "slug": "editing-video-premiere-pro-pemula",
@@ -63,6 +68,7 @@
     "category": "Videografi",
     "readTime": "8 menit",
     "author": "FokusKonten",
-    "featured": false
+    "featured": false,
+    "tags": ["video", "editing", "premiere pro", "tutorial"]
   }
 ]

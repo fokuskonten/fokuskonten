@@ -61,7 +61,12 @@ export default function RootLayout({ children }) {
     <html lang="id">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/icon-192.png" sizes="192x192" type="image/png" />
+        <link rel="icon" href="/icon-512.png" sizes="512x512" type="image/png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/manifest.webmanifest" />
+        <link rel="msapplication-TileColor" content="#8c1f1f" />
+        <link rel="msapplication-config" href="/browserconfig.xml" />
         <meta name="theme-color" content="#ffffff" />
         <meta name="google-adsense-account" content="" />
       </head>

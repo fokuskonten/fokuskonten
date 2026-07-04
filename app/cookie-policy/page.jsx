@@ -1,0 +1,71 @@
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
+
+export const metadata = {
+  title: 'Cookie Policy',
+  description: 'Kebijakan penggunaan cookie di website FokusKonten.',
+  alternates: {
+    canonical: 'https://fokuskonten.my.id/cookie-policy',
+  },
+}
+
+export default function CookiePolicyPage() {
+  return (
+    <>
+      <Navbar />
+      <main className="min-h-screen">
+        <div className="container-max px-4 sm:px-6 lg:px-8 py-20">
+          
+          <div className="max-w-3xl mx-auto mb-12 animate-fade-up">
+            <span className="section-label">Legal</span>
+            <h1 className="heading-xl text-3xl sm:text-4xl text-charcoal-900 mt-3 mb-4">
+              Cookie Policy
+            </h1>
+            <p className="text-charcoal-500 text-sm">
+              Last updated: {new Date().toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' })}
+            </p>
+          </div>
+
+          <div className="max-w-3xl mx-auto prose prose-sm prose-charcoal">
+            <section className="mb-10 animate-fade-up delay-100">
+              <h2 className="font-display font-semibold text-xl text-charcoal-900 mb-4">What Are Cookies</h2>
+              <p className="text-charcoal-600 leading-relaxed mb-4">
+                Cookies are small text files that are placed on your device when you visit our website. They help us provide you with a better experience by remembering your preferences and understanding how you use our site.
+              </p>
+            </section>
+
+            <section className="mb-10 animate-fade-up delay-200">
+              <h2 className="font-display font-semibold text-xl text-charcoal-900 mb-4">How We Use Cookies</h2>
+              <p className="text-charcoal-600 leading-relaxed mb-4">
+                We use cookies for the following purposes:
+              </p>
+              <ul className="list-disc list-inside text-charcoal-600 leading-relaxed mt-3 space-y-2">
+                <li><strong>Essential Cookies:</strong> Required for the website to function properly.</li>
+                <li><strong>Analytics Cookies:</strong> Help us understand how visitors use our website.</li>
+                <li><strong>Preference Cookies:</strong> Remember your settings and preferences.</li>
+              </ul>
+            </section>
+
+            <section className="mb-10 animate-fade-up delay-300">
+              <h2 className="font-display font-semibold text-xl text-charcoal-900 mb-4">Managing Cookies</h2>
+              <p className="text-charcoal-600 leading-relaxed mb-4">
+                You can control and manage cookies through your browser settings. Note that disabling certain cookies may affect the functionality of our website.
+              </p>
+            </section>
+
+            <section className="animate-fade-up delay-400">
+              <h2 className="font-display font-semibold text-xl text-charcoal-900 mb-4">Contact</h2>
+              <p className="text-charcoal-600 leading-relaxed mb-4">
+                For questions about our cookie policy:
+              </p>
+              <div className="space-y-2 text-charcoal-600">
+                <p>Email: <a href="mailto:admin@fokuskonten.my.id" className="text-maroon-700 hover:underline">admin@fokuskonten.my.id</a></p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </>
+  )
+}

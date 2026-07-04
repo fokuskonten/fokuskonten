@@ -112,6 +112,99 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* ── Vision & Mission ───────────────── */}
+        <section className="section border-t border-black/[0.04] bg-white" aria-label="Visi & Misi">
+          <div className="container-max px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="p-8 bg-canvas-50 rounded-2xl border border-black/[0.05] shadow-mature animate-fade-up">
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center text-maroon-700 mb-6" style={{ background: 'rgba(140,31,31,0.06)', border: '1px solid rgba(140,31,31,0.12)' }}>
+                  <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  </svg>
+                </div>
+                <h3 className="font-display font-semibold text-xl text-charcoal-900 mb-4">Visi</h3>
+                <p className="text-charcoal-600 text-sm leading-relaxed">
+                  Menjadi studio kreatif digital terpercaya yang menghubungkan teknologi dan kreativitas untuk menciptakan solusi digital yang berdampak nyata bagi klien di Indonesia dan beyond.
+                </p>
+              </div>
+              <div className="p-8 bg-canvas-50 rounded-2xl border border-black/[0.05] shadow-mature animate-fade-up delay-100">
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center text-maroon-700 mb-6" style={{ background: 'rgba(140,31,31,0.06)', border: '1px solid rgba(140,31,31,0.12)' }}>
+                  <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="font-display font-semibold text-xl text-charcoal-900 mb-4">Misi</h3>
+                <ul className="text-charcoal-600 text-sm leading-relaxed space-y-2">
+                  <li>• Menyediakan layanan digital berkualitas tinggi dengan harga terjangkau</li>
+                  <li>• Mengedukankan klien melalui solusi yang mudah dipahami dan digunakan</li>
+                  <li>• Terus berinovasi mengikuti perkembangan teknologi dan tren kreatif</li>
+                  <li>• Membangun hubungan jangka panjang berbasis kepercayaan dan hasil</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ── Values ───────────────────────── */}
+        <section className="section border-t border-black/[0.04]" aria-label="Nilai Perusahaan">
+          <div className="container-max px-4 sm:px-6 lg:px-8">
+            <div className="mb-12 animate-fade-up">
+              <span className="section-label">Nilai</span>
+              <h2 className="heading-xl text-3xl sm:text-4xl text-charcoal-900">
+                Nilai <span className="text-maroon-gradient">Perusahaan</span>
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                { title: 'Kualitas', desc: 'Komitmen pada excellence dalam setiap karya' },
+                { title: 'Integritas', desc: 'Transparansi dan kejujuran dalam setiap kerjasama' },
+                { title: 'Inovasi', desc: 'Terus belajar dan mengadopsi teknologi baru' },
+                { title: 'Kolaborasi', desc: 'Bekerja bersama klien untuk hasil terbaik' },
+              ].map((value, index) => (
+                <div key={index} className="p-6 bg-white rounded-2xl border border-black/[0.05] shadow-subtle hover:shadow-mature transition-all duration-300 animate-scale-in">
+                  <h3 className="font-display font-semibold text-lg text-maroon-700 mb-2">{value.title}</h3>
+                  <p className="text-charcoal-500 text-sm leading-relaxed">{value.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── Timeline ─────────────────────── */}
+        <section className="section border-t border-black/[0.04] bg-white" aria-label="Perjalanan">
+          <div className="container-max px-4 sm:px-6 lg:px-8">
+            <div className="mb-12 animate-fade-up">
+              <span className="section-label">Perjalanan</span>
+              <h2 className="heading-xl text-3xl sm:text-4xl text-charcoal-900">
+                Timeline <span className="text-maroon-gradient">FokusKonten</span>
+              </h2>
+            </div>
+            <div className="max-w-3xl mx-auto space-y-8">
+              {[
+                { year: '2019', title: 'Awal Mula', desc: 'Memulai perjalanan di dunia digital development dan kreatif' },
+                { year: '2020', title: 'Ekspansi Skill', desc: 'Mengembangkan keahlian di Android Development dan fotografi' },
+                { year: '2021', title: 'Proyek Pertama', desc: 'Menangani proyek komersial pertama untuk klien lokal' },
+                { year: '2022', title: 'Brand FokusKonten', desc: 'Resmi mendirikan FokusKonten sebagai personal brand' },
+                { year: '2023', title: 'Pertumbuhan', desc: 'Meningkatkan portofolio dan memperluas layanan' },
+                { year: '2024', title: 'Official Website', desc: 'Meluncurkan website resmi untuk profesionalisme dan reach yang lebih luas' },
+              ].map((item, index) => (
+                <div key={index} className="flex gap-6 animate-fade-up">
+                  <div className="flex flex-col items-center">
+                    <div className="w-4 h-4 rounded-full bg-maroon-700" />
+                    {index < 5 && <div className="w-0.5 h-full bg-maroon-200 mt-2" />}
+                  </div>
+                  <div className="pb-8">
+                    <span className="font-display font-bold text-2xl text-maroon-700">{item.year}</span>
+                    <h3 className="font-display font-semibold text-lg text-charcoal-900 mt-1 mb-2">{item.title}</h3>
+                    <p className="text-charcoal-500 text-sm leading-relaxed">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* ── Skills ───────────────────────── */}
         <section className="section border-t border-black/[0.04]" aria-label="Keahlian">
           <div className="container-max px-4 sm:px-6 lg:px-8">

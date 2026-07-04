@@ -1,0 +1,59 @@
+{
+  "name": "FokusKonten — Creative Digital Studio",
+  "short_name": "FokusKonten",
+  "description": "Studio kreatif digital untuk Android Development, Fotografi & Videografi, Desain Grafis, dan Content Creator di Indonesia.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#8c1f1f",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "business",
+    "technology",
+    "design",
+    "photography"
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Portfolio",
+      "short_name": "Portfolio",
+      "description": "Lihat portfolio FokusKonten",
+      "url": "/portfolio",
+      "icons": [{ "src": "/favicon.ico", "sizes": "48x48" }]
+    },
+    {
+      "name": "Blog",
+      "short_name": "Blog",
+      "description": "Baca artikel terbaru",
+      "url": "/blog",
+      "icons": [{ "src": "/favicon.ico", "sizes": "48x48" }]
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Hubungi FokusKonten",
+      "url": "/contact",
+      "icons": [{ "src": "/favicon.ico", "sizes": "48x48" }]
+    }
+  ]
+}
