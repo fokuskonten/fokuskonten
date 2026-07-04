@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useMemo } from 'react'
+import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import appsData from '@/content/apps/apps.json'
@@ -18,27 +19,6 @@ const categoryColors = {
   Hiburan: 'bg-pink-100 text-pink-700',
 }
 
-const gradientColors = [
-  ['#667eea', '#764ba2'],
-  ['#f093fb', '#f5576c'],
-  ['#4facfe', '#00f2fe'],
-  ['#43e97b', '#38f9d7'],
-  ['#fa709a', '#fee140'],
-  ['#a18cd1', '#fbc2eb'],
-  ['#fccb90', '#d57eeb'],
-  ['#e0c3fc', '#8ec5fc'],
-  ['#f5576c', '#ff6f00'],
-  ['#667eea', '#43e97b'],
-  ['#764ba2', '#f093fb'],
-  ['#00f2fe', '#4facfe'],
-  ['#38f9d7', '#43e97b'],
-  ['#fee140', '#fa709a'],
-  ['#fbc2eb', '#a18cd1'],
-  ['#d57eeb', '#fccb90'],
-  ['#8ec5fc', '#e0c3fc'],
-  ['#ff6f00', '#f5576c'],
-]
-
 export default function ApplicationsPage() {
   const [activeCategory, setActiveCategory] = useState('Semua')
   const [searchQuery, setSearchQuery] = useState('')
@@ -51,14 +31,6 @@ export default function ApplicationsPage() {
       return matchesCategory && matchesSearch
     })
   }, [activeCategory, searchQuery])
-
-  const getGradient = (name) => {
-    let hash = 0
-    for (let i = 0; i < name.length; i++) {
-      hash = name.charCodeAt(i) + ((hash << 5) - hash)
-    }
-    return gradientColors[Math.abs(hash) % gradientColors.length]
-  }
 
   return (
     <>
@@ -130,19 +102,21 @@ export default function ApplicationsPage() {
               </div>
             ) : (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                {filteredApps.map((app, index) => {
-                  const [c1, c2] = getGradient(app.name)
-                  return (
+                {filteredApps.map((app, index) => (
                     <div
                       key={app.id}
                       className="group card-outline p-4 shadow-mature hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 animate-scale-in"
                     >
-                      <div className="flex items-center gap-3 mb-3">
-                        <div
-                          className="w-10 h-10 rounded-full flex items-center justify-center text-white font-display font-bold text-sm shrink-0"
-                          style={{ background: `linear-gradient(135deg, ${c1}, ${c2})` }}
-                        >
-                          {app.name.charAt(0)}
+                      <div className="flex items-center gap-3 mb-2">
+                        <div className="w-10 h-10 rounded-2xl overflow-hidden shrink-0 bg-canvas-100 ring-1 ring-black/[0.06]">
+                          <Image
+                            src={app.icon}
+                            alt={app.name}
+                            width={40}
+                            height={40}
+                            className="w-full h-full object-cover"
+                            unoptimized
+                          />
                         </div>
                         <div className="min-w-0">
                           <h3 className="font-display font-semibold text-sm text-charcoal-900 truncate">
@@ -151,6 +125,9 @@ export default function ApplicationsPage() {
                           <p className="text-charcoal-400 text-xs truncate">{app.package}</p>
                         </div>
                       </div>
+                      <p className="text-charcoal-500 text-xs leading-relaxed mb-3 line-clamp-2">
+                        {app.description}
+                      </p>
                       <div className="flex items-center gap-2 mb-4">
                         <span className={`text-[10px] px-2 py-0.5 rounded-full font-medium ${categoryColors[app.category] || 'bg-canvas-100 text-charcoal-500'}`}>
                           {app.category}
@@ -171,8 +148,7 @@ export default function ApplicationsPage() {
                         Lihat di Play Store
                       </a>
                     </div>
-                  )
-                })}
+                ))}
               </div>
             )}
           </div>
