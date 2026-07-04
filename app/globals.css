@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@layer base {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #1a1a40 #0a0a1f;
+  }
+
+  *::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #0a0a1f;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: #1a1a40;
+    border-radius: 3px;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background: #2a2a50;
+  }
+
+  ::selection {
+    background: rgba(0, 180, 230, 0.3);
+    color: #fff;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-400 via-vibrant-400 to-accent-500;
+    background-size: 200% 200%;
+    animation: gradient 8s ease infinite;
+  }
+
+  .gradient-border {
+    position: relative;
+  }
+
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, #1ac8ff, #8c1aff, #1ac8ff);
+    background-size: 200% 200%;
+    animation: gradient 8s ease infinite;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+
+  .glass-card {
+    @apply bg-dark-600/50 backdrop-blur-xl border border-dark-400/20 rounded-2xl;
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-vibrant-500/10;
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
