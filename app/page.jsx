@@ -62,7 +62,7 @@ export default function HomePage() {
                 Google Play Store
               </a>
               <Link
-                href="/aplikasi"
+                href="/aplikasi/"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-display font-semibold text-sm text-neutral-700 bg-white border border-neutral-200 hover:border-brand-300 hover:text-brand-600 hover:shadow-lg transition-all duration-200"
               >
                 Lihat Semua Aplikasi
@@ -168,7 +168,7 @@ export default function HomePage() {
                   Mulai via WhatsApp
                 </a>
                 <Link
-                  href="/kontak"
+                  href="/kontak/"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-display font-semibold text-sm border border-white/20 text-white hover:bg-white/10 transition-all"
                 >
                   Form Kontak

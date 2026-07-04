@@ -6,11 +6,11 @@ import { usePathname } from 'next/navigation'
 
 const navLinks = [
   { href: '/', label: 'Beranda' },
-  { href: '/aplikasi', label: 'Aplikasi' },
-  { href: '/tentang', label: 'Tentang' },
-  { href: '/layanan', label: 'Layanan' },
-  { href: '/faq', label: 'FAQ' },
-  { href: '/kontak', label: 'Kontak' },
+  { href: '/aplikasi/', label: 'Aplikasi' },
+  { href: '/tentang/', label: 'Tentang' },
+  { href: '/layanan/', label: 'Layanan' },
+  { href: '/faq/', label: 'FAQ' },
+  { href: '/kontak/', label: 'Kontak' },
 ]
 
 export default function Navbar() {

@@ -28,7 +28,7 @@ export default function ThankYouPage() {
             Kembali ke Beranda
           </Link>
           <Link
-            href="/aplikasi"
+            href="/aplikasi/"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-display font-semibold text-sm text-neutral-700 bg-white border border-neutral-200 hover:border-brand-200 hover:text-brand-600 transition-all"
           >
             Jelajahi Aplikasi

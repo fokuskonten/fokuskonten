@@ -36,20 +36,20 @@ const socialLinks = [
 const footerLinks = {
   Navigasi: [
     { label: 'Beranda', href: '/' },
-    { label: 'Aplikasi', href: '/aplikasi' },
-    { label: 'Tentang', href: '/tentang' },
-    { label: 'Layanan', href: '/layanan' },
-    { label: 'FAQ', href: '/faq' },
-    { label: 'Kontak', href: '/kontak' },
+    { label: 'Aplikasi', href: '/aplikasi/' },
+    { label: 'Tentang', href: '/tentang/' },
+    { label: 'Layanan', href: '/layanan/' },
+    { label: 'FAQ', href: '/faq/' },
+    { label: 'Kontak', href: '/kontak/' },
   ],
   Dukungan: [
-    { label: 'Pusat Bantuan', href: '/dukungan' },
-    { label: 'Kebijakan Privasi', href: '/kebijakan-privasi' },
-    { label: 'Syarat & Ketentuan', href: '/syarat-ketentuan' },
-    { label: 'Lisensi', href: '/lisensi' },
-    { label: 'Disclaimer', href: '/disclaimer' },
-    { label: 'Hak Cipta', href: '/hak-cipta' },
-    { label: 'DMCA', href: '/dmca' },
+    { label: 'Pusat Bantuan', href: '/dukungan/' },
+    { label: 'Kebijakan Privasi', href: '/kebijakan-privasi/' },
+    { label: 'Syarat & Ketentuan', href: '/syarat-ketentuan/' },
+    { label: 'Lisensi', href: '/lisensi/' },
+    { label: 'Disclaimer', href: '/disclaimer/' },
+    { label: 'Hak Cipta', href: '/hak-cipta/' },
+    { label: 'DMCA', href: '/dmca/' },
   ],
 }
 
