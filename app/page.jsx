@@ -135,62 +135,134 @@ export default function HomePage() {
       <main>
 
         {/* ══════════════════════════════════════
-            HERO
+            HERO — Indonesian style (Niagahoster/Al Grafika inspired)
         ══════════════════════════════════════ */}
         <section className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-canvas-100" aria-label="Hero section">
           <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-            <div className="absolute top-1/4 left-1/3 w-[600px] h-[600px] rounded-full blur-[130px] opacity-40" style={{ background: 'radial-gradient(circle, rgba(140, 31, 31, 0.05) 0%, transparent 70%)' }} />
-            <div className="absolute bottom-1/3 right-1/4 w-[400px] h-[400px] rounded-full blur-[100px] opacity-30" style={{ background: 'radial-gradient(circle, rgba(171, 51, 51, 0.05) 0%, transparent 70%)' }} />
-            <div className="absolute inset-0 opacity-[0.015]" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px)', backgroundSize: '80px 80px' }} />
+            <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full blur-[150px] opacity-20" style={{ background: 'radial-gradient(circle, rgba(140, 31, 31, 0.08) 0%, transparent 70%)' }} />
+            <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full blur-[120px] opacity-15" style={{ background: 'radial-gradient(circle, rgba(171, 51, 51, 0.06) 0%, transparent 70%)' }} />
           </div>
 
           <div className="relative z-10 container-max section px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl">
-              <div className="flex items-center gap-2.5 mb-8 animate-fade-up">
-                <span className="w-2 h-2 rounded-full bg-maroon-700 animate-pulse" aria-hidden="true" />
-                <span className="heading-label">Official Website · FokusKonten</span>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+              {/* ── Left: Text ── */}
+              <div className="max-w-xl">
+                <div className="flex items-center gap-2.5 mb-6 animate-fade-up">
+                  <span className="w-2 h-2 rounded-full bg-maroon-700 animate-pulse" aria-hidden="true" />
+                  <span className="heading-label">Official Website · FokusKonten</span>
+                </div>
+
+                <h1 className="heading-xl text-[clamp(2.2rem,6vw,4rem)] text-balance text-charcoal-900 mb-5 animate-fade-up delay-100 leading-[1.08]">
+                  Solusi Kreatif Digital{' '}
+                  <span className="text-maroon-gradient">Terlengkap</span>
+                  <br />
+                  untuk Kebutuhan Anda
+                </h1>
+
+                <p className="text-charcoal-600 text-base sm:text-lg leading-relaxed mb-3 animate-fade-up delay-200">
+                  Satu tempat untuk semua kebutuhan kreatif digital Anda — dari
+                  pengembangan aplikasi Android, desain grafis, fotografi & videografi,
+                  hingga kerajinan kayu handmade.
+                </p>
+                <p className="text-charcoal-400 text-sm leading-relaxed mb-8 animate-fade-up delay-300">
+                  Berpengalaman 5+ tahun dengan 79 aplikasi terpublikasi di Google Play Store
+                  dan puluhan klien puas dari seluruh Indonesia.
+                </p>
+
+                <div className="flex flex-wrap items-center gap-3 animate-fade-up delay-400">
+                  <Link href="/portfolio" className="btn-primary text-sm px-6 py-3 hover:scale-[1.02] transition-transform shadow-lg shadow-maroon-700/20">
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0l-4-4m4 4l-4 4" />
+                    </svg>
+                    Lihat Portfolio
+                  </Link>
+                  <a href="https://wa.me/6285183011318" target="_blank" rel="noopener noreferrer" className="btn-secondary text-sm px-6 py-3 hover:scale-[1.02] transition-transform border-maroon-700/20 text-maroon-700">
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    Konsultasi Gratis
+                  </a>
+                </div>
+
+                {/* Trust bar */}
+                <div className="flex flex-wrap items-center gap-6 mt-10 pt-8 border-t border-black/[0.05] animate-fade-up delay-500">
+                  {[
+                    { value: '79', label: 'Aplikasi Android' },
+                    { value: '5+', label: 'Tahun Pengalaman' },
+                    { value: '50+', label: 'Produk Kayu' },
+                    { value: '30+', label: 'Klien Puas' },
+                  ].map((s) => (
+                    <div key={s.label}>
+                      <div className="font-display font-bold text-2xl text-charcoal-900">{s.value}</div>
+                      <div className="text-charcoal-500 text-[11px] mt-0.5">{s.label}</div>
+                    </div>
+                  ))}
+                </div>
               </div>
 
-              <h1 className="heading-xl text-[clamp(2.8rem,8vw,5.5rem)] text-balance text-charcoal-900 mb-6 animate-fade-up delay-100">
-                Create.{' '}
-                <span className="text-maroon-gradient">Develop.</span>
-                <br />
-                <span className="text-charcoal-400">Capture.</span>
-              </h1>
+              {/* ── Right: Visual Illustration ── */}
+              <div className="hidden lg:flex items-center justify-center animate-fade-up delay-200" aria-hidden="true">
+                <div className="relative w-full max-w-md">
+                  {/* Main composition */}
+                  <div className="relative z-10 bg-white rounded-3xl border border-black/[0.06] shadow-elevated p-8">
+                    {/* Service icons row */}
+                    <div className="flex items-center justify-center gap-4 mb-6">
+                      <div className="w-12 h-12 rounded-xl bg-maroon-50 border border-maroon-100 flex items-center justify-center text-maroon-700">
+                        <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6" stroke="currentColor" strokeWidth="1.5">
+                          <rect x="4" y="2" width="16" height="20" rx="3" />
+                          <line x1="12" y1="17" x2="12" y2="18" />
+                          <line x1="8" y1="5" x2="16" y2="5" opacity="0.4" />
+                        </svg>
+                      </div>
+                      <div className="w-12 h-12 rounded-xl bg-maroon-50 border border-maroon-100 flex items-center justify-center text-maroon-700">
+                        <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6" stroke="currentColor" strokeWidth="1.5">
+                          <circle cx="12" cy="12" r="9" />
+                          <circle cx="12" cy="12" r="4" opacity="0.5" />
+                          <circle cx="12" cy="12" r="1.5" fill="currentColor" opacity="0.6" />
+                        </svg>
+                      </div>
+                      <div className="w-12 h-12 rounded-xl bg-maroon-50 border border-maroon-100 flex items-center justify-center text-maroon-700">
+                        <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6" stroke="currentColor" strokeWidth="1.5">
+                          <rect x="2" y="7" width="20" height="14" rx="4" />
+                          <circle cx="12" cy="14" r="4" />
+                          <path d="M16 3l-3 4h-2l-3-4" opacity="0.4" />
+                        </svg>
+                      </div>
+                      <div className="w-12 h-12 rounded-xl bg-maroon-50 border border-maroon-100 flex items-center justify-center text-maroon-700">
+                        <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6" stroke="currentColor" strokeWidth="1.5">
+                          <path d="M12 2L6 12h4l-2 8 8-12h-4l4-8-8 10h4l-2 6" />
+                        </svg>
+                      </div>
+                    </div>
 
-              <p className="text-charcoal-600 text-lg sm:text-xl font-light leading-relaxed max-w-2xl mb-4 animate-fade-up delay-200">
-                Studio kreatif digital — Android Development, Desain Grafis,
-                Fotografi & Videografi, dan Content Creation.
-              </p>
-              <p className="text-charcoal-400 text-sm max-w-xl leading-relaxed mb-10 animate-fade-up delay-300">
-                Berfokus pada solusi digital yang fungsional, estetis, dan berdampak nyata bagi klien dengan pendekatan minimalis elegan.
-              </p>
+                    {/* Stats mini card */}
+                    <div className="grid grid-cols-2 gap-3 mb-4">
+                      <div className="bg-canvas-100 rounded-xl p-4 text-center border border-black/[0.04]">
+                        <div className="font-display font-bold text-2xl text-maroon-700">79</div>
+                        <div className="text-charcoal-500 text-[10px]">Aplikasi di Play Store</div>
+                      </div>
+                      <div className="bg-canvas-100 rounded-xl p-4 text-center border border-black/[0.04]">
+                        <div className="font-display font-bold text-2xl text-maroon-700">6</div>
+                        <div className="text-charcoal-500 text-[10px]">Bidang Layanan</div>
+                      </div>
+                    </div>
 
-              <div className="flex flex-wrap items-center gap-4 animate-fade-up delay-400">
-                <Link href="/portfolio" className="btn-primary text-sm px-7 py-3.5 hover:scale-[1.02] transition-transform">
-                  Lihat Portfolio
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Link>
-                <a href="https://wa.me/6285183011318" target="_blank" rel="noopener noreferrer" className="btn-secondary text-sm px-7 py-3.5 hover:scale-[1.02] transition-transform">
-                  Hubungi via WhatsApp
-                </a>
-              </div>
-
-              <div className="flex flex-wrap items-center gap-8 mt-14 pt-10 border-t border-black/[0.05] animate-fade-up delay-500">
-                {[
-                  { value: '79', label: 'Aplikasi' },
-                  { value: '3+', label: 'Kursus' },
-                  { value: '50+', label: 'Kategori Produk Kayu' },
-                  { value: '5+', label: 'Tahun Pengalaman' },
-                ].map((s) => (
-                  <div key={s.label} className="hover:scale-105 transition-transform duration-200">
-                    <div className="font-display font-bold text-3xl text-charcoal-900">{s.value}</div>
-                    <div className="text-charcoal-500 text-xs mt-0.5">{s.label}</div>
+                    {/* Rating / Trust */}
+                    <div className="flex items-center justify-center gap-2 text-xs text-charcoal-500 bg-maroon-50/50 rounded-xl py-3 px-4 border border-maroon-100/50">
+                      <svg className="w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <span>Terpercaya — 5+ tahun melayani klien di Indonesia</span>
+                    </div>
                   </div>
-                ))}
+
+                  {/* Decorative element */}
+                  <div className="absolute -top-3 -right-3 w-24 h-24 rounded-full bg-maroon-700/[0.04] blur-xl pointer-events-none" />
+                  <div className="absolute -bottom-4 -left-4 w-32 h-32 rounded-full bg-maroon-700/[0.03] blur-xl pointer-events-none" />
+                </div>
               </div>
+
             </div>
           </div>
         </section>
