@@ -21,7 +21,9 @@
         "targetSdk":  36,
         "minSdk":  24,
         "icon":  "/app-icons/apotekpro.png",
-        "description":  "Aplikasi manajemen apotek lengkap dengan fitur stok obat, transaksi penjualan, dan laporan keuangan harian. Memudahkan pemilik apotek dalam mengelola operasional bisnis."
+        "description":  "Aplikasi manajemen apotek lengkap dengan fitur stok obat, transaksi penjualan, dan laporan keuangan harian. Memudahkan pemilik apotek dalam mengelola operasional bisnis.",
+        "privacyPolicy":  "/aplikasi/apotekpro/privacy",
+        "termsOfService":  "/aplikasi/apotekpro/terms"
     },
     {
         "id":  "appmanager",

@@ -8,3 +8,9 @@ package-lock.json
 !public/app-ads.txt
 !public/ads.txt
 *.log
+*.jks
+*.keystore
+key_store_muhari
+keystore.txt
+keystorebaru.txt
+.env*
