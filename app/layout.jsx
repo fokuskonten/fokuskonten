@@ -6,14 +6,14 @@ import BackToTop from '@/components/BackToTop'
 
 export const metadata = {
   title: {
-    default: 'FokusKonten — Kumpulan Aplikasi Android Terbaik',
+    default: 'FokusKonten — Pengembang & Publisher Software Aplikasi Resmi',
     template: '%s | FokusKonten',
   },
-  description: 'FokusKonten adalah publisher aplikasi Android Indonesia. Temukan 79+ aplikasi terbaik kami di Google Play Store — dari game, edukasi, utilitas, hingga bisnis.',
+  description: 'FokusKonten adalah pengembang dan publisher software serta aplikasi Android & Desktop resmi. Menyediakan solusi aplikasi bisnis kasir (Apotek Pro, Kelontong Pro), MCJob.id, CRM, dan layanan pembuatan aplikasi kustom profesional.',
   keywords: [
-    'FokusKonten', 'Aplikasi Android', 'Android Apps', 'Google Play Indonesia',
-    'Publisher Android', 'Developer Indonesia', 'Aplikasi Terbaik',
-    'Game Android', 'Edukasi Android', 'Utilitas Android', 'Android Studio',
+    'FokusKonten', 'Apotek Pro', 'Kelontong Pro', 'Aplikasi Kasir Android', 'POS Apotek', 'Software Apotek',
+    'Aplikasi Android Indonesia', 'Developer Android Indonesia', 'Publisher Google Play',
+    'Jasa Pembuatan Aplikasi Android', 'Aplikasi Bisnis Offline',
   ],
   authors: [{ name: 'FokusKonten', url: 'https://fokuskonten.my.id' }],
   creator: 'FokusKonten',
@@ -24,19 +24,18 @@ export const metadata = {
     locale: 'id_ID',
     url: 'https://fokuskonten.my.id',
     siteName: 'FokusKonten',
-    title: 'FokusKonten — Kumpulan Aplikasi Android Terbaik',
-    description: '79+ aplikasi Android buatan Indonesia. Temukan game, edukasi, utilitas, dan aplikasi bisnis di Google Play Store.',
-    images: [{ url: '/assets/brand/og-image.jpg', width: 1200, height: 630, alt: 'FokusKonten — Aplikasi Android' }],
+    title: 'FokusKonten — Pengembang & Publisher Software Aplikasi Resmi',
+    description: 'Solusi software dan aplikasi andal untuk bisnis (Apotek Pro, Kelontong Pro), Al-Qur\'an digital, bursa karir MCJob.id, dan WhatsApp Lead CRM.',
+    images: [{ url: '/assets/brand/og-image.jpg', width: 1200, height: 630, alt: 'FokusKonten — Software & Aplikasi' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'FokusKonten — Kumpulan Aplikasi Android Terbaik',
-    description: '79+ aplikasi Android buatan Indonesia. Temukan game, edukasi, utilitas, dan aplikasi bisnis di Google Play Store.',
+    title: 'FokusKonten — Pengembang & Publisher Software Aplikasi Resmi',
+    description: 'Solusi software dan aplikasi andal untuk bisnis (Apotek Pro, Kelontong Pro), Al-Qur\'an digital, bursa karir MCJob.id, dan WhatsApp Lead CRM.',
     images: ['/assets/brand/og-image.jpg'],
   },
   robots: { index: true, follow: true },
   alternates: { canonical: 'https://fokuskonten.my.id' },
-  verification: { google: 'PLACEHOLDER_GOOGLE_VERIFICATION' },
 }
 
 export default function RootLayout({ children }) {
@@ -47,7 +46,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.webmanifest" />
-        <meta name="theme-color" content="#7C3AED" />
+        <meta name="theme-color" content="#0F172A" />
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"

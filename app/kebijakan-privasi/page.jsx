@@ -73,7 +73,7 @@ const sections = [
 
 export default function PrivacyPolicyPage() {
   return (
-    <section className="pt-28 pb-20">
+    <section className="pt-32 pb-20 bg-gradient-to-b from-neutral-50 to-white">
       <div className="container-page">
         <div className="max-w-3xl mx-auto">
           <span className="label-brand mb-4 inline-block">Legal</span>

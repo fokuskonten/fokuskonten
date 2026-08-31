@@ -40,15 +40,15 @@ export default function FAQPage() {
 
   return (
     <>
-      <section className="pt-28 pb-20">
+      <section className="pt-32 pb-20 bg-gradient-to-b from-neutral-50 to-white">
         <div className="container-page">
           <div className="max-w-3xl mx-auto text-center mb-14">
-            <span className="label-brand mb-4 inline-block">FAQ</span>
-            <h1 className="heading-xl text-3xl sm:text-4xl text-neutral-900 mb-6">
-              Pertanyaan <span className="text-gradient-brand">Umum</span>
+            <span className="label-brand mb-4 inline-block">Bantuan &amp; Tanya Jawab</span>
+            <h1 className="heading-xl text-3xl sm:text-4xl lg:text-5xl text-neutral-900 mb-6">
+              Pertanyaan <span className="text-gradient-brand">Umum (FAQ)</span>
             </h1>
-            <p className="text-neutral-500 text-sm leading-relaxed max-w-lg mx-auto">
-              Temukan jawaban atas pertanyaan yang sering diajukan tentang FokusKonten dan aplikasi Android kami.
+            <p className="text-neutral-600 text-base leading-relaxed max-w-lg mx-auto">
+              Temukan jawaban atas pertanyaan seputar penggunaan aplikasi, mode offline, keamanan data, dan layanan pembuatan aplikasi FokusKonten.
             </p>
           </div>
 

@@ -6,7 +6,7 @@ export const metadata = {
 
 export default function LicensesPage() {
   return (
-    <section className="pt-28 pb-20">
+    <section className="pt-32 pb-20 bg-gradient-to-b from-neutral-50 to-white">
       <div className="container-page">
         <div className="max-w-3xl mx-auto">
           <span className="label-brand mb-4 inline-block">Legal</span>
@@ -18,7 +18,7 @@ export default function LicensesPage() {
               <h2 className="font-display font-semibold text-neutral-800 text-base mb-3">Aplikasi Android</h2>
               <p className="text-neutral-500 text-sm leading-relaxed">
                 Seluruh aplikasi Android yang dikembangkan oleh FokusKonten dan dipublikasikan di Google Play Store adalah hak milik FokusKonten. 
-                Aplikasi tersebut dilindungi oleh undang-undang hak cipta yang berlaku. Dilarang merekayasa ulang (reverse engineering), 
+                Aplikasi tersebut dilindungi oleh undang-undang hak cipta yang berlaku. Dilarang membongkar kode sumber (reverse engineering), 
                 mendistribusikan kembali, atau memodifikasi aplikasi tanpa izin tertulis dari FokusKonten.
               </p>
             </div>

@@ -59,16 +59,18 @@ export default function Footer() {
       <div className="container-page pt-14 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
           <div className="md:col-span-1">
-            <Link href="/" className="flex items-center gap-2.5 mb-4 w-fit" aria-label="FokusKonten">
-              <span className="w-8 h-8 rounded-xl bg-gradient-brand flex items-center justify-center text-white font-display font-bold text-sm">
-                F
-              </span>
-              <span className="font-display font-bold text-lg text-neutral-900 tracking-tight">
-                Fokus<span className="text-brand-600">Konten</span>
+            <Link href="/" className="flex items-center gap-3 mb-4 w-fit" aria-label="FokusKonten">
+              <img
+                src="/logo.webp"
+                alt="FokusKonten Logo"
+                className="w-10 h-10 object-contain drop-shadow-sm"
+              />
+              <span className="font-display font-extrabold text-lg text-neutral-900 tracking-tight">
+                Fokus<span className="text-neutral-950">Konten</span>
               </span>
             </Link>
             <p className="text-neutral-500 text-sm leading-relaxed max-w-sm mb-5">
-              Publisher aplikasi Android Indonesia. 79+ aplikasi tersedia di Google Play Store — dari game, edukasi, utilitas, hingga bisnis.
+              Studio pengembang software dan publisher aplikasi Android resmi Indonesia. Menghadirkan solusi aplikasi bisnis (Apotek Pro, Kelontong Pro), MCJob.id, CRM, dan jasa pembuatan aplikasi profesional.
             </p>
             <div className="flex items-center gap-2">
               {socialLinks.map((s) => (

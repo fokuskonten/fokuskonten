@@ -6,7 +6,7 @@ export default function WhatsAppFloat() {
       href="https://wa.me/6285183011318"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-gradient-brand shadow-lg shadow-brand-500/30 hover:shadow-xl hover:shadow-brand-500/40 flex items-center justify-center text-white transition-all duration-300 hover:scale-110 hover:-translate-y-1 animate-bounce-in"
+      className="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-black shadow-lg shadow-black/30 hover:shadow-xl hover:shadow-black/40 flex items-center justify-center text-white transition-all duration-300 hover:scale-110 hover:-translate-y-1 animate-bounce-in"
       aria-label="Hubungi via WhatsApp"
     >
       <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">

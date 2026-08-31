@@ -9,15 +9,15 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <>
-      <section className="pt-28 pb-20">
+      <section className="pt-32 pb-20 bg-gradient-to-b from-neutral-50 to-white">
         <div className="container-page">
           <div className="max-w-3xl mx-auto text-center mb-14">
-            <span className="label-brand mb-4 inline-block">Kontak</span>
-            <h1 className="heading-xl text-3xl sm:text-4xl text-neutral-900 mb-6">
+            <span className="label-brand mb-4 inline-block">Kontak Resmi</span>
+            <h1 className="heading-xl text-3xl sm:text-4xl lg:text-5xl text-neutral-900 mb-6">
               Hubungi <span className="text-gradient-brand">FokusKonten</span>
             </h1>
-            <p className="text-neutral-500 text-base leading-relaxed max-w-lg mx-auto">
-              Punya pertanyaan, masukan, atau ingin berdiskusi? Kami siap membantu melalui berbagai saluran berikut.
+            <p className="text-neutral-600 text-base leading-relaxed max-w-lg mx-auto">
+              Silakan hubungi tim pengembang kami untuk pertanyaan seputar aplikasi, permohonan fitur, atau konsultasi pembuatan aplikasi baru.
             </p>
           </div>
 
@@ -57,29 +57,29 @@ export default function ContactPage() {
                 href={item.action}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white rounded-2xl border border-neutral-200/60 shadow-card p-5 hover:shadow-float hover:-translate-y-0.5 transition-all duration-200 group"
+                className="bg-white rounded-2xl border border-neutral-200/80 shadow-card p-5 hover:shadow-lg hover:border-neutral-400 hover:-translate-y-0.5 transition-all duration-200 group"
               >
-                <div className="w-10 h-10 rounded-xl bg-brand-50 flex items-center justify-center text-brand-600 mb-3 group-hover:bg-brand-600 group-hover:text-white transition-all">
+                <div className="w-10 h-10 rounded-xl bg-neutral-100 flex items-center justify-center text-neutral-900 mb-3 group-hover:bg-black group-hover:text-white transition-all">
                   {item.icon}
                 </div>
                 <h3 className="font-display font-semibold text-sm text-neutral-900 mb-1">{item.title}</h3>
                 <p className="text-neutral-500 text-xs mb-3">{item.value}</p>
-                <span className="text-xs font-medium text-brand-600">{item.label} &rarr;</span>
+                <span className="text-xs font-semibold text-neutral-900 underline">{item.label} &rarr;</span>
               </a>
             ))}
           </div>
 
-          <div className="rounded-3xl bg-neutral-50 border border-neutral-100 p-8 max-w-2xl mx-auto">
-            <h2 className="heading-md text-lg text-neutral-900 mb-4 text-center">Atau Kirim Pesan Langsung</h2>
-            <p className="text-neutral-500 text-sm text-center mb-6">
+          <div className="rounded-3xl bg-neutral-950 text-white p-8 max-w-2xl mx-auto text-center">
+            <h2 className="heading-md text-lg text-white mb-2">Atau Kirim Pesan Langsung</h2>
+            <p className="text-neutral-400 text-sm mb-6">
               Klik tombol di bawah untuk langsung terhubung dengan kami via WhatsApp.
             </p>
-            <div className="text-center">
+            <div>
               <a
                 href="https://wa.me/6285183011318"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-display font-semibold text-sm text-white bg-gradient-brand hover:shadow-lg hover:shadow-brand-500/25 transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-display font-semibold text-sm text-neutral-950 bg-white hover:bg-neutral-100 transition-all shadow-md"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
                 Kirim Pesan WhatsApp

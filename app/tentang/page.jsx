@@ -2,161 +2,135 @@ import Link from 'next/link'
 
 export const metadata = {
   title: 'Tentang FokusKonten',
-  description: 'FokusKonten adalah publisher aplikasi Android Indonesia yang berbasis di Cikarang, Jawa Barat. Publikasikan aplikasi Android berkualitas sejak 2020.',
+  description: 'FokusKonten adalah studio pengembang perangkat lunak dan publisher aplikasi Android Indonesia yang berbasis di Cikarang, Jawa Barat.',
   alternates: { canonical: 'https://fokuskonten.my.id/tentang' },
 }
 
 const milestones = [
-  { year: '2020', title: 'Berdirinya FokusKonten', desc: 'Memulai perjalanan sebagai pengembang aplikasi Android dengan fokus pada solusi digital untuk masyarakat Indonesia.' },
-  { year: '2021', title: 'Aplikasi Pertama', desc: 'Aplikasi pertama berhasil dipublikasikan di Google Play Store. Menjadi langkah awal mewujudkan visi sebagai publisher aplikasi Android terpercaya.' },
-  { year: '2022', title: 'Ekspansi Kategori', desc: 'Memperluas pengembangan ke berbagai kategori — game, edukasi, utilitas, dan bisnis. Setiap aplikasi dirancang dengan standar kualitas tinggi.' },
-  { year: '2025', title: '79+ Aplikasi', desc: 'Mencapai 79+ aplikasi Android yang tersedia di Google Play Store dengan target SDK 36. Terus berinovasi mengikuti perkembangan teknologi Android.' },
-  { year: '2026', title: 'Terus Berkembang', desc: 'Komitmen untuk terus menghadirkan aplikasi Android berkualitas untuk pengguna Indonesia dan global.' },
+  { year: '2020', title: 'Awal Pendirian', desc: 'Memulai perancangan dan riset pengembangan aplikasi Android berbasis utilitas dan kebutuhan harian masyarakat.' },
+  { year: '2021', title: 'Publikasi Resmi Play Store', desc: 'Merilis aplikasi pertama secara resmi di Google Play Store dan membangun fondasi arsitektur aplikasi yang ringan dan stabil.' },
+  { year: '2023', title: 'Ekspansi Solusi Bisnis & POS', desc: 'Mengembangkan lini aplikasi kasir dan manajemen usaha (Apotek Pro, Retail POS) berbasis offline-first untuk mendukung UMKM.' },
+  { year: '2025', title: 'Standar Target SDK 36', desc: 'Mengadopsi standar sistem Android termutakhir (SDK 36 / Android 15 & 16) untuk seluruh katalog aplikasi demi performa dan privasi maksimal.' },
+  { year: '2026', title: 'Ekosistem Berkelanjutan', desc: 'Terus menyempurnakan fitur aplikasi bisnis, utilitas, dan layanan pembuatan aplikasi kustom berstandar profesional.' },
 ]
 
 export default function AboutPage() {
   return (
-    <section className="pt-28 pb-20">
+    <section className="pt-32 pb-20 bg-gradient-to-b from-neutral-50 to-white">
       <div className="container-page">
-        <div className="max-w-3xl mx-auto mb-16">
-          <span className="label-brand mb-4 inline-block">Tentang</span>
-          <h1 className="heading-xl text-3xl sm:text-4xl lg:text-5xl text-neutral-900 mb-6 text-balance">
-            FokusKonten —{' '}
-            <span className="text-gradient-brand">Publisher Aplikasi Android</span>
-          </h1>
-          <p className="text-neutral-500 text-base leading-relaxed mb-4">
-            FokusKonten adalah publisher aplikasi Android Indonesia yang berkomitmen menghadirkan aplikasi berkualitas 
-            untuk berbagai kebutuhan — mulai dari game, edukasi, utilitas, kesehatan, produktivitas, religi, hiburan, 
-            hingga solusi bisnis profesional. Berbasis di Cikarang, Jawa Barat, kami telah mengembangkan dan 
-            mempublikasikan lebih dari 79 aplikasi di Google Play Store.
-          </p>
-          <p className="text-neutral-500 text-base leading-relaxed mb-4">
-            Setiap aplikasi dikembangkan dengan standar tinggi — antarmuka modern, performa optimal, dan pengalaman 
-            pengguna yang menyenangkan. Kami percaya teknologi harus memberikan solusi nyata bagi masyarakat. 
-            Karena itu, setiap aplikasi dirancang untuk menyelesaikan masalah spesifik, membantu produktivitas, 
-            atau memberikan hiburan yang bermakna.
-          </p>
-          <p className="text-neutral-500 text-base leading-relaxed">
-            Visi kami adalah menjadi publisher aplikasi Android terdepan dari Indonesia yang dikenal akan kualitas, 
-            inovasi, dan dedikasi dalam memberikan solusi digital. Misi kami adalah terus mengembangkan aplikasi 
-            yang bermanfaat, mudah digunakan, dan dapat diakses oleh semua kalangan.
-          </p>
-        </div>
-
-        <div className="mb-16">
-          <div className="text-center mb-10">
-            <span className="label-brand mb-3 inline-block">Perjalanan</span>
-            <h2 className="heading-xl text-3xl text-neutral-900">Perjalanan FokusKonten</h2>
-            <p className="text-neutral-500 text-sm mt-3 max-w-lg mx-auto">
-              Dari awal berdiri hingga menjadi publisher dengan 79+ aplikasi di Google Play Store.
-            </p>
-          </div>
-          <div className="relative">
-            <div className="absolute left-4 sm:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-brand-500 via-brand-300 to-transparent -translate-x-1/2 hidden sm:block" />
-            <div className="space-y-8 sm:space-y-12">
-              {milestones.map((m, i) => (
-                <div key={m.year} className={`relative flex flex-col sm:flex-row items-start gap-4 sm:gap-8 ${i % 2 === 0 ? 'sm:flex-row' : 'sm:flex-row-reverse'}`}>
-                  <div className={`flex-1 ${i % 2 === 0 ? 'sm:text-right' : 'sm:text-left'}`}>
-                    <div className="bg-white rounded-2xl border border-neutral-200/60 shadow-card p-5 sm:p-6">
-                      <span className="text-brand-600 font-display font-bold text-sm">{m.year}</span>
-                      <h3 className="font-display font-semibold text-neutral-900 mt-1">{m.title}</h3>
-                      <p className="text-neutral-500 text-sm mt-2 leading-relaxed">{m.desc}</p>
-                    </div>
-                  </div>
-                  <div className="hidden sm:flex shrink-0 w-8 h-8 rounded-full bg-brand-500 border-4 border-white shadow-soft items-center justify-center relative z-10">
-                    <div className="w-2 h-2 rounded-full bg-white" />
-                  </div>
-                  <div className="flex-1 hidden sm:block" />
-                </div>
-              ))}
+        {/* Signature Header Banner */}
+        <div className="relative max-w-4xl mx-auto mb-16 rounded-3xl overflow-hidden border border-neutral-200/80 shadow-card bg-black group">
+          <img
+            src="/brand/fokuskonten-header.jpg"
+            alt="FokusKonten Studio Header Banner"
+            className="w-full h-auto object-cover min-h-[260px] max-h-[380px]"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/55 to-transparent flex flex-col justify-center p-6 sm:p-10 lg:p-12">
+            <div className="max-w-md">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-[11px] font-display font-semibold text-white/90 mb-3.5">
+                <span className="w-2 h-2 rounded-full bg-emerald-400" />
+                FokusKonten Studio • Indonesia
+              </div>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-display font-bold text-white tracking-tight mb-2.5 drop-shadow-md">
+                Keahlian Rekayasa &amp; Standar Tinggi Software
+              </h2>
+              <p className="text-xs sm:text-sm text-neutral-300 font-medium leading-relaxed drop-shadow line-clamp-2 sm:line-clamp-3 mb-5">
+                Mendedikasikan keahlian software engineering untuk menghadirkan aplikasi Android dan desktop yang cepat, aman, dan berdaulat penuh.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-2.5 py-1 rounded-lg bg-black/60 backdrop-blur-sm border border-neutral-700/60 text-[10px] sm:text-[11px] font-mono text-neutral-300">
+                  ⚡ Offline-First
+                </span>
+                <span className="px-2.5 py-1 rounded-lg bg-black/60 backdrop-blur-sm border border-neutral-700/60 text-[10px] sm:text-[11px] font-mono text-neutral-300">
+                  🔒 Privasi Terjamin
+                </span>
+                <span className="px-2.5 py-1 rounded-lg bg-black/60 backdrop-blur-sm border border-neutral-700/60 text-[10px] sm:text-[11px] font-mono text-neutral-300">
+                  🚀 SDK 36 Ready
+                </span>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-16">
-          <div className="rounded-2xl bg-white border border-neutral-200/60 shadow-card p-6">
-            <h2 className="font-display font-semibold text-neutral-900 text-base mb-4">Visi</h2>
-            <p className="text-neutral-500 text-sm leading-relaxed">
-              Menjadi publisher aplikasi Android terdepan dari Indonesia yang dikenal akan kualitas, 
-              inovasi, dan dedikasi dalam memberikan solusi digital.
+        <div className="max-w-3xl mx-auto mb-16">
+          <span className="label-brand mb-4 inline-block">Profil Perusahaan</span>
+          <h1 className="heading-xl text-3xl sm:text-4xl lg:text-5xl text-neutral-900 mb-6 text-balance">
+            FokusKonten —{' '}
+            <span className="text-gradient-brand">Studio Pengembang Software</span>
+          </h1>
+          <p className="text-neutral-600 text-base leading-relaxed mb-5">
+            FokusKonten adalah studio pengembang dan publisher aplikasi Android &amp; software resmi Indonesia yang berpusat di Cikarang, Jawa Barat. Mengusung simbol <strong>Mata Elang</strong> sebagai representasi ketajaman visi, ketelitian detail teknis, dan independensi sistem tanpa kompromi.
+          </p>
+          <p className="text-neutral-600 text-base leading-relaxed mb-5">
+            Melalui produk unggulan seperti <strong>Apotek Pro</strong>, <strong>Kelontong Pro</strong>, dan platform karir <strong>MCJob.id</strong>, kami memprioritaskan prinsip <em>Offline-First</em> — memastikan pelaku usaha dapat terus mencatat transaksi, mengelola stok, dan mencetak struk secara andal tanpa hambatan jaringan.
+          </p>
+          <p className="text-neutral-600 text-base leading-relaxed">
+            Seluruh produk kami dikembangkan dengan standar keamanan ketat, mematuhi panduan Google Play Protect SDK 36, serta dirancang untuk kemudahan navigasi bagi siapapun yang menggunakannya.
+          </p>
+        </div>
+
+        <div className="mb-20">
+          <div className="text-center mb-12">
+            <span className="label-brand mb-3 inline-block">Linimasa</span>
+            <h2 className="heading-xl text-2xl sm:text-3xl text-neutral-900">Perjalanan &amp; Perkembangan</h2>
+          </div>
+          <div className="max-w-3xl mx-auto space-y-6">
+            {milestones.map((m) => (
+              <div key={m.year} className="bg-white rounded-2xl border border-neutral-200/80 p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
+                <span className="text-neutral-950 font-display font-bold text-lg shrink-0 w-20">{m.year}</span>
+                <div className="flex-1">
+                  <h3 className="font-display font-semibold text-neutral-900 text-base mb-1">{m.title}</h3>
+                  <p className="text-neutral-600 text-sm leading-relaxed">{m.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto mb-16">
+          <div className="rounded-2xl bg-white border border-neutral-200/80 p-6 shadow-sm">
+            <h3 className="font-display font-semibold text-neutral-900 text-base mb-3">Visi</h3>
+            <p className="text-neutral-600 text-sm leading-relaxed">
+              Menjadi studio pengembang software dan aplikasi terpercaya dari Indonesia yang menghadirkan solusi digital berkualitas tinggi, tangguh, dan mudah diakses untuk seluruh lapisan masyarakat dan pelaku usaha.
             </p>
           </div>
-          <div className="rounded-2xl bg-white border border-neutral-200/60 shadow-card p-6">
-            <h2 className="font-display font-semibold text-neutral-900 text-base mb-4">Misi</h2>
-            <ul className="space-y-2">
-              <li className="flex items-start gap-2 text-neutral-500 text-sm">
-                <span className="w-1.5 h-1.5 rounded-full bg-brand-500 shrink-0 mt-1.5" />
-                Mengembangkan aplikasi berkualitas tinggi yang bermanfaat
+          <div className="rounded-2xl bg-white border border-neutral-200/80 p-6 shadow-sm">
+            <h3 className="font-display font-semibold text-neutral-900 text-base mb-3">Misi</h3>
+            <ul className="space-y-2.5 text-neutral-600 text-sm leading-relaxed">
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-950 shrink-0 mt-2" />
+                Membangun aplikasi bisnis kasir offline-first yang andal dan terjangkau.
               </li>
-              <li className="flex items-start gap-2 text-neutral-500 text-sm">
-                <span className="w-1.5 h-1.5 rounded-full bg-brand-500 shrink-0 mt-1.5" />
-                Menjaga standar pengalaman pengguna yang optimal
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-950 shrink-0 mt-2" />
+                Menjaga standar performa dan kompatibilitas SDK Android termutakhir.
               </li>
-              <li className="flex items-start gap-2 text-neutral-500 text-sm">
-                <span className="w-1.5 h-1.5 rounded-full bg-brand-500 shrink-0 mt-1.5" />
-                Terus berinovasi mengikuti teknologi terkini
-              </li>
-              <li className="flex items-start gap-2 text-neutral-500 text-sm">
-                <span className="w-1.5 h-1.5 rounded-full bg-brand-500 shrink-0 mt-1.5" />
-                Memberikan solusi digital untuk masyarakat Indonesia
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-neutral-950 shrink-0 mt-2" />
+                Memberikan layanan konsultasi dan pembuatan aplikasi yang transparan.
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="rounded-2xl bg-white border border-neutral-200/60 shadow-card p-6 sm:p-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            <div>
-              <h2 className="font-display font-semibold text-neutral-900 text-base mb-4">Informasi Perusahaan</h2>
-              <dl className="space-y-3 text-sm">
-                <div className="flex justify-between border-b border-neutral-100 pb-2">
-                  <dt className="text-neutral-400">Nama</dt>
-                  <dd className="text-neutral-700 font-medium">FokusKonten</dd>
-                </div>
-                <div className="flex justify-between border-b border-neutral-100 pb-2">
-                  <dt className="text-neutral-400">Pendiri</dt>
-                  <dd className="text-neutral-700 font-medium">Muharie</dd>
-                </div>
-                <div className="flex justify-between border-b border-neutral-100 pb-2">
-                  <dt className="text-neutral-400">Lokasi</dt>
-                  <dd className="text-neutral-700 font-medium">Cikarang, Jawa Barat, Indonesia</dd>
-                </div>
-                <div className="flex justify-between border-b border-neutral-100 pb-2">
-                  <dt className="text-neutral-400">Berdiri</dt>
-                  <dd className="text-neutral-700 font-medium">2020</dd>
-                </div>
-                <div className="flex justify-between border-b border-neutral-100 pb-2">
-                  <dt className="text-neutral-400">Play Store</dt>
-                  <dd className="text-neutral-700 font-medium">
-                    <a href="https://play.google.com/store/apps/developer?id=FokusKonten" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">
-                      FokusKonten
-                    </a>
-                  </dd>
-                </div>
-              </dl>
+        <div className="rounded-3xl bg-white border border-neutral-200/80 p-8 max-w-3xl mx-auto shadow-card">
+          <h3 className="font-display font-semibold text-neutral-900 text-base mb-4">Informasi Resmi</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+            <div className="border-b sm:border-b-0 pb-2 sm:pb-0">
+              <span className="text-neutral-400 text-xs block">Studio / Badan Usaha</span>
+              <span className="font-medium text-neutral-800">FokusKonten</span>
+            </div>
+            <div className="border-b sm:border-b-0 pb-2 sm:pb-0">
+              <span className="text-neutral-400 text-xs block">Lokasi</span>
+              <span className="font-medium text-neutral-800">Cikarang, Jawa Barat, Indonesia</span>
             </div>
             <div>
-              <h2 className="font-display font-semibold text-neutral-900 text-base mb-4">Kontak</h2>
-              <dl className="space-y-3 text-sm">
-                <div className="flex justify-between border-b border-neutral-100 pb-2">
-                  <dt className="text-neutral-400">Email</dt>
-                  <dd className="text-neutral-700 font-medium">
-                    <a href="mailto:admin@fokuskonten.my.id" className="text-brand-600 hover:underline">admin@fokuskonten.my.id</a>
-                  </dd>
-                </div>
-                <div className="flex justify-between border-b border-neutral-100 pb-2">
-                  <dt className="text-neutral-400">WhatsApp</dt>
-                  <dd className="text-neutral-700 font-medium">
-                    <a href="https://wa.me/6285183011318" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">+62 851-8301-1318</a>
-                  </dd>
-                </div>
-                <div className="flex justify-between border-b border-neutral-100 pb-2">
-                  <dt className="text-neutral-400">Website</dt>
-                  <dd className="text-neutral-700 font-medium">
-                    <a href="https://fokuskonten.my.id" className="text-brand-600 hover:underline">fokuskonten.my.id</a>
-                  </dd>
-                </div>
-              </dl>
+              <span className="text-neutral-400 text-xs block">Email Resmi</span>
+              <a href="mailto:admin@fokuskonten.my.id" className="font-semibold text-neutral-900 underline">admin@fokuskonten.my.id</a>
+            </div>
+            <div>
+              <span className="text-neutral-400 text-xs block">WhatsApp Resmi</span>
+              <a href="https://wa.me/6285183011318" target="_blank" rel="noopener noreferrer" className="font-semibold text-neutral-900 underline">+62 851-8301-1318</a>
             </div>
           </div>
         </div>

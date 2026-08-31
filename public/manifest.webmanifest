@@ -1,11 +1,11 @@
 {
   "name": "FokusKonten — Aplikasi Android Indonesia",
   "short_name": "FokusKonten",
-  "description": "79+ aplikasi Android buatan Indonesia. Game, edukasi, utilitas, dan bisnis di Google Play Store.",
+  "description": "Pengembang dan publisher software serta aplikasi Android & desktop Indonesia.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#7C3AED",
+  "theme_color": "#000000",
   "orientation": "portrait-primary",
   "icons": [
     { "src": "/favicon.png", "sizes": "48x48", "type": "image/png" },

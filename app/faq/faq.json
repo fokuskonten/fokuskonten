@@ -1,38 +1,26 @@
 [
   {
     "question": "Apa itu FokusKonten?",
-    "answer": "FokusKonten adalah publisher aplikasi Android Indonesia. Kami mengembangkan dan mempublikasikan berbagai aplikasi Android di Google Play Store — mulai dari game, edukasi, utilitas, kesehatan, hingga aplikasi bisnis."
+    "answer": "FokusKonten adalah studio pengembang software dan publisher aplikasi Android resmi di Indonesia yang berpusat di Cikarang, Jawa Barat. Kami mengembangkan software kasir dan manajemen bisnis (seperti Apotek Pro, Kelontong Pro), MCJob.id, CRM, serta melayani jasa pembuatan aplikasi Android profesional."
   },
   {
-    "question": "Apakah aplikasi FokusKonten gratis?",
-    "answer": "Sebagian besar aplikasi FokusKonten gratis untuk diunduh dan digunakan. Beberapa aplikasi mungkin menampilkan iklan melalui Google AdMob atau menawarkan pembelian dalam aplikasi (in-app purchase). Informasi lebih detail tersedia di halaman masing-masing aplikasi di Google Play Store."
+    "question": "Apakah aplikasi bisnis FokusKonten (seperti Apotek Pro) bisa digunakan offline?",
+    "answer": "Ya, seluruh aplikasi bisnis FokusKonten dirancang dengan arsitektur Offline-First. Seluruh transaksi kasir, pencatatan stok, dan pencetakan struk dapat beroperasi 100% tanpa koneksi internet, sehingga operasional usaha Anda tetap berjalan tanpa hambatan."
   },
   {
     "question": "Bagaimana cara mengunduh aplikasi FokusKonten?",
-    "answer": "Semua aplikasi FokusKonten tersedia di Google Play Store. Cukup cari nama aplikasi di Play Store atau klik tombol 'Download di Google Play' di halaman detail setiap aplikasi di website kami."
+    "answer": "Seluruh aplikasi resmi kami tersedia dan dapat diunduh langsung melalui Google Play Store. Anda dapat mengeklik tombol 'Google Play' di halaman detail masing-masing aplikasi di website ini."
   },
   {
-    "question": "Apakah aplikasi FokusKonten aman digunakan?",
-    "answer": "Ya, seluruh aplikasi FokusKonten telah melalui proses review Google Play Store dan memenuhi kebijakan keamanan Google. Kami juga menggunakan Firebase Crashlytics untuk memantau stabilitas aplikasi secara real-time."
+    "question": "Apakah aplikasi FokusKonten aman dan terverifikasi?",
+    "answer": "Ya, seluruh aplikasi kami mematuhi pedoman keamanan Google Play Protect, menggunakan standar enkripsi modern, dan mengikuti target SDK Android termutakhir (Target SDK 36 / Android 15 & 16)."
   },
   {
-    "question": "Apa saja izin yang diminta aplikasi FokusKonten?",
-    "answer": "Izin yang diminta bervariasi tergantung fungsi aplikasi. Umumnya meliputi akses internet untuk iklan dan analitik, serta akses penyimpanan jika aplikasi memerlukan penyimpanan data. Kami hanya meminta izin yang benar-benar diperlukan."
+    "question": "Apakah FokusKonten melayani jasa pembuatan aplikasi Android custom?",
+    "answer": "Ya, kami melayani pembuatan aplikasi Android kustom untuk kebutuhan kasir toko, manajemen inventaris, company profile, dan aplikasi khusus lainnya. Anda dapat berkonsultasi langsung melalui WhatsApp resmi kami."
   },
   {
-    "question": "Apakah FokusKonten mengumpulkan data pribadi saya?",
-    "answer": "Kami mengumpulkan data minimal yang diperlukan untuk keperluan analitik dan iklan melalui Google AdMob dan Firebase Analytics. Data tersebut tidak digunakan untuk mengidentifikasi pengguna secara pribadi. Detail lengkap ada di halaman Kebijakan Privasi."
-  },
-  {
-    "question": "Bagaimana cara melaporkan masalah atau bug pada aplikasi?",
-    "answer": "Anda dapat melaporkan masalah melalui WhatsApp di +62 851-8301-1318 atau mengirim email ke admin@fokuskonten.my.id. Sertakan detail masalah, nama aplikasi, versi Android, dan tipe perangkat Anda agar kami dapat membantu lebih cepat."
-  },
-  {
-    "question": "Apakah FokusKonten menerima jasa pembuatan aplikasi?",
-    "answer": "Ya, kami menerima jasa pembuatan aplikasi Android. Hubungi kami melalui WhatsApp untuk diskusi privat mengenai kebutuhan aplikasi Anda."
-  },
-  {
-    "question": "Berapa lama waktu pengembangan aplikasi?",
-    "answer": "Waktu pengembangan bervariasi tergantung kompleksitas aplikasi. Diskusikan kebutuhan Anda melalui WhatsApp untuk estimasi waktu yang lebih akurat."
+    "question": "Bagaimana cara mendapatkan bantuan teknis atau melaporkan kendala?",
+    "answer": "Anda dapat menghubungi tim dukungan teknis kami melalui WhatsApp di +62 851-8301-1318 atau melalui email resmi admin@fokuskonten.my.id."
   }
 ]
