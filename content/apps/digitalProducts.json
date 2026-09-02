@@ -10,6 +10,8 @@
     "badge": "Unggulan",
     "price": 20000,
     "originalPrice": 75000,
+    "is_published": 1,
+    "isPublished": true,
     "rating": 5,
     "reviewsCount": 120,
     "salesCount": 450,
@@ -32,6 +34,48 @@
     "specifications": {
       "Format": ".MP4",
       "Kompatibilitas": "Semua Perangkat",
+      "Kategori": "CorelDraw",
+      "Pengiriman": "Instan Akses Link Google Drive"
+    }
+  },
+  {
+    "id": "id19304",
+    "sku": "ID19304",
+    "name": "50+ New Memo Pengiriman Coreldraw",
+    "title": "50+ New Memo Pengiriman Coreldraw",
+    "category": "CorelDraw",
+    "format": "CDR",
+    "tag": "Format .CDR",
+    "badge": "Unggulan",
+    "price": 35000,
+    "originalPrice": 75000,
+    "is_published": 1,
+    "isPublished": true,
+    "rating": 5,
+    "reviewsCount": 120,
+    "salesCount": 450,
+    "image": "/covers/ID19304/ID19304_cover.webp",
+    "coverImage": "/covers/ID19304/ID19304_cover.webp",
+    "gallery": [
+      "/covers/ID19304/ID19304_cover.webp",
+      "/covers/ID19304/ID19304_slide_01.webp",
+      "/covers/ID19304/ID19304_slide_02.webp",
+      "/covers/ID19304/ID19304_slide_03.webp",
+      "/covers/ID19304/ID19304_slide_04.webp",
+      "/covers/ID19304/ID19304_slide_05.webp"
+    ],
+    "description": "50+ New Memo Pengiriman Coreldraw\n\nPaket template master aset digital siap pakai untuk kebutuhan desain komersial dan percetakan presisi.",
+    "driveLink": "https://drive.google.com/file/d/1yM2QivkPHkaHUVYlRtGBcBh4ZwyfmHCm/view?usp=drivesdk",
+    "backupDriveLink": null,
+    "features": [
+      "Format Master File: .CDR",
+      "Aset Beresolusi Tinggi & Siap Pakai",
+      "Akses Link Google Drive Cepat & Aman",
+      "Lisensi Penggunaan Komersial & Personal"
+    ],
+    "specifications": {
+      "Format": ".CDR",
+      "Kompatibilitas": "CorelDraw X7 ke atas",
       "Kategori": "CorelDraw",
       "Pengiriman": "Instan Akses Link Google Drive"
     }

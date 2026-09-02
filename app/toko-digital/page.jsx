@@ -61,7 +61,7 @@ export default function TokoDigitalPage() {
 
   // Count active items per category
   const categoryCounts = useMemo(() => {
-    const activeItems = digitalProducts.filter(p => p.is_published === 1 || p.isPublished === 1 || p.isPublished === true)
+    const activeItems = digitalProducts.filter(p => p.is_published !== 0 && p.isPublished !== false)
     const counts = { Semua: activeItems.length }
     categories.forEach((cat) => {
       if (cat !== 'Semua') {
@@ -74,8 +74,7 @@ export default function TokoDigitalPage() {
   // Filter & Sort products
   const filteredProducts = useMemo(() => {
     let result = digitalProducts.filter((p) => {
-      // Hanya tampilkan produk aktif (is_published = 1 atau isPublished = true)
-      const isActive = p.is_published === 1 || p.isPublished === true || p.isPublished === 1
+      const isActive = p.is_published !== 0 && p.isPublished !== false
       if (!isActive) return false
 
       const matchCat =
