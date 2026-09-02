@@ -9,18 +9,32 @@ const ITEMS_PER_PAGE = 24
 
 const categories = [
   'Semua',
-  'Desktop',
-  'CorelDraw',
-  'Android',
-  'Ecourse'
+  'Kaos',
+  'Desain Grafis',
+  'Vektor',
+  'Tekstur & Brush',
+  'Video FX',
+  'Mockup',
+  'Font',
+  'Preset & LUTs',
+  'Presentasi',
+  'Aplikasi',
+  'E-Book'
 ]
 
 const popularCategories = [
   'Semua',
-  'Desktop',
-  'CorelDraw',
-  'Android',
-  'Ecourse'
+  'Kaos',
+  'Desain Grafis',
+  'Vektor',
+  'Tekstur & Brush',
+  'Video FX',
+  'Mockup',
+  'Font',
+  'Preset & LUTs',
+  'Presentasi',
+  'Aplikasi',
+  'E-Book'
 ]
 
 export default function TokoDigitalPage() {

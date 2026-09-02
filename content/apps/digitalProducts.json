@@ -4,7 +4,7 @@
     "sku": "ID186001",
     "name": "50 PPT Animasi Ulang Tahun",
     "title": "50 PPT Animasi Ulang Tahun",
-    "category": "CorelDraw",
+    "category": "Presentasi",
     "format": "PPTX",
     "tag": "Format .PPTX",
     "badge": "Unggulan",
@@ -42,7 +42,7 @@
     "specifications": {
       "Format": ".PPTX",
       "Kompatibilitas": "Semua Perangkat",
-      "Kategori": "CorelDraw",
+      "Kategori": "Presentasi",
       "Pengiriman": "Instan Akses Link Google Drive"
     }
   },
@@ -51,7 +51,7 @@
     "sku": "ID020213",
     "name": "Video Editing Game Resource Pack!!",
     "title": "Video Editing Game Resource Pack!!",
-    "category": "CorelDraw",
+    "category": "Video FX",
     "format": "MP4",
     "tag": "Format .MP4",
     "badge": "Unggulan",
@@ -81,7 +81,7 @@
     "specifications": {
       "Format": ".MP4",
       "Kompatibilitas": "Semua Perangkat",
-      "Kategori": "CorelDraw",
+      "Kategori": "Video FX",
       "Pengiriman": "Instan Akses Link Google Drive"
     }
   },
@@ -90,7 +90,7 @@
     "sku": "ID19304",
     "name": "50+ New Memo Pengiriman Coreldraw",
     "title": "50+ New Memo Pengiriman Coreldraw",
-    "category": "CorelDraw",
+    "category": "Desain Grafis",
     "format": "CDR",
     "tag": "Format .CDR",
     "badge": "Unggulan",
@@ -123,7 +123,7 @@
     "specifications": {
       "Format": ".CDR",
       "Kompatibilitas": "CorelDraw X7 ke atas",
-      "Kategori": "CorelDraw",
+      "Kategori": "Desain Grafis",
       "Pengiriman": "Instan Akses Link Google Drive"
     }
   }
