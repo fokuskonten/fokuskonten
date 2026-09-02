@@ -141,31 +141,33 @@ export default function TokoDigitalPage() {
       <div className="bg-white border-b border-neutral-200 sticky top-16 sm:top-20 z-10 shadow-[0_2px_10px_rgba(0,0,0,0.03)]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-2 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden py-3">
-            {popularCategories.map((cat) => {
-              const count = categoryCounts[cat] || 0
-              const isActive = selectedCategory === cat
+            {popularCategories
+              .filter((cat) => cat === 'Semua' || (categoryCounts[cat] || 0) > 0)
+              .map((cat) => {
+                const count = categoryCounts[cat] || 0
+                const isActive = selectedCategory === cat
 
-              return (
-                <button
-                  key={cat}
-                  onClick={() => setSelectedCategory(cat)}
-                  className={`px-4 py-2 rounded-full text-sm font-bold whitespace-nowrap transition-all flex items-center gap-2 ${
-                    isActive
-                      ? 'bg-neutral-950 text-white shadow-sm'
-                      : 'text-neutral-600 hover:text-neutral-950 hover:bg-neutral-100'
-                  }`}
-                >
-                  <span>{cat}</span>
-                  <span
-                    className={`text-xs px-2 py-0.5 rounded-full font-bold ${
-                      isActive ? 'bg-white/20 text-white' : 'bg-neutral-100 text-neutral-500'
+                return (
+                  <button
+                    key={cat}
+                    onClick={() => setSelectedCategory(cat)}
+                    className={`px-4 py-2 rounded-full text-sm font-bold whitespace-nowrap transition-all flex items-center gap-2 ${
+                      isActive
+                        ? 'bg-neutral-950 text-white shadow-sm'
+                        : 'text-neutral-600 hover:text-neutral-950 hover:bg-neutral-100'
                     }`}
                   >
-                    {count}
-                  </span>
-                </button>
-              )
-            })}
+                    <span>{cat}</span>
+                    <span
+                      className={`text-xs px-2 py-0.5 rounded-full font-bold ${
+                        isActive ? 'bg-white/20 text-white' : 'bg-neutral-100 text-neutral-500'
+                      }`}
+                    >
+                      {count}
+                    </span>
+                  </button>
+                )
+              })}
           </div>
         </div>
       </div>
