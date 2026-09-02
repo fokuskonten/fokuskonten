@@ -347,16 +347,16 @@ export default function ProductDetailClient({ product }) {
                   <span className="font-bold text-neutral-900 text-right">{fmtMeta.type}</span>
                 </div>
                 <div className="flex items-center justify-between py-2 border-b border-neutral-100">
-                  <span className="text-neutral-500 font-medium">Lisensi Hak Cipta</span>
-                  <span className="font-bold text-emerald-700 text-right">Komersial (Bebas Royalti)</span>
+                  <span className="text-neutral-500 font-medium">Lisensi Penggunaan</span>
+                  <span className="font-bold text-emerald-700 text-right">Desain Proyek & Produksi Kreatif</span>
                 </div>
                 <div className="flex items-center justify-between py-2 border-b border-neutral-100">
-                  <span className="text-neutral-500 font-medium">Penyimpanan Cloud</span>
-                  <span className="font-bold text-neutral-900 text-right">Google Drive Cloud Vault</span>
+                  <span className="text-neutral-500 font-medium">Penyimpanan Master</span>
+                  <span className="font-bold text-neutral-900 text-right">Google Drive Cloud Vault Resmi</span>
                 </div>
                 <div className="flex items-center justify-between py-2 border-b border-neutral-100">
-                  <span className="text-neutral-500 font-medium">Masa Berlaku Akses</span>
-                  <span className="font-bold text-neutral-900 text-right">Seumur Hidup (Lifetime)</span>
+                  <span className="text-neutral-500 font-medium">Pengiriman Akses</span>
+                  <span className="font-bold text-neutral-900 text-right">Instan Akses Link Unduhan</span>
                 </div>
               </div>
             </div>
