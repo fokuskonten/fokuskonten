@@ -1,5 +1,52 @@
 [
   {
+    "id": "id186001",
+    "sku": "ID186001",
+    "name": "50 PPT Animasi Ulang Tahun",
+    "title": "50 PPT Animasi Ulang Tahun",
+    "category": "CorelDraw",
+    "format": "PPTX",
+    "tag": "Format .PPTX",
+    "badge": "Unggulan",
+    "price": 35000,
+    "originalPrice": 75000,
+    "is_published": 1,
+    "isPublished": true,
+    "rating": 5,
+    "reviewsCount": 120,
+    "salesCount": 450,
+    "image": "/covers/ID186001/ID186001_cover.webp",
+    "coverImage": "/covers/ID186001/ID186001_cover.webp",
+    "gallery": [
+      "/covers/ID186001/ID186001_cover.webp",
+      "/covers/ID186001/ID186001_slide_01.webp",
+      "/covers/ID186001/ID186001_slide_02.webp",
+      "/covers/ID186001/ID186001_slide_03.webp",
+      "/covers/ID186001/ID186001_slide_04.webp",
+      "/covers/ID186001/ID186001_slide_05.webp",
+      "/covers/ID186001/ID186001_slide_06.webp",
+      "/covers/ID186001/ID186001_slide_07.webp",
+      "/covers/ID186001/ID186001_slide_08.webp",
+      "/covers/ID186001/ID186001_slide_09.webp",
+      "/covers/ID186001/ID186001_slide_10.webp"
+    ],
+    "description": "50 PPT Animasi Ulang Tahun\n\nPaket template master aset digital siap pakai untuk kebutuhan desain komersial dan percetakan presisi.",
+    "driveLink": "https://drive.google.com/file/d/1VzCFAxivwT9fAlXFCtOhI1t9GpCj3djW/view?usp=drivesdk",
+    "backupDriveLink": "",
+    "features": [
+      "Format Master File: .PPTX",
+      "Aset Beresolusi Tinggi & Siap Pakai",
+      "Akses Link Google Drive Cepat & Aman",
+      "Lisensi Penggunaan Komersial & Personal"
+    ],
+    "specifications": {
+      "Format": ".PPTX",
+      "Kompatibilitas": "Semua Perangkat",
+      "Kategori": "CorelDraw",
+      "Pengiriman": "Instan Akses Link Google Drive"
+    }
+  },
+  {
     "id": "id020213",
     "sku": "ID020213",
     "name": "Video Editing Game Resource Pack!!",
