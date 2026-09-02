@@ -23,17 +23,7 @@ const formatSoftwareMap = {
   'PDF': { name: 'E-Book / Dokumen Master', ext: '.PDF', comp: 'Adobe Acrobat & Semua PDF Reader', type: 'Digital Document & Guide', desc: 'Dokumen Panduan & Aset Vektor Siap Cetak' }
 }
 
-function sanitizeDescription(rawText) {
-  if (!rawText) return 'Paket produk master digital resmi FokusKonten.'
-  return rawText
-    .replace(/Fitur Chat Shopee Anda/gi, 'Email (Gmail) terdaftar Anda')
-    .replace(/Fitur Chat Shopee/gi, 'Email (Gmail) Pembeli')
-    .replace(/room Chat Shopee/gi, 'Email (Gmail) Pembeli')
-    .replace(/Chat Shopee Anda/gi, 'Email (Gmail) Anda')
-    .replace(/Chat Shopee/gi, 'Email (Gmail)')
-    .replace(/Shopee/gi, 'FokusKonten')
-    .trim()
-}
+
 
 const topCategories = [
   'Semua',
@@ -143,7 +133,7 @@ export default function ProductDetailClient({ product }) {
     ? Math.round(((origPrice - product.price) / origPrice) * 100)
     : 50
 
-  const cleanDesc = sanitizeDescription(product.description)
+  const cleanDesc = product.description || 'Paket produk master digital resmi FokusKonten.'
 
   return (
     <div className="min-h-screen pt-28 sm:pt-32 pb-24 bg-[#FAFAFA] text-neutral-900">
