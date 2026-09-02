@@ -9,37 +9,18 @@ const ITEMS_PER_PAGE = 24
 
 const categories = [
   'Semua',
-  'Kaos',
-  'Banner',
-  'Undangan',
-  'Flyer',
-  'Kartu Nama',
-  'Sertifikat',
-  'Mockup',
-  'Sosial Media',
-  'Font',
-  'Sound Effects',
-  'Video FX',
-  'Motion Graphics',
-  'Vektor',
-  'Tekstur & Brush',
-  'Presentasi',
-  'Spreadsheet',
-  'Preset & LUTs',
-  'E-Book',
-  'Desain Grafis'
+  'Desktop',
+  'CorelDraw',
+  'Android',
+  'Ecourse'
 ]
 
 const popularCategories = [
   'Semua',
-  'Kaos',
-  'Desain Grafis',
-  'Vektor',
-  'Tekstur & Brush',
-  'Video FX',
-  'Mockup',
-  'Font',
-  'Preset & LUTs'
+  'Desktop',
+  'CorelDraw',
+  'Android',
+  'Ecourse'
 ]
 
 export default function TokoDigitalPage() {
@@ -78,12 +59,13 @@ export default function TokoDigitalPage() {
     setCurrentPage(1)
   }, [selectedCategory, searchQuery, sortBy])
 
-  // Count items per category
+  // Count active items per category
   const categoryCounts = useMemo(() => {
-    const counts = { Semua: digitalProducts.length }
+    const activeItems = digitalProducts.filter(p => p.is_published === 1 || p.isPublished === 1 || p.isPublished === true)
+    const counts = { Semua: activeItems.length }
     categories.forEach((cat) => {
       if (cat !== 'Semua') {
-        counts[cat] = digitalProducts.filter((p) => p.category === cat).length
+        counts[cat] = activeItems.filter((p) => p.category === cat).length
       }
     })
     return counts
@@ -199,7 +181,7 @@ export default function TokoDigitalPage() {
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Cari dari 2.197 template..."
+                placeholder={`Cari dari ${categoryCounts.Semua || 0} produk...`}
                 className="w-full pl-10 pr-9 py-2.5 rounded-xl bg-white border border-neutral-200 text-sm font-medium text-neutral-900 placeholder-neutral-400 focus:border-black focus:ring-2 focus:ring-black/10 transition-all outline-none shadow-sm"
               />
               <svg
