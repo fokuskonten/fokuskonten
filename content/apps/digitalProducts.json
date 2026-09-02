@@ -4,9 +4,9 @@
     "sku": "ID186001",
     "name": "50 PPT Animasi Ulang Tahun",
     "title": "50 PPT Animasi Ulang Tahun",
-    "category": "Presentasi",
-    "format": "PPTX",
-    "tag": "Format .PPTX",
+    "category": "Desain Grafis",
+    "format": "CDR",
+    "tag": "Format .CDR",
     "badge": "Unggulan",
     "price": 35000,
     "originalPrice": 75000,
@@ -34,15 +34,15 @@
     "driveLink": "https://drive.google.com/file/d/1VzCFAxivwT9fAlXFCtOhI1t9GpCj3djW/view?usp=drivesdk",
     "backupDriveLink": "",
     "features": [
-      "Format Master File: .PPTX",
+      "Format Master File: .CDR",
       "Aset Beresolusi Tinggi & Siap Pakai",
       "Akses Link Google Drive Cepat & Aman",
       "Lisensi Penggunaan Komersial & Personal"
     ],
     "specifications": {
-      "Format": ".PPTX",
-      "Kompatibilitas": "Semua Perangkat",
-      "Kategori": "Presentasi",
+      "Format": ".CDR",
+      "Kompatibilitas": "CorelDraw X7 ke atas",
+      "Kategori": "Desain Grafis",
       "Pengiriman": "Instan Akses Link Google Drive"
     }
   },
