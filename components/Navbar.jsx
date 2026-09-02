@@ -7,6 +7,7 @@ import { usePathname } from 'next/navigation'
 const navLinks = [
   { href: '/', label: 'Beranda' },
   { href: '/aplikasi/', label: 'Aplikasi' },
+  { href: '/toko-digital/', label: 'Toko Digital' },
   { href: '/tentang/', label: 'Tentang' },
   { href: '/layanan/', label: 'Layanan' },
   { href: '/faq/', label: 'FAQ' },

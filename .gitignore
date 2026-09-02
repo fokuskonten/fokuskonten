@@ -3,6 +3,7 @@ node_modules/
 out/
 .git/
 package-lock.json
+public/covers/
 *.csv
 *.txt
 !public/app-ads.txt
@@ -14,3 +15,5 @@ key_store_muhari
 keystore.txt
 keystorebaru.txt
 .env*
+Buka_Landing_Page_CRM.bat
+serve_local.js

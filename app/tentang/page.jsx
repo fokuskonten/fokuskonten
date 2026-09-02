@@ -113,6 +113,33 @@ export default function AboutPage() {
           </div>
         </div>
 
+        {/* Founder & Lead Engineer Spotlight */}
+        <div className="rounded-3xl bg-neutral-950 text-white p-6 sm:p-8 max-w-3xl mx-auto mb-16 shadow-2xl border border-neutral-800 flex flex-col sm:flex-row items-center sm:items-start gap-6">
+          <div className="w-20 h-20 rounded-full overflow-hidden shrink-0 border-2 border-white/25 shadow-md bg-neutral-900">
+            <img
+              src="/brand/muhari-profile.jpg"
+              alt="Muhari — Founder FokusKonten"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="flex-1 text-center sm:text-left">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-[11px] font-mono text-white/90 mb-2.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-white" />
+              Founder &amp; Lead Engineer
+            </div>
+            <h3 className="text-xl font-display font-bold text-white mb-1.5">Muhari</h3>
+            <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed mb-4">
+              Sosok praktisi di balik perancangan arsitektur FokusKonten. Menyatukan keahlian mobile software engineering, presisi percetakan &amp; packaging, sinematografi, hingga kerajinan kayu solid (*woodcraft*).
+            </p>
+            <Link
+              href="/muhari"
+              className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-white hover:text-neutral-300 underline underline-offset-4 transition-colors"
+            >
+              Lihat Portofolio &amp; Rekam Jejak Lengkap Owner →
+            </Link>
+          </div>
+        </div>
+
         <div className="rounded-3xl bg-white border border-neutral-200/80 p-8 max-w-3xl mx-auto shadow-card">
           <h3 className="font-display font-semibold text-neutral-900 text-base mb-4">Informasi Resmi</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
