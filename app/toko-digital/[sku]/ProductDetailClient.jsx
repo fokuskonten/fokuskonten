@@ -26,8 +26,11 @@ const formatSoftwareMap = {
 function sanitizeDescription(rawText) {
   if (!rawText) return 'Paket produk master digital resmi FokusKonten.'
   return rawText
-    .replace(/Fitur Chat Shopee/gi, 'Layanan WhatsApp FokusKonten')
-    .replace(/Chat Shopee/gi, 'WhatsApp Resmi FokusKonten')
+    .replace(/Fitur Chat Shopee Anda/gi, 'Email (Gmail) terdaftar Anda')
+    .replace(/Fitur Chat Shopee/gi, 'Email (Gmail) Pembeli')
+    .replace(/room Chat Shopee/gi, 'Email (Gmail) Pembeli')
+    .replace(/Chat Shopee Anda/gi, 'Email (Gmail) Anda')
+    .replace(/Chat Shopee/gi, 'Email (Gmail)')
     .replace(/Shopee/gi, 'FokusKonten')
     .trim()
 }
@@ -427,11 +430,11 @@ export default function ProductDetailClient({ product }) {
                 </div>
                 <div className="flex items-start gap-2.5">
                   <span className="text-emerald-600 font-bold mt-0.5">✓</span>
-                  <span><strong>Google Drive Lifetime:</strong> Akses cloud vault permanen tanpa batas kuota.</span>
+                  <span><strong>Penyimpanan Cloud:</strong> Akses Google Drive resmi berkecepatan tinggi.</span>
                 </div>
                 <div className="flex items-start gap-2.5">
                   <span className="text-emerald-600 font-bold mt-0.5">✓</span>
-                  <span><strong>Pengiriman Instan:</strong> Tautan akses langsung dikirim ke WhatsApp & Email.</span>
+                  <span><strong>Pengiriman Otomatis:</strong> Tautan akses langsung dikirim ke Email (Gmail) Anda.</span>
                 </div>
               </div>
 
