@@ -4,6 +4,7 @@ import { useState, useEffect, useMemo } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import digitalProducts from '@/content/apps/digitalProducts.json'
+import { getBuyerProfile, subscribeBuyerStore } from '@/lib/buyerStore'
 
 const navLinks = [
   { href: '/', label: 'Beranda' },
@@ -20,7 +21,16 @@ export default function Navbar() {
   const [isTokoOpen, setIsTokoOpen] = useState(false)
   const [isMobileTokoOpen, setIsMobileTokoOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [buyerProfile, setBuyerProfile] = useState(null)
   const pathname = usePathname()
+
+  useEffect(() => {
+    setBuyerProfile(getBuyerProfile())
+    const unsubscribe = subscribeBuyerStore(() => {
+      setBuyerProfile(getBuyerProfile())
+    })
+    return () => unsubscribe()
+  }, [])
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20)
@@ -205,6 +215,23 @@ export default function Navbar() {
                 </Link>
               )
             })}
+            <Link
+              href="/akun/"
+              className={`px-3.5 py-2 rounded-xl text-sm font-medium transition-all duration-200 flex items-center gap-1.5 ${
+                pathname === '/akun/'
+                  ? 'text-neutral-950 bg-neutral-100 font-semibold'
+                  : 'text-neutral-600 hover:text-neutral-950 hover:bg-neutral-100/60'
+              }`}
+            >
+              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+              </svg>
+              <span>{buyerProfile?.email ? 'Akun Saya' : 'Akun'}</span>
+              {buyerProfile?.email && (
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 ml-0.5" />
+              )}
+            </Link>
+
             <a
               href="https://wa.me/6285183011318"
               target="_blank"
@@ -305,6 +332,21 @@ export default function Navbar() {
               </Link>
             )
           })}
+          <Link
+            href="/akun/"
+            onClick={() => setIsOpen(false)}
+            className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all ${
+              pathname === '/akun/'
+                ? 'bg-neutral-100 text-neutral-950 font-semibold'
+                : 'text-neutral-600 hover:text-neutral-950 hover:bg-neutral-100/60'
+            }`}
+          >
+            <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+            </svg>
+            <span>{buyerProfile?.email ? `Akun (${buyerProfile.email.split('@')[0]})` : 'Akun & Unduhan'}</span>
+          </Link>
+
           <a
             href="https://wa.me/6285183011318"
             target="_blank"
