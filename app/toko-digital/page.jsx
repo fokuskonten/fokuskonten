@@ -3,64 +3,75 @@
 import { useState, useMemo, useEffect } from 'react'
 import Link from 'next/link'
 import digitalProducts from '@/content/apps/digitalProducts.json'
+import ProductCard from '@/components/product/ProductCard'
 import { createProductSlug } from './slugHelper'
 
 const ITEMS_PER_PAGE = 24
 
-const categories = [
-  'Semua',
-  'Kaos',
-  'Desain Grafis',
-  'Vektor',
-  'Tekstur & Brush',
-  'Video FX',
-  'Mockup',
-  'Font',
-  'Preset & LUTs',
-  'Presentasi',
-  'Aplikasi',
-  'E-Book'
-]
-
-const popularCategories = [
-  'Semua',
-  'Kaos',
-  'Desain Grafis',
-  'Vektor',
-  'Tekstur & Brush',
-  'Video FX',
-  'Mockup',
-  'Font',
-  'Preset & LUTs',
-  'Presentasi',
-  'Aplikasi',
-  'E-Book'
-]
-
 export default function TokoDigitalPage() {
   const [selectedCategory, setSelectedCategory] = useState('Semua')
+  const [selectedFormat, setSelectedFormat] = useState('Semua')
   const [searchQuery, setSearchQuery] = useState('')
   const [sortBy, setSortBy] = useState('popular')
   const [isSortOpen, setIsSortOpen] = useState(false)
   const [currentPage, setCurrentPage] = useState(1)
 
+  // Realtime kategori & format HANYA dari produk aktif (bukan dummy!)
+  const { realtimeCategories, realtimeFormats, totalActive } = useMemo(() => {
+    const activeItems = digitalProducts.filter((p) => p.is_published !== 0 && p.isPublished !== false)
+    const catCounts = {}
+    const fmtCounts = {}
+
+    activeItems.forEach((p) => {
+      if (p.category && p.category.trim()) {
+        const c = p.category.trim()
+        catCounts[c] = (catCounts[c] || 0) + 1
+      }
+      if (p.format && p.format.trim()) {
+        const f = p.format.trim().toUpperCase()
+        fmtCounts[f] = (fmtCounts[f] || 0) + 1
+      }
+    })
+
+    const cats = Object.entries(catCounts)
+      .filter(([_, count]) => count > 0)
+      .sort((a, b) => b[1] - a[1])
+
+    const fmts = Object.entries(fmtCounts)
+      .filter(([_, count]) => count > 0)
+      .sort((a, b) => b[1] - a[1])
+
+    return {
+      realtimeCategories: cats,
+      realtimeFormats: fmts,
+      totalActive: activeItems.length,
+    }
+  }, [])
+
   const sortOptions = [
     { id: 'popular', label: '🌟 Terpopuler' },
     { id: 'price_asc', label: '🏷️ Harga: Termurah' },
     { id: 'price_desc', label: '💎 Harga: Tertinggi' },
-    { id: 'newest', label: '🕒 Terbaru (SKU)' }
+    { id: 'newest', label: '🕒 Terbaru (SKU)' },
   ]
 
-  const currentSortLabel = sortOptions.find(o => o.id === sortBy)?.label || '🌟 Terpopuler'
+  const currentSortLabel = sortOptions.find((o) => o.id === sortBy)?.label || '🌟 Terpopuler'
 
-  // Sync initial category & query from URL if present
+  // Sync initial category & format & query from URL if present
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const params = new URLSearchParams(window.location.search)
       const catParam = params.get('cat')
+      const fmtParam = params.get('format')
       const qParam = params.get('q')
-      if (catParam && categories.includes(catParam)) {
+
+      if (catParam) {
         setSelectedCategory(catParam)
+        setSelectedFormat('Semua')
+      }
+      if (fmtParam) {
+        setSelectedFormat(fmtParam.toUpperCase())
+        setSelectedCategory('Semua')
       }
       if (qParam) {
         setSearchQuery(qParam)
@@ -71,21 +82,9 @@ export default function TokoDigitalPage() {
   // Reset page to 1 when filters or sorting change
   useEffect(() => {
     setCurrentPage(1)
-  }, [selectedCategory, searchQuery, sortBy])
+  }, [selectedCategory, selectedFormat, searchQuery, sortBy])
 
-  // Count active items per category
-  const categoryCounts = useMemo(() => {
-    const activeItems = digitalProducts.filter(p => p.is_published !== 0 && p.isPublished !== false)
-    const counts = { Semua: activeItems.length }
-    categories.forEach((cat) => {
-      if (cat !== 'Semua') {
-        counts[cat] = activeItems.filter((p) => p.category === cat).length
-      }
-    })
-    return counts
-  }, [])
-
-  // Filter & Sort products
+  // Filter & Sort products realtime
   const filteredProducts = useMemo(() => {
     let result = digitalProducts.filter((p) => {
       const isActive = p.is_published !== 0 && p.isPublished !== false
@@ -93,18 +92,25 @@ export default function TokoDigitalPage() {
 
       const matchCat =
         selectedCategory === 'Semua' || p.category === selectedCategory
+
+      const matchFmt =
+        selectedFormat === 'Semua' ||
+        (p.format && p.format.toUpperCase() === selectedFormat.toUpperCase())
+
       const title = (p.title || p.name || '').toLowerCase()
       const sku = (p.sku || '').toLowerCase()
       const category = (p.category || '').toLowerCase()
+      const format = (p.format || '').toLowerCase()
       const query = searchQuery.toLowerCase().trim()
 
       const matchSearch =
         !query ||
         title.includes(query) ||
         sku.includes(query) ||
-        category.includes(query)
+        category.includes(query) ||
+        format.includes(query)
 
-      return matchCat && matchSearch
+      return matchCat && matchFmt && matchSearch
     })
 
     // Apply Sorting
@@ -117,7 +123,7 @@ export default function TokoDigitalPage() {
     }
 
     return result
-  }, [selectedCategory, searchQuery, sortBy])
+  }, [selectedCategory, selectedFormat, searchQuery, sortBy])
 
   // Pagination slice
   const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE)
@@ -134,57 +140,58 @@ export default function TokoDigitalPage() {
     }).format(num)
   }
 
+  const isFiltering = selectedCategory !== 'Semua' || selectedFormat !== 'Semua' || !!searchQuery
+
+  const resetAllFilters = () => {
+    setSelectedCategory('Semua')
+    setSelectedFormat('Semua')
+    setSearchQuery('')
+  }
+
   return (
-    <div className="min-h-screen pt-20 sm:pt-24 pb-24 bg-[#FAFAFA] text-neutral-900">
+    <div className="min-h-screen pt-24 sm:pt-28 pb-24 bg-[#FAFAFA] text-neutral-900">
       
-      {/* ── 1. CREATIVE MARKET CATEGORY SUB-NAV STRIP ────────────────────── */}
-      <div className="bg-white border-b border-neutral-200 sticky top-16 sm:top-20 z-10 shadow-[0_2px_10px_rgba(0,0,0,0.03)]">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-2 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden py-3">
-            {popularCategories
-              .filter((cat) => cat === 'Semua' || (categoryCounts[cat] || 0) > 0)
-              .map((cat) => {
-                const count = categoryCounts[cat] || 0
-                const isActive = selectedCategory === cat
-
-                return (
-                  <button
-                    key={cat}
-                    onClick={() => setSelectedCategory(cat)}
-                    className={`px-4 py-2 rounded-full text-sm font-bold whitespace-nowrap transition-all flex items-center gap-2 ${
-                      isActive
-                        ? 'bg-neutral-950 text-white shadow-sm'
-                        : 'text-neutral-600 hover:text-neutral-950 hover:bg-neutral-100'
-                    }`}
-                  >
-                    <span>{cat}</span>
-                    <span
-                      className={`text-xs px-2 py-0.5 rounded-full font-bold ${
-                        isActive ? 'bg-white/20 text-white' : 'bg-neutral-100 text-neutral-500'
-                      }`}
-                    >
-                      {count}
-                    </span>
-                  </button>
-                )
-              })}
-          </div>
-        </div>
-      </div>
-
-      {/* ── 2. CATALOG HEADER & TOOLBAR SECTION ──────────────────────────── */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-6">
+      {/* ── CATALOG HEADER & TOOLBAR SECTION ──────────────────────────── */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-6">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-5 pb-6 border-b border-neutral-200">
           {/* Category Title & Counter */}
           <div>
-            <div className="text-xs font-bold uppercase tracking-wider text-neutral-400 mb-1">
-              Katalog Produk Digital
+            <div className="flex items-center gap-2 mb-1.5 flex-wrap">
+              <span className="text-xs font-bold uppercase tracking-wider text-neutral-400">
+                Katalog Produk Digital
+              </span>
+              {isFiltering && (
+                <>
+                  <span className="text-neutral-300">•</span>
+                  <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-neutral-900 text-white shadow-sm">
+                    <span>{selectedFormat !== 'Semua' ? `Format .${selectedFormat}` : selectedCategory}</span>
+                    <button
+                      onClick={resetAllFilters}
+                      className="hover:text-red-300 transition-colors ml-0.5"
+                      title="Hapus filter"
+                    >
+                      ✕
+                    </button>
+                  </span>
+                  <button
+                    onClick={resetAllFilters}
+                    className="text-xs font-semibold text-neutral-500 hover:text-black underline transition-colors"
+                  >
+                    Reset Filter
+                  </button>
+                </>
+              )}
             </div>
             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-neutral-950 font-display tracking-tight">
-              {selectedCategory === 'Semua' ? 'Pusat Template & Aset Kreatif' : selectedCategory}
+              {selectedFormat !== 'Semua'
+                ? `Format Master .${selectedFormat}`
+                : (selectedCategory === 'Semua' ? 'Pusat Template & Aset Kreatif' : selectedCategory)}
             </h1>
             <p className="text-sm text-neutral-500 mt-1">
-              Menampilkan <strong>{filteredProducts.length}</strong> aset digital siap pakai {selectedCategory !== 'Semua' ? `dalam kategori ${selectedCategory}` : ''}.
+              Menampilkan <strong>{filteredProducts.length}</strong> aset digital siap pakai{' '}
+              {selectedFormat !== 'Semua'
+                ? `dengan format file .${selectedFormat}`
+                : (selectedCategory !== 'Semua' ? `dalam kategori ${selectedCategory}` : 'resmi FokusKonten')}.
             </p>
           </div>
 
@@ -196,7 +203,7 @@ export default function TokoDigitalPage() {
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder={`Cari dari ${categoryCounts.Semua || 0} produk...`}
+                placeholder={`Cari dari ${totalActive} produk...`}
                 className="w-full pl-10 pr-9 py-2.5 rounded-xl bg-white border border-neutral-200 text-sm font-medium text-neutral-900 placeholder-neutral-400 focus:border-black focus:ring-2 focus:ring-black/10 transition-all outline-none shadow-sm"
               />
               <svg
@@ -272,10 +279,10 @@ export default function TokoDigitalPage() {
             <span className="text-4xl mb-2 block">📦</span>
             <h3 className="text-base font-bold text-neutral-900">Produk Tidak Ditemukan</h3>
             <p className="text-sm text-neutral-500 mt-1">
-              Tidak ada produk yang cocok dengan kata kunci &quot;{searchQuery}&quot;.
+              Tidak ada produk yang cocok dengan filter yang dipilih.
             </p>
             <button
-              onClick={() => { setSearchQuery(''); setSelectedCategory('Semua'); }}
+              onClick={resetAllFilters}
               className="mt-4 px-5 py-2.5 rounded-xl bg-black text-white text-xs font-bold hover:bg-neutral-800 transition-colors shadow-sm"
             >
               Reset Filter
@@ -284,98 +291,9 @@ export default function TokoDigitalPage() {
         ) : (
           <>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-              {paginatedProducts.map((product) => {
-                const origPrice = product.originalPrice || product.price * 2
-                const discountPercent = origPrice > product.price
-                  ? Math.round(((origPrice - product.price) / origPrice) * 100)
-                  : null
-
-                const productSlug = createProductSlug(product.sku, product.title)
-
-                return (
-                  <div
-                    key={product.sku}
-                    className="group bg-white rounded-2xl border border-neutral-200/80 overflow-hidden shadow-[0_4px_16px_rgba(0,0,0,0.06)] hover:shadow-[0_14px_30px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between"
-                  >
-                    <div>
-                      {/* Thumbnail Image Frame */}
-                      <Link
-                        href={`/toko-digital/${productSlug}/`}
-                        className="block relative aspect-square bg-neutral-100 overflow-hidden flex items-center justify-center border-b border-neutral-100"
-                      >
-                        {product.coverImage ? (
-                          <img
-                            src={product.coverImage}
-                            alt={product.title}
-                            loading="lazy"
-                            onError={(e) => {
-                              e.currentTarget.style.display = 'none'
-                              const fallback = e.currentTarget.parentElement.querySelector('.card-img-fallback')
-                              if (fallback) fallback.style.display = 'flex'
-                            }}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                          />
-                        ) : null}
-                        <div
-                          className="card-img-fallback w-full h-full flex-col items-center justify-center p-4 text-center bg-gradient-to-br from-neutral-800 to-neutral-950 text-white"
-                          style={{ display: product.coverImage ? 'none' : 'flex' }}
-                        >
-                          <span className="text-3xl mb-1">📦</span>
-                          <span className="text-xs font-mono font-bold text-neutral-300 uppercase tracking-widest">{product.category}</span>
-                          <span className="text-[11px] text-neutral-400 mt-1 line-clamp-2 px-2 leading-tight">{product.title}</span>
-                        </div>
-                      </Link>
-
-                      {/* Info Section (Confident 14px Typography) */}
-                      <div className="p-4 pb-2">
-                        <div className="flex items-center justify-between text-xs font-bold text-neutral-400 uppercase tracking-wider mb-1.5">
-                          <span>{product.category}</span>
-                          <span className="font-mono text-neutral-600 bg-neutral-100 px-2 py-0.5 rounded font-semibold text-[11px]">{product.sku}</span>
-                        </div>
-                        <Link href={`/toko-digital/${productSlug}/`}>
-                          <h3 className="font-bold text-neutral-950 text-sm leading-snug group-hover:text-black transition-colors line-clamp-2 min-h-[40px]">
-                            {product.title}
-                          </h3>
-                        </Link>
-                      </div>
-                    </div>
-
-                    {/* Pricing & Action Section */}
-                    <div className="p-4 pt-0">
-                      <div className="pt-2.5 border-t border-neutral-100 flex items-center justify-between gap-2">
-                        <div>
-                          {/* Price Strikethrough + Discount */}
-                          <div className="flex items-center gap-1.5 leading-none mb-1">
-                            <span className="text-xs text-neutral-400 line-through">
-                              {formatRupiah(origPrice)}
-                            </span>
-                            {discountPercent && (
-                              <span className="px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 text-[10px] font-extrabold">
-                                -{discountPercent}%
-                              </span>
-                            )}
-                          </div>
-                          {/* Final Price */}
-                          <div className="text-base font-black text-neutral-950 leading-tight font-display">
-                            {formatRupiah(product.price)}
-                          </div>
-                        </div>
-
-                        {/* CTA Detail Button */}
-                        <Link
-                          href={`/toko-digital/${productSlug}/`}
-                          className="px-3.5 py-2 rounded-xl bg-black hover:bg-neutral-800 text-white text-xs font-bold transition-all shadow-sm hover:shadow flex items-center gap-1 shrink-0"
-                        >
-                          <span>Detail</span>
-                          <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 5l7 7-7 7" />
-                          </svg>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                )
-              })}
+              {paginatedProducts.map((product) => (
+                <ProductCard key={product.sku} product={product} />
+              ))}
             </div>
 
             {/* ── 4. PAGINATION CONTROLS ───────────────────────────────────── */}
