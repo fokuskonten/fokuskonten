@@ -1,8 +1,9 @@
 'use client'
 
-import { useState, useMemo, useEffect } from 'react'
+import { useState, useMemo, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import digitalProducts from '@/content/apps/digitalProducts.json'
+import storeCategories from '@/content/apps/store_categories.json'
 import ProductCard from '@/components/product/ProductCard'
 import { createProductSlug } from './slugHelper'
 
@@ -12,7 +13,8 @@ export default function TokoDigitalPage() {
   const [selectedCategory, setSelectedCategory] = useState('Semua')
   const [selectedFormat, setSelectedFormat] = useState('Semua')
   const [searchQuery, setSearchQuery] = useState('')
-  const [sortBy, setSortBy] = useState('popular')
+  const [sortBy, setSortBy] = useState('newest')
+  const [isCategoryOpen, setIsCategoryOpen] = useState(false)
   const [isSortOpen, setIsSortOpen] = useState(false)
   const [currentPage, setCurrentPage] = useState(1)
 
@@ -49,40 +51,82 @@ export default function TokoDigitalPage() {
   }, [])
 
   const sortOptions = [
-    { id: 'popular', label: '🌟 Terpopuler' },
-    { id: 'price_asc', label: '🏷️ Harga: Termurah' },
-    { id: 'price_desc', label: '💎 Harga: Tertinggi' },
-    { id: 'newest', label: '🕒 Terbaru (SKU)' },
+    { id: 'newest', label: 'Terbaru' },
+    { id: 'price_asc', label: 'Harga: Termurah' },
+    { id: 'price_desc', label: 'Harga: Tertinggi' },
   ]
 
-  const currentSortLabel = sortOptions.find((o) => o.id === sortBy)?.label || '🌟 Terpopuler'
+  const currentSortLabel = sortOptions.find((o) => o.id === sortBy)?.label || 'Terbaru'
 
-  // Sync initial category & format & query from URL if present
+  const isInitializedRef = useRef(false)
+
+  // Sync initial category & format & query & page from URL or SessionStorage
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const params = new URLSearchParams(window.location.search)
-      const catParam = params.get('cat')
-      const fmtParam = params.get('format')
-      const qParam = params.get('q')
+    if (typeof window === 'undefined') return
 
-      if (catParam) {
-        setSelectedCategory(catParam)
-        setSelectedFormat('Semua')
-      }
-      if (fmtParam) {
-        setSelectedFormat(fmtParam.toUpperCase())
-        setSelectedCategory('Semua')
-      }
-      if (qParam) {
-        setSearchQuery(qParam)
-      }
-    }
+    const params = new URLSearchParams(window.location.search)
+    const catParam = params.get('cat')
+    const fmtParam = params.get('format')
+    const qParam = params.get('q')
+    const sortParam = params.get('sort')
+    const pageParam = parseInt(params.get('page'), 10)
+
+    let sessionState = null
+    try {
+      const raw = sessionStorage.getItem('fk_toko_session')
+      if (raw) sessionState = JSON.parse(raw)
+    } catch (e) {}
+
+    const initialCat = catParam || sessionState?.category || 'Semua'
+    const initialFmt = fmtParam ? fmtParam.toUpperCase() : (sessionState?.format || 'Semua')
+    const initialQ = qParam !== null ? qParam : (sessionState?.searchQuery || '')
+    const initialSort = sortParam || sessionState?.sortBy || 'newest'
+    const initialPage = (!isNaN(pageParam) && pageParam > 0) ? pageParam : (sessionState?.page || 1)
+
+    setSelectedCategory(initialCat)
+    setSelectedFormat(initialFmt)
+    setSearchQuery(initialQ)
+    setSortBy(initialSort)
+    setCurrentPage(initialPage)
+
+    const timer = setTimeout(() => {
+      isInitializedRef.current = true
+    }, 60)
+
+    return () => clearTimeout(timer)
   }, [])
 
-  // Reset page to 1 when filters or sorting change
+  // Persist session & sync URL when filters or page change
   useEffect(() => {
-    setCurrentPage(1)
-  }, [selectedCategory, selectedFormat, searchQuery, sortBy])
+    if (!isInitializedRef.current) return
+
+    try {
+      sessionStorage.setItem('fk_toko_session', JSON.stringify({
+        category: selectedCategory,
+        format: selectedFormat,
+        searchQuery,
+        sortBy,
+        page: currentPage,
+        t: Date.now()
+      }))
+    } catch (e) {}
+
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams()
+      if (currentPage > 1) params.set('page', String(currentPage))
+      if (selectedCategory && selectedCategory !== 'Semua') params.set('cat', selectedCategory)
+      if (selectedFormat && selectedFormat !== 'Semua') params.set('format', selectedFormat)
+      if (searchQuery && searchQuery.trim()) params.set('q', searchQuery.trim())
+      if (sortBy && sortBy !== 'newest') params.set('sort', sortBy)
+
+      const qs = params.toString()
+      const newUrl = qs ? `/toko-digital/?${qs}` : '/toko-digital/'
+      const currentFull = window.location.pathname + window.location.search
+      if (currentFull !== newUrl) {
+        window.history.replaceState(null, '', newUrl)
+      }
+    }
+  }, [selectedCategory, selectedFormat, searchQuery, sortBy, currentPage])
 
   // Filter & Sort products realtime
   const filteredProducts = useMemo(() => {
@@ -118,7 +162,7 @@ export default function TokoDigitalPage() {
       result.sort((a, b) => a.price - b.price)
     } else if (sortBy === 'price_desc') {
       result.sort((a, b) => b.price - a.price)
-    } else if (sortBy === 'newest') {
+    } else {
       result.sort((a, b) => (b.sku || '').localeCompare(a.sku || '', undefined, { numeric: true }))
     }
 
@@ -142,23 +186,66 @@ export default function TokoDigitalPage() {
 
   const isFiltering = selectedCategory !== 'Semua' || selectedFormat !== 'Semua' || !!searchQuery
 
+  const handleCategorySelect = (cat) => {
+    setSelectedCategory(cat)
+    setSelectedFormat('Semua')
+    setCurrentPage(1)
+    setIsCategoryOpen(false)
+  }
+
+  const handleFormatSelect = (fmt) => {
+    setSelectedFormat(fmt)
+    setSelectedCategory('Semua')
+    setCurrentPage(1)
+    setIsCategoryOpen(false)
+  }
+
+  const handleSortSelect = (sortId) => {
+    setSortBy(sortId)
+    setCurrentPage(1)
+    setIsSortOpen(false)
+  }
+
+  const handleSearchChange = (val) => {
+    setSearchQuery(val)
+    setCurrentPage(1)
+  }
+
+  const handlePageChange = (newPage) => {
+    setCurrentPage(newPage)
+    if (typeof window !== 'undefined') {
+      const headerEl = document.getElementById('katalog-header')
+      if (headerEl) {
+        const topPos = headerEl.getBoundingClientRect().top + window.pageYOffset - 90
+        window.scrollTo({ top: Math.max(0, topPos), behavior: 'smooth' })
+      }
+    }
+  }
+
   const resetAllFilters = () => {
     setSelectedCategory('Semua')
     setSelectedFormat('Semua')
     setSearchQuery('')
+    setCurrentPage(1)
+    try {
+      sessionStorage.removeItem('fk_toko_session')
+    } catch (e) {}
+    if (typeof window !== 'undefined') {
+      window.history.replaceState(null, '', '/toko-digital/')
+    }
   }
 
   return (
     <div className="min-h-screen pt-24 sm:pt-28 pb-24 bg-[#FAFAFA] text-neutral-900">
       
       {/* ── CATALOG HEADER & TOOLBAR SECTION ──────────────────────────── */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-6">
+      <div id="katalog-header" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-6">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-5 pb-6 border-b border-neutral-200">
           {/* Category Title & Counter */}
           <div>
             <div className="flex items-center gap-2 mb-1.5 flex-wrap">
               <span className="text-xs font-bold uppercase tracking-wider text-neutral-400">
-                Katalog Produk Digital
+                Katalog Desain
               </span>
               {isFiltering && (
                 <>
@@ -184,53 +271,78 @@ export default function TokoDigitalPage() {
             </div>
             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-neutral-950 font-display tracking-tight">
               {selectedFormat !== 'Semua'
-                ? `Format Master .${selectedFormat}`
-                : (selectedCategory === 'Semua' ? 'Pusat Template & Aset Kreatif' : selectedCategory)}
+                ? `Format .${selectedFormat}`
+                : (selectedCategory === 'Semua' ? 'Katalog Template & Desain' : selectedCategory)}
             </h1>
             <p className="text-sm text-neutral-500 mt-1">
-              Menampilkan <strong>{filteredProducts.length}</strong> aset digital siap pakai{' '}
+              Menampilkan <strong>{filteredProducts.length}</strong> produk{' '}
               {selectedFormat !== 'Semua'
-                ? `dengan format file .${selectedFormat}`
-                : (selectedCategory !== 'Semua' ? `dalam kategori ${selectedCategory}` : 'resmi FokusKonten')}.
+                ? `format .${selectedFormat}`
+                : (selectedCategory !== 'Semua' ? `kategori ${selectedCategory}` : 'siap pakai')}.
             </p>
           </div>
 
-          {/* Integrated Search Bar & Sort Dropdown */}
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full md:w-auto">
-            {/* Search Input Box */}
-            <div className="relative w-full sm:w-72 lg:w-80">
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder={`Cari dari ${totalActive} produk...`}
-                className="w-full pl-10 pr-9 py-2.5 rounded-xl bg-white border border-neutral-200 text-sm font-medium text-neutral-900 placeholder-neutral-400 focus:border-black focus:ring-2 focus:ring-black/10 transition-all outline-none shadow-sm"
-              />
-              <svg
-                className="w-4 h-4 text-neutral-400 absolute left-3.5 top-1/2 -translate-y-1/2"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-              {searchQuery && (
+          {/* Integrated Category Dropdown, Sort Dropdown & Search Bar (Aligned Right) */}
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-end gap-2.5 w-full lg:w-auto ml-auto">
+            <div className="flex items-center gap-2 flex-1 sm:flex-initial">
+              {/* 1. Category Dropdown (Berdasarkan Kategori yang Sudah Ada) */}
+              <div className="relative flex-1 sm:flex-initial">
                 <button
-                  onClick={() => setSearchQuery('')}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-xs font-bold text-neutral-400 hover:text-neutral-700 bg-neutral-100 px-1.5 py-0.5 rounded"
+                  type="button"
+                  onClick={() => {
+                    setIsCategoryOpen(!isCategoryOpen)
+                    setIsSortOpen(false)
+                  }}
+                  className="w-full sm:w-auto py-2.5 pl-3.5 pr-8 rounded-xl bg-white border border-neutral-200 text-xs sm:text-sm font-bold text-neutral-800 hover:border-black transition-all shadow-sm flex items-center justify-between gap-2"
                 >
-                  ✕
+                  <span>{selectedCategory === 'Semua' ? 'Semua Kategori' : selectedCategory}</span>
+                  <span className="text-neutral-400 text-xs">▼</span>
                 </button>
+
+                {isCategoryOpen && (
+                  <>
+                    <div
+                      className="fixed inset-0 z-40"
+                      onClick={() => setIsCategoryOpen(false)}
+                    />
+                    <div className="absolute left-0 sm:left-auto sm:right-0 top-full mt-2 w-56 bg-white rounded-2xl border border-neutral-200 shadow-2xl p-1.5 z-50 max-h-72 overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden animate-in fade-in zoom-in-95 duration-150">
+                    <button
+                      type="button"
+                      onClick={() => handleCategorySelect('Semua')}
+                      className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-left transition-colors ${
+                        selectedCategory === 'Semua' ? 'bg-neutral-900 text-white font-bold' : 'text-neutral-700 hover:bg-neutral-100 hover:text-black'
+                      }`}
+                    >
+                      <span>Semua Kategori</span>
+                      {selectedCategory === 'Semua' && <span>✓</span>}
+                    </button>
+                    {storeCategories.map((cat) => (
+                      <button
+                        key={cat}
+                        type="button"
+                        onClick={() => handleCategorySelect(cat)}
+                        className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-left transition-colors ${
+                          selectedCategory === cat ? 'bg-neutral-900 text-white font-bold' : 'text-neutral-700 hover:bg-neutral-100 hover:text-black'
+                        }`}
+                      >
+                        <span>{cat}</span>
+                        {selectedCategory === cat && <span>✓</span>}
+                      </button>
+                    ))}
+                  </div>
+                </>
               )}
             </div>
 
-            {/* Custom Popover Sort Dropdown */}
-            <div className="relative w-full sm:w-auto sm:min-w-[190px]">
+            {/* 2. Custom Popover Sort Dropdown (Clean, Professional, No Emojis) */}
+            <div className="relative flex-1 sm:flex-initial">
               <button
                 type="button"
-                onClick={() => setIsSortOpen(!isSortOpen)}
-                className="w-full py-2.5 pl-4 pr-8 rounded-xl bg-white border border-neutral-200 text-sm font-bold text-neutral-800 hover:border-black transition-all shadow-sm flex items-center justify-between gap-2"
+                onClick={() => {
+                  setIsSortOpen(!isSortOpen)
+                  setIsCategoryOpen(false)
+                }}
+                className="w-full sm:w-auto py-2.5 pl-3.5 pr-8 rounded-xl bg-white border border-neutral-200 text-xs sm:text-sm font-bold text-neutral-800 hover:border-black transition-all shadow-sm flex items-center justify-between gap-2"
               >
                 <span>{currentSortLabel}</span>
                 <span className="text-neutral-400 text-xs">▼</span>
@@ -242,20 +354,17 @@ export default function TokoDigitalPage() {
                     className="fixed inset-0 z-40"
                     onClick={() => setIsSortOpen(false)}
                   />
-                  <div className="absolute right-0 top-full mt-2 w-56 bg-white rounded-2xl border border-neutral-200 shadow-2xl p-1.5 z-50 animate-in fade-in zoom-in-95 duration-150">
+                  <div className="absolute right-0 sm:right-0 sm:left-auto top-full mt-2 w-52 bg-white rounded-2xl border border-neutral-200 shadow-2xl p-1.5 z-50 animate-in fade-in zoom-in-95 duration-150">
                     {sortOptions.map((opt) => {
                       const isSelected = sortBy === opt.id
                       return (
                         <button
                           key={opt.id}
                           type="button"
-                          onClick={() => {
-                            setSortBy(opt.id)
-                            setIsSortOpen(false)
-                          }}
-                          className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-sm font-bold text-left transition-colors ${
+                          onClick={() => handleSortSelect(opt.id)}
+                          className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-left transition-colors ${
                             isSelected
-                              ? 'bg-neutral-900 text-white'
+                              ? 'bg-neutral-900 text-white font-bold'
                               : 'text-neutral-700 hover:bg-neutral-100 hover:text-black'
                           }`}
                         >
@@ -269,6 +378,35 @@ export default function TokoDigitalPage() {
               )}
             </div>
           </div>
+
+          {/* 3. Search Input Box */}
+          <div className="relative w-full sm:w-64 lg:w-72 flex-shrink-0">
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => handleSearchChange(e.target.value)}
+                placeholder={`Cari dari ${totalActive} produk...`}
+                className="w-full pl-9 pr-8 py-2.5 rounded-xl bg-white border border-neutral-200 text-xs sm:text-sm font-medium text-neutral-900 placeholder-neutral-400 focus:border-black focus:ring-2 focus:ring-black/10 transition-all outline-none shadow-sm"
+              />
+              <svg
+                className="w-4 h-4 text-neutral-400 absolute left-3 top-1/2 -translate-y-1/2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+              {searchQuery && (
+                <button
+                  onClick={() => handleSearchChange('')}
+                  className="absolute right-2.5 top-1/2 -translate-y-1/2 text-xs font-bold text-neutral-400 hover:text-neutral-700 bg-neutral-100 px-1.5 py-0.5 rounded"
+                >
+                  ✕
+                </button>
+              )}
+            </div>
+          </div>
         </div>
       </div>
 
@@ -276,7 +414,11 @@ export default function TokoDigitalPage() {
       <div className="container-page max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {filteredProducts.length === 0 ? (
           <div className="text-center py-16 bg-white rounded-2xl border border-neutral-200 p-8 max-w-md mx-auto shadow-sm">
-            <span className="text-4xl mb-2 block">📦</span>
+            <div className="w-12 h-12 rounded-2xl bg-neutral-100 flex items-center justify-center text-neutral-400 mx-auto mb-3 border border-neutral-200/60">
+              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+              </svg>
+            </div>
             <h3 className="text-base font-bold text-neutral-900">Produk Tidak Ditemukan</h3>
             <p className="text-sm text-neutral-500 mt-1">
               Tidak ada produk yang cocok dengan filter yang dipilih.
@@ -300,7 +442,7 @@ export default function TokoDigitalPage() {
             {totalPages > 1 && (
               <div className="mt-12 flex items-center justify-center gap-2">
                 <button
-                  onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                  onClick={() => handlePageChange(Math.max(1, currentPage - 1))}
                   disabled={currentPage === 1}
                   className="px-4 py-2 rounded-xl border border-neutral-200 bg-white text-xs font-bold text-neutral-700 hover:bg-neutral-100 disabled:opacity-40 disabled:pointer-events-none transition-colors shadow-sm"
                 >
@@ -326,7 +468,7 @@ export default function TokoDigitalPage() {
                             <span className="px-1 text-xs text-neutral-400">...</span>
                           )}
                           <button
-                            onClick={() => setCurrentPage(page)}
+                            onClick={() => handlePageChange(page)}
                             className={`w-8 h-8 rounded-xl text-xs font-bold transition-all ${
                               currentPage === page
                                 ? 'bg-black text-white shadow-sm'
@@ -341,7 +483,7 @@ export default function TokoDigitalPage() {
                 </div>
 
                 <button
-                  onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                  onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))}
                   disabled={currentPage === totalPages}
                   className="px-4 py-2 rounded-xl border border-neutral-200 bg-white text-xs font-bold text-neutral-700 hover:bg-neutral-100 disabled:opacity-40 disabled:pointer-events-none transition-colors shadow-sm"
                 >

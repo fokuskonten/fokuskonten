@@ -6,7 +6,8 @@ import Link from 'next/link'
 import Breadcrumb from '@/components/Breadcrumb'
 import InvoiceReceipt from '@/components/invoice/InvoiceReceipt'
 import DriveAccessButton from '@/components/invoice/DriveAccessButton'
-import { getBuyerOrders } from '@/lib/buyerStore'
+import { getBuyerOrders, addBuyerOrder } from '@/lib/buyerStore'
+import { getApiBaseUrl } from '@/lib/apiConfig'
 
 function InvoiceContent() {
   const searchParams = useSearchParams()
@@ -14,6 +15,8 @@ function InvoiceContent() {
   const [order, setOrder] = useState(null)
   const [isLoaded, setIsLoaded] = useState(false)
   const [isPolling, setIsPolling] = useState(false)
+  const [isSimulating, setIsSimulating] = useState(false)
+  const [copiedLink, setCopiedLink] = useState(false)
 
   useEffect(() => {
     if (!orderId) {
@@ -23,7 +26,8 @@ function InvoiceContent() {
 
     const orders = getBuyerOrders()
     const found = orders.find(
-      (o) => String(o.orderId).toUpperCase() === String(orderId).toUpperCase()
+      (o) => String(o.orderId).toUpperCase() === String(orderId).toUpperCase() ||
+             String(o.parentOrderId || '').toUpperCase() === String(orderId).toUpperCase()
     )
 
     if (found) {
@@ -46,12 +50,12 @@ function InvoiceContent() {
     setIsLoaded(true)
   }, [orderId])
 
-  // Real-time Status Polling: Cek otomatis ke server setiap 3 detik jika link Drive belum ada
+  // Real-time Status Polling: Cek otomatis ke server setiap 3 detik jika status belum settlement
   useEffect(() => {
     if (!orderId || !order) return
     const isCompleted = (
       order.status === 'settlement' || 
-      order.status === 'LUNAS' || 
+      order.status === 'lunas' || 
       order.status === 'success'
     ) && order.driveLink && order.driveLink !== '#'
 
@@ -61,22 +65,24 @@ function InvoiceContent() {
     }
 
     setIsPolling(true)
+    const apiUrl = getApiBaseUrl()
     const interval = setInterval(() => {
       const controller = new AbortController()
       const timeout = setTimeout(() => controller.abort(), 2000)
 
-      fetch(`http://localhost:8090/api/v1/digital-orders/${encodeURIComponent(orderId)}/status`, {
+      fetch(`${apiUrl}/digital-orders/${encodeURIComponent(orderId)}/status`, {
         signal: controller.signal
       })
         .then(res => res.json())
         .then(data => {
           clearTimeout(timeout)
-          if (data.success && data.isSettlement && data.deliveryLink) {
+          if (data.success && data.isSettlement) {
             setOrder(prev => {
               const updated = {
                 ...(prev || {}),
                 status: 'settlement',
-                driveLink: data.deliveryLink,
+                driveLink: data.deliveryLink || prev?.driveLink,
+                items: data.items && data.items.length > 0 ? data.items : prev?.items,
                 paymentType: data.paymentMethod || prev?.paymentType || 'QRIS'
               }
               addBuyerOrder(updated)
@@ -94,6 +100,57 @@ function InvoiceContent() {
     return () => clearInterval(interval)
   }, [orderId, order?.status, order?.driveLink])
 
+  const isDevOrLocal = typeof window !== 'undefined' && (
+    window.location.hostname === 'localhost' ||
+    window.location.hostname === '127.0.0.1' ||
+    window.location.hostname.startsWith('192.168.')
+  )
+
+  const handleSimulatePayment = async () => {
+    if (!orderId || isSimulating) return
+    setIsSimulating(true)
+    try {
+      const apiUrl = getApiBaseUrl()
+      const res = await fetch(`${apiUrl}/digital-orders/${encodeURIComponent(orderId)}/trigger-delivery`, {
+        method: 'POST'
+      })
+      const data = await res.json()
+      if (data.success) {
+        const statusRes = await fetch(`${apiUrl}/digital-orders/${encodeURIComponent(orderId)}/status`)
+        const statusData = await statusRes.json()
+        if (statusData.success) {
+          setOrder(prev => {
+            const updated = {
+              ...(prev || {}),
+              status: 'settlement',
+              driveLink: statusData.deliveryLink || data.zipResult?.driveLink || prev?.driveLink,
+              items: statusData.items && statusData.items.length > 0 ? statusData.items : prev?.items,
+              paymentType: statusData.paymentMethod || 'QRIS (Simulasi Lunas)'
+            }
+            addBuyerOrder(updated)
+            return updated
+          })
+          setIsPolling(false)
+        }
+      } else {
+        console.warn('Simulasi pembayaran ditolak:', data.error)
+      }
+    } catch (err) {
+      console.warn('Gagal memverifikasi simulasi pembayaran:', err.message)
+    } finally {
+      setIsSimulating(false)
+    }
+  }
+
+  const handleCopyClaimLink = () => {
+    if (typeof window === 'undefined' || !order) return
+    const claimUrl = `${window.location.origin}/akun/?claim_order=${encodeURIComponent(order.orderId)}&email=${encodeURIComponent(order.customerEmail || '')}`
+    navigator.clipboard.writeText(claimUrl).then(() => {
+      setCopiedLink(true)
+      setTimeout(() => setCopiedLink(false), 2500)
+    }).catch(() => {})
+  }
+
   const breadcrumbs = [
     { label: 'Beranda', href: '/' },
     { label: 'Toko Digital', href: '/toko-digital/' },
@@ -102,7 +159,7 @@ function InvoiceContent() {
 
   if (!isLoaded) {
     return (
-      <div className="py-20 text-center text-sm text-neutral-400">
+      <div className="py-20 text-center text-sm text-neutral-400 font-sans">
         Memuat data invoice resmi...
       </div>
     )
@@ -110,12 +167,12 @@ function InvoiceContent() {
 
   if (!orderId && !order) {
     return (
-      <div className="bg-white rounded-3xl border border-neutral-200 p-8 sm:p-12 text-center max-w-lg mx-auto shadow-sm">
+      <div className="bg-white rounded-3xl border border-neutral-200 p-8 sm:p-12 text-center max-w-lg mx-auto shadow-sm font-sans">
         <div className="text-3xl mb-3">📄</div>
         <h2 className="font-display font-bold text-xl text-neutral-950 mb-2">
           Nomor Invoice Tidak Ditemukan
         </h2>
-        <p className="text-xs text-neutral-500 mb-6">
+        <p className="text-xs text-neutral-500 mb-6 font-sans">
           Silakan periksa kembali tautan yang Anda buka, atau akses brankas unduhan akun Anda.
         </p>
         <Link
@@ -129,13 +186,13 @@ function InvoiceContent() {
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 font-sans">
       {/* Breadcrumb */}
       <Breadcrumb items={breadcrumbs} />
 
       {/* Live Polling Status Indicator */}
       {isPolling && (
-        <div className="flex items-center justify-between p-3.5 px-5 rounded-2xl bg-amber-50 border border-amber-200 text-amber-900 text-xs shadow-sm animate-fade-in">
+        <div className="flex items-center justify-between p-3.5 px-5 rounded-2xl bg-amber-50 border border-amber-200 text-amber-900 text-xs shadow-sm animate-fade-in font-sans">
           <div className="flex items-center gap-2.5 font-medium">
             <span className="relative flex h-2.5 w-2.5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
@@ -149,10 +206,41 @@ function InvoiceContent() {
 
       {/* Top Banner Access Google Drive */}
       <DriveAccessButton
+        order={order}
         driveLink={order.driveLink}
         sku={order.sku}
         title={order.title}
+        onSimulatePayment={isDevOrLocal ? handleSimulatePayment : null}
+        isSimulating={isSimulating}
       />
+
+      {/* Cross-Device Access Banner */}
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-3 p-4 px-5 rounded-2xl bg-neutral-100/90 border border-neutral-200 text-neutral-800 text-xs">
+        <div className="flex items-center gap-2.5">
+          <span className="text-base">💻</span>
+          <span className="leading-tight">
+            <strong>Buka di Laptop/PC?</strong> Gunakan tautan sinkronisasi untuk langsung membuka aset di komputer Anda tanpa login.
+          </span>
+        </div>
+        <button
+          onClick={handleCopyClaimLink}
+          type="button"
+          className="shrink-0 px-3.5 py-1.5 rounded-xl bg-neutral-900 hover:bg-black text-white font-bold text-[11px] transition-all cursor-pointer flex items-center gap-1.5"
+        >
+          {copiedLink ? (
+            <>
+              <span>✓ Tautan Disalin!</span>
+            </>
+          ) : (
+            <>
+              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+              </svg>
+              <span>Salin Link Akses PC</span>
+            </>
+          )}
+        </button>
+      </div>
 
       {/* Formal Printable Receipt Card */}
       <InvoiceReceipt order={order} />

@@ -11,13 +11,35 @@ export default function InvoiceReceipt({ order }) {
     }
   }
 
+  const status = (order.status || 'pending').toLowerCase()
+  const isSettled = (
+    status === 'settlement' || 
+    status === 'lunas' || 
+    status === 'success'
+  )
+
+  const items = (Array.isArray(order.items) && order.items.length > 0)
+    ? order.items
+    : [{
+        sku: order.sku,
+        title: order.title || order.productTitle || order.sku,
+        format: order.format || 'CDR',
+        price: order.price || order.grossAmount
+      }]
+
   return (
     <div className="bg-white rounded-3xl border border-neutral-200/90 p-6 sm:p-10 shadow-[0_10px_35px_rgba(0,0,0,0.06)] relative overflow-hidden">
-      {/* Watermark Stempel Lunas */}
+      {/* Watermark Stempel Status */}
       <div className="absolute top-6 right-6 sm:top-10 sm:right-10 pointer-events-none select-none">
-        <div className="rotate-[-12deg] border-2 border-emerald-600/70 text-emerald-700 px-3 py-1 sm:px-4 sm:py-1.5 rounded-xl font-display font-black text-xs sm:text-sm tracking-widest uppercase bg-emerald-50/60 shadow-sm">
-          ✓ LUNAS / VERIFIED
-        </div>
+        {isSettled ? (
+          <div className="rotate-[-12deg] border-2 border-neutral-900 text-neutral-950 px-3 py-1 sm:px-4 sm:py-1.5 rounded-xl font-display font-black text-xs sm:text-sm tracking-widest uppercase bg-neutral-100/90 shadow-sm">
+            ✓ LUNAS / VERIFIED
+          </div>
+        ) : (
+          <div className="rotate-[-12deg] border-2 border-amber-600 text-amber-700 px-3 py-1 sm:px-4 sm:py-1.5 rounded-xl font-display font-black text-xs sm:text-sm tracking-widest uppercase bg-amber-50/90 shadow-sm">
+            ⏳ MENUNGGU PEMBAYARAN
+          </div>
+        )}
       </div>
 
       {/* Header Nota */}
@@ -32,7 +54,7 @@ export default function InvoiceReceipt({ order }) {
             Fokus<span className="text-neutral-900">Konten</span>
           </h2>
           <span className="text-[10px] font-mono text-neutral-400 uppercase tracking-wider">
-            Official Digital Store Receipt
+            Bukti Transaksi Resmi
           </span>
         </div>
       </div>
@@ -70,8 +92,8 @@ export default function InvoiceReceipt({ order }) {
           <span className="text-neutral-400 font-bold uppercase text-[10px] tracking-wider block mb-1">
             Status
           </span>
-          <span className="inline-flex items-center text-emerald-700 font-bold">
-            ● Pembayaran Berhasil
+          <span className={`inline-flex items-center font-bold ${isSettled ? 'text-neutral-950' : 'text-amber-700'}`}>
+            {isSettled ? '● Pembayaran Berhasil' : '⏳ Menunggu Pembayaran'}
           </span>
         </div>
       </div>
@@ -79,7 +101,7 @@ export default function InvoiceReceipt({ order }) {
       {/* Customer Info Card */}
       <div className="bg-neutral-50 rounded-2xl p-4 sm:p-5 mb-8 border border-neutral-200/60">
         <span className="text-[10px] font-bold uppercase tracking-wider text-neutral-400 block mb-2">
-          Informasi Pengiriman Aset (Google Drive)
+          Data Pembeli
         </span>
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-xs sm:text-sm">
           <div>
@@ -106,25 +128,27 @@ export default function InvoiceReceipt({ order }) {
             </tr>
           </thead>
           <tbody className="divide-y divide-neutral-100">
-            <tr>
-              <td className="py-4 pr-4">
-                <div className="font-bold text-neutral-950 text-sm">
-                  {order.title || order.productTitle || order.sku}
-                </div>
-                <div className="text-[11px] font-mono text-neutral-400 mt-0.5">
-                  SKU: {order.sku}
-                </div>
-              </td>
-              <td className="py-4 text-center font-mono font-bold text-neutral-700">
-                .{order.format || 'CDR'}
-              </td>
-              <td className="py-4 text-center text-xs font-bold text-emerald-700">
-                Commercial Use
-              </td>
-              <td className="py-4 text-right font-bold font-display text-neutral-950 text-base">
-                {formatRupiah(order.price || order.grossAmount)}
-              </td>
-            </tr>
+            {items.map((it, idx) => (
+              <tr key={it.sku || idx}>
+                <td className="py-4 pr-4">
+                  <div className="font-bold text-neutral-950 text-sm">
+                    {it.title || `Master Desain ${it.sku}`}
+                  </div>
+                  <div className="text-[11px] font-mono text-neutral-400 mt-0.5">
+                    SKU: {it.sku}
+                  </div>
+                </td>
+                <td className="py-4 text-center font-mono font-bold text-neutral-700">
+                  .{it.format || 'CDR'}
+                </td>
+                <td className="py-4 text-center text-xs font-bold text-neutral-900">
+                  Commercial Use
+                </td>
+                <td className="py-4 text-right font-bold font-display text-neutral-950 text-base">
+                  {formatRupiah(it.price || (order.price / items.length))}
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
@@ -134,11 +158,11 @@ export default function InvoiceReceipt({ order }) {
         {order.discountAmount > 0 && (
           <div className="flex justify-between w-full max-w-xs text-neutral-500">
             <span>Potongan Voucher</span>
-            <span className="text-emerald-700 font-bold">- {formatRupiah(order.discountAmount)}</span>
+            <span className="text-neutral-950 font-bold">- {formatRupiah(order.discountAmount)}</span>
           </div>
         )}
         <div className="flex justify-between w-full max-w-xs text-sm sm:text-base font-black font-display text-neutral-950 pt-2 border-t border-neutral-100">
-          <span>Total Lunas</span>
+          <span>{isSettled ? 'Total Lunas' : 'Total Tagihan'}</span>
           <span>{formatRupiah(order.price || order.grossAmount)}</span>
         </div>
       </div>

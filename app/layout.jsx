@@ -1,8 +1,10 @@
+import { Suspense } from 'react'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import WhatsAppFloat from '@/components/WhatsAppFloat'
 import BackToTop from '@/components/BackToTop'
+import SessionScrollRestorer from '@/components/SessionScrollRestorer'
 
 export const metadata = {
   title: {
@@ -63,6 +65,9 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="bg-white text-neutral-800 font-sans antialiased">
+        <Suspense fallback={null}>
+          <SessionScrollRestorer />
+        </Suspense>
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />

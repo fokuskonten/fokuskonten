@@ -11,11 +11,11 @@ export default function BuyerOrderHistory({ orders = [] }) {
   return (
     <div className="space-y-4">
       <div className="flex items-center justify-between">
-        <h3 className="font-display font-extrabold text-lg sm:text-xl text-neutral-950 tracking-tight">
-          Riwayat Pembelian & Nota ({orders.length})
+        <h3 className="font-sans font-extrabold text-lg sm:text-xl text-neutral-950 tracking-tight">
+          Riwayat Pesanan ({orders.length})
         </h3>
         <span className="text-xs text-neutral-500 font-medium">
-          Semua Transaksi Resmi
+          Daftar transaksi akun Anda
         </span>
       </div>
 
@@ -27,7 +27,7 @@ export default function BuyerOrderHistory({ orders = [] }) {
               <tr className="border-b border-neutral-100 bg-neutral-50/80 text-neutral-400 font-bold uppercase text-[10px] tracking-wider">
                 <th className="py-3 px-5">No. Invoice</th>
                 <th className="py-3 px-4">Tanggal Transaksi</th>
-                <th className="py-3 px-4">Aset Digital</th>
+                <th className="py-3 px-4">Produk</th>
                 <th className="py-3 px-4">Metode</th>
                 <th className="py-3 px-4">Total Tagihan</th>
                 <th className="py-3 px-4 text-center">Status</th>
@@ -57,12 +57,12 @@ export default function BuyerOrderHistory({ orders = [] }) {
                     <td className="py-3.5 px-4 font-medium text-neutral-600 uppercase text-xs">
                       {ord.paymentType || 'QRIS / VA'}
                     </td>
-                    <td className="py-3.5 px-4 font-bold font-display text-neutral-950">
+                    <td className="py-3.5 px-4 font-bold font-sans text-neutral-950">
                       {formatRupiah(ord.price || ord.grossAmount)}
                     </td>
                     <td className="py-3.5 px-4 text-center">
-                      <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-extrabold tracking-wide ${
-                        isPaid ? 'bg-emerald-50 text-emerald-700 border border-emerald-200/60' : 'bg-amber-50 text-amber-700 border border-amber-200/60'
+                      <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-extrabold tracking-wide ${
+                        isPaid ? 'bg-neutral-950 text-white border border-neutral-950' : 'bg-neutral-100 text-neutral-600 border border-neutral-200'
                       }`}>
                         {isPaid ? '● LUNAS' : '● MENUNGGU'}
                       </span>
@@ -72,7 +72,7 @@ export default function BuyerOrderHistory({ orders = [] }) {
                         href={`/toko-digital/invoice/?order_id=${ord.orderId}`}
                         className="px-3 py-1.5 rounded-lg bg-neutral-100 hover:bg-black hover:text-white text-neutral-800 text-xs font-bold transition-all inline-block"
                       >
-                        Buka Nota
+                        Lihat Invoice
                       </Link>
                     </td>
                   </tr>
@@ -91,8 +91,8 @@ export default function BuyerOrderHistory({ orders = [] }) {
               <div key={ord.orderId} className="p-4 space-y-3">
                 <div className="flex items-center justify-between text-xs">
                   <span className="font-mono font-bold text-neutral-900">{ord.orderId}</span>
-                  <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-extrabold ${
-                    isPaid ? 'bg-emerald-50 text-emerald-700' : 'bg-amber-50 text-amber-700'
+                  <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-extrabold ${
+                    isPaid ? 'bg-neutral-950 text-white' : 'bg-neutral-100 text-neutral-600'
                   }`}>
                     {isPaid ? '● LUNAS' : '● MENUNGGU'}
                   </span>
@@ -110,7 +110,7 @@ export default function BuyerOrderHistory({ orders = [] }) {
                 <div className="flex items-center justify-between pt-1 border-t border-neutral-100">
                   <div>
                     <span className="text-[10px] text-neutral-400 block">Total Pembayaran</span>
-                    <span className="font-bold font-display text-sm text-neutral-950">
+                    <span className="font-bold font-sans text-sm text-neutral-950">
                       {formatRupiah(ord.price || ord.grossAmount)}
                     </span>
                   </div>

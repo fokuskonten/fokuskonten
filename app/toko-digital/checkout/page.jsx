@@ -1,6 +1,6 @@
 'use client'
 
-import { Suspense, useState, useEffect } from 'react'
+import { Suspense, useState, useEffect, useMemo } from 'react'
 import { useSearchParams, useRouter } from 'next/navigation'
 import Link from 'next/link'
 import Breadcrumb from '@/components/Breadcrumb'
@@ -11,14 +11,26 @@ import PaymentSecurityBadge from '@/components/checkout/PaymentSecurityBadge'
 import digitalProducts from '@/content/apps/digitalProducts.json'
 import { isValidEmail } from '@/lib/validators'
 import { generateInvoiceId } from '@/lib/formatters'
-import { addBuyerOrder, setBuyerProfile, getBuyerProfile, pushOrderToServer, hasPurchasedSku } from '@/lib/buyerStore'
+import { 
+  addBuyerOrder, 
+  setBuyerProfile, 
+  getBuyerProfile, 
+  pushOrderToServer, 
+  hasPurchasedSku,
+  updateOrderStatus
+} from '@/lib/buyerStore'
+import { getApiBaseUrl, getMidtransClientKey, getMidtransSnapUrl } from '@/lib/apiConfig'
+import { getCartItems, clearCart, removeFromCart } from '@/lib/cartStore'
 
 function CheckoutContent() {
   const router = useRouter()
   const searchParams = useSearchParams()
-  const sku = searchParams.get('sku')
+  const skuParam = searchParams.get('sku')
 
-  const [product, setProduct] = useState(null)
+  const [singleProduct, setSingleProduct] = useState(null)
+  const [cartItems, setCartItems] = useState([])
+  const [isMultiMode, setIsMultiMode] = useState(false)
+
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
@@ -29,7 +41,7 @@ function CheckoutContent() {
   const [duplicateInfo, setDuplicateInfo] = useState(null)
 
   useEffect(() => {
-    // Isi otomatis dari sesi profil jika ada
+    // 1. Isi otomatis dari sesi profil jika ada
     const existing = getBuyerProfile()
     if (existing) {
       if (existing.name) setName(existing.name)
@@ -37,82 +49,195 @@ function CheckoutContent() {
       if (existing.phone) setPhone(existing.phone)
     }
 
-    if (sku && Array.isArray(digitalProducts)) {
+    // 2. Tentukan mode checkout: Single SKU vs Multi-item Cart
+    if (skuParam && Array.isArray(digitalProducts)) {
       const found = digitalProducts.find(
-        (p) => String(p.sku).toUpperCase().trim() === String(sku).toUpperCase().trim()
+        (p) => String(p.sku).toUpperCase().trim() === String(skuParam).toUpperCase().trim()
       )
-      if (found) setProduct(found)
+      if (found) {
+        setSingleProduct(found)
+        setIsMultiMode(false)
+      }
+    } else {
+      // Tidak ada parameter SKU -> periksa isi keranjang belanja
+      const itemsInCart = getCartItems()
+      if (itemsInCart.length > 0) {
+        setCartItems(itemsInCart)
+        setIsMultiMode(true)
+      }
     }
-    setIsLoaded(true)
-  }, [sku])
 
+    setIsLoaded(true)
+  }, [skuParam])
+
+  // Cek duplicate purchase untuk Single SKU maupun Multi-item Cart
   useEffect(() => {
-    if (!email || !isValidEmail(email) || !product?.sku) {
+    if (!isLoaded) return
+
+    // 1. Mode Multi-item Cart
+    if (isMultiMode) {
+      if (!cartItems || cartItems.length === 0) {
+        setDuplicateInfo(null)
+        return
+      }
+
+      // 1a. Cek lokal di peramban akun perangkat ini
+      const locallyOwned = cartItems.filter(it => hasPurchasedSku(it.sku))
+      if (locallyOwned.length > 0) {
+        setDuplicateInfo({
+          alreadyPurchased: true,
+          isMulti: true,
+          isAllOwned: locallyOwned.length === cartItems.length,
+          ownedItems: locallyOwned,
+          message: `${locallyOwned.length} dari ${cartItems.length} produk di keranjang sudah ada di koleksi akun Anda.`
+        })
+        return
+      }
+
+      // 1b. Cek riwayat akun di server jika email valid telah diisi
+      if (email && isValidEmail(email)) {
+        const apiUrl = getApiBaseUrl()
+        const controller = new AbortController()
+        const timer = setTimeout(() => controller.abort(), 2000)
+
+        fetch(`${apiUrl}/digital-orders/buyer/${encodeURIComponent(email)}`, {
+          signal: controller.signal
+        })
+          .then(res => res.json())
+          .then(data => {
+            clearTimeout(timer)
+            if (data.success && Array.isArray(data.orders)) {
+              const settledSkus = new Set()
+              data.orders.forEach(o => {
+                const isSettled = (o.payment_status === 'SETTLEMENT' || o.payment_status === 'settlement' || o.payment_status === 'LUNAS' || o.payment_status === 'success')
+                if (isSettled) {
+                  if (o.sku_ordered && o.sku_ordered !== 'MULTI') settledSkus.add(String(o.sku_ordered).toUpperCase().trim())
+                  if (Array.isArray(o.items)) {
+                    o.items.forEach(it => {
+                      if (it.sku) settledSkus.add(String(it.sku).toUpperCase().trim())
+                    })
+                  }
+                }
+              })
+              const serverOwned = cartItems.filter(it => settledSkus.has(String(it.sku).toUpperCase().trim()))
+              if (serverOwned.length > 0) {
+                setDuplicateInfo({
+                  alreadyPurchased: true,
+                  isMulti: true,
+                  isAllOwned: serverOwned.length === cartItems.length,
+                  ownedItems: serverOwned,
+                  message: `${serverOwned.length} dari ${cartItems.length} produk di keranjang sudah pernah dibeli dengan email ${email}.`
+                })
+                return
+              }
+            }
+            setDuplicateInfo(null)
+          })
+          .catch(() => {})
+
+        return () => clearTimeout(timer)
+      } else {
+        setDuplicateInfo(null)
+      }
+      return
+    }
+
+    // 2. Mode Single Product
+    if (!singleProduct?.sku) {
       setDuplicateInfo(null)
       return
     }
 
-    if (hasPurchasedSku(product.sku)) {
+    if (hasPurchasedSku(singleProduct.sku)) {
       setDuplicateInfo({
         alreadyPurchased: true,
+        isMulti: false,
+        isAllOwned: true,
         message: 'Produk ini sudah ada di koleksi akun perangkat ini.'
       })
       return
     }
 
-    const controller = new AbortController()
-    const timer = setTimeout(() => controller.abort(), 1500)
-    fetch(`http://localhost:8090/api/v1/digital-orders/check-duplicate?email=${encodeURIComponent(email)}&sku=${encodeURIComponent(product.sku)}`, {
-      signal: controller.signal
-    })
-      .then(res => res.json())
-      .then(data => {
-        clearTimeout(timer)
-        if (data.success && data.alreadyPurchased) {
-          setDuplicateInfo(data)
-        } else {
-          setDuplicateInfo(null)
-        }
+    if (email && isValidEmail(email)) {
+      const apiUrl = getApiBaseUrl()
+      const controller = new AbortController()
+      const timer = setTimeout(() => controller.abort(), 2000)
+      fetch(`${apiUrl}/digital-orders/check-duplicate?email=${encodeURIComponent(email)}&sku=${encodeURIComponent(singleProduct.sku)}`, {
+        signal: controller.signal
       })
-      .catch(() => {})
+        .then(res => res.json())
+        .then(data => {
+          clearTimeout(timer)
+          if (data.success && data.alreadyPurchased) {
+            setDuplicateInfo({
+              ...data,
+              isMulti: false,
+              isAllOwned: true
+            })
+          } else {
+            setDuplicateInfo(null)
+          }
+        })
+        .catch(() => {})
 
-    return () => clearTimeout(timer)
-  }, [email, product?.sku])
+      return () => clearTimeout(timer)
+    } else {
+      setDuplicateInfo(null)
+    }
+  }, [email, singleProduct?.sku, isMultiMode, cartItems, isLoaded])
+
+  const handleRemoveOwnedFromCart = () => {
+    if (duplicateInfo?.ownedItems) {
+      duplicateInfo.ownedItems.forEach(it => removeFromCart(it.sku))
+      const remaining = getCartItems()
+      setCartItems(remaining)
+      setDuplicateInfo(null)
+    }
+  }
 
   const breadcrumbs = [
     { label: 'Beranda', href: '/' },
     { label: 'Toko Digital', href: '/toko-digital/' },
-    { label: 'Checkout', href: `/toko-digital/checkout/?sku=${sku || ''}` }
+    { label: 'Checkout', href: '/toko-digital/checkout/' }
   ]
 
   if (!isLoaded) {
-    return <div className="py-20 text-center text-sm text-neutral-400">Memuat data produk...</div>
+    return <div className="py-20 text-center text-sm text-neutral-400 font-sans">Memuat checkout...</div>
   }
 
-  if (!product) {
+  // Jika tidak ada single product dan keranjang kosong
+  const hasItems = singleProduct || (isMultiMode && cartItems.length > 0)
+  if (!hasItems) {
     return (
-      <div className="bg-white rounded-3xl border border-neutral-200 p-8 sm:p-12 text-center max-w-lg mx-auto shadow-sm">
-        <div className="text-3xl mb-3">🔍</div>
-        <h2 className="font-display font-bold text-xl text-neutral-950 mb-2">
-          Produk Tidak Ditemukan
+      <div className="bg-white rounded-3xl border border-neutral-200/90 p-8 sm:p-12 text-center max-w-lg mx-auto shadow-card font-sans">
+        <div className="w-16 h-16 rounded-2xl bg-neutral-100 flex items-center justify-center mx-auto mb-4 text-neutral-400 border border-neutral-200/60 shadow-soft">
+          <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+          </svg>
+        </div>
+        <h2 className="font-sans font-bold text-xl text-neutral-950 mb-2">
+          Keranjang Belanja Masih Kosong
         </h2>
-        <p className="text-xs text-neutral-500 mb-6">
-          SKU produk digital yang diminta tidak valid atau sudah tidak tayang.
+        <p className="text-xs text-neutral-500 mb-6 max-w-xs mx-auto leading-relaxed">
+          Pilih master desain kaos, vektor, atau template grafis favorit Anda di katalog Toko Digital terlebih dahulu.
         </p>
         <Link
           href="/toko-digital/"
-          className="inline-flex px-5 py-2.5 rounded-xl bg-black text-white font-bold text-xs"
+          className="inline-flex px-6 py-3 rounded-xl bg-neutral-950 hover:bg-neutral-800 text-white font-bold text-xs shadow-soft transition-all"
         >
-          Kembali ke Katalog Toko →
+          Jelajahi Katalog Toko Digital →
         </Link>
       </div>
     )
   }
 
-  const basePrice = Number(product.price) || 0
+  const basePrice = isMultiMode
+    ? cartItems.reduce((acc, it) => acc + (Number(it.price) || 0), 0)
+    : (Number(singleProduct?.price) || 0)
+
   const finalPrice = voucher ? voucher.finalPrice : basePrice
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     const newErrors = {}
 
@@ -136,50 +261,151 @@ function CheckoutContent() {
       phone: phone.trim()
     })
 
-    const newOrder = {
-      orderId: orderId,
-      sku: product.sku,
-      title: product.title,
-      format: product.format || 'CDR',
-      price: finalPrice,
-      originalPrice: product.originalPrice || basePrice * 2,
-      discountAmount: voucher ? voucher.discountAmount : 0,
-      voucherCode: voucher ? voucher.code : null,
-      coverImage: product.coverImage || `/covers/${product.sku}/${product.sku}_cover.webp`,
-      driveLink: product.driveLink || product.backupDriveLink || '#',
-      customerName: name.trim(),
-      customerEmail: email.trim().toLowerCase(),
-      customerPhone: phone.trim(),
-      paymentType: 'QRIS / Midtrans',
-      status: 'settlement',
-      createdAt: Date.now()
+    let newOrder;
+
+    if (isMultiMode) {
+      // Checkout Multi-item dari Keranjang Belanja (Unified Parent Order)
+      newOrder = {
+        orderId: orderId,
+        sku: 'MULTI',
+        title: `${cartItems.length} Master Desain Premium (Bundle)`,
+        format: 'BUNDLE',
+        price: finalPrice,
+        originalPrice: cartItems.reduce((acc, it) => acc + (Number(it.originalPrice) || Number(it.price) * 2 || 0), 0),
+        discountAmount: voucher ? voucher.discountAmount : 0,
+        voucherCode: voucher ? voucher.code : null,
+        coverImage: cartItems[0]?.coverImage || `/covers/${cartItems[0]?.sku}/${cartItems[0]?.sku}_cover.webp`,
+        driveLink: '',
+        customerName: name.trim(),
+        customerEmail: email.trim().toLowerCase(),
+        customerPhone: phone.trim(),
+        paymentType: 'QRIS / Midtrans',
+        status: 'pending',
+        items: cartItems.map(it => ({
+          sku: it.sku,
+          title: it.title,
+          format: it.format || 'CDR',
+          price: Number(it.price) || 0,
+          originalPrice: Number(it.originalPrice) || (Number(it.price) * 2),
+          coverImage: it.coverImage || `/covers/${it.sku}/${it.sku}_cover.webp`,
+          driveLink: it.driveLink || '#'
+        })),
+        createdAt: Date.now()
+      }
+    } else {
+      // Checkout Single Product
+      newOrder = {
+        orderId: orderId,
+        sku: singleProduct.sku,
+        title: singleProduct.title,
+        format: singleProduct.format || 'CDR',
+        price: finalPrice,
+        originalPrice: singleProduct.originalPrice || basePrice * 2,
+        discountAmount: voucher ? voucher.discountAmount : 0,
+        voucherCode: voucher ? voucher.code : null,
+        coverImage: singleProduct.coverImage || `/covers/${singleProduct.sku}/${singleProduct.sku}_cover.webp`,
+        driveLink: '',
+        customerName: name.trim(),
+        customerEmail: email.trim().toLowerCase(),
+        customerPhone: phone.trim(),
+        paymentType: 'QRIS / Midtrans',
+        status: 'pending',
+        items: [{
+          sku: singleProduct.sku,
+          title: singleProduct.title,
+          format: singleProduct.format || 'CDR',
+          price: finalPrice,
+          originalPrice: singleProduct.originalPrice || basePrice * 2,
+          coverImage: singleProduct.coverImage || `/covers/${singleProduct.sku}/${singleProduct.sku}_cover.webp`,
+          driveLink: null
+        }],
+        createdAt: Date.now()
+      }
     }
 
+    // Simpan pesanan awal dengan status pending
     addBuyerOrder(newOrder)
-    pushOrderToServer(newOrder)
 
-    setTimeout(() => {
-      setIsProcessing(false)
-      router.push(`/toko-digital/invoice/?order_id=${orderId}`)
-    }, 450)
+    // Kirim pesanan ke backend untuk mendapatkan token Midtrans Snap
+    try {
+      const serverRes = await pushOrderToServer(newOrder)
+      const snapToken = serverRes?.midtrans?.token
+      const isSandboxMock = serverRes?.midtrans?.isSandboxMock
+
+      if (isMultiMode) {
+        clearCart()
+      }
+
+      // Jika ada token Snap riil dan bukan mock sandbox lokal
+      if (snapToken && !isSandboxMock && typeof window !== 'undefined') {
+        const loadSnapScript = () => {
+          return new Promise((resolve) => {
+            if (window.snap) return resolve(window.snap)
+            const script = document.createElement('script')
+            script.src = getMidtransSnapUrl()
+            script.setAttribute('data-client-key', process.env.NEXT_PUBLIC_MIDTRANS_CLIENT_KEY || getMidtransClientKey())
+            script.onload = () => resolve(window.snap)
+            script.onerror = () => resolve(null)
+            document.head.appendChild(script)
+          })
+        }
+
+        const snapInstance = await loadSnapScript()
+        if (snapInstance && typeof snapInstance.pay === 'function') {
+          setIsProcessing(false)
+          snapInstance.pay(snapToken, {
+            onSuccess: function() {
+              updateOrderStatus(orderId, 'settlement')
+              router.push(`/toko-digital/invoice/?order_id=${orderId}`)
+            },
+            onPending: function() {
+              router.push(`/toko-digital/invoice/?order_id=${orderId}`)
+            },
+            onError: function() {
+              router.push(`/toko-digital/invoice/?order_id=${orderId}`)
+            },
+            onClose: function() {
+              router.push(`/toko-digital/invoice/?order_id=${orderId}`)
+            }
+          })
+          return
+        }
+      }
+    } catch (err) {
+      console.warn('Checkout push order info:', err)
+    }
+
+    if (isMultiMode) {
+      clearCart()
+    }
+
+    setIsProcessing(false)
+    router.push(`/toko-digital/invoice/?order_id=${orderId}`)
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 font-sans">
       <Breadcrumb items={breadcrumbs} />
 
-      <div className="flex items-center justify-between pb-3 border-b border-neutral-200">
+      <div className="mb-6 flex items-center justify-between pb-4 border-b border-neutral-200">
         <div>
-          <h1 className="font-display font-black text-2xl sm:text-3xl text-neutral-950 tracking-tight">
-            Checkout Pembelian Digital
+          <h1 className="font-sans font-extrabold text-2xl sm:text-3xl text-neutral-950 tracking-tight">
+            Konfirmasi Pesanan &amp; Pembayaran
           </h1>
-          <p className="text-xs sm:text-sm text-neutral-500 mt-0.5">
-            Pengiriman instan tautan Google Drive resmi langsung ke alamat Gmail Anda.
+          <p className="text-xs sm:text-sm text-neutral-500 font-sans mt-0.5">
+            Akses Google Drive otomatis dikirim ke email Anda setelah pembayaran berhasil.
           </p>
         </div>
-        <span className="hidden sm:inline-flex px-3 py-1 rounded-full text-xs font-bold bg-neutral-900 text-white font-mono uppercase">
-          SKU: {product.sku}
-        </span>
+        {!isMultiMode && singleProduct && (
+          <span className="hidden sm:inline-flex px-3 py-1 rounded-full text-xs font-bold bg-neutral-900 text-white font-mono uppercase">
+            SKU: {singleProduct.sku}
+          </span>
+        )}
+        {isMultiMode && (
+          <span className="hidden sm:inline-flex px-3 py-1 rounded-full text-xs font-bold bg-neutral-900 text-white font-mono">
+            {cartItems.length} ITEM KERANJANG
+          </span>
+        )}
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start">
@@ -187,11 +413,11 @@ function CheckoutContent() {
         <div className="lg:col-span-7 bg-white rounded-3xl border border-neutral-200/90 p-6 sm:p-8 shadow-[0_4px_25px_rgba(0,0,0,0.05)] space-y-6">
           <form id="checkout-form" onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <h3 className="font-display font-bold text-base text-neutral-950 mb-1">
-                1. Data Pengiriman Aset Digital
+              <h3 className="font-sans font-bold text-base text-neutral-950 mb-1">
+                1. Data Pengiriman
               </h3>
-              <p className="text-xs text-neutral-400 mb-4">
-                Tautan Google Drive resmi akan dikaitkan dengan alamat email ini.
+              <p className="text-xs text-neutral-400 mb-4 font-sans">
+                Akses file akan dikirimkan ke alamat email ini.
               </p>
               <DeliveryEmailForm
                 name={name}
@@ -205,11 +431,11 @@ function CheckoutContent() {
             </div>
 
             <div className="pt-4 border-t border-neutral-100">
-              <h3 className="font-display font-bold text-base text-neutral-950 mb-1">
-                2. Kupon Voucher Diskon
+              <h3 className="font-sans font-bold text-base text-neutral-950 mb-1">
+                2. Kode Promo
               </h3>
-              <p className="text-xs text-neutral-400 mb-3">
-                Punya kode promo? Masukkan untuk mendapatkan potongan harga.
+              <p className="text-xs text-neutral-400 mb-3 font-sans">
+                Masukkan kode promo jika ada.
               </p>
               <VoucherInput
                 currentPrice={basePrice}
@@ -225,74 +451,99 @@ function CheckoutContent() {
         {/* Right Sticky Summary (5 cols) */}
         <div className="lg:col-span-5 space-y-4 lg:sticky lg:top-24">
           <div className="bg-white rounded-3xl border border-neutral-200/90 p-6 shadow-[0_4px_25px_rgba(0,0,0,0.05)] space-y-5">
-            <h3 className="font-display font-bold text-base text-neutral-950">
+            <h3 className="font-sans font-bold text-base text-neutral-950">
               Ringkasan Pembayaran
             </h3>
 
             <OrderSummary
-              product={product}
+              product={singleProduct}
+              items={isMultiMode ? cartItems : []}
               voucher={voucher}
               finalPrice={finalPrice}
             />
 
             {/* Duplicate Notice */}
             {duplicateInfo?.alreadyPurchased && (
-              <div className="p-4 rounded-2xl bg-emerald-50 border border-emerald-300 text-emerald-900 text-xs space-y-2 animate-fade-in">
-                <div className="flex items-center gap-2 font-bold text-sm text-emerald-800">
-                  <span>✓</span>
-                  <span>Anda Sudah Memiliki Desain Ini!</span>
+              <div className={`p-4 rounded-2xl border text-xs space-y-2.5 animate-fade-in font-sans ${
+                duplicateInfo.isAllOwned 
+                  ? 'bg-neutral-100 border-neutral-200 text-neutral-900' 
+                  : 'bg-amber-50 border-amber-200 text-amber-900'
+              }`}>
+                <div className="flex items-center gap-2 font-bold text-sm text-neutral-950">
+                  <span>{duplicateInfo.isAllOwned ? '✓' : '⚠️'}</span>
+                  <span>{duplicateInfo.isAllOwned ? 'Desain Sudah Dimiliki!' : 'Sebagian Produk Sudah Ada di Koleksi'}</span>
                 </div>
-                <p className="text-emerald-700 leading-relaxed">
-                  Email <strong>{email}</strong> sudah tercatat memiliki produk ini. Anda tidak perlu membayar ulang.
+                <p className="text-neutral-600 leading-relaxed font-sans">
+                  {duplicateInfo.message || (email ? `Email ${email} sudah tercatat memiliki produk ini.` : 'Produk ini sudah ada di koleksi perangkat Anda.')}
                 </p>
-                <div className="pt-2 flex flex-col gap-2">
-                  <Link
-                    href="/akun/"
-                    className="w-full text-center py-2.5 px-4 rounded-xl bg-emerald-800 hover:bg-emerald-900 text-white font-bold text-xs transition-colors"
-                  >
-                    Buka di Brankas Akun Saya →
-                  </Link>
-                  {duplicateInfo.driveLink && (
-                    <a
-                      href={duplicateInfo.driveLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-full text-center py-2 px-4 rounded-xl bg-black hover:bg-neutral-800 text-white font-bold text-xs transition-colors"
+
+                {duplicateInfo.isMulti && !duplicateInfo.isAllOwned && (
+                  <div className="pt-1 flex flex-col gap-2">
+                    <button
+                      type="button"
+                      onClick={handleRemoveOwnedFromCart}
+                      className="w-full text-center py-2.5 px-4 rounded-xl bg-neutral-900 hover:bg-black text-white font-bold text-xs transition-colors cursor-pointer"
                     >
-                      📥 Buka Langsung di Google Drive
-                    </a>
-                  )}
-                </div>
+                      Hapus Produk yang Sudah Dimiliki ({duplicateInfo.ownedItems?.length || 0} Item)
+                    </button>
+                  </div>
+                )}
+
+                {duplicateInfo.isAllOwned && (
+                  <div className="pt-2 flex flex-col gap-2">
+                    <Link
+                      href="/akun/"
+                      className="w-full text-center py-2.5 px-4 rounded-xl bg-neutral-900 hover:bg-black text-white font-bold text-xs transition-colors"
+                    >
+                      Lihat di Akun Saya →
+                    </Link>
+                    {duplicateInfo.driveLink && (
+                      <a
+                        href={duplicateInfo.driveLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full text-center py-2 px-4 rounded-xl bg-black hover:bg-neutral-800 text-white font-bold text-xs transition-colors flex items-center justify-center gap-1.5"
+                      >
+                        <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                          <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/>
+                        </svg>
+                        <span>Buka Google Drive</span>
+                      </a>
+                    )}
+                  </div>
+                )}
               </div>
             )}
 
-            {duplicateInfo?.alreadyPurchased ? (
+            {duplicateInfo?.isAllOwned ? (
               <Link
                 href="/akun/"
-                className="w-full py-4 px-6 rounded-2xl bg-emerald-700 hover:bg-emerald-800 text-white font-display font-extrabold text-sm sm:text-base shadow-lg shadow-emerald-700/20 transition-all flex items-center justify-center gap-2 cursor-pointer"
+                className="w-full py-4 px-6 rounded-2xl bg-neutral-950 hover:bg-neutral-800 text-white font-sans font-extrabold text-sm sm:text-base shadow-lg shadow-black/20 transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
-                <span>Lihat di Koleksi Akun Saya →</span>
+                <span>Buka Koleksi Saya →</span>
               </Link>
             ) : (
               <button
                 type="submit"
                 form="checkout-form"
                 disabled={isProcessing}
-                className="w-full py-4 px-6 rounded-2xl bg-black hover:bg-neutral-800 active:scale-[0.99] text-white font-display font-extrabold text-sm sm:text-base shadow-lg shadow-black/20 transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
+                className="w-full py-4 px-6 rounded-2xl bg-black hover:bg-neutral-800 active:scale-[0.99] text-white font-sans font-extrabold text-sm sm:text-base shadow-lg shadow-black/20 transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
               >
                 {isProcessing ? (
                   <span>Memproses Pembayaran...</span>
                 ) : (
                   <>
-                    <span>Bayar Sekarang & Buka Drive</span>
-                    <span>→</span>
+                    <span>Bayar Sekarang</span>
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
                   </>
                 )}
               </button>
             )}
 
-            <div className="text-center text-[11px] text-neutral-400">
-              Transaksi aman dilindungi garansi lisensi komersial resmi FokusKonten.
+            <div className="text-center text-[11px] text-neutral-400 font-sans">
+              Transaksi aman dan terverifikasi otomatis.
             </div>
           </div>
         </div>
@@ -303,9 +554,9 @@ function CheckoutContent() {
 
 export default function CheckoutPage() {
   return (
-    <div className="min-h-screen bg-neutral-50/60 pb-20 pt-24 sm:pt-28">
+    <div className="min-h-screen bg-neutral-50/60 pb-20 pt-24 sm:pt-28 font-sans">
       <div className="container-page max-w-5xl">
-        <Suspense fallback={<div className="py-20 text-center text-sm text-neutral-400">Memuat checkout...</div>}>
+        <Suspense fallback={<div className="py-20 text-center text-sm text-neutral-400 font-sans">Memuat checkout...</div>}>
           <CheckoutContent />
         </Suspense>
       </div>

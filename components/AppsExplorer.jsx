@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect, useRef } from 'react'
 import AppCard from './AppCard'
 
 const categories = [
@@ -18,6 +18,33 @@ const categories = [
 export default function AppsExplorer({ apps }) {
   const [selectedCategory, setSelectedCategory] = useState('Semua')
   const [searchQuery, setSearchQuery] = useState('')
+  const isInitRef = useRef(false)
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    try {
+      const raw = sessionStorage.getItem('fk_apps_session')
+      if (raw) {
+        const parsed = JSON.parse(raw)
+        if (parsed.category) setSelectedCategory(parsed.category)
+        if (parsed.searchQuery) setSearchQuery(parsed.searchQuery)
+      }
+    } catch (e) {}
+    setTimeout(() => {
+      isInitRef.current = true
+    }, 50)
+  }, [])
+
+  useEffect(() => {
+    if (!isInitRef.current) return
+    try {
+      sessionStorage.setItem('fk_apps_session', JSON.stringify({
+        category: selectedCategory,
+        searchQuery,
+        t: Date.now()
+      }))
+    } catch (e) {}
+  }, [selectedCategory, searchQuery])
 
   const categoryCounts = useMemo(() => {
     const counts = { Semua: apps.length }

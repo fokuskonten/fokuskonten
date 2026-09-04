@@ -31,7 +31,7 @@ export default function VoucherInput({ currentPrice, onApplyVoucher, appliedVouc
     <div className="space-y-2">
       <div className="flex items-center justify-between">
         <label className="block text-xs font-bold uppercase tracking-wider text-neutral-700">
-          Kode Kupon Diskon Promo
+          Kode Promo
         </label>
         <span className="text-[10px] text-neutral-400">
           Gunakan: <button type="button" onClick={() => setCode('FOKUSHEMAT')} className="underline text-black font-semibold">FOKUSHEMAT</button>
@@ -39,12 +39,12 @@ export default function VoucherInput({ currentPrice, onApplyVoucher, appliedVouc
       </div>
 
       {appliedVoucher ? (
-        <div className="flex items-center justify-between p-3 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs">
+        <div className="flex items-center justify-between p-3 rounded-xl bg-neutral-100 border border-neutral-200 text-neutral-900 text-xs">
           <div className="flex items-center gap-2">
             <span className="text-base">🎟️</span>
             <div>
-              <span className="font-bold font-mono text-sm">{appliedVoucher.code}</span>
-              <p className="text-[11px] text-emerald-700">{appliedVoucher.description}</p>
+              <span className="font-bold font-mono text-sm text-neutral-950">{appliedVoucher.code}</span>
+              <p className="text-[11px] text-neutral-600">{appliedVoucher.description}</p>
             </div>
           </div>
           <button
@@ -64,7 +64,7 @@ export default function VoucherInput({ currentPrice, onApplyVoucher, appliedVouc
               setCode(e.target.value.toUpperCase())
               if (feedback) setFeedback(null)
             }}
-            placeholder="KODE PROMO (misal: FOKUSHEMAT)"
+            placeholder="Masukkan kode promo (misal: FOKUSHEMAT)"
             className="flex-1 px-4 py-2.5 rounded-xl border border-neutral-300 focus:border-neutral-950 focus:ring-1 focus:ring-neutral-950 text-xs sm:text-sm font-mono font-bold uppercase outline-none transition-all"
           />
           <button
@@ -78,7 +78,7 @@ export default function VoucherInput({ currentPrice, onApplyVoucher, appliedVouc
       )}
 
       {feedback && !appliedVoucher && (
-        <p className={`text-xs mt-1 font-medium ${feedback.success ? 'text-emerald-600' : 'text-red-600'}`}>
+        <p className={`text-xs mt-1 font-medium ${feedback.success ? 'text-neutral-900 font-semibold' : 'text-red-600'}`}>
           {feedback.message}
         </p>
       )}

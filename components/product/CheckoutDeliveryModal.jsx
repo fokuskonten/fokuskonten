@@ -9,7 +9,8 @@ import VoucherInput from '@/components/checkout/VoucherInput'
 import PaymentSecurityBadge from '@/components/checkout/PaymentSecurityBadge'
 import { isValidEmail } from '@/lib/validators'
 import { generateInvoiceId } from '@/lib/formatters'
-import { addBuyerOrder, setBuyerProfile, pushOrderToServer, hasPurchasedSku, getBuyerProfile } from '@/lib/buyerStore'
+import { addBuyerOrder, setBuyerProfile, pushOrderToServer, hasPurchasedSku, getBuyerProfile, updateOrderStatus } from '@/lib/buyerStore'
+import { getApiBaseUrl } from '@/lib/apiConfig'
 
 export default function CheckoutDeliveryModal({
   isOpen,
@@ -50,9 +51,10 @@ export default function CheckoutDeliveryModal({
       return
     }
 
+    const apiUrl = getApiBaseUrl()
     const controller = new AbortController()
-    const timer = setTimeout(() => controller.abort(), 1500)
-    fetch(`http://localhost:8090/api/v1/digital-orders/check-duplicate?email=${encodeURIComponent(email)}&sku=${encodeURIComponent(product.sku)}`, {
+    const timer = setTimeout(() => controller.abort(), 2000)
+    fetch(`${apiUrl}/digital-orders/check-duplicate?email=${encodeURIComponent(email)}&sku=${encodeURIComponent(product.sku)}`, {
       signal: controller.signal
     })
       .then(res => res.json())
@@ -104,7 +106,7 @@ export default function CheckoutDeliveryModal({
       phone: phone.trim()
     })
 
-    // 2. Buat objek pesanan standar (mengadopsi standar fulfilled_orders Shopee bot)
+    // 2. Buat objek pesanan standar dengan status PENDING
     const newOrder = {
       orderId: orderId,
       sku: product.sku,
@@ -120,20 +122,70 @@ export default function CheckoutDeliveryModal({
       customerEmail: email.trim().toLowerCase(),
       customerPhone: phone.trim(),
       paymentType: 'QRIS / Midtrans',
-      status: 'settlement', // Mode Sandbox instan success
+      status: 'pending',
+      items: [{
+        sku: product.sku,
+        title: product.title,
+        format: product.format || 'CDR',
+        price: finalPrice,
+        originalPrice: product.originalPrice || basePrice * 2,
+        coverImage: product.coverImage || `/covers/${product.sku}/${product.sku}_cover.webp`,
+        driveLink: product.driveLink || product.backupDriveLink || '#'
+      }],
       createdAt: Date.now()
     }
 
-    // 3. Simpan ke brankas pembeli di peramban (client persistence) & sinkron ke server lokal
+    // 3. Simpan ke brankas pembeli di peramban (client persistence)
     addBuyerOrder(newOrder)
-    pushOrderToServer(newOrder)
 
-    // 4. Simulasi proses transaksi peramban (400ms) lalu alihkan ke nota resmi
-    setTimeout(() => {
-      setIsProcessing(false)
-      onClose()
-      router.push(`/toko-digital/invoice/?order_id=${orderId}`)
-    }, 450)
+    // 4. Kirim ke backend untuk transaksi Midtrans Snap
+    try {
+      const serverRes = await pushOrderToServer(newOrder)
+      const snapToken = serverRes?.midtrans?.token
+      const isSandboxMock = serverRes?.midtrans?.isSandboxMock
+
+      if (snapToken && !isSandboxMock && typeof window !== 'undefined') {
+        const loadSnapScript = () => {
+          return new Promise((resolve) => {
+            if (window.snap) return resolve(window.snap)
+            const script = document.createElement('script')
+            script.src = 'https://app.sandbox.midtrans.com/snap/snap.js'
+            script.setAttribute('data-client-key', process.env.NEXT_PUBLIC_MIDTRANS_CLIENT_KEY || 'SB-Mid-client-mock')
+            script.onload = () => resolve(window.snap)
+            script.onerror = () => resolve(null)
+            document.head.appendChild(script)
+          })
+        }
+
+        const snapInstance = await loadSnapScript()
+        if (snapInstance && typeof snapInstance.pay === 'function') {
+          setIsProcessing(false)
+          onClose()
+          snapInstance.pay(snapToken, {
+            onSuccess: function() {
+              updateOrderStatus(orderId, 'settlement')
+              router.push(`/toko-digital/invoice/?order_id=${orderId}`)
+            },
+            onPending: function() {
+              router.push(`/toko-digital/invoice/?order_id=${orderId}`)
+            },
+            onError: function() {
+              router.push(`/toko-digital/invoice/?order_id=${orderId}`)
+            },
+            onClose: function() {
+              router.push(`/toko-digital/invoice/?order_id=${orderId}`)
+            }
+          })
+          return
+        }
+      }
+    } catch (err) {
+      console.warn('Checkout modal push order note:', err)
+    }
+
+    setIsProcessing(false)
+    onClose()
+    router.push(`/toko-digital/invoice/?order_id=${orderId}`)
   }
 
   return (
@@ -154,7 +206,7 @@ export default function CheckoutDeliveryModal({
             <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-neutral-900 text-white font-mono uppercase">
               Form Delivery
             </span>
-            <span className="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200/60">
+            <span className="text-xs font-bold text-neutral-900 bg-neutral-100 px-2 py-0.5 rounded border border-neutral-200">
               Pengiriman Instan 24 Jam
             </span>
           </div>
@@ -198,21 +250,21 @@ export default function CheckoutDeliveryModal({
 
           {/* Duplicate Purchase Notice */}
           {duplicateInfo?.alreadyPurchased && (
-            <div className="p-4 rounded-2xl bg-emerald-50 border border-emerald-300 text-emerald-900 text-xs space-y-2 animate-fade-in">
-              <div className="flex items-center gap-2 font-bold text-sm text-emerald-800">
+            <div className="p-4 rounded-2xl bg-neutral-100 border border-neutral-200 text-neutral-900 text-xs space-y-2 animate-fade-in">
+              <div className="flex items-center gap-2 font-bold text-sm text-neutral-950">
                 <span>✓</span>
-                <span>Anda Sudah Memiliki Master Desain Ini!</span>
+                <span>Produk Sudah Anda Miliki</span>
               </div>
-              <p className="text-emerald-700 leading-relaxed">
-                Alamat email <strong>{email}</strong> sudah tercatat pernah membeli produk ini. Anda tidak perlu membayar lagi untuk mencegah tagihan ganda.
+              <p className="text-neutral-600 leading-relaxed">
+                Email <strong>{email}</strong> sudah terdaftar memiliki produk ini. Anda tidak perlu membayar ulang.
               </p>
               <div className="pt-2 flex flex-wrap gap-2">
                 <Link
                   href="/akun/"
                   onClick={onClose}
-                  className="px-4 py-2 rounded-xl bg-emerald-800 hover:bg-emerald-900 text-white font-bold text-xs transition-colors"
+                  className="px-4 py-2 rounded-xl bg-neutral-900 hover:bg-black text-white font-bold text-xs transition-colors"
                 >
-                  Buka Brankas Unduhan Saya →
+                  Lihat di Akun Saya →
                 </Link>
                 {duplicateInfo.driveLink && (
                   <a
@@ -221,7 +273,7 @@ export default function CheckoutDeliveryModal({
                     rel="noopener noreferrer"
                     className="px-4 py-2 rounded-xl bg-black hover:bg-neutral-800 text-white font-bold text-xs transition-colors"
                   >
-                    📥 Unduh di Google Drive
+                    Buka Google Drive
                   </a>
                 )}
               </div>
@@ -234,9 +286,9 @@ export default function CheckoutDeliveryModal({
               <Link
                 href="/akun/"
                 onClick={onClose}
-                className="w-full py-4 px-6 rounded-2xl bg-emerald-700 hover:bg-emerald-800 text-white font-display font-extrabold text-sm sm:text-base shadow-lg shadow-emerald-700/20 transition-all flex items-center justify-center gap-2 cursor-pointer"
+                className="w-full py-4 px-6 rounded-2xl bg-neutral-950 hover:bg-neutral-800 text-white font-display font-extrabold text-sm sm:text-base shadow-lg shadow-black/20 transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
-                <span>Aset Sudah Dimiliki — Buka Koleksi Saya →</span>
+                <span>Buka Koleksi Saya →</span>
               </Link>
             ) : (
               <button
@@ -245,10 +297,10 @@ export default function CheckoutDeliveryModal({
                 className="w-full py-4 px-6 rounded-2xl bg-black hover:bg-neutral-800 active:scale-[0.99] text-white font-display font-extrabold text-sm sm:text-base shadow-lg shadow-black/20 transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
               >
                 {isProcessing ? (
-                  <span>Memproses Pembayaran Aman...</span>
+                  <span>Memproses...</span>
                 ) : (
                   <>
-                    <span>Lanjut Bayar & Dapatkan Link Drive</span>
+                    <span>Lanjut ke Pembayaran</span>
                     <span>→</span>
                   </>
                 )}

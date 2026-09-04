@@ -6,10 +6,12 @@ import Breadcrumb from '@/components/Breadcrumb'
 import BuyerProfileCard from '@/components/account/BuyerProfileCard'
 import BuyerDownloadsList from '@/components/account/BuyerDownloadsList'
 import BuyerOrderHistory from '@/components/account/BuyerOrderHistory'
-import BuyerLoginModal from '@/components/account/BuyerLoginModal'
+import BuyerProfileSettingsForm from '@/components/account/BuyerProfileSettingsForm'
+import BuyerOrderClaimForm from '@/components/account/BuyerOrderClaimForm'
+import CreativeAuthPortal from '@/components/account/CreativeAuthPortal'
 import { 
   getBuyerProfile, 
-  setBuyerProfile, 
+  setBuyerProfile,
   clearBuyerSession, 
   getBuyerOrders, 
   getPurchasedProducts, 
@@ -21,9 +23,7 @@ export default function AkunPage() {
   const [profile, setProfile] = useState(null)
   const [products, setProducts] = useState([])
   const [orders, setOrders] = useState([])
-  const [activeTab, setActiveTab] = useState('downloads') // 'downloads' | 'orders'
-  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false)
-  const [manualEmail, setManualEmail] = useState('')
+  const [activeTab, setActiveTab] = useState('downloads') // 'downloads' | 'orders' | 'settings' | 'claim'
   const [isLoaded, setIsLoaded] = useState(false)
 
   const reloadData = () => {
@@ -36,11 +36,49 @@ export default function AkunPage() {
     setIsLoaded(true)
   }
 
+  const handleTabChange = (tab) => {
+    setActiveTab(tab)
+    if (typeof window !== 'undefined') {
+      try {
+        sessionStorage.setItem('fk_akun_tab', tab)
+      } catch (e) {}
+      const newUrl = tab === 'downloads' ? '/akun/' : `/akun/?tab=${tab}`
+      window.history.replaceState(null, '', newUrl)
+    }
+  }
+
   useEffect(() => {
+    // Restore tab from URL or handle cross-device claim (Mobile -> Desktop PC)
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search)
+      const tabParam = params.get('tab')
+      const claimOrder = params.get('claim_order')
+      const claimEmail = params.get('email')
+
+      if (claimEmail) {
+        setBuyerProfile({ email: claimEmail })
+        syncBuyerOrdersFromServer(claimEmail).then(() => {
+          reloadData()
+        })
+      }
+
+      let savedTab = null
+      try {
+        savedTab = sessionStorage.getItem('fk_akun_tab')
+      } catch (e) {}
+      const validTabs = ['downloads', 'orders', 'settings', 'claim']
+      const targetTab = tabParam || (claimOrder ? 'downloads' : savedTab)
+      if (targetTab && validTabs.includes(targetTab)) {
+        setActiveTab(targetTab)
+      }
+    }
+
     reloadData()
     const prof = getBuyerProfile()
     if (prof?.email) {
-      syncBuyerOrdersFromServer(prof.email)
+      syncBuyerOrdersFromServer(prof.email).then(() => {
+        reloadData()
+      })
     }
     const unsubscribe = subscribeBuyerStore(() => {
       reloadData()
@@ -51,168 +89,184 @@ export default function AkunPage() {
   const handleLogout = () => {
     if (window.confirm('Yakin ingin keluar dari akun di perangkat ini?')) {
       clearBuyerSession()
+      try {
+        sessionStorage.removeItem('fk_akun_tab')
+      } catch (e) {}
+      setProfile(null)
+      setProducts([])
+      setOrders([])
     }
   }
 
-  const handleQuickLogin = (e) => {
-    e.preventDefault()
-    if (!manualEmail.trim()) return
-    setBuyerProfile({
-      email: manualEmail.trim().toLowerCase(),
-      name: manualEmail.split('@')[0]
-    })
-    setManualEmail('')
-  }
-
+  // Breadcrumbs tanpa duplikasi Beranda
   const breadcrumbs = [
-    { label: 'Beranda', href: '/' },
     { label: 'Toko Digital', href: '/toko-digital/' },
     { label: 'Akun & Unduhan', href: '/akun/' }
   ]
 
   return (
-    <div className="min-h-screen bg-neutral-50/60 pb-20 pt-24 sm:pt-28">
+    <div className="min-h-screen bg-neutral-50/60 pb-20 pt-24 sm:pt-28 font-sans">
       <div className="container-page max-w-5xl">
         {/* Breadcrumb */}
         <div className="mb-6">
           <Breadcrumb items={breadcrumbs} />
         </div>
 
-        {/* State 1: Belum Ada Profil (Welcome Hero / Login Gate) */}
-        {isLoaded && !profile?.email ? (
+        {/* State 1: Belum Login -> Tampilkan Portal Otentikasi Creative Marketplace */}
+        {!profile?.email ? (
           <div className="space-y-8 animate-fade-in">
-            <div className="bg-white rounded-3xl border border-neutral-200/80 p-8 sm:p-12 shadow-[0_4px_30px_rgba(0,0,0,0.06)] text-center max-w-2xl mx-auto">
-              <div className="w-16 h-16 rounded-2xl bg-black text-white flex items-center justify-center mx-auto mb-5 shadow-lg shadow-black/20">
-                <svg className="w-8 h-8 fill-current" viewBox="0 0 24 24">
-                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                </svg>
-              </div>
-
-              <h1 className="font-display font-black text-2xl sm:text-3xl text-neutral-950 tracking-tight mb-3">
-                Brankas Unduhan & Akun Pembeli
-              </h1>
-              <p className="text-sm sm:text-base text-neutral-500 leading-relaxed max-w-lg mx-auto mb-8">
-                Akses seluruh master file desain (CorelDraw, Photoshop, Vector) yang pernah Anda beli secara instan, kapan saja dan dari perangkat mana saja.
-              </p>
-
-              {/* Quick Gmail Access Form */}
-              <form onSubmit={handleQuickLogin} className="max-w-md mx-auto space-y-3">
-                <div className="flex flex-col sm:flex-row gap-2">
-                  <input
-                    type="email"
-                    value={manualEmail}
-                    onChange={(e) => setManualEmail(e.target.value)}
-                    placeholder="Masukkan alamat Gmail Anda..."
-                    className="flex-1 px-4 py-3 rounded-xl border border-neutral-300 focus:border-neutral-950 focus:ring-1 focus:ring-neutral-950 text-sm font-medium outline-none transition-all"
-                    required
-                  />
-                  <button
-                    type="submit"
-                    className="px-6 py-3 rounded-xl bg-black hover:bg-neutral-800 text-white font-display font-bold text-sm shadow-md transition-all whitespace-nowrap cursor-pointer"
-                  >
-                    Buka Brankas
-                  </button>
-                </div>
-                <p className="text-xs text-neutral-400 text-left">
-                  🔒 Otomatis mendeteksi riwayat transaksi pembelian dengan alamat Gmail tersebut.
-                </p>
-              </form>
-
-              <div className="mt-10 pt-6 border-t border-neutral-100 flex items-center justify-center gap-6 text-xs text-neutral-500">
-                <span className="flex items-center gap-1.5">
-                  <span className="text-emerald-600 font-bold">✓</span>
-                  <span>Akses Google Drive Permanen</span>
-                </span>
-                <span className="flex items-center gap-1.5">
-                  <span className="text-emerald-600 font-bold">✓</span>
-                  <span>Lisensi Komersial Resmi</span>
-                </span>
-              </div>
-            </div>
+            <CreativeAuthPortal
+              onAuthSuccess={(newProfile) => {
+                setProfile(newProfile)
+                reloadData()
+              }}
+            />
           </div>
         ) : (
-          /* State 2: Sudah Ada Sesi Pembeli */
-          <div className="space-y-8 animate-fade-in">
-            {/* Header Profile Card */}
-            <BuyerProfileCard
-              profile={profile}
-              totalAssets={products.length}
-              totalOrders={orders.length}
-              onLogout={handleLogout}
-            />
+          /* State 2: Sudah Ada Sesi Pembeli -> Tampilkan Dashboard Studio */
+          isLoaded && (
+            <div className="space-y-8 animate-fade-in">
+              {/* Header Profile Card */}
+              <BuyerProfileCard
+                profile={profile}
+                totalAssets={products.length}
+                totalOrders={orders.length}
+                onLogout={handleLogout}
+                onEditProfile={() => handleTabChange('settings')}
+              />
 
-            {/* Navigation Tabs */}
-            <div className="flex items-center gap-2 border-b border-neutral-200/80 pb-px">
-              <button
-                onClick={() => setActiveTab('downloads')}
-                className={`flex items-center gap-2 px-5 py-3 rounded-t-xl font-display font-bold text-sm transition-all border-b-2 ${
-                  activeTab === 'downloads'
-                    ? 'border-black text-black bg-white shadow-sm'
-                    : 'border-transparent text-neutral-500 hover:text-neutral-900 hover:bg-neutral-100/50'
-                }`}
-              >
-                <span>📦</span>
-                <span>Unduhan & Aset Saya</span>
-                <span className="px-2 py-0.5 rounded-full text-[11px] bg-neutral-100 text-neutral-700 font-mono">
-                  {products.length}
-                </span>
-              </button>
+              {/* Navigation Tabs (Creative Market / Creative Fabrica Hub Layout) */}
+              <div className="flex items-center gap-1.5 sm:gap-2 border-b border-neutral-200/80 pb-px overflow-x-auto no-scrollbar">
+                {/* 1. Downloads Tab */}
+                <button
+                  type="button"
+                  onClick={() => handleTabChange('downloads')}
+                  className={`flex items-center gap-2 px-4 sm:px-5 py-3 rounded-t-xl font-sans font-semibold text-xs sm:text-sm transition-all border-b-2 whitespace-nowrap cursor-pointer ${
+                    activeTab === 'downloads'
+                      ? 'border-neutral-950 text-neutral-950 bg-white shadow-soft'
+                      : 'border-transparent text-neutral-500 hover:text-neutral-900 hover:bg-neutral-100/50'
+                  }`}
+                >
+                  <svg className="w-4 h-4 text-neutral-700 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                  </svg>
+                  <span>File &amp; Unduhan</span>
+                  <span className="px-2 py-0.5 rounded-full text-[11px] bg-neutral-100 text-neutral-700 font-mono">
+                    {products.length}
+                  </span>
+                </button>
 
-              <button
-                onClick={() => setActiveTab('orders')}
-                className={`flex items-center gap-2 px-5 py-3 rounded-t-xl font-display font-bold text-sm transition-all border-b-2 ${
-                  activeTab === 'orders'
-                    ? 'border-black text-black bg-white shadow-sm'
-                    : 'border-transparent text-neutral-500 hover:text-neutral-900 hover:bg-neutral-100/50'
-                }`}
-              >
-                <span>📄</span>
-                <span>Riwayat Nota Invoice</span>
-                <span className="px-2 py-0.5 rounded-full text-[11px] bg-neutral-100 text-neutral-700 font-mono">
-                  {orders.length}
-                </span>
-              </button>
-            </div>
+                {/* 2. Orders Tab */}
+                <button
+                  type="button"
+                  onClick={() => handleTabChange('orders')}
+                  className={`flex items-center gap-2 px-4 sm:px-5 py-3 rounded-t-xl font-sans font-semibold text-xs sm:text-sm transition-all border-b-2 whitespace-nowrap cursor-pointer ${
+                    activeTab === 'orders'
+                      ? 'border-neutral-950 text-neutral-950 bg-white shadow-soft'
+                      : 'border-transparent text-neutral-500 hover:text-neutral-900 hover:bg-neutral-100/50'
+                  }`}
+                >
+                  <svg className="w-4 h-4 text-neutral-700 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  <span>Riwayat Pesanan</span>
+                  <span className="px-2 py-0.5 rounded-full text-[11px] bg-neutral-100 text-neutral-700 font-mono">
+                    {orders.length}
+                  </span>
+                </button>
 
-            {/* Tab Contents */}
-            <div>
-              {activeTab === 'downloads' ? (
-                <BuyerDownloadsList products={products} />
-              ) : (
-                <BuyerOrderHistory orders={orders} />
-              )}
-            </div>
+                {/* 3. Settings Tab */}
+                <button
+                  type="button"
+                  onClick={() => handleTabChange('settings')}
+                  className={`flex items-center gap-2 px-4 sm:px-5 py-3 rounded-t-xl font-sans font-semibold text-xs sm:text-sm transition-all border-b-2 whitespace-nowrap cursor-pointer ${
+                    activeTab === 'settings'
+                      ? 'border-neutral-950 text-neutral-950 bg-white shadow-soft'
+                      : 'border-transparent text-neutral-500 hover:text-neutral-900 hover:bg-neutral-100/50'
+                  }`}
+                >
+                  <svg className="w-4 h-4 text-neutral-700 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <span>Pengaturan</span>
+                </button>
 
-            {/* Store Banner Footer */}
-            <div className="p-6 rounded-2xl bg-gradient-to-r from-neutral-900 to-black text-white flex flex-col sm:flex-row items-center justify-between gap-4 shadow-lg">
-              <div>
-                <h4 className="font-display font-bold text-base text-white">
-                  Ingin Menambah Koleksi Master Desain?
-                </h4>
-                <p className="text-xs text-neutral-400 mt-0.5">
-                  Lebih dari 2.100+ template kaos, font, vektor, dan grafis siap pakai.
-                </p>
+                {/* 4. Claim Tab */}
+                <button
+                  type="button"
+                  onClick={() => handleTabChange('claim')}
+                  className={`flex items-center gap-2 px-4 sm:px-5 py-3 rounded-t-xl font-sans font-semibold text-xs sm:text-sm transition-all border-b-2 whitespace-nowrap cursor-pointer ${
+                    activeTab === 'claim'
+                      ? 'border-neutral-950 text-neutral-950 bg-white shadow-soft'
+                      : 'border-transparent text-neutral-500 hover:text-neutral-900 hover:bg-neutral-100/50'
+                  }`}
+                >
+                  <svg className="w-4 h-4 text-neutral-700 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                  </svg>
+                  <span>Klaim Pesanan</span>
+                </button>
               </div>
-              <Link
-                href="/toko-digital/"
-                className="px-5 py-2.5 rounded-xl bg-white text-black font-bold text-xs hover:bg-neutral-100 transition-colors shadow shrink-0"
-              >
-                Jelajahi Toko Digital →
-              </Link>
+
+              {/* Tab Contents */}
+              <div>
+                {activeTab === 'downloads' && (
+                  <BuyerDownloadsList 
+                    products={products} 
+                    buyerProfile={profile} 
+                  />
+                )}
+
+                {activeTab === 'orders' && (
+                  <BuyerOrderHistory orders={orders} />
+                )}
+
+                {activeTab === 'settings' && (
+                  <BuyerProfileSettingsForm
+                    profile={profile}
+                    onProfileUpdated={(upd) => {
+                      setProfile(upd)
+                      reloadData()
+                    }}
+                  />
+                )}
+
+                {activeTab === 'claim' && (
+                  <BuyerOrderClaimForm
+                    profile={profile}
+                    onClaimSuccess={() => {
+                      reloadData()
+                      setActiveTab('downloads')
+                    }}
+                  />
+                )}
+              </div>
+
+              {/* Store Banner Footer */}
+              <div className="p-6 rounded-2xl bg-gradient-to-r from-neutral-900 to-black text-white flex flex-col sm:flex-row items-center justify-between gap-4 shadow-card">
+                <div>
+                  <h4 className="font-sans font-bold text-base text-white">
+                    Eksplorasi Desain Lainnya
+                  </h4>
+                  <p className="text-xs text-neutral-400 font-sans mt-0.5">
+                    Temukan berbagai template dan aset desain siap pakai.
+                  </p>
+                </div>
+                <Link
+                  href="/toko-digital/"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-black font-sans font-semibold text-xs hover:bg-neutral-100 transition-colors shadow-soft shrink-0"
+                >
+                  <span>Buka Toko Digital</span>
+                  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </Link>
+              </div>
             </div>
-          </div>
+          )
         )}
       </div>
-
-      {/* Login Modal Popup */}
-      <BuyerLoginModal
-        isOpen={isLoginModalOpen}
-        onClose={() => setIsLoginModalOpen(false)}
-        onLogin={(prof) => {
-          setBuyerProfile(prof)
-          reloadData()
-        }}
-      />
     </div>
   )
 }
