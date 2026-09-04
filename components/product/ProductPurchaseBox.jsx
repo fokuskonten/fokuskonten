@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { hasPurchasedSku, subscribeBuyerStore } from '@/lib/buyerStore'
 import { addToCart, hasInCart, subscribeCartStore } from '@/lib/cartStore'
+import { useStoreHealth } from '@/lib/useStoreHealth'
 
 function formatRupiah(num) {
   return new Intl.NumberFormat('id-ID', {
@@ -17,6 +18,7 @@ export default function ProductPurchaseBox({ product, fmtMeta }) {
   const [isOwned, setIsOwned] = useState(false)
   const [inCart, setInCart] = useState(false)
   const [isJustAdded, setIsJustAdded] = useState(false)
+  const { isOffline, ctaText } = useStoreHealth()
 
   useEffect(() => {
     setIsOwned(hasPurchasedSku(product?.sku))
@@ -158,26 +160,38 @@ export default function ProductPurchaseBox({ product, fmtMeta }) {
         ) : (
           <>
             {/* 1. Primary Professional Checkout CTA Button */}
-            <Link
-              href={`/toko-digital/checkout/?sku=${encodeURIComponent(product.sku)}`}
-              className="w-full py-3.5 px-4 rounded-xl bg-neutral-950 hover:bg-neutral-800 active:scale-[0.99] text-white font-display font-extrabold text-sm sm:text-base shadow-card hover:shadow-float transition-all flex items-center justify-center gap-2 text-center group cursor-pointer"
-            >
-              <span>Beli Sekarang</span>
-              <svg className="w-4 h-4 text-white shrink-0 transition-transform duration-200 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </Link>
+            {isOffline ? (
+              <div className="w-full py-3.5 px-4 rounded-xl bg-neutral-300 text-neutral-500 font-display font-extrabold text-sm sm:text-base flex items-center justify-center gap-2 text-center cursor-not-allowed border border-neutral-300">
+                <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>{ctaText}</span>
+              </div>
+            ) : (
+              <Link
+                href={`/toko-digital/checkout/?sku=${encodeURIComponent(product.sku)}`}
+                className="w-full py-3.5 px-4 rounded-xl bg-neutral-950 hover:bg-neutral-800 active:scale-[0.99] text-white font-display font-extrabold text-sm sm:text-base shadow-card hover:shadow-float transition-all flex items-center justify-center gap-2 text-center group cursor-pointer"
+              >
+                <span>Beli Sekarang</span>
+                <svg className="w-4 h-4 text-white shrink-0 transition-transform duration-200 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </Link>
+            )}
 
             {/* 2. Secondary Add to Cart Button */}
             <button
               type="button"
+              disabled={isOffline}
               onClick={handleAddToCart}
-              className={`w-full py-3 px-4 rounded-xl font-display font-bold text-xs sm:text-sm transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer border ${
-                inCart
-                  ? 'bg-neutral-900 hover:bg-neutral-800 text-white border-neutral-900 shadow-sm active:scale-[0.99]'
+              className={`w-full py-3 px-4 rounded-xl font-display font-bold text-xs sm:text-sm transition-all duration-200 flex items-center justify-center gap-2 border ${
+                isOffline
+                  ? 'bg-neutral-100 text-neutral-400 border-neutral-200 cursor-not-allowed'
+                  : inCart
+                  ? 'bg-neutral-900 hover:bg-neutral-800 text-white border-neutral-900 shadow-sm active:scale-[0.99] cursor-pointer'
                   : isJustAdded
-                  ? 'bg-neutral-950 text-white border-neutral-950 scale-[1.02] ring-2 ring-neutral-900 shadow-md'
-                  : 'bg-white hover:bg-neutral-50 text-neutral-900 border-neutral-300 shadow-soft hover:shadow-card active:scale-[0.99]'
+                  ? 'bg-neutral-950 text-white border-neutral-950 scale-[1.02] ring-2 ring-neutral-900 shadow-md cursor-pointer'
+                  : 'bg-white hover:bg-neutral-50 text-neutral-900 border-neutral-300 shadow-soft hover:shadow-card active:scale-[0.99] cursor-pointer'
               }`}
             >
               {inCart ? (

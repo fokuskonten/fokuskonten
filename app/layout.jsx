@@ -2,7 +2,7 @@ import { Suspense } from 'react'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import WhatsAppFloat from '@/components/WhatsAppFloat'
+import QuinChatWidget from '@/components/QuinChatWidget'
 import CartFloat from '@/components/CartFloat'
 import BackToTop from '@/components/BackToTop'
 import SessionScrollRestorer from '@/components/SessionScrollRestorer'
@@ -73,7 +73,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />
-        <WhatsAppFloat />
+        <QuinChatWidget />
         <CartFloat />
         <BackToTop />
 

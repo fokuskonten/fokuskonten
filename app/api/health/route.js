@@ -1,0 +1,1 @@
+export async function GET() { return new Response(JSON.stringify({ status: 'ok', server: 'Next.js Local' }), { status: 200, headers: { 'Content-Type': 'application/json' } }) }

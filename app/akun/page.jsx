@@ -25,6 +25,7 @@ export default function AkunPage() {
   const [orders, setOrders] = useState([])
   const [activeTab, setActiveTab] = useState('downloads') // 'downloads' | 'orders' | 'settings' | 'claim'
   const [isLoaded, setIsLoaded] = useState(false)
+  const [isLogoutModalOpen, setIsLogoutModalOpen] = useState(false)
 
   const reloadData = () => {
     const prof = getBuyerProfile()
@@ -87,21 +88,24 @@ export default function AkunPage() {
   }, [])
 
   const handleLogout = () => {
-    if (window.confirm('Yakin ingin keluar dari akun di perangkat ini?')) {
-      clearBuyerSession()
-      try {
-        sessionStorage.removeItem('fk_akun_tab')
-      } catch (e) {}
-      setProfile(null)
-      setProducts([])
-      setOrders([])
-    }
+    setIsLogoutModalOpen(true)
   }
 
-  // Breadcrumbs tanpa duplikasi Beranda
+  const confirmLogout = () => {
+    clearBuyerSession()
+    try {
+      sessionStorage.removeItem('fk_akun_tab')
+    } catch (e) {}
+    setProfile(null)
+    setProducts([])
+    setOrders([])
+    setIsLogoutModalOpen(false)
+  }
+
+  // Breadcrumbs dinamis menyesuaikan nama user
   const breadcrumbs = [
     { label: 'Toko Digital', href: '/toko-digital/' },
-    { label: 'Akun & Unduhan', href: '/akun/' }
+    { label: profile?.name ? `Akun ${profile.name.split(' ')[0]}` : 'Akun & Unduhan', href: '/akun/' }
   ]
 
   return (
@@ -267,6 +271,36 @@ export default function AkunPage() {
           )
         )}
       </div>
+
+      {/* Custom Logout Modal */}
+      {isLogoutModalOpen && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/40 backdrop-blur-md animate-fade-in">
+          <div className="bg-white rounded-[24px] shadow-2xl border border-neutral-200/60 w-full max-w-sm p-8 text-center animate-scale-in">
+            <h3 className="font-sans font-extrabold text-2xl tracking-tight text-neutral-950 mb-3">
+              Keluar Sesi?
+            </h3>
+            <p className="text-[13px] text-neutral-500 font-sans leading-relaxed mb-8 px-2">
+              Akses ke unduhan dan riwayat pesanan di perangkat ini akan diakhiri sementara.
+            </p>
+            <div className="flex flex-col gap-2.5">
+              <button
+                type="button"
+                onClick={confirmLogout}
+                className="w-full px-5 py-3.5 rounded-2xl bg-neutral-950 hover:bg-neutral-900 text-white font-sans font-semibold text-sm transition-all shadow-md hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0"
+              >
+                Akhiri Sesi
+              </button>
+              <button
+                type="button"
+                onClick={() => setIsLogoutModalOpen(false)}
+                className="w-full px-5 py-3.5 rounded-2xl bg-white hover:bg-neutral-50 text-neutral-900 font-sans font-semibold text-sm transition-all border border-neutral-200 hover:border-neutral-300"
+              >
+                Batal
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
