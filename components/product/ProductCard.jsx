@@ -85,7 +85,10 @@ export default function ProductCard({ product, compact = false }) {
                 src={product.coverImage}
                 alt={product.title}
                 draggable={false}
+                loading="lazy"
                 decoding="async"
+                width={200}
+                height={200}
                 onError={(e) => {
                   e.currentTarget.style.display = 'none'
                   const fallback = e.currentTarget.parentElement.querySelector('.compact-fallback')
@@ -99,6 +102,7 @@ export default function ProductCard({ product, compact = false }) {
                 }}
               />
             ) : null}
+
             <div
               className="compact-fallback w-full h-full flex flex-col items-center justify-center p-3 text-center bg-gradient-to-br from-neutral-800 to-neutral-950 text-white"
               style={{ display: product.coverImage ? 'none' : 'flex' }}
@@ -192,7 +196,10 @@ export default function ProductCard({ product, compact = false }) {
               src={product.coverImage}
               alt={product.title}
               draggable={false}
+              loading="lazy"
               decoding="async"
+              width={400}
+              height={400}
               onError={(e) => {
                 e.currentTarget.style.display = 'none'
                 const fallback = e.currentTarget.parentElement.querySelector('.card-img-fallback')
@@ -206,6 +213,7 @@ export default function ProductCard({ product, compact = false }) {
               }}
             />
           ) : null}
+
           <div
             className="card-img-fallback w-full h-full flex-col items-center justify-center p-4 text-center bg-gradient-to-br from-neutral-800 to-neutral-950 text-white"
             style={{ display: product.coverImage ? 'none' : 'flex' }}

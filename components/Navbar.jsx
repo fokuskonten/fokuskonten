@@ -262,32 +262,7 @@ export default function Navbar() {
               )}
             </Link>
 
-            {/* Tombol Keranjang Belanja Desktop */}
-            <button
-              type="button"
-              onClick={() => setIsCartOpen(true)}
-              className={`relative p-2.5 rounded-xl text-neutral-700 hover:text-neutral-950 hover:bg-neutral-100 transition-all flex items-center justify-center cursor-pointer shadow-soft hover:shadow-card bg-white border border-neutral-200/80 ${
-                isCartBumping ? 'scale-110 ring-2 ring-neutral-950 shadow-lg' : 'active:scale-95'
-              }`}
-              aria-label="Keranjang Belanja"
-            >
-              <svg className={`w-4 h-4 fill-current transition-transform duration-300 ${isCartBumping ? 'scale-125 rotate-12' : ''}`} viewBox="0 0 24 24">
-                <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
-              </svg>
-              {cartCount > 0 && (
-                <span className={`absolute -top-1.5 -right-1.5 min-w-[18px] h-[18px] px-1 rounded-full bg-neutral-950 text-white text-[10px] font-bold font-mono flex items-center justify-center shadow-md transition-all duration-300 ${
-                  isCartBumping ? 'scale-125 ring-2 ring-white animate-bounce' : ''
-                }`}>
-                  {cartCount > 9 ? '9+' : cartCount}
-                </span>
-              )}
-              {/* Floating +1 Feedback Badge */}
-              {isCartBumping && (
-                <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 px-1.5 py-0.5 rounded bg-neutral-950 text-white text-[9px] font-mono font-bold shadow-md animate-in fade-in zoom-in-75 duration-200 pointer-events-none whitespace-nowrap">
-                  +1
-                </span>
-              )}
-            </button>
+
 
             <a
               href="https://wa.me/6285183011318"
@@ -300,28 +275,7 @@ export default function Navbar() {
             </a>
           </nav>
 
-          <div className="flex items-center gap-2 md:hidden">
-            {/* Cart Button Mobile Header */}
-            <button
-              type="button"
-              onClick={() => setIsCartOpen(true)}
-              className={`relative p-2 rounded-xl text-neutral-700 hover:text-neutral-950 bg-white border border-neutral-200/80 shadow-soft transition-all duration-200 ${
-                isCartBumping ? 'scale-110 ring-2 ring-neutral-950 shadow-lg' : ''
-              }`}
-              aria-label="Keranjang Belanja"
-            >
-              <svg className={`w-5 h-5 fill-current transition-transform duration-300 ${isCartBumping ? 'scale-125 rotate-12' : ''}`} viewBox="0 0 24 24">
-                <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
-              </svg>
-              {cartCount > 0 && (
-                <span className={`absolute -top-1 -right-1 min-w-[16px] h-[16px] px-0.5 rounded-full bg-neutral-950 text-white text-[9px] font-bold font-mono flex items-center justify-center shadow-md transition-all duration-300 ${
-                  isCartBumping ? 'scale-125 ring-2 ring-white animate-bounce' : ''
-                }`}>
-                  {cartCount}
-                </span>
-              )}
-            </button>
-
+          <div className="flex items-center md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="w-10 h-10 flex flex-col items-center justify-center gap-1 rounded-xl text-neutral-600 hover:text-neutral-900 transition-colors"

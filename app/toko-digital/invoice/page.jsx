@@ -51,22 +51,35 @@ function InvoiceContent() {
   }, [orderId])
 
   // Real-time Status Polling: Cek otomatis ke server setiap 3 detik jika status belum settlement
+  // Berhenti otomatis setelah MAX_POLL percobaan (±60 detik) untuk mencegah polling tak terbatas
   useEffect(() => {
     if (!orderId || !order) return
-    const isCompleted = (
-      order.status === 'settlement' || 
-      order.status === 'lunas' || 
-      order.status === 'success'
-    ) && order.driveLink && order.driveLink !== '#'
 
-    if (isCompleted) {
+    const isSettled = (
+      order.status === 'settlement' ||
+      order.status === 'lunas' ||
+      order.status === 'success'
+    )
+    const hasValidLink = order.driveLink && order.driveLink !== '#'
+
+    if (isSettled && hasValidLink) {
       setIsPolling(false)
       return
     }
 
     setIsPolling(true)
     const apiUrl = getApiBaseUrl()
+    const MAX_POLL = 20 // 20 × 3 detik = 60 detik maksimum
+    let pollCount = 0
+
     const interval = setInterval(() => {
+      pollCount++
+      if (pollCount >= MAX_POLL) {
+        setIsPolling(false)
+        clearInterval(interval)
+        return
+      }
+
       const controller = new AbortController()
       const timeout = setTimeout(() => controller.abort(), 2000)
 
@@ -88,8 +101,11 @@ function InvoiceContent() {
               addBuyerOrder(updated)
               return updated
             })
-            setIsPolling(false)
-            clearInterval(interval)
+            // Stop polling jika drive link sudah ada
+            if (data.deliveryLink && data.deliveryLink !== '#') {
+              setIsPolling(false)
+              clearInterval(interval)
+            }
           }
         })
         .catch(() => {

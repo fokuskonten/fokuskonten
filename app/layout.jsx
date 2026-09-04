@@ -3,8 +3,10 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import WhatsAppFloat from '@/components/WhatsAppFloat'
+import CartFloat from '@/components/CartFloat'
 import BackToTop from '@/components/BackToTop'
 import SessionScrollRestorer from '@/components/SessionScrollRestorer'
+
 
 export const metadata = {
   title: {
@@ -72,7 +74,9 @@ export default function RootLayout({ children }) {
         <main className="min-h-screen">{children}</main>
         <Footer />
         <WhatsAppFloat />
+        <CartFloat />
         <BackToTop />
+
       </body>
     </html>
   )
