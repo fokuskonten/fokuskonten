@@ -42,17 +42,18 @@ print("=" * 65)
 print(f"🎯 Total Produk CorelDRAW: {len(catalog)} item")
 print(f"✅ Sudah pernah selesai   : {len(completed_skus)} item")
 
-# PENGATURAN: Uji coba 1 item dulu
+# PENGATURAN: Uji coba HANYA 1 item dulu!
 BATCH_LIMIT = 1
 MASTER_EXTENSIONS = {".cdr", ".eps", ".ai", ".pdf"}
 FONT_EXTENSIONS = {".ttf", ".otf", ".woff", ".woff2"}
 
 processed = 0
+attempts = 0
 
 for item in catalog:
-    if processed >= BATCH_LIMIT:
-        print(f"\n⏸️ Selesai memproses uji coba ({BATCH_LIMIT} item).")
+    if attempts >= BATCH_LIMIT:
         break
+    attempts += 1
 
     sku = item["sku"].strip()
     title = re.sub(r"[/\\?%*:|\"<>]", "-", item.get("title", sku)).strip()
@@ -66,7 +67,7 @@ for item in catalog:
     master_dir = os.path.join(product_dir, "01 - File Master Desain")
     font_dir = os.path.join(product_dir, "02 - Font Pendukung")
 
-    print(f"\n🚀 [{processed + 1}/{BATCH_LIMIT}] Memproses {sku}: {title}")
+    print(f"\n🚀 [1/{BATCH_LIMIT}] Memproses {sku}: {title}")
     print(f"   ⬇️ Mendownload ZIP dari Google Cloud (ID: {file_id})...")
 
     temp_zip = f"/tmp/{sku}.zip" if os.name != "nt" else f"C:/Temp/{sku}.zip"
@@ -74,8 +75,8 @@ for item in catalog:
     os.makedirs(os.path.dirname(temp_zip), exist_ok=True)
 
     try:
-        url = f"https://drive.google.com/uc?id={file_id}"
-        gdown.download(url, temp_zip, quiet=False, fuzzy=True)
+        # Download menggunakan file_id (kompatibel dengan semua versi gdown)
+        gdown.download(id=file_id, output=temp_zip, quiet=False)
 
         if not os.path.exists(temp_zip) or os.path.getsize(temp_zip) < 1000:
             print(f"   ⚠️ Gagal mengunduh file {sku}. Ukuran tidak valid.")
