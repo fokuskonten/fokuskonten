@@ -13,7 +13,7 @@ function InvoiceRedirectContent() {
   useEffect(() => {
     setMounted(true)
     if (orderId) {
-      router.replace(`/toko-digital/user/invoice/?order_id=${encodeURIComponent(orderId)}`)
+      router.replace(`/toko-digital/user/invoice/${encodeURIComponent(orderId)}`)
     }
   }, [orderId, router])
 

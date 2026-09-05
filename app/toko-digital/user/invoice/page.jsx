@@ -6,34 +6,75 @@ import Link from 'next/link'
 import Breadcrumb from '@/components/Breadcrumb'
 import InvoiceReceipt from '@/components/invoice/InvoiceReceipt'
 import DriveAccessButton from '@/components/invoice/DriveAccessButton'
-import { getBuyerProfile, addBuyerOrder } from '@/lib/buyerStore'
+import { getBuyerProfile, getBuyerOrders, setBuyerProfile, addBuyerOrder } from '@/lib/buyerStore'
 import { getApiBaseUrl } from '@/lib/apiConfig'
 import NotFound from '@/app/not-found'
 
 function UserInvoiceContent() {
   const searchParams = useSearchParams()
-  const orderId = searchParams.get('order_id') || searchParams.get('id')
+  const [orderId, setOrderId] = useState('')
   const [order, setOrder] = useState(null)
   const [isLoaded, setIsLoaded] = useState(false)
   const [isAuthorized, setIsAuthorized] = useState(false)
   const [isPolling, setIsPolling] = useState(false)
+  const [mounted, setMounted] = useState(false)
 
+  // 1. Ekstrak orderId dari query param (?order_id=...) ATAU dari URL path (/toko-digital/user/invoice/:orderId)
   useEffect(() => {
-    const prof = getBuyerProfile()
-    
-    // 1. STRICT AUTH CHECK: Jika pengunjung belum login di browser/profil ini, langsung 404 (Ghost Not Found)
-    if (!prof?.email || !orderId) {
+    setMounted(true)
+    let extractedId = searchParams.get('order_id') || searchParams.get('id') || ''
+    if (!extractedId && typeof window !== 'undefined') {
+      const match = window.location.pathname.match(/\/toko-digital\/user\/invoice\/([^\/\?]+)/i)
+      if (match && match[1] && match[1] !== 'index' && match[1] !== 'page') {
+        extractedId = decodeURIComponent(match[1])
+      }
+    }
+    setOrderId(extractedId)
+  }, [searchParams])
+
+  // 2. Verifikasi kepemilikan dan load data pesanan
+  useEffect(() => {
+    if (!mounted) return
+    if (!orderId) {
       setIsLoaded(true)
       setIsAuthorized(false)
       return
     }
 
-    // 2. Verifikasi kepemilikan ke backend dengan menyertakan email pembeli aktif
+    const prof = getBuyerProfile()
+    const localOrders = getBuyerOrders()
+    const matchingLocalOrder = localOrders.find(
+      o => o.orderId && o.orderId.toUpperCase() === orderId.toUpperCase()
+    )
+
+    // Deteksi identitas pemilik:
+    // a. Dari akun profil pembeli aktif di browser
+    // b. Dari riwayat transaksi lokal brankas perangkat ini (perangkat asli pembuat order)
+    const activeEmail = (prof?.email || matchingLocalOrder?.customerEmail || '').trim().toLowerCase()
+
+    // STRICT CHECK: Jika sama sekali tidak ada email pembeli (profil asing, perangkat orang lain tanpa login)
+    // -> Kembalikan 404 (Ghost Not Found)
+    if (!activeEmail) {
+      setIsLoaded(true)
+      setIsAuthorized(false)
+      return
+    }
+
+    // Jika perangkat ini memiliki riwayat order lokal tapi profil belum terisi, sinkronkan
+    if (matchingLocalOrder?.customerEmail && !prof?.email) {
+      setBuyerProfile({
+        name: matchingLocalOrder.customerName || '',
+        email: matchingLocalOrder.customerEmail,
+        phone: matchingLocalOrder.customerPhone || ''
+      })
+    }
+
+    // Verifikasi ke backend dengan menyertakan email pembeli aktif
     const apiUrl = getApiBaseUrl()
     const controller = new AbortController()
-    const timer = setTimeout(() => controller.abort(), 4000)
+    const timer = setTimeout(() => controller.abort(), 6000)
 
-    fetch(`${apiUrl}/digital-orders/${encodeURIComponent(orderId)}/status?email=${encodeURIComponent(prof.email)}`, {
+    fetch(`${apiUrl}/digital-orders/${encodeURIComponent(orderId)}/status?email=${encodeURIComponent(activeEmail)}`, {
       signal: controller.signal
     })
       .then(res => {
@@ -49,13 +90,13 @@ function UserInvoiceContent() {
             title: data.title,
             format: data.format || 'CDR',
             price: data.amount,
-            customerName: data.buyerName || prof.name || '-',
-            customerEmail: data.buyerEmail || prof.email,
+            customerName: data.buyerName || matchingLocalOrder?.customerName || prof?.name || '-',
+            customerEmail: data.buyerEmail || activeEmail,
             paymentType: data.paymentMethod,
             status: (data.paymentStatus || 'pending').toLowerCase(),
             createdAt: data.createdAt,
             driveLink: data.deliveryLink,
-            items: data.items || []
+            items: (data.items && data.items.length > 0) ? data.items : (matchingLocalOrder?.items || [])
           }
           setOrder(ordData)
           setIsAuthorized(true)
@@ -64,15 +105,22 @@ function UserInvoiceContent() {
           setIsAuthorized(false)
         }
       })
-      .catch(() => {
-        setIsAuthorized(false)
+      .catch((err) => {
+        console.warn('[UserInvoice] Notice:', err.message)
+        // Jika jaringan sedang gangguan tapi perangkat ini memegang pesanan asli secara lokal
+        if (matchingLocalOrder) {
+          setOrder(matchingLocalOrder)
+          setIsAuthorized(true)
+        } else {
+          setIsAuthorized(false)
+        }
       })
       .finally(() => {
         setIsLoaded(true)
       })
-  }, [orderId])
+  }, [mounted, orderId])
 
-  // Polling jika status masih pending
+  // 3. Polling otomatis saat menunggu verifikasi pembayaran
   useEffect(() => {
     if (!isAuthorized || !order || !orderId) return
     const isSettled = order.status === 'settlement' || order.status === 'lunas' || order.status === 'success'
@@ -82,9 +130,14 @@ function UserInvoiceContent() {
     const apiUrl = getApiBaseUrl()
     const interval = setInterval(() => {
       const prof = getBuyerProfile()
-      if (!prof?.email) return
+      const localOrders = getBuyerOrders()
+      const matchingLocalOrder = localOrders.find(
+        o => o.orderId && o.orderId.toUpperCase() === orderId.toUpperCase()
+      )
+      const currentEmail = (prof?.email || matchingLocalOrder?.customerEmail || order.customerEmail || '').trim().toLowerCase()
+      if (!currentEmail) return
 
-      fetch(`${apiUrl}/digital-orders/${encodeURIComponent(orderId)}/status?email=${encodeURIComponent(prof.email)}`)
+      fetch(`${apiUrl}/digital-orders/${encodeURIComponent(orderId)}/status?email=${encodeURIComponent(currentEmail)}`)
         .then(r => r.json())
         .then(data => {
           if (data.success && data.isSettlement) {
@@ -104,7 +157,7 @@ function UserInvoiceContent() {
     return () => clearInterval(interval)
   }, [isAuthorized, order, orderId])
 
-  if (!isLoaded) {
+  if (!mounted || !isLoaded) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-neutral-50/60 font-sans text-sm text-neutral-400">
         Memverifikasi hak kepemilikan invoice...
@@ -120,7 +173,7 @@ function UserInvoiceContent() {
   const breadcrumbs = [
     { label: 'Beranda', href: '/' },
     { label: 'Toko Digital', href: '/toko-digital/' },
-    { label: 'Nota Invoice', href: `/toko-digital/user/invoice/?order_id=${encodeURIComponent(orderId)}` }
+    { label: 'Nota Invoice', href: `/toko-digital/user/invoice/${encodeURIComponent(orderId)}` }
   ]
 
   return (
