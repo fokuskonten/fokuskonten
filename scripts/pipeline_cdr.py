@@ -1,0 +1,133 @@
+import os
+import sys
+import shutil
+import zipfile
+import json
+import re
+import subprocess
+
+# Pastikan tool gdown terpasang
+try:
+    import gdown
+except ImportError:
+    print("📦 Menginstal tool gdown...")
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "gdown", "tqdm"])
+    import gdown
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MANIFEST_FILE = os.path.join(BASE_DIR, "cdr_manifest.json")
+OUTPUT_BASE = os.path.join(os.getcwd(), "KATALOG_CDR_EXPORT")
+CHECKPOINT_FILE = os.path.join(OUTPUT_BASE, "_checkpoint_cdr.json")
+
+os.makedirs(OUTPUT_BASE, exist_ok=True)
+
+if not os.path.exists(MANIFEST_FILE):
+    print(f"❌ File manifest tidak ditemukan di: {MANIFEST_FILE}")
+    sys.exit(1)
+
+with open(MANIFEST_FILE, "r", encoding="utf-8") as f:
+    catalog = json.load(f)
+
+completed_skus = set()
+if os.path.exists(CHECKPOINT_FILE):
+    try:
+        with open(CHECKPOINT_FILE, "r", encoding="utf-8") as cf:
+            completed_skus = set(json.load(cf))
+    except Exception:
+        pass
+
+print("=" * 65)
+print("  🚀 FOKUSKONTEN CLOUD PIPELINE - COREL DRAW / CDR")
+print("=" * 65)
+print(f"🎯 Total Produk CorelDRAW: {len(catalog)} item")
+print(f"✅ Sudah pernah selesai   : {len(completed_skus)} item")
+
+# PENGATURAN: Uji coba 1 item dulu
+BATCH_LIMIT = 1
+MASTER_EXTENSIONS = {".cdr", ".eps", ".ai", ".pdf"}
+FONT_EXTENSIONS = {".ttf", ".otf", ".woff", ".woff2"}
+
+processed = 0
+
+for item in catalog:
+    if processed >= BATCH_LIMIT:
+        print(f"\n⏸️ Selesai memproses uji coba ({BATCH_LIMIT} item).")
+        break
+
+    sku = item["sku"].strip()
+    title = re.sub(r"[/\\?%*:|\"<>]", "-", item.get("title", sku)).strip()
+    file_id = item.get("drive_file_id")
+
+    if sku in completed_skus:
+        continue
+
+    product_folder_name = f"{sku} - {title}"[:100]
+    product_dir = os.path.join(OUTPUT_BASE, product_folder_name)
+    master_dir = os.path.join(product_dir, "01 - File Master Desain")
+    font_dir = os.path.join(product_dir, "02 - Font Pendukung")
+
+    print(f"\n🚀 [{processed + 1}/{BATCH_LIMIT}] Memproses {sku}: {title}")
+    print(f"   ⬇️ Mendownload ZIP dari Google Cloud (ID: {file_id})...")
+
+    temp_zip = f"/tmp/{sku}.zip" if os.name != "nt" else f"C:/Temp/{sku}.zip"
+    temp_extract = f"/tmp/extract_{sku}" if os.name != "nt" else f"C:/Temp/extract_{sku}"
+    os.makedirs(os.path.dirname(temp_zip), exist_ok=True)
+
+    try:
+        url = f"https://drive.google.com/uc?id={file_id}"
+        gdown.download(url, temp_zip, quiet=False, fuzzy=True)
+
+        if not os.path.exists(temp_zip) or os.path.getsize(temp_zip) < 1000:
+            print(f"   ⚠️ Gagal mengunduh file {sku}. Ukuran tidak valid.")
+            continue
+
+        zip_size_mb = os.path.getsize(temp_zip) / (1024 * 1024)
+        print(f"   📦 Ukuran ZIP: {zip_size_mb:.2f} MB. Mengekstrak file mentahan...")
+
+        os.makedirs(temp_extract, exist_ok=True)
+        with zipfile.ZipFile(temp_zip, "r") as z:
+            z.extractall(temp_extract)
+
+        os.makedirs(master_dir, exist_ok=True)
+        extracted_masters = 0
+        extracted_fonts = 0
+
+        for root, _, files_in_dir in os.walk(temp_extract):
+            for f_name in files_in_dir:
+                f_ext = os.path.splitext(f_name.lower())[1]
+                full_src = os.path.join(root, f_name)
+
+                if f_ext in FONT_EXTENSIONS:
+                    os.makedirs(font_dir, exist_ok=True)
+                    shutil.copy2(full_src, os.path.join(font_dir, f_name))
+                    extracted_fonts += 1
+                elif f_ext in MASTER_EXTENSIONS:
+                    shutil.copy2(full_src, os.path.join(master_dir, f_name))
+                    extracted_masters += 1
+                    f_size_mb = os.path.getsize(full_src) / (1024 * 1024)
+                    print(f"      ✨ Ditemukan Master: {f_name} ({f_size_mb:.2f} MB)")
+
+        print(f"   🎉 Berhasil diekstrak:")
+        print(f"      - Master File (.CDR/.EPS): {extracted_masters} file di: 01 - File Master Desain/")
+        print(f"      - Font Pendukung          : {extracted_fonts} file di: 02 - Font Pendukung/")
+
+        completed_skus.add(sku)
+        with open(CHECKPOINT_FILE, "w", encoding="utf-8") as cf:
+            json.dump(list(completed_skus), cf, indent=2)
+
+        processed += 1
+
+    except Exception as e:
+        print(f"   ❌ Terjadi kesalahan pada {sku}: {str(e)}")
+    finally:
+        if os.path.exists(temp_zip):
+            try: os.remove(temp_zip)
+            except Exception: pass
+        if os.path.exists(temp_extract):
+            try: shutil.rmtree(temp_extract, ignore_errors=True)
+            except Exception: pass
+
+print("\n" + "=" * 65)
+print(f"✅ Pengujian selesai! {processed} produk berhasil diproses.")
+print(f"📁 Folder hasil dapat dilihat di folder: KATALOG_CDR_EXPORT")
+print("=" * 65)
