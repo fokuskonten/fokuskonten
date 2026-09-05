@@ -18,7 +18,8 @@ export default function BuyerOrderClaimForm({ profile, onClaimSuccess }) {
     setIsLoading(true)
     try {
       const apiUrl = getApiBaseUrl()
-      const res = await fetch(`${apiUrl}/digital-orders/${encodeURIComponent(cleanId)}`)
+      const authEmail = (profile?.email || '').trim().toLowerCase()
+      const res = await fetch(`${apiUrl}/digital-orders/${encodeURIComponent(cleanId)}?email=${encodeURIComponent(authEmail)}`)
       if (!res.ok) {
         setResult({
           type: 'error',
