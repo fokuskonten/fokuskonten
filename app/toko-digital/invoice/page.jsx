@@ -1,6 +1,6 @@
 'use client'
 
-import { Suspense, useEffect } from 'react'
+import { Suspense, useState, useEffect } from 'react'
 import { useSearchParams, useRouter } from 'next/navigation'
 import NotFound from '@/app/not-found'
 
@@ -8,12 +8,22 @@ function InvoiceRedirectContent() {
   const searchParams = useSearchParams()
   const router = useRouter()
   const orderId = searchParams.get('order_id')
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
+    setMounted(true)
     if (orderId) {
       router.replace(`/toko-digital/user/invoice/?order_id=${encodeURIComponent(orderId)}`)
     }
   }, [orderId, router])
+
+  if (!mounted) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-neutral-50/60 font-sans text-sm text-neutral-400">
+        Memuat nota...
+      </div>
+    )
+  }
 
   if (!orderId) {
     return <NotFound />
