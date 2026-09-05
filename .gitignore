@@ -8,6 +8,7 @@ public/covers/
 *.txt
 !public/app-ads.txt
 !public/ads.txt
+!public/robots.txt
 *.log
 *.jks
 *.keystore

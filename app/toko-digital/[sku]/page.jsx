@@ -63,7 +63,7 @@ export async function generateStaticParams() {
     const dbPath = path.resolve(process.cwd(), '../../Server-Fokuskonten/product_digital.db')
     if (fs.existsSync(dbPath)) {
       const db = new DatabaseSync(dbPath)
-      const rows = db.prepare('SELECT sku, title FROM digital_products').all()
+      const rows = db.prepare('SELECT sku, title FROM digital_products WHERE is_published = 1').all()
       for (const r of rows) {
         if (r && r.sku) allItems.push(r)
       }
@@ -72,16 +72,14 @@ export async function generateStaticParams() {
   } catch (_) {}
 
   for (const product of allItems) {
-    if (product.sku) {
+    if (product.sku && (product.isPublished !== false)) {
       const lowerSku = product.sku.toLowerCase()
       const upperSku = product.sku.toUpperCase()
       const slug = createProductSlug(product.sku, product.title)
-      const slugUpper = slug.toUpperCase()
 
       if (!added.has(lowerSku)) { params.push({ sku: lowerSku }); added.add(lowerSku); }
       if (!added.has(upperSku)) { params.push({ sku: upperSku }); added.add(upperSku); }
       if (slug && !added.has(slug)) { params.push({ sku: slug }); added.add(slug); }
-      if (slugUpper && !added.has(slugUpper)) { params.push({ sku: slugUpper }); added.add(slugUpper); }
     }
   }
   return params

@@ -10,36 +10,70 @@ import SessionScrollRestorer from '@/components/SessionScrollRestorer'
 
 export const metadata = {
   title: {
-    default: 'FokusKonten — Pengembang & Publisher Software Aplikasi Resmi',
-    template: '%s | FokusKonten',
+    default: 'Fokus Konten — Official Studio Desain Grafis, Template Cetak & Software Resmi',
+    template: '%s | Fokus Konten',
   },
-  description: 'FokusKonten adalah pengembang dan publisher software serta aplikasi Android & Desktop resmi. Menyediakan solusi aplikasi bisnis kasir (Apotek Pro, Kelontong Pro), MCJob.id, CRM, dan layanan pembuatan aplikasi kustom profesional.',
+  description: 'Website resmi Fokus Konten (FokusKonten). Menyediakan ratusan template desain grafis siap cetak (CorelDRAW, Photoshop), vektor, serta pengembang software aplikasi Android & Desktop resmi.',
   keywords: [
-    'FokusKonten', 'Apotek Pro', 'Kelontong Pro', 'Aplikasi Kasir Android', 'POS Apotek', 'Software Apotek',
-    'Aplikasi Android Indonesia', 'Developer Android Indonesia', 'Publisher Google Play',
-    'Jasa Pembuatan Aplikasi Android', 'Aplikasi Bisnis Offline',
+    'Fokus Konten', 'FokusKonten', 'Fokus Konten Official', 'fokuskonten.my.id',
+    'Template Desain Grafis', 'Template CorelDRAW', 'Desain Spanduk CDR', 'Desain Banner',
+    'Desain Undangan', 'Vektor Indonesia', 'Apotek Pro', 'Kelontong Pro', 'Aplikasi Kasir Android',
+    'Publisher Software Indonesia', 'Jasa Desain dan Pembuatan Aplikasi',
   ],
-  authors: [{ name: 'FokusKonten', url: 'https://fokuskonten.my.id' }],
-  creator: 'FokusKonten',
-  publisher: 'FokusKonten',
+  authors: [{ name: 'Fokus Konten', url: 'https://fokuskonten.my.id' }],
+  creator: 'Fokus Konten',
+  publisher: 'Fokus Konten',
   metadataBase: new URL('https://fokuskonten.my.id'),
   openGraph: {
     type: 'website',
     locale: 'id_ID',
     url: 'https://fokuskonten.my.id',
-    siteName: 'FokusKonten',
-    title: 'FokusKonten — Pengembang & Publisher Software Aplikasi Resmi',
-    description: 'Solusi software dan aplikasi andal untuk bisnis (Apotek Pro, Kelontong Pro), Al-Qur\'an digital, bursa karir MCJob.id, dan WhatsApp Lead CRM.',
-    images: [{ url: '/assets/brand/og-image.jpg', width: 1200, height: 630, alt: 'FokusKonten — Software & Aplikasi' }],
+    siteName: 'Fokus Konten',
+    title: 'Fokus Konten — Official Studio Desain Grafis, Template Cetak & Software Resmi',
+    description: 'Website resmi Fokus Konten. Katalog aset desain grafis lengkap (CorelDRAW, PSD, AI), template percetakan, dan software bisnis resmi.',
+    images: [{ url: '/assets/brand/og-image.jpg', width: 1200, height: 630, alt: 'Fokus Konten — Desain Grafis & Software' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'FokusKonten — Pengembang & Publisher Software Aplikasi Resmi',
-    description: 'Solusi software dan aplikasi andal untuk bisnis (Apotek Pro, Kelontong Pro), Al-Qur\'an digital, bursa karir MCJob.id, dan WhatsApp Lead CRM.',
+    title: 'Fokus Konten — Official Studio Desain Grafis, Template & Software Resmi',
+    description: 'Website resmi Fokus Konten. Katalog ratusan aset desain grafis siap pakai dan software aplikasi bisnis terpercaya.',
     images: ['/assets/brand/og-image.jpg'],
   },
   robots: { index: true, follow: true },
   alternates: { canonical: 'https://fokuskonten.my.id' },
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': 'https://fokuskonten.my.id/#organization',
+      name: 'Fokus Konten',
+      alternateName: ['FokusKonten', 'Fokus Konten Official', 'FokusKonten Studio'],
+      url: 'https://fokuskonten.my.id',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://fokuskonten.my.id/logo.png',
+        caption: 'Fokus Konten Logo',
+      },
+      sameAs: [
+        'https://www.youtube.com/@fokuskonten',
+        'https://github.com/fokuskonten',
+      ],
+      description: 'Official Publisher & Studio Desain Grafis, Template Cetak, dan Software Aplikasi Digital Fokus Konten.',
+    },
+    {
+      '@type': 'WebSite',
+      '@id': 'https://fokuskonten.my.id/#website',
+      url: 'https://fokuskonten.my.id',
+      name: 'Fokus Konten',
+      publisher: {
+        '@id': 'https://fokuskonten.my.id/#organization',
+      },
+      inLanguage: 'id-ID',
+    },
+  ],
 }
 
 export default function RootLayout({ children }) {
@@ -51,6 +85,10 @@ export default function RootLayout({ children }) {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.webmanifest" />
         <meta name="theme-color" content="#0F172A" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
