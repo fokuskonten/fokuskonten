@@ -37,10 +37,10 @@ export default function DeliveryEmailForm({
       <div>
         <div className="flex items-center justify-between mb-1.5">
           <label className="block text-xs font-bold uppercase tracking-wider text-neutral-700">
-            Email Pengiriman <span className="text-red-500">*</span>
+            Alamat Gmail Pembeli <span className="text-red-500">*</span>
           </label>
           <span className="text-[10px] text-neutral-400 font-medium">
-            {isLoggedIn ? 'Terhubung dengan akun' : 'Untuk akses Google Drive'}
+            {isLoggedIn ? 'Terhubung dengan akun' : 'Wajib Gmail untuk izin Drive'}
           </span>
         </div>
         <input
@@ -61,18 +61,18 @@ export default function DeliveryEmailForm({
         ) : isLoggedIn ? (
           <p className="text-[11px] text-neutral-500 mt-1 flex items-center gap-1.5">
             <span>🔒</span>
-            <span>Terkunci sesuai akun login. Akses file otomatis masuk ke dashboard akun ini.</span>
+            <span>Terkunci sesuai akun login. Izin akses file otomatis masuk ke Gmail ini.</span>
           </p>
         ) : email && !isGoogleMail && isGeneralEmail ? (
           <div className="mt-1.5 p-2.5 rounded-lg bg-amber-50 border border-amber-200 text-amber-800 text-xs flex items-start gap-1.5">
             <span className="shrink-0 mt-0.5">⚠️</span>
             <span>
-              Gunakan akun <strong>@gmail.com</strong> agar link Google Drive bisa langsung dibuka tanpa kendala akses.
+              Wajib gunakan akun <strong>@gmail.com</strong> agar Google Drive dapat memberikan izin akses privat secara otomatis.
             </span>
           </div>
         ) : (
           <p className="text-[11px] text-neutral-400 mt-1">
-            Link akses Google Drive akan dikirim ke email ini.
+            Hak akses Google Drive (private) otomatis didaftarkan ke Gmail ini setelah pembayaran lunas.
           </p>
         )}
       </div>
