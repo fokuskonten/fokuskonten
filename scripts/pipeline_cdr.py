@@ -130,8 +130,9 @@ for item in catalog:
                     elif f_ext in MASTER_EXTENSIONS:
                         shutil.copy2(full_src, os.path.join(master_dir, f_name))
                         extracted_masters += 1
-                        f_size_mb = os.path.getsize(full_src) / (1024 * 1024)
-                        print(f"      ✨ Ditemukan Master: {f_name} ({f_size_mb:.2f} MB)")
+                        if extracted_masters <= 5 or extracted_masters % 50 == 0:
+                            f_size_mb = os.path.getsize(full_src) / (1024 * 1024)
+                            print(f"      ✨ Ditemukan Master: {f_name} ({f_size_mb:.2f} MB)")
 
         print(f"   🎉 Berhasil diekstrak:")
         print(f"      - Master File (.CDR/.EPS): {extracted_masters} file di: 01 - File Master Desain/")
@@ -142,6 +143,18 @@ for item in catalog:
             with open(CHECKPOINT_FILE, "w", encoding="utf-8") as cf:
                 json.dump(list(completed_skus), cf, indent=2)
             processed += 1
+
+            # Jika rclone sudah terkonfigurasi, langsung unggah ke Google Drive!
+            rclone_conf = os.path.expanduser("~/.config/rclone/rclone.conf")
+            if os.path.exists(rclone_conf):
+                print(f"\n   🚀 Mengunggah {product_folder_name} langsung ke Google Drive admin@fokuskonten.my.id...")
+                try:
+                    subprocess.check_call([
+                        "rclone", "copy", product_dir, f"gdrive:KATALOG FOKUSKONTEN/{product_folder_name}", "-q"
+                    ])
+                    print("   ✅ 100% SUKSES TERSIMPAN DI GOOGLE DRIVE!")
+                except Exception as rerr:
+                    print(f"   ⚠️ Catatan rclone: {rerr}")
         else:
             print(f"   ⚠️ Tidak ditemukan file master pada {sku}.")
 
