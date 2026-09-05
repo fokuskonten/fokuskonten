@@ -130,10 +130,10 @@ export default function ProductGallery({
             rel="noopener noreferrer"
             className="w-full py-3 px-4 rounded-xl bg-neutral-950 hover:bg-black text-white text-xs sm:text-sm font-bold flex items-center justify-between transition-all shadow-sm group cursor-pointer border border-neutral-800"
           >
-            <div className="flex items-center gap-2">
+            <span className="flex items-center gap-2">
               <span className="text-base">👁️</span>
               <span>Buka Katalog Visual Penuh (Full Preview)</span>
-            </div>
+            </span>
             <span className="inline-flex items-center gap-1 font-mono text-[11px] text-neutral-400 group-hover:text-white transition-colors">
               <span>Buka Tab Baru</span>
               <span>↗</span>
