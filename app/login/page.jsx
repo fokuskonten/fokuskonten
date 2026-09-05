@@ -38,7 +38,7 @@ export default function LoginPage() {
         </div>
         <CreativeAuthPortal
           onAuthSuccess={() => {
-            router.push('/akun/')
+            window.location.href = '/akun/'
           }}
         />
       </div>

@@ -15,6 +15,8 @@ import {
   addBuyerOrder, 
   setBuyerProfile, 
   getBuyerProfile, 
+  clearBuyerSession,
+  subscribeBuyerStore,
   pushOrderToServer, 
   hasPurchasedSku,
   updateOrderStatus,
@@ -23,9 +25,11 @@ import {
 } from '@/lib/buyerStore'
 import { getApiBaseUrl, getMidtransClientKey, getMidtransSnapUrl } from '@/lib/apiConfig'
 import { getCartItems, clearCart, removeFromCart } from '@/lib/cartStore'
+import { useStoreHealth } from '@/lib/useStoreHealth'
 
 function CheckoutContent() {
   const router = useRouter()
+  const { isOffline, ctaText } = useStoreHealth()
   const searchParams = useSearchParams()
   const skuParam = searchParams.get('sku')
 
@@ -45,15 +49,24 @@ function CheckoutContent() {
   const [isProcessing, setIsProcessing] = useState(false)
   const [isLoaded, setIsLoaded] = useState(false)
   const [duplicateInfo, setDuplicateInfo] = useState(null)
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
 
   useEffect(() => {
-    // 1. Isi otomatis dari sesi profil jika ada
-    const existing = getBuyerProfile()
-    if (existing) {
-      if (existing.name) setName(existing.name)
-      if (existing.email) setEmail(existing.email)
-      if (existing.phone) setPhone(existing.phone)
+    // 1. Isi otomatis dari sesi profil jika ada & tentukan status login
+    const applyProfile = () => {
+      const existing = getBuyerProfile()
+      if (existing && existing.email) {
+        setIsLoggedIn(true)
+        if (existing.name) setName(existing.name)
+        if (existing.email) setEmail(existing.email)
+        if (existing.phone) setPhone(existing.phone)
+      } else {
+        setIsLoggedIn(false)
+      }
     }
+
+    applyProfile()
+    const unsubBuyer = subscribeBuyerStore(applyProfile)
 
     // 2. Tentukan mode checkout: Single SKU vs Multi-item Cart
     if (skuParam && Array.isArray(digitalProducts)) {
@@ -74,6 +87,7 @@ function CheckoutContent() {
     }
 
     setIsLoaded(true)
+    return () => unsubBuyer()
   }, [skuParam])
 
   // Cek duplicate purchase untuk Single SKU maupun Multi-item Cart
@@ -251,11 +265,13 @@ function CheckoutContent() {
     if (!email.trim()) newErrors.email = 'Alamat email wajib diisi.'
     else if (!isValidEmail(email)) newErrors.email = 'Format email tidak valid.'
 
-    // Validasi password
-    if (!password) newErrors.password = 'Password akun wajib diisi (min. 6 karakter).'
-    else if (password.length < 6) newErrors.password = 'Password minimal 6 karakter.'
-    else if (!isExistingAccount && password !== confirmPassword) {
-      newErrors.confirmPassword = 'Konfirmasi password tidak cocok.'
+    // Validasi password (HANYA jika belum login)
+    if (!isLoggedIn) {
+      if (!password) newErrors.password = 'Password akun wajib diisi (min. 6 karakter).'
+      else if (password.length < 6) newErrors.password = 'Password minimal 6 karakter.'
+      else if (!isExistingAccount && password !== confirmPassword) {
+        newErrors.confirmPassword = 'Konfirmasi password tidak cocok.'
+      }
     }
 
     if (Object.keys(newErrors).length > 0) {
@@ -266,35 +282,37 @@ function CheckoutContent() {
     setErrors({})
     setIsProcessing(true)
 
-    // ── Step 1: Daftarkan akun otomatis atau login jika sudah ada ──
-    try {
-      let authResult
-      if (isExistingAccount) {
-        // User sudah punya akun → login
-        authResult = await loginBuyerWithPassword({ email: email.trim().toLowerCase(), password })
-        if (!authResult.success) {
-          setErrors({ password: authResult.message || 'Password salah. Coba lagi atau reset password.' })
-          setIsProcessing(false)
-          return
-        }
-      } else {
-        // User baru → daftarkan akun
-        authResult = await registerBuyerAccount({ name: name.trim(), email: email.trim().toLowerCase(), phone: phone.trim(), password })
-        if (!authResult.success) {
-          // Email sudah terdaftar → pindah ke mode login
-          if (authResult.message && authResult.message.toLowerCase().includes('terdaftar')) {
-            setIsExistingAccount(true)
-            setErrors({ password: 'Email ini sudah terdaftar. Masukkan password akun Anda untuk melanjutkan.' })
-          } else {
-            setErrors({ submit: authResult.message || 'Gagal membuat akun. Silakan coba lagi.' })
+    // ── Step 1: Daftarkan akun otomatis atau login jika belum ada (HANYA untuk Guest) ──
+    if (!isLoggedIn) {
+      try {
+        let authResult
+        if (isExistingAccount) {
+          // User sudah punya akun → login
+          authResult = await loginBuyerWithPassword({ email: email.trim().toLowerCase(), password })
+          if (!authResult.success) {
+            setErrors({ password: authResult.message || 'Password salah. Coba lagi atau reset password.' })
+            setIsProcessing(false)
+            return
           }
-          setIsProcessing(false)
-          return
+        } else {
+          // User baru → daftarkan akun
+          authResult = await registerBuyerAccount({ name: name.trim(), email: email.trim().toLowerCase(), phone: phone.trim(), password })
+          if (!authResult.success) {
+            // Email sudah terdaftar → pindah ke mode login
+            if (authResult.message && authResult.message.toLowerCase().includes('terdaftar')) {
+              setIsExistingAccount(true)
+              setErrors({ password: 'Email ini sudah terdaftar. Masukkan password akun Anda untuk melanjutkan.' })
+            } else {
+              setErrors({ submit: authResult.message || 'Gagal membuat akun. Silakan coba lagi.' })
+            }
+            setIsProcessing(false)
+            return
+          }
         }
+      } catch (authErr) {
+        // Offline fallback: lanjut tanpa akun server (data tersimpan lokal)
+        console.warn('[Checkout] Auth offline, lanjut sebagai guest:', authErr.message)
       }
-    } catch (authErr) {
-      // Offline fallback: lanjut tanpa akun server (data tersimpan lokal)
-      console.warn('[Checkout] Auth offline, lanjut sebagai guest:', authErr.message)
     }
 
     const orderId = generateInvoiceId()
@@ -433,16 +451,16 @@ function CheckoutContent() {
           snapInstance.pay(snapToken, {
             onSuccess: function() {
               updateOrderStatus(orderId, 'settlement')
-              router.push(`/toko-digital/invoice/?order_id=${orderId}`)
+              router.push(`/toko-digital/user/invoice/?order_id=${orderId}`)
             },
             onPending: function() {
-              router.push(`/toko-digital/invoice/?order_id=${orderId}`)
+              router.push(`/toko-digital/user/invoice/?order_id=${orderId}`)
             },
             onError: function() {
-              router.push(`/toko-digital/invoice/?order_id=${orderId}`)
+              router.push(`/toko-digital/user/invoice/?order_id=${orderId}`)
             },
             onClose: function() {
-              router.push(`/toko-digital/invoice/?order_id=${orderId}`)
+              router.push(`/toko-digital/user/invoice/?order_id=${orderId}`)
             }
           })
           return
@@ -460,7 +478,7 @@ function CheckoutContent() {
     }
 
     setIsProcessing(false)
-    router.push(`/toko-digital/invoice/?order_id=${orderId}`)
+    router.push(`/toko-digital/user/invoice/?order_id=${orderId}`)
   }
 
   return (
@@ -497,8 +515,45 @@ function CheckoutContent() {
                 1. Data Pengiriman
               </h3>
               <p className="text-xs text-neutral-400 mb-4 font-sans">
-                Akses file akan dikirimkan ke alamat email ini.
+                {isLoggedIn 
+                  ? 'Akses file Google Drive akan otomatis masuk ke akun terhubung Anda.' 
+                  : 'Akses file akan dikirimkan ke alamat email ini.'}
               </p>
+
+              {/* Banner Akun Aktif untuk User yang Sudah Login */}
+              {isLoggedIn && (
+                <div className="mb-4 p-4 rounded-2xl bg-neutral-950 text-white flex items-center justify-between border border-neutral-800 shadow-sm animate-fade-in">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-xl bg-white/10 border border-white/15 flex items-center justify-center font-bold text-sm text-emerald-400 font-display">
+                      {name ? name.charAt(0).toUpperCase() : (email ? email.charAt(0).toUpperCase() : 'U')}
+                    </div>
+                    <div>
+                      <div className="flex items-center gap-2">
+                        <span className="font-bold text-sm text-white font-sans">{name || 'Member FokusKonten'}</span>
+                        <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 text-[10px] font-bold border border-emerald-500/30 font-sans">
+                          Akun Aktif
+                        </span>
+                      </div>
+                      <p className="text-xs text-neutral-400 font-mono mt-0.5">{email}</p>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      clearBuyerSession()
+                      setIsLoggedIn(false)
+                      setName('')
+                      setEmail('')
+                      setPhone('')
+                    }}
+                    className="text-xs text-neutral-400 hover:text-white underline transition-colors cursor-pointer font-sans"
+                    title="Keluar dari akun ini untuk checkout sebagai akun lain"
+                  >
+                    Ganti Akun
+                  </button>
+                </div>
+              )}
+
               <DeliveryEmailForm
                 name={name}
                 setName={setName}
@@ -507,90 +562,93 @@ function CheckoutContent() {
                 phone={phone}
                 setPhone={setPhone}
                 errors={errors}
+                isLoggedIn={isLoggedIn}
               />
             </div>
 
-            {/* ── Section 2: Buat Akun / Login ── */}
-            <div className="pt-4 border-t border-neutral-100">
-              <div className="flex items-start justify-between mb-1">
-                <h3 className="font-sans font-bold text-base text-neutral-950">
-                  2. {isExistingAccount ? 'Login ke Akun Anda' : 'Buat Akun'}
-                </h3>
-                <button
-                  type="button"
-                  onClick={() => { setIsExistingAccount(!isExistingAccount); setErrors({}) }}
-                  className="text-xs text-blue-600 hover:underline font-sans cursor-pointer"
-                >
-                  {isExistingAccount ? 'Belum punya akun?' : 'Sudah punya akun?'}
-                </button>
-              </div>
-              <p className="text-xs text-neutral-400 mb-4 font-sans">
-                {isExistingAccount
-                  ? 'Masukkan password akun FokusKonten Anda.'
-                  : 'Email ini akan jadi akun login permanen. Produk tersimpan aman di dashboard Anda.'}
-              </p>
-
-              <div className="space-y-3">
-                {/* Password */}
-                <div>
-                  <label className="block text-xs font-bold text-neutral-700 mb-1.5 font-sans uppercase tracking-wide">
-                    PASSWORD <span className="text-red-500">*</span>
-                  </label>
-                  <div className="relative">
-                    <input
-                      type={showPassword ? 'text' : 'password'}
-                      value={password}
-                      onChange={e => setPassword(e.target.value)}
-                      placeholder="Min. 6 karakter"
-                      className={`w-full px-4 py-3 rounded-xl border text-sm font-sans bg-white pr-12 transition-colors ${
-                        errors.password ? 'border-red-400 bg-red-50' : 'border-neutral-200 focus:border-neutral-900'
-                      } outline-none`}
-                    />
-                    <button
-                      type="button"
-                      onClick={() => setShowPassword(!showPassword)}
-                      className="absolute right-3 top-1/2 -translate-y-1/2 text-neutral-400 hover:text-neutral-700 text-xs font-sans cursor-pointer"
-                    >
-                      {showPassword ? 'Sembunyikan' : 'Tampilkan'}
-                    </button>
-                  </div>
-                  {errors.password && <p className="text-xs text-red-500 mt-1 font-sans">{errors.password}</p>}
+            {/* ── Section 2: Buat Akun / Login (HANYA TAMPIL UNTUK USER YANG BELUM LOGIN) ── */}
+            {!isLoggedIn && (
+              <div className="pt-4 border-t border-neutral-100">
+                <div className="flex items-start justify-between mb-1">
+                  <h3 className="font-sans font-bold text-base text-neutral-950">
+                    2. {isExistingAccount ? 'Login ke Akun Anda' : 'Buat Akun'}
+                  </h3>
+                  <button
+                    type="button"
+                    onClick={() => { setIsExistingAccount(!isExistingAccount); setErrors({}) }}
+                    className="text-xs text-blue-600 hover:underline font-sans cursor-pointer"
+                  >
+                    {isExistingAccount ? 'Belum punya akun?' : 'Sudah punya akun?'}
+                  </button>
                 </div>
+                <p className="text-xs text-neutral-400 mb-4 font-sans">
+                  {isExistingAccount
+                    ? 'Masukkan password akun FokusKonten Anda.'
+                    : 'Email ini akan jadi akun login permanen. Produk tersimpan aman di dashboard Anda.'}
+                </p>
 
-                {/* Konfirmasi Password — hanya untuk akun baru */}
-                {!isExistingAccount && (
+                <div className="space-y-3">
+                  {/* Password */}
                   <div>
                     <label className="block text-xs font-bold text-neutral-700 mb-1.5 font-sans uppercase tracking-wide">
-                      KONFIRMASI PASSWORD <span className="text-red-500">*</span>
+                      PASSWORD <span className="text-red-500">*</span>
                     </label>
-                    <input
-                      type={showPassword ? 'text' : 'password'}
-                      value={confirmPassword}
-                      onChange={e => setConfirmPassword(e.target.value)}
-                      placeholder="Ulangi password di atas"
-                      className={`w-full px-4 py-3 rounded-xl border text-sm font-sans bg-white transition-colors ${
-                        errors.confirmPassword ? 'border-red-400 bg-red-50' : 'border-neutral-200 focus:border-neutral-900'
-                      } outline-none`}
-                    />
-                    {errors.confirmPassword && <p className="text-xs text-red-500 mt-1 font-sans">{errors.confirmPassword}</p>}
+                    <div className="relative">
+                      <input
+                        type={showPassword ? 'text' : 'password'}
+                        value={password}
+                        onChange={e => setPassword(e.target.value)}
+                        placeholder="Min. 6 karakter"
+                        className={`w-full px-4 py-3 rounded-xl border text-sm font-sans bg-white pr-12 transition-colors ${
+                          errors.password ? 'border-red-400 bg-red-50' : 'border-neutral-200 focus:border-neutral-900'
+                        } outline-none`}
+                      />
+                      <button
+                        type="button"
+                        onClick={() => setShowPassword(!showPassword)}
+                        className="absolute right-3 top-1/2 -translate-y-1/2 text-neutral-400 hover:text-neutral-700 text-xs font-sans cursor-pointer"
+                      >
+                        {showPassword ? 'Sembunyikan' : 'Tampilkan'}
+                      </button>
+                    </div>
+                    {errors.password && <p className="text-xs text-red-500 mt-1 font-sans">{errors.password}</p>}
                   </div>
-                )}
 
-                {/* Info box */}
-                <div className="flex items-start gap-2 p-3 rounded-xl bg-blue-50 border border-blue-100">
-                  <span className="text-blue-500 mt-0.5">🔒</span>
-                  <p className="text-xs text-blue-700 font-sans leading-relaxed">
-                    {isExistingAccount
-                      ? 'Produk baru akan langsung masuk ke koleksi akun Anda.'
-                      : 'Akun dibuat otomatis. Login kapan saja di /akun/ untuk akses semua produk Anda.'}
-                  </p>
+                  {/* Konfirmasi Password — hanya untuk akun baru */}
+                  {!isExistingAccount && (
+                    <div>
+                      <label className="block text-xs font-bold text-neutral-700 mb-1.5 font-sans uppercase tracking-wide">
+                        KONFIRMASI PASSWORD <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type={showPassword ? 'text' : 'password'}
+                        value={confirmPassword}
+                        onChange={e => setConfirmPassword(e.target.value)}
+                        placeholder="Ulangi password di atas"
+                        className={`w-full px-4 py-3 rounded-xl border text-sm font-sans bg-white transition-colors ${
+                          errors.confirmPassword ? 'border-red-400 bg-red-50' : 'border-neutral-200 focus:border-neutral-900'
+                        } outline-none`}
+                      />
+                      {errors.confirmPassword && <p className="text-xs text-red-500 mt-1 font-sans">{errors.confirmPassword}</p>}
+                    </div>
+                  )}
+
+                  {/* Info box */}
+                  <div className="flex items-start gap-2 p-3 rounded-xl bg-blue-50 border border-blue-100">
+                    <span className="text-blue-500 mt-0.5">🔒</span>
+                    <p className="text-xs text-blue-700 font-sans leading-relaxed">
+                      {isExistingAccount
+                        ? 'Produk baru akan langsung masuk ke koleksi akun Anda.'
+                        : 'Akun dibuat otomatis. Login kapan saja di /akun/ untuk akses semua produk Anda.'}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
 
             <div className="pt-4 border-t border-neutral-100">
               <h3 className="font-sans font-bold text-base text-neutral-950 mb-1">
-                3. Kode Promo
+                {isLoggedIn ? '2. Kode Promo' : '3. Kode Promo'}
               </h3>
               <p className="text-xs text-neutral-400 mb-3 font-sans">
                 Masukkan kode promo jika ada.
@@ -680,6 +738,18 @@ function CheckoutContent() {
               >
                 <span>Buka Koleksi Saya →</span>
               </Link>
+            ) : isOffline ? (
+              <div className="space-y-2">
+                <div className="w-full py-4 px-6 rounded-2xl bg-neutral-200 text-neutral-500 font-sans font-extrabold text-sm sm:text-base border border-neutral-300 flex items-center justify-center gap-2 cursor-not-allowed select-none">
+                  <svg className="w-4 h-4 shrink-0 text-neutral-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>{ctaText}</span>
+                </div>
+                <p className="text-[11px] text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-xl p-2.5 text-center font-sans">
+                  Server transaksi sedang offline. Anda dapat menghubungi admin melalui menu <strong>Hubungi</strong> di navigasi atas.
+                </p>
+              </div>
             ) : (
               <button
                 type="submit"

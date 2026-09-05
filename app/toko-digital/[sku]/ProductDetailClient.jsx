@@ -276,9 +276,6 @@ export default function ProductDetailClient({ product }) {
           <div className="flex items-center gap-2.5 text-xs text-neutral-500 flex-wrap">
             <span className="font-semibold text-neutral-800">FokusKonten</span>
             <span>•</span>
-            <span className="text-amber-500 font-bold">★★★★★</span>
-            <span className="text-neutral-600 font-medium">5.0 (490+ Ulasan)</span>
-            <span>•</span>
             <span className="bg-white text-neutral-700 font-mono font-bold px-2 py-0.5 rounded text-[11px] border border-neutral-200 shadow-sm">
               SKU: {product.sku}
             </span>

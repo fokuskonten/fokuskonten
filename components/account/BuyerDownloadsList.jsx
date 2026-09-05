@@ -202,7 +202,7 @@ export default function BuyerDownloadsList({ products = [], buyerProfile }) {
                   <div className="flex items-center gap-2">
                     {item.orderId && (
                       <Link
-                        href={`/toko-digital/invoice/?order_id=${item.orderId}`}
+                        href={`/toko-digital/user/invoice/?order_id=${item.orderId}`}
                         className="px-2.5 py-1.5 rounded-lg text-xs font-semibold text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100 transition-colors"
                       >
                         Nota

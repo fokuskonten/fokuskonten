@@ -1,133 +1,194 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
+import { getBuyerProfile, setBuyerProfile } from '@/lib/buyerStore'
+
+/**
+ * Robust JWT parser for Google ID Tokens
+ * Handles base64url characters, missing padding (=), and UTF-8 characters
+ */
+function parseJwt(token) {
+  if (!token || typeof token !== 'string') return null
+  try {
+    const parts = token.split('.')
+    if (parts.length < 2) return null
+    let base64 = parts[1].replace(/-/g, '+').replace(/_/g, '/')
+    
+    // Add base64 padding to avoid DOMException in window.atob
+    const pad = base64.length % 4
+    if (pad) {
+      base64 += '='.repeat(4 - pad)
+    }
+
+    // Modern TextDecoder decoding for robust UTF-8 support
+    const binary = atob(base64)
+    const bytes = new Uint8Array(binary.length)
+    for (let i = 0; i < binary.length; i++) {
+      bytes[i] = binary.charCodeAt(i)
+    }
+    const text = new TextDecoder('utf-8').decode(bytes)
+    return JSON.parse(text)
+  } catch (err) {
+    console.error('[GoogleAuth] Error parsing JWT:', err)
+    try {
+      const parts = token.split('.')
+      let base64 = parts[1].replace(/-/g, '+').replace(/_/g, '/')
+      const pad = base64.length % 4
+      if (pad) base64 += '='.repeat(4 - pad)
+      return JSON.parse(decodeURIComponent(escape(atob(base64))))
+    } catch (_) {
+      return null
+    }
+  }
+}
 
 export default function GoogleSignInButton({ onGoogleSuccess, onLoginSuccess, onError }) {
   const [loading, setLoading] = useState(false)
+  const googleBtnContainerRef = useRef(null)
 
-  const handleSuccess = (profile) => {
+  const handleSuccess = async (profile) => {
+    if (!profile?.email) return
+    setLoading(true)
+
+    // 1. Simpan profil ke localStorage buyerStore & dispatch event
+    setBuyerProfile(profile)
+
+    // 2. Bersihkan instance GSI jika ada
+    if (typeof window !== 'undefined') {
+      try {
+        if (window.google?.accounts?.id) {
+          window.google.accounts.id.cancel()
+        }
+      } catch (_) {}
+    }
+
+    // 3. Background synchronization ke SQLite database FokusKonten
+    try {
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8090'
+      await fetch(`${apiUrl}/api/v1/auth/buyer/google-sync`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(profile),
+        keepalive: true
+      }).then(async (res) => {
+        if (res.ok) {
+          const data = await res.json()
+          if (data.buyer) {
+            setBuyerProfile(data.buyer)
+          }
+        }
+      }).catch((e) => {
+        console.warn('[GoogleAuth] Sync notice:', e)
+      })
+    } catch (_) {}
+
+    // 4. Panggil callback induk jika ada
     if (typeof onGoogleSuccess === 'function') onGoogleSuccess(profile)
     if (typeof onLoginSuccess === 'function') onLoginSuccess(profile)
-  }
 
-  // Decode JWT Payload dari Google ID Token
-  const parseJwt = (token) => {
-    try {
-      const base64Url = token.split('.')[1]
-      const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/')
-      const jsonPayload = decodeURIComponent(
-        atob(base64)
-          .split('')
-          .map((c) => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2))
-          .join('')
-      )
-      return JSON.parse(jsonPayload)
-    } catch (e) {
-      console.warn('Gagal mem-parse token Google:', e)
-      return null
+    // 5. Redirect instan jika berada di halaman /login
+    if (typeof window !== 'undefined' && window.location.pathname.includes('/login')) {
+      window.location.href = '/akun/'
     }
   }
 
   useEffect(() => {
-    // Load Google Identity Services SDK jika belum ada
-    if (typeof window !== 'undefined') {
-      if (window.google?.accounts?.id) return
+    if (typeof window === 'undefined') return
 
-      const script = document.createElement('script')
-      script.src = 'https://accounts.google.com/gsi/client'
-      script.async = true
-      script.defer = true
-      script.onerror = () => {
-        console.warn('GSI client script could not be loaded (offline mode).')
-      }
-      document.body.appendChild(script)
-    }
-  }, [])
+    const clientId =
+      process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID ||
+      '662076483293-ang8sosqltt5aurnamb63qaojic6jcog.apps.googleusercontent.com'
 
-  const handleGoogleClick = () => {
-    setLoading(true)
+    const initGsi = () => {
+      if (!window.google?.accounts?.id || !clientId) return
 
-    // Jika Google SDK tersedia dan Google Client ID terpasang di environment
-    const clientId = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID
-
-    if (typeof window !== 'undefined' && window.google?.accounts?.id && clientId) {
       try {
         window.google.accounts.id.initialize({
           client_id: clientId,
-          callback: (response) => {
-            setLoading(false)
-            if (response.credential) {
-              const profile = parseJwt(response.credential)
-              if (profile?.email) {
-                handleSuccess({
-                  email: profile.email.toLowerCase(),
-                  name: profile.name || profile.email.split('@')[0],
-                  avatar: profile.picture || '',
-                  verified: true,
-                  authProvider: 'google'
-                })
+          callback: async (response) => {
+            if (response?.credential) {
+              setLoading(true)
+              try {
+                const payload = parseJwt(response.credential)
+                if (payload?.email) {
+                  await handleSuccess({
+                    email: payload.email.toLowerCase().trim(),
+                    name: payload.name || payload.email.split('@')[0],
+                    avatar: payload.picture || '',
+                    verified: true,
+                    authProvider: 'google'
+                  })
+                }
+              } catch (err) {
+                console.error('[GoogleAuth] Credential error:', err)
+                if (onError) onError('Gagal memproses akun Google.')
               }
+              setLoading(false)
             }
-          }
+          },
+          auto_select: false,
+          cancel_on_tap_outside: true
         })
-        window.google.accounts.id.prompt()
-        return
+
+        // Render Tombol Resmi Google
+        // Catatan: Menggunakan renderButton adalah standar keamanan Google untuk mencegah clickjacking (Error 400/401).
+        // Kita sesuaikan ukurannya dengan parent agar tidak overlap.
+        if (googleBtnContainerRef.current) {
+          googleBtnContainerRef.current.innerHTML = ''
+          
+          // Ambil lebar parent dengan aman, minimal 280, maksimal 400 (batas Google)
+          const parentWidth = googleBtnContainerRef.current.parentElement?.offsetWidth || 380
+          const buttonWidth = Math.min(400, Math.max(280, parentWidth))
+
+          window.google.accounts.id.renderButton(googleBtnContainerRef.current, {
+            theme: 'outline',
+            size: 'large',
+            type: 'standard',
+            shape: 'rectangular',
+            text: 'continue_with',
+            logo_alignment: 'center', // Agar terlihat lebih elegan dan balance
+            width: buttonWidth,
+            locale: 'id'
+          })
+        }
       } catch (err) {
-        console.warn('Google prompt fallback:', err)
+        console.warn('[GoogleAuth] Init error:', err)
       }
     }
 
-    // Fallback Cerdas: Prompt dialog cepat email Google pembeli jika SDK offline / no client id
-    setTimeout(() => {
-      setLoading(false)
-      const inputEmail = window.prompt(
-        'Masukkan alamat akun Gmail Anda untuk melanjutkan dengan Akun Google:',
-        ''
-      )
-      if (inputEmail && inputEmail.trim()) {
-        const clean = inputEmail.trim().toLowerCase()
-        if (clean.includes('@')) {
-          handleSuccess({
-            email: clean,
-            name: clean.split('@')[0],
-            avatar: '',
-            verified: true,
-            authProvider: 'google_direct'
-          })
-        } else {
-          if (onError) onError('Alamat email harus valid (memuat tanda @).')
-        }
+    if (!document.getElementById('google-gsi-client')) {
+      const script = document.createElement('script')
+      script.id = 'google-gsi-client'
+      script.src = 'https://accounts.google.com/gsi/client'
+      script.async = true
+      script.defer = true
+      script.onload = initGsi
+      document.body.appendChild(script)
+    } else {
+      // Tambahkan delay sedikit agar parent container sudah dirender sempurna sebelum menghitung offsetWidth
+      setTimeout(initGsi, 100)
+    }
+
+    return () => {
+      if (typeof window !== 'undefined') {
+        try {
+          if (window.google?.accounts?.id) window.google.accounts.id.cancel()
+        } catch (_) {}
       }
-    }, 150)
-  }
+    }
+  }, [onError])
 
   return (
-    <button
-      type="button"
-      onClick={handleGoogleClick}
-      disabled={loading}
-      className="w-full py-2.5 px-4 rounded-xl bg-white hover:bg-neutral-50 active:scale-[0.99] text-neutral-800 font-sans font-medium text-sm border border-neutral-300 hover:border-neutral-400 shadow-soft transition-all flex items-center justify-center gap-3 cursor-pointer disabled:opacity-60"
-    >
-      {/* Official 4-Color Google "G" SVG Icon */}
-      <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24">
-        <path
-          fill="#4285F4"
-          d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"
-        />
-        <path
-          fill="#34A853"
-          d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"
-        />
-        <path
-          fill="#FBBC05"
-          d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"
-        />
-        <path
-          fill="#EA4335"
-          d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"
-        />
-      </svg>
-      <span>{loading ? 'Menghubungkan Akun...' : 'Lanjutkan dengan Google'}</span>
-    </button>
+    <div className="w-full flex flex-col items-center justify-center min-h-[44px]">
+      <div
+        ref={googleBtnContainerRef}
+        className="w-full flex justify-center transition-all duration-300"
+      />
+      {loading && (
+        <span className="text-xs text-neutral-500 font-sans mt-2 animate-pulse">
+          Menghubungkan akun Google...
+        </span>
+      )}
+    </div>
   )
 }

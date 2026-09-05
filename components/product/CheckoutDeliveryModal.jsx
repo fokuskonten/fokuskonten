@@ -10,7 +10,7 @@ import PaymentSecurityBadge from '@/components/checkout/PaymentSecurityBadge'
 import { isValidEmail } from '@/lib/validators'
 import { generateInvoiceId } from '@/lib/formatters'
 import { addBuyerOrder, setBuyerProfile, pushOrderToServer, hasPurchasedSku, getBuyerProfile, updateOrderStatus } from '@/lib/buyerStore'
-import { getApiBaseUrl } from '@/lib/apiConfig'
+import { getApiBaseUrl, getMidtransSnapUrl, getMidtransClientKey } from '@/lib/apiConfig'
 
 export default function CheckoutDeliveryModal({
   isOpen,
@@ -147,10 +147,22 @@ export default function CheckoutDeliveryModal({
       if (snapToken && !isSandboxMock && typeof window !== 'undefined') {
         const loadSnapScript = () => {
           return new Promise((resolve) => {
+            const correctSnapUrl = getMidtransSnapUrl()
+            const clientKey = getMidtransClientKey()
+
+            const existingScript = document.querySelector('script[src*="midtrans.com/snap/snap.js"]')
+            if (existingScript && existingScript.src === correctSnapUrl && window.snap) {
+              return resolve(window.snap)
+            }
+            if (existingScript && existingScript.src !== correctSnapUrl) {
+              existingScript.remove()
+              delete window.snap
+            }
+
             if (window.snap) return resolve(window.snap)
             const script = document.createElement('script')
-            script.src = 'https://app.sandbox.midtrans.com/snap/snap.js'
-            script.setAttribute('data-client-key', process.env.NEXT_PUBLIC_MIDTRANS_CLIENT_KEY || 'SB-Mid-client-mock')
+            script.src = correctSnapUrl
+            script.setAttribute('data-client-key', clientKey)
             script.onload = () => resolve(window.snap)
             script.onerror = () => resolve(null)
             document.head.appendChild(script)

@@ -9,7 +9,8 @@ export default function DeliveryEmailForm({
   setEmail,
   phone,
   setPhone,
-  errors = {}
+  errors = {},
+  isLoggedIn = false
 }) {
   const isGoogleMail = isValidGmail(email)
   const isGeneralEmail = isValidEmail(email)
@@ -39,19 +40,29 @@ export default function DeliveryEmailForm({
             Email Pengiriman <span className="text-red-500">*</span>
           </label>
           <span className="text-[10px] text-neutral-400 font-medium">
-            Untuk akses Google Drive
+            {isLoggedIn ? 'Terhubung dengan akun' : 'Untuk akses Google Drive'}
           </span>
         </div>
         <input
           type="email"
           value={email}
+          disabled={isLoggedIn}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="nama@gmail.com"
-          className="w-full px-4 py-3 rounded-xl border border-neutral-300 focus:border-neutral-950 focus:ring-1 focus:ring-neutral-950 text-sm font-medium outline-none transition-all"
+          className={`w-full px-4 py-3 rounded-xl border text-sm font-medium outline-none transition-all ${
+            isLoggedIn
+              ? 'bg-neutral-100 border-neutral-200 text-neutral-500 cursor-not-allowed select-none'
+              : 'border-neutral-300 focus:border-neutral-950 focus:ring-1 focus:ring-neutral-950'
+          }`}
           required
         />
         {errors.email ? (
           <p className="text-red-600 text-xs mt-1 font-medium">{errors.email}</p>
+        ) : isLoggedIn ? (
+          <p className="text-[11px] text-neutral-500 mt-1 flex items-center gap-1.5">
+            <span>🔒</span>
+            <span>Terkunci sesuai akun login. Akses file otomatis masuk ke dashboard akun ini.</span>
+          </p>
         ) : email && !isGoogleMail && isGeneralEmail ? (
           <div className="mt-1.5 p-2.5 rounded-lg bg-amber-50 border border-amber-200 text-amber-800 text-xs flex items-start gap-1.5">
             <span className="shrink-0 mt-0.5">⚠️</span>

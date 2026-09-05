@@ -897,7 +897,27 @@ export default function CreativeAuthPortal({ onAuthSuccess }) {
         {tab === 'register' && (
           <div>
             {regStep === 'form' ? (
-              <form onSubmit={handleStartRegister} className="space-y-3.5">
+              <div className="space-y-4">
+                {/* 1-Click Google Sign-In on Register */}
+                <GoogleSignInButton
+                  onLoginSuccess={(prof) => {
+                    if (typeof onAuthSuccess === 'function') {
+                      onAuthSuccess(prof)
+                    }
+                  }}
+                />
+
+                {/* Divider */}
+                <div className="relative flex items-center justify-center my-4">
+                  <div className="absolute inset-0 flex items-center">
+                    <div className="w-full border-t border-neutral-200" />
+                  </div>
+                  <span className="relative px-3 bg-white text-xs font-sans font-medium text-neutral-400">
+                    atau daftar dengan email & kata sandi
+                  </span>
+                </div>
+
+                <form onSubmit={handleStartRegister} className="space-y-3.5">
                 {/* Nama Lengkap */}
                 <div>
                   <label className="block text-xs font-sans font-medium text-neutral-700 mb-1">
@@ -1037,6 +1057,7 @@ export default function CreativeAuthPortal({ onAuthSuccess }) {
                   </button>
                 </div>
               </form>
+            </div>
             ) : (
               /* STEP 2: VERIFIKASI OTP REGISTRASI */
               <div className="space-y-4">

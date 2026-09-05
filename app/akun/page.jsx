@@ -49,6 +49,19 @@ export default function AkunPage() {
   }
 
   useEffect(() => {
+    // 0. Tutup dan bersihkan Google One Tap saat pengguna sudah berada di dasbor akun
+    if (typeof window !== 'undefined') {
+      try {
+        if (window.google?.accounts?.id) {
+          window.google.accounts.id.cancel()
+        }
+        const picker = document.getElementById('credential_picker_container')
+        if (picker) picker.remove()
+        const iframe = document.getElementById('credential_picker_iframe')
+        if (iframe) iframe.remove()
+      } catch (_) {}
+    }
+
     // Restore tab from URL or handle cross-device claim (Mobile -> Desktop PC)
     if (typeof window !== 'undefined') {
       const params = new URLSearchParams(window.location.search)

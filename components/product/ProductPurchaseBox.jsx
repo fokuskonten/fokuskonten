@@ -161,11 +161,16 @@ export default function ProductPurchaseBox({ product, fmtMeta }) {
           <>
             {/* 1. Primary Professional Checkout CTA Button */}
             {isOffline ? (
-              <div className="w-full py-3.5 px-4 rounded-xl bg-neutral-300 text-neutral-500 font-display font-extrabold text-sm sm:text-base flex items-center justify-center gap-2 text-center cursor-not-allowed border border-neutral-300">
-                <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <span>{ctaText}</span>
+              <div className="space-y-2">
+                <div className="w-full py-3.5 px-4 rounded-xl bg-neutral-200 text-neutral-500 font-display font-extrabold text-sm sm:text-base flex items-center justify-center gap-2 text-center cursor-not-allowed border border-neutral-300 select-none">
+                  <svg className="w-4 h-4 shrink-0 text-neutral-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>{ctaText}</span>
+                </div>
+                <p className="text-[11px] text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-xl p-2.5 text-center font-sans">
+                  Server transaksi sedang offline. Anda dapat menghubungi admin melalui menu <strong>Hubungi</strong> di navigasi atas.
+                </p>
               </div>
             ) : (
               <Link

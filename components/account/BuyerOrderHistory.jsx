@@ -69,7 +69,7 @@ export default function BuyerOrderHistory({ orders = [] }) {
                     </td>
                     <td className="py-3.5 px-5 text-right whitespace-nowrap">
                       <Link
-                        href={`/toko-digital/invoice/?order_id=${ord.orderId}`}
+                        href={`/toko-digital/user/invoice/?order_id=${ord.orderId}`}
                         className="px-3 py-1.5 rounded-lg bg-neutral-100 hover:bg-black hover:text-white text-neutral-800 text-xs font-bold transition-all inline-block"
                       >
                         Lihat Invoice
@@ -116,7 +116,7 @@ export default function BuyerOrderHistory({ orders = [] }) {
                   </div>
 
                   <Link
-                    href={`/toko-digital/invoice/?order_id=${ord.orderId}`}
+                    href={`/toko-digital/user/invoice/?order_id=${ord.orderId}`}
                     className="px-3.5 py-1.5 rounded-lg bg-black text-white text-xs font-bold shadow-sm"
                   >
                     Buka Nota

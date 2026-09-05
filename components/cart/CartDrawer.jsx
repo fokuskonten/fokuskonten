@@ -14,9 +14,11 @@ import {
 import { hasPurchasedSku } from '@/lib/buyerStore'
 import { formatRupiah } from '@/lib/formatters'
 import { createProductSlug } from '@/app/toko-digital/slugHelper'
+import { useStoreHealth } from '@/lib/useStoreHealth'
 
 export default function CartDrawer({ isOpen, onClose }) {
   const router = useRouter()
+  const { isOffline, ctaText } = useStoreHealth()
   const [items, setItems] = useState([])
   const [summary, setSummary] = useState({ totalItems: 0, subtotal: 0, totalSavings: 0 })
   const [mounted, setMounted] = useState(false)
@@ -239,16 +241,30 @@ export default function CartDrawer({ isOpen, onClose }) {
                 </div>
               </div>
 
-              <button
-                type="button"
-                onClick={handleCheckoutClick}
-                className="w-full py-3.5 px-4 rounded-xl bg-neutral-950 hover:bg-neutral-800 text-white font-bold text-sm shadow-card hover:shadow-float transition-all flex items-center justify-center gap-2 cursor-pointer"
-              >
-                <span>Checkout ({summary.totalItems})</span>
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </button>
+              {isOffline ? (
+                <div className="space-y-2">
+                  <div className="w-full py-3.5 px-4 rounded-xl bg-neutral-200 text-neutral-500 font-bold text-sm flex items-center justify-center gap-2 cursor-not-allowed border border-neutral-300 select-none">
+                    <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>{ctaText}</span>
+                  </div>
+                  <p className="text-[11px] text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-xl p-2 text-center font-sans">
+                    Server transaksi sedang offline. Anda dapat menghubungi admin melalui menu <strong>Hubungi</strong> di navigasi atas.
+                  </p>
+                </div>
+              ) : (
+                <button
+                  type="button"
+                  onClick={handleCheckoutClick}
+                  className="w-full py-3.5 px-4 rounded-xl bg-neutral-950 hover:bg-neutral-800 text-white font-bold text-sm shadow-card hover:shadow-float transition-all flex items-center justify-center gap-2 cursor-pointer"
+                >
+                  <span>Checkout ({summary.totalItems})</span>
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </button>
+              )}
 
               <div className="flex items-center justify-center gap-2 text-[11px] text-neutral-400 font-medium">
                 <svg className="w-3.5 h-3.5 text-neutral-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
