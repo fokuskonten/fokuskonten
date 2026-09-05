@@ -48,24 +48,24 @@ MASTER_EXTENSIONS = {".cdr", ".eps", ".ai", ".pdf"}
 FONT_EXTENSIONS = {".ttf", ".otf", ".woff", ".woff2"}
 
 processed = 0
-attempts = 0
 
 for item in catalog:
-    if attempts >= BATCH_LIMIT:
+    if processed >= BATCH_LIMIT:
+        print(f"\n⏸️ Selesai memproses ({BATCH_LIMIT} item).")
         break
-    attempts += 1
 
     sku = item["sku"].strip()
     title = re.sub(r"[/\\?%*:|\"<>]", "-", item.get("title", sku)).strip()
     file_id = item.get("drive_file_id")
 
-    if sku in completed_skus:
-        continue
-
     product_folder_name = f"{sku} - {title}"[:100]
     product_dir = os.path.join(OUTPUT_BASE, product_folder_name)
     master_dir = os.path.join(product_dir, "01 - File Master Desain")
     font_dir = os.path.join(product_dir, "02 - Font Pendukung")
+
+    # Jika produk sudah pernah diproses dan ada file masternya, lewati
+    if os.path.exists(master_dir) and len(os.listdir(master_dir)) > 0:
+        continue
 
     print(f"\n🚀 [1/{BATCH_LIMIT}] Memproses {sku}: {title}")
     print(f"   ⬇️ Mendownload ZIP dari Google Cloud (ID: {file_id})...")
