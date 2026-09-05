@@ -122,7 +122,7 @@ export default function AkunPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-neutral-50/60 pb-20 pt-24 sm:pt-28 font-sans">
+    <div className="min-h-screen bg-neutral-50 pb-20 pt-24 sm:pt-28 font-sans">
       <div className="container-page max-w-5xl">
         {/* Breadcrumb */}
         <div className="mb-6">
@@ -153,7 +153,7 @@ export default function AkunPage() {
               />
 
               {/* Navigation Tabs (Creative Market / Creative Fabrica Hub Layout) */}
-              <div className="flex items-center gap-1.5 sm:gap-2 border-b border-neutral-200/80 pb-px overflow-x-auto no-scrollbar">
+              <div className="flex items-center gap-1.5 sm:gap-2 border-b border-neutral-200 pb-px overflow-x-auto no-scrollbar">
                 {/* 1. Downloads Tab */}
                 <button
                   type="button"
@@ -161,7 +161,7 @@ export default function AkunPage() {
                   className={`flex items-center gap-2 px-4 sm:px-5 py-3 rounded-t-xl font-sans font-semibold text-xs sm:text-sm transition-all border-b-2 whitespace-nowrap cursor-pointer ${
                     activeTab === 'downloads'
                       ? 'border-neutral-950 text-neutral-950 bg-white shadow-soft'
-                      : 'border-transparent text-neutral-500 hover:text-neutral-900 hover:bg-neutral-100/50'
+                      : 'border-transparent text-neutral-500 hover:text-neutral-900 hover:bg-neutral-100'
                   }`}
                 >
                   <svg className="w-4 h-4 text-neutral-700 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -180,7 +180,7 @@ export default function AkunPage() {
                   className={`flex items-center gap-2 px-4 sm:px-5 py-3 rounded-t-xl font-sans font-semibold text-xs sm:text-sm transition-all border-b-2 whitespace-nowrap cursor-pointer ${
                     activeTab === 'orders'
                       ? 'border-neutral-950 text-neutral-950 bg-white shadow-soft'
-                      : 'border-transparent text-neutral-500 hover:text-neutral-900 hover:bg-neutral-100/50'
+                      : 'border-transparent text-neutral-500 hover:text-neutral-900 hover:bg-neutral-100'
                   }`}
                 >
                   <svg className="w-4 h-4 text-neutral-700 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -199,7 +199,7 @@ export default function AkunPage() {
                   className={`flex items-center gap-2 px-4 sm:px-5 py-3 rounded-t-xl font-sans font-semibold text-xs sm:text-sm transition-all border-b-2 whitespace-nowrap cursor-pointer ${
                     activeTab === 'settings'
                       ? 'border-neutral-950 text-neutral-950 bg-white shadow-soft'
-                      : 'border-transparent text-neutral-500 hover:text-neutral-900 hover:bg-neutral-100/50'
+                      : 'border-transparent text-neutral-500 hover:text-neutral-900 hover:bg-neutral-100'
                   }`}
                 >
                   <svg className="w-4 h-4 text-neutral-700 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -216,7 +216,7 @@ export default function AkunPage() {
                   className={`flex items-center gap-2 px-4 sm:px-5 py-3 rounded-t-xl font-sans font-semibold text-xs sm:text-sm transition-all border-b-2 whitespace-nowrap cursor-pointer ${
                     activeTab === 'claim'
                       ? 'border-neutral-950 text-neutral-950 bg-white shadow-soft'
-                      : 'border-transparent text-neutral-500 hover:text-neutral-900 hover:bg-neutral-100/50'
+                      : 'border-transparent text-neutral-500 hover:text-neutral-900 hover:bg-neutral-100'
                   }`}
                 >
                   <svg className="w-4 h-4 text-neutral-700 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -261,18 +261,18 @@ export default function AkunPage() {
               </div>
 
               {/* Store Banner Footer */}
-              <div className="p-6 rounded-2xl bg-gradient-to-r from-neutral-900 to-black text-white flex flex-col sm:flex-row items-center justify-between gap-4 shadow-card">
+              <div className="p-6 rounded-2xl sm:rounded-3xl bg-white border border-neutral-200 text-neutral-900 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
                 <div>
-                  <h4 className="font-sans font-bold text-base text-white">
+                  <h4 className="font-sans font-bold text-base text-neutral-900">
                     Eksplorasi Desain Lainnya
                   </h4>
-                  <p className="text-xs text-neutral-400 font-sans mt-0.5">
+                  <p className="text-xs text-neutral-500 font-sans mt-0.5">
                     Temukan berbagai template dan aset desain siap pakai.
                   </p>
                 </div>
                 <Link
                   href="/toko-digital/"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-black font-sans font-semibold text-xs hover:bg-neutral-100 transition-colors shadow-soft shrink-0"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-sans font-semibold text-xs transition-colors shadow-sm shrink-0"
                 >
                   <span>Buka Toko Digital</span>
                   <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -287,8 +287,8 @@ export default function AkunPage() {
 
       {/* Custom Logout Modal */}
       {isLogoutModalOpen && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/40 backdrop-blur-md animate-fade-in">
-          <div className="bg-white rounded-[24px] shadow-2xl border border-neutral-200/60 w-full max-w-sm p-8 text-center animate-scale-in">
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm animate-fade-in">
+          <div className="bg-white rounded-2xl shadow-xl border border-neutral-200 w-full max-w-sm p-8 text-center animate-scale-in">
             <h3 className="font-sans font-extrabold text-2xl tracking-tight text-neutral-950 mb-3">
               Keluar Sesi?
             </h3>
@@ -299,14 +299,14 @@ export default function AkunPage() {
               <button
                 type="button"
                 onClick={confirmLogout}
-                className="w-full px-5 py-3.5 rounded-2xl bg-neutral-950 hover:bg-neutral-900 text-white font-sans font-semibold text-sm transition-all shadow-md hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0"
+                className="w-full px-5 py-3.5 rounded-xl bg-neutral-950 hover:bg-neutral-900 text-white font-sans font-semibold text-sm transition-all shadow-sm cursor-pointer"
               >
                 Akhiri Sesi
               </button>
               <button
                 type="button"
                 onClick={() => setIsLogoutModalOpen(false)}
-                className="w-full px-5 py-3.5 rounded-2xl bg-white hover:bg-neutral-50 text-neutral-900 font-sans font-semibold text-sm transition-all border border-neutral-200 hover:border-neutral-300"
+                className="w-full px-5 py-3.5 rounded-xl bg-white hover:bg-neutral-100 text-neutral-900 font-sans font-semibold text-sm transition-all border border-neutral-200 cursor-pointer"
               >
                 Batal
               </button>

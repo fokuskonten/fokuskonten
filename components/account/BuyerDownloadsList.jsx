@@ -5,11 +5,13 @@ import Link from 'next/link'
 import { formatDate } from '@/lib/formatters'
 import { createProductSlug } from '@/app/toko-digital/slugHelper'
 import CommercialLicenseModal from './CommercialLicenseModal'
+import HwidDeviceManagerModal from './HwidDeviceManagerModal'
 
 export default function BuyerDownloadsList({ products = [], buyerProfile }) {
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedFormat, setSelectedFormat] = useState('ALL')
   const [licenseTargetProduct, setLicenseTargetProduct] = useState(null)
+  const [hwidTargetProduct, setHwidTargetProduct] = useState(null)
 
   // Ambil daftar format unik dari produk yang dimiliki
   const availableFormats = useMemo(() => {
@@ -34,8 +36,8 @@ export default function BuyerDownloadsList({ products = [], buyerProfile }) {
 
   if (!products || products.length === 0) {
     return (
-      <div className="bg-white rounded-2xl border border-neutral-200/80 p-8 sm:p-12 text-center shadow-card font-sans">
-        <div className="w-16 h-16 rounded-2xl bg-neutral-100 flex items-center justify-center mx-auto mb-4 text-neutral-500 border border-neutral-200/60 shadow-soft">
+      <div className="bg-white rounded-2xl border border-neutral-200 p-8 sm:p-12 text-center shadow-sm font-sans">
+        <div className="w-16 h-16 rounded-2xl bg-neutral-100 flex items-center justify-center mx-auto mb-4 text-neutral-500 border border-neutral-200">
           <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
           </svg>
@@ -119,7 +121,7 @@ export default function BuyerDownloadsList({ products = [], buyerProfile }) {
 
       {/* Grid Products */}
       {filteredProducts.length === 0 ? (
-        <div className="p-8 text-center bg-white rounded-2xl border border-neutral-200/80 shadow-soft">
+        <div className="p-8 text-center bg-white rounded-2xl border border-neutral-200 shadow-sm">
           <p className="text-xs text-neutral-500 font-sans">
             Tidak ada aset yang cocok dengan pencarian <strong>&ldquo;{searchQuery}&rdquo;</strong>.
           </p>
@@ -133,13 +135,13 @@ export default function BuyerDownloadsList({ products = [], buyerProfile }) {
             return (
               <div
                 key={item.sku}
-                className="bg-white rounded-2xl border border-neutral-200/80 p-4 sm:p-5 shadow-[0_4px_16px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.09)] transition-all flex flex-col justify-between gap-4"
+                className="bg-white rounded-2xl border border-neutral-200 p-4 sm:p-5 shadow-sm hover:shadow transition-all flex flex-col justify-between gap-4"
               >
                 <div className="flex gap-4">
                   {/* Thumbnail Image */}
                   <Link
                     href={`/toko-digital/${productSlug}/`}
-                    className="w-24 h-24 sm:w-28 sm:h-28 rounded-xl overflow-hidden bg-neutral-100 border border-neutral-100 shrink-0 relative group"
+                    className="w-24 h-24 sm:w-28 sm:h-28 rounded-xl overflow-hidden bg-neutral-100 border border-neutral-200 shrink-0 relative group"
                   >
                     <img
                       src={item.coverImage}
@@ -181,7 +183,7 @@ export default function BuyerDownloadsList({ products = [], buyerProfile }) {
                         className="px-2 py-0.5 rounded bg-neutral-100 hover:bg-neutral-200 text-neutral-800 text-[10px] font-bold border border-neutral-200 cursor-pointer transition-colors"
                         title="Klik untuk membuka sertifikat lisensi"
                       >
-                        ✓ Lisensi Komersial
+                        ✓ Lisensi Standar
                       </button>
                     </div>
 
@@ -194,6 +196,14 @@ export default function BuyerDownloadsList({ products = [], buyerProfile }) {
                     <p className="text-[11px] text-neutral-400 font-medium">
                       Dibeli: {formatDate(item.lastPurchasedAt)}
                     </p>
+
+                    {/* License Key Quick Display */}
+                    <div className="mt-2 pt-2 border-t border-neutral-100 flex items-center gap-1.5 flex-wrap">
+                      <span className="text-[10px] uppercase font-bold text-neutral-400 font-mono">Lisensi:</span>
+                      <span className="font-mono text-[11px] font-bold text-neutral-900 bg-neutral-100 px-2 py-0.5 rounded border border-neutral-200 select-all">
+                        {item.licenseKey || `FK-${(item.sku || 'DES').substring(0, 4).toUpperCase()}-${String(item.orderId || '0000').replace(/[^a-zA-Z0-9]/g, '').slice(-8).toUpperCase()}`}
+                      </span>
+                    </div>
                   </div>
                 </div>
 
@@ -214,6 +224,15 @@ export default function BuyerDownloadsList({ products = [], buyerProfile }) {
                       className="px-2.5 py-1.5 rounded-lg text-xs font-semibold text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100 transition-colors cursor-pointer"
                     >
                       Sertifikat
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setHwidTargetProduct(item)}
+                      className="px-2.5 py-1.5 rounded-lg text-xs font-semibold text-neutral-800 hover:text-neutral-950 bg-neutral-100 hover:bg-neutral-200 transition-colors cursor-pointer flex items-center gap-1 font-mono"
+                      title="Kelola slot aktivasi perangkat HWID"
+                    >
+                      <span>🔑</span>
+                      <span>HWID</span>
                     </button>
                   </div>
 
@@ -249,11 +268,19 @@ export default function BuyerDownloadsList({ products = [], buyerProfile }) {
         </div>
       )}
 
-      {/* Commercial License Modal */}
+      {/* Commercial Standard License Modal */}
       <CommercialLicenseModal
         isOpen={Boolean(licenseTargetProduct)}
         onClose={() => setLicenseTargetProduct(null)}
         product={licenseTargetProduct}
+        buyerProfile={buyerProfile}
+      />
+
+      {/* HWID Device Manager Modal */}
+      <HwidDeviceManagerModal
+        isOpen={Boolean(hwidTargetProduct)}
+        onClose={() => setHwidTargetProduct(null)}
+        product={hwidTargetProduct}
         buyerProfile={buyerProfile}
       />
     </div>

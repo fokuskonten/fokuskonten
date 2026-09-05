@@ -121,12 +121,31 @@ export default function ProductGallery({
             </div>
           </div>
         )}
+
+        {/* Full Visual Lookbook CTA Button (Membuka Tab Baru) */}
+        <div className="mt-3">
+          <a
+            href={`/toko-digital/${product?.sku}/fullpreview/`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full py-3 px-4 rounded-xl bg-neutral-950 hover:bg-black text-white text-xs sm:text-sm font-bold flex items-center justify-between transition-all shadow-sm group cursor-pointer border border-neutral-800"
+          >
+            <div className="flex items-center gap-2">
+              <span className="text-base">👁️</span>
+              <span>Buka Katalog Visual Penuh (Full Preview)</span>
+            </div>
+            <span className="inline-flex items-center gap-1 font-mono text-[11px] text-neutral-400 group-hover:text-white transition-colors">
+              <span>Buka Tab Baru</span>
+              <span>↗</span>
+            </span>
+          </a>
+        </div>
       </div>
 
-      {/* Lightbox Zoom Modal (Portal ke document.body agar menutup penuh Navbar & transparan halus) */}
+      {/* Lightbox Zoom Modal (Portal ke document.body agar menutup penuh Navbar & transparan putih bersih mewah) */}
       {mounted && isZoomOpen && typeof document !== 'undefined' && createPortal(
         <div 
-          className="fixed inset-0 z-[99999] bg-neutral-950/30 backdrop-blur-md flex flex-col items-center justify-between p-3 sm:p-6 animate-in fade-in duration-200 select-none overflow-hidden"
+          className="fixed inset-0 z-[99999] bg-white/85 backdrop-blur-2xl flex flex-col items-center justify-between p-3 sm:p-6 animate-in fade-in duration-200 select-none overflow-hidden"
           onClick={() => setIsZoomOpen(false)}
           onContextMenu={(e) => e.preventDefault()}
         >
@@ -136,17 +155,17 @@ export default function ProductGallery({
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center gap-2 flex-wrap">
-              <span className="px-3 py-1.5 rounded-xl bg-black/60 backdrop-blur-md text-white font-mono text-xs font-bold border border-white/20 shadow-md">
+              <span className="px-3 py-1.5 rounded-xl bg-white border border-neutral-200/90 shadow-sm text-neutral-900 font-mono text-xs font-bold">
                 SKU: {product?.sku}
               </span>
-              <span className="px-3 py-1.5 rounded-xl bg-black/40 backdrop-blur-md text-white text-xs font-medium border border-white/20 shadow-md">
+              <span className="px-3 py-1.5 rounded-xl bg-neutral-100 border border-neutral-200/90 text-neutral-700 text-xs font-semibold">
                 {product?.category}
               </span>
             </div>
 
             <button 
               type="button"
-              className="w-11 h-11 rounded-full bg-black/70 hover:bg-black text-white flex items-center justify-center transition-all backdrop-blur-md border border-white/25 shadow-xl hover:scale-105 active:scale-95 cursor-pointer"
+              className="w-11 h-11 rounded-full bg-neutral-950 hover:bg-neutral-800 text-white flex items-center justify-center transition-all shadow-md hover:scale-105 active:scale-95 cursor-pointer"
               onClick={() => setIsZoomOpen(false)}
               aria-label="Tutup Zoom"
             >
@@ -167,7 +186,7 @@ export default function ProductGallery({
               <button
                 type="button"
                 onClick={handlePrev}
-                className="absolute left-1 sm:left-4 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-black/60 hover:bg-black/90 text-white backdrop-blur-md flex items-center justify-center transition-all border border-white/20 shadow-xl hover:scale-105 active:scale-95 cursor-pointer"
+                className="absolute left-1 sm:left-4 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-white hover:bg-neutral-950 hover:text-white text-neutral-900 border border-neutral-200 shadow-[0_8px_20px_-4px_rgba(0,0,0,0.15)] flex items-center justify-center transition-all hover:scale-105 active:scale-95 cursor-pointer"
                 aria-label="Slide Sebelumnya"
               >
                 <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -176,13 +195,13 @@ export default function ProductGallery({
               </button>
             )}
 
-            {/* Pure HD Image (Zero watermark, Zero blur) */}
-            <div className="relative max-h-[62vh] sm:max-h-[68vh] flex items-center justify-center">
+            {/* Pure HD Image with Pristine White Frame & Soft Shadow */}
+            <div className="relative max-h-[62vh] sm:max-h-[68vh] flex items-center justify-center bg-white p-2.5 sm:p-3.5 rounded-3xl border border-neutral-200/90 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.15)]">
               <img
                 src={currentImg}
                 alt={product?.title || 'Preview Zoom'}
                 draggable={false}
-                className="max-w-full max-h-[62vh] sm:max-h-[68vh] object-contain rounded-2xl shadow-2xl drop-shadow-2xl select-none transition-all duration-300 border border-white/10"
+                className="max-w-full max-h-[58vh] sm:max-h-[64vh] object-contain rounded-2xl select-none transition-all duration-300"
               />
             </div>
 
@@ -191,7 +210,7 @@ export default function ProductGallery({
               <button
                 type="button"
                 onClick={handleNext}
-                className="absolute right-1 sm:right-4 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-black/60 hover:bg-black/90 text-white backdrop-blur-md flex items-center justify-center transition-all border border-white/20 shadow-xl hover:scale-105 active:scale-95 cursor-pointer"
+                className="absolute right-1 sm:right-4 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-white hover:bg-neutral-950 hover:text-white text-neutral-900 border border-neutral-200 shadow-[0_8px_20px_-4px_rgba(0,0,0,0.15)] flex items-center justify-center transition-all hover:scale-105 active:scale-95 cursor-pointer"
                 aria-label="Slide Berikutnya"
               >
                 <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -201,28 +220,28 @@ export default function ProductGallery({
             )}
           </div>
 
-          {/* Bottom Slide Text Card (Elegan & Informatif) */}
+          {/* Bottom Slide Text Card (Elegan & Informatif - Pristine White Shadowed) */}
           <div 
-            className="w-full max-w-2xl bg-black/65 backdrop-blur-xl rounded-2xl border border-white/20 p-4 sm:p-5 shadow-2xl text-white space-y-2 z-30"
+            className="w-full max-w-2xl bg-white/95 backdrop-blur-xl rounded-2xl border border-neutral-200/90 p-4 sm:p-5 shadow-[0_12px_36px_-6px_rgba(0,0,0,0.12)] text-neutral-900 space-y-2 z-30"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between gap-3 flex-wrap">
-              <h4 className="font-display font-extrabold text-sm sm:text-base text-white tracking-tight line-clamp-1">
+              <h4 className="font-display font-extrabold text-sm sm:text-base text-neutral-950 tracking-tight line-clamp-1">
                 {product?.title}
               </h4>
               <div className="flex items-center gap-2 shrink-0">
-                <span className="px-2 py-0.5 rounded bg-emerald-500/25 text-emerald-300 font-mono text-xs font-bold border border-emerald-500/30">
+                <span className="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-mono text-xs font-bold border border-emerald-200">
                   Format .{product?.format || 'CDR'}
                 </span>
                 {totalSlides > 1 && (
-                  <span className="px-2 py-0.5 rounded bg-white/15 text-white/90 font-mono text-xs font-bold">
+                  <span className="px-2 py-0.5 rounded bg-neutral-100 text-neutral-700 font-mono text-xs font-bold border border-neutral-200">
                     Slide {currentIdx + 1} / {totalSlides}
                   </span>
                 )}
               </div>
             </div>
 
-            <p className="text-xs text-neutral-300 font-sans leading-relaxed">
+            <p className="text-xs text-neutral-600 font-sans leading-relaxed">
               {currentIdx === 0 
                 ? 'Preview Master File Original. Kualitas resolusi tinggi HD vektor, siap cetak dan mudah dimodifikasi.'
                 : `Detail komposisi & lembar kerja slide ke-${currentIdx + 1}. Elemen desain lengkap tersusun rapi.`}
@@ -240,8 +259,8 @@ export default function ProductGallery({
                     }}
                     className={`h-11 w-11 rounded-lg overflow-hidden border-2 transition-all cursor-pointer ${
                       currentIdx === i 
-                        ? 'border-white ring-2 ring-white/40 scale-105 opacity-100' 
-                        : 'border-white/20 opacity-50 hover:opacity-80'
+                        ? 'border-neutral-950 ring-2 ring-neutral-950/20 scale-105 opacity-100' 
+                        : 'border-neutral-200 opacity-60 hover:opacity-100'
                     }`}
                   >
                     <img src={img} alt="" className="w-full h-full object-cover" />

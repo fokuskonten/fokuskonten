@@ -230,7 +230,7 @@ export default function BuyerLoginModal({ isOpen, onClose, onLogin }) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in font-sans">
-      <div className="relative w-full max-w-lg bg-white rounded-3xl border border-neutral-200/80 p-6 sm:p-8 shadow-card max-h-[92vh] overflow-y-auto">
+      <div className="relative w-full max-w-lg bg-white rounded-3xl border border-neutral-200 p-6 sm:p-8 shadow-card max-h-[92vh] overflow-y-auto">
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -258,7 +258,7 @@ export default function BuyerLoginModal({ isOpen, onClose, onLogin }) {
         </div>
 
         {/* Tab Switcher */}
-        <div className="flex p-1 rounded-xl bg-neutral-100 border border-neutral-200/80 mb-5">
+        <div className="flex p-1 rounded-xl bg-neutral-100 border border-neutral-200 mb-5">
           <button
             type="button"
             onClick={() => switchTab('login')}
@@ -302,7 +302,7 @@ export default function BuyerLoginModal({ isOpen, onClose, onLogin }) {
 
         {/* Feedback Alert Banners */}
         {error && (
-          <div className="mb-4 p-3 rounded-xl bg-rose-50 border border-rose-200/80 text-rose-800 text-xs font-sans flex items-start gap-2">
+          <div className="mb-4 p-3 rounded-xl bg-rose-50 border border-rose-200 text-rose-800 text-xs font-sans flex items-start gap-2">
             <svg className="w-4 h-4 text-rose-600 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
             </svg>
@@ -424,7 +424,7 @@ export default function BuyerLoginModal({ isOpen, onClose, onLogin }) {
                   </form>
                 ) : (
                   <div className="space-y-4">
-                    <div className="flex items-center justify-between p-3 rounded-xl bg-neutral-50 border border-neutral-200/80 text-xs">
+                    <div className="flex items-center justify-between p-3 rounded-xl bg-neutral-50 border border-neutral-200 text-xs">
                       <span className="font-sans text-neutral-600 truncate">
                         Kode dikirim ke <strong className="text-neutral-950 font-semibold">{otpEmail || loginEmail}</strong>
                       </span>
@@ -574,7 +574,7 @@ export default function BuyerLoginModal({ isOpen, onClose, onLogin }) {
             ) : (
               /* Step 2: Verifikasi OTP */
               <div className="space-y-4">
-                <div className="flex items-center justify-between p-3 rounded-xl bg-neutral-50 border border-neutral-200/80 text-xs">
+                <div className="flex items-center justify-between p-3 rounded-xl bg-neutral-50 border border-neutral-200 text-xs">
                   <span className="font-sans text-neutral-600 truncate">
                     Kode verifikasi dikirim ke <strong className="text-neutral-950 font-semibold">{regEmail}</strong>
                   </span>

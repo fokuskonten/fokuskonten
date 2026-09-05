@@ -129,7 +129,7 @@ export default function ProductDetailClient({ product }) {
       'TemplateMaster',
       'InstantDownload',
       'GoogleDriveVault',
-      'CommercialUse'
+      'StandardLicense'
     ]
     const titleWords = (product.title || '')
       .replace(/[^a-zA-Z0-9\s]/g, '')

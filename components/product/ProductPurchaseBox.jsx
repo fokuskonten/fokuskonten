@@ -92,10 +92,10 @@ export default function ProductPurchaseBox({ product, fmtMeta }) {
       {/* License Badge Header */}
       <div className="flex items-center justify-between pb-4 border-b border-neutral-100">
         <span className="px-2.5 py-1 rounded-md bg-neutral-950 text-white text-[11px] font-display font-bold uppercase tracking-wider">
-          Commercial License
+          Standard License
         </span>
         <span className="text-xs text-neutral-500 font-medium font-sans">
-          Bebas Penggunaan
+          Penggunaan Mandiri
         </span>
       </div>
 
@@ -129,7 +129,7 @@ export default function ProductPurchaseBox({ product, fmtMeta }) {
           <svg className="w-4 h-4 text-neutral-900 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
           </svg>
-          <span><strong>Lisensi Komersial:</strong> Bebas untuk kebutuhan personal maupun komersial.</span>
+          <span><strong>Lisensi Standar:</strong> Penggunaan personal &amp; proyek desain mandiri.</span>
         </div>
         <div className="flex items-start gap-2.5">
           <svg className="w-4 h-4 text-neutral-900 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>

@@ -93,6 +93,7 @@ function UserInvoiceContent() {
             customerName: data.buyerName || matchingLocalOrder?.customerName || prof?.name || '-',
             customerEmail: data.buyerEmail || activeEmail,
             paymentType: data.paymentMethod,
+            paymentCode: data.paymentCode || null,
             status: (data.paymentStatus || 'pending').toLowerCase(),
             createdAt: data.createdAt,
             driveLink: data.deliveryLink,
@@ -157,9 +158,25 @@ function UserInvoiceContent() {
     return () => clearInterval(interval)
   }, [isAuthorized, order, orderId])
 
-  if (!mounted || !isLoaded) {
+  // Set judul tab browser — HARUS sebelum semua conditional return (Rules of Hooks)
+  useEffect(() => {
+    if (order?.orderId) {
+      document.title = `Bukti Pembelian #${order.orderId} | FokusKonten`
+    } else {
+      document.title = 'Nota Invoice | FokusKonten'
+    }
+    return () => {
+      document.title = 'FokusKonten — Pengembang & Publisher Software Aplikasi Resmi'
+    }
+  }, [order?.orderId])
+
+  if (!mounted) {
+    return null
+  }
+
+  if (!isLoaded) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-neutral-50/60 font-sans text-sm text-neutral-400">
+      <div className="min-h-screen flex items-center justify-center bg-neutral-50 font-sans text-sm text-neutral-400">
         Memverifikasi hak kepemilikan invoice...
       </div>
     )
@@ -167,22 +184,28 @@ function UserInvoiceContent() {
 
   // JIKA TIDAK DIIZINKAN (Profil lain, belum login, atau akun beda) -> 404 NOT FOUND MUTLAK
   if (!isAuthorized || !order) {
-    return <NotFound />
+    return (
+      <div className="min-h-screen">
+        <NotFound />
+      </div>
+    )
   }
 
   const breadcrumbs = [
-    { label: 'Beranda', href: '/' },
     { label: 'Toko Digital', href: '/toko-digital/' },
-    { label: 'Nota Invoice', href: `/toko-digital/user/invoice/${encodeURIComponent(orderId)}` }
+    { label: 'Nota Invoice' }
   ]
 
+
   return (
-    <div className="min-h-screen bg-neutral-50/60 pb-20 pt-24 sm:pt-28 font-sans">
-      <div className="container-page max-w-4xl space-y-6">
-        <Breadcrumb items={breadcrumbs} />
+    <div className="min-h-screen bg-neutral-50 pb-20 pt-24 sm:pt-28 font-sans print:min-h-0 print:p-0 print:bg-white">
+      <div className="container-page max-w-4xl space-y-6 print:max-w-full print:p-0 print:space-y-0">
+        <div className="no-print">
+          <Breadcrumb items={breadcrumbs} />
+        </div>
 
         {isPolling && (
-          <div className="flex items-center justify-between p-3.5 px-5 rounded-2xl bg-amber-50 border border-amber-200 text-amber-900 text-xs shadow-sm font-sans">
+          <div className="no-print flex items-center justify-between p-3.5 px-5 rounded-2xl bg-amber-50 border border-amber-200 text-amber-900 text-xs shadow-sm font-sans">
             <div className="flex items-center gap-2.5 font-medium">
               <span className="relative flex h-2.5 w-2.5">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
@@ -203,7 +226,7 @@ function UserInvoiceContent() {
 
         <InvoiceReceipt order={order} />
 
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 rounded-2xl bg-white border border-neutral-200/80">
+        <div className="no-print flex flex-col sm:flex-row items-center justify-between gap-4 p-4 rounded-2xl bg-white border border-neutral-200/80">
           <span className="text-xs text-neutral-500">
             Aset ini resmi terikat dengan akun Anda ({order.customerEmail}).
           </span>
@@ -229,7 +252,7 @@ function UserInvoiceContent() {
 
 export default function UserInvoicePage() {
   return (
-    <Suspense fallback={<div className="min-h-screen flex items-center justify-center bg-neutral-50/60 font-sans text-sm text-neutral-400">Memuat nota resmi...</div>}>
+    <Suspense fallback={null}>
       <UserInvoiceContent />
     </Suspense>
   )

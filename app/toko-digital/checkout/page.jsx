@@ -19,9 +19,7 @@ import {
   subscribeBuyerStore,
   pushOrderToServer, 
   hasPurchasedSku,
-  updateOrderStatus,
-  registerBuyerAccount,
-  loginBuyerWithPassword
+  updateOrderStatus
 } from '@/lib/buyerStore'
 import { getApiBaseUrl, getMidtransClientKey, getMidtransSnapUrl } from '@/lib/apiConfig'
 import { getCartItems, clearCart, removeFromCart } from '@/lib/cartStore'
@@ -40,10 +38,6 @@ function CheckoutContent() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
-  const [password, setPassword] = useState('')
-  const [confirmPassword, setConfirmPassword] = useState('')
-  const [showPassword, setShowPassword] = useState(false)
-  const [isExistingAccount, setIsExistingAccount] = useState(false)
   const [voucher, setVoucher] = useState(null)
   const [errors, setErrors] = useState({})
   const [isProcessing, setIsProcessing] = useState(false)
@@ -265,15 +259,6 @@ function CheckoutContent() {
     if (!email.trim()) newErrors.email = 'Alamat email wajib diisi.'
     else if (!isValidEmail(email)) newErrors.email = 'Format email tidak valid.'
 
-    // Validasi password (HANYA jika belum login)
-    if (!isLoggedIn) {
-      if (!password) newErrors.password = 'Password akun wajib diisi (min. 6 karakter).'
-      else if (password.length < 6) newErrors.password = 'Password minimal 6 karakter.'
-      else if (!isExistingAccount && password !== confirmPassword) {
-        newErrors.confirmPassword = 'Konfirmasi password tidak cocok.'
-      }
-    }
-
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors)
       return
@@ -281,39 +266,6 @@ function CheckoutContent() {
 
     setErrors({})
     setIsProcessing(true)
-
-    // ── Step 1: Daftarkan akun otomatis atau login jika belum ada (HANYA untuk Guest) ──
-    if (!isLoggedIn) {
-      try {
-        let authResult
-        if (isExistingAccount) {
-          // User sudah punya akun → login
-          authResult = await loginBuyerWithPassword({ email: email.trim().toLowerCase(), password })
-          if (!authResult.success) {
-            setErrors({ password: authResult.message || 'Password salah. Coba lagi atau reset password.' })
-            setIsProcessing(false)
-            return
-          }
-        } else {
-          // User baru → daftarkan akun
-          authResult = await registerBuyerAccount({ name: name.trim(), email: email.trim().toLowerCase(), phone: phone.trim(), password })
-          if (!authResult.success) {
-            // Email sudah terdaftar → pindah ke mode login
-            if (authResult.message && authResult.message.toLowerCase().includes('terdaftar')) {
-              setIsExistingAccount(true)
-              setErrors({ password: 'Email ini sudah terdaftar. Masukkan password akun Anda untuk melanjutkan.' })
-            } else {
-              setErrors({ submit: authResult.message || 'Gagal membuat akun. Silakan coba lagi.' })
-            }
-            setIsProcessing(false)
-            return
-          }
-        }
-      } catch (authErr) {
-        // Offline fallback: lanjut tanpa akun server (data tersimpan lokal)
-        console.warn('[Checkout] Auth offline, lanjut sebagai guest:', authErr.message)
-      }
-    }
 
     const orderId = generateInvoiceId()
 
@@ -451,16 +403,16 @@ function CheckoutContent() {
           snapInstance.pay(snapToken, {
             onSuccess: function() {
               updateOrderStatus(orderId, 'settlement')
-              router.push(`/toko-digital/user/invoice/${orderId}`)
+              router.push(`/toko-digital/user/invoice/?order_id=${orderId}`)
             },
             onPending: function() {
-              router.push(`/toko-digital/user/invoice/${orderId}`)
+              router.push(`/toko-digital/user/invoice/?order_id=${orderId}`)
             },
             onError: function() {
-              router.push(`/toko-digital/user/invoice/${orderId}`)
+              router.push(`/toko-digital/user/invoice/?order_id=${orderId}`)
             },
             onClose: function() {
-              router.push(`/toko-digital/user/invoice/${orderId}`)
+              router.push(`/toko-digital/user/invoice/?order_id=${orderId}`)
             }
           })
           return
@@ -478,7 +430,7 @@ function CheckoutContent() {
     }
 
     setIsProcessing(false)
-    router.push(`/toko-digital/user/invoice/${orderId}`)
+    router.push(`/toko-digital/user/invoice/?order_id=${orderId}`)
   }
 
   return (
@@ -510,6 +462,18 @@ function CheckoutContent() {
         {/* Left Form (7 cols) */}
         <div className="lg:col-span-7 bg-white rounded-3xl border border-neutral-200/90 p-6 sm:p-8 shadow-[0_4px_25px_rgba(0,0,0,0.05)] space-y-6">
           <form id="checkout-form" onSubmit={handleSubmit} className="space-y-6">
+            {!isLoggedIn && (
+              <div className="p-3.5 rounded-2xl bg-neutral-50 border border-neutral-200/80 flex items-center justify-between text-xs font-sans">
+                <span className="text-neutral-600">Sudah memiliki akun member?</span>
+                <Link
+                  href={`/login/?redirect=/toko-digital/checkout${skuParam ? `?sku=${skuParam}` : ''}`}
+                  className="font-bold text-neutral-900 hover:text-blue-600 underline transition-colors"
+                >
+                  Masuk Akun &rarr;
+                </Link>
+              </div>
+            )}
+
             <div>
               <h3 className="font-sans font-bold text-base text-neutral-950 mb-1">
                 1. Data Pengiriman
@@ -566,92 +530,13 @@ function CheckoutContent() {
               />
             </div>
 
-            {/* ── Section 2: Buat Akun / Login (HANYA TAMPIL UNTUK USER YANG BELUM LOGIN) ── */}
-            {!isLoggedIn && (
-              <div className="pt-4 border-t border-neutral-100">
-                <div className="flex items-start justify-between mb-1">
-                  <h3 className="font-sans font-bold text-base text-neutral-950">
-                    2. {isExistingAccount ? 'Login ke Akun Anda' : 'Buat Akun'}
-                  </h3>
-                  <button
-                    type="button"
-                    onClick={() => { setIsExistingAccount(!isExistingAccount); setErrors({}) }}
-                    className="text-xs text-blue-600 hover:underline font-sans cursor-pointer"
-                  >
-                    {isExistingAccount ? 'Belum punya akun?' : 'Sudah punya akun?'}
-                  </button>
-                </div>
-                <p className="text-xs text-neutral-400 mb-4 font-sans">
-                  {isExistingAccount
-                    ? 'Masukkan password akun FokusKonten Anda.'
-                    : 'Email ini akan jadi akun login permanen. Produk tersimpan aman di dashboard Anda.'}
-                </p>
-
-                <div className="space-y-3">
-                  {/* Password */}
-                  <div>
-                    <label className="block text-xs font-bold text-neutral-700 mb-1.5 font-sans uppercase tracking-wide">
-                      PASSWORD <span className="text-red-500">*</span>
-                    </label>
-                    <div className="relative">
-                      <input
-                        type={showPassword ? 'text' : 'password'}
-                        value={password}
-                        onChange={e => setPassword(e.target.value)}
-                        placeholder="Min. 6 karakter"
-                        className={`w-full px-4 py-3 rounded-xl border text-sm font-sans bg-white pr-12 transition-colors ${
-                          errors.password ? 'border-red-400 bg-red-50' : 'border-neutral-200 focus:border-neutral-900'
-                        } outline-none`}
-                      />
-                      <button
-                        type="button"
-                        onClick={() => setShowPassword(!showPassword)}
-                        className="absolute right-3 top-1/2 -translate-y-1/2 text-neutral-400 hover:text-neutral-700 text-xs font-sans cursor-pointer"
-                      >
-                        {showPassword ? 'Sembunyikan' : 'Tampilkan'}
-                      </button>
-                    </div>
-                    {errors.password && <p className="text-xs text-red-500 mt-1 font-sans">{errors.password}</p>}
-                  </div>
-
-                  {/* Konfirmasi Password — hanya untuk akun baru */}
-                  {!isExistingAccount && (
-                    <div>
-                      <label className="block text-xs font-bold text-neutral-700 mb-1.5 font-sans uppercase tracking-wide">
-                        KONFIRMASI PASSWORD <span className="text-red-500">*</span>
-                      </label>
-                      <input
-                        type={showPassword ? 'text' : 'password'}
-                        value={confirmPassword}
-                        onChange={e => setConfirmPassword(e.target.value)}
-                        placeholder="Ulangi password di atas"
-                        className={`w-full px-4 py-3 rounded-xl border text-sm font-sans bg-white transition-colors ${
-                          errors.confirmPassword ? 'border-red-400 bg-red-50' : 'border-neutral-200 focus:border-neutral-900'
-                        } outline-none`}
-                      />
-                      {errors.confirmPassword && <p className="text-xs text-red-500 mt-1 font-sans">{errors.confirmPassword}</p>}
-                    </div>
-                  )}
-
-                  {/* Info box */}
-                  <div className="flex items-start gap-2 p-3 rounded-xl bg-blue-50 border border-blue-100">
-                    <span className="text-blue-500 mt-0.5">🔒</span>
-                    <p className="text-xs text-blue-700 font-sans leading-relaxed">
-                      {isExistingAccount
-                        ? 'Produk baru akan langsung masuk ke koleksi akun Anda.'
-                        : 'Akun dibuat otomatis. Login kapan saja di /akun/ untuk akses semua produk Anda.'}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            )}
-
+            {/* ── Section 2: Kode Promo ── */}
             <div className="pt-4 border-t border-neutral-100">
               <h3 className="font-sans font-bold text-base text-neutral-950 mb-1">
-                {isLoggedIn ? '2. Kode Promo' : '3. Kode Promo'}
+                2. Kode Promo
               </h3>
               <p className="text-xs text-neutral-400 mb-3 font-sans">
-                Masukkan kode promo jika ada.
+                Masukkan kode promo jika ada (opsional).
               </p>
               <VoucherInput
                 currentPrice={basePrice}

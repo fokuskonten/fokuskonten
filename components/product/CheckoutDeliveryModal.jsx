@@ -176,16 +176,16 @@ export default function CheckoutDeliveryModal({
           snapInstance.pay(snapToken, {
             onSuccess: function() {
               updateOrderStatus(orderId, 'settlement')
-              router.push(`/toko-digital/user/invoice/${orderId}`)
+              router.push(`/toko-digital/user/invoice/?order_id=${orderId}`)
             },
             onPending: function() {
-              router.push(`/toko-digital/user/invoice/${orderId}`)
+              router.push(`/toko-digital/user/invoice/?order_id=${orderId}`)
             },
             onError: function() {
-              router.push(`/toko-digital/user/invoice/${orderId}`)
+              router.push(`/toko-digital/user/invoice/?order_id=${orderId}`)
             },
             onClose: function() {
-              router.push(`/toko-digital/user/invoice/${orderId}`)
+              router.push(`/toko-digital/user/invoice/?order_id=${orderId}`)
             }
           })
           return
@@ -197,7 +197,7 @@ export default function CheckoutDeliveryModal({
 
     setIsProcessing(false)
     onClose()
-    router.push(`/toko-digital/user/invoice/${orderId}`)
+    router.push(`/toko-digital/user/invoice/?order_id=${orderId}`)
   }
 
   return (

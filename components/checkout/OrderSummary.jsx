@@ -101,7 +101,7 @@ export default function OrderSummary({
 
         <div className="flex items-center justify-between text-neutral-600">
           <span>Lisensi</span>
-          <span className="font-bold text-neutral-900">Komersial (Termasuk)</span>
+          <span className="font-bold text-neutral-900">Lisensi Standar</span>
         </div>
 
         <div className="flex items-center justify-between text-neutral-600">

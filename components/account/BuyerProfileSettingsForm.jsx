@@ -87,7 +87,7 @@ export default function BuyerProfileSettingsForm({ profile, onProfileUpdated }) 
       </div>
 
       {/* Main Profile Form Card */}
-      <div className="bg-white rounded-2xl border border-neutral-200/80 p-6 sm:p-8 shadow-card space-y-6">
+      <div className="bg-white rounded-2xl border border-neutral-200 p-6 sm:p-8 shadow-sm space-y-6">
         <form onSubmit={handleSaveProfile} className="space-y-5">
           {saveSuccess && (
             <div className="p-4 rounded-xl bg-neutral-100 border border-neutral-200 text-neutral-900 text-xs flex items-center gap-2.5 animate-in fade-in">
@@ -109,7 +109,7 @@ export default function BuyerProfileSettingsForm({ profile, onProfileUpdated }) 
                 value={profile?.email || ''}
                 readOnly
                 disabled
-                className="w-full px-4 py-3 rounded-xl bg-neutral-100/80 border border-neutral-200 text-neutral-600 text-xs sm:text-sm font-mono cursor-not-allowed select-all"
+                className="w-full px-4 py-3 rounded-xl bg-neutral-100 border border-neutral-200 text-neutral-600 text-xs sm:text-sm font-mono cursor-not-allowed select-all"
               />
               <span className="absolute right-3 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-neutral-900 text-white text-[10px] font-bold font-sans">
                 <span className="w-1.5 h-1.5 rounded-full bg-white" />
@@ -178,7 +178,7 @@ export default function BuyerProfileSettingsForm({ profile, onProfileUpdated }) 
       </div>
 
       {/* Security & Password Card */}
-      <div className="bg-white rounded-2xl border border-neutral-200/80 p-6 sm:p-8 shadow-card space-y-4">
+      <div className="bg-white rounded-2xl border border-neutral-200 p-6 sm:p-8 shadow-sm space-y-4">
         <div className="flex items-center justify-between">
           <div className="space-y-0.5">
             <h4 className="font-bold text-neutral-950 text-sm sm:text-base">

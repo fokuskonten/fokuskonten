@@ -161,7 +161,7 @@ export default function CreativeAuthPortal({ onAuthSuccess }) {
     setIsLoading(false)
 
     if (result.success) {
-      setSuccessMessage('Verifikasi berhasil! Membuka brankas unduhan...')
+      setSuccessMessage('Verifikasi berhasil! Membuka dasbor akun...')
       if (typeof onAuthSuccess === 'function') {
         onAuthSuccess(result.buyer)
       }
@@ -335,7 +335,7 @@ export default function CreativeAuthPortal({ onAuthSuccess }) {
   }
 
   return (
-    <div className="bg-white rounded-3xl border border-neutral-200/80 shadow-card overflow-hidden grid grid-cols-1 lg:grid-cols-12 font-sans">
+    <div className="bg-white rounded-3xl border border-neutral-200 shadow-sm overflow-hidden grid grid-cols-1 lg:grid-cols-12 font-sans">
       {/* ──────────────────────────────────────────────────────────
           SISI KIRI (MARKETPLACE BRAND SHOWCASE)
       ────────────────────────────────────────────────────────── */}
@@ -430,7 +430,7 @@ export default function CreativeAuthPortal({ onAuthSuccess }) {
       ────────────────────────────────────────────────────────── */}
       <div className="lg:col-span-7 p-8 sm:p-12 flex flex-col justify-center">
         {/* Tab Switcher: Masuk vs Daftar Akun */}
-        <div className="flex p-1 rounded-xl bg-neutral-100 border border-neutral-200/80 mb-6 max-w-xs">
+        <div className="flex p-1 rounded-xl bg-neutral-100 border border-neutral-200 mb-6 max-w-xs">
           <button
             type="button"
             onClick={() => switchTab('login')}
@@ -480,7 +480,7 @@ export default function CreativeAuthPortal({ onAuthSuccess }) {
 
         {/* Feedback Alert Banners */}
         {errorMessage && (
-          <div className="mb-5 p-3.5 rounded-xl bg-rose-50 border border-rose-200/80 text-rose-800 text-xs font-sans flex items-start gap-2.5">
+          <div className="mb-5 p-3.5 rounded-xl bg-rose-50 border border-rose-200 text-rose-800 text-xs font-sans flex items-start gap-2.5">
             <svg className="w-4 h-4 text-rose-600 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
             </svg>
@@ -669,7 +669,7 @@ export default function CreativeAuthPortal({ onAuthSuccess }) {
                   /* Verifikasi Segmented 6-Box OTP */
                   <div className="space-y-4">
                     {/* Banner Info Target Email */}
-                    <div className="flex items-center justify-between p-3 rounded-xl bg-neutral-50 border border-neutral-200/80 text-xs">
+                    <div className="flex items-center justify-between p-3 rounded-xl bg-neutral-50 border border-neutral-200 text-xs">
                       <div className="flex items-center gap-2 min-w-0">
                         <svg className="w-4 h-4 text-neutral-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -801,7 +801,7 @@ export default function CreativeAuthPortal({ onAuthSuccess }) {
                 ) : (
                   <form onSubmit={handleResetPasswordWithOtp} className="space-y-3.5">
                     {/* Banner Target */}
-                    <div className="flex items-center justify-between p-3 rounded-xl bg-neutral-50 border border-neutral-200/80 text-xs">
+                    <div className="flex items-center justify-between p-3 rounded-xl bg-neutral-50 border border-neutral-200 text-xs">
                       <span className="font-sans text-neutral-600 truncate">
                         Kode reset dikirim ke <strong className="text-neutral-950 font-semibold">{forgotEmail}</strong>
                       </span>
@@ -1062,7 +1062,7 @@ export default function CreativeAuthPortal({ onAuthSuccess }) {
               /* STEP 2: VERIFIKASI OTP REGISTRASI */
               <div className="space-y-4">
                 {/* Banner Info Target Email */}
-                <div className="flex items-center justify-between p-3 rounded-xl bg-neutral-50 border border-neutral-200/80 text-xs">
+                <div className="flex items-center justify-between p-3 rounded-xl bg-neutral-50 border border-neutral-200 text-xs">
                   <div className="flex items-center gap-2 min-w-0">
                     <svg className="w-4 h-4 text-neutral-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />

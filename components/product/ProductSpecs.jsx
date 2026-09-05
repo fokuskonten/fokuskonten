@@ -180,7 +180,7 @@ export default function ProductSpecs({ fmtMeta, cleanDesc, tags = [] }) {
           </div>
           <div className="flex items-center justify-between py-2 border-b border-neutral-100">
             <span className="text-neutral-500 font-medium">Lisensi</span>
-            <span className="font-bold text-neutral-900 text-right">Komersial (Bebas Penggunaan)</span>
+            <span className="font-bold text-neutral-900 text-right">Lisensi Standar</span>
           </div>
           <div className="flex items-center justify-between py-2 border-b border-neutral-100">
             <span className="text-neutral-500 font-medium">Penyimpanan</span>
