@@ -206,7 +206,7 @@ export default function Navbar() {
                               </svg>
                               <span>Semua Produk</span>
                             </div>
-                            <span className="bg-white/20 text-white text-[11px] px-2 py-0.5 rounded-full font-mono">
+                            <span suppressHydrationWarning className="bg-white/20 text-white text-[11px] px-2 py-0.5 rounded-full font-mono">
                               {totalActiveProducts}
                             </span>
                           </Link>
@@ -216,7 +216,7 @@ export default function Navbar() {
                             <div className="mt-2.5 pt-2.5 border-t border-neutral-100">
                               <div className="px-2 py-1 text-[10px] font-extrabold uppercase tracking-wider text-neutral-400 flex items-center justify-between">
                                 <span>Kategori Desain</span>
-                                <span className="font-mono text-[9px] text-neutral-400">{realtimeCategories.length} Kategori</span>
+                                <span suppressHydrationWarning className="font-mono text-[9px] text-neutral-400">{realtimeCategories.length} Kategori</span>
                               </div>
                               <div className="grid grid-cols-2 gap-x-1.5 gap-y-0.5 mt-1 max-h-[55vh] overflow-y-auto pr-1 [scrollbar-width:thin]">
                                 {realtimeCategories.map(([cat, count]) => (
@@ -227,7 +227,7 @@ export default function Navbar() {
                                     className="flex items-center justify-between px-2.5 py-1.5 rounded-xl text-neutral-700 hover:text-neutral-950 hover:bg-neutral-100 font-medium transition-colors group"
                                   >
                                     <span className="truncate pr-1 text-[11.5px] group-hover:font-semibold">{cat}</span>
-                                    <span className="text-neutral-400 group-hover:text-neutral-900 font-mono text-[10px] bg-neutral-100 px-1.5 py-0.5 rounded shrink-0">
+                                    <span suppressHydrationWarning className="text-neutral-400 group-hover:text-neutral-900 font-mono text-[10px] bg-neutral-100 px-1.5 py-0.5 rounded shrink-0">
                                       {count}
                                     </span>
                                   </Link>
@@ -369,7 +369,7 @@ export default function Navbar() {
                         <svg className="w-3.5 h-3.5 fill-current shrink-0" viewBox="0 0 24 24">
                           <path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12z"/>
                         </svg>
-                        <span>Semua Produk ({totalActiveProducts})</span>
+                        <span>Semua Produk <span suppressHydrationWarning>({totalActiveProducts})</span></span>
                       </Link>
                       <div className="space-y-0.5 max-h-72 overflow-y-auto pr-1 mt-1 [scrollbar-width:thin]">
                         {realtimeCategories.map(([cat, count]) => (
@@ -380,7 +380,7 @@ export default function Navbar() {
                             className="flex items-center justify-between px-3 py-1.5 rounded-lg text-xs text-neutral-600 hover:text-neutral-950 hover:bg-neutral-100"
                           >
                             <span>{cat}</span>
-                            <span className="font-mono text-[10px] text-neutral-400 bg-neutral-100 px-1.5 py-0.5 rounded">({count})</span>
+                            <span suppressHydrationWarning className="font-mono text-[10px] text-neutral-400 bg-neutral-100 px-1.5 py-0.5 rounded">({count})</span>
                           </Link>
                         ))}
                       </div>
