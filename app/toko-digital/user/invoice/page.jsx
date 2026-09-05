@@ -48,9 +48,11 @@ function UserInvoiceContent() {
     )
 
     // Deteksi identitas pemilik:
-    // a. Dari akun profil pembeli aktif di browser
-    // b. Dari riwayat transaksi lokal brankas perangkat ini (perangkat asli pembuat order)
-    const activeEmail = (prof?.email || matchingLocalOrder?.customerEmail || '').trim().toLowerCase()
+    // a. Dari URL parameter (?email=...) untuk CS / verifikasi resmi
+    // b. Dari akun profil pembeli aktif di browser
+    // c. Dari riwayat transaksi lokal brankas perangkat ini (perangkat asli pembuat order)
+    const queryEmail = (searchParams.get('email') || '').trim().toLowerCase()
+    const activeEmail = (queryEmail || prof?.email || matchingLocalOrder?.customerEmail || '').trim().toLowerCase()
 
     // STRICT CHECK: Jika sama sekali tidak ada email pembeli (profil asing, perangkat orang lain tanpa login)
     // -> Kembalikan 404 (Ghost Not Found)
@@ -60,12 +62,13 @@ function UserInvoiceContent() {
       return
     }
 
-    // Jika perangkat ini memiliki riwayat order lokal tapi profil belum terisi, sinkronkan
-    if (matchingLocalOrder?.customerEmail && !prof?.email) {
+    // Jika identitas ditemukan (via lokal atau param) tapi profil belum terisi di browser ini, sinkronkan
+    const emailToSave = queryEmail || matchingLocalOrder?.customerEmail
+    if (emailToSave && !prof?.email) {
       setBuyerProfile({
-        name: matchingLocalOrder.customerName || '',
-        email: matchingLocalOrder.customerEmail,
-        phone: matchingLocalOrder.customerPhone || ''
+        name: matchingLocalOrder?.customerName || '',
+        email: emailToSave,
+        phone: matchingLocalOrder?.customerPhone || ''
       })
     }
 
