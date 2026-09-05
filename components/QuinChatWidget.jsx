@@ -60,11 +60,70 @@ export default function QuinChatWidget() {
     scrollToBottom()
   }, [messages])
 
+  const typingTimerRef = useRef(null)
+
+  useEffect(() => {
+    return () => {
+      if (typingTimerRef.current) clearTimeout(typingTimerRef.current)
+    }
+  }, [])
+
   const handleResetChat = () => {
+    if (typingTimerRef.current) clearTimeout(typingTimerRef.current)
     setMessages(DEFAULT_MESSAGES)
+    setIsLoading(false)
     try {
       localStorage.removeItem('fk_chat_history_v2')
     } catch (e) {}
+  }
+
+  const streamAssistantReply = (fullReply, products = []) => {
+    setIsLoading(false)
+    const text = fullReply || ''
+    const totalLength = text.length
+
+    // Append new empty assistant message
+    setMessages(prev => [
+      ...prev,
+      { role: 'assistant', content: '', isTyping: true, products: [] }
+    ])
+
+    let currentIndex = 0
+
+    const getNextDelay = (char) => {
+      if (char === '.' || char === '!' || char === '?') return 140
+      if (char === ',' || char === ';') return 70
+      if (char === '\n') return 90
+      return Math.floor(Math.random() * 14) + 14
+    }
+
+    const typeNextChunk = () => {
+      // Natural chunking: 1-3 chars per tick
+      const step = text.length > 300 ? 3 : text.length > 150 ? 2 : 1
+      currentIndex = Math.min(totalLength, currentIndex + step)
+      const currentText = text.slice(0, currentIndex)
+
+      setMessages(prev => {
+        const copy = [...prev]
+        const lastIdx = copy.length - 1
+        if (lastIdx >= 0 && copy[lastIdx].role === 'assistant') {
+          copy[lastIdx] = {
+            ...copy[lastIdx],
+            content: currentText,
+            isTyping: currentIndex < totalLength,
+            products: currentIndex >= totalLength ? products : []
+          }
+        }
+        return copy
+      })
+
+      if (currentIndex < totalLength) {
+        const nextChar = text[currentIndex] || ''
+        typingTimerRef.current = setTimeout(typeNextChunk, getNextDelay(nextChar))
+      }
+    }
+
+    typingTimerRef.current = setTimeout(typeNextChunk, 160)
   }
 
   const handleSend = async (e) => {
@@ -88,18 +147,15 @@ export default function QuinChatWidget() {
       if (!res.ok) throw new Error('AI Server Offline')
       
       const data = await res.json()
-      setMessages(prev => [...prev, { 
-        role: 'assistant', 
-        content: data.reply || 'Maaf, saya sedang memproses jawaban...',
-        products: data.products || []
-      }])
+      streamAssistantReply(
+        data.reply || 'Maaf, saya sedang memproses jawaban...',
+        data.products || []
+      )
     } catch (err) {
-      setMessages(prev => [...prev, { 
-        role: 'assistant', 
-        content: 'Mohon maaf, server konsultasi kami sedang dalam kondisi istirahat/offline sesaat. Anda dapat langsung menghubungi kami melalui menu Hubungi di atas atau WhatsApp resmi kami: 085183011318 🙏' 
-      }])
-    } finally {
-      setIsLoading(false)
+      streamAssistantReply(
+        'Mohon maaf, server konsultasi kami sedang dalam kondisi istirahat/offline sesaat. Anda dapat langsung menghubungi kami melalui menu Hubungi di atas atau WhatsApp resmi kami: 085183011318 🙏',
+        []
+      )
     }
   }
 
@@ -166,7 +222,7 @@ export default function QuinChatWidget() {
       {/* Floating Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-neutral-950 text-white shadow-lg shadow-black/35 hover:shadow-2xl hover:shadow-black/50 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-1 border border-neutral-800 cursor-pointer ${isOpen ? 'scale-0 opacity-0' : 'scale-100 opacity-100'}`}
+        className={`fixed bottom-24 lg:bottom-6 right-4 lg:right-6 z-50 w-14 h-14 rounded-full bg-neutral-950 text-white shadow-lg shadow-black/35 hover:shadow-2xl hover:shadow-black/50 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-1 border border-neutral-800 cursor-pointer ${isOpen ? 'scale-0 opacity-0' : 'scale-100 opacity-100'}`}
         aria-label="Tanya Customer Service FokusKonten"
         title="Chat Customer Service Resmi"
       >
@@ -182,7 +238,7 @@ export default function QuinChatWidget() {
       </button>
 
       {/* Chat Window */}
-      <div className={`fixed bottom-6 right-6 z-50 w-[360px] max-w-[calc(100vw-2rem)] h-[520px] max-h-[calc(100vh-5rem)] bg-white rounded-3xl shadow-2xl border border-neutral-200/90 flex flex-col transition-all duration-300 origin-bottom-right font-sans overflow-hidden ${isOpen ? 'scale-100 opacity-100' : 'scale-0 opacity-0 pointer-events-none'}`}>
+      <div className={`fixed bottom-24 lg:bottom-6 right-4 lg:right-6 z-50 w-[360px] max-w-[calc(100vw-2rem)] h-[520px] max-h-[calc(100vh-7rem)] bg-white rounded-3xl shadow-2xl border border-neutral-200/90 flex flex-col transition-all duration-300 origin-bottom-right font-sans overflow-hidden ${isOpen ? 'scale-100 opacity-100' : 'scale-0 opacity-0 pointer-events-none'}`}>
         
         {/* Header */}
         <div className="bg-neutral-950 px-4 py-3.5 flex items-center justify-between border-b border-neutral-800">
@@ -252,6 +308,9 @@ export default function QuinChatWidget() {
               <div className={`max-w-[85%] rounded-2xl p-3 leading-relaxed ${msg.role === 'user' ? 'bg-neutral-950 text-white rounded-tr-none shadow-soft' : 'bg-white border border-neutral-200/90 text-neutral-800 rounded-tl-none shadow-sm'}`}>
                 <div className="whitespace-pre-wrap">
                   {renderMessageContent(msg.content)}
+                  {msg.isTyping && (
+                    <span className="inline-block w-1.5 h-3.5 bg-neutral-900 ml-1 animate-pulse align-middle rounded-full" />
+                  )}
                 </div>
 
                 {/* Lampiran Kartu Produk Ready di Web */}

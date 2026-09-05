@@ -40,7 +40,7 @@ export default function CartFloat() {
       onClick={handleClick}
       aria-label="Keranjang Belanja"
       title="Keranjang Belanja"
-      className={`print:hidden fixed bottom-24 right-6 z-40 w-14 h-14 rounded-full bg-neutral-950 shadow-lg shadow-black/35 hover:shadow-2xl hover:shadow-black/50 flex items-center justify-center text-white transition-all duration-300 hover:scale-110 hover:-translate-y-1 border border-neutral-800 ${
+      className={`print:hidden fixed bottom-40 lg:bottom-24 right-4 lg:right-6 z-40 w-14 h-14 rounded-full bg-neutral-950 shadow-lg shadow-black/35 hover:shadow-2xl hover:shadow-black/50 flex items-center justify-center text-white transition-all duration-300 hover:scale-110 hover:-translate-y-1 border border-neutral-800 ${
         isBumping ? 'scale-125 ring-2 ring-white' : ''
       }`}
     >

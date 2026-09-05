@@ -18,7 +18,7 @@ export default function BackToTop() {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-6 left-6 z-40 w-10 h-10 rounded-xl bg-white border border-neutral-200 shadow-soft flex items-center justify-center text-neutral-500 transition-all duration-300 hover:text-brand-600 hover:border-brand-200 hover:shadow-md ${
+      className={`fixed bottom-24 lg:bottom-6 left-4 lg:left-6 z-40 w-10 h-10 rounded-xl bg-white border border-neutral-200 shadow-soft flex items-center justify-center text-neutral-500 transition-all duration-300 hover:text-brand-600 hover:border-brand-200 hover:shadow-md ${
         visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 pointer-events-none'
       }`}
       aria-label="Kembali ke atas"

@@ -1,6 +1,7 @@
 'use client'
 
-import { useState, useMemo, useEffect, useRef } from 'react'
+import { useState, useMemo, useEffect, useRef, Suspense } from 'react'
+import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import digitalProducts from '@/content/apps/digitalProducts.json'
 import storeCategories from '@/content/apps/store_categories.json'
@@ -9,7 +10,9 @@ import { createProductSlug } from './slugHelper'
 
 const ITEMS_PER_PAGE = 24
 
-export default function TokoDigitalPage() {
+function TokoDigitalContent() {
+  const searchParams = useSearchParams()
+
   const [selectedCategory, setSelectedCategory] = useState('Semua')
   const [selectedFormat, setSelectedFormat] = useState('Semua')
   const [searchQuery, setSearchQuery] = useState('')
@@ -60,56 +63,62 @@ export default function TokoDigitalPage() {
 
   const isInitializedRef = useRef(false)
 
-  // Sync initial category & format & query & page from URL or SessionStorage
+  // 1. Sync from URL search params (on mount, Next.js client routing, or browser back/forward)
+  useEffect(() => {
+    const catParam = searchParams.get('cat')
+    const fmtParam = searchParams.get('format')
+    const qParam = searchParams.get('q')
+    const sortParam = searchParams.get('sort')
+    const pageParam = parseInt(searchParams.get('page'), 10)
+
+    setSelectedCategory(catParam || 'Semua')
+    setSelectedFormat(fmtParam ? fmtParam.toUpperCase() : 'Semua')
+    setSearchQuery(qParam || '')
+    setSortBy(sortParam || 'newest')
+    setCurrentPage((!isNaN(pageParam) && pageParam > 0) ? pageParam : 1)
+
+    isInitializedRef.current = true
+  }, [searchParams])
+
+  // 2. Custom event listener from Navbar for zero-latency, instant in-page filter switches
   useEffect(() => {
     if (typeof window === 'undefined') return
 
-    const params = new URLSearchParams(window.location.search)
-    const catParam = params.get('cat')
-    const fmtParam = params.get('format')
-    const qParam = params.get('q')
-    const sortParam = params.get('sort')
-    const pageParam = parseInt(params.get('page'), 10)
+    const handleFilterChange = (e) => {
+      const { category, format } = e.detail || {}
+      if (category !== undefined) setSelectedCategory(category)
+      if (format !== undefined) setSelectedFormat(format)
+      setSearchQuery('')
+      setCurrentPage(1)
+    }
 
-    let sessionState = null
-    try {
-      const raw = sessionStorage.getItem('fk_toko_session')
-      if (raw) sessionState = JSON.parse(raw)
-    } catch (e) {}
+    const handlePopState = () => {
+      const params = new URLSearchParams(window.location.search)
+      const catParam = params.get('cat')
+      const fmtParam = params.get('format')
+      const qParam = params.get('q')
+      const sortParam = params.get('sort')
+      const pageParam = parseInt(params.get('page'), 10)
 
-    const initialCat = catParam || sessionState?.category || 'Semua'
-    const initialFmt = fmtParam ? fmtParam.toUpperCase() : (sessionState?.format || 'Semua')
-    const initialQ = qParam !== null ? qParam : (sessionState?.searchQuery || '')
-    const initialSort = sortParam || sessionState?.sortBy || 'newest'
-    const initialPage = (!isNaN(pageParam) && pageParam > 0) ? pageParam : (sessionState?.page || 1)
+      setSelectedCategory(catParam || 'Semua')
+      setSelectedFormat(fmtParam ? fmtParam.toUpperCase() : 'Semua')
+      setSearchQuery(qParam || '')
+      setSortBy(sortParam || 'newest')
+      setCurrentPage((!isNaN(pageParam) && pageParam > 0) ? pageParam : 1)
+    }
 
-    setSelectedCategory(initialCat)
-    setSelectedFormat(initialFmt)
-    setSearchQuery(initialQ)
-    setSortBy(initialSort)
-    setCurrentPage(initialPage)
+    window.addEventListener('fk_filter_change', handleFilterChange)
+    window.addEventListener('popstate', handlePopState)
 
-    const timer = setTimeout(() => {
-      isInitializedRef.current = true
-    }, 60)
-
-    return () => clearTimeout(timer)
+    return () => {
+      window.removeEventListener('fk_filter_change', handleFilterChange)
+      window.removeEventListener('popstate', handlePopState)
+    }
   }, [])
 
-  // Persist session & sync URL when filters or page change
+  // 3. Keep URL in sync when filter or page state changes
   useEffect(() => {
     if (!isInitializedRef.current) return
-
-    try {
-      sessionStorage.setItem('fk_toko_session', JSON.stringify({
-        category: selectedCategory,
-        format: selectedFormat,
-        searchQuery,
-        sortBy,
-        page: currentPage,
-        t: Date.now()
-      }))
-    } catch (e) {}
 
     if (typeof window !== 'undefined') {
       const params = new URLSearchParams()
@@ -314,9 +323,9 @@ export default function TokoDigitalPage() {
                       }`}
                     >
                       <span>Semua Kategori</span>
-                      {selectedCategory === 'Semua' && <span>✓</span>}
+                      <span className="font-mono text-xs opacity-75">({totalActive})</span>
                     </button>
-                    {storeCategories.map((cat) => (
+                    {realtimeCategories.map(([cat, count]) => (
                       <button
                         key={cat}
                         type="button"
@@ -326,7 +335,7 @@ export default function TokoDigitalPage() {
                         }`}
                       >
                         <span>{cat}</span>
-                        {selectedCategory === cat && <span>✓</span>}
+                        <span className="font-mono text-xs opacity-75">({count})</span>
                       </button>
                     ))}
                   </div>
@@ -495,5 +504,19 @@ export default function TokoDigitalPage() {
         )}
       </div>
     </div>
+  )
+}
+
+export default function TokoDigitalPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen pt-28 pb-24 bg-[#FAFAFA] flex items-center justify-center">
+          <div className="w-8 h-8 border-3 border-neutral-900 border-t-transparent rounded-full animate-spin" />
+        </div>
+      }
+    >
+      <TokoDigitalContent />
+    </Suspense>
   )
 }
