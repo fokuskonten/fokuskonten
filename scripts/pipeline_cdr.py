@@ -85,38 +85,65 @@ for item in catalog:
         zip_size_mb = os.path.getsize(temp_zip) / (1024 * 1024)
         print(f"   📦 Ukuran ZIP: {zip_size_mb:.2f} MB. Mengekstrak file mentahan...")
 
-        os.makedirs(temp_extract, exist_ok=True)
-        with zipfile.ZipFile(temp_zip, "r") as z:
-            z.extractall(temp_extract)
-
         os.makedirs(master_dir, exist_ok=True)
         extracted_masters = 0
         extracted_fonts = 0
 
-        for root, _, files_in_dir in os.walk(temp_extract):
-            for f_name in files_in_dir:
-                f_ext = os.path.splitext(f_name.lower())[1]
-                full_src = os.path.join(root, f_name)
+        # Cek apakah file yang diunduh adalah file CorelDRAW (.CDR) murni
+        # File CDR modern adalah ZIP container dengan mimetype 'application/x-vnd.corel.zcf.draw.document+zip'
+        is_direct_cdr = False
+        try:
+            with zipfile.ZipFile(temp_zip, "r") as z:
+                namelist = set(z.namelist())
+                if "mimetype" in namelist:
+                    mime = z.read("mimetype").decode("utf-8", errors="ignore").strip()
+                    if "corel" in mime.lower():
+                        is_direct_cdr = True
+                elif "content/root.dat" in namelist or "content/data/masterPage.dat" in namelist:
+                    is_direct_cdr = True
+        except Exception:
+            pass
 
-                if f_ext in FONT_EXTENSIONS:
-                    os.makedirs(font_dir, exist_ok=True)
-                    shutil.copy2(full_src, os.path.join(font_dir, f_name))
-                    extracted_fonts += 1
-                elif f_ext in MASTER_EXTENSIONS:
-                    shutil.copy2(full_src, os.path.join(master_dir, f_name))
-                    extracted_masters += 1
-                    f_size_mb = os.path.getsize(full_src) / (1024 * 1024)
-                    print(f"      ✨ Ditemukan Master: {f_name} ({f_size_mb:.2f} MB)")
+        if is_direct_cdr:
+            # File yang diunduh adalah file CorelDRAW mentahan asli!
+            target_cdr_name = f"{title}.cdr" if not title.lower().endswith(".cdr") else title
+            target_cdr_path = os.path.join(master_dir, target_cdr_name)
+            shutil.copy2(temp_zip, target_cdr_path)
+            extracted_masters = 1
+            f_size_mb = os.path.getsize(target_cdr_path) / (1024 * 1024)
+            print(f"      ✨ Terdeteksi File Master CorelDRAW (.CDR) Asli: {target_cdr_name} ({f_size_mb:.2f} MB)")
+        else:
+            # File adalah arsip ZIP yang berisi file-file di dalamnya
+            os.makedirs(temp_extract, exist_ok=True)
+            with zipfile.ZipFile(temp_zip, "r") as z:
+                z.extractall(temp_extract)
+
+            for root, _, files_in_dir in os.walk(temp_extract):
+                for f_name in files_in_dir:
+                    f_ext = os.path.splitext(f_name.lower())[1]
+                    full_src = os.path.join(root, f_name)
+
+                    if f_ext in FONT_EXTENSIONS:
+                        os.makedirs(font_dir, exist_ok=True)
+                        shutil.copy2(full_src, os.path.join(font_dir, f_name))
+                        extracted_fonts += 1
+                    elif f_ext in MASTER_EXTENSIONS:
+                        shutil.copy2(full_src, os.path.join(master_dir, f_name))
+                        extracted_masters += 1
+                        f_size_mb = os.path.getsize(full_src) / (1024 * 1024)
+                        print(f"      ✨ Ditemukan Master: {f_name} ({f_size_mb:.2f} MB)")
 
         print(f"   🎉 Berhasil diekstrak:")
         print(f"      - Master File (.CDR/.EPS): {extracted_masters} file di: 01 - File Master Desain/")
         print(f"      - Font Pendukung          : {extracted_fonts} file di: 02 - Font Pendukung/")
 
-        completed_skus.add(sku)
-        with open(CHECKPOINT_FILE, "w", encoding="utf-8") as cf:
-            json.dump(list(completed_skus), cf, indent=2)
-
-        processed += 1
+        if extracted_masters > 0:
+            completed_skus.add(sku)
+            with open(CHECKPOINT_FILE, "w", encoding="utf-8") as cf:
+                json.dump(list(completed_skus), cf, indent=2)
+            processed += 1
+        else:
+            print(f"   ⚠️ Tidak ditemukan file master pada {sku}.")
 
     except Exception as e:
         print(f"   ❌ Terjadi kesalahan pada {sku}: {str(e)}")
