@@ -1,117 +1,203 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Kebijakan Privasi',
-  description: 'Kebijakan privasi FokusKonten — informasi tentang pengumpulan, penggunaan, dan perlindungan data pribadi pengunjung website dan pengguna aplikasi Android FokusKonten.',
+  title: 'Kebijakan Privasi Resmi | FokusKonten',
+  description: 'Kebijakan Privasi resmi FokusKonten — informasi mengenai pengumpulan, perlindungan, dan penggunaan data pengunjung website fokuskonten.my.id dan pengguna lini aplikasi mobile FokusKonten (termasuk 2048 Puzzle Game Legendaris) sesuai standar Google Play Developer Policy.',
   alternates: { canonical: 'https://fokuskonten.my.id/kebijakan-privasi' },
 }
 
 const sections = [
   {
-    title: '1. Informasi yang Dikumpulkan',
+    title: '1. Ruang Lingkup & Identitas FokusKonten',
     content: [
-      'Kami mengumpulkan informasi yang Anda berikan secara sukarela saat menghubungi kami melalui WhatsApp, email, atau media sosial. Informasi tersebut dapat mencakup nama, alamat email, nomor telepon, dan pesan yang Anda kirimkan.',
-      'Untuk aplikasi Android FokusKonten, kami dapat mengumpulkan informasi perangkat seperti model perangkat, versi sistem operasi, dan ID iklan (Advertising ID) melalui Google AdMob dan Firebase Analytics untuk keperluan iklan dan analitik.',
+      'Kebijakan Privasi ini mengatur bagaimana FokusKonten ("kami", "pengembang") mengumpulkan, menggunakan, menyimpan, dan melindungi informasi pribadi pengguna di seluruh layanan resmi kami, termasuk website fokuskonten.my.id, platform digital, serta lini aplikasi Android resmi yang kami kembangkan dan distribusikan di Google Play Store (termasuk 2048 Puzzle Game Legendaris dengan Package Name: com.fokuskonten.gamepuzzle, Apotek Pro, Kelontong Pro, dan aplikasi lainnya).',
+      'Kami berkomitmen penuh untuk menghormati privasi pengguna serta mematuhi seluruh Kebijakan Program Pengembang Google Play (Google Play Developer Program Policies), khususnya ketentuan Kebijakan Data Pengguna (User Data Policy).',
     ],
   },
   {
-    title: '2. Penggunaan Informasi',
+    title: '2. Informasi yang Dikumpulkan (Data Collection)',
+    content: [
+      'Kami mengumpulkan jumlah informasi yang sangat minim sesuai dengan kebutuhan operasional dan fungsionalitas setiap platform:',
+    ],
     list: [
-      'Menanggapi pertanyaan dan permintaan yang Anda kirimkan',
-      'Meningkatkan kualitas aplikasi Android',
-      'Keperluan analitik dan statistik penggunaan aplikasi',
-      'Menampilkan iklan yang relevan melalui Google AdMob',
-      'Mematuhi kewajiban hukum yang berlaku',
+      'Layanan Website & Kontak: Informasi sukarela yang Anda kirimkan saat menghubungi tim kami melalui formulir kontak, WhatsApp, atau email (nama, email, nomor kontak, serta pesan).',
+      'ID Iklan Google (Google Advertising ID / AAID): Pada aplikasi gratis yang didukung iklan seperti 2048 Puzzle (com.fokuskonten.gamepuzzle), ID Iklan perangkat dikumpulkan secara otomatis melalui SDK resmi Google Play Services dan Google AdMob untuk penayangan iklan yang relevan, pembatasan frekuensi iklan (frequency capping), serta pencegahan penipuan.',
+      'Data Diagnostik & Analitik Teknis: Informasi teknis non-pribadi seperti model perangkat, versi OS Android, dan crash log anonim melalui Google Firebase Crashlytics untuk mendeteksi error dan meningkatkan kestabilan performa aplikasi.',
+      'Data Lokal Aplikasi (On-Device Storage): Data riwayat permainan (seperti skor tertinggi, jumlah langkah, dan konfigurasi game) hanya disimpan di memori lokal perangkat Anda dan TIDAK PERNAH diunggah ke server kami.',
     ],
   },
   {
-    title: '3. Cookie',
-    content: [
-      'Website fokuskonten.my.id menggunakan cookie untuk meningkatkan pengalaman pengguna, menganalisis traffic, dan untuk keperluan iklan. Cookie adalah file kecil yang disimpan di perangkat Anda. Anda dapat mengatur preferensi cookie melalui pengaturan browser Anda.',
-    ],
-  },
-  {
-    title: '4. Google AdMob',
-    content: [
-      'Aplikasi Android FokusKonten menggunakan Google AdMob untuk menampilkan iklan. AdMob dapat mengumpulkan ID iklan (Advertising ID) perangkat Anda serta data penggunaan aplikasi untuk menayangkan iklan yang relevan. Data yang dikumpulkan oleh AdMob tidak digunakan untuk mengidentifikasi pengguna secara pribadi.',
-    ],
-  },
-  {
-    title: '5. Firebase Services',
-    content: [
-      'Aplikasi FokusKonten menggunakan layanan Firebase dari Google, termasuk Firebase Analytics untuk analitik penggunaan dan Firebase Crashlytics untuk pelaporan error. Data yang dikumpulkan bersifat anonim dan digunakan untuk meningkatkan stabilitas serta pengalaman pengguna.',
-    ],
-  },
-  {
-    title: '6. Pihak Ketiga',
-    content: [
-      'Kami dapat membagikan informasi Anda dengan pihak ketiga yang tepercaya, termasuk Google (AdMob, Firebase, Analytics), penyedia hosting, dan layanan terkait lainnya. Kami tidak menjual informasi pribadi Anda kepada pihak ketiga mana pun.',
-    ],
-  },
-  {
-    title: '7. Hak Anda',
+    title: '3. Tujuan Penggunaan Informasi',
     list: [
-      'Meminta akses ke data pribadi yang kami simpan',
-      'Meminta koreksi atau penghapusan data pribadi',
-      'Menolak penggunaan data untuk tujuan pemasaran',
-      'Menarik persetujuan kapan saja',
+      'Menyediakan, memelihara, dan mengoptimalkan fungsi website dan aplikasi FokusKonten.',
+      'Menayangkan iklan seluler yang relevan melalui Google AdMob pada aplikasi yang didukung iklan.',
+      'Mendeteksi gangguan teknis, memperbaiki bug/error, dan memastikan kestabilan aplikasi di berbagai perangkat.',
+      'Merespons pertanyaan, transaksi aset digital, dan permohonan bantuan teknis pengguna.',
+      'Mematuhi ketentuan hukum serta standar kepatuhan ekosistem Google Play Store.',
     ],
   },
   {
-    title: '8. Keamanan Data',
+    title: '4. Enkripsi dan Keamanan Data Saat Transit (Data Safety & Encryption)',
     content: [
-      'Kami berkomitmen untuk melindungi informasi pribadi Anda dengan menerapkan langkah-langkah keamanan teknis dan organisasi yang sesuai untuk mencegah akses tidak sah.',
+      'Keamanan data Anda merupakan prioritas utama FokusKonten. Sesuai dengan deklarasi Keamanan Data (Data Safety) Google Play kami:',
+      'Seluruh transmisi data antara aplikasi/website dengan jaringan pihak ketiga (seperti Google AdMob dan Firebase) dienkripsi saat transit menggunakan protokol kriptografi standar industri yang aman (HTTPS / TLS 1.3). Kami tidak pernah mengumpulkan atau menyimpan informasi pribadi yang sensitif seperti kata sandi, rekening keuangan, data kependudukan, atau lokasi fisik akurat (GPS).',
     ],
   },
   {
-    title: '9. Perubahan Kebijakan',
+    title: '5. Layanan Pihak Ketiga & SDK Terdaftar (Third-Party Services)',
     content: [
-      'Kebijakan privasi ini dapat diperbarui sewaktu-waktu. Perubahan akan diumumkan melalui halaman ini. Dengan terus menggunakan website dan aplikasi kami setelah perubahan, Anda menyetujui kebijakan yang diperbarui.',
+      'Aplikasi mobile kami mengintegrasikan Software Development Kit (SDK) resmi pihak ketiga dari Google LLC. Pengguna dapat meninjau kebijakan privasi masing-masing penyedia layanan secara langsung:',
+    ],
+    links: [
+      {
+        name: 'Google Play Services',
+        url: 'https://policies.google.com/privacy',
+        desc: 'Layanan autentikasi sistem dan kompatibilitas Android',
+      },
+      {
+        name: 'Google AdMob',
+        url: 'https://support.google.com/admob/answer/6128543?hl=id',
+        desc: 'Layanan penayangan iklan seluler Google',
+      },
+      {
+        name: 'Google Firebase Analytics & Crashlytics',
+        url: 'https://firebase.google.com/policies/analytics',
+        desc: 'Diagnostik performa dan pemantauan error aplikasi',
+      },
+    ],
+  },
+  {
+    title: '6. Privasi Anak-Anak (Children\'s Privacy / COPPA Compliance)',
+    content: [
+      'Layanan kami dan aplikasi seperti 2048 Puzzle ditujukan untuk audiens umum dari segala usia. Kami tidak secara sengaja mengumpulkan informasi identitas pribadi (Personally Identifiable Information) dari anak-anak di bawah usia 13 tahun (atau batas usia yang berlaku di yurisdiksi Anda).',
+      'Jika orang tua atau wali mengetahui bahwa anak di bawah 13 tahun telah memberikan data pribadi tanpa persetujuan, silakan hubungi kami di admin@fokuskonten.my.id. Kami akan segera mengambil langkah untuk menghapus informasi tersebut dari sistem kami.',
+    ],
+  },
+  {
+    title: '7. Retensi Data dan Mekanisme Permintaan Penghapusan Data (Data Deletion Request)',
+    content: [
+      'Masa Retensi: Data diagnostik dan analitik disimpan oleh pihak ketiga (Google) sesuai batas retensi standarnya (berkisar antara 2 hingga 14 bulan) sebelum dihapus secara otomatis.',
+      'Mekanisme Permintaan Penghapusan: Setiap pengguna berhak mengajukan penghapusan data atau riwayat yang tersimpan:',
+      '1. Melalui Email Resmi: Kirimkan permohonan ke admin@fokuskonten.my.id dengan subjek "Permintaan Penghapusan Data - [Nama Aplikasi]". Permohonan akan diverifikasi dan diselesaikan dalam waktu maksimal 7 (tujuh) hari kerja tanpa biaya.',
+      '2. Reset Data Lokal Game/Aplikasi: Di dalam game 2048 Puzzle, Anda dapat membuka menu Pengaturan > pilih "Hapus Semua Skor Tinggi", atau melalui pengaturan Android: Pengaturan > Aplikasi > 2048 Puzzle > Penyimpanan > Hapus Data.',
+      '3. Reset ID Iklan (AAID): Anda dapat mereset atau menonaktifkan personalisasi iklan kapan saja melalui perangkat Android: Pengaturan > Google > Iklan > Reset ID Iklan atau Hapus ID Iklan.',
+    ],
+  },
+  {
+    title: '8. Penggunaan Cookie Website',
+    content: [
+      'Website fokuskonten.my.id menggunakan cookie untuk meningkatkan pengalaman navigasi, memelihara sesi pengguna, dan menganalisis traffic situs secara agregat. Anda dapat mengelola atau menonaktifkan preferensi cookie melalui pengaturan browser Anda sewaktu-waktu.',
+    ],
+  },
+  {
+    title: '9. Pembaruan Kebijakan Privasi',
+    content: [
+      'Kami dapat memperbarui Kebijakan Privasi ini secara berkala guna menyesuaikan dengan pengembangan layanan, pembaruan aplikasi, atau regulasi hukum dan kebijakan Google Play yang berlaku. Setiap pembaruan akan dipublikasikan pada halaman ini dengan tanggal efektif yang disesuaikan.',
     ],
   },
 ]
 
 export default function PrivacyPolicyPage() {
   return (
-    <section className="pt-32 pb-20 bg-gradient-to-b from-neutral-50 to-white">
+    <section className="pt-32 pb-24 bg-gradient-to-b from-neutral-50 via-white to-neutral-50 min-h-screen">
       <div className="container-page">
         <div className="max-w-3xl mx-auto">
-          <span className="label-brand mb-4 inline-block">Legal</span>
-          <h1 className="heading-xl text-3xl sm:text-4xl text-neutral-900 mb-3 text-balance">
-            Kebijakan Privasi
-          </h1>
-          <p className="text-neutral-400 text-sm mb-10">Berlaku efektif: 1 Januari 2026</p>
+          {/* Badge Kategori FokusKonten */}
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-900 text-white text-xs font-semibold uppercase tracking-wider mb-5 shadow-sm">
+            <span>🛡️ Legal &amp; Kepatuhan Data</span>
+          </div>
 
-          <div className="space-y-4">
+          <h1 className="heading-xl text-3xl sm:text-4xl text-neutral-950 font-extrabold tracking-tight mb-4 text-balance">
+            Kebijakan Privasi Resmi
+          </h1>
+
+          <p className="text-neutral-600 text-sm sm:text-base leading-relaxed mb-6">
+            Pernyataan transparansi FokusKonten mengenai perlindungan data pribadi pengunjung situs web resmi dan pengguna seluruh lini aplikasi mobile FokusKonten.
+          </p>
+
+          {/* Kotak Identitas Resmi Aplikasi & Developer */}
+          <div className="rounded-2xl bg-white border border-neutral-200/80 shadow-card p-5 sm:p-6 mb-8 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm">
+            <div>
+              <span className="text-neutral-600 font-semibold block uppercase text-[11px] tracking-wider mb-1">Pengembang Resmi</span>
+              <span className="font-bold text-neutral-950 text-base">FokusKonten</span>
+            </div>
+            <div>
+              <span className="text-neutral-600 font-semibold block uppercase text-[11px] tracking-wider mb-1">Domain Resmi</span>
+              <a href="https://fokuskonten.my.id" className="font-bold text-brand-600 hover:underline text-base">fokuskonten.my.id</a>
+            </div>
+            <div>
+              <span className="text-neutral-600 font-semibold block uppercase text-[11px] tracking-wider mb-1">Aplikasi Terdaftar Play Store</span>
+              <span className="font-semibold text-neutral-800">2048 Puzzle (com.fokuskonten.gamepuzzle)</span>
+            </div>
+            <div>
+              <span className="text-neutral-600 font-semibold block uppercase text-[11px] tracking-wider mb-1">Tanggal Berlaku</span>
+              <span className="font-semibold text-neutral-800">1 Januari 2026 (Diperbarui 6 Sep 2026)</span>
+            </div>
+          </div>
+
+          {/* Konten Bagian-Bagian Kebijakan */}
+          <div className="space-y-6">
             {sections.map((s, i) => (
-              <div key={i} className="rounded-2xl bg-white border border-neutral-200/60 shadow-card p-6">
-                <h2 className="font-display font-semibold text-neutral-800 text-base mb-3">{s.title}</h2>
+              <div key={i} className="rounded-2xl bg-white border border-neutral-200/70 shadow-card p-6 sm:p-7 transition-all duration-200 hover:border-neutral-300">
+                <h2 className="font-display font-bold text-neutral-900 text-base sm:text-lg mb-3">
+                  {s.title}
+                </h2>
                 {s.content && s.content.map((p, j) => (
-                  <p key={j} className="text-neutral-500 text-sm leading-relaxed mb-3 last:mb-0">{p}</p>
+                  <p key={j} className="text-neutral-600 text-sm leading-relaxed mb-3 last:mb-0">{p}</p>
                 ))}
                 {s.list && (
-                  <ul className="space-y-2">
+                  <ul className="space-y-2.5 mt-3 pl-1">
                     {s.list.map((item, j) => (
-                      <li key={j} className="flex items-start gap-2 text-neutral-500 text-sm">
-                        <span className="w-1.5 h-1.5 rounded-full bg-brand-500 shrink-0 mt-1.5" />
-                        {item}
+                      <li key={j} className="flex items-start gap-2.5 text-neutral-600 text-sm leading-relaxed">
+                        <span className="w-1.5 h-1.5 rounded-full bg-brand-500 shrink-0 mt-2" />
+                        <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 )}
+                {s.links && (
+                  <div className="mt-4 pt-3 border-t border-neutral-100 space-y-2">
+                    <span className="text-xs font-semibold text-neutral-700 uppercase tracking-wider block mb-2">Tautan Kebijakan SDK Mitra:</span>
+                    {s.links.map((link, k) => (
+                      <div key={k} className="flex flex-col sm:flex-row sm:items-center justify-between p-2.5 rounded-xl bg-neutral-50 border border-neutral-100 text-xs gap-1.5 sm:gap-4">
+                        <span className="font-semibold text-neutral-800">{link.name} — <span className="font-normal text-neutral-500">{link.desc}</span></span>
+                        <a 
+                          href={link.url} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="text-brand-600 hover:text-brand-700 font-semibold underline shrink-0"
+                        >
+                          Kebijakan Resmi ↗
+                        </a>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
 
-            <div className="rounded-2xl bg-brand-50 border border-brand-100 p-6">
-              <h2 className="font-display font-semibold text-brand-700 text-base mb-3">10. Kontak</h2>
-              <p className="text-neutral-600 text-sm leading-relaxed mb-4">
-                Jika Anda memiliki pertanyaan tentang kebijakan privasi ini, silakan hubungi:
+            {/* Kartu Kontak Resmi */}
+            <div className="rounded-2xl bg-neutral-950 text-white p-6 sm:p-8 shadow-xl">
+              <h2 className="font-display font-bold text-white text-lg sm:text-xl mb-2">
+                10. Kontak Pengembang &amp; Bantuan Privasi
+              </h2>
+              <p className="text-neutral-300 text-sm leading-relaxed mb-6">
+                Apabila Anda memiliki pertanyaan, klarifikasi kepatuhan, atau mengajukan permohonan penghapusan data terkait website maupun aplikasi kami, silakan hubungi saluran resmi FokusKonten:
               </p>
-              <ul className="space-y-2 text-sm">
-                <li><span className="text-neutral-400">Email: </span><a href="mailto:admin@fokuskonten.my.id" className="text-brand-600 hover:underline">admin@fokuskonten.my.id</a></li>
-                <li><span className="text-neutral-400">WhatsApp: </span><a href="https://wa.me/6285183011318" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">+62 851-8301-1318</a></li>
-                <li><span className="text-neutral-400">Website: </span><a href="https://fokuskonten.my.id" className="text-brand-600 hover:underline">fokuskonten.my.id</a></li>
-              </ul>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                <div className="p-3.5 rounded-xl bg-neutral-900 border border-neutral-800">
+                  <span className="text-neutral-400 text-xs block mb-1">Email Resmi</span>
+                  <a href="mailto:admin@fokuskonten.my.id" className="text-brand-400 hover:underline font-semibold">
+                    admin@fokuskonten.my.id
+                  </a>
+                </div>
+                <div className="p-3.5 rounded-xl bg-neutral-900 border border-neutral-800">
+                  <span className="text-neutral-400 text-xs block mb-1">WhatsApp Developer</span>
+                  <a href="https://wa.me/6285183011318" target="_blank" rel="noopener noreferrer" className="text-brand-400 hover:underline font-semibold">
+                    +62 851-8301-1318
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
