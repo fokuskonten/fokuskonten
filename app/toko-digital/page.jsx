@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useMemo, useEffect, useRef, Suspense } from 'react'
-import { useSearchParams } from 'next/navigation'
+import { useRouter, useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import digitalProducts from '@/content/apps/digitalProducts.json'
 import storeCategories from '@/content/apps/store_categories.json'
@@ -61,81 +61,36 @@ function TokoDigitalContent() {
 
   const currentSortLabel = sortOptions.find((o) => o.id === sortBy)?.label || 'Terbaru'
 
-  const isInitializedRef = useRef(false)
-
-  // 1. Sync from URL search params (on mount, Next.js client routing, or browser back/forward)
+  // 1. Sync from URL search params (on mount, Next.js routing, or browser back/forward)
   useEffect(() => {
-    const catParam = searchParams.get('cat')
-    const fmtParam = searchParams.get('format')
-    const qParam = searchParams.get('q')
-    const sortParam = searchParams.get('sort')
+    const catParam = searchParams.get('cat') || 'Semua'
+    const fmtParam = searchParams.get('format') ? searchParams.get('format').toUpperCase() : 'Semua'
+    const qParam = searchParams.get('q') || ''
+    const sortParam = searchParams.get('sort') || 'newest'
     const pageParam = parseInt(searchParams.get('page'), 10)
+    const validPage = (!isNaN(pageParam) && pageParam > 0) ? pageParam : 1
 
-    setSelectedCategory(catParam || 'Semua')
-    setSelectedFormat(fmtParam ? fmtParam.toUpperCase() : 'Semua')
-    setSearchQuery(qParam || '')
-    setSortBy(sortParam || 'newest')
-    setCurrentPage((!isNaN(pageParam) && pageParam > 0) ? pageParam : 1)
-
-    isInitializedRef.current = true
+    setSelectedCategory((prev) => (prev !== catParam ? catParam : prev))
+    setSelectedFormat((prev) => (prev !== fmtParam ? fmtParam : prev))
+    setSearchQuery((prev) => (prev !== qParam ? qParam : prev))
+    setSortBy((prev) => (prev !== sortParam ? sortParam : prev))
+    setCurrentPage((prev) => (prev !== validPage ? validPage : prev))
   }, [searchParams])
 
-  // 2. Custom event listener from Navbar for zero-latency, instant in-page filter switches
-  useEffect(() => {
+  // Clean helper to update URL when user acts without triggering render loop
+  const updateUrl = (cat, fmt, q, sort, page) => {
     if (typeof window === 'undefined') return
+    const params = new URLSearchParams()
+    if (page > 1) params.set('page', String(page))
+    if (cat && cat !== 'Semua') params.set('cat', cat)
+    if (fmt && fmt !== 'Semua') params.set('format', fmt)
+    if (q && q.trim()) params.set('q', q.trim())
+    if (sort && sort !== 'newest') params.set('sort', sort)
 
-    const handleFilterChange = (e) => {
-      const { category, format } = e.detail || {}
-      if (category !== undefined) setSelectedCategory(category)
-      if (format !== undefined) setSelectedFormat(format)
-      setSearchQuery('')
-      setCurrentPage(1)
-    }
-
-    const handlePopState = () => {
-      const params = new URLSearchParams(window.location.search)
-      const catParam = params.get('cat')
-      const fmtParam = params.get('format')
-      const qParam = params.get('q')
-      const sortParam = params.get('sort')
-      const pageParam = parseInt(params.get('page'), 10)
-
-      setSelectedCategory(catParam || 'Semua')
-      setSelectedFormat(fmtParam ? fmtParam.toUpperCase() : 'Semua')
-      setSearchQuery(qParam || '')
-      setSortBy(sortParam || 'newest')
-      setCurrentPage((!isNaN(pageParam) && pageParam > 0) ? pageParam : 1)
-    }
-
-    window.addEventListener('fk_filter_change', handleFilterChange)
-    window.addEventListener('popstate', handlePopState)
-
-    return () => {
-      window.removeEventListener('fk_filter_change', handleFilterChange)
-      window.removeEventListener('popstate', handlePopState)
-    }
-  }, [])
-
-  // 3. Keep URL in sync when filter or page state changes
-  useEffect(() => {
-    if (!isInitializedRef.current) return
-
-    if (typeof window !== 'undefined') {
-      const params = new URLSearchParams()
-      if (currentPage > 1) params.set('page', String(currentPage))
-      if (selectedCategory && selectedCategory !== 'Semua') params.set('cat', selectedCategory)
-      if (selectedFormat && selectedFormat !== 'Semua') params.set('format', selectedFormat)
-      if (searchQuery && searchQuery.trim()) params.set('q', searchQuery.trim())
-      if (sortBy && sortBy !== 'newest') params.set('sort', sortBy)
-
-      const qs = params.toString()
-      const newUrl = qs ? `/toko-digital/?${qs}` : '/toko-digital/'
-      const currentFull = window.location.pathname + window.location.search
-      if (currentFull !== newUrl) {
-        window.history.replaceState(null, '', newUrl)
-      }
-    }
-  }, [selectedCategory, selectedFormat, searchQuery, sortBy, currentPage])
+    const qs = params.toString()
+    const newUrl = qs ? `/toko-digital/?${qs}` : '/toko-digital/'
+    window.history.replaceState(null, '', newUrl)
+  }
 
   // Filter & Sort products realtime
   const filteredProducts = useMemo(() => {
@@ -200,6 +155,7 @@ function TokoDigitalContent() {
     setSelectedFormat('Semua')
     setCurrentPage(1)
     setIsCategoryOpen(false)
+    updateUrl(cat, 'Semua', searchQuery, sortBy, 1)
   }
 
   const handleFormatSelect = (fmt) => {
@@ -207,21 +163,25 @@ function TokoDigitalContent() {
     setSelectedCategory('Semua')
     setCurrentPage(1)
     setIsCategoryOpen(false)
+    updateUrl('Semua', fmt, searchQuery, sortBy, 1)
   }
 
   const handleSortSelect = (sortId) => {
     setSortBy(sortId)
     setCurrentPage(1)
     setIsSortOpen(false)
+    updateUrl(selectedCategory, selectedFormat, searchQuery, sortId, 1)
   }
 
   const handleSearchChange = (val) => {
     setSearchQuery(val)
     setCurrentPage(1)
+    updateUrl(selectedCategory, selectedFormat, val, sortBy, 1)
   }
 
   const handlePageChange = (newPage) => {
     setCurrentPage(newPage)
+    updateUrl(selectedCategory, selectedFormat, searchQuery, sortBy, newPage)
     if (typeof window !== 'undefined') {
       const headerEl = document.getElementById('katalog-header')
       if (headerEl) {
@@ -239,9 +199,7 @@ function TokoDigitalContent() {
     try {
       sessionStorage.removeItem('fk_toko_session')
     } catch (e) {}
-    if (typeof window !== 'undefined') {
-      window.history.replaceState(null, '', '/toko-digital/')
-    }
+    updateUrl('Semua', 'Semua', '', 'newest', 1)
   }
 
   return (
