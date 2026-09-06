@@ -40,48 +40,56 @@ const sections = [
     ],
   },
   {
-    title: '6. Sinkronisasi Cloud (Firebase)',
+    title: '6. Sinkronisasi Cloud & Cadangan Data',
     content: [
-      'Jika Anda mengaktifkan sinkronisasi atau masuk dengan akun, data manajemen (per akun, produk, dan pengaturan dapat dikirim ke Firebase untuk keperluan lintas perangkat, antar cabang, dan cadangan cloud. Sinkronisasi hanya berjalan setelah Anda memberikan izin secara eksplisit melalui tombol masuk yang sedang dalam pengaturan aplikasi.',
+      'Jika Anda mengaktifkan fitur sinkronisasi atau masuk dengan akun multi-perangkat/cabang, data operasional bisnis (katalog obat, stok, dan transaksi kasir) disinkronkan secara aman ke Server Fokus Konten (api.fokuskonten.my.id) menggunakan enkripsi HTTPS/TLS dan WebSocket.',
+      'Untuk berkas cadangan berskala besar (arsip ZIP cadangan dan foto bukti transaksi/stempel waktu), data dicadangkan langsung ke akun Google Drive pribadi Anda melalui otentikasi Google OAuth 2.0 resmi.',
     ],
   },
   {
-    title: '7. Akun & Peran Pengguna',
+    title: '7. Akun & Otentikasi',
     content: [
-      'Aplikasi mendukung akun pemilik (owner) dan sub-akun (sub-account) dengan pengaturan izin per peran. Autentikasi dilakukan melalui Firebase Auth (email dan kata sandi atau masuk Google) yang dikelola oleh Google.',
+      'Aplikasi mendukung akun pemilik (owner) dan sub-akun (kasir/staf) dengan hak akses berjenjang. Otentikasi akun pengguna dilakukan secara aman melalui Google Sign-In (Firebase Auth) yang dikelola langsung oleh infrastruktur resmi Google.',
     ],
   },
   {
-    title: '8. Iklan & Analitik',
+    title: '8. Iklan & Pemantauan Stabilitas',
     content: [
-      'Aplikasi dapat menampilkan iklan melalui Google AdMob, yang menggunakan ID Iklan (Advertising ID) perangkat untuk menayangkan iklan yang relevan. Aplikasi juga menggunakan Firebase Perspectives dan Firebase Crashlytics untuk statistik yang bersifat anonim dan laporan kegagalan agar cepat stabil.',
+      'Aplikasi dapat menampilkan iklan bagi pengguna non-premium melalui Google AdMob, yang menggunakan ID Iklan (Advertising ID) perangkat sesuai persetujuan privasi sistem Android. Untuk memastikan stabilitas performa dan mendeteksi potensi crash, aplikasi menggunakan Firebase Crashlytics secara anonim tanpa merekam data identitas pribadi.',
     ],
   },
   {
     title: '9. Langganan Premium',
     content: [
-      'Fitur premium melalui pembelian dalam aplikasi menggunakan Google Play Billing. Transaksi pembayaran dikelola sepenuhnya oleh Google dan tidak pernah diakses atau disimpan oleh aplikasi.',
+      'Fitur premium dan penghapusan batas produk diproses melalui pembelian dalam aplikasi menggunakan Google Play Billing resmi. Seluruh rincian transaksi pembayaran dikelola sepenuhnya oleh Google Play dan tidak pernah diakses atau disimpan oleh server kami.',
     ],
   },
   {
     title: '10. Berbagi Data ke Pihak Ketiga',
     content: [
-      'Kami tidak menjual informasi pribadi Anda. Data manajemen apotek Anda tidak pernah dibagikan ke pihak ketiga. In an mudah bagi semua layanan Google yang terintegrasi (Firebase Auth, Firestore, Analytics, Crashlytics, AdMob, Play Integrity) berlaku sesuai kebijakan privasi Google masing-masing.',
-  ],
-  },
-  {
-    title: '11. Hak Anda',
-    list: [
-      'Mengakses, mengubah, dan menghapus data Anda kapan saja melalui fitur manajemen data di dalam aplikasi',
-      'Menarik persetujuan untuk sinkronisasi kapan saja dengan keluar dari akun di pengaturan',
-      'Mencabut izin kamera, lokasi, Bluetooth, dan notifikasi melalui pengaturan sistem operasi kapan saja',
-      'Menghapus seluruh data aplikasi melalui uninstall aplikasi dari perangkat',
+      'Kami tidak pernah menjual, menyewakan, atau memperdagangkan data bisnis apotek maupun informasi pribadi Anda kepada pihak ketiga manapun. Layanan pihak ketiga resmi yang terintegrasi (Google Play Services, Firebase Auth, Firebase Crashlytics, AdMob, dan Play Integrity) tunduk pada Kebijakan Privasi Google masing-masing.',
     ],
   },
   {
-    title: '12. Perubahan Kebijakan',
+    title: '11. Kebijakan Penghapusan Data (Data Deletion)',
     content: [
-      'Kebijakan privasi ini dapat diperbarui sewaktu-waktu. Perubahan akan diumumkan melalui halaman ini dan aplikasi. Dengan terus menggunakan Apotek Pro setelah perubahan, Anda menyetujui kebijakan yang diperbarui.',
+      'Pengguna memiliki kendali penuh atas data mereka. Anda dapat menghapus data lokal kapan saja melalui menu pengaturan aplikasi atau dengan menghapus data aplikasi dari sistem Android.',
+      'Bagi pengguna yang telah mengaktifkan sinkronisasi akun ke Server Fokus Konten, Anda berhak mengajukan penghapusan akun beserta seluruh data riwayat bisnis di server kami dengan mengirimkan permohonan melalui email resmi ke admin@fokuskonten.my.id. Data akun dan database cloud Anda akan dihapus permanen dalam waktu maksimal 7 hari kerja.',
+    ],
+  },
+  {
+    title: '12. Hak Pengguna',
+    list: [
+      'Mengakses, mengubah, dan mengekspor data apotek Anda kapan saja ke format Excel/CSV',
+      'Mencadangkan dan memulihkan data secara mandiri melalui Google Drive pribadi Anda',
+      'Mencabut izin kamera, lokasi, Bluetooth, dan notifikasi melalui pengaturan sistem Android kapan saja',
+      'Menghapus seluruh database dan akun bisnis baik di perangkat maupun di cloud',
+    ],
+  },
+  {
+    title: '13. Perubahan Kebijakan',
+    content: [
+      'Kebijakan privasi ini dapat diperbarui sewaktu-waktu sejalan dengan pengembangan fitur atau regulasi baru. Setiap perubahan akan diumumkan melalui pembaruan aplikasi dan situs resmi kami. Penggunaan berkelanjutan atas Apotek Pro merupakan persetujuan Anda terhadap ketentuan yang diperbarui.',
     ],
   },
 ]
@@ -96,10 +104,10 @@ export default function ApotekProPrivacyPage() {
             Kebijakan Privasi — Apotek Pro
           </h1>
           <p className="text-neutral-400 text-sm mb-2">
-            Berlaku efektif: 1 Juli 2026
+            Berlaku efektif: 6 September 2026
           </p>
           <p className="text-neutral-500 text-sm mb-10">
-            Versi 2.0 untuk aplikasi <Link href="/aplikasi/apotekpro" className="text-brand-600 hover:underline">Apotek Pro</Link> (com.fokuskonten.apotekpro) yang dikembangkan oleh FokusKonten.
+            Versi 1.0.1 untuk aplikasi <Link href="/aplikasi/apotekpro" className="text-brand-600 hover:underline">Apotek Pro</Link> (com.fokuskonten.apotekpro) yang dikembangkan oleh FokusKonten.
           </p>
 
           <div className="space-y-4">
@@ -123,7 +131,7 @@ export default function ApotekProPrivacyPage() {
             ))}
 
             <div className="rounded-2xl bg-brand-50 border border-brand-100 p-6">
-              <h2 className="font-display font-semibold text-brand-700 text-base mb-3">13. Kontak</h2>
+              <h2 className="font-display font-semibold text-brand-700 text-base mb-3">14. Kontak</h2>
               <p className="text-neutral-600 text-sm leading-relaxed mb-4">
                 Jika Anda memiliki pertanyaan tentang kebijakan privasi ini, silakan hubungi:
               </p>

@@ -21,8 +21,8 @@ export default function ApotekProTermsPage() {
       content: 'Anda bertanggung jawab penuh atas keakuratan data yang dimasukkan, kepatuhan usaha Anda terhadap peraturan kefarmasian dan perpajakan yang berlaku, serta penggunaan medis informasi yang tersimpan. FokusKonten tidak memberikan saran medis, resep, atau rekomendasi mengenai penggunaan obat.',
     },
     {
-      title: '4. Data & Back Memory',
-      content: 'Data disimpan di perangkat Anda dan dapat dicadangkan ke penyimpanan local atau disinkronkan ke cloud sesuai pilihan Anda. Kami tidak bertanggung jawab atas kehilangan data yang diwakili oleh perangkat yang rusak, hilang, atau terhapus karena wanat pengguna. Pastikan Anda melakukan pencadangan (backup) secara berkala.',
+      title: '4. Data & Cadangan (Backup)',
+      content: 'Data disimpan di perangkat Anda dan dapat dicadangkan ke penyimpanan lokal atau disinkronkan ke server cloud sesuai pilihan Anda. Kami tidak bertanggung jawab atas kehilangan data yang diakibatkan oleh perangkat yang rusak, hilang, atau terhapus karena kelalaian pengguna. Pastikan Anda melakukan pencadangan (backup) secara berkala.',
     },
     {
       title: '5. Akun & Multi-Akun',
@@ -38,11 +38,11 @@ export default function ApotekProTermsPage() {
     },
     {
       title: '8. Kekayaan Intelektual',
-      content: 'Seluruh hak cipta, merek, dan kekayaan intelektual dalam Ap May Pro adalah milik Fokuskonten dan dilindungi oleh undang-undang. Anda tidak diperkenankan meniru, mereverse engineer, mengubah, atau mengganti byteode aplikasi tanpa izin tertulis.',
+      content: 'Seluruh hak cipta, merek, dan kekayaan intelektual dalam Apotek Pro adalah milik FokusKonten dan dilindungi oleh undang-undang. Anda tidak diperkenankan meniru, mereverse-engineer, mengubah, atau mendistribusikan ulang aplikasi tanpa izin tertulis.',
     },
     {
       title: '9. Batasan Tanggung Jawab',
-      content: 'Sejauh diizinkan hukum yang berlaku, FokusKonten yang mekanisme bertanggung jawab atas kerugian langsung, tidak langsung, insidental, khusus, atau konsekuensial, termasuk kehilangan data atau keuntungan, yang timbul dari penggunaan atau ketidakmampuan menggunakan aplikasi. Aplikasi diberikan "sebagaimana adanya" (as is) tanpa jaminan.',
+      content: 'Sejauh diizinkan hukum yang berlaku, FokusKonten tidak bertanggung jawab atas kerugian langsung, tidak langsung, insidental, khusus, atau konsekuensial, termasuk kehilangan data atau keuntungan, yang timbul dari penggunaan atau ketidakmampuan menggunakan aplikasi. Aplikasi diberikan "sebagaimana adanya" (as is) tanpa jaminan komersial khusus.',
     },
     {
       title: '10. Hukum yang Berlaku',
@@ -50,7 +50,7 @@ export default function ApotekProTermsPage() {
     },
     {
       title: '11. Perubahan Syarat',
-      content: 'FokusKonten berhak mengubah syarat dan ketentuan ini sewaktu-waktu dengan memperhatikannya pada halaman ini dan pembaruan aplikasi. Penggunaan kelanjutan merupakan bentuk penerimaan Anda terhadap syarat yang baru.',
+      content: 'FokusKonten berhak mengubah syarat dan ketentuan ini sewaktu-waktu dengan menampilkannya pada halaman ini dan pembaruan aplikasi. Penggunaan berkelanjutan merupakan bentuk penerimaan Anda terhadap syarat yang baru.',
     },
   ]
 
@@ -63,7 +63,7 @@ export default function ApotekProTermsPage() {
             Syarat &amp; Ketentuan — Apotek Pro
           </h1>
           <p className="text-neutral-400 text-sm mb-2">
-            Terakhir diperbarui: 1 Juli 2026
+            Terakhir diperbarui: 6 September 2026
           </p>
           <p className="text-neutral-500 text-sm mb-10">
             Berlaku untuk aplikasi <Link href="/aplikasi/apotekpro" className="text-brand-600 hover:underline">Apotek Pro</Link> (com.fokuskonten.apotekpro).

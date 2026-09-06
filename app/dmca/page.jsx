@@ -31,7 +31,7 @@ export default function DmcaPage() {
               <h2 className="font-display font-semibold text-neutral-800 text-base mb-3">2. Prosedur Pelaporan</h2>
               <p className="text-neutral-500 text-sm leading-relaxed mb-4">
                 Jika Anda yakin bahwa konten yang tersedia di website atau aplikasi FokusKonten melanggar hak cipta Anda, 
-                silakan kiramkan pemberitahuan tertulis kepada kami yang mencakup informasi berikut:
+                silakan kirimkan pemberitahuan tertulis kepada kami yang mencakup informasi berikut:
               </p>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2 text-neutral-500 text-sm">

@@ -1,11 +1,11 @@
-﻿[
+[
     {
         "id": "apotekpro",
         "name": "Apotek Pro",
         "package": "com.fokuskonten.apotekpro",
         "category": "Bisnis",
         "status": "published",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "targetSdk": 36,
         "minSdk": 24,
         "icon": "/app-icons/apotekpro.png",
@@ -23,7 +23,9 @@
         "targetSdk": 36,
         "minSdk": 24,
         "icon": "/app-icons/tokokelontongpro.png",
-        "description": "Aplikasi kasir praktis untuk warung dan toko kelontong. Barcode scanner kamera instan, pencatatan hutang pelanggan, dan rekap laporan omzet harian."
+        "description": "Aplikasi kasir praktis untuk warung dan toko kelontong. Barcode scanner kamera instan, pencatatan hutang pelanggan, dan rekap laporan omzet harian.",
+        "privacyPolicy": "/aplikasi/tokokelontongpro/privacy",
+        "termsOfService": "/aplikasi/tokokelontongpro/terms"
     },
     {
         "id": "bacaquran",

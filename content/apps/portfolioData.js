@@ -129,6 +129,8 @@ export const portfolioData = {
       primary: { label: 'Download di Google Play', href: 'https://play.google.com/store/apps/details?id=com.fokuskonten.tokokelontongpro', type: 'playstore' },
       secondary: { label: 'Konsultasi WhatsApp', href: 'https://wa.me/6285183011318?text=Halo%20FokusKonten,%20saya%20tertarik%20dengan%20Kelontong%20Pro', type: 'whatsapp' },
     },
+    privacyPolicy: '/aplikasi/tokokelontongpro/privacy',
+    termsOfService: '/aplikasi/tokokelontongpro/terms',
   },
   bacaquran: {
     id: 'bacaquran',

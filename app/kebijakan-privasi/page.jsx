@@ -15,15 +15,20 @@ const sections = [
     ],
   },
   {
-    title: '2. Informasi yang Dikumpulkan (Data Collection)',
+    title: '2. Informasi yang Dikumpulkan (Data Collection) & Ketentuan Aplikasi Mobile',
     content: [
-      'Kami mengumpulkan jumlah informasi yang sangat minim sesuai dengan kebutuhan operasional dan fungsionalitas setiap platform:',
+      'Sesuai dengan ketentuan pada masing-masing aplikasi mobile (.kt) dan standar Google Play Store, pengumpulan dan pemrosesan data diatur sebagai berikut:',
     ],
     list: [
-      'Layanan Website & Kontak: Informasi sukarela yang Anda kirimkan saat menghubungi tim kami melalui formulir kontak, WhatsApp, atau email (nama, email, nomor kontak, serta pesan).',
-      'ID Iklan Google (Google Advertising ID / AAID): Pada aplikasi gratis yang didukung iklan seperti 2048 Puzzle (com.fokuskonten.gamepuzzle), ID Iklan perangkat dikumpulkan secara otomatis melalui SDK resmi Google Play Services dan Google AdMob untuk penayangan iklan yang relevan, pembatasan frekuensi iklan (frequency capping), serta pencegahan penipuan.',
-      'Data Diagnostik & Analitik Teknis: Informasi teknis non-pribadi seperti model perangkat, versi OS Android, dan crash log anonim melalui Google Firebase Crashlytics untuk mendeteksi error dan meningkatkan kestabilan performa aplikasi.',
-      'Data Lokal Aplikasi (On-Device Storage): Data riwayat permainan (seperti skor tertinggi, jumlah langkah, dan konfigurasi game) hanya disimpan di memori lokal perangkat Anda dan TIDAK PERNAH diunggah ke server kami.',
+      'Apotek Pro (com.fokuskonten.apotekpro): Mengumpulkan data transaksi penjualan obat, stok obat, data pelanggan, dan data resep dokter untuk keperluan manajemen apotek. Seluruh data disimpan secara lokal di perangkat pengguna dan tidak dikirimkan ke server eksternal tanpa izin pengguna.',
+      'Kelontong Pro (com.fokuskonten.tokokelontongpro): Mengumpulkan data transaksi penjualan produk, stok barang, data pelanggan, dan catatan hutang/kasbon piutang untuk keperluan operasional toko retail. Data disimpan secara lokal di perangkat dan tidak dikirimkan ke pihak ketiga.',
+      'Penggunaan Kamera: Aplikasi menggunakan kamera perangkat untuk memindai barcode produk dan obat. Data kamera hanya diproses secara real-time di perangkat dan tidak disimpan atau dikirimkan ke pihak ketiga.',
+      'Penyimpanan & Enkripsi Data: Semua data bisnis disimpan di database lokal yang dienkripsi menggunakan SQLCipher (AES-256). Pengguna bertanggung jawab atas keamanan perangkat fisik mereka.',
+      'Backup Data & Sinkronisasi: Fitur backup memungkinkan pengguna menyimpan salinan data ke penyimpanan internal perangkat, akun Google Drive pribadi, atau Server Fokus Konten (api.fokuskonten.my.id) jika sinkronisasi cloud diaktifkan secara eksplisit oleh pemilik.',
+      'Izin Aplikasi (App Permissions): Aplikasi memerlukan izin kamera untuk pemindaian barcode, izin notifikasi untuk pengingat stok dan kedaluwarsa, izin lokasi untuk pencatatan alamat bisnis/koordinat, serta izin Bluetooth untuk menghubungkan printer kasir thermal ESC/POS.',
+      'Keamanan Data: Data pengguna diamankan dengan enkripsi lokal AES-256 via SQLCipher. Aplikasi tidak mengirimkan data sensitif ke internet kecuali untuk fitur sinkronisasi cloud yang diaktifkan secara eksplisit oleh pemilik.',
+      'ID Iklan & Analitik Stabilitas: Aplikasi gratis menggunakan Google AdMob (Advertising ID) untuk penayangan iklan yang relevan, serta Firebase Crashlytics untuk pemantauan crash log anonim demi stabilitas sistem tanpa merekam data identitas pribadi.',
+      'Layanan Website & Kontak: Informasi sukarela yang Anda kirimkan saat menghubungi kami via form kontak, WhatsApp, atau email (nama, email, nomor telepon, dan pesan).',
     ],
   },
   {
@@ -127,7 +132,7 @@ export default function PrivacyPolicyPage() {
             </div>
             <div>
               <span className="text-neutral-600 font-semibold block uppercase text-[11px] tracking-wider mb-1">Aplikasi Terdaftar Play Store</span>
-              <span className="font-semibold text-neutral-800">2048 Puzzle (com.fokuskonten.gamepuzzle)</span>
+              <span className="font-semibold text-neutral-800">Apotek Pro, Kelontong Pro, 2048 Puzzle, BacaQur&apos;an</span>
             </div>
             <div>
               <span className="text-neutral-600 font-semibold block uppercase text-[11px] tracking-wider mb-1">Tanggal Berlaku</span>
