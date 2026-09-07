@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Muhari — Founder & Lead Engineer FokusKonten | Portofolio Resmi',
-  description: 'Profil dan portofolio rekayasa teknologi Muhari, Founder & Lead Engineer FokusKonten. Praktisi software engineering aplikasi Android native, desktop tools, web modern, dan digital creative assets.',
+  title: 'Muhari — Founder, Lead Engineer & 3D Woodcraft Artisan | FokusKonten',
+  description: 'Profil dan portofolio rekayasa teknologi Muhari, Founder & Lead Engineer FokusKonten. Praktisi software engineering aplikasi Android native, desktop tools, web modern, 3D modeling, dan woodworking power tools.',
   alternates: { canonical: 'https://fokuskonten.my.id/muhari' },
 }
 
@@ -44,6 +44,15 @@ const activeProducts = [
     icon: '🛠️',
   },
   {
+    name: 'Woodworking & 3D Modeling Studio',
+    category: 'Physical & Digital Craft',
+    platform: 'Power Tools • Solid Wood • Blender 3D',
+    desc: 'Perancangan 3D CAD modeling furnitur & dekorasi interior menggunakan Blender 3D, serta eksekusi manufaktur kayu solid presisi dengan Power Tools (Table Saw, Miter Saw, Router, Trimmer, Jointer, Bor). Spesialis organizer meja kerja, mebel custom, dan produk fungsional estetik.',
+    link: '/tentang',
+    badge: 'PowerTools & 3D',
+    icon: '🪵',
+  },
+  {
     name: 'BacaQur\'an Pro',
     category: 'Mobile Application',
     platform: 'Android Native',
@@ -68,7 +77,7 @@ const officialChannels = [
   { name: 'Email Resmi Studio', link: 'mailto:admin@fokuskonten.my.id', handle: 'admin@fokuskonten.my.id', icon: '✉️' },
   { name: 'YouTube Official', link: 'https://www.youtube.com/@fokuskonten', handle: '@fokuskonten', icon: '🎥' },
   { name: 'GitHub Repository', link: 'https://github.com/fokuskonten', handle: 'github.com/fokuskonten', icon: '💻' },
-  { name: 'TikTok Official', link: 'https://tiktok.com/@fokuskonten', handle: '@fokuskonten', icon: '📱' },
+  { name: 'TikTok Official', link: 'https://tiktok.com/@fokuskonten.my.id', handle: '@fokuskonten.my.id', icon: '📱' },
   { name: 'Instagram Studio', link: 'https://instagram.com/fokuskonten', handle: '@fokuskonten', icon: '📸' },
 ]
 
@@ -85,6 +94,19 @@ const skillCategories = [
       'CameraX Barcode Scanning & TimeStamp',
       'Thermal Bluetooth Printer (ESC/POS)',
       'Google Play Console Release & Keystore',
+    ],
+  },
+  {
+    title: 'Woodworking, Power Tools & 3D Modeling',
+    icon: '🪵',
+    desc: 'Pengerjaan kayu solid fisik bertenaga mesin (power tools), teknik sambungan presisi (joinery), dan pemodelan digital 3D.',
+    skills: [
+      'Penguasaan Power Tools (Table Saw, Miter Saw, Router, Gerinda, Bor)',
+      '3D Modeling Furnitur & Interior (Blender 3D)',
+      'Pembuatan Organizer Meja Kerja & Home Decor Solid',
+      'Teknik Sambungan Presisi (Mortise, Tenon, Pocket Hole, Dowel)',
+      'Finishing Kayu Komersial (Sanding, Wood Stain, Clear Polyurethane)',
+      'Kalibrasi Akurasi Sudut & Pemeliharaan Mesin Workshop',
     ],
   },
   {
@@ -142,8 +164,8 @@ const skillCategories = [
 const engineeringMilestones = [
   {
     period: '2021 — Sekarang',
-    title: 'Founder & Lead Software Engineer — FokusKonten',
-    desc: 'Merancang dan membangun seluruh ekosistem produk digital FokusKonten: lini aplikasi kasir mobile native (Apotek Pro, Kelontong Pro), software desktop otomasi bisnis (WhatsApp Lead CRM Pro), serta platform web statis modern berkapasitas 2.800+ produk digital dengan integrasi payment gateway dan cloud drive sync.',
+    title: 'Founder, Lead Engineer & 3D Woodcraft Artisan — FokusKonten',
+    desc: 'Merancang dan membangun seluruh ekosistem produk FokusKonten: lini aplikasi kasir mobile native (Apotek Pro, Kelontong Pro), software desktop otomasi bisnis (WhatsApp Lead CRM Pro), platform web 2.800+ aset kreatif, serta workshop perakitan kayu solid berbasis Power Tools dan 3D modeling Blender.',
   },
   {
     period: '2018 — 2021',
@@ -153,7 +175,7 @@ const engineeringMilestones = [
   {
     period: '2015 — 2018',
     title: 'Industrial Automation & Manufacturing Precision',
-    desc: 'Berpengalaman dalam pengoperasian mesin manufaktur robotik, alur logistik internasional, serta disiplin kontrol kualitas ketat yang membentuk etos kerja presisi dan keandalan rekayasa sistem hingga saat ini.',
+    desc: 'Berpengalaman dalam pengoperasian mesin manufaktur robotik, alur logistik internasional, serta disiplin kontrol kualitas ketat yang membentuk etos kerja presisi dan keandalan rekayasa mekanik fisik hingga saat ini.',
   },
 ]
 
@@ -198,16 +220,16 @@ export default function MuhariProfilePage() {
                 Muhari
               </h1>
               <p className="text-sm sm:text-base font-medium text-emerald-400 mb-4">
-                Mobile App Engineer • Desktop System Developer • Creative Tech Builder
+                Mobile App Engineer • 3D Modeler • Woodcraft PowerTools Artisan
               </p>
               <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed max-w-2xl mb-6">
-                Praktisi rekayasa perangkat lunak dan arsitektur produk digital di balik ekosistem <strong>FokusKonten</strong>. Berfokus pada pembangunan aplikasi mobile Android native berbasis <em>offline-first</em>, software desktop efisien, dan katalog aset kreatif komersial berstandar produksi nyata.
+                Praktisi rekayasa multidisiplin di balik ekosistem <strong>FokusKonten</strong>. Menyatukan ketelitian logika komputasi aplikasi mobile Android native <em>offline-first</em>, software desktop, perancangan visual digital, hingga presisi fisik permesinan kayu (*woodworking power tools*) dan pemodelan 3D Blender.
               </p>
 
               {/* Action CTAs */}
               <div className="flex flex-wrap items-center justify-center md:justify-start gap-3">
                 <a
-                  href="https://wa.me/6285183011318?text=Halo%20Muhari%20(FokusKonten),%20saya%20tertarik%20untuk%20diskusi%20proyek%20software"
+                  href="https://wa.me/6285183011318?text=Halo%20Muhari%20(FokusKonten),%20saya%20tertarik%20untuk%20diskusi%20proyek%20software%20atau%20custom%20craft"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-neutral-950 font-display font-semibold text-xs sm:text-sm shadow-md hover:bg-neutral-100 transition-all transform hover:-translate-y-0.5"
@@ -236,14 +258,14 @@ export default function MuhariProfilePage() {
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
             <div>
               <span className="text-xs font-mono font-semibold uppercase tracking-wider text-emerald-700 block mb-1">
-                Active Software Ecosystem
+                Active Projects &amp; Ecosystem
               </span>
               <h2 className="text-2xl sm:text-3xl font-display font-bold text-neutral-950">
-                Portofolio Software &amp; Produk Nyata
+                Portofolio Karya Nyata: Software &amp; Woodcraft
               </h2>
             </div>
             <p className="text-xs text-neutral-500 max-w-sm">
-              Seluruh karya dirancang dan dibangun secara mandiri dengan standar performa tinggi, stabilitas teruji, dan siap pakai.
+              Seluruh karya dirancang dan dibangun secara mandiri dengan standar ketelitian tinggi, fungsionalitas nyata, dan keindahan estetika.
             </p>
           </div>
 
@@ -281,17 +303,17 @@ export default function MuhariProfilePage() {
           </div>
         </div>
 
-        {/* ── SECTION: 5 PILAR KEAHLIAN TEKNIS ───────────────────────────── */}
+        {/* ── SECTION: 6 PILAR KEAHLIAN TEKNIS ───────────────────────────── */}
         <div className="mb-16">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="text-xs font-mono font-semibold uppercase tracking-wider text-emerald-700 block mb-2">
-              Technical Matrix
+              Multidisciplinary Matrix
             </span>
             <h2 className="text-2xl sm:text-3xl font-display font-bold text-neutral-950 mb-3">
-              5 Pilar Keahlian &amp; Rekayasa Sistem
+              6 Pilar Keahlian: Software, 3D &amp; PowerTools
             </h2>
             <p className="text-neutral-600 text-xs sm:text-sm leading-relaxed">
-              Kombinasi nyata antara arsitektur logika pemrograman komputasi, keamanan data lokal, serta presisi visual komersial.
+              Integrasi nyata antara kecakapan logika komputasi, seni pemodelan 3D, serta presisi ketukangan mesin kayu bertenaga (*power tools*).
             </p>
           </div>
 
@@ -326,7 +348,7 @@ export default function MuhariProfilePage() {
               Engineering Journey
             </span>
             <h2 className="text-xl sm:text-2xl font-display font-bold text-neutral-900 mb-6">
-              Rekam Jejak &amp; Pengalaman Rekayasa
+              Rekam Jejak Rekayasa Sistem &amp; Manufaktur
             </h2>
             <div className="space-y-6">
               {engineeringMilestones.map((item, idx) => (
@@ -352,7 +374,7 @@ export default function MuhariProfilePage() {
                 Saluran Komunikasi Resmi
               </h3>
               <p className="text-xs text-neutral-400 leading-relaxed mb-6">
-                Terhubung langsung dengan tim FokusKonten untuk konsultasi aplikasi, pemesanan lisensi, atau kemitraan.
+                Terhubung langsung dengan tim FokusKonten untuk konsultasi aplikasi, custom software, atau kreasi desain &amp; kerajinan.
               </p>
               
               <div className="space-y-3">

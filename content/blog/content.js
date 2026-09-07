@@ -200,7 +200,7 @@ const content = {
   <h2 class="text-xl font-bold text-charcoal-900 mt-8 mb-4">Platform Saya</h2>
   <ul class="list-disc list-inside space-y-1.5 text-charcoal-600 leading-relaxed mb-6">
     <li><strong class="font-semibold text-charcoal-800">YouTube:</strong> <a href="https://www.youtube.com/@fokuskonten" target="_blank" rel="noopener noreferrer" class="text-maroon-700 hover:underline">@fokuskonten</a> — Tutorial &amp; konten kreatif</li>
-    <li><strong class="font-semibold text-charcoal-800">TikTok:</strong> <a href="https://www.tiktok.com/@fokuskonten" target="_blank" rel="noopener noreferrer" class="text-maroon-700 hover:underline">@fokuskonten</a> — Konten pendek &amp; tips</li>
+    <li><strong class="font-semibold text-charcoal-800">TikTok:</strong> <a href="https://www.tiktok.com/@fokuskonten.my.id" target="_blank" rel="noopener noreferrer" class="text-maroon-700 hover:underline">@fokuskonten.my.id</a> — Konten pendek &amp; tips</li>
     <li><strong class="font-semibold text-charcoal-800">Instagram:</strong> <a href="https://www.instagram.com/fokuskonten" target="_blank" rel="noopener noreferrer" class="text-maroon-700 hover:underline">@fokuskonten</a> — Karya &amp; daily</li>
     <li><strong class="font-semibold text-charcoal-800">Facebook:</strong> /fokuskonten — Komunitas &amp; update</li>
   </ul>
@@ -220,7 +220,7 @@ const content = {
     <div class="flex flex-wrap justify-center gap-2">
       <a href="https://www.youtube.com/@fokuskonten" target="_blank" rel="noopener noreferrer" class="inline-block bg-maroon-700 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-maroon-800 transition-colors">YouTube</a>
       <a href="https://www.instagram.com/fokuskonten" target="_blank" rel="noopener noreferrer" class="inline-block bg-maroon-700 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-maroon-800 transition-colors">Instagram</a>
-      <a href="https://www.tiktok.com/@fokuskonten" target="_blank" rel="noopener noreferrer" class="inline-block bg-maroon-700 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-maroon-800 transition-colors">TikTok</a>
+      <a href="https://www.tiktok.com/@fokuskonten.my.id" target="_blank" rel="noopener noreferrer" class="inline-block bg-maroon-700 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-maroon-800 transition-colors">TikTok</a>
     </div>
   </div>
 </div>`,
