@@ -140,13 +140,13 @@ export default function AboutPage() {
             </div>
             <h3 className="text-xl font-display font-bold text-white mb-1.5">Muhari</h3>
             <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed mb-4">
-              Sosok praktisi di balik perancangan arsitektur FokusKonten. Menyatukan keahlian mobile software engineering, presisi percetakan &amp; packaging, sinematografi, hingga kerajinan kayu solid (*woodcraft*).
+              Sosok software engineer dan creative tech builder di balik ekosistem FokusKonten. Berpengalaman merancang arsitektur aplikasi mobile Android native offline-first, software desktop efisien, dan katalog ribuan aset kreatif komersial.
             </p>
             <Link
               href="/muhari"
               className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-white hover:text-neutral-300 underline underline-offset-4 transition-colors"
             >
-              Lihat Portofolio &amp; Rekam Jejak Lengkap Owner →
+              Lihat Profil &amp; Portofolio Rekayasa Software →
             </Link>
           </div>
         </div>

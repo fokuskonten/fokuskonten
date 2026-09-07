@@ -2,169 +2,159 @@ import Link from 'next/link'
 
 export const metadata = {
   title: 'Muhari — Founder & Lead Engineer FokusKonten | Portofolio Resmi',
-  description: 'Profil dan portofolio resmi Muhari, Founder FokusKonten. Praktisi multidisiplin dalam software engineering, mobile app development, desain grafis percetakan, multimedia, dan woodworking.',
+  description: 'Profil dan portofolio rekayasa teknologi Muhari, Founder & Lead Engineer FokusKonten. Praktisi software engineering aplikasi Android native, desktop tools, web modern, dan digital creative assets.',
   alternates: { canonical: 'https://fokuskonten.my.id/muhari' },
 }
 
-const businessVentures = [
+const activeProducts = [
   {
-    name: 'FokusKonten',
-    role: 'Founder & Software Engineer',
-    desc: 'Studio pengembang software dan publisher aplikasi Android berbasis offline-first (Apotek Pro, Kelontong Pro, CRM).',
-    link: '/',
-    badge: 'Software House',
-    icon: '⚡',
+    name: 'Apotek Pro',
+    category: 'Mobile Application',
+    platform: 'Android Native (Kotlin)',
+    desc: 'Sistem manajemen apotek & kasir POS terlengkap berstandar CDOB dengan algoritma FEFO otomatis, kalkulator racikan presisi, shift kasir, dan kamera TimeStamp bukti fisik penyerahan obat keras.',
+    link: '/aplikasi/apotekpro',
+    badge: 'Flagship POS',
+    icon: '💊',
   },
   {
-    name: 'Kalila Mebel Store',
-    role: 'Owner & Woodcraft Artisan',
-    desc: 'Produksi kerajinan kayu solid presisi, spesialis perlengkapan meja kerja, asbak kayu, rak organizer, dan furnitur estetik.',
-    link: 'https://shopee.co.id/kalilamebelstore',
-    badge: 'Craft & Woodworking',
-    icon: '🪵',
-    external: true,
+    name: 'Kelontong Pro',
+    category: 'Mobile Application',
+    platform: 'Android Native (Kotlin)',
+    desc: 'Aplikasi kasir pintar toko kelontong & warung sembako dengan pemindai barcode kamera secepat minimarket, buku kasbon digital kirim tagihan WhatsApp, dan konversi satuan grosir ke eceran.',
+    link: '/aplikasi/tokokelontongpro',
+    badge: 'Retail POS',
+    icon: '🏪',
   },
   {
-    name: 'KuyCuan Agency',
-    role: 'Founder & Creative Lead',
-    desc: 'Layanan agensi kreatif digital, optimasi toko online, pengelolaan aset grafis, dan strategi media pemasaran.',
-    link: 'https://www.kuycuan.sbs/',
-    badge: 'Creative Agency',
-    icon: '🚀',
-    external: true,
+    name: 'WhatsApp Lead CRM Pro',
+    category: 'Desktop Software',
+    platform: 'Windows Desktop (.EXE)',
+    desc: 'Software otomasi manajemen prospek WhatsApp: scraper nomor bisnis dari Google Maps, broadcast massal terjadwal dengan jeda aman anti-blokir, serta papan funnel penjualan Kanban.',
+    link: '/landpage/whatsappcrm',
+    badge: 'Marketing Tool',
+    icon: '💬',
+  },
+  {
+    name: 'FokusKonten HP Tools',
+    category: 'Desktop Utility',
+    platform: 'Windows Desktop (.EXE)',
+    desc: 'Software suite diagnostik dan flashing ponsel multi-chipset (Qualcomm EDL 9008, MediaTek Brom, Samsung Odin, SPD) untuk kebutuhan teknisi ponsel dan reparasi firmware.',
+    link: '/aplikasi/hptools',
+    badge: 'Technician Suite',
+    icon: '🛠️',
+  },
+  {
+    name: 'BacaQur\'an Pro',
+    category: 'Mobile Application',
+    platform: 'Android Native',
+    desc: 'Aplikasi Al-Qur\'an digital interaktif dengan mushaf standar Kemenag RI, tanda tajwid berwarna, audio murottal merdu, jadwal sholat akurat, serta 100% bebas iklan dan hemat baterai.',
+    link: '/aplikasi/bacaquran',
+    badge: 'Spiritual App',
+    icon: '📖',
+  },
+  {
+    name: 'Ekosistem Toko Digital FokusKonten',
+    category: 'Web Platform & Digital Assets',
+    platform: 'Next.js 14 • SSG • PWA',
+    desc: 'Platform toko digital mandiri dengan katalog lebih dari 2.800 aset desain percetakan CorelDRAW (CDR), WMF/SVG Canva elements, preset fotografi Lightroom & Premiere Pro, dan footage sinematik.',
+    link: '/toko-digital',
+    badge: '2.800+ Assets',
+    icon: '🎨',
   },
 ]
 
-const socialLinks = [
-  { name: 'WhatsApp Personal', link: 'https://wa.me/6289529131131', handle: '0895-2913-1131', icon: '💬' },
-  { name: 'Email Personal', link: 'mailto:muhariamsori@gmail.com', handle: 'muhariamsori@gmail.com', icon: '✉️' },
-  { name: 'YouTube Portofolio', link: 'https://www.youtube.com/@RemajaBroadcaster', handle: '@RemajaBroadcaster', icon: '▶️' },
-  { name: 'YouTube Studio & DIY', link: 'https://www.youtube.com/@fokuskonten', handle: '@fokuskonten', icon: '🎥' },
-  { name: 'TikTok Portofolio', link: 'https://tiktok.com/@fokuskonten', handle: '@fokuskonten', icon: '📱' },
-  { name: 'TikTok DIY & Craft', link: 'https://tiktok.com/@freelancegabut', handle: '@freelancegabut', icon: '🛠️' },
-  { name: 'Instagram', link: 'https://instagram.com/fokuskonten', handle: '@fokuskonten', icon: '📸' },
-  { name: 'Facebook', link: 'https://facebook.com/muhariamsori', handle: 'Muhari Bin Amsori', icon: '👥' },
+const officialChannels = [
+  { name: 'WhatsApp Bisnis Resmi', link: 'https://wa.me/6285183011318', handle: '+62 851-8301-1318', icon: '💬' },
+  { name: 'Email Resmi Studio', link: 'mailto:admin@fokuskonten.my.id', handle: 'admin@fokuskonten.my.id', icon: '✉️' },
+  { name: 'YouTube Official', link: 'https://www.youtube.com/@fokuskonten', handle: '@fokuskonten', icon: '🎥' },
+  { name: 'GitHub Repository', link: 'https://github.com/fokuskonten', handle: 'github.com/fokuskonten', icon: '💻' },
+  { name: 'TikTok Official', link: 'https://tiktok.com/@fokuskonten', handle: '@fokuskonten', icon: '📱' },
+  { name: 'Instagram Studio', link: 'https://instagram.com/fokuskonten', handle: '@fokuskonten', icon: '📸' },
 ]
 
 const skillCategories = [
   {
-    title: 'Mobile & Software Engineering',
+    title: 'Mobile Software Engineering',
     icon: '📱',
-    desc: 'Pengembangan aplikasi skala enterprise, POS kasir, dan arsitektur database offline-first.',
+    desc: 'Pengembangan aplikasi mobile native tangguh berskala produksi dengan arsitektur data lokal mandiri.',
     skills: [
       'Android Studio Native (Kotlin & Java)',
-      'Room DB SQLite & Data Isolation',
-      'Target SDK 36 (Android 15/16 Ready)',
-      'Next.js 14 & React Web Ecosystem',
-      'Node.js REST API Architecture',
-      'C# .NET Desktop Application',
-      'Google Play Console Publishing',
-      'Firebase & Push Synchronization',
+      'Room DB SQLite & Enkripsi Data Lokal',
+      'Target SDK 36 (Android 15 & 16 Ready)',
+      'WorkManager Background Automation',
+      'CameraX Barcode Scanning & TimeStamp',
+      'Thermal Bluetooth Printer (ESC/POS)',
+      'Google Play Console Release & Keystore',
     ],
   },
   {
-    title: 'Desain Grafis & Percetakan Presisi',
-    icon: '🎨',
-    desc: 'Penguasaan teknik cetak komersial, desain vektor, dan pemodelan packaging.',
-    skills: [
-      'CorelDRAW Advanced Vector Design',
-      'Pola Dus & Packaging Pattern Modeling',
-      'Template Desain (Undangan, Sertifikat, Banner, ID Card)',
-      'Separasi Warna Sablon Manual & Digital',
-      'Manajemen Kertas & Karakteristik Media Cetak',
-      'Maintenance & Penanganan Mesin Printer Cetak',
-    ],
-  },
-  {
-    title: 'Fotografi & Sinematografi Digital',
-    icon: '🎬',
-    desc: 'Produksi konten visual terarah mulai dari pra-produksi, shooting, hingga color grading.',
-    skills: [
-      'Video Cinematic Wedding & Acara Resmi',
-      'Produksi Film Dokumenter',
-      'Adobe Premiere Pro & CapCut Video Editing',
-      'Color Grading & Retouching Lightroom PC',
-      'Fotografi DSLR & Mirrorless',
-      'Album Foto Pernikahan & Wisuda Komersial',
-    ],
-  },
-  {
-    title: 'Woodworking & 3D Modeling',
-    icon: '🪵',
-    desc: 'Pengerjaan produk kayu solid fisik dengan mesin bertenaga dan pemodelan digital.',
-    skills: [
-      'Penguasaan Power Tools (Table Saw, Miter Saw, Gerinda, Bor)',
-      'Pembuatan Organizer Meja & Home Decor Kayu',
-      'Perakitan Mebel, Meja, Rak & Bangku Solid',
-      'Finishing Kayu (Sanding, Sealer, Clear Coat)',
-      '3D Modeling Furnitur & Interior (Blender 3D)',
-    ],
-  },
-  {
-    title: 'Hardware IT & Broadcast Studio Setup',
+    title: 'Desktop & System Engineering',
     icon: '🖥️',
-    desc: 'Infrastruktur komputer, siaran langsung, dan pemeliharaan perangkat keras.',
+    desc: 'Perancangan software desktop mandiri untuk utilitas bisnis, otomatisasi, dan antarmuka hardware.',
     skills: [
-      'Perakitan & Troubleshooting PC / Laptop',
-      'Instalasi Sistem Operasi & Optimasi Hardware',
-      'Setup & Konfigurasi Studio Live Streaming',
-      'Administrasi Google Workspace & Cloud Storage',
-      'Pengelolaan cPanel & Domain Web',
-      'Service & Troubleshooting Elektronik Konvensional',
+      'C# .NET Windows Desktop Application',
+      'COM Port Auto-Detection & USB Handshake',
+      'Scraper Data & Headless Automation',
+      'Sistem Lisensi Offline & Hardware ID Binding',
+      'Local SQLite & File-Based Storage Architecture',
+      'Aplikasi Standalone Portabel (.EXE)',
+    ],
+  },
+  {
+    title: 'Web Platform & Modern Stack',
+    icon: '🌐',
+    desc: 'Pengembangan platform web modern berkecepatan tinggi, SEO-friendly, dan siap transaksi digital.',
+    skills: [
+      'Next.js 14 (App Router & Static Export SSG)',
+      'React & Tailwind CSS Responsive Architecture',
+      'Node.js REST API & Microservices',
+      'Integrasi Payment Gateway (Midtrans Snap/Core)',
+      'Google Drive Cloud API Sync Engine',
+      'PWA (Progressive Web Apps) Offline Support',
+    ],
+  },
+  {
+    title: 'Desain Vektor & Percetakan Komersial',
+    icon: '🎨',
+    desc: 'Rekayasa grafis presisi tinggi untuk industri manufaktur cetak dan katalog aset digital siap produksi.',
+    skills: [
+      'CorelDRAW Advanced Vector Engineering',
+      'Pola Packaging Dus & Die-Cut Cutting Lines',
+      'Separasi Warna Sablon Manual & Cetak Offset',
+      'Katalog Master 2.800+ Template Komersial',
+      'Manajemen Format Multi-Software (WMF, SVG, CDR)',
+    ],
+  },
+  {
+    title: 'Sinematografi & Visual Production',
+    icon: '🎬',
+    desc: 'Produksi konten multimedia sinematik dari penyusunan konsep, storyboard visual, hingga pasca produksi.',
+    skills: [
+      'Adobe Premiere Pro & CapCut Video Editing',
+      'Color Grading & Retouching Lightroom Presets',
+      'Sinematografi Kamera Mirrorless & Drone',
+      'Penyusunan Storyboard AI & Video Advertising',
+      'Audio Post-Production & Voice-Over Pacing',
     ],
   },
 ]
 
-const careerTimeline = [
+const engineeringMilestones = [
   {
     period: '2021 — Sekarang',
-    title: 'Founder FokusKonten & Pengrajin Kalila Mebel',
-    role: 'Lead Software Developer & Furniture Maker',
-    desc: 'Membangun ekosistem aplikasi kasir dan utilitas (Apotek Pro, Kelontong Pro), mengelola penerbitan Play Store, serta memproduksi lini produk kayu solid organizer meja.',
+    title: 'Founder & Lead Software Engineer — FokusKonten',
+    desc: 'Merancang dan membangun seluruh ekosistem produk digital FokusKonten: lini aplikasi kasir mobile native (Apotek Pro, Kelontong Pro), software desktop otomasi bisnis (WhatsApp Lead CRM Pro), serta platform web statis modern berkapasitas 2.800+ produk digital dengan integrasi payment gateway dan cloud drive sync.',
   },
   {
     period: '2018 — 2021',
-    title: 'Desain Grafis & Produksi Percetakan',
-    role: 'Graphic Designer & Print Specialist',
-    desc: 'Bertanggung jawab atas perancangan desain komersial, pembuatan template percetakan, separasi sablon, dan eksekusi cetak media promosi.',
+    title: 'Graphic Designer & Commercial Print Specialist',
+    desc: 'Memimpin perancangan desain grafis komersial presisi, master template percetakan, tata letak kemasan produk (*packaging*), separasi warna sablon, dan kontrol kualitas cetak industri promosi berskala besar.',
   },
   {
-    period: '2018',
-    title: 'PT Agility International',
-    role: 'Outbound Logistics Staff',
-    desc: 'Menjalankan prosedur logistik, alur pengiriman barang, dan administrasi pergudangan dengan standar operasional internasional.',
+    period: '2015 — 2018',
+    title: 'Industrial Automation & Manufacturing Precision',
+    desc: 'Berpengalaman dalam pengoperasian mesin manufaktur robotik, alur logistik internasional, serta disiplin kontrol kualitas ketat yang membentuk etos kerja presisi dan keandalan rekayasa sistem hingga saat ini.',
   },
-  {
-    period: '2017 — 2018',
-    title: 'PT Metindo Era Sakti',
-    role: 'Operator Welding Robot',
-    desc: 'Mengoperasikan mesin robot pengelasan manufaktur otomotif dengan presisi tinggi dan kontrol kualitas ketat.',
-  },
-  {
-    period: '2015 — 2016',
-    title: 'PT Prakarsa Alam Segar',
-    role: 'Packing Oil Production Staff',
-    desc: 'Mengawal proses pengemasan dan standar higienitas produksi pangan manufaktur berskala besar.',
-  },
-]
-
-const educationList = [
-  { year: '2012 — 2015', school: 'MA Attaqwa Pusat Putra 01', status: 'Lulus' },
-  { year: '2009 — 2012', school: 'MTS Attaqwa Pusat Putra 01', status: 'Lulus' },
-  { year: '2002 — 2009', school: 'MI Attaqwa 03 Ujung Harapan', status: 'Lulus' },
-]
-
-const documentList = [
-  { name: 'Curriculum Vitae (CV Lengkap)', status: 'Tersedia (PDF)', icon: '📄', isPrimary: true, link: '/docs/CV-Muhari.pdf' },
-  { name: 'Scan KTP', status: 'Terverifikasi', icon: '🪪' },
-  { name: 'Scan SIM C', status: 'Terverifikasi', icon: '🪪' },
-  { name: 'Scan NPWP', status: 'Terdaftar Resmi', icon: '📋' },
-  { name: 'Scan SKCK', status: 'Tersedia', icon: '🛡️' },
-  { name: 'Scan Ijazah Terakhir', status: 'Terverifikasi MA 01', icon: '🎓' },
-  { name: 'Scan SKHUN', status: 'Tersedia', icon: '📜' },
-  { name: 'Scan Kartu Keluarga', status: 'Tersedia', icon: '👥' },
-  { name: 'Buku Rekening Aktif', status: 'Terverifikasi', icon: '🏦' },
-  { name: 'Paklaring & Pengalaman Kerja', status: 'Lengkap', icon: '💼' },
 ]
 
 export default function MuhariProfilePage() {
@@ -178,7 +168,7 @@ export default function MuhariProfilePage() {
           <span>/</span>
           <Link href="/tentang" className="hover:text-neutral-900 transition-colors">Tentang Studio</Link>
           <span>/</span>
-          <span className="text-neutral-950 font-semibold">Profil Owner</span>
+          <span className="text-neutral-950 font-semibold">Founder &amp; Lead Engineer</span>
         </div>
 
         {/* Profile Hero Section */}
@@ -193,7 +183,7 @@ export default function MuhariProfilePage() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <span className="absolute bottom-1 right-1 w-6 h-6 rounded-full bg-white text-neutral-950 border-2 border-neutral-950 flex items-center justify-center text-[10px] font-bold" title="Verified Creator & Engineer">
+              <span className="absolute bottom-1 right-1 w-6 h-6 rounded-full bg-emerald-500 text-white border-2 border-neutral-950 flex items-center justify-center text-[11px] font-bold" title="Verified Founder & Engineer">
                 ✓
               </span>
             </div>
@@ -201,198 +191,107 @@ export default function MuhariProfilePage() {
             {/* Main Bio Info */}
             <div className="flex-1 text-center md:text-left">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-xs font-mono text-white/90 mb-3">
-                <span className="w-2 h-2 rounded-full bg-white" />
-                Founder &amp; Owner FokusKonten
+                <span className="w-2 h-2 rounded-full bg-emerald-400" />
+                Founder &amp; Lead Software Engineer
               </div>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold tracking-tight text-white mb-2">
                 Muhari
               </h1>
-              <p className="text-sm sm:text-base font-medium text-neutral-300 mb-4">
-                Software &amp; Mobile App Engineer • Digital Creative Specialist • Woodcraft Artisan
+              <p className="text-sm sm:text-base font-medium text-emerald-400 mb-4">
+                Mobile App Engineer • Desktop System Developer • Creative Tech Builder
               </p>
-              <p className="text-xs sm:text-sm text-neutral-400 leading-relaxed max-w-2xl mb-6">
-                Praktisi multidisiplin dengan etos kerja disiplin, tangguh, dan pembelajar otodidak. Berpengalaman merancang arsitektur aplikasi mobile native offline-first, sistem kasir POS, desain grafis &amp; packaging presisi, sinematografi visual, hingga kerajinan kayu solid dan perakitan IT.
+              <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed max-w-2xl mb-6">
+                Praktisi rekayasa perangkat lunak dan arsitektur produk digital di balik ekosistem <strong>FokusKonten</strong>. Berfokus pada pembangunan aplikasi mobile Android native berbasis <em>offline-first</em>, software desktop efisien, dan katalog aset kreatif komersial berstandar produksi nyata.
               </p>
 
               {/* Action CTAs */}
               <div className="flex flex-wrap items-center justify-center md:justify-start gap-3">
                 <a
-                  href="/docs/CV-Muhari.pdf"
-                  download="CV-Muhari.pdf"
+                  href="https://wa.me/6285183011318?text=Halo%20Muhari%20(FokusKonten),%20saya%20tertarik%20untuk%20diskusi%20proyek%20software"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-neutral-950 font-display font-semibold text-xs sm:text-sm shadow-md hover:bg-neutral-100 transition-all transform hover:-translate-y-0.5"
                 >
-                  <span>📄</span> Unduh CV Resmi (PDF)
+                  <span>💬</span> Kontak WhatsApp Resmi
                 </a>
-                <a
-                  href="https://wa.me/6289529131131"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href="/aplikasi"
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 text-white font-display font-semibold text-xs sm:text-sm shadow-md hover:bg-neutral-800 transition-all transform hover:-translate-y-0.5"
                 >
-                  <span>💬</span> WhatsApp Pribadi
-                </a>
+                  <span>📲</span> Portofolio Aplikasi
+                </Link>
                 <a
-                  href="mailto:muhariamsori@gmail.com"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-neutral-900 border border-neutral-800 text-neutral-200 font-display font-medium text-xs sm:text-sm hover:bg-neutral-800 transition-colors"
+                  href="mailto:admin@fokuskonten.my.id"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-neutral-900 border border-neutral-800 text-neutral-300 font-display font-medium text-xs sm:text-sm hover:bg-neutral-800 transition-colors"
                 >
-                  <span>✉️</span> Email
+                  <span>✉️</span> Email Studio
                 </a>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Data Identitas & Kontak */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-          <div className="md:col-span-1 rounded-2xl bg-white border border-neutral-200/80 p-6 shadow-sm flex flex-col justify-between">
+        {/* ── SECTION: PORTOFOLIO PRODUK & SOFTWARE AKTIF ─────────────────── */}
+        <div className="mb-16">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
             <div>
-              <span className="text-xs font-mono font-semibold uppercase tracking-wider text-neutral-400 mb-1 block">Identitas Personal</span>
-              <h2 className="text-lg font-display font-bold text-neutral-900 mb-4">Informasi Pribadi</h2>
-              <div className="space-y-3 text-xs sm:text-sm">
-                <div>
-                  <span className="text-neutral-400 block text-[11px]">Nama Lengkap</span>
-                  <span className="font-semibold text-neutral-900">Muhari</span>
-                </div>
-                <div>
-                  <span className="text-neutral-400 block text-[11px]">Tempat, Tanggal Lahir</span>
-                  <span className="font-medium text-neutral-800">Bekasi, 05 September 1997</span>
-                </div>
-                <div>
-                  <span className="text-neutral-400 block text-[11px]">Domisili</span>
-                  <span className="font-medium text-neutral-800">Bekasi, Jawa Barat, Indonesia</span>
-                </div>
-                <div>
-                  <span className="text-neutral-400 block text-[11px]">Status</span>
-                  <span className="font-medium text-neutral-800">Laki-laki • Menikah • Islam</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="md:col-span-2 rounded-2xl bg-white border border-neutral-200/80 p-6 shadow-sm">
-            <span className="text-xs font-mono font-semibold uppercase tracking-wider text-neutral-400 mb-1 block">Unit Usaha &amp; Ekosistem</span>
-            <h2 className="text-lg font-display font-bold text-neutral-900 mb-4">Ekosistem Karya &amp; Bisnis</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              {businessVentures.map((v) => (
-                <div key={v.name} className="rounded-xl bg-neutral-50/80 border border-neutral-200/70 p-4 flex flex-col justify-between hover:border-neutral-400 transition-colors">
-                  <div>
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="text-xl">{v.icon}</span>
-                      <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-neutral-200/70 text-neutral-700 font-medium">
-                        {v.badge}
-                      </span>
-                    </div>
-                    <h3 className="font-display font-bold text-neutral-900 text-sm mb-0.5">{v.name}</h3>
-                    <p className="text-[11px] font-medium text-neutral-500 mb-2">{v.role}</p>
-                    <p className="text-xs text-neutral-600 leading-relaxed mb-4">{v.desc}</p>
-                  </div>
-                  <a
-                    href={v.link}
-                    target={v.external ? '_blank' : undefined}
-                    rel={v.external ? 'noopener noreferrer' : undefined}
-                    className="inline-flex items-center text-xs font-semibold text-neutral-950 hover:underline mt-auto"
-                  >
-                    Buka Profil Usaha →
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Berkas & Kredensial Resmi Vault */}
-        <div className="rounded-3xl bg-white border border-neutral-200/80 p-6 sm:p-8 shadow-card mb-16">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-4 border-b border-neutral-100">
-            <div>
-              <span className="label-brand mb-1 inline-block">Official Credentials</span>
-              <h2 className="text-xl sm:text-2xl font-display font-bold text-neutral-900">
-                Kelengkapan Berkas &amp; Dokumen Kredensial
+              <span className="text-xs font-mono font-semibold uppercase tracking-wider text-emerald-700 block mb-1">
+                Active Software Ecosystem
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-display font-bold text-neutral-950">
+                Portofolio Software &amp; Produk Nyata
               </h2>
             </div>
-            <a
-              href="/docs/CV-Muhari.pdf"
-              download="CV-Muhari.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-neutral-950 text-white text-xs font-semibold hover:bg-neutral-800 transition-colors shrink-0"
-            >
-              <span>📥</span> Unduh Dokumen CV Langsung (PDF)
-            </a>
+            <p className="text-xs text-neutral-500 max-w-sm">
+              Seluruh karya dirancang dan dibangun secara mandiri dengan standar performa tinggi, stabilitas teruji, dan siap pakai.
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            {documentList.map((doc) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {activeProducts.map((p) => (
               <div
-                key={doc.name}
-                className={"p-3.5 rounded-xl border flex items-center justify-between gap-3 " + (doc.isPrimary ? "bg-neutral-950 text-white border-neutral-900" : "bg-neutral-50/70 border-neutral-200/70 text-neutral-800")}
+                key={p.name}
+                className="rounded-2xl bg-white border border-neutral-200/80 p-6 shadow-sm hover:shadow-card hover:border-neutral-400 transition-all flex flex-col justify-between"
               >
-                <div className="flex items-center gap-2.5 min-w-0">
-                  <span className="text-lg shrink-0">{doc.icon}</span>
-                  <div className="min-w-0">
-                    <span className={"text-xs font-bold block truncate " + (doc.isPrimary ? "text-white" : "text-neutral-900")}>{doc.name}</span>
-                    <span className={"text-[10px] font-mono " + (doc.isPrimary ? "text-neutral-300 font-medium" : "text-neutral-500")}>
-                      {doc.status}
+                <div>
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="text-2xl">{p.icon}</span>
+                    <span className="text-[10px] font-mono px-2.5 py-0.5 rounded-full bg-neutral-100 text-neutral-700 font-semibold border border-neutral-200/80">
+                      {p.badge}
                     </span>
                   </div>
+                  <h3 className="font-display font-bold text-neutral-950 text-base mb-1">
+                    {p.name}
+                  </h3>
+                  <div className="text-[11px] font-mono text-emerald-700 font-medium mb-2.5">
+                    {p.platform}
+                  </div>
+                  <p className="text-xs text-neutral-600 leading-relaxed mb-4">
+                    {p.desc}
+                  </p>
                 </div>
-                {doc.link && (
-                  <a
-                    href={doc.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[11px] font-semibold text-white underline hover:text-neutral-200 shrink-0"
-                  >
-                    Buka →
-                  </a>
-                )}
+                <Link
+                  href={p.link}
+                  className="inline-flex items-center text-xs font-bold text-neutral-950 hover:text-emerald-700 underline underline-offset-4 mt-auto pt-2"
+                >
+                  Lihat Detail Produk →
+                </Link>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Jejaring Sosial Lengkap */}
-        <div className="rounded-3xl bg-neutral-900 text-white p-6 sm:p-8 mb-16 border border-neutral-800 shadow-card">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-4 border-b border-neutral-800">
-            <div>
-              <span className="text-xs font-mono text-neutral-400 uppercase tracking-wider block mb-1">Direct Channels</span>
-              <h2 className="text-xl sm:text-2xl font-display font-bold text-white">Jejaring Sosial &amp; Media Komunikasi</h2>
-            </div>
-            <p className="text-xs text-neutral-400 max-w-sm">
-              Seluruh kanal portofolio, kreasi DIY, dan komunikasi resmi personal Muhari.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-            {socialLinks.map((s) => (
-              <a
-                key={s.name}
-                href={s.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 p-3.5 rounded-xl bg-neutral-950 border border-neutral-800/80 hover:border-neutral-600 hover:bg-neutral-800/50 transition-all group"
-              >
-                <span className="text-xl shrink-0 group-hover:scale-110 transition-transform">{s.icon}</span>
-                <div className="min-w-0">
-                  <span className="text-[11px] text-neutral-400 block truncate">{s.name}</span>
-                  <span className="text-xs font-semibold text-white truncate block group-hover:text-neutral-300 transition-colors">
-                    {s.handle}
-                  </span>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
-
-        {/* 5 Pilar Keahlian & Spesialisasi */}
-        <div className="mb-20">
+        {/* ── SECTION: 5 PILAR KEAHLIAN TEKNIS ───────────────────────────── */}
+        <div className="mb-16">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="label-brand mb-3 inline-block">Multidisciplinary Matrix</span>
-            <h2 className="heading-xl text-2xl sm:text-3xl lg:text-4xl text-neutral-900 mb-3">
-              5 Pilar Keahlian &amp; Rekayasa Teknis
+            <span className="text-xs font-mono font-semibold uppercase tracking-wider text-emerald-700 block mb-2">
+              Technical Matrix
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-display font-bold text-neutral-950 mb-3">
+              5 Pilar Keahlian &amp; Rekayasa Sistem
             </h2>
             <p className="text-neutral-600 text-xs sm:text-sm leading-relaxed">
-              Integrasi nyata antara kecakapan logika komputasi, keindahan estetika visual, dan presisi manufaktur fisik.
+              Kombinasi nyata antara arsitektur logika pemrograman komputasi, keamanan data lokal, serta presisi visual komersial.
             </p>
           </div>
 
@@ -409,7 +308,7 @@ export default function MuhariProfilePage() {
                   <ul className="space-y-2">
                     {cat.skills.map((sk) => (
                       <li key={sk} className="flex items-start gap-2 text-xs text-neutral-700">
-                        <span className="w-1.5 h-1.5 rounded-full bg-neutral-900 shrink-0 mt-1.5" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 shrink-0 mt-1.5" />
                         <span>{sk}</span>
                       </li>
                     ))}
@@ -420,22 +319,23 @@ export default function MuhariProfilePage() {
           </div>
         </div>
 
-        {/* Riwayat Karir & Pengalaman */}
+        {/* ── SECTION: TRACK RECORD REKAYASA TEKNOLOGI ───────────────────── */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
           <div className="lg:col-span-2 rounded-3xl bg-white border border-neutral-200/80 p-6 sm:p-8 shadow-card">
-            <span className="label-brand mb-3 inline-block">Track Record</span>
+            <span className="text-xs font-mono font-semibold uppercase tracking-wider text-emerald-700 block mb-1">
+              Engineering Journey
+            </span>
             <h2 className="text-xl sm:text-2xl font-display font-bold text-neutral-900 mb-6">
-              Riwayat Pengalaman Kerja
+              Rekam Jejak &amp; Pengalaman Rekayasa
             </h2>
             <div className="space-y-6">
-              {careerTimeline.map((item, idx) => (
+              {engineeringMilestones.map((item, idx) => (
                 <div key={idx} className="relative pl-6 border-l-2 border-neutral-200 pb-2 last:pb-0">
                   <span className="absolute -left-[7px] top-1 w-3 h-3 rounded-full bg-neutral-950 border-2 border-white shadow-sm" />
                   <span className="text-[11px] font-mono font-semibold text-neutral-900 bg-neutral-100 px-2.5 py-0.5 rounded-md inline-block mb-1">
                     {item.period}
                   </span>
-                  <h3 className="font-display font-bold text-neutral-900 text-base">{item.title}</h3>
-                  <p className="text-xs font-semibold text-neutral-700 mb-1">{item.role}</p>
+                  <h3 className="font-display font-bold text-neutral-900 text-base mb-1">{item.title}</h3>
                   <p className="text-xs text-neutral-600 leading-relaxed">{item.desc}</p>
                 </div>
               ))}
@@ -443,35 +343,37 @@ export default function MuhariProfilePage() {
           </div>
 
           <div className="space-y-6">
-            {/* Pendidikan */}
-            <div className="rounded-3xl bg-white border border-neutral-200/80 p-6 sm:p-8 shadow-card">
-              <span className="label-brand mb-3 inline-block">Akademik</span>
-              <h2 className="text-lg font-display font-bold text-neutral-900 mb-4">Riwayat Pendidikan</h2>
+            {/* Direct Studio Channels */}
+            <div className="rounded-3xl bg-neutral-950 text-white p-6 sm:p-8 shadow-card border border-neutral-800">
+              <span className="text-xs font-mono text-emerald-400 uppercase tracking-wider block mb-2">
+                Official Channels
+              </span>
+              <h3 className="font-display font-bold text-lg text-white mb-2">
+                Saluran Komunikasi Resmi
+              </h3>
+              <p className="text-xs text-neutral-400 leading-relaxed mb-6">
+                Terhubung langsung dengan tim FokusKonten untuk konsultasi aplikasi, pemesanan lisensi, atau kemitraan.
+              </p>
+              
               <div className="space-y-3">
-                {educationList.map((edu) => (
-                  <div key={edu.school} className="p-3 rounded-xl bg-neutral-50 border border-neutral-100">
-                    <span className="text-[10px] font-mono text-neutral-500 block">{edu.year}</span>
-                    <span className="text-xs font-bold text-neutral-900 block">{edu.school}</span>
-                    <span className="text-[11px] text-neutral-700 font-semibold">{edu.status}</span>
-                  </div>
+                {officialChannels.map((c) => (
+                  <a
+                    key={c.name}
+                    href={c.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-3 rounded-xl bg-neutral-900 border border-neutral-800 hover:border-neutral-700 hover:bg-neutral-800/80 transition-all text-left group"
+                  >
+                    <span className="text-lg shrink-0">{c.icon}</span>
+                    <div className="min-w-0">
+                      <div className="text-[10px] text-neutral-400 block truncate">{c.name}</div>
+                      <div className="text-xs font-semibold text-white truncate group-hover:text-emerald-400 transition-colors">
+                        {c.handle}
+                      </div>
+                    </div>
+                  </a>
                 ))}
               </div>
-            </div>
-
-            {/* Hubungi Langsung */}
-            <div className="rounded-3xl bg-neutral-950 text-white p-6 sm:p-8 shadow-card border border-neutral-800 text-center">
-              <h3 className="font-display font-bold text-lg text-white mb-2">Kolaborasi &amp; Konsultasi</h3>
-              <p className="text-xs text-neutral-400 leading-relaxed mb-5">
-                Terbuka untuk diskusi proyek aplikasi kasir, sistem digital custom, dan kemitraan bisnis.
-              </p>
-              <a
-                href="https://wa.me/6289529131131"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full py-2.5 px-4 rounded-xl bg-white text-neutral-950 font-display font-bold text-xs hover:bg-neutral-100 transition-colors inline-block"
-              >
-                Hubungi via WhatsApp →
-              </a>
             </div>
           </div>
         </div>
