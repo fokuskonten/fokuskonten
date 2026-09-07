@@ -1,0 +1,21 @@
+{
+  "sku": "ID2805",
+  "cover": "/covers/ID2805/ID2805_cover.webp",
+  "cover_jpg": "/covers/ID2805/ID2805_cover.jpg",
+  "slides": [
+    "/covers/ID2805/ID2805_slide_01.webp",
+    "/covers/ID2805/ID2805_slide_02.webp",
+    "/covers/ID2805/ID2805_slide_03.webp",
+    "/covers/ID2805/ID2805_slide_04.webp",
+    "/covers/ID2805/ID2805_slide_05.webp"
+  ],
+  "gallery": [
+    "/covers/ID2805/ID2805_cover.webp",
+    "/covers/ID2805/ID2805_slide_01.webp",
+    "/covers/ID2805/ID2805_slide_02.webp",
+    "/covers/ID2805/ID2805_slide_03.webp",
+    "/covers/ID2805/ID2805_slide_04.webp",
+    "/covers/ID2805/ID2805_slide_05.webp"
+  ],
+  "updated_at": "2026-09-07T13:35:24.673Z"
+}
