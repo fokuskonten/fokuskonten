@@ -6,26 +6,28 @@ const today = new Date().toISOString().split('T')[0];
 
 // 1. Static Pages
 const staticPages = [
-  { path: '', changefreq: 'daily', priority: '1.0' },
-  { path: '/toko-digital', changefreq: 'daily', priority: '0.9' },
-  { path: '/aplikasi', changefreq: 'weekly', priority: '0.9' },
-  { path: '/tentang', changefreq: 'monthly', priority: '0.7' },
-  { path: '/layanan', changefreq: 'monthly', priority: '0.7' },
-  { path: '/kontak', changefreq: 'monthly', priority: '0.6' },
-  { path: '/dukungan', changefreq: 'monthly', priority: '0.6' },
-  { path: '/faq', changefreq: 'monthly', priority: '0.6' },
-  { path: '/kebijakan-privasi', changefreq: 'yearly', priority: '0.4' },
-  { path: '/syarat-ketentuan', changefreq: 'yearly', priority: '0.3' },
-  { path: '/lisensi', changefreq: 'yearly', priority: '0.4' },
-  { path: '/disclaimer', changefreq: 'yearly', priority: '0.3' },
-  { path: '/hak-cipta', changefreq: 'yearly', priority: '0.3' }
+  { path: '/', changefreq: 'daily', priority: '1.0' },
+  { path: '/toko-digital/', changefreq: 'daily', priority: '0.9' },
+  { path: '/aplikasi/', changefreq: 'weekly', priority: '0.9' },
+  { path: '/tentang/', changefreq: 'monthly', priority: '0.7' },
+  { path: '/layanan/', changefreq: 'monthly', priority: '0.7' },
+  { path: '/kontak/', changefreq: 'monthly', priority: '0.6' },
+  { path: '/dukungan/', changefreq: 'monthly', priority: '0.6' },
+  { path: '/faq/', changefreq: 'monthly', priority: '0.6' },
+  { path: '/kebijakan-privasi/', changefreq: 'yearly', priority: '0.4' },
+  { path: '/syarat-ketentuan/', changefreq: 'yearly', priority: '0.3' },
+  { path: '/lisensi/', changefreq: 'yearly', priority: '0.4' },
+  { path: '/disclaimer/', changefreq: 'yearly', priority: '0.3' },
+  { path: '/hak-cipta/', changefreq: 'yearly', priority: '0.3' },
+  { path: '/privacy/', changefreq: 'yearly', priority: '0.4' },
+  { path: '/terms/', changefreq: 'yearly', priority: '0.3' }
 ];
 
 const urls = [];
 
 for (const p of staticPages) {
   urls.push({
-    loc: `${baseUrl}${p.path}`,
+    loc: p.path === '/' ? `${baseUrl}/` : `${baseUrl}${p.path}`,
     lastmod: today,
     changefreq: p.changefreq,
     priority: p.priority
@@ -41,7 +43,7 @@ try {
     for (const app of apps) {
       if (app.id) {
         urls.push({
-          loc: `${baseUrl}/aplikasi/${app.id}`,
+          loc: `${baseUrl}/aplikasi/${app.id}/`,
           lastmod: today,
           changefreq: 'weekly',
           priority: '0.8'
@@ -62,7 +64,7 @@ try {
     for (const p of products) {
       if (p.sku && p.isPublished !== false) {
         urls.push({
-          loc: `${baseUrl}/toko-digital/${p.sku.toLowerCase()}`,
+          loc: `${baseUrl}/toko-digital/${p.sku.toLowerCase()}/`,
           lastmod: today,
           changefreq: 'weekly',
           priority: '0.8'
@@ -73,6 +75,60 @@ try {
   }
 } catch (e) {
   console.warn('Products file read error:', e.message);
+}
+
+// 4. Blog Posts
+try {
+  const postsFile = path.resolve(__dirname, '../content/blog/posts.json');
+  if (fs.existsSync(postsFile)) {
+    urls.push({
+      loc: `${baseUrl}/blog/`,
+      lastmod: today,
+      changefreq: 'weekly',
+      priority: '0.8'
+    });
+    const posts = JSON.parse(fs.readFileSync(postsFile, 'utf-8'));
+    for (const post of posts) {
+      if (post.slug) {
+        urls.push({
+          loc: `${baseUrl}/blog/${post.slug}/`,
+          lastmod: post.date || today,
+          changefreq: 'monthly',
+          priority: '0.7'
+        });
+      }
+    }
+    console.log(`Added ${posts.length} blog posts to sitemap.`);
+  }
+} catch (e) {
+  console.warn('Blog file read error:', e.message);
+}
+
+// 5. Portfolio
+try {
+  const portfolioFile = path.resolve(__dirname, '../content/portfolio/portfolio.json');
+  if (fs.existsSync(portfolioFile)) {
+    urls.push({
+      loc: `${baseUrl}/portfolio/`,
+      lastmod: today,
+      changefreq: 'weekly',
+      priority: '0.8'
+    });
+    const items = JSON.parse(fs.readFileSync(portfolioFile, 'utf-8'));
+    for (const item of items) {
+      if (item.id) {
+        urls.push({
+          loc: `${baseUrl}/portfolio/${item.id}/`,
+          lastmod: today,
+          changefreq: 'monthly',
+          priority: '0.7'
+        });
+      }
+    }
+    console.log(`Added ${items.length} portfolio items to sitemap.`);
+  }
+} catch (e) {
+  console.warn('Portfolio file read error:', e.message);
 }
 
 // Build XML
