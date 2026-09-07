@@ -14,7 +14,7 @@ export const metadata = {
 export default function WhatsAppCrmDedicatedSalesPage() {
   const waOrderUrl = 'https://wa.me/6285183011318?text=Halo%20FokusKonten,%20saya%20mau%20pesan%20Kunci%20Lisensi%20Resmi%20WhatsApp%20Lead%20CRM%20Pro%20(Promo%20Seumur%20Hidup)'
   const waConsultUrl = 'https://wa.me/6285183011318?text=Halo%20FokusKonten,%20saya%20mau%20tanya-tanya%20dulu%20tentang%20fitur%20WhatsApp%20Lead%20CRM%20Pro'
-  const demoVideoUrl = 'https://www.youtube.com/embed/hdsWgj9GdLc'
+  const demoVideoUrl = 'https://www.youtube-nocookie.com/embed/hdsWgj9GdLc?rel=0'
 
   const painPoints = [
     {
@@ -300,7 +300,8 @@ export default function WhatsAppCrmDedicatedSalesPage() {
               src={demoVideoUrl}
               title="WhatsApp Lead CRM Pro Video Demo"
               className="w-full h-full"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             />
           </div>

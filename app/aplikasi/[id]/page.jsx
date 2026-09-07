@@ -233,10 +233,11 @@ export default function AppDetailPage({ params }) {
                       /* YOUTUBE DESKTOP: Widescreen */
                       <div className="w-full rounded-3xl overflow-hidden border border-neutral-200/80 shadow-card bg-black aspect-video">
                         <iframe
-                          src={portfolio.video.replace('shorts/', 'embed/').replace('watch?v=', 'embed/').split('?')[0]}
+                          src={portfolio.video.replace('www.youtube.com', 'www.youtube-nocookie.com').replace('shorts/', 'embed/').replace('watch?v=', 'embed/').split('?')[0] + '?rel=0'}
                           title={`${portfolio.name} Video Demo`}
                           className="w-full h-full"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerPolicy="strict-origin-when-cross-origin"
                           allowFullScreen
                         />
                       </div>
@@ -245,10 +246,11 @@ export default function AppDetailPage({ params }) {
                       <div className="flex justify-center py-4">
                         <div className="w-full max-w-[310px] sm:max-w-[330px] aspect-[9/16] rounded-[36px] overflow-hidden border border-neutral-200/80 shadow-2xl shadow-neutral-950/20 bg-black">
                           <iframe
-                            src={portfolio.video.replace('shorts/', 'embed/').replace('watch?v=', 'embed/').split('?')[0]}
+                            src={portfolio.video.replace('www.youtube.com', 'www.youtube-nocookie.com').replace('shorts/', 'embed/').replace('watch?v=', 'embed/').split('?')[0] + '?rel=0'}
                             title={`${portfolio.name} Video Demo`}
                             className="w-full h-full"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
                             allowFullScreen
                           />
                         </div>
