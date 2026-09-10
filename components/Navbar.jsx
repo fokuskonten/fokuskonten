@@ -197,31 +197,13 @@ export default function Navbar() {
                             </span>
                           </Link>
 
-                          {/* Quick Desain vs E-Book Navigation */}
-                          <div className="grid grid-cols-2 gap-1.5 mt-2">
-                            <Link
-                              href="/toko-digital/?tab=desain"
-                              onClick={handleTokoFilterClick}
-                              className="flex items-center justify-center py-2 px-3 rounded-xl bg-neutral-100 hover:bg-neutral-200 text-neutral-900 font-bold text-xs transition-colors"
-                            >
-                              Desain
-                            </Link>
-                            <Link
-                              href="/toko-digital/?tab=ebook"
-                              onClick={handleTokoFilterClick}
-                              className="flex items-center justify-center py-2 px-3 rounded-xl bg-neutral-100 hover:bg-neutral-200 text-neutral-900 font-bold text-xs transition-colors"
-                            >
-                              E-Book
-                            </Link>
-                          </div>
-
                           {/* 2. Kategori (2 Kolom Grid) */}
                           {realtimeCategories.length > 0 && (
                             <div className="mt-2.5 pt-2.5 border-t border-neutral-100">
                               <div className="px-2 py-1 text-[10px] font-extrabold uppercase tracking-wider text-neutral-400 flex items-center justify-between">
-                                <span>Kategori Desain</span>
+                                <span>Kategori Produk</span>
                                 <span suppressHydrationWarning className="font-mono text-[9px] text-neutral-400">
-                                  {realtimeCategories.filter(([cat]) => !cat.startsWith('E-Book')).length} Kategori
+                                  {realtimeCategories.filter(([cat]) => !cat.startsWith('E-Book')).length + 1} Kategori
                                 </span>
                               </div>
                               <div className="grid grid-cols-2 gap-x-1.5 gap-y-0.5 mt-1 max-h-[55vh] overflow-y-auto pr-1 [scrollbar-width:thin]">
@@ -240,6 +222,16 @@ export default function Navbar() {
                                       </span>
                                     </Link>
                                   ))}
+                                <Link
+                                  href="/toko-digital/?format=PDF"
+                                  onClick={handleTokoFilterClick}
+                                  className="flex items-center justify-between px-2.5 py-1.5 rounded-xl text-neutral-700 hover:text-neutral-950 hover:bg-neutral-100 font-medium transition-colors group"
+                                >
+                                  <span className="truncate pr-1 text-[11.5px] group-hover:font-semibold">E-Book</span>
+                                  <span suppressHydrationWarning className="text-neutral-400 group-hover:text-neutral-900 font-mono text-[10px] bg-neutral-100 px-1.5 py-0.5 rounded shrink-0">
+                                    2471
+                                  </span>
+                                </Link>
                               </div>
                             </div>
                           )}
@@ -258,7 +250,7 @@ export default function Navbar() {
                                     onClick={handleTokoFilterClick}
                                     className="px-2.5 py-1 rounded-lg bg-neutral-100 hover:bg-neutral-200 text-neutral-800 text-[11px] font-bold font-mono transition-colors flex items-center gap-1"
                                   >
-                                    <span>.{fmt}</span>
+                                    <span>{fmt === 'PDF' ? 'E-Book' : `.${fmt}`}</span>
                                     <span className="text-[9px] text-neutral-500 font-normal">({count})</span>
                                   </Link>
                                 ))}
@@ -401,7 +393,7 @@ export default function Navbar() {
                               onClick={handleTokoFilterClick}
                               className="px-2 py-0.5 rounded bg-neutral-100 text-[10px] font-mono font-bold text-neutral-700 hover:bg-neutral-200"
                             >
-                              .{fmt} ({count})
+                              {fmt === 'PDF' ? 'E-Book' : `.${fmt}`} ({count})
                             </Link>
                           ))}
                         </div>

@@ -328,57 +328,18 @@ function TokoDigitalContent() {
       {/* ── CATALOG HEADER & TOOLBAR SECTION ──────────────────────────── */}
       <div id="katalog-header" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-6">
         
-        {/* ── TAB SWITCHER: Desain vs E-Book ───────────────────────── */}
-        <div className="flex items-center gap-2 mb-4">
-          <div className="inline-flex p-1 bg-neutral-200/70 rounded-xl border border-neutral-200/90 shadow-inner">
-            <button
-              type="button"
-              onClick={() => handleTabSelect('Semua')}
-              className={`px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all ${
-                selectedTab === 'Semua'
-                  ? 'bg-neutral-950 text-white shadow-sm'
-                  : 'text-neutral-600 hover:text-neutral-950'
-              }`}
-            >
-              Semua Produk
-            </button>
-            <button
-              type="button"
-              onClick={() => handleTabSelect('Desain')}
-              className={`px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all ${
-                selectedTab === 'Desain'
-                  ? 'bg-neutral-950 text-white shadow-sm'
-                  : 'text-neutral-600 hover:text-neutral-950'
-              }`}
-            >
-              Desain
-            </button>
-            <button
-              type="button"
-              onClick={() => handleTabSelect('E-Book')}
-              className={`px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all ${
-                selectedTab === 'E-Book'
-                  ? 'bg-neutral-950 text-white shadow-sm'
-                  : 'text-neutral-600 hover:text-neutral-950'
-              }`}
-            >
-              E-Book
-            </button>
-          </div>
-        </div>
-
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-5 pb-6 border-b border-neutral-200">
           {/* Category Title & Counter */}
           <div>
             <div className="flex items-center gap-2 mb-1.5 flex-wrap">
               <span className="text-xs font-bold uppercase tracking-wider text-neutral-400">
-                {selectedTab === 'E-Book' ? 'Koleksi E-Book' : 'Katalog Desain'}
+                {selectedFormat === 'PDF' ? 'Koleksi E-Book' : 'Katalog Desain'}
               </span>
               {isFiltering && (
                 <>
                   <span className="text-neutral-300">•</span>
                   <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-neutral-900 text-white shadow-sm">
-                    <span>{selectedFormat !== 'Semua' ? `Format .${selectedFormat}` : selectedCategory}</span>
+                    <span>{selectedFormat !== 'Semua' ? (selectedFormat === 'PDF' ? 'E-Book' : `Format .${selectedFormat}`) : selectedCategory}</span>
                     <button
                       onClick={resetAllFilters}
                       className="hover:text-red-300 transition-colors ml-0.5"
@@ -397,19 +358,15 @@ function TokoDigitalContent() {
               )}
             </div>
             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-neutral-950 font-display tracking-tight">
-              {selectedTab === 'E-Book'
-                ? (selectedCategory !== 'Semua' ? selectedCategory : 'Katalog E-Book')
-                : (selectedFormat !== 'Semua'
-                    ? `Format .${selectedFormat}`
-                    : (selectedCategory === 'Semua' ? 'Katalog Template & Desain' : selectedCategory))}
+              {selectedFormat !== 'Semua'
+                ? (selectedFormat === 'PDF' ? 'Katalog E-Book' : `Format .${selectedFormat}`)
+                : (selectedCategory === 'Semua' ? 'Katalog Template & Desain' : selectedCategory)}
             </h1>
             <p className="text-sm text-neutral-500 mt-1">
               Menampilkan <strong>{filteredProducts.length}</strong> produk{' '}
-              {selectedTab === 'E-Book'
-                ? 'koleksi literatur digital siap baca.'
-                : (selectedFormat !== 'Semua'
-                    ? `format .${selectedFormat}`
-                    : (selectedCategory !== 'Semua' ? `kategori ${selectedCategory}` : 'siap pakai.'))}
+              {selectedFormat !== 'Semua'
+                ? (selectedFormat === 'PDF' ? 'koleksi literatur digital siap baca.' : `format .${selectedFormat}`)
+                : (selectedCategory !== 'Semua' ? `kategori ${selectedCategory}` : 'siap pakai.')}
             </p>
           </div>
 
@@ -565,7 +522,7 @@ function TokoDigitalContent() {
                     : 'bg-white border border-neutral-200 text-neutral-600 hover:border-neutral-400 hover:text-neutral-900'
                 }`}
               >
-                <span>.{fmt}</span>
+                <span>{fmt === 'PDF' ? 'E-Book' : `.${fmt}`}</span>
                 <span className={`text-[10px] px-1.5 py-0.2 rounded-full ${selectedFormat === fmt ? 'bg-white/20 text-white' : 'bg-neutral-100 text-neutral-500'}`}>
                   {count}
                 </span>
