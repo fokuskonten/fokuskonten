@@ -25,10 +25,21 @@ export function extractSkuFromSlug(rawParam) {
   if (!rawParam) return ''
   const decoded = decodeURIComponent(rawParam).trim().toLowerCase()
   
-  // 1. Ekstrak SKU dengan regex ID + angka
-  const match = decoded.match(/^(id\d+)/i)
+  // 1. Format standar: [SKU]-[judul], ambil segmen pertama sebelum dash
+  const parts = decoded.split('-')
+  if (parts[0] && /^id[a-z0-9]+$/i.test(parts[0])) {
+    return parts[0].toLowerCase()
+  }
+
+  // 2. Format alternatif: [judul]-[SKU], ambil segmen terakhir jika berupa SKU
+  const lastPart = parts[parts.length - 1]
+  if (lastPart && /^id[a-z0-9]+$/i.test(lastPart)) {
+    return lastPart.toLowerCase()
+  }
+
+  // 3. Fallback regex pencarian pola SKU di mana saja dalam slug
+  const match = decoded.match(/(id[a-z0-9]+)/i)
   if (match) return match[1].toLowerCase()
 
-  // 2. Fallback split dash
-  return decoded.split('-')[0].toLowerCase()
+  return parts[0].toLowerCase()
 }

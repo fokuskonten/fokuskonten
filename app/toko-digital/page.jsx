@@ -109,14 +109,20 @@ function TokoDigitalContent() {
       const sku = (p.sku || '').toLowerCase()
       const category = (p.category || '').toLowerCase()
       const format = (p.format || '').toLowerCase()
+      const tag = (p.tag || '').toLowerCase()
       const query = searchQuery.toLowerCase().trim()
+
+      const isPptQuery = query === 'powerpoint' || query === 'ppt' || query === 'pptx' || query === 'slide' || query === 'presentasi'
+      const matchPpt = isPptQuery && format.includes('pptx')
 
       const matchSearch =
         !query ||
+        matchPpt ||
         title.includes(query) ||
         sku.includes(query) ||
         category.includes(query) ||
-        format.includes(query)
+        format.includes(query) ||
+        tag.includes(query)
 
       return matchCat && matchFmt && matchSearch
     })
@@ -375,6 +381,40 @@ function TokoDigitalContent() {
             </div>
           </div>
         </div>
+
+        {/* Format Quick Filter Tabs */}
+        {realtimeFormats.length > 0 && (
+          <div className="flex items-center gap-1.5 pt-4 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            <button
+              type="button"
+              onClick={() => handleFormatSelect('Semua')}
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 ${
+                selectedFormat === 'Semua'
+                  ? 'bg-neutral-900 text-white shadow-sm'
+                  : 'bg-white border border-neutral-200 text-neutral-600 hover:border-neutral-400 hover:text-neutral-900'
+              }`}
+            >
+              Semua Format ({totalActive})
+            </button>
+            {realtimeFormats.map(([fmt, count]) => (
+              <button
+                key={fmt}
+                type="button"
+                onClick={() => handleFormatSelect(fmt)}
+                className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 flex items-center gap-1.5 ${
+                  selectedFormat === fmt
+                    ? 'bg-neutral-900 text-white shadow-sm'
+                    : 'bg-white border border-neutral-200 text-neutral-600 hover:border-neutral-400 hover:text-neutral-900'
+                }`}
+              >
+                <span>.{fmt}</span>
+                <span className={`text-[10px] px-1.5 py-0.2 rounded-full ${selectedFormat === fmt ? 'bg-white/20 text-white' : 'bg-neutral-100 text-neutral-500'}`}>
+                  {count}
+                </span>
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* ── 3. PRODUCT CATALOG GRID (STANDAR CREATIVE MARKET) ────────────── */}

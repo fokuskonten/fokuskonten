@@ -3,10 +3,15 @@ import Link from 'next/link'
 function formatDescription(desc) {
   if (!desc) return null
 
-  const blocks = desc.split(/\r?\n\s*\r?\n/)
+  // 1. Bersihkan garis pembatas kasar (==== atau ----)
+  const cleanedDesc = desc
+    .replace(/^[=\-]{4,}\s*$/gm, '')
+    .trim()
+
+  const blocks = cleanedDesc.split(/\r?\n\s*\r?\n/)
 
   return blocks.map((block, idx) => {
-    const lines = block.split(/\r?\n/).map((l) => l.trim()).filter(Boolean)
+    const lines = block.split(/\r?\n/).map((l) => l.trim()).filter((l) => l && !/^[=\-]{4,}$/.test(l))
     if (lines.length === 0) return null
 
     const firstLine = lines[0]
@@ -36,13 +41,19 @@ function formatDescription(desc) {
     }
 
     // 2. Section ber-heading (Contoh: "RINGKASAN & NILAI PRODUK:", "SPESIFIKASI TEKNIS & KELENGKAPAN (MUTLAK):")
-    const isHeading = firstLine.endsWith(':') && firstLine === firstLine.toUpperCase()
+    const cleanFirstLine = firstLine.replace(/:$/, '').trim()
+    const isHeading =
+      (firstLine.endsWith(':') && cleanFirstLine === cleanFirstLine.toUpperCase()) ||
+      (/^[A-Z0-9\s&()\-]+:?$/.test(firstLine) && lines.length > 1 && !firstLine.startsWith('PRODUK') && !firstLine.startsWith('KODE SKU') && !firstLine.startsWith('SKU') && !firstLine.startsWith('•') && !firstLine.startsWith('-'))
 
     if (isHeading) {
-      let heading = firstLine.replace(/:$/, '').trim()
-      if (heading.includes('RINGKASAN & NILAI PRODUK')) heading = 'RINGKASAN PRODUK'
-      if (heading.includes('SPESIFIKASI TEKNIS & KELENGKAPAN')) heading = 'SPESIFIKASI & KELENGKAPAN'
-      if (heading.includes('STANDAR PENGIRIMAN & LAYANAN RESMI') || heading.includes('STANDAR LAYANAN & PENGIRIMAN')) heading = 'PENGIRIMAN & LAYANAN'
+      let heading = cleanFirstLine
+      if (heading.includes('RINGKASAN')) heading = 'RINGKASAN PRODUK'
+      if (heading.includes('SPESIFIKASI')) heading = 'SPESIFIKASI & KELENGKAPAN'
+      if (heading.includes('PENGIRIMAN') || heading.includes('LAYANAN')) heading = 'STANDAR PENGIRIMAN & AKSES LAYANAN'
+      if (heading.includes('PANDUAN') || heading.includes('PEMESANAN')) heading = 'PANDUAN PEMESANAN'
+      if (heading.includes('FUNGSI') || heading.includes('KEGUNAAN')) heading = 'FUNGSI & KEGUNAAN UTAMA'
+      if (heading.includes('APA YANG DIDAPAT') || heading.includes('ISI PAKET')) heading = 'KELENGKAPAN & ISI MODUL'
 
       const contentLines = lines.slice(1)
 
