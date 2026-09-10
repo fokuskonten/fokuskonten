@@ -128,16 +128,9 @@ export default function ProductCard({ product, compact = false }) {
           </Link>
 
           <div className="p-3 pb-1">
-            <div className="flex items-center justify-between text-[10px] font-bold text-neutral-400 uppercase tracking-wider mb-1 gap-1">
-              <span className="truncate">{product.category}</span>
-              <div className="flex items-center gap-1 shrink-0">
-                <span className="font-mono text-neutral-800 bg-neutral-100 border border-neutral-200/80 px-1 py-0.2 rounded font-bold text-[9px]">
-                  .{formatUpper}
-                </span>
-                <span className="font-mono text-neutral-500 bg-neutral-100 px-1 py-0.2 rounded font-semibold text-[9px]">
-                  {product.sku}
-                </span>
-              </div>
+            <div className="flex items-center justify-between text-[10px] font-bold text-neutral-400 uppercase tracking-wider mb-1">
+              <span>{product.category}</span>
+              <span className="font-mono text-neutral-500 bg-neutral-100 px-1 py-0.2 rounded font-semibold shrink-0">{product.sku}</span>
             </div>
             <Link href={`/toko-digital/${productSlug}/`}>
               <h4 className="font-bold text-neutral-950 text-xs leading-snug group-hover:text-black transition-colors line-clamp-2 min-h-[32px]">
@@ -159,7 +152,10 @@ export default function ProductCard({ product, compact = false }) {
                 {formatRupiah(product.price)}
               </span>
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center gap-1.5">
+              <span className="font-mono text-neutral-800 bg-neutral-100 border border-neutral-200/80 px-1.5 py-0.5 rounded font-bold text-[9px]">
+                .{formatUpper}
+              </span>
               {!isOwned ? (
                 <button
                   type="button"
@@ -252,16 +248,9 @@ export default function ProductCard({ product, compact = false }) {
 
         {/* Info Section */}
         <div className="p-4 pb-2">
-          <div className="flex items-center justify-between text-xs font-bold text-neutral-400 uppercase tracking-wider mb-1.5 gap-2">
-            <span className="truncate">{product.category}</span>
-            <div className="flex items-center gap-1.5 shrink-0">
-              <span className="font-mono text-neutral-800 bg-neutral-100 border border-neutral-200/90 px-1.5 py-0.5 rounded font-bold text-[10px]">
-                .{formatUpper}
-              </span>
-              <span className="font-mono text-neutral-500 bg-neutral-100 px-1.5 py-0.5 rounded font-semibold text-[10px]">
-                {product.sku}
-              </span>
-            </div>
+          <div className="flex items-center justify-between text-xs font-bold text-neutral-400 uppercase tracking-wider mb-1.5">
+            <span>{product.category}</span>
+            <span className="font-mono text-neutral-600 bg-neutral-100 px-2 py-0.5 rounded font-semibold text-[11px] shrink-0">{product.sku}</span>
           </div>
           <Link href={`/toko-digital/${productSlug}/`}>
             <h3 className="font-bold text-neutral-950 text-sm leading-snug group-hover:text-black transition-colors line-clamp-2 min-h-[40px]">
@@ -292,7 +281,10 @@ export default function ProductCard({ product, compact = false }) {
             </div>
           </div>
 
-          <div className="flex items-center">
+          <div className="flex items-center gap-2">
+            <span className="font-mono text-neutral-800 bg-neutral-100 border border-neutral-200/90 px-2 py-1 rounded-xl font-bold text-[11px] shadow-sm tracking-wide">
+              .{formatUpper}
+            </span>
             {!isOwned ? (
               <button
                 type="button"
