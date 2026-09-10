@@ -13,7 +13,7 @@ const ITEMS_PER_PAGE = 24
 function TokoDigitalContent() {
   const searchParams = useSearchParams()
 
-  const [selectedTab, setSelectedTab] = useState('Semua') // 'Semua' | 'Desain' | 'E-Book'
+  const [mounted, setMounted] = useState(false)
   const [selectedCategory, setSelectedCategory] = useState('Semua')
   const [selectedFormat, setSelectedFormat] = useState('Semua')
   const [searchQuery, setSearchQuery] = useState('')
@@ -22,21 +22,17 @@ function TokoDigitalContent() {
   const [isSortOpen, setIsSortOpen] = useState(false)
   const [currentPage, setCurrentPage] = useState(1)
 
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
   // Realtime kategori & format HANYA dari produk aktif (bukan dummy!)
   const { realtimeCategories, realtimeFormats, totalActive } = useMemo(() => {
     const activeItems = digitalProducts.filter((p) => p.is_published !== 0 && p.isPublished !== false)
-    
-    let targetItems = activeItems
-    if (selectedTab === 'Desain') {
-      targetItems = activeItems.filter((p) => !p.category?.startsWith('E-Book') && p.format !== 'PDF')
-    } else if (selectedTab === 'E-Book') {
-      targetItems = activeItems.filter((p) => p.category?.startsWith('E-Book') || p.format === 'PDF')
-    }
-
     const catCounts = {}
     const fmtCounts = {}
 
-    targetItems.forEach((p) => {
+    activeItems.forEach((p) => {
       if (p.category && p.category.trim()) {
         const c = p.category.trim()
         catCounts[c] = (catCounts[c] || 0) + 1
@@ -69,9 +65,9 @@ function TokoDigitalContent() {
     return {
       realtimeCategories: cats,
       realtimeFormats: fmts,
-      totalActive: targetItems.length,
+      totalActive: activeItems.length,
     }
-  }, [selectedTab])
+  }, [])
 
   const sortOptions = [
     { id: 'newest', label: 'Terbaru' },
@@ -83,8 +79,6 @@ function TokoDigitalContent() {
 
   // 1. Sync from URL search params (on mount, Next.js routing, or browser back/forward)
   useEffect(() => {
-    const rawTab = (searchParams.get('tab') || '').toLowerCase()
-    const tabParam = rawTab === 'ebook' ? 'E-Book' : (rawTab === 'desain' ? 'Desain' : 'Semua')
     const catParam = searchParams.get('cat') || 'Semua'
     const fmtParam = searchParams.get('format') ? searchParams.get('format').toUpperCase() : 'Semua'
     const qParam = searchParams.get('q') || ''
@@ -92,7 +86,6 @@ function TokoDigitalContent() {
     const pageParam = parseInt(searchParams.get('page'), 10)
     const validPage = (!isNaN(pageParam) && pageParam > 0) ? pageParam : 1
 
-    setSelectedTab((prev) => (prev !== tabParam ? tabParam : prev))
     setSelectedCategory((prev) => (prev !== catParam ? catParam : prev))
     setSelectedFormat((prev) => (prev !== fmtParam ? fmtParam : prev))
     setSearchQuery((prev) => (prev !== qParam ? qParam : prev))
@@ -101,10 +94,9 @@ function TokoDigitalContent() {
   }, [searchParams])
 
   // Clean helper to update URL when user acts without triggering render loop
-  const updateUrl = (cat, fmt, q, sort, page, tab = selectedTab) => {
+  const updateUrl = (cat, fmt, q, sort, page) => {
     if (typeof window === 'undefined') return
     const params = new URLSearchParams()
-    if (tab && tab !== 'Semua') params.set('tab', tab === 'E-Book' ? 'ebook' : 'desain')
     if (page > 1) params.set('page', String(page))
     if (cat && cat !== 'Semua') params.set('cat', cat)
     if (fmt && fmt !== 'Semua') params.set('format', fmt)
@@ -122,18 +114,13 @@ function TokoDigitalContent() {
       const isActive = p.is_published !== 0 && p.isPublished !== false
       if (!isActive) return false
 
-      const isEbook = (p.category && p.category.startsWith('E-Book')) || p.format === 'PDF'
-
-      // Filter Tab: Desain vs E-Book
-      if (selectedTab === 'Desain' && isEbook) return false
-      if (selectedTab === 'E-Book' && !isEbook) return false
-
       const matchCat =
         selectedCategory === 'Semua' || p.category === selectedCategory
 
       const matchFmt =
         selectedFormat === 'Semua' ||
-        (p.format && p.format.toUpperCase() === selectedFormat.toUpperCase())
+        (p.format && p.format.toUpperCase() === selectedFormat.toUpperCase()) ||
+        (selectedFormat === 'PDF' && p.category?.startsWith('E-Book'))
 
       const title = (p.title || p.name || '').toLowerCase()
       const sku = (p.sku || '').toLowerCase()
@@ -176,9 +163,9 @@ function TokoDigitalContent() {
       result.sort((a, b) => b.price - a.price)
     } else {
       // Default: 'newest'
-      // JIKA di Tab 'Semua' tanpa filter/search spesifik:
+      // JIKA tanpa filter/search spesifik:
       // Terapkan ORGANIC BLEND (4 Desain : 1 E-Book Best Seller) agar tidak spam dan desain tetap memimpin!
-      if (selectedTab === 'Semua' && selectedCategory === 'Semua' && selectedFormat === 'Semua' && !searchQuery) {
+      if (selectedCategory === 'Semua' && selectedFormat === 'Semua' && !searchQuery) {
         const designs = []
         const ebooks = []
         result.forEach((p) => {
@@ -222,26 +209,23 @@ function TokoDigitalContent() {
           }
         }
         result = blended
-      } else if (selectedTab === 'Desain') {
+      } else {
         const checkFlagship = (p) => {
           const f = (p.format || '').toUpperCase()
           const c = (p.category || '').toLowerCase()
           return (f === 'CDR' || f.startsWith('PPT') || c.includes('presentasi')) ? 1 : 0
         }
-        // Di Tab Desain: Prioritaskan produk unggulan utama CDR & PPT di baris teratas!
         result.sort((a, b) => {
           const isFlagshipA = checkFlagship(a)
           const isFlagshipB = checkFlagship(b)
           if (isFlagshipB !== isFlagshipA) return isFlagshipB - isFlagshipA
           return (b.sku || '').localeCompare(a.sku || '', undefined, { numeric: true })
         })
-      } else {
-        result.sort((a, b) => (b.sku || '').localeCompare(a.sku || '', undefined, { numeric: true }))
       }
     }
 
     return result
-  }, [selectedTab, selectedCategory, selectedFormat, searchQuery, sortBy])
+  }, [selectedCategory, selectedFormat, searchQuery, sortBy])
 
   // Pagination slice
   const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE)
@@ -258,7 +242,7 @@ function TokoDigitalContent() {
     }).format(num)
   }
 
-  const isFiltering = selectedCategory !== 'Semua' || selectedFormat !== 'Semua' || !!searchQuery
+  const isFiltering = mounted && (selectedCategory !== 'Semua' || selectedFormat !== 'Semua' || !!searchQuery)
 
   const handleCategorySelect = (cat) => {
     setSelectedCategory(cat)
@@ -301,17 +285,7 @@ function TokoDigitalContent() {
     }
   }
 
-  const handleTabSelect = (tab) => {
-    setSelectedTab(tab)
-    setSelectedCategory('Semua')
-    setSelectedFormat('Semua')
-    setCurrentPage(1)
-    setIsCategoryOpen(false)
-    updateUrl('Semua', 'Semua', searchQuery, sortBy, 1, tab)
-  }
-
   const resetAllFilters = () => {
-    setSelectedTab('Semua')
     setSelectedCategory('Semua')
     setSelectedFormat('Semua')
     setSearchQuery('')
@@ -319,7 +293,7 @@ function TokoDigitalContent() {
     try {
       sessionStorage.removeItem('fk_toko_session')
     } catch (e) {}
-    updateUrl('Semua', 'Semua', '', 'newest', 1, 'Semua')
+    updateUrl('Semua', 'Semua', '', 'newest', 1)
   }
 
   return (
@@ -331,9 +305,9 @@ function TokoDigitalContent() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-5 pb-6 border-b border-neutral-200">
           {/* Category Title & Counter */}
           <div>
-            <div className="flex items-center gap-2 mb-1.5 flex-wrap">
-              <span className="text-xs font-bold uppercase tracking-wider text-neutral-400">
-                {selectedFormat === 'PDF' ? 'Koleksi E-Book' : 'Katalog Desain'}
+            <div className="flex items-center gap-2 mb-1.5 flex-wrap min-h-[22px]">
+              <span suppressHydrationWarning className="text-xs font-bold uppercase tracking-wider text-neutral-400">
+                {mounted && selectedFormat === 'PDF' ? 'Koleksi E-Book' : 'Katalog Desain'}
               </span>
               {isFiltering && (
                 <>
@@ -341,6 +315,7 @@ function TokoDigitalContent() {
                   <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-neutral-900 text-white shadow-sm">
                     <span>{selectedFormat !== 'Semua' ? (selectedFormat === 'PDF' ? 'E-Book' : `Format .${selectedFormat}`) : selectedCategory}</span>
                     <button
+                      type="button"
                       onClick={resetAllFilters}
                       className="hover:text-red-300 transition-colors ml-0.5"
                       title="Hapus filter"
@@ -349,6 +324,7 @@ function TokoDigitalContent() {
                     </button>
                   </span>
                   <button
+                    type="button"
                     onClick={resetAllFilters}
                     className="text-xs font-semibold text-neutral-500 hover:text-black underline transition-colors"
                   >
@@ -357,16 +333,16 @@ function TokoDigitalContent() {
                 </>
               )}
             </div>
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-neutral-950 font-display tracking-tight">
-              {selectedFormat !== 'Semua'
+            <h1 suppressHydrationWarning className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-neutral-950 font-display tracking-tight">
+              {mounted && selectedFormat !== 'Semua'
                 ? (selectedFormat === 'PDF' ? 'Katalog E-Book' : `Format .${selectedFormat}`)
-                : (selectedCategory === 'Semua' ? 'Katalog Template & Desain' : selectedCategory)}
+                : (mounted && selectedCategory !== 'Semua' ? selectedCategory : 'Katalog Template & Desain')}
             </h1>
-            <p className="text-sm text-neutral-500 mt-1">
-              Menampilkan <strong>{filteredProducts.length}</strong> produk{' '}
-              {selectedFormat !== 'Semua'
+            <p suppressHydrationWarning className="text-sm text-neutral-500 mt-1">
+              Menampilkan <strong>{mounted ? filteredProducts.length : totalActive}</strong> produk{' '}
+              {mounted && selectedFormat !== 'Semua'
                 ? (selectedFormat === 'PDF' ? 'koleksi literatur digital siap baca.' : `format .${selectedFormat}`)
-                : (selectedCategory !== 'Semua' ? `kategori ${selectedCategory}` : 'siap pakai.')}
+                : (mounted && selectedCategory !== 'Semua' ? `kategori ${selectedCategory}` : 'siap pakai.')}
             </p>
           </div>
 
@@ -383,7 +359,7 @@ function TokoDigitalContent() {
                   }}
                   className="w-full sm:w-auto py-2.5 pl-3.5 pr-8 rounded-xl bg-white border border-neutral-200 text-xs sm:text-sm font-bold text-neutral-800 hover:border-black transition-all shadow-sm flex items-center justify-between gap-2"
                 >
-                  <span>{selectedCategory === 'Semua' ? 'Semua Kategori' : selectedCategory}</span>
+                  <span suppressHydrationWarning>{(mounted && selectedCategory !== 'Semua') ? selectedCategory : 'Semua Kategori'}</span>
                   <span className="text-neutral-400 text-xs">▼</span>
                 </button>
 
@@ -432,7 +408,7 @@ function TokoDigitalContent() {
                 }}
                 className="w-full sm:w-auto py-2.5 pl-3.5 pr-8 rounded-xl bg-white border border-neutral-200 text-xs sm:text-sm font-bold text-neutral-800 hover:border-black transition-all shadow-sm flex items-center justify-between gap-2"
               >
-                <span>{currentSortLabel}</span>
+                <span suppressHydrationWarning>{mounted ? currentSortLabel : 'Terbaru'}</span>
                 <span className="text-neutral-400 text-xs">▼</span>
               </button>
 
@@ -451,13 +427,11 @@ function TokoDigitalContent() {
                           type="button"
                           onClick={() => handleSortSelect(opt.id)}
                           className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-left transition-colors ${
-                            isSelected
-                              ? 'bg-neutral-900 text-white font-bold'
-                              : 'text-neutral-700 hover:bg-neutral-100 hover:text-black'
+                            isSelected ? 'bg-neutral-900 text-white font-bold' : 'text-neutral-700 hover:bg-neutral-100 hover:text-black'
                           }`}
                         >
                           <span>{opt.label}</span>
-                          {isSelected && <span>✓</span>}
+                          {isSelected && <span className="text-xs">✓</span>}
                         </button>
                       )
                     })}
@@ -485,8 +459,9 @@ function TokoDigitalContent() {
               >
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
-              {searchQuery && (
+              {mounted && searchQuery && (
                 <button
+                  type="button"
                   onClick={() => handleSearchChange('')}
                   className="absolute right-2.5 top-1/2 -translate-y-1/2 text-xs font-bold text-neutral-400 hover:text-neutral-700 bg-neutral-100 px-1.5 py-0.5 rounded"
                 >
@@ -497,37 +472,40 @@ function TokoDigitalContent() {
           </div>
         </div>
 
-        {/* Format Quick Filter Tabs */}
+        {/* Format Quick Filter Tabs (Aligned side by side with existing formats) */}
         {realtimeFormats.length > 0 && (
-          <div className="flex items-center gap-1.5 pt-4 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <div suppressHydrationWarning className="flex items-center gap-1.5 pt-4 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             <button
               type="button"
               onClick={() => handleFormatSelect('Semua')}
               className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 ${
-                selectedFormat === 'Semua'
+                (mounted ? selectedFormat : 'Semua') === 'Semua'
                   ? 'bg-neutral-900 text-white shadow-sm'
                   : 'bg-white border border-neutral-200 text-neutral-600 hover:border-neutral-400 hover:text-neutral-900'
               }`}
             >
               Semua Format ({totalActive})
             </button>
-            {realtimeFormats.map(([fmt, count]) => (
-              <button
-                key={fmt}
-                type="button"
-                onClick={() => handleFormatSelect(fmt)}
-                className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 flex items-center gap-1.5 ${
-                  selectedFormat === fmt
-                    ? 'bg-neutral-900 text-white shadow-sm'
-                    : 'bg-white border border-neutral-200 text-neutral-600 hover:border-neutral-400 hover:text-neutral-900'
-                }`}
-              >
-                <span>{fmt === 'PDF' ? 'E-Book' : `.${fmt}`}</span>
-                <span className={`text-[10px] px-1.5 py-0.2 rounded-full ${selectedFormat === fmt ? 'bg-white/20 text-white' : 'bg-neutral-100 text-neutral-500'}`}>
-                  {count}
-                </span>
-              </button>
-            ))}
+            {realtimeFormats.map(([fmt, count]) => {
+              const isActive = mounted && selectedFormat === fmt
+              return (
+                <button
+                  key={fmt}
+                  type="button"
+                  onClick={() => handleFormatSelect(fmt)}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 flex items-center gap-1.5 ${
+                    isActive
+                      ? 'bg-neutral-900 text-white shadow-sm'
+                      : 'bg-white border border-neutral-200 text-neutral-600 hover:border-neutral-400 hover:text-neutral-900'
+                  }`}
+                >
+                  <span>{fmt === 'PDF' ? 'E-Book' : `.${fmt}`}</span>
+                  <span className={`text-[10px] px-1.5 py-0.2 rounded-full ${isActive ? 'bg-white/20 text-white' : 'bg-neutral-100 text-neutral-500'}`}>
+                    {count}
+                  </span>
+                </button>
+              )
+            })}
           </div>
         )}
       </div>
