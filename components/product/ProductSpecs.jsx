@@ -53,7 +53,7 @@ function formatDescription(desc) {
       if (heading.includes('PENGIRIMAN') || heading.includes('LAYANAN')) heading = 'STANDAR PENGIRIMAN & AKSES LAYANAN'
       if (heading.includes('PANDUAN') || heading.includes('PEMESANAN')) heading = 'PANDUAN PEMESANAN'
       if (heading.includes('FUNGSI') || heading.includes('KEGUNAAN')) heading = 'FUNGSI & KEGUNAAN UTAMA'
-      if (heading.includes('APA YANG DIDAPAT') || heading.includes('ISI PAKET')) heading = 'KELENGKAPAN & ISI MODUL'
+      if (heading.includes('APA YANG DIDAPAT') || heading.includes('ISI PAKET') || heading.includes('KELENGKAPAN') || heading.includes('MODUL')) heading = 'KELENGKAPAN & ISI MODUL'
 
       const contentLines = lines.slice(1)
 
