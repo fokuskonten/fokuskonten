@@ -90,13 +90,75 @@ export async function generateMetadata({ params }) {
   if (!product) {
     return { title: 'Produk Tidak Ditemukan | FokusKonten' }
   }
+
+  const title = `${product.sku} — ${product.title || product.name} | Toko Digital FokusKonten`
+  const description = product.description ? product.description.slice(0, 160) : 'Paket produk digital resmi FokusKonten'
+  const imageUrl = product.coverImage ? (product.coverImage.startsWith('http') ? product.coverImage : `https://fokuskonten.my.id${product.coverImage}`) : 'https://fokuskonten.my.id/og-image.jpg'
+
   return {
-    title: `${product.sku} — ${product.title || product.name} | Toko Digital FokusKonten`,
-    description: product.description ? product.description.slice(0, 160) : 'Paket produk digital resmi FokusKonten',
+    title,
+    description,
+    keywords: [product.title, product.category, 'download ebook', 'buku digital', 'fokuskonten', product.format || 'PDF'],
+    openGraph: {
+      title,
+      description,
+      url: `https://fokuskonten.my.id/toko-digital/${product.sku.toLowerCase()}/`,
+      siteName: 'FokusKonten',
+      images: [
+        {
+          url: imageUrl,
+          width: 800,
+          height: 800,
+          alt: product.title || product.sku
+        }
+      ],
+      type: 'website'
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [imageUrl]
+    }
   }
 }
 
 export default function ProductDetailPage({ params }) {
   const product = getProductData(params.sku)
-  return <ProductDetailClient product={product} />
+  if (!product) return <ProductDetailClient product={null} />
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: product.title || product.name,
+    image: product.coverImage ? (product.coverImage.startsWith('http') ? product.coverImage : `https://fokuskonten.my.id${product.coverImage}`) : undefined,
+    description: product.description ? product.description.slice(0, 250) : '',
+    sku: product.sku,
+    category: product.category,
+    brand: {
+      '@type': 'Brand',
+      name: 'FokusKonten'
+    },
+    offers: {
+      '@type': 'Offer',
+      url: `https://fokuskonten.my.id/toko-digital/${product.sku.toLowerCase()}/`,
+      priceCurrency: 'IDR',
+      price: product.price,
+      availability: 'https://schema.org/InStock',
+      seller: {
+        '@type': 'Organization',
+        name: 'FokusKonten'
+      }
+    }
+  }
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <ProductDetailClient product={product} />
+    </>
+  )
 }

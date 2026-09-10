@@ -186,27 +186,49 @@ export default function Navbar() {
                             </span>
                           </Link>
 
+                          {/* Quick Desain vs E-Book Navigation */}
+                          <div className="grid grid-cols-2 gap-1.5 mt-2">
+                            <Link
+                              href="/toko-digital/?tab=desain"
+                              onClick={handleTokoFilterClick}
+                              className="flex items-center justify-center py-2 px-3 rounded-xl bg-neutral-100 hover:bg-neutral-200 text-neutral-900 font-bold text-xs transition-colors"
+                            >
+                              Desain
+                            </Link>
+                            <Link
+                              href="/toko-digital/?tab=ebook"
+                              onClick={handleTokoFilterClick}
+                              className="flex items-center justify-center py-2 px-3 rounded-xl bg-neutral-100 hover:bg-neutral-200 text-neutral-900 font-bold text-xs transition-colors"
+                            >
+                              E-Book
+                            </Link>
+                          </div>
+
                           {/* 2. Kategori (2 Kolom Grid) */}
                           {realtimeCategories.length > 0 && (
                             <div className="mt-2.5 pt-2.5 border-t border-neutral-100">
                               <div className="px-2 py-1 text-[10px] font-extrabold uppercase tracking-wider text-neutral-400 flex items-center justify-between">
                                 <span>Kategori Desain</span>
-                                <span suppressHydrationWarning className="font-mono text-[9px] text-neutral-400">{realtimeCategories.length} Kategori</span>
+                                <span suppressHydrationWarning className="font-mono text-[9px] text-neutral-400">
+                                  {realtimeCategories.filter(([cat]) => !cat.startsWith('E-Book')).length} Kategori
+                                </span>
                               </div>
                               <div className="grid grid-cols-2 gap-x-1.5 gap-y-0.5 mt-1 max-h-[55vh] overflow-y-auto pr-1 [scrollbar-width:thin]">
-                                {realtimeCategories.map(([cat, count]) => (
-                                  <Link
-                                    key={cat}
-                                    href={`/toko-digital/?cat=${encodeURIComponent(cat)}`}
-                                    onClick={handleTokoFilterClick}
-                                    className="flex items-center justify-between px-2.5 py-1.5 rounded-xl text-neutral-700 hover:text-neutral-950 hover:bg-neutral-100 font-medium transition-colors group"
-                                  >
-                                    <span className="truncate pr-1 text-[11.5px] group-hover:font-semibold">{cat}</span>
-                                    <span suppressHydrationWarning className="text-neutral-400 group-hover:text-neutral-900 font-mono text-[10px] bg-neutral-100 px-1.5 py-0.5 rounded shrink-0">
-                                      {count}
-                                    </span>
-                                  </Link>
-                                ))}
+                                {realtimeCategories
+                                  .filter(([cat]) => !cat.startsWith('E-Book'))
+                                  .map(([cat, count]) => (
+                                    <Link
+                                      key={cat}
+                                      href={`/toko-digital/?cat=${encodeURIComponent(cat)}`}
+                                      onClick={handleTokoFilterClick}
+                                      className="flex items-center justify-between px-2.5 py-1.5 rounded-xl text-neutral-700 hover:text-neutral-950 hover:bg-neutral-100 font-medium transition-colors group"
+                                    >
+                                      <span className="truncate pr-1 text-[11.5px] group-hover:font-semibold">{cat}</span>
+                                      <span suppressHydrationWarning className="text-neutral-400 group-hover:text-neutral-900 font-mono text-[10px] bg-neutral-100 px-1.5 py-0.5 rounded shrink-0">
+                                        {count}
+                                      </span>
+                                    </Link>
+                                  ))}
                               </div>
                             </div>
                           )}

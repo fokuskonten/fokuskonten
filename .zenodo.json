@@ -1,0 +1,32 @@
+{
+  "title": "FokusKonten Master Digital Catalog: Graphic Design Archive and Cryptographic Proof of Authorship (2020-2026)",
+  "upload_type": "publication",
+  "publication_type": "technicalnote",
+  "description": "Official legal declaration of authorship, cryptographic manifest, and immutable prior art archive for 433 verified original CorelDraw (.CDR) graphic design assets and commercial print templates created by Muhari (FokusKonten) in Indonesia since 2020. This publication establishes permanent legal protection under the Berne Convention (Art. 5) and Indonesian Copyright Law No. 28/2014 (Art. 64). Each asset is registered with its canonical web URL and unique SHA-256 checksum.",
+  "creators": [
+    {
+      "name": "Muhari",
+      "affiliation": "FokusKonten",
+      "orcid": ""
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-by-nc-nd-4.0",
+  "keywords": [
+    "CorelDraw",
+    "Graphic Design",
+    "Kaos Dakwah",
+    "Undangan Pernikahan",
+    "Banner Komersial",
+    "FokusKonten",
+    "Muhari",
+    "Indonesia",
+    "Vector",
+    "Prior Art"
+  ],
+  "communities": [
+    {
+      "identifier": "zenodo"
+    }
+  ]
+}

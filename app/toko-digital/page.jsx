@@ -13,6 +13,7 @@ const ITEMS_PER_PAGE = 24
 function TokoDigitalContent() {
   const searchParams = useSearchParams()
 
+  const [selectedTab, setSelectedTab] = useState('Semua') // 'Semua' | 'Desain' | 'E-Book'
   const [selectedCategory, setSelectedCategory] = useState('Semua')
   const [selectedFormat, setSelectedFormat] = useState('Semua')
   const [searchQuery, setSearchQuery] = useState('')
@@ -24,10 +25,18 @@ function TokoDigitalContent() {
   // Realtime kategori & format HANYA dari produk aktif (bukan dummy!)
   const { realtimeCategories, realtimeFormats, totalActive } = useMemo(() => {
     const activeItems = digitalProducts.filter((p) => p.is_published !== 0 && p.isPublished !== false)
+    
+    let targetItems = activeItems
+    if (selectedTab === 'Desain') {
+      targetItems = activeItems.filter((p) => !p.category?.startsWith('E-Book') && p.format !== 'PDF')
+    } else if (selectedTab === 'E-Book') {
+      targetItems = activeItems.filter((p) => p.category?.startsWith('E-Book') || p.format === 'PDF')
+    }
+
     const catCounts = {}
     const fmtCounts = {}
 
-    activeItems.forEach((p) => {
+    targetItems.forEach((p) => {
       if (p.category && p.category.trim()) {
         const c = p.category.trim()
         catCounts[c] = (catCounts[c] || 0) + 1
@@ -49,9 +58,9 @@ function TokoDigitalContent() {
     return {
       realtimeCategories: cats,
       realtimeFormats: fmts,
-      totalActive: activeItems.length,
+      totalActive: targetItems.length,
     }
-  }, [])
+  }, [selectedTab])
 
   const sortOptions = [
     { id: 'newest', label: 'Terbaru' },
@@ -63,6 +72,8 @@ function TokoDigitalContent() {
 
   // 1. Sync from URL search params (on mount, Next.js routing, or browser back/forward)
   useEffect(() => {
+    const rawTab = (searchParams.get('tab') || '').toLowerCase()
+    const tabParam = rawTab === 'ebook' ? 'E-Book' : (rawTab === 'desain' ? 'Desain' : 'Semua')
     const catParam = searchParams.get('cat') || 'Semua'
     const fmtParam = searchParams.get('format') ? searchParams.get('format').toUpperCase() : 'Semua'
     const qParam = searchParams.get('q') || ''
@@ -70,6 +81,7 @@ function TokoDigitalContent() {
     const pageParam = parseInt(searchParams.get('page'), 10)
     const validPage = (!isNaN(pageParam) && pageParam > 0) ? pageParam : 1
 
+    setSelectedTab((prev) => (prev !== tabParam ? tabParam : prev))
     setSelectedCategory((prev) => (prev !== catParam ? catParam : prev))
     setSelectedFormat((prev) => (prev !== fmtParam ? fmtParam : prev))
     setSearchQuery((prev) => (prev !== qParam ? qParam : prev))
@@ -78,9 +90,10 @@ function TokoDigitalContent() {
   }, [searchParams])
 
   // Clean helper to update URL when user acts without triggering render loop
-  const updateUrl = (cat, fmt, q, sort, page) => {
+  const updateUrl = (cat, fmt, q, sort, page, tab = selectedTab) => {
     if (typeof window === 'undefined') return
     const params = new URLSearchParams()
+    if (tab && tab !== 'Semua') params.set('tab', tab === 'E-Book' ? 'ebook' : 'desain')
     if (page > 1) params.set('page', String(page))
     if (cat && cat !== 'Semua') params.set('cat', cat)
     if (fmt && fmt !== 'Semua') params.set('format', fmt)
@@ -98,6 +111,12 @@ function TokoDigitalContent() {
       const isActive = p.is_published !== 0 && p.isPublished !== false
       if (!isActive) return false
 
+      const isEbook = (p.category && p.category.startsWith('E-Book')) || p.format === 'PDF'
+
+      // Filter Tab: Desain vs E-Book
+      if (selectedTab === 'Desain' && isEbook) return false
+      if (selectedTab === 'E-Book' && !isEbook) return false
+
       const matchCat =
         selectedCategory === 'Semua' || p.category === selectedCategory
 
@@ -111,18 +130,30 @@ function TokoDigitalContent() {
       const format = (p.format || '').toLowerCase()
       const tag = (p.tag || '').toLowerCase()
       const query = searchQuery.toLowerCase().trim()
+      let matchSearch = true
 
-      const isPptQuery = query === 'powerpoint' || query === 'ppt' || query === 'pptx' || query === 'slide' || query === 'presentasi'
-      const matchPpt = isPptQuery && format.includes('pptx')
-
-      const matchSearch =
-        !query ||
-        matchPpt ||
-        title.includes(query) ||
-        sku.includes(query) ||
-        category.includes(query) ||
-        format.includes(query) ||
-        tag.includes(query)
+      if (query) {
+        const tokens = query.split(/\s+/).filter(Boolean)
+        matchSearch = tokens.every((tok) => {
+          // Smart Synonyms & Aliases
+          if (tok === 'buku' || tok === 'ebook' || tok === 'e-book') {
+            return category.includes('e-book') || format.includes('pdf')
+          }
+          if (tok === 'hadist' || tok === 'hadis' || tok === 'habist') {
+            return title.includes('hadits') || title.includes('hadis') || category.includes('agama islam')
+          }
+          if (tok === 'powerpoint' || tok === 'ppt' || tok === 'pptx' || tok === 'slide' || tok === 'presentasi') {
+            return format.includes('pptx') || category.includes('presentasi')
+          }
+          return (
+            title.includes(tok) ||
+            sku.includes(tok) ||
+            category.includes(tok) ||
+            format.includes(tok) ||
+            tag.includes(tok)
+          )
+        })
+      }
 
       return matchCat && matchFmt && matchSearch
     })
@@ -133,11 +164,73 @@ function TokoDigitalContent() {
     } else if (sortBy === 'price_desc') {
       result.sort((a, b) => b.price - a.price)
     } else {
-      result.sort((a, b) => (b.sku || '').localeCompare(a.sku || '', undefined, { numeric: true }))
+      // Default: 'newest'
+      // JIKA di Tab 'Semua' tanpa filter/search spesifik:
+      // Terapkan ORGANIC BLEND (4 Desain : 1 E-Book Best Seller) agar tidak spam dan desain tetap memimpin!
+      if (selectedTab === 'Semua' && selectedCategory === 'Semua' && selectedFormat === 'Semua' && !searchQuery) {
+        const designs = []
+        const ebooks = []
+        result.forEach((p) => {
+          const isEb = (p.category && p.category.startsWith('E-Book')) || p.format === 'PDF'
+          if (isEb) ebooks.push(p)
+          else designs.push(p)
+        })
+
+        const checkFlagship = (p) => {
+          const f = (p.format || '').toUpperCase()
+          const c = (p.category || '').toLowerCase()
+          return (f === 'CDR' || f.startsWith('PPT') || c.includes('presentasi')) ? 1 : 0
+        }
+
+        // Sort designs: PRIORITASKAN PRODUK UNGGULAN UTAMA (CDR & PPT / PPTX) PALING DEPAN!
+        designs.sort((a, b) => {
+          const isFlagshipA = checkFlagship(a)
+          const isFlagshipB = checkFlagship(b)
+          if (isFlagshipB !== isFlagshipA) return isFlagshipB - isFlagshipA
+          return (b.sku || '').localeCompare(a.sku || '', undefined, { numeric: true })
+        })
+
+        // Sort ebooks: Best Seller & Koleksi Lengkap duluan
+        ebooks.sort((a, b) => {
+          const aPriority = (a.badge === 'Best Seller' || a.badge === 'Koleksi Lengkap') ? 1 : 0
+          const bPriority = (b.badge === 'Best Seller' || b.badge === 'Koleksi Lengkap') ? 1 : 0
+          if (bPriority !== aPriority) return bPriority - aPriority
+          return (b.sku || '').localeCompare(a.sku || '', undefined, { numeric: true })
+        })
+
+        // Rasio Interleave 4 Desain (Unggulan CDR/PPT di depan) : 1 E-Book
+        const blended = []
+        let dIdx = 0
+        let eIdx = 0
+        while (dIdx < designs.length || eIdx < ebooks.length) {
+          for (let i = 0; i < 4 && dIdx < designs.length; i++) {
+            blended.push(designs[dIdx++])
+          }
+          if (eIdx < ebooks.length) {
+            blended.push(ebooks[eIdx++])
+          }
+        }
+        result = blended
+      } else if (selectedTab === 'Desain') {
+        const checkFlagship = (p) => {
+          const f = (p.format || '').toUpperCase()
+          const c = (p.category || '').toLowerCase()
+          return (f === 'CDR' || f.startsWith('PPT') || c.includes('presentasi')) ? 1 : 0
+        }
+        // Di Tab Desain: Prioritaskan produk unggulan utama CDR & PPT di baris teratas!
+        result.sort((a, b) => {
+          const isFlagshipA = checkFlagship(a)
+          const isFlagshipB = checkFlagship(b)
+          if (isFlagshipB !== isFlagshipA) return isFlagshipB - isFlagshipA
+          return (b.sku || '').localeCompare(a.sku || '', undefined, { numeric: true })
+        })
+      } else {
+        result.sort((a, b) => (b.sku || '').localeCompare(a.sku || '', undefined, { numeric: true }))
+      }
     }
 
     return result
-  }, [selectedCategory, selectedFormat, searchQuery, sortBy])
+  }, [selectedTab, selectedCategory, selectedFormat, searchQuery, sortBy])
 
   // Pagination slice
   const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE)
@@ -197,7 +290,17 @@ function TokoDigitalContent() {
     }
   }
 
+  const handleTabSelect = (tab) => {
+    setSelectedTab(tab)
+    setSelectedCategory('Semua')
+    setSelectedFormat('Semua')
+    setCurrentPage(1)
+    setIsCategoryOpen(false)
+    updateUrl('Semua', 'Semua', searchQuery, sortBy, 1, tab)
+  }
+
   const resetAllFilters = () => {
+    setSelectedTab('Semua')
     setSelectedCategory('Semua')
     setSelectedFormat('Semua')
     setSearchQuery('')
@@ -205,7 +308,7 @@ function TokoDigitalContent() {
     try {
       sessionStorage.removeItem('fk_toko_session')
     } catch (e) {}
-    updateUrl('Semua', 'Semua', '', 'newest', 1)
+    updateUrl('Semua', 'Semua', '', 'newest', 1, 'Semua')
   }
 
   return (
@@ -213,12 +316,52 @@ function TokoDigitalContent() {
       
       {/* ── CATALOG HEADER & TOOLBAR SECTION ──────────────────────────── */}
       <div id="katalog-header" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-6">
+        
+        {/* ── TAB SWITCHER: Desain vs E-Book ───────────────────────── */}
+        <div className="flex items-center gap-2 mb-4">
+          <div className="inline-flex p-1 bg-neutral-200/70 rounded-xl border border-neutral-200/90 shadow-inner">
+            <button
+              type="button"
+              onClick={() => handleTabSelect('Semua')}
+              className={`px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all ${
+                selectedTab === 'Semua'
+                  ? 'bg-neutral-950 text-white shadow-sm'
+                  : 'text-neutral-600 hover:text-neutral-950'
+              }`}
+            >
+              Semua Produk
+            </button>
+            <button
+              type="button"
+              onClick={() => handleTabSelect('Desain')}
+              className={`px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all ${
+                selectedTab === 'Desain'
+                  ? 'bg-neutral-950 text-white shadow-sm'
+                  : 'text-neutral-600 hover:text-neutral-950'
+              }`}
+            >
+              Desain
+            </button>
+            <button
+              type="button"
+              onClick={() => handleTabSelect('E-Book')}
+              className={`px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all ${
+                selectedTab === 'E-Book'
+                  ? 'bg-neutral-950 text-white shadow-sm'
+                  : 'text-neutral-600 hover:text-neutral-950'
+              }`}
+            >
+              E-Book
+            </button>
+          </div>
+        </div>
+
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-5 pb-6 border-b border-neutral-200">
           {/* Category Title & Counter */}
           <div>
             <div className="flex items-center gap-2 mb-1.5 flex-wrap">
               <span className="text-xs font-bold uppercase tracking-wider text-neutral-400">
-                Katalog Desain
+                {selectedTab === 'E-Book' ? 'Koleksi E-Book' : 'Katalog Desain'}
               </span>
               {isFiltering && (
                 <>
@@ -243,15 +386,19 @@ function TokoDigitalContent() {
               )}
             </div>
             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-neutral-950 font-display tracking-tight">
-              {selectedFormat !== 'Semua'
-                ? `Format .${selectedFormat}`
-                : (selectedCategory === 'Semua' ? 'Katalog Template & Desain' : selectedCategory)}
+              {selectedTab === 'E-Book'
+                ? (selectedCategory !== 'Semua' ? selectedCategory : 'Katalog E-Book')
+                : (selectedFormat !== 'Semua'
+                    ? `Format .${selectedFormat}`
+                    : (selectedCategory === 'Semua' ? 'Katalog Template & Desain' : selectedCategory))}
             </h1>
             <p className="text-sm text-neutral-500 mt-1">
               Menampilkan <strong>{filteredProducts.length}</strong> produk{' '}
-              {selectedFormat !== 'Semua'
-                ? `format .${selectedFormat}`
-                : (selectedCategory !== 'Semua' ? `kategori ${selectedCategory}` : 'siap pakai')}.
+              {selectedTab === 'E-Book'
+                ? 'koleksi literatur digital siap baca.'
+                : (selectedFormat !== 'Semua'
+                    ? `format .${selectedFormat}`
+                    : (selectedCategory !== 'Semua' ? `kategori ${selectedCategory}` : 'siap pakai.'))}
             </p>
           </div>
 

@@ -4,6 +4,7 @@ out/
 .git/
 package-lock.json
 public/covers/
+public/covers_*/
 *.csv
 *.txt
 !public/app-ads.txt
