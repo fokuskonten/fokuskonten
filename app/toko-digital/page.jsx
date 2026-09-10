@@ -53,7 +53,18 @@ function TokoDigitalContent() {
 
     const fmts = Object.entries(fmtCounts)
       .filter(([_, count]) => count > 0)
-      .sort((a, b) => b[1] - a[1])
+      .sort((a, b) => {
+        const fmtPriority = (fmt) => {
+          const f = (fmt || '').toUpperCase()
+          if (f === 'CDR') return 100
+          if (f.startsWith('PPT')) return 90
+          if (f === 'PDF') return 80
+          return 10
+        }
+        const pDiff = fmtPriority(b[0]) - fmtPriority(a[0])
+        if (pDiff !== 0) return pDiff
+        return b[1] - a[1]
+      })
 
     return {
       realtimeCategories: cats,
