@@ -6,14 +6,6 @@ import { createProductSlug } from '@/app/toko-digital/slugHelper'
 import { hasPurchasedSku, subscribeBuyerStore } from '@/lib/buyerStore'
 import { addToCart, hasInCart, subscribeCartStore } from '@/lib/cartStore'
 
-const formatDotColor = {
-  CDR: 'bg-emerald-400',
-  PPTX: 'bg-amber-400',
-  PSD: 'bg-sky-400',
-  'WMF/SVG': 'bg-purple-400',
-  'PNG/HD': 'bg-teal-400',
-}
-
 function formatRupiah(num) {
   return new Intl.NumberFormat('id-ID', {
     style: 'currency',
@@ -83,10 +75,6 @@ export default function ProductCard({ product, compact = false }) {
             <span>Di Koleksi</span>
           </div>
         )}
-        <div className="absolute top-2 right-2 z-10 px-1.5 py-0.5 rounded bg-neutral-950/85 backdrop-blur-sm text-white font-mono text-[9px] font-bold tracking-wider border border-white/15 shadow-sm flex items-center gap-1 pointer-events-none">
-          <span className={`w-1 h-1 rounded-full ${formatDotColor[formatUpper] || 'bg-neutral-400'}`} />
-          <span>.{formatUpper}</span>
-        </div>
         <div>
           <Link
             href={`/toko-digital/${productSlug}/`}
@@ -200,10 +188,6 @@ export default function ProductCard({ product, compact = false }) {
           <span>Di Koleksi Saya</span>
         </div>
       )}
-      <div className="absolute top-3 right-3 z-10 px-2 py-0.5 rounded-lg bg-neutral-950/85 backdrop-blur-sm text-white font-mono text-[10px] font-bold tracking-wider border border-white/15 shadow-sm flex items-center gap-1.5 pointer-events-none">
-        <span className={`w-1.5 h-1.5 rounded-full ${formatDotColor[formatUpper] || 'bg-neutral-400'}`} />
-        <span>.{formatUpper}</span>
-      </div>
       <div>
         {/* Thumbnail Image Frame */}
         <Link
