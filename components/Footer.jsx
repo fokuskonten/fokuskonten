@@ -70,7 +70,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-neutral-500 text-sm leading-relaxed max-w-sm mb-5">
-              Studio pengembang software dan publisher aplikasi Android resmi Indonesia. Menghadirkan solusi aplikasi bisnis (Apotek Pro, Kelontong Pro), MCJob.id, CRM, dan jasa pembuatan aplikasi profesional.
+              Pengembang software dan publisher aplikasi Android resmi Indonesia. Menghadirkan solusi aplikasi bisnis (Apotek Pro, Kelontong Pro), MCJob.id, CRM, dan jasa pembuatan aplikasi profesional.
             </p>
             <div className="flex items-center gap-2">
               {socialLinks.map((s) => (

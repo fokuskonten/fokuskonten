@@ -45,7 +45,7 @@ export default function PortfolioDetailPage({ params }) {
             {item.title}
           </h1>
           <p className="text-neutral-400 text-xs">
-            Diproduksi tahun {item.year} oleh studio FokusKonten
+            Diproduksi tahun {item.year} oleh FokusKonten
           </p>
         </header>
 

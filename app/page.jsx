@@ -148,17 +148,17 @@ export default function HomePage() {
         </div>
 
         <div className="container-page relative z-10 w-full">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-4xl lg:max-w-5xl 2xl:max-w-6xl mx-auto text-center">
             <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-neutral-950 text-white text-xs font-display font-medium mb-6 shadow-sm">
-              <span>Studio Pengembang &amp; Publisher Software Resmi</span>
+              <span>Pengembang &amp; Publisher Software Resmi</span>
             </div>
 
-            <h1 className="heading-xl text-[clamp(2.2rem,5vw,3.75rem)] text-neutral-900 mb-6 text-balance">
+            <h1 className="heading-xl text-3xl sm:text-5xl lg:text-6xl text-neutral-900 mb-6 text-balance tracking-tight">
               Solusi Software &amp; Aplikasi Andal untuk{' '}
               <span className="text-gradient-brand">Bisnis dan Produktivitas</span>
             </h1>
 
-            <p className="text-neutral-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto mb-10">
+            <p className="text-neutral-600 text-base sm:text-lg lg:text-xl leading-relaxed max-w-3xl lg:max-w-4xl mx-auto mb-10">
               FokusKonten menghadirkan ekosistem software kasir POS (Apotek Pro, Kelontong Pro), platform bursa kerja MCJob.id, Al-Qur&apos;an digital, hingga software desktop CRM untuk efisiensi bisnis Anda.
             </p>
 
@@ -173,22 +173,17 @@ export default function HomePage() {
                 </svg>
               </Link>
               <Link
-                href="/layanan"
+                href="/toko-digital"
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-display font-semibold text-sm text-neutral-800 bg-white border border-neutral-300 hover:border-black hover:text-black hover:shadow-sm transition-all duration-200"
+              >
+                Toko Aset Digital
+              </Link>
+              <Link
+                href="/layanan"
+                className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl font-display font-semibold text-sm text-neutral-700 bg-neutral-100 hover:bg-neutral-200 transition-colors"
               >
                 Layanan Kustom
               </Link>
-              <a
-                href="https://play.google.com/store/apps/developer?id=FokusKonten"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl font-display font-semibold text-sm text-neutral-700 bg-neutral-100 hover:bg-neutral-200 transition-colors"
-              >
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M1.326 1.973C1.256 2.294 1.22 2.634 1.22 3v18c0 .366.036.706.106 1.027L12 12 1.326 1.973zm.905-.642l11.17 10.736L23.723 3.38c-.443-.269-1-.43-1.607-.43H4.202c-.717 0-1.356.248-1.971.38zM23.66 4.797L13.334 15.05l5.914 5.686 4.02-3.878c.442-.374.732-.932.732-1.558V6.19c0-.515-.121-1-.34-1.394zM12 13.14L1.628 22.21A3.573 3.573 0 004.202 23h15.596c.46 0 .893-.112 1.28-.31L18.87 19.87 12 13.14z"/>
-                </svg>
-                Google Play Store
-              </a>
             </div>
           </div>
         </div>
@@ -209,17 +204,17 @@ export default function HomePage() {
 
       <section className="py-20 bg-white">
         <div className="container-page">
-          <div className="max-w-3xl mx-auto text-center mb-14">
+          <div className="max-w-4xl mx-auto text-center mb-14">
             <span className="label-brand mb-3 inline-block">Rilis Produk Terbaru</span>
             <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-900 mb-4">
               Inovasi Produk &amp; Ekosistem FokusKonten
             </h2>
-            <p className="text-neutral-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
+            <p className="text-neutral-600 text-sm sm:text-base leading-relaxed max-w-3xl mx-auto">
               Katalog aplikasi Android, platform lowongan kerja, hingga software desktop CRM yang siap digunakan untuk menunjang produktivitas dan bisnis Anda.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {newReleases.map((item) => (
               <div
                 key={item.id}
@@ -281,12 +276,12 @@ export default function HomePage() {
 
       <section className="py-20 bg-neutral-50/70 border-t border-neutral-100">
         <div className="container-page">
-          <div className="max-w-2xl mx-auto text-center mb-14">
+          <div className="max-w-4xl mx-auto text-center mb-14">
             <span className="label-brand mb-3 inline-block">Standar Kualitas &amp; Arsitektur</span>
             <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-900 mb-4">
               Fondasi Software yang Kokoh &amp; Terpercaya
             </h2>
-            <p className="text-neutral-600 text-sm sm:text-base leading-relaxed">
+            <p className="text-neutral-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
               Setiap aplikasi dibangun dengan prinsip keandalan tinggi untuk memastikan bisnis dan pengguna mendapatkan pengalaman terbaik.
             </p>
           </div>
@@ -307,14 +302,14 @@ export default function HomePage() {
 
       <section className="py-16 bg-neutral-950 text-white relative overflow-hidden">
         <div className="container-page relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <span className="inline-block px-3 py-1 rounded-full text-xs font-display font-semibold bg-white/10 text-white border border-white/20 mb-4">
+          <div className="max-w-4xl lg:max-w-5xl mx-auto text-center">
+            <span className="inline-block px-3.5 py-1 rounded-full text-xs font-display font-semibold bg-white text-neutral-950 shadow-sm mb-4">
               Layanan Pembuatan Aplikasi
             </span>
             <h2 className="heading-xl text-3xl sm:text-4xl text-white mb-4">
               Butuh Aplikasi Android Khusus untuk Usaha Anda?
             </h2>
-            <p className="text-neutral-400 text-sm sm:text-base leading-relaxed mb-8 max-w-xl mx-auto">
+            <p className="text-neutral-400 text-sm sm:text-base leading-relaxed mb-8 max-w-2xl mx-auto">
               Diskusikan kebutuhan aplikasi kasir, manajemen inventaris, toko online, atau aplikasi utilitas perusahaan Anda langsung dengan tim pengembang FokusKonten.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
@@ -330,7 +325,7 @@ export default function HomePage() {
               </a>
               <Link
                 href="/layanan"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-display font-semibold text-sm text-neutral-300 border border-neutral-700 hover:bg-neutral-800 hover:text-white transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-display font-semibold text-sm bg-white text-neutral-950 hover:bg-neutral-100 transition-all shadow-lg"
               >
                 Informasi Layanan
               </Link>

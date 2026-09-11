@@ -10,7 +10,7 @@ export default function ProductStudioCard({ generateWhatsAppLink }) {
           className="w-10 h-10 object-contain drop-shadow-sm flex-shrink-0"
         />
         <div>
-          <span className="font-bold text-neutral-900 block">FokusKonten Studio</span>
+          <span className="font-bold text-neutral-900 block">FokusKonten</span>
           <span className="text-neutral-500">Kabupaten Bekasi • Kreator Resmi</span>
         </div>
       </div>

@@ -3,8 +3,8 @@
 import { useState, useMemo, useEffect, useRef, Suspense } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import Link from 'next/link'
-import digitalProducts from '@/content/apps/digitalProducts.json'
-import storeCategories from '@/content/apps/store_categories.json'
+import catalogProducts from '@/content/apps/catalog_products.json'
+import storeSummary from '@/content/apps/store_summary.json'
 import ProductCard from '@/components/product/ProductCard'
 import { createProductSlug } from './slugHelper'
 
@@ -26,48 +26,22 @@ function TokoDigitalContent() {
     setMounted(true)
   }, [])
 
-  // Realtime kategori & format HANYA dari produk aktif (bukan dummy!)
-  const { realtimeCategories, realtimeFormats, totalActive } = useMemo(() => {
-    const activeItems = digitalProducts.filter((p) => p.is_published !== 0 && p.isPublished !== false)
-    const catCounts = {}
-    const fmtCounts = {}
+  // Realtime kategori, format & curated showcase dari summary ringan (< 7KB)
+  const {
+    categories: realtimeCategories = [],
+    designCategories = [],
+    ebookCategories = [],
+    formats: realtimeFormats = [],
+    totalActive = 3069,
+    totalDesign = 598,
+    totalEbook = 2471,
+    showcase,
+  } = storeSummary
 
-    activeItems.forEach((p) => {
-      if (p.category && p.category.trim()) {
-        const c = p.category.trim()
-        catCounts[c] = (catCounts[c] || 0) + 1
-      }
-      if (p.format && p.format.trim()) {
-        const f = p.format.trim().toUpperCase()
-        fmtCounts[f] = (fmtCounts[f] || 0) + 1
-      }
-    })
-
-    const cats = Object.entries(catCounts)
-      .filter(([_, count]) => count > 0)
-      .sort((a, b) => b[1] - a[1])
-
-    const fmts = Object.entries(fmtCounts)
-      .filter(([_, count]) => count > 0)
-      .sort((a, b) => {
-        const fmtPriority = (fmt) => {
-          const f = (fmt || '').toUpperCase()
-          if (f === 'CDR') return 100
-          if (f.startsWith('PPT')) return 90
-          if (f === 'PDF') return 80
-          return 10
-        }
-        const pDiff = fmtPriority(b[0]) - fmtPriority(a[0])
-        if (pDiff !== 0) return pDiff
-        return b[1] - a[1]
-      })
-
-    return {
-      realtimeCategories: cats,
-      realtimeFormats: fmts,
-      totalActive: activeItems.length,
-    }
-  }, [])
+  const cdrCount = realtimeFormats.find(([fmt]) => fmt === 'CDR')?.[1] || 411
+  const pptxCount = realtimeFormats.find(([fmt]) => fmt === 'PPTX')?.[1] || 140
+  const pdfCount = realtimeFormats.find(([fmt]) => fmt === 'PDF')?.[1] || 2471
+  const othersCount = realtimeFormats.filter(([fmt]) => !['CDR', 'PPTX', 'PDF'].includes(fmt)).reduce((acc, [, c]) => acc + c, 0) || 47
 
   const sortOptions = [
     { id: 'newest', label: 'Terbaru' },
@@ -108,21 +82,26 @@ function TokoDigitalContent() {
     window.history.replaceState(null, '', newUrl)
   }
 
-  // Filter & Sort products realtime
+  // Filter & Sort products realtime (Fast & Lightweight)
   const filteredProducts = useMemo(() => {
-    let result = digitalProducts.filter((p) => {
-      const isActive = p.is_published !== 0 && p.isPublished !== false
-      if (!isActive) return false
+    // Jalur cepat (Fast Path): default view sudah pre-sorted & pre-blended 4:1, langsung return tanpa loop berat
+    if (selectedCategory === 'Semua' && selectedFormat === 'Semua' && !searchQuery && sortBy === 'newest') {
+      return catalogProducts
+    }
 
+    let result = catalogProducts.filter((p) => {
       const matchCat =
-        selectedCategory === 'Semua' || p.category === selectedCategory
+        selectedCategory === 'Semua' ||
+        p.category === selectedCategory ||
+        ((selectedCategory === 'E-Book' || selectedCategory === 'E-Book Digital') && p.category?.startsWith('E-Book')) ||
+        (selectedCategory === 'Desain' && !p.category?.startsWith('E-Book'))
 
       const matchFmt =
         selectedFormat === 'Semua' ||
         (p.format && p.format.toUpperCase() === selectedFormat.toUpperCase()) ||
         (selectedFormat === 'PDF' && p.category?.startsWith('E-Book'))
 
-      const title = (p.title || p.name || '').toLowerCase()
+      const title = (p.title || '').toLowerCase()
       const sku = (p.sku || '').toLowerCase()
       const category = (p.category || '').toLowerCase()
       const format = (p.format || '').toLowerCase()
@@ -133,7 +112,6 @@ function TokoDigitalContent() {
       if (query) {
         const tokens = query.split(/\s+/).filter(Boolean)
         matchSearch = tokens.every((tok) => {
-          // Smart Synonyms & Aliases
           if (tok === 'buku' || tok === 'ebook' || tok === 'e-book') {
             return category.includes('e-book') || format.includes('pdf')
           }
@@ -162,72 +140,23 @@ function TokoDigitalContent() {
     } else if (sortBy === 'price_desc') {
       result.sort((a, b) => b.price - a.price)
     } else {
-      // Default: 'newest'
-      // JIKA tanpa filter/search spesifik:
-      // Terapkan ORGANIC BLEND (4 Desain : 1 E-Book Best Seller) agar tidak spam dan desain tetap memimpin!
-      if (selectedCategory === 'Semua' && selectedFormat === 'Semua' && !searchQuery) {
-        const designs = []
-        const ebooks = []
-        result.forEach((p) => {
-          const isEb = (p.category && p.category.startsWith('E-Book')) || p.format === 'PDF'
-          if (isEb) ebooks.push(p)
-          else designs.push(p)
-        })
-
-        const checkFlagship = (p) => {
-          const f = (p.format || '').toUpperCase()
-          const c = (p.category || '').toLowerCase()
-          return (f === 'CDR' || f.startsWith('PPT') || c.includes('presentasi')) ? 1 : 0
-        }
-
-        // Sort designs: PRIORITASKAN PRODUK UNGGULAN UTAMA (CDR & PPT / PPTX) PALING DEPAN!
-        designs.sort((a, b) => {
-          const isFlagshipA = checkFlagship(a)
-          const isFlagshipB = checkFlagship(b)
-          if (isFlagshipB !== isFlagshipA) return isFlagshipB - isFlagshipA
-          return (b.sku || '').localeCompare(a.sku || '', undefined, { numeric: true })
-        })
-
-        // Sort ebooks: Best Seller & Koleksi Lengkap duluan
-        ebooks.sort((a, b) => {
-          const aPriority = (a.badge === 'Best Seller' || a.badge === 'Koleksi Lengkap') ? 1 : 0
-          const bPriority = (b.badge === 'Best Seller' || b.badge === 'Koleksi Lengkap') ? 1 : 0
-          if (bPriority !== aPriority) return bPriority - aPriority
-          return (b.sku || '').localeCompare(a.sku || '', undefined, { numeric: true })
-        })
-
-        // Rasio Interleave 4 Desain (Unggulan CDR/PPT di depan) : 1 E-Book
-        const blended = []
-        let dIdx = 0
-        let eIdx = 0
-        while (dIdx < designs.length || eIdx < ebooks.length) {
-          for (let i = 0; i < 4 && dIdx < designs.length; i++) {
-            blended.push(designs[dIdx++])
-          }
-          if (eIdx < ebooks.length) {
-            blended.push(ebooks[eIdx++])
-          }
-        }
-        result = blended
-      } else {
-        const checkFlagship = (p) => {
-          const f = (p.format || '').toUpperCase()
-          const c = (p.category || '').toLowerCase()
-          return (f === 'CDR' || f.startsWith('PPT') || c.includes('presentasi')) ? 1 : 0
-        }
-        result.sort((a, b) => {
-          const isFlagshipA = checkFlagship(a)
-          const isFlagshipB = checkFlagship(b)
-          if (isFlagshipB !== isFlagshipA) return isFlagshipB - isFlagshipA
-          return (b.sku || '').localeCompare(a.sku || '', undefined, { numeric: true })
-        })
+      const checkFlagship = (p) => {
+        const f = (p.format || '').toUpperCase()
+        const c = (p.category || '').toLowerCase()
+        return (f === 'CDR' || f.startsWith('PPT') || c.includes('presentasi')) ? 1 : 0
       }
+      result.sort((a, b) => {
+        const isFlagshipA = checkFlagship(a)
+        const isFlagshipB = checkFlagship(b)
+        if (isFlagshipB !== isFlagshipA) return isFlagshipB - isFlagshipA
+        return (b.sku || '').localeCompare(a.sku || '', undefined, { numeric: true })
+      })
     }
 
     return result
   }, [selectedCategory, selectedFormat, searchQuery, sortBy])
 
-  // Pagination slice
+  // Pagination slice (24 item per halaman, hemat memori & instan)
   const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE)
   const paginatedProducts = useMemo(() => {
     const start = (currentPage - 1) * ITEMS_PER_PAGE
@@ -297,40 +226,37 @@ function TokoDigitalContent() {
   }
 
   return (
-    <div className="min-h-screen pt-24 sm:pt-28 pb-24 bg-[#FAFAFA] text-neutral-900">
+    <div className="min-h-screen pt-24 sm:pt-28 pb-24 bg-white text-neutral-900">
       
       {/* ── CATALOG HEADER & TOOLBAR SECTION ──────────────────────────── */}
-      <div id="katalog-header" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-6">
+      <div id="katalog-header" className="w-full max-w-7xl 2xl:max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 pt-2 pb-6">
         
+        {/* Breadcrumb Navigation */}
+        <div className="flex items-center gap-2 text-xs text-neutral-400 mb-3 sm:mb-4">
+          <Link href="/" className="hover:text-black transition-colors font-medium">Beranda</Link>
+          <span>/</span>
+          <span className="text-neutral-900 font-semibold">Toko Digital</span>
+        </div>
+
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-5 pb-6 border-b border-neutral-200">
           {/* Category Title & Counter */}
-          <div>
+          <div className="max-w-xl">
             <div className="flex items-center gap-2 mb-1.5 flex-wrap min-h-[22px]">
               <span suppressHydrationWarning className="text-xs font-bold uppercase tracking-wider text-neutral-400">
                 {mounted && selectedFormat === 'PDF' ? 'Koleksi E-Book' : 'Katalog Desain'}
               </span>
               {isFiltering && (
-                <>
-                  <span className="text-neutral-300">•</span>
-                  <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-neutral-900 text-white shadow-sm">
-                    <span>{selectedFormat !== 'Semua' ? (selectedFormat === 'PDF' ? 'E-Book' : `Format .${selectedFormat}`) : selectedCategory}</span>
-                    <button
-                      type="button"
-                      onClick={resetAllFilters}
-                      className="hover:text-red-300 transition-colors ml-0.5"
-                      title="Hapus filter"
-                    >
-                      ✕
-                    </button>
-                  </span>
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-neutral-900 text-white shadow-sm">
+                  <span>{selectedFormat !== 'Semua' ? (selectedFormat === 'PDF' ? 'E-Book' : `Format .${selectedFormat}`) : selectedCategory}</span>
                   <button
                     type="button"
                     onClick={resetAllFilters}
-                    className="text-xs font-semibold text-neutral-500 hover:text-black underline transition-colors"
+                    className="hover:text-red-300 transition-colors ml-0.5 font-bold"
+                    title="Hapus filter"
                   >
-                    Reset Filter
+                    ✕
                   </button>
-                </>
+                </span>
               )}
             </div>
             <h1 suppressHydrationWarning className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-neutral-950 font-display tracking-tight">
@@ -338,7 +264,7 @@ function TokoDigitalContent() {
                 ? (selectedFormat === 'PDF' ? 'Katalog E-Book' : `Format .${selectedFormat}`)
                 : (mounted && selectedCategory !== 'Semua' ? selectedCategory : 'Katalog Template & Desain')}
             </h1>
-            <p suppressHydrationWarning className="text-sm text-neutral-500 mt-1">
+            <p suppressHydrationWarning className="text-sm text-neutral-500 mt-1 leading-relaxed">
               Menampilkan <strong>{mounted ? filteredProducts.length : totalActive}</strong> produk{' '}
               {mounted && selectedFormat !== 'Semua'
                 ? (selectedFormat === 'PDF' ? 'koleksi literatur digital siap baca.' : `format .${selectedFormat}`)
@@ -347,7 +273,7 @@ function TokoDigitalContent() {
           </div>
 
           {/* Integrated Category Dropdown, Sort Dropdown & Search Bar (Aligned Right) */}
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-end gap-2.5 w-full lg:w-auto ml-auto">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-end gap-2.5 w-full lg:w-auto">
             <div className="flex items-center gap-2 flex-1 sm:flex-initial">
               {/* 1. Category Dropdown (Berdasarkan Kategori yang Sudah Ada) */}
               <div className="relative flex-1 sm:flex-initial">
@@ -369,33 +295,77 @@ function TokoDigitalContent() {
                       className="fixed inset-0 z-40"
                       onClick={() => setIsCategoryOpen(false)}
                     />
-                    <div className="absolute left-0 sm:left-auto sm:right-0 top-full mt-2 w-56 bg-white rounded-2xl border border-neutral-200 shadow-2xl p-1.5 z-50 max-h-72 overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden animate-in fade-in zoom-in-95 duration-150">
-                    <button
-                      type="button"
-                      onClick={() => handleCategorySelect('Semua')}
-                      className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-left transition-colors ${
-                        selectedCategory === 'Semua' ? 'bg-neutral-900 text-white font-bold' : 'text-neutral-700 hover:bg-neutral-100 hover:text-black'
-                      }`}
-                    >
-                      <span>Semua Kategori</span>
-                      <span className="font-mono text-xs opacity-75">({totalActive})</span>
-                    </button>
-                    {realtimeCategories.map(([cat, count]) => (
+                    <div className="absolute left-0 sm:left-auto sm:right-0 top-full mt-2 w-64 sm:w-72 bg-white rounded-2xl border border-neutral-200 shadow-2xl p-2 z-50 max-h-80 overflow-y-auto [scrollbar-width:thin] animate-in fade-in zoom-in-95 duration-150">
+                      {/* Semua Kategori */}
                       <button
-                        key={cat}
                         type="button"
-                        onClick={() => handleCategorySelect(cat)}
-                        className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-left transition-colors ${
-                          selectedCategory === cat ? 'bg-neutral-900 text-white font-bold' : 'text-neutral-700 hover:bg-neutral-100 hover:text-black'
+                        onClick={() => handleCategorySelect('Semua')}
+                        className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs sm:text-sm font-semibold text-left transition-colors mb-1 ${
+                          selectedCategory === 'Semua' ? 'bg-neutral-900 text-white font-bold' : 'text-neutral-700 hover:bg-neutral-100 hover:text-black'
                         }`}
                       >
-                        <span>{cat}</span>
-                        <span className="font-mono text-xs opacity-75">({count})</span>
+                        <span>Semua Kategori</span>
+                        <span className="font-mono text-xs opacity-75">({totalActive})</span>
                       </button>
-                    ))}
-                  </div>
-                </>
-              )}
+
+                      {/* Section 1: Kategori Desain */}
+                      <div className="px-3 py-1.5 text-[10px] font-extrabold uppercase tracking-wider text-neutral-400 bg-neutral-50 rounded-lg my-1 flex items-center justify-between">
+                        <span>Kategori Desain</span>
+                        <span className="font-mono text-[9px] text-neutral-500 font-bold">({totalDesign})</span>
+                      </div>
+                      {designCategories.map(([cat, count]) => (
+                        <button
+                          key={cat}
+                          type="button"
+                          onClick={() => handleCategorySelect(cat)}
+                          className={`w-full flex items-center justify-between px-3 py-1.5 rounded-lg text-xs font-medium text-left transition-colors ${
+                            selectedCategory === cat ? 'bg-neutral-900 text-white font-bold' : 'text-neutral-700 hover:bg-neutral-100 hover:text-black'
+                          }`}
+                        >
+                          <span className="truncate pr-2">{cat}</span>
+                          <span className="font-mono text-[11px] opacity-75 shrink-0">({count})</span>
+                        </button>
+                      ))}
+
+                      {/* Section 2: Kategori E-Book Digital */}
+                      <div className="px-3 py-1.5 text-[10px] font-extrabold uppercase tracking-wider text-neutral-400 bg-neutral-50 rounded-lg my-1 flex items-center justify-between mt-2.5">
+                        <span>Kategori E-Book Digital</span>
+                        <span className="font-mono text-[9px] text-neutral-500 font-bold">({totalEbook})</span>
+                      </div>
+
+                      {/* Option: Semua E-Book Digital */}
+                      <button
+                        type="button"
+                        onClick={() => handleCategorySelect('E-Book Digital')}
+                        className={`w-full flex items-center justify-between px-3 py-1.5 rounded-lg text-xs font-semibold text-left transition-colors ${
+                          (selectedCategory === 'E-Book' || selectedCategory === 'E-Book Digital')
+                            ? 'bg-neutral-900 text-white font-bold'
+                            : 'text-neutral-800 hover:bg-neutral-100'
+                        }`}
+                      >
+                        <span>Semua E-Book Digital</span>
+                        <span className="font-mono text-[11px] opacity-75 shrink-0">({totalEbook})</span>
+                      </button>
+
+                      {ebookCategories.map(([cat, count]) => {
+                        const displayLabel = cat.startsWith('E-Book ') ? cat.replace('E-Book ', '') : cat
+                        return (
+                          <button
+                            key={cat}
+                            type="button"
+                            onClick={() => handleCategorySelect(cat)}
+                            className={`w-full flex items-center justify-between px-3 py-1.5 rounded-lg text-xs font-medium text-left transition-colors ${
+                              selectedCategory === cat ? 'bg-neutral-900 text-white font-bold' : 'text-neutral-700 hover:bg-neutral-100 hover:text-black'
+                            }`}
+                          >
+                            <span className="truncate pr-2">{displayLabel}</span>
+                            <span className="font-mono text-[11px] opacity-75 shrink-0">({count})</span>
+                          </button>
+                        )
+                      })}
+                    </div>
+                  </>
+                )}
             </div>
 
             {/* 2. Custom Popover Sort Dropdown (Clean, Professional, No Emojis) */}
@@ -472,13 +442,13 @@ function TokoDigitalContent() {
           </div>
         </div>
 
-        {/* Format Quick Filter Tabs (Aligned side by side with existing formats) */}
+        {/* Format Quick Filter Tabs (Wrapping cleanly on all viewports) */}
         {realtimeFormats.length > 0 && (
-          <div suppressHydrationWarning className="flex items-center gap-1.5 pt-4 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <div suppressHydrationWarning className="flex flex-wrap items-center gap-2 pt-4">
             <button
               type="button"
               onClick={() => handleFormatSelect('Semua')}
-              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 ${
+              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 ${
                 (mounted ? selectedFormat : 'Semua') === 'Semua'
                   ? 'bg-neutral-900 text-white shadow-sm'
                   : 'bg-white border border-neutral-200 text-neutral-600 hover:border-neutral-400 hover:text-neutral-900'
@@ -493,7 +463,7 @@ function TokoDigitalContent() {
                   key={fmt}
                   type="button"
                   onClick={() => handleFormatSelect(fmt)}
-                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 flex items-center gap-1.5 ${
+                  className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 flex items-center gap-1.5 ${
                     isActive
                       ? 'bg-neutral-900 text-white shadow-sm'
                       : 'bg-white border border-neutral-200 text-neutral-600 hover:border-neutral-400 hover:text-neutral-900'
@@ -510,8 +480,147 @@ function TokoDigitalContent() {
         )}
       </div>
 
-      {/* ── 3. PRODUCT CATALOG GRID (STANDAR CREATIVE MARKET) ────────────── */}
-      <div className="container-page max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* ── 3. SHOWCASE PILIHAN & BUNDLE (5 SKAT MINIMALIS) ───────────── */}
+      {!isFiltering && currentPage === 1 && showcase && (
+        <div className="w-full max-w-7xl 2xl:max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 mb-12 sm:mb-16 space-y-12">
+          {/* Skat 1: Populer & The Big Bundle */}
+          {showcase.popular && showcase.popular.length > 0 && (
+            <section className="space-y-4">
+              <div className="flex items-center justify-between pb-3 border-b border-neutral-200">
+                <h2 className="text-lg sm:text-xl font-bold text-neutral-950 tracking-tight">
+                  Populer & Bundle Terbesar
+                </h2>
+                <button
+                  type="button"
+                  onClick={() => {
+                    const el = document.getElementById('semua-katalog')
+                    if (el) el.scrollIntoView({ behavior: 'smooth' })
+                  }}
+                  className="text-xs sm:text-sm font-semibold text-neutral-600 hover:text-black transition-colors flex items-center gap-1"
+                >
+                  <span>Lihat Semua</span>
+                  <span>&rarr;</span>
+                </button>
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-6">
+                {showcase.popular.map((product) => (
+                  <ProductCard key={product.sku} product={product} />
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Skat 2: Template CorelDraw (CDR) */}
+          {showcase.cdr && showcase.cdr.length > 0 && (
+            <section className="space-y-4">
+              <div className="flex items-center justify-between pb-3 border-b border-neutral-200">
+                <h2 className="text-lg sm:text-xl font-bold text-neutral-950 tracking-tight">
+                  Template CorelDraw (CDR)
+                </h2>
+                <button
+                  type="button"
+                  onClick={() => handleFormatSelect('CDR')}
+                  className="text-xs sm:text-sm font-semibold text-neutral-600 hover:text-black transition-colors flex items-center gap-1"
+                >
+                  <span>Lihat Semua CDR ({cdrCount})</span>
+                  <span>&rarr;</span>
+                </button>
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-6">
+                {showcase.cdr.map((product) => (
+                  <ProductCard key={product.sku} product={product} />
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Skat 3: Template PowerPoint (PPTX) */}
+          {showcase.ppt && showcase.ppt.length > 0 && (
+            <section className="space-y-4">
+              <div className="flex items-center justify-between pb-3 border-b border-neutral-200">
+                <h2 className="text-lg sm:text-xl font-bold text-neutral-950 tracking-tight">
+                  Template PowerPoint (PPTX)
+                </h2>
+                <button
+                  type="button"
+                  onClick={() => handleFormatSelect('PPTX')}
+                  className="text-xs sm:text-sm font-semibold text-neutral-600 hover:text-black transition-colors flex items-center gap-1"
+                >
+                  <span>Lihat Semua PPT ({pptxCount})</span>
+                  <span>&rarr;</span>
+                </button>
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-6">
+                {showcase.ppt.map((product) => (
+                  <ProductCard key={product.sku} product={product} />
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Skat 4: E-Book Digital (PDF) */}
+          {showcase.ebook && showcase.ebook.length > 0 && (
+            <section className="space-y-4">
+              <div className="flex items-center justify-between pb-3 border-b border-neutral-200">
+                <h2 className="text-lg sm:text-xl font-bold text-neutral-950 tracking-tight">
+                  E-Book Digital
+                </h2>
+                <button
+                  type="button"
+                  onClick={() => handleFormatSelect('PDF')}
+                  className="text-xs sm:text-sm font-semibold text-neutral-600 hover:text-black transition-colors flex items-center gap-1"
+                >
+                  <span>Lihat Semua E-Book ({pdfCount})</span>
+                  <span>&rarr;</span>
+                </button>
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-6">
+                {showcase.ebook.map((product) => (
+                  <ProductCard key={product.sku} product={product} />
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Skat 5: Aset & Desain Lainnya (PSD / PNG / HD) */}
+          {showcase.others && showcase.others.length > 0 && (
+            <section className="space-y-4">
+              <div className="flex items-center justify-between pb-3 border-b border-neutral-200">
+                <h2 className="text-lg sm:text-xl font-bold text-neutral-950 tracking-tight">
+                  Aset & Desain Lainnya
+                </h2>
+                <button
+                  type="button"
+                  onClick={() => handleFormatSelect('PSD')}
+                  className="text-xs sm:text-sm font-semibold text-neutral-600 hover:text-black transition-colors flex items-center gap-1"
+                >
+                  <span>Lihat Format PSD ({othersCount})</span>
+                  <span>&rarr;</span>
+                </button>
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-6">
+                {showcase.others.map((product) => (
+                  <ProductCard key={product.sku} product={product} />
+                ))}
+              </div>
+            </section>
+          )}
+        </div>
+      )}
+
+      {/* ── 4. PRODUCT CATALOG GRID (STANDAR CREATIVE MARKET) ────────────── */}
+      <div className="w-full max-w-7xl 2xl:max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+        {!isFiltering && currentPage === 1 && (
+          <div id="semua-katalog" className="flex items-center justify-between pb-3 mb-6 border-b border-neutral-200">
+            <h2 className="text-lg sm:text-xl font-bold text-neutral-950 tracking-tight">
+              Semua Katalog Produk
+            </h2>
+            <span className="text-xs font-mono font-medium text-neutral-500 bg-neutral-100 px-3 py-1 rounded-full">
+              Halaman {currentPage} dari {totalPages}
+            </span>
+          </div>
+        )}
+
         {filteredProducts.length === 0 ? (
           <div className="text-center py-16 bg-white rounded-2xl border border-neutral-200 p-8 max-w-md mx-auto shadow-sm">
             <div className="w-12 h-12 rounded-2xl bg-neutral-100 flex items-center justify-center text-neutral-400 mx-auto mb-3 border border-neutral-200/60">
@@ -532,13 +641,13 @@ function TokoDigitalContent() {
           </div>
         ) : (
           <>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-6">
               {paginatedProducts.map((product) => (
                 <ProductCard key={product.sku} product={product} />
               ))}
             </div>
 
-            {/* ── 4. PAGINATION CONTROLS ───────────────────────────────────── */}
+            {/* ── 5. PAGINATION CONTROLS ───────────────────────────────────── */}
             {totalPages > 1 && (
               <div className="mt-12 flex items-center justify-center gap-2">
                 <button
@@ -602,7 +711,7 @@ export default function TokoDigitalPage() {
   return (
     <Suspense
       fallback={
-        <div className="min-h-screen pt-28 pb-24 bg-[#FAFAFA] flex items-center justify-center">
+        <div className="min-h-screen pt-28 pb-24 bg-white flex items-center justify-center">
           <div className="w-8 h-8 border-3 border-neutral-900 border-t-transparent rounded-full animate-spin" />
         </div>
       }

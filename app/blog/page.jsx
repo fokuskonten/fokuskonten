@@ -17,7 +17,7 @@ export default function BlogPage() {
             Artikel &amp; <span className="text-gradient-brand">Panduan Kreatif</span>
           </h1>
           <p className="text-neutral-500 text-sm sm:text-base max-w-xl mx-auto">
-            Kumpulan artikel dan panduan praktis dari studio FokusKonten seputar teknologi, desain, dan pengembangan konten.
+            Kumpulan artikel dan panduan praktis dari FokusKonten seputar teknologi, desain, dan pengembangan konten.
           </p>
         </div>
 

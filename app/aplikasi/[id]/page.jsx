@@ -126,12 +126,12 @@ export default function AppDetailPage({ params }) {
                           </p>
                           <div className="flex flex-wrap gap-2">
                             {portfolio.specs?.platform && (
-                              <span className="px-2.5 py-1 rounded-lg bg-black/60 backdrop-blur-sm border border-neutral-700/60 text-[10px] sm:text-[11px] font-mono text-neutral-300">
+                              <span className="px-2.5 py-1 rounded-lg bg-white text-neutral-950 font-semibold text-[10px] sm:text-[11px] font-mono shadow-sm">
                                 {portfolio.specs.platform}
                               </span>
                             )}
                             {portfolio.specs?.format && (
-                              <span className="px-2.5 py-1 rounded-lg bg-black/60 backdrop-blur-sm border border-neutral-700/60 text-[10px] sm:text-[11px] font-mono text-neutral-300">
+                              <span className="px-2.5 py-1 rounded-lg bg-white text-neutral-950 font-semibold text-[10px] sm:text-[11px] font-mono shadow-sm">
                                 {portfolio.specs.format}
                               </span>
                             )}

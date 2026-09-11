@@ -231,13 +231,13 @@ export default function ProductCard({ product, compact = false }) {
         </Link>
 
         {/* Info Section */}
-        <div className="p-4 pb-2">
-          <div className="flex items-center justify-between text-xs font-bold text-neutral-400 uppercase tracking-wider mb-1.5">
-            <span>{product.category}</span>
-            <span className="font-mono text-neutral-600 bg-neutral-100 px-2 py-0.5 rounded font-semibold text-[11px] shrink-0">{product.sku}</span>
+        <div className="p-3 sm:p-4 pb-2">
+          <div className="flex items-center justify-between text-[10px] sm:text-xs font-bold text-neutral-400 uppercase tracking-wider mb-1">
+            <span className="truncate max-w-[90px] sm:max-w-none">{product.category}</span>
+            <span className="font-mono text-neutral-600 bg-neutral-100 px-1.5 py-0.5 rounded font-semibold text-[10px] sm:text-[11px] shrink-0">{product.sku}</span>
           </div>
           <Link href={`/toko-digital/${productSlug}/`}>
-            <h3 className="font-bold text-neutral-950 text-sm leading-snug group-hover:text-black transition-colors line-clamp-2 min-h-[40px]">
+            <h3 className="font-bold text-neutral-950 text-xs sm:text-sm leading-snug group-hover:text-black transition-colors line-clamp-2 min-h-[32px] sm:min-h-[40px]">
               {product.title}
             </h3>
           </Link>
@@ -245,35 +245,35 @@ export default function ProductCard({ product, compact = false }) {
       </div>
 
       {/* Pricing & Action Section */}
-      <div className="p-4 pt-0">
-        <div className="pt-2.5 border-t border-neutral-100 flex items-center justify-between gap-2">
+      <div className="p-3 sm:p-4 pt-0">
+        <div className="pt-2 sm:pt-2.5 border-t border-neutral-100 flex items-center justify-between gap-1 sm:gap-2">
           <div>
             {/* Price Strikethrough + Discount */}
-            <div className="flex items-center gap-1.5 leading-none mb-1">
-              <span className="text-xs text-neutral-400 line-through">
+            <div className="flex items-center gap-1 sm:gap-1.5 leading-none mb-0.5 sm:mb-1">
+              <span className="text-[10px] sm:text-xs text-neutral-400 line-through">
                 {formatRupiah(origPrice)}
               </span>
               {discountPercent && (
-                <span className="px-1.5 py-0.5 rounded bg-neutral-900 text-white text-[10px] font-extrabold">
+                <span className="px-1 py-0.2 sm:px-1.5 sm:py-0.5 rounded bg-neutral-900 text-white text-[9px] sm:text-[10px] font-extrabold">
                   -{discountPercent}%
                 </span>
               )}
             </div>
             {/* Final Price */}
-            <div className="text-base font-black text-neutral-950 leading-tight font-display">
+            <div className="text-xs sm:text-base font-black text-neutral-950 leading-tight font-display">
               {formatRupiah(product.price)}
             </div>
           </div>
 
-          <div className="flex items-center gap-2">
-            <span className="font-mono text-neutral-800 bg-neutral-100 border border-neutral-200/90 px-2 py-1 rounded-xl font-bold text-[11px] shadow-sm tracking-wide">
+          <div className="flex items-center gap-1 sm:gap-2">
+            <span className="font-mono text-neutral-800 bg-neutral-100 border border-neutral-200/90 px-1.5 py-0.5 sm:px-2 sm:py-1 rounded-lg sm:rounded-xl font-bold text-[9px] sm:text-[11px] shadow-xs tracking-wide">
               .{formatUpper}
             </span>
             {!isOwned ? (
               <button
                 type="button"
                 onClick={handleAddToCart}
-                className={`w-10 h-10 rounded-xl border transition-all duration-200 cursor-pointer flex items-center justify-center ${
+                className={`w-7 h-7 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl border transition-all duration-200 cursor-pointer flex items-center justify-center shrink-0 ${
                   inCart 
                     ? 'bg-neutral-900 hover:bg-neutral-800 text-white border-neutral-900 shadow-sm hover:shadow active:scale-95' 
                     : isJustAdded
@@ -284,17 +284,17 @@ export default function ProductCard({ product, compact = false }) {
                 aria-label={inCart ? 'Lihat Keranjang' : 'Tambah ke Keranjang'}
               >
                 {inCart ? (
-                  <svg className={`w-4 h-4 text-white ${isJustAdded ? 'animate-in zoom-in-50 duration-300' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <svg className={`w-3.5 h-3.5 sm:w-4 sm:h-4 text-white ${isJustAdded ? 'animate-in zoom-in-50 duration-300' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
                 ) : (
-                  <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                  <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current" viewBox="0 0 24 24">
                     <path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z"/>
                   </svg>
                 )}
               </button>
             ) : (
-              <span className="text-xs font-bold text-neutral-800 bg-neutral-100 px-2.5 py-1 rounded-xl border border-neutral-200">
+              <span className="text-[10px] sm:text-xs font-bold text-neutral-800 bg-neutral-100 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-lg sm:rounded-xl border border-neutral-200">
                 Dimiliki
               </span>
             )}

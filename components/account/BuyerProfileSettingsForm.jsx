@@ -124,7 +124,7 @@ export default function BuyerProfileSettingsForm({ profile, onProfileUpdated }) 
           {/* Full Name */}
           <div className="space-y-1.5">
             <label className="block text-xs font-bold uppercase tracking-wider text-neutral-700">
-              Nama Lengkap / Studio Kreatif
+              Nama Lengkap / Nama Usaha
             </label>
             <input
               type="text"

@@ -140,7 +140,7 @@ export default function AkunPage() {
             />
           </div>
         ) : (
-          /* State 2: Sudah Ada Sesi Pembeli -> Tampilkan Dashboard Studio */
+          /* State 2: Sudah Ada Sesi Pembeli -> Tampilkan Dashboard Pembeli */
           isLoaded && (
             <div className="space-y-8 animate-fade-in">
               {/* Header Profile Card */}

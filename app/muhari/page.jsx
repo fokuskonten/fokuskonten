@@ -74,11 +74,11 @@ const activeProducts = [
 
 const officialChannels = [
   { name: 'WhatsApp Bisnis Resmi', link: 'https://wa.me/6285183011318', handle: '+62 851-8301-1318', icon: '💬' },
-  { name: 'Email Resmi Studio', link: 'mailto:admin@fokuskonten.my.id', handle: 'admin@fokuskonten.my.id', icon: '✉️' },
+  { name: 'Email Resmi', link: 'mailto:admin@fokuskonten.my.id', handle: 'admin@fokuskonten.my.id', icon: '✉️' },
   { name: 'YouTube Official', link: 'https://www.youtube.com/@fokuskonten', handle: '@fokuskonten', icon: '🎥' },
   { name: 'GitHub Repository', link: 'https://github.com/fokuskonten', handle: 'github.com/fokuskonten', icon: '💻' },
   { name: 'TikTok Official', link: 'https://tiktok.com/@fokuskonten.my.id', handle: '@fokuskonten.my.id', icon: '📱' },
-  { name: 'Instagram Studio', link: 'https://instagram.com/fokuskonten', handle: '@fokuskonten', icon: '📸' },
+  { name: 'Instagram Resmi', link: 'https://instagram.com/fokuskonten', handle: '@fokuskonten', icon: '📸' },
 ]
 
 const skillCategories = [
@@ -188,7 +188,7 @@ export default function MuhariProfilePage() {
         <div className="mb-8 flex items-center gap-2 text-xs font-mono text-neutral-500">
           <Link href="/" className="hover:text-neutral-900 transition-colors">Beranda</Link>
           <span>/</span>
-          <Link href="/tentang" className="hover:text-neutral-900 transition-colors">Tentang Studio</Link>
+          <Link href="/tentang" className="hover:text-neutral-900 transition-colors">Tentang FokusKonten</Link>
           <span>/</span>
           <span className="text-neutral-950 font-semibold">Founder &amp; Lead Engineer</span>
         </div>
@@ -212,8 +212,7 @@ export default function MuhariProfilePage() {
 
             {/* Main Bio Info */}
             <div className="flex-1 text-center md:text-left">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-xs font-mono text-white/90 mb-3">
-                <span className="w-2 h-2 rounded-full bg-emerald-400" />
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white text-neutral-950 text-xs font-mono font-semibold mb-3 shadow-sm">
                 Founder &amp; Lead Software Engineer
               </div>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold tracking-tight text-white mb-2">
@@ -232,21 +231,21 @@ export default function MuhariProfilePage() {
                   href="https://wa.me/6285183011318?text=Halo%20Muhari%20(FokusKonten),%20saya%20tertarik%20untuk%20diskusi%20proyek%20software%20atau%20custom%20craft"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-neutral-950 font-display font-semibold text-xs sm:text-sm shadow-md hover:bg-neutral-100 transition-all transform hover:-translate-y-0.5"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-neutral-950 font-display font-semibold text-xs sm:text-sm shadow-md hover:bg-neutral-100 transition-all"
                 >
-                  <span>💬</span> Kontak WhatsApp Resmi
+                  Kontak WhatsApp Resmi
                 </a>
                 <Link
                   href="/aplikasi"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-neutral-900 border border-neutral-700 text-white font-display font-semibold text-xs sm:text-sm shadow-md hover:bg-neutral-800 transition-all transform hover:-translate-y-0.5"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-neutral-950 font-display font-semibold text-xs sm:text-sm shadow-md hover:bg-neutral-100 transition-all"
                 >
-                  <span>📲</span> Portofolio Aplikasi
+                  Portofolio Aplikasi
                 </Link>
                 <a
                   href="mailto:admin@fokuskonten.my.id"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-neutral-900 border border-neutral-800 text-neutral-300 font-display font-medium text-xs sm:text-sm hover:bg-neutral-800 transition-colors"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-neutral-950 font-display font-semibold text-xs sm:text-sm shadow-md hover:bg-neutral-100 transition-all"
                 >
-                  <span>✉️</span> Email Studio
+                  Email Resmi
                 </a>
               </div>
             </div>
@@ -365,15 +364,15 @@ export default function MuhariProfilePage() {
           </div>
 
           <div className="space-y-6">
-            {/* Direct Studio Channels */}
-            <div className="rounded-3xl bg-neutral-950 text-white p-6 sm:p-8 shadow-card border border-neutral-800">
-              <span className="text-xs font-mono text-emerald-400 uppercase tracking-wider block mb-2">
+            {/* Direct Official Channels */}
+            <div className="rounded-3xl bg-white p-6 sm:p-8 shadow-sm border border-neutral-200">
+              <span className="text-xs font-mono text-neutral-500 uppercase tracking-wider block mb-2 font-semibold">
                 Official Channels
               </span>
-              <h3 className="font-display font-bold text-lg text-white mb-2">
+              <h3 className="font-display font-bold text-lg text-neutral-900 mb-2">
                 Saluran Komunikasi Resmi
               </h3>
-              <p className="text-xs text-neutral-400 leading-relaxed mb-6">
+              <p className="text-xs text-neutral-600 leading-relaxed mb-6">
                 Terhubung langsung dengan tim FokusKonten untuk konsultasi aplikasi, custom software, atau kreasi desain &amp; kerajinan.
               </p>
               
@@ -384,15 +383,15 @@ export default function MuhariProfilePage() {
                     href={c.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 p-3 rounded-xl bg-neutral-900 border border-neutral-800 hover:border-neutral-700 hover:bg-neutral-800/80 transition-all text-left group"
+                    className="flex items-center justify-between p-3 rounded-xl bg-neutral-50 border border-neutral-200/80 hover:bg-neutral-100 hover:border-neutral-300 transition-all text-left group"
                   >
-                    <span className="text-lg shrink-0">{c.icon}</span>
                     <div className="min-w-0">
-                      <div className="text-[10px] text-neutral-400 block truncate">{c.name}</div>
-                      <div className="text-xs font-semibold text-white truncate group-hover:text-emerald-400 transition-colors">
+                      <div className="text-[10px] text-neutral-500 block truncate">{c.name}</div>
+                      <div className="text-xs font-semibold text-neutral-900 truncate">
                         {c.handle}
                       </div>
                     </div>
+                    <span className="text-xs font-bold text-neutral-400 group-hover:text-neutral-900 transition-colors">&rarr;</span>
                   </a>
                 ))}
               </div>

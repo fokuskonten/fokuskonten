@@ -17,7 +17,7 @@ export default function PortfolioPage() {
             Portofolio <span className="text-gradient-brand">Software &amp; Digital</span>
           </h1>
           <p className="text-neutral-500 text-sm sm:text-base max-w-xl mx-auto">
-            Kumpulan proyek rekayasa aplikasi, solusi bisnis, dan produk digital resmi karya studio FokusKonten.
+            Kumpulan proyek rekayasa aplikasi, solusi bisnis, dan produk digital karya resmi FokusKonten.
           </p>
         </div>
 

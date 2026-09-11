@@ -174,7 +174,7 @@ export default function ProductDetailClient({ product }) {
   const cleanDesc = product.description || 'Paket produk master digital resmi FokusKonten.'
 
   return (
-    <div className="min-h-screen pt-28 sm:pt-32 pb-32 sm:pb-24 bg-[#FAFAFA] text-neutral-900">
+    <div className="min-h-screen pt-28 sm:pt-32 pb-32 sm:pb-24 bg-white text-neutral-900">
       <div className="container-page max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* ── 1. UNIFIED BREADCRUMB, CATEGORY SELECTOR & SEARCH BAR ── */}

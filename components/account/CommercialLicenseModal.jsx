@@ -29,8 +29,7 @@ export default function CommercialLicenseModal({ isOpen, onClose, product, buyer
           {/* Certificate Header Banner */}
           <div className="bg-neutral-950 text-white p-6 sm:p-8 flex items-start justify-between border-b border-neutral-800">
             <div className="space-y-1">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-800 text-neutral-200 border border-neutral-700 text-[11px] font-bold tracking-wider uppercase">
-                <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+              <div className="inline-flex items-center px-3.5 py-1 rounded-full bg-white text-neutral-950 text-[11px] font-bold tracking-wider uppercase shadow-sm">
                 <span>Sertifikat Lisensi Standar</span>
               </div>
               <h2 className="text-xl sm:text-2xl font-black font-sans tracking-tight text-white pt-2">

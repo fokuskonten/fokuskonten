@@ -1,0 +1,897 @@
+{
+  "totalActive": 3040,
+  "totalDesign": 569,
+  "totalEbook": 2471,
+  "designCategories": [
+    [
+      "Vektor",
+      126
+    ],
+    [
+      "Presentasi & Pitch Deck",
+      69
+    ],
+    [
+      "Video Animasi & Iklan",
+      47
+    ],
+    [
+      "Stiker & Striping",
+      43
+    ],
+    [
+      "Canva Elements & Clipart Vektor",
+      35
+    ],
+    [
+      "Undangan",
+      34
+    ],
+    [
+      "Kemasan & Goodie Bag",
+      28
+    ],
+    [
+      "Kaos",
+      25
+    ],
+    [
+      "Poster",
+      23
+    ],
+    [
+      "Logo & Maskot",
+      22
+    ],
+    [
+      "Invoice & Nota",
+      17
+    ],
+    [
+      "Kartu Nama",
+      15
+    ],
+    [
+      "Daftar Menu & Kuliner",
+      14
+    ],
+    [
+      "Buku & Yasin",
+      13
+    ],
+    [
+      "Banner & Spanduk",
+      11
+    ],
+    [
+      "Media Sosial & Banner",
+      10
+    ],
+    [
+      "Photobooth",
+      7
+    ],
+    [
+      "Undangan & Ucapan",
+      7
+    ],
+    [
+      "Sertifikat",
+      6
+    ],
+    [
+      "Karakter & Animasi 3D",
+      5
+    ],
+    [
+      "Brosur & Flyer",
+      3
+    ],
+    [
+      "Mockup",
+      2
+    ],
+    [
+      "Tekstur",
+      2
+    ],
+    [
+      "Infografis & Data",
+      2
+    ],
+    [
+      "Kalender",
+      1
+    ],
+    [
+      "Tekstur & Brush",
+      1
+    ],
+    [
+      "Ecourse & Tutorial",
+      1
+    ]
+  ],
+  "ebookCategories": [
+    [
+      "E-Book Agama Islam",
+      632
+    ],
+    [
+      "E-Book Novel",
+      627
+    ],
+    [
+      "E-Book Pendidikan",
+      271
+    ],
+    [
+      "E-Book Pengembangan Diri",
+      105
+    ],
+    [
+      "E-Book Bisnis",
+      97
+    ],
+    [
+      "E-Book Tafsir",
+      92
+    ],
+    [
+      "E-Book Kesehatan",
+      84
+    ],
+    [
+      "E-Book Resep Masakan",
+      58
+    ],
+    [
+      "E-Book Pengetahuan",
+      52
+    ],
+    [
+      "E-Book Bisnis Investasi",
+      52
+    ],
+    [
+      "E-Book Hukum",
+      49
+    ],
+    [
+      "E-Book Psikologi",
+      44
+    ],
+    [
+      "E-Book Sastra",
+      42
+    ],
+    [
+      "E-Book Keuangan",
+      41
+    ],
+    [
+      "E-Book Pertanian",
+      40
+    ],
+    [
+      "E-Book Politik",
+      39
+    ],
+    [
+      "E-Book Buku Anak",
+      33
+    ],
+    [
+      "E-Book Kerja-Karir",
+      25
+    ],
+    [
+      "E-Book Kuliner",
+      21
+    ],
+    [
+      "E-Book Bisnis Online",
+      19
+    ],
+    [
+      "E-Book Filsafat",
+      18
+    ],
+    [
+      "E-Book Peternakan",
+      12
+    ],
+    [
+      "E-Book Majalah",
+      10
+    ],
+    [
+      "E-Book Budaya & Tradisi",
+      8
+    ]
+  ],
+  "categories": [
+    [
+      "E-Book Agama Islam",
+      632
+    ],
+    [
+      "E-Book Novel",
+      627
+    ],
+    [
+      "E-Book Pendidikan",
+      271
+    ],
+    [
+      "Vektor",
+      126
+    ],
+    [
+      "E-Book Pengembangan Diri",
+      105
+    ],
+    [
+      "E-Book Bisnis",
+      97
+    ],
+    [
+      "E-Book Tafsir",
+      92
+    ],
+    [
+      "E-Book Kesehatan",
+      84
+    ],
+    [
+      "Presentasi & Pitch Deck",
+      69
+    ],
+    [
+      "E-Book Resep Masakan",
+      58
+    ],
+    [
+      "E-Book Pengetahuan",
+      52
+    ],
+    [
+      "E-Book Bisnis Investasi",
+      52
+    ],
+    [
+      "E-Book Hukum",
+      49
+    ],
+    [
+      "Video Animasi & Iklan",
+      47
+    ],
+    [
+      "E-Book Psikologi",
+      44
+    ],
+    [
+      "Stiker & Striping",
+      43
+    ],
+    [
+      "E-Book Sastra",
+      42
+    ],
+    [
+      "E-Book Keuangan",
+      41
+    ],
+    [
+      "E-Book Pertanian",
+      40
+    ],
+    [
+      "E-Book Politik",
+      39
+    ],
+    [
+      "Canva Elements & Clipart Vektor",
+      35
+    ],
+    [
+      "Undangan",
+      34
+    ],
+    [
+      "E-Book Buku Anak",
+      33
+    ],
+    [
+      "Kemasan & Goodie Bag",
+      28
+    ],
+    [
+      "E-Book Kerja-Karir",
+      25
+    ],
+    [
+      "Kaos",
+      25
+    ],
+    [
+      "Poster",
+      23
+    ],
+    [
+      "Logo & Maskot",
+      22
+    ],
+    [
+      "E-Book Kuliner",
+      21
+    ],
+    [
+      "E-Book Bisnis Online",
+      19
+    ],
+    [
+      "E-Book Filsafat",
+      18
+    ],
+    [
+      "Invoice & Nota",
+      17
+    ],
+    [
+      "Kartu Nama",
+      15
+    ],
+    [
+      "Daftar Menu & Kuliner",
+      14
+    ],
+    [
+      "Buku & Yasin",
+      13
+    ],
+    [
+      "E-Book Peternakan",
+      12
+    ],
+    [
+      "Banner & Spanduk",
+      11
+    ],
+    [
+      "E-Book Majalah",
+      10
+    ],
+    [
+      "Media Sosial & Banner",
+      10
+    ],
+    [
+      "E-Book Budaya & Tradisi",
+      8
+    ],
+    [
+      "Photobooth",
+      7
+    ],
+    [
+      "Undangan & Ucapan",
+      7
+    ],
+    [
+      "Sertifikat",
+      6
+    ],
+    [
+      "Karakter & Animasi 3D",
+      5
+    ],
+    [
+      "Brosur & Flyer",
+      3
+    ],
+    [
+      "Mockup",
+      2
+    ],
+    [
+      "Tekstur",
+      2
+    ],
+    [
+      "Infografis & Data",
+      2
+    ],
+    [
+      "Kalender",
+      1
+    ],
+    [
+      "Tekstur & Brush",
+      1
+    ],
+    [
+      "Ecourse & Tutorial",
+      1
+    ]
+  ],
+  "formats": [
+    [
+      "PDF",
+      2471
+    ],
+    [
+      "CDR",
+      389
+    ],
+    [
+      "PPTX",
+      140
+    ],
+    [
+      "WMF/SVG",
+      35
+    ],
+    [
+      "PSD",
+      4
+    ],
+    [
+      "PNG/HD",
+      1
+    ]
+  ],
+  "showcase": {
+    "popular": [
+      {
+        "sku": "ID376B",
+        "title": "ClassMedia 10 - Poster Edukasi Belajar Anak",
+        "category": "Poster",
+        "format": "CDR",
+        "price": 3500,
+        "originalPrice": 10000,
+        "coverImage": "/covers/ID376B/ID376B_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .CDR"
+      },
+      {
+        "sku": "ID1496",
+        "title": "ToteCraft 100 - Master Pola Goodie Bag",
+        "category": "Kemasan & Goodie Bag",
+        "format": "CDR",
+        "price": 10000,
+        "originalPrice": 30000,
+        "coverImage": "/covers/ID1496/ID1496_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .CDR"
+      },
+      {
+        "sku": "ID1686",
+        "title": "CashInvoice 100 - Smart Form Faktur Kasir",
+        "category": "Invoice & Nota",
+        "format": "CDR",
+        "price": 9000,
+        "originalPrice": 25000,
+        "coverImage": "/covers/ID1686/ID1686_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .CDR"
+      },
+      {
+        "sku": "ID7F75",
+        "title": "CartoonTee 100 - Artwork Kaos Kartun Animasi",
+        "category": "Kaos",
+        "format": "CDR",
+        "price": 8500,
+        "originalPrice": 20000,
+        "coverImage": "/covers/ID7F75/ID7F75_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .CDR"
+      },
+      {
+        "sku": "ID1108",
+        "title": "Dynamo - Fluid Kinetic Motion",
+        "category": "Video Animasi & Iklan",
+        "format": "PPTX",
+        "price": 35000,
+        "originalPrice": 75000,
+        "coverImage": "/covers/ID1108/ID1108_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .PPTX"
+      },
+      {
+        "sku": "ID23B4",
+        "title": "Aeterna - Universal Invitation Suite",
+        "category": "Undangan & Ucapan",
+        "format": "PPTX",
+        "price": 8500,
+        "originalPrice": 25000,
+        "coverImage": "/covers/ID23B4/ID23B4_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .PPTX"
+      },
+      {
+        "sku": "ID8E26",
+        "title": "Vows & Velvet - Royal Nuptial Deck",
+        "category": "Presentasi & Pitch Deck",
+        "format": "PPTX",
+        "price": 15000,
+        "originalPrice": 50000,
+        "coverImage": "/covers/ID8E26/ID8E26_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .PPTX"
+      },
+      {
+        "sku": "IDDE48",
+        "title": "ConversionX - Sales Pitch Engine",
+        "category": "Presentasi & Pitch Deck",
+        "format": "PPTX",
+        "price": 18000,
+        "originalPrice": 50000,
+        "coverImage": "/covers/IDDE48/IDDE48_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .PPTX"
+      }
+    ],
+    "cdr": [
+      {
+        "sku": "ID376B",
+        "title": "ClassMedia 10 - Poster Edukasi Belajar Anak",
+        "category": "Poster",
+        "format": "CDR",
+        "price": 3500,
+        "originalPrice": 10000,
+        "coverImage": "/covers/ID376B/ID376B_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .CDR"
+      },
+      {
+        "sku": "ID1496",
+        "title": "ToteCraft 100 - Master Pola Goodie Bag",
+        "category": "Kemasan & Goodie Bag",
+        "format": "CDR",
+        "price": 10000,
+        "originalPrice": 30000,
+        "coverImage": "/covers/ID1496/ID1496_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .CDR"
+      },
+      {
+        "sku": "ID1686",
+        "title": "CashInvoice 100 - Smart Form Faktur Kasir",
+        "category": "Invoice & Nota",
+        "format": "CDR",
+        "price": 9000,
+        "originalPrice": 25000,
+        "coverImage": "/covers/ID1686/ID1686_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .CDR"
+      },
+      {
+        "sku": "ID7F75",
+        "title": "CartoonTee 100 - Artwork Kaos Kartun Animasi",
+        "category": "Kaos",
+        "format": "CDR",
+        "price": 8500,
+        "originalPrice": 20000,
+        "coverImage": "/covers/ID7F75/ID7F75_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .CDR"
+      },
+      {
+        "sku": "ID483B",
+        "title": "UrbanTribes 100 - Artwork Kaos Etnik Streetwear",
+        "category": "Kaos",
+        "format": "CDR",
+        "price": 10000,
+        "originalPrice": 25000,
+        "coverImage": "/covers/ID483B/ID483B_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .CDR"
+      },
+      {
+        "sku": "IDCE8E",
+        "title": "BlessInvite 100 - Desain Undangan Khitanan Anak",
+        "category": "Undangan",
+        "format": "CDR",
+        "price": 9000,
+        "originalPrice": 20000,
+        "coverImage": "/covers/IDCE8E/IDCE8E_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .CDR"
+      },
+      {
+        "sku": "ID44C4",
+        "title": "VintageBride 100 - Desain Undangan Pernikahan Classic",
+        "category": "Undangan",
+        "format": "CDR",
+        "price": 10000,
+        "originalPrice": 20000,
+        "coverImage": "/covers/ID44C4/ID44C4_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .CDR"
+      },
+      {
+        "sku": "IDDF04",
+        "title": "SchoolBanner 10 - Spanduk Promosi PPDB Sekolah",
+        "category": "Banner & Spanduk",
+        "format": "CDR",
+        "price": 3000,
+        "originalPrice": 15000,
+        "coverImage": "/covers/IDDF04/IDDF04_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .CDR"
+      }
+    ],
+    "ppt": [
+      {
+        "sku": "ID1108",
+        "title": "Dynamo - Fluid Kinetic Motion",
+        "category": "Video Animasi & Iklan",
+        "format": "PPTX",
+        "price": 35000,
+        "originalPrice": 75000,
+        "coverImage": "/covers/ID1108/ID1108_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .PPTX"
+      },
+      {
+        "sku": "ID23B4",
+        "title": "Aeterna - Universal Invitation Suite",
+        "category": "Undangan & Ucapan",
+        "format": "PPTX",
+        "price": 8500,
+        "originalPrice": 25000,
+        "coverImage": "/covers/ID23B4/ID23B4_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .PPTX"
+      },
+      {
+        "sku": "ID8E26",
+        "title": "Vows & Velvet - Royal Nuptial Deck",
+        "category": "Presentasi & Pitch Deck",
+        "format": "PPTX",
+        "price": 15000,
+        "originalPrice": 50000,
+        "coverImage": "/covers/ID8E26/ID8E26_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .PPTX"
+      },
+      {
+        "sku": "IDDE48",
+        "title": "ConversionX - Sales Pitch Engine",
+        "category": "Presentasi & Pitch Deck",
+        "format": "PPTX",
+        "price": 18000,
+        "originalPrice": 50000,
+        "coverImage": "/covers/IDDE48/IDDE48_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .PPTX"
+      },
+      {
+        "sku": "ID3121",
+        "title": "HauteElegance - Luxury Aesthetic Deck",
+        "category": "Presentasi & Pitch Deck",
+        "format": "PPTX",
+        "price": 8000,
+        "originalPrice": 25000,
+        "coverImage": "/covers/ID3121/ID3121_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .PPTX"
+      },
+      {
+        "sku": "ID4517",
+        "title": "MotionCrafter - Animated Brand Reel",
+        "category": "Video Animasi & Iklan",
+        "format": "PPTX",
+        "price": 6000,
+        "originalPrice": 25000,
+        "coverImage": "/covers/ID4517/ID4517_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .PPTX"
+      },
+      {
+        "sku": "ID8724",
+        "title": "BannerForge - Commercial Graphic Kit",
+        "category": "Media Sosial & Banner",
+        "format": "PPTX",
+        "price": 6000,
+        "originalPrice": 25000,
+        "coverImage": "/covers/ID8724/ID8724_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .PPTX"
+      },
+      {
+        "sku": "ID8BD7",
+        "title": "Titan 500 - Monumental Slide Vault",
+        "category": "Presentasi & Pitch Deck",
+        "format": "PPTX",
+        "price": 18000,
+        "originalPrice": 40000,
+        "coverImage": "/covers/ID8BD7/ID8BD7_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .PPTX"
+      }
+    ],
+    "ebook": [
+      {
+        "sku": "ID3406",
+        "title": "Shahih Ibnu Hibban Jilid 8 (Karya: Imam Ibnu Hibban)",
+        "category": "E-Book Agama Islam",
+        "format": "PDF",
+        "price": 32000,
+        "originalPrice": 70000,
+        "coverImage": "/covers/ID3406/ID3406_cover.webp",
+        "badge": "Best Seller",
+        "tag": "Format .PDF"
+      },
+      {
+        "sku": "ID2E5C",
+        "title": "Shahih Ibnu Hibban Jilid 7 (Karya: Imam Ibnu Hibban)",
+        "category": "E-Book Agama Islam",
+        "format": "PDF",
+        "price": 35000,
+        "originalPrice": 75000,
+        "coverImage": "/covers/ID2E5C/ID2E5C_cover.webp",
+        "badge": "Best Seller",
+        "tag": "Format .PDF"
+      },
+      {
+        "sku": "ID9755",
+        "title": "Shahih Ibnu Hibban Jilid 1 (Karya: Imam Ibnu Hibban)",
+        "category": "E-Book Agama Islam",
+        "format": "PDF",
+        "price": 35000,
+        "originalPrice": 75000,
+        "coverImage": "/covers/ID9755/ID9755_cover.webp",
+        "badge": "Best Seller",
+        "tag": "Format .PDF"
+      },
+      {
+        "sku": "ID3B28",
+        "title": "Shahih Ibnu Hibban Jilid 3 (Karya: Imam Ibnu Hibban)",
+        "category": "E-Book Agama Islam",
+        "format": "PDF",
+        "price": 32000,
+        "originalPrice": 70000,
+        "coverImage": "/covers/ID3B28/ID3B28_cover.webp",
+        "badge": "Best Seller",
+        "tag": "Format .PDF"
+      },
+      {
+        "sku": "ID161B",
+        "title": "Shahih Ibnu Hibban Jilid 2 (Karya: Imam Ibnu Hibban)",
+        "category": "E-Book Agama Islam",
+        "format": "PDF",
+        "price": 35000,
+        "originalPrice": 75000,
+        "coverImage": "/covers/ID161B/ID161B_cover.webp",
+        "badge": "Best Seller",
+        "tag": "Format .PDF"
+      },
+      {
+        "sku": "ID6D23",
+        "title": "Shahih Ibnu Hibban Jilid 4 (Karya: Imam Ibnu Hibban)",
+        "category": "E-Book Agama Islam",
+        "format": "PDF",
+        "price": 32000,
+        "originalPrice": 70000,
+        "coverImage": "/covers/ID6D23/ID6D23_cover.webp",
+        "badge": "Best Seller",
+        "tag": "Format .PDF"
+      },
+      {
+        "sku": "ID4680",
+        "title": "Shahih Ibnu Hibban Jilid 5 (Karya: Imam Ibnu Hibban)",
+        "category": "E-Book Agama Islam",
+        "format": "PDF",
+        "price": 30000,
+        "originalPrice": 65000,
+        "coverImage": "/covers/ID4680/ID4680_cover.webp",
+        "badge": "Best Seller",
+        "tag": "Format .PDF"
+      },
+      {
+        "sku": "IDB014",
+        "title": "Shahih Ibnu Hibban Jilid 6 (Karya: Imam Ibnu Hibban)",
+        "category": "E-Book Agama Islam",
+        "format": "PDF",
+        "price": 35000,
+        "originalPrice": 75000,
+        "coverImage": "/covers/IDB014/IDB014_cover.webp",
+        "badge": "Best Seller",
+        "tag": "Format .PDF"
+      }
+    ],
+    "others": [
+      {
+        "sku": "ID3905",
+        "title": "99 Big Cats Premium Clipart Vector Svg&wmf Files",
+        "category": "Canva Elements & Clipart Vektor",
+        "format": "WMF/SVG",
+        "price": 3500,
+        "originalPrice": 12000,
+        "coverImage": "/covers/ID3905/ID3905_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .WMF/SVG"
+      },
+      {
+        "sku": "ID4005",
+        "title": "99 Business Premium Clipart Vector Svg&wmf Files",
+        "category": "Canva Elements & Clipart Vektor",
+        "format": "WMF/SVG",
+        "price": 5000,
+        "originalPrice": 12000,
+        "coverImage": "/covers/ID4005/ID4005_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .WMF/SVG"
+      },
+      {
+        "sku": "ID3805",
+        "title": "99 Aquatic Flowers Premium Clipart Vector Svg&wmf Files",
+        "category": "Canva Elements & Clipart Vektor",
+        "format": "WMF/SVG",
+        "price": 4000,
+        "originalPrice": 12000,
+        "coverImage": "/covers/ID3805/ID3805_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .WMF/SVG"
+      },
+      {
+        "sku": "ID3605",
+        "title": "97 Farm Life Premium Clipart Vector Svg&wmf Files",
+        "category": "Canva Elements & Clipart Vektor",
+        "format": "WMF/SVG",
+        "price": 5000,
+        "originalPrice": 12000,
+        "coverImage": "/covers/ID3605/ID3605_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .WMF/SVG"
+      },
+      {
+        "sku": "ID3405",
+        "title": "92 Everyday People Premium Clipart Vector Svg&wmf Files",
+        "category": "Canva Elements & Clipart Vektor",
+        "format": "WMF/SVG",
+        "price": 3500,
+        "originalPrice": 12000,
+        "coverImage": "/covers/ID3405/ID3405_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .WMF/SVG"
+      },
+      {
+        "sku": "ID3505",
+        "title": "94 Beautiful Landscapes Premium Clipart Vector Svg&wmf Files",
+        "category": "Canva Elements & Clipart Vektor",
+        "format": "WMF/SVG",
+        "price": 3000,
+        "originalPrice": 12000,
+        "coverImage": "/covers/ID3505/ID3505_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .WMF/SVG"
+      },
+      {
+        "sku": "ID3205",
+        "title": "70 Cats Of The World Premium Clipart Vector Svg&wmf Files",
+        "category": "Canva Elements & Clipart Vektor",
+        "format": "WMF/SVG",
+        "price": 4500,
+        "originalPrice": 12000,
+        "coverImage": "/covers/ID3205/ID3205_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .WMF/SVG"
+      },
+      {
+        "sku": "ID3005",
+        "title": "63 Modern Teens Premium Clipart Vector Svg&wmf Files",
+        "category": "Canva Elements & Clipart Vektor",
+        "format": "WMF/SVG",
+        "price": 3000,
+        "originalPrice": 12000,
+        "coverImage": "/covers/ID3005/ID3005_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .WMF/SVG"
+      }
+    ]
+  }
+}

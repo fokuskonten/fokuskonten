@@ -10,7 +10,7 @@ import SessionScrollRestorer from '@/components/SessionScrollRestorer'
 
 export const metadata = {
   title: {
-    default: 'Fokus Konten — Software Engineer, AI Creator & Creative Digital Studio',
+    default: 'Fokus Konten — Software Engineer, AI Creator & Digital Assets',
     template: '%s | Fokus Konten',
   },
   description: 'Website resmi Fokus Konten. Dikelola oleh Solo Software Engineer & AI Creator. Menghadirkan software aplikasi Android (POS Kasir, PWA), Desktop EXE, platform web modern, serta katalog aset digital produksi nyata (template CorelDRAW, preset Lightroom/Premiere, dan footage sinematik).',
@@ -29,13 +29,13 @@ export const metadata = {
     locale: 'id_ID',
     url: 'https://fokuskonten.my.id',
     siteName: 'Fokus Konten',
-    title: 'Fokus Konten — Software Engineer, AI Creator & Creative Digital Studio',
+    title: 'Fokus Konten — Software Engineer, AI Creator & Digital Assets',
     description: 'Ekosistem software aplikasi Android, Windows Desktop EXE, web platform modern, dan katalog aset digital produksi nyata oleh Fokus Konten.',
-    images: [{ url: '/assets/brand/og-image.jpg', width: 1200, height: 630, alt: 'Fokus Konten — Software Engineer & Creative Studio' }],
+    images: [{ url: '/assets/brand/og-image.jpg', width: 1200, height: 630, alt: 'Fokus Konten — Software Engineer & AI Creator' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Fokus Konten — Software Engineer, AI Creator & Creative Digital Studio',
+    title: 'Fokus Konten — Software Engineer, AI Creator & Digital Assets',
     description: 'Software aplikasi Android, Windows EXE, web platform modern, dan katalog aset digital produksi nyata oleh Fokus Konten.',
     images: ['/assets/brand/og-image.jpg'],
   },
@@ -50,7 +50,7 @@ const jsonLd = {
       '@type': 'Organization',
       '@id': 'https://fokuskonten.my.id/#organization',
       name: 'Fokus Konten',
-      alternateName: ['FokusKonten', 'Fokus Konten Official', 'FokusKonten Studio'],
+      alternateName: ['FokusKonten', 'Fokus Konten Official'],
       url: 'https://fokuskonten.my.id',
       logo: {
         '@type': 'ImageObject',
@@ -61,7 +61,7 @@ const jsonLd = {
         'https://www.youtube.com/@fokuskonten',
         'https://github.com/fokuskonten',
       ],
-      description: 'Ekosistem resmi Fokus Konten: Software Engineering (Android Native, PWA, Desktop EXE, AI Code Tools) dan Digital Creative Assets Studio (Template Percetakan CorelDRAW, Cinematic Footage, Preset Fotografi & Videografi).',
+      description: 'Ekosistem resmi Fokus Konten: Software Engineering (Android Native, PWA, Desktop EXE, AI Code Tools) dan Digital Creative Assets (Template Percetakan CorelDRAW, Cinematic Footage, Preset Fotografi & Videografi).',
     },
     {
       '@type': 'WebSite',
