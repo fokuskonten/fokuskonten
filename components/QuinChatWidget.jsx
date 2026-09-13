@@ -167,14 +167,18 @@ export default function QuinChatWidget() {
     setMessages(prev => [...prev, { role: 'user', content: userText }])
 
     if (isOffline) {
-      const waUrl = `https://wa.me/6285183011318?text=${encodeURIComponent(`Halo FokusKonten,\n\n${userText}`)}`
-      streamAssistantReply(
-        `Pertanyaan Anda telah kami siapkan untuk langsung terhubung ke WhatsApp resmi pengembang FokusKonten.\n\n👉 [Klik di sini jika WhatsApp tidak terbuka otomatis](https://wa.me/6285183011318?text=${encodeURIComponent(`Halo FokusKonten,\n\n${userText}`)})`,
-        []
-      )
-      if (typeof window !== 'undefined') {
-        window.open(waUrl, '_blank')
+      const lower = userText.toLowerCase().trim()
+      let waText = `Halo FokusKonten, saya ingin bertanya:\n"${userText}"`
+      let replyText = ''
+
+      if (/^(halo|hai|p\b|pagi|siang|sore|malam|assalamu|permisi)/i.test(lower)) {
+        waText = 'Halo Admin FokusKonten, saya ingin konsultasi produk / layanan.'
+        replyText = `Halo! Senang menyapa Anda di FokusKonten.\n\nSaat ini server konsultasi otomatis kami sedang istirahat. Untuk bantuan langsung dari Admin & Pengembang resmi, Anda dapat terhubung via WhatsApp:\n\n👉 [💬 Chat via WhatsApp Resmi (Klik di Sini)](https://wa.me/6285183011318?text=${encodeURIComponent(waText)})`
+      } else {
+        replyText = `Pertanyaan Anda telah kami siapkan untuk konsultasi langsung dengan Admin FokusKonten:\n\n👉 [💬 Lanjutkan Tanya via WhatsApp: "${userText}"](https://wa.me/6285183011318?text=${encodeURIComponent(waText)})`
       }
+
+      streamAssistantReply(replyText, [])
       return
     }
 
@@ -441,7 +445,7 @@ export default function QuinChatWidget() {
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder={isOffline ? "Ketik pesan, langsung terhubung ke WhatsApp..." : "Ketik pertanyaan seputar produk, aplikasi, atau pesanan..."}
+              placeholder={isOffline ? "Tanyakan sesuatu ke Sari..." : "Ketik pertanyaan seputar produk, aplikasi, atau pesanan..."}
               className="w-full pl-3.5 pr-11 py-2.5 rounded-xl bg-neutral-100/80 border border-neutral-200 focus:border-neutral-950 focus:bg-white focus:ring-1 focus:ring-neutral-950 text-xs sm:text-sm outline-none transition-all placeholder:text-neutral-400"
             />
             <button
@@ -449,7 +453,7 @@ export default function QuinChatWidget() {
               disabled={!input.trim() || isLoading}
               className="absolute right-1.5 w-8 h-8 flex items-center justify-center rounded-lg bg-neutral-950 text-white hover:bg-neutral-800 disabled:opacity-40 transition-all cursor-pointer shadow-soft"
               aria-label="Kirim Pesan"
-              title={isOffline ? "Kirim ke WhatsApp Resmi" : "Kirim Pesan"}
+              title={isOffline ? "Kirim Pertanyaan" : "Kirim Pesan"}
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14M12 5l7 7-7 7"/>
