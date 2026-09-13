@@ -76,7 +76,7 @@ export default function FullPreviewClient({ product, images = [], returnSlug }) 
     }).format(num || 0)
   }
 
-  const backUrl = `/toko-digital/${returnSlug || product.sku}/`
+  const backUrl = `/toko-digital/${(product?.sku || returnSlug || '').toLowerCase()}/`
 
   return (
     <div className="min-h-screen bg-[#f8fafc] text-neutral-900 font-sans selection:bg-neutral-900 selection:text-white pt-24 sm:pt-28 pb-32">

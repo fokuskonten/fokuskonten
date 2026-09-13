@@ -3,7 +3,6 @@
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
 import { formatDate } from '@/lib/formatters'
-import { createProductSlug } from '@/app/toko-digital/slugHelper'
 import CommercialLicenseModal from './CommercialLicenseModal'
 import HwidDeviceManagerModal from './HwidDeviceManagerModal'
 
@@ -129,7 +128,7 @@ export default function BuyerDownloadsList({ products = [], buyerProfile }) {
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
           {filteredProducts.map((item) => {
-            const productSlug = createProductSlug(item.sku, item.title)
+            const productUrl = `/toko-digital/${(item.sku || '').toLowerCase()}/`
             const driveUrl = item.driveLink && item.driveLink !== '#' ? item.driveLink : null
 
             return (
@@ -140,7 +139,7 @@ export default function BuyerDownloadsList({ products = [], buyerProfile }) {
                 <div className="flex gap-4">
                   {/* Thumbnail Image */}
                   <Link
-                    href={`/toko-digital/${productSlug}/`}
+                    href={productUrl}
                     className="w-24 h-24 sm:w-28 sm:h-28 rounded-xl overflow-hidden bg-neutral-100 border border-neutral-200 shrink-0 relative group"
                   >
                     <img
@@ -187,7 +186,7 @@ export default function BuyerDownloadsList({ products = [], buyerProfile }) {
                       </button>
                     </div>
 
-                    <Link href={`/toko-digital/${productSlug}/`}>
+                    <Link href={productUrl}>
                       <h4 className="font-bold text-neutral-950 text-sm leading-snug line-clamp-2 hover:text-black transition-colors mb-1.5">
                         {item.title}
                       </h4>

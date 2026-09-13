@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation'
 import storeSummary from '@/content/apps/store_summary.json'
 import { getBuyerProfile, subscribeBuyerStore } from '@/lib/buyerStore'
 import { getCartSummary, subscribeCartStore } from '@/lib/cartStore'
+import { getWhatsAppContextUrl } from '@/lib/useStoreHealth'
 import CartDrawer from '@/components/cart/CartDrawer'
 
 const navLinks = [
@@ -300,7 +301,7 @@ export default function Navbar() {
 
 
             <a
-              href="https://wa.me/6285183011318"
+              href={getWhatsAppContextUrl({ pathname })}
               target="_blank"
               rel="noopener noreferrer"
               className="ml-1 inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-display font-semibold text-white bg-black hover:bg-neutral-800 shadow-sm shadow-black/20 transition-all duration-200"
@@ -495,7 +496,7 @@ export default function Navbar() {
           </button>
 
           <a
-            href="https://wa.me/6285183011318"
+            href={getWhatsAppContextUrl({ pathname })}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 mt-2 w-full px-4 py-2.5 rounded-xl text-sm font-display font-semibold text-white bg-black hover:bg-neutral-800"

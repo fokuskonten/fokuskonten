@@ -13,8 +13,10 @@ import {
   verifyBuyerRegisterOtp,
   resetBuyerPasswordOtp
 } from '@/lib/buyerStore'
+import { useStoreHealth, getWhatsAppContextUrl } from '@/lib/useStoreHealth'
 
 export default function CreativeAuthPortal({ onAuthSuccess }) {
+  const { isOffline } = useStoreHealth()
   // Tab: 'login' | 'register'
   const [tab, setTab] = useState('login')
 
@@ -454,6 +456,30 @@ export default function CreativeAuthPortal({ onAuthSuccess }) {
             Daftar
           </button>
         </div>
+
+        {/* Status Pemeliharaan Akun Tenang saat Offline */}
+        {isOffline && (
+          <div className="mb-6 p-4 rounded-2xl bg-neutral-50 border border-neutral-200/90 text-xs text-neutral-700 space-y-2.5">
+            <div className="flex items-center gap-2 font-semibold text-neutral-900">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0" />
+              <span>Sinkronisasi Akun Cloud Sedang Pemeliharaan</span>
+            </div>
+            <p className="text-neutral-500 leading-relaxed text-[11px] sm:text-xs">
+              Lisensi dan data transaksi Anda tersimpan aman di server lokal. Untuk konfirmasi kepemilikan akun atau verifikasi pesanan saat mode pemeliharaan berkala, tim engineer kami siap melayani Anda langsung via WhatsApp.
+            </p>
+            <div>
+              <a
+                href={getWhatsAppContextUrl({ pathname: '/login' })}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-neutral-950 text-white font-semibold text-xs hover:bg-neutral-800 transition-colors shadow-xs"
+              >
+                <span>Bantuan Akun via WhatsApp</span>
+                <span className="text-[10px] opacity-70">↗</span>
+              </a>
+            </div>
+          </div>
+        )}
 
         {/* 1-Click Google Sign-In */}
         {tab === 'login' && loginMode === 'password' && (

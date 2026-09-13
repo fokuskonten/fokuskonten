@@ -165,7 +165,7 @@ export default function LicensesPage() {
               </div>
               <div className="flex flex-wrap items-center gap-3 shrink-0">
                 <a
-                  href="https://wa.me/6285183011318"
+                  href={`https://wa.me/6285183011318?text=${encodeURIComponent('Halo FokusKonten,\n\nSaya ingin menanyakan ketentuan lisensi custom / enterprise untuk aplikasi dan software FokusKonten.')}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-display font-semibold text-xs bg-white text-neutral-950 hover:bg-neutral-100 transition-all shadow-sm"

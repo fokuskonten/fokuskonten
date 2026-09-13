@@ -176,10 +176,10 @@ export default function ProductDetailClient({ product }) {
   return (
     <div className="min-h-screen pt-28 sm:pt-32 pb-32 sm:pb-24 bg-white text-neutral-900">
       <div className="container-page max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* ── 1. UNIFIED BREADCRUMB, CATEGORY SELECTOR & SEARCH BAR ── */}
         <div className="mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3.5 pb-4 border-b border-neutral-200/80">
-          
+
           {/* Breadcrumb Navigation */}
           <nav className="flex items-center gap-2 text-xs text-neutral-500 flex-wrap">
             <Link href="/" className="hover:text-black transition-colors font-medium">Beranda</Link>
@@ -221,9 +221,8 @@ export default function ProductDetailClient({ product }) {
                     <button
                       type="button"
                       onClick={() => handleCategorySelect('Semua')}
-                      className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-semibold text-left transition-colors ${
-                        !product.category ? 'bg-neutral-900 text-white font-bold' : 'text-neutral-700 hover:bg-neutral-100'
-                      }`}
+                      className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-semibold text-left transition-colors ${!product.category ? 'bg-neutral-900 text-white font-bold' : 'text-neutral-700 hover:bg-neutral-100'
+                        }`}
                     >
                       <span>Semua Kategori</span>
                       {!product.category && <span>✓</span>}
@@ -233,9 +232,8 @@ export default function ProductDetailClient({ product }) {
                         key={cat}
                         type="button"
                         onClick={() => handleCategorySelect(cat)}
-                        className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-semibold text-left transition-colors ${
-                          product.category === cat ? 'bg-neutral-900 text-white font-bold' : 'text-neutral-700 hover:bg-neutral-100'
-                        }`}
+                        className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-semibold text-left transition-colors ${product.category === cat ? 'bg-neutral-900 text-white font-bold' : 'text-neutral-700 hover:bg-neutral-100'
+                          }`}
                       >
                         <span>{cat}</span>
                         {product.category === cat && <span>✓</span>}
@@ -284,7 +282,7 @@ export default function ProductDetailClient({ product }) {
 
         {/* ── 3. TWO-COLUMN GRID LAYOUT (CM STYLE) ────────────────────────── */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          
+
           {/* ── LEFT COLUMN: MEDIA SHOWCASE, STORY & SPECS (8 COLS) ────────── */}
           <div className="lg:col-span-8 space-y-8">
             <ProductGallery
@@ -342,13 +340,12 @@ export default function ProductDetailClient({ product }) {
               <button
                 type="button"
                 onClick={handleAddToCart}
-                className={`p-2.5 rounded-xl border font-bold text-xs transition-all duration-200 flex items-center justify-center cursor-pointer ${
-                  inCart
+                className={`p-2.5 rounded-xl border font-bold text-xs transition-all duration-200 flex items-center justify-center cursor-pointer ${inCart
                     ? 'bg-neutral-900 text-white border-neutral-900 shadow-sm active:scale-95'
                     : isJustAdded
-                    ? 'bg-neutral-950 text-white border-neutral-950 scale-105 ring-2 ring-neutral-900 shadow-md'
-                    : 'bg-white text-neutral-900 border-neutral-300 shadow-sm active:scale-95'
-                }`}
+                      ? 'bg-neutral-950 text-white border-neutral-950 scale-105 ring-2 ring-neutral-900 shadow-md'
+                      : 'bg-white text-neutral-900 border-neutral-300 shadow-sm active:scale-95'
+                  }`}
                 title={inCart ? 'Lihat Keranjang' : 'Tambah ke Keranjang'}
                 aria-label={inCart ? 'Lihat Keranjang' : 'Tambah ke Keranjang'}
               >
@@ -358,7 +355,7 @@ export default function ProductDetailClient({ product }) {
                   </svg>
                 ) : (
                   <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                    <path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z"/>
+                    <path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z" />
                   </svg>
                 )}
               </button>

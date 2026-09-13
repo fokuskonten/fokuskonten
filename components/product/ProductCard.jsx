@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { createProductSlug } from '@/app/toko-digital/slugHelper'
 import { hasPurchasedSku, subscribeBuyerStore } from '@/lib/buyerStore'
 import { addToCart, hasInCart, subscribeCartStore } from '@/lib/cartStore'
 
@@ -63,7 +62,7 @@ export default function ProductCard({ product, compact = false }) {
     ? Math.round(((origPrice - product.price) / origPrice) * 100)
     : null
 
-  const productSlug = createProductSlug(product.sku, product.title)
+  const productUrl = `/toko-digital/${(product.sku || '').toLowerCase()}/`
   const formatUpper = (product.format || 'CDR').toUpperCase()
 
   if (compact) {
@@ -77,7 +76,7 @@ export default function ProductCard({ product, compact = false }) {
         )}
         <div>
           <Link
-            href={`/toko-digital/${productSlug}/`}
+            href={productUrl}
             onContextMenu={(e) => e.preventDefault()}
             className="block relative aspect-square bg-neutral-100 overflow-hidden flex items-center justify-center border-b border-neutral-100 select-none"
           >
@@ -120,7 +119,7 @@ export default function ProductCard({ product, compact = false }) {
               <span>{product.category}</span>
               <span className="font-mono text-neutral-500 bg-neutral-100 px-1 py-0.2 rounded font-semibold shrink-0">{product.sku}</span>
             </div>
-            <Link href={`/toko-digital/${productSlug}/`}>
+            <Link href={productUrl}>
               <h4 className="font-bold text-neutral-950 text-xs leading-snug group-hover:text-black transition-colors line-clamp-2 min-h-[32px]">
                 {product.title}
               </h4>
@@ -191,7 +190,7 @@ export default function ProductCard({ product, compact = false }) {
       <div>
         {/* Thumbnail Image Frame */}
         <Link
-          href={`/toko-digital/${productSlug}/`}
+          href={productUrl}
           onContextMenu={(e) => e.preventDefault()}
           className="block relative aspect-square bg-neutral-100 overflow-hidden flex items-center justify-center border-b border-neutral-100 select-none"
         >
@@ -236,7 +235,7 @@ export default function ProductCard({ product, compact = false }) {
             <span className="truncate max-w-[90px] sm:max-w-none">{product.category}</span>
             <span className="font-mono text-neutral-600 bg-neutral-100 px-1.5 py-0.5 rounded font-semibold text-[10px] sm:text-[11px] shrink-0">{product.sku}</span>
           </div>
-          <Link href={`/toko-digital/${productSlug}/`}>
+          <Link href={productUrl}>
             <h3 className="font-bold text-neutral-950 text-xs sm:text-sm leading-snug group-hover:text-black transition-colors line-clamp-2 min-h-[32px] sm:min-h-[40px]">
               {product.title}
             </h3>

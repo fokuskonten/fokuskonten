@@ -38,6 +38,9 @@ export default function AppDetailPage({ params }) {
     .filter((a) => a.id !== params.id)
     .slice(0, 4)
 
+  const appTitle = portfolio?.name || app?.name || 'Aplikasi FokusKonten'
+  const waAppUrl = `https://wa.me/6285183011318?text=${encodeURIComponent(`Halo FokusKonten,\n\nSaya tertarik dengan aplikasi *${appTitle}* (${portfolio?.category || app?.category || 'Android'}).\nMohon info konsultasi teknis dan cara pemesanan lisensi resminya.`)}`
+
   const cta = portfolio?.cta || {
     primary: {
       label: 'Download di Google Play',
@@ -46,7 +49,7 @@ export default function AppDetailPage({ params }) {
     },
     secondary: {
       label: 'Konsultasi WhatsApp',
-      href: 'https://wa.me/6285183011318',
+      href: waAppUrl,
       type: 'whatsapp',
     },
   }
@@ -455,7 +458,7 @@ export default function AppDetailPage({ params }) {
 
                   <div className="mt-6 pt-5 border-t border-neutral-100 space-y-3 text-xs">
                     <a
-                      href="https://wa.me/6285183011318"
+                      href={waAppUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 text-neutral-600 hover:text-black font-medium transition-colors"

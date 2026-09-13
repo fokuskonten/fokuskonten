@@ -13,7 +13,6 @@ import {
 } from '@/lib/cartStore'
 import { hasPurchasedSku } from '@/lib/buyerStore'
 import { formatRupiah } from '@/lib/formatters'
-import { createProductSlug } from '@/app/toko-digital/slugHelper'
 import { useStoreHealth } from '@/lib/useStoreHealth'
 
 const VISIBLE_LIMIT = 3 // Item terlihat sebelum "Lihat selengkapnya"
@@ -156,12 +155,12 @@ export default function CartDrawer({ isOpen, onClose }) {
               style={{ maxHeight: expanded ? '50vh' : 'none' }}
             >
               {visibleItems.map((item) => {
-                const slug = createProductSlug(item.sku, item.title)
+                const productUrl = `/toko-digital/${(item.sku || '').toLowerCase()}/`
                 const origPrice = item.originalPrice || item.price * 2
                 return (
                   <div key={item.sku} className="px-4 py-3 flex gap-3 group">
                     <Link
-                      href={`/toko-digital/${slug}/`}
+                      href={productUrl}
                       onClick={onClose}
                       className="w-14 h-14 rounded-xl overflow-hidden bg-neutral-100 border border-neutral-200 shrink-0"
                     >
@@ -193,7 +192,7 @@ export default function CartDrawer({ isOpen, onClose }) {
                           )}
                         </div>
                         <Link
-                          href={`/toko-digital/${slug}/`}
+                          href={productUrl}
                           onClick={onClose}
                           className="font-semibold text-neutral-900 text-xs leading-snug line-clamp-2 hover:text-neutral-600 transition-colors"
                         >

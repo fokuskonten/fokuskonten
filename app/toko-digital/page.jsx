@@ -6,7 +6,6 @@ import Link from 'next/link'
 import catalogProducts from '@/content/apps/catalog_products.json'
 import storeSummary from '@/content/apps/store_summary.json'
 import ProductCard from '@/components/product/ProductCard'
-import { createProductSlug } from './slugHelper'
 
 const ITEMS_PER_PAGE = 24
 

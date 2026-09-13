@@ -2,7 +2,7 @@ import digitalProducts from '@/content/apps/digitalProducts.json'
 import FullPreviewClient from './FullPreviewClient'
 import path from 'path'
 import fs from 'fs'
-import { extractSkuFromSlug, createProductSlug } from '../../slugHelper'
+import { extractSkuFromSlug } from '../../slugHelper'
 
 export const dynamicParams = true
 
@@ -107,12 +107,10 @@ export async function generateStaticParams() {
   for (const product of allItems) {
     if (product.sku && (product.isPublished !== false)) {
       const lowerSku = product.sku.toLowerCase()
-      const upperSku = product.sku.toUpperCase()
-      const slug = createProductSlug(product.sku, product.title)
-
-      if (!added.has(lowerSku)) { params.push({ sku: lowerSku }); added.add(lowerSku); }
-      if (!added.has(upperSku)) { params.push({ sku: upperSku }); added.add(upperSku); }
-      if (slug && !added.has(slug)) { params.push({ sku: slug }); added.add(slug); }
+      if (!added.has(lowerSku)) {
+        params.push({ sku: lowerSku })
+        added.add(lowerSku)
+      }
     }
   }
   return params
@@ -145,7 +143,7 @@ export default function FullPreviewPage({ params }) {
   }
 
   const images = getAllSkuImages(product.sku)
-  const returnSlug = createProductSlug(product.sku, product.title)
+  const returnSlug = (product.sku || '').toLowerCase()
 
   return (
     <FullPreviewClient

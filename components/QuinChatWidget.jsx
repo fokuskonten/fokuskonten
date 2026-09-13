@@ -2,8 +2,9 @@
 
 import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { getApiBaseUrl } from '@/lib/apiConfig'
-import { useStoreHealth } from '@/lib/useStoreHealth'
+import { useStoreHealth, getWhatsAppContextUrl } from '@/lib/useStoreHealth'
 
 const DEFAULT_MESSAGES = [
   { 
@@ -14,12 +15,43 @@ const DEFAULT_MESSAGES = [
 
 export default function QuinChatWidget() {
   const { isOffline } = useStoreHealth()
+  const pathname = usePathname() || ''
   const [isOpen, setIsOpen] = useState(false)
   const [messages, setMessages] = useState(DEFAULT_MESSAGES)
   const [input, setInput] = useState('')
   const [isLoading, setIsLoading] = useState(false)
   const [hasHydrated, setHasHydrated] = useState(false)
   const messagesEndRef = useRef(null)
+
+  const getQuickChips = (path = '') => {
+    if (path.includes('/aplikasi')) {
+      return [
+        { label: '📱 Lisensi Aplikasi', url: getWhatsAppContextUrl({ pathname: path, topic: 'Konsultasi Lisensi Aplikasi' }) },
+        { label: '🛠️ Bantuan Teknis', url: getWhatsAppContextUrl({ pathname: path, topic: 'Bantuan Teknis & Kompatibilitas' }) },
+      ]
+    }
+    if (path.includes('/layanan')) {
+      return [
+        { label: '💼 Jasa Buat Software', url: getWhatsAppContextUrl({ pathname: path, topic: 'Jasa Pembuatan Software Android & POS' }) },
+        { label: '📋 Estimasi Biaya', url: getWhatsAppContextUrl({ pathname: path, topic: 'Estimasi Biaya & Alur Pengerjaan' }) },
+      ]
+    }
+    if (path.includes('/portfolio')) {
+      return [
+        { label: '🚀 Diskusi Solusi Serupa', url: getWhatsAppContextUrl({ pathname: path, topic: 'Diskusi Portofolio & Proyek Serupa' }) },
+      ]
+    }
+    if (path.includes('/toko-digital')) {
+      return [
+        { label: '🛒 Pesan Produk Manual', url: getWhatsAppContextUrl({ pathname: path, topic: 'Pemesanan Produk Digital via WhatsApp' }) },
+        { label: '💳 Info Rekening / QRIS', url: getWhatsAppContextUrl({ pathname: path, topic: 'Info Pembayaran Transfer / QRIS Resmi' }) },
+      ]
+    }
+    return [
+      { label: '💬 Chat WhatsApp Resmi', url: getWhatsAppContextUrl({ pathname: path }) },
+      { label: '📱 Konsultasi Software', url: getWhatsAppContextUrl({ pathname: path, topic: 'Konsultasi Produk & Lisensi Software' }) },
+    ]
+  }
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
@@ -133,6 +165,19 @@ export default function QuinChatWidget() {
     const userText = input.trim()
     setInput('')
     setMessages(prev => [...prev, { role: 'user', content: userText }])
+
+    if (isOffline) {
+      const waUrl = `https://wa.me/6285183011318?text=${encodeURIComponent(`Halo FokusKonten,\n\n${userText}`)}`
+      streamAssistantReply(
+        `Pertanyaan Anda telah kami siapkan untuk langsung terhubung ke WhatsApp resmi pengembang FokusKonten.\n\n👉 [Klik di sini jika WhatsApp tidak terbuka otomatis](https://wa.me/6285183011318?text=${encodeURIComponent(`Halo FokusKonten,\n\n${userText}`)})`,
+        []
+      )
+      if (typeof window !== 'undefined') {
+        window.open(waUrl, '_blank')
+      }
+      return
+    }
+
     setIsLoading(true)
 
     try {
@@ -153,7 +198,7 @@ export default function QuinChatWidget() {
       )
     } catch (err) {
       streamAssistantReply(
-        'Mohon maaf, server konsultasi kami sedang dalam kondisi istirahat/offline sesaat. Anda dapat langsung menghubungi kami melalui menu Hubungi di atas atau WhatsApp resmi kami: 085183011318 🙏',
+        `Mohon maaf, server konsultasi otomatis kami sedang dalam pemeliharaan berkala. Anda dapat langsung berkonsultasi via WhatsApp resmi: [085183011318](https://wa.me/6285183011318?text=${encodeURIComponent(`Halo FokusKonten,\n\n${userText}`)}) 🙏`,
         []
       )
     }
@@ -255,9 +300,9 @@ export default function QuinChatWidget() {
                 <h3 className="text-white font-semibold text-sm tracking-tight">Sari — Layanan Pelanggan</h3>
               </div>
               {isOffline ? (
-                <p className="text-amber-400 text-[11px] font-medium flex items-center gap-1.5 mt-0.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
-                  Mode Offline • Server Istirahat
+                <p className="text-emerald-400 text-[11px] font-medium flex items-center gap-1.5 mt-0.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                  Layanan Siaga via WhatsApp
                 </p>
               ) : (
                 <p className="text-emerald-400 text-[11px] font-medium flex items-center gap-1.5 mt-0.5">
@@ -368,6 +413,27 @@ export default function QuinChatWidget() {
           <div ref={messagesEndRef} />
         </div>
 
+        {/* Quick Context Chips saat Offline */}
+        {isOffline && (
+          <div className="px-3.5 py-2 bg-neutral-50/90 border-t border-neutral-200/80 flex flex-wrap gap-1.5 items-center">
+            <span className="text-[10px] font-display font-semibold text-neutral-400 uppercase tracking-wider block w-full mb-0.5">
+              Konsultasi Cepat via WhatsApp:
+            </span>
+            {getQuickChips(pathname).map((chip, idx) => (
+              <a
+                key={idx}
+                href={chip.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-medium bg-white text-neutral-800 border border-neutral-200/90 hover:bg-neutral-950 hover:text-white hover:border-neutral-950 transition-all shadow-xs"
+              >
+                <span>{chip.label}</span>
+                <span className="text-[10px] opacity-60">↗</span>
+              </a>
+            ))}
+          </div>
+        )}
+
         {/* Input Form */}
         <form onSubmit={handleSend} className="p-3 bg-white border-t border-neutral-200/80">
           <div className="relative flex items-center">
@@ -375,7 +441,7 @@ export default function QuinChatWidget() {
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="Ketik pertanyaan seputar produk, aplikasi, atau pesanan..."
+              placeholder={isOffline ? "Ketik pesan, langsung terhubung ke WhatsApp..." : "Ketik pertanyaan seputar produk, aplikasi, atau pesanan..."}
               className="w-full pl-3.5 pr-11 py-2.5 rounded-xl bg-neutral-100/80 border border-neutral-200 focus:border-neutral-950 focus:bg-white focus:ring-1 focus:ring-neutral-950 text-xs sm:text-sm outline-none transition-all placeholder:text-neutral-400"
             />
             <button
@@ -383,6 +449,7 @@ export default function QuinChatWidget() {
               disabled={!input.trim() || isLoading}
               className="absolute right-1.5 w-8 h-8 flex items-center justify-center rounded-lg bg-neutral-950 text-white hover:bg-neutral-800 disabled:opacity-40 transition-all cursor-pointer shadow-soft"
               aria-label="Kirim Pesan"
+              title={isOffline ? "Kirim ke WhatsApp Resmi" : "Kirim Pesan"}
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14M12 5l7 7-7 7"/>

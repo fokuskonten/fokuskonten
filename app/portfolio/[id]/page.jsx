@@ -84,7 +84,7 @@ export default function PortfolioDetailPage({ params }) {
             </p>
           </div>
           <a
-            href="https://wa.me/6285183011318"
+            href={`https://wa.me/6285183011318?text=${encodeURIComponent(`Halo FokusKonten,\n\nSaya melihat portofolio proyek *${item.title}* (${item.category}) di fokuskonten.my.id.\nSaya tertarik untuk mendiskusikan pengembangan solusi serupa untuk kebutuhan bisnis saya.`)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-xs transition-all shrink-0"

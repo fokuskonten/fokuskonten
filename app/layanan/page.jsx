@@ -124,7 +124,7 @@ export default function ServicesPage() {
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <a
-                href="https://wa.me/6285183011318"
+                href={`https://wa.me/6285183011318?text=${encodeURIComponent('Halo FokusKonten,\n\nSaya ingin konsultasi jasa pembuatan software / aplikasi Android kustom untuk kebutuhan usaha saya.\nMohon info estimasi alur dan proses kerjanya.')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-7 py-4 rounded-xl font-display font-semibold text-sm bg-white text-neutral-950 hover:bg-neutral-100 transition-all shadow-lg"

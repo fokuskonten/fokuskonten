@@ -50,7 +50,7 @@ export default function ContactPage() {
 
               <div className="pt-6 border-t border-neutral-800/80 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <a
-                  href="https://wa.me/6285183011318"
+                  href={`https://wa.me/6285183011318?text=${encodeURIComponent('Halo FokusKonten,\n\nSaya ingin berkonsultasi langsung dengan tim software engineer FokusKonten mengenai solusi software dan layanan resmi.')}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl font-display font-semibold text-sm bg-white text-neutral-950 hover:bg-neutral-100 transition-all shadow-lg shrink-0"

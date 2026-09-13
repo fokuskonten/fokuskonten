@@ -2,18 +2,17 @@
   "CDR",
   "PSD",
   "AI/EPS",
-  "AEP",
   "MP4",
-  "ATN",
-  "ABR",
   "LUTS/XMP",
   "TTF/OTF",
   "PPTX",
-  "PROCREATE",
   "CANVA",
   "WAV/MP3",
   "XLSX",
   "PDF",
   "PNG/HD",
-  "WMF/SVG"
+  "WMF/SVG",
+  "ISPLAN",
+  "MOGRT",
+  "PHP/WEB"
 ]

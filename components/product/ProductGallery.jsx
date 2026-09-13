@@ -125,7 +125,7 @@ export default function ProductGallery({
         {/* Full Visual Lookbook CTA Button (Membuka Tab Baru) */}
         <div className="mt-3">
           <a
-            href={`/toko-digital/${product?.sku}/fullpreview/`}
+            href={`/toko-digital/${(product?.sku || '').toLowerCase()}/fullpreview/`}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full py-3 px-4 rounded-xl bg-neutral-950 hover:bg-black text-white text-xs sm:text-sm font-bold flex items-center justify-between transition-all shadow-sm group cursor-pointer border border-neutral-800"
