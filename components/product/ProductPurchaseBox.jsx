@@ -162,14 +162,19 @@ export default function ProductPurchaseBox({ product, fmtMeta }) {
             {/* 1. Primary Professional Checkout CTA Button */}
             {isOffline ? (
               <div className="space-y-2">
-                <div className="w-full py-3.5 px-4 rounded-xl bg-neutral-200 text-neutral-500 font-display font-extrabold text-sm sm:text-base flex items-center justify-center gap-2 text-center cursor-not-allowed border border-neutral-300 select-none">
-                  <svg className="w-4 h-4 shrink-0 text-neutral-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <a
+                  href={`https://wa.me/6285183011318?text=${encodeURIComponent(`Halo Admin FokusKonten,\n\nSaya ingin memesan produk:\n*${product.sku} - ${product.title}*\nHarga: Rp ${product.price?.toLocaleString('id-ID')}\n\nMohon petunjuk pembayaran resmi & pengiriman file master Google Drive.`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-3.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 active:scale-[0.99] text-white font-display font-extrabold text-sm sm:text-base shadow-card hover:shadow-float transition-all flex items-center justify-center gap-2 text-center group cursor-pointer"
+                >
+                  <svg className="w-5 h-5 text-white shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
                   </svg>
-                  <span>{ctaText}</span>
-                </div>
-                <p className="text-[11px] text-neutral-600 bg-neutral-100 border border-neutral-200 rounded-xl p-2.5 text-center font-sans">
-                  Server transaksi sedang offline. Anda dapat menghubungi admin melalui menu <strong>Hubungi</strong> di navigasi atas.
+                  <span>Pesan via Helpdesk WhatsApp</span>
+                </a>
+                <p className="text-[11px] text-neutral-500 bg-neutral-50 border border-neutral-200/80 rounded-xl p-2.5 text-center font-sans leading-relaxed">
+                  Sistem checkout otomatis sedang dalam pemeliharaan berkala. Pemesanan, akses file Google Drive instan, dan lisensi komersial resmi dilayani langsung via Helpdesk.
                 </p>
               </div>
             ) : (

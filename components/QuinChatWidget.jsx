@@ -168,14 +168,14 @@ export default function QuinChatWidget() {
 
     if (isOffline) {
       const lower = userText.toLowerCase().trim()
-      let waText = `Halo FokusKonten, saya ingin bertanya:\n"${userText}"`
+      let waText = `Halo Admin FokusKonten, saya ingin berkonsultasi mengenai:\n"${userText}"`
       let replyText = ''
 
       if (/^(halo|hai|p\b|pagi|siang|sore|malam|assalamu|permisi)/i.test(lower)) {
-        waText = 'Halo Admin FokusKonten, saya ingin konsultasi produk / layanan.'
-        replyText = `Halo! Senang menyapa Anda di FokusKonten.\n\nSaat ini server konsultasi otomatis kami sedang istirahat. Untuk bantuan langsung dari Admin & Pengembang resmi, Anda dapat terhubung via WhatsApp:\n\n👉 [💬 Chat via WhatsApp Resmi (Klik di Sini)](https://wa.me/6285183011318?text=${encodeURIComponent(waText)})`
+        waText = 'Halo Admin FokusKonten, saya ingin konsultasi produk dan layanan resmi.'
+        replyText = `Selamat datang di Layanan Pelanggan Resmi FokusKonten.\n\nSaat ini sistem asisten otomatis kami sedang menjalani pemeliharaan sistem berkala (scheduled maintenance). Seluruh etalase katalog dan modul tetap dapat Anda akses secara normal.\n\nUntuk konsultasi langsung, pemesanan master desain, atau asistensi pembuatan aplikasi bersama tim pengembang, silakan hubungi Helpdesk resmi kami:\n\n👉 [💬 Hubungi Helpdesk WhatsApp Resmi](https://wa.me/6285183011318?text=${encodeURIComponent(waText)})\n\nTim kami siap melayani kebutuhan Anda secara profesional.`
       } else {
-        replyText = `Pertanyaan Anda telah kami siapkan untuk konsultasi langsung dengan Admin FokusKonten:\n\n👉 [💬 Lanjutkan Tanya via WhatsApp: "${userText}"](https://wa.me/6285183011318?text=${encodeURIComponent(waText)})`
+        replyText = `Terima kasih telah menghubungi FokusKonten.\n\nSaat ini sistem transaksi otomatis sedang dalam pemeliharaan sistem berkala. Pertanyaan Anda mengenai:\n*"${userText}"*\n\ntelah kami siapkan agar langsung ditangani oleh Helpdesk resmi kami:\n\n👉 [💬 Lanjutkan ke Helpdesk WhatsApp: "${userText}"](https://wa.me/6285183011318?text=${encodeURIComponent(waText)})\n\nPengiriman akses Google Drive dan lisensi komersial tetap dilayani secara penuh.`
       }
 
       streamAssistantReply(replyText, [])
@@ -306,7 +306,7 @@ export default function QuinChatWidget() {
               {isOffline ? (
                 <p className="text-emerald-400 text-[11px] font-medium flex items-center gap-1.5 mt-0.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                  Layanan Siaga via WhatsApp
+                  Layanan Terhubung • Helpdesk Resmi
                 </p>
               ) : (
                 <p className="text-emerald-400 text-[11px] font-medium flex items-center gap-1.5 mt-0.5">
@@ -421,7 +421,7 @@ export default function QuinChatWidget() {
         {isOffline && (
           <div className="px-3.5 py-2 bg-neutral-50/90 border-t border-neutral-200/80 flex flex-wrap gap-1.5 items-center">
             <span className="text-[10px] font-display font-semibold text-neutral-400 uppercase tracking-wider block w-full mb-0.5">
-              Konsultasi Cepat via WhatsApp:
+              Layanan Langsung via Helpdesk:
             </span>
             {getQuickChips(pathname).map((chip, idx) => (
               <a
