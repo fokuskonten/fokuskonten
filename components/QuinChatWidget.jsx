@@ -9,7 +9,7 @@ import { useStoreHealth, getWhatsAppContextUrl } from '@/lib/useStoreHealth'
 const DEFAULT_MESSAGES = [
   { 
     role: 'assistant', 
-    content: 'Selamat datang di FokusKonten. Saya Sari dari Layanan Pelanggan. Ada yang dapat saya bantu terkait produk atau layanan kami hari ini?' 
+    content: 'Selamat datang di FokusKonten. Saya Kalila dari Layanan Pelanggan. Ada yang dapat saya bantu terkait produk atau layanan kami hari ini?' 
   }
 ]
 
@@ -295,13 +295,13 @@ export default function QuinChatWidget() {
             <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-emerald-400 shadow-soft shrink-0">
               <img 
                 src="/cs-avatar.png" 
-                alt="Sari - Layanan Pelanggan" 
+                alt="Kalila - Layanan Pelanggan" 
                 className="w-full h-full object-cover"
               />
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <h3 className="text-white font-semibold text-sm tracking-tight">Sari — Layanan Pelanggan</h3>
+                <h3 className="text-white font-semibold text-sm tracking-tight">Kalila — Layanan Pelanggan</h3>
               </div>
               {isOffline ? (
                 <p className="text-emerald-400 text-[11px] font-medium flex items-center gap-1.5 mt-0.5">
@@ -349,7 +349,7 @@ export default function QuinChatWidget() {
                 <div className="relative w-7 h-7 rounded-full overflow-hidden shrink-0 border border-neutral-200 shadow-xs mt-0.5">
                   <img 
                     src="/cs-avatar.png" 
-                    alt="Sari" 
+                    alt="Kalila" 
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -401,7 +401,7 @@ export default function QuinChatWidget() {
               <div className="relative w-7 h-7 rounded-full overflow-hidden shrink-0 border border-neutral-200 shadow-xs mt-0.5">
                 <img 
                   src="/cs-avatar.png" 
-                  alt="Sari" 
+                  alt="Kalila" 
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -445,7 +445,7 @@ export default function QuinChatWidget() {
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder={isOffline ? "Tanyakan sesuatu ke Sari..." : "Ketik pertanyaan seputar produk, aplikasi, atau pesanan..."}
+              placeholder={isOffline ? "Ketik pertanyaan untuk Helpdesk Resmi..." : "Ketik pertanyaan seputar produk, aplikasi, atau pesanan..."}
               className="w-full pl-3.5 pr-11 py-2.5 rounded-xl bg-neutral-100/80 border border-neutral-200 focus:border-neutral-950 focus:bg-white focus:ring-1 focus:ring-neutral-950 text-xs sm:text-sm outline-none transition-all placeholder:text-neutral-400"
             />
             <button
