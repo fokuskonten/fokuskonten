@@ -216,7 +216,32 @@ export default function QuinChatWidget() {
     }
   }
 
-  // Render text with clickable markdown links
+  const renderFormattedLine = (line, lineKey) => {
+    if (!line || !line.includes('**')) {
+      return line
+    }
+    const boldRegex = /\*\*(.*?)\*\*/g
+    const subParts = []
+    let last = 0
+    let bMatch
+    while ((bMatch = boldRegex.exec(line)) !== null) {
+      if (bMatch.index > last) {
+        subParts.push(line.substring(last, bMatch.index))
+      }
+      subParts.push(
+        <strong key={`b-${lineKey}-${bMatch.index}`} className="font-semibold text-neutral-950">
+          {bMatch[1]}
+        </strong>
+      )
+      last = boldRegex.lastIndex
+    }
+    if (last < line.length) {
+      subParts.push(line.substring(last))
+    }
+    return subParts
+  }
+
+  // Render text with clickable markdown links & bold formatting
   const renderMessageContent = (content) => {
     if (typeof content !== 'string') return content
 
@@ -265,7 +290,7 @@ export default function QuinChatWidget() {
       if (typeof part === 'string') {
         return part.split('\n').map((line, lIdx, arr) => (
           <span key={`${idx}-${lIdx}`}>
-            {line}
+            {renderFormattedLine(line, `${idx}-${lIdx}`)}
             {lIdx < arr.length - 1 && <br />}
           </span>
         ))
