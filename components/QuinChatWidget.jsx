@@ -57,17 +57,25 @@ export default function QuinChatWidget() {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
   }
 
-  // Load chat history & open state from localStorage
+  // Load chat history & open state from localStorage (Auto-migrate v2 to v3)
   useEffect(() => {
     try {
-      const savedMessages = localStorage.getItem('fk_chat_history_v2')
+      const savedMessages = localStorage.getItem('fk_chat_history_v3') || localStorage.getItem('fk_chat_history_v2')
       if (savedMessages) {
-        const parsed = JSON.parse(savedMessages)
+        let parsed = JSON.parse(savedMessages)
         if (Array.isArray(parsed) && parsed.length > 0) {
+          // Sanitasi nama lama "Sari" menjadi "Kalila"
+          parsed = parsed.map(m => ({
+            ...m,
+            content: (m.content || '')
+              .replace(/Saya Sari dari/gi, 'Saya Kalila dari')
+              .replace(/sistem Sari/gi, 'sistem Kalila')
+              .replace(/nama saya Sari/gi, 'nama saya Kalila')
+          }))
           setMessages(parsed)
         }
       }
-      const savedIsOpen = localStorage.getItem('fk_chat_open_v2')
+      const savedIsOpen = localStorage.getItem('fk_chat_open_v3') || localStorage.getItem('fk_chat_open_v2')
       if (savedIsOpen === 'true') {
         setIsOpen(true)
       }
@@ -81,8 +89,8 @@ export default function QuinChatWidget() {
   useEffect(() => {
     if (!hasHydrated) return
     try {
-      localStorage.setItem('fk_chat_history_v2', JSON.stringify(messages))
-      localStorage.setItem('fk_chat_open_v2', isOpen ? 'true' : 'false')
+      localStorage.setItem('fk_chat_history_v3', JSON.stringify(messages))
+      localStorage.setItem('fk_chat_open_v3', isOpen ? 'true' : 'false')
     } catch (e) {
       console.warn('Storage write error', e)
     }
@@ -385,7 +393,9 @@ export default function QuinChatWidget() {
                           </div>
                           <div className="shrink-0 text-right">
                             <span className="inline-block text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200 group-hover:bg-emerald-100">
-                              Rp {Number(prod.price).toLocaleString('id-ID')} ↗
+                              {prod.price && !isNaN(Number(prod.price))
+                                ? `Rp ${Number(prod.price).toLocaleString('id-ID')} ↗`
+                                : `${prod.price || 'Konsultasi'} ↗`}
                             </span>
                           </div>
                         </Link>
