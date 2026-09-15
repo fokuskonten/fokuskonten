@@ -1,8 +1,12 @@
 {
-  "totalActive": 3040,
-  "totalDesign": 569,
+  "totalActive": 3075,
+  "totalDesign": 604,
   "totalEbook": 2471,
   "designCategories": [
+    [
+      "Video Konten",
+      35
+    ],
     [
       "Vektor",
       126
@@ -424,6 +428,10 @@
     [
       "CDR",
       389
+    ],
+    [
+      "MP4",
+      35
     ],
     [
       "PPTX",
@@ -891,6 +899,96 @@
         "coverImage": "/covers/ID2B2A/ID2B2A_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .WMF/SVG"
+      }
+    ],
+    "video": [
+      {
+        "sku": "ID1646",
+        "title": "NeonFuture - Mentahan Vidkon Visual Cyberpunk",
+        "category": "Video Konten",
+        "format": "MP4",
+        "price": 16000,
+        "originalPrice": 45000,
+        "coverImage": "/covers/ID1646/ID1646_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .MP4"
+      },
+      {
+        "sku": "ID1AF4",
+        "title": "HookMagnet - Bahan Vidkon Hook 3 Detik",
+        "category": "Video Konten",
+        "format": "MP4",
+        "price": 12000,
+        "originalPrice": 35000,
+        "coverImage": "/covers/ID1AF4/ID1AF4_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .MP4"
+      },
+      {
+        "sku": "ID3199",
+        "title": "WallMotion - Mentahan Vidkon Visual 4K Loop",
+        "category": "Video Konten",
+        "format": "MP4",
+        "price": 24000,
+        "originalPrice": 60000,
+        "coverImage": "/covers/ID3199/ID3199_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .MP4"
+      },
+      {
+        "sku": "ID32DF",
+        "title": "LiveHustle - Stok Konten Live Selling Barbar",
+        "category": "Video Konten",
+        "format": "MP4",
+        "price": 16000,
+        "originalPrice": 45000,
+        "coverImage": "/covers/ID32DF/ID32DF_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .MP4"
+      },
+      {
+        "sku": "ID380D",
+        "title": "HookStrike - Bahan Vidkon Tarikan Monster Mancing",
+        "category": "Video Konten",
+        "format": "MP4",
+        "price": 19000,
+        "originalPrice": 50000,
+        "coverImage": "/covers/ID380D/ID380D_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .MP4"
+      },
+      {
+        "sku": "ID3C1F",
+        "title": "ToolCraft - Vidkon Lifehack Pertukangan Kreatif",
+        "category": "Video Konten",
+        "format": "MP4",
+        "price": 16000,
+        "originalPrice": 45000,
+        "coverImage": "/covers/ID3C1F/ID3C1F_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .MP4"
+      },
+      {
+        "sku": "ID4834",
+        "title": "DeepBlue - Mentahan Konten Samudra Misterius",
+        "category": "Video Konten",
+        "format": "MP4",
+        "price": 12000,
+        "originalPrice": 35000,
+        "coverImage": "/covers/ID4834/ID4834_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .MP4"
+      },
+      {
+        "sku": "ID53FA",
+        "title": "LaughRiot - Bahan Konten Asupan Receh",
+        "category": "Video Konten",
+        "format": "MP4",
+        "price": 16000,
+        "originalPrice": 45000,
+        "coverImage": "/covers/ID53FA/ID53FA_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .MP4"
       }
     ]
   }
