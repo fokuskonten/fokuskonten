@@ -3,7 +3,7 @@
 import { useState, useEffect, useMemo } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
-import digitalProducts from '@/content/apps/digitalProducts.json'
+import catalogProducts from '@/content/apps/catalog_products.json'
 import storeCategories from '@/content/apps/store_categories.json'
 import ProductGallery from '@/components/product/ProductGallery'
 import ProductPurchaseBox from '@/components/product/ProductPurchaseBox'
@@ -82,8 +82,8 @@ export default function ProductDetailClient({ product }) {
     if (Array.isArray(storeCategories)) {
       storeCategories.forEach(c => { if (c && c.trim()) cats.add(c.trim()) })
     }
-    if (Array.isArray(digitalProducts)) {
-      digitalProducts.forEach(p => {
+    if (Array.isArray(catalogProducts)) {
+      catalogProducts.forEach(p => {
         if (p.category && p.category.trim()) cats.add(p.category.trim())
       })
     }
@@ -140,7 +140,7 @@ export default function ProductDetailClient({ product }) {
 
   const relatedProducts = useMemo(() => {
     if (!product) return []
-    return digitalProducts
+    return catalogProducts
       .filter((p) => p.category === product.category && p.sku !== product.sku)
       .slice(0, 5)
   }, [product])
