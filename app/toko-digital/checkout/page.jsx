@@ -8,7 +8,7 @@ import OrderSummary from '@/components/checkout/OrderSummary'
 import DeliveryEmailForm from '@/components/checkout/DeliveryEmailForm'
 import VoucherInput from '@/components/checkout/VoucherInput'
 import PaymentSecurityBadge from '@/components/checkout/PaymentSecurityBadge'
-import catalogProducts from '@/content/apps/catalog_products.json'
+import digitalProducts from '@/content/apps/digitalProducts.json'
 import { isValidEmail } from '@/lib/validators'
 import { generateInvoiceId } from '@/lib/formatters'
 import { 
@@ -63,8 +63,8 @@ function CheckoutContent() {
     const unsubBuyer = subscribeBuyerStore(applyProfile)
 
     // 2. Tentukan mode checkout: Single SKU vs Multi-item Cart
-    if (skuParam && Array.isArray(catalogProducts)) {
-      const found = catalogProducts.find(
+    if (skuParam && Array.isArray(digitalProducts)) {
+      const found = digitalProducts.find(
         (p) => String(p.sku).toUpperCase().trim() === String(skuParam).toUpperCase().trim()
       )
       if (found) {
