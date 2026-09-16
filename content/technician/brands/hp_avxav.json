@@ -1,0 +1,64 @@
+{
+  "category": "hp",
+  "brand": "Avxav",
+  "brandSlug": "avxav",
+  "totalModels": 1,
+  "models": [
+    {
+      "id": 19689,
+      "category": "hp",
+      "brand": "Avxav",
+      "brandSlug": "avxav",
+      "modelName": "WQRTM-838A",
+      "slug": "hp-avxav-wqrtm-838a",
+      "chipset": "Snapdragon X55 5G Modem",
+      "motherboardCode": "HWID: 000CF0E1",
+      "officialTitle": "Avxav 838A — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35982,
+          "type": "loader",
+          "name": "000CF0E100000000_d9357db88795b5a8_fhprg.bin",
+          "size": "267.9 KB",
+          "sizeBytes": 274304,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1OCeP2Cb2OIU45ATFK_h3ePAM_EHTK_CC/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35983,
+          "type": "loader",
+          "name": "000cf0e100000000_d9357db88795b5a8_fhprg_quectel_em20_rg502.bin",
+          "size": "267.5 KB",
+          "sizeBytes": 273920,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1e22DujEWT5s0brnfOo41rbrbWkDkmww-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35984,
+          "type": "loader",
+          "name": "000cf0e100000000_d9357db88795b5a8_fhprg_sdx55_prairie_rm510q_rg502.bin",
+          "size": "267.9 KB",
+          "sizeBytes": 274304,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1OEFGK82C2zjBj5tuxjxZnsY21Zuo_Bci/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35985,
+          "type": "loader",
+          "name": "000cf0e100000000_d9357db88795b5a8_fhprg_mc7010.bin",
+          "size": "221.4 KB",
+          "sizeBytes": 226688,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1LZWRgqTStTteWVn5CgZqH-Rzw_vL2eFN/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

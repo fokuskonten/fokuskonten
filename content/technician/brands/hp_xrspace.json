@@ -1,0 +1,34 @@
+{
+  "category": "hp",
+  "brand": "XRSPACE",
+  "brandSlug": "xrspace",
+  "totalModels": 1,
+  "models": [
+    {
+      "id": 19687,
+      "category": "hp",
+      "brand": "XRSPACE",
+      "brandSlug": "xrspace",
+      "modelName": "XR00V1",
+      "slug": "hp-xrspace-xr00v1",
+      "chipset": "Snapdragon 845",
+      "motherboardCode": "HWID: 0008E0E1",
+      "officialTitle": "XRSPACE XR00V1 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35980,
+          "type": "loader",
+          "name": "0008e0e100000000_afca69d4235117e5_fhprg.bin",
+          "size": "667.6 KB",
+          "sizeBytes": 683636,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WlXjn2aXZ8BwSnXlYd4dgZOliMNBPAC7/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { createPortal } from 'react-dom'
+import CdnImage from './CdnImage'
 
 export default function ProductGallery({
   product,
@@ -66,15 +67,13 @@ export default function ProductGallery({
         >
           {/* Main Foreground Image (Utuh 100%, 100% HD Tajam & Presisi, Bebas Watermark) */}
           {currentImg ? (
-            <img
+            <CdnImage
               src={currentImg}
+              sku={product?.sku}
               alt={product?.title || 'Product Cover'}
               draggable={false}
-              onError={(e) => {
-                e.currentTarget.style.display = 'none'
-                const fallback = e.currentTarget.parentElement.querySelector('.detail-img-fallback')
-                if (fallback) fallback.style.display = 'flex'
-              }}
+              priority={true}
+              fallbackSelector=".detail-img-fallback"
               className="relative z-0 w-full h-full object-contain drop-shadow-sm transition-transform duration-300 group-hover:scale-[1.01]"
             />
           ) : null}
@@ -84,7 +83,9 @@ export default function ProductGallery({
             className="detail-img-fallback relative z-10 w-full h-full flex-col items-center justify-center p-8 text-center bg-gradient-to-br from-neutral-800 to-neutral-950 text-white rounded-xl"
             style={{ display: currentImg ? 'none' : 'flex' }}
           >
-            <span className="text-6xl mb-3">📦</span>
+            <svg className="w-12 h-12 text-neutral-400 mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+            </svg>
             <span className="text-sm font-mono font-bold text-neutral-300 uppercase tracking-widest">{product?.category}</span>
             <span className="text-sm text-neutral-400 mt-2 max-w-sm leading-relaxed">{product?.title}</span>
           </div>
@@ -115,7 +116,7 @@ export default function ProductGallery({
                       : 'border-transparent opacity-60 hover:opacity-100'
                   }`}
                 >
-                  <img src={imgUrl} alt={`Slide ${idx + 1}`} className="w-full h-full object-cover" />
+                  <CdnImage src={imgUrl} sku={product?.sku} alt={`Slide ${idx + 1}`} className="w-full h-full object-cover" />
                 </button>
               ))}
             </div>
@@ -131,8 +132,11 @@ export default function ProductGallery({
             className="w-full py-3 px-4 rounded-xl bg-neutral-950 hover:bg-black text-white text-xs sm:text-sm font-bold flex items-center justify-between transition-all shadow-sm group cursor-pointer border border-neutral-800"
           >
             <span className="flex items-center gap-2">
-              <span className="text-base">👁️</span>
-              <span>Buka Katalog Visual Penuh (Full Preview)</span>
+              <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+              </svg>
+              <span>Lihat Pratinjau Penuh (Full Preview)</span>
             </span>
             <span className="inline-flex items-center gap-1 font-mono text-[11px] text-neutral-400 group-hover:text-white transition-colors">
               <span>Buka Tab Baru</span>
@@ -197,10 +201,12 @@ export default function ProductGallery({
 
             {/* Pure HD Image with Pristine White Frame & Soft Shadow */}
             <div className="relative max-h-[62vh] sm:max-h-[68vh] flex items-center justify-center bg-white p-2.5 sm:p-3.5 rounded-3xl border border-neutral-200/90 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.15)]">
-              <img
+              <CdnImage
                 src={currentImg}
+                sku={product?.sku}
                 alt={product?.title || 'Preview Zoom'}
                 draggable={false}
+                priority={true}
                 className="max-w-full max-h-[58vh] sm:max-h-[64vh] object-contain rounded-2xl select-none transition-all duration-300"
               />
             </div>
@@ -230,7 +236,7 @@ export default function ProductGallery({
                 {product?.title}
               </h4>
               <div className="flex items-center gap-2 shrink-0">
-                <span className="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-mono text-xs font-bold border border-emerald-200">
+                <span className="px-2 py-0.5 rounded bg-neutral-950 text-white font-mono text-xs font-bold border border-neutral-800">
                   Format .{product?.format || 'CDR'}
                 </span>
                 {totalSlides > 1 && (
@@ -263,7 +269,7 @@ export default function ProductGallery({
                         : 'border-neutral-200 opacity-60 hover:opacity-100'
                     }`}
                   >
-                    <img src={img} alt="" className="w-full h-full object-cover" />
+                    <CdnImage src={img} sku={product?.sku} alt="" className="w-full h-full object-cover" />
                   </button>
                 ))}
               </div>

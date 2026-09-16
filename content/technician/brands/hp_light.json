@@ -1,0 +1,34 @@
+{
+  "category": "hp",
+  "brand": "Light",
+  "brandSlug": "light",
+  "totalModels": 1,
+  "models": [
+    {
+      "id": 19651,
+      "category": "hp",
+      "brand": "Light",
+      "brandSlug": "light",
+      "modelName": "Qualcomm Firehose Loader Light (0003E0E1)",
+      "slug": "hp-light-qualcomm-firehose-loader-light-0003e0e1",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "HWID: 0003E0E1",
+      "officialTitle": "Light Qualcomm Firehose Loader Light (0003E0E1) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35895,
+          "type": "loader",
+          "name": "0003e0e100000000_349ca0bcffe2bcc5_fhprg_peek.bin",
+          "size": "444.2 KB",
+          "sizeBytes": 454868,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mIbKuV8ybKDyZVFh9OHVrkeDi6xTjCAz/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

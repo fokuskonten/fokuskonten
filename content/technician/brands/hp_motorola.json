@@ -1,0 +1,4173 @@
+{
+  "category": "hp",
+  "brand": "Motorola",
+  "brandSlug": "motorola",
+  "totalModels": 142,
+  "models": [
+    {
+      "id": 19842,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "610",
+      "slug": "hp-motorola-610",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Motorola 610 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36171,
+          "type": "loader",
+          "name": "610.mbn",
+          "size": "97.6 KB",
+          "sizeBytes": 99944,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PdCKqceW1U6WrpFxS_HHIhTolPotYYDF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19841,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "E7_PLUS_XT2081",
+      "slug": "hp-motorola-e7_plus_xt2081",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Motorola E7_PLUS_XT2081 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36170,
+          "type": "loader",
+          "name": "E7_PLUS_XT2081.elf",
+          "size": "619.5 KB",
+          "sizeBytes": 634332,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1TDUBSbFYytWZ2YAfQXMp-xjD3OjLuv3y/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19644,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Edge 30 Pro",
+      "slug": "hp-motorola-edge-30-pro",
+      "chipset": "Snapdragon 8 Gen 1",
+      "motherboardCode": "HWID: 001870E1",
+      "officialTitle": "Motorola Edge 30 Pro — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35873,
+          "type": "loader",
+          "name": "001870e102e80000_467f3020c4cc788d_fhprg.bin",
+          "size": "1.5 MB",
+          "sizeBytes": 1542620,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1s9rnsDfqixjH3glxEpd8SAtU9NLedrEo/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19854,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "G10_XT2721",
+      "slug": "hp-motorola-g10_xt2721",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Motorola G10_XT2721 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36183,
+          "type": "loader",
+          "name": "G10_XT2721.elf",
+          "size": "598.9 KB",
+          "sizeBytes": 613244,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wEewCYLV4R15qmpshozo15ZIecVYIWF0/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19845,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "G30_XT2129",
+      "slug": "hp-motorola-g30_xt2129",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Motorola G30_XT2129 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36174,
+          "type": "loader",
+          "name": "G30_XT2129.elf",
+          "size": "935.8 KB",
+          "sizeBytes": 958304,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Ixxr5iCCyggoMC6wP7wL_wgOxkZYLlvb/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19844,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "G34_XT2363",
+      "slug": "hp-motorola-g34_xt2363",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Motorola G34_XT2363 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36173,
+          "type": "loader",
+          "name": "G34_XT2363.elf",
+          "size": "683.1 KB",
+          "sizeBytes": 699516,
+          "gdrive_direct_url": "https://drive.google.com/file/d/12LzcaCG3hIeT4wcY60Ue0phrOlozXoEg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19846,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "G62_XT2261",
+      "slug": "hp-motorola-g62_xt2261",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Motorola G62_XT2261 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36175,
+          "type": "loader",
+          "name": "G62_XT2261.elf",
+          "size": "645.1 KB",
+          "sizeBytes": 660608,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1z4A4kLIdvRLH9F9an2s26v712oHtxHWj/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19848,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "G71_XT2169",
+      "slug": "hp-motorola-g71_xt2169",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Motorola G71_XT2169 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36177,
+          "type": "loader",
+          "name": "G71_XT2169.elf",
+          "size": "677.9 KB",
+          "sizeBytes": 694188,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Kj7CtfC3bwQJez_acZPDbcyyTq4OLdbQ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19849,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "G_STYLUS_5G_XT2315",
+      "slug": "hp-motorola-g_stylus_5g_xt2315",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Motorola G_STYLUS_5G_XT2315 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36178,
+          "type": "loader",
+          "name": "G_STYLUS_5G_XT2315.elf",
+          "size": "1.6 MB",
+          "sizeBytes": 1710996,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1oaSM7peO6k80wlVbLdoKchoz2c7fWZ-Q/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18358,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto E13",
+      "slug": "hp-motorola-moto-e13",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto E13 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33887,
+          "type": "isp",
+          "name": "motorola_moto_e13_isp.jpg",
+          "size": "54.4 KB",
+          "sizeBytes": 55710,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Snbul0Ppk0Gsm9WVhQTPxCRsbAKGl8TE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15398,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto E20",
+      "slug": "hp-motorola-moto-e20",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto E20 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30088,
+          "type": "testpoint",
+          "name": "motorola_moto_e20_tp.jpg",
+          "size": "41.3 KB",
+          "sizeBytes": 42279,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Pvhs7WKPkZ3f-APuI2jNY1A0YttZK0T9/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1Pvhs7WKPkZ3f-APuI2jNY1A0YttZK0T9/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30089,
+          "type": "isp",
+          "name": "motorola_moto_e20_isp.jpg",
+          "size": "73.1 KB",
+          "sizeBytes": 74864,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1KyR-da6Of9d9jv9NZQBL9L43dmIE_u1S/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15399,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto E22",
+      "slug": "hp-motorola-moto-e22",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto E22 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30090,
+          "type": "testpoint",
+          "name": "motorola_moto_e22_tp.jpg",
+          "size": "155.4 KB",
+          "sizeBytes": 159092,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17xsmqcqtZzQLvwGyozevsKEeyb3TfHzT/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/17xsmqcqtZzQLvwGyozevsKEeyb3TfHzT/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30091,
+          "type": "isp",
+          "name": "motorola_moto_e22_isp.jpg",
+          "size": "494.1 KB",
+          "sizeBytes": 505968,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Bmx5OPfokWI479EjscPKioJXdlKmtzSd/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18359,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto E32",
+      "slug": "hp-motorola-moto-e32",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto E32 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33888,
+          "type": "isp",
+          "name": "motorola_moto_e32_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-UU044yghP9eWevVYJHCLWSLkcwqKXav/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15400,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto E4",
+      "slug": "hp-motorola-moto-e4",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto E4 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 30092,
+          "type": "testpoint",
+          "name": "motorola_moto_e4_tp.jpg",
+          "size": "113.3 KB",
+          "sizeBytes": 116027,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Gt7PgHNd4rxDD0bndVVAd2Ec4C1hmxuE/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1Gt7PgHNd4rxDD0bndVVAd2Ec4C1hmxuE/view?usp=sharing",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15401,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto E4 Plus",
+      "slug": "hp-motorola-moto-e4-plus",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto E4 Plus — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 30093,
+          "type": "testpoint",
+          "name": "motorola_moto_e4_plus_tp.jpg",
+          "size": "113.3 KB",
+          "sizeBytes": 116027,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WHasp3qMlw_P9tUmz6tnSAELqDUiDMIr/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1WHasp3qMlw_P9tUmz6tnSAELqDUiDMIr/view?usp=sharing",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15402,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto E40",
+      "slug": "hp-motorola-moto-e40",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto E40 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30094,
+          "type": "testpoint",
+          "name": "motorola_moto_e40_tp.jpg",
+          "size": "143.4 KB",
+          "sizeBytes": 146856,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13GRA9ohMibokGkp01LcIUgMvKCJkBm9r/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/13GRA9ohMibokGkp01LcIUgMvKCJkBm9r/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30095,
+          "type": "isp",
+          "name": "motorola_moto_e40_isp.jpg",
+          "size": "28 KB",
+          "sizeBytes": 28636,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1pF3-_qDWJBguZ5mFeDrq9UMGUneuYbyS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15403,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto E5",
+      "slug": "hp-motorola-moto-e5",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto E5 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30096,
+          "type": "testpoint",
+          "name": "motorola_moto_e5_tp.jpg",
+          "size": "143.4 KB",
+          "sizeBytes": 146856,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kOgVt--tqkjSnuxR5uZpcgH0iKAhi9a8/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1kOgVt--tqkjSnuxR5uZpcgH0iKAhi9a8/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30097,
+          "type": "isp",
+          "name": "motorola_moto_e5_isp.jpg",
+          "size": "567.5 KB",
+          "sizeBytes": 581088,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1FtPzfojf22MAOFxrq-G1vr9bUiTlC-x9/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15404,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto E5 Play",
+      "slug": "hp-motorola-moto-e5-play",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto E5 Play — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30098,
+          "type": "testpoint",
+          "name": "motorola_moto_e5_play_tp.jpg",
+          "size": "143.4 KB",
+          "sizeBytes": 146856,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Z6Sotr1RD7KBTINpEtGwmt5eEYSvpUdc/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1Z6Sotr1RD7KBTINpEtGwmt5eEYSvpUdc/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30099,
+          "type": "isp",
+          "name": "motorola_moto_e5_play_isp.jpg",
+          "size": "567.5 KB",
+          "sizeBytes": 581088,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1IwieLMWJ1r4wI3NdBsbhMl2p_97ZpyAV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15405,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto E5 Plus",
+      "slug": "hp-motorola-moto-e5-plus",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto E5 Plus — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30100,
+          "type": "testpoint",
+          "name": "motorola_moto_e5_plus_tp.jpg",
+          "size": "143.4 KB",
+          "sizeBytes": 146856,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1k4UGZrETfJhnAtBBku9tsy2_0kI67n3o/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1k4UGZrETfJhnAtBBku9tsy2_0kI67n3o/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30101,
+          "type": "isp",
+          "name": "motorola_moto_e5_plus_isp.jpg",
+          "size": "567.5 KB",
+          "sizeBytes": 581088,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1nYFUQFYtDoiuc9hJsvThcLioxUOL-DZ5/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15406,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto E6",
+      "slug": "hp-motorola-moto-e6",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto E6 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30102,
+          "type": "testpoint",
+          "name": "motorola_moto_e6_tp.jpg",
+          "size": "176.2 KB",
+          "sizeBytes": 180479,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1AsExk-QFO-crsgEnb7FPsgZMlklGMBoP/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1AsExk-QFO-crsgEnb7FPsgZMlklGMBoP/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30103,
+          "type": "isp",
+          "name": "motorola_moto_e6_isp.jpg",
+          "size": "222.1 KB",
+          "sizeBytes": 227421,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1tuD2oE92Bgw__gMWLGQoV3GUW0x_WR_3/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18360,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto E6 Play",
+      "slug": "hp-motorola-moto-e6-play",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto E6 Play — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33889,
+          "type": "isp",
+          "name": "motorola_moto_e6_play_isp.jpg",
+          "size": "89.3 KB",
+          "sizeBytes": 91471,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1gwbiwlQst6Dkb8UWZUS60IJrmZ7FkUhY/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15407,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto E6 Plus",
+      "slug": "hp-motorola-moto-e6-plus",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto E6 Plus — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30104,
+          "type": "testpoint",
+          "name": "motorola_moto_e6_plus_tp.jpg",
+          "size": "54.4 KB",
+          "sizeBytes": 55710,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1E_X0ewpl3t6k7X_jyTQ9Z_nvbFwkEqKo/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1E_X0ewpl3t6k7X_jyTQ9Z_nvbFwkEqKo/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30105,
+          "type": "isp",
+          "name": "motorola_moto_e6_plus_isp.jpg",
+          "size": "222.1 KB",
+          "sizeBytes": 227421,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kmvdacEcgUKBhMxI6sYTxQGHqIb7YPlD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18361,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto E6s",
+      "slug": "hp-motorola-moto-e6s",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto E6s — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33890,
+          "type": "isp",
+          "name": "motorola_moto_e6s_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15fd2tK6mGsVenbKi70G7BdBV7D_ld9Z-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15408,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto E7",
+      "slug": "hp-motorola-moto-e7",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto E7 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30106,
+          "type": "testpoint",
+          "name": "motorola_moto_e7_tp.jpg",
+          "size": "38.6 KB",
+          "sizeBytes": 39499,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1u2CRv5Ju9B_FHNiFiV0vSBpHhwy5I7am/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1u2CRv5Ju9B_FHNiFiV0vSBpHhwy5I7am/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30107,
+          "type": "isp",
+          "name": "motorola_moto_e7_isp.jpg",
+          "size": "191.3 KB",
+          "sizeBytes": 195851,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DOciy0KFSulfo_DpHlQK-ng3Yxh12JqW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15409,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto E7 Plus",
+      "slug": "hp-motorola-moto-e7-plus",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "HWID: 001360E1",
+      "officialTitle": "Motorola Moto E7 Plus — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp",
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 30108,
+          "type": "testpoint",
+          "name": "motorola_moto_e7_plus_tp.jpg",
+          "size": "38.6 KB",
+          "sizeBytes": 39499,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kBgatG0H5oUX9nuHPPZy1KePVsTlKLHE/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1kBgatG0H5oUX9nuHPPZy1KePVsTlKLHE/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30109,
+          "type": "isp",
+          "name": "motorola_moto_e7_plus_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1s6i0CpVa9hKc5-273wUMZHC8MwExt3pR/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30110,
+          "type": "loader",
+          "name": "001360e102e80000_5adc6039dcb297d4_fhprg.bin",
+          "size": "621.9 KB",
+          "sizeBytes": 636796,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1oWAu83_PZ3S7vTLdLzENEfEuuXLST0Fs/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30111,
+          "type": "loader",
+          "name": "001360e100720000_1bebe3863a6781db_fhprg_redmi9t.bin",
+          "size": "645.1 KB",
+          "sizeBytes": 660620,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1XKUcfMEf8JGZLxy6qtF8K3LyUIMMajPZ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18362,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto E7 Power",
+      "slug": "hp-motorola-moto-e7-power",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto E7 Power — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33891,
+          "type": "isp",
+          "name": "motorola_moto_e7_power_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1KlphK-R5GoiNksqlcf7HJjlqcg19ebMw/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15410,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto E7i Power",
+      "slug": "hp-motorola-moto-e7i-power",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto E7i Power — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 30112,
+          "type": "testpoint",
+          "name": "motorola_moto_e7i_power_tp.jpg",
+          "size": "38.6 KB",
+          "sizeBytes": 39499,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1BUglrg24Wcwgh34KaaTB0yLNA0qiSFlB/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1BUglrg24Wcwgh34KaaTB0yLNA0qiSFlB/view?usp=sharing",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18363,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto Edge",
+      "slug": "hp-motorola-moto-edge",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto Edge — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33892,
+          "type": "isp",
+          "name": "motorola_moto_edge_isp.jpg",
+          "size": "1.3 MB",
+          "sizeBytes": 1406154,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZSIvJccTDdIgeS-HYQIAqkEjzzrgp3CT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18364,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto Edge 20",
+      "slug": "hp-motorola-moto-edge-20",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto Edge 20 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33893,
+          "type": "isp",
+          "name": "motorola_moto_edge_20_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1m7-7FvyB6p8iRgwJ-JsCoyUPqFTbzsNT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18365,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto Edge 20 Pro",
+      "slug": "hp-motorola-moto-edge-20-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto Edge 20 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33894,
+          "type": "isp",
+          "name": "motorola_moto_edge_20_pro_isp.jpg",
+          "size": "468.6 KB",
+          "sizeBytes": 479887,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HB5DCZDtmoro3WhGqUJx0ci4bRapjox2/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15411,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto Edge 30",
+      "slug": "hp-motorola-moto-edge-30",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto Edge 30 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30113,
+          "type": "testpoint",
+          "name": "motorola_moto_edge_30_tp.png",
+          "size": "1.3 MB",
+          "sizeBytes": 1406154,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QYurI7OKKIeLdHgZwttDyJg4bsWnWC83/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1QYurI7OKKIeLdHgZwttDyJg4bsWnWC83/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30114,
+          "type": "isp",
+          "name": "motorola_moto_edge_30_isp.jpg",
+          "size": "497.4 KB",
+          "sizeBytes": 509332,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17Fr0A35VX1umswQ-_pxoNkyfchcWands/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18366,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto Edge 30 Pro",
+      "slug": "hp-motorola-moto-edge-30-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto Edge 30 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33895,
+          "type": "isp",
+          "name": "motorola_moto_edge_30_pro_isp.jpg",
+          "size": "497.4 KB",
+          "sizeBytes": 509332,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1pQOeuMKLD2CnNhsAdMPdVpc09hB8GgNR/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18367,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto Edge 30 Ultra",
+      "slug": "hp-motorola-moto-edge-30-ultra",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto Edge 30 Ultra — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33896,
+          "type": "isp",
+          "name": "motorola_moto_edge_30_ultra_isp.jpg",
+          "size": "497.4 KB",
+          "sizeBytes": 509332,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1KzQRUqeJBau1rWG4SljQ6gbs1lKNciLg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15412,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto Edge 40",
+      "slug": "hp-motorola-moto-edge-40",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto Edge 40 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30115,
+          "type": "testpoint",
+          "name": "motorola_moto_edge_40_tp.png",
+          "size": "1.3 MB",
+          "sizeBytes": 1406154,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1R4K0XOlMfhwjo9D6mEA_E_xqEPmJTX7v/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1R4K0XOlMfhwjo9D6mEA_E_xqEPmJTX7v/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30116,
+          "type": "isp",
+          "name": "motorola_moto_edge_40_isp.jpg",
+          "size": "28 KB",
+          "sizeBytes": 28636,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1fvWjrzFyLWYgqOmxeDojWmJu-9iD30US/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18368,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto Edge 40 Neo",
+      "slug": "hp-motorola-moto-edge-40-neo",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto Edge 40 Neo — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33897,
+          "type": "isp",
+          "name": "motorola_moto_edge_40_neo_isp.jpg",
+          "size": "1.3 MB",
+          "sizeBytes": 1406154,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19H5WegcgbhZaSby1XYW1MbVqJY5KpsCP/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15413,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto Edge 50",
+      "slug": "hp-motorola-moto-edge-50",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto Edge 50 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 30117,
+          "type": "testpoint",
+          "name": "motorola_moto_edge_50_tp.jpg",
+          "size": "176.2 KB",
+          "sizeBytes": 180479,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_aaxrmIV6g0AClfLarQZMotlH_TvPy9w/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1_aaxrmIV6g0AClfLarQZMotlH_TvPy9w/view?usp=sharing",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18369,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto Edge 50 Pro",
+      "slug": "hp-motorola-moto-edge-50-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto Edge 50 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33898,
+          "type": "isp",
+          "name": "motorola_moto_edge_50_pro_isp.jpg",
+          "size": "105.5 KB",
+          "sizeBytes": 108044,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZIlNRNiyZzfjKouDIrJrsQn3lRUt80YX/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18370,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto Edge 50 Ultra",
+      "slug": "hp-motorola-moto-edge-50-ultra",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto Edge 50 Ultra — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33899,
+          "type": "isp",
+          "name": "motorola_moto_edge_50_ultra_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1JU4xKN2U6UJpTgPf4i9K67pduKr8p3N1/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15414,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G10",
+      "slug": "hp-motorola-moto-g10",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G10 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30118,
+          "type": "testpoint",
+          "name": "motorola_moto_g10_tp.jpg",
+          "size": "20.9 KB",
+          "sizeBytes": 21362,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1A2_kXgmJI5IhXTXkYrJ1xOQOFMdgPOAD/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1A2_kXgmJI5IhXTXkYrJ1xOQOFMdgPOAD/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30119,
+          "type": "isp",
+          "name": "motorola_moto_g10_isp.jpg",
+          "size": "404.3 KB",
+          "sizeBytes": 413998,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1VI-iIzc2Ynv4pRVcD2xBvPR16HdZ2uKp/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15415,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G100",
+      "slug": "hp-motorola-moto-g100",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G100 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 30120,
+          "type": "testpoint",
+          "name": "motorola_moto_g100_tp.jpg",
+          "size": "184.7 KB",
+          "sizeBytes": 189098,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1AswxgYT36BDM01PYHTN-3phJ3e0grPQp/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1AswxgYT36BDM01PYHTN-3phJ3e0grPQp/view?usp=sharing",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15416,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G20",
+      "slug": "hp-motorola-moto-g20",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G20 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30121,
+          "type": "testpoint",
+          "name": "motorola_moto_g20_tp.jpg",
+          "size": "155.4 KB",
+          "sizeBytes": 159092,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1MV5R_FClakFz6p-QrvLFghC_H7n4Ih_U/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1MV5R_FClakFz6p-QrvLFghC_H7n4Ih_U/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30122,
+          "type": "isp",
+          "name": "motorola_moto_g20_isp.jpg",
+          "size": "228 KB",
+          "sizeBytes": 233444,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1u68yp9FhpzSeNQ_VIlo65SOqN8_1U8EO/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15417,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G22",
+      "slug": "hp-motorola-moto-g22",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G22 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 30123,
+          "type": "testpoint",
+          "name": "motorola_moto_g22_tp.jpg",
+          "size": "155.4 KB",
+          "sizeBytes": 159092,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1y59taq1nMK776xLE_6hewZqRz-YFMRuh/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1y59taq1nMK776xLE_6hewZqRz-YFMRuh/view?usp=sharing",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15418,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G23",
+      "slug": "hp-motorola-moto-g23",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G23 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 30124,
+          "type": "testpoint",
+          "name": "motorola_moto_g23_tp.jpg",
+          "size": "54.4 KB",
+          "sizeBytes": 55710,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PxOW8eFqH28gZGpL5p_SimOPYEHVd2bB/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1PxOW8eFqH28gZGpL5p_SimOPYEHVd2bB/view?usp=sharing",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15419,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G30",
+      "slug": "hp-motorola-moto-g30",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G30 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30125,
+          "type": "testpoint",
+          "name": "motorola_moto_g30_tp.jpg",
+          "size": "27.5 KB",
+          "sizeBytes": 28184,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mO2S9WQcOKopWv-qGqeql4HYiBBn_PIu/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1mO2S9WQcOKopWv-qGqeql4HYiBBn_PIu/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30126,
+          "type": "isp",
+          "name": "motorola_moto_g30_isp.jpg",
+          "size": "22.9 KB",
+          "sizeBytes": 23468,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15Y5ZvHInuNyPiBMXsIa1Ua_Ly8SLXnUN/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15420,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G31",
+      "slug": "hp-motorola-moto-g31",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G31 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 30127,
+          "type": "testpoint",
+          "name": "motorola_moto_g31_tp.jpg",
+          "size": "144.3 KB",
+          "sizeBytes": 147737,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1FALUuVi104Be4gX2bwX-dRsc6A3lwN9O/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1FALUuVi104Be4gX2bwX-dRsc6A3lwN9O/view?usp=sharing",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15421,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G4",
+      "slug": "hp-motorola-moto-g4",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G4 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 30128,
+          "type": "testpoint",
+          "name": "motorola_moto_g4_tp.png",
+          "size": "635.7 KB",
+          "sizeBytes": 650990,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Xf2RWVfLGmaVUVPDlHjr0LhU03lEhvJi/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1Xf2RWVfLGmaVUVPDlHjr0LhU03lEhvJi/view?usp=sharing",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15422,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G4 Plus",
+      "slug": "hp-motorola-moto-g4-plus",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G4 Plus — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 30129,
+          "type": "testpoint",
+          "name": "motorola_moto_g4_plus_tp.jpg",
+          "size": "70.7 KB",
+          "sizeBytes": 72405,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HlqySwXfhe-NnKCIuUWE5_s1n3g_TgaN/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1HlqySwXfhe-NnKCIuUWE5_s1n3g_TgaN/view?usp=sharing",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18371,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G40 Fusion",
+      "slug": "hp-motorola-moto-g40-fusion",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G40 Fusion — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33900,
+          "type": "isp",
+          "name": "motorola_moto_g40_fusion_isp.jpg",
+          "size": "50.2 KB",
+          "sizeBytes": 51372,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1aGeywGZciyFzkj1JwrqpYproP04utC1a/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15423,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G5",
+      "slug": "hp-motorola-moto-g5",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G5 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 30130,
+          "type": "testpoint",
+          "name": "motorola_moto_g5_tp.jpg",
+          "size": "137.7 KB",
+          "sizeBytes": 140986,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1L2yBO9NFRfUz9phDusIYVRjZciBO_niY/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1L2yBO9NFRfUz9phDusIYVRjZciBO_niY/view?usp=sharing",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15424,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G5 Plus",
+      "slug": "hp-motorola-moto-g5-plus",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G5 Plus — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 30131,
+          "type": "testpoint",
+          "name": "motorola_moto_g5_plus_tp.png",
+          "size": "635.7 KB",
+          "sizeBytes": 650990,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1imjDQ8ZcKizQwk_O-YUMDXXXQU3N4net/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1imjDQ8ZcKizQwk_O-YUMDXXXQU3N4net/view?usp=sharing",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15425,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G50",
+      "slug": "hp-motorola-moto-g50",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G50 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30132,
+          "type": "testpoint",
+          "name": "motorola_moto_g50_tp.jpg",
+          "size": "143.4 KB",
+          "sizeBytes": 146856,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WMTfAD1g5DqSn7vV-yhxoa_P7mJVYH_s/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1WMTfAD1g5DqSn7vV-yhxoa_P7mJVYH_s/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30133,
+          "type": "isp",
+          "name": "motorola_moto_g50_isp.jpg",
+          "size": "79 KB",
+          "sizeBytes": 80916,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Q6P5xtzFZMAsXZ-3dL1DdPli6_IDJY5R/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15426,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G51",
+      "slug": "hp-motorola-moto-g51",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G51 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 30134,
+          "type": "testpoint",
+          "name": "motorola_moto_g51_tp.jpg",
+          "size": "48.6 KB",
+          "sizeBytes": 49812,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1W88x_kNX6E3G5kmx-GZxvRnrrZPj7dn8/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1W88x_kNX6E3G5kmx-GZxvRnrrZPj7dn8/view?usp=sharing",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15427,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G53",
+      "slug": "hp-motorola-moto-g53",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G53 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 30135,
+          "type": "testpoint",
+          "name": "motorola_moto_g53_tp.jpg",
+          "size": "54.4 KB",
+          "sizeBytes": 55710,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WyBgqQo-C0_r4SiKPMR3bV53r7EUaZpV/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1WyBgqQo-C0_r4SiKPMR3bV53r7EUaZpV/view?usp=sharing",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15428,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G5s",
+      "slug": "hp-motorola-moto-g5s",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G5s — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 30136,
+          "type": "testpoint",
+          "name": "motorola_moto_g5s_tp.jpg",
+          "size": "184.7 KB",
+          "sizeBytes": 189098,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1LlFpzp9boJjrpzO7a6rFg2nbgbtlItfC/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1LlFpzp9boJjrpzO7a6rFg2nbgbtlItfC/view?usp=sharing",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15429,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G5s Plus",
+      "slug": "hp-motorola-moto-g5s-plus",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G5s Plus — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 30137,
+          "type": "testpoint",
+          "name": "motorola_moto_g5s_plus_tp.jpg",
+          "size": "184.7 KB",
+          "sizeBytes": 189098,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zNoCJ75Gs5jcHXi6yv0sYC5p75LFIalp/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1zNoCJ75Gs5jcHXi6yv0sYC5p75LFIalp/view?usp=sharing",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15430,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G6",
+      "slug": "hp-motorola-moto-g6",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G6 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30138,
+          "type": "testpoint",
+          "name": "motorola_moto_g6_tp.png",
+          "size": "635.7 KB",
+          "sizeBytes": 650990,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1fk5JYdXIqjLv5KqYhrFFg28WIx4qXW87/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1fk5JYdXIqjLv5KqYhrFFg28WIx4qXW87/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30139,
+          "type": "isp",
+          "name": "motorola_moto_g6_isp.jpg",
+          "size": "89.3 KB",
+          "sizeBytes": 91471,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1AAiOW_viK9L3IygE0z7WL4Vz4t3ePR_J/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15431,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G6 Play",
+      "slug": "hp-motorola-moto-g6-play",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G6 Play — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30140,
+          "type": "testpoint",
+          "name": "motorola_moto_g6_play_tp.png",
+          "size": "635.7 KB",
+          "sizeBytes": 650990,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1fwZG6Wa9iSeQ5uxSM55Y4KzBegKQtZBw/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1fwZG6Wa9iSeQ5uxSM55Y4KzBegKQtZBw/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30141,
+          "type": "isp",
+          "name": "motorola_moto_g6_play_isp.jpg",
+          "size": "115.1 KB",
+          "sizeBytes": 117845,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HSt54fVgZ87aKSPcG_funZav3HHs8vkB/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15432,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G6 Plus",
+      "slug": "hp-motorola-moto-g6-plus",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G6 Plus — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30142,
+          "type": "testpoint",
+          "name": "motorola_moto_g6_plus_tp.png",
+          "size": "635.7 KB",
+          "sizeBytes": 650990,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1u4SK_7Wt482Ld0ImpcGdT0QOM_k0xLHP/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1u4SK_7Wt482Ld0ImpcGdT0QOM_k0xLHP/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30143,
+          "type": "isp",
+          "name": "motorola_moto_g6_plus_isp.jpg",
+          "size": "222.1 KB",
+          "sizeBytes": 227421,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1su1lH5lTjvn0j7Tyo4SV64DD3xQVA1Nc/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15433,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G60",
+      "slug": "hp-motorola-moto-g60",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G60 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30144,
+          "type": "testpoint",
+          "name": "motorola_moto_g60_tp.jpg",
+          "size": "176.2 KB",
+          "sizeBytes": 180479,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1imtjlgWGaunrTilFzzVLpJ5dNbfOT4o1/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1imtjlgWGaunrTilFzzVLpJ5dNbfOT4o1/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30145,
+          "type": "isp",
+          "name": "motorola_moto_g60_isp.jpg",
+          "size": "22.9 KB",
+          "sizeBytes": 23468,
+          "gdrive_direct_url": "https://drive.google.com/file/d/115AuNLzMEhhoh3jE1mr7qG1nkBw7Hu0D/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18372,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G60s",
+      "slug": "hp-motorola-moto-g60s",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G60s — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33901,
+          "type": "isp",
+          "name": "motorola_moto_g60s_isp.jpg",
+          "size": "145.3 KB",
+          "sizeBytes": 148829,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hw4eYtH-jzI-fRIQISUG676gMqMv9pm9/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15434,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G7",
+      "slug": "hp-motorola-moto-g7",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G7 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30146,
+          "type": "testpoint",
+          "name": "motorola_moto_g7_tp.jpg",
+          "size": "143.4 KB",
+          "sizeBytes": 146856,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1l-Mt_82V1RCkPkJ8hI68tcliMf4LcnGD/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1l-Mt_82V1RCkPkJ8hI68tcliMf4LcnGD/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30147,
+          "type": "isp",
+          "name": "motorola_moto_g7_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1LSQAwIDQMbQhJf7b77Tcvo-nq0x9kAYs/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15435,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G7 Play",
+      "slug": "hp-motorola-moto-g7-play",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G7 Play — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30148,
+          "type": "testpoint",
+          "name": "motorola_moto_g7_play_tp.jpg",
+          "size": "143.4 KB",
+          "sizeBytes": 146856,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15Y0xIZkK5BD-dX-Zg3ECKO6oSQPJuCqb/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/15Y0xIZkK5BD-dX-Zg3ECKO6oSQPJuCqb/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30149,
+          "type": "isp",
+          "name": "motorola_moto_g7_play_isp.jpg",
+          "size": "96.7 KB",
+          "sizeBytes": 98972,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1OujuglMj0csPaY5b9VczjT1OJaHVCzsV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15436,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G7 Plus",
+      "slug": "hp-motorola-moto-g7-plus",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G7 Plus — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30150,
+          "type": "testpoint",
+          "name": "motorola_moto_g7_plus_tp.jpg",
+          "size": "184.7 KB",
+          "sizeBytes": 189098,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Y8K5B7OfR-uQJR9XBiMCaTnvSY3Lj99t/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1Y8K5B7OfR-uQJR9XBiMCaTnvSY3Lj99t/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30151,
+          "type": "isp",
+          "name": "motorola_moto_g7_plus_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-voQlZbkNxC4xbRhhUboxZBx-Q2r_d37/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15437,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G7 Power",
+      "slug": "hp-motorola-moto-g7-power",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G7 Power — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30152,
+          "type": "testpoint",
+          "name": "motorola_moto_g7_power_tp.jpg",
+          "size": "184.7 KB",
+          "sizeBytes": 189098,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1de4z_96-qa9Fl1d_JaQip_EMV7tzkFir/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1de4z_96-qa9Fl1d_JaQip_EMV7tzkFir/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30153,
+          "type": "isp",
+          "name": "motorola_moto_g7_power_isp.jpg",
+          "size": "311.2 KB",
+          "sizeBytes": 318679,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1e9EOLep4Rpc7RDotOtflemPdlFYglm7E/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15438,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G71",
+      "slug": "hp-motorola-moto-g71",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G71 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 30154,
+          "type": "testpoint",
+          "name": "motorola_moto_g71_tp.jpg",
+          "size": "62.5 KB",
+          "sizeBytes": 64048,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1d4dK4KxlTFCJqpTeGCL1ky7gqIA_SMH1/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1d4dK4KxlTFCJqpTeGCL1ky7gqIA_SMH1/view?usp=sharing",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18373,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G71 5G",
+      "slug": "hp-motorola-moto-g71-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G71 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33902,
+          "type": "isp",
+          "name": "motorola_moto_g71_5g_isp.jpg",
+          "size": "606.5 KB",
+          "sizeBytes": 621106,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1FohaO1c_azTDdfV2T9585McoqS5f7iI_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15439,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G73",
+      "slug": "hp-motorola-moto-g73",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G73 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 30155,
+          "type": "testpoint",
+          "name": "motorola_moto_g73_tp.jpg",
+          "size": "22.9 KB",
+          "sizeBytes": 23468,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hAFcpGSz-KSFW6vcyB_kl0efYvIGnYXM/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1hAFcpGSz-KSFW6vcyB_kl0efYvIGnYXM/view?usp=sharing",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15440,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G8",
+      "slug": "hp-motorola-moto-g8",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G8 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30156,
+          "type": "testpoint",
+          "name": "motorola_moto_g8_tp.png",
+          "size": "217.5 KB",
+          "sizeBytes": 222740,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hj_FY768csJu37YjYuCdGiCWsrTl_tDe/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/JM5wT2Dw",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30157,
+          "type": "isp",
+          "name": "motorola_moto_g8_isp.jpg",
+          "size": "33.9 KB",
+          "sizeBytes": 34754,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WSz0ZItT59rYSA24Bccvo4n5GRgqQKkg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15441,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G8 Play",
+      "slug": "hp-motorola-moto-g8-play",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G8 Play — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30158,
+          "type": "testpoint",
+          "name": "motorola_moto_g8_play_tp.jpg",
+          "size": "143.4 KB",
+          "sizeBytes": 146856,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ag1mKsf6exPn31FR_WEj6ndfDJMJvkdr/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/2qe15",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30159,
+          "type": "isp",
+          "name": "motorola_moto_g8_play_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hpl_wO5drXNbUf1vfQXhKLXRILmbOAtW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15442,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G8 Plus",
+      "slug": "hp-motorola-moto-g8-plus",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G8 Plus — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30160,
+          "type": "testpoint",
+          "name": "motorola_moto_g8_plus_tp.jpg",
+          "size": "132.6 KB",
+          "sizeBytes": 135800,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wk1txaOXWMqSNdyk4eTq1VGU3yFo_j7Q/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/eK14Uj",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30161,
+          "type": "isp",
+          "name": "motorola_moto_g8_plus_isp.jpg",
+          "size": "35.3 KB",
+          "sizeBytes": 36096,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1M8HrUtZAzXrdikPq7vlkA--iJIh7JMVk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15443,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G8 Power",
+      "slug": "hp-motorola-moto-g8-power",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G8 Power — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30162,
+          "type": "testpoint",
+          "name": "motorola_moto_g8_power_tp.jpg",
+          "size": "132.6 KB",
+          "sizeBytes": 135800,
+          "gdrive_direct_url": "https://drive.google.com/file/d/11IDFk_kgBEXFUrHVZXLDyr0tBKEY6-30/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/mMZvr",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30163,
+          "type": "isp",
+          "name": "motorola_moto_g8_power_isp.jpg",
+          "size": "392.4 KB",
+          "sizeBytes": 401846,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PJW-r-YII-He5rHvxx5OWnlC6YPzlWdh/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18374,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G8 Power Lite",
+      "slug": "hp-motorola-moto-g8-power-lite",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G8 Power Lite — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33903,
+          "type": "isp",
+          "name": "motorola_moto_g8_power_lite_isp.jpg",
+          "size": "392.4 KB",
+          "sizeBytes": 401846,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1voNkYc3dF_SA8A4UPiKvd2EqR1yVlltw/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15444,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G82",
+      "slug": "hp-motorola-moto-g82",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G82 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 30164,
+          "type": "testpoint",
+          "name": "motorola_moto_g82_tp.jpg",
+          "size": "38.6 KB",
+          "sizeBytes": 39566,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hkXcopbeMJmZ5tyh5Wq-kFIZt9B28hAi/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1hkXcopbeMJmZ5tyh5Wq-kFIZt9B28hAi/view?usp=sharing",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18375,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G82 5G",
+      "slug": "hp-motorola-moto-g82-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G82 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33904,
+          "type": "isp",
+          "name": "motorola_moto_g82_5g_isp.jpg",
+          "size": "38.6 KB",
+          "sizeBytes": 39566,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DfNQ8GOFBlZG9uZ9k3lI7L__rFM0CwLN/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15445,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G84",
+      "slug": "hp-motorola-moto-g84",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G84 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 30165,
+          "type": "testpoint",
+          "name": "motorola_moto_g84_tp.jpg",
+          "size": "176.2 KB",
+          "sizeBytes": 180479,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Ya3szEhVqTLUNldItpW4q2g6ubCuEmEe/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1Ya3szEhVqTLUNldItpW4q2g6ubCuEmEe/view?usp=sharing",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18376,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G84 5G",
+      "slug": "hp-motorola-moto-g84-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G84 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33905,
+          "type": "isp",
+          "name": "motorola_moto_g84_5g_isp.jpg",
+          "size": "25.5 KB",
+          "sizeBytes": 26118,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QNTSQ4KIcg2ZsCpVhwaYW9-7Dm3d5hlw/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15446,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G9",
+      "slug": "hp-motorola-moto-g9",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G9 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30166,
+          "type": "testpoint",
+          "name": "motorola_moto_g9_tp.jpg",
+          "size": "30 KB",
+          "sizeBytes": 30760,
+          "gdrive_direct_url": "https://drive.google.com/file/d/156NlIKNfSnyl7nw3hFGOyKi7LPrX6z3a/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/9WPA",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30167,
+          "type": "isp",
+          "name": "motorola_moto_g9_isp.jpg",
+          "size": "96.7 KB",
+          "sizeBytes": 98972,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ehk4jKf-RnZmjSKq9tXbbhkTxQEtmnCl/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15447,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G9 Play",
+      "slug": "hp-motorola-moto-g9-play",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G9 Play — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30168,
+          "type": "testpoint",
+          "name": "motorola_moto_g9_play_tp.jpg",
+          "size": "30 KB",
+          "sizeBytes": 30760,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1u5Oz0w1FIRyfyaTE1vrZkiJcipQuOqMQ/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/v3tzAKB",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30169,
+          "type": "isp",
+          "name": "motorola_moto_g9_play_isp.jpg",
+          "size": "96.7 KB",
+          "sizeBytes": 98972,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19ERVdWli1yqQ9J5-Zzm3qikRAe59CMJz/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15448,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G9 Plus",
+      "slug": "hp-motorola-moto-g9-plus",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G9 Plus — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30170,
+          "type": "testpoint",
+          "name": "motorola_moto_g9_plus_tp.jpg",
+          "size": "30 KB",
+          "sizeBytes": 30760,
+          "gdrive_direct_url": "https://drive.google.com/file/d/18Nbhr0JnMMJ7Wilu5TSa-LAr5x7TMQt6/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/Sa36rtBE",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30171,
+          "type": "isp",
+          "name": "motorola_moto_g9_plus_isp.jpg",
+          "size": "96.7 KB",
+          "sizeBytes": 98972,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xIR9Zyxae9IYaOpML5COHkU9yVIjlXNG/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15449,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto G9 Power",
+      "slug": "hp-motorola-moto-g9-power",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto G9 Power — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30172,
+          "type": "testpoint",
+          "name": "motorola_moto_g9_power_tp.jpg",
+          "size": "30 KB",
+          "sizeBytes": 30760,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uC2mqgs2rh1X3pbvvkawIvvrzSH-xQrZ/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/PKams",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30173,
+          "type": "isp",
+          "name": "motorola_moto_g9_power_isp.jpg",
+          "size": "96.7 KB",
+          "sizeBytes": 98972,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1RxW7DM7TqPGHZxeOW37Y9_ElpJzvq0lg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18377,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto Razr 40",
+      "slug": "hp-motorola-moto-razr-40",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto Razr 40 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33906,
+          "type": "isp",
+          "name": "motorola_moto_razr_40_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1S5BhyAbbt5juoxxTXXl15n8o3C4jjA79/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18378,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto Razr 40 Ultra",
+      "slug": "hp-motorola-moto-razr-40-ultra",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto Razr 40 Ultra — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33907,
+          "type": "isp",
+          "name": "motorola_moto_razr_40_ultra_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QB_ooBoghAT6vHVTVrri1Ckrj0PbDKHl/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18379,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Moto Razr 50 Ultra",
+      "slug": "hp-motorola-moto-razr-50-ultra",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Moto Razr 50 Ultra — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33908,
+          "type": "isp",
+          "name": "motorola_moto_razr_50_ultra_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/12l7wxNJwxb-aRFs0hlYL7yMj2-VHX0io/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19690,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "RHODEI",
+      "slug": "hp-motorola-rhodei",
+      "chipset": "Snapdragon 695 5G",
+      "motherboardCode": "HWID: 001A90E1",
+      "officialTitle": "Motorola RHODEI — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35986,
+          "type": "loader",
+          "name": "001A90E100000000_d9357db88795b5a8_fhprg.bin",
+          "size": "687.5 KB",
+          "sizeBytes": 704012,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xuciU8taNOYrj0oBQ4gPYBS9B6WZzxKK/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19648,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "XT1254",
+      "slug": "hp-motorola-xt1254",
+      "chipset": "Snapdragon 805",
+      "motherboardCode": "HWID: 009010E1",
+      "officialTitle": "Motorola XT1254 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35888,
+          "type": "loader",
+          "name": "009010e102280000_f541e6985d979cdd_fhprg.bin",
+          "size": "57.8 KB",
+          "sizeBytes": 59224,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dfpGk3z-Jw96oijUdLeWb7yTHXc7VLxO/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35889,
+          "type": "loader",
+          "name": "009010e100310000_cc3153a80293939b_fhprg.bin",
+          "size": "58.3 KB",
+          "sizeBytes": 59696,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Yd023GEUtueBM2cWaWb5vuTwTSf5Ux4Y/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19604,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "XT2052",
+      "slug": "hp-motorola-xt2052",
+      "chipset": "Snapdragon 632",
+      "motherboardCode": "HWID: 000BA0E1",
+      "officialTitle": "Motorola XT2052 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35542,
+          "type": "loader",
+          "name": "000ba0e100000000_6d6287d60bc71172_fhprg_peek.bin",
+          "size": "431.2 KB",
+          "sizeBytes": 441544,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Db5bGAUxMsXqzkbyljDBiJQoAschIZRi/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35543,
+          "type": "loader",
+          "name": "000ba0e100150067_6bc369511da9cadb_fhprg_peek.bin",
+          "size": "256.4 KB",
+          "sizeBytes": 262580,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1iihMSnNsHW1c29rhKs8JXxs8Aq8OMfzS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35544,
+          "type": "loader",
+          "name": "000ba0e102e80000_4aac65a9be0cf870_fhprg.bin",
+          "size": "395.3 KB",
+          "sizeBytes": 404816,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1C0boTyybbOEpVwJ3ap5CR4ekTWMIIu_e/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35545,
+          "type": "loader",
+          "name": "000ba0e102e80000_4aac65a9be0cf870_fhprg_peek.bin",
+          "size": "395.8 KB",
+          "sizeBytes": 405264,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dBSYC5OvPDC0kf2A-OtGqIvX54vrIMAk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35546,
+          "type": "loader",
+          "name": "000ba0e100000000_c451a1168ef5c7c7_fhprg_peek.bin",
+          "size": "430.8 KB",
+          "sizeBytes": 441188,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1p3P_qC_mUeDHWJP1Z6M0qshGh90ZBiBb/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35547,
+          "type": "loader",
+          "name": "000ba0e106360666_dba08d9ef72e9e6c_fhprg_peek.bin",
+          "size": "432 KB",
+          "sizeBytes": 442396,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HAONagr_n2TJfXHnTS86SC4zUfTqYmc8/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35548,
+          "type": "loader",
+          "name": "000ba0e100720000_57158eaf1814d78f_fhprg_redmi7.bin",
+          "size": "619.8 KB",
+          "sizeBytes": 634672,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1rmn2PFrXGp3xDWxGJ-vbFaEnuUQz60zJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35549,
+          "type": "loader",
+          "name": "000ba0e100720000_57158eaf1814d78f_fhprg_edlauth_peek.bin",
+          "size": "434.8 KB",
+          "sizeBytes": 445280,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ytkjYdN5o1LPwA-FTrI_W3o_UtUq5vqy/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19847,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "Z2",
+      "slug": "hp-motorola-z2",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Motorola Z2 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36176,
+          "type": "loader",
+          "name": "Z2.mbn",
+          "size": "318 KB",
+          "sizeBytes": 325596,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1MVswN1Ucx758d3RhWOU7X4WT8jS3aVGs/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16919,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto E13",
+      "slug": "hp-motorola-isp-moto-e13",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto E13 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32446,
+          "type": "testpoint",
+          "name": "motorola_moto_e13_isp.jpg",
+          "size": "54.4 KB",
+          "sizeBytes": 55710,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Snbul0Ppk0Gsm9WVhQTPxCRsbAKGl8TE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16920,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto E20",
+      "slug": "hp-motorola-isp-moto-e20",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto E20 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32447,
+          "type": "testpoint",
+          "name": "motorola_moto_e20_isp.jpg",
+          "size": "73.1 KB",
+          "sizeBytes": 74864,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1KyR-da6Of9d9jv9NZQBL9L43dmIE_u1S/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16921,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto E22",
+      "slug": "hp-motorola-isp-moto-e22",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto E22 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32448,
+          "type": "testpoint",
+          "name": "motorola_moto_e22_isp.jpg",
+          "size": "494.1 KB",
+          "sizeBytes": 505968,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Bmx5OPfokWI479EjscPKioJXdlKmtzSd/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16922,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto E32",
+      "slug": "hp-motorola-isp-moto-e32",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto E32 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32449,
+          "type": "testpoint",
+          "name": "motorola_moto_e32_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-UU044yghP9eWevVYJHCLWSLkcwqKXav/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16923,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto E40",
+      "slug": "hp-motorola-isp-moto-e40",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto E40 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32450,
+          "type": "testpoint",
+          "name": "motorola_moto_e40_isp.jpg",
+          "size": "28 KB",
+          "sizeBytes": 28636,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1pF3-_qDWJBguZ5mFeDrq9UMGUneuYbyS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16924,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto E5",
+      "slug": "hp-motorola-isp-moto-e5",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto E5 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32451,
+          "type": "testpoint",
+          "name": "motorola_moto_e5_isp.jpg",
+          "size": "567.5 KB",
+          "sizeBytes": 581088,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1FtPzfojf22MAOFxrq-G1vr9bUiTlC-x9/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16925,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto E5 Play",
+      "slug": "hp-motorola-isp-moto-e5-play",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto E5 Play — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32452,
+          "type": "testpoint",
+          "name": "motorola_moto_e5_play_isp.jpg",
+          "size": "567.5 KB",
+          "sizeBytes": 581088,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1IwieLMWJ1r4wI3NdBsbhMl2p_97ZpyAV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16926,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto E5 Plus",
+      "slug": "hp-motorola-isp-moto-e5-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto E5 Plus — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32453,
+          "type": "testpoint",
+          "name": "motorola_moto_e5_plus_isp.jpg",
+          "size": "567.5 KB",
+          "sizeBytes": 581088,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1nYFUQFYtDoiuc9hJsvThcLioxUOL-DZ5/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16927,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto E6",
+      "slug": "hp-motorola-isp-moto-e6",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto E6 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32454,
+          "type": "testpoint",
+          "name": "motorola_moto_e6_isp.jpg",
+          "size": "222.1 KB",
+          "sizeBytes": 227421,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1tuD2oE92Bgw__gMWLGQoV3GUW0x_WR_3/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16928,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto E6 Play",
+      "slug": "hp-motorola-isp-moto-e6-play",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto E6 Play — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32455,
+          "type": "testpoint",
+          "name": "motorola_moto_e6_play_isp.jpg",
+          "size": "89.3 KB",
+          "sizeBytes": 91471,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1gwbiwlQst6Dkb8UWZUS60IJrmZ7FkUhY/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16929,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto E6 Plus",
+      "slug": "hp-motorola-isp-moto-e6-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto E6 Plus — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32456,
+          "type": "testpoint",
+          "name": "motorola_moto_e6_plus_isp.jpg",
+          "size": "222.1 KB",
+          "sizeBytes": 227421,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kmvdacEcgUKBhMxI6sYTxQGHqIb7YPlD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16930,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto E6s",
+      "slug": "hp-motorola-isp-moto-e6s",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto E6s — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32457,
+          "type": "testpoint",
+          "name": "motorola_moto_e6s_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15fd2tK6mGsVenbKi70G7BdBV7D_ld9Z-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16931,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto E7",
+      "slug": "hp-motorola-isp-moto-e7",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto E7 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32458,
+          "type": "testpoint",
+          "name": "motorola_moto_e7_isp.jpg",
+          "size": "191.3 KB",
+          "sizeBytes": 195851,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DOciy0KFSulfo_DpHlQK-ng3Yxh12JqW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16932,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto E7 Plus",
+      "slug": "hp-motorola-isp-moto-e7-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto E7 Plus — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32459,
+          "type": "testpoint",
+          "name": "motorola_moto_e7_plus_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1s6i0CpVa9hKc5-273wUMZHC8MwExt3pR/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16933,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto E7 Power",
+      "slug": "hp-motorola-isp-moto-e7-power",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto E7 Power — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32460,
+          "type": "testpoint",
+          "name": "motorola_moto_e7_power_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1KlphK-R5GoiNksqlcf7HJjlqcg19ebMw/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16934,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto Edge",
+      "slug": "hp-motorola-isp-moto-edge",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto Edge — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32461,
+          "type": "testpoint",
+          "name": "motorola_moto_edge_isp.jpg",
+          "size": "1.3 MB",
+          "sizeBytes": 1406154,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZSIvJccTDdIgeS-HYQIAqkEjzzrgp3CT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16935,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto Edge 20",
+      "slug": "hp-motorola-isp-moto-edge-20",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto Edge 20 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32462,
+          "type": "testpoint",
+          "name": "motorola_moto_edge_20_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1m7-7FvyB6p8iRgwJ-JsCoyUPqFTbzsNT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16936,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto Edge 20 Pro",
+      "slug": "hp-motorola-isp-moto-edge-20-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto Edge 20 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32463,
+          "type": "testpoint",
+          "name": "motorola_moto_edge_20_pro_isp.jpg",
+          "size": "468.6 KB",
+          "sizeBytes": 479887,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HB5DCZDtmoro3WhGqUJx0ci4bRapjox2/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16937,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto Edge 30",
+      "slug": "hp-motorola-isp-moto-edge-30",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto Edge 30 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32464,
+          "type": "testpoint",
+          "name": "motorola_moto_edge_30_isp.jpg",
+          "size": "497.4 KB",
+          "sizeBytes": 509332,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17Fr0A35VX1umswQ-_pxoNkyfchcWands/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16938,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto Edge 30 Pro",
+      "slug": "hp-motorola-isp-moto-edge-30-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto Edge 30 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32465,
+          "type": "testpoint",
+          "name": "motorola_moto_edge_30_pro_isp.jpg",
+          "size": "497.4 KB",
+          "sizeBytes": 509332,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1pQOeuMKLD2CnNhsAdMPdVpc09hB8GgNR/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16939,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto Edge 30 Ultra",
+      "slug": "hp-motorola-isp-moto-edge-30-ultra",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto Edge 30 Ultra — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32466,
+          "type": "testpoint",
+          "name": "motorola_moto_edge_30_ultra_isp.jpg",
+          "size": "497.4 KB",
+          "sizeBytes": 509332,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1KzQRUqeJBau1rWG4SljQ6gbs1lKNciLg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16940,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto Edge 40",
+      "slug": "hp-motorola-isp-moto-edge-40",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto Edge 40 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32467,
+          "type": "testpoint",
+          "name": "motorola_moto_edge_40_isp.jpg",
+          "size": "28 KB",
+          "sizeBytes": 28636,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1fvWjrzFyLWYgqOmxeDojWmJu-9iD30US/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16941,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto Edge 40 Neo",
+      "slug": "hp-motorola-isp-moto-edge-40-neo",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto Edge 40 Neo — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32468,
+          "type": "testpoint",
+          "name": "motorola_moto_edge_40_neo_isp.jpg",
+          "size": "1.3 MB",
+          "sizeBytes": 1406154,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19H5WegcgbhZaSby1XYW1MbVqJY5KpsCP/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16942,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto Edge 50 Pro",
+      "slug": "hp-motorola-isp-moto-edge-50-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto Edge 50 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32469,
+          "type": "testpoint",
+          "name": "motorola_moto_edge_50_pro_isp.jpg",
+          "size": "105.5 KB",
+          "sizeBytes": 108044,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZIlNRNiyZzfjKouDIrJrsQn3lRUt80YX/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16943,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto Edge 50 Ultra",
+      "slug": "hp-motorola-isp-moto-edge-50-ultra",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto Edge 50 Ultra — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32470,
+          "type": "testpoint",
+          "name": "motorola_moto_edge_50_ultra_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1JU4xKN2U6UJpTgPf4i9K67pduKr8p3N1/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16944,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto G10",
+      "slug": "hp-motorola-isp-moto-g10",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto G10 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32471,
+          "type": "testpoint",
+          "name": "motorola_moto_g10_isp.jpg",
+          "size": "404.3 KB",
+          "sizeBytes": 413998,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1VI-iIzc2Ynv4pRVcD2xBvPR16HdZ2uKp/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16945,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto G20",
+      "slug": "hp-motorola-isp-moto-g20",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto G20 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32472,
+          "type": "testpoint",
+          "name": "motorola_moto_g20_isp.jpg",
+          "size": "228 KB",
+          "sizeBytes": 233444,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1u68yp9FhpzSeNQ_VIlo65SOqN8_1U8EO/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16946,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto G30",
+      "slug": "hp-motorola-isp-moto-g30",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto G30 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32473,
+          "type": "testpoint",
+          "name": "motorola_moto_g30_isp.jpg",
+          "size": "22.9 KB",
+          "sizeBytes": 23468,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15Y5ZvHInuNyPiBMXsIa1Ua_Ly8SLXnUN/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16947,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto G40 Fusion",
+      "slug": "hp-motorola-isp-moto-g40-fusion",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto G40 Fusion — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32474,
+          "type": "testpoint",
+          "name": "motorola_moto_g40_fusion_isp.jpg",
+          "size": "50.2 KB",
+          "sizeBytes": 51372,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1aGeywGZciyFzkj1JwrqpYproP04utC1a/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16948,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto G50",
+      "slug": "hp-motorola-isp-moto-g50",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto G50 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32475,
+          "type": "testpoint",
+          "name": "motorola_moto_g50_isp.jpg",
+          "size": "79 KB",
+          "sizeBytes": 80916,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Q6P5xtzFZMAsXZ-3dL1DdPli6_IDJY5R/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16949,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto G6",
+      "slug": "hp-motorola-isp-moto-g6",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto G6 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32476,
+          "type": "testpoint",
+          "name": "motorola_moto_g6_isp.jpg",
+          "size": "89.3 KB",
+          "sizeBytes": 91471,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1AAiOW_viK9L3IygE0z7WL4Vz4t3ePR_J/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16950,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto G6 Play",
+      "slug": "hp-motorola-isp-moto-g6-play",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto G6 Play — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32477,
+          "type": "testpoint",
+          "name": "motorola_moto_g6_play_isp.jpg",
+          "size": "115.1 KB",
+          "sizeBytes": 117845,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HSt54fVgZ87aKSPcG_funZav3HHs8vkB/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16951,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto G6 Plus",
+      "slug": "hp-motorola-isp-moto-g6-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto G6 Plus — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32478,
+          "type": "testpoint",
+          "name": "motorola_moto_g6_plus_isp.jpg",
+          "size": "222.1 KB",
+          "sizeBytes": 227421,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1su1lH5lTjvn0j7Tyo4SV64DD3xQVA1Nc/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16952,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto G60",
+      "slug": "hp-motorola-isp-moto-g60",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto G60 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32479,
+          "type": "testpoint",
+          "name": "motorola_moto_g60_isp.jpg",
+          "size": "22.9 KB",
+          "sizeBytes": 23468,
+          "gdrive_direct_url": "https://drive.google.com/file/d/115AuNLzMEhhoh3jE1mr7qG1nkBw7Hu0D/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16953,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto G60s",
+      "slug": "hp-motorola-isp-moto-g60s",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto G60s — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32480,
+          "type": "testpoint",
+          "name": "motorola_moto_g60s_isp.jpg",
+          "size": "145.3 KB",
+          "sizeBytes": 148829,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hw4eYtH-jzI-fRIQISUG676gMqMv9pm9/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16954,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto G7",
+      "slug": "hp-motorola-isp-moto-g7",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto G7 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32481,
+          "type": "testpoint",
+          "name": "motorola_moto_g7_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1LSQAwIDQMbQhJf7b77Tcvo-nq0x9kAYs/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16955,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto G7 Play",
+      "slug": "hp-motorola-isp-moto-g7-play",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto G7 Play — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32482,
+          "type": "testpoint",
+          "name": "motorola_moto_g7_play_isp.jpg",
+          "size": "96.7 KB",
+          "sizeBytes": 98972,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1OujuglMj0csPaY5b9VczjT1OJaHVCzsV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16956,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto G7 Plus",
+      "slug": "hp-motorola-isp-moto-g7-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto G7 Plus — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32483,
+          "type": "testpoint",
+          "name": "motorola_moto_g7_plus_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-voQlZbkNxC4xbRhhUboxZBx-Q2r_d37/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16957,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto G7 Power",
+      "slug": "hp-motorola-isp-moto-g7-power",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto G7 Power — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32484,
+          "type": "testpoint",
+          "name": "motorola_moto_g7_power_isp.jpg",
+          "size": "311.2 KB",
+          "sizeBytes": 318679,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1e9EOLep4Rpc7RDotOtflemPdlFYglm7E/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16958,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto G71 5G",
+      "slug": "hp-motorola-isp-moto-g71-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto G71 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32485,
+          "type": "testpoint",
+          "name": "motorola_moto_g71_5g_isp.jpg",
+          "size": "606.5 KB",
+          "sizeBytes": 621106,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1FohaO1c_azTDdfV2T9585McoqS5f7iI_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16959,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto G8",
+      "slug": "hp-motorola-isp-moto-g8",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto G8 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32486,
+          "type": "testpoint",
+          "name": "motorola_moto_g8_isp.jpg",
+          "size": "33.9 KB",
+          "sizeBytes": 34754,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WSz0ZItT59rYSA24Bccvo4n5GRgqQKkg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16960,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto G8 Play",
+      "slug": "hp-motorola-isp-moto-g8-play",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto G8 Play — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32487,
+          "type": "testpoint",
+          "name": "motorola_moto_g8_play_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hpl_wO5drXNbUf1vfQXhKLXRILmbOAtW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16961,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto G8 Plus",
+      "slug": "hp-motorola-isp-moto-g8-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto G8 Plus — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32488,
+          "type": "testpoint",
+          "name": "motorola_moto_g8_plus_isp.jpg",
+          "size": "35.3 KB",
+          "sizeBytes": 36096,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1M8HrUtZAzXrdikPq7vlkA--iJIh7JMVk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16962,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto G8 Power",
+      "slug": "hp-motorola-isp-moto-g8-power",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto G8 Power — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32489,
+          "type": "testpoint",
+          "name": "motorola_moto_g8_power_isp.jpg",
+          "size": "392.4 KB",
+          "sizeBytes": 401846,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PJW-r-YII-He5rHvxx5OWnlC6YPzlWdh/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16963,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto G8 Power Lite",
+      "slug": "hp-motorola-isp-moto-g8-power-lite",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto G8 Power Lite — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32490,
+          "type": "testpoint",
+          "name": "motorola_moto_g8_power_lite_isp.jpg",
+          "size": "392.4 KB",
+          "sizeBytes": 401846,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1voNkYc3dF_SA8A4UPiKvd2EqR1yVlltw/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16964,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto G82 5G",
+      "slug": "hp-motorola-isp-moto-g82-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto G82 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32491,
+          "type": "testpoint",
+          "name": "motorola_moto_g82_5g_isp.jpg",
+          "size": "38.6 KB",
+          "sizeBytes": 39566,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DfNQ8GOFBlZG9uZ9k3lI7L__rFM0CwLN/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16965,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto G84 5G",
+      "slug": "hp-motorola-isp-moto-g84-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto G84 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32492,
+          "type": "testpoint",
+          "name": "motorola_moto_g84_5g_isp.jpg",
+          "size": "25.5 KB",
+          "sizeBytes": 26118,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QNTSQ4KIcg2ZsCpVhwaYW9-7Dm3d5hlw/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16966,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto G9",
+      "slug": "hp-motorola-isp-moto-g9",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto G9 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32493,
+          "type": "testpoint",
+          "name": "motorola_moto_g9_isp.jpg",
+          "size": "96.7 KB",
+          "sizeBytes": 98972,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ehk4jKf-RnZmjSKq9tXbbhkTxQEtmnCl/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16967,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto G9 Play",
+      "slug": "hp-motorola-isp-moto-g9-play",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto G9 Play — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32494,
+          "type": "testpoint",
+          "name": "motorola_moto_g9_play_isp.jpg",
+          "size": "96.7 KB",
+          "sizeBytes": 98972,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19ERVdWli1yqQ9J5-Zzm3qikRAe59CMJz/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16968,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto G9 Plus",
+      "slug": "hp-motorola-isp-moto-g9-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto G9 Plus — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32495,
+          "type": "testpoint",
+          "name": "motorola_moto_g9_plus_isp.jpg",
+          "size": "96.7 KB",
+          "sizeBytes": 98972,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xIR9Zyxae9IYaOpML5COHkU9yVIjlXNG/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16969,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto G9 Power",
+      "slug": "hp-motorola-isp-moto-g9-power",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto G9 Power — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32496,
+          "type": "testpoint",
+          "name": "motorola_moto_g9_power_isp.jpg",
+          "size": "96.7 KB",
+          "sizeBytes": 98972,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1RxW7DM7TqPGHZxeOW37Y9_ElpJzvq0lg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16970,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto Razr 40",
+      "slug": "hp-motorola-isp-moto-razr-40",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto Razr 40 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32497,
+          "type": "testpoint",
+          "name": "motorola_moto_razr_40_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1S5BhyAbbt5juoxxTXXl15n8o3C4jjA79/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16971,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto Razr 40 Ultra",
+      "slug": "hp-motorola-isp-moto-razr-40-ultra",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto Razr 40 Ultra — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32498,
+          "type": "testpoint",
+          "name": "motorola_moto_razr_40_ultra_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QB_ooBoghAT6vHVTVrri1Ckrj0PbDKHl/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16972,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "[ISP] Moto Razr 50 Ultra",
+      "slug": "hp-motorola-isp-moto-razr-50-ultra",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Motorola [ISP] Moto Razr 50 Ultra — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32499,
+          "type": "testpoint",
+          "name": "motorola_moto_razr_50_ultra_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/12l7wxNJwxb-aRFs0hlYL7yMj2-VHX0io/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19641,
+      "category": "hp",
+      "brand": "Motorola",
+      "brandSlug": "motorola",
+      "modelName": "motorola edge 20",
+      "slug": "hp-motorola-motorola-edge-20",
+      "chipset": "Snapdragon 778G",
+      "motherboardCode": "HWID: 001920E1",
+      "officialTitle": "Motorola motorola edge 20 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35866,
+          "type": "loader",
+          "name": "001920e102e80000_ab8c46a42f23e5c0_fhprg.bin",
+          "size": "935.8 KB",
+          "sizeBytes": 958304,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1yJwLoVPor_ZQJVUYN1y3vd3e2EHzHwsw/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35867,
+          "type": "loader",
+          "name": "001920e101cf0000_fa2836525c2aad8a_fhprg.bin",
+          "size": "928.2 KB",
+          "sizeBytes": 950480,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1UsppZFUKcynONK4yXi1S-PmvN4GMkbYX/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35868,
+          "type": "loader",
+          "name": "001920E100200000_4A14C27B518909E1_fhprg.elf",
+          "size": "987.4 KB",
+          "sizeBytes": 1011056,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1I_Z-M1bEd9mzjKhLxWUuJuyJvoggmZL6/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

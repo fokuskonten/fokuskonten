@@ -1,0 +1,4345 @@
+{
+  "category": "hp",
+  "brand": "OnePlus",
+  "brandSlug": "oneplus",
+  "totalModels": 145,
+  "models": [
+    {
+      "id": 19855,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "1",
+      "slug": "hp-oneplus-1",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 1 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36184,
+          "type": "loader",
+          "name": "1.mbn",
+          "size": "70.6 KB",
+          "sizeBytes": 72324,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1W2ObRzIy7XUCLvRdPMyxalS6Bz3BO3pT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15521,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "10 Pro",
+      "slug": "hp-oneplus-10-pro",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 10 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30279,
+          "type": "testpoint",
+          "name": "oneplus_10_pro_tp.jpg",
+          "size": "46.6 KB",
+          "sizeBytes": 47714,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1znff1sS9rf9VPd3lPT5zUQ90R4-obRsQ/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1znff1sS9rf9VPd3lPT5zUQ90R4-obRsQ/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30280,
+          "type": "isp",
+          "name": "oneplus_oneplus_10_pro_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1cQx_mm7aftjSROQlGkx41_pZKzxcST65/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15522,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "10R",
+      "slug": "hp-oneplus-10r",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 10R — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30281,
+          "type": "testpoint",
+          "name": "oneplus_10r_tp.jpg",
+          "size": "46.6 KB",
+          "sizeBytes": 47714,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1q2bHNLNE-w027pX8eblbeITnLp-QQcp4/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1q2bHNLNE-w027pX8eblbeITnLp-QQcp4/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30282,
+          "type": "isp",
+          "name": "oneplus_oneplus_10r_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1vnTpIBs8y5IhSLW-GZeM1lqLxPAcHuNN/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15523,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "10T",
+      "slug": "hp-oneplus-10t",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 10T — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30283,
+          "type": "testpoint",
+          "name": "oneplus_10t_tp.jpg",
+          "size": "84.1 KB",
+          "sizeBytes": 86163,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1VOuq93u5lz-rENwPyma5LNtlwTICkyO0/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1VOuq93u5lz-rENwPyma5LNtlwTICkyO0/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30284,
+          "type": "isp",
+          "name": "oneplus_oneplus_10t_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wNS0lzFnBn_-BSQjfpHM3oQvHoGlZeDD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15524,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "11",
+      "slug": "hp-oneplus-11",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 11 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30285,
+          "type": "testpoint",
+          "name": "oneplus_11_tp.jpg",
+          "size": "51.3 KB",
+          "sizeBytes": 52485,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HZNzcwrDliqpPWQfvLYkkLPxjanvuZYk/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1HZNzcwrDliqpPWQfvLYkkLPxjanvuZYk/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30286,
+          "type": "isp",
+          "name": "oneplus_oneplus_11_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1YmRrA0RvIbJdShPFwQiu65uXF7145yli/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15525,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "11R",
+      "slug": "hp-oneplus-11r",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 11R — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30287,
+          "type": "isp",
+          "name": "oneplus_oneplus_11r_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1u_Jh8C34CeRYa6lQ_glM7D12q9yzKE1Q/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15526,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "12",
+      "slug": "hp-oneplus-12",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 12 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30288,
+          "type": "isp",
+          "name": "oneplus_oneplus_12_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1qyxYAvI8YQEjyBAygDuhdnZosoi6IRYM/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15527,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "12R",
+      "slug": "hp-oneplus-12r",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 12R — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30289,
+          "type": "isp",
+          "name": "oneplus_oneplus_12r_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1oaXIEUWLc_c4InlEpbo3f9BL7OYTXvsg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15528,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "2",
+      "slug": "hp-oneplus-2",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 2 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp",
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 30290,
+          "type": "testpoint",
+          "name": "oneplus_2_tp.jpg",
+          "size": "46.6 KB",
+          "sizeBytes": 47714,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zt05aG4kQ73iUKQ9Q4yDvIs9Vi_41HVH/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1zt05aG4kQ73iUKQ9Q4yDvIs9Vi_41HVH/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30291,
+          "type": "isp",
+          "name": "oneplus_oneplus_2_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-3AtKAe2eof5Eig_6RoC6m6UbXBXn2Ue/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30292,
+          "type": "loader",
+          "name": "2.mbn",
+          "size": "298.3 KB",
+          "sizeBytes": 305488,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ViOJEfwJXeuZYWYS-TfR-ILkcIeCg5xr/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15529,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "3",
+      "slug": "hp-oneplus-3",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 3 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp",
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 30293,
+          "type": "testpoint",
+          "name": "oneplus_3_tp.jpg",
+          "size": "313.7 KB",
+          "sizeBytes": 321229,
+          "gdrive_direct_url": "https://drive.google.com/file/d/18doPkMd5SkTnTZQECCSAmgon2drvrAfT/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/18doPkMd5SkTnTZQECCSAmgon2drvrAfT/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30294,
+          "type": "isp",
+          "name": "oneplus_oneplus_3_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1AOOG85dYpuvvo8n-TfDgE37UBqXOLwDF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30295,
+          "type": "loader",
+          "name": "3.elf",
+          "size": "463.3 KB",
+          "sizeBytes": 474464,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1VKG1_EgnnJfteWgiN8mmi1TUMLMY6FC0/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15530,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "3T",
+      "slug": "hp-oneplus-3t",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 3T — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp",
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 30296,
+          "type": "testpoint",
+          "name": "oneplus_3t_tp.jpg",
+          "size": "313.7 KB",
+          "sizeBytes": 321229,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1RoCo9M3grKGCkck-apZslVkLc_qlgdwf/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1RoCo9M3grKGCkck-apZslVkLc_qlgdwf/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30297,
+          "type": "isp",
+          "name": "oneplus_oneplus_3t_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/12pKWQWukn8dzArqe0PmAnE5HVRL7y1_G/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30298,
+          "type": "loader",
+          "name": "3T.elf",
+          "size": "463.1 KB",
+          "sizeBytes": 474208,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ey1PogHmSfAcaez5bu4ZIoilDg9l376Q/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19857,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "3T (LITE FIREHOSE)",
+      "slug": "hp-oneplus-3t-lite-firehose",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 3T (LITE FIREHOSE) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36186,
+          "type": "loader",
+          "name": "3T (LITE FIREHOSE).elf",
+          "size": "479 KB",
+          "sizeBytes": 490448,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1s69JnQ7DHRP__DYVvie29d8FNdS4f7uM/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15531,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "5",
+      "slug": "hp-oneplus-5",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 5 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp",
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 30299,
+          "type": "testpoint",
+          "name": "oneplus_5_tp.jpg",
+          "size": "51.3 KB",
+          "sizeBytes": 52485,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1oqK-Iwvj0RdmcBR6dR1iVhK8cm6i_LtO/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1oqK-Iwvj0RdmcBR6dR1iVhK8cm6i_LtO/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30300,
+          "type": "isp",
+          "name": "oneplus_oneplus_5_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zNBbboc_60ndqRELTuFDa0S4dih_90rE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30301,
+          "type": "loader",
+          "name": "5.elf",
+          "size": "586.1 KB",
+          "sizeBytes": 600192,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1nNVJ7dkaP-8YmnMuVkcFDenky4uDGWuP/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15532,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "5T",
+      "slug": "hp-oneplus-5t",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 5T — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30302,
+          "type": "testpoint",
+          "name": "oneplus_5t_tp.png",
+          "size": "9.5 MB",
+          "sizeBytes": 9921985,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1KmJ7TsHPLKimEmL9a06WHDt7hWYmRj4y/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1KmJ7TsHPLKimEmL9a06WHDt7hWYmRj4y/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30303,
+          "type": "isp",
+          "name": "oneplus_oneplus_5t_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uGApbos_awf6qdaWntzGR6yRN8ZWGbOi/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15533,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "6",
+      "slug": "hp-oneplus-6",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 6 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp",
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 30304,
+          "type": "testpoint",
+          "name": "oneplus_6_tp.jpg",
+          "size": "313.7 KB",
+          "sizeBytes": 321229,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DXtmdpYTAxSva0IGJ2OcZYfSDmk_ukCp/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1DXtmdpYTAxSva0IGJ2OcZYfSDmk_ukCp/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30305,
+          "type": "isp",
+          "name": "oneplus_oneplus_6_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1v88ZC5sTCWwYxdTEbIeYePN-nKXO4tk-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30306,
+          "type": "loader",
+          "name": "6.elf",
+          "size": "268.6 KB",
+          "sizeBytes": 275022,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1LcxSufW-RNWHZBZIT7yLm3QJZIHZp2H6/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15534,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "6T",
+      "slug": "hp-oneplus-6t",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 6T — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp",
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 30307,
+          "type": "testpoint",
+          "name": "oneplus_6t_tp.jpg",
+          "size": "313.7 KB",
+          "sizeBytes": 321229,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PB6vbWdDW1LXg2pmZWfJKrefcgfoBQAH/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1PB6vbWdDW1LXg2pmZWfJKrefcgfoBQAH/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30308,
+          "type": "isp",
+          "name": "oneplus_oneplus_6t_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1U6fx0_Rc_DQqx7FI6LXSUFGtEqxCAhV2/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30309,
+          "type": "loader",
+          "name": "6T.elf",
+          "size": "268.6 KB",
+          "sizeBytes": 275022,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xCh9R-id1OFSf0ddcjjPfoSRMUuMH-e3/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15535,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "7",
+      "slug": "hp-oneplus-7",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 7 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp",
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 30310,
+          "type": "testpoint",
+          "name": "oneplus_7_tp.jpg",
+          "size": "313.7 KB",
+          "sizeBytes": 321229,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14TYxYD0nUUZFxxh3IXJLuvrMCrktJZYZ/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/14TYxYD0nUUZFxxh3IXJLuvrMCrktJZYZ/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30311,
+          "type": "isp",
+          "name": "oneplus_oneplus_7_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HPbXYeczS2BMeUjbpR1zp_fZ_A64s9tK/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30312,
+          "type": "loader",
+          "name": "7.elf",
+          "size": "277.6 KB",
+          "sizeBytes": 284271,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13lglAoMMXcl8eOZZjSUl5OKlKAsidrWz/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15536,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "7 Pro",
+      "slug": "hp-oneplus-7-pro",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 7 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30313,
+          "type": "testpoint",
+          "name": "oneplus_7_pro_tp.jpg",
+          "size": "46.6 KB",
+          "sizeBytes": 47714,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1FHXwv1RtOhxx6vKElxfZVt5xTLZe0m23/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1FHXwv1RtOhxx6vKElxfZVt5xTLZe0m23/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30314,
+          "type": "isp",
+          "name": "oneplus_oneplus_7_pro_isp.jpg",
+          "size": "207.1 KB",
+          "sizeBytes": 212031,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1bmWjud_KA7wPcSL-6MRMyO7A38j8CxvT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19859,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "710_670_712 OPPO_710_670_712_New_Chimera",
+      "slug": "hp-oneplus-710_670_712-oppo_710_670_712_new_chimera",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 710_670_712 OPPO_710_670_712_New_Chimera — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36188,
+          "type": "loader",
+          "name": "OPPO_710_670_712_New_Chimera.elf",
+          "size": "677.1 KB",
+          "sizeBytes": 693304,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1SclWqH_wENMykp7vtD5oOS6chxoMBTpE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19858,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "765G_765_768G_732_730G_730_678_675 OPPO_765G_765_768G_732_730G_730_678_675_New_Chimera",
+      "slug": "hp-oneplus-765g_765_768g_732_730g_730_678_675-oppo_765g_765_768g_732_730g_730_678_675_new_chimera",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 765G_765_768G_732_730G_730_678_675 OPPO_765G_765_768G_732_730G_730_678_675_New_Chimera — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36187,
+          "type": "loader",
+          "name": "OPPO_765G_765_768G_732_730G_730_678_675_New_Chimera.elf",
+          "size": "658.6 KB",
+          "sizeBytes": 674440,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xn0A8Japu_1Nk7fPAv-whUIRxl7u9y8Z/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19860,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "778G",
+      "slug": "hp-oneplus-778g",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 778G — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36189,
+          "type": "loader",
+          "name": "778G.elf",
+          "size": "951.4 KB",
+          "sizeBytes": 974256,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hR4F9CBkrgveTiixojSuSMJ5LzBajGu-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15537,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "7T",
+      "slug": "hp-oneplus-7t",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 7T — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp",
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 30315,
+          "type": "testpoint",
+          "name": "oneplus_7t_tp.jpg",
+          "size": "313.7 KB",
+          "sizeBytes": 321229,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uaYr-vBE9nErmg53P5zolJOB3c2vKepz/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1uaYr-vBE9nErmg53P5zolJOB3c2vKepz/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30316,
+          "type": "isp",
+          "name": "oneplus_oneplus_7t_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13kP3WQB5TKm4WJr6xKbqJUHQs_vr7eWC/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30317,
+          "type": "loader",
+          "name": "7T.elf",
+          "size": "277.6 KB",
+          "sizeBytes": 284271,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dFsyF_kcRxKKqRLlSahFqL1JSSHdfIyH/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15538,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "7T Pro",
+      "slug": "hp-oneplus-7t-pro",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 7T Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30318,
+          "type": "testpoint",
+          "name": "oneplus_7t_pro_tp.jpg",
+          "size": "313.7 KB",
+          "sizeBytes": 321229,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1pq-WQO2u4WL5dU62HadMo78vkMG_CdF4/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1pq-WQO2u4WL5dU62HadMo78vkMG_CdF4/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30319,
+          "type": "isp",
+          "name": "oneplus_oneplus_7t_pro_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1s8oAAWfz64h-gRok2-Yvh2JqHBKR4HJc/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19861,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "7T_PRO",
+      "slug": "hp-oneplus-7t_pro",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 7T_PRO — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36190,
+          "type": "loader",
+          "name": "7T_PRO.elf",
+          "size": "277.6 KB",
+          "sizeBytes": 284271,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15Wm-wHIr5d-1JfC91MLhx3RX2RQnGrx_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19862,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "7_PRO",
+      "slug": "hp-oneplus-7_pro",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 7_PRO — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36191,
+          "type": "loader",
+          "name": "7_PRO.elf",
+          "size": "277.6 KB",
+          "sizeBytes": 284271,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Bk41hisYNgHVIqE5R-Gm_kXRjw31PYaI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15539,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "8",
+      "slug": "hp-oneplus-8",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 8 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp",
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 30320,
+          "type": "testpoint",
+          "name": "oneplus_8_tp.jpg",
+          "size": "51.3 KB",
+          "sizeBytes": 52485,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1GtjLLXS8QpVl2bwLgRJun4x2HKI_eUP6/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1GtjLLXS8QpVl2bwLgRJun4x2HKI_eUP6/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30321,
+          "type": "isp",
+          "name": "oneplus_oneplus_8_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1KDzcBQapXJIshWC8YUSAkqBgtZAvSkM2/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30322,
+          "type": "loader",
+          "name": "8.elf",
+          "size": "344.8 KB",
+          "sizeBytes": 353069,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1JUr9jsZfu9DCyktoPL-fUxwg7z1AtdcY/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15540,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "8 Pro",
+      "slug": "hp-oneplus-8-pro",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 8 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30323,
+          "type": "testpoint",
+          "name": "oneplus_8_pro_tp.jpg",
+          "size": "180.7 KB",
+          "sizeBytes": 185065,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Nmr6MI6V53VjApx1_0KzcyUNJY3NuNZi/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1Nmr6MI6V53VjApx1_0KzcyUNJY3NuNZi/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30324,
+          "type": "isp",
+          "name": "oneplus_oneplus_8_pro_isp.jpg",
+          "size": "606.5 KB",
+          "sizeBytes": 621106,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1piuYu3Sy_5XuRVZGytPZGDYmgZ2JE9fk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19863,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "810",
+      "slug": "hp-oneplus-810",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 810 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36192,
+          "type": "loader",
+          "name": "810.mbn",
+          "size": "298.3 KB",
+          "sizeBytes": 305488,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xFBMnnRZ29BVU0q9-yyzxCe2FZh_n46l/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19866,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "8G2",
+      "slug": "hp-oneplus-8g2",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 8G2 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36195,
+          "type": "loader",
+          "name": "8G2.elf",
+          "size": "1.6 MB",
+          "sizeBytes": 1719140,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1vYJ4PMa5ZcK51UL6G5pA98sEx9yOV-or/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15541,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "8T",
+      "slug": "hp-oneplus-8t",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 8T — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp",
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 30325,
+          "type": "testpoint",
+          "name": "oneplus_8t_tp.jpg",
+          "size": "47.3 KB",
+          "sizeBytes": 48485,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1g69WhgjVfGQ9LHsxh1nlwsCKnxC8C1g-/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1g69WhgjVfGQ9LHsxh1nlwsCKnxC8C1g-/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30326,
+          "type": "isp",
+          "name": "oneplus_oneplus_8t_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PfIW9aiD4ZYU78LRqN56fuPknpIqTZWV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30327,
+          "type": "loader",
+          "name": "8T.elf",
+          "size": "339.8 KB",
+          "sizeBytes": 347989,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ez4kPHySPbne1Sa7_a0pCCfCjzmfy13x/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19864,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "8T_PRO",
+      "slug": "hp-oneplus-8t_pro",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 8T_PRO — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36193,
+          "type": "loader",
+          "name": "8T_PRO.elf",
+          "size": "344.8 KB",
+          "sizeBytes": 353069,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1FiKnH0CMtqdd7_tcqPXqeqc2A1-qHWtp/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19865,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "8T_TMOBILE",
+      "slug": "hp-oneplus-8t_tmobile",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 8T_TMOBILE — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36194,
+          "type": "loader",
+          "name": "8T_TMOBILE.elf",
+          "size": "339.8 KB",
+          "sizeBytes": 348000,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1cHZHi1UkppfqzTDWb2Y44CVEgUkZ1qYt/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19867,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "8_PRO",
+      "slug": "hp-oneplus-8_pro",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 8_PRO — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36196,
+          "type": "loader",
+          "name": "8_PRO.elf",
+          "size": "344.8 KB",
+          "sizeBytes": 353069,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1vNcZg-f1tkb7N4NdBGd66OeMtuZv2e0U/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15542,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "9",
+      "slug": "hp-oneplus-9",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 9 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp",
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 30328,
+          "type": "testpoint",
+          "name": "oneplus_9_tp.jpg",
+          "size": "51.3 KB",
+          "sizeBytes": 52485,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1JHVWrd5Reu1oe30Sr1SsH5uc8Av9mJTN/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1JHVWrd5Reu1oe30Sr1SsH5uc8Av9mJTN/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30329,
+          "type": "isp",
+          "name": "oneplus_oneplus_9_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1g9LUDy25AY6EIGgWwS27cxQc4Qhu9gJS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30330,
+          "type": "loader",
+          "name": "9.elf",
+          "size": "387.6 KB",
+          "sizeBytes": 396948,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1qpIEn996JfiGtaTawAOgjZLQC8u3mQba/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15543,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "9 Pro",
+      "slug": "hp-oneplus-9-pro",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 9 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30331,
+          "type": "testpoint",
+          "name": "oneplus_9_pro_tp.jpg",
+          "size": "51.3 KB",
+          "sizeBytes": 52485,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DL-MTWrk35-TnOceg6-K7tpJtFmizxlk/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1DL-MTWrk35-TnOceg6-K7tpJtFmizxlk/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30332,
+          "type": "isp",
+          "name": "oneplus_oneplus_9_pro_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/18rBiJMIdB7bLweMWr5NA-x4nDi8p82S-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15544,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "9R",
+      "slug": "hp-oneplus-9r",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 9R — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp",
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 30333,
+          "type": "testpoint",
+          "name": "oneplus_9r_tp.jpg",
+          "size": "180.7 KB",
+          "sizeBytes": 185065,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1b8W3CyV_3s4cuq_RP49bOVse9Ft2wXql/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1b8W3CyV_3s4cuq_RP49bOVse9Ft2wXql/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30334,
+          "type": "isp",
+          "name": "oneplus_oneplus_9r_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_cw5RsisHxLIAELLyBjSAg1x4GSYbxlV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30335,
+          "type": "loader",
+          "name": "9R.elf",
+          "size": "340 KB",
+          "sizeBytes": 348205,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1SLoq0NicOJyLcDNnCBipUhHzwb6YGaJU/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19869,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "9RT_5G",
+      "slug": "hp-oneplus-9rt_5g",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 9RT_5G — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36198,
+          "type": "loader",
+          "name": "9RT_5G.elf",
+          "size": "961.2 KB",
+          "sizeBytes": 984280,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zVfnGHVDcZu3UGOYFGUnQk0H6NswJFul/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19868,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "9_PRO",
+      "slug": "hp-oneplus-9_pro",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 9_PRO — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36197,
+          "type": "loader",
+          "name": "9_PRO.elf",
+          "size": "387.6 KB",
+          "sizeBytes": 396951,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mR4Ofg3NRcCuRmbz82LU5MwML1uI9jKs/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15545,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "9rt",
+      "slug": "hp-oneplus-9rt",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus 9rt — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30336,
+          "type": "testpoint",
+          "name": "oneplus_9rt_tp.jpg",
+          "size": "70.1 KB",
+          "sizeBytes": 71748,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1OPSr9tkor3-IHdoMEXoBxtyhnH_p3xim/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1OPSr9tkor3-IHdoMEXoBxtyhnH_p3xim/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30337,
+          "type": "isp",
+          "name": "oneplus_oneplus_9rt_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17WqwJGn5KNl9U6B3sxRwqb2AMLz9Yl6h/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19642,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "BE2026",
+      "slug": "hp-oneplus-be2026",
+      "chipset": "Snapdragon 690 5G",
+      "motherboardCode": "HWID: 0013F0E1",
+      "officialTitle": "OnePlus BE2026 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35869,
+          "type": "loader",
+          "name": "0013f0e102e80000_628be3f403d0c67a_fhprg.bin",
+          "size": "741.7 KB",
+          "sizeBytes": 759536,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Cs1dswuFk2b0DLkhQW6GnZ5-4aaY4EU0/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35870,
+          "type": "loader",
+          "name": "0013f0e100515198_2354228eebcbc203_fhprg_op_n10.bin",
+          "size": "747.5 KB",
+          "sizeBytes": 765440,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xyy9RnHOqaLgONNtUgoMlH_yVS858cXN/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19870,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "N200",
+      "slug": "hp-oneplus-n200",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus N200 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36199,
+          "type": "loader",
+          "name": "N200.elf",
+          "size": "682.9 KB",
+          "sizeBytes": 699240,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1pdX4xt_OJadYi2txaS8ppVK3DtjJW5vK/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19871,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "NORD_CE_5G",
+      "slug": "hp-oneplus-nord_ce_5g",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus NORD_CE_5G — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36200,
+          "type": "loader",
+          "name": "NORD_CE_5G.elf",
+          "size": "750 KB",
+          "sizeBytes": 768016,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QEU4kQhwfLfZGqHLGDGVIC_MM7Th58Si/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19872,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "NORD_N10",
+      "slug": "hp-oneplus-nord_n10",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus NORD_N10 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36201,
+          "type": "loader",
+          "name": "NORD_N10.elf",
+          "size": "751.5 KB",
+          "sizeBytes": 769536,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1GRnHGlKu0wKxYWZvXJPoN3Rxmdmd_XaD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15546,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "Nord",
+      "slug": "hp-oneplus-nord",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus Nord — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp",
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 30338,
+          "type": "testpoint",
+          "name": "oneplus_nord_tp.jpg",
+          "size": "70.1 KB",
+          "sizeBytes": 71748,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1YpVGxCerIi6Pcwv3lL5eWdpjtetpYes3/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1YpVGxCerIi6Pcwv3lL5eWdpjtetpYes3/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30339,
+          "type": "isp",
+          "name": "oneplus_oneplus_nord_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1sxYZ667_mD93_B1b_an8geeGaWhXxWfq/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30340,
+          "type": "loader",
+          "name": "NORD.elf",
+          "size": "684 KB",
+          "sizeBytes": 700416,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1SXyfVBoHbOeVx-XiJIzsx6wK63_-k1wM/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15547,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "Nord 2 5G",
+      "slug": "hp-oneplus-nord-2-5g",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus Nord 2 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30341,
+          "type": "testpoint",
+          "name": "oneplus_nord_2_5g_tp.jpg",
+          "size": "70.1 KB",
+          "sizeBytes": 71748,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1nZ3jNqU34GNRhtgwe-hQ4PXAqBWlT4aC/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1nZ3jNqU34GNRhtgwe-hQ4PXAqBWlT4aC/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30342,
+          "type": "isp",
+          "name": "oneplus_oneplus_nord_2_5g_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1v0va976urw6TfVEhABX15KjTJ9ThiVqd/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15548,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "Nord 2T",
+      "slug": "hp-oneplus-nord-2t",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus Nord 2T — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [],
+      "files": []
+    },
+    {
+      "id": 18396,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "Nord 2T 5G",
+      "slug": "hp-oneplus-nord-2t-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus Nord 2T 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33925,
+          "type": "isp",
+          "name": "oneplus_oneplus_nord_2t_5g_isp.jpg",
+          "size": "91.5 KB",
+          "sizeBytes": 93682,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15VYEA_Y-sSdKzrdxVroSjlBwKVvZIk0Q/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15549,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "Nord 3 5G",
+      "slug": "hp-oneplus-nord-3-5g",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus Nord 3 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30343,
+          "type": "testpoint",
+          "name": "oneplus_nord_3_5g_tp.jpg",
+          "size": "207.1 KB",
+          "sizeBytes": 212031,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1j3hZOoTXSX6u5MRM_pByrqgoFoF1-lWH/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1j3hZOoTXSX6u5MRM_pByrqgoFoF1-lWH/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30344,
+          "type": "isp",
+          "name": "oneplus_oneplus_nord_3_5g_isp.jpg",
+          "size": "207.1 KB",
+          "sizeBytes": 212031,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1GgphyVcsI3Pyyn78tQmNGi7Fep2Z-Owf/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18397,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "Nord 4 5G",
+      "slug": "hp-oneplus-nord-4-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus Nord 4 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33926,
+          "type": "isp",
+          "name": "oneplus_oneplus_nord_4_5g_isp.jpg",
+          "size": "207.1 KB",
+          "sizeBytes": 212031,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zK5s-EDfCDjBo0CSij97cDZ6n6nDY1T7/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15550,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "Nord Ce 2 5G",
+      "slug": "hp-oneplus-nord-ce-2-5g",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus Nord Ce 2 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30345,
+          "type": "testpoint",
+          "name": "oneplus_nord_ce_2_5g_tp.jpg",
+          "size": "70.1 KB",
+          "sizeBytes": 71748,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1VFdByxhNKMW6qiSLrEdx_MkHf_CCGX3O/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1VFdByxhNKMW6qiSLrEdx_MkHf_CCGX3O/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30346,
+          "type": "isp",
+          "name": "oneplus_oneplus_nord_ce_2_5g_isp.jpg",
+          "size": "207.1 KB",
+          "sizeBytes": 212031,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Rqdwra438se9uFFXecNnyq8XEQa7VwDT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15551,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "Nord Ce 2 Lite 5G",
+      "slug": "hp-oneplus-nord-ce-2-lite-5g",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus Nord Ce 2 Lite 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30347,
+          "type": "testpoint",
+          "name": "oneplus_nord_ce_2_lite_5g_tp.jpg",
+          "size": "70.1 KB",
+          "sizeBytes": 71748,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ib0b3iwfTeJ6mYBFzrAxXnpoFZ_H_AAb/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1ib0b3iwfTeJ6mYBFzrAxXnpoFZ_H_AAb/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30348,
+          "type": "isp",
+          "name": "oneplus_oneplus_nord_ce_2_lite_5g_isp.jpg",
+          "size": "90.4 KB",
+          "sizeBytes": 92559,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1azAsNG6Ow-eYZBsXmMo5SQHcuJYg572g/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15552,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "Nord Ce 3 5G",
+      "slug": "hp-oneplus-nord-ce-3-5g",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus Nord Ce 3 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30349,
+          "type": "testpoint",
+          "name": "oneplus_nord_ce_3_5g_tp.jpg",
+          "size": "70.1 KB",
+          "sizeBytes": 71748,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13UGFnl2guLVkM4CGqNftvdiXiOZ7_Ozw/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/13UGFnl2guLVkM4CGqNftvdiXiOZ7_Ozw/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30350,
+          "type": "isp",
+          "name": "oneplus_oneplus_nord_ce_3_5g_isp.jpg",
+          "size": "606.5 KB",
+          "sizeBytes": 621106,
+          "gdrive_direct_url": "https://drive.google.com/file/d/16mcJ26scGUaeVYXdb5mYTBHHkEMPDRYM/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15553,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "Nord Ce 3 Lite 5G",
+      "slug": "hp-oneplus-nord-ce-3-lite-5g",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus Nord Ce 3 Lite 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30351,
+          "type": "testpoint",
+          "name": "oneplus_nord_ce_3_lite_5g_tp.png",
+          "size": "24.4 KB",
+          "sizeBytes": 24974,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1BEbpi1ZPIgfdK3Gs-us5znP8SVjZuiVk/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1BEbpi1ZPIgfdK3Gs-us5znP8SVjZuiVk/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30352,
+          "type": "isp",
+          "name": "oneplus_oneplus_nord_ce_3_lite_5g_isp.jpg",
+          "size": "203.2 KB",
+          "sizeBytes": 208032,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1i2ieoDEB6cX8F-u-t-wNMBZLBR99p9VV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15554,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "Nord Ce 4 5G",
+      "slug": "hp-oneplus-nord-ce-4-5g",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus Nord Ce 4 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30353,
+          "type": "testpoint",
+          "name": "oneplus_nord_ce_4_5g_tp.jpg",
+          "size": "70.1 KB",
+          "sizeBytes": 71748,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1LjvQRx8nvAHhLHOUZezcijXJE9IgByzr/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1LjvQRx8nvAHhLHOUZezcijXJE9IgByzr/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30354,
+          "type": "isp",
+          "name": "oneplus_oneplus_nord_ce_4_5g_isp.jpg",
+          "size": "207.1 KB",
+          "sizeBytes": 212031,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZcUwidrBibnhfyJ5l1OZfI6T6SEvRstr/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18398,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "Nord Ce 4 Lite 5G",
+      "slug": "hp-oneplus-nord-ce-4-lite-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus Nord Ce 4 Lite 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33927,
+          "type": "isp",
+          "name": "oneplus_oneplus_nord_ce_4_lite_5g_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1M6NK6ecKJW8bcM_U0b1CWrqsWnboPMMx/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15555,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "Nord Ce 5G",
+      "slug": "hp-oneplus-nord-ce-5g",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus Nord Ce 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30355,
+          "type": "testpoint",
+          "name": "oneplus_nord_ce_5g_tp.jpg",
+          "size": "70.1 KB",
+          "sizeBytes": 71748,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ksD69nE13Tdm1yl8qTYQ-B3PDnUV_aRN/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1ksD69nE13Tdm1yl8qTYQ-B3PDnUV_aRN/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30356,
+          "type": "isp",
+          "name": "oneplus_oneplus_nord_ce_5g_isp.jpg",
+          "size": "207.1 KB",
+          "sizeBytes": 212031,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1iu1wyROHRHuluStyVEuo7rpnadTeU1jq/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15556,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "Nord N10 5G",
+      "slug": "hp-oneplus-nord-n10-5g",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus Nord N10 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30357,
+          "type": "testpoint",
+          "name": "oneplus_nord_n10_5g_tp.jpg",
+          "size": "70.1 KB",
+          "sizeBytes": 71748,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1UO9j3e1-YIAtYTPKTePwssRBK549rqlQ/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1UO9j3e1-YIAtYTPKTePwssRBK549rqlQ/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30358,
+          "type": "isp",
+          "name": "oneplus_oneplus_nord_n10_5g_isp.jpg",
+          "size": "242.4 KB",
+          "sizeBytes": 248188,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hXK1iXcCuGjhNCxOyNgiV40GIVWRNHPU/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15557,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "Nord N100",
+      "slug": "hp-oneplus-nord-n100",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus Nord N100 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30359,
+          "type": "testpoint",
+          "name": "oneplus_nord_n100_tp.jpg",
+          "size": "70.1 KB",
+          "sizeBytes": 71748,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1iNfG43HnueCZxdsISwsnSwJH62PV321n/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1iNfG43HnueCZxdsISwsnSwJH62PV321n/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30360,
+          "type": "isp",
+          "name": "oneplus_oneplus_nord_n100_isp.jpg",
+          "size": "242.4 KB",
+          "sizeBytes": 248188,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19imPCvtG8_ZniLP--PEUkqKJ2JuqdrIX/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15558,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "Nord N20 5G",
+      "slug": "hp-oneplus-nord-n20-5g",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus Nord N20 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30361,
+          "type": "testpoint",
+          "name": "oneplus_nord_n20_5g_tp.jpg",
+          "size": "47.1 KB",
+          "sizeBytes": 48279,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15SwSLValsGq7zD4BmicISv6gBnnq6xFm/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/15SwSLValsGq7zD4BmicISv6gBnnq6xFm/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30362,
+          "type": "isp",
+          "name": "oneplus_oneplus_nord_n20_5g_isp.jpg",
+          "size": "159.9 KB",
+          "sizeBytes": 163764,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1s1mq7g-hnSk30MWHJufvMHxu0lsCrosU/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15559,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "Nord N200 5G",
+      "slug": "hp-oneplus-nord-n200-5g",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus Nord N200 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30363,
+          "type": "testpoint",
+          "name": "oneplus_nord_n200_5g_tp.jpg",
+          "size": "70.1 KB",
+          "sizeBytes": 71748,
+          "gdrive_direct_url": "https://drive.google.com/file/d/11ti7GqZA7eb7PZEeeox5cA3RpH6nl0u1/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/11ti7GqZA7eb7PZEeeox5cA3RpH6nl0u1/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30364,
+          "type": "isp",
+          "name": "oneplus_oneplus_nord_n200_5g_isp.jpg",
+          "size": "572.7 KB",
+          "sizeBytes": 586457,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1OTuZyIKYsKEb3mhMlxACdmAeAc6YKv-B/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15560,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "Nord N30 5G",
+      "slug": "hp-oneplus-nord-n30-5g",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus Nord N30 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30365,
+          "type": "testpoint",
+          "name": "oneplus_nord_n30_5g_tp.jpg",
+          "size": "70.1 KB",
+          "sizeBytes": 71748,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Cdzb9P0aVKZHLPmWtsqSFpZLC0b9UFUz/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1Cdzb9P0aVKZHLPmWtsqSFpZLC0b9UFUz/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30366,
+          "type": "isp",
+          "name": "oneplus_oneplus_nord_n30_5g_isp.jpg",
+          "size": "606.5 KB",
+          "sizeBytes": 621106,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1GcBrxwsvL_kRkNLdX_4Uge5MSYNZNRn7/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15561,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "One",
+      "slug": "hp-oneplus-one",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus One — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30367,
+          "type": "testpoint",
+          "name": "oneplus_one_tp.jpg",
+          "size": "180.7 KB",
+          "sizeBytes": 185065,
+          "gdrive_direct_url": "https://drive.google.com/file/d/103P86IAPcYlGtNg2BWNWn6NtuZSHqR_p/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/103P86IAPcYlGtNg2BWNWn6NtuZSHqR_p/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30368,
+          "type": "isp",
+          "name": "oneplus_oneplus_one_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1TY9wJL_ntVP9Ucerw1NtH-FDjSEpPMc8/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18399,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "Open",
+      "slug": "hp-oneplus-open",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus Open — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33928,
+          "type": "isp",
+          "name": "oneplus_oneplus_open_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1GJzjaFhjYNH3DAdHnbVVPt7kKz13uD45/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19672,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "Qualcomm Firehose Loader OnePlus (Universal)",
+      "slug": "hp-oneplus-qualcomm-firehose-loader-oneplus-universal",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus Qualcomm Firehose Loader OnePlus (Universal) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35937,
+          "type": "loader",
+          "name": "prog_emmc_firehose_8974_oneplusx_peek.mbn",
+          "size": "82.2 KB",
+          "sizeBytes": 84192,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1NB9U1e6fI4UauxC6S3c7JtHis_2T-nvY/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19873,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SDM845_Special SDM845_New_Chimera",
+      "slug": "hp-oneplus-sdm845_special-sdm845_new_chimera",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SDM845_Special SDM845_New_Chimera — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36202,
+          "type": "loader",
+          "name": "SDM845_New_Chimera.elf",
+          "size": "700.5 KB",
+          "sizeBytes": 717329,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_Taa6iBhVLbaosoIfZ4rOzXt8HcPeN_t/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19875,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM4350_480_Special Digest",
+      "slug": "hp-oneplus-sm4350_480_special-digest",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM4350_480_Special Digest — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36204,
+          "type": "loader",
+          "name": "Digest.bin",
+          "size": "8 KB",
+          "sizeBytes": 8144,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1tnCOBj-JVOnD93FjKfzZiJhqaOD43oYh/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19874,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM4350_480_Special OPPO480",
+      "slug": "hp-oneplus-sm4350_480_special-oppo480",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM4350_480_Special OPPO480 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36203,
+          "type": "loader",
+          "name": "OPPO480.elf",
+          "size": "653.6 KB",
+          "sizeBytes": 669296,
+          "gdrive_direct_url": "https://drive.google.com/file/d/10timCaCg7YmQ6_HaDSY3TkEPpJNACXLK/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19876,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM4350_480_Special Sign",
+      "slug": "hp-oneplus-sm4350_480_special-sign",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM4350_480_Special Sign — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36205,
+          "type": "loader",
+          "name": "Sign.bin",
+          "size": "4 KB",
+          "sizeBytes": 4096,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14nCNe3pwZkhhdrNxFPFW3waSLSWwv9_n/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19879,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM6115_460_662 OPPO_SM6115_New_Chimera_Digest",
+      "slug": "hp-oneplus-sm6115_460_662-oppo_sm6115_new_chimera_digest",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM6115_460_662 OPPO_SM6115_New_Chimera_Digest — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36208,
+          "type": "loader",
+          "name": "OPPO_SM6115_New_Chimera_Digest.elf",
+          "size": "24.9 KB",
+          "sizeBytes": 25476,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1f9-_LDe6TcefxReRmwuPRsiANx8hlAmu/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19877,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM6115_460_662 OPPO_SM6115_New_Chimera_Sign",
+      "slug": "hp-oneplus-sm6115_460_662-oppo_sm6115_new_chimera_sign",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM6115_460_662 OPPO_SM6115_New_Chimera_Sign — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36206,
+          "type": "loader",
+          "name": "OPPO_SM6115_New_Chimera_Sign.bin",
+          "size": "4 KB",
+          "sizeBytes": 4096,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xVH6c7_Zc9JFCCVgn1aw4QAiLEdI29wX/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19878,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM6115_460_662 OPPO_SM6115_New_Chimera_V1.2",
+      "slug": "hp-oneplus-sm6115_460_662-oppo_sm6115_new_chimera_v12",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM6115_460_662 OPPO_SM6115_New_Chimera_V1.2 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36207,
+          "type": "loader",
+          "name": "OPPO_SM6115_New_Chimera_V1.2.elf",
+          "size": "693 KB",
+          "sizeBytes": 709612,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1a25C7z7sZEEGtiEtzPvaYCGRZ_gxtum-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19880,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM6375_695_6sGen3 OPPO_SM6375_New_Chimera_Digest",
+      "slug": "hp-oneplus-sm6375_695_6sgen3-oppo_sm6375_new_chimera_digest",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM6375_695_6sGen3 OPPO_SM6375_New_Chimera_Digest — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36209,
+          "type": "loader",
+          "name": "OPPO_SM6375_New_Chimera_Digest.elf",
+          "size": "25.6 KB",
+          "sizeBytes": 26248,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1CiBL7kxMseTgwIMMbm6SpJASKmaESiBk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19882,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM6375_695_6sGen3 OPPO_SM6375_New_Chimera_Sign",
+      "slug": "hp-oneplus-sm6375_695_6sgen3-oppo_sm6375_new_chimera_sign",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM6375_695_6sGen3 OPPO_SM6375_New_Chimera_Sign — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36211,
+          "type": "loader",
+          "name": "OPPO_SM6375_New_Chimera_Sign.bin",
+          "size": "4 KB",
+          "sizeBytes": 4096,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1r3oaZ9rLBVsz3SVxlMnNkmNm0L8jjjBb/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19881,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM6375_695_6sGen3 OPPO_SM6375_New_Chimera_V2.1",
+      "slug": "hp-oneplus-sm6375_695_6sgen3-oppo_sm6375_new_chimera_v21",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM6375_695_6sGen3 OPPO_SM6375_New_Chimera_V2.1 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36210,
+          "type": "loader",
+          "name": "OPPO_SM6375_New_Chimera_V2.1.elf",
+          "size": "704.1 KB",
+          "sizeBytes": 720972,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1tgfKT_rNLZoo_X3mxyatI4WksDvz4AIE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19884,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM7475_7+Gen2 SM7475_Digest",
+      "slug": "hp-oneplus-sm7475_7gen2-sm7475_digest",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM7475_7+Gen2 SM7475_Digest — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36213,
+          "type": "loader",
+          "name": "SM7475_Digest.bin",
+          "size": "27.8 KB",
+          "sizeBytes": 28472,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1GmDbrfikGisBzxno-9aFEaGdMK7tUat5/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19883,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM7475_7+Gen2 SM7475_Sign",
+      "slug": "hp-oneplus-sm7475_7gen2-sm7475_sign",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM7475_7+Gen2 SM7475_Sign — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36212,
+          "type": "loader",
+          "name": "SM7475_Sign.bin",
+          "size": "4 KB",
+          "sizeBytes": 4096,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uO4SV4jusP3H59Krid6iCnrMb4OMFSPW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19885,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM7475_7+Gen2 SM7475_V1.3.melf",
+      "slug": "hp-oneplus-sm7475_7gen2-sm7475_v13melf",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM7475_7+Gen2 SM7475_V1.3.melf — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36214,
+          "type": "loader",
+          "name": "SM7475_V1.3.melf",
+          "size": "1.5 MB",
+          "sizeBytes": 1547012,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1EkFyVSWDZGSIgW90DpKopVDMjKWPYfJI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19886,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM7675_7+Gen3 OPPO_SM7675_New_Chimera_Digest",
+      "slug": "hp-oneplus-sm7675_7gen3-oppo_sm7675_new_chimera_digest",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM7675_7+Gen3 OPPO_SM7675_New_Chimera_Digest — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36215,
+          "type": "loader",
+          "name": "OPPO_SM7675_New_Chimera_Digest.elf",
+          "size": "28.4 KB",
+          "sizeBytes": 29048,
+          "gdrive_direct_url": "https://drive.google.com/file/d/12FARYxMCsJb-GKZznTaPowbsy2_HsbSl/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19887,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM7675_7+Gen3 OPPO_SM7675_New_Chimera_Sign",
+      "slug": "hp-oneplus-sm7675_7gen3-oppo_sm7675_new_chimera_sign",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM7675_7+Gen3 OPPO_SM7675_New_Chimera_Sign — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36216,
+          "type": "loader",
+          "name": "OPPO_SM7675_New_Chimera_Sign.bin",
+          "size": "4 KB",
+          "sizeBytes": 4096,
+          "gdrive_direct_url": "https://drive.google.com/file/d/10-gBo29i0qLnc-shuufCaKBXAER3JeuQ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19888,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM7675_7+Gen3 OPPO_SM7675_New_Chimera_V1.0.00.melf",
+      "slug": "hp-oneplus-sm7675_7gen3-oppo_sm7675_new_chimera_v1000melf",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM7675_7+Gen3 OPPO_SM7675_New_Chimera_V1.0.00.melf — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36217,
+          "type": "loader",
+          "name": "OPPO_SM7675_New_Chimera_V1.0.00.melf",
+          "size": "1.5 MB",
+          "sizeBytes": 1545892,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kV2X9kc9FRIn3qebyZm9SpWdEBWpBZGj/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19889,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM8350_888_888+ OPPO_SM8350_New_Chimera_Digest",
+      "slug": "hp-oneplus-sm8350_888_888-oppo_sm8350_new_chimera_digest",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM8350_888_888+ OPPO_SM8350_New_Chimera_Digest — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36218,
+          "type": "loader",
+          "name": "OPPO_SM8350_New_Chimera_Digest.elf",
+          "size": "27.1 KB",
+          "sizeBytes": 27700,
+          "gdrive_direct_url": "https://drive.google.com/file/d/11hgzAATS4y8NLYV79GTM0slcXqrEF_vT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19891,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM8350_888_888+ OPPO_SM8350_New_Chimera_Sign",
+      "slug": "hp-oneplus-sm8350_888_888-oppo_sm8350_new_chimera_sign",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM8350_888_888+ OPPO_SM8350_New_Chimera_Sign — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36220,
+          "type": "loader",
+          "name": "OPPO_SM8350_New_Chimera_Sign.bin",
+          "size": "4 KB",
+          "sizeBytes": 4096,
+          "gdrive_direct_url": "https://drive.google.com/file/d/18j6luKTTTKYDKx-_ZuTUYafzhXL1ZKsO/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19890,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM8350_888_888+ OPPO_SM8350_New_Chimera_V2.6",
+      "slug": "hp-oneplus-sm8350_888_888-oppo_sm8350_new_chimera_v26",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM8350_888_888+ OPPO_SM8350_New_Chimera_V2.6 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36219,
+          "type": "loader",
+          "name": "OPPO_SM8350_New_Chimera_V2.6.elf",
+          "size": "925.7 KB",
+          "sizeBytes": 947952,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1u0JJZ07XicxBfgRqhg-borTaHy7KOv5c/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19893,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM8475_8+Gen1 OPPO_SM8475_New_Chimera_Digest",
+      "slug": "hp-oneplus-sm8475_8gen1-oppo_sm8475_new_chimera_digest",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM8475_8+Gen1 OPPO_SM8475_New_Chimera_Digest — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36222,
+          "type": "loader",
+          "name": "OPPO_SM8475_New_Chimera_Digest.elf",
+          "size": "27.3 KB",
+          "sizeBytes": 27992,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1BH1y5uJWdkqj-51Ve0EiFIwsKbNA7BZe/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19892,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM8475_8+Gen1 OPPO_SM8475_New_Chimera_Sign",
+      "slug": "hp-oneplus-sm8475_8gen1-oppo_sm8475_new_chimera_sign",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM8475_8+Gen1 OPPO_SM8475_New_Chimera_Sign — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36221,
+          "type": "loader",
+          "name": "OPPO_SM8475_New_Chimera_Sign.bin",
+          "size": "4 KB",
+          "sizeBytes": 4096,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1grZr_jrA8F-yrstvkysT8j59LaAEvz-Q/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19894,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM8475_8+Gen1 OPPO_SM8475_New_Chimera_V3.0.melf",
+      "slug": "hp-oneplus-sm8475_8gen1-oppo_sm8475_new_chimera_v30melf",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM8475_8+Gen1 OPPO_SM8475_New_Chimera_V3.0.melf — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36223,
+          "type": "loader",
+          "name": "OPPO_SM8475_New_Chimera_V3.0.melf",
+          "size": "1.5 MB",
+          "sizeBytes": 1546052,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1cKZkJI89DAvRNfT4eQSzNegXSYHKdLNX/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19896,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM8550_8Gen2_8+Gen2 Digest2",
+      "slug": "hp-oneplus-sm8550_8gen2_8gen2-digest2",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM8550_8Gen2_8+Gen2 Digest2 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36225,
+          "type": "loader",
+          "name": "Digest2.bin",
+          "size": "27.8 KB",
+          "sizeBytes": 28472,
+          "gdrive_direct_url": "https://drive.google.com/file/d/11aWWooOhWIaQVwgh3enjOoPj9ZReE1N8/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19895,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM8550_8Gen2_8+Gen2 OPPO_SM8550_New_Chimera_Digest",
+      "slug": "hp-oneplus-sm8550_8gen2_8gen2-oppo_sm8550_new_chimera_digest",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM8550_8Gen2_8+Gen2 OPPO_SM8550_New_Chimera_Digest — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36224,
+          "type": "loader",
+          "name": "OPPO_SM8550_New_Chimera_Digest.elf",
+          "size": "27.8 KB",
+          "sizeBytes": 28472,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xbNt1zflsmNVmO8fP6-SAZZ8OuuM0Y5d/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19897,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM8550_8Gen2_8+Gen2 OPPO_SM8550_New_Chimera_Sign",
+      "slug": "hp-oneplus-sm8550_8gen2_8gen2-oppo_sm8550_new_chimera_sign",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM8550_8Gen2_8+Gen2 OPPO_SM8550_New_Chimera_Sign — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36226,
+          "type": "loader",
+          "name": "OPPO_SM8550_New_Chimera_Sign.bin",
+          "size": "4 KB",
+          "sizeBytes": 4096,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wfTml3hwo6aAfT2YKBLdYmJa_hTFHIgk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19898,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM8550_8Gen2_8+Gen2 OPPO_SM8550_New_Chimera_V2.6.melf",
+      "slug": "hp-oneplus-sm8550_8gen2_8gen2-oppo_sm8550_new_chimera_v26melf",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM8550_8Gen2_8+Gen2 OPPO_SM8550_New_Chimera_V2.6.melf — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36227,
+          "type": "loader",
+          "name": "OPPO_SM8550_New_Chimera_V2.6.melf",
+          "size": "1.6 MB",
+          "sizeBytes": 1633124,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Xaq_kTdlNj8YmYZSolxFdMLvIt6fg7Do/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19899,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM8550_8Gen2_8+Gen2 OPPO_SM8550_New_Chimera_V2.7.melf",
+      "slug": "hp-oneplus-sm8550_8gen2_8gen2-oppo_sm8550_new_chimera_v27melf",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM8550_8Gen2_8+Gen2 OPPO_SM8550_New_Chimera_V2.7.melf — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36228,
+          "type": "loader",
+          "name": "OPPO_SM8550_New_Chimera_V2.7.melf",
+          "size": "1.6 MB",
+          "sizeBytes": 1633124,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1i6hNePacEVKGENAbJoZxbAm5VZC8vvq4/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19900,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM8650_8Gen3 OPPO_SM8650_New_Chimera_Digest",
+      "slug": "hp-oneplus-sm8650_8gen3-oppo_sm8650_new_chimera_digest",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM8650_8Gen3 OPPO_SM8650_New_Chimera_Digest — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36229,
+          "type": "loader",
+          "name": "OPPO_SM8650_New_Chimera_Digest.elf",
+          "size": "32.4 KB",
+          "sizeBytes": 33144,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PkacPLkX2YTnJM6CrOcqSQvvnk15KqnE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19901,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM8650_8Gen3 OPPO_SM8650_New_Chimera_Sign",
+      "slug": "hp-oneplus-sm8650_8gen3-oppo_sm8650_new_chimera_sign",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM8650_8Gen3 OPPO_SM8650_New_Chimera_Sign — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36230,
+          "type": "loader",
+          "name": "OPPO_SM8650_New_Chimera_Sign.bin",
+          "size": "4 KB",
+          "sizeBytes": 4096,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1OgyCULJZZoor2jJTuhJbgbbWUp5k5yn6/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19902,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM8650_8Gen3 OPPO_SM8650_New_Chimera_V1.0.21.melf",
+      "slug": "hp-oneplus-sm8650_8gen3-oppo_sm8650_new_chimera_v1021melf",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM8650_8Gen3 OPPO_SM8650_New_Chimera_V1.0.21.melf — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36231,
+          "type": "loader",
+          "name": "OPPO_SM8650_New_Chimera_V1.0.21.melf",
+          "size": "1.5 MB",
+          "sizeBytes": 1549988,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1aNgFThIZx5DVUH83JgDd86TUm4cYrpJu/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19903,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM8735_8sGen4 DigestsToSign_sm8735.bin",
+      "slug": "hp-oneplus-sm8735_8sgen4-digeststosign_sm8735bin",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM8735_8sGen4 DigestsToSign_sm8735.bin — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36232,
+          "type": "loader",
+          "name": "DigestsToSign_sm8735.bin.mbn",
+          "size": "29 KB",
+          "sizeBytes": 29648,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PdOMXHWYGEouqs0gbWQP-CiEAazRjwrF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19904,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM8735_8sGen4 OPPO_SM8750_New_Chimera_Sign",
+      "slug": "hp-oneplus-sm8735_8sgen4-oppo_sm8750_new_chimera_sign",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM8735_8sGen4 OPPO_SM8750_New_Chimera_Sign — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36233,
+          "type": "loader",
+          "name": "OPPO_SM8750_New_Chimera_Sign.bin",
+          "size": "4 KB",
+          "sizeBytes": 4096,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ba7eki2-7hyrOo6wpG7AyMcPwh0NohtN/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19915,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM8735_8sGen4 prog_firehose_ddr_sm8735",
+      "slug": "hp-oneplus-sm8735_8sgen4-prog_firehose_ddr_sm8735",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM8735_8sGen4 prog_firehose_ddr_sm8735 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36244,
+          "type": "loader",
+          "name": "prog_firehose_ddr_sm8735.elf",
+          "size": "1.5 MB",
+          "sizeBytes": 1610496,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1oRKbVjjZ_BIKMW8o-PRggmgkdRkbWuGm/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19905,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM8750_8E OPPO_SM8750_New_Chimera_Digest",
+      "slug": "hp-oneplus-sm8750_8e-oppo_sm8750_new_chimera_digest",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM8750_8E OPPO_SM8750_New_Chimera_Digest — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36234,
+          "type": "loader",
+          "name": "OPPO_SM8750_New_Chimera_Digest.elf",
+          "size": "32.5 KB",
+          "sizeBytes": 33244,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1jmTkwsGMAqdyE9xi1V57ch6oLYWXe_YT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19906,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM8750_8E OPPO_SM8750_New_Chimera_Sign",
+      "slug": "hp-oneplus-sm8750_8e-oppo_sm8750_new_chimera_sign",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM8750_8E OPPO_SM8750_New_Chimera_Sign — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36235,
+          "type": "loader",
+          "name": "OPPO_SM8750_New_Chimera_Sign.bin",
+          "size": "4 KB",
+          "sizeBytes": 4096,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14CKTUCzheKkMr_nrTINer_XUfYi7Lgdr/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19907,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "SM8750_8E OPPO_SM8750_New_Chimera_V1.0.05.melf",
+      "slug": "hp-oneplus-sm8750_8e-oppo_sm8750_new_chimera_v1005melf",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus SM8750_8E OPPO_SM8750_New_Chimera_V1.0.05.melf — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36236,
+          "type": "loader",
+          "name": "OPPO_SM8750_New_Chimera_V1.0.05.melf",
+          "size": "1.6 MB",
+          "sizeBytes": 1657624,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1OwIvSZtJvZjefF2sBO2CRlGx_zHJ3yF_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19661,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "X",
+      "slug": "hp-oneplus-x",
+      "chipset": "Snapdragon 801",
+      "motherboardCode": "HWID: 007BC0E1",
+      "officialTitle": "OnePlus X — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35918,
+          "type": "loader",
+          "name": "007bc0e100000000_0eb76ac5db7868bb_fhprg.bin",
+          "size": "94.5 KB",
+          "sizeBytes": 96784,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1alA3CXMpqUBquZ1KhnBXSNK1pdks374R/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35919,
+          "type": "loader",
+          "name": "007bc0e100000000_cc3153a80293939b_fhprg_oneplusone_peek.bin",
+          "size": "82.2 KB",
+          "sizeBytes": 84192,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-1PQN1NbZJWRCd6JHpU1K2zpD5ni_XxE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35920,
+          "type": "loader",
+          "name": "X.elf",
+          "size": "214.5 KB",
+          "sizeBytes": 219696,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14XEf96O0xu09RWR0I6BqLhAYFw00hNyH/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17026,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] 10 Pro",
+      "slug": "hp-oneplus-isp-10-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] 10 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32553,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_10_pro_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1cQx_mm7aftjSROQlGkx41_pZKzxcST65/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17027,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] 10R",
+      "slug": "hp-oneplus-isp-10r",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] 10R — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32554,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_10r_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1vnTpIBs8y5IhSLW-GZeM1lqLxPAcHuNN/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17028,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] 10T",
+      "slug": "hp-oneplus-isp-10t",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] 10T — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32555,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_10t_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wNS0lzFnBn_-BSQjfpHM3oQvHoGlZeDD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17029,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] 11",
+      "slug": "hp-oneplus-isp-11",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] 11 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32556,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_11_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1YmRrA0RvIbJdShPFwQiu65uXF7145yli/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17030,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] 11R",
+      "slug": "hp-oneplus-isp-11r",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] 11R — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32557,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_11r_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1u_Jh8C34CeRYa6lQ_glM7D12q9yzKE1Q/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17031,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] 12",
+      "slug": "hp-oneplus-isp-12",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] 12 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32558,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_12_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1qyxYAvI8YQEjyBAygDuhdnZosoi6IRYM/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17032,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] 12R",
+      "slug": "hp-oneplus-isp-12r",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] 12R — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32559,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_12r_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1oaXIEUWLc_c4InlEpbo3f9BL7OYTXvsg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17033,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] 2",
+      "slug": "hp-oneplus-isp-2",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] 2 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32560,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_2_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-3AtKAe2eof5Eig_6RoC6m6UbXBXn2Ue/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17034,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] 3",
+      "slug": "hp-oneplus-isp-3",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] 3 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32561,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_3_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1AOOG85dYpuvvo8n-TfDgE37UBqXOLwDF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17035,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] 3T",
+      "slug": "hp-oneplus-isp-3t",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] 3T — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32562,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_3t_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/12pKWQWukn8dzArqe0PmAnE5HVRL7y1_G/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17036,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] 5",
+      "slug": "hp-oneplus-isp-5",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] 5 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32563,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_5_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zNBbboc_60ndqRELTuFDa0S4dih_90rE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17037,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] 5T",
+      "slug": "hp-oneplus-isp-5t",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] 5T — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32564,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_5t_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uGApbos_awf6qdaWntzGR6yRN8ZWGbOi/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17038,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] 6",
+      "slug": "hp-oneplus-isp-6",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] 6 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32565,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_6_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1v88ZC5sTCWwYxdTEbIeYePN-nKXO4tk-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17039,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] 6T",
+      "slug": "hp-oneplus-isp-6t",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] 6T — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32566,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_6t_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1U6fx0_Rc_DQqx7FI6LXSUFGtEqxCAhV2/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17040,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] 7",
+      "slug": "hp-oneplus-isp-7",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] 7 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32567,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_7_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HPbXYeczS2BMeUjbpR1zp_fZ_A64s9tK/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17041,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] 7 Pro",
+      "slug": "hp-oneplus-isp-7-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] 7 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32568,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_7_pro_isp.jpg",
+          "size": "207.1 KB",
+          "sizeBytes": 212031,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1bmWjud_KA7wPcSL-6MRMyO7A38j8CxvT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17042,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] 7T",
+      "slug": "hp-oneplus-isp-7t",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] 7T — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32569,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_7t_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13kP3WQB5TKm4WJr6xKbqJUHQs_vr7eWC/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17043,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] 7T Pro",
+      "slug": "hp-oneplus-isp-7t-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] 7T Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32570,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_7t_pro_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1s8oAAWfz64h-gRok2-Yvh2JqHBKR4HJc/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17044,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] 8",
+      "slug": "hp-oneplus-isp-8",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] 8 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32571,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_8_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1KDzcBQapXJIshWC8YUSAkqBgtZAvSkM2/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17045,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] 8 Pro",
+      "slug": "hp-oneplus-isp-8-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] 8 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32572,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_8_pro_isp.jpg",
+          "size": "606.5 KB",
+          "sizeBytes": 621106,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1piuYu3Sy_5XuRVZGytPZGDYmgZ2JE9fk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17046,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] 8T",
+      "slug": "hp-oneplus-isp-8t",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] 8T — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32573,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_8t_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PfIW9aiD4ZYU78LRqN56fuPknpIqTZWV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17047,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] 9",
+      "slug": "hp-oneplus-isp-9",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] 9 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32574,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_9_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1g9LUDy25AY6EIGgWwS27cxQc4Qhu9gJS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17048,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] 9 Pro",
+      "slug": "hp-oneplus-isp-9-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] 9 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32575,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_9_pro_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/18rBiJMIdB7bLweMWr5NA-x4nDi8p82S-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17049,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] 9R",
+      "slug": "hp-oneplus-isp-9r",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] 9R — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32576,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_9r_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_cw5RsisHxLIAELLyBjSAg1x4GSYbxlV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17050,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] 9rt",
+      "slug": "hp-oneplus-isp-9rt",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] 9rt — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32577,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_9rt_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17WqwJGn5KNl9U6B3sxRwqb2AMLz9Yl6h/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17051,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] Nord",
+      "slug": "hp-oneplus-isp-nord",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] Nord — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32578,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_nord_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1sxYZ667_mD93_B1b_an8geeGaWhXxWfq/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17052,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] Nord 2 5G",
+      "slug": "hp-oneplus-isp-nord-2-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] Nord 2 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32579,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_nord_2_5g_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1v0va976urw6TfVEhABX15KjTJ9ThiVqd/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17053,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] Nord 2T 5G",
+      "slug": "hp-oneplus-isp-nord-2t-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] Nord 2T 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32580,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_nord_2t_5g_isp.jpg",
+          "size": "91.5 KB",
+          "sizeBytes": 93682,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15VYEA_Y-sSdKzrdxVroSjlBwKVvZIk0Q/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17054,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] Nord 3 5G",
+      "slug": "hp-oneplus-isp-nord-3-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] Nord 3 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32581,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_nord_3_5g_isp.jpg",
+          "size": "207.1 KB",
+          "sizeBytes": 212031,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1GgphyVcsI3Pyyn78tQmNGi7Fep2Z-Owf/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17055,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] Nord 4 5G",
+      "slug": "hp-oneplus-isp-nord-4-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] Nord 4 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32582,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_nord_4_5g_isp.jpg",
+          "size": "207.1 KB",
+          "sizeBytes": 212031,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zK5s-EDfCDjBo0CSij97cDZ6n6nDY1T7/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17056,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] Nord Ce 2 5G",
+      "slug": "hp-oneplus-isp-nord-ce-2-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] Nord Ce 2 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32583,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_nord_ce_2_5g_isp.jpg",
+          "size": "207.1 KB",
+          "sizeBytes": 212031,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Rqdwra438se9uFFXecNnyq8XEQa7VwDT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17057,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] Nord Ce 2 Lite 5G",
+      "slug": "hp-oneplus-isp-nord-ce-2-lite-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] Nord Ce 2 Lite 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32584,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_nord_ce_2_lite_5g_isp.jpg",
+          "size": "90.4 KB",
+          "sizeBytes": 92559,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1azAsNG6Ow-eYZBsXmMo5SQHcuJYg572g/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17058,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] Nord Ce 3 5G",
+      "slug": "hp-oneplus-isp-nord-ce-3-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] Nord Ce 3 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32585,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_nord_ce_3_5g_isp.jpg",
+          "size": "606.5 KB",
+          "sizeBytes": 621106,
+          "gdrive_direct_url": "https://drive.google.com/file/d/16mcJ26scGUaeVYXdb5mYTBHHkEMPDRYM/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17059,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] Nord Ce 3 Lite 5G",
+      "slug": "hp-oneplus-isp-nord-ce-3-lite-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] Nord Ce 3 Lite 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32586,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_nord_ce_3_lite_5g_isp.jpg",
+          "size": "203.2 KB",
+          "sizeBytes": 208032,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1i2ieoDEB6cX8F-u-t-wNMBZLBR99p9VV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17060,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] Nord Ce 4 5G",
+      "slug": "hp-oneplus-isp-nord-ce-4-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] Nord Ce 4 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32587,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_nord_ce_4_5g_isp.jpg",
+          "size": "207.1 KB",
+          "sizeBytes": 212031,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZcUwidrBibnhfyJ5l1OZfI6T6SEvRstr/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17061,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] Nord Ce 4 Lite 5G",
+      "slug": "hp-oneplus-isp-nord-ce-4-lite-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] Nord Ce 4 Lite 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32588,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_nord_ce_4_lite_5g_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1M6NK6ecKJW8bcM_U0b1CWrqsWnboPMMx/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17062,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] Nord Ce 5G",
+      "slug": "hp-oneplus-isp-nord-ce-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] Nord Ce 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32589,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_nord_ce_5g_isp.jpg",
+          "size": "207.1 KB",
+          "sizeBytes": 212031,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1iu1wyROHRHuluStyVEuo7rpnadTeU1jq/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17063,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] Nord N10 5G",
+      "slug": "hp-oneplus-isp-nord-n10-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] Nord N10 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32590,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_nord_n10_5g_isp.jpg",
+          "size": "242.4 KB",
+          "sizeBytes": 248188,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hXK1iXcCuGjhNCxOyNgiV40GIVWRNHPU/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17064,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] Nord N100",
+      "slug": "hp-oneplus-isp-nord-n100",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] Nord N100 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32591,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_nord_n100_isp.jpg",
+          "size": "242.4 KB",
+          "sizeBytes": 248188,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19imPCvtG8_ZniLP--PEUkqKJ2JuqdrIX/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17065,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] Nord N20 5G",
+      "slug": "hp-oneplus-isp-nord-n20-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] Nord N20 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32592,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_nord_n20_5g_isp.jpg",
+          "size": "159.9 KB",
+          "sizeBytes": 163764,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1s1mq7g-hnSk30MWHJufvMHxu0lsCrosU/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17066,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] Nord N200 5G",
+      "slug": "hp-oneplus-isp-nord-n200-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] Nord N200 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32593,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_nord_n200_5g_isp.jpg",
+          "size": "572.7 KB",
+          "sizeBytes": 586457,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1OTuZyIKYsKEb3mhMlxACdmAeAc6YKv-B/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17067,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] Nord N30 5G",
+      "slug": "hp-oneplus-isp-nord-n30-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] Nord N30 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32594,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_nord_n30_5g_isp.jpg",
+          "size": "606.5 KB",
+          "sizeBytes": 621106,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1GcBrxwsvL_kRkNLdX_4Uge5MSYNZNRn7/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17068,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] One",
+      "slug": "hp-oneplus-isp-one",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] One — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32595,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_one_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1TY9wJL_ntVP9Ucerw1NtH-FDjSEpPMc8/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17069,
+      "category": "hp",
+      "brand": "OnePlus",
+      "brandSlug": "oneplus",
+      "modelName": "[ISP] Open",
+      "slug": "hp-oneplus-isp-open",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "OnePlus [ISP] Open — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32596,
+          "type": "testpoint",
+          "name": "oneplus_oneplus_open_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1GJzjaFhjYNH3DAdHnbVVPt7kKz13uD45/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

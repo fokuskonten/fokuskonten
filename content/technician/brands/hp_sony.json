@@ -1,0 +1,1392 @@
+{
+  "category": "hp",
+  "brand": "Sony",
+  "brandSlug": "sony",
+  "totalModels": 52,
+  "models": [
+    {
+      "id": 19706,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Qualcomm Firehose Loader Sony (007530E1)",
+      "slug": "hp-sony-qualcomm-firehose-loader-sony-007530e1",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "HWID: 007530E1",
+      "officialTitle": "Sony Qualcomm Firehose Loader Sony (007530E1) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36022,
+          "type": "loader",
+          "name": "007530e100010001_25b44831ab8f8396_fhprg.bin",
+          "size": "58.7 KB",
+          "sizeBytes": 60140,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1u1V5AZy6VH5oUBXElm0eUkWiSDZyGYSD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16059,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Xperia 1",
+      "slug": "hp-sony-xperia-1",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Sony Xperia 1 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 31188,
+          "type": "testpoint",
+          "name": "sony_xperia_1_tp.png",
+          "size": "1.2 MB",
+          "sizeBytes": 1287632,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1YDBrfH7KvnH7hWj35Qtn0Mj__WDM3SHZ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 31189,
+          "type": "isp",
+          "name": "sony_xperia_1_isp.jpg",
+          "size": "257.2 KB",
+          "sizeBytes": 263339,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1bahjjsYbYQB3AXLB2heEzXDnVyVPGBwi/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16060,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Xperia 1 Ii",
+      "slug": "hp-sony-xperia-1-ii",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Sony Xperia 1 Ii — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 31190,
+          "type": "isp",
+          "name": "sony_xperia_1_ii_isp.jpg",
+          "size": "257.2 KB",
+          "sizeBytes": 263339,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1oY3sBX28beMpxuSmUNGtfTR-DpwlzLha/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16061,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Xperia 1 Iii",
+      "slug": "hp-sony-xperia-1-iii",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Sony Xperia 1 Iii — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 31191,
+          "type": "isp",
+          "name": "sony_xperia_1_iii_isp.jpg",
+          "size": "643.7 KB",
+          "sizeBytes": 659164,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1grHGgaHthCRAavlNXdblw_oLMdtBatbF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16062,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Xperia 1 Iv",
+      "slug": "hp-sony-xperia-1-iv",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Sony Xperia 1 Iv — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 31192,
+          "type": "isp",
+          "name": "sony_xperia_1_iv_isp.jpg",
+          "size": "643.7 KB",
+          "sizeBytes": 659164,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-x6XubQw6UTXWZMuYvB4hrmFq38BNwEk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16063,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Xperia 1 V",
+      "slug": "hp-sony-xperia-1-v",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Sony Xperia 1 V — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 31193,
+          "type": "isp",
+          "name": "sony_xperia_1_v_isp.jpg",
+          "size": "257.2 KB",
+          "sizeBytes": 263339,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1clGoox6PozV30-XQWO1kzm6QZUuYMcE0/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18500,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Xperia 1 Vi",
+      "slug": "hp-sony-xperia-1-vi",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony Xperia 1 Vi — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34030,
+          "type": "isp",
+          "name": "sony_xperia_1_vi_isp.jpg",
+          "size": "643.7 KB",
+          "sizeBytes": 659164,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1b6wD61DzXpedTPfPzUyB6R77HVD6Vh3q/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16064,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Xperia 10",
+      "slug": "hp-sony-xperia-10",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Sony Xperia 10 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 31194,
+          "type": "testpoint",
+          "name": "sony_xperia_10_tp.png",
+          "size": "1.1 MB",
+          "sizeBytes": 1160126,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1nhwxlMymbIYwaxRLNuKjWt0c12ZpW95C/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 31195,
+          "type": "isp",
+          "name": "sony_xperia_10_isp.jpg",
+          "size": "47 KB",
+          "sizeBytes": 48089,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1FFKt9sdGzQtwUgPiQXW3a2fJ93MKme53/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16065,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Xperia 10 Ii",
+      "slug": "hp-sony-xperia-10-ii",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Sony Xperia 10 Ii — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 31196,
+          "type": "isp",
+          "name": "sony_xperia_10_ii_isp.jpg",
+          "size": "47 KB",
+          "sizeBytes": 48089,
+          "gdrive_direct_url": "https://drive.google.com/file/d/160itHtHnuKwZoecLlyzWM2AbOWJEnYZn/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16066,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Xperia 10 Iii",
+      "slug": "hp-sony-xperia-10-iii",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Sony Xperia 10 Iii — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 31197,
+          "type": "isp",
+          "name": "sony_xperia_10_iii_isp.jpg",
+          "size": "158.3 KB",
+          "sizeBytes": 162143,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1fpa85vwqkTh_13Pjq6ilB-PR5wxJ1vIw/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18501,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Xperia 10 Iv",
+      "slug": "hp-sony-xperia-10-iv",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony Xperia 10 Iv — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34031,
+          "type": "isp",
+          "name": "sony_xperia_10_iv_isp.jpg",
+          "size": "158.1 KB",
+          "sizeBytes": 161871,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1K1QCW3Fup7__OFHmfzuUsJygKFPgIS8t/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16067,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Xperia 10 V",
+      "slug": "hp-sony-xperia-10-v",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Sony Xperia 10 V — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 31198,
+          "type": "isp",
+          "name": "sony_xperia_10_v_isp.jpg",
+          "size": "643.7 KB",
+          "sizeBytes": 659164,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1VQKX8Mq1ZBVozxCtp0Bl_tsh38kstxHW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18502,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Xperia 10 Vi",
+      "slug": "hp-sony-xperia-10-vi",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony Xperia 10 Vi — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34032,
+          "type": "isp",
+          "name": "sony_xperia_10_vi_isp.jpg",
+          "size": "47 KB",
+          "sizeBytes": 48089,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1w-5UhbPuwNcZZade_qgYxX8dY509fXUl/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16068,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Xperia 5",
+      "slug": "hp-sony-xperia-5",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Sony Xperia 5 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 31199,
+          "type": "isp",
+          "name": "sony_xperia_5_isp.jpg",
+          "size": "143.1 KB",
+          "sizeBytes": 146540,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13x80qj7iYy-RUzKQZwwcDhrMgYpPPsei/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16069,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Xperia 5 Ii",
+      "slug": "hp-sony-xperia-5-ii",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Sony Xperia 5 Ii — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 31200,
+          "type": "isp",
+          "name": "sony_xperia_5_ii_isp.jpg",
+          "size": "159 KB",
+          "sizeBytes": 162767,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HYfFVY1GxhI_6QuOgRb7wY-dftVicy9Z/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16070,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Xperia 5 Iii",
+      "slug": "hp-sony-xperia-5-iii",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Sony Xperia 5 Iii — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 31201,
+          "type": "isp",
+          "name": "sony_xperia_5_iii_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1h1Jyz4gvvWnq8n7QuoF7zOW5QXo3kIZ8/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18503,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Xperia 5 Iv",
+      "slug": "hp-sony-xperia-5-iv",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony Xperia 5 Iv — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34033,
+          "type": "isp",
+          "name": "sony_xperia_5_iv_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1x10H5BHAZ8_NnxIAKxK_USAZwU_5vs_w/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18504,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Xperia 5 V",
+      "slug": "hp-sony-xperia-5-v",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony Xperia 5 V — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34034,
+          "type": "isp",
+          "name": "sony_xperia_5_v_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1aoGBgAitbDgTsXNUspyz3IRlCnGDHHP7/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16071,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Xperia Xz",
+      "slug": "hp-sony-xperia-xz",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Sony Xperia Xz — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 31202,
+          "type": "isp",
+          "name": "sony_xperia_xz_isp.jpg",
+          "size": "47 KB",
+          "sizeBytes": 48089,
+          "gdrive_direct_url": "https://drive.google.com/file/d/16IzwWx1mthxCMzNuKUSYn60P9EEH_L9_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16072,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Xperia Xz Premium",
+      "slug": "hp-sony-xperia-xz-premium",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Sony Xperia Xz Premium — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 31203,
+          "type": "isp",
+          "name": "sony_xperia_xz_premium_isp.jpg",
+          "size": "46.1 KB",
+          "sizeBytes": 47244,
+          "gdrive_direct_url": "https://drive.google.com/file/d/10DYzaEYyFZ1s5H0rRCnTPIie1356jwyc/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16073,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Xperia Xz1",
+      "slug": "hp-sony-xperia-xz1",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Sony Xperia Xz1 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 31204,
+          "type": "isp",
+          "name": "sony_xperia_xz1_isp.jpg",
+          "size": "158.1 KB",
+          "sizeBytes": 161871,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1fcjMiGaw6fn8P9jORxRATF053j5_JELG/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18505,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Xperia Xz1 Compact",
+      "slug": "hp-sony-xperia-xz1-compact",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony Xperia Xz1 Compact — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34035,
+          "type": "isp",
+          "name": "sony_xperia_xz1_compact_isp.jpg",
+          "size": "158.1 KB",
+          "sizeBytes": 161871,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZTiW30qS7qqBWpBu5D5WtlSOCsjWGf8A/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18506,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Xperia Xz2",
+      "slug": "hp-sony-xperia-xz2",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony Xperia Xz2 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34036,
+          "type": "isp",
+          "name": "sony_xperia_xz2_isp.jpg",
+          "size": "137.1 KB",
+          "sizeBytes": 140345,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wn1CG5pzoek2TGVXrBMhgSlpUBIV9X9A/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18507,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Xperia Xz2 Compact",
+      "slug": "hp-sony-xperia-xz2-compact",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony Xperia Xz2 Compact — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34037,
+          "type": "isp",
+          "name": "sony_xperia_xz2_compact_isp.jpg",
+          "size": "137.1 KB",
+          "sizeBytes": 140345,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QDatcSA1WmM2MURJU0gyuwRPCWed-mAR/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18508,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Xperia Xz2 Premium",
+      "slug": "hp-sony-xperia-xz2-premium",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony Xperia Xz2 Premium — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34038,
+          "type": "isp",
+          "name": "sony_xperia_xz2_premium_isp.jpg",
+          "size": "137.1 KB",
+          "sizeBytes": 140345,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Rg5Tm7KtZkmxjciUUHH1cfJr4owEvQSz/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16074,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Xperia Xz3",
+      "slug": "hp-sony-xperia-xz3",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Sony Xperia Xz3 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 31205,
+          "type": "isp",
+          "name": "sony_xperia_xz3_isp.jpg",
+          "size": "441.8 KB",
+          "sizeBytes": 452382,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dmmAx1Ont4_R3M0RfEl5raxDlMw9StbX/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19676,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Xperia Z",
+      "slug": "hp-sony-xperia-z",
+      "chipset": "Snapdragon 600",
+      "motherboardCode": "HWID: 007190E1",
+      "officialTitle": "Sony Xperia Z — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35941,
+          "type": "loader",
+          "name": "007190e100040000_cc3153a80293939b_fhprg.bin",
+          "size": "57.9 KB",
+          "sizeBytes": 59276,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1klPTQb7AQ2rCBAbrVRhV58u4wEo0SUpe/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35942,
+          "type": "loader",
+          "name": "007190e100310000_cc3153a80293939b_fhprg.bin",
+          "size": "60.1 KB",
+          "sizeBytes": 61496,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1GkmYFBwmVClJBMX-638CsOcspNFsnFoE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17537,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "[ISP] Xperia 1",
+      "slug": "hp-sony-isp-xperia-1",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony [ISP] Xperia 1 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33064,
+          "type": "testpoint",
+          "name": "sony_xperia_1_isp.jpg",
+          "size": "257.2 KB",
+          "sizeBytes": 263339,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1bahjjsYbYQB3AXLB2heEzXDnVyVPGBwi/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17538,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "[ISP] Xperia 1 Ii",
+      "slug": "hp-sony-isp-xperia-1-ii",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony [ISP] Xperia 1 Ii — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33065,
+          "type": "testpoint",
+          "name": "sony_xperia_1_ii_isp.jpg",
+          "size": "257.2 KB",
+          "sizeBytes": 263339,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1oY3sBX28beMpxuSmUNGtfTR-DpwlzLha/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17539,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "[ISP] Xperia 1 Iii",
+      "slug": "hp-sony-isp-xperia-1-iii",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony [ISP] Xperia 1 Iii — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33066,
+          "type": "testpoint",
+          "name": "sony_xperia_1_iii_isp.jpg",
+          "size": "643.7 KB",
+          "sizeBytes": 659164,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1grHGgaHthCRAavlNXdblw_oLMdtBatbF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17540,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "[ISP] Xperia 1 Iv",
+      "slug": "hp-sony-isp-xperia-1-iv",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony [ISP] Xperia 1 Iv — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33067,
+          "type": "testpoint",
+          "name": "sony_xperia_1_iv_isp.jpg",
+          "size": "643.7 KB",
+          "sizeBytes": 659164,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-x6XubQw6UTXWZMuYvB4hrmFq38BNwEk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17541,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "[ISP] Xperia 1 V",
+      "slug": "hp-sony-isp-xperia-1-v",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony [ISP] Xperia 1 V — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33068,
+          "type": "testpoint",
+          "name": "sony_xperia_1_v_isp.jpg",
+          "size": "257.2 KB",
+          "sizeBytes": 263339,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1clGoox6PozV30-XQWO1kzm6QZUuYMcE0/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17542,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "[ISP] Xperia 1 Vi",
+      "slug": "hp-sony-isp-xperia-1-vi",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony [ISP] Xperia 1 Vi — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33069,
+          "type": "testpoint",
+          "name": "sony_xperia_1_vi_isp.jpg",
+          "size": "643.7 KB",
+          "sizeBytes": 659164,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1b6wD61DzXpedTPfPzUyB6R77HVD6Vh3q/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17543,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "[ISP] Xperia 10",
+      "slug": "hp-sony-isp-xperia-10",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony [ISP] Xperia 10 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33070,
+          "type": "testpoint",
+          "name": "sony_xperia_10_isp.jpg",
+          "size": "47 KB",
+          "sizeBytes": 48089,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1FFKt9sdGzQtwUgPiQXW3a2fJ93MKme53/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17544,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "[ISP] Xperia 10 Ii",
+      "slug": "hp-sony-isp-xperia-10-ii",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony [ISP] Xperia 10 Ii — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33071,
+          "type": "testpoint",
+          "name": "sony_xperia_10_ii_isp.jpg",
+          "size": "47 KB",
+          "sizeBytes": 48089,
+          "gdrive_direct_url": "https://drive.google.com/file/d/160itHtHnuKwZoecLlyzWM2AbOWJEnYZn/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17545,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "[ISP] Xperia 10 Iii",
+      "slug": "hp-sony-isp-xperia-10-iii",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony [ISP] Xperia 10 Iii — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33072,
+          "type": "testpoint",
+          "name": "sony_xperia_10_iii_isp.jpg",
+          "size": "158.3 KB",
+          "sizeBytes": 162143,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1fpa85vwqkTh_13Pjq6ilB-PR5wxJ1vIw/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17546,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "[ISP] Xperia 10 Iv",
+      "slug": "hp-sony-isp-xperia-10-iv",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony [ISP] Xperia 10 Iv — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33073,
+          "type": "testpoint",
+          "name": "sony_xperia_10_iv_isp.jpg",
+          "size": "158.1 KB",
+          "sizeBytes": 161871,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1K1QCW3Fup7__OFHmfzuUsJygKFPgIS8t/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17547,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "[ISP] Xperia 10 V",
+      "slug": "hp-sony-isp-xperia-10-v",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony [ISP] Xperia 10 V — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33074,
+          "type": "testpoint",
+          "name": "sony_xperia_10_v_isp.jpg",
+          "size": "643.7 KB",
+          "sizeBytes": 659164,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1VQKX8Mq1ZBVozxCtp0Bl_tsh38kstxHW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17548,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "[ISP] Xperia 10 Vi",
+      "slug": "hp-sony-isp-xperia-10-vi",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony [ISP] Xperia 10 Vi — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33075,
+          "type": "testpoint",
+          "name": "sony_xperia_10_vi_isp.jpg",
+          "size": "47 KB",
+          "sizeBytes": 48089,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1w-5UhbPuwNcZZade_qgYxX8dY509fXUl/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17549,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "[ISP] Xperia 5",
+      "slug": "hp-sony-isp-xperia-5",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony [ISP] Xperia 5 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33076,
+          "type": "testpoint",
+          "name": "sony_xperia_5_isp.jpg",
+          "size": "143.1 KB",
+          "sizeBytes": 146540,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13x80qj7iYy-RUzKQZwwcDhrMgYpPPsei/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17550,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "[ISP] Xperia 5 Ii",
+      "slug": "hp-sony-isp-xperia-5-ii",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony [ISP] Xperia 5 Ii — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33077,
+          "type": "testpoint",
+          "name": "sony_xperia_5_ii_isp.jpg",
+          "size": "159 KB",
+          "sizeBytes": 162767,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HYfFVY1GxhI_6QuOgRb7wY-dftVicy9Z/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17551,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "[ISP] Xperia 5 Iii",
+      "slug": "hp-sony-isp-xperia-5-iii",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony [ISP] Xperia 5 Iii — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33078,
+          "type": "testpoint",
+          "name": "sony_xperia_5_iii_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1h1Jyz4gvvWnq8n7QuoF7zOW5QXo3kIZ8/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17552,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "[ISP] Xperia 5 Iv",
+      "slug": "hp-sony-isp-xperia-5-iv",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony [ISP] Xperia 5 Iv — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33079,
+          "type": "testpoint",
+          "name": "sony_xperia_5_iv_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1x10H5BHAZ8_NnxIAKxK_USAZwU_5vs_w/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17553,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "[ISP] Xperia 5 V",
+      "slug": "hp-sony-isp-xperia-5-v",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony [ISP] Xperia 5 V — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33080,
+          "type": "testpoint",
+          "name": "sony_xperia_5_v_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1aoGBgAitbDgTsXNUspyz3IRlCnGDHHP7/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17554,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "[ISP] Xperia Xz",
+      "slug": "hp-sony-isp-xperia-xz",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony [ISP] Xperia Xz — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33081,
+          "type": "testpoint",
+          "name": "sony_xperia_xz_isp.jpg",
+          "size": "47 KB",
+          "sizeBytes": 48089,
+          "gdrive_direct_url": "https://drive.google.com/file/d/16IzwWx1mthxCMzNuKUSYn60P9EEH_L9_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17555,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "[ISP] Xperia Xz Premium",
+      "slug": "hp-sony-isp-xperia-xz-premium",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony [ISP] Xperia Xz Premium — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33082,
+          "type": "testpoint",
+          "name": "sony_xperia_xz_premium_isp.jpg",
+          "size": "46.1 KB",
+          "sizeBytes": 47244,
+          "gdrive_direct_url": "https://drive.google.com/file/d/10DYzaEYyFZ1s5H0rRCnTPIie1356jwyc/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17556,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "[ISP] Xperia Xz1",
+      "slug": "hp-sony-isp-xperia-xz1",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony [ISP] Xperia Xz1 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33083,
+          "type": "testpoint",
+          "name": "sony_xperia_xz1_isp.jpg",
+          "size": "158.1 KB",
+          "sizeBytes": 161871,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1fcjMiGaw6fn8P9jORxRATF053j5_JELG/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17557,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "[ISP] Xperia Xz1 Compact",
+      "slug": "hp-sony-isp-xperia-xz1-compact",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony [ISP] Xperia Xz1 Compact — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33084,
+          "type": "testpoint",
+          "name": "sony_xperia_xz1_compact_isp.jpg",
+          "size": "158.1 KB",
+          "sizeBytes": 161871,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZTiW30qS7qqBWpBu5D5WtlSOCsjWGf8A/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17558,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "[ISP] Xperia Xz2",
+      "slug": "hp-sony-isp-xperia-xz2",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony [ISP] Xperia Xz2 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33085,
+          "type": "testpoint",
+          "name": "sony_xperia_xz2_isp.jpg",
+          "size": "137.1 KB",
+          "sizeBytes": 140345,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wn1CG5pzoek2TGVXrBMhgSlpUBIV9X9A/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17559,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "[ISP] Xperia Xz2 Compact",
+      "slug": "hp-sony-isp-xperia-xz2-compact",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony [ISP] Xperia Xz2 Compact — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33086,
+          "type": "testpoint",
+          "name": "sony_xperia_xz2_compact_isp.jpg",
+          "size": "137.1 KB",
+          "sizeBytes": 140345,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QDatcSA1WmM2MURJU0gyuwRPCWed-mAR/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17560,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "[ISP] Xperia Xz2 Premium",
+      "slug": "hp-sony-isp-xperia-xz2-premium",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony [ISP] Xperia Xz2 Premium — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33087,
+          "type": "testpoint",
+          "name": "sony_xperia_xz2_premium_isp.jpg",
+          "size": "137.1 KB",
+          "sizeBytes": 140345,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Rg5Tm7KtZkmxjciUUHH1cfJr4owEvQSz/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17561,
+      "category": "hp",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "[ISP] Xperia Xz3",
+      "slug": "hp-sony-isp-xperia-xz3",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Sony [ISP] Xperia Xz3 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33088,
+          "type": "testpoint",
+          "name": "sony_xperia_xz3_isp.jpg",
+          "size": "441.8 KB",
+          "sizeBytes": 452382,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dmmAx1Ont4_R3M0RfEl5raxDlMw9StbX/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

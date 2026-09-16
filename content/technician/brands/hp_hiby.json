@@ -1,0 +1,34 @@
+{
+  "category": "hp",
+  "brand": "HiBy",
+  "brandSlug": "hiby",
+  "totalModels": 1,
+  "models": [
+    {
+      "id": 19696,
+      "category": "hp",
+      "brand": "HiBy",
+      "brandSlug": "hiby",
+      "modelName": "R6III",
+      "slug": "hp-hiby-r6iii",
+      "chipset": "QCM6125",
+      "motherboardCode": "HWID: 001750E1",
+      "officialTitle": "HiBy R6III — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35996,
+          "type": "loader",
+          "name": "001750e100000000_d40eee56f3194665574109a39267724ae7944134cd53cb767e293d3c40497955bc8a4519ff992b031fadc6355015ac87.bin",
+          "size": "588.5 KB",
+          "sizeBytes": 602588,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1NfQ-ewV0HiVUwnHbHbZKnlpHu5ClFeVE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

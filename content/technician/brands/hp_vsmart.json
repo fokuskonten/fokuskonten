@@ -1,0 +1,54 @@
+{
+  "category": "hp",
+  "brand": "Vsmart",
+  "brandSlug": "vsmart",
+  "totalModels": 1,
+  "models": [
+    {
+      "id": 19655,
+      "category": "hp",
+      "brand": "Vsmart",
+      "brandSlug": "vsmart",
+      "modelName": "Star",
+      "slug": "hp-vsmart-star",
+      "chipset": "215 Mobile Platform",
+      "motherboardCode": "HWID: 001060E1",
+      "officialTitle": "Vsmart Star — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35910,
+          "type": "loader",
+          "name": "001060e100160000_d5f6c6ec4f4092dc_fhprg.bin",
+          "size": "401.8 KB",
+          "sizeBytes": 411416,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1GoWgNVMCQu5I5mJiucwI1gaBEm1U3lrY/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35911,
+          "type": "loader",
+          "name": "001060e100160000_bdd02c92b4edb4e4_fhprg.bin",
+          "size": "401.8 KB",
+          "sizeBytes": 411416,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1iLUICvnZLT_GdhtueLupiX8MKY5DF8sg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35912,
+          "type": "loader",
+          "name": "001060e10042004f_99c60886e90d4bb0c_fhprg.bin",
+          "size": "384.6 KB",
+          "sizeBytes": 393832,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DLaJTz9u4A06zzrQAXaVpf7gbvuZ3Vwq/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

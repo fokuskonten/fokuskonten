@@ -1,0 +1,34 @@
+{
+  "category": "hp",
+  "brand": "Yulong coolpad",
+  "brandSlug": "yulong-coolpad",
+  "totalModels": 1,
+  "models": [
+    {
+      "id": 19716,
+      "category": "hp",
+      "brand": "Yulong coolpad",
+      "brandSlug": "yulong-coolpad",
+      "modelName": "Qualcomm Firehose Loader Yulong coolpad (0091B0E1)",
+      "slug": "hp-yulong-coolpad-qualcomm-firehose-loader-yulong-coolpad-0091b0e1",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "HWID: 0091B0E1",
+      "officialTitle": "Yulong coolpad Qualcomm Firehose Loader Yulong coolpad (0091B0E1) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36044,
+          "type": "loader",
+          "name": "0091b0e100000000_b4d82bcacd882b72_fhprg_peek.bin",
+          "size": "98.5 KB",
+          "sizeBytes": 100840,
+          "gdrive_direct_url": "https://drive.google.com/file/d/105ZkVtPVgz9HpvRd_ZUzGA5V0Fkt9rI9/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

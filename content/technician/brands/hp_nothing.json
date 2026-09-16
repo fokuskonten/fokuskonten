@@ -1,0 +1,86 @@
+{
+  "category": "hp",
+  "brand": "Nothing",
+  "brandSlug": "nothing",
+  "totalModels": 3,
+  "models": [
+    {
+      "id": 19853,
+      "category": "hp",
+      "brand": "Nothing",
+      "brandSlug": "nothing",
+      "modelName": "PHONE_1",
+      "slug": "hp-nothing-phone_1",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Nothing PHONE_1 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36182,
+          "type": "loader",
+          "name": "PHONE_1.elf",
+          "size": "924.2 KB",
+          "sizeBytes": 946368,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1gc6eAQoeJ6YcD7Kqj5l7A2Z_LjGRWf7x/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19856,
+      "category": "hp",
+      "brand": "Nothing",
+      "brandSlug": "nothing",
+      "modelName": "PHONE_2",
+      "slug": "hp-nothing-phone_2",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Nothing PHONE_2 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36185,
+          "type": "loader",
+          "name": "PHONE_2.elf",
+          "size": "1.5 MB",
+          "sizeBytes": 1579828,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dg9rPMqOeq8mW63jcUaBtXj9tRWXG_11/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19671,
+      "category": "hp",
+      "brand": "Nothing",
+      "brandSlug": "nothing",
+      "modelName": "Qualcomm Firehose Loader Nothing (000B80E1)",
+      "slug": "hp-nothing-qualcomm-firehose-loader-nothing-000b80e1",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "HWID: 000B80E1",
+      "officialTitle": "Nothing Qualcomm Firehose Loader Nothing (000B80E1) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35936,
+          "type": "loader",
+          "name": "000b80e100020000_467f3020c4cc788d_fhprg.bin",
+          "size": "1.5 MB",
+          "sizeBytes": 1579840,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1vEW8rZDGcXSCtRn5sTxhUVT37ZjzYDKV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

@@ -9,10 +9,58 @@ import { getCartSummary, subscribeCartStore } from '@/lib/cartStore'
 import { getWhatsAppContextUrl } from '@/lib/useStoreHealth'
 import CartDrawer from '@/components/cart/CartDrawer'
 
+const EBOOK_CAT_SLUG_MAP = {
+  'E-Book Agama Islam': 'agama-islam',
+  'E-Book Tafsir': 'agama-islam',
+  'Buku & Yasin': 'agama-islam',
+  'E-Book Novel': 'novel-fiksi',
+  'E-Book Pendidikan': 'pendidikan-akademik',
+  'E-Book Pengembangan Diri': 'pengembangan-diri',
+  'E-Book Bisnis': 'bisnis-finansial',
+  'E-Book Bisnis Investasi': 'bisnis-finansial',
+  'E-Book Keuangan': 'bisnis-finansial',
+  'E-Book Bisnis Online': 'bisnis-finansial',
+  'E-Book Kesehatan': 'kesehatan-kedokteran',
+  'E-Book Resep Masakan': 'kuliner-resep',
+  'E-Book Kuliner': 'kuliner-resep',
+  'E-Book Pengetahuan': 'sains-pengetahuan',
+  'E-Book Hukum': 'hukum-undang-undang',
+  'E-Book Psikologi': 'psikologi-perilaku',
+  'E-Book Sastra': 'sastra-puisi',
+  'E-Book Pertanian': 'pertanian-peternakan',
+  'E-Book Peternakan': 'pertanian-peternakan',
+  'E-Book Politik': 'politik-kebijakan',
+  'E-Book Buku Anak': 'edukasi-anak',
+  'E-Book Kerja-Karir': 'karir-kerja',
+  'E-Book Filsafat': 'filsafat-logika',
+  'E-Book Majalah': 'majalah-jurnal',
+  'E-Book Budaya & Tradisi': 'budaya-sejarah'
+}
+
 const navLinks = [
   { href: '/', label: 'Beranda' },
   { href: '/aplikasi/', label: 'Aplikasi' },
   { href: '/toko-digital/', label: 'Toko', isDropdown: true },
+  { href: '/ebook/', label: 'E-Book' },
+  { 
+    href: '/teknisi-hp/', 
+    label: 'Tools Hardware', 
+    isHardwareDropdown: true,
+    subLinks: [
+      {
+        href: '/teknisi-hp/',
+        title: 'Teknisi Smartphone (HP)',
+        desc: 'Testpoint EDL 9008, Direct ISP Pinout, QCN & Skema Jalur',
+        badge: '5.200+ Model'
+      },
+      {
+        href: '/teknisi-laptop/',
+        title: 'Skema & Boardview Laptop',
+        desc: 'Skema Motherboard, Boardview CAD/FZ & Kumpulan File BIOS',
+        badge: '890+ Skema'
+      }
+    ]
+  },
   { href: '/tentang/', label: 'Tentang' },
   { href: '/layanan/', label: 'Layanan' },
   { href: '/faq/', label: 'FAQ' },
@@ -23,6 +71,8 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [isTokoOpen, setIsTokoOpen] = useState(false)
   const [isMobileTokoOpen, setIsMobileTokoOpen] = useState(false)
+  const [isHardwareOpen, setIsHardwareOpen] = useState(false)
+  const [isMobileHardwareOpen, setIsMobileHardwareOpen] = useState(false)
   const [isCartOpen, setIsCartOpen] = useState(false)
   const [cartCount, setCartCount] = useState(0)
   const [isCartBumping, setIsCartBumping] = useState(false)
@@ -70,6 +120,8 @@ export default function Navbar() {
     setIsOpen(false)
     setIsTokoOpen(false)
     setIsMobileTokoOpen(false)
+    setIsHardwareOpen(false)
+    setIsMobileHardwareOpen(false)
   }, [pathname])
 
   const [tokoCategoryTab, setTokoCategoryTab] = useState('desain') // 'desain' | 'ebook'
@@ -145,7 +197,7 @@ export default function Navbar() {
                     {/* Dropdown Menu Popover */}
                     {isTokoOpen && (
                       <div className="absolute left-0 top-full pt-1.5 z-50 animate-in fade-in zoom-in-95 duration-150">
-                        <div className="w-[460px] bg-white/95 backdrop-blur-xl rounded-2xl border border-neutral-200/80 shadow-2xl p-3 text-xs">
+                        <div className="w-[460px] bg-white rounded-2xl border border-neutral-200 shadow-2xl p-3 text-xs">
                           {/* 1. Header: Semua Produk */}
                           <Link
                             href="/toko-digital/"
@@ -209,7 +261,7 @@ export default function Navbar() {
                             {tokoCategoryTab === 'ebook' && (
                               <div className="px-1 py-1 mb-1">
                                 <Link
-                                  href="/toko-digital/?format=PDF"
+                                  href="/ebook/"
                                   onClick={handleTokoFilterClick}
                                   className="flex items-center justify-between px-3 py-1.5 rounded-xl bg-neutral-900 text-white font-bold text-xs hover:bg-black transition-all shadow-sm"
                                 >
@@ -222,10 +274,13 @@ export default function Navbar() {
                             <div className="grid grid-cols-2 gap-x-1.5 gap-y-0.5 mt-0.5 max-h-[46vh] overflow-y-auto pr-1 [scrollbar-width:thin]">
                               {(tokoCategoryTab === 'desain' ? designCategories : ebookCategories).map(([cat, count]) => {
                                 const displayLabel = cat.startsWith('E-Book ') ? cat.replace('E-Book ', '') : cat
+                                const targetHref = tokoCategoryTab === 'ebook'
+                                  ? (EBOOK_CAT_SLUG_MAP[cat] ? `/ebook/${EBOOK_CAT_SLUG_MAP[cat]}/` : '/ebook/')
+                                  : `/toko-digital/?cat=${encodeURIComponent(cat)}`
                                 return (
                                   <Link
                                     key={cat}
-                                    href={`/toko-digital/?cat=${encodeURIComponent(cat)}`}
+                                    href={targetHref}
                                     onClick={handleTokoFilterClick}
                                     className="flex items-center justify-between px-2.5 py-1.5 rounded-xl text-neutral-700 hover:text-neutral-950 hover:bg-neutral-100 font-medium transition-colors group"
                                   >
@@ -260,6 +315,82 @@ export default function Navbar() {
                               </div>
                             </div>
                           )}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )
+              }
+
+              if (link.isHardwareDropdown) {
+                const isHardwareActive = pathname.startsWith('/teknisi-hp') || pathname.startsWith('/teknisi-laptop')
+                return (
+                  <div 
+                    key={link.href}
+                    className="relative"
+                    onMouseEnter={() => setIsHardwareOpen(true)}
+                    onMouseLeave={() => setIsHardwareOpen(false)}
+                  >
+                    <Link
+                      href={link.href}
+                      onClick={() => {
+                        setIsHardwareOpen(false)
+                        setIsOpen(false)
+                      }}
+                      className={`px-3.5 py-2 rounded-xl text-sm font-medium transition-all duration-200 flex items-center gap-1.5 ${
+                        isHardwareActive
+                          ? 'text-neutral-950 bg-neutral-100 font-semibold'
+                          : 'text-neutral-600 hover:text-neutral-950 hover:bg-neutral-100/60'
+                      }`}
+                    >
+                      <span>{link.label}</span>
+                      <svg 
+                        className={`w-3.5 h-3.5 text-neutral-400 transition-transform duration-200 ${isHardwareOpen ? 'rotate-180 text-neutral-900' : ''}`} 
+                        fill="none" 
+                        viewBox="0 0 24 24" 
+                        stroke="currentColor" 
+                        strokeWidth="2"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </Link>
+
+                    {/* Hardware Dropdown Popover */}
+                    {isHardwareOpen && (
+                      <div className="absolute left-0 top-full pt-1.5 z-50 animate-in fade-in zoom-in-95 duration-150">
+                        <div className="w-[330px] bg-white rounded-2xl border border-neutral-200 shadow-2xl p-2.5 space-y-1">
+                          <div className="px-3 py-1.5 text-[10px] font-extrabold uppercase tracking-wider text-neutral-400 flex items-center justify-between border-b border-neutral-100 pb-2 mb-1">
+                            <span>Direktori Hardware</span>
+                            <span className="font-mono text-[9px] bg-neutral-950 text-white px-1.5 py-0.5 rounded">FokusKonten</span>
+                          </div>
+                          {link.subLinks.map((sub) => {
+                            const isSubActive = pathname === sub.href || (sub.href !== '/teknisi-hp/' && pathname.startsWith(sub.href))
+                            return (
+                              <Link
+                                key={sub.href}
+                                href={sub.href}
+                                onClick={() => {
+                                  setIsHardwareOpen(false)
+                                  setIsOpen(false)
+                                }}
+                                className={`block p-2.5 rounded-xl transition-all group ${
+                                  isSubActive ? 'bg-neutral-100 text-neutral-950' : 'hover:bg-neutral-50 text-neutral-700'
+                                }`}
+                              >
+                                <div className="flex items-center justify-between">
+                                  <span className="text-xs font-bold text-neutral-950 group-hover:text-black">
+                                    {sub.title}
+                                  </span>
+                                  <span className="font-mono text-[9px] font-semibold px-2 py-0.5 rounded-full bg-neutral-200/70 text-neutral-700 group-hover:bg-neutral-950 group-hover:text-white transition-colors">
+                                    {sub.badge}
+                                  </span>
+                                </div>
+                                <p className="text-[11px] text-neutral-500 font-mono mt-0.5 leading-snug">
+                                  {sub.desc}
+                                </p>
+                              </Link>
+                            )
+                          })}
                         </div>
                       </div>
                     )}
@@ -399,7 +530,7 @@ export default function Navbar() {
 
                       {tokoCategoryTab === 'ebook' && (
                         <Link
-                          href="/toko-digital/?format=PDF"
+                          href="/ebook/"
                           onClick={handleTokoFilterClick}
                           className="flex items-center justify-between px-3 py-1.5 rounded-lg bg-neutral-900 text-white font-bold text-xs"
                         >
@@ -411,10 +542,13 @@ export default function Navbar() {
                       <div className="space-y-0.5 max-h-60 overflow-y-auto pr-1 mt-1 [scrollbar-width:thin]">
                         {(tokoCategoryTab === 'desain' ? designCategories : ebookCategories).map(([cat, count]) => {
                           const displayLabel = cat.startsWith('E-Book ') ? cat.replace('E-Book ', '') : cat
+                          const targetHref = tokoCategoryTab === 'ebook'
+                            ? (EBOOK_CAT_SLUG_MAP[cat] ? `/ebook/${EBOOK_CAT_SLUG_MAP[cat]}/` : '/ebook/')
+                            : `/toko-digital/?cat=${encodeURIComponent(cat)}`
                           return (
                             <Link
                               key={cat}
-                              href={`/toko-digital/?cat=${encodeURIComponent(cat)}`}
+                              href={targetHref}
                               onClick={handleTokoFilterClick}
                               className="flex items-center justify-between px-3 py-1.5 rounded-lg text-xs text-neutral-600 hover:text-neutral-950 hover:bg-neutral-100"
                             >
@@ -438,6 +572,67 @@ export default function Navbar() {
                           ))}
                         </div>
                       )}
+                    </div>
+                  )}
+                </div>
+              )
+            }
+
+            if (link.isHardwareDropdown) {
+              const isHardwareActive = pathname.startsWith('/teknisi-hp') || pathname.startsWith('/teknisi-laptop')
+              return (
+                <div key={link.href} className="space-y-1">
+                  <div className="flex items-center justify-between px-4 py-2.5 rounded-xl text-sm font-medium">
+                    <Link
+                      href={link.href}
+                      onClick={() => setIsOpen(false)}
+                      className={`font-semibold flex items-center gap-2 ${
+                        isHardwareActive ? 'text-neutral-950' : 'text-neutral-900'
+                      }`}
+                    >
+                      <span>{link.label}</span>
+                      <span className="text-xs bg-neutral-200 px-2 py-0.5 rounded-full font-mono text-neutral-700">
+                        Hardware
+                      </span>
+                    </Link>
+                    <button
+                      type="button"
+                      onClick={() => setIsMobileHardwareOpen(!isMobileHardwareOpen)}
+                      className="p-1.5 rounded-lg text-neutral-500 hover:bg-neutral-100"
+                      aria-label="Toggle Hardware Menu"
+                    >
+                      <svg
+                        className={`w-4 h-4 transition-transform duration-200 ${isMobileHardwareOpen ? 'rotate-180' : ''}`}
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                  </div>
+
+                  {isMobileHardwareOpen && (
+                    <div className="pl-4 pr-2 space-y-1 pb-2">
+                      {link.subLinks.map((sub) => (
+                        <Link
+                          key={sub.href}
+                          href={sub.href}
+                          onClick={() => {
+                            setIsMobileHardwareOpen(false)
+                            setIsOpen(false)
+                          }}
+                          className="block p-2.5 rounded-xl bg-neutral-50 hover:bg-neutral-100 transition-colors"
+                        >
+                          <div className="flex items-center justify-between">
+                            <span className="text-xs font-bold text-neutral-900">{sub.title}</span>
+                            <span className="text-[9px] font-mono bg-neutral-200 text-neutral-700 px-1.5 py-0.5 rounded">
+                              {sub.badge}
+                            </span>
+                          </div>
+                          <p className="text-[10px] text-neutral-500 font-mono mt-0.5">{sub.desc}</p>
+                        </Link>
+                      ))}
                     </div>
                   )}
                 </div>

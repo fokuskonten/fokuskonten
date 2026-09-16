@@ -1,0 +1,2530 @@
+{
+  "category": "hp",
+  "brand": "Tecno",
+  "brandSlug": "tecno",
+  "totalModels": 97,
+  "models": [
+    {
+      "id": 18509,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Camon 15",
+      "slug": "hp-tecno-camon-15",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Camon 15 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34039,
+          "type": "isp",
+          "name": "tecno_camon_15_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1BDP9zMydZDSHJueZiQ_AJyDsBqfX1yWi/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18510,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Camon 15 Pro",
+      "slug": "hp-tecno-camon-15-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Camon 15 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34040,
+          "type": "isp",
+          "name": "tecno_camon_15_pro_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/12ue3YsrzwqwiAaDEe4cAKFBU1BPd1jL7/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18511,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Camon 16",
+      "slug": "hp-tecno-camon-16",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Camon 16 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34041,
+          "type": "isp",
+          "name": "tecno_camon_16_isp.jpg",
+          "size": "188.8 KB",
+          "sizeBytes": 193330,
+          "gdrive_direct_url": "https://drive.google.com/file/d/189d1iZ9wthVhTtms2nEjO5DRgG8Q5HId/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18512,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Camon 16 Premier",
+      "slug": "hp-tecno-camon-16-premier",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Camon 16 Premier — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34042,
+          "type": "isp",
+          "name": "tecno_camon_16_premier_isp.jpg",
+          "size": "300.7 KB",
+          "sizeBytes": 307941,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15eGMXS8y4E9J1eT6KzswGPJ12CbI-hac/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18513,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Camon 17",
+      "slug": "hp-tecno-camon-17",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Camon 17 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34043,
+          "type": "isp",
+          "name": "tecno_camon_17_isp.jpg",
+          "size": "431.8 KB",
+          "sizeBytes": 442126,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1jIkVkQBTVxq5G6P3ij3sYOO2KBsq6Q-D/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18514,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Camon 17 Pro",
+      "slug": "hp-tecno-camon-17-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Camon 17 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34044,
+          "type": "isp",
+          "name": "tecno_camon_17_pro_isp.jpg",
+          "size": "105.7 KB",
+          "sizeBytes": 108236,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zUzWhcQJnfWKpqhX-VvfhCa-b2WFCfzA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18515,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Camon 18",
+      "slug": "hp-tecno-camon-18",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Camon 18 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34045,
+          "type": "isp",
+          "name": "tecno_camon_18_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1k7nzNfvWU0LXuuZngXQAjfqSN9nvb0iH/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18516,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Camon 18 Premier",
+      "slug": "hp-tecno-camon-18-premier",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Camon 18 Premier — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34046,
+          "type": "isp",
+          "name": "tecno_camon_18_premier_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1UmwLIWZoegLbsU_GeCHXfJE3n9GNUzBJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18517,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Camon 19",
+      "slug": "hp-tecno-camon-19",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Camon 19 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34047,
+          "type": "isp",
+          "name": "tecno_camon_19_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1FcYJVu7waQpCeW-Wsy7Xe0kScJEBQ9X_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18518,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Camon 19 Pro",
+      "slug": "hp-tecno-camon-19-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Camon 19 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34048,
+          "type": "isp",
+          "name": "tecno_camon_19_pro_isp.jpg",
+          "size": "1.6 MB",
+          "sizeBytes": 1627185,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1igbZnTbopJDOnbN8JXzrLSHPzaJ4-SX2/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18519,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Camon 20",
+      "slug": "hp-tecno-camon-20",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Camon 20 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34049,
+          "type": "isp",
+          "name": "tecno_camon_20_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1a7-P68-3oazOSjpz7ROPcEmfP4bW7rrd/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18520,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Camon 20 Premier 5G",
+      "slug": "hp-tecno-camon-20-premier-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Camon 20 Premier 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34050,
+          "type": "isp",
+          "name": "tecno_camon_20_premier_5g_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1nk9vUeo4p27aTsPlHm0M8ZfCKluCQCTT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18521,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Camon 20 Pro",
+      "slug": "hp-tecno-camon-20-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Camon 20 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34051,
+          "type": "isp",
+          "name": "tecno_camon_20_pro_isp.jpg",
+          "size": "1.6 MB",
+          "sizeBytes": 1627185,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1rRGE7D6RrhXZIMP17IrcV0WkhB4wVS6k/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18522,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Camon 30",
+      "slug": "hp-tecno-camon-30",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Camon 30 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34052,
+          "type": "isp",
+          "name": "tecno_camon_30_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DP8US8VmFWbtsxtE0v19FkiSfTa7PBdD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18523,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Camon 30 Premier 5G",
+      "slug": "hp-tecno-camon-30-premier-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Camon 30 Premier 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34053,
+          "type": "isp",
+          "name": "tecno_camon_30_premier_5g_isp.jpg",
+          "size": "117.5 KB",
+          "sizeBytes": 120322,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1JQ0cOeCpcHEKxH5R8ssIu0pXI857qlpx/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18524,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Camon 30 Pro 5G",
+      "slug": "hp-tecno-camon-30-pro-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Camon 30 Pro 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34054,
+          "type": "isp",
+          "name": "tecno_camon_30_pro_5g_isp.jpg",
+          "size": "117.5 KB",
+          "sizeBytes": 120322,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DjWXMJW_thb2i5z6DKWPMphttvzYcWr9/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18525,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Pova",
+      "slug": "hp-tecno-pova",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Pova — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34055,
+          "type": "isp",
+          "name": "tecno_pova_isp.jpg",
+          "size": "179.1 KB",
+          "sizeBytes": 183445,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_ITqg4rg6F3ZKsWyGUOarVu7kSGafHLD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18526,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Pova 2",
+      "slug": "hp-tecno-pova-2",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Pova 2 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34056,
+          "type": "isp",
+          "name": "tecno_pova_2_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/18_Dd1ro76gov0hpV9-GHzh-p1dSFKB6P/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18527,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Pova 3",
+      "slug": "hp-tecno-pova-3",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Pova 3 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34057,
+          "type": "isp",
+          "name": "tecno_pova_3_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1EVbM6p6HGShN0LvpQ6CSfTWZM4g7U3yW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18528,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Pova 4",
+      "slug": "hp-tecno-pova-4",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Pova 4 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34058,
+          "type": "isp",
+          "name": "tecno_pova_4_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wEELzz_0pi3IVTChIpPgVSeFBa7V4ZHa/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18529,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Pova 4 Pro",
+      "slug": "hp-tecno-pova-4-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Pova 4 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34059,
+          "type": "isp",
+          "name": "tecno_pova_4_pro_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1YxPi5fE_AlkE0Jqz2ZQ84tyPQlO9pO89/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18530,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Pova 5",
+      "slug": "hp-tecno-pova-5",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Pova 5 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34060,
+          "type": "isp",
+          "name": "tecno_pova_5_isp.jpg",
+          "size": "594.7 KB",
+          "sizeBytes": 608940,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1CJtxzAzrYQ8VtendUztinckggPeyY-8q/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18531,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Pova 5 Pro 5G",
+      "slug": "hp-tecno-pova-5-pro-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Pova 5 Pro 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34061,
+          "type": "isp",
+          "name": "tecno_pova_5_pro_5g_isp.jpg",
+          "size": "594.7 KB",
+          "sizeBytes": 608940,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1czVgM9i4e7SlMXGlSgqAkrfqOxrpygXn/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18532,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Pova 6",
+      "slug": "hp-tecno-pova-6",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Pova 6 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34062,
+          "type": "isp",
+          "name": "tecno_pova_6_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1TOdJIql6_F_yG4wHpP09nlDca0nMPEdn/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18533,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Pova 6 Pro 5G",
+      "slug": "hp-tecno-pova-6-pro-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Pova 6 Pro 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34063,
+          "type": "isp",
+          "name": "tecno_pova_6_pro_5g_isp.jpg",
+          "size": "179.1 KB",
+          "sizeBytes": 183445,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xKAm7Hs6hYdjLLvS-AjQNOkIB74enLKZ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18534,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Pova Neo",
+      "slug": "hp-tecno-pova-neo",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Pova Neo — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34064,
+          "type": "isp",
+          "name": "tecno_pova_neo_isp.jpg",
+          "size": "24.6 KB",
+          "sizeBytes": 25203,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ledhjKBiihf1uVFTD04qTfWBnvQuTJE5/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18535,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Pova Neo 2",
+      "slug": "hp-tecno-pova-neo-2",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Pova Neo 2 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34065,
+          "type": "isp",
+          "name": "tecno_pova_neo_2_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mPJS18kH9wmHmi3MBMmMVxTtd5Et0GLk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18536,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Pova Neo 3",
+      "slug": "hp-tecno-pova-neo-3",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Pova Neo 3 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34066,
+          "type": "isp",
+          "name": "tecno_pova_neo_3_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-t_iVL6wKJciGfOMe3V9CkVCFFHoeSC9/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16075,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Pova Pova 2 3 4 5",
+      "slug": "hp-tecno-pova-pova-2-3-4-5",
+      "chipset": "MediaTek Helio / Dimensity",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Pova Pova 2 3 4 5 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 31206,
+          "type": "testpoint",
+          "name": "tecno_pova_pova_2_3_4_5_tp.jpg",
+          "size": "112.2 KB",
+          "sizeBytes": 114904,
+          "gdrive_direct_url": "https://drive.google.com/file/d/153dVJ0MHSM9goMkVELsoSldYcfA5HhYm/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18537,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Spark 10",
+      "slug": "hp-tecno-spark-10",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Spark 10 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34067,
+          "type": "isp",
+          "name": "tecno_spark_10_isp.jpg",
+          "size": "188.8 KB",
+          "sizeBytes": 193330,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HZSuSfLkoK79LxRNsWxt9g2DRTXZ3ngj/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16076,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Spark 10 10 Pro 20",
+      "slug": "hp-tecno-spark-10-10-pro-20",
+      "chipset": "MediaTek Helio / Dimensity",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Spark 10 10 Pro 20 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 31207,
+          "type": "testpoint",
+          "name": "tecno_spark_10_10_pro_20_tp.jpg",
+          "size": "155.8 KB",
+          "sizeBytes": 159577,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1vRTGlhMnuaZsEP8IxAMP5MSbOrvdYQz0/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18538,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Spark 10 Pro",
+      "slug": "hp-tecno-spark-10-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Spark 10 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34068,
+          "type": "isp",
+          "name": "tecno_spark_10_pro_isp.jpg",
+          "size": "188.8 KB",
+          "sizeBytes": 193330,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1nVjMCmX61VF3vIpKYX3SR3T89G4VZ7-G/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18539,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Spark 10C",
+      "slug": "hp-tecno-spark-10c",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Spark 10C — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34069,
+          "type": "isp",
+          "name": "tecno_spark_10c_isp.jpg",
+          "size": "388.7 KB",
+          "sizeBytes": 398024,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QQRmU-NTyoqx0xWH6_ya-5ZeVVC9T1FX/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18540,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Spark 20",
+      "slug": "hp-tecno-spark-20",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Spark 20 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34070,
+          "type": "isp",
+          "name": "tecno_spark_20_isp.jpg",
+          "size": "188.8 KB",
+          "sizeBytes": 193330,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kwVrbef1TrBgLq08L-P27JG7OP67D7cX/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18541,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Spark 20 Pro",
+      "slug": "hp-tecno-spark-20-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Spark 20 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34071,
+          "type": "isp",
+          "name": "tecno_spark_20_pro_isp.jpg",
+          "size": "537.6 KB",
+          "sizeBytes": 550539,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WeEJ_De-z5UXItQgIz_qAJDhxbaa_-2K/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18542,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Spark 20 Pro Plus",
+      "slug": "hp-tecno-spark-20-pro-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Spark 20 Pro Plus — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34072,
+          "type": "isp",
+          "name": "tecno_spark_20_pro_plus_isp.jpg",
+          "size": "537.6 KB",
+          "sizeBytes": 550539,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1y-I4R0FXRQWJrtHOZ99Q7_FkQ3ECKQhV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18543,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Spark 20C",
+      "slug": "hp-tecno-spark-20c",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Spark 20C — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34073,
+          "type": "isp",
+          "name": "tecno_spark_20c_isp.jpg",
+          "size": "485.2 KB",
+          "sizeBytes": 496809,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ae8Ugj7mxVPKPjO6bvdwFlhXBZU7g23r/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18544,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Spark 5",
+      "slug": "hp-tecno-spark-5",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Spark 5 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34074,
+          "type": "isp",
+          "name": "tecno_spark_5_isp.jpg",
+          "size": "188.8 KB",
+          "sizeBytes": 193330,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1coe21x5ucqjbQ3gN_thqPqUuxqYCrk5H/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18545,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Spark 5 Pro",
+      "slug": "hp-tecno-spark-5-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Spark 5 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34075,
+          "type": "isp",
+          "name": "tecno_spark_5_pro_isp.jpg",
+          "size": "188.8 KB",
+          "sizeBytes": 193330,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1D_82eiqMbDIjwhWsKoPIGt5id_5Wr4pE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18546,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Spark 6",
+      "slug": "hp-tecno-spark-6",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Spark 6 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34076,
+          "type": "isp",
+          "name": "tecno_spark_6_isp.jpg",
+          "size": "188.8 KB",
+          "sizeBytes": 193330,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1TPLwGSuv6vPB3VUonBw0Lt8uD1KoNeQe/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16077,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Spark 6 7 8 9",
+      "slug": "hp-tecno-spark-6-7-8-9",
+      "chipset": "MediaTek Helio / Dimensity",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Spark 6 7 8 9 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 31208,
+          "type": "testpoint",
+          "name": "tecno_spark_6_7_8_9_tp.jpg",
+          "size": "140.7 KB",
+          "sizeBytes": 144027,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WG32msUms7Agx7Gb3HjKiVDVZt-J-odV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18547,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Spark 6 Go",
+      "slug": "hp-tecno-spark-6-go",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Spark 6 Go — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34077,
+          "type": "isp",
+          "name": "tecno_spark_6_go_isp.jpg",
+          "size": "241.5 KB",
+          "sizeBytes": 247252,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1YjgcpyeKlQ4YDAAHyESwkl_Qt34ZuLzB/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18548,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Spark 7",
+      "slug": "hp-tecno-spark-7",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Spark 7 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34078,
+          "type": "isp",
+          "name": "tecno_spark_7_isp.jpg",
+          "size": "188.8 KB",
+          "sizeBytes": 193330,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1XuFRuOgXIVrINJvWgUlXOCUL78oTB9rv/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18549,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Spark 7 Pro",
+      "slug": "hp-tecno-spark-7-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Spark 7 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34079,
+          "type": "isp",
+          "name": "tecno_spark_7_pro_isp.jpg",
+          "size": "188.8 KB",
+          "sizeBytes": 193330,
+          "gdrive_direct_url": "https://drive.google.com/file/d/133pBzwoetPyLyY_ReMjOW0bFCsq2zjQY/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18550,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Spark 8",
+      "slug": "hp-tecno-spark-8",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Spark 8 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34080,
+          "type": "isp",
+          "name": "tecno_spark_8_isp.jpg",
+          "size": "124 KB",
+          "sizeBytes": 126934,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1CIiZB81D4B1RvlVfY5CtYYmE8KPRMkT4/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18551,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Spark 8 Pro",
+      "slug": "hp-tecno-spark-8-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Spark 8 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34081,
+          "type": "isp",
+          "name": "tecno_spark_8_pro_isp.jpg",
+          "size": "188.8 KB",
+          "sizeBytes": 193330,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mEJMreBOx4fddtAAo5jp-u1rKOfsDlby/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18552,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Spark 8C",
+      "slug": "hp-tecno-spark-8c",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Spark 8C — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34082,
+          "type": "isp",
+          "name": "tecno_spark_8c_isp.jpg",
+          "size": "124 KB",
+          "sizeBytes": 126934,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uv6OX5EPMT2WZfdz9fNXe6XlY0wxkTVd/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18553,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Spark 9",
+      "slug": "hp-tecno-spark-9",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Spark 9 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34083,
+          "type": "isp",
+          "name": "tecno_spark_9_isp.jpg",
+          "size": "188.8 KB",
+          "sizeBytes": 193330,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1anRG8UmOS7LjUhbp3XmBMJOdsSpcbssB/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18554,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Spark 9 Pro",
+      "slug": "hp-tecno-spark-9-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Spark 9 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34084,
+          "type": "isp",
+          "name": "tecno_spark_9_pro_isp.jpg",
+          "size": "188.8 KB",
+          "sizeBytes": 193330,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1lFk46n0GBIUR3x5h-4gMDZU-mph4eVpE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18555,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "Spark 9T",
+      "slug": "hp-tecno-spark-9t",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno Spark 9T — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 34085,
+          "type": "isp",
+          "name": "tecno_spark_9t_isp.jpg",
+          "size": "188.8 KB",
+          "sizeBytes": 193330,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14nOYE5OLvlKk8f1FbiD7pxAfc4VNi27n/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17562,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Camon 15",
+      "slug": "hp-tecno-isp-camon-15",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Camon 15 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33089,
+          "type": "testpoint",
+          "name": "tecno_camon_15_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1BDP9zMydZDSHJueZiQ_AJyDsBqfX1yWi/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17563,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Camon 15 Pro",
+      "slug": "hp-tecno-isp-camon-15-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Camon 15 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33090,
+          "type": "testpoint",
+          "name": "tecno_camon_15_pro_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/12ue3YsrzwqwiAaDEe4cAKFBU1BPd1jL7/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17564,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Camon 16",
+      "slug": "hp-tecno-isp-camon-16",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Camon 16 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33091,
+          "type": "testpoint",
+          "name": "tecno_camon_16_isp.jpg",
+          "size": "188.8 KB",
+          "sizeBytes": 193330,
+          "gdrive_direct_url": "https://drive.google.com/file/d/189d1iZ9wthVhTtms2nEjO5DRgG8Q5HId/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17565,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Camon 16 Premier",
+      "slug": "hp-tecno-isp-camon-16-premier",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Camon 16 Premier — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33092,
+          "type": "testpoint",
+          "name": "tecno_camon_16_premier_isp.jpg",
+          "size": "300.7 KB",
+          "sizeBytes": 307941,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15eGMXS8y4E9J1eT6KzswGPJ12CbI-hac/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17566,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Camon 17",
+      "slug": "hp-tecno-isp-camon-17",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Camon 17 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33093,
+          "type": "testpoint",
+          "name": "tecno_camon_17_isp.jpg",
+          "size": "431.8 KB",
+          "sizeBytes": 442126,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1jIkVkQBTVxq5G6P3ij3sYOO2KBsq6Q-D/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17567,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Camon 17 Pro",
+      "slug": "hp-tecno-isp-camon-17-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Camon 17 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33094,
+          "type": "testpoint",
+          "name": "tecno_camon_17_pro_isp.jpg",
+          "size": "105.7 KB",
+          "sizeBytes": 108236,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zUzWhcQJnfWKpqhX-VvfhCa-b2WFCfzA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17568,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Camon 18",
+      "slug": "hp-tecno-isp-camon-18",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Camon 18 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33095,
+          "type": "testpoint",
+          "name": "tecno_camon_18_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1k7nzNfvWU0LXuuZngXQAjfqSN9nvb0iH/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17569,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Camon 18 Premier",
+      "slug": "hp-tecno-isp-camon-18-premier",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Camon 18 Premier — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33096,
+          "type": "testpoint",
+          "name": "tecno_camon_18_premier_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1UmwLIWZoegLbsU_GeCHXfJE3n9GNUzBJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17570,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Camon 19",
+      "slug": "hp-tecno-isp-camon-19",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Camon 19 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33097,
+          "type": "testpoint",
+          "name": "tecno_camon_19_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1FcYJVu7waQpCeW-Wsy7Xe0kScJEBQ9X_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17571,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Camon 19 Pro",
+      "slug": "hp-tecno-isp-camon-19-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Camon 19 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33098,
+          "type": "testpoint",
+          "name": "tecno_camon_19_pro_isp.jpg",
+          "size": "1.6 MB",
+          "sizeBytes": 1627185,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1igbZnTbopJDOnbN8JXzrLSHPzaJ4-SX2/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17572,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Camon 20",
+      "slug": "hp-tecno-isp-camon-20",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Camon 20 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33099,
+          "type": "testpoint",
+          "name": "tecno_camon_20_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1a7-P68-3oazOSjpz7ROPcEmfP4bW7rrd/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17573,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Camon 20 Premier 5G",
+      "slug": "hp-tecno-isp-camon-20-premier-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Camon 20 Premier 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33100,
+          "type": "testpoint",
+          "name": "tecno_camon_20_premier_5g_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1nk9vUeo4p27aTsPlHm0M8ZfCKluCQCTT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17574,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Camon 20 Pro",
+      "slug": "hp-tecno-isp-camon-20-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Camon 20 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33101,
+          "type": "testpoint",
+          "name": "tecno_camon_20_pro_isp.jpg",
+          "size": "1.6 MB",
+          "sizeBytes": 1627185,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1rRGE7D6RrhXZIMP17IrcV0WkhB4wVS6k/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17575,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Camon 30",
+      "slug": "hp-tecno-isp-camon-30",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Camon 30 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33102,
+          "type": "testpoint",
+          "name": "tecno_camon_30_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DP8US8VmFWbtsxtE0v19FkiSfTa7PBdD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17576,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Camon 30 Premier 5G",
+      "slug": "hp-tecno-isp-camon-30-premier-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Camon 30 Premier 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33103,
+          "type": "testpoint",
+          "name": "tecno_camon_30_premier_5g_isp.jpg",
+          "size": "117.5 KB",
+          "sizeBytes": 120322,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1JQ0cOeCpcHEKxH5R8ssIu0pXI857qlpx/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17577,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Camon 30 Pro 5G",
+      "slug": "hp-tecno-isp-camon-30-pro-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Camon 30 Pro 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33104,
+          "type": "testpoint",
+          "name": "tecno_camon_30_pro_5g_isp.jpg",
+          "size": "117.5 KB",
+          "sizeBytes": 120322,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DjWXMJW_thb2i5z6DKWPMphttvzYcWr9/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17578,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Pova",
+      "slug": "hp-tecno-isp-pova",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Pova — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33105,
+          "type": "testpoint",
+          "name": "tecno_pova_isp.jpg",
+          "size": "179.1 KB",
+          "sizeBytes": 183445,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_ITqg4rg6F3ZKsWyGUOarVu7kSGafHLD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17579,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Pova 2",
+      "slug": "hp-tecno-isp-pova-2",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Pova 2 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33106,
+          "type": "testpoint",
+          "name": "tecno_pova_2_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/18_Dd1ro76gov0hpV9-GHzh-p1dSFKB6P/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17580,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Pova 3",
+      "slug": "hp-tecno-isp-pova-3",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Pova 3 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33107,
+          "type": "testpoint",
+          "name": "tecno_pova_3_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1EVbM6p6HGShN0LvpQ6CSfTWZM4g7U3yW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17581,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Pova 4",
+      "slug": "hp-tecno-isp-pova-4",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Pova 4 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33108,
+          "type": "testpoint",
+          "name": "tecno_pova_4_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wEELzz_0pi3IVTChIpPgVSeFBa7V4ZHa/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17582,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Pova 4 Pro",
+      "slug": "hp-tecno-isp-pova-4-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Pova 4 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33109,
+          "type": "testpoint",
+          "name": "tecno_pova_4_pro_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1YxPi5fE_AlkE0Jqz2ZQ84tyPQlO9pO89/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17583,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Pova 5",
+      "slug": "hp-tecno-isp-pova-5",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Pova 5 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33110,
+          "type": "testpoint",
+          "name": "tecno_pova_5_isp.jpg",
+          "size": "594.7 KB",
+          "sizeBytes": 608940,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1CJtxzAzrYQ8VtendUztinckggPeyY-8q/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17584,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Pova 5 Pro 5G",
+      "slug": "hp-tecno-isp-pova-5-pro-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Pova 5 Pro 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33111,
+          "type": "testpoint",
+          "name": "tecno_pova_5_pro_5g_isp.jpg",
+          "size": "594.7 KB",
+          "sizeBytes": 608940,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1czVgM9i4e7SlMXGlSgqAkrfqOxrpygXn/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17585,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Pova 6",
+      "slug": "hp-tecno-isp-pova-6",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Pova 6 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33112,
+          "type": "testpoint",
+          "name": "tecno_pova_6_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1TOdJIql6_F_yG4wHpP09nlDca0nMPEdn/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17586,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Pova 6 Pro 5G",
+      "slug": "hp-tecno-isp-pova-6-pro-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Pova 6 Pro 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33113,
+          "type": "testpoint",
+          "name": "tecno_pova_6_pro_5g_isp.jpg",
+          "size": "179.1 KB",
+          "sizeBytes": 183445,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xKAm7Hs6hYdjLLvS-AjQNOkIB74enLKZ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17587,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Pova Neo",
+      "slug": "hp-tecno-isp-pova-neo",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Pova Neo — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33114,
+          "type": "testpoint",
+          "name": "tecno_pova_neo_isp.jpg",
+          "size": "24.6 KB",
+          "sizeBytes": 25203,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ledhjKBiihf1uVFTD04qTfWBnvQuTJE5/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17588,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Pova Neo 2",
+      "slug": "hp-tecno-isp-pova-neo-2",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Pova Neo 2 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33115,
+          "type": "testpoint",
+          "name": "tecno_pova_neo_2_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mPJS18kH9wmHmi3MBMmMVxTtd5Et0GLk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17589,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Pova Neo 3",
+      "slug": "hp-tecno-isp-pova-neo-3",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Pova Neo 3 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33116,
+          "type": "testpoint",
+          "name": "tecno_pova_neo_3_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-t_iVL6wKJciGfOMe3V9CkVCFFHoeSC9/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17590,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Spark 10",
+      "slug": "hp-tecno-isp-spark-10",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Spark 10 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33117,
+          "type": "testpoint",
+          "name": "tecno_spark_10_isp.jpg",
+          "size": "188.8 KB",
+          "sizeBytes": 193330,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HZSuSfLkoK79LxRNsWxt9g2DRTXZ3ngj/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17591,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Spark 10 Pro",
+      "slug": "hp-tecno-isp-spark-10-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Spark 10 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33118,
+          "type": "testpoint",
+          "name": "tecno_spark_10_pro_isp.jpg",
+          "size": "188.8 KB",
+          "sizeBytes": 193330,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1nVjMCmX61VF3vIpKYX3SR3T89G4VZ7-G/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17592,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Spark 10C",
+      "slug": "hp-tecno-isp-spark-10c",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Spark 10C — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33119,
+          "type": "testpoint",
+          "name": "tecno_spark_10c_isp.jpg",
+          "size": "388.7 KB",
+          "sizeBytes": 398024,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QQRmU-NTyoqx0xWH6_ya-5ZeVVC9T1FX/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17593,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Spark 20",
+      "slug": "hp-tecno-isp-spark-20",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Spark 20 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33120,
+          "type": "testpoint",
+          "name": "tecno_spark_20_isp.jpg",
+          "size": "188.8 KB",
+          "sizeBytes": 193330,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kwVrbef1TrBgLq08L-P27JG7OP67D7cX/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17594,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Spark 20 Pro",
+      "slug": "hp-tecno-isp-spark-20-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Spark 20 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33121,
+          "type": "testpoint",
+          "name": "tecno_spark_20_pro_isp.jpg",
+          "size": "537.6 KB",
+          "sizeBytes": 550539,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WeEJ_De-z5UXItQgIz_qAJDhxbaa_-2K/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17595,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Spark 20 Pro Plus",
+      "slug": "hp-tecno-isp-spark-20-pro-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Spark 20 Pro Plus — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33122,
+          "type": "testpoint",
+          "name": "tecno_spark_20_pro_plus_isp.jpg",
+          "size": "537.6 KB",
+          "sizeBytes": 550539,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1y-I4R0FXRQWJrtHOZ99Q7_FkQ3ECKQhV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17596,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Spark 20C",
+      "slug": "hp-tecno-isp-spark-20c",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Spark 20C — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33123,
+          "type": "testpoint",
+          "name": "tecno_spark_20c_isp.jpg",
+          "size": "485.2 KB",
+          "sizeBytes": 496809,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ae8Ugj7mxVPKPjO6bvdwFlhXBZU7g23r/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17597,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Spark 5",
+      "slug": "hp-tecno-isp-spark-5",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Spark 5 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33124,
+          "type": "testpoint",
+          "name": "tecno_spark_5_isp.jpg",
+          "size": "188.8 KB",
+          "sizeBytes": 193330,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1coe21x5ucqjbQ3gN_thqPqUuxqYCrk5H/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17598,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Spark 5 Pro",
+      "slug": "hp-tecno-isp-spark-5-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Spark 5 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33125,
+          "type": "testpoint",
+          "name": "tecno_spark_5_pro_isp.jpg",
+          "size": "188.8 KB",
+          "sizeBytes": 193330,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1D_82eiqMbDIjwhWsKoPIGt5id_5Wr4pE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17599,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Spark 6",
+      "slug": "hp-tecno-isp-spark-6",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Spark 6 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33126,
+          "type": "testpoint",
+          "name": "tecno_spark_6_isp.jpg",
+          "size": "188.8 KB",
+          "sizeBytes": 193330,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1TPLwGSuv6vPB3VUonBw0Lt8uD1KoNeQe/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17600,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Spark 6 Go",
+      "slug": "hp-tecno-isp-spark-6-go",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Spark 6 Go — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33127,
+          "type": "testpoint",
+          "name": "tecno_spark_6_go_isp.jpg",
+          "size": "241.5 KB",
+          "sizeBytes": 247252,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1YjgcpyeKlQ4YDAAHyESwkl_Qt34ZuLzB/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17601,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Spark 7",
+      "slug": "hp-tecno-isp-spark-7",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Spark 7 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33128,
+          "type": "testpoint",
+          "name": "tecno_spark_7_isp.jpg",
+          "size": "188.8 KB",
+          "sizeBytes": 193330,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1XuFRuOgXIVrINJvWgUlXOCUL78oTB9rv/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17602,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Spark 7 Pro",
+      "slug": "hp-tecno-isp-spark-7-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Spark 7 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33129,
+          "type": "testpoint",
+          "name": "tecno_spark_7_pro_isp.jpg",
+          "size": "188.8 KB",
+          "sizeBytes": 193330,
+          "gdrive_direct_url": "https://drive.google.com/file/d/133pBzwoetPyLyY_ReMjOW0bFCsq2zjQY/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17603,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Spark 8",
+      "slug": "hp-tecno-isp-spark-8",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Spark 8 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33130,
+          "type": "testpoint",
+          "name": "tecno_spark_8_isp.jpg",
+          "size": "124 KB",
+          "sizeBytes": 126934,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1CIiZB81D4B1RvlVfY5CtYYmE8KPRMkT4/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17604,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Spark 8 Pro",
+      "slug": "hp-tecno-isp-spark-8-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Spark 8 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33131,
+          "type": "testpoint",
+          "name": "tecno_spark_8_pro_isp.jpg",
+          "size": "188.8 KB",
+          "sizeBytes": 193330,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mEJMreBOx4fddtAAo5jp-u1rKOfsDlby/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17605,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Spark 8C",
+      "slug": "hp-tecno-isp-spark-8c",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Spark 8C — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33132,
+          "type": "testpoint",
+          "name": "tecno_spark_8c_isp.jpg",
+          "size": "124 KB",
+          "sizeBytes": 126934,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uv6OX5EPMT2WZfdz9fNXe6XlY0wxkTVd/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17606,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Spark 9",
+      "slug": "hp-tecno-isp-spark-9",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Spark 9 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33133,
+          "type": "testpoint",
+          "name": "tecno_spark_9_isp.jpg",
+          "size": "188.8 KB",
+          "sizeBytes": 193330,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1anRG8UmOS7LjUhbp3XmBMJOdsSpcbssB/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17607,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Spark 9 Pro",
+      "slug": "hp-tecno-isp-spark-9-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Spark 9 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33134,
+          "type": "testpoint",
+          "name": "tecno_spark_9_pro_isp.jpg",
+          "size": "188.8 KB",
+          "sizeBytes": 193330,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1lFk46n0GBIUR3x5h-4gMDZU-mph4eVpE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 17608,
+      "category": "hp",
+      "brand": "Tecno",
+      "brandSlug": "tecno",
+      "modelName": "[ISP] Spark 9T",
+      "slug": "hp-tecno-isp-spark-9t",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Tecno [ISP] Spark 9T — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 33135,
+          "type": "testpoint",
+          "name": "tecno_spark_9t_isp.jpg",
+          "size": "188.8 KB",
+          "sizeBytes": 193330,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14nOYE5OLvlKk8f1FbiD7pxAfc4VNi27n/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

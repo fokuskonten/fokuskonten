@@ -1,0 +1,34 @@
+{
+  "category": "hp",
+  "brand": "Galaxy A05s SM6225.qcn",
+  "brandSlug": "galaxy-a05s-sm6225-qcn",
+  "totalModels": 1,
+  "models": [
+    {
+      "id": 21234,
+      "category": "hp",
+      "brand": "Galaxy A05s SM6225.qcn",
+      "brandSlug": "galaxy-a05s-sm6225-qcn",
+      "modelName": "Galaxy A05s SM6225",
+      "slug": "hp-galaxy-a05s-sm6225qcn-galaxy-a05s-sm6225",
+      "chipset": "Baseband & Network Calibration",
+      "motherboardCode": "",
+      "officialTitle": "Galaxy A05s SM6225.qcn Galaxy A05s SM6225 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "nvram"
+      ],
+      "files": [
+        {
+          "id": 39066,
+          "type": "nvram",
+          "name": "Galaxy_A05s_SM6225.qcn",
+          "size": "8.1 KB",
+          "sizeBytes": 8244,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ohtsaJg5tye19hgjJM1x66L_hpuNlxoy/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

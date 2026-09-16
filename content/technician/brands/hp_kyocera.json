@@ -1,0 +1,74 @@
+{
+  "category": "hp",
+  "brand": "KYOCERA",
+  "brandSlug": "kyocera",
+  "totalModels": 1,
+  "models": [
+    {
+      "id": 19654,
+      "category": "hp",
+      "brand": "KYOCERA",
+      "brandSlug": "kyocera",
+      "modelName": "901KC",
+      "slug": "hp-kyocera-901kc",
+      "chipset": "Snapdragon 429",
+      "motherboardCode": "HWID: 000BE0E1",
+      "officialTitle": "KYOCERA 901KC — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35905,
+          "type": "loader",
+          "name": "000be0e100000000_6c93b90a72c3db9e_fhprg_peek.bin",
+          "size": "424 KB",
+          "sizeBytes": 434176,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1oSr7bS652ARUsKKF3o-fcaRbT2nDNUQs/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35906,
+          "type": "loader",
+          "name": "000be0e100000000_311c8a50f07f9722_fhprg_peek.bin",
+          "size": "236.9 KB",
+          "sizeBytes": 242628,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1A4UTUzPs01QJ_LXnpjaxW4LjhcU7Sszv/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35907,
+          "type": "loader",
+          "name": "000be0e100359571_06917d466c907e9f_fhprg_peek.bin",
+          "size": "418.9 KB",
+          "sizeBytes": 428944,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1e63273jB8lB8IyBqWVWyWP0V11eK_HAg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35908,
+          "type": "loader",
+          "name": "000be0e100420047_79fba8b6dc1f344d_fhprg_peek.bin",
+          "size": "424.3 KB",
+          "sizeBytes": 434512,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1E6mYJ_CIO4hp5CaMwlm-KOu61uM2kUOF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35909,
+          "type": "loader",
+          "name": "000be0e10042004b_e143e5a12649d60d_fhprg_peek.bin",
+          "size": "428.7 KB",
+          "sizeBytes": 439028,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1JpmNGKUJ4nqaxbns9-GLuuwav4mP3CQQ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

@@ -30,9 +30,9 @@ export default function CheckoutDeliveryModal({
     if (isOpen) {
       const prof = getBuyerProfile()
       if (prof) {
-        if (prof.name && !name) setName(prof.name)
-        if (prof.email && !email) setEmail(prof.email)
-        if (prof.phone && !phone) setPhone(prof.phone)
+        if (prof.name) setName((prev) => (!prev ? prof.name : prev))
+        if (prof.email) setEmail((prev) => (!prev ? prof.email : prev))
+        if (prof.phone) setPhone((prev) => (!prev ? prof.phone : prev))
       }
     }
   }, [isOpen])
@@ -116,7 +116,7 @@ export default function CheckoutDeliveryModal({
       originalPrice: product.originalPrice || basePrice * 2,
       discountAmount: voucher ? voucher.discountAmount : 0,
       voucherCode: voucher ? voucher.code : null,
-      coverImage: product.coverImage || `/covers/${product.sku}/${product.sku}_cover.webp`,
+      coverImage: product.coverImage || `https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/${product.sku}/${product.sku}_cover.webp`,
       driveLink: product.driveLink || product.backupDriveLink || '#',
       customerName: name.trim(),
       customerEmail: email.trim().toLowerCase(),
@@ -129,7 +129,7 @@ export default function CheckoutDeliveryModal({
         format: product.format || 'CDR',
         price: finalPrice,
         originalPrice: product.originalPrice || basePrice * 2,
-        coverImage: product.coverImage || `/covers/${product.sku}/${product.sku}_cover.webp`,
+        coverImage: product.coverImage || `https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/${product.sku}/${product.sku}_cover.webp`,
         driveLink: product.driveLink || product.backupDriveLink || '#'
       }],
       createdAt: Date.now()

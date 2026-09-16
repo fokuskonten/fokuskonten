@@ -1,0 +1,3498 @@
+{
+  "category": "hp",
+  "brand": "Honor",
+  "brandSlug": "honor",
+  "totalModels": 121,
+  "models": [
+    {
+      "id": 15145,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "10",
+      "slug": "hp-honor-10",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 10 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 29740,
+          "type": "testpoint",
+          "name": "honor_10_tp.jpg",
+          "size": "41.1 KB",
+          "sizeBytes": 42119,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Gm3dEyr-b4hbdQ8hk0ChS1FjZ4vQAuGw/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/36zHqYX",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15146,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "10 Lite",
+      "slug": "hp-honor-10-lite",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 10 Lite — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29741,
+          "type": "testpoint",
+          "name": "honor_10_lite_tp.jpg",
+          "size": "41.1 KB",
+          "sizeBytes": 42119,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Mxr1z7pggWO2gonSuLHzC3bGwHl2aOAA/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/AGnED",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29742,
+          "type": "isp",
+          "name": "honor_honor_10_lite_isp.jpg",
+          "size": "293 KB",
+          "sizeBytes": 300050,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1jX1WGHtZbcyr6bXJXWs23DUGH32bsz7C/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18231,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "100",
+      "slug": "hp-honor-100",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor 100 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33758,
+          "type": "isp",
+          "name": "honor_honor_100_isp.jpg",
+          "size": "229.3 KB",
+          "sizeBytes": 234782,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1bWeetGP8t_tfyLv5K6n9Z_64HeGDSkxF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15147,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "10I",
+      "slug": "hp-honor-10i",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 10I — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 29743,
+          "type": "testpoint",
+          "name": "honor_10i_tp.jpg",
+          "size": "27.9 KB",
+          "sizeBytes": 28614,
+          "gdrive_direct_url": "https://drive.google.com/file/d/11s__EjGyq3NHERx7UiikyVOcllUlKt4J/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/qLw65",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15148,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "10X Lite",
+      "slug": "hp-honor-10x-lite",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 10X Lite — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [],
+      "files": []
+    },
+    {
+      "id": 15149,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "20",
+      "slug": "hp-honor-20",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 20 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29744,
+          "type": "testpoint",
+          "name": "honor_20_tp.jpg",
+          "size": "481.5 KB",
+          "sizeBytes": 493082,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14m0BhlVmoFZc0V3u1qF0O0BaYy-su7lf/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/bSiA",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29745,
+          "type": "isp",
+          "name": "honor_honor_20_isp.jpg",
+          "size": "191.3 KB",
+          "sizeBytes": 195851,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1gHLesQPqWRT64oqhAJ_YeP8fK8LUP5dn/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15150,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "20 Lite",
+      "slug": "hp-honor-20-lite",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 20 Lite — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29746,
+          "type": "testpoint",
+          "name": "honor_20_lite_tp.png",
+          "size": "125 KB",
+          "sizeBytes": 127981,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1FJvPpPhzFKtw8tX4wUtXt1NGUVtJsG4W/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/Uz8B",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29747,
+          "type": "isp",
+          "name": "honor_honor_20_lite_isp.jpg",
+          "size": "609.8 KB",
+          "sizeBytes": 624393,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZLPZgkA92l4I6-9C-VGV8AHpizMjp23j/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15151,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "20 Pro",
+      "slug": "hp-honor-20-pro",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 20 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29748,
+          "type": "testpoint",
+          "name": "honor_20_pro_tp.png",
+          "size": "125 KB",
+          "sizeBytes": 127981,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1OsP-iZICxdcjNNeZH-QqmGUf3gOYgX12/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/RnKj",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29749,
+          "type": "isp",
+          "name": "honor_honor_20_pro_isp.jpg",
+          "size": "609.8 KB",
+          "sizeBytes": 624393,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1LmsehrRw3fv7KRNbwphid7oATF3U9zDQ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15152,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "200",
+      "slug": "hp-honor-200",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 200 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29750,
+          "type": "testpoint",
+          "name": "honor_200_tp.jpg",
+          "size": "32.2 KB",
+          "sizeBytes": 32949,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1goIv6H-rA8TYKmhjMR_FH6Qlcxonezwa/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/MVEjl",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29751,
+          "type": "isp",
+          "name": "honor_honor_200_isp.jpg",
+          "size": "32.2 KB",
+          "sizeBytes": 32949,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1lb8IxMcDjL7Q-gukIGogApm1hhMJ37bV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15153,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "200 Pro",
+      "slug": "hp-honor-200-pro",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 200 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 29752,
+          "type": "testpoint",
+          "name": "honor_200_pro_tp.jpg",
+          "size": "184 KB",
+          "sizeBytes": 188366,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PdJnDjynbo3WuD5hLKtJrvV9qX4HDSX4/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/xfz6WL",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15154,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "20E",
+      "slug": "hp-honor-20e",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 20E — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 29753,
+          "type": "testpoint",
+          "name": "honor_20e_tp.jpg",
+          "size": "166.6 KB",
+          "sizeBytes": 170589,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1u_dxZdxf21aRf5LydhjkFYvo-tjqHFcZ/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/hO0h5Y",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15155,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "20I",
+      "slug": "hp-honor-20i",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 20I — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 29754,
+          "type": "testpoint",
+          "name": "honor_20i_tp.jpg",
+          "size": "481.5 KB",
+          "sizeBytes": 493082,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dIpv8GGPQ0yqe8mBuYv2bSmuMXarFtUV/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/b4grGg",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15156,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "30",
+      "slug": "hp-honor-30",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 30 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 29755,
+          "type": "testpoint",
+          "name": "honor_30_tp.png",
+          "size": "125 KB",
+          "sizeBytes": 127981,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1x3f4zS-7POgNBebefk6_4BtcLgVrzF0L/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/N8HKx",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15157,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "30 Pro",
+      "slug": "hp-honor-30-pro",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 30 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 29756,
+          "type": "testpoint",
+          "name": "honor_30_pro_tp.png",
+          "size": "70 KB",
+          "sizeBytes": 71679,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1BCNW5w-c3TVk20EYu3LHw0RLTvvzYNhR/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/AmXH13gV",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15158,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "30I",
+      "slug": "hp-honor-30i",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 30I — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 29757,
+          "type": "testpoint",
+          "name": "honor_30i_tp.jpg",
+          "size": "133.3 KB",
+          "sizeBytes": 136491,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1A3nq6QSmF3T98ZwpvGw_UhG9puEkNiK1/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/lHQPii",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15159,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "30S",
+      "slug": "hp-honor-30s",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 30S — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 29758,
+          "type": "testpoint",
+          "name": "honor_30s_tp.jpg",
+          "size": "481.5 KB",
+          "sizeBytes": 493082,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-4rNMgcnxBX72sCVAAF9AdG6xOQ4ctC1/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/LvLKQuXr",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15160,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "50",
+      "slug": "hp-honor-50",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 50 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp",
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 29759,
+          "type": "testpoint",
+          "name": "honor_50_tp.jpg",
+          "size": "133.1 KB",
+          "sizeBytes": 136293,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kmDAX8K9Lsc8v5fcmoKUWBRhxfsoaIno/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/oPpSA8c",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29760,
+          "type": "isp",
+          "name": "honor_honor_50_isp.jpg",
+          "size": "229.3 KB",
+          "sizeBytes": 234782,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xYkhRQV3-x-zqA2ZG4zF3FpQmtgUBh70/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29761,
+          "type": "loader",
+          "name": "50.elf",
+          "size": "922 KB",
+          "sizeBytes": 944128,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1NreBedxSRCUpnRLXIqBmAD2VS0HkC2J3/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15161,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "50 Lite",
+      "slug": "hp-honor-50-lite",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 50 Lite — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29762,
+          "type": "testpoint",
+          "name": "honor_50_lite_tp.jpg",
+          "size": "140.2 KB",
+          "sizeBytes": 143552,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1KeBCIr69kmZL1_TWliZ1T338VPhom-yL/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/IsPUWaUi",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29763,
+          "type": "isp",
+          "name": "honor_honor_50_lite_isp.jpg",
+          "size": "153.5 KB",
+          "sizeBytes": 157187,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Hl_BHKYmP39payI2R1AGazT5iMVtALaA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15162,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "50 Pro",
+      "slug": "hp-honor-50-pro",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 50 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint",
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 29764,
+          "type": "testpoint",
+          "name": "honor_50_pro_tp.jpg",
+          "size": "153.1 KB",
+          "sizeBytes": 156770,
+          "gdrive_direct_url": "https://drive.google.com/file/d/112tOOvluLG0vRj7aYyCRH1qCSBFdMyJJ/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/Iv8zOt",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29765,
+          "type": "loader",
+          "name": "50 PRO.elf",
+          "size": "922 KB",
+          "sizeBytes": 944120,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13pmEG1Y5U-MOPWLTRfWvTawv82zeJpPR/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15163,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "50 Se",
+      "slug": "hp-honor-50-se",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 50 Se — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 29766,
+          "type": "testpoint",
+          "name": "honor_50_se_tp.jpg",
+          "size": "150.7 KB",
+          "sizeBytes": 154332,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1rJWOwwLVlA8_FvYwuFxE2jbalUAMIZFp/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/DA8Q",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19720,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "50L",
+      "slug": "hp-honor-50l",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Honor 50L — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36049,
+          "type": "loader",
+          "name": "50L.elf",
+          "size": "629.4 KB",
+          "sizeBytes": 644540,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1gabAGx3Q_n89gVbTnKuMAzwPGMzHzivj/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19721,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "60",
+      "slug": "hp-honor-60",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Honor 60 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36050,
+          "type": "loader",
+          "name": "60.elf",
+          "size": "931.4 KB",
+          "sizeBytes": 953768,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1pFZTDXOGIsds2cQlzSEB0k1WI0Y28Gi1/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19722,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "60P",
+      "slug": "hp-honor-60p",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Honor 60P — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36051,
+          "type": "loader",
+          "name": "60P.elf",
+          "size": "931.4 KB",
+          "sizeBytes": 953768,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1bXwALBgHH3nDMAz25SPDuWodHUzARSvS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15164,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "70",
+      "slug": "hp-honor-70",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 70 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp",
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 29767,
+          "type": "testpoint",
+          "name": "honor_70_tp.png",
+          "size": "535.8 KB",
+          "sizeBytes": 548647,
+          "gdrive_direct_url": "https://drive.google.com/file/d/166B6rJxt-Vde3iqvcZ0OsmokjO3aXCcX/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/qJvK",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29768,
+          "type": "isp",
+          "name": "honor_honor_70_isp.jpg",
+          "size": "609.8 KB",
+          "sizeBytes": 624393,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dVUWaFdgDaDlPMIwqgEAUGORqmXvJI44/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29769,
+          "type": "loader",
+          "name": "70.elf",
+          "size": "931.8 KB",
+          "sizeBytes": 954208,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1v43REZdNOGh0_99nsziXVeukLxpheAqi/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15165,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "70 Lite",
+      "slug": "hp-honor-70-lite",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 70 Lite — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 29770,
+          "type": "testpoint",
+          "name": "honor_70_lite_tp.png",
+          "size": "535.8 KB",
+          "sizeBytes": 548647,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17lFdg9wzGOWi_tHpdjASUtm4bWyoTWGd/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/rej6",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15166,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "70 Pro",
+      "slug": "hp-honor-70-pro",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 70 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 29771,
+          "type": "testpoint",
+          "name": "honor_70_pro_tp.jpg",
+          "size": "481.5 KB",
+          "sizeBytes": 493082,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1i7ZwhvtTuNbsBfBYzfwAVoezvIxonqFf/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/GKwC0",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15167,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "7A",
+      "slug": "hp-honor-7a",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 7A — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint",
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 29772,
+          "type": "testpoint",
+          "name": "honor_7a_tp.jpg",
+          "size": "163.3 KB",
+          "sizeBytes": 167215,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ungdxUN9SVHOpWG0nnUmPnp7ZF7c0RIT/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/R9600F5h",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29773,
+          "type": "loader",
+          "name": "7A.mbn",
+          "size": "219.3 KB",
+          "sizeBytes": 224524,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1qpf8ymfGHo28C23nbxm3grXQgbF_wN2j/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15168,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "7C",
+      "slug": "hp-honor-7c",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 7C — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint",
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 29774,
+          "type": "testpoint",
+          "name": "honor_7c_tp.jpg",
+          "size": "191.3 KB",
+          "sizeBytes": 195851,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1IW6eWXF519cM9x4_uHvT20x-cLr7sRB3/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/xJ7aWA",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29775,
+          "type": "loader",
+          "name": "7C.mbn",
+          "size": "116.4 KB",
+          "sizeBytes": 119199,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1KWIU3NtXwZW_yTAxiWTctHuptkFVt41M/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15169,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "7S",
+      "slug": "hp-honor-7s",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 7S — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 29776,
+          "type": "testpoint",
+          "name": "honor_7s_tp.jpg",
+          "size": "103.4 KB",
+          "sizeBytes": 105930,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kJRxrIYzHqFG3jKEiK9SkwEi8vQVyyVF/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/hRhLcq",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15170,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "7X",
+      "slug": "hp-honor-7x",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 7X — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 29777,
+          "type": "testpoint",
+          "name": "honor_7x_tp.jpg",
+          "size": "111.4 KB",
+          "sizeBytes": 114108,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1JpdlHbEhmkSdLesDLtlIQXutZbCelLNL/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/lZJe94",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15171,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "8",
+      "slug": "hp-honor-8",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 8 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 29778,
+          "type": "testpoint",
+          "name": "honor_8_tp.jpg",
+          "size": "24.7 KB",
+          "sizeBytes": 25322,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WA0FaCbjd7RAsKMZbpzFY_s0iLBf670p/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/ARDmSX",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15172,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "8 Pro",
+      "slug": "hp-honor-8-pro",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 8 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [],
+      "files": []
+    },
+    {
+      "id": 18232,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "80",
+      "slug": "hp-honor-80",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor 80 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp",
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 33759,
+          "type": "isp",
+          "name": "honor_honor_80_isp.jpg",
+          "size": "124 KB",
+          "sizeBytes": 126991,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DvHyyKHGDy7lGdegBs9m7S1E-lQC5o3Z/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 33760,
+          "type": "loader",
+          "name": "80.elf",
+          "size": "948 KB",
+          "sizeBytes": 970800,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uCaEuculmSiZWbiaAJhK7qB71G2omuMF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15173,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "8A",
+      "slug": "hp-honor-8a",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 8A — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 29779,
+          "type": "testpoint",
+          "name": "honor_8a_tp.jpg",
+          "size": "84.4 KB",
+          "sizeBytes": 86395,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WRVXE5cOa2YtPwc2u6RjBrqLeyFl3ucC/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/bMhdcGn",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15174,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "8C",
+      "slug": "hp-honor-8c",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 8C — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint",
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 29780,
+          "type": "testpoint",
+          "name": "honor_8c_tp.jpg",
+          "size": "131.2 KB",
+          "sizeBytes": 134397,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1j7HYskKfpM5-rtLgEk8KTyCW9WK5BXlh/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/IpdfD",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29781,
+          "type": "loader",
+          "name": "8C.mbn",
+          "size": "256.4 KB",
+          "sizeBytes": 262580,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Xf0P2W8RWEUUFXreYL4EQnkvzXWPwu_U/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15175,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "8S",
+      "slug": "hp-honor-8s",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 8S — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 29782,
+          "type": "testpoint",
+          "name": "honor_8s_tp.jpg",
+          "size": "187.9 KB",
+          "sizeBytes": 192410,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1gB1fnDN1fOFfLqerT3OnEPJv1yKtJ_Az/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/oOYyE8pa",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15176,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "8X",
+      "slug": "hp-honor-8x",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 8X — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29783,
+          "type": "testpoint",
+          "name": "honor_8x_tp.png",
+          "size": "1.2 MB",
+          "sizeBytes": 1291577,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14lNPmpsmjdoUbnIu51t5zRFctSXBtuTv/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/4o12nbi",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29784,
+          "type": "isp",
+          "name": "honor_honor_8x_isp.jpg",
+          "size": "45.7 KB",
+          "sizeBytes": 46809,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZvF7g-rydlbf3fTpMYfKtcLjDqLM1KfI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19723,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "8X_MAX",
+      "slug": "hp-honor-8x_max",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Honor 8X_MAX — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36052,
+          "type": "loader",
+          "name": "8X_MAX.bin",
+          "size": "626.9 KB",
+          "sizeBytes": 641968,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1BWtxXCs3s1BytHTB6k6AAzN-5m8Ts4vj/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15177,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "9",
+      "slug": "hp-honor-9",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 9 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [],
+      "files": []
+    },
+    {
+      "id": 15178,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "9 Lite",
+      "slug": "hp-honor-9-lite",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 9 Lite — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [],
+      "files": []
+    },
+    {
+      "id": 15179,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "90",
+      "slug": "hp-honor-90",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 90 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29785,
+          "type": "testpoint",
+          "name": "honor_90_tp.jpg",
+          "size": "124.9 KB",
+          "sizeBytes": 127938,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1q9iguX-mROng_popwG30lr8ioCX4cq1s/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/KbPG",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29786,
+          "type": "isp",
+          "name": "honor_honor_90_isp.jpg",
+          "size": "76.2 KB",
+          "sizeBytes": 78062,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Hz03fd-e5Xou60x58LPF0UywpR8eCW1o/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15180,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "90 Lite",
+      "slug": "hp-honor-90-lite",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 90 Lite — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29787,
+          "type": "testpoint",
+          "name": "honor_90_lite_tp.jpg",
+          "size": "124.9 KB",
+          "sizeBytes": 127938,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ot5YjyfbzpZsOm39PzB_Tl4iL6Euvi9V/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/ROzMsj",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29788,
+          "type": "isp",
+          "name": "honor_honor_90_lite_isp.jpg",
+          "size": "76.2 KB",
+          "sizeBytes": 78062,
+          "gdrive_direct_url": "https://drive.google.com/file/d/11P4Mu8qMzm-ytlp6CF2gngglT6itxq8Q/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15181,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "90 Pro",
+      "slug": "hp-honor-90-pro",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 90 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 29789,
+          "type": "testpoint",
+          "name": "honor_90_pro_tp.jpg",
+          "size": "184 KB",
+          "sizeBytes": 188366,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hk9UUqvDtx0R_x19j3yPTiwG0jqvk6R1/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/veor",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15182,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "9A",
+      "slug": "hp-honor-9a",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 9A — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 29790,
+          "type": "testpoint",
+          "name": "honor_9a_tp.jpg",
+          "size": "101.5 KB",
+          "sizeBytes": 103965,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1B38Rp8s2GvfkEer_YlPKt2M64zCJ_fOX/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/BOe9Syu0",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15183,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "9I",
+      "slug": "hp-honor-9i",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 9I — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 29791,
+          "type": "testpoint",
+          "name": "honor_9i_tp.jpg",
+          "size": "166.6 KB",
+          "sizeBytes": 170589,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1A5OoYi9g6G951CEsEzxVVKr8qS5A1TP3/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/fr5be6",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15184,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "9S",
+      "slug": "hp-honor-9s",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 9S — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 29792,
+          "type": "testpoint",
+          "name": "honor_9s_tp.jpg",
+          "size": "166.6 KB",
+          "sizeBytes": 170589,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PsLAkrFeZxRoDqlNWrREb1vx272adKER/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/1DMJ",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15185,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "9X",
+      "slug": "hp-honor-9x",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 9X — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29793,
+          "type": "testpoint",
+          "name": "honor_9x_tp.jpg",
+          "size": "566.2 KB",
+          "sizeBytes": 579769,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1EuqfLF2u9wfMyRC6IZNz9ay4J2YTkglp/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/5HrkW",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29794,
+          "type": "isp",
+          "name": "honor_honor_9x_isp.jpg",
+          "size": "609.8 KB",
+          "sizeBytes": 624393,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1il94R_9NgNm9L5_rnHakc0RaxR6CY12g/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15186,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "9X Lite",
+      "slug": "hp-honor-9x-lite",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 9X Lite — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29795,
+          "type": "testpoint",
+          "name": "honor_9x_lite_tp.jpg",
+          "size": "154.1 KB",
+          "sizeBytes": 157791,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1AlXwho7-JjaOx4puShmGI1Sh_TcbmM5R/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/A2UJ",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29796,
+          "type": "isp",
+          "name": "honor_honor_9x_lite_isp.jpg",
+          "size": "524.8 KB",
+          "sizeBytes": 537430,
+          "gdrive_direct_url": "https://drive.google.com/file/d/10hSaGlzFrwmXn4Ph79jRxMVi-FcLfMlG/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15187,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "9X Pro",
+      "slug": "hp-honor-9x-pro",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor 9X Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29797,
+          "type": "testpoint",
+          "name": "honor_9x_pro_tp.png",
+          "size": "70 KB",
+          "sizeBytes": 71679,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zeaFVtFWCA9k56f1NZsBF2fYRgNP-uOV/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/tVXDgLV",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29798,
+          "type": "isp",
+          "name": "honor_honor_9x_pro_isp.jpg",
+          "size": "586.7 KB",
+          "sizeBytes": 600788,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15G0-gBcsGvIOdKjcayJqU3e6njnUnUmD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19726,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "HONOR MAGIC 4",
+      "slug": "hp-honor-honor-magic-4",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Honor HONOR MAGIC 4 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36055,
+          "type": "loader",
+          "name": "HONOR MAGIC 4.elf",
+          "size": "1.5 MB",
+          "sizeBytes": 1586824,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1FiN_lAxNGGN2984GQabvPHMSzGgM9fe2/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19725,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "HONOR X8 4G",
+      "slug": "hp-honor-honor-x8-4g",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Honor HONOR X8 4G — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36054,
+          "type": "loader",
+          "name": "HONOR X8 4G.mbn",
+          "size": "646.7 KB",
+          "sizeBytes": 662224,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dJiE9O2TxQvo4--q8g22ZcaTBGxHszLs/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19724,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "HONOR_PAD_8",
+      "slug": "hp-honor-honor_pad_8",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Honor HONOR_PAD_8 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36053,
+          "type": "loader",
+          "name": "HONOR_PAD_8.mbn",
+          "size": "649.4 KB",
+          "sizeBytes": 664976,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1fsS-FHwlEvORnkAPqSrhP-wI-yps9qLK/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19728,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "MAGIC_3",
+      "slug": "hp-honor-magic_3",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Honor MAGIC_3 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36057,
+          "type": "loader",
+          "name": "MAGIC_3.elf",
+          "size": "897.6 KB",
+          "sizeBytes": 919176,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19on3ynwzipM3Wa1a-tmWXVnkE5EwEXCk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19727,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "MAGIC_3_PRO",
+      "slug": "hp-honor-magic_3_pro",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Honor MAGIC_3_PRO — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36056,
+          "type": "loader",
+          "name": "MAGIC_3_PRO.elf",
+          "size": "897.6 KB",
+          "sizeBytes": 919176,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1SPbjzpxuP9JviaY5jeI2x_M_OqjVfPJF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19731,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "MAGIC_4_LITE",
+      "slug": "hp-honor-magic_4_lite",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Honor MAGIC_4_LITE — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36060,
+          "type": "loader",
+          "name": "MAGIC_4_LITE.elf",
+          "size": "677.6 KB",
+          "sizeBytes": 693876,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1h-1EKXRJJcV5zHadZtbGAbopH5eQASFJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18233,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "Magic 3",
+      "slug": "hp-honor-magic-3",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor Magic 3 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33761,
+          "type": "isp",
+          "name": "honor_honor_magic_3_isp.jpg",
+          "size": "609.8 KB",
+          "sizeBytes": 624393,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1AcKbdwexaPfmuLdteDyZ-fpXY5ikzTV6/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18234,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "Magic 4 Pro",
+      "slug": "hp-honor-magic-4-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor Magic 4 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33762,
+          "type": "isp",
+          "name": "honor_honor_magic_4_pro_isp.jpg",
+          "size": "609.8 KB",
+          "sizeBytes": 624393,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13sGAEsedQAZqELxuKtbuEtkJKGDRXlJO/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18235,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "Magic 5 Pro",
+      "slug": "hp-honor-magic-5-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor Magic 5 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33763,
+          "type": "isp",
+          "name": "honor_honor_magic_5_pro_isp.jpg",
+          "size": "586.7 KB",
+          "sizeBytes": 600788,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1alCZOPY0cukiqVv2wGfA6u1ToVMP2Lm2/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18236,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "Magic 6 Pro",
+      "slug": "hp-honor-magic-6-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor Magic 6 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33764,
+          "type": "isp",
+          "name": "honor_honor_magic_6_pro_isp.jpg",
+          "size": "609.8 KB",
+          "sizeBytes": 624393,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ltHfqxBOKgrItoUKNjvIx8tuIN2H4VD5/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19730,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "PAD_X7",
+      "slug": "hp-honor-pad_x7",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Honor PAD_X7 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36059,
+          "type": "loader",
+          "name": "PAD_X7.elf",
+          "size": "643.7 KB",
+          "sizeBytes": 659168,
+          "gdrive_direct_url": "https://drive.google.com/file/d/12skOJnvmmXdrXzIGfT4mAPH67fbpZNZh/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15188,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "Play",
+      "slug": "hp-honor-play",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor Play — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29799,
+          "type": "testpoint",
+          "name": "honor_play_tp.jpg",
+          "size": "144.5 KB",
+          "sizeBytes": 147943,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1JX0dwX2zyzh8U6c2CbH2YzqIVgVe4m7A/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/EyuzlE",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29800,
+          "type": "isp",
+          "name": "honor_honor_play_isp.jpg",
+          "size": "101.5 KB",
+          "sizeBytes": 103965,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1d_mB-S5AVIJ6-pY5e3joEg4idJCS298V/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15189,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "Play 3",
+      "slug": "hp-honor-play-3",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor Play 3 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29801,
+          "type": "testpoint",
+          "name": "honor_play_3_tp.jpg",
+          "size": "144.5 KB",
+          "sizeBytes": 147943,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-AKRuJIchaAqqRADVDxXyEr6zsefD_UK/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/VZKkGK",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29802,
+          "type": "isp",
+          "name": "honor_honor_play_3_isp.jpg",
+          "size": "609.8 KB",
+          "sizeBytes": 624393,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1e3RHW0OwDBOjxm-DSdiyN_yAytCKYHPP/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15190,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "Play 3E",
+      "slug": "hp-honor-play-3e",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor Play 3E — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 29803,
+          "type": "testpoint",
+          "name": "honor_play_3e_tp.jpg",
+          "size": "144.5 KB",
+          "sizeBytes": 147943,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1E88PAVN-f6zbZmCuEXbO6jmveeWfZa5c/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/gzEjS",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15191,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "Play 4",
+      "slug": "hp-honor-play-4",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor Play 4 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 29804,
+          "type": "testpoint",
+          "name": "honor_play_4_tp.jpg",
+          "size": "144.5 KB",
+          "sizeBytes": 147943,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1MU40aUpSgH5ZZn3tLVJ9dz7KtIIyw_t2/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/DoVngvjc",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15192,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "Play 4T",
+      "slug": "hp-honor-play-4t",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor Play 4T — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29805,
+          "type": "testpoint",
+          "name": "honor_play_4t_tp.jpg",
+          "size": "144.5 KB",
+          "sizeBytes": 147943,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zR9a4KmtUVKZdv1hF3sKRWJ9wYT4ggc_/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/tTBk",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29806,
+          "type": "isp",
+          "name": "honor_honor_play_4t_isp.jpg",
+          "size": "609.8 KB",
+          "sizeBytes": 624393,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1fmYqVHG73rrdGlPtKWCg4ZkoD9fRsE-o/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15193,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "Play 5",
+      "slug": "hp-honor-play-5",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor Play 5 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 29807,
+          "type": "testpoint",
+          "name": "honor_play_5_tp.jpg",
+          "size": "144.5 KB",
+          "sizeBytes": 147943,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1E379kkZXlVj6EG-erSYjnh2DLkf1RDT5/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/dxtz",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18237,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "Play 5T",
+      "slug": "hp-honor-play-5t",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor Play 5T — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33765,
+          "type": "isp",
+          "name": "honor_honor_play_5t_isp.jpg",
+          "size": "609.8 KB",
+          "sizeBytes": 624393,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17URvkHlcDFuer-cIW3A1AkI1emPjan7v/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19729,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "X30",
+      "slug": "hp-honor-x30",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Honor X30 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36058,
+          "type": "loader",
+          "name": "X30.elf",
+          "size": "677.5 KB",
+          "sizeBytes": 693764,
+          "gdrive_direct_url": "https://drive.google.com/file/d/16BxJKb76A3wtt8ly6hufwC0rTLiZK_Fg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19733,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "X40",
+      "slug": "hp-honor-x40",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Honor X40 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36062,
+          "type": "loader",
+          "name": "X40.elf",
+          "size": "677.5 KB",
+          "sizeBytes": 693764,
+          "gdrive_direct_url": "https://drive.google.com/file/d/12p9BpmaBijMU2Lw4tfvqnBbfQ8K3IfAG/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19732,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "X40_GT",
+      "slug": "hp-honor-x40_gt",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Honor X40_GT — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36061,
+          "type": "loader",
+          "name": "X40_GT.elf",
+          "size": "897.6 KB",
+          "sizeBytes": 919176,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1SQHyeQQCCew64A8BVnRBgvpoPRrvhz3s/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18238,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "X5",
+      "slug": "hp-honor-x5",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor X5 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33766,
+          "type": "isp",
+          "name": "honor_honor_x5_isp.jpg",
+          "size": "150.3 KB",
+          "sizeBytes": 153937,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1CGjZMt463FU7-qrWxTAafeL_eR64Qe32/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18239,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "X5 Plus",
+      "slug": "hp-honor-x5-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor X5 Plus — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33767,
+          "type": "isp",
+          "name": "honor_honor_x5_plus_isp.jpg",
+          "size": "150.3 KB",
+          "sizeBytes": 153937,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1RJs4jjM5PsNyWe8Sx8V3sr9TjSoADa9K/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15194,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "X6",
+      "slug": "hp-honor-x6",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor X6 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29808,
+          "type": "testpoint",
+          "name": "honor_x6_tp.jpg",
+          "size": "166.6 KB",
+          "sizeBytes": 170589,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1INcxOh-tUf1Gm2Di8Ob-pvOKYdr53AsV/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/HX8Npe6",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29809,
+          "type": "isp",
+          "name": "honor_honor_x6_isp.jpg",
+          "size": "166.6 KB",
+          "sizeBytes": 170589,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1C8fRldX7Zd_Vzy3xJMpRq0-wWYfAffkA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15195,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "X6a",
+      "slug": "hp-honor-x6a",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor X6a — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29810,
+          "type": "testpoint",
+          "name": "honor_x6a_tp.jpg",
+          "size": "151 KB",
+          "sizeBytes": 154671,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WxMob3PKMUDM1fArD6Akl9kD61_0OGBL/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/o7YsZlJx",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29811,
+          "type": "isp",
+          "name": "honor_honor_x6a_isp.jpg",
+          "size": "151 KB",
+          "sizeBytes": 154671,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1yWti3r6jccr38A1dkd2e8CjH2zSJJw0s/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15196,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "X7",
+      "slug": "hp-honor-x7",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor X7 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp",
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 29812,
+          "type": "testpoint",
+          "name": "honor_x7_tp.jpg",
+          "size": "103.4 KB",
+          "sizeBytes": 105930,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1H43TYRP4pBrCSdaZs_pINMuWV28g6oaK/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/XMiJ",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29813,
+          "type": "isp",
+          "name": "honor_honor_x7_isp.jpg",
+          "size": "191.3 KB",
+          "sizeBytes": 195851,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1M1FfrF7zVRIpMNFYf6bF8eKCHgTSo2PN/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29814,
+          "type": "loader",
+          "name": "X7.elf",
+          "size": "629.4 KB",
+          "sizeBytes": 644540,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1V_I46ehKCRI29h84V9MrOwBfEX0dmnid/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15197,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "X7a",
+      "slug": "hp-honor-x7a",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor X7a — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29815,
+          "type": "testpoint",
+          "name": "honor_x7a_tp.jpg",
+          "size": "68.1 KB",
+          "sizeBytes": 69746,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DIm3wYZ56nHHjC_kao5jnQ7_6NpqPk6m/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/I9qClmN",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29816,
+          "type": "isp",
+          "name": "honor_honor_x7a_isp.jpg",
+          "size": "191.3 KB",
+          "sizeBytes": 195851,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1S7PdNTjBkIQIk8dBKogCOaursvmGoYeg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15198,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "X7b",
+      "slug": "hp-honor-x7b",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor X7b — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29817,
+          "type": "testpoint",
+          "name": "honor_x7b_tp.jpg",
+          "size": "27 KB",
+          "sizeBytes": 27623,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wlfRT8q2jWpKLOgAgOI8dbOKFdfHQJUv/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/QSVTNf",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29818,
+          "type": "isp",
+          "name": "honor_honor_x7b_isp.jpg",
+          "size": "183.4 KB",
+          "sizeBytes": 187823,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1SHlSqjVZDohNyc9WQr_d6brLnfZaskxL/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15199,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "X8",
+      "slug": "hp-honor-x8",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor X8 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29819,
+          "type": "testpoint",
+          "name": "honor_x8_tp.jpg",
+          "size": "151.9 KB",
+          "sizeBytes": 155583,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1tOxopo2XFcnBMR129Km2l8M7bJw8m5kO/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/QJ1mg",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29820,
+          "type": "isp",
+          "name": "honor_honor_x8_isp.jpg",
+          "size": "135.1 KB",
+          "sizeBytes": 138355,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1jYo7pZGGhVwG__pCyw70etfvhDEAqCcO/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19735,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "X8C",
+      "slug": "hp-honor-x8c",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Honor X8C — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36064,
+          "type": "loader",
+          "name": "X8C.mbn",
+          "size": "646.7 KB",
+          "sizeBytes": 662224,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1n_kG2ncvfnHpEfwv4UZthSLMWmAw5M-B/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15200,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "X8a",
+      "slug": "hp-honor-x8a",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor X8a — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29821,
+          "type": "testpoint",
+          "name": "honor_x8a_tp.jpg",
+          "size": "364.1 KB",
+          "sizeBytes": 372873,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19AE_9HoFD_vz9YPbXs7dIIN8OAJk9mK3/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/Xxadp0",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29822,
+          "type": "isp",
+          "name": "honor_honor_x8a_isp.jpg",
+          "size": "134.4 KB",
+          "sizeBytes": 137576,
+          "gdrive_direct_url": "https://drive.google.com/file/d/18jmW2MdLyCvhp9-l6x0lMnwzMiisSFNt/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15201,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "X8b",
+      "slug": "hp-honor-x8b",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor X8b — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29823,
+          "type": "testpoint",
+          "name": "honor_x8b_tp.jpg",
+          "size": "149.2 KB",
+          "sizeBytes": 152787,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14ph_jwMauBuFlpBKrAZPgqnxuRcHKLwM/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/DMLn",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29824,
+          "type": "isp",
+          "name": "honor_honor_x8b_isp.jpg",
+          "size": "135.1 KB",
+          "sizeBytes": 138355,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xclbuOjLQwkG1NBRERq5nAci8_8ZhAm1/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15202,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "X9",
+      "slug": "hp-honor-x9",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor X9 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29825,
+          "type": "testpoint",
+          "name": "honor_x9_tp.jpg",
+          "size": "566.2 KB",
+          "sizeBytes": 579769,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1CDYQ5jN9zOoihTXXnhsIpbB1_gSd5sXT/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/Q982",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29826,
+          "type": "isp",
+          "name": "honor_honor_x9_isp.jpg",
+          "size": "183.3 KB",
+          "sizeBytes": 187683,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1n448n13sOHSw3OWH2kI0kmaGDzG1n7Fk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15203,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "X9a",
+      "slug": "hp-honor-x9a",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor X9a — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29827,
+          "type": "testpoint",
+          "name": "honor_x9a_tp.jpg",
+          "size": "133.3 KB",
+          "sizeBytes": 136491,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1M5FMZh89qUacCo6YXP48fx8c1S6mZ1UP/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/0KpJQdHc",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29828,
+          "type": "isp",
+          "name": "honor_honor_x9a_isp.jpg",
+          "size": "101.5 KB",
+          "sizeBytes": 103965,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zWkuNWBkgoH5cQw4zpFhAsSx874A8jL1/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15204,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "X9b",
+      "slug": "hp-honor-x9b",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Honor X9b — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29829,
+          "type": "testpoint",
+          "name": "honor_x9b_tp.jpg",
+          "size": "566.2 KB",
+          "sizeBytes": 579769,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HjEKWSrDShy3U_311VczhtyV-nBnj_wO/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/9R8zE",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29830,
+          "type": "isp",
+          "name": "honor_honor_x9b_isp.jpg",
+          "size": "609.8 KB",
+          "sizeBytes": 624393,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1V2JcQREfXoiZYrTITP-wymdqGmkd-ct_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16686,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] 10 Lite",
+      "slug": "hp-honor-isp-10-lite",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] 10 Lite — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32213,
+          "type": "testpoint",
+          "name": "honor_honor_10_lite_isp.jpg",
+          "size": "293 KB",
+          "sizeBytes": 300050,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1jX1WGHtZbcyr6bXJXWs23DUGH32bsz7C/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16687,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] 100",
+      "slug": "hp-honor-isp-100",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] 100 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32214,
+          "type": "testpoint",
+          "name": "honor_honor_100_isp.jpg",
+          "size": "229.3 KB",
+          "sizeBytes": 234782,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1bWeetGP8t_tfyLv5K6n9Z_64HeGDSkxF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16688,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] 20",
+      "slug": "hp-honor-isp-20",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] 20 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32215,
+          "type": "testpoint",
+          "name": "honor_honor_20_isp.jpg",
+          "size": "191.3 KB",
+          "sizeBytes": 195851,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1gHLesQPqWRT64oqhAJ_YeP8fK8LUP5dn/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16689,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] 20 Lite",
+      "slug": "hp-honor-isp-20-lite",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] 20 Lite — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32216,
+          "type": "testpoint",
+          "name": "honor_honor_20_lite_isp.jpg",
+          "size": "609.8 KB",
+          "sizeBytes": 624393,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZLPZgkA92l4I6-9C-VGV8AHpizMjp23j/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16690,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] 20 Pro",
+      "slug": "hp-honor-isp-20-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] 20 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32217,
+          "type": "testpoint",
+          "name": "honor_honor_20_pro_isp.jpg",
+          "size": "609.8 KB",
+          "sizeBytes": 624393,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1LmsehrRw3fv7KRNbwphid7oATF3U9zDQ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16691,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] 200",
+      "slug": "hp-honor-isp-200",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] 200 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32218,
+          "type": "testpoint",
+          "name": "honor_honor_200_isp.jpg",
+          "size": "32.2 KB",
+          "sizeBytes": 32949,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1lb8IxMcDjL7Q-gukIGogApm1hhMJ37bV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16692,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] 50",
+      "slug": "hp-honor-isp-50",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] 50 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32219,
+          "type": "testpoint",
+          "name": "honor_honor_50_isp.jpg",
+          "size": "229.3 KB",
+          "sizeBytes": 234782,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xYkhRQV3-x-zqA2ZG4zF3FpQmtgUBh70/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16693,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] 50 Lite",
+      "slug": "hp-honor-isp-50-lite",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] 50 Lite — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32220,
+          "type": "testpoint",
+          "name": "honor_honor_50_lite_isp.jpg",
+          "size": "153.5 KB",
+          "sizeBytes": 157187,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Hl_BHKYmP39payI2R1AGazT5iMVtALaA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16694,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] 70",
+      "slug": "hp-honor-isp-70",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] 70 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32221,
+          "type": "testpoint",
+          "name": "honor_honor_70_isp.jpg",
+          "size": "609.8 KB",
+          "sizeBytes": 624393,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dVUWaFdgDaDlPMIwqgEAUGORqmXvJI44/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16695,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] 80",
+      "slug": "hp-honor-isp-80",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] 80 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32222,
+          "type": "testpoint",
+          "name": "honor_honor_80_isp.jpg",
+          "size": "124 KB",
+          "sizeBytes": 126991,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DvHyyKHGDy7lGdegBs9m7S1E-lQC5o3Z/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16696,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] 8X",
+      "slug": "hp-honor-isp-8x",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] 8X — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32223,
+          "type": "testpoint",
+          "name": "honor_honor_8x_isp.jpg",
+          "size": "45.7 KB",
+          "sizeBytes": 46809,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZvF7g-rydlbf3fTpMYfKtcLjDqLM1KfI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16697,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] 90",
+      "slug": "hp-honor-isp-90",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] 90 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32224,
+          "type": "testpoint",
+          "name": "honor_honor_90_isp.jpg",
+          "size": "76.2 KB",
+          "sizeBytes": 78062,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Hz03fd-e5Xou60x58LPF0UywpR8eCW1o/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16698,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] 90 Lite",
+      "slug": "hp-honor-isp-90-lite",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] 90 Lite — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32225,
+          "type": "testpoint",
+          "name": "honor_honor_90_lite_isp.jpg",
+          "size": "76.2 KB",
+          "sizeBytes": 78062,
+          "gdrive_direct_url": "https://drive.google.com/file/d/11P4Mu8qMzm-ytlp6CF2gngglT6itxq8Q/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16699,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] 9X",
+      "slug": "hp-honor-isp-9x",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] 9X — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32226,
+          "type": "testpoint",
+          "name": "honor_honor_9x_isp.jpg",
+          "size": "609.8 KB",
+          "sizeBytes": 624393,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1il94R_9NgNm9L5_rnHakc0RaxR6CY12g/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16700,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] 9X Lite",
+      "slug": "hp-honor-isp-9x-lite",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] 9X Lite — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32227,
+          "type": "testpoint",
+          "name": "honor_honor_9x_lite_isp.jpg",
+          "size": "524.8 KB",
+          "sizeBytes": 537430,
+          "gdrive_direct_url": "https://drive.google.com/file/d/10hSaGlzFrwmXn4Ph79jRxMVi-FcLfMlG/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16701,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] 9X Pro",
+      "slug": "hp-honor-isp-9x-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] 9X Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32228,
+          "type": "testpoint",
+          "name": "honor_honor_9x_pro_isp.jpg",
+          "size": "586.7 KB",
+          "sizeBytes": 600788,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15G0-gBcsGvIOdKjcayJqU3e6njnUnUmD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16702,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] Magic 3",
+      "slug": "hp-honor-isp-magic-3",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] Magic 3 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32229,
+          "type": "testpoint",
+          "name": "honor_honor_magic_3_isp.jpg",
+          "size": "609.8 KB",
+          "sizeBytes": 624393,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1AcKbdwexaPfmuLdteDyZ-fpXY5ikzTV6/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16703,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] Magic 4 Pro",
+      "slug": "hp-honor-isp-magic-4-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] Magic 4 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32230,
+          "type": "testpoint",
+          "name": "honor_honor_magic_4_pro_isp.jpg",
+          "size": "609.8 KB",
+          "sizeBytes": 624393,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13sGAEsedQAZqELxuKtbuEtkJKGDRXlJO/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16704,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] Magic 5 Pro",
+      "slug": "hp-honor-isp-magic-5-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] Magic 5 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32231,
+          "type": "testpoint",
+          "name": "honor_honor_magic_5_pro_isp.jpg",
+          "size": "586.7 KB",
+          "sizeBytes": 600788,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1alCZOPY0cukiqVv2wGfA6u1ToVMP2Lm2/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16705,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] Magic 6 Pro",
+      "slug": "hp-honor-isp-magic-6-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] Magic 6 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32232,
+          "type": "testpoint",
+          "name": "honor_honor_magic_6_pro_isp.jpg",
+          "size": "609.8 KB",
+          "sizeBytes": 624393,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ltHfqxBOKgrItoUKNjvIx8tuIN2H4VD5/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16706,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] Play",
+      "slug": "hp-honor-isp-play",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] Play — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32233,
+          "type": "testpoint",
+          "name": "honor_honor_play_isp.jpg",
+          "size": "101.5 KB",
+          "sizeBytes": 103965,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1d_mB-S5AVIJ6-pY5e3joEg4idJCS298V/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16707,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] Play 3",
+      "slug": "hp-honor-isp-play-3",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] Play 3 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32234,
+          "type": "testpoint",
+          "name": "honor_honor_play_3_isp.jpg",
+          "size": "609.8 KB",
+          "sizeBytes": 624393,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1e3RHW0OwDBOjxm-DSdiyN_yAytCKYHPP/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16708,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] Play 4T",
+      "slug": "hp-honor-isp-play-4t",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] Play 4T — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32235,
+          "type": "testpoint",
+          "name": "honor_honor_play_4t_isp.jpg",
+          "size": "609.8 KB",
+          "sizeBytes": 624393,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1fmYqVHG73rrdGlPtKWCg4ZkoD9fRsE-o/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16709,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] Play 5T",
+      "slug": "hp-honor-isp-play-5t",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] Play 5T — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32236,
+          "type": "testpoint",
+          "name": "honor_honor_play_5t_isp.jpg",
+          "size": "609.8 KB",
+          "sizeBytes": 624393,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17URvkHlcDFuer-cIW3A1AkI1emPjan7v/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16710,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] X5",
+      "slug": "hp-honor-isp-x5",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] X5 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32237,
+          "type": "testpoint",
+          "name": "honor_honor_x5_isp.jpg",
+          "size": "150.3 KB",
+          "sizeBytes": 153937,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1CGjZMt463FU7-qrWxTAafeL_eR64Qe32/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16711,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] X5 Plus",
+      "slug": "hp-honor-isp-x5-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] X5 Plus — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32238,
+          "type": "testpoint",
+          "name": "honor_honor_x5_plus_isp.jpg",
+          "size": "150.3 KB",
+          "sizeBytes": 153937,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1RJs4jjM5PsNyWe8Sx8V3sr9TjSoADa9K/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16712,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] X6",
+      "slug": "hp-honor-isp-x6",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] X6 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32239,
+          "type": "testpoint",
+          "name": "honor_honor_x6_isp.jpg",
+          "size": "166.6 KB",
+          "sizeBytes": 170589,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1C8fRldX7Zd_Vzy3xJMpRq0-wWYfAffkA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16713,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] X6a",
+      "slug": "hp-honor-isp-x6a",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] X6a — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32240,
+          "type": "testpoint",
+          "name": "honor_honor_x6a_isp.jpg",
+          "size": "151 KB",
+          "sizeBytes": 154671,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1yWti3r6jccr38A1dkd2e8CjH2zSJJw0s/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16714,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] X7",
+      "slug": "hp-honor-isp-x7",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] X7 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32241,
+          "type": "testpoint",
+          "name": "honor_honor_x7_isp.jpg",
+          "size": "191.3 KB",
+          "sizeBytes": 195851,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1M1FfrF7zVRIpMNFYf6bF8eKCHgTSo2PN/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16715,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] X7a",
+      "slug": "hp-honor-isp-x7a",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] X7a — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32242,
+          "type": "testpoint",
+          "name": "honor_honor_x7a_isp.jpg",
+          "size": "191.3 KB",
+          "sizeBytes": 195851,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1S7PdNTjBkIQIk8dBKogCOaursvmGoYeg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16716,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] X7b",
+      "slug": "hp-honor-isp-x7b",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] X7b — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32243,
+          "type": "testpoint",
+          "name": "honor_honor_x7b_isp.jpg",
+          "size": "183.4 KB",
+          "sizeBytes": 187823,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1SHlSqjVZDohNyc9WQr_d6brLnfZaskxL/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16717,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] X8",
+      "slug": "hp-honor-isp-x8",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] X8 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32244,
+          "type": "testpoint",
+          "name": "honor_honor_x8_isp.jpg",
+          "size": "135.1 KB",
+          "sizeBytes": 138355,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1jYo7pZGGhVwG__pCyw70etfvhDEAqCcO/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16718,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] X8a",
+      "slug": "hp-honor-isp-x8a",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] X8a — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32245,
+          "type": "testpoint",
+          "name": "honor_honor_x8a_isp.jpg",
+          "size": "134.4 KB",
+          "sizeBytes": 137576,
+          "gdrive_direct_url": "https://drive.google.com/file/d/18jmW2MdLyCvhp9-l6x0lMnwzMiisSFNt/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16719,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] X8b",
+      "slug": "hp-honor-isp-x8b",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] X8b — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32246,
+          "type": "testpoint",
+          "name": "honor_honor_x8b_isp.jpg",
+          "size": "135.1 KB",
+          "sizeBytes": 138355,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xclbuOjLQwkG1NBRERq5nAci8_8ZhAm1/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16720,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] X9",
+      "slug": "hp-honor-isp-x9",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] X9 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32247,
+          "type": "testpoint",
+          "name": "honor_honor_x9_isp.jpg",
+          "size": "183.3 KB",
+          "sizeBytes": 187683,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1n448n13sOHSw3OWH2kI0kmaGDzG1n7Fk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16721,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] X9a",
+      "slug": "hp-honor-isp-x9a",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] X9a — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32248,
+          "type": "testpoint",
+          "name": "honor_honor_x9a_isp.jpg",
+          "size": "101.5 KB",
+          "sizeBytes": 103965,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zWkuNWBkgoH5cQw4zpFhAsSx874A8jL1/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16722,
+      "category": "hp",
+      "brand": "Honor",
+      "brandSlug": "honor",
+      "modelName": "[ISP] X9b",
+      "slug": "hp-honor-isp-x9b",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Honor [ISP] X9b — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32249,
+          "type": "testpoint",
+          "name": "honor_honor_x9b_isp.jpg",
+          "size": "609.8 KB",
+          "sizeBytes": 624393,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1V2JcQREfXoiZYrTITP-wymdqGmkd-ct_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "category": "laptop",
+  "brand": "Axioo",
+  "brandSlug": "axioo",
+  "totalModels": 6,
+  "models": [
+    {
+      "id": 19160,
+      "category": "laptop",
+      "brand": "Axioo",
+      "brandSlug": "axioo",
+      "modelName": "CLEVO W550EU - 6-71-W5400-D02 - 6-7P-W5406-001",
+      "slug": "laptop-axioo-clevo-w550eu-6-71-w5400-d02-6-7p-w5406-001",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Axioo CLEVO W550EU - 6-71-W5400-D02 - 6-7P-W5406-001 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34741,
+          "type": "schematic",
+          "name": "AXIOO - CLEVO W550EU - 6-71-W5400-D02 - 6-7P-W5406-001 - Schematic.pdf",
+          "size": "7 MB",
+          "sizeBytes": 7305256,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kLJ3AZl9qLyQ3lfyFHFzVWH_kSceWgq2/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19158,
+      "category": "laptop",
+      "brand": "Axioo",
+      "brandSlug": "axioo",
+      "modelName": "Clevo W21xCU - W210CU ( 6-71-W2100-D04) W210CU W211 W215 M1115",
+      "slug": "laptop-axioo-clevo-w21xcu-w210cu-6-71-w2100-d04-w210cu-w211-w215-m1115",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Axioo Clevo W21xCU - W210CU ( 6-71-W2100-D04) W210CU W211 W215 M1115 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34739,
+          "type": "schematic",
+          "name": "AXIOO - Clevo W21xCU - W210CU ( 6-71-W2100-D04) W210CU W211 W215 M1115 - Schematic.pdf",
+          "size": "3 MB",
+          "sizeBytes": 3122100,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1C6Qdy25HkCjWNHTVGseFXLgaxZ8esZ87/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19159,
+      "category": "laptop",
+      "brand": "Axioo",
+      "brandSlug": "axioo",
+      "modelName": "Clevo W24xCZ - 6-71-W24Z0-D02 6-7P-W24Z5-002 W24ACZMB-0D",
+      "slug": "laptop-axioo-clevo-w24xcz-6-71-w24z0-d02-6-7p-w24z5-002-w24aczmb-0d",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Axioo Clevo W24xCZ - 6-71-W24Z0-D02 6-7P-W24Z5-002 W24ACZMB-0D — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34740,
+          "type": "schematic",
+          "name": "AXIOO - Clevo W24xCZ - 6-71-W24Z0-D02 6-7P-W24Z5-002 W24ACZMB-0D - Schematic.pdf",
+          "size": "5.3 MB",
+          "sizeBytes": 5601851,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1FvdZ2onydju8NAoTJH9P2UYAM3PHx2hG/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19161,
+      "category": "laptop",
+      "brand": "Axioo",
+      "brandSlug": "axioo",
+      "modelName": "ECS MB40IA REV B1 (Axioo HNM)",
+      "slug": "laptop-axioo-ecs-mb40ia-rev-b1-axioo-hnm",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Axioo ECS MB40IA REV B1 (Axioo HNM) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34742,
+          "type": "schematic",
+          "name": "AXIOO - ECS MB40IA REV B1 (Axioo HNM) - Schematic.pdf",
+          "size": "1.8 MB",
+          "sizeBytes": 1915509,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_qtwwYdRg4KOFckD5w-tvZ-wNu6YOp-g/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19156,
+      "category": "laptop",
+      "brand": "Axioo",
+      "brandSlug": "axioo",
+      "modelName": "axioo PJM M1100 1115",
+      "slug": "laptop-axioo-axioo-pjm-m1100-1115",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Axioo axioo PJM M1100 1115 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34737,
+          "type": "schematic",
+          "name": "AXIOO - axioo PJM M1100 1115 - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1397931,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1aKPoVnKp3w3hQ6g-ug0tjXRlnNsc04MN/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19157,
+      "category": "laptop",
+      "brand": "Axioo",
+      "brandSlug": "axioo",
+      "modelName": "clevo 6-71-w24h0-d02a gp",
+      "slug": "laptop-axioo-clevo-6-71-w24h0-d02a-gp",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Axioo clevo 6-71-w24h0-d02a gp — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34738,
+          "type": "schematic",
+          "name": "AXIOO - clevo 6-71-w24h0-d02a gp - Schematic.pdf",
+          "size": "4.4 MB",
+          "sizeBytes": 4607903,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1S12a0qumzWE0yHQdvprWQqziX67QRrPm/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

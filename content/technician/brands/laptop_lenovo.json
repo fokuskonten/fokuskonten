@@ -1,0 +1,4198 @@
+{
+  "category": "laptop",
+  "brand": "Lenovo",
+  "brandSlug": "lenovo",
+  "totalModels": 155,
+  "models": [
+    {
+      "id": 19363,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "12206-sa",
+      "slug": "laptop-lenovo-12206-sa",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo 12206-sa — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34948,
+          "type": "boardview",
+          "name": "LENOVO - 12206-sa - Boardview.brd",
+          "size": "219.6 KB",
+          "sizeBytes": 224880,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13X2N_79O32beAmbYuL0UIgy4cgFTk8mW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19362,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "12206-sa (12206-sa)",
+      "slug": "laptop-lenovo-12206-sa-12206-sa",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo 12206-sa (12206-sa) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34947,
+          "type": "boardview",
+          "name": "LENOVO - 12206-sa - 12206-sa - Boardview.brd",
+          "size": "219.6 KB",
+          "sizeBytes": 224880,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZNqQYldYjmi-PPqgTOHhjTDTNlysrsR8/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19364,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "715G3590-M0A-000-0060 B300 CIG41S V1.1 RA 0118 LENOVO B300",
+      "slug": "laptop-lenovo-715g3590-m0a-000-0060-b300-cig41s-v11-ra-0118-lenovo-b300",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo 715G3590-M0A-000-0060 B300 CIG41S V1.1 RA 0118 LENOVO B300 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34949,
+          "type": "schematic",
+          "name": "LENOVO - 715G3590-M0A-000-0060 B300 CIG41S V1.1 RA 0118 LENOVO B300 - Schematic.pdf",
+          "size": "3.4 MB",
+          "sizeBytes": 3560246,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1yLF_RUipNHbMzMbLu_KX3fpmrWW3oBqR/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19366,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "ACLU7 ACLU8 NM-A291 r0.1 0925 r0.1 1216 G50-70M",
+      "slug": "laptop-lenovo-aclu7-aclu8-nm-a291-r01-0925-r01-1216-g50-70m",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-A291",
+      "officialTitle": "Lenovo ACLU7 ACLU8 NM-A291 r0.1 0925 r0.1 1216 G50-70M (NM-A291) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34951,
+          "type": "schematic",
+          "name": "LENOVO - ACLU7 ACLU8 NM-A291 r0.1 0925 r0.1 1216 G50-70M - Schematic.pdf",
+          "size": "1.5 MB",
+          "sizeBytes": 1607284,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17p7FUAC8ImckSXcjgGqf8rdxGXptpm5N/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19365,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "ACLU7 ACLU8 NM-A291 r0.1 0925 r0.1 1216 G50-70M skema",
+      "slug": "laptop-lenovo-aclu7-aclu8-nm-a291-r01-0925-r01-1216-g50-70m-skema",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-A291",
+      "officialTitle": "Lenovo ACLU7 ACLU8 NM-A291 r0.1 0925 r0.1 1216 G50-70M skema (NM-A291) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34950,
+          "type": "schematic",
+          "name": "LENOVO - ACLU7 ACLU8 NM-A291 r0.1 0925 r0.1 1216 G50-70M skema - Schematic.pdf",
+          "size": "1.5 MB",
+          "sizeBytes": 1607284,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PNucZM5Eh1Cw171A8FXc0B9wpuh8T-mE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19367,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "ACLUA NM-A273 R0.3 1226 R1.0 1226 LENOVO Z50-70(1)",
+      "slug": "laptop-lenovo-aclua-nm-a273-r03-1226-r10-1226-lenovo-z50-701",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-A273",
+      "officialTitle": "Lenovo ACLUA NM-A273 R0.3 1226 R1.0 1226 LENOVO Z50-70(1) (NM-A273) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34952,
+          "type": "schematic",
+          "name": "LENOVO - ACLUA NM-A273 R0.3 1226 R1.0 1226 LENOVO Z50-70(1) - Schematic.pdf",
+          "size": "1.4 MB",
+          "sizeBytes": 1465992,
+          "gdrive_direct_url": "https://drive.google.com/file/d/142dywY3rBaV88z5EdJoe67k1bzaUOEB3/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19368,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "AILZA NM-A181 REF1.0",
+      "slug": "laptop-lenovo-ailza-nm-a181-ref10",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-A181",
+      "officialTitle": "Lenovo AILZA NM-A181 REF1.0 (NM-A181) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34953,
+          "type": "schematic",
+          "name": "LENOVO - AILZA NM-A181 REF1.0 - Schematic.pdf",
+          "size": "2.6 MB",
+          "sizeBytes": 2687374,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1oa8fhzg-GyNb2KWWNTbXm9yPR1ybeius/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19369,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "B475 11230-1 0802 LENOVO skema",
+      "slug": "laptop-lenovo-b475-11230-1-0802-lenovo-skema",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "11230-1",
+      "officialTitle": "Lenovo B475 11230-1 0802 LENOVO skema (11230-1) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34954,
+          "type": "schematic",
+          "name": "LENOVO - B475 11230-1 0802 LENOVO skema - Schematic.pdf",
+          "size": "1.7 MB",
+          "sizeBytes": 1771448,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ygs-Q0cBV0HOVNz5NnHzdQzRrSZJjPKf/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19370,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "B480 B490 M490 Wintron LA48 LA480 MB 11264-1M",
+      "slug": "laptop-lenovo-b480-b490-m490-wintron-la48-la480-mb-11264-1m",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo B480 B490 M490 Wintron LA48 LA480 MB 11264-1M — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34955,
+          "type": "schematic",
+          "name": "LENOVO - B480 B490 M490 Wintron LA48 LA480 MB 11264-1M - Schematic.pdf",
+          "size": "1.9 MB",
+          "sizeBytes": 2008386,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_uSEAV2WLmHb-IrXy3v6Lxk38XxHgStt/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19371,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "BM5080 LENOVO IDEAPAD S100",
+      "slug": "laptop-lenovo-bm5080-lenovo-ideapad-s100",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo BM5080 LENOVO IDEAPAD S100 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34956,
+          "type": "schematic",
+          "name": "LENOVO - BM5080 LENOVO IDEAPAD S100 - Schematic.pdf",
+          "size": "766.1 KB",
+          "sizeBytes": 784470,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1l7deIGj7NRfnB1jE4EamkgWO6KA_pcPL/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19380,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "COMPAL QIQY5 LA-8691P LA-8692P LS8691 LS8692 LS8693 LS8695 LS8696 LENOVO Y400 (LS-8691PR01 20120305(1))",
+      "slug": "laptop-lenovo-compal-qiqy5-la-8691p-la-8692p-ls8691-ls8692-ls8693-ls8695-ls8696-lenovo-y400-ls-8691pr01-201203051",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-8691P",
+      "officialTitle": "Lenovo COMPAL QIQY5 LA-8691P LA-8692P LS8691 LS8692 LS8693 LS8695 LS8696 LENOVO Y400 (LS-8691PR01 20120305(1)) (LA-8691P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34965,
+          "type": "schematic",
+          "name": "LENOVO - COMPAL QIQY5 LA-8691P LA-8692P LS8691 LS8692 LS8693 LS8695 LS8696 LENOVO Y400 - LS-8691PR01 20120305(1) - Schematic.pdf",
+          "size": "43.3 KB",
+          "sizeBytes": 44322,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Z0m5XtENfaks7a0y2gcxblE71HulNVz2/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19381,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "COMPAL QIQY5 LA-8691P LA-8692P LS8691 LS8692 LS8693 LS8695 LS8696 LENOVO Y400 (LS-8691PR01 20120305)",
+      "slug": "laptop-lenovo-compal-qiqy5-la-8691p-la-8692p-ls8691-ls8692-ls8693-ls8695-ls8696-lenovo-y400-ls-8691pr01-20120305",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-8691P",
+      "officialTitle": "Lenovo COMPAL QIQY5 LA-8691P LA-8692P LS8691 LS8692 LS8693 LS8695 LS8696 LENOVO Y400 (LS-8691PR01 20120305) (LA-8691P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34966,
+          "type": "schematic",
+          "name": "LENOVO - COMPAL QIQY5 LA-8691P LA-8692P LS8691 LS8692 LS8693 LS8695 LS8696 LENOVO Y400 - LS-8691PR01 20120305 - Schematic.pdf",
+          "size": "43.3 KB",
+          "sizeBytes": 44322,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19sqyP_7-u_vDJOOwUmYqfHWl6kIaV4TB/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19384,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "COMPAL QIQY5 LA-8691P LA-8692P LS8691 LS8692 LS8693 LS8695 LS8696 LENOVO Y400 (LS-8695PR01 20120305)",
+      "slug": "laptop-lenovo-compal-qiqy5-la-8691p-la-8692p-ls8691-ls8692-ls8693-ls8695-ls8696-lenovo-y400-ls-8695pr01-20120305",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-8691P",
+      "officialTitle": "Lenovo COMPAL QIQY5 LA-8691P LA-8692P LS8691 LS8692 LS8693 LS8695 LS8696 LENOVO Y400 (LS-8695PR01 20120305) (LA-8691P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34969,
+          "type": "schematic",
+          "name": "LENOVO - COMPAL QIQY5 LA-8691P LA-8692P LS8691 LS8692 LS8693 LS8695 LS8696 LENOVO Y400 - LS-8695PR01 20120305 - Schematic.pdf",
+          "size": "39.2 KB",
+          "sizeBytes": 40176,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Z-pan6SdKgouX6CUE45jIVEmXXSr2NY1/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19385,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "COMPAL QIQY5 LA-8691P LA-8692P LS8691 LS8692 LS8693 LS8695 LS8696 LENOVO Y400 (LS-8696PR02 0214)",
+      "slug": "laptop-lenovo-compal-qiqy5-la-8691p-la-8692p-ls8691-ls8692-ls8693-ls8695-ls8696-lenovo-y400-ls-8696pr02-0214",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-8691P",
+      "officialTitle": "Lenovo COMPAL QIQY5 LA-8691P LA-8692P LS8691 LS8692 LS8693 LS8695 LS8696 LENOVO Y400 (LS-8696PR02 0214) (LA-8691P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34970,
+          "type": "schematic",
+          "name": "LENOVO - COMPAL QIQY5 LA-8691P LA-8692P LS8691 LS8692 LS8693 LS8695 LS8696 LENOVO Y400 - LS-8696PR02 0214 - Schematic.pdf",
+          "size": "48.5 KB",
+          "sizeBytes": 49633,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1SoX7GmjQ1mMhc3mivtesk2k4Lkb-Wx9e/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19386,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "COMPAL QIQY5 LA-8691P LA-8692P LS8691 LS8692 LS8693 LS8695 LS8696 LENOVO Y400 (QIQY5-LA8691PR02 2012-0316A)",
+      "slug": "laptop-lenovo-compal-qiqy5-la-8691p-la-8692p-ls8691-ls8692-ls8693-ls8695-ls8696-lenovo-y400-qiqy5-la8691pr02-2012-0316a",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-8691P",
+      "officialTitle": "Lenovo COMPAL QIQY5 LA-8691P LA-8692P LS8691 LS8692 LS8693 LS8695 LS8696 LENOVO Y400 (QIQY5-LA8691PR02 2012-0316A) (LA-8691P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34971,
+          "type": "schematic",
+          "name": "LENOVO - COMPAL QIQY5 LA-8691P LA-8692P LS8691 LS8692 LS8693 LS8695 LS8696 LENOVO Y400 - QIQY5-LA8691PR02 2012-0316A - Schematic.pdf",
+          "size": "1.9 MB",
+          "sizeBytes": 2031429,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wxIwMDl0pNRrgqRNZ9vfhYrS2mv3xgZK/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19387,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "COMPAL QIQY5 LA-8691P LA-8692P LS8691 LS8692 LS8693 LS8695 LS8696 LENOVO Y400 (QIQY5-LA8691PR03 2012-0510A)",
+      "slug": "laptop-lenovo-compal-qiqy5-la-8691p-la-8692p-ls8691-ls8692-ls8693-ls8695-ls8696-lenovo-y400-qiqy5-la8691pr03-2012-0510a",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-8691P",
+      "officialTitle": "Lenovo COMPAL QIQY5 LA-8691P LA-8692P LS8691 LS8692 LS8693 LS8695 LS8696 LENOVO Y400 (QIQY5-LA8691PR03 2012-0510A) (LA-8691P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34972,
+          "type": "schematic",
+          "name": "LENOVO - COMPAL QIQY5 LA-8691P LA-8692P LS8691 LS8692 LS8693 LS8695 LS8696 LENOVO Y400 - QIQY5-LA8691PR03 2012-0510A - Schematic.pdf",
+          "size": "2 MB",
+          "sizeBytes": 2050115,
+          "gdrive_direct_url": "https://drive.google.com/file/d/18Ih8yWdcZbxYmBlGg72ILelZKZKUN-E9/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19379,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "COMPAL QIQY5 LA-8691P LA-8692P LS8691 LS8692 LS8693 LS8695 LS8696 LENOVO Y400 (la- 8692pr02 0427-1 no nvsr)",
+      "slug": "laptop-lenovo-compal-qiqy5-la-8691p-la-8692p-ls8691-ls8692-ls8693-ls8695-ls8696-lenovo-y400-la-8692pr02-0427-1-no-nvsr",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-8691P",
+      "officialTitle": "Lenovo COMPAL QIQY5 LA-8691P LA-8692P LS8691 LS8692 LS8693 LS8695 LS8696 LENOVO Y400 (la- 8692pr02 0427-1 no nvsr) (LA-8691P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34964,
+          "type": "schematic",
+          "name": "LENOVO - COMPAL QIQY5 LA-8691P LA-8692P LS8691 LS8692 LS8693 LS8695 LS8696 LENOVO Y400 - la- 8692pr02 0427-1 no nvsr - Schematic.pdf",
+          "size": "2 MB",
+          "sizeBytes": 2114125,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1LtmfcAXPlhsqBPf-UPKmAjPws-vHx1lR/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19382,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "COMPAL QIQY5 LA-8691P LA-8692P LS8691 LS8692 LS8693 LS8695 LS8696 LENOVO Y400 (ls-8692pr02 0305)",
+      "slug": "laptop-lenovo-compal-qiqy5-la-8691p-la-8692p-ls8691-ls8692-ls8693-ls8695-ls8696-lenovo-y400-ls-8692pr02-0305",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-8691P",
+      "officialTitle": "Lenovo COMPAL QIQY5 LA-8691P LA-8692P LS8691 LS8692 LS8693 LS8695 LS8696 LENOVO Y400 (ls-8692pr02 0305) (LA-8691P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34967,
+          "type": "schematic",
+          "name": "LENOVO - COMPAL QIQY5 LA-8691P LA-8692P LS8691 LS8692 LS8693 LS8695 LS8696 LENOVO Y400 - ls-8692pr02 0305 - Schematic.pdf",
+          "size": "573 KB",
+          "sizeBytes": 586791,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19ExT8ScjMG-2rDQfgXipBj23yFIgPEtp/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19383,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "COMPAL QIQY5 LA-8691P LA-8692P LS8691 LS8692 LS8693 LS8695 LS8696 LENOVO Y400 (ls-8693p 20120306)",
+      "slug": "laptop-lenovo-compal-qiqy5-la-8691p-la-8692p-ls8691-ls8692-ls8693-ls8695-ls8696-lenovo-y400-ls-8693p-20120306",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-8691P",
+      "officialTitle": "Lenovo COMPAL QIQY5 LA-8691P LA-8692P LS8691 LS8692 LS8693 LS8695 LS8696 LENOVO Y400 (ls-8693p 20120306) (LA-8691P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34968,
+          "type": "schematic",
+          "name": "LENOVO - COMPAL QIQY5 LA-8691P LA-8692P LS8691 LS8692 LS8693 LS8695 LS8696 LENOVO Y400 - ls-8693p 20120306 - Schematic.pdf",
+          "size": "72.1 KB",
+          "sizeBytes": 73853,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dKNEtpZJcDTepcNWw34ktiHOtGOIwHq8/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19372,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Compal LA-6232P r2.0",
+      "slug": "laptop-lenovo-compal-la-6232p-r20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-6232P",
+      "officialTitle": "Lenovo Compal LA-6232P r2.0 (LA-6232P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34957,
+          "type": "schematic",
+          "name": "LENOVO - Compal LA-6232P r2.0 - Schematic.pdf",
+          "size": "4.5 MB",
+          "sizeBytes": 4748063,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1bJjAZyYzOKIAuS1Rn658ihyUmAw7SaXW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19373,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Compal LA-7983P",
+      "slug": "laptop-lenovo-compal-la-7983p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-7983P",
+      "officialTitle": "Lenovo Compal LA-7983P (LA-7983P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34958,
+          "type": "schematic",
+          "name": "LENOVO - Compal LA-7983P - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1370464,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1l4mxXmmRZM5mlFiUeVYNimZubwrFX21K/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19374,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Compal LA-8133P r10",
+      "slug": "laptop-lenovo-compal-la-8133p-r10",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-8133P",
+      "officialTitle": "Lenovo Compal LA-8133P r10 (LA-8133P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34959,
+          "type": "schematic",
+          "name": "LENOVO - Compal LA-8133P r10 - Schematic.pdf",
+          "size": "1.7 MB",
+          "sizeBytes": 1736605,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1szXDYN0AvlAEqDpe6w6eeGgk8QVdDeaL/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19388,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Compal LA-8951P R01VIUS3S4 MB.PDF",
+      "slug": "laptop-lenovo-compal-la-8951p-r01vius3s4-mbpdf",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-8951P",
+      "officialTitle": "Lenovo Compal LA-8951P R01VIUS3S4 MB.PDF (LA-8951P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34973,
+          "type": "schematic",
+          "name": "LENOVO - Compal LA-8951P R01VIUS3S4 MB.PDF - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1373556,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZQFA9Nxgv2XyiMRMDB55KAAKA6nT5jrh/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19375,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Compal LA-9632P r1.0",
+      "slug": "laptop-lenovo-compal-la-9632p-r10",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-9632P",
+      "officialTitle": "Lenovo Compal LA-9632P r1.0 (LA-9632P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34960,
+          "type": "schematic",
+          "name": "LENOVO - Compal LA-9632P r1.0 - Schematic.pdf",
+          "size": "2 MB",
+          "sizeBytes": 2147329,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1AFhvlyHXXY-iKjyrwAecQpNMo_A6st0c/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19376,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Compal LA-9641P r1.0",
+      "slug": "laptop-lenovo-compal-la-9641p-r10",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-9641P",
+      "officialTitle": "Lenovo Compal LA-9641P r1.0 (LA-9641P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34961,
+          "type": "schematic",
+          "name": "LENOVO - Compal LA-9641P r1.0 - Schematic.pdf",
+          "size": "2.7 MB",
+          "sizeBytes": 2857184,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-b8T8_liiH4Ot5GFHHvlAS3Mhj8GIOS1/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19377,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Compal LA-9902P r1.0",
+      "slug": "laptop-lenovo-compal-la-9902p-r10",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-9902P",
+      "officialTitle": "Lenovo Compal LA-9902P r1.0 (LA-9902P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34962,
+          "type": "schematic",
+          "name": "LENOVO - Compal LA-9902P r1.0 - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1257143,
+          "gdrive_direct_url": "https://drive.google.com/file/d/18jSjd5TZG4sK4WZvFpl0HXvhL5wXZ4-h/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19378,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Compal LA-B102P r1.0",
+      "slug": "laptop-lenovo-compal-la-b102p-r10",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-B102P",
+      "officialTitle": "Lenovo Compal LA-B102P r1.0 (LA-B102P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34963,
+          "type": "schematic",
+          "name": "LENOVO - Compal LA-B102P r1.0 - Schematic.pdf",
+          "size": "1.9 MB",
+          "sizeBytes": 2011077,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1fWOBkXw_7YcvnZeJg678uMQyAU776GW1/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19390,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Dell Inspiron 14 7447 - Quanta AM7 - DAOAM7MB8D0",
+      "slug": "laptop-lenovo-dell-inspiron-14-7447-quanta-am7-daoam7mb8d0",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Dell Inspiron 14 7447 - Quanta AM7 - DAOAM7MB8D0 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34975,
+          "type": "schematic",
+          "name": "LENOVO - Dell Inspiron 14 7447 - Quanta AM7 - DAOAM7MB8D0 - Schematic.pdf",
+          "size": "1.1 MB",
+          "sizeBytes": 1164437,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zDFruUSUW6PGomxZcpctOSm7Xonu5LOu/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19391,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "E420S LA-6921P",
+      "slug": "laptop-lenovo-e420s-la-6921p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-6921P",
+      "officialTitle": "Lenovo E420S LA-6921P (LA-6921P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34976,
+          "type": "schematic",
+          "name": "LENOVO - E420S LA-6921P - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1317219,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1VVvrkgwLj9_O2kXkx8VinEJR74YViH6K/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19392,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "G480 LA-7981P",
+      "slug": "laptop-lenovo-g480-la-7981p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-7981P",
+      "officialTitle": "Lenovo G480 LA-7981P (LA-7981P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34977,
+          "type": "schematic",
+          "name": "LENOVO - G480 LA-7981P - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1693864,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1aHBHB_QNUee5PTKMyL_yiAoYHlbaaCVv/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18844,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "IBM T410 - NZM1I - 8 - 09A21 - 09A21-3 Schematic And Boardview (IBM t410 NZM1I - 8)",
+      "slug": "laptop-lenovo-ibm-t410-nzm1i-8-09a21-09a21-3-schematic-and-boardview-ibm-t410-nzm1i-8",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo IBM T410 - NZM1I - 8 - 09A21 - 09A21-3 Schematic And Boardview (IBM t410 NZM1I - 8) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34384,
+          "type": "boardview",
+          "name": "LENOVO - IBM T410 - NZM1I - 8 - 09A21 - 09A21-3 Schematic And Boardview - IBM t410 NZM1I - 8.pdf",
+          "size": "1015.7 KB",
+          "sizeBytes": 1040041,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1frgLGt1EZ4SQaxoYTDgnKK5EgTwY7p_n/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18845,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "IBM T410 - NZM1I - 8 - 09A21 - 09A21-3 Schematic And Boardview (NZM1I-8 Boardview)",
+      "slug": "laptop-lenovo-ibm-t410-nzm1i-8-09a21-09a21-3-schematic-and-boardview-nzm1i-8-boardview",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo IBM T410 - NZM1I - 8 - 09A21 - 09A21-3 Schematic And Boardview (NZM1I-8 Boardview) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34385,
+          "type": "boardview",
+          "name": "LENOVO - IBM T410 - NZM1I - 8 - 09A21 - 09A21-3 Schematic And Boardview - NZM1I-8 Boardview.brd",
+          "size": "301.7 KB",
+          "sizeBytes": 308931,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1nIeyD6tmsPx8vbjESuhp5vQogMthqc--/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19393,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "IBM THINKPAD E535 AMD - LA-8124P SCHEMATIC",
+      "slug": "laptop-lenovo-ibm-thinkpad-e535-amd-la-8124p-schematic",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-8124P",
+      "officialTitle": "Lenovo IBM THINKPAD E535 AMD - LA-8124P SCHEMATIC (LA-8124P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34978,
+          "type": "schematic",
+          "name": "LENOVO - IBM THINKPAD E535 AMD - LA-8124P SCHEMATIC - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1678386,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1FOQaTAst_1okpaO8oFewuJx0TGLneDT_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19394,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "LA-6759 5A 1125A",
+      "slug": "laptop-lenovo-la-6759-5a-1125a",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-6759",
+      "officialTitle": "Lenovo LA-6759 5A 1125A (LA-6759) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34979,
+          "type": "schematic",
+          "name": "LENOVO - LA-6759 5A 1125A - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1371275,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14cW6cM2ed_s4C4fWaAKYfeDvYlUAyETd/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19395,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "LA-8681P R01 Lenovo G485",
+      "slug": "laptop-lenovo-la-8681p-r01-lenovo-g485",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-8681P",
+      "officialTitle": "Lenovo LA-8681P R01 Lenovo G485 (LA-8681P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34980,
+          "type": "schematic",
+          "name": "LENOVO - LA-8681P R01 Lenovo G485 - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1391216,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1pQercW5Zp49RcgwdezmJYY2pOtU_mRgr/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19396,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "LA-9061P",
+      "slug": "laptop-lenovo-la-9061p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-9061P",
+      "officialTitle": "Lenovo LA-9061P (LA-9061P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34981,
+          "type": "schematic",
+          "name": "LENOVO - LA-9061P - Schematic.pdf",
+          "size": "1.5 MB",
+          "sizeBytes": 1531023,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1jOnDLDMHKQaXbaXvYSliTTSDevlaV_L5/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19398,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "LA-9901P VILG1 G2 r10 20130320",
+      "slug": "laptop-lenovo-la-9901p-vilg1-g2-r10-20130320",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-9901P",
+      "officialTitle": "Lenovo LA-9901P VILG1 G2 r10 20130320 (LA-9901P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34983,
+          "type": "schematic",
+          "name": "LENOVO - LA-9901P VILG1 G2 r10 20130320 - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1388166,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1o9iQ1gJq_sEyiIna5OZJrMoNRZeQMSic/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19399,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "LA-9912P",
+      "slug": "laptop-lenovo-la-9912p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-9912P",
+      "officialTitle": "Lenovo LA-9912P (LA-9912P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34984,
+          "type": "schematic",
+          "name": "LENOVO - LA-9912P - Schematic.pdf",
+          "size": "858.2 KB",
+          "sizeBytes": 878807,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1YC1qxW9DtRMrmU6ByxMkGUGG_5vbLZpL/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19400,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "LA-A321P r02 0314",
+      "slug": "laptop-lenovo-la-a321p-r02-0314",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-A321P",
+      "officialTitle": "Lenovo LA-A321P r02 0314 (LA-A321P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34985,
+          "type": "schematic",
+          "name": "LENOVO - LA-A321P r02 0314 - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1244870,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ba_1BVCIN3Wmc5EhE6A0CdgsL1CC0M0L/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18846,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "LA46 09922 (Lenovo B460 V460 ( Wistron LA46 UMA )REV 1 2)",
+      "slug": "laptop-lenovo-la46-09922-lenovo-b460-v460-wistron-la46-uma-rev-1-2",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo LA46 09922 (Lenovo B460 V460 ( Wistron LA46 UMA )REV 1 2) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34386,
+          "type": "boardview",
+          "name": "LENOVO - LA46 09922 - Lenovo B460 V460 ( Wistron LA46 UMA )REV 1 2.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1206057,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Yqm8mE6GIj5qw0NhhRNxvWntoDiASeUA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19413,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "LENOVO E40 E50 - QUANTA GC5 GC5A GC5B GC6A GC6C (GC5-Right-GC6-Power-C-Stage THINKPAD E50)",
+      "slug": "laptop-lenovo-lenovo-e40-e50-quanta-gc5-gc5a-gc5b-gc6a-gc6c-gc5-right-gc6-power-c-stage-thinkpad-e50",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo LENOVO E40 E50 - QUANTA GC5 GC5A GC5B GC6A GC6C (GC5-Right-GC6-Power-C-Stage THINKPAD E50) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34998,
+          "type": "schematic",
+          "name": "LENOVO - LENOVO E40 E50 - QUANTA GC5 GC5A GC5B GC6A GC6C - GC5-Right-GC6-Power-C-Stage THINKPAD E50 - Schematic.pdf",
+          "size": "15.6 KB",
+          "sizeBytes": 15984,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1A0yyVSpXkqgmxahgxnWlyJCGpwVcVQhd/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 34999,
+          "type": "schematic",
+          "name": "LENOVO - LENOVO E40 E50 - QUANTA GC5 GC5A GC5B GC6A GC6C - GC5-Right-GC6-Power-C-Stage THINKPAD E50 - Schematic.pdf",
+          "size": "15.6 KB",
+          "sizeBytes": 15984,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1A0yyVSpXkqgmxahgxnWlyJCGpwVcVQhd/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19414,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "LENOVO E40 E50 - QUANTA GC5 GC5A GC5B GC6A GC6C (GC5A-UMA-C-Stage 1107)",
+      "slug": "laptop-lenovo-lenovo-e40-e50-quanta-gc5-gc5a-gc5b-gc6a-gc6c-gc5a-uma-c-stage-1107",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo LENOVO E40 E50 - QUANTA GC5 GC5A GC5B GC6A GC6C (GC5A-UMA-C-Stage 1107) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35000,
+          "type": "schematic",
+          "name": "LENOVO - LENOVO E40 E50 - QUANTA GC5 GC5A GC5B GC6A GC6C - GC5A-UMA-C-Stage 1107 - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1284262,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15KE0pQb7NasOVcESjHynsBppjKoHtUoL/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35001,
+          "type": "schematic",
+          "name": "LENOVO - LENOVO E40 E50 - QUANTA GC5 GC5A GC5B GC6A GC6C - GC5A-UMA-C-Stage 1107 - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1284262,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15KE0pQb7NasOVcESjHynsBppjKoHtUoL/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19415,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "LENOVO E40 E50 - QUANTA GC5 GC5A GC5B GC6A GC6C (GC5B(I0,H0) AMD DIS R1A 0609 LENOVO E40)",
+      "slug": "laptop-lenovo-lenovo-e40-e50-quanta-gc5-gc5a-gc5b-gc6a-gc6c-gc5bi0h0-amd-dis-r1a-0609-lenovo-e40",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo LENOVO E40 E50 - QUANTA GC5 GC5A GC5B GC6A GC6C (GC5B(I0,H0) AMD DIS R1A 0609 LENOVO E40) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35002,
+          "type": "schematic",
+          "name": "LENOVO - LENOVO E40 E50 - QUANTA GC5 GC5A GC5B GC6A GC6C - GC5B(I0,H0) AMD DIS R1A 0609 LENOVO E40 - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1643523,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mN7j3_m88hiGQKU47WhViPY84gHolXPH/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35003,
+          "type": "schematic",
+          "name": "LENOVO - LENOVO E40 E50 - QUANTA GC5 GC5A GC5B GC6A GC6C - GC5B(I0,H0) AMD DIS R1A 0609 LENOVO E40 - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1643523,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mN7j3_m88hiGQKU47WhViPY84gHolXPH/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19416,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "LENOVO E40 E50 - QUANTA GC5 GC5A GC5B GC6A GC6C (GC6C LD-Note AMD UMA danube uma R1A 0322 D Final)",
+      "slug": "laptop-lenovo-lenovo-e40-e50-quanta-gc5-gc5a-gc5b-gc6a-gc6c-gc6c-ld-note-amd-uma-danube-uma-r1a-0322-d-final",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo LENOVO E40 E50 - QUANTA GC5 GC5A GC5B GC6A GC6C (GC6C LD-Note AMD UMA danube uma R1A 0322 D Final) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35004,
+          "type": "schematic",
+          "name": "LENOVO - LENOVO E40 E50 - QUANTA GC5 GC5A GC5B GC6A GC6C - GC6C LD-Note AMD UMA danube uma R1A 0322 D Final - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1363183,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1NeVBTf8oL1pAW0xg1TCza54FFIekxmLT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35005,
+          "type": "schematic",
+          "name": "LENOVO - LENOVO E40 E50 - QUANTA GC5 GC5A GC5B GC6A GC6C - GC6C LD-Note AMD UMA danube uma R1A 0322 D Final - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1363183,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1NeVBTf8oL1pAW0xg1TCza54FFIekxmLT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19418,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "LENOVO E40 E50 - QUANTA GC5 GC5A GC5B GC6A GC6C (LD-NOTE UMA - DIAMOND-3 INTEL CALPELLASec REV 00 1117)",
+      "slug": "laptop-lenovo-lenovo-e40-e50-quanta-gc5-gc5a-gc5b-gc6a-gc6c-ld-note-uma-diamond-3-intel-calpellasec-rev-00-1117",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo LENOVO E40 E50 - QUANTA GC5 GC5A GC5B GC6A GC6C (LD-NOTE UMA - DIAMOND-3 INTEL CALPELLASec REV 00 1117) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35008,
+          "type": "schematic",
+          "name": "LENOVO - LENOVO E40 E50 - QUANTA GC5 GC5A GC5B GC6A GC6C - LD-NOTE UMA - DIAMOND-3 INTEL CALPELLASec REV 00 1117 - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1260424,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1iDcGcxLNQ6SYzxM4nNQCmsK9GLXqKoEx/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35009,
+          "type": "schematic",
+          "name": "LENOVO - LENOVO E40 E50 - QUANTA GC5 GC5A GC5B GC6A GC6C - LD-NOTE UMA - DIAMOND-3 INTEL CALPELLASec REV 00 1117 - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1260424,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1iDcGcxLNQ6SYzxM4nNQCmsK9GLXqKoEx/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19417,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "LENOVO E40 E50 - QUANTA GC5 GC5A GC5B GC6A GC6C (LD-Note GC5-DIS-C-Stage 1103 Thinkpad E40)",
+      "slug": "laptop-lenovo-lenovo-e40-e50-quanta-gc5-gc5a-gc5b-gc6a-gc6c-ld-note-gc5-dis-c-stage-1103-thinkpad-e40",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo LENOVO E40 E50 - QUANTA GC5 GC5A GC5B GC6A GC6C (LD-Note GC5-DIS-C-Stage 1103 Thinkpad E40) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35006,
+          "type": "schematic",
+          "name": "LENOVO - LENOVO E40 E50 - QUANTA GC5 GC5A GC5B GC6A GC6C - LD-Note GC5-DIS-C-Stage 1103 Thinkpad E40 - Schematic.pdf",
+          "size": "1.4 MB",
+          "sizeBytes": 1500040,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QWZg-pkZVLBsL5KPMhPsxCyGzg_DQzaM/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35007,
+          "type": "schematic",
+          "name": "LENOVO - LENOVO E40 E50 - QUANTA GC5 GC5A GC5B GC6A GC6C - LD-Note GC5-DIS-C-Stage 1103 Thinkpad E40 - Schematic.pdf",
+          "size": "1.4 MB",
+          "sizeBytes": 1500040,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QWZg-pkZVLBsL5KPMhPsxCyGzg_DQzaM/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19424,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "LENOVO G475GX - LA-6755P LA-6757P PAWGC PAWGD",
+      "slug": "laptop-lenovo-lenovo-g475gx-la-6755p-la-6757p-pawgc-pawgd",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-6755P",
+      "officialTitle": "Lenovo LENOVO G475GX - LA-6755P LA-6757P PAWGC PAWGD (LA-6755P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35015,
+          "type": "schematic",
+          "name": "LENOVO - LENOVO G475GX - LA-6755P LA-6757P PAWGC PAWGD - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1384196,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13Wav4r2H4rqdrIKFPKuXR3qSdYvy9DLz/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19440,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "LENOVO IdeaPad 130-15AST - LA-G241P (LA G241P R10-0314 LENOVO IdeaPad 130-15AST)",
+      "slug": "laptop-lenovo-lenovo-ideapad-130-15ast-la-g241p-la-g241p-r10-0314-lenovo-ideapad-130-15ast",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-G241P",
+      "officialTitle": "Lenovo LENOVO IdeaPad 130-15AST - LA-G241P (LA G241P R10-0314 LENOVO IdeaPad 130-15AST) (LA-G241P) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 35041,
+          "type": "boardview",
+          "name": "LENOVO - LENOVO IdeaPad 130-15AST - LA-G241P - LA G241P R10-0314 LENOVO IdeaPad 130-15AST - Boardview.brd",
+          "size": "21.2 MB",
+          "sizeBytes": 22246548,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-XB_se1zYc6gsOhKnA2XqzDcVeeJq6zD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19441,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "LENOVO IdeaPad 130-15AST - LA-G241P (LA G241P R10-180312 LENOVO IdeaPad 130-15AST)",
+      "slug": "laptop-lenovo-lenovo-ideapad-130-15ast-la-g241p-la-g241p-r10-180312-lenovo-ideapad-130-15ast",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-G241P",
+      "officialTitle": "Lenovo LENOVO IdeaPad 130-15AST - LA-G241P (LA G241P R10-180312 LENOVO IdeaPad 130-15AST) (LA-G241P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35042,
+          "type": "schematic",
+          "name": "LENOVO - LENOVO IdeaPad 130-15AST - LA-G241P - LA G241P R10-180312 LENOVO IdeaPad 130-15AST - Schematic.pdf",
+          "size": "2.3 MB",
+          "sizeBytes": 2406763,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1aF1px1bR0Zxmxe9u84pZA_1_qgzHHrl0/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19442,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "LENOVO IdeaPad 130-15AST - LA-G241P (LS G201P R10-0312 LENOVOLENOVO IdeaPad 130-15AST)",
+      "slug": "laptop-lenovo-lenovo-ideapad-130-15ast-la-g241p-ls-g201p-r10-0312-lenovolenovo-ideapad-130-15ast",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-G241P",
+      "officialTitle": "Lenovo LENOVO IdeaPad 130-15AST - LA-G241P (LS G201P R10-0312 LENOVOLENOVO IdeaPad 130-15AST) (LA-G241P) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 35043,
+          "type": "boardview",
+          "name": "LENOVO - LENOVO IdeaPad 130-15AST - LA-G241P - LS G201P R10-0312 LENOVOLENOVO IdeaPad 130-15AST - Boardview.brd",
+          "size": "1.1 MB",
+          "sizeBytes": 1205488,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1I_0TF2u8RZdG-T79NPTgC8IhNgGibB2M/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19443,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "LENOVO IdeaPad 130-15AST - LA-G241P (LS G201P R10-180308 LENOVO IdeaPad 130-15AST)",
+      "slug": "laptop-lenovo-lenovo-ideapad-130-15ast-la-g241p-ls-g201p-r10-180308-lenovo-ideapad-130-15ast",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-G241P",
+      "officialTitle": "Lenovo LENOVO IdeaPad 130-15AST - LA-G241P (LS G201P R10-180308 LENOVO IdeaPad 130-15AST) (LA-G241P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35044,
+          "type": "schematic",
+          "name": "LENOVO - LENOVO IdeaPad 130-15AST - LA-G241P - LS G201P R10-180308 LENOVO IdeaPad 130-15AST - Schematic.pdf",
+          "size": "50.7 KB",
+          "sizeBytes": 51935,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1C2wzzxiv4ZxeKY-fPHW7kt3CINmZWk4F/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19444,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "LENOVO IdeaPad 130-15AST - LA-G241P (LS G202P R10-0313 LENOVOLENOVO IdeaPad 130-15AST)",
+      "slug": "laptop-lenovo-lenovo-ideapad-130-15ast-la-g241p-ls-g202p-r10-0313-lenovolenovo-ideapad-130-15ast",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-G241P",
+      "officialTitle": "Lenovo LENOVO IdeaPad 130-15AST - LA-G241P (LS G202P R10-0313 LENOVOLENOVO IdeaPad 130-15AST) (LA-G241P) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 35045,
+          "type": "boardview",
+          "name": "LENOVO - LENOVO IdeaPad 130-15AST - LA-G241P - LS G202P R10-0313 LENOVOLENOVO IdeaPad 130-15AST - Boardview.brd",
+          "size": "1.1 MB",
+          "sizeBytes": 1191776,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1S0BbLC4bln14JodDXcHuKfKE0PdGQHd6/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19445,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "LENOVO IdeaPad 130-15AST - LA-G241P (LS G202P R10-180308 LENOVO IdeaPad 130-15AST)",
+      "slug": "laptop-lenovo-lenovo-ideapad-130-15ast-la-g241p-ls-g202p-r10-180308-lenovo-ideapad-130-15ast",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-G241P",
+      "officialTitle": "Lenovo LENOVO IdeaPad 130-15AST - LA-G241P (LS G202P R10-180308 LENOVO IdeaPad 130-15AST) (LA-G241P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35046,
+          "type": "schematic",
+          "name": "LENOVO - LENOVO IdeaPad 130-15AST - LA-G241P - LS G202P R10-180308 LENOVO IdeaPad 130-15AST - Schematic.pdf",
+          "size": "50 KB",
+          "sizeBytes": 51203,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1M4psbEKgK5EWU3Eeag_DYbLqDV59x-SU/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19446,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "LENOVO IdeaPad 130-15AST - LA-G241P (LS G203P R10-0313 LENOVOLENOVO IdeaPad 130-15AST)",
+      "slug": "laptop-lenovo-lenovo-ideapad-130-15ast-la-g241p-ls-g203p-r10-0313-lenovolenovo-ideapad-130-15ast",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-G241P",
+      "officialTitle": "Lenovo LENOVO IdeaPad 130-15AST - LA-G241P (LS G203P R10-0313 LENOVOLENOVO IdeaPad 130-15AST) (LA-G241P) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 35047,
+          "type": "boardview",
+          "name": "LENOVO - LENOVO IdeaPad 130-15AST - LA-G241P - LS G203P R10-0313 LENOVOLENOVO IdeaPad 130-15AST - Boardview.brd",
+          "size": "1.5 MB",
+          "sizeBytes": 1522300,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_RyFDXPzFXoX8IQ1Ez-Ru4pnNwhdhJPZ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19447,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "LENOVO IdeaPad 130-15AST - LA-G241P (LS G203P R10-180308 LENOVO IdeaPad 130-15AST)",
+      "slug": "laptop-lenovo-lenovo-ideapad-130-15ast-la-g241p-ls-g203p-r10-180308-lenovo-ideapad-130-15ast",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-G241P",
+      "officialTitle": "Lenovo LENOVO IdeaPad 130-15AST - LA-G241P (LS G203P R10-180308 LENOVO IdeaPad 130-15AST) (LA-G241P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35048,
+          "type": "schematic",
+          "name": "LENOVO - LENOVO IdeaPad 130-15AST - LA-G241P - LS G203P R10-180308 LENOVO IdeaPad 130-15AST - Schematic.pdf",
+          "size": "51.8 KB",
+          "sizeBytes": 53090,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1vC4ZQSVG-QkOv7ww1VJg1PxhK_uoXdPk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19453,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "LENOVO IdeaPad G460 - COMPAL LA-5751P NIWE1 - REV 0.3",
+      "slug": "laptop-lenovo-lenovo-ideapad-g460-compal-la-5751p-niwe1-rev-03",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-5751P",
+      "officialTitle": "Lenovo LENOVO IdeaPad G460 - COMPAL LA-5751P NIWE1 - REV 0.3 (LA-5751P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35054,
+          "type": "schematic",
+          "name": "LENOVO - LENOVO IdeaPad G460 - COMPAL LA-5751P NIWE1 - REV 0.3 - Schematic.pdf",
+          "size": "1.5 MB",
+          "sizeBytes": 1586240,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1gtuaIuEjMjRTMAHT8coMFI11Pbf6ppUg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19462,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "LENOVO NM-A821 r2.0",
+      "slug": "laptop-lenovo-lenovo-nm-a821-r20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-A821",
+      "officialTitle": "Lenovo LENOVO NM-A821 r2.0 (NM-A821) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35063,
+          "type": "schematic",
+          "name": "LENOVO - LENOVO NM-A821 r2.0 - Schematic.pdf",
+          "size": "1.5 MB",
+          "sizeBytes": 1619654,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1VzQGQjCA7LuTrIR5y64l2aO8rSv3sUjW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19480,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "LZ9 - LZ9A (LZ9 LZ9A SKB DIS 0415)",
+      "slug": "laptop-lenovo-lz9-lz9a-lz9-lz9a-skb-dis-0415",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo LZ9 - LZ9A (LZ9 LZ9A SKB DIS 0415) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35081,
+          "type": "schematic",
+          "name": "LENOVO - LZ9 - LZ9A - LZ9 LZ9A SKB DIS 0415 - Schematic.pdf",
+          "size": "2.7 MB",
+          "sizeBytes": 2833769,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15_vLJ5s1o39iYw-ASb6DiILQ-gbnCZ0_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19481,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "LZ9 - LZ9A (LZ9)",
+      "slug": "laptop-lenovo-lz9-lz9a-lz9",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo LZ9 - LZ9A (LZ9) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 35082,
+          "type": "boardview",
+          "name": "LENOVO - LZ9 - LZ9A - LZ9 - Boardview.brd",
+          "size": "251.2 KB",
+          "sizeBytes": 257271,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wDGTBjieH_7BrEZHSaXRBp31aVu7H68Y/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19401,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo B320 - CIH61S Rev 1.0",
+      "slug": "laptop-lenovo-lenovo-b320-cih61s-rev-10",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Lenovo B320 - CIH61S Rev 1.0 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34986,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo B320 - CIH61S Rev 1.0 - Schematic.pdf",
+          "size": "5.7 MB",
+          "sizeBytes": 5993730,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1NAahJSxj1RGRtQSQwIlcvNA2I-fxgjv7/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19402,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo B450 - LA14 UMA - DIS",
+      "slug": "laptop-lenovo-lenovo-b450-la14-uma-dis",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Lenovo B450 - LA14 UMA - DIS — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34987,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo B450 - LA14 UMA - DIS - Schematic.pdf",
+          "size": "901.8 KB",
+          "sizeBytes": 923448,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1LdI1AP2gwQsLh2fUis6q3Xoe8f-brI8k/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19403,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo B460 LA46 09911-1M DIs",
+      "slug": "laptop-lenovo-lenovo-b460-la46-09911-1m-dis",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Lenovo B460 LA46 09911-1M DIs — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34988,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo B460 LA46 09911-1M DIs - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1670008,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1lC2yyjGfcBvq7Onf57fNI2US9XeZrKwr/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19404,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo B50-70 LA-B091P (LS-B091P R04 1224 R0.4 0212)",
+      "slug": "laptop-lenovo-lenovo-b50-70-la-b091p-ls-b091p-r04-1224-r04-0212",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-B091P",
+      "officialTitle": "Lenovo Lenovo B50-70 LA-B091P (LS-B091P R04 1224 R0.4 0212) (LA-B091P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34989,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo B50-70 LA-B091P - LS-B091P R04 1224 R0.4 0212 - Schematic.pdf",
+          "size": "88 KB",
+          "sizeBytes": 90129,
+          "gdrive_direct_url": "https://drive.google.com/file/d/16I-V5ttFwZfve5we-i09Y3LzkPMqNJ14/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19405,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo B50-70 LA-B091P (LS-B092P R10 0212 R03 1125)",
+      "slug": "laptop-lenovo-lenovo-b50-70-la-b091p-ls-b092p-r10-0212-r03-1125",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-B091P",
+      "officialTitle": "Lenovo Lenovo B50-70 LA-B091P (LS-B092P R10 0212 R03 1125) (LA-B091P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34990,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo B50-70 LA-B091P - LS-B092P R10 0212 R03 1125 - Schematic.pdf",
+          "size": "78.5 KB",
+          "sizeBytes": 80405,
+          "gdrive_direct_url": "https://drive.google.com/file/d/12JuOf8OAwjt8w7j2GJF7JYow9evw53Zb/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19406,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo B50-70 LA-B091P (LS-B094P R10 0212 R0.5 1223)",
+      "slug": "laptop-lenovo-lenovo-b50-70-la-b091p-ls-b094p-r10-0212-r05-1223",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-B091P",
+      "officialTitle": "Lenovo Lenovo B50-70 LA-B091P (LS-B094P R10 0212 R0.5 1223) (LA-B091P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34991,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo B50-70 LA-B091P - LS-B094P R10 0212 R0.5 1223 - Schematic.pdf",
+          "size": "203.8 KB",
+          "sizeBytes": 208700,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1j98L-x5jTX6hlmpu4mp7DxsdhEZU9_wg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19407,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo B50-70 LA-B091P (LS-B095P R10 0827 R0.1 0909)",
+      "slug": "laptop-lenovo-lenovo-b50-70-la-b091p-ls-b095p-r10-0827-r01-0909",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-B091P",
+      "officialTitle": "Lenovo Lenovo B50-70 LA-B091P (LS-B095P R10 0827 R0.1 0909) (LA-B091P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34992,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo B50-70 LA-B091P - LS-B095P R10 0827 R0.1 0909 - Schematic.pdf",
+          "size": "99 KB",
+          "sizeBytes": 101349,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wkMelH2k0VuLrbtlo-Ct3KBQN6IILxar/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19408,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo B50-70 LA-B091P (LS-B098P R10 0212 R0.2 1224)",
+      "slug": "laptop-lenovo-lenovo-b50-70-la-b091p-ls-b098p-r10-0212-r02-1224",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-B091P",
+      "officialTitle": "Lenovo Lenovo B50-70 LA-B091P (LS-B098P R10 0212 R0.2 1224) (LA-B091P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34993,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo B50-70 LA-B091P - LS-B098P R10 0212 R0.2 1224 - Schematic.pdf",
+          "size": "85.5 KB",
+          "sizeBytes": 87536,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZnovfnYr-Yh_ljvO-97w9rgXpjbKLdUd/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19409,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo B50-70 LA-B091P (ZIWB2 ZIWB3 ZIWE1 LA-B091P R10 0210 R1.0 0212 DIS)",
+      "slug": "laptop-lenovo-lenovo-b50-70-la-b091p-ziwb2-ziwb3-ziwe1-la-b091p-r10-0210-r10-0212-dis",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-B091P",
+      "officialTitle": "Lenovo Lenovo B50-70 LA-B091P (ZIWB2 ZIWB3 ZIWE1 LA-B091P R10 0210 R1.0 0212 DIS) (LA-B091P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34994,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo B50-70 LA-B091P - ZIWB2 ZIWB3 ZIWE1 LA-B091P R10 0210 R1.0 0212 DIS - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1320188,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-bFIz6utaKOlRjw79Wfe1VKI2cis8GC7/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19411,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo E31 - Quanta PS2 (PS2-FUNCTION BOARD 20100503A)",
+      "slug": "laptop-lenovo-lenovo-e31-quanta-ps2-ps2-function-board-20100503a",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Lenovo E31 - Quanta PS2 (PS2-FUNCTION BOARD 20100503A) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34996,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo E31 - Quanta PS2 - PS2-FUNCTION BOARD 20100503A - Schematic.pdf",
+          "size": "141.5 KB",
+          "sizeBytes": 144863,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Gzm_6jJ45npXz5TupRS84gupBi8SndWW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19410,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo E31 - Quanta PS2 (ps2-0604c-2030-bom)",
+      "slug": "laptop-lenovo-lenovo-e31-quanta-ps2-ps2-0604c-2030-bom",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Lenovo E31 - Quanta PS2 (ps2-0604c-2030-bom) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34995,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo E31 - Quanta PS2 - ps2-0604c-2030-bom - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1382484,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zwFlx_Yer6e94TEhqSMrIdmbzQOen2nj/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19412,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo E31 - Quanta PS2 (ps2-switch board 0416b)",
+      "slug": "laptop-lenovo-lenovo-e31-quanta-ps2-ps2-switch-board-0416b",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Lenovo E31 - Quanta PS2 (ps2-switch board 0416b) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34997,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo E31 - Quanta PS2 - ps2-switch board 0416b - Schematic.pdf",
+          "size": "24.7 KB",
+          "sizeBytes": 25258,
+          "gdrive_direct_url": "https://drive.google.com/file/d/12u8ZGWKu3DeSXDacSu5-_jDJO4_iCQ2v/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19419,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo E450C AIVE1 NM-A211",
+      "slug": "laptop-lenovo-lenovo-e450c-aive1-nm-a211",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-A211",
+      "officialTitle": "Lenovo Lenovo E450C AIVE1 NM-A211 (NM-A211) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35010,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo E450C AIVE1 NM-A211 - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1716205,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1UZA4Er89t_b29Cet1eMaIxPgtrEDacEk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19421,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo FLEX14 FLEX15 Quanta ST6 6A DA0ST6MB6E0",
+      "slug": "laptop-lenovo-lenovo-flex14-flex15-quanta-st6-6a-da0st6mb6e0",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "DA0ST6MB6E0",
+      "officialTitle": "Lenovo Lenovo FLEX14 FLEX15 Quanta ST6 6A DA0ST6MB6E0 (DA0ST6MB6E0) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35012,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo FLEX14 FLEX15 Quanta ST6 6A DA0ST6MB6E0 - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1704989,
+          "gdrive_direct_url": "https://drive.google.com/file/d/16baUymwc6LjiEBUd5176mdm0z8eV5VGI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19420,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo Flex 3 - Bitland BM5488 Schematics",
+      "slug": "laptop-lenovo-lenovo-flex-3-bitland-bm5488-schematics",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Lenovo Flex 3 - Bitland BM5488 Schematics — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35011,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo Flex 3 - Bitland BM5488 Schematics - Schematic.pdf",
+          "size": "2.4 MB",
+          "sizeBytes": 2505494,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Szq1cHFAmpZog-2njfaZaxOgq6G9JkWK/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19422,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo G430 - Quanta LE6",
+      "slug": "laptop-lenovo-lenovo-g430-quanta-le6",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Lenovo G430 - Quanta LE6 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35013,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo G430 - Quanta LE6 - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1282570,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Evqd0GmABuxkzOJ1ZvH_jQhmeLzkLKFx/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19479,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo G450 Compal LA-5081p",
+      "slug": "laptop-lenovo-lenovo-g450-compal-la-5081p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-5081P",
+      "officialTitle": "Lenovo Lenovo G450 Compal LA-5081p (LA-5081P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35080,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo G450 Compal LA-5081p - Schematic.pdf",
+          "size": "1.5 MB",
+          "sizeBytes": 1606508,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1cukh0WpTJFCcv99PhQdSbSS1V1Z0X2QY/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19423,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo G470 - G570 LA-6751P",
+      "slug": "laptop-lenovo-lenovo-g470-g570-la-6751p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-6751P",
+      "officialTitle": "Lenovo Lenovo G470 - G570 LA-6751P (LA-6751P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35014,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo G470 - G570 LA-6751P - Schematic.pdf",
+          "size": "1013 KB",
+          "sizeBytes": 1037285,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mNMNP2cFbHwDo4Pr88fnwKoEfnTlEA7i/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19425,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 (10792-1)",
+      "slug": "laptop-lenovo-lenovo-g480-wistron-lg4858-11326-11291-12206-10792-10792-1",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "10792-1",
+      "officialTitle": "Lenovo Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 (10792-1) (10792-1) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 35016,
+          "type": "boardview",
+          "name": "LENOVO - Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 - 10792-1 - Boardview.brd",
+          "size": "43.1 KB",
+          "sizeBytes": 44142,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1W8JuzIXc2rfGPcH1t9Xj_10X5xJbvvtG/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35017,
+          "type": "boardview",
+          "name": "LENOVO - Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 - 10792-1 - Boardview.brd",
+          "size": "43.1 KB",
+          "sizeBytes": 44142,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1W8JuzIXc2rfGPcH1t9Xj_10X5xJbvvtG/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19426,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 (11291-SB)",
+      "slug": "laptop-lenovo-lenovo-g480-wistron-lg4858-11326-11291-12206-10792-11291-sb",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 (11291-SB) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 35018,
+          "type": "boardview",
+          "name": "LENOVO - Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 - 11291-SB - Boardview.brd",
+          "size": "220.9 KB",
+          "sizeBytes": 226235,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1UHH2OjpZhDk90cJdibKT5S7VMR8ru-89/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35019,
+          "type": "boardview",
+          "name": "LENOVO - Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 - 11291-SB - Boardview.brd",
+          "size": "220.9 KB",
+          "sizeBytes": 226235,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1UHH2OjpZhDk90cJdibKT5S7VMR8ru-89/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19427,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 (11326-SB-0316)",
+      "slug": "laptop-lenovo-lenovo-g480-wistron-lg4858-11326-11291-12206-10792-11326-sb-0316",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 (11326-SB-0316) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 35020,
+          "type": "boardview",
+          "name": "LENOVO - Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 - 11326-SB-0316 - Boardview.brd",
+          "size": "305.3 KB",
+          "sizeBytes": 312581,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_9upPNrv8-9B80n3ix8PtnCeSZrAeEay/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35021,
+          "type": "boardview",
+          "name": "LENOVO - Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 - 11326-SB-0316 - Boardview.brd",
+          "size": "305.3 KB",
+          "sizeBytes": 312581,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_9upPNrv8-9B80n3ix8PtnCeSZrAeEay/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19428,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 (12206-sa)",
+      "slug": "laptop-lenovo-lenovo-g480-wistron-lg4858-11326-11291-12206-10792-12206-sa",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 (12206-sa) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 35022,
+          "type": "boardview",
+          "name": "LENOVO - Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 - 12206-sa - Boardview.brd",
+          "size": "219.6 KB",
+          "sizeBytes": 224880,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1f3b6MVQ5lPQG4ZqhDYjP2xxLBo7xoioJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35023,
+          "type": "boardview",
+          "name": "LENOVO - Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 - 12206-sa - Boardview.brd",
+          "size": "219.6 KB",
+          "sizeBytes": 224880,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1f3b6MVQ5lPQG4ZqhDYjP2xxLBo7xoioJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19431,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 (LG4858 LG4858L BUTTON 11813 1 120319)",
+      "slug": "laptop-lenovo-lenovo-g480-wistron-lg4858-11326-11291-12206-10792-lg4858-lg4858l-button-11813-1-120319",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 (LG4858 LG4858L BUTTON 11813 1 120319) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35028,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 - LG4858 LG4858L BUTTON 11813 1 120319 - Schematic.pdf",
+          "size": "38.2 KB",
+          "sizeBytes": 39148,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1BpJn57u_2vE7rvfQufT8idQGo_Q1kWTS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35029,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 - LG4858 LG4858L BUTTON 11813 1 120319 - Schematic.pdf",
+          "size": "38.2 KB",
+          "sizeBytes": 39148,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1BpJn57u_2vE7rvfQufT8idQGo_Q1kWTS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19432,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 (LG4858 LG4858L CARDREADERBD 1 11815 120320)",
+      "slug": "laptop-lenovo-lenovo-g480-wistron-lg4858-11326-11291-12206-10792-lg4858-lg4858l-cardreaderbd-1-11815-120320",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 (LG4858 LG4858L CARDREADERBD 1 11815 120320) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35030,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 - LG4858 LG4858L CARDREADERBD 1 11815 120320 - Schematic.pdf",
+          "size": "87.1 KB",
+          "sizeBytes": 89195,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZGvAOQf1h-MbjmHvB_CUDUIJd0TCaoui/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35031,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 - LG4858 LG4858L CARDREADERBD 1 11815 120320 - Schematic.pdf",
+          "size": "87.1 KB",
+          "sizeBytes": 89195,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZGvAOQf1h-MbjmHvB_CUDUIJd0TCaoui/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19433,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 (LG4858 LG4858L POWER 11812 -1 120320)",
+      "slug": "laptop-lenovo-lenovo-g480-wistron-lg4858-11326-11291-12206-10792-lg4858-lg4858l-power-11812-1-120320",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 (LG4858 LG4858L POWER 11812 -1 120320) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35032,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 - LG4858 LG4858L POWER 11812 -1 120320 - Schematic.pdf",
+          "size": "44.1 KB",
+          "sizeBytes": 45143,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1AU9EHjcg6qg_g5BEoxEcE-ZBV5FOr2ds/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35033,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 - LG4858 LG4858L POWER 11812 -1 120320 - Schematic.pdf",
+          "size": "44.1 KB",
+          "sizeBytes": 45143,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1AU9EHjcg6qg_g5BEoxEcE-ZBV5FOr2ds/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19434,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 (LG58 LG58L ODD BD 1 11814 120320)",
+      "slug": "laptop-lenovo-lenovo-g480-wistron-lg4858-11326-11291-12206-10792-lg58-lg58l-odd-bd-1-11814-120320",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 (LG58 LG58L ODD BD 1 11814 120320) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35034,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 - LG58 LG58L ODD BD 1 11814 120320 - Schematic.pdf",
+          "size": "31.8 KB",
+          "sizeBytes": 32527,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1fcIzRm8zTMpZnrX3ncMCDkSCDBqsKE-I/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35035,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 - LG58 LG58L ODD BD 1 11814 120320 - Schematic.pdf",
+          "size": "31.8 KB",
+          "sizeBytes": 32527,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1fcIzRm8zTMpZnrX3ncMCDkSCDBqsKE-I/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19429,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 (lg4858l-sb 120316 1730)",
+      "slug": "laptop-lenovo-lenovo-g480-wistron-lg4858-11326-11291-12206-10792-lg4858l-sb-120316-1730",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 (lg4858l-sb 120316 1730) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35024,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 - lg4858l-sb 120316 1730 - Schematic.pdf",
+          "size": "2.2 MB",
+          "sizeBytes": 2263458,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1J24_ttvW79N8XpQaJMlZ9qTxt0GC5gVB/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35025,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 - lg4858l-sb 120316 1730 - Schematic.pdf",
+          "size": "2.2 MB",
+          "sizeBytes": 2263458,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1J24_ttvW79N8XpQaJMlZ9qTxt0GC5gVB/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19430,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 (lg4858l-uma sa 120316 1400)",
+      "slug": "laptop-lenovo-lenovo-g480-wistron-lg4858-11326-11291-12206-10792-lg4858l-uma-sa-120316-1400",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 (lg4858l-uma sa 120316 1400) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35026,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 - lg4858l-uma sa 120316 1400 - Schematic.pdf",
+          "size": "1.8 MB",
+          "sizeBytes": 1843596,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1RCDlK61pJ1eVqTxQLMTVqWJFzHtYV_iv/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35027,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo G480 - Wistron LG4858 - 11326 - 11291 - 12206 - 10792 - lg4858l-uma sa 120316 1400 - Schematic.pdf",
+          "size": "1.8 MB",
+          "sizeBytes": 1843596,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1RCDlK61pJ1eVqTxQLMTVqWJFzHtYV_iv/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19435,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo G480 G580 - G48 G58 - 11252-1 91.4SG01.001",
+      "slug": "laptop-lenovo-lenovo-g480-g580-g48-g58-11252-1-914sg01001",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "11252-1",
+      "officialTitle": "Lenovo Lenovo G480 G580 - G48 G58 - 11252-1 91.4SG01.001 (11252-1) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35036,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo G480 G580 - G48 G58 - 11252-1 91.4SG01.001 - Schematic.pdf",
+          "size": "1.7 MB",
+          "sizeBytes": 1733390,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1F1Bh1kkOfqwQhh4kOafovrEIOoDXGeBz/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19436,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo G50-80 series - LCFC NM-A362",
+      "slug": "laptop-lenovo-lenovo-g50-80-series-lcfc-nm-a362",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-A362",
+      "officialTitle": "Lenovo Lenovo G50-80 series - LCFC NM-A362 (NM-A362) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35037,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo G50-80 series - LCFC NM-A362 - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1630172,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1LHVeAyyWhVf6LFI4DCv5NRLdRzQ7GaQp/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19437,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo G585 LA-8581P",
+      "slug": "laptop-lenovo-lenovo-g585-la-8581p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-8581P",
+      "officialTitle": "Lenovo Lenovo G585 LA-8581P (LA-8581P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35038,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo G585 LA-8581P - Schematic.pdf",
+          "size": "3.6 MB",
+          "sizeBytes": 3786178,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1IASNnVw2GFWZSD9CtWLzsfsX8d8B3iyW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19438,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo IdeaCentre B520 - LA-6951P",
+      "slug": "laptop-lenovo-lenovo-ideacentre-b520-la-6951p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-6951P",
+      "officialTitle": "Lenovo Lenovo IdeaCentre B520 - LA-6951P (LA-6951P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35039,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo IdeaCentre B520 - LA-6951P - Schematic.pdf",
+          "size": "2 MB",
+          "sizeBytes": 2076131,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wYJPnd7lENvlpmSAHLfH3l6_bKNrJjI9/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19439,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo IdeaPad 100 - LCFC NM-A681",
+      "slug": "laptop-lenovo-lenovo-ideapad-100-lcfc-nm-a681",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-A681",
+      "officialTitle": "Lenovo Lenovo IdeaPad 100 - LCFC NM-A681 (NM-A681) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35040,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo IdeaPad 100 - LCFC NM-A681 - Schematic.pdf",
+          "size": "751.9 KB",
+          "sizeBytes": 769965,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1YzRdj9sMQ36CJbXvU3YlaVOhrWES8tVT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19450,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo IdeaPad 300-17isk - LCFC BMWD1 NM-A491",
+      "slug": "laptop-lenovo-lenovo-ideapad-300-17isk-lcfc-bmwd1-nm-a491",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-A491",
+      "officialTitle": "Lenovo Lenovo IdeaPad 300-17isk - LCFC BMWD1 NM-A491 (NM-A491) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35051,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo IdeaPad 300-17isk - LCFC BMWD1 NM-A491 - Schematic.pdf",
+          "size": "2.7 MB",
+          "sizeBytes": 2824150,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1XE0zx82ZbRCrdpG9p6MaXmtnATo_8BEM/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19451,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo IdeaPad 510S-14ISK - LA-D451P r1.0 Schematic",
+      "slug": "laptop-lenovo-lenovo-ideapad-510s-14isk-la-d451p-r10-schematic",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-D451P",
+      "officialTitle": "Lenovo Lenovo IdeaPad 510S-14ISK - LA-D451P r1.0 Schematic (LA-D451P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35052,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo IdeaPad 510S-14ISK - LA-D451P r1.0 Schematic - Schematic.pdf",
+          "size": "3.4 MB",
+          "sizeBytes": 3609115,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1MXLtYBRO-Z1eJ-9equlftVjD90IpV4n8/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19452,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo IdeaPad G40-70 G50-70 NM-A271 ACLU1ACLU2",
+      "slug": "laptop-lenovo-lenovo-ideapad-g40-70-g50-70-nm-a271-aclu1aclu2",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-A271",
+      "officialTitle": "Lenovo Lenovo IdeaPad G40-70 G50-70 NM-A271 ACLU1ACLU2 (NM-A271) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35053,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo IdeaPad G40-70 G50-70 NM-A271 ACLU1ACLU2 - Schematic.pdf",
+          "size": "3.2 MB",
+          "sizeBytes": 3380231,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1TQVmFL1r8zVMhOD3JjoMSNr2x_YkPJeM/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19454,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo IdeaPad G50-45 - NM-A281 r04 (2)",
+      "slug": "laptop-lenovo-lenovo-ideapad-g50-45-nm-a281-r04-2",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-A281",
+      "officialTitle": "Lenovo Lenovo IdeaPad G50-45 - NM-A281 r04 (2) (NM-A281) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35055,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo IdeaPad G50-45 - NM-A281 r04 (2) - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1724905,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14rH_S70Gy90jjHFSEN5tJ98evR7va4ud/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19456,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo IdeaPad S10-3 - QUANTA FL5 MARIANA FL5 - MARIANA 3.0 - REV 1.ASec",
+      "slug": "laptop-lenovo-lenovo-ideapad-s10-3-quanta-fl5-mariana-fl5-mariana-30-rev-1asec",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Lenovo IdeaPad S10-3 - QUANTA FL5 MARIANA FL5 - MARIANA 3.0 - REV 1.ASec — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35057,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo IdeaPad S10-3 - QUANTA FL5 MARIANA FL5 - MARIANA 3.0 - REV 1.ASec - Schematic.pdf",
+          "size": "996.5 KB",
+          "sizeBytes": 1020445,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_SJtFbChpJAxCfb1UrV0NG1QuV2hQhEW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19455,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo IdeaPad S10-3 - QUANTA FL5 MARIANA FL5 - MARIANA 3.0 - REV 1.ASec - Copy",
+      "slug": "laptop-lenovo-lenovo-ideapad-s10-3-quanta-fl5-mariana-fl5-mariana-30-rev-1asec-copy",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Lenovo IdeaPad S10-3 - QUANTA FL5 MARIANA FL5 - MARIANA 3.0 - REV 1.ASec - Copy — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35056,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo IdeaPad S10-3 - QUANTA FL5 MARIANA FL5 - MARIANA 3.0 - REV 1.ASec - Copy - Schematic.pdf",
+          "size": "996.5 KB",
+          "sizeBytes": 1020445,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1fX8sGmkSo8W95FRtOWDStjFUaUBz2QVh/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19457,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo IdeaPad Y700 - NM-A541",
+      "slug": "laptop-lenovo-lenovo-ideapad-y700-nm-a541",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-A541",
+      "officialTitle": "Lenovo Lenovo IdeaPad Y700 - NM-A541 (NM-A541) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35058,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo IdeaPad Y700 - NM-A541 - Schematic.pdf",
+          "size": "1.5 MB",
+          "sizeBytes": 1567753,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1IwF6Ha9N22zsP2T6HmsZqyuHkyJi_MME/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19448,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo Ideapad 300-15IBR - LCFC NM-A471 r0.4",
+      "slug": "laptop-lenovo-lenovo-ideapad-300-15ibr-lcfc-nm-a471-r04",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-A471",
+      "officialTitle": "Lenovo Lenovo Ideapad 300-15IBR - LCFC NM-A471 r0.4 (NM-A471) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35049,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo Ideapad 300-15IBR - LCFC NM-A471 r0.4 - Schematic.pdf",
+          "size": "2.2 MB",
+          "sizeBytes": 2286495,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1usFf-aF0A7jbdrAl8Eg2_7PdS_GkTE7_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19449,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo Ideapad 300-15ISK - LCFC NM-A481 r0.3",
+      "slug": "laptop-lenovo-lenovo-ideapad-300-15isk-lcfc-nm-a481-r03",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-A481",
+      "officialTitle": "Lenovo Lenovo Ideapad 300-15ISK - LCFC NM-A481 r0.3 (NM-A481) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35050,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo Ideapad 300-15ISK - LCFC NM-A481 r0.3 - Schematic.pdf",
+          "size": "2.1 MB",
+          "sizeBytes": 2204207,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15B_UAykheYDfyr9LTp4-ppKmV5CvrZEW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19458,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo M5400 - DA0BM5MB8D0 - BM5 - BM5C (BM5-MB-C)",
+      "slug": "laptop-lenovo-lenovo-m5400-da0bm5mb8d0-bm5-bm5c-bm5-mb-c",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "DA0BM5MB8D0",
+      "officialTitle": "Lenovo Lenovo M5400 - DA0BM5MB8D0 - BM5 - BM5C (BM5-MB-C) (DA0BM5MB8D0) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 35059,
+          "type": "boardview",
+          "name": "LENOVO - Lenovo M5400 - DA0BM5MB8D0 - BM5 - BM5C - BM5-MB-C - Boardview.brd",
+          "size": "294.2 KB",
+          "sizeBytes": 301271,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xGht9ZN77e_mc3dh8U0eQWDCvQcA9x0V/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19459,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo M5400 - DA0BM5MB8D0 - BM5 - BM5C (BM5C)",
+      "slug": "laptop-lenovo-lenovo-m5400-da0bm5mb8d0-bm5-bm5c-bm5c",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "DA0BM5MB8D0",
+      "officialTitle": "Lenovo Lenovo M5400 - DA0BM5MB8D0 - BM5 - BM5C (BM5C) (DA0BM5MB8D0) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 35060,
+          "type": "boardview",
+          "name": "LENOVO - Lenovo M5400 - DA0BM5MB8D0 - BM5 - BM5C - BM5C - Boardview.brd",
+          "size": "293.8 KB",
+          "sizeBytes": 300805,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1jtCgReYbcesAgMmLoj62PlnebPmM6u5S/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19460,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo M5400 - DA0BM5MB8D0 - BM5 - BM5C (Quanta BM5 (M-Note BM5 SB DIS GV2-SAMSUNG 2GB r1a 0328 Lenovo Ideapad B5400 M5400)",
+      "slug": "laptop-lenovo-lenovo-m5400-da0bm5mb8d0-bm5-bm5c-quanta-bm5-m-note-bm5-sb-dis-gv2-samsung-2gb-r1a-0328-lenovo-ideapad-b5400-m5400",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "DA0BM5MB8D0",
+      "officialTitle": "Lenovo Lenovo M5400 - DA0BM5MB8D0 - BM5 - BM5C (Quanta BM5 (M-Note BM5 SB DIS GV2-SAMSUNG 2GB r1a 0328 Lenovo Ideapad B5400 M5400) (DA0BM5MB8D0) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35061,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo M5400 - DA0BM5MB8D0 - BM5 - BM5C - Quanta BM5 (M-Note BM5 SB DIS GV2-SAMSUNG 2GB r1a 0328 Lenovo Ideapad B5400 M5400 - Schematic.pdf",
+          "size": "3 MB",
+          "sizeBytes": 3112791,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1VyNeq4eH36lLRmITBNcbJMA1MxdSybni/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19461,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo M5400 - DA0BM5MB8D0 - BM5 - BM5C (Quanta BM5 (M-Note BM5 SB DIS GV2-SAMSUNG 2GB r1a 0525 Lenovo Ideapad B5400 M5400)",
+      "slug": "laptop-lenovo-lenovo-m5400-da0bm5mb8d0-bm5-bm5c-quanta-bm5-m-note-bm5-sb-dis-gv2-samsung-2gb-r1a-0525-lenovo-ideapad-b5400-m5400",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "DA0BM5MB8D0",
+      "officialTitle": "Lenovo Lenovo M5400 - DA0BM5MB8D0 - BM5 - BM5C (Quanta BM5 (M-Note BM5 SB DIS GV2-SAMSUNG 2GB r1a 0525 Lenovo Ideapad B5400 M5400) (DA0BM5MB8D0) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35062,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo M5400 - DA0BM5MB8D0 - BM5 - BM5C - Quanta BM5 (M-Note BM5 SB DIS GV2-SAMSUNG 2GB r1a 0525 Lenovo Ideapad B5400 M5400 - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1679346,
+          "gdrive_direct_url": "https://drive.google.com/file/d/178_hYw6DI6meOts8nfvco5Wb8V6gJu50/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19463,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo S10-3s LM30 SIV 1027 MB 09298",
+      "slug": "laptop-lenovo-lenovo-s10-3s-lm30-siv-1027-mb-09298",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Lenovo S10-3s LM30 SIV 1027 MB 09298 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35064,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo S10-3s LM30 SIV 1027 MB 09298 - Schematic.pdf",
+          "size": "1.1 MB",
+          "sizeBytes": 1163157,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1iiuHHOM1kZ48fTH4aim3wmHvcHNBa6SR/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19464,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo S110 - BM5138 (S110 BM5138 1.3)",
+      "slug": "laptop-lenovo-lenovo-s110-bm5138-s110-bm5138-13",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Lenovo S110 - BM5138 (S110 BM5138 1.3) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35065,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo S110 - BM5138 - S110 BM5138 1.3 - Schematic.pdf",
+          "size": "1.1 MB",
+          "sizeBytes": 1187556,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1EONOwLqmPxG4GPV9Ltm2171lthHVvuXr/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19465,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo S110 - BM5138 (S110-BOTTOM)",
+      "slug": "laptop-lenovo-lenovo-s110-bm5138-s110-bottom",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Lenovo S110 - BM5138 (S110-BOTTOM) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35066,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo S110 - BM5138 - S110-BOTTOM - Schematic.pdf",
+          "size": "169.5 KB",
+          "sizeBytes": 173546,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DnwZlLmnYJz35gBOQk09aRFv2ZrANfhs/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19466,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo S110 - BM5138 (S110-TOP)",
+      "slug": "laptop-lenovo-lenovo-s110-bm5138-s110-top",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Lenovo S110 - BM5138 (S110-TOP) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35067,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo S110 - BM5138 - S110-TOP - Schematic.pdf",
+          "size": "177.9 KB",
+          "sizeBytes": 182158,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ajcGBs5NpjXfbkyTkVCnkYvwgHKNE_ql/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19467,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo SL510 - SL510K DIS - QUANTA GC2 GC3 (G-note daughter board)",
+      "slug": "laptop-lenovo-lenovo-sl510-sl510k-dis-quanta-gc2-gc3-g-note-daughter-board",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Lenovo SL510 - SL510K DIS - QUANTA GC2 GC3 (G-note daughter board) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35068,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo SL510 - SL510K DIS - QUANTA GC2 GC3 - G-note daughter board - Schematic.pdf",
+          "size": "115.2 KB",
+          "sizeBytes": 117924,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ILvUz118cDj-8MvIVXqL0OctPvxdtE7b/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19468,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo SL510 - SL510K DIS - QUANTA GC2 GC3 (GC2 gc3 G-Note Montevina 041009 R2A 0303 SL410K DIS)",
+      "slug": "laptop-lenovo-lenovo-sl510-sl510k-dis-quanta-gc2-gc3-gc2-gc3-g-note-montevina-041009-r2a-0303-sl410k-dis",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Lenovo SL510 - SL510K DIS - QUANTA GC2 GC3 (GC2 gc3 G-Note Montevina 041009 R2A 0303 SL410K DIS) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35069,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo SL510 - SL510K DIS - QUANTA GC2 GC3 - GC2 gc3 G-Note Montevina 041009 R2A 0303 SL410K DIS - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1703792,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zgkfofN3JjFNeTzvtFit0iD8GvvEHeho/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19469,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo SL510 - SL510K DIS - QUANTA GC2 GC3 (GC3 G-Note Montevina-0615 R2A)",
+      "slug": "laptop-lenovo-lenovo-sl510-sl510k-dis-quanta-gc2-gc3-gc3-g-note-montevina-0615-r2a",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Lenovo SL510 - SL510K DIS - QUANTA GC2 GC3 (GC3 G-Note Montevina-0615 R2A) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35070,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo SL510 - SL510K DIS - QUANTA GC2 GC3 - GC3 G-Note Montevina-0615 R2A - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1701126,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1z9O5ocWp1FgTYeDXfCAfoEMgUA7x7xbG/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19470,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo ThinkPad S1 Yoga LA-A341P ZIPS1",
+      "slug": "laptop-lenovo-lenovo-thinkpad-s1-yoga-la-a341p-zips1",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-A341P",
+      "officialTitle": "Lenovo Lenovo ThinkPad S1 Yoga LA-A341P ZIPS1 (LA-A341P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35071,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo ThinkPad S1 Yoga LA-A341P ZIPS1 - Schematic.pdf",
+          "size": "2 MB",
+          "sizeBytes": 2092424,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xzWFpJR2uiuFmxgMIiwamBCp7OSQf1lS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19471,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo Thinkpad T430 - NM-A082 - NZM4I-7",
+      "slug": "laptop-lenovo-lenovo-thinkpad-t430-nm-a082-nzm4i-7",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-A082",
+      "officialTitle": "Lenovo Lenovo Thinkpad T430 - NM-A082 - NZM4I-7 (NM-A082) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35072,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo Thinkpad T430 - NM-A082 - NZM4I-7 - Schematic.pdf",
+          "size": "1 MB",
+          "sizeBytes": 1093109,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13AGzQE3O9kmSG9B7fCjUdkEbuBju4I2S/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19472,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo Thinkpad T440 - VIVLO NM-A102",
+      "slug": "laptop-lenovo-lenovo-thinkpad-t440-vivlo-nm-a102",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-A102",
+      "officialTitle": "Lenovo Lenovo Thinkpad T440 - VIVLO NM-A102 (NM-A102) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35073,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo Thinkpad T440 - VIVLO NM-A102 - Schematic.pdf",
+          "size": "1.8 MB",
+          "sizeBytes": 1844517,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Hqo3cdVA0keBbR8CYjzX2v8U5mAOdw0Q/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19475,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo Y510P NM-A032 VIQY1",
+      "slug": "laptop-lenovo-lenovo-y510p-nm-a032-viqy1",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-A032",
+      "officialTitle": "Lenovo Lenovo Y510P NM-A032 VIQY1 (NM-A032) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35076,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo Y510P NM-A032 VIQY1 - Schematic.pdf",
+          "size": "3.5 MB",
+          "sizeBytes": 3712457,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hOcZa0rdMRhFshCDS9hr8okhJW62kGzl/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19477,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo YOGA2 PRO - LCFC NM-A074 r1.0",
+      "slug": "laptop-lenovo-lenovo-yoga2-pro-lcfc-nm-a074-r10",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-A074",
+      "officialTitle": "Lenovo Lenovo YOGA2 PRO - LCFC NM-A074 r1.0 (NM-A074) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35078,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo YOGA2 PRO - LCFC NM-A074 r1.0 - Schematic.pdf",
+          "size": "960.5 KB",
+          "sizeBytes": 983525,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Ou2pyWFfIybqg-8JtQB1Cekd7IBJf93-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19476,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo Yoga 3 - NM-A381",
+      "slug": "laptop-lenovo-lenovo-yoga-3-nm-a381",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-A381",
+      "officialTitle": "Lenovo Lenovo Yoga 3 - NM-A381 (NM-A381) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35077,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo Yoga 3 - NM-A381 - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1390443,
+          "gdrive_direct_url": "https://drive.google.com/file/d/16q1cN5Y5FU3KRFLupPPtBBX-R0dzuzDv/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19478,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo Z480 - DALZ2AMB8F0 - LZ2A",
+      "slug": "laptop-lenovo-lenovo-z480-dalz2amb8f0-lz2a",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Lenovo Z480 - DALZ2AMB8F0 - LZ2A — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35079,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo Z480 - DALZ2AMB8F0 - LZ2A - Schematic.pdf",
+          "size": "1009.7 KB",
+          "sizeBytes": 1033945,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QYzmQJSy9SFOoHUqy-HEEkMmTKpwLtPg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19473,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Lenovo thinkpad X240 - NM-A091",
+      "slug": "laptop-lenovo-lenovo-thinkpad-x240-nm-a091",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-A091",
+      "officialTitle": "Lenovo Lenovo thinkpad X240 - NM-A091 (NM-A091) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35074,
+          "type": "schematic",
+          "name": "LENOVO - Lenovo thinkpad X240 - NM-A091 - Schematic.pdf",
+          "size": "4.2 MB",
+          "sizeBytes": 4421125,
+          "gdrive_direct_url": "https://drive.google.com/file/d/16EoBdEFCIJ0rW2sqxFvD_Pk_nWzHA3ks/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19482,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "MK E445 la-8126p REV1.0",
+      "slug": "laptop-lenovo-mk-e445-la-8126p-rev10",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-8126P",
+      "officialTitle": "Lenovo MK E445 la-8126p REV1.0 (LA-8126P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35083,
+          "type": "schematic",
+          "name": "LENOVO - MK E445 la-8126p REV1.0 - Schematic.pdf",
+          "size": "3.4 MB",
+          "sizeBytes": 3587509,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1N_36Ylgx9rAbLSho6C8OAbl1aNYeBU9M/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19483,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "MS-7846 REV2.1",
+      "slug": "laptop-lenovo-ms-7846-rev21",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "MS-7846",
+      "officialTitle": "Lenovo MS-7846 REV2.1 (MS-7846) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35084,
+          "type": "schematic",
+          "name": "LENOVO - MS-7846 REV2.1 - Schematic.pdf",
+          "size": "5.9 MB",
+          "sizeBytes": 6144722,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hcm5kyQTWQxXEpZV1vEQAqVbUzHiz8eR/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19484,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "NM-A043 NM-A044.pdf",
+      "slug": "laptop-lenovo-nm-a043-nm-a044pdf",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-A043",
+      "officialTitle": "Lenovo NM-A043 NM-A044.pdf (NM-A043) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35085,
+          "type": "schematic",
+          "name": "LENOVO - NM-A043 NM-A044.pdf - Schematic.pdf",
+          "size": "1.7 MB",
+          "sizeBytes": 1757361,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19Sk-Oh30mEl1dvE2AFp_IknIojX-Pe21/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19485,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "NM-A272 (NM-A272 ACLU1 , ACLU2 UMA DDR3 REV 1.0 - Lenovo G40-70)",
+      "slug": "laptop-lenovo-nm-a272-nm-a272-aclu1-aclu2-uma-ddr3-rev-10-lenovo-g40-70",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-A272",
+      "officialTitle": "Lenovo NM-A272 (NM-A272 ACLU1 , ACLU2 UMA DDR3 REV 1.0 - Lenovo G40-70) (NM-A272) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35086,
+          "type": "schematic",
+          "name": "LENOVO - NM-A272 - NM-A272 ACLU1 , ACLU2 UMA DDR3 REV 1.0 - Lenovo G40-70 - Schematic.pdf",
+          "size": "1.9 MB",
+          "sizeBytes": 1967941,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1oQo2zy94ecuQcaeRS5HAXWOqBHfmyqDV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19486,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "NM-A311 (ACLU9-ACLU0 NM-A311 r0.2 2013-12-22 Lenovo IdeaPad G40-30 G50-30)",
+      "slug": "laptop-lenovo-nm-a311-aclu9-aclu0-nm-a311-r02-2013-12-22-lenovo-ideapad-g40-30-g50-30",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-A311",
+      "officialTitle": "Lenovo NM-A311 (ACLU9-ACLU0 NM-A311 r0.2 2013-12-22 Lenovo IdeaPad G40-30 G50-30) (NM-A311) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35087,
+          "type": "schematic",
+          "name": "LENOVO - NM-A311 - ACLU9-ACLU0 NM-A311 r0.2 2013-12-22 Lenovo IdeaPad G40-30 G50-30 - Schematic.pdf",
+          "size": "1.4 MB",
+          "sizeBytes": 1445208,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1LtaGGYmeY_d8y7J40Lwg0JKFQdis59Sd/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19487,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "NM-A541 (Lenovo IdeaPad Y700 - NM-A541)",
+      "slug": "laptop-lenovo-nm-a541-lenovo-ideapad-y700-nm-a541",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-A541",
+      "officialTitle": "Lenovo NM-A541 (Lenovo IdeaPad Y700 - NM-A541) (NM-A541) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35088,
+          "type": "schematic",
+          "name": "LENOVO - NM-A541 - Lenovo IdeaPad Y700 - NM-A541 - Schematic.pdf",
+          "size": "1.5 MB",
+          "sizeBytes": 1567753,
+          "gdrive_direct_url": "https://drive.google.com/file/d/187ffPLgTnSu7xahgC7C6JFRrx6c6TDrI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19488,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "NM-A841(CG521)rev 1.0",
+      "slug": "laptop-lenovo-nm-a841cg521rev-10",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-A841",
+      "officialTitle": "Lenovo NM-A841(CG521)rev 1.0 (NM-A841) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35089,
+          "type": "schematic",
+          "name": "LENOVO - NM-A841(CG521)rev 1.0 - Schematic.pdf",
+          "size": "961 KB",
+          "sizeBytes": 984016,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1aHmnnrmBfF0p7Tz8qWW2_-2_Z0lXK5-P/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19489,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Quanta LI2 r1A",
+      "slug": "laptop-lenovo-quanta-li2-r1a",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Quanta LI2 r1A — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35090,
+          "type": "schematic",
+          "name": "LENOVO - Quanta LI2 r1A - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1318644,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1pGQtAOQXwWGC5vxzXCxW_3GDSad2lePT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19491,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Skema Lenovo B50-70 LA-B091P (LS-B091P R04 1224 R0.4 0212)",
+      "slug": "laptop-lenovo-skema-lenovo-b50-70-la-b091p-ls-b091p-r04-1224-r04-0212",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-B091P",
+      "officialTitle": "Lenovo Skema Lenovo B50-70 LA-B091P (LS-B091P R04 1224 R0.4 0212) (LA-B091P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35092,
+          "type": "schematic",
+          "name": "LENOVO - Skema Lenovo B50-70 LA-B091P - LS-B091P R04 1224 R0.4 0212 - Schematic.pdf",
+          "size": "88 KB",
+          "sizeBytes": 90129,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13fmkfOPEe291uiFMYBvTLGwtj7s5sToQ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19492,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Skema Lenovo B50-70 LA-B091P (LS-B092P R10 0212 R03 1125)",
+      "slug": "laptop-lenovo-skema-lenovo-b50-70-la-b091p-ls-b092p-r10-0212-r03-1125",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-B091P",
+      "officialTitle": "Lenovo Skema Lenovo B50-70 LA-B091P (LS-B092P R10 0212 R03 1125) (LA-B091P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35093,
+          "type": "schematic",
+          "name": "LENOVO - Skema Lenovo B50-70 LA-B091P - LS-B092P R10 0212 R03 1125 - Schematic.pdf",
+          "size": "78.5 KB",
+          "sizeBytes": 80405,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15An3IpGxooeFRAvm_BiIjfcIFRB5_H0p/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19493,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Skema Lenovo B50-70 LA-B091P (LS-B094P R10 0212 R0.5 1223)",
+      "slug": "laptop-lenovo-skema-lenovo-b50-70-la-b091p-ls-b094p-r10-0212-r05-1223",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-B091P",
+      "officialTitle": "Lenovo Skema Lenovo B50-70 LA-B091P (LS-B094P R10 0212 R0.5 1223) (LA-B091P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35094,
+          "type": "schematic",
+          "name": "LENOVO - Skema Lenovo B50-70 LA-B091P - LS-B094P R10 0212 R0.5 1223 - Schematic.pdf",
+          "size": "203.8 KB",
+          "sizeBytes": 208700,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1RccX_U9NsbMEwrHUWlYOWigWKj45BGZD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19494,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Skema Lenovo B50-70 LA-B091P (LS-B095P R10 0827 R0.1 0909)",
+      "slug": "laptop-lenovo-skema-lenovo-b50-70-la-b091p-ls-b095p-r10-0827-r01-0909",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-B091P",
+      "officialTitle": "Lenovo Skema Lenovo B50-70 LA-B091P (LS-B095P R10 0827 R0.1 0909) (LA-B091P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35095,
+          "type": "schematic",
+          "name": "LENOVO - Skema Lenovo B50-70 LA-B091P - LS-B095P R10 0827 R0.1 0909 - Schematic.pdf",
+          "size": "99 KB",
+          "sizeBytes": 101349,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1yp7IiskjPpS4xAwoMIdb-PxC9-Xy2q60/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19495,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Skema Lenovo B50-70 LA-B091P (LS-B098P R10 0212 R0.2 1224)",
+      "slug": "laptop-lenovo-skema-lenovo-b50-70-la-b091p-ls-b098p-r10-0212-r02-1224",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-B091P",
+      "officialTitle": "Lenovo Skema Lenovo B50-70 LA-B091P (LS-B098P R10 0212 R0.2 1224) (LA-B091P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35096,
+          "type": "schematic",
+          "name": "LENOVO - Skema Lenovo B50-70 LA-B091P - LS-B098P R10 0212 R0.2 1224 - Schematic.pdf",
+          "size": "85.5 KB",
+          "sizeBytes": 87536,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1JfqhzvFXjUx6ZMA2VAtOUpC8sPJ5Vcgx/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19496,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Skema Lenovo B50-70 LA-B091P (ZIWB2 ZIWB3 ZIWE1 LA-B091P R10 0210 R1.0 0212 DIS)",
+      "slug": "laptop-lenovo-skema-lenovo-b50-70-la-b091p-ziwb2-ziwb3-ziwe1-la-b091p-r10-0210-r10-0212-dis",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-B091P",
+      "officialTitle": "Lenovo Skema Lenovo B50-70 LA-B091P (ZIWB2 ZIWB3 ZIWE1 LA-B091P R10 0210 R1.0 0212 DIS) (LA-B091P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35097,
+          "type": "schematic",
+          "name": "LENOVO - Skema Lenovo B50-70 LA-B091P - ZIWB2 ZIWB3 ZIWE1 LA-B091P R10 0210 R1.0 0212 DIS - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1320188,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1iGPcuWZstI3mpc-5MiMQWwXXMuoVEvpK/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19497,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Skema Lenovo Y550P - LA-5371P",
+      "slug": "laptop-lenovo-skema-lenovo-y550p-la-5371p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-5371P",
+      "officialTitle": "Lenovo Skema Lenovo Y550P - LA-5371P (LA-5371P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35098,
+          "type": "schematic",
+          "name": "LENOVO - Skema Lenovo Y550P - LA-5371P - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1637336,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-3i8z0TV3cOiZ7lzINqHv91KJR_PpIQ1/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18847,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "T420S - LSN-3 UMA MB - H0223 Boardview",
+      "slug": "laptop-lenovo-t420s-lsn-3-uma-mb-h0223-boardview",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo T420S - LSN-3 UMA MB - H0223 Boardview — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34387,
+          "type": "boardview",
+          "name": "LENOVO - T420S - LSN-3 UMA MB - H0223 Boardview - Boardview Pack.zip",
+          "size": "2.3 MB",
+          "sizeBytes": 2429325,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1MX2ipe3KcAZ9Wyzsr-IL0bo9Ottdw-Ne/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19500,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "T440 - NM-A101",
+      "slug": "laptop-lenovo-t440-nm-a101",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-A101",
+      "officialTitle": "Lenovo T440 - NM-A101 (NM-A101) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35101,
+          "type": "schematic",
+          "name": "LENOVO - T440 - NM-A101 - Schematic.pdf",
+          "size": "6.3 MB",
+          "sizeBytes": 6658003,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1SfprLzp00RkjYvfDGMde9Csx7v93Klln/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19501,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "THINKPAD E435 - LA-8121P",
+      "slug": "laptop-lenovo-thinkpad-e435-la-8121p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-8121P",
+      "officialTitle": "Lenovo THINKPAD E435 - LA-8121P (LA-8121P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35102,
+          "type": "schematic",
+          "name": "LENOVO - THINKPAD E435 - LA-8121P - Schematic.pdf",
+          "size": "1.5 MB",
+          "sizeBytes": 1624828,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1eBWL340vX_1-QrA-wCJvm0l-ptOCU3bO/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19502,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "ThinkPad Edge E125 AMD (FL8)",
+      "slug": "laptop-lenovo-thinkpad-edge-e125-amd-fl8",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo ThinkPad Edge E125 AMD (FL8) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35103,
+          "type": "schematic",
+          "name": "LENOVO - ThinkPad Edge E125 AMD (FL8) - Schematic.pdf",
+          "size": "1 MB",
+          "sizeBytes": 1095092,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1YQsdSyOTg4a7jztmS5a1TcT2fZZW_qJs/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19503,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "ThinkPad P51X - LCFC NM-B041 Schematic",
+      "slug": "laptop-lenovo-thinkpad-p51x-lcfc-nm-b041-schematic",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-B041",
+      "officialTitle": "Lenovo ThinkPad P51X - LCFC NM-B041 Schematic (NM-B041) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35104,
+          "type": "schematic",
+          "name": "LENOVO - ThinkPad P51X - LCFC NM-B041 Schematic - Schematic.pdf",
+          "size": "6.3 MB",
+          "sizeBytes": 6655776,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1u4ntXg0VVaerc4AdQAiqUMO4IPyfArXi/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19504,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "VBA11 LA-A111P rev1.0 0531",
+      "slug": "laptop-lenovo-vba11-la-a111p-rev10-0531",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-A111P",
+      "officialTitle": "Lenovo VBA11 LA-A111P rev1.0 0531 (LA-A111P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35105,
+          "type": "schematic",
+          "name": "LENOVO - VBA11 LA-A111P rev1.0 0531 - Schematic.pdf",
+          "size": "511.2 KB",
+          "sizeBytes": 523514,
+          "gdrive_direct_url": "https://drive.google.com/file/d/18sxrPsMC27t1AXoBd1CiMDYgHDnfdF50/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19505,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Wistron LU47 10334-1 rSC",
+      "slug": "laptop-lenovo-wistron-lu47-10334-1-rsc",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "10334-1",
+      "officialTitle": "Lenovo Wistron LU47 10334-1 rSC (10334-1) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35106,
+          "type": "schematic",
+          "name": "LENOVO - Wistron LU47 10334-1 rSC - Schematic.pdf",
+          "size": "1.9 MB",
+          "sizeBytes": 1973501,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1U1YNeKnDndqK5HbHWW19S7il68dnsa8X/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19506,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Wistron SHINAI-3, 10226-SB",
+      "slug": "laptop-lenovo-wistron-shinai-3-10226-sb",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo Wistron SHINAI-3, 10226-SB — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35107,
+          "type": "schematic",
+          "name": "LENOVO - Wistron SHINAI-3, 10226-SB - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1314673,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PyEiIlZn7m4ljWS-mO8yq4Gbf3cok7OR/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19508,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "X201 08270-2 0127 1 Mocha-3",
+      "slug": "laptop-lenovo-x201-08270-2-0127-1-mocha-3",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "08270-2",
+      "officialTitle": "Lenovo X201 08270-2 0127 1 Mocha-3 (08270-2) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35109,
+          "type": "schematic",
+          "name": "LENOVO - X201 08270-2 0127 1 Mocha-3 - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1718786,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14BPcqAA7YZZOL-L8nbspSaVg3MvrhmzB/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19507,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "X201 08270-2 0127 1 Mocha-3 (1)",
+      "slug": "laptop-lenovo-x201-08270-2-0127-1-mocha-3-1",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "08270-2",
+      "officialTitle": "Lenovo X201 08270-2 0127 1 Mocha-3 (1) (08270-2) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35108,
+          "type": "schematic",
+          "name": "LENOVO - X201 08270-2 0127 1 Mocha-3 (1) - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1718786,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1bE3njxSrxftB-ezUn_bZmm6X6t-chwS5/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19509,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "X230 Dasher-2 - 11232-1 final r4",
+      "slug": "laptop-lenovo-x230-dasher-2-11232-1-final-r4",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "11232-1",
+      "officialTitle": "Lenovo X230 Dasher-2 - 11232-1 final r4 (11232-1) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35110,
+          "type": "schematic",
+          "name": "LENOVO - X230 Dasher-2 - 11232-1 final r4 - Schematic.pdf",
+          "size": "3 MB",
+          "sizeBytes": 3153845,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wHt4eA-rdOVXBFIC5EpWSk5i-_JyFPfV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19510,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "Y400S NM-A141",
+      "slug": "laptop-lenovo-y400s-nm-a141",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "NM-A141",
+      "officialTitle": "Lenovo Y400S NM-A141 (NM-A141) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35111,
+          "type": "schematic",
+          "name": "LENOVO - Y400S NM-A141 - Schematic.pdf",
+          "size": "2 MB",
+          "sizeBytes": 2085316,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1cocoWgzVRDm_RiuMFa3BB5Au47-YF0pZ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19511,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "YOGA 3 11 - LA-B921P－AYZI0",
+      "slug": "laptop-lenovo-yoga-3-11-la-b921payzi0",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-B921P",
+      "officialTitle": "Lenovo YOGA 3 11 - LA-B921P－AYZI0 (LA-B921P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35112,
+          "type": "schematic",
+          "name": "LENOVO - YOGA 3 11 - LA-B921P－AYZI0 - Schematic.pdf",
+          "size": "2.1 MB",
+          "sizeBytes": 2154965,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1a3_kmUSWSxzEXPanHHJ2uT6YspMZFzes/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19512,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "ZAA00(C260) LA-B001P RB 0325 lenovo C260",
+      "slug": "laptop-lenovo-zaa00c260-la-b001p-rb-0325-lenovo-c260",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-B001P",
+      "officialTitle": "Lenovo ZAA00(C260) LA-B001P RB 0325 lenovo C260 (LA-B001P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35113,
+          "type": "schematic",
+          "name": "LENOVO - ZAA00(C260) LA-B001P RB 0325 lenovo C260 - Schematic.pdf",
+          "size": "714.5 KB",
+          "sizeBytes": 731598,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Dh2Xwy7VVXCr-K6UMua6123WOHnWMtYJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19389,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "compal la-b092p r1.0 schematics",
+      "slug": "laptop-lenovo-compal-la-b092p-r10-schematics",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-B092P",
+      "officialTitle": "Lenovo compal la-b092p r1.0 schematics (LA-B092P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34974,
+          "type": "schematic",
+          "name": "LENOVO - compal la-b092p r1.0 schematics - Schematic.pdf",
+          "size": "2.2 MB",
+          "sizeBytes": 2273191,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Nc6XruB7j-v4MNeTQu60pmsSX1LsYyzJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19397,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "la-9641p (Compal LA-9641P r1.0)",
+      "slug": "laptop-lenovo-la-9641p-compal-la-9641p-r10",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-9641P",
+      "officialTitle": "Lenovo la-9641p (Compal LA-9641P r1.0) (LA-9641P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34982,
+          "type": "schematic",
+          "name": "LENOVO - la-9641p - Compal LA-9641P r1.0 - Schematic.pdf",
+          "size": "2.7 MB",
+          "sizeBytes": 2857184,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Lw3zH-t1u8wfI6xvmhrAjf_FbD2MN2GG/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19474,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "lenovo Y480 COMPAL LA-8001P",
+      "slug": "laptop-lenovo-lenovo-y480-compal-la-8001p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-8001P",
+      "officialTitle": "Lenovo lenovo Y480 COMPAL LA-8001P (LA-8001P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35075,
+          "type": "schematic",
+          "name": "LENOVO - lenovo Y480 COMPAL LA-8001P - Schematic.pdf",
+          "size": "1.1 MB",
+          "sizeBytes": 1203003,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1pVHrDPkFb6Pwt6UthMVt-5Tf8zxxpoed/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19490,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "schematic LA-9912P",
+      "slug": "laptop-lenovo-schematic-la-9912p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-9912P",
+      "officialTitle": "Lenovo schematic LA-9912P (LA-9912P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35091,
+          "type": "schematic",
+          "name": "LENOVO - schematic LA-9912P - Schematic.pdf",
+          "size": "858.2 KB",
+          "sizeBytes": 878807,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dvPdK8fq2WT82-Lj_rvdIANR3yT4v6Go/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19498,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "skema lenovoU430 - Quanta LZ9 - LZ9A (LZ9 LZ9A SKB DIS 0415)",
+      "slug": "laptop-lenovo-skema-lenovou430-quanta-lz9-lz9a-lz9-lz9a-skb-dis-0415",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo skema lenovoU430 - Quanta LZ9 - LZ9A (LZ9 LZ9A SKB DIS 0415) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35099,
+          "type": "schematic",
+          "name": "LENOVO - skema lenovoU430 - Quanta LZ9 - LZ9A - LZ9 LZ9A SKB DIS 0415 - Schematic.pdf",
+          "size": "2.7 MB",
+          "sizeBytes": 2833769,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-6hrQQO307kdLXo-hc-80JFOuKG0K9WD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19499,
+      "category": "laptop",
+      "brand": "Lenovo",
+      "brandSlug": "lenovo",
+      "modelName": "skema lenovoU430 - Quanta LZ9 - LZ9A (LZ9)",
+      "slug": "laptop-lenovo-skema-lenovou430-quanta-lz9-lz9a-lz9",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Lenovo skema lenovoU430 - Quanta LZ9 - LZ9A (LZ9) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 35100,
+          "type": "boardview",
+          "name": "LENOVO - skema lenovoU430 - Quanta LZ9 - LZ9A - LZ9 - Boardview.brd",
+          "size": "251.2 KB",
+          "sizeBytes": 257271,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mUJ_VIv-8FaRCrZ8Z1AKp7-t8KYxn2Ly/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

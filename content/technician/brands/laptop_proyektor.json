@@ -1,0 +1,268 @@
+{
+  "category": "laptop",
+  "brand": "Proyektor",
+  "brandSlug": "proyektor",
+  "totalModels": 10,
+  "models": [
+    {
+      "id": 19515,
+      "category": "laptop",
+      "brand": "Proyektor",
+      "brandSlug": "proyektor",
+      "modelName": "BENQ (BENQ MP772 ST)",
+      "slug": "laptop-proyektor-benq-benq-mp772-st",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Proyektor BENQ (BENQ MP772 ST) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35116,
+          "type": "schematic",
+          "name": "PROYEKTOR - BENQ - BENQ MP772 ST - Schematic.pdf",
+          "size": "4.7 MB",
+          "sizeBytes": 4936184,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ppQsPk4c3NIwAOe1PhUzVXOe6k--6Oj2/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19516,
+      "category": "laptop",
+      "brand": "Proyektor",
+      "brandSlug": "proyektor",
+      "modelName": "BENQ (BENQ MX750 Service manual)",
+      "slug": "laptop-proyektor-benq-benq-mx750-service-manual",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Proyektor BENQ (BENQ MX750 Service manual) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35117,
+          "type": "schematic",
+          "name": "PROYEKTOR - BENQ - BENQ MX750 Service manual - Schematic.pdf",
+          "size": "6 MB",
+          "sizeBytes": 6242017,
+          "gdrive_direct_url": "https://drive.google.com/file/d/12QEjAHeMyOf9fNDaIuzV3EzrHMYeMIAD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19518,
+      "category": "laptop",
+      "brand": "Proyektor",
+      "brandSlug": "proyektor",
+      "modelName": "BENQ (BENQ MX761 - Service manual)",
+      "slug": "laptop-proyektor-benq-benq-mx761-service-manual",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Proyektor BENQ (BENQ MX761 - Service manual) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35119,
+          "type": "schematic",
+          "name": "PROYEKTOR - BENQ - BENQ MX761 - Service manual - Schematic.pdf",
+          "size": "4.6 MB",
+          "sizeBytes": 4844963,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ammemZaL-2f2ydmZuWqNRG-kaNYBaQD4/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19519,
+      "category": "laptop",
+      "brand": "Proyektor",
+      "brandSlug": "proyektor",
+      "modelName": "BENQ (BENQ MX812ST - Service Manual)",
+      "slug": "laptop-proyektor-benq-benq-mx812st-service-manual",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Proyektor BENQ (BENQ MX812ST - Service Manual) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35120,
+          "type": "schematic",
+          "name": "PROYEKTOR - BENQ - BENQ MX812ST - Service Manual - Schematic.pdf",
+          "size": "4.6 MB",
+          "sizeBytes": 4796304,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1i-amWyx4Gnmv1Uk2p7vGnrNVKhjOMDGZ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19520,
+      "category": "laptop",
+      "brand": "Proyektor",
+      "brandSlug": "proyektor",
+      "modelName": "BENQ (BENQ PB6100 - PB6200 Service Manual)",
+      "slug": "laptop-proyektor-benq-benq-pb6100-pb6200-service-manual",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Proyektor BENQ (BENQ PB6100 - PB6200 Service Manual) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35121,
+          "type": "schematic",
+          "name": "PROYEKTOR - BENQ - BENQ PB6100 - PB6200 Service Manual - Schematic.pdf",
+          "size": "2.4 MB",
+          "sizeBytes": 2491321,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1d5yKH_XKZYFGAE3LsfQm_T6CA5qYetBT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19521,
+      "category": "laptop",
+      "brand": "Proyektor",
+      "brandSlug": "proyektor",
+      "modelName": "BENQ (BENQ SP830 - Service Manual)",
+      "slug": "laptop-proyektor-benq-benq-sp830-service-manual",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Proyektor BENQ (BENQ SP830 - Service Manual) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35122,
+          "type": "schematic",
+          "name": "PROYEKTOR - BENQ - BENQ SP830 - Service Manual - Schematic.pdf",
+          "size": "16 MB",
+          "sizeBytes": 16785952,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14lnqvlmgm-4v2wZurHTAAZSpykMv8wKI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19517,
+      "category": "laptop",
+      "brand": "Proyektor",
+      "brandSlug": "proyektor",
+      "modelName": "BENQ (BenQ MX760 - Service Manual)",
+      "slug": "laptop-proyektor-benq-benq-mx760-service-manual",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Proyektor BENQ (BenQ MX760 - Service Manual) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35118,
+          "type": "schematic",
+          "name": "PROYEKTOR - BENQ - BenQ MX760 - Service Manual - Schematic.pdf",
+          "size": "4.6 MB",
+          "sizeBytes": 4844970,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZSW6NAOxFLGLMnfuc4SvXg_dQJa8zGh_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19524,
+      "category": "laptop",
+      "brand": "Proyektor",
+      "brandSlug": "proyektor",
+      "modelName": "BENQ (Projector DC MP623 20080714 143554 Service Manual MP623)",
+      "slug": "laptop-proyektor-benq-projector-dc-mp623-20080714-143554-service-manual-mp623",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Proyektor BENQ (Projector DC MP623 20080714 143554 Service Manual MP623) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35125,
+          "type": "schematic",
+          "name": "PROYEKTOR - BENQ - Projector DC MP623 20080714 143554 Service Manual MP623 - Schematic.pdf",
+          "size": "3.3 MB",
+          "sizeBytes": 3503118,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Hjm0zKJKLUwb08BKq0kRKbumXclBtAZs/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19522,
+      "category": "laptop",
+      "brand": "Proyektor",
+      "brandSlug": "proyektor",
+      "modelName": "BENQ (SP830, SP831 - RS-232 Programming Guide Ver 1.21)",
+      "slug": "laptop-proyektor-benq-sp830-sp831-rs-232-programming-guide-ver-121",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Proyektor BENQ (SP830, SP831 - RS-232 Programming Guide Ver 1.21) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35123,
+          "type": "schematic",
+          "name": "PROYEKTOR - BENQ - SP830, SP831 - RS-232 Programming Guide Ver 1.21 - Schematic.pdf",
+          "size": "158.5 KB",
+          "sizeBytes": 162313,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1R3uecKjUrjZ2NMkkvl9X3zX-TFpDVYuQ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19523,
+      "category": "laptop",
+      "brand": "Proyektor",
+      "brandSlug": "proyektor",
+      "modelName": "BENQ (SP830, SP831 - RS-232 Programming)",
+      "slug": "laptop-proyektor-benq-sp830-sp831-rs-232-programming",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Proyektor BENQ (SP830, SP831 - RS-232 Programming) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35124,
+          "type": "schematic",
+          "name": "PROYEKTOR - BENQ - SP830, SP831 - RS-232 Programming - Schematic.pdf",
+          "size": "158.5 KB",
+          "sizeBytes": 162306,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1whfuZijKCBYkgIRpQZninmxQbOhE9MQW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

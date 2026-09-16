@@ -1,0 +1,64 @@
+{
+  "category": "hp",
+  "brand": "Sonimtech",
+  "brandSlug": "sonimtech",
+  "totalModels": 1,
+  "models": [
+    {
+      "id": 19620,
+      "category": "hp",
+      "brand": "Sonimtech",
+      "brandSlug": "sonimtech",
+      "modelName": "XP5800",
+      "slug": "hp-sonimtech-xp5800",
+      "chipset": "Snapdragon 427",
+      "motherboardCode": "HWID: 000860E1",
+      "officialTitle": "Sonimtech XP5800 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35753,
+          "type": "loader",
+          "name": "000860e100000000_1a4eb7a66e3be7f8_fhprg_peek.bin",
+          "size": "376.5 KB",
+          "sizeBytes": 385492,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZC948BQoOwhisd-XF_zuaSaDLZlAG6R-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35754,
+          "type": "loader",
+          "name": "000860e100000000_1a6ba5b80b9e7811_fhprg_peek.bin",
+          "size": "376.5 KB",
+          "sizeBytes": 385524,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wO1GDEUuZXiVuk1_YKS5ad4Hr4C0lodz/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35755,
+          "type": "loader",
+          "name": "000860e103680000_90889ad5bc9c66d3_fhprg_peek.bin",
+          "size": "286.1 KB",
+          "sizeBytes": 292920,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1y-7RaBmayL0PvscuaDDjV6H7A2xxVfZ3/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35756,
+          "type": "loader",
+          "name": "000860e100040000_168d0bad52b5d5cb_fhprg_peek.bin",
+          "size": "380.2 KB",
+          "sizeBytes": 389360,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1MnQk2OTa00Q6LKPvgXtY7orl-Vh3D4qU/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

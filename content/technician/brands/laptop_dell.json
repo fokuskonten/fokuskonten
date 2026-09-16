@@ -1,0 +1,1868 @@
+{
+  "category": "laptop",
+  "brand": "Dell",
+  "brandSlug": "dell",
+  "totalModels": 70,
+  "models": [
+    {
+      "id": 19185,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "25L2005C",
+      "slug": "laptop-dell-25l2005c",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell 25L2005C — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34766,
+          "type": "schematic",
+          "name": "DELL - 25L2005C - BIOS Dump.bin",
+          "size": "256 KB",
+          "sizeBytes": 262144,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wQhmdpbNzLsllScHSU95NC6diS8WtsZw/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19186,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Compal LA-7781P r1.0",
+      "slug": "laptop-dell-compal-la-7781p-r10",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-7781P",
+      "officialTitle": "Dell Compal LA-7781P r1.0 (LA-7781P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34767,
+          "type": "schematic",
+          "name": "DELL - Compal LA-7781P r1.0 - Schematic.pdf",
+          "size": "1.7 MB",
+          "sizeBytes": 1820460,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1r1Ulz8VsnNIwWJQQ2wjCofDhQ0OnKnTv/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19187,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Compal LA-9104P",
+      "slug": "laptop-dell-compal-la-9104p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-9104P",
+      "officialTitle": "Dell Compal LA-9104P (LA-9104P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34768,
+          "type": "schematic",
+          "name": "DELL - Compal LA-9104P - Schematic.pdf",
+          "size": "1.9 MB",
+          "sizeBytes": 1979806,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Q6A67H2mH0ZPSEjdes8E4dGqyx-r_WIw/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19190,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Compal LA-9331P Ranger-17 revX00.PDF",
+      "slug": "laptop-dell-compal-la-9331p-ranger-17-revx00pdf",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-9331P",
+      "officialTitle": "Dell Compal LA-9331P Ranger-17 revX00.PDF (LA-9331P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34771,
+          "type": "schematic",
+          "name": "DELL - Compal LA-9331P Ranger-17 revX00.PDF - Schematic.pdf",
+          "size": "1.7 MB",
+          "sizeBytes": 1822237,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15tu80ahoCEmNyQAWKeZlCqOKqdqeKnaZ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19189,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Compal LA-9331P.PDF",
+      "slug": "laptop-dell-compal-la-9331ppdf",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-9331P",
+      "officialTitle": "Dell Compal LA-9331P.PDF (LA-9331P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34770,
+          "type": "schematic",
+          "name": "DELL - Compal LA-9331P.PDF - Schematic.pdf",
+          "size": "1.7 MB",
+          "sizeBytes": 1822237,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1d8v8q99rqiE5GxbImXLu9kejEmszzn2h/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19188,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Compal LA-9591P",
+      "slug": "laptop-dell-compal-la-9591p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-9591P",
+      "officialTitle": "Dell Compal LA-9591P (LA-9591P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34769,
+          "type": "schematic",
+          "name": "DELL - Compal LA-9591P - Schematic.pdf",
+          "size": "1.5 MB",
+          "sizeBytes": 1613117,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1N7M_JQDTiPk69LyQHuuFLJxDqQgkjEFO/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19192,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "DELL 1464 um3",
+      "slug": "laptop-dell-dell-1464-um3",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell DELL 1464 um3 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34773,
+          "type": "schematic",
+          "name": "DELL - DELL 1464 um3 - Schematic.pdf",
+          "size": "1.5 MB",
+          "sizeBytes": 1525930,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17I4lA8uNaFBCkG5i32TeT-5_lyLv1C-E/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19197,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "DELL 5460- JW8",
+      "slug": "laptop-dell-dell-5460-jw8",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell DELL 5460- JW8 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34778,
+          "type": "schematic",
+          "name": "DELL - DELL 5460- JW8 - Schematic.pdf",
+          "size": "1.5 MB",
+          "sizeBytes": 1604393,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1bwXHgE_J_n6H4ssLUOQJT4tmPK6GnWIu/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19200,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "DELL E5430 - COMPAL LA-7901P (QXW00) 2012-03-03 Rev 1.0 Schematic",
+      "slug": "laptop-dell-dell-e5430-compal-la-7901p-qxw00-2012-03-03-rev-10-schematic",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-7901P",
+      "officialTitle": "Dell DELL E5430 - COMPAL LA-7901P (QXW00) 2012-03-03 Rev 1.0 Schematic (LA-7901P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34781,
+          "type": "schematic",
+          "name": "DELL - DELL E5430 - COMPAL LA-7901P (QXW00) 2012-03-03 Rev 1.0 Schematic - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1633543,
+          "gdrive_direct_url": "https://drive.google.com/file/d/10vNypbvSb3TYhqen2_nGz39JoH33wJIa/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19208,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "DELL INSPIRON 5421- 12204-1 - DNE40-CR Skema",
+      "slug": "laptop-dell-dell-inspiron-5421-12204-1-dne40-cr-skema",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "12204-1",
+      "officialTitle": "Dell DELL INSPIRON 5421- 12204-1 - DNE40-CR Skema (12204-1) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34789,
+          "type": "schematic",
+          "name": "DELL - DELL INSPIRON 5421- 12204-1 - DNE40-CR Skema - Schematic.pdf",
+          "size": "2.2 MB",
+          "sizeBytes": 2273409,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14jRnYb6rLiMpNl_Ka_hATV3JtVKc40g0/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19202,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "DELL Inspiron 14 5458 - LA-B843P",
+      "slug": "laptop-dell-dell-inspiron-14-5458-la-b843p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-B843P",
+      "officialTitle": "Dell DELL Inspiron 14 5458 - LA-B843P (LA-B843P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34783,
+          "type": "schematic",
+          "name": "DELL - DELL Inspiron 14 5458 - LA-B843P - Schematic.pdf",
+          "size": "4.1 MB",
+          "sizeBytes": 4258002,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Uin-N_yreQe2LpKeJaW3sUEk7ufcmSaT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19203,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "DELL Inspiron 14 DELL Inspiron N4050 10315-SC DV14 HR MB",
+      "slug": "laptop-dell-dell-inspiron-14-dell-inspiron-n4050-10315-sc-dv14-hr-mb",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell DELL Inspiron 14 DELL Inspiron N4050 10315-SC DV14 HR MB — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34784,
+          "type": "schematic",
+          "name": "DELL - DELL Inspiron 14 DELL Inspiron N4050 10315-SC DV14 HR MB - Schematic.pdf",
+          "size": "2.1 MB",
+          "sizeBytes": 2212886,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1carbUVVrJx5xbgSeQCQnI7ePhArufN0O/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19204,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "DELL Inspiron 1440 - WISTRON ALBA DISCRETE - 09207",
+      "slug": "laptop-dell-dell-inspiron-1440-wistron-alba-discrete-09207",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell DELL Inspiron 1440 - WISTRON ALBA DISCRETE - 09207 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34785,
+          "type": "schematic",
+          "name": "DELL - DELL Inspiron 1440 - WISTRON ALBA DISCRETE - 09207 - Schematic.pdf",
+          "size": "1.7 MB",
+          "sizeBytes": 1777489,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1cNv5ImAYUWhhYg2vKXr8RX0bHVrcCvB6/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19216,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "DELL LA-8381P",
+      "slug": "laptop-dell-dell-la-8381p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-8381P",
+      "officialTitle": "Dell DELL LA-8381P (LA-8381P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34797,
+          "type": "schematic",
+          "name": "DELL - DELL LA-8381P - Schematic.pdf",
+          "size": "1.7 MB",
+          "sizeBytes": 1770842,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1c9WsntL3KJ7U0EU7_T8hgvirOZ8iF6D4/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19191,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "DELL LA-9104P (Compal LA-9104P)",
+      "slug": "laptop-dell-dell-la-9104p-compal-la-9104p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-9104P",
+      "officialTitle": "Dell DELL LA-9104P (Compal LA-9104P) (LA-9104P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34772,
+          "type": "schematic",
+          "name": "DELL - DELL LA-9104P - Compal LA-9104P - Schematic.pdf",
+          "size": "1.9 MB",
+          "sizeBytes": 1979806,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13lrEN3a1awoWnjnD8YOooljA1OK-Hjwu/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19230,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "DELL V3450 - N4110 - V02-R01 UMA MB",
+      "slug": "laptop-dell-dell-v3450-n4110-v02-r01-uma-mb",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell DELL V3450 - N4110 - V02-R01 UMA MB — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34815,
+          "type": "schematic",
+          "name": "DELL - DELL V3450 - N4110 - V02-R01 UMA MB - Schematic.pdf",
+          "size": "1006.4 KB",
+          "sizeBytes": 1030504,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Ly4VwVsf5phP_DAr-wwFh7C4JcucKpGZ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19233,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "DELL Vostro A840 A860 A1088 - QUANTA VM9 VM8 UMA - REV 1A",
+      "slug": "laptop-dell-dell-vostro-a840-a860-a1088-quanta-vm9-vm8-uma-rev-1a",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell DELL Vostro A840 A860 A1088 - QUANTA VM9 VM8 UMA - REV 1A — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34818,
+          "type": "schematic",
+          "name": "DELL - DELL Vostro A840 A860 A1088 - QUANTA VM9 VM8 UMA - REV 1A - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1391830,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kRxrrSrB5xb4IzNBQMTWNVKuCQ_ULsKe/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19234,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "DELL XPS 13 9350 AAZ80 LA-C881P DINO2 MB 1.0 A00 20150916",
+      "slug": "laptop-dell-dell-xps-13-9350-aaz80-la-c881p-dino2-mb-10-a00-20150916",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-C881P",
+      "officialTitle": "Dell DELL XPS 13 9350 AAZ80 LA-C881P DINO2 MB 1.0 A00 20150916 (LA-C881P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34819,
+          "type": "schematic",
+          "name": "DELL - DELL XPS 13 9350 AAZ80 LA-C881P DINO2 MB 1.0 A00 20150916 - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1684486,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ERp1WS_NKDQZb-1YvtXXeyOEsFHq3umP/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19235,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "DELL-V5470-JW8B-JW8C-schematics",
+      "slug": "laptop-dell-dell-v5470-jw8b-jw8c-schematics",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell DELL-V5470-JW8B-JW8C-schematics — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34820,
+          "type": "schematic",
+          "name": "DELL - DELL-V5470-JW8B-JW8C-schematics - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1391691,
+          "gdrive_direct_url": "https://drive.google.com/file/d/129TqrmMOZlO1ELzYzU40ls1q8nt2TGVF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19194,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell 5420 - DAR08MB6E2 - R08 Skema (Quanta R08 IO-board BTB 20120213-1 Dell V3460-N5420)",
+      "slug": "laptop-dell-dell-5420-dar08mb6e2-r08-skema-quanta-r08-io-board-btb-20120213-1-dell-v3460-n5420",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell Dell 5420 - DAR08MB6E2 - R08 Skema (Quanta R08 IO-board BTB 20120213-1 Dell V3460-N5420) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34775,
+          "type": "schematic",
+          "name": "DELL - Dell 5420 - DAR08MB6E2 - R08 Skema - Quanta R08 IO-board BTB 20120213-1 Dell V3460-N5420 - Schematic.pdf",
+          "size": "113.3 KB",
+          "sizeBytes": 116060,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mliO0DlbmDmeI2jO48a-RO3dHTu-w7Yb/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19195,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell 5420 - DAR08MB6E2 - R08 Skema (Quanta R08 V08 MB 20120213-1 Dell V3460-N5420)",
+      "slug": "laptop-dell-dell-5420-dar08mb6e2-r08-skema-quanta-r08-v08-mb-20120213-1-dell-v3460-n5420",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell Dell 5420 - DAR08MB6E2 - R08 Skema (Quanta R08 V08 MB 20120213-1 Dell V3460-N5420) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34776,
+          "type": "schematic",
+          "name": "DELL - Dell 5420 - DAR08MB6E2 - R08 Skema - Quanta R08 V08 MB 20120213-1 Dell V3460-N5420 - Schematic.pdf",
+          "size": "1.5 MB",
+          "sizeBytes": 1555787,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1gBQBqw-ukUYDC42QHjcQuPQqLH98U6U_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19196,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell 5437 - D0E40-HSW - Janus HSW 40-50-70 -12314-1",
+      "slug": "laptop-dell-dell-5437-d0e40-hsw-janus-hsw-40-50-70-12314-1",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "12314-1",
+      "officialTitle": "Dell Dell 5437 - D0E40-HSW - Janus HSW 40-50-70 -12314-1 (12314-1) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34777,
+          "type": "schematic",
+          "name": "DELL - Dell 5437 - D0E40-HSW - Janus HSW 40-50-70 -12314-1 - Schematic.pdf",
+          "size": "4.9 MB",
+          "sizeBytes": 5118681,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1gAc3FKJqpck5L3Yi2LPNI92Yd-zdKYXz/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19198,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell Alienware 13 R2 - LA-C901P r1.0",
+      "slug": "laptop-dell-dell-alienware-13-r2-la-c901p-r10",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-C901P",
+      "officialTitle": "Dell Dell Alienware 13 R2 - LA-C901P r1.0 (LA-C901P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34779,
+          "type": "schematic",
+          "name": "DELL - Dell Alienware 13 R2 - LA-C901P r1.0 - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1627770,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ib8Y86CAixihhbWZtfPI-hIvAJBNO6wJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19199,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell Alienware 14 M14X R3 - LA-9201P VAR00.PDF",
+      "slug": "laptop-dell-dell-alienware-14-m14x-r3-la-9201p-var00pdf",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-9201P",
+      "officialTitle": "Dell Dell Alienware 14 M14X R3 - LA-9201P VAR00.PDF (LA-9201P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34780,
+          "type": "schematic",
+          "name": "DELL - Dell Alienware 14 M14X R3 - LA-9201P VAR00.PDF - Schematic.pdf",
+          "size": "2.2 MB",
+          "sizeBytes": 2290197,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1voORb5L66VTEP8yWphyBk_O0hJ7RXA20/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19201,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell Inspiron 13 7347 - Wistron Cottonwood MB 13321-1",
+      "slug": "laptop-dell-dell-inspiron-13-7347-wistron-cottonwood-mb-13321-1",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "13321-1",
+      "officialTitle": "Dell Dell Inspiron 13 7347 - Wistron Cottonwood MB 13321-1 (13321-1) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34782,
+          "type": "schematic",
+          "name": "DELL - Dell Inspiron 13 7347 - Wistron Cottonwood MB 13321-1 - Schematic.pdf",
+          "size": "1.8 MB",
+          "sizeBytes": 1846548,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1M0QusN_Qu7cesM4e9O_ZgTuZwHBu-wI3/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19205,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell Inspiron 15 5570 - Compal LA-F115P CAL50 DAL10",
+      "slug": "laptop-dell-dell-inspiron-15-5570-compal-la-f115p-cal50-dal10",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-F115P",
+      "officialTitle": "Dell Dell Inspiron 15 5570 - Compal LA-F115P CAL50 DAL10 (LA-F115P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34786,
+          "type": "schematic",
+          "name": "DELL - Dell Inspiron 15 5570 - Compal LA-F115P CAL50 DAL10 - Schematic.pdf",
+          "size": "12.8 MB",
+          "sizeBytes": 13434955,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1miS3Ggc9hUVqk5eGl7BiKzlAXibyYGe9/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19206,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell Inspiron 15 series - Compal LA-D071P r1.0",
+      "slug": "laptop-dell-dell-inspiron-15-series-compal-la-d071p-r10",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-D071P",
+      "officialTitle": "Dell Dell Inspiron 15 series - Compal LA-D071P r1.0 (LA-D071P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34787,
+          "type": "schematic",
+          "name": "DELL - Dell Inspiron 15 series - Compal LA-D071P r1.0 - Schematic.pdf",
+          "size": "3.3 MB",
+          "sizeBytes": 3469330,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PBQoxvs-An57zC-7-yF2wRyvp5HV1Nzb/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19207,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell Inspiron 15-3558 - IRIS HSW - BDW - 14216",
+      "slug": "laptop-dell-dell-inspiron-15-3558-iris-hsw-bdw-14216",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell Dell Inspiron 15-3558 - IRIS HSW - BDW - 14216 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34788,
+          "type": "schematic",
+          "name": "DELL - Dell Inspiron 15-3558 - IRIS HSW - BDW - 14216 - Schematic.pdf",
+          "size": "4.1 MB",
+          "sizeBytes": 4258004,
+          "gdrive_direct_url": "https://drive.google.com/file/d/101lchWzpqlMQQVTOiRihhvyMrsSu1sbM/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19209,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell Inspiron 5437 3437 D0E40-SHW-GDDR5 MB 12307",
+      "slug": "laptop-dell-dell-inspiron-5437-3437-d0e40-shw-gddr5-mb-12307",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell Dell Inspiron 5437 3437 D0E40-SHW-GDDR5 MB 12307 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34790,
+          "type": "schematic",
+          "name": "DELL - Dell Inspiron 5437 3437 D0E40-SHW-GDDR5 MB 12307 - Schematic.pdf",
+          "size": "6.1 MB",
+          "sizeBytes": 6375481,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1I-zwjpk14xxQJcgY_tK8bqGZq0ejMpRJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19210,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell Inspiron 5452 - LA-C571P",
+      "slug": "laptop-dell-dell-inspiron-5452-la-c571p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-C571P",
+      "officialTitle": "Dell Dell Inspiron 5452 - LA-C571P (LA-C571P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34791,
+          "type": "schematic",
+          "name": "DELL - Dell Inspiron 5452 - LA-C571P - Schematic.pdf",
+          "size": "1.4 MB",
+          "sizeBytes": 1435597,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1IQigyCBKryjYsbrdWecnS6EhB_cekFsv/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19211,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell Inspiron 7437 DOH40 HW ULT MB 12310 REV.A00 0814",
+      "slug": "laptop-dell-dell-inspiron-7437-doh40-hw-ult-mb-12310-reva00-0814",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell Dell Inspiron 7437 DOH40 HW ULT MB 12310 REV.A00 0814 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34792,
+          "type": "schematic",
+          "name": "DELL - Dell Inspiron 7437 DOH40 HW ULT MB 12310 REV.A00 0814 - Schematic.pdf",
+          "size": "3.7 MB",
+          "sizeBytes": 3860822,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1IwjG2YDW2ZbvZuWOz0q7be3DlxVG48wM/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19212,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell Inspiron Mini 10 Compal LA-4761P",
+      "slug": "laptop-dell-dell-inspiron-mini-10-compal-la-4761p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-4761P",
+      "officialTitle": "Dell Dell Inspiron Mini 10 Compal LA-4761P (LA-4761P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34793,
+          "type": "schematic",
+          "name": "DELL - Dell Inspiron Mini 10 Compal LA-4761P - Schematic.pdf",
+          "size": "694.5 KB",
+          "sizeBytes": 711198,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1sUuHRapgiZ1nAKQn9OvwK_GN4bRB5sAh/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19213,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell Inspiron Mini 9 - LA-4421P",
+      "slug": "laptop-dell-dell-inspiron-mini-9-la-4421p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-4421P",
+      "officialTitle": "Dell Dell Inspiron Mini 9 - LA-4421P (LA-4421P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34794,
+          "type": "schematic",
+          "name": "DELL - Dell Inspiron Mini 9 - LA-4421P - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1668798,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1KaZBTXH6bJf8blUMJmpQeq8sORR6JXuI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19214,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell Inspiron N3010 Quanta UM7 UMA",
+      "slug": "laptop-dell-dell-inspiron-n3010-quanta-um7-uma",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell Dell Inspiron N3010 Quanta UM7 UMA — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34795,
+          "type": "schematic",
+          "name": "DELL - Dell Inspiron N3010 Quanta UM7 UMA - Schematic.pdf",
+          "size": "743.8 KB",
+          "sizeBytes": 761621,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1KB-xRsJu77S08QjOvooSqnCbc-SoXj7z/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19215,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell LA-6601P",
+      "slug": "laptop-dell-dell-la-6601p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-6601P",
+      "officialTitle": "Dell Dell LA-6601P (LA-6601P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34796,
+          "type": "schematic",
+          "name": "DELL - Dell LA-6601P - Schematic.pdf",
+          "size": "2.1 MB",
+          "sizeBytes": 2167043,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QI_tbfBiJNCSb7iRwfCWA8IquvHaz8rH/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19217,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell Latitude 3330 - 12275-1 - AUSTIN13 Schematic",
+      "slug": "laptop-dell-dell-latitude-3330-12275-1-austin13-schematic",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "12275-1",
+      "officialTitle": "Dell Dell Latitude 3330 - 12275-1 - AUSTIN13 Schematic (12275-1) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34798,
+          "type": "schematic",
+          "name": "DELL - Dell Latitude 3330 - 12275-1 - AUSTIN13 Schematic - Schematic.pdf",
+          "size": "1.7 MB",
+          "sizeBytes": 1748873,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1sgQkW7SKsRBIkbCON3cFRcPygrGHi-qj/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19218,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell Latitude 5480 - CDM70 LA-E082P (CDM70 BOARDVIEW)",
+      "slug": "laptop-dell-dell-latitude-5480-cdm70-la-e082p-cdm70-boardview",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-E082P",
+      "officialTitle": "Dell Dell Latitude 5480 - CDM70 LA-E082P (CDM70 BOARDVIEW) (LA-E082P) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34799,
+          "type": "boardview",
+          "name": "DELL - Dell Latitude 5480 - CDM70 LA-E082P - CDM70 BOARDVIEW - Boardview.brd",
+          "size": "59.6 MB",
+          "sizeBytes": 62450388,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DalRITMnZXHaJjorGow3qAmLrYaR-MZr/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 34800,
+          "type": "boardview",
+          "name": "DELL - Dell Latitude 5480 - CDM70 LA-E082P - CDM70 BOARDVIEW - Boardview.brd",
+          "size": "59.6 MB",
+          "sizeBytes": 62450388,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DalRITMnZXHaJjorGow3qAmLrYaR-MZr/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 34801,
+          "type": "boardview",
+          "name": "DELL - Dell Latitude 5480 - CDM70 LA-E082P - CDM70 BOARDVIEW - Boardview.brd",
+          "size": "59.6 MB",
+          "sizeBytes": 62450388,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DalRITMnZXHaJjorGow3qAmLrYaR-MZr/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19219,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell Latitude 5480 - CDM70 LA-E082P (LA-E082P)",
+      "slug": "laptop-dell-dell-latitude-5480-cdm70-la-e082p-la-e082p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-E082P",
+      "officialTitle": "Dell Dell Latitude 5480 - CDM70 LA-E082P (LA-E082P) (LA-E082P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34802,
+          "type": "schematic",
+          "name": "DELL - Dell Latitude 5480 - CDM70 LA-E082P - LA-E082P - Schematic.pdf",
+          "size": "4.1 MB",
+          "sizeBytes": 4250778,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1KyfYZzQU2A-kXw5OWCCPTklbqerebfee/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 34803,
+          "type": "schematic",
+          "name": "DELL - Dell Latitude 5480 - CDM70 LA-E082P - LA-E082P - Schematic.pdf",
+          "size": "4.1 MB",
+          "sizeBytes": 4250778,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1KyfYZzQU2A-kXw5OWCCPTklbqerebfee/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19220,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell Latitude E5440 - LA-9832P VAW30",
+      "slug": "laptop-dell-dell-latitude-e5440-la-9832p-vaw30",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-9832P",
+      "officialTitle": "Dell Dell Latitude E5440 - LA-9832P VAW30 (LA-9832P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34804,
+          "type": "schematic",
+          "name": "DELL - Dell Latitude E5440 - LA-9832P VAW30 - Schematic.pdf",
+          "size": "1.7 MB",
+          "sizeBytes": 1802201,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19mf59oI_w7IvDlGLJYqJMXv3-RGgvKC_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19221,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell Latitude E6220 - Inventec VIDA - 6050A2428801 Skema",
+      "slug": "laptop-dell-dell-latitude-e6220-inventec-vida-6050a2428801-skema",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell Dell Latitude E6220 - Inventec VIDA - 6050A2428801 Skema — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34805,
+          "type": "schematic",
+          "name": "DELL - Dell Latitude E6220 - Inventec VIDA - 6050A2428801 Skema - Schematic.pdf",
+          "size": "1.4 MB",
+          "sizeBytes": 1475532,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1KoyuHNGijpQwY_ioUhVTfg2WaqmnXtof/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19222,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell Latitude E6540 - LA-9411P VALA0",
+      "slug": "laptop-dell-dell-latitude-e6540-la-9411p-vala0",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-9411P",
+      "officialTitle": "Dell Dell Latitude E6540 - LA-9411P VALA0 (LA-9411P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34806,
+          "type": "schematic",
+          "name": "DELL - Dell Latitude E6540 - LA-9411P VALA0 - Schematic.pdf",
+          "size": "2.3 MB",
+          "sizeBytes": 2421832,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13XtOm0CZF_62mhI6L980LbpRKoS8uZ92/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19223,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell Latitude E7240 - Compal LA-9431P",
+      "slug": "laptop-dell-dell-latitude-e7240-compal-la-9431p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-9431P",
+      "officialTitle": "Dell Dell Latitude E7240 - Compal LA-9431P (LA-9431P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34807,
+          "type": "schematic",
+          "name": "DELL - Dell Latitude E7240 - Compal LA-9431P - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1664398,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1FXIHNlmmHJYczdagwIrg7qenlsJSNqLn/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19224,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell Latitude E7470 - Compal LA-C461P r1.0",
+      "slug": "laptop-dell-dell-latitude-e7470-compal-la-c461p-r10",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-C461P",
+      "officialTitle": "Dell Dell Latitude E7470 - Compal LA-C461P r1.0 (LA-C461P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34808,
+          "type": "schematic",
+          "name": "DELL - Dell Latitude E7470 - Compal LA-C461P r1.0 - Schematic.pdf",
+          "size": "1.7 MB",
+          "sizeBytes": 1770655,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1lcOWRylhFSHfB0Vq5Y892K5OAA_QiZy5/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19225,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell N4010 UMA (UM8)",
+      "slug": "laptop-dell-dell-n4010-uma-um8",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell Dell N4010 UMA (UM8) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34809,
+          "type": "schematic",
+          "name": "DELL - Dell N4010 UMA (UM8) - Schematic.pdf",
+          "size": "618.9 KB",
+          "sizeBytes": 633778,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1usrd_FMoAHvK7szJJApy4XPfjmOzdbdQ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19226,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell N4030 Bios EC main schematic (25L2005C)",
+      "slug": "laptop-dell-dell-n4030-bios-ec-main-schematic-25l2005c",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell Dell N4030 Bios EC main schematic (25L2005C) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34810,
+          "type": "schematic",
+          "name": "DELL - Dell N4030 Bios EC main schematic - 25L2005C - BIOS.bin",
+          "size": "256 KB",
+          "sizeBytes": 262144,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hxwzLFKRHR80Pxl9ri61bUls_MXh7NvA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19228,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell N4030 Bios EC main schematic (Wistron Arsenal DJ1 Intel Discrete, 09259-1 (A01))",
+      "slug": "laptop-dell-dell-n4030-bios-ec-main-schematic-wistron-arsenal-dj1-intel-discrete-09259-1-a01",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "09259-1",
+      "officialTitle": "Dell Dell N4030 Bios EC main schematic (Wistron Arsenal DJ1 Intel Discrete, 09259-1 (A01)) (09259-1) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34812,
+          "type": "schematic",
+          "name": "DELL - Dell N4030 Bios EC main schematic - Wistron Arsenal DJ1 Intel Discrete, 09259-1 (A01) - Schematic.pdf",
+          "size": "1.5 MB",
+          "sizeBytes": 1530710,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1qawzjLjRwdBzcUWvsaEvulYFXrzHuMmf/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 34813,
+          "type": "schematic",
+          "name": "DELL - Dell N4030 Bios EC main schematic - Wistron Arsenal DJ1 Intel Discrete, 09259-1 (A01) - Schematic.pdf",
+          "size": "1.5 MB",
+          "sizeBytes": 1530710,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1qawzjLjRwdBzcUWvsaEvulYFXrzHuMmf/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19229,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell N4030 Bios EC main schematic (Wistron Arsenal DJ1 UMA)",
+      "slug": "laptop-dell-dell-n4030-bios-ec-main-schematic-wistron-arsenal-dj1-uma",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell Dell N4030 Bios EC main schematic (Wistron Arsenal DJ1 UMA) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34814,
+          "type": "schematic",
+          "name": "DELL - Dell N4030 Bios EC main schematic - Wistron Arsenal DJ1 UMA - Schematic.pdf",
+          "size": "798.2 KB",
+          "sizeBytes": 817326,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uFxYNoVALPFO448AE9AWApR1tGhSZ0BV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19227,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell N4030 Bios EC main schematic (dell 4030 - HM57)",
+      "slug": "laptop-dell-dell-n4030-bios-ec-main-schematic-dell-4030-hm57",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell Dell N4030 Bios EC main schematic (dell 4030 - HM57) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34811,
+          "type": "schematic",
+          "name": "DELL - Dell N4030 Bios EC main schematic - dell 4030 - HM57 - BIOS.bin",
+          "size": "4 MB",
+          "sizeBytes": 4194304,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1rs-wOKgsDSxmH0ARKAeejutoonw5_owp/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19236,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell Studio 1555 - Quanta FM9",
+      "slug": "laptop-dell-dell-studio-1555-quanta-fm9",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell Dell Studio 1555 - Quanta FM9 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34821,
+          "type": "schematic",
+          "name": "DELL - Dell Studio 1555 - Quanta FM9 - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1625794,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17aPLGzaCKzhS3lMNhc3Y6jE-ZnRxQntO/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19237,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell Vostro 1200 Compal LA-3821P",
+      "slug": "laptop-dell-dell-vostro-1200-compal-la-3821p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-3821P",
+      "officialTitle": "Dell Dell Vostro 1200 Compal LA-3821P (LA-3821P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34822,
+          "type": "schematic",
+          "name": "DELL - Dell Vostro 1200 Compal LA-3821P - Schematic.pdf",
+          "size": "1.1 MB",
+          "sizeBytes": 1111956,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1SFOlxwJLzGsxlWHwQ2mwt89rO7NWRgOE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19231,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell Vostro 3700- Wistron DW40 Winery Calpella N11-GE, 09297-SA",
+      "slug": "laptop-dell-dell-vostro-3700-wistron-dw40-winery-calpella-n11-ge-09297-sa",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell Dell Vostro 3700- Wistron DW40 Winery Calpella N11-GE, 09297-SA — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34816,
+          "type": "schematic",
+          "name": "DELL - Dell Vostro 3700- Wistron DW40 Winery Calpella N11-GE, 09297-SA - Schematic.pdf",
+          "size": "1.4 MB",
+          "sizeBytes": 1457162,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13NmFsivWZKbI_XRIoYeODffQLipezawb/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19232,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Dell Vostro 5568 - LA-D822P",
+      "slug": "laptop-dell-dell-vostro-5568-la-d822p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-D822P",
+      "officialTitle": "Dell Dell Vostro 5568 - LA-D822P (LA-D822P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34817,
+          "type": "schematic",
+          "name": "DELL - Dell Vostro 5568 - LA-D822P - Schematic.pdf",
+          "size": "3.4 MB",
+          "sizeBytes": 3515626,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19kpQxvgAN9RKZUvXS92-7vof9z5vYftt/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19238,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "FONSECA14 09226 - SB UMA X01 1103-1",
+      "slug": "laptop-dell-fonseca14-09226-sb-uma-x01-1103-1",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell FONSECA14 09226 - SB UMA X01 1103-1 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34823,
+          "type": "schematic",
+          "name": "DELL - FONSECA14 09226 - SB UMA X01 1103-1 - Schematic.pdf",
+          "size": "2.1 MB",
+          "sizeBytes": 2225273,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1y-8ERL8fGFhy_7VDDc2t47-yP4Ms0uIY/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19239,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "QAL81 LA-7782P rev0.1",
+      "slug": "laptop-dell-qal81-la-7782p-rev01",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-7782P",
+      "officialTitle": "Dell QAL81 LA-7782P rev0.1 (LA-7782P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34824,
+          "type": "schematic",
+          "name": "DELL - QAL81 LA-7782P rev0.1 - Schematic.pdf",
+          "size": "1.8 MB",
+          "sizeBytes": 1843241,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1FsDTIG-kxG0vcqGQCwacThcIqoHUs74p/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19240,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Quanta AM9A",
+      "slug": "laptop-dell-quanta-am9a",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell Quanta AM9A — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34825,
+          "type": "schematic",
+          "name": "DELL - Quanta AM9A - Schematic.pdf",
+          "size": "3.6 MB",
+          "sizeBytes": 3817184,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1EinCxjN-6vTwM7k-0ZByTuhxtZKGOdT4/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19241,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Quanta D13 r1A",
+      "slug": "laptop-dell-quanta-d13-r1a",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell Quanta D13 r1A — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34826,
+          "type": "schematic",
+          "name": "DELL - Quanta D13 r1A - Schematic.pdf",
+          "size": "1.1 MB",
+          "sizeBytes": 1117216,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1gwOmSfWyUeVoYVTWdSmtSjhQjkhgqUOO/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19242,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Quanta R08 IO-board BTB 20120213-1 Dell V3460-N5420",
+      "slug": "laptop-dell-quanta-r08-io-board-btb-20120213-1-dell-v3460-n5420",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell Quanta R08 IO-board BTB 20120213-1 Dell V3460-N5420 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34827,
+          "type": "schematic",
+          "name": "DELL - Quanta R08 IO-board BTB 20120213-1 Dell V3460-N5420 - Schematic.pdf",
+          "size": "113.3 KB",
+          "sizeBytes": 116060,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1lDRCIyj40STWDZJyyg7hD350gGY5SOpy/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19243,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Quanta R08 V08 MB 20120213-1 Dell V3460-N5420",
+      "slug": "laptop-dell-quanta-r08-v08-mb-20120213-1-dell-v3460-n5420",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell Quanta R08 V08 MB 20120213-1 Dell V3460-N5420 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34828,
+          "type": "schematic",
+          "name": "DELL - Quanta R08 V08 MB 20120213-1 Dell V3460-N5420 - Schematic.pdf",
+          "size": "1.5 MB",
+          "sizeBytes": 1555787,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1h85i9XeBxtnDtRQclyfJr-NzphCNAifm/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19244,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "SkemaUMA 10315-SC A00 0413 DV14 HR N4050",
+      "slug": "laptop-dell-skemauma-10315-sc-a00-0413-dv14-hr-n4050",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell SkemaUMA 10315-SC A00 0413 DV14 HR N4050 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34829,
+          "type": "schematic",
+          "name": "DELL - SkemaUMA 10315-SC A00 0413 DV14 HR N4050 - Schematic.pdf",
+          "size": "2.1 MB",
+          "sizeBytes": 2190370,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1OIn8x0BQlGY09Vbig5SO6wYEPYjo766T/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19251,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "WISTRON DR1 AMD 08267-1 DELL INSPIRON 1546",
+      "slug": "laptop-dell-wistron-dr1-amd-08267-1-dell-inspiron-1546",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "08267-1",
+      "officialTitle": "Dell WISTRON DR1 AMD 08267-1 DELL INSPIRON 1546 (08267-1) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34836,
+          "type": "schematic",
+          "name": "DELL - WISTRON DR1 AMD 08267-1 DELL INSPIRON 1546 - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1352932,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1X-Ef3-vmIOjaER0RG815CcXhFzmFlyde/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18835,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "WISTRON DW40 WINERY 14 (Vostro) 09297-1 - BOARDVIEW",
+      "slug": "laptop-dell-wistron-dw40-winery-14-vostro-09297-1-boardview",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "09297-1",
+      "officialTitle": "Dell WISTRON DW40 WINERY 14 (Vostro) 09297-1 - BOARDVIEW (09297-1) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34375,
+          "type": "boardview",
+          "name": "DELL - WISTRON DW40 WINERY 14 (Vostro) 09297-1 - BOARDVIEW - Boardview.bdv",
+          "size": "693.7 KB",
+          "sizeBytes": 710374,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1izGwilIcOchFJKf66um02JXTFeMmtIyq/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18837,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "WISTRON DW40 WINERY 14 (Vostro) Calpella 09297-1 - BOARDVIEW (WISTRON DW40 WINERY 14 (Vostro) 09297-1 - BOARDVIEW bdv)",
+      "slug": "laptop-dell-wistron-dw40-winery-14-vostro-calpella-09297-1-boardview-wistron-dw40-winery-14-vostro-09297-1-boardview-bdv",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "09297-1",
+      "officialTitle": "Dell WISTRON DW40 WINERY 14 (Vostro) Calpella 09297-1 - BOARDVIEW (WISTRON DW40 WINERY 14 (Vostro) 09297-1 - BOARDVIEW bdv) (09297-1) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34377,
+          "type": "boardview",
+          "name": "DELL - WISTRON DW40 WINERY 14 (Vostro) Calpella 09297-1 - BOARDVIEW - WISTRON DW40 WINERY 14 (Vostro) 09297-1 - BOARDVIEW bdv.sqlite3",
+          "size": "12 KB",
+          "sizeBytes": 12288,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1IKS9w5IRZkgA41l8b0We2VkVndUA4PUY/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18836,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "WISTRON DW40 WINERY 14 (Vostro) Calpella 09297-1 - BOARDVIEW (WISTRON DW40 WINERY 14 (Vostro) 09297-1 - BOARDVIEW)",
+      "slug": "laptop-dell-wistron-dw40-winery-14-vostro-calpella-09297-1-boardview-wistron-dw40-winery-14-vostro-09297-1-boardview",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "09297-1",
+      "officialTitle": "Dell WISTRON DW40 WINERY 14 (Vostro) Calpella 09297-1 - BOARDVIEW (WISTRON DW40 WINERY 14 (Vostro) 09297-1 - BOARDVIEW) (09297-1) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34376,
+          "type": "boardview",
+          "name": "DELL - WISTRON DW40 WINERY 14 (Vostro) Calpella 09297-1 - BOARDVIEW - WISTRON DW40 WINERY 14 (Vostro) 09297-1 - BOARDVIEW.bdv",
+          "size": "693.7 KB",
+          "sizeBytes": 710374,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1K_B1nSxdkZYi3i9uj-Xuo6hPnkEmPENc/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19245,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Wistron Arsenal DJ1 Intel Discrete, 09259-1 (A01)",
+      "slug": "laptop-dell-wistron-arsenal-dj1-intel-discrete-09259-1-a01",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "09259-1",
+      "officialTitle": "Dell Wistron Arsenal DJ1 Intel Discrete, 09259-1 (A01) (09259-1) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34830,
+          "type": "schematic",
+          "name": "DELL - Wistron Arsenal DJ1 Intel Discrete, 09259-1 (A01) - Schematic.pdf",
+          "size": "1.5 MB",
+          "sizeBytes": 1530710,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1GNqYgyP372SgfOj_Fq6GnX22lko1eXJY/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19246,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Wistron Arsenal DJ1 UMA",
+      "slug": "laptop-dell-wistron-arsenal-dj1-uma",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell Wistron Arsenal DJ1 UMA — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34831,
+          "type": "schematic",
+          "name": "DELL - Wistron Arsenal DJ1 UMA - Schematic.pdf",
+          "size": "798.2 KB",
+          "sizeBytes": 817326,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hFHtoHrfErMjoGsVQOebCLDtT96EE5wm/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19247,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Wistron Berry DG15 (Intel) Discrete-UMA, 09909-1 (Wistron Berry (Intel) - CRT Board, 09698-1 (A00))",
+      "slug": "laptop-dell-wistron-berry-dg15-intel-discrete-uma-09909-1-wistron-berry-intel-crt-board-09698-1-a00",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "09909-1",
+      "officialTitle": "Dell Wistron Berry DG15 (Intel) Discrete-UMA, 09909-1 (Wistron Berry (Intel) - CRT Board, 09698-1 (A00)) (09909-1) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34832,
+          "type": "schematic",
+          "name": "DELL - Wistron Berry DG15 (Intel) Discrete-UMA, 09909-1 - Wistron Berry (Intel) - CRT Board, 09698-1 (A00) - Schematic.pdf",
+          "size": "79.8 KB",
+          "sizeBytes": 81715,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1AFCNLrh6aRny9FbZzTkiGN92HlH1U9UI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19248,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Wistron Berry DG15 (Intel) Discrete-UMA, 09909-1 (Wistron Berry (Intel) - IO Board, 09697-1 (A00))",
+      "slug": "laptop-dell-wistron-berry-dg15-intel-discrete-uma-09909-1-wistron-berry-intel-io-board-09697-1-a00",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "09909-1",
+      "officialTitle": "Dell Wistron Berry DG15 (Intel) Discrete-UMA, 09909-1 (Wistron Berry (Intel) - IO Board, 09697-1 (A00)) (09909-1) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34833,
+          "type": "schematic",
+          "name": "DELL - Wistron Berry DG15 (Intel) Discrete-UMA, 09909-1 - Wistron Berry (Intel) - IO Board, 09697-1 (A00) - Schematic.pdf",
+          "size": "188.4 KB",
+          "sizeBytes": 192910,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1MTAlZE6Vp1eHJ8TP7cXVU9SpcmqxLyBu/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19249,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Wistron Berry DG15 (Intel) Discrete-UMA, 09909-1 (Wistron Berry DG15 (Intel) Discrete-UMA, 09909-1 (A00))",
+      "slug": "laptop-dell-wistron-berry-dg15-intel-discrete-uma-09909-1-wistron-berry-dg15-intel-discrete-uma-09909-1-a00",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "09909-1",
+      "officialTitle": "Dell Wistron Berry DG15 (Intel) Discrete-UMA, 09909-1 (Wistron Berry DG15 (Intel) Discrete-UMA, 09909-1 (A00)) (09909-1) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34834,
+          "type": "schematic",
+          "name": "DELL - Wistron Berry DG15 (Intel) Discrete-UMA, 09909-1 - Wistron Berry DG15 (Intel) Discrete-UMA, 09909-1 (A00) - Schematic.pdf",
+          "size": "1.7 MB",
+          "sizeBytes": 1761359,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1JF9QRvG49prJZXgOT-xk5a0voF_5kdDr/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19250,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "Wistron DMB40 (BMW-Z4-DIS) 11289-1",
+      "slug": "laptop-dell-wistron-dmb40-bmw-z4-dis-11289-1",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "11289-1",
+      "officialTitle": "Dell Wistron DMB40 (BMW-Z4-DIS) 11289-1 (11289-1) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34835,
+          "type": "schematic",
+          "name": "DELL - Wistron DMB40 (BMW-Z4-DIS) 11289-1 - Schematic.pdf",
+          "size": "1.9 MB",
+          "sizeBytes": 1983586,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1t2rgOEovaAreFrj3oSe0xz50xDcyHUlZ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19193,
+      "category": "laptop",
+      "brand": "Dell",
+      "brandSlug": "dell",
+      "modelName": "dell 4030 - HM57",
+      "slug": "laptop-dell-dell-4030-hm57",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Dell dell 4030 - HM57 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34774,
+          "type": "schematic",
+          "name": "DELL - dell 4030 - HM57 - BIOS Dump.bin",
+          "size": "4 MB",
+          "sizeBytes": 4194304,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1JCteIA4jEj3s06B7EYh0oUsr2YWlxXWN/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

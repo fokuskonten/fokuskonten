@@ -1,0 +1,1854 @@
+{
+  "category": "hp",
+  "brand": "Advan",
+  "brandSlug": "advan",
+  "totalModels": 72,
+  "models": [
+    {
+      "id": 18189,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "G1",
+      "slug": "hp-advan-g1",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan G1 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33716,
+          "type": "isp",
+          "name": "advan_g1_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17d9g49DtSxt_SM0ivhbrvl0yudrzqmSZ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18190,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "G1 Pro",
+      "slug": "hp-advan-g1-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan G1 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33717,
+          "type": "isp",
+          "name": "advan_g1_pro_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xvOmRJY-lvvBzhauXyzb-EdBeCl64w0y/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18191,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "G2",
+      "slug": "hp-advan-g2",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan G2 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33718,
+          "type": "isp",
+          "name": "advan_g2_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/10lzvnLP5a3syRJdGbTO21L-1RVJfqkR-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18192,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "G2 Plus",
+      "slug": "hp-advan-g2-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan G2 Plus — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33719,
+          "type": "isp",
+          "name": "advan_g2_plus_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dCAht13shA3oGvFRyoY4Zdi9k4h-5h2J/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18193,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "G2 Pro",
+      "slug": "hp-advan-g2-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan G2 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33720,
+          "type": "isp",
+          "name": "advan_g2_pro_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1TAepp42Ih5ru_CiXucBORjn30fea9dyQ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18194,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "G3",
+      "slug": "hp-advan-g3",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan G3 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33721,
+          "type": "isp",
+          "name": "advan_g3_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1i3jc6Fhdapba9DYeQK3bZCj-UbmkUEcs/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18195,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "G3 Pro",
+      "slug": "hp-advan-g3-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan G3 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33722,
+          "type": "isp",
+          "name": "advan_g3_pro_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/11OjGi9fNErnW6zjLuHdnMT3U4pIfEGVi/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18196,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "G5",
+      "slug": "hp-advan-g5",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan G5 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33723,
+          "type": "isp",
+          "name": "advan_g5_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hGzdKoUB7JHgoZM9_6VuBS0FV9iJFQis/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18197,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "G5 Elite",
+      "slug": "hp-advan-g5-elite",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan G5 Elite — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33724,
+          "type": "isp",
+          "name": "advan_g5_elite_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Yb6rh8474zPPZ47reYTdwzssE8pvC9r3/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18198,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "G5 Plus",
+      "slug": "hp-advan-g5-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan G5 Plus — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33725,
+          "type": "isp",
+          "name": "advan_g5_plus_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14H4WF6vtNUKGpyn-AS7RRA4KZ_adckrO/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18199,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "G9",
+      "slug": "hp-advan-g9",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan G9 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33726,
+          "type": "isp",
+          "name": "advan_g9_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1U3azlpo-gyl3p9cFhfHfElixs4Yiscgt/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18200,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "G9 Perfecto",
+      "slug": "hp-advan-g9-perfecto",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan G9 Perfecto — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33727,
+          "type": "isp",
+          "name": "advan_g9_perfecto_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/105dF7KtbYAR-lDhwqJYih6FyVGG5ec9s/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18201,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "G9 Pro",
+      "slug": "hp-advan-g9-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan G9 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33728,
+          "type": "isp",
+          "name": "advan_g9_pro_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1gqi0tkCZ3tW9WvwuYT35ssBLN50xKQuC/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18202,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "Gx",
+      "slug": "hp-advan-gx",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan Gx — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33729,
+          "type": "isp",
+          "name": "advan_gx_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Ns__i29tJHde3PIsdF7u8QgXIvDnM3y6/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18203,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "I6",
+      "slug": "hp-advan-i6",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan I6 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33730,
+          "type": "isp",
+          "name": "advan_i6_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1r9WdqyQrcbKtSjJZexe8-wZp5A4xNA4P/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18204,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "I6a",
+      "slug": "hp-advan-i6a",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan I6a — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33731,
+          "type": "isp",
+          "name": "advan_i6a_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1VNzRZnR8swixCkwQuEv05sDbEMzNaYkr/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18205,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "I6c",
+      "slug": "hp-advan-i6c",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan I6c — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33732,
+          "type": "isp",
+          "name": "advan_i6c_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kgc7ChPg_jRkISaJJhAzf5iN9g-WL2hi/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18206,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "Nasa",
+      "slug": "hp-advan-nasa",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan Nasa — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33733,
+          "type": "isp",
+          "name": "advan_nasa_isp.jpg",
+          "size": "346 KB",
+          "sizeBytes": 354305,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1gtRRM6Ouo7PYL78AacrYZd1AMx0Q2Dk1/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18207,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "Nasa Plus",
+      "slug": "hp-advan-nasa-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan Nasa Plus — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33734,
+          "type": "isp",
+          "name": "advan_nasa_plus_isp.jpg",
+          "size": "199.3 KB",
+          "sizeBytes": 204041,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1U_ECXmwQ8ueE-iQ_6dqjMsOrTlkeSs09/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18208,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "Nasa Pro",
+      "slug": "hp-advan-nasa-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan Nasa Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33735,
+          "type": "isp",
+          "name": "advan_nasa_pro_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1d_sS-_NQqyfnXT48wVrpIJNYDJt6cY4V/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18209,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "S50 Prime",
+      "slug": "hp-advan-s50-prime",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan S50 Prime — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33736,
+          "type": "isp",
+          "name": "advan_s50_prime_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1K2X2gOgeSsIqZbisTyNSorKWgIk2c4Ax/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18210,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "S5e",
+      "slug": "hp-advan-s5e",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan S5e — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33737,
+          "type": "isp",
+          "name": "advan_s5e_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uhs-k-kG0ZH7hHQ-LA2pYH7-yY3TdfeS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18211,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "S5e Nxt",
+      "slug": "hp-advan-s5e-nxt",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan S5e Nxt — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33738,
+          "type": "isp",
+          "name": "advan_s5e_nxt_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1E7rivqo5ZCv0zJEzdQJFVGsaomzF52JJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18212,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "S5e Pro",
+      "slug": "hp-advan-s5e-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan S5e Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33739,
+          "type": "isp",
+          "name": "advan_s5e_pro_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Bnw6TcEjYh-4RmhqMZvfL9foAIGnfz2G/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18213,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "Tab 7",
+      "slug": "hp-advan-tab-7",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan Tab 7 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33740,
+          "type": "isp",
+          "name": "advan_tab_7_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Xj03RBzc-Km-yHHCooMbp1iDh9zYkaHK/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18214,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "Tab 8",
+      "slug": "hp-advan-tab-8",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan Tab 8 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33741,
+          "type": "isp",
+          "name": "advan_tab_8_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17cUgnfhPolXY_hr9JNp5ckeg4NF0W3_6/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18215,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "Tab A8",
+      "slug": "hp-advan-tab-a8",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan Tab A8 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33742,
+          "type": "isp",
+          "name": "advan_tab_a8_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1C3nJUPcRg17u_VkgOGhAAG-Zpa-FpaWa/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18216,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "Tab Belajar",
+      "slug": "hp-advan-tab-belajar",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan Tab Belajar — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33743,
+          "type": "isp",
+          "name": "advan_tab_belajar_isp.jpg",
+          "size": "346 KB",
+          "sizeBytes": 354305,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1j3yD6SszdscJ9Qd0t8sa0gDZOAWcCXUW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18217,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "Tab Galilea",
+      "slug": "hp-advan-tab-galilea",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan Tab Galilea — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33744,
+          "type": "isp",
+          "name": "advan_tab_galilea_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1EEu7JNVCAlt3liOKgC4OzWfEjyepi2zi/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18218,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "Tab Sketsa",
+      "slug": "hp-advan-tab-sketsa",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan Tab Sketsa — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33745,
+          "type": "isp",
+          "name": "advan_tab_sketsa_isp.jpg",
+          "size": "346 KB",
+          "sizeBytes": 354305,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WPAfljzUoh20gTTifqI8Fbu-rlYxV9Wy/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18219,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "Tab Sketsa 2",
+      "slug": "hp-advan-tab-sketsa-2",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan Tab Sketsa 2 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33746,
+          "type": "isp",
+          "name": "advan_tab_sketsa_2_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uuYEeaHR7Cj0NVNAek6NhkIlC-Iad2Xl/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15123,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "Tab Sketsa 2 Tab Belajar",
+      "slug": "hp-advan-tab-sketsa-2-tab-belajar",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Advan Tab Sketsa 2 Tab Belajar — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [],
+      "files": []
+    },
+    {
+      "id": 18220,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "Tab Sketsa 3",
+      "slug": "hp-advan-tab-sketsa-3",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan Tab Sketsa 3 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33747,
+          "type": "isp",
+          "name": "advan_tab_sketsa_3_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_JbP6KP424AcQFMiNutY27qt3DFeKSUS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18221,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "Tab Vx",
+      "slug": "hp-advan-tab-vx",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan Tab Vx — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33748,
+          "type": "isp",
+          "name": "advan_tab_vx_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ahzWi8LPJWGMZYyX2IGftOX4yNvVcB-t/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18222,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "Tab Vx Lite",
+      "slug": "hp-advan-tab-vx-lite",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan Tab Vx Lite — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33749,
+          "type": "isp",
+          "name": "advan_tab_vx_lite_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1MosfzlRp7sHuo549a_eKQGwC_EYnTyvm/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18223,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "Tab Vx Neo",
+      "slug": "hp-advan-tab-vx-neo",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan Tab Vx Neo — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33750,
+          "type": "isp",
+          "name": "advan_tab_vx_neo_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/10CVnO3QfMWUOOs4fWbAXR9hNoejQbapQ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15124,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "Tab Vx Tab Vx Lite",
+      "slug": "hp-advan-tab-vx-tab-vx-lite",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Advan Tab Vx Tab Vx Lite — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [],
+      "files": []
+    },
+    {
+      "id": 16624,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] G1",
+      "slug": "hp-advan-isp-g1",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] G1 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32151,
+          "type": "testpoint",
+          "name": "advan_g1_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17d9g49DtSxt_SM0ivhbrvl0yudrzqmSZ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16625,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] G1 Pro",
+      "slug": "hp-advan-isp-g1-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] G1 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32152,
+          "type": "testpoint",
+          "name": "advan_g1_pro_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xvOmRJY-lvvBzhauXyzb-EdBeCl64w0y/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16626,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] G2",
+      "slug": "hp-advan-isp-g2",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] G2 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32153,
+          "type": "testpoint",
+          "name": "advan_g2_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/10lzvnLP5a3syRJdGbTO21L-1RVJfqkR-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16627,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] G2 Plus",
+      "slug": "hp-advan-isp-g2-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] G2 Plus — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32154,
+          "type": "testpoint",
+          "name": "advan_g2_plus_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dCAht13shA3oGvFRyoY4Zdi9k4h-5h2J/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16628,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] G2 Pro",
+      "slug": "hp-advan-isp-g2-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] G2 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32155,
+          "type": "testpoint",
+          "name": "advan_g2_pro_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1TAepp42Ih5ru_CiXucBORjn30fea9dyQ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16629,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] G3",
+      "slug": "hp-advan-isp-g3",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] G3 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32156,
+          "type": "testpoint",
+          "name": "advan_g3_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1i3jc6Fhdapba9DYeQK3bZCj-UbmkUEcs/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16630,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] G3 Pro",
+      "slug": "hp-advan-isp-g3-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] G3 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32157,
+          "type": "testpoint",
+          "name": "advan_g3_pro_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/11OjGi9fNErnW6zjLuHdnMT3U4pIfEGVi/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16631,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] G5",
+      "slug": "hp-advan-isp-g5",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] G5 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32158,
+          "type": "testpoint",
+          "name": "advan_g5_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hGzdKoUB7JHgoZM9_6VuBS0FV9iJFQis/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16632,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] G5 Elite",
+      "slug": "hp-advan-isp-g5-elite",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] G5 Elite — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32159,
+          "type": "testpoint",
+          "name": "advan_g5_elite_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Yb6rh8474zPPZ47reYTdwzssE8pvC9r3/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16633,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] G5 Plus",
+      "slug": "hp-advan-isp-g5-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] G5 Plus — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32160,
+          "type": "testpoint",
+          "name": "advan_g5_plus_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14H4WF6vtNUKGpyn-AS7RRA4KZ_adckrO/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16634,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] G9",
+      "slug": "hp-advan-isp-g9",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] G9 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32161,
+          "type": "testpoint",
+          "name": "advan_g9_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1U3azlpo-gyl3p9cFhfHfElixs4Yiscgt/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16635,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] G9 Perfecto",
+      "slug": "hp-advan-isp-g9-perfecto",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] G9 Perfecto — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32162,
+          "type": "testpoint",
+          "name": "advan_g9_perfecto_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/105dF7KtbYAR-lDhwqJYih6FyVGG5ec9s/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16636,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] G9 Pro",
+      "slug": "hp-advan-isp-g9-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] G9 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32163,
+          "type": "testpoint",
+          "name": "advan_g9_pro_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1gqi0tkCZ3tW9WvwuYT35ssBLN50xKQuC/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16637,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] Gx",
+      "slug": "hp-advan-isp-gx",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] Gx — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32164,
+          "type": "testpoint",
+          "name": "advan_gx_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Ns__i29tJHde3PIsdF7u8QgXIvDnM3y6/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16638,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] I6",
+      "slug": "hp-advan-isp-i6",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] I6 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32165,
+          "type": "testpoint",
+          "name": "advan_i6_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1r9WdqyQrcbKtSjJZexe8-wZp5A4xNA4P/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16639,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] I6a",
+      "slug": "hp-advan-isp-i6a",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] I6a — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32166,
+          "type": "testpoint",
+          "name": "advan_i6a_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1VNzRZnR8swixCkwQuEv05sDbEMzNaYkr/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16640,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] I6c",
+      "slug": "hp-advan-isp-i6c",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] I6c — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32167,
+          "type": "testpoint",
+          "name": "advan_i6c_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kgc7ChPg_jRkISaJJhAzf5iN9g-WL2hi/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16641,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] Nasa",
+      "slug": "hp-advan-isp-nasa",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] Nasa — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32168,
+          "type": "testpoint",
+          "name": "advan_nasa_isp.jpg",
+          "size": "346 KB",
+          "sizeBytes": 354305,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1gtRRM6Ouo7PYL78AacrYZd1AMx0Q2Dk1/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16642,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] Nasa Plus",
+      "slug": "hp-advan-isp-nasa-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] Nasa Plus — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32169,
+          "type": "testpoint",
+          "name": "advan_nasa_plus_isp.jpg",
+          "size": "199.3 KB",
+          "sizeBytes": 204041,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1U_ECXmwQ8ueE-iQ_6dqjMsOrTlkeSs09/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16643,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] Nasa Pro",
+      "slug": "hp-advan-isp-nasa-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] Nasa Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32170,
+          "type": "testpoint",
+          "name": "advan_nasa_pro_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1d_sS-_NQqyfnXT48wVrpIJNYDJt6cY4V/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16644,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] S50 Prime",
+      "slug": "hp-advan-isp-s50-prime",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] S50 Prime — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32171,
+          "type": "testpoint",
+          "name": "advan_s50_prime_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1K2X2gOgeSsIqZbisTyNSorKWgIk2c4Ax/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16645,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] S5e",
+      "slug": "hp-advan-isp-s5e",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] S5e — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32172,
+          "type": "testpoint",
+          "name": "advan_s5e_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uhs-k-kG0ZH7hHQ-LA2pYH7-yY3TdfeS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16646,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] S5e Nxt",
+      "slug": "hp-advan-isp-s5e-nxt",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] S5e Nxt — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32173,
+          "type": "testpoint",
+          "name": "advan_s5e_nxt_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1E7rivqo5ZCv0zJEzdQJFVGsaomzF52JJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16647,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] S5e Pro",
+      "slug": "hp-advan-isp-s5e-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] S5e Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32174,
+          "type": "testpoint",
+          "name": "advan_s5e_pro_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Bnw6TcEjYh-4RmhqMZvfL9foAIGnfz2G/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16648,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] Tab 7",
+      "slug": "hp-advan-isp-tab-7",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] Tab 7 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32175,
+          "type": "testpoint",
+          "name": "advan_tab_7_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Xj03RBzc-Km-yHHCooMbp1iDh9zYkaHK/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16649,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] Tab 8",
+      "slug": "hp-advan-isp-tab-8",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] Tab 8 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32176,
+          "type": "testpoint",
+          "name": "advan_tab_8_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17cUgnfhPolXY_hr9JNp5ckeg4NF0W3_6/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16650,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] Tab A8",
+      "slug": "hp-advan-isp-tab-a8",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] Tab A8 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32177,
+          "type": "testpoint",
+          "name": "advan_tab_a8_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1C3nJUPcRg17u_VkgOGhAAG-Zpa-FpaWa/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16651,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] Tab Belajar",
+      "slug": "hp-advan-isp-tab-belajar",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] Tab Belajar — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32178,
+          "type": "testpoint",
+          "name": "advan_tab_belajar_isp.jpg",
+          "size": "346 KB",
+          "sizeBytes": 354305,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1j3yD6SszdscJ9Qd0t8sa0gDZOAWcCXUW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16652,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] Tab Galilea",
+      "slug": "hp-advan-isp-tab-galilea",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] Tab Galilea — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32179,
+          "type": "testpoint",
+          "name": "advan_tab_galilea_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1EEu7JNVCAlt3liOKgC4OzWfEjyepi2zi/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16653,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] Tab Sketsa",
+      "slug": "hp-advan-isp-tab-sketsa",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] Tab Sketsa — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32180,
+          "type": "testpoint",
+          "name": "advan_tab_sketsa_isp.jpg",
+          "size": "346 KB",
+          "sizeBytes": 354305,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WPAfljzUoh20gTTifqI8Fbu-rlYxV9Wy/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16654,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] Tab Sketsa 2",
+      "slug": "hp-advan-isp-tab-sketsa-2",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] Tab Sketsa 2 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32181,
+          "type": "testpoint",
+          "name": "advan_tab_sketsa_2_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uuYEeaHR7Cj0NVNAek6NhkIlC-Iad2Xl/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16655,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] Tab Sketsa 3",
+      "slug": "hp-advan-isp-tab-sketsa-3",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] Tab Sketsa 3 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32182,
+          "type": "testpoint",
+          "name": "advan_tab_sketsa_3_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_JbP6KP424AcQFMiNutY27qt3DFeKSUS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16656,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] Tab Vx",
+      "slug": "hp-advan-isp-tab-vx",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] Tab Vx — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32183,
+          "type": "testpoint",
+          "name": "advan_tab_vx_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ahzWi8LPJWGMZYyX2IGftOX4yNvVcB-t/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16657,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] Tab Vx Lite",
+      "slug": "hp-advan-isp-tab-vx-lite",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] Tab Vx Lite — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32184,
+          "type": "testpoint",
+          "name": "advan_tab_vx_lite_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1MosfzlRp7sHuo549a_eKQGwC_EYnTyvm/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16658,
+      "category": "hp",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "[ISP] Tab Vx Neo",
+      "slug": "hp-advan-isp-tab-vx-neo",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Advan [ISP] Tab Vx Neo — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32185,
+          "type": "testpoint",
+          "name": "advan_tab_vx_neo_isp.jpg",
+          "size": "45.2 KB",
+          "sizeBytes": 46239,
+          "gdrive_direct_url": "https://drive.google.com/file/d/10CVnO3QfMWUOOs4fWbAXR9hNoejQbapQ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

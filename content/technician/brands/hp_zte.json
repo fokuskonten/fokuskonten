@@ -1,0 +1,512 @@
+{
+  "category": "hp",
+  "brand": "ZTE",
+  "brandSlug": "zte",
+  "totalModels": 9,
+  "models": [
+    {
+      "id": 19614,
+      "category": "hp",
+      "brand": "ZTE",
+      "brandSlug": "zte",
+      "modelName": "B2017G",
+      "slug": "hp-zte-b2017g",
+      "chipset": "Snapdragon 210",
+      "motherboardCode": "HWID: 009720E1",
+      "officialTitle": "ZTE B2017G — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35698,
+          "type": "loader",
+          "name": "009720e100000000_93f5fd0e3a74b5b5_fhprg_peek.bin",
+          "size": "312.6 KB",
+          "sizeBytes": 320060,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1vrrRkdj_pfYVfVNipdSTrwPVvy1hEW9_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35699,
+          "type": "loader",
+          "name": "009720e100150058_6bc369511da9cadb_fhprg_g9_peek.bin",
+          "size": "192.1 KB",
+          "sizeBytes": 196680,
+          "gdrive_direct_url": "https://drive.google.com/file/d/11IMGiOO0XrRRf_QV5EcWW57ix6ji9X1Q/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35700,
+          "type": "loader",
+          "name": "009720e103280000_31f5976a220193f2_fhprg_peek.bin",
+          "size": "336 KB",
+          "sizeBytes": 344064,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_8zqs7Y_AEFmCk4s0C365oZt06YgQ_p_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35701,
+          "type": "loader",
+          "name": "009720e100010000_8ecf3eaa03f772e2_fhprg_peek.bin",
+          "size": "321.2 KB",
+          "sizeBytes": 328920,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1RQlLxTqQjQZy5AL9s37-RShhB-U0hLCe/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35702,
+          "type": "loader",
+          "name": "009720e100000000_4fa60329e92f41aa_fhprg_peek.bin",
+          "size": "189.8 KB",
+          "sizeBytes": 194348,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1T71qA2Fqv97Ml6Ku5rQ3nzl0xJ02TUJ0/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35703,
+          "type": "loader",
+          "name": "009720e100150058_6bc369511da9cadb_fhprg_peek.bin",
+          "size": "192.1 KB",
+          "sizeBytes": 196680,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1RuAJ3uOjgTCsvmlyyhLGAWhi0EV6n6L2/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35704,
+          "type": "loader",
+          "name": "009720e100420022_5b4e559e6e66d5ba_fhprg_peek.bin",
+          "size": "201 KB",
+          "sizeBytes": 205816,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1CsTdWpY9ETh7eO18v4fdYNxc17-KmlXW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35705,
+          "type": "loader",
+          "name": "009720e100420030_598fb494403b71c3_fhprg_peek.bin",
+          "size": "201.9 KB",
+          "sizeBytes": 206756,
+          "gdrive_direct_url": "https://drive.google.com/file/d/12QfhAhNuKwlKFX6T7K8W6-xdQlTNhzcb/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35706,
+          "type": "loader",
+          "name": "009720e100000000_84e0fa565714285d_fhprg_peek.bin",
+          "size": "317.7 KB",
+          "sizeBytes": 325340,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1eWpnyTztDgtRWgFxLh7hHpqoALcNisOx/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35707,
+          "type": "loader",
+          "name": "009720e100000000_4fa60329e92f41aa_fhprg_peek.bin",
+          "size": "182.9 KB",
+          "sizeBytes": 187240,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zDxTGuGsXagEwEalxGPpjvVuCD0Mgdsd/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35708,
+          "type": "loader",
+          "name": "009720e100040000_06e90d11f17c6237_fhprg_peek.bin",
+          "size": "311.4 KB",
+          "sizeBytes": 318824,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WsqFX8aSBZ5WTDJfw8OUApDPlvjAHd9b/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35709,
+          "type": "loader",
+          "name": "009720e100000004_b81b9aa98e43a9eb_fhprg_peek.bin",
+          "size": "194.9 KB",
+          "sizeBytes": 199560,
+          "gdrive_direct_url": "https://drive.google.com/file/d/18WrKja97EYDdvgfpo0gcEoAmhJiTTpgH/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35710,
+          "type": "loader",
+          "name": "009720e100040000_163f2b9daa2d8bed_fhprg_peek.bin",
+          "size": "311 KB",
+          "sizeBytes": 318432,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_yPm1V4uDYUHPNGfk9Ek52QoIIOWYoIr/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35711,
+          "type": "loader",
+          "name": "009720e100040000_4232191da8a45966_fhprg_peek.bin",
+          "size": "306 KB",
+          "sizeBytes": 313392,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zvt5ns7D354KvYqru1AmWTNUUDZ0w8vt/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35712,
+          "type": "loader",
+          "name": "009720e100040000_9764995d53559360_fhprg_peek.bin",
+          "size": "306.3 KB",
+          "sizeBytes": 313616,
+          "gdrive_direct_url": "https://drive.google.com/file/d/16kuXBCJnuBmzBaDcjanVya2WURgqJApU/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35713,
+          "type": "loader",
+          "name": "009720e100040000_52d38440a9c26786_fhprg_peek.bin",
+          "size": "311.4 KB",
+          "sizeBytes": 318824,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1oBLsydrY0Or_jJK5iyfJe4AA85yIJHBQ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35714,
+          "type": "loader",
+          "name": "009720e100040000_eadae385d54ec66b_fhprg_peek.bin",
+          "size": "305.5 KB",
+          "sizeBytes": 312848,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HCTrc8k2BxeB0hJjn2jfsiG5nkmOFpEs/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35715,
+          "type": "loader",
+          "name": "009720e100040000_4673478f4dd4d43c_fhprg_peek.bin",
+          "size": "327.3 KB",
+          "sizeBytes": 335156,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QYZQPgAdb_gJIZ19AlfpDjsvLHfX5-q3/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 20848,
+      "category": "hp",
+      "brand": "ZTE",
+      "brandSlug": "zte",
+      "modelName": "NP03J",
+      "slug": "hp-zte-np03j",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "ZTE NP03J — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 37192,
+          "type": "loader",
+          "name": "NP03J.elf",
+          "size": "1.5 MB",
+          "sizeBytes": 1553396,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Mry4lXgsDoaQREQVqjynoGe8DyTiYbvZ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19652,
+      "category": "hp",
+      "brand": "ZTE",
+      "brandSlug": "zte",
+      "modelName": "NX595J",
+      "slug": "hp-zte-nx595j",
+      "chipset": "Snapdragon 835",
+      "motherboardCode": "HWID: 30020000",
+      "officialTitle": "ZTE NX595J — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35896,
+          "type": "loader",
+          "name": "3002000000010000_2cf7619a278d2607_fhprg_peek.bin",
+          "size": "583.3 KB",
+          "sizeBytes": 597248,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1FjZOE3DG773LOR7LssKnjzFgs-xZUKqc/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35897,
+          "type": "loader",
+          "name": "3002000000010000_7fe240ddea200f42_fhprg.bin",
+          "size": "582.3 KB",
+          "sizeBytes": 596240,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1v4RP3hrHUEghb7DxyIws-globt-zSXmY/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35898,
+          "type": "loader",
+          "name": "3002000000010000_e1ee7e62029e7837_fhprg_peek.bin",
+          "size": "585.1 KB",
+          "sizeBytes": 599136,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dg76iQ_ypy84t2BQynt6gtY3wtwuS-Pv/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35899,
+          "type": "loader",
+          "name": "3002000000010000_f8ab20526358c4fa_fhprg_peek.bin",
+          "size": "578.9 KB",
+          "sizeBytes": 592816,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1FodXJJV3uXasL8dzahU6RI9EkiBGxgII/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35900,
+          "type": "loader",
+          "name": "3002000000010000_feba74e5d4d6eea5_fhprg_peek.bin",
+          "size": "591 KB",
+          "sizeBytes": 605168,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1OBGZL1V1vAi0ifgoMkGLeQOozQEd5JIe/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35901,
+          "type": "loader",
+          "name": "3002000000010000_57ee29c2f04c283b_fhprg_peek.bin",
+          "size": "591 KB",
+          "sizeBytes": 605152,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hTpyHDGNrDMA8SxNQUzRPNgzoBeOZL9r/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35902,
+          "type": "loader",
+          "name": "3002000000010000_55dbeb4e90521155_fhprg_peek.bin",
+          "size": "565.2 KB",
+          "sizeBytes": 578784,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ShbsVpgTxryc-nZ-B4PePCDPLZYuuqSA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19638,
+      "category": "hp",
+      "brand": "ZTE",
+      "brandSlug": "zte",
+      "modelName": "NX651J",
+      "slug": "hp-zte-nx651j",
+      "chipset": "Snapdragon 765G 5G (7 nm)",
+      "motherboardCode": "HWID: 0011E0E1",
+      "officialTitle": "ZTE NX651J — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35858,
+          "type": "loader",
+          "name": "0011e0e102e80000_628be3f403d0c67a_fhprg.bin",
+          "size": "667.5 KB",
+          "sizeBytes": 683532,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13LUCcKEVem6vLOaFR5F0jqte21P8ysQn/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35859,
+          "type": "loader",
+          "name": "0011e0e100310000_1030cd12ce708f29_fhprg.bin",
+          "size": "668.8 KB",
+          "sizeBytes": 684804,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1k7hxmICxN_XCUTDwW5knwauKP8l-zqOJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35860,
+          "type": "loader",
+          "name": "0011e0e100515141_e5d0b832cebbf1c6_fhprg_opnord.bin",
+          "size": "684 KB",
+          "sizeBytes": 700416,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1g1t31ZoFULxlBUYHi-pZIqxABfhxOke1/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 20850,
+      "category": "hp",
+      "brand": "ZTE",
+      "brandSlug": "zte",
+      "modelName": "NX721J",
+      "slug": "hp-zte-nx721j",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "ZTE NX721J — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 37194,
+          "type": "loader",
+          "name": "NX721J.elf",
+          "size": "1.5 MB",
+          "sizeBytes": 1553396,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Y6lYHFH9HINZhGykZDhMUUgALDNTL_t-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 20849,
+      "category": "hp",
+      "brand": "ZTE",
+      "brandSlug": "zte",
+      "modelName": "NX789J",
+      "slug": "hp-zte-nx789j",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "ZTE NX789J — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 37193,
+          "type": "loader",
+          "name": "NX789J.elf",
+          "size": "1.6 MB",
+          "sizeBytes": 1679780,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-eSmOK3-PVCMcQI6RKOSDllwjUslvqZ_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19717,
+      "category": "hp",
+      "brand": "ZTE",
+      "brandSlug": "zte",
+      "modelName": "Qualcomm Firehose Loader ZTE (007210E1)",
+      "slug": "hp-zte-qualcomm-firehose-loader-zte-007210e1",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "HWID: 007210E1",
+      "officialTitle": "ZTE Qualcomm Firehose Loader ZTE (007210E1) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36045,
+          "type": "loader",
+          "name": "007210e100040002_e341f7d95d583a28_fhprg.bin",
+          "size": "61.6 KB",
+          "sizeBytes": 63052,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1JqBDxK_8LdWErY_RXYaQiDjDLYDnRb7C/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19719,
+      "category": "hp",
+      "brand": "ZTE",
+      "brandSlug": "zte",
+      "modelName": "Qualcomm Firehose Loader ZTE (0091B0E1)",
+      "slug": "hp-zte-qualcomm-firehose-loader-zte-0091b0e1",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "HWID: 0091B0E1",
+      "officialTitle": "ZTE Qualcomm Firehose Loader ZTE (0091B0E1) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36048,
+          "type": "loader",
+          "name": "0091b0e100040000_eadae385d54ec66b_fhprg_peek.bin",
+          "size": "264.3 KB",
+          "sizeBytes": 270628,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hmnnhQ1PSOPr5SWVQHXifJ_idfzQiLq3/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19626,
+      "category": "hp",
+      "brand": "ZTE",
+      "brandSlug": "zte",
+      "modelName": "SW1002",
+      "slug": "hp-zte-sw1002",
+      "chipset": "Snapdragon Wear 3100",
+      "motherboardCode": "HWID: 000510E1",
+      "officialTitle": "ZTE SW1002 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35807,
+          "type": "loader",
+          "name": "000510e100150063_0c4261f370982e1f_fhprg_peek_leo_l09s.bin",
+          "size": "279.6 KB",
+          "sizeBytes": 286272,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1lKOfdxqBl8U1lBeMadnvxtfnG4Xu6yiM/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35808,
+          "type": "loader",
+          "name": "000510e100040000_326ebefc44ff5adc_fhprg_peek.bin",
+          "size": "283.5 KB",
+          "sizeBytes": 290292,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QGj8FzKcBIoMCg8qvZjM5pWu7DEMo63c/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35809,
+          "type": "loader",
+          "name": "000510e100040000_cd6f6cb8100eb576_fhprg_peek.bin",
+          "size": "283.6 KB",
+          "sizeBytes": 290436,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xhYwO8OwV6ksxRtAcRVsNC1JeOEGhqOc/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

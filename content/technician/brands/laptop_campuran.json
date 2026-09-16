@@ -1,0 +1,554 @@
+{
+  "category": "laptop",
+  "brand": "CAMPURAN",
+  "brandSlug": "campuran",
+  "totalModels": 21,
+  "models": [
+    {
+      "id": 19167,
+      "category": "laptop",
+      "brand": "CAMPURAN",
+      "brandSlug": "campuran",
+      "modelName": "120S MB V1.0 SVT (120S IO boear V10 ASY-BOT)",
+      "slug": "laptop-campuran-120s-mb-v10-svt-120s-io-boear-v10-asy-bot",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "CAMPURAN 120S MB V1.0 SVT (120S IO boear V10 ASY-BOT) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34748,
+          "type": "schematic",
+          "name": "CAMPURAN - 120S MB V1.0 SVT - 120S IO boear V10 ASY-BOT - Schematic.pdf",
+          "size": "18.2 KB",
+          "sizeBytes": 18603,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1NJjP7H3giDTPqhep1kIOSp8yQAnZQAvI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19168,
+      "category": "laptop",
+      "brand": "CAMPURAN",
+      "brandSlug": "campuran",
+      "modelName": "120S MB V1.0 SVT (120S MB V10 ASY-BOT)",
+      "slug": "laptop-campuran-120s-mb-v10-svt-120s-mb-v10-asy-bot",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "CAMPURAN 120S MB V1.0 SVT (120S MB V10 ASY-BOT) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34749,
+          "type": "schematic",
+          "name": "CAMPURAN - 120S MB V1.0 SVT - 120S MB V10 ASY-BOT - Schematic.pdf",
+          "size": "64.9 KB",
+          "sizeBytes": 66470,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZuZDnkAXezfBqreQJrSKu9rprjp6245F/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19169,
+      "category": "laptop",
+      "brand": "CAMPURAN",
+      "brandSlug": "campuran",
+      "modelName": "120S MB V1.0 SVT (120S MB V10 ASY-TOP)",
+      "slug": "laptop-campuran-120s-mb-v10-svt-120s-mb-v10-asy-top",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "CAMPURAN 120S MB V1.0 SVT (120S MB V10 ASY-TOP) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34750,
+          "type": "schematic",
+          "name": "CAMPURAN - 120S MB V1.0 SVT - 120S MB V10 ASY-TOP - Schematic.pdf",
+          "size": "27 KB",
+          "sizeBytes": 27615,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Bc2FCSZXvk5DR23nH_NcBbrxJfFyIxWh/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19166,
+      "category": "laptop",
+      "brand": "CAMPURAN",
+      "brandSlug": "campuran",
+      "modelName": "120S MB V1.0 SVT (120S io board V10 ASY-TOP)",
+      "slug": "laptop-campuran-120s-mb-v10-svt-120s-io-board-v10-asy-top",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "CAMPURAN 120S MB V1.0 SVT (120S io board V10 ASY-TOP) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34747,
+          "type": "schematic",
+          "name": "CAMPURAN - 120S MB V1.0 SVT - 120S io board V10 ASY-TOP - Schematic.pdf",
+          "size": "18.2 KB",
+          "sizeBytes": 18612,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1pTPeaNbTKSumc0i0BzxFB3EwBTmS9J-p/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19164,
+      "category": "laptop",
+      "brand": "CAMPURAN",
+      "brandSlug": "campuran",
+      "modelName": "120S MB V1.0 SVT (120s-11&14iap apl io board mp v)",
+      "slug": "laptop-campuran-120s-mb-v10-svt-120s-1114iap-apl-io-board-mp-v",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "CAMPURAN 120S MB V1.0 SVT (120s-11&14iap apl io board mp v) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34745,
+          "type": "schematic",
+          "name": "CAMPURAN - 120S MB V1.0 SVT - 120s-11&14iap apl io board mp v - Schematic.pdf",
+          "size": "179.7 KB",
+          "sizeBytes": 184002,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1RfzaeyeTZsu7KsGpGF34NnWq_si3x6xT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19165,
+      "category": "laptop",
+      "brand": "CAMPURAN",
+      "brandSlug": "campuran",
+      "modelName": "120S MB V1.0 SVT (120s-11&14iap apl sch mp v1)",
+      "slug": "laptop-campuran-120s-mb-v10-svt-120s-1114iap-apl-sch-mp-v1",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "CAMPURAN 120S MB V1.0 SVT (120s-11&14iap apl sch mp v1) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34746,
+          "type": "schematic",
+          "name": "CAMPURAN - 120S MB V1.0 SVT - 120s-11&14iap apl sch mp v1 - Schematic.pdf",
+          "size": "1003.2 KB",
+          "sizeBytes": 1027257,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PYkknPGXBWkx3wrmYMUffyZzG5ex2Obh/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19170,
+      "category": "laptop",
+      "brand": "CAMPURAN",
+      "brandSlug": "campuran",
+      "modelName": "6-71-M74S0-D05A GP",
+      "slug": "laptop-campuran-6-71-m74s0-d05a-gp",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "CAMPURAN 6-71-M74S0-D05A GP — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34751,
+          "type": "schematic",
+          "name": "CAMPURAN - 6-71-M74S0-D05A GP - Schematic.pdf",
+          "size": "4.6 MB",
+          "sizeBytes": 4787427,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1oYOgLxIPMqReRR_6nJws8StD7r0YMse3/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19171,
+      "category": "laptop",
+      "brand": "CAMPURAN",
+      "brandSlug": "campuran",
+      "modelName": "A430 A460 Intel (HM55) DAOSW9MB6E0 (quanta SW9)",
+      "slug": "laptop-campuran-a430-a460-intel-hm55-daosw9mb6e0-quanta-sw9",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "CAMPURAN A430 A460 Intel (HM55) DAOSW9MB6E0 (quanta SW9) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34752,
+          "type": "schematic",
+          "name": "CAMPURAN - A430 A460 Intel (HM55) DAOSW9MB6E0 (quanta SW9) - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1415070,
+          "gdrive_direct_url": "https://drive.google.com/file/d/11b4-kupNmlj81uHks6JlYarc3TaJnC6u/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19174,
+      "category": "laptop",
+      "brand": "CAMPURAN",
+      "brandSlug": "campuran",
+      "modelName": "COMPAL LA-4611P KSW01 91 - REV 0.2",
+      "slug": "laptop-campuran-compal-la-4611p-ksw01-91-rev-02",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-4611P",
+      "officialTitle": "CAMPURAN COMPAL LA-4611P KSW01 91 - REV 0.2 (LA-4611P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34755,
+          "type": "schematic",
+          "name": "CAMPURAN - COMPAL LA-4611P KSW01 91 - REV 0.2 - Schematic.pdf",
+          "size": "692.6 KB",
+          "sizeBytes": 709208,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Tu6mnc8qdRWzjOmfmtbGYtGTdJg2fFcU/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19172,
+      "category": "laptop",
+      "brand": "CAMPURAN",
+      "brandSlug": "campuran",
+      "modelName": "Clevo W370SS W35XSSQ - 6-71-W3S50-D02A",
+      "slug": "laptop-campuran-clevo-w370ss-w35xssq-6-71-w3s50-d02a",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "CAMPURAN Clevo W370SS W35XSSQ - 6-71-W3S50-D02A — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34753,
+          "type": "schematic",
+          "name": "CAMPURAN - Clevo W370SS W35XSSQ - 6-71-W3S50-D02A - Schematic.pdf",
+          "size": "6.1 MB",
+          "sizeBytes": 6436937,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1MSjC1pM0Py52c8YJYit4Zp6HplYkalfw/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19173,
+      "category": "laptop",
+      "brand": "CAMPURAN",
+      "brandSlug": "campuran",
+      "modelName": "Clevo W950BU W955BU 6-71-W94J0-D02 service manual",
+      "slug": "laptop-campuran-clevo-w950bu-w955bu-6-71-w94j0-d02-service-manual",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "CAMPURAN Clevo W950BU W955BU 6-71-W94J0-D02 service manual — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34754,
+          "type": "schematic",
+          "name": "CAMPURAN - Clevo W950BU W955BU 6-71-W94J0-D02 service manual - Schematic.pdf",
+          "size": "5 MB",
+          "sizeBytes": 5293041,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1tri-piwOeu-0Y5xIjFEkSFPtjHmY6sH3/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19175,
+      "category": "laptop",
+      "brand": "CAMPURAN",
+      "brandSlug": "campuran",
+      "modelName": "DAOTWSMB6EO - TWS",
+      "slug": "laptop-campuran-daotwsmb6eo-tws",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "CAMPURAN DAOTWSMB6EO - TWS — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34756,
+          "type": "schematic",
+          "name": "CAMPURAN - DAOTWSMB6EO - TWS - Schematic.pdf",
+          "size": "1.7 MB",
+          "sizeBytes": 1754218,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zRDqilaU6BGsEfVZuMf9pBirPX0-1Wou/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19179,
+      "category": "laptop",
+      "brand": "CAMPURAN",
+      "brandSlug": "campuran",
+      "modelName": "GA-F2A58M-DS2 Schematic (GA-F2A58M-DS2 R30)",
+      "slug": "laptop-campuran-ga-f2a58m-ds2-schematic-ga-f2a58m-ds2-r30",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "CAMPURAN GA-F2A58M-DS2 Schematic (GA-F2A58M-DS2 R30) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34760,
+          "type": "schematic",
+          "name": "CAMPURAN - GA-F2A58M-DS2 Schematic - GA-F2A58M-DS2 R30 - Schematic.pdf",
+          "size": "854.8 KB",
+          "sizeBytes": 875287,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17PEcELKL-m3edyDnabGqMXvD7GJBAVB7/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19176,
+      "category": "laptop",
+      "brand": "CAMPURAN",
+      "brandSlug": "campuran",
+      "modelName": "GA-F2A58M-DS2 Schematic (GA-F2A58M-DS2-3.0 BV)",
+      "slug": "laptop-campuran-ga-f2a58m-ds2-schematic-ga-f2a58m-ds2-30-bv",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "CAMPURAN GA-F2A58M-DS2 Schematic (GA-F2A58M-DS2-3.0 BV) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34757,
+          "type": "schematic",
+          "name": "CAMPURAN - GA-F2A58M-DS2 Schematic - GA-F2A58M-DS2-3.0 BV - Schematic.pdf",
+          "size": "95.7 KB",
+          "sizeBytes": 97970,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ANIwi3VVpYQ-18NP05O4fmj4khGklaAE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19177,
+      "category": "laptop",
+      "brand": "CAMPURAN",
+      "brandSlug": "campuran",
+      "modelName": "GA-F2A58M-DS2 Schematic (GA-F2A58M-DS2-3.1 BV)",
+      "slug": "laptop-campuran-ga-f2a58m-ds2-schematic-ga-f2a58m-ds2-31-bv",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "CAMPURAN GA-F2A58M-DS2 Schematic (GA-F2A58M-DS2-3.1 BV) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34758,
+          "type": "schematic",
+          "name": "CAMPURAN - GA-F2A58M-DS2 Schematic - GA-F2A58M-DS2-3.1 BV - Schematic.pdf",
+          "size": "92.2 KB",
+          "sizeBytes": 94420,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14Ct72xaIhShDvb44LBBhfrcVY3JSB3St/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19178,
+      "category": "laptop",
+      "brand": "CAMPURAN",
+      "brandSlug": "campuran",
+      "modelName": "GA-F2A58M-DS2 Schematic (GA-F2A58M-DS2-3.11 BV)",
+      "slug": "laptop-campuran-ga-f2a58m-ds2-schematic-ga-f2a58m-ds2-311-bv",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "CAMPURAN GA-F2A58M-DS2 Schematic (GA-F2A58M-DS2-3.11 BV) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34759,
+          "type": "schematic",
+          "name": "CAMPURAN - GA-F2A58M-DS2 Schematic - GA-F2A58M-DS2-3.11 BV - Schematic.pdf",
+          "size": "77.6 KB",
+          "sizeBytes": 79487,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xdvW3_vFClIIksPM1JcVLAMYeqgItL8R/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19180,
+      "category": "laptop",
+      "brand": "CAMPURAN",
+      "brandSlug": "campuran",
+      "modelName": "GA-M52L-S3P Rev24",
+      "slug": "laptop-campuran-ga-m52l-s3p-rev24",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "CAMPURAN GA-M52L-S3P Rev24 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34761,
+          "type": "schematic",
+          "name": "CAMPURAN - GA-M52L-S3P Rev24 - Schematic.pdf",
+          "size": "1.1 MB",
+          "sizeBytes": 1110187,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kkWhcVSWhHPEwFaqXn5VueWSmoGKWA4k/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19181,
+      "category": "laptop",
+      "brand": "CAMPURAN",
+      "brandSlug": "campuran",
+      "modelName": "HASEE A420P e450",
+      "slug": "laptop-campuran-hasee-a420p-e450",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "CAMPURAN HASEE A420P e450 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34762,
+          "type": "schematic",
+          "name": "CAMPURAN - HASEE A420P e450 - Schematic.pdf",
+          "size": "2.3 MB",
+          "sizeBytes": 2459243,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DGJV9NcMF5dq3COLoauG5Jr6NmmjSVLi/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19182,
+      "category": "laptop",
+      "brand": "CAMPURAN",
+      "brandSlug": "campuran",
+      "modelName": "TI61M5 Rev1.0 2012.07.02",
+      "slug": "laptop-campuran-ti61m5-rev10-20120702",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "CAMPURAN TI61M5 Rev1.0 2012.07.02 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34763,
+          "type": "schematic",
+          "name": "CAMPURAN - TI61M5 Rev1.0 2012.07.02 - Schematic.pdf",
+          "size": "445.6 KB",
+          "sizeBytes": 456254,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Ww-TsD6OMaPcBIgZgCal23DZjB7O7G12/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19183,
+      "category": "laptop",
+      "brand": "CAMPURAN",
+      "brandSlug": "campuran",
+      "modelName": "V10IS1 MB REVC SCH 1010A",
+      "slug": "laptop-campuran-v10is1-mb-revc-sch-1010a",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "CAMPURAN V10IS1 MB REVC SCH 1010A — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34764,
+          "type": "schematic",
+          "name": "CAMPURAN - V10IS1 MB REVC SCH 1010A - Schematic.pdf",
+          "size": "794.3 KB",
+          "sizeBytes": 813363,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1M90tMgZza2AWBjn1-aCKhlijyqhmOJdn/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19184,
+      "category": "laptop",
+      "brand": "CAMPURAN",
+      "brandSlug": "campuran",
+      "modelName": "w7425 - 6-71-e51q0-d02a.gp",
+      "slug": "laptop-campuran-w7425-6-71-e51q0-d02agp",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "CAMPURAN w7425 - 6-71-e51q0-d02a.gp — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34765,
+          "type": "schematic",
+          "name": "CAMPURAN - w7425 - 6-71-e51q0-d02a.gp - Schematic.pdf",
+          "size": "789 KB",
+          "sizeBytes": 807970,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mR6HMIT22Bng9Eg8bQho8fr1m7pqqCM8/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

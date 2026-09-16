@@ -1,0 +1,544 @@
+{
+  "category": "hp",
+  "brand": "Acer",
+  "brandSlug": "acer",
+  "totalModels": 1,
+  "models": [
+    {
+      "id": 19610,
+      "category": "hp",
+      "brand": "Acer",
+      "brandSlug": "acer",
+      "modelName": "M330",
+      "slug": "hp-acer-m330",
+      "chipset": "Snapdragon 210",
+      "motherboardCode": "HWID: 009600E1",
+      "officialTitle": "Acer M330 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35603,
+          "type": "loader",
+          "name": "009600e10029001b_cc3153a80293939b_fhprg_peek.bin",
+          "size": "276.7 KB",
+          "sizeBytes": 283336,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1pUFcLUH2rufN3Qv83j0Y5R4vmrFme6ya/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35604,
+          "type": "loader",
+          "name": "009600e100000000_a0fc9aed8840640e_fhprg_peek.bin",
+          "size": "276.7 KB",
+          "sizeBytes": 283368,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1NCdZHRUhDgJYSkcwJvNlobt3qZzsFsg_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35605,
+          "type": "loader",
+          "name": "009600e100300200_738126cc40b1c42e_fhprg_peek.bin",
+          "size": "277.3 KB",
+          "sizeBytes": 283948,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1x81FMC-_oCrnp38F3ujM5pK1Y-LvX-3M/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35606,
+          "type": "loader",
+          "name": "009600e100000000_f91d1c235e02f59b_fhprg_peek.bin",
+          "size": "278.4 KB",
+          "sizeBytes": 285084,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zZTeKlnDDdwYvdH4bWgGacbzVmapkKh4/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35607,
+          "type": "loader",
+          "name": "009600e100000000_56bcc7d452a30271_fhprg_peek.bin",
+          "size": "281.9 KB",
+          "sizeBytes": 288636,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15Ef0-Z1J0r0apaGNWGWx47kEDSIL_Z-8/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35608,
+          "type": "loader",
+          "name": "009600e100000000_bb6e112bb580004a_fhprg_peek.bin",
+          "size": "277 KB",
+          "sizeBytes": 283668,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1yefi5CdUl7YLjhbdgm1sOPqGs1P2QGSz/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35609,
+          "type": "loader",
+          "name": "009600e100007705_adcb7c0b68663755_fhprg_peek.bin",
+          "size": "277.6 KB",
+          "sizeBytes": 284292,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1qITGvAPn_d_KxTvr-i8zacWtlaLoaYne/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35610,
+          "type": "loader",
+          "name": "009600e100450000_fddd41b1ca4a7f9f_fhprg.bin",
+          "size": "142.8 KB",
+          "sizeBytes": 146180,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1FLRy6km0kG8GZsGqU93IjWAnFQG9Awdf/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35611,
+          "type": "loader",
+          "name": "009600e100000000_8ecf3eaa03f772e2_fhprg_peek.bin",
+          "size": "272.9 KB",
+          "sizeBytes": 279500,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1nEPcIdMQYQD-EMSiL70RkZvlR5wAyVFC/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35612,
+          "type": "loader",
+          "name": "009600e100420029_608e3cb197d5d61c_fhprg.bin",
+          "size": "279.9 KB",
+          "sizeBytes": 286616,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kYV-SrXjBnSZAkn74yBdclwFNlPjeR-3/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35613,
+          "type": "loader",
+          "name": "009600e100000000_f5f4192a33b28309_fhprg_peek.bin",
+          "size": "279.9 KB",
+          "sizeBytes": 286592,
+          "gdrive_direct_url": "https://drive.google.com/file/d/159-DCIoxhWhH7LA8oELT__lwi9v2LOwJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35614,
+          "type": "loader",
+          "name": "009600e100420029_952bed90f6e9eac6_fhprg.bin",
+          "size": "280 KB",
+          "sizeBytes": 286712,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1SiirnANjpxbw4rQI3hdwUci1zUSvT5GQ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35615,
+          "type": "loader",
+          "name": "009600e100000001_16c98e7bb2d747f9_fhprg_peek.bin",
+          "size": "150.2 KB",
+          "sizeBytes": 153796,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1V_bhmQZdkFa1vIOfb82g2kFmqUSEce0E/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35616,
+          "type": "loader",
+          "name": "009600e100000000_3767512bcb320b2b_fhprg_peek.bin",
+          "size": "276.7 KB",
+          "sizeBytes": 283368,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1EuR90oWw1hfhUZF3n0VF46cM1jDKNFgA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35617,
+          "type": "loader",
+          "name": "009600e100000000_bb6e112bb580004a_fhprg_peek.bin",
+          "size": "277 KB",
+          "sizeBytes": 283668,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1CA4vEOMy7W2e4XCmXncpHvuLDSrdZHSd/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35618,
+          "type": "loader",
+          "name": "009600e100000000_769e63e6ec3a73e8_fhprg_peek.bin",
+          "size": "277.6 KB",
+          "sizeBytes": 284240,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wJIZbEn7OrbgDc620F2CZWHaLYWoA7uO/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35619,
+          "type": "loader",
+          "name": "009600e100000000_ee38280ad6d904d5_fhprg_peek.bin",
+          "size": "272.6 KB",
+          "sizeBytes": 279104,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hbEMiex4laJjgo1SuWmDOJRy4RTPQGnF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35620,
+          "type": "loader",
+          "name": "009600e100007705_adcb7c0b68663755_fhprg_peek.bin",
+          "size": "277.6 KB",
+          "sizeBytes": 284292,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1I6uB413NeZeUYC5oxJAasfgaY6o61AwN/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35621,
+          "type": "loader",
+          "name": "009600e100300200_738126cc40b1c42e_fhprg_peek.bin",
+          "size": "277.3 KB",
+          "sizeBytes": 283948,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1KDb6KSb5hqcozyynm1iJVPJryE3J6PpL/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35622,
+          "type": "loader",
+          "name": "009600e100420011_625801c51eee90d7_fhprg_peek.bin",
+          "size": "156.7 KB",
+          "sizeBytes": 160444,
+          "gdrive_direct_url": "https://drive.google.com/file/d/12BKh_NsFcQ_EKO9NcuEBndApbo1_GfV8/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35623,
+          "type": "loader",
+          "name": "009600e100000000_cc3153a80293939b_fhprg_peek.bin",
+          "size": "272.4 KB",
+          "sizeBytes": 278980,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1oEJrfv-ltgz4tjMGWboA2hCxKWOsH3JU/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35624,
+          "type": "loader",
+          "name": "009600e100420019_598fb494403b71c3_fhprg_peek.bin",
+          "size": "156.7 KB",
+          "sizeBytes": 160428,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1of06PM_vTEBDI7Yzawn_Tw0GcichckG7/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35625,
+          "type": "loader",
+          "name": "009600e10042001b_20363965d4236ca9_fhprg.bin",
+          "size": "283.2 KB",
+          "sizeBytes": 290032,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1TOyylnWGk3hk0aKWWWArC8IwKBSWBN80/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35626,
+          "type": "loader",
+          "name": "009600e100420019_771c3fc9b27825fe_fhprg_peek.bin",
+          "size": "156.7 KB",
+          "sizeBytes": 160428,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1aeWabNWD07SP94DvY0KplMltMuFHQEeJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35627,
+          "type": "loader",
+          "name": "009600e10042001d_ba4a39e542e99616_fhprg_peek.bin",
+          "size": "157.2 KB",
+          "sizeBytes": 160936,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1yiiJH5dGa9HSC2B4HzNBH9Mg8l4mSpnr/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35628,
+          "type": "loader",
+          "name": "009600e10042001d_fc9b6be6cbbec404_fhprg_peek.bin",
+          "size": "157.6 KB",
+          "sizeBytes": 161388,
+          "gdrive_direct_url": "https://drive.google.com/file/d/11b2Y0fzRi_Ak_1-DhM8fF6W9euaIyyW4/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35629,
+          "type": "loader",
+          "name": "009600e10042001f_61395708cdc083d8_fhprg.bin",
+          "size": "322.6 KB",
+          "sizeBytes": 330304,
+          "gdrive_direct_url": "https://drive.google.com/file/d/18Sxs35iLlGvD3rvOPOIy9Te5XU2tTxUM/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35630,
+          "type": "loader",
+          "name": "009600e100420022_1426e274080695bb_fhprg.bin",
+          "size": "323.8 KB",
+          "sizeBytes": 331528,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1bah_lmwFqV-2qpZ61ihO5pzxWdUKhnBq/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35631,
+          "type": "loader",
+          "name": "009600e100420024_598fb494403b71c3_fhprg.bin",
+          "size": "151.9 KB",
+          "sizeBytes": 155560,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wud2a6JaD3B10aKAdGOlImPDU8kBvmpg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35632,
+          "type": "loader",
+          "name": "009600e100420024_5b4e559e6e66d5ba_fhprg.bin",
+          "size": "283.5 KB",
+          "sizeBytes": 290264,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1oX3PXXUhFkM4XS6_FDcvVDNI155CbI8L/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35633,
+          "type": "loader",
+          "name": "009600e100420024_771c3fc9b27825fe_fhprg.bin",
+          "size": "283.5 KB",
+          "sizeBytes": 290264,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1rQWhZtgrZ4gr_Xq5tJh-l2GyOiVg6b4t/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35634,
+          "type": "loader",
+          "name": "009600e100420027_9f4a1e0ca202dc7a_fhprg.bin",
+          "size": "323.8 KB",
+          "sizeBytes": 331528,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1JIc0uhRyMhv1K5aOUZwoXiTtb_w2difG/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35635,
+          "type": "loader",
+          "name": "009600e100420029_952bed90f6e9eac6_fhprg.bin",
+          "size": "280 KB",
+          "sizeBytes": 286712,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xNBKLfg8f2uDNWOw6flHv2MqstjigETH/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35636,
+          "type": "loader",
+          "name": "009600e100420031_7d9742baa86b1db6_fhprg.bin",
+          "size": "337.2 KB",
+          "sizeBytes": 345248,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1f0WeWEE4_UyYUlUnU6sQmD6Xm4SjkEre/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35637,
+          "type": "loader",
+          "name": "009600e100420029_d132ae1757f594a3_fhprg.bin",
+          "size": "334.1 KB",
+          "sizeBytes": 342120,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Zm25QNkQzYopHJfutrIpxTA4VLE4k6Ig/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35638,
+          "type": "loader",
+          "name": "009600e100420032_df561473bca15451_fhprg.bin",
+          "size": "335.4 KB",
+          "sizeBytes": 343456,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QBDwh3dbHCF2LlYRCj4c4abQef7EoeTn/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35639,
+          "type": "loader",
+          "name": "009600e100420035_57b585f76f907837_fhprg.bin",
+          "size": "335.4 KB",
+          "sizeBytes": 343456,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1KHbEtcBrhky8mUSOaYqd9ytKHQFV-TJk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35640,
+          "type": "loader",
+          "name": "009600e100420037_7ae7b2e1144087f0_fhprg.bin",
+          "size": "335.4 KB",
+          "sizeBytes": 343456,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1P6hayNY7OMOglpFsNBOWllwGeBZfAGqH/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35641,
+          "type": "loader",
+          "name": "009600e100420037_848c3b7984c01ead_fhprg.bin",
+          "size": "335.4 KB",
+          "sizeBytes": 343456,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1bFJB_X2-8a27oTfyvxSJuLQ4WIEEAlIq/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35642,
+          "type": "loader",
+          "name": "009600e10042004a_62ab1adaae406926_fhprg_peek.bin",
+          "size": "279.7 KB",
+          "sizeBytes": 286424,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1cJ7k94ZPrXV16ibnpNO5-umpSr0SWfuN/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35643,
+          "type": "loader",
+          "name": "009600e10042004d_b451bd3b38d9edd1_fhprg.bin",
+          "size": "284.8 KB",
+          "sizeBytes": 291672,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_PVYi9JTWazCK43ui5XEnGxPQSnlTSMX/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35644,
+          "type": "loader",
+          "name": "009600e10042004c_ba3f1e2e2460422b_fhprg.bin",
+          "size": "284.8 KB",
+          "sizeBytes": 291672,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1qwcTclJIiJsyAxjCEFMSo7gwF7AY4Fki/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35645,
+          "type": "loader",
+          "name": "009600e100000000_b75ac87c5171462b_fhprg_peek.bin",
+          "size": "277.7 KB",
+          "sizeBytes": 284340,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1t6WcynE8waGEesI9b1CnrNd7RrN0ELyv/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35646,
+          "type": "loader",
+          "name": "009600e100420040_171b00a86062d2c5_fhprg.bin",
+          "size": "335.4 KB",
+          "sizeBytes": 343456,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19MM3mG8-wGXPAG0p_RwFFY-vJhBj5DHj/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35647,
+          "type": "loader",
+          "name": "009600e100420023_ab790fcd209788bf_fhprg.bin",
+          "size": "153 KB",
+          "sizeBytes": 156644,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1M44a87AMP7zVqzNi7sOqsRA7IQAQc0xH/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35648,
+          "type": "loader",
+          "name": "009600e100000000_df989e3c2be41617_fhprg_peek.bin",
+          "size": "272.4 KB",
+          "sizeBytes": 278980,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-PSlHvsPodtb33fwoGJ4o9yZJNsxKDM_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35649,
+          "type": "loader",
+          "name": "009600e100480000_0dc319ba152db35e_fhprg_peek.bin",
+          "size": "277 KB",
+          "sizeBytes": 283616,
+          "gdrive_direct_url": "https://drive.google.com/file/d/16oToG9mv-QfYlpe2SzNSZyg8xs8U1rrZ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35650,
+          "type": "loader",
+          "name": "009600e100040000_693e38e5ef816bd8_fhprg_peek.bin",
+          "size": "283.2 KB",
+          "sizeBytes": 289952,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1U75O8KzQ4OWp8i7QGFU7CIQ1rJsC88dX/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35651,
+          "type": "loader",
+          "name": "009600e100040000_86c4f630cbc412fd_fhprg_peek.bin",
+          "size": "283.2 KB",
+          "sizeBytes": 289952,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Soydp0dgQ9pO2revy0NiLD51A3WL2Jf7/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35652,
+          "type": "loader",
+          "name": "009600e100040000_9764995d53559360_fhprg_peek.bin",
+          "size": "271.5 KB",
+          "sizeBytes": 278016,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DT2xMUByW8SOj0htLngPMZ2A-oEuIggZ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35653,
+          "type": "loader",
+          "name": "009600e100040000_f4734e4701d60bc8_fhprg_peek.bin",
+          "size": "283.5 KB",
+          "sizeBytes": 290292,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dZqqlvl1EWMmQSluGifykSbNhfmedf_5/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35654,
+          "type": "loader",
+          "name": "009600e100040000_eadae385d54ec66b_fhprg_peek.bin",
+          "size": "279.7 KB",
+          "sizeBytes": 286412,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1vwNlPwzg-4cdtW-kPAnWw5Eg1RYbLRlK/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

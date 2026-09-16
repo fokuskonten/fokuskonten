@@ -1,0 +1,1048 @@
+{
+  "category": "hp",
+  "brand": "Iqoo",
+  "brandSlug": "iqoo",
+  "totalModels": 40,
+  "models": [
+    {
+      "id": 19780,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO7_LEGEND-PD2049F",
+      "slug": "hp-iqoo-iqoo7_legend-pd2049f",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo PD2049F — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36109,
+          "type": "loader",
+          "name": "IQOO7_LEGEND-PD2049F.elf",
+          "size": "945.7 KB",
+          "sizeBytes": 968352,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13N2yAesmRSW5aKTKOwXqjwWDw61_LbJG/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19781,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_1",
+      "slug": "hp-iqoo-iqoo_1",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_1 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36110,
+          "type": "loader",
+          "name": "IQOO_1.elf",
+          "size": "727.3 KB",
+          "sizeBytes": 744768,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ll_tvuTP6PB8Al0l9c3_-Sko7XHumlLE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19784,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_11_5G_PD2243F.melf",
+      "slug": "hp-iqoo-iqoo_11_5g_pd2243fmelf",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_11_5G_PD2243F.melf — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36113,
+          "type": "loader",
+          "name": "IQOO_11_5G_PD2243F.melf",
+          "size": "1.6 MB",
+          "sizeBytes": 1698660,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kKdx5aCz6qhLL-adzk1O8KDjlVWdhMXh/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19783,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_11_PD2243F",
+      "slug": "hp-iqoo-iqoo_11_pd2243f",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_11_PD2243F — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36112,
+          "type": "loader",
+          "name": "IQOO_11_PD2243F.elf",
+          "size": "1.6 MB",
+          "sizeBytes": 1698660,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uCMbWTyaI4B9HiOacUpuRFabqUBZ-uHx/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19786,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_12.melf",
+      "slug": "hp-iqoo-iqoo_12melf",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_12.melf — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36115,
+          "type": "loader",
+          "name": "IQOO_12.melf",
+          "size": "1.5 MB",
+          "sizeBytes": 1574564,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1CG3jPK4K6jyad-aCXXKlQRy87dm1srOv/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19782,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_13.melf",
+      "slug": "hp-iqoo-iqoo_13melf",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_13.melf — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36111,
+          "type": "loader",
+          "name": "IQOO_13.melf",
+          "size": "1.7 MB",
+          "sizeBytes": 1731240,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17B3gjX0acH_d2teTnLPf53AEU172Qq_M/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19788,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_3",
+      "slug": "hp-iqoo-iqoo_3",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_3 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36117,
+          "type": "loader",
+          "name": "IQOO_3.elf",
+          "size": "711.4 KB",
+          "sizeBytes": 728448,
+          "gdrive_direct_url": "https://drive.google.com/file/d/16NCTWYjNGW1qeEUtRkJVH5I4IUD0B5Jd/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19792,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_3_PD1955",
+      "slug": "hp-iqoo-iqoo_3_pd1955",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_3_PD1955 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36121,
+          "type": "loader",
+          "name": "IQOO_3_PD1955.elf",
+          "size": "711.4 KB",
+          "sizeBytes": 728448,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1bTz15vFxJkY6ybFFt-guZy01xIj0ZasU/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19785,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_5_PD2024",
+      "slug": "hp-iqoo-iqoo_5_pd2024",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_5_PD2024 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36114,
+          "type": "loader",
+          "name": "IQOO_5_PD2024.elf",
+          "size": "711.4 KB",
+          "sizeBytes": 728448,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1RmcB-meS1wdYrQbadwytUgeVdBhb6ejN/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19787,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_5_PRO",
+      "slug": "hp-iqoo-iqoo_5_pro",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_5_PRO — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36116,
+          "type": "loader",
+          "name": "IQOO_5_PRO.elf",
+          "size": "704.2 KB",
+          "sizeBytes": 721072,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1rMX0gFDtyZWnH32s1uFuVSMDD7cVYIK6/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19790,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_7_LEGEND",
+      "slug": "hp-iqoo-iqoo_7_legend",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_7_LEGEND — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36119,
+          "type": "loader",
+          "name": "IQOO_7_LEGEND.elf",
+          "size": "893.6 KB",
+          "sizeBytes": 915080,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PhbrZidZwI39oGK2oHk7NP8QQL0O0QLT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19791,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_7_LEGEND_PD2049F",
+      "slug": "hp-iqoo-iqoo_7_legend_pd2049f",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_7_LEGEND_PD2049F — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36120,
+          "type": "loader",
+          "name": "IQOO_7_LEGEND_PD2049F.elf",
+          "size": "945.7 KB",
+          "sizeBytes": 968352,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1EuUp5Y92-6c0aGy6bTt-_mJ3q_x5wZjb/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19789,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_7_LITE_PD2055",
+      "slug": "hp-iqoo-iqoo_7_lite_pd2055",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_7_LITE_PD2055 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36118,
+          "type": "loader",
+          "name": "IQOO_7_LITE_PD2055.elf",
+          "size": "701.7 KB",
+          "sizeBytes": 718576,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PTxqAYGBK2fKprXmGqNqmOWSSCJOZJNP/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19793,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_7_PD2049",
+      "slug": "hp-iqoo-iqoo_7_pd2049",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_7_PD2049 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36122,
+          "type": "loader",
+          "name": "IQOO_7_PD2049.elf",
+          "size": "965.6 KB",
+          "sizeBytes": 988816,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1j5P5495Bk4j3GulTU4w98IVuhoOl3xcM/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19794,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_7_PD2055F",
+      "slug": "hp-iqoo-iqoo_7_pd2055f",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_7_PD2055F — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36123,
+          "type": "loader",
+          "name": "IQOO_7_PD2055F.elf",
+          "size": "699.4 KB",
+          "sizeBytes": 716232,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1AFfCWVM1iouZyWM5-ch8OtiZ_4ASEbe3/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19796,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_8",
+      "slug": "hp-iqoo-iqoo_8",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_8 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36125,
+          "type": "loader",
+          "name": "IQOO_8.elf",
+          "size": "893.6 KB",
+          "sizeBytes": 915080,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dJlu9i4brjprcUOenYrbDrdQ4aEsDio8/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19799,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_8_PD2136",
+      "slug": "hp-iqoo-iqoo_8_pd2136",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_8_PD2136 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36128,
+          "type": "loader",
+          "name": "IQOO_8_PD2136.elf",
+          "size": "941.7 KB",
+          "sizeBytes": 964256,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1m2_W1XTJ-JnQaqBbf31s03OrL2E8SK9w/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19795,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_8_PRO",
+      "slug": "hp-iqoo-iqoo_8_pro",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_8_PRO — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36124,
+          "type": "loader",
+          "name": "IQOO_8_PRO.elf",
+          "size": "893.6 KB",
+          "sizeBytes": 915080,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1535wfV_q03MXF09QdtWQ_GICk8IWnaQi/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19800,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_9T_PD2217",
+      "slug": "hp-iqoo-iqoo_9t_pd2217",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_9T_PD2217 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36129,
+          "type": "loader",
+          "name": "IQOO_9T_PD2217.elf",
+          "size": "1.5 MB",
+          "sizeBytes": 1542916,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Si50plBNoumGYdzlyl17Is0kIPT7TwJK/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19798,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_9T_PD2217F.melf",
+      "slug": "hp-iqoo-iqoo_9t_pd2217fmelf",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_9T_PD2217F.melf — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36127,
+          "type": "loader",
+          "name": "IQOO_9T_PD2217F.melf",
+          "size": "1.5 MB",
+          "sizeBytes": 1547012,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HyktsmTfqZqbr4Gl4jH89zPDqAXSKw_A/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19797,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_9_PD2136F",
+      "slug": "hp-iqoo-iqoo_9_pd2136f",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_9_PD2136F — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36126,
+          "type": "loader",
+          "name": "IQOO_9_PD2136F.elf",
+          "size": "945.7 KB",
+          "sizeBytes": 968352,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1T2A4po9cM_FKzENeY4yQDnth6CMyYC7n/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19803,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_9_PRO_PD2338F.melf",
+      "slug": "hp-iqoo-iqoo_9_pro_pd2338fmelf",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_9_PRO_PD2338F.melf — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36132,
+          "type": "loader",
+          "name": "IQOO_9_PRO_PD2338F.melf",
+          "size": "1.6 MB",
+          "sizeBytes": 1702756,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1MMTop3pIzB44gVPhbZTNC7xFwZHuEU-E/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19802,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_NEO_3_PD1981",
+      "slug": "hp-iqoo-iqoo_neo_3_pd1981",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_NEO_3_PD1981 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36131,
+          "type": "loader",
+          "name": "IQOO_NEO_3_PD1981.elf",
+          "size": "681.3 KB",
+          "sizeBytes": 697696,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WDzV_vn0m0HkUKkaQ0hait43ALM1Zt8p/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19806,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_NEO_7_PRO_PD2232F",
+      "slug": "hp-iqoo-iqoo_neo_7_pro_pd2232f",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_NEO_7_PRO_PD2232F — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36135,
+          "type": "loader",
+          "name": "IQOO_NEO_7_PRO_PD2232F.elf",
+          "size": "1.5 MB",
+          "sizeBytes": 1542916,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kgfdJwlg7O6YGITLpnO2A7VjR8xDqQrl/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19804,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_NEO_PD1936",
+      "slug": "hp-iqoo-iqoo_neo_pd1936",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_NEO_PD1936 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36133,
+          "type": "loader",
+          "name": "IQOO_NEO_PD1936.elf",
+          "size": "721.2 KB",
+          "sizeBytes": 738528,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1YWp-1lTrYwLfTCIDQGNIXMDTIMJzTvi0/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19805,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_PRO",
+      "slug": "hp-iqoo-iqoo_pro",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_PRO — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36134,
+          "type": "loader",
+          "name": "IQOO_PRO.elf",
+          "size": "707.8 KB",
+          "sizeBytes": 724800,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1u0k-jLX6aowgSvSFMnw-23iaFTAWUJip/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19808,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_PRO_PD1916",
+      "slug": "hp-iqoo-iqoo_pro_pd1916",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_PRO_PD1916 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36137,
+          "type": "loader",
+          "name": "IQOO_PRO_PD1916.elf",
+          "size": "721.5 KB",
+          "sizeBytes": 738848,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1EgcPWB8aXC7S84SNw8Upkec-1vv9owRZ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19811,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_U1",
+      "slug": "hp-iqoo-iqoo_u1",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_U1 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36140,
+          "type": "loader",
+          "name": "IQOO_U1.elf",
+          "size": "679.4 KB",
+          "sizeBytes": 695676,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uqoK7LgGPks2tpnIyTRgs92KosvyrqaL/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19809,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_U1X_PD2023",
+      "slug": "hp-iqoo-iqoo_u1x_pd2023",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_U1X_PD2023 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36138,
+          "type": "loader",
+          "name": "IQOO_U1X_PD2023.elf",
+          "size": "641.9 KB",
+          "sizeBytes": 657276,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1JxanexhY6fMVaWmdbYUqPHEdz4kJ3V3z/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19807,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_U1_PD2023",
+      "slug": "hp-iqoo-iqoo_u1_pd2023",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_U1_PD2023 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36136,
+          "type": "loader",
+          "name": "IQOO_U1_PD2023.elf",
+          "size": "679.4 KB",
+          "sizeBytes": 695676,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1773C4O35IHl2yjmUAm84hURTaetiGRVf/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19810,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "IQOO_Z3_5G_PD2073",
+      "slug": "hp-iqoo-iqoo_z3_5g_pd2073",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo IQOO_Z3_5G_PD2073 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36139,
+          "type": "loader",
+          "name": "IQOO_Z3_5G_PD2073.elf",
+          "size": "674.9 KB",
+          "sizeBytes": 691084,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Anc-AaMMhLBYx-N2jAfZbLgSBZ_7KaoT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19812,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "NEO_5",
+      "slug": "hp-iqoo-neo_5",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo NEO_5 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36141,
+          "type": "loader",
+          "name": "NEO_5.elf",
+          "size": "721.8 KB",
+          "sizeBytes": 739088,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_6VBOHP13hojv7KWHJidFbVTEc2eGdJx/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19813,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "NEO_5_LITE",
+      "slug": "hp-iqoo-neo_5_lite",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo NEO_5_LITE — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36142,
+          "type": "loader",
+          "name": "NEO_5_LITE.elf",
+          "size": "721.8 KB",
+          "sizeBytes": 739088,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1sMPDBrGnB0M4nI1PSw8QdzpZyO3mIG6D/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19814,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "NEO_5_SE",
+      "slug": "hp-iqoo-neo_5_se",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo NEO_5_SE — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36143,
+          "type": "loader",
+          "name": "NEO_5_SE.elf",
+          "size": "721.8 KB",
+          "sizeBytes": 739088,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1aGAAdyhJomEAoiNluOZiZtI_BatPXFNv/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19820,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "U1",
+      "slug": "hp-iqoo-u1",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo U1 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36149,
+          "type": "loader",
+          "name": "U1.elf",
+          "size": "679.4 KB",
+          "sizeBytes": 695676,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WI6OuuXCRYZywYnvsBZ-vXMusMBWNW_u/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19815,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "Z5",
+      "slug": "hp-iqoo-z5",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo Z5 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36144,
+          "type": "loader",
+          "name": "Z5.mbn",
+          "size": "945.3 KB",
+          "sizeBytes": 967968,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1EK79ldSD48DcYlebgODQyKCManzygWaM/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19822,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "Z6",
+      "slug": "hp-iqoo-z6",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo Z6 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36151,
+          "type": "loader",
+          "name": "Z6.mbn",
+          "size": "945.3 KB",
+          "sizeBytes": 967968,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1gk3hIvJsXoOemZBhGC4Q7sg3gxoGRajZ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19816,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "Z6_CN",
+      "slug": "hp-iqoo-z6_cn",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo Z6_CN — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36145,
+          "type": "loader",
+          "name": "Z6_CN.mbn",
+          "size": "945.3 KB",
+          "sizeBytes": 967968,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19fVysLZTZ14dnRs7ASzsX3Sy1e45IIhf/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19817,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "Z6_PRO",
+      "slug": "hp-iqoo-z6_pro",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo Z6_PRO — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36146,
+          "type": "loader",
+          "name": "Z6_PRO.mbn",
+          "size": "945.3 KB",
+          "sizeBytes": 967968,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_IH-r3mFcV8Kgli1jjyy4FVMIIE2nrNF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19801,
+      "category": "hp",
+      "brand": "Iqoo",
+      "brandSlug": "iqoo",
+      "modelName": "iQOO_9_SE_5G_PD2154F",
+      "slug": "hp-iqoo-iqoo_9_se_5g_pd2154f",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Iqoo iQOO_9_SE_5G_PD2154F — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36130,
+          "type": "loader",
+          "name": "iQOO_9_SE_5G_PD2154F.elf",
+          "size": "945.7 KB",
+          "sizeBytes": 968352,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1EX-nYCDtaXNT9-xGrLmqe4-e2lJXwx1-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

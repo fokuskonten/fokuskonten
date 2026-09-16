@@ -1,0 +1,1966 @@
+{
+  "category": "hp",
+  "brand": "Unisoc",
+  "brandSlug": "unisoc",
+  "totalModels": 63,
+  "models": [
+    {
+      "id": 21198,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (.gitmodules)",
+      "slug": "hp-unisoc-loader-unisoc-spd-gitmodules",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (.gitmodules) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39027,
+          "type": "loader",
+          "name": ".gitmodules",
+          "size": "0 B",
+          "sizeBytes": 117,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1vCpMTdnqsHq16GqnXn75RPEYp68DTV7q/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21168,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (HEAD)",
+      "slug": "hp-unisoc-loader-unisoc-spd-head",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (HEAD) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 38970,
+          "type": "loader",
+          "name": "HEAD",
+          "size": "0 B",
+          "sizeBytes": 21,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1SE8cWyUpfDTvARyznmEBMpAZ-d6Z4zYn/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 38971,
+          "type": "loader",
+          "name": "HEAD",
+          "size": "0 B",
+          "sizeBytes": 190,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1RK8lZpnYe197vlU7qIxnTIs3wY69Fevf/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 38972,
+          "type": "loader",
+          "name": "HEAD",
+          "size": "0 B",
+          "sizeBytes": 190,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1D_kUZuAdD8WTVCXCCtYZ863_VPtpfAOs/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 38973,
+          "type": "loader",
+          "name": "HEAD",
+          "size": "0 B",
+          "sizeBytes": 30,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dAXdeCSav6G-GxTA01YUUKTnTBb0cK-M/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 38974,
+          "type": "loader",
+          "name": "HEAD",
+          "size": "0 B",
+          "sizeBytes": 21,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1aCg6qf_52OP0JeP8h83ZSKv350Xbwbx5/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 38975,
+          "type": "loader",
+          "name": "HEAD",
+          "size": "0 B",
+          "sizeBytes": 215,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1CgxlRoVs36MfRDejLooezAHP7EP867X5/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 38976,
+          "type": "loader",
+          "name": "HEAD",
+          "size": "0 B",
+          "sizeBytes": 215,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13P5APkW0wbq9QmqZZAb35YjOL5H0ZWjw/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 38977,
+          "type": "loader",
+          "name": "HEAD",
+          "size": "0 B",
+          "sizeBytes": 30,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17mCbQl1TAaTFAoFJ3TGxHFZ4o6eFt-tq/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21208,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (_check_secure_part.png)",
+      "slug": "hp-unisoc-loader-unisoc-spd-_check_secure_partpng",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (_check_secure_part.png) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39037,
+          "type": "loader",
+          "name": "_check_secure_part.png",
+          "size": "0 B",
+          "sizeBytes": 435433,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1MyUdHjNYYscNUFoVr8utFZ88Oq3LYfmI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21165,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (advan_sc9863a_fdl)",
+      "slug": "hp-unisoc-loader-unisoc-spd-advan_sc9863a_fdl",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (advan_sc9863a_fdl) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 38965,
+          "type": "loader",
+          "name": "advan_sc9863a_fdl.bin",
+          "size": "0 B",
+          "sizeBytes": 128,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1GrWGiBizgo82OknqbNGfmVlmoUe005Os/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21163,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (advan_tab_sketsa2_t606_fdl)",
+      "slug": "hp-unisoc-loader-unisoc-spd-advan_tab_sketsa2_t606_fdl",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (advan_tab_sketsa2_t606_fdl) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 38963,
+          "type": "loader",
+          "name": "advan_tab_sketsa2_t606_fdl.bin",
+          "size": "0 B",
+          "sizeBytes": 96,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ywOeLToSFNbVpriNYYPSZEMuUwTKnnbQ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21164,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (advan_tab_vx_t618_fdl)",
+      "slug": "hp-unisoc-loader-unisoc-spd-advan_tab_vx_t618_fdl",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (advan_tab_vx_t618_fdl) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 38964,
+          "type": "loader",
+          "name": "advan_tab_vx_t618_fdl.bin",
+          "size": "0 B",
+          "sizeBytes": 128,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1rFE2N6G6y6dNNNiltffKdF1Ki_aevXZu/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21172,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (applypatch-msg.sample)",
+      "slug": "hp-unisoc-loader-unisoc-spd-applypatch-msgsample",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (applypatch-msg.sample) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 38984,
+          "type": "loader",
+          "name": "applypatch-msg.sample",
+          "size": "0 B",
+          "sizeBytes": 478,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1En2_qd5pM_lFV2Bvnk2M97ukJs7QC2P2/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 38985,
+          "type": "loader",
+          "name": "applypatch-msg.sample",
+          "size": "0 B",
+          "sizeBytes": 478,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1q7LK-jT1FgQ9ElksstpTY6_ACh0XFkKc/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21200,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (chsize.c)",
+      "slug": "hp-unisoc-loader-unisoc-spd-chsizec",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (chsize.c) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39029,
+          "type": "loader",
+          "name": "chsize.c",
+          "size": "0 B",
+          "sizeBytes": 2564,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Zx0hCwOxISGHZZSLHJ5m--bsQyQ6KQfg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21170,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (commit-msg.sample)",
+      "slug": "hp-unisoc-loader-unisoc-spd-commit-msgsample",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (commit-msg.sample) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 38980,
+          "type": "loader",
+          "name": "commit-msg.sample",
+          "size": "0 B",
+          "sizeBytes": 1972,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1vIxROd-UwdomJJn9WQjM1q_sdhLM0XSK/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 38981,
+          "type": "loader",
+          "name": "commit-msg.sample",
+          "size": "0 B",
+          "sizeBytes": 1972,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1S9zg2MtdOKN9jcKI6xjxF7bN5gs844zZ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21166,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (config)",
+      "slug": "hp-unisoc-loader-unisoc-spd-config",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (config) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 38966,
+          "type": "loader",
+          "name": "config",
+          "size": "0 B",
+          "sizeBytes": 306,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WhHt86a7N9W8mK3WOm1W36CQCEOf-_j2/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 38967,
+          "type": "loader",
+          "name": "config",
+          "size": "0 B",
+          "sizeBytes": 331,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19rjkyXK1EuAIO7gD0ns4ml3E3xlRwKQe/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21219,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (custom_exec_no_verify_3ee8)",
+      "slug": "hp-unisoc-loader-unisoc-spd-custom_exec_no_verify_3ee8",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (custom_exec_no_verify_3ee8) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39050,
+          "type": "loader",
+          "name": "custom_exec_no_verify_3ee8.bin",
+          "size": "0 B",
+          "sizeBytes": 128,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1huUTIuCbZepBNIyoofO4y_fwFqPmvVKk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 39051,
+          "type": "loader",
+          "name": "custom_exec_no_verify_3ee8.bin",
+          "size": "0 B",
+          "sizeBytes": 128,
+          "gdrive_direct_url": "https://drive.google.com/file/d/18cosK8E0jzvlEepchin2A6G8aRxver1y/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21216,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (custom_exec_no_verify_3f28)",
+      "slug": "hp-unisoc-loader-unisoc-spd-custom_exec_no_verify_3f28",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (custom_exec_no_verify_3f28) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39046,
+          "type": "loader",
+          "name": "custom_exec_no_verify_3f28.bin",
+          "size": "0 B",
+          "sizeBytes": 136,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Mlmuv8S-9VO1XbwRGoRrX5EdsD7gG3j6/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 39047,
+          "type": "loader",
+          "name": "custom_exec_no_verify_3f28.bin",
+          "size": "0 B",
+          "sizeBytes": 136,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14UrsOxp1oPVjMjDgiO7J0d6TWJSwMZmH/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21212,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (custom_exec_no_verify_4ee8)",
+      "slug": "hp-unisoc-loader-unisoc-spd-custom_exec_no_verify_4ee8",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (custom_exec_no_verify_4ee8) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39041,
+          "type": "loader",
+          "name": "custom_exec_no_verify_4ee8.bin",
+          "size": "0 B",
+          "sizeBytes": 128,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1vvisGYTEF_05KZ-wO9Rg6-BO9TJGefJL/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 39042,
+          "type": "loader",
+          "name": "custom_exec_no_verify_4ee8.bin",
+          "size": "0 B",
+          "sizeBytes": 8,
+          "gdrive_direct_url": "https://drive.google.com/file/d/18kLuoUXmVpRUQuKxDy3xfK-2altmg8F4/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21215,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (custom_exec_no_verify_4f18)",
+      "slug": "hp-unisoc-loader-unisoc-spd-custom_exec_no_verify_4f18",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (custom_exec_no_verify_4f18) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39045,
+          "type": "loader",
+          "name": "custom_exec_no_verify_4f18.bin",
+          "size": "0 B",
+          "sizeBytes": 8,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1YOruxsc-GLAIzolWSwRFnzP3LoBSOM4F/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21225,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (custom_exec_no_verify_65012f48)",
+      "slug": "hp-unisoc-loader-unisoc-spd-custom_exec_no_verify_65012f48",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (custom_exec_no_verify_65012f48) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39057,
+          "type": "loader",
+          "name": "custom_exec_no_verify_65012f48.bin",
+          "size": "0 B",
+          "sizeBytes": 96,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-ducYVWtD_yN75yHQPjnF6wiayPgOS1W/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21222,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (custom_exec_no_verify_65015f08)",
+      "slug": "hp-unisoc-loader-unisoc-spd-custom_exec_no_verify_65015f08",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (custom_exec_no_verify_65015f08) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39054,
+          "type": "loader",
+          "name": "custom_exec_no_verify_65015f08.bin",
+          "size": "0 B",
+          "sizeBytes": 96,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1aYs1DVKHwnRc3j4rzQ34FyM770UE6ZET/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21205,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (data_exec.png)",
+      "slug": "hp-unisoc-loader-unisoc-spd-data_execpng",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (data_exec.png) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39034,
+          "type": "loader",
+          "name": "data_exec.png",
+          "size": "0 B",
+          "sizeBytes": 63481,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1K3zZVU-tvAugdEwo5YPFXCn3Hp1PWA68/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21167,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (description)",
+      "slug": "hp-unisoc-loader-unisoc-spd-description",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (description) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 38968,
+          "type": "loader",
+          "name": "description",
+          "size": "0 B",
+          "sizeBytes": 73,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zP3rRgxkIr37mHqNgppx_d0JDc7vgHkl/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 38969,
+          "type": "loader",
+          "name": "description",
+          "size": "0 B",
+          "sizeBytes": 73,
+          "gdrive_direct_url": "https://drive.google.com/file/d/16CxEDBh1g8YVbw4Tb5QISN6BJG9hA0FI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21203,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (do_cboot.png)",
+      "slug": "hp-unisoc-loader-unisoc-spd-do_cbootpng",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (do_cboot.png) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39032,
+          "type": "loader",
+          "name": "do_cboot.png",
+          "size": "0 B",
+          "sizeBytes": 276668,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ldAkbT3r_VUGaBd408BCuZlkFQMUfDXH/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21209,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (efitable2xml.c)",
+      "slug": "hp-unisoc-loader-unisoc-spd-efitable2xmlc",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (efitable2xml.c) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39038,
+          "type": "loader",
+          "name": "efitable2xml.c",
+          "size": "0 B",
+          "sizeBytes": 6604,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1rnaRgtGCVHOOrs01sw3wxZ4_FEHbzM40/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21210,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (encdec.c)",
+      "slug": "hp-unisoc-loader-unisoc-spd-encdecc",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (encdec.c) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39039,
+          "type": "loader",
+          "name": "encdec.c",
+          "size": "0 B",
+          "sizeBytes": 2008,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1t7LSmWUaCfxzDjy0VDgEi6oNPoDZcNH6/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21184,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (exclude)",
+      "slug": "hp-unisoc-loader-unisoc-spd-exclude",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (exclude) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39008,
+          "type": "loader",
+          "name": "exclude",
+          "size": "0 B",
+          "sizeBytes": 240,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Me_KtmFJdjCmclxzSaL_RWBggpOAWk1i/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 39009,
+          "type": "loader",
+          "name": "exclude",
+          "size": "0 B",
+          "sizeBytes": 240,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QMkejUuTidwPj1yXE69BBtPDIhVF4U51/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21169,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (fsmonitor-watchman.sample)",
+      "slug": "hp-unisoc-loader-unisoc-spd-fsmonitor-watchmansample",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (fsmonitor-watchman.sample) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 38978,
+          "type": "loader",
+          "name": "fsmonitor-watchman.sample",
+          "size": "0 B",
+          "sizeBytes": 4611,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1fgR5GvSRL4iPsif8h3fnod83W-JSSgbE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 38979,
+          "type": "loader",
+          "name": "fsmonitor-watchman.sample",
+          "size": "0 B",
+          "sizeBytes": 4611,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1duVl_wdp6qvf8g6pzm65DrjHeIywUHht/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21199,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (gen_fdl1-dl.c)",
+      "slug": "hp-unisoc-loader-unisoc-spd-gen_fdl1-dlc",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (gen_fdl1-dl.c) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39028,
+          "type": "loader",
+          "name": "gen_fdl1-dl.c",
+          "size": "0 B",
+          "sizeBytes": 3395,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1YC3xCGUGPLdyzc_zeB39VUkW6UWYSyvv/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21201,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (gen_spl-unlock-legacy.c)",
+      "slug": "hp-unisoc-loader-unisoc-spd-gen_spl-unlock-legacyc",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (gen_spl-unlock-legacy.c) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39030,
+          "type": "loader",
+          "name": "gen_spl-unlock-legacy.c",
+          "size": "0 B",
+          "sizeBytes": 4034,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1RuIPRlNU7IJVEbHI5D2LsHaE4xfn6DpB/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21202,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (gen_spl-unlock.c)",
+      "slug": "hp-unisoc-loader-unisoc-spd-gen_spl-unlockc",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (gen_spl-unlock.c) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39031,
+          "type": "loader",
+          "name": "gen_spl-unlock.c",
+          "size": "0 B",
+          "sizeBytes": 3458,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1SulLGB4aEhtbNiroEqwosYOUFiX5CAov/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21183,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (index)",
+      "slug": "hp-unisoc-loader-unisoc-spd-index",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (index) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39006,
+          "type": "loader",
+          "name": "index",
+          "size": "0 B",
+          "sizeBytes": 209,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kHckS07wzisEA6OTS97hCjqpilVAjzVw/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 39007,
+          "type": "loader",
+          "name": "index",
+          "size": "0 B",
+          "sizeBytes": 3619,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1rdKv-hw2knOTAgfl5nNh76GpQvQxqdRv/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21192,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (infinix_hot40i_t606_fdl)",
+      "slug": "hp-unisoc-loader-unisoc-spd-infinix_hot40i_t606_fdl",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (infinix_hot40i_t606_fdl) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39020,
+          "type": "loader",
+          "name": "infinix_hot40i_t606_fdl.bin",
+          "size": "0 B",
+          "sizeBytes": 96,
+          "gdrive_direct_url": "https://drive.google.com/file/d/18DqOzuXMGwcyHnPWTSXfKUamKK7sfvc7/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21194,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (info)",
+      "slug": "hp-unisoc-loader-unisoc-spd-info",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (info) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39022,
+          "type": "loader",
+          "name": "info",
+          "size": "0 B",
+          "sizeBytes": 215,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1joeQMoD2fQ1jSdAm3ll_OxkU6_GkfCt9/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 39023,
+          "type": "loader",
+          "name": "info",
+          "size": "0 B",
+          "sizeBytes": 41,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1o3MQGYJTzKebKiTaI5oAW1yhgkFSfFKe/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21193,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (itel_p55_t606_fdl)",
+      "slug": "hp-unisoc-loader-unisoc-spd-itel_p55_t606_fdl",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (itel_p55_t606_fdl) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39021,
+          "type": "loader",
+          "name": "itel_p55_t606_fdl.bin",
+          "size": "0 B",
+          "sizeBytes": 96,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Lif0-IAjseD7JGxBipEzLI2PWZlEy_Ni/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21186,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (main)",
+      "slug": "hp-unisoc-loader-unisoc-spd-main",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (main) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39012,
+          "type": "loader",
+          "name": "main",
+          "size": "0 B",
+          "sizeBytes": 190,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1RuLReG53pMmN1esNrSSLFoUaJ1nJcJLP/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 39013,
+          "type": "loader",
+          "name": "main",
+          "size": "0 B",
+          "sizeBytes": 41,
+          "gdrive_direct_url": "https://drive.google.com/file/d/109HUcoQ8TGh022kjafR-8vd4YSv-LvA7/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21211,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (main.png)",
+      "slug": "hp-unisoc-loader-unisoc-spd-mainpng",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (main.png) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39040,
+          "type": "loader",
+          "name": "main.png",
+          "size": "0 B",
+          "sizeBytes": 49725,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1rjYYAj6O8ZuChOmTxnFGGGAnI6RGJpzW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21204,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (nand_boot_1.png)",
+      "slug": "hp-unisoc-loader-unisoc-spd-nand_boot_1png",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (nand_boot_1.png) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39033,
+          "type": "loader",
+          "name": "nand_boot_1.png",
+          "size": "0 B",
+          "sizeBytes": 58040,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Nt3HQqm0TnqYqZ1LOSCJrVdLdbJ_kPW9/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21206,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (nand_boot_2.png)",
+      "slug": "hp-unisoc-loader-unisoc-spd-nand_boot_2png",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (nand_boot_2.png) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39035,
+          "type": "loader",
+          "name": "nand_boot_2.png",
+          "size": "0 B",
+          "sizeBytes": 50164,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QFq2jOv1r9uzKqHDUta4oULjt75vDfz5/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21189,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (pack-625946b80fd466e7ac41954822692f0ec70ba4a7.idx)",
+      "slug": "hp-unisoc-loader-unisoc-spd-pack-625946b80fd466e7ac41954822692f0ec70ba4a7idx",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (pack-625946b80fd466e7ac41954822692f0ec70ba4a7.idx) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39016,
+          "type": "loader",
+          "name": "pack-625946b80fd466e7ac41954822692f0ec70ba4a7.idx",
+          "size": "0 B",
+          "sizeBytes": 1184,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Wvez4ohsrng-2jbA44XXlUxvFRMLpklu/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21188,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (pack-625946b80fd466e7ac41954822692f0ec70ba4a7.pack)",
+      "slug": "hp-unisoc-loader-unisoc-spd-pack-625946b80fd466e7ac41954822692f0ec70ba4a7pack",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (pack-625946b80fd466e7ac41954822692f0ec70ba4a7.pack) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39015,
+          "type": "loader",
+          "name": "pack-625946b80fd466e7ac41954822692f0ec70ba4a7.pack",
+          "size": "0 B",
+          "sizeBytes": 17827,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DsDonR533cC6tmkG_pBMmIu-nWr7MsiY/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21187,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (pack-625946b80fd466e7ac41954822692f0ec70ba4a7.rev)",
+      "slug": "hp-unisoc-loader-unisoc-spd-pack-625946b80fd466e7ac41954822692f0ec70ba4a7rev",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (pack-625946b80fd466e7ac41954822692f0ec70ba4a7.rev) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39014,
+          "type": "loader",
+          "name": "pack-625946b80fd466e7ac41954822692f0ec70ba4a7.rev",
+          "size": "0 B",
+          "sizeBytes": 68,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1OAGYPy4tKBIZeDsqTJmVhTek5nXaf9cZ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21195,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (pack-ac33dae22edc482922cfb5e1e69236486cfa3a4d.idx)",
+      "slug": "hp-unisoc-loader-unisoc-spd-pack-ac33dae22edc482922cfb5e1e69236486cfa3a4didx",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (pack-ac33dae22edc482922cfb5e1e69236486cfa3a4d.idx) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39024,
+          "type": "loader",
+          "name": "pack-ac33dae22edc482922cfb5e1e69236486cfa3a4d.idx",
+          "size": "0 B",
+          "sizeBytes": 2332,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1fTDkLLKvykWmTtWNbtEcK5wosNoKwW4v/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21197,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (pack-ac33dae22edc482922cfb5e1e69236486cfa3a4d.pack)",
+      "slug": "hp-unisoc-loader-unisoc-spd-pack-ac33dae22edc482922cfb5e1e69236486cfa3a4dpack",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (pack-ac33dae22edc482922cfb5e1e69236486cfa3a4d.pack) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39026,
+          "type": "loader",
+          "name": "pack-ac33dae22edc482922cfb5e1e69236486cfa3a4d.pack",
+          "size": "0 B",
+          "sizeBytes": 976872,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1sZCojbdooWfaw4vW4hZQg6L3P3fN3Q5p/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21196,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (pack-ac33dae22edc482922cfb5e1e69236486cfa3a4d.rev)",
+      "slug": "hp-unisoc-loader-unisoc-spd-pack-ac33dae22edc482922cfb5e1e69236486cfa3a4drev",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (pack-ac33dae22edc482922cfb5e1e69236486cfa3a4d.rev) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39025,
+          "type": "loader",
+          "name": "pack-ac33dae22edc482922cfb5e1e69236486cfa3a4d.rev",
+          "size": "0 B",
+          "sizeBytes": 232,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zvPXSx5_gSHUH6ZXSJULvvOtBfTNcnfV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21185,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (packed-refs)",
+      "slug": "hp-unisoc-loader-unisoc-spd-packed-refs",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (packed-refs) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39010,
+          "type": "loader",
+          "name": "packed-refs",
+          "size": "0 B",
+          "sizeBytes": 112,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13F9MB4xVPNMBR5FHoi820W2-_lgLGD9y/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 39011,
+          "type": "loader",
+          "name": "packed-refs",
+          "size": "0 B",
+          "sizeBytes": 112,
+          "gdrive_direct_url": "https://drive.google.com/file/d/18NIENjJMpRl-diZTVdmGYWlC5ExnejwA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21174,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (post-update.sample)",
+      "slug": "hp-unisoc-loader-unisoc-spd-post-updatesample",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (post-update.sample) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 38988,
+          "type": "loader",
+          "name": "post-update.sample",
+          "size": "0 B",
+          "sizeBytes": 189,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13nTbF_8wMpCyfOAKJOD4lWqZ93bgDMJb/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 38989,
+          "type": "loader",
+          "name": "post-update.sample",
+          "size": "0 B",
+          "sizeBytes": 189,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hYU7DKKE_1HGDm0z-3cSobFuBoDcNbZZ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21171,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (pre-applypatch.sample)",
+      "slug": "hp-unisoc-loader-unisoc-spd-pre-applypatchsample",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (pre-applypatch.sample) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 38982,
+          "type": "loader",
+          "name": "pre-applypatch.sample",
+          "size": "0 B",
+          "sizeBytes": 424,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kz4tlug5vq3GSlWds9qX-4qnXwO_j-3G/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 38983,
+          "type": "loader",
+          "name": "pre-applypatch.sample",
+          "size": "0 B",
+          "sizeBytes": 424,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1rsQAn6NDL6lFfHLM9l571IGtNEFYV9qM/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21173,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (pre-commit.sample)",
+      "slug": "hp-unisoc-loader-unisoc-spd-pre-commitsample",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (pre-commit.sample) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 38986,
+          "type": "loader",
+          "name": "pre-commit.sample",
+          "size": "0 B",
+          "sizeBytes": 1649,
+          "gdrive_direct_url": "https://drive.google.com/file/d/10R_i0Pq9e0ln62x4Jp9e6Zcjz7ouoFox/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 38987,
+          "type": "loader",
+          "name": "pre-commit.sample",
+          "size": "0 B",
+          "sizeBytes": 1649,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HAoQjyZ5U6Lszy3smT0IAvfP7T6WEjcC/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21175,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (pre-merge-commit.sample)",
+      "slug": "hp-unisoc-loader-unisoc-spd-pre-merge-commitsample",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (pre-merge-commit.sample) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 38990,
+          "type": "loader",
+          "name": "pre-merge-commit.sample",
+          "size": "0 B",
+          "sizeBytes": 416,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1XszzjjSNOOVozB4unq6vmeDAJJ2OKsbU/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 38991,
+          "type": "loader",
+          "name": "pre-merge-commit.sample",
+          "size": "0 B",
+          "sizeBytes": 416,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1rf6wNWcVjHt774m82iyA-Eh-N5cP1ew3/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21176,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (pre-push.sample)",
+      "slug": "hp-unisoc-loader-unisoc-spd-pre-pushsample",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (pre-push.sample) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 38992,
+          "type": "loader",
+          "name": "pre-push.sample",
+          "size": "0 B",
+          "sizeBytes": 1374,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1tgWMcukrGLdWw2V04Qkv3wd_s3ICICkS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 38993,
+          "type": "loader",
+          "name": "pre-push.sample",
+          "size": "0 B",
+          "sizeBytes": 1374,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1iGK-2x3blOstSkUyCfH18OSIZNRZHiak/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21179,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (pre-rebase.sample)",
+      "slug": "hp-unisoc-loader-unisoc-spd-pre-rebasesample",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (pre-rebase.sample) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 38998,
+          "type": "loader",
+          "name": "pre-rebase.sample",
+          "size": "0 B",
+          "sizeBytes": 4898,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uyyLIavMDHVbpVkpD532eaU1EaJpB3Wf/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 38999,
+          "type": "loader",
+          "name": "pre-rebase.sample",
+          "size": "0 B",
+          "sizeBytes": 4898,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HZEm4kMi2vish2ms5UcQK3bg1pjzh1ib/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21177,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (pre-receive.sample)",
+      "slug": "hp-unisoc-loader-unisoc-spd-pre-receivesample",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (pre-receive.sample) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 38994,
+          "type": "loader",
+          "name": "pre-receive.sample",
+          "size": "0 B",
+          "sizeBytes": 544,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1VVMCBeW2q62C2Vd9LPFeGliSILyXzO6Z/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 38995,
+          "type": "loader",
+          "name": "pre-receive.sample",
+          "size": "0 B",
+          "sizeBytes": 544,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1MCVrlqRiBPGh6QhRYLJ5y4-gy49T4TiJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21178,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (prepare-commit-msg.sample)",
+      "slug": "hp-unisoc-loader-unisoc-spd-prepare-commit-msgsample",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (prepare-commit-msg.sample) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 38996,
+          "type": "loader",
+          "name": "prepare-commit-msg.sample",
+          "size": "0 B",
+          "sizeBytes": 1492,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1m2S6NfhD8FFjcxyRijZ6rYPdLuGttO_N/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 38997,
+          "type": "loader",
+          "name": "prepare-commit-msg.sample",
+          "size": "0 B",
+          "sizeBytes": 1492,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1v9zQk3Wq6OO0qGdeR5h0Dte9UR6t30Uu/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21180,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (push-to-checkout.sample)",
+      "slug": "hp-unisoc-loader-unisoc-spd-push-to-checkoutsample",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (push-to-checkout.sample) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39000,
+          "type": "loader",
+          "name": "push-to-checkout.sample",
+          "size": "0 B",
+          "sizeBytes": 2783,
+          "gdrive_direct_url": "https://drive.google.com/file/d/144xdetYOVpxLVDcCxGIz7orF-eltIcjn/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 39001,
+          "type": "loader",
+          "name": "push-to-checkout.sample",
+          "size": "0 B",
+          "sizeBytes": 2783,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1tr6RaaFMQAJhyBUj-4qyDcV-Ml_3-Cno/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21207,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (reboot_devices.png)",
+      "slug": "hp-unisoc-loader-unisoc-spd-reboot_devicespng",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (reboot_devices.png) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39036,
+          "type": "loader",
+          "name": "reboot_devices.png",
+          "size": "0 B",
+          "sizeBytes": 60465,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1LpEvZx5hqMoui-nJqOVaxQETtqWrpzpa/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21181,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (sendemail-validate.sample)",
+      "slug": "hp-unisoc-loader-unisoc-spd-sendemail-validatesample",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (sendemail-validate.sample) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39002,
+          "type": "loader",
+          "name": "sendemail-validate.sample",
+          "size": "0 B",
+          "sizeBytes": 2308,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1XYLfjSa9PkfyXv7hoCKtT5Z3xezdkvoh/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 39003,
+          "type": "loader",
+          "name": "sendemail-validate.sample",
+          "size": "0 B",
+          "sizeBytes": 2308,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1VpiuI8y4LGZLt5qyIkcB-XG9hKo2laqI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21190,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (shallow)",
+      "slug": "hp-unisoc-loader-unisoc-spd-shallow",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (shallow) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39017,
+          "type": "loader",
+          "name": "shallow",
+          "size": "0 B",
+          "sizeBytes": 41,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1yaE5sVvINUW-oGT7do8731TOU43Ka-dS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 39018,
+          "type": "loader",
+          "name": "shallow",
+          "size": "0 B",
+          "sizeBytes": 41,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1GoPetYr8_AM0PehzRbJxC6XEtW-Q3_i6/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21191,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (spd.py)",
+      "slug": "hp-unisoc-loader-unisoc-spd-spdpy",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (spd.py) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39019,
+          "type": "loader",
+          "name": "spd.py",
+          "size": "0 B",
+          "sizeBytes": 75555,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1sxPMZCEmtmL548bW1Dl3_Xf-SfHL-ZSi/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21214,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (stack-info-sc9820e_sc9832e.csv)",
+      "slug": "hp-unisoc-loader-unisoc-spd-stack-info-sc9820e_sc9832ecsv",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (stack-info-sc9820e_sc9832e.csv) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39044,
+          "type": "loader",
+          "name": "stack-info-sc9820e_sc9832e.csv",
+          "size": "0 B",
+          "sizeBytes": 2062,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Cirg5DAa5glNrNW38brRi4XLeyYvDOeg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21213,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (stack-info-sc9863a.csv)",
+      "slug": "hp-unisoc-loader-unisoc-spd-stack-info-sc9863acsv",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (stack-info-sc9863a.csv) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39043,
+          "type": "loader",
+          "name": "stack-info-sc9863a.csv",
+          "size": "0 B",
+          "sizeBytes": 1668,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1i-rFVEI-eX42qzoyN3cUYdpocZWAqVFQ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21217,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (stack-info-ud710.csv)",
+      "slug": "hp-unisoc-loader-unisoc-spd-stack-info-ud710csv",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (stack-info-ud710.csv) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39048,
+          "type": "loader",
+          "name": "stack-info-ud710.csv",
+          "size": "0 B",
+          "sizeBytes": 1528,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WaeC8RvhrQuCGSSRAL0-h2vSafryP_TG/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21218,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (stack-info-udx710.csv)",
+      "slug": "hp-unisoc-loader-unisoc-spd-stack-info-udx710csv",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (stack-info-udx710.csv) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39049,
+          "type": "loader",
+          "name": "stack-info-udx710.csv",
+          "size": "0 B",
+          "sizeBytes": 2056,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1f1Qsg7KfbyjdgCYoPVD0uUpnTWSmbI_P/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21220,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (stack-info-ums312.csv)",
+      "slug": "hp-unisoc-loader-unisoc-spd-stack-info-ums312csv",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (stack-info-ums312.csv) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39052,
+          "type": "loader",
+          "name": "stack-info-ums312.csv",
+          "size": "0 B",
+          "sizeBytes": 1786,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1VcAvtEc5j3onnOaJQXvpEPT4KZSkEnHX/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21221,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (stack-info-ums512.csv)",
+      "slug": "hp-unisoc-loader-unisoc-spd-stack-info-ums512csv",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (stack-info-ums512.csv) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39053,
+          "type": "loader",
+          "name": "stack-info-ums512.csv",
+          "size": "0 B",
+          "sizeBytes": 1786,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1jVjCFmY9DW2bKqshKUuhmdjiKNaiY4XI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21223,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (stack-info-ums9230.csv)",
+      "slug": "hp-unisoc-loader-unisoc-spd-stack-info-ums9230csv",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (stack-info-ums9230.csv) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39055,
+          "type": "loader",
+          "name": "stack-info-ums9230.csv",
+          "size": "0 B",
+          "sizeBytes": 1964,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HphX5uBFpJcXqgbsc3u8i16bQono5fbQ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21224,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (stack-info-ums9620.csv)",
+      "slug": "hp-unisoc-loader-unisoc-spd-stack-info-ums9620csv",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (stack-info-ums9620.csv) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39056,
+          "type": "loader",
+          "name": "stack-info-ums9620.csv",
+          "size": "0 B",
+          "sizeBytes": 1502,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HpyTPG13xhtGmECTVORd8if-dqbbUoWV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21182,
+      "category": "hp",
+      "brand": "Unisoc",
+      "brandSlug": "unisoc",
+      "modelName": "Loader Unisoc / SPD (update.sample)",
+      "slug": "hp-unisoc-loader-unisoc-spd-updatesample",
+      "chipset": "Unisoc / SPD",
+      "motherboardCode": "",
+      "officialTitle": "Unisoc Loader Unisoc / SPD (update.sample) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 39004,
+          "type": "loader",
+          "name": "update.sample",
+          "size": "0 B",
+          "sizeBytes": 3650,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zMfaV5OoH7mVyligt4oQq7S-wKHb5Z0T/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 39005,
+          "type": "loader",
+          "name": "update.sample",
+          "size": "0 B",
+          "sizeBytes": 3650,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PEvz3o2XiGYFRW6G2HloQ5BzD8dWs97J/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

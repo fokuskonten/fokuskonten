@@ -1,7 +1,7 @@
 {
-  "totalActive": 3210,
+  "totalActive": 740,
   "totalDesign": 739,
-  "totalEbook": 2471,
+  "totalEbook": 0,
   "designCategories": [
     [
       "Ecourse & Tutorial",
@@ -116,104 +116,7 @@
       1
     ]
   ],
-  "ebookCategories": [
-    [
-      "E-Book Agama Islam",
-      632
-    ],
-    [
-      "E-Book Novel",
-      627
-    ],
-    [
-      "E-Book Pendidikan",
-      271
-    ],
-    [
-      "E-Book Pengembangan Diri",
-      105
-    ],
-    [
-      "E-Book Bisnis",
-      97
-    ],
-    [
-      "E-Book Tafsir",
-      92
-    ],
-    [
-      "E-Book Kesehatan",
-      84
-    ],
-    [
-      "E-Book Resep Masakan",
-      58
-    ],
-    [
-      "E-Book Pengetahuan",
-      52
-    ],
-    [
-      "E-Book Bisnis Investasi",
-      52
-    ],
-    [
-      "E-Book Hukum",
-      49
-    ],
-    [
-      "E-Book Psikologi",
-      44
-    ],
-    [
-      "E-Book Sastra",
-      42
-    ],
-    [
-      "E-Book Keuangan",
-      41
-    ],
-    [
-      "E-Book Pertanian",
-      40
-    ],
-    [
-      "E-Book Politik",
-      39
-    ],
-    [
-      "E-Book Buku Anak",
-      33
-    ],
-    [
-      "E-Book Kerja-Karir",
-      25
-    ],
-    [
-      "E-Book Kuliner",
-      21
-    ],
-    [
-      "E-Book Bisnis Online",
-      19
-    ],
-    [
-      "E-Book Filsafat",
-      18
-    ],
-    [
-      "E-Book Peternakan",
-      12
-    ],
-    [
-      "E-Book Majalah",
-      10
-    ],
-    [
-      "E-Book Budaya & Tradisi",
-      8
-    ]
-  ],
+  "ebookCategories": [],
   "categories": [
     [
       "E-Book Agama Islam",
@@ -426,10 +329,6 @@
   ],
   "formats": [
     [
-      "PDF",
-      2471
-    ],
-    [
       "CDR",
       389
     ],
@@ -463,7 +362,7 @@
         "format": "CDR",
         "price": 3500,
         "originalPrice": 10000,
-        "coverImage": "/covers/ID376B/ID376B_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID376B/ID376B_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .CDR"
       },
@@ -474,7 +373,7 @@
         "format": "CDR",
         "price": 10000,
         "originalPrice": 30000,
-        "coverImage": "/covers/ID1496/ID1496_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID1496/ID1496_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .CDR"
       },
@@ -485,7 +384,7 @@
         "format": "CDR",
         "price": 9000,
         "originalPrice": 25000,
-        "coverImage": "/covers/ID1686/ID1686_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID1686/ID1686_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .CDR"
       },
@@ -496,7 +395,7 @@
         "format": "CDR",
         "price": 8500,
         "originalPrice": 20000,
-        "coverImage": "/covers/ID7F75/ID7F75_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID7F75/ID7F75_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .CDR"
       },
@@ -507,7 +406,7 @@
         "format": "PPTX",
         "price": 35000,
         "originalPrice": 75000,
-        "coverImage": "/covers/ID1108/ID1108_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID1108/ID1108_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .PPTX"
       },
@@ -518,7 +417,7 @@
         "format": "PPTX",
         "price": 8500,
         "originalPrice": 25000,
-        "coverImage": "/covers/ID23B4/ID23B4_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID23B4/ID23B4_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .PPTX"
       },
@@ -529,7 +428,7 @@
         "format": "PPTX",
         "price": 15000,
         "originalPrice": 50000,
-        "coverImage": "/covers/ID8E26/ID8E26_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID8E26/ID8E26_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .PPTX"
       },
@@ -540,7 +439,7 @@
         "format": "PPTX",
         "price": 18000,
         "originalPrice": 50000,
-        "coverImage": "/covers/IDDE48/IDDE48_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDDE48/IDDE48_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .PPTX"
       }
@@ -553,7 +452,7 @@
         "format": "MP4",
         "price": 13500,
         "originalPrice": 48000,
-        "coverImage": "/covers/ID6B17/ID6B17_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID6B17/ID6B17_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .MP4"
       },
@@ -564,7 +463,7 @@
         "format": "MP4",
         "price": 11000,
         "originalPrice": 35000,
-        "coverImage": "/covers/ID0CF2/ID0CF2_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID0CF2/ID0CF2_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .MP4"
       },
@@ -575,7 +474,7 @@
         "format": "MP4",
         "price": 8500,
         "originalPrice": 25000,
-        "coverImage": "/covers/ID0146/ID0146_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID0146/ID0146_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .MP4"
       },
@@ -586,7 +485,7 @@
         "format": "MP4",
         "price": 12000,
         "originalPrice": 42000,
-        "coverImage": "/covers/ID95DF/ID95DF_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID95DF/ID95DF_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .MP4"
       },
@@ -597,7 +496,7 @@
         "format": "MP4",
         "price": 10000,
         "originalPrice": 35000,
-        "coverImage": "/covers/ID1E48/ID1E48_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID1E48/ID1E48_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .MP4"
       },
@@ -608,7 +507,7 @@
         "format": "MP4",
         "price": 20000,
         "originalPrice": 60000,
-        "coverImage": "/covers/ID276D/ID276D_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID276D/ID276D_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .MP4"
       },
@@ -619,7 +518,7 @@
         "format": "MP4",
         "price": 9000,
         "originalPrice": 27000,
-        "coverImage": "/covers/ID296A/ID296A_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID296A/ID296A_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .MP4"
       },
@@ -630,7 +529,7 @@
         "format": "MP4",
         "price": 9000,
         "originalPrice": 27000,
-        "coverImage": "/covers/ID7243/ID7243_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID7243/ID7243_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .MP4"
       }
@@ -643,7 +542,7 @@
         "format": "CDR",
         "price": 3500,
         "originalPrice": 10000,
-        "coverImage": "/covers/ID376B/ID376B_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID376B/ID376B_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .CDR"
       },
@@ -654,7 +553,7 @@
         "format": "CDR",
         "price": 10000,
         "originalPrice": 30000,
-        "coverImage": "/covers/ID1496/ID1496_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID1496/ID1496_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .CDR"
       },
@@ -665,7 +564,7 @@
         "format": "CDR",
         "price": 9000,
         "originalPrice": 25000,
-        "coverImage": "/covers/ID1686/ID1686_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID1686/ID1686_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .CDR"
       },
@@ -676,7 +575,7 @@
         "format": "CDR",
         "price": 8500,
         "originalPrice": 20000,
-        "coverImage": "/covers/ID7F75/ID7F75_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID7F75/ID7F75_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .CDR"
       },
@@ -687,7 +586,7 @@
         "format": "CDR",
         "price": 10000,
         "originalPrice": 25000,
-        "coverImage": "/covers/ID483B/ID483B_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID483B/ID483B_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .CDR"
       },
@@ -698,7 +597,7 @@
         "format": "CDR",
         "price": 9000,
         "originalPrice": 20000,
-        "coverImage": "/covers/IDCE8E/IDCE8E_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDCE8E/IDCE8E_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .CDR"
       },
@@ -709,7 +608,7 @@
         "format": "CDR",
         "price": 10000,
         "originalPrice": 20000,
-        "coverImage": "/covers/ID44C4/ID44C4_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID44C4/ID44C4_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .CDR"
       },
@@ -720,7 +619,7 @@
         "format": "CDR",
         "price": 3000,
         "originalPrice": 15000,
-        "coverImage": "/covers/IDDF04/IDDF04_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDDF04/IDDF04_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .CDR"
       }
@@ -733,7 +632,7 @@
         "format": "PPTX",
         "price": 8500,
         "originalPrice": 25000,
-        "coverImage": "/covers/ID23B4/ID23B4_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID23B4/ID23B4_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .PPTX"
       },
@@ -744,7 +643,7 @@
         "format": "PPTX",
         "price": 15000,
         "originalPrice": 50000,
-        "coverImage": "/covers/ID8E26/ID8E26_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID8E26/ID8E26_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .PPTX"
       },
@@ -755,7 +654,7 @@
         "format": "PPTX",
         "price": 18000,
         "originalPrice": 50000,
-        "coverImage": "/covers/IDDE48/IDDE48_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDDE48/IDDE48_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .PPTX"
       },
@@ -766,7 +665,7 @@
         "format": "PPTX",
         "price": 8000,
         "originalPrice": 25000,
-        "coverImage": "/covers/ID3121/ID3121_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID3121/ID3121_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .PPTX"
       },
@@ -777,7 +676,7 @@
         "format": "PPTX",
         "price": 6000,
         "originalPrice": 25000,
-        "coverImage": "/covers/ID4517/ID4517_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID4517/ID4517_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .PPTX"
       },
@@ -788,7 +687,7 @@
         "format": "PPTX",
         "price": 6000,
         "originalPrice": 25000,
-        "coverImage": "/covers/ID8724/ID8724_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID8724/ID8724_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .PPTX"
       },
@@ -799,7 +698,7 @@
         "format": "PPTX",
         "price": 18000,
         "originalPrice": 40000,
-        "coverImage": "/covers/ID8BD7/ID8BD7_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID8BD7/ID8BD7_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .PPTX"
       },
@@ -810,101 +709,12 @@
         "format": "PPTX",
         "price": 8500,
         "originalPrice": 25000,
-        "coverImage": "/covers/ID00D9/ID00D9_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID00D9/ID00D9_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .PPTX"
       }
     ],
-    "ebook": [
-      {
-        "sku": "ID001A",
-        "title": "Tryout SBMPTN Saintek 2018 Paket Jilid 3",
-        "category": "E-Book Pendidikan",
-        "format": "PDF",
-        "price": 15000,
-        "originalPrice": 35000,
-        "coverImage": "/covers/ID001A/ID001A_cover.webp",
-        "badge": "E-Book Digital",
-        "tag": "Format .PDF"
-      },
-      {
-        "sku": "ID0051",
-        "title": "Panduan Praktis Hukum Properti",
-        "category": "E-Book Hukum",
-        "format": "PDF",
-        "price": 15000,
-        "originalPrice": 35000,
-        "coverImage": "/covers/ID0051/ID0051_cover.webp",
-        "badge": "E-Book Digital",
-        "tag": "Format .PDF"
-      },
-      {
-        "sku": "ID013D",
-        "title": "Menuju Penguatan Hak Korban Dalam RUU Penghapus",
-        "category": "E-Book Hukum",
-        "format": "PDF",
-        "price": 15000,
-        "originalPrice": 35000,
-        "coverImage": "/covers/ID013D/ID013D_cover.webp",
-        "badge": "E-Book Digital",
-        "tag": "Format .PDF"
-      },
-      {
-        "sku": "ID0594",
-        "title": "Mega Bank SBMPTN Saintek Jilid 2017",
-        "category": "E-Book Pendidikan",
-        "format": "PDF",
-        "price": 15000,
-        "originalPrice": 35000,
-        "coverImage": "/covers/ID0594/ID0594_cover.webp",
-        "badge": "E-Book Digital",
-        "tag": "Format .PDF"
-      },
-      {
-        "sku": "ID0A64",
-        "title": "Keterampilan Abad Jilid 21 (Karya: Dan Steam)",
-        "category": "E-Book Pendidikan",
-        "format": "PDF",
-        "price": 15000,
-        "originalPrice": 35000,
-        "coverImage": "/covers/ID0A64/ID0A64_cover.webp",
-        "badge": "E-Book Digital",
-        "tag": "Format .PDF"
-      },
-      {
-        "sku": "ID0B3B",
-        "title": "Gerakan Sosial Sejarah Perkembangan Teori Antara Kekuatan Dan Kelemahannya",
-        "category": "E-Book Politik",
-        "format": "PDF",
-        "price": 15000,
-        "originalPrice": 35000,
-        "coverImage": "/covers/ID0B3B/ID0B3B_cover.webp",
-        "badge": "E-Book Digital",
-        "tag": "Format .PDF"
-      },
-      {
-        "sku": "ID0BA4",
-        "title": "Big Book Fisika SMA Kelas 1 2 Jilid 3",
-        "category": "E-Book Pendidikan",
-        "format": "PDF",
-        "price": 15000,
-        "originalPrice": 35000,
-        "coverImage": "/covers/ID0BA4/ID0BA4_cover.webp",
-        "badge": "E-Book Digital",
-        "tag": "Format .PDF"
-      },
-      {
-        "sku": "ID0BE0",
-        "title": "Algoritma Pemrograman Dalam Bahasa",
-        "category": "E-Book Pendidikan",
-        "format": "PDF",
-        "price": 15000,
-        "originalPrice": 35000,
-        "coverImage": "/covers/ID0BE0/ID0BE0_cover.webp",
-        "badge": "E-Book Digital",
-        "tag": "Format .PDF"
-      }
-    ],
+    "ebook": [],
     "others": [
       {
         "sku": "ID3199",
@@ -913,7 +723,7 @@
         "format": "MP4",
         "price": 24000,
         "originalPrice": 60000,
-        "coverImage": "/covers/ID3199/ID3199_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID3199/ID3199_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .MP4"
       },
@@ -924,7 +734,7 @@
         "format": "MP4",
         "price": 24000,
         "originalPrice": 60000,
-        "coverImage": "/covers/ID9919/ID9919_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID9919/ID9919_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .MP4"
       },
@@ -935,7 +745,7 @@
         "format": "MP4",
         "price": 24000,
         "originalPrice": 60000,
-        "coverImage": "/covers/IDE0C2/IDE0C2_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDE0C2/IDE0C2_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .MP4"
       },
@@ -946,7 +756,7 @@
         "format": "MP4",
         "price": 7500,
         "originalPrice": 25000,
-        "coverImage": "/covers/IDCB24/IDCB24_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDCB24/IDCB24_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .MP4"
       },
@@ -957,7 +767,7 @@
         "format": "MP4",
         "price": 7500,
         "originalPrice": 25000,
-        "coverImage": "/covers/IDE830/IDE830_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDE830/IDE830_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .MP4"
       },
@@ -968,7 +778,7 @@
         "format": "MP4",
         "price": 7500,
         "originalPrice": 25000,
-        "coverImage": "/covers/IDC50B/IDC50B_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDC50B/IDC50B_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .MP4"
       },
@@ -979,7 +789,7 @@
         "format": "MP4",
         "price": 24000,
         "originalPrice": 60000,
-        "coverImage": "/covers/IDEBCB/IDEBCB_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDEBCB/IDEBCB_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .MP4"
       },
@@ -990,7 +800,7 @@
         "format": "MP4",
         "price": 27000,
         "originalPrice": 70000,
-        "coverImage": "/covers/IDFCC3/IDFCC3_cover.webp",
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDFCC3/IDFCC3_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .MP4"
       }

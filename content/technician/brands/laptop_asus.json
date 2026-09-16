@@ -1,0 +1,3902 @@
+{
+  "category": "laptop",
+  "brand": "Asus",
+  "brandSlug": "asus",
+  "totalModels": 149,
+  "models": [
+    {
+      "id": 19125,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "1215N r1.00",
+      "slug": "laptop-asus-1215n-r100",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus 1215N r1.00 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34706,
+          "type": "schematic",
+          "name": "ASUS - 1215N r1.00 - Schematic.pdf",
+          "size": "1.7 MB",
+          "sizeBytes": 1812361,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1sLB4iCNPyS5B0WbUgwJfWjg3AU1ruxHa/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18717,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "1225C 2.0",
+      "slug": "laptop-asus-1225c-20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus 1225C 2.0 — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34255,
+          "type": "boardview",
+          "name": "ASUS - 1225C 2.0 - Boardview.fz",
+          "size": "125.6 KB",
+          "sizeBytes": 128647,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kQvvNOG4q6X4gCTJEhIYYNT8LvQehSE-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18718,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "60NB0DE0-MB5010(X540UP MB",
+      "slug": "laptop-asus-60nb0de0-mb5010x540up-mb",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus 60NB0DE0-MB5010(X540UP MB — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34256,
+          "type": "boardview",
+          "name": "ASUS - 60NB0DE0-MB5010(X540UP MB - Boardview.fz",
+          "size": "145.7 KB",
+          "sizeBytes": 149160,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1BQDNuucOJ5ft7mzk32MunauezpNwXXff/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18719,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS 1015P REV 1.2 - BOARDVIEW",
+      "slug": "laptop-asus-asus-1015p-rev-12-boardview",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS 1015P REV 1.2 - BOARDVIEW — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34257,
+          "type": "boardview",
+          "name": "ASUS - ASUS 1015P REV 1.2 - BOARDVIEW - Boardview Pack.zip",
+          "size": "99.5 KB",
+          "sizeBytes": 101882,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uapre2_7n1B4xnZUx6KMqu_Y5ot52pC7/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18720,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS 1215T Rev 2.0G - boardview",
+      "slug": "laptop-asus-asus-1215t-rev-20g-boardview",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS 1215T Rev 2.0G - boardview — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34258,
+          "type": "boardview",
+          "name": "ASUS - ASUS 1215T Rev 2.0G - boardview - Boardview Pack.zip",
+          "size": "143.4 KB",
+          "sizeBytes": 146852,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-FaM3JZoOXizUx9HGTbcwU2f8WgoVjYJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19131,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS A45V - LA-8221P",
+      "slug": "laptop-asus-asus-a45v-la-8221p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-8221P",
+      "officialTitle": "Asus ASUS A45V - LA-8221P (LA-8221P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34712,
+          "type": "schematic",
+          "name": "ASUS - ASUS A45V - LA-8221P - Schematic.pdf",
+          "size": "1.9 MB",
+          "sizeBytes": 2043365,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13UxE3QGeyHmJAdazRKlafjSEGzRUZkGH/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18721,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS BU201LA (BU201LA 1.1)",
+      "slug": "laptop-asus-asus-bu201la-bu201la-11",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS BU201LA (BU201LA 1.1) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34259,
+          "type": "boardview",
+          "name": "ASUS - ASUS BU201LA - BU201LA 1.1.fz",
+          "size": "131.9 KB",
+          "sizeBytes": 135028,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1MTP9ZVCrbkF_42rsN3tWNYQBg-9auL3m/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18722,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS BU201LA (BU201LA 2.0)",
+      "slug": "laptop-asus-asus-bu201la-bu201la-20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS BU201LA (BU201LA 2.0) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34260,
+          "type": "boardview",
+          "name": "ASUS - ASUS BU201LA - BU201LA 2.0.fz",
+          "size": "133.3 KB",
+          "sizeBytes": 136488,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1nMdLC59-Mffa_vQj6nbQ1nU7iuibRttJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19132,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS E202SA RG",
+      "slug": "laptop-asus-asus-e202sa-rg",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS E202SA RG — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34713,
+          "type": "schematic",
+          "name": "ASUS - ASUS E202SA RG - Schematic.pdf",
+          "size": "1.1 MB",
+          "sizeBytes": 1137094,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1rBVErHb4PLDj9YQGRw2DX7pmdx5K-mAU/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19133,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS E205SA RG",
+      "slug": "laptop-asus-asus-e205sa-rg",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS E205SA RG — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34714,
+          "type": "schematic",
+          "name": "ASUS - ASUS E205SA RG - Schematic.pdf",
+          "size": "1 MB",
+          "sizeBytes": 1066236,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1A4G08Yc6Q0PHLeLqPbpywPD6qKHEMH7F/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18725,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS G750JW",
+      "slug": "laptop-asus-asus-g750jw",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS G750JW — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34263,
+          "type": "boardview",
+          "name": "ASUS - ASUS G750JW - Boardview Pack.zip",
+          "size": "553.3 KB",
+          "sizeBytes": 566556,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1pkPmFC7txZ8SMNLaqv7qiW9TCfsXdb1R/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18727,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS K34LY BOARDVIEW",
+      "slug": "laptop-asus-asus-k34ly-boardview",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS K34LY BOARDVIEW — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34265,
+          "type": "boardview",
+          "name": "ASUS - ASUS K34LY BOARDVIEW - Boardview Pack.zip",
+          "size": "554.9 KB",
+          "sizeBytes": 568226,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1oCjYJZNIhsszoWH93OA5LUefLb-wxaE8/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18728,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS K40IN R2.2 BV (TSICT)",
+      "slug": "laptop-asus-asus-k40in-r22-bv-tsict",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS K40IN R2.2 BV (TSICT) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34266,
+          "type": "boardview",
+          "name": "ASUS - ASUS K40IN R2.2 BV - TSICT.zip",
+          "size": "491.4 KB",
+          "sizeBytes": 503223,
+          "gdrive_direct_url": "https://drive.google.com/file/d/16_GfRbpCroVIDxxfKRFYxtlWQmPwm2qa/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18730,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS K42JR REV 3.0 - BoardView",
+      "slug": "laptop-asus-asus-k42jr-rev-30-boardview",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS K42JR REV 3.0 - BoardView — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34268,
+          "type": "boardview",
+          "name": "ASUS - ASUS K42JR REV 3.0 - BoardView - Boardview Pack.zip",
+          "size": "8.7 MB",
+          "sizeBytes": 9084377,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1gz3uT8fFwEZ3IiBbI3NLhCWKu5jDQna7/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18734,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS K43SA BOARDVIEW (K43S 1.1)",
+      "slug": "laptop-asus-asus-k43sa-boardview-k43s-11",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS K43SA BOARDVIEW (K43S 1.1) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34272,
+          "type": "boardview",
+          "name": "ASUS - ASUS K43SA BOARDVIEW - K43S 1.1.fz",
+          "size": "122.1 KB",
+          "sizeBytes": 125012,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ndjh5proO15GIZmQmpIT_qKRK6GwfVhn/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18733,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS K43SA BOARDVIEW (asus K43SA 2.0)",
+      "slug": "laptop-asus-asus-k43sa-boardview-asus-k43sa-20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS K43SA BOARDVIEW (asus K43SA 2.0) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34271,
+          "type": "boardview",
+          "name": "ASUS - ASUS K43SA BOARDVIEW - asus K43SA 2.0.fz",
+          "size": "121.2 KB",
+          "sizeBytes": 124062,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1veCi3LxITbwireL4g2n-Y0T6DQJrPDcI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18735,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS K43SV ALL Boardview",
+      "slug": "laptop-asus-asus-k43sv-all-boardview",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS K43SV ALL Boardview — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34273,
+          "type": "boardview",
+          "name": "ASUS - ASUS K43SV ALL Boardview - Boardview Pack.zip",
+          "size": "1.6 MB",
+          "sizeBytes": 1645404,
+          "gdrive_direct_url": "https://drive.google.com/file/d/11aNlQ0uuJksW42f7kkjDi2r9y6no5KpY/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18736,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS K45DR (K45DR E)",
+      "slug": "laptop-asus-asus-k45dr-k45dr-e",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS K45DR (K45DR E) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34274,
+          "type": "boardview",
+          "name": "ASUS - ASUS K45DR - K45DR E.fz",
+          "size": "122.2 KB",
+          "sizeBytes": 125122,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1olFoMyTjLtXzNvzbOq3WrQmNGRiyz7KU/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18737,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS K45DR (K45DR USB D)",
+      "slug": "laptop-asus-asus-k45dr-k45dr-usb-d",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS K45DR (K45DR USB D) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34275,
+          "type": "boardview",
+          "name": "ASUS - ASUS K45DR - K45DR USB D.fz",
+          "size": "1.8 KB",
+          "sizeBytes": 1854,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xSw-Cot1-3GjgI65KSAX4FnseblN1kCZ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18739,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS K50IJ Boardview",
+      "slug": "laptop-asus-asus-k50ij-boardview",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS K50IJ Boardview — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34277,
+          "type": "boardview",
+          "name": "ASUS - ASUS K50IJ Boardview - Boardview Pack.zip",
+          "size": "663.8 KB",
+          "sizeBytes": 679736,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZEFRizFJv-gQDenT1Is0Ivk8lL1PtUKS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18740,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS K52JC (K52JC MB 2.0)",
+      "slug": "laptop-asus-asus-k52jc-k52jc-mb-20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS K52JC (K52JC MB 2.0) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34278,
+          "type": "boardview",
+          "name": "ASUS - ASUS K52JC - K52JC MB 2.0.fz",
+          "size": "123.5 KB",
+          "sizeBytes": 126473,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14bPovW6QEfocJAV7pSTQCBq0btKTqlxA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18741,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS K52JC (K52JC MB 2.1)",
+      "slug": "laptop-asus-asus-k52jc-k52jc-mb-21",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS K52JC (K52JC MB 2.1) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34279,
+          "type": "boardview",
+          "name": "ASUS - ASUS K52JC - K52JC MB 2.1.fz",
+          "size": "120.1 KB",
+          "sizeBytes": 123029,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1YzkVJq2hQHeVZYD5zet7DRPun-KpYH7T/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18742,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS K53SD ALL REV",
+      "slug": "laptop-asus-asus-k53sd-all-rev",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS K53SD ALL REV — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34280,
+          "type": "boardview",
+          "name": "ASUS - ASUS K53SD ALL REV - Boardview Pack.zip",
+          "size": "1.2 MB",
+          "sizeBytes": 1241000,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uGz717X4jKHE9TOG6YiHR_xfjuOpnS7U/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18743,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS K55VM",
+      "slug": "laptop-asus-asus-k55vm",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS K55VM — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34281,
+          "type": "boardview",
+          "name": "ASUS - ASUS K55VM - Boardview Pack.zip",
+          "size": "401.2 KB",
+          "sizeBytes": 410828,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1SA86xxGG7YXup8orrEzbIp0YOlfm2D-x/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18744,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS K56CM (K56CM 2.0)",
+      "slug": "laptop-asus-asus-k56cm-k56cm-20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS K56CM (K56CM 2.0) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34282,
+          "type": "boardview",
+          "name": "ASUS - ASUS K56CM - K56CM 2.0.fz",
+          "size": "162.4 KB",
+          "sizeBytes": 166265,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1jrf9pdtiFb1UvqJizjRDihuICrXU_crF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18747,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS N46JV Boardview (N46JV MB 2.0)",
+      "slug": "laptop-asus-asus-n46jv-boardview-n46jv-mb-20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS N46JV Boardview (N46JV MB 2.0) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34285,
+          "type": "boardview",
+          "name": "ASUS - ASUS N46JV Boardview - N46JV MB 2.0.fz",
+          "size": "185 KB",
+          "sizeBytes": 189394,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kJsV63uryOg4PYM1GMlb0sca9USi5IK5/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18748,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS N46VZ (N46VZ 2.1)",
+      "slug": "laptop-asus-asus-n46vz-n46vz-21",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS N46VZ (N46VZ 2.1) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34286,
+          "type": "boardview",
+          "name": "ASUS - ASUS N46VZ - N46VZ 2.1.fz",
+          "size": "187 KB",
+          "sizeBytes": 191482,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1be3CGDicljncimx8R24rnYhAfKjnnlm2/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18749,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS N46VZ (N46VZ 2.3)",
+      "slug": "laptop-asus-asus-n46vz-n46vz-23",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS N46VZ (N46VZ 2.3) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34287,
+          "type": "boardview",
+          "name": "ASUS - ASUS N46VZ - N46VZ 2.3.fz",
+          "size": "187.2 KB",
+          "sizeBytes": 191661,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1gImgjYVnM1B5-R9ppGLMG8qb-P2t-fWK/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18750,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS N53SV",
+      "slug": "laptop-asus-asus-n53sv",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS N53SV — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34288,
+          "type": "boardview",
+          "name": "ASUS - ASUS N53SV - Boardview Pack.zip",
+          "size": "512 KB",
+          "sizeBytes": 524314,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1OjPFNmGbbJ0wUz5reQJK9Fv0U-NqMDLX/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18751,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS N551JK",
+      "slug": "laptop-asus-asus-n551jk",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS N551JK — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34289,
+          "type": "boardview",
+          "name": "ASUS - ASUS N551JK - Boardview Pack.zip",
+          "size": "550.5 KB",
+          "sizeBytes": 563718,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1CGvpd2Vm6kKcSQyuUijg_yHOfkcyXjDF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18752,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS N55SF Boardview",
+      "slug": "laptop-asus-asus-n55sf-boardview",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS N55SF Boardview — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34290,
+          "type": "boardview",
+          "name": "ASUS - ASUS N55SF Boardview - Boardview Pack.zip",
+          "size": "357.8 KB",
+          "sizeBytes": 366384,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Ek1VjbXeoV1JdSu1B_GANbWJZe412t2C/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18753,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS N56JN (N56JN 2.0)",
+      "slug": "laptop-asus-asus-n56jn-n56jn-20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS N56JN (N56JN 2.0) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34291,
+          "type": "boardview",
+          "name": "ASUS - ASUS N56JN - N56JN 2.0.fz",
+          "size": "171.9 KB",
+          "sizeBytes": 176056,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HRwgHJ4CMZydCL-ovPdwR9k9gU20M6lb/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18756,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS S551LB",
+      "slug": "laptop-asus-asus-s551lb",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS S551LB — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34294,
+          "type": "boardview",
+          "name": "ASUS - ASUS S551LB - Boardview Pack.zip",
+          "size": "446.8 KB",
+          "sizeBytes": 457515,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Xj2BwtM3dCei8mSYu-AKe9Wyoy6O7QVa/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18757,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS T100TA (T100TA 2.0)",
+      "slug": "laptop-asus-asus-t100ta-t100ta-20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS T100TA (T100TA 2.0) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34295,
+          "type": "boardview",
+          "name": "ASUS - ASUS T100TA - T100TA 2.0.fz",
+          "size": "106.4 KB",
+          "sizeBytes": 108972,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1qvHXsdFR0TFy6_SFpw2EpRe0_SdK65bL/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18758,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS T100TA (T100TA 2.2)",
+      "slug": "laptop-asus-asus-t100ta-t100ta-22",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS T100TA (T100TA 2.2) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34296,
+          "type": "boardview",
+          "name": "ASUS - ASUS T100TA - T100TA 2.2.fz",
+          "size": "101.2 KB",
+          "sizeBytes": 103639,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xhv2-uyfuqVJmBkQfhQPb6XZcyr5rr3Q/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18759,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS TP300LA (TP300LA MB 2.0)",
+      "slug": "laptop-asus-asus-tp300la-tp300la-mb-20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS TP300LA (TP300LA MB 2.0) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34297,
+          "type": "boardview",
+          "name": "ASUS - ASUS TP300LA - TP300LA MB 2.0.fz",
+          "size": "119.7 KB",
+          "sizeBytes": 122529,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Jqycd4dQhrKN39tx48HkL-cgcDYuTWwr/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19137,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS TP301UJ RG",
+      "slug": "laptop-asus-asus-tp301uj-rg",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS TP301UJ RG — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34718,
+          "type": "schematic",
+          "name": "ASUS - ASUS TP301UJ RG - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1299087,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1jkb8wdllqSoTTezwnrivvJNpyWAKCvi6/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18760,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS U31SD Boardview (U31SD 2.0)",
+      "slug": "laptop-asus-asus-u31sd-boardview-u31sd-20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS U31SD Boardview (U31SD 2.0) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34298,
+          "type": "boardview",
+          "name": "ASUS - ASUS U31SD Boardview - U31SD 2.0.fz",
+          "size": "148 KB",
+          "sizeBytes": 151544,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ospZZmdnCu_Iy7MypnNJGVz5GAyufCe2/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18761,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS U31SD Boardview (U31SD 2.1)",
+      "slug": "laptop-asus-asus-u31sd-boardview-u31sd-21",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS U31SD Boardview (U31SD 2.1) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34299,
+          "type": "boardview",
+          "name": "ASUS - ASUS U31SD Boardview - U31SD 2.1.fz",
+          "size": "148.2 KB",
+          "sizeBytes": 151728,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1rkp5yaKt9FxEJMW-PB5jfxDUJLw8Zps1/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18762,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS U36SD",
+      "slug": "laptop-asus-asus-u36sd",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS U36SD — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34300,
+          "type": "boardview",
+          "name": "ASUS - ASUS U36SD - Boardview Pack.zip",
+          "size": "447.3 KB",
+          "sizeBytes": 458086,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14A4IMzK2viQKAHC_Bx_mEsmKcj7fhh1T/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18763,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS U38DT (U38DT 2.0)",
+      "slug": "laptop-asus-asus-u38dt-u38dt-20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS U38DT (U38DT 2.0) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34301,
+          "type": "boardview",
+          "name": "ASUS - ASUS U38DT - U38DT 2.0.fz",
+          "size": "149.9 KB",
+          "sizeBytes": 153531,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Im1IO4_LXbYKkIM4hKDINTop-86Xl1UK/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18764,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS U38DT (U38DT 2.1)",
+      "slug": "laptop-asus-asus-u38dt-u38dt-21",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS U38DT (U38DT 2.1) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34302,
+          "type": "boardview",
+          "name": "ASUS - ASUS U38DT - U38DT 2.1.fz",
+          "size": "149.9 KB",
+          "sizeBytes": 153502,
+          "gdrive_direct_url": "https://drive.google.com/file/d/10UseQMXYVgXYsJ5mZpzXl0MyMg7N-spI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18765,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS UX303UB BOARDVIEW (UX303UB 2.0 60NB08U0-MB1410)",
+      "slug": "laptop-asus-asus-ux303ub-boardview-ux303ub-20-60nb08u0-mb1410",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS UX303UB BOARDVIEW (UX303UB 2.0 60NB08U0-MB1410) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34303,
+          "type": "boardview",
+          "name": "ASUS - ASUS UX303UB BOARDVIEW - UX303UB 2.0 60NB08U0-MB1410.fz",
+          "size": "152 KB",
+          "sizeBytes": 155599,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1OtzNQ_QHqAxqCVeeS8b-DcNCUk7r2aPX/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18766,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS UX305UA (UX305UA MB 1.1 60NB0AB0-MB1110)",
+      "slug": "laptop-asus-asus-ux305ua-ux305ua-mb-11-60nb0ab0-mb1110",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS UX305UA (UX305UA MB 1.1 60NB0AB0-MB1110) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34304,
+          "type": "boardview",
+          "name": "ASUS - ASUS UX305UA - UX305UA MB 1.1 60NB0AB0-MB1110.fz",
+          "size": "92.2 KB",
+          "sizeBytes": 94381,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Kei34Rq1b3zRGaMKc_H1cFuxvxc_NiUb/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18767,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS UX305UA (UX305UA MB 2.0 60NB0AB0-MB2120)",
+      "slug": "laptop-asus-asus-ux305ua-ux305ua-mb-20-60nb0ab0-mb2120",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS UX305UA (UX305UA MB 2.0 60NB0AB0-MB2120) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34305,
+          "type": "boardview",
+          "name": "ASUS - ASUS UX305UA - UX305UA MB 2.0 60NB0AB0-MB2120.fz",
+          "size": "92.5 KB",
+          "sizeBytes": 94692,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hRJSj71KDtg1dByaHaBPpkPCyct1YZ9V/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18768,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS UX32VD",
+      "slug": "laptop-asus-asus-ux32vd",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS UX32VD — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34306,
+          "type": "boardview",
+          "name": "ASUS - ASUS UX32VD - Boardview Pack.zip",
+          "size": "473.3 KB",
+          "sizeBytes": 484669,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1vJQOl6rLSM1TYW_koq5qlxRUXU51xz3t/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18769,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS UX51VZ (UX51VZ 2.0)",
+      "slug": "laptop-asus-asus-ux51vz-ux51vz-20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS UX51VZ (UX51VZ 2.0) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34307,
+          "type": "boardview",
+          "name": "ASUS - ASUS UX51VZ - UX51VZ 2.0.fz",
+          "size": "180.8 KB",
+          "sizeBytes": 185183,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kSJynJwICL1JSJ_3cxXVPj20IcFKsVCT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18771,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS X200MA",
+      "slug": "laptop-asus-asus-x200ma",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS X200MA — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34309,
+          "type": "boardview",
+          "name": "ASUS - ASUS X200MA - Boardview Pack.zip",
+          "size": "298.7 KB",
+          "sizeBytes": 305827,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1XZh1U8szDbruNMlWvFs_oCDIOmGyTm4Q/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18772,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS X401U",
+      "slug": "laptop-asus-asus-x401u",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS X401U — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34310,
+          "type": "boardview",
+          "name": "ASUS - ASUS X401U - Boardview Pack.zip",
+          "size": "319.4 KB",
+          "sizeBytes": 327037,
+          "gdrive_direct_url": "https://drive.google.com/file/d/119JLiASxgiWwWKHkD3t3TNO4Q1ibUG4h/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18774,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS X441UV",
+      "slug": "laptop-asus-asus-x441uv",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS X441UV — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34312,
+          "type": "boardview",
+          "name": "ASUS - ASUS X441UV - Boardview.fz",
+          "size": "142.1 KB",
+          "sizeBytes": 145519,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1j0feQPkE9ythjL8mZZO6iu2TuPKu9Noe/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18776,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS X450CC",
+      "slug": "laptop-asus-asus-x450cc",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS X450CC — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34314,
+          "type": "boardview",
+          "name": "ASUS - ASUS X450CC - Boardview Pack.zip",
+          "size": "942.4 KB",
+          "sizeBytes": 965048,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1aiB5UrVXOQLk5zYVPRySgSrg4i0teURB/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18777,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS X450CC 2.1",
+      "slug": "laptop-asus-asus-x450cc-21",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS X450CC 2.1 — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34315,
+          "type": "boardview",
+          "name": "ASUS - ASUS X450CC 2.1 - Boardview.fz",
+          "size": "157.9 KB",
+          "sizeBytes": 161667,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1osDa_s2ahEKJfedWjALywOBu4ipCcySS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18779,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS X450LC",
+      "slug": "laptop-asus-asus-x450lc",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS X450LC — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34317,
+          "type": "boardview",
+          "name": "ASUS - ASUS X450LC - Boardview Pack.zip",
+          "size": "465.3 KB",
+          "sizeBytes": 476451,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15YS5VHlDsXp5vab2UKZ_DI-5G7-JJglf/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18780,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS X450LD",
+      "slug": "laptop-asus-asus-x450ld",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS X450LD — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34318,
+          "type": "boardview",
+          "name": "ASUS - ASUS X450LD - Boardview Pack.zip",
+          "size": "907.6 KB",
+          "sizeBytes": 929392,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dZq7cq6G5nc6iul13-AevQf6_Ehes_cD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19140,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS X450WE - X455WE Repair Guide",
+      "slug": "laptop-asus-asus-x450we-x455we-repair-guide",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS X450WE - X455WE Repair Guide — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34721,
+          "type": "schematic",
+          "name": "ASUS - ASUS X450WE - X455WE Repair Guide - Schematic.pdf",
+          "size": "1 MB",
+          "sizeBytes": 1087001,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_ZQjT9_ZpA3I1f7gKPMCoESo0LkbO8M9/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18781,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS X451CA Boardview",
+      "slug": "laptop-asus-asus-x451ca-boardview",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS X451CA Boardview — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34319,
+          "type": "boardview",
+          "name": "ASUS - ASUS X451CA Boardview - Boardview Pack.zip",
+          "size": "450 KB",
+          "sizeBytes": 460762,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1s2dluQ0gdEyKy5K0Bt-3N-IhSUZGJ5hk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18782,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS X451MA (X451MA 1.1)",
+      "slug": "laptop-asus-asus-x451ma-x451ma-11",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS X451MA (X451MA 1.1) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34320,
+          "type": "boardview",
+          "name": "ASUS - ASUS X451MA - X451MA 1.1.fz",
+          "size": "104.3 KB",
+          "sizeBytes": 106760,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-QthNQ1tskIB29EVytGGWewT69lby-ZL/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18783,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS X451MA (X451MA 2.1)",
+      "slug": "laptop-asus-asus-x451ma-x451ma-21",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS X451MA (X451MA 2.1) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34321,
+          "type": "boardview",
+          "name": "ASUS - ASUS X451MA - X451MA 2.1.fz",
+          "size": "105 KB",
+          "sizeBytes": 107469,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1EOSQXf50FvM6LDQa04U5vk-tKFYdhiQD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18788,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS X45A (X45A 2.0)",
+      "slug": "laptop-asus-asus-x45a-x45a-20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS X45A (X45A 2.0) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34326,
+          "type": "boardview",
+          "name": "ASUS - ASUS X45A - X45A 2.0.fz",
+          "size": "119.5 KB",
+          "sizeBytes": 122318,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mgzvS2DxiJVcvv3liTs3LL_zd0oDKDqh/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18789,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS X45U",
+      "slug": "laptop-asus-asus-x45u",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS X45U — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34327,
+          "type": "boardview",
+          "name": "ASUS - ASUS X45U - Boardview Pack.zip",
+          "size": "399.4 KB",
+          "sizeBytes": 408997,
+          "gdrive_direct_url": "https://drive.google.com/file/d/11xJHP-RdjzVOb7qQ9QhaGP23LcZ86obK/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19141,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS X540LJ RG",
+      "slug": "laptop-asus-asus-x540lj-rg",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS X540LJ RG — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34722,
+          "type": "schematic",
+          "name": "ASUS - ASUS X540LJ RG - Schematic.pdf",
+          "size": "849.6 KB",
+          "sizeBytes": 869979,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DV7RPZTgxSixI05e_KtATgB2M_981_Z9/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19142,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS X540SA RG",
+      "slug": "laptop-asus-asus-x540sa-rg",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS X540SA RG — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34723,
+          "type": "schematic",
+          "name": "ASUS - ASUS X540SA RG - Schematic.pdf",
+          "size": "925.6 KB",
+          "sizeBytes": 947809,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1fGJ4wWLnDX2HkHGsqKG-nrgHDaB1dzX5/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18795,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS X550DP - X750DP 2.0",
+      "slug": "laptop-asus-asus-x550dp-x750dp-20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS X550DP - X750DP 2.0 — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34333,
+          "type": "boardview",
+          "name": "ASUS - ASUS X550DP - X750DP 2.0 - Boardview.fz",
+          "size": "146.8 KB",
+          "sizeBytes": 150368,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1AFMVmL0M6NGyuBX46BZAXtdgNTBFR2wG/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18796,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS X550JX rev2.1",
+      "slug": "laptop-asus-asus-x550jx-rev21",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS X550JX rev2.1 — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34334,
+          "type": "boardview",
+          "name": "ASUS - ASUS X550JX rev2.1 - Boardview Pack.zip",
+          "size": "206.2 KB",
+          "sizeBytes": 211113,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DxKtDl0Ekinmm_iaiGmF7_u_0QmtYd3Y/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18797,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS X550LC (X550LC 2.0)",
+      "slug": "laptop-asus-asus-x550lc-x550lc-20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS X550LC (X550LC 2.0) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34335,
+          "type": "boardview",
+          "name": "ASUS - ASUS X550LC - X550LC 2.0.fz",
+          "size": "154.3 KB",
+          "sizeBytes": 157968,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mE-c5MdmkQbAfWQ-528kgRB0R2uHCBL4/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18800,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS X550MD Boardview (X550MD 2.0)",
+      "slug": "laptop-asus-asus-x550md-boardview-x550md-20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS X550MD Boardview (X550MD 2.0) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34338,
+          "type": "boardview",
+          "name": "ASUS - ASUS X550MD Boardview - X550MD 2.0.fz",
+          "size": "146.4 KB",
+          "sizeBytes": 149901,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Avg2cfaDc0LDQLxj965Y6dEwruyOCbdx/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18804,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS X55A (X55A 2.1)",
+      "slug": "laptop-asus-asus-x55a-x55a-21",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS X55A (X55A 2.1) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34342,
+          "type": "boardview",
+          "name": "ASUS - ASUS X55A - X55A 2.1.fz",
+          "size": "121.5 KB",
+          "sizeBytes": 124453,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1I4A3GmsqhEn385g3orCL6frAm2W7dhf6/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18805,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS X55A (X55A 2.2)",
+      "slug": "laptop-asus-asus-x55a-x55a-22",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus ASUS X55A (X55A 2.2) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34343,
+          "type": "boardview",
+          "name": "ASUS - ASUS X55A - X55A 2.2.fz",
+          "size": "121 KB",
+          "sizeBytes": 123898,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xLDbMSAChF-2xot7Peyk8eDLs3LJ3N9s/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19136,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS k45vd QCL40 LA-8224P R0.2 1027",
+      "slug": "laptop-asus-asus-k45vd-qcl40-la-8224p-r02-1027",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-8224P",
+      "officialTitle": "Asus ASUS k45vd QCL40 LA-8224P R0.2 1027 (LA-8224P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34717,
+          "type": "schematic",
+          "name": "ASUS - ASUS k45vd QCL40 LA-8224P R0.2 1027 - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1308578,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1FVwFF8zBeCE3z3wvDI_tQ9OjDC_OVX07/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19127,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus 1015P (1015P DDR2 R1.0G)",
+      "slug": "laptop-asus-asus-1015p-1015p-ddr2-r10g",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus 1015P (1015P DDR2 R1.0G) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34708,
+          "type": "schematic",
+          "name": "ASUS - Asus 1015P - 1015P DDR2 R1.0G - Schematic.pdf",
+          "size": "849.4 KB",
+          "sizeBytes": 869806,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1jHSPR52_m62o8uWZdCy7XJbdTt-zB_1X/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19129,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus 1015P (1015P IO TP R1.2G)",
+      "slug": "laptop-asus-asus-1015p-1015p-io-tp-r12g",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus 1015P (1015P IO TP R1.2G) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34710,
+          "type": "schematic",
+          "name": "ASUS - Asus 1015P - 1015P IO TP R1.2G - Schematic.pdf",
+          "size": "196.7 KB",
+          "sizeBytes": 201407,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1VIoZfoBGU2k_aXW-kFlO8QX88mYwPWAL/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19128,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus 1015P (1015P Io board)",
+      "slug": "laptop-asus-asus-1015p-1015p-io-board",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus 1015P (1015P Io board) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34709,
+          "type": "schematic",
+          "name": "ASUS - Asus 1015P - 1015P Io board - Schematic.pdf",
+          "size": "204.9 KB",
+          "sizeBytes": 209837,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1AAR_g5XGl0vH66ZCdFL4gdvPynG8z7x6/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19130,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus 1015P (Asus eee pc 1015p rev 1.2g)",
+      "slug": "laptop-asus-asus-1015p-asus-eee-pc-1015p-rev-12g",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus 1015P (Asus eee pc 1015p rev 1.2g) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34711,
+          "type": "schematic",
+          "name": "ASUS - Asus 1015P - Asus eee pc 1015p rev 1.2g - Schematic.pdf",
+          "size": "572.7 KB",
+          "sizeBytes": 586468,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1RtKSFdTnq5Atx_n4ylZnl4r9rnvVmd22/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19134,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus Eee PC 1025C repair guide",
+      "slug": "laptop-asus-asus-eee-pc-1025c-repair-guide",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus Eee PC 1025C repair guide — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34715,
+          "type": "schematic",
+          "name": "ASUS - Asus Eee PC 1025C repair guide - Schematic.pdf",
+          "size": "381.7 KB",
+          "sizeBytes": 390868,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1AvBt1-SX7RmWIz0v-T0wwTV7gWX3t158/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18723,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus EeeTop PC ET2230I",
+      "slug": "laptop-asus-asus-eeetop-pc-et2230i",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus EeeTop PC ET2230I — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34261,
+          "type": "boardview",
+          "name": "ASUS - Asus EeeTop PC ET2230I - Boardview.fz",
+          "size": "142 KB",
+          "sizeBytes": 145360,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-iUpSZchn-aDY5xyCDabf5iEfWhgTV9t/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18724,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus G46VW Boardview",
+      "slug": "laptop-asus-asus-g46vw-boardview",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus G46VW Boardview — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34262,
+          "type": "boardview",
+          "name": "ASUS - Asus G46VW Boardview - Boardview Pack.zip",
+          "size": "399.9 KB",
+          "sizeBytes": 409543,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1IampmijmuyKwsrkEa2VfuIPezHKcnKqo/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18726,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus GL553VD Rev 2.0",
+      "slug": "laptop-asus-asus-gl553vd-rev-20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus GL553VD Rev 2.0 — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34264,
+          "type": "boardview",
+          "name": "ASUS - Asus GL553VD Rev 2.0 - Boardview.fz",
+          "size": "178 KB",
+          "sizeBytes": 182221,
+          "gdrive_direct_url": "https://drive.google.com/file/d/12pRL6jisCZPs9dy6OowrMNmu9reV87VL/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18729,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus K42F 2.0 3.2 3.3 Boardview",
+      "slug": "laptop-asus-asus-k42f-20-32-33-boardview",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus K42F 2.0 3.2 3.3 Boardview — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34267,
+          "type": "boardview",
+          "name": "ASUS - Asus K42F 2.0 3.2 3.3 Boardview - Boardview Pack.zip",
+          "size": "390 KB",
+          "sizeBytes": 399411,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1bp2f4kJxnLgV6Am2-OREsXQj8owIHDx6/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18731,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus K43L 1.0 2.0 3.1 4.1 5.0 Boardview",
+      "slug": "laptop-asus-asus-k43l-10-20-31-41-50-boardview",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus K43L 1.0 2.0 3.1 4.1 5.0 Boardview — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34269,
+          "type": "boardview",
+          "name": "ASUS - Asus K43L 1.0 2.0 3.1 4.1 5.0 Boardview - Boardview Pack.zip",
+          "size": "1.1 MB",
+          "sizeBytes": 1135262,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QpTyVGIUGrrCCO8eyR5otvuHEOSzQ3iY/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18732,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus K43LY r3.1 boardview (K43LY 3.1,60-NB2MB1000-A14.FZ)",
+      "slug": "laptop-asus-asus-k43ly-r31-boardview-k43ly-3160-nb2mb1000-a14fz",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus K43LY r3.1 boardview (K43LY 3.1,60-NB2MB1000-A14.FZ) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34270,
+          "type": "boardview",
+          "name": "ASUS - Asus K43LY r3.1 boardview - K43LY 3.1,60-NB2MB1000-A14.FZ.fz",
+          "size": "139.1 KB",
+          "sizeBytes": 142419,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1URDV5Iij6jXtvFuyB_26qaI8XbmWZ1Fk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19135,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus K43U Compal LA-7321P",
+      "slug": "laptop-asus-asus-k43u-compal-la-7321p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-7321P",
+      "officialTitle": "Asus Asus K43U Compal LA-7321P (LA-7321P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34716,
+          "type": "schematic",
+          "name": "ASUS - Asus K43U Compal LA-7321P - Schematic.pdf",
+          "size": "881.9 KB",
+          "sizeBytes": 903038,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15V_Hp0xg9KteRk71vM9i0s6Q-1sXmFPV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18738,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus K46CM (K46VM) repair guide",
+      "slug": "laptop-asus-asus-k46cm-k46vm-repair-guide",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus K46CM (K46VM) repair guide — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34276,
+          "type": "boardview",
+          "name": "ASUS - Asus K46CM (K46VM) repair guide - Boardview.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1252737,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1vUqtMujkRkNYZEbDahu0vIyq6inUGHvF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18745,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus N45SF 1.3 2.0 Boardview (N45SF 1.3)",
+      "slug": "laptop-asus-asus-n45sf-13-20-boardview-n45sf-13",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus N45SF 1.3 2.0 Boardview (N45SF 1.3) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34283,
+          "type": "boardview",
+          "name": "ASUS - Asus N45SF 1.3 2.0 Boardview - N45SF 1.3.fz",
+          "size": "162.1 KB",
+          "sizeBytes": 165979,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1yBv4srUUxrdFnugPjp-7ZRvbS1zxxRyH/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18746,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus N45SF 1.3 2.0 Boardview (N45SF 2.0)",
+      "slug": "laptop-asus-asus-n45sf-13-20-boardview-n45sf-20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus N45SF 1.3 2.0 Boardview (N45SF 2.0) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34284,
+          "type": "boardview",
+          "name": "ASUS - Asus N45SF 1.3 2.0 Boardview - N45SF 2.0.fz",
+          "size": "163.6 KB",
+          "sizeBytes": 167494,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Qx0LNhjzsWAUn5TLrN9Fy4hC8oL7LoM8/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18754,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus PU451LD (PU451LD 2.0)",
+      "slug": "laptop-asus-asus-pu451ld-pu451ld-20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus PU451LD (PU451LD 2.0) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34292,
+          "type": "boardview",
+          "name": "ASUS - Asus PU451LD - PU451LD 2.0.fz",
+          "size": "138 KB",
+          "sizeBytes": 141334,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mINFZXyacPGBw1-bOsFzW4avBbzw4N7p/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18755,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus S400CA Boardview",
+      "slug": "laptop-asus-asus-s400ca-boardview",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus S400CA Boardview — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34293,
+          "type": "boardview",
+          "name": "ASUS - Asus S400CA Boardview - Boardview Pack.zip",
+          "size": "507.8 KB",
+          "sizeBytes": 519978,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QY_v9IBO3kZqnhIqlEp3hN8kdNyLB6E9/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19138,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus Transformer Book UX303LNB RG",
+      "slug": "laptop-asus-asus-transformer-book-ux303lnb-rg",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus Transformer Book UX303LNB RG — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34719,
+          "type": "schematic",
+          "name": "ASUS - Asus Transformer Book UX303LNB RG - Schematic.pdf",
+          "size": "1 MB",
+          "sizeBytes": 1055850,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-U5mv4ZZa5PXt1ew8HLo9OzXAIhbbFxA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19139,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus UX305FA RG",
+      "slug": "laptop-asus-asus-ux305fa-rg",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus UX305FA RG — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34720,
+          "type": "schematic",
+          "name": "ASUS - Asus UX305FA RG - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1267341,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zkPCOBVkwdbWIu1pGRalT1GDoh0EjFR-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18770,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus X200CA boardview r20 (X200CA r20)",
+      "slug": "laptop-asus-asus-x200ca-boardview-r20-x200ca-r20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus X200CA boardview r20 (X200CA r20) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34308,
+          "type": "boardview",
+          "name": "ASUS - Asus X200CA boardview r20 - X200CA r20.fz",
+          "size": "104.1 KB",
+          "sizeBytes": 106638,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19axPFrd9FFIKM_ydW9h9knlMWbz6G0iv/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18773,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus X441SC 2.1",
+      "slug": "laptop-asus-asus-x441sc-21",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus X441SC 2.1 — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34311,
+          "type": "boardview",
+          "name": "ASUS - Asus X441SC 2.1 - Boardview.fz",
+          "size": "121.4 KB",
+          "sizeBytes": 124312,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WE41rP4_LafBvjxzc2yA97r0jFS5T_nB/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18775,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus X442UQ 2.0",
+      "slug": "laptop-asus-asus-x442uq-20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus X442UQ 2.0 — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34313,
+          "type": "boardview",
+          "name": "ASUS - Asus X442UQ 2.0 - Boardview.fz",
+          "size": "108.2 KB",
+          "sizeBytes": 110840,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1a3kD9fQvdWB5Es1wUgLCGtd03gl6L9UV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18778,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus X450EP 1.2 Boardview",
+      "slug": "laptop-asus-asus-x450ep-12-boardview",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus X450EP 1.2 Boardview — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34316,
+          "type": "boardview",
+          "name": "ASUS - Asus X450EP 1.2 Boardview - Boardview.fz",
+          "size": "123.2 KB",
+          "sizeBytes": 126171,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1w4Ne9J617lMyQA0yZaHPECblZZiEOLSd/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18784,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus X453MA Boardview (X453MA 1.4)",
+      "slug": "laptop-asus-asus-x453ma-boardview-x453ma-14",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus X453MA Boardview (X453MA 1.4) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34322,
+          "type": "boardview",
+          "name": "ASUS - Asus X453MA Boardview - X453MA 1.4.fz",
+          "size": "103.1 KB",
+          "sizeBytes": 105617,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dEmL-8Yxe0RQ3Di-4d7ZtMnFpsCFNvxi/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18785,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus X453MA Boardview (X453MA 2.0)",
+      "slug": "laptop-asus-asus-x453ma-boardview-x453ma-20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus X453MA Boardview (X453MA 2.0) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34323,
+          "type": "boardview",
+          "name": "ASUS - Asus X453MA Boardview - X453MA 2.0.fz",
+          "size": "103.6 KB",
+          "sizeBytes": 106102,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mEwVFaMzxbbeg2Rqmki3bR2r9DsgxEss/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18786,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus X455LD boardview (Asus X455LD r2.1 boardview)",
+      "slug": "laptop-asus-asus-x455ld-boardview-asus-x455ld-r21-boardview",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus X455LD boardview (Asus X455LD r2.1 boardview) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34324,
+          "type": "boardview",
+          "name": "ASUS - Asus X455LD boardview - Asus X455LD r2.1 boardview.fz",
+          "size": "151.1 KB",
+          "sizeBytes": 154723,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DdiAzu6ySArFIt-QhDB5JaANbj-L1ktB/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18787,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus X455LD boardview (Asus X455LD r2.2 boardview)",
+      "slug": "laptop-asus-asus-x455ld-boardview-asus-x455ld-r22-boardview",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus X455LD boardview (Asus X455LD r2.2 boardview) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34325,
+          "type": "boardview",
+          "name": "ASUS - Asus X455LD boardview - Asus X455LD r2.2 boardview.fz",
+          "size": "152.8 KB",
+          "sizeBytes": 156510,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1lFOvIQtJFAPIxhROJvtF-yGuk2nplQdH/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18790,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus X45VD boardview",
+      "slug": "laptop-asus-asus-x45vd-boardview",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus X45VD boardview — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34328,
+          "type": "boardview",
+          "name": "ASUS - Asus X45VD boardview - Boardview Pack.zip",
+          "size": "482.8 KB",
+          "sizeBytes": 494354,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1W844Ax8sxfZhW0QPkscG9PNe4fz_3uhF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18791,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus X541SA r2.0",
+      "slug": "laptop-asus-asus-x541sa-r20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus X541SA r2.0 — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34329,
+          "type": "boardview",
+          "name": "ASUS - Asus X541SA r2.0 - Boardview.fz",
+          "size": "101.4 KB",
+          "sizeBytes": 103838,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WNIBMPF0GXAyreCpIYimk0JAM1fwFtuj/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18792,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus X541UV - X541UA (ASUS X541UV (60NB0CG0-MB4101) - BoardView (.FZ))",
+      "slug": "laptop-asus-asus-x541uv-x541ua-asus-x541uv-60nb0cg0-mb4101-boardview-fz",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus X541UV - X541UA (ASUS X541UV (60NB0CG0-MB4101) - BoardView (.FZ)) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34330,
+          "type": "boardview",
+          "name": "ASUS - Asus X541UV - X541UA - ASUS X541UV (60NB0CG0-MB4101) - BoardView (.FZ).fz",
+          "size": "145.1 KB",
+          "sizeBytes": 148586,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZroRd2uzWvMoTulvop-ET13MO4iEA0kv/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18793,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus X541UV - X541UA (X541UA X541UV RG)",
+      "slug": "laptop-asus-asus-x541uv-x541ua-x541ua-x541uv-rg",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus X541UV - X541UA (X541UA X541UV RG) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34331,
+          "type": "boardview",
+          "name": "ASUS - Asus X541UV - X541UA - X541UA X541UV RG.pdf",
+          "size": "775.3 KB",
+          "sizeBytes": 793877,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mTme4ShMpixssHRub8RIfCdnbIueqL6T/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18794,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus X550CC 2.0",
+      "slug": "laptop-asus-asus-x550cc-20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus X550CC 2.0 — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34332,
+          "type": "boardview",
+          "name": "ASUS - Asus X550CC 2.0 - Boardview.fz",
+          "size": "159.7 KB",
+          "sizeBytes": 163492,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1yJIQ1os10macKwaYuS12VWnc-S659F-Q/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18798,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus X550LD 1.1 2.0 Boardview (X550LD 1.1)",
+      "slug": "laptop-asus-asus-x550ld-11-20-boardview-x550ld-11",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus X550LD 1.1 2.0 Boardview (X550LD 1.1) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34336,
+          "type": "boardview",
+          "name": "ASUS - Asus X550LD 1.1 2.0 Boardview - X550LD 1.1.fz",
+          "size": "149.5 KB",
+          "sizeBytes": 153133,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1odV-YxXnjgHhxZeAA056VCLKstk84Mgy/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18799,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus X550LD 1.1 2.0 Boardview (X550LD 2.0)",
+      "slug": "laptop-asus-asus-x550ld-11-20-boardview-x550ld-20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus X550LD 1.1 2.0 Boardview (X550LD 2.0) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34337,
+          "type": "boardview",
+          "name": "ASUS - Asus X550LD 1.1 2.0 Boardview - X550LD 2.0.fz",
+          "size": "149.8 KB",
+          "sizeBytes": 153405,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1da8Qa7o9l6Vg2R02r9KkmAGh6l2eOLTa/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18802,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus X555LD REV 1.2- REV 2.0 boardview (ASUS X555LD REV 2.0 - BoardView)",
+      "slug": "laptop-asus-asus-x555ld-rev-12-rev-20-boardview-asus-x555ld-rev-20-boardview",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus X555LD REV 1.2- REV 2.0 boardview (ASUS X555LD REV 2.0 - BoardView) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34340,
+          "type": "boardview",
+          "name": "ASUS - Asus X555LD REV 1.2- REV 2.0 boardview - ASUS X555LD REV 2.0 - BoardView.fz",
+          "size": "135.6 KB",
+          "sizeBytes": 138811,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1XxbuLbJe7Qc2N5hh5xyr4WL8sE4Nhzqz/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18801,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus X555LD REV 1.2- REV 2.0 boardview (Asus X555LD r1.2 boardview)",
+      "slug": "laptop-asus-asus-x555ld-rev-12-rev-20-boardview-asus-x555ld-r12-boardview",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus X555LD REV 1.2- REV 2.0 boardview (Asus X555LD r1.2 boardview) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34339,
+          "type": "boardview",
+          "name": "ASUS - Asus X555LD REV 1.2- REV 2.0 boardview - Asus X555LD r1.2 boardview.fz",
+          "size": "134 KB",
+          "sizeBytes": 137200,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1b8y43YFVNI0F2ZEx-0X8CUy8iDfFa0Yl/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18803,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus X556UV 3.1",
+      "slug": "laptop-asus-asus-x556uv-31",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus X556UV 3.1 — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34341,
+          "type": "boardview",
+          "name": "ASUS - Asus X556UV 3.1 - Boardview.fz",
+          "size": "144.9 KB",
+          "sizeBytes": 148338,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1jRDBhjnC_5lclwrYNGjpYaR1rtgkLW84/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19143,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus Z62H Schematic And Boardview (Z62H R1.0 0809)",
+      "slug": "laptop-asus-asus-z62h-schematic-and-boardview-z62h-r10-0809",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus Z62H Schematic And Boardview (Z62H R1.0 0809) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34724,
+          "type": "boardview",
+          "name": "ASUS - Asus Z62H Schematic And Boardview - Z62H R1.0 0809 - Schematic.pdf",
+          "size": "891.8 KB",
+          "sizeBytes": 913209,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1huVrNUKcWVsuI3F1zzXI6U-ouuASOAml/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19144,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus Z62H Schematic And Boardview (Z62H R2.1 1031)",
+      "slug": "laptop-asus-asus-z62h-schematic-and-boardview-z62h-r21-1031",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus Z62H Schematic And Boardview (Z62H R2.1 1031) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34725,
+          "type": "boardview",
+          "name": "ASUS - Asus Z62H Schematic And Boardview - Z62H R2.1 1031 - Schematic.pdf",
+          "size": "3.5 MB",
+          "sizeBytes": 3684580,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PfR9jNjTA3i7tbMhmINtBFM6RQTrruYM/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19146,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus Z62H Schematic And Boardview (Z62HA 1.0G)",
+      "slug": "laptop-asus-asus-z62h-schematic-and-boardview-z62ha-10g",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus Z62H Schematic And Boardview (Z62HA 1.0G) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34727,
+          "type": "boardview",
+          "name": "ASUS - Asus Z62H Schematic And Boardview - Z62HA 1.0G - Boardview.fz",
+          "size": "136.9 KB",
+          "sizeBytes": 140172,
+          "gdrive_direct_url": "https://drive.google.com/file/d/18iYJcE5PFVhE5iRGOLb1zkUiZ3brTrp4/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19147,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus Z62H Schematic And Boardview (Z62HA 2.0G)",
+      "slug": "laptop-asus-asus-z62h-schematic-and-boardview-z62ha-20g",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus Z62H Schematic And Boardview (Z62HA 2.0G) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34728,
+          "type": "boardview",
+          "name": "ASUS - Asus Z62H Schematic And Boardview - Z62HA 2.0G - Boardview.fz",
+          "size": "138.1 KB",
+          "sizeBytes": 141410,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DP9IuUsikRDtJowK-8FDS2h468oChCm7/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19145,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus Z62H Schematic And Boardview (Z62HA rev1.1 0927)",
+      "slug": "laptop-asus-asus-z62h-schematic-and-boardview-z62ha-rev11-0927",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus Z62H Schematic And Boardview (Z62HA rev1.1 0927) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34726,
+          "type": "boardview",
+          "name": "ASUS - Asus Z62H Schematic And Boardview - Z62HA rev1.1 0927 - Schematic.pdf",
+          "size": "1.7 MB",
+          "sizeBytes": 1779108,
+          "gdrive_direct_url": "https://drive.google.com/file/d/150TPvL-Mm4Z4URrtijxTgQU4IUKKzWq_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18806,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Asus s200e X202E Ver2.0",
+      "slug": "laptop-asus-asus-s200e-x202e-ver20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Asus s200e X202E Ver2.0 — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34344,
+          "type": "boardview",
+          "name": "ASUS - Asus s200e X202E Ver2.0 - Boardview Pack.zip",
+          "size": "3.6 MB",
+          "sizeBytes": 3737408,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14cXHF4xUQv3cz8Iwpuukg_8JdLgGChsk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18810,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "BOARDVIEW X540UP MB (60NB0DE0-MB5010(X540UP MB)",
+      "slug": "laptop-asus-boardview-x540up-mb-60nb0de0-mb5010x540up-mb",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus BOARDVIEW X540UP MB (60NB0DE0-MB5010(X540UP MB) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34348,
+          "type": "boardview",
+          "name": "ASUS - BOARDVIEW X540UP MB - 60NB0DE0-MB5010(X540UP MB.fz",
+          "size": "145.7 KB",
+          "sizeBytes": 149160,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1G7kvQ23WSdkgHiZPv2Yp70iO9j7AhEpp/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18807,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Boardview ASUS X441UV (ASUS X441UV)",
+      "slug": "laptop-asus-boardview-asus-x441uv-asus-x441uv",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Boardview ASUS X441UV (ASUS X441UV) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34345,
+          "type": "boardview",
+          "name": "ASUS - Boardview ASUS X441UV - ASUS X441UV.fz",
+          "size": "142.1 KB",
+          "sizeBytes": 145519,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1oI9jxriOrg-sEAEtag-j3xxAk-0m-aLI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18808,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Boardview ASUS X450CC 2.1 (ASUS X450CC 2.1)",
+      "slug": "laptop-asus-boardview-asus-x450cc-21-asus-x450cc-21",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Boardview ASUS X450CC 2.1 (ASUS X450CC 2.1) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34346,
+          "type": "boardview",
+          "name": "ASUS - Boardview ASUS X450CC 2.1 - ASUS X450CC 2.1.fz",
+          "size": "157.9 KB",
+          "sizeBytes": 161667,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1XLZoaBSgCNMINCgaHSfSwNCUbseXmzfR/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18809,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Boardview K43sd (K43sd)",
+      "slug": "laptop-asus-boardview-k43sd-k43sd",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Boardview K43sd (K43sd) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34347,
+          "type": "boardview",
+          "name": "ASUS - Boardview K43sd - K43sd.bdv",
+          "size": "1 MB",
+          "sizeBytes": 1091129,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1O6u4T2_52JRp-zB2B5cswmZnZ4rfGfD3/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19149,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Compal QBL50 LA-7551P (Compal QBL50 LA-7551P)",
+      "slug": "laptop-asus-compal-qbl50-la-7551p-compal-qbl50-la-7551p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-7551P",
+      "officialTitle": "Asus Compal QBL50 LA-7551P (Compal QBL50 LA-7551P) (LA-7551P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34730,
+          "type": "schematic",
+          "name": "ASUS - Compal QBL50 LA-7551P - Compal QBL50 LA-7551P - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1661954,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1TaIGTPOOSGizIgBBg03jEeFeheU_Grb1/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19150,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Compal QBL50 LA-7551P (LA-7551P)",
+      "slug": "laptop-asus-compal-qbl50-la-7551p-la-7551p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-7551P",
+      "officialTitle": "Asus Compal QBL50 LA-7551P (LA-7551P) (LA-7551P) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34731,
+          "type": "boardview",
+          "name": "ASUS - Compal QBL50 LA-7551P - LA-7551P - Boardview.fz",
+          "size": "122.6 KB",
+          "sizeBytes": 125532,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13gfoSq3Xi8tTtXH8QOQOOOb0Pb-f6tuG/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18811,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "E402MA",
+      "slug": "laptop-asus-e402ma",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus E402MA — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34349,
+          "type": "boardview",
+          "name": "ASUS - E402MA - Boardview Pack.zip",
+          "size": "124.5 KB",
+          "sizeBytes": 127478,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1pGTT7RhVMLPt2b-FwLMmQDolfuw4-cZy/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19151,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "EPC 1215B(AMD Brazos)TRAINING MATERIALS",
+      "slug": "laptop-asus-epc-1215bamd-brazostraining-materials",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus EPC 1215B(AMD Brazos)TRAINING MATERIALS — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34732,
+          "type": "schematic",
+          "name": "ASUS - EPC 1215B(AMD Brazos)TRAINING MATERIALS - Schematic.pdf",
+          "size": "2.4 MB",
+          "sizeBytes": 2546257,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1y9xWjzcklBEL--43qCAXjqKt_onVhyz8/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18812,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "GL552JX-Boardview",
+      "slug": "laptop-asus-gl552jx-boardview",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus GL552JX-Boardview — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34350,
+          "type": "boardview",
+          "name": "ASUS - GL552JX-Boardview - Boardview Pack.zip",
+          "size": "208.6 KB",
+          "sizeBytes": 213630,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17B_y5x2knG-aweD-nZQg1LpfERY5q6gH/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18813,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "K42JR MB 4.0",
+      "slug": "laptop-asus-k42jr-mb-40",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus K42JR MB 4.0 — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34351,
+          "type": "boardview",
+          "name": "ASUS - K42JR MB 4.0 - Boardview.fz",
+          "size": "127.7 KB",
+          "sizeBytes": 130738,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1h8QvGr_IT1GyPyxNX_cI1cJxFkAFsK28/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18814,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "K43LY 3.1,60-NB2MB1000-A14.FZ",
+      "slug": "laptop-asus-k43ly-3160-nb2mb1000-a14fz",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus K43LY 3.1,60-NB2MB1000-A14.FZ — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34352,
+          "type": "boardview",
+          "name": "ASUS - K43LY 3.1,60-NB2MB1000-A14.FZ - Boardview.fz",
+          "size": "139.1 KB",
+          "sizeBytes": 142419,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hKV3F_Ub2ezWGrGeVmerq-NcVUtT4wQT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18815,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "K43SD All Rev Boardview",
+      "slug": "laptop-asus-k43sd-all-rev-boardview",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus K43SD All Rev Boardview — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34353,
+          "type": "boardview",
+          "name": "ASUS - K43SD All Rev Boardview - Boardview Pack.zip",
+          "size": "1.7 MB",
+          "sizeBytes": 1743868,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kLAveZm1VFUf9FEUVTy4LXLETJtmGgPF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18816,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "K43sd",
+      "slug": "laptop-asus-k43sd",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus K43sd — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34354,
+          "type": "boardview",
+          "name": "ASUS - K43sd - Boardview.bdv",
+          "size": "1 MB",
+          "sizeBytes": 1091129,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-ue8pV2RGpGvwfG2v7dQZHyOkkZSf6uA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19152,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "K45DR REPAIR GUIDE",
+      "slug": "laptop-asus-k45dr-repair-guide",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus K45DR REPAIR GUIDE — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34733,
+          "type": "schematic",
+          "name": "ASUS - K45DR REPAIR GUIDE - Schematic.pdf",
+          "size": "1.8 MB",
+          "sizeBytes": 1910423,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1KcHGQCB17ObPMe-NTnyKvFMRUByNRLqM/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18817,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "K52JR",
+      "slug": "laptop-asus-k52jr",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus K52JR — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34355,
+          "type": "boardview",
+          "name": "ASUS - K52JR - Boardview Pack.zip",
+          "size": "752 KB",
+          "sizeBytes": 770048,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19ulhfrvOoSy2_89ndpPWl7hoWunlA2RD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18818,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "N550JV FZ",
+      "slug": "laptop-asus-n550jv-fz",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus N550JV FZ — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34356,
+          "type": "boardview",
+          "name": "ASUS - N550JV FZ - Boardview Pack.zip",
+          "size": "886.1 KB",
+          "sizeBytes": 907322,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1K44e1Kon91lGmiTLueK3kRilf4cL9HFC/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19153,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "QCL40 LA-8224P R0.2 1027 ASUS k45vd",
+      "slug": "laptop-asus-qcl40-la-8224p-r02-1027-asus-k45vd",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-8224P",
+      "officialTitle": "Asus QCL40 LA-8224P R0.2 1027 ASUS k45vd (LA-8224P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34734,
+          "type": "schematic",
+          "name": "ASUS - QCL40 LA-8224P R0.2 1027 ASUS k45vd - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1308578,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1AN4Rx_6qCO8e1hUacCjvdIeBK7XdEr-e/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18819,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "TSICT",
+      "slug": "laptop-asus-tsict",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus TSICT — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34357,
+          "type": "boardview",
+          "name": "ASUS - TSICT - Boardview.zip",
+          "size": "491.4 KB",
+          "sizeBytes": 503205,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1URB9RHFRZ7F6tu7RIGmlHTLxGyQ-0NNg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 34358,
+          "type": "boardview",
+          "name": "ASUS - tsict - Boardview.inf",
+          "size": "31 B",
+          "sizeBytes": 31,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Hb11SDagWR4EgSb-FkSTuxr7k9hOC6zr/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18820,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "UX303UB 2.0 60NB08U0-MB1410",
+      "slug": "laptop-asus-ux303ub-20-60nb08u0-mb1410",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus UX303UB 2.0 60NB08U0-MB1410 — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34359,
+          "type": "boardview",
+          "name": "ASUS - UX303UB 2.0 60NB08U0-MB1410 - Boardview.fz",
+          "size": "152 KB",
+          "sizeBytes": 155599,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1gdmsyafZYyIswm86AB0WRo8_sY4AZWUy/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18821,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Wistron SV41JN-HV 13320 r2.0 boardview",
+      "slug": "laptop-asus-wistron-sv41jn-hv-13320-r20-boardview",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus Wistron SV41JN-HV 13320 r2.0 boardview — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34360,
+          "type": "boardview",
+          "name": "ASUS - Wistron SV41JN-HV 13320 r2.0 boardview - Boardview.fz",
+          "size": "125 KB",
+          "sizeBytes": 127959,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1LtrUJ4-mFV0LOC8YK1Oant4G3cjYa4aE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18822,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "X200CA r20",
+      "slug": "laptop-asus-x200ca-r20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus X200CA r20 — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34361,
+          "type": "boardview",
+          "name": "ASUS - X200CA r20 - Boardview.fz",
+          "size": "104.1 KB",
+          "sizeBytes": 106638,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_aD2dKDXcOp1Z3O3_yuKpq-SUXstkEeB/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 34362,
+          "type": "boardview",
+          "name": "ASUS - X200CA r20 - Boardview.fz",
+          "size": "104.1 KB",
+          "sizeBytes": 106638,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_aD2dKDXcOp1Z3O3_yuKpq-SUXstkEeB/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19154,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "X441UV RG",
+      "slug": "laptop-asus-x441uv-rg",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus X441UV RG — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34735,
+          "type": "schematic",
+          "name": "ASUS - X441UV RG - Schematic.pdf",
+          "size": "752.1 KB",
+          "sizeBytes": 770134,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uvZC9qe3jE62Xg7rDYLsztLtLSDKKb_X/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19155,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "X453SA Repair Guide",
+      "slug": "laptop-asus-x453sa-repair-guide",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus X453SA Repair Guide — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34736,
+          "type": "schematic",
+          "name": "ASUS - X453SA Repair Guide - Schematic.pdf",
+          "size": "1.1 MB",
+          "sizeBytes": 1160458,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1AOEFya1c3ThzeFR1U0QGjJOXCalcdO4j/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18823,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "X455LJ",
+      "slug": "laptop-asus-x455lj",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus X455LJ — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34363,
+          "type": "boardview",
+          "name": "ASUS - X455LJ - Boardview Pack.zip",
+          "size": "170.2 KB",
+          "sizeBytes": 174263,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1c4Vn0xtUFd7MTErqxMJ4QH9sEmL4p5hm/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18824,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "X455YI",
+      "slug": "laptop-asus-x455yi",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus X455YI — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34364,
+          "type": "boardview",
+          "name": "ASUS - X455YI - Boardview Pack.zip",
+          "size": "164.4 KB",
+          "sizeBytes": 168366,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1O-nENp2Ghs6aRsTfR1iXAbL7LOap98aG/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18826,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "X540SC MB",
+      "slug": "laptop-asus-x540sc-mb",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus X540SC MB — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34366,
+          "type": "boardview",
+          "name": "ASUS - X540SC MB - Boardview.fz",
+          "size": "119.3 KB",
+          "sizeBytes": 122174,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1iN9CR0DcIEN-6d9ZOaZQ0g5n9QURJwm7/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18827,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "X550JD r20",
+      "slug": "laptop-asus-x550jd-r20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus X550JD r20 — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34367,
+          "type": "boardview",
+          "name": "ASUS - X550JD r20 - Boardview.fz",
+          "size": "169.6 KB",
+          "sizeBytes": 173668,
+          "gdrive_direct_url": "https://drive.google.com/file/d/120iSbW8r_-GMTOOOEjh1sUEPmAYAFg53/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18829,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "X550VX",
+      "slug": "laptop-asus-x550vx",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus X550VX — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34369,
+          "type": "boardview",
+          "name": "ASUS - X550VX - Boardview Pack.zip",
+          "size": "207 KB",
+          "sizeBytes": 211993,
+          "gdrive_direct_url": "https://drive.google.com/file/d/18BIUvHrm8BjIjV7EA7UAxtOB4n2Y3AE0/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18830,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "X550ZE 2.0",
+      "slug": "laptop-asus-x550ze-20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus X550ZE 2.0 — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34370,
+          "type": "boardview",
+          "name": "ASUS - X550ZE 2.0 - Boardview.fz",
+          "size": "137.7 KB",
+          "sizeBytes": 140991,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1b9HVDo_UVxrakH_v8ExvMk14IVZd93bP/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18831,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "X553MA",
+      "slug": "laptop-asus-x553ma",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus X553MA — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34371,
+          "type": "boardview",
+          "name": "ASUS - X553MA - Boardview Pack.zip",
+          "size": "110.9 KB",
+          "sizeBytes": 113583,
+          "gdrive_direct_url": "https://drive.google.com/file/d/116gh_uCg6iHE5NFIgxMY40Wkmauodm6A/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18832,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "X555DG",
+      "slug": "laptop-asus-x555dg",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus X555DG — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34372,
+          "type": "boardview",
+          "name": "ASUS - X555DG - Boardview Pack.zip",
+          "size": "156.4 KB",
+          "sizeBytes": 160107,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1EF573l4NDpy-Kf4juzjt4tLm2qc7ubCI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18833,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "X555LP",
+      "slug": "laptop-asus-x555lp",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus X555LP — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34373,
+          "type": "boardview",
+          "name": "ASUS - X555LP - Boardview Pack.zip",
+          "size": "157.7 KB",
+          "sizeBytes": 161460,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1yLhWBZm9GdU1QUyvsxlrwf_JsGykOBRQ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18834,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "X751LAB-LBLJ",
+      "slug": "laptop-asus-x751lab-lblj",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus X751LAB-LBLJ — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34374,
+          "type": "boardview",
+          "name": "ASUS - X751LAB-LBLJ - Boardview Pack.zip",
+          "size": "180.2 KB",
+          "sizeBytes": 184546,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1E0V4K8J81DdXdyRuShQvj7RBVBoPvYmi/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19126,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "asus 1015e",
+      "slug": "laptop-asus-asus-1015e",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus asus 1015e — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34707,
+          "type": "schematic",
+          "name": "ASUS - asus 1015e - Schematic.pdf",
+          "size": "861 KB",
+          "sizeBytes": 881685,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_6UzqRtJaxCK_Mq0z0bvuBXadXJZYGWL/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19148,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "asus 1015p2 r1.0g schematics",
+      "slug": "laptop-asus-asus-1015p2-r10g-schematics",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus asus 1015p2 r1.0g schematics — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34729,
+          "type": "schematic",
+          "name": "ASUS - asus 1015p2 r1.0g schematics - Schematic.pdf",
+          "size": "814.4 KB",
+          "sizeBytes": 833915,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ajgHiLIbr-13nYqippCbR5jjve4B9Fwl/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18825,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "x540lj (Asus X540LJ 2.0)",
+      "slug": "laptop-asus-x540lj-asus-x540lj-20",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus x540lj (Asus X540LJ 2.0) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34365,
+          "type": "boardview",
+          "name": "ASUS - x540lj - Asus X540LJ 2.0.fz",
+          "size": "133.2 KB",
+          "sizeBytes": 136385,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1VSdexMcG_lXWWCgOtJEMAYzHX4ziZdoF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18828,
+      "category": "laptop",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "x550jx",
+      "slug": "laptop-asus-x550jx",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Asus x550jx — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34368,
+          "type": "boardview",
+          "name": "ASUS - x550jx - Boardview Pack.zip",
+          "size": "206.2 KB",
+          "sizeBytes": 211113,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xt_aqihs368HvU4D65RkUCZn66NWGIx-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

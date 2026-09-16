@@ -1,0 +1,60 @@
+{
+  "category": "laptop",
+  "brand": "Advan",
+  "brandSlug": "advan",
+  "totalModels": 2,
+  "models": [
+    {
+      "id": 19101,
+      "category": "laptop",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "ADVAN X01i TOPSTAR X01 - REV B - 29SET2009",
+      "slug": "laptop-advan-advan-x01i-topstar-x01-rev-b-29set2009",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Advan ADVAN X01i TOPSTAR X01 - REV B - 29SET2009 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34674,
+          "type": "schematic",
+          "name": "ADVAN - ADVAN X01i TOPSTAR X01 - REV B - 29SET2009 - Schematic.pdf",
+          "size": "981.1 KB",
+          "sizeBytes": 1004688,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1rBm9Yj90K44MBgh3lc18dI7uvzI5ce74/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19102,
+      "category": "laptop",
+      "brand": "Advan",
+      "brandSlug": "advan",
+      "modelName": "Shuttle B11IE11 B1XIEXX revA",
+      "slug": "laptop-advan-shuttle-b11ie11-b1xiexx-reva",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Advan Shuttle B11IE11 B1XIEXX revA — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34675,
+          "type": "schematic",
+          "name": "ADVAN - Shuttle B11IE11 B1XIEXX revA - Schematic.pdf",
+          "size": "430.3 KB",
+          "sizeBytes": 440631,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1BScT_LwZ9v6YNJuoe7mMSM_s1odYdTrw/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

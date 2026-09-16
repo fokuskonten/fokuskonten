@@ -1,0 +1,70 @@
+{
+  "category": "hp",
+  "brand": "Inseego",
+  "brandSlug": "inseego",
+  "totalModels": 2,
+  "models": [
+    {
+      "id": 19701,
+      "category": "hp",
+      "brand": "Inseego",
+      "brandSlug": "inseego",
+      "modelName": "M3000",
+      "slug": "hp-inseego-m3000",
+      "chipset": "Snapdragon X65 5G",
+      "motherboardCode": "HWID: 001990E1",
+      "officialTitle": "Inseego M3000 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36004,
+          "type": "loader",
+          "name": "001990e100040000_d9357db88795b5a8_fhprg_sdx62_lemur_rm520n_gl.bin",
+          "size": "668 KB",
+          "sizeBytes": 684032,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1olDRqUKM1dEwXfSBiaW2uE_GTc1p38-s/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19698,
+      "category": "hp",
+      "brand": "Inseego",
+      "brandSlug": "inseego",
+      "modelName": "MiFi8800L",
+      "slug": "hp-inseego-mifi8800l",
+      "chipset": "Snapdragon X20 LTE modem",
+      "motherboardCode": "HWID: 0007D0E1",
+      "officialTitle": "Inseego MiFi8800L — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35999,
+          "type": "loader",
+          "name": "0007d0e100000000_36c886068d9a6634_enprg9x60p_tlt.bin",
+          "size": "101.9 KB",
+          "sizeBytes": 104348,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1XGkmpQCOzpKaPKEjbY1jirGaxpx4V3CW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 36000,
+          "type": "loader",
+          "name": "0007d0e100000000_cc3153a80293939b_enprg9x60p.bin",
+          "size": "101.9 KB",
+          "sizeBytes": 104348,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1IsFTucrwGCJq527_sZR2Ik0kQfYLeXrk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

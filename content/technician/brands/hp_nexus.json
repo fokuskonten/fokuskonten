@@ -1,0 +1,86 @@
+{
+  "category": "hp",
+  "brand": "Nexus",
+  "brandSlug": "nexus",
+  "totalModels": 3,
+  "models": [
+    {
+      "id": 19851,
+      "category": "hp",
+      "brand": "Nexus",
+      "brandSlug": "nexus",
+      "modelName": "NEXUS 5",
+      "slug": "hp-nexus-nexus-5",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Nexus NEXUS 5 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36180,
+          "type": "loader",
+          "name": "NEXUS 5.mbn",
+          "size": "74.2 KB",
+          "sizeBytes": 76016,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1FlWbfsl2qv7YUukbM2Ge1EzN0wfW3RFZ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19852,
+      "category": "hp",
+      "brand": "Nexus",
+      "brandSlug": "nexus",
+      "modelName": "NEXUS 6",
+      "slug": "hp-nexus-nexus-6",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Nexus NEXUS 6 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36181,
+          "type": "loader",
+          "name": "NEXUS 6.mbn",
+          "size": "57.8 KB",
+          "sizeBytes": 59224,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1l1JaRv7fkP4QxqH2RJ8OHENzPd12et7-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19850,
+      "category": "hp",
+      "brand": "Nexus",
+      "brandSlug": "nexus",
+      "modelName": "NEXUS 6 PRO",
+      "slug": "hp-nexus-nexus-6-pro",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Nexus NEXUS 6 PRO — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36179,
+          "type": "loader",
+          "name": "NEXUS 6 PRO.mbn",
+          "size": "298.3 KB",
+          "sizeBytes": 305504,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-Bvdpbf0mIAikHjznjGS_ghscakwKdUZ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

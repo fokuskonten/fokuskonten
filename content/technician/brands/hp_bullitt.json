@@ -1,0 +1,54 @@
+{
+  "category": "hp",
+  "brand": "Bullitt",
+  "brandSlug": "bullitt",
+  "totalModels": 1,
+  "models": [
+    {
+      "id": 19686,
+      "category": "hp",
+      "brand": "Bullitt",
+      "brandSlug": "bullitt",
+      "modelName": "Motorola Defy",
+      "slug": "hp-bullitt-motorola-defy",
+      "chipset": "Snapdragon 662",
+      "motherboardCode": "HWID: 0014D0E1",
+      "officialTitle": "Bullitt Motorola Defy — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35977,
+          "type": "loader",
+          "name": "0014d0e100000000_d40eee56f3194665_FHPRG.bin",
+          "size": "656.4 KB",
+          "sizeBytes": 672124,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1XK9CA8FkN1A0saF1VK39_f33wH5u4XIs/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35978,
+          "type": "loader",
+          "name": "0014d0e100000000_1bebe3863a6781db_fhprg.bin",
+          "size": "645.1 KB",
+          "sizeBytes": 660620,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1GTPJgu0RueKleo48Ya6sjB1RYOdg7_Zl/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35979,
+          "type": "loader",
+          "name": "0014d0e100720000_1bebe3863a6781db_fhprg.bin",
+          "size": "645.1 KB",
+          "sizeBytes": 660620,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1pVGTllEjpK78lenJhYf3r3twWspdWq88/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2400 @@
+{
+  "category": "laptop",
+  "brand": "HP",
+  "brandSlug": "hp",
+  "totalModels": 92,
+  "models": [
+    {
+      "id": 18838,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "0P2",
+      "slug": "laptop-hp-0p2",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP 0P2 — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34378,
+          "type": "boardview",
+          "name": "HP - 0P2 - Boardview.brd",
+          "size": "254.7 KB",
+          "sizeBytes": 260844,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1t1N9f0QFw24G0KJbcXRH-elrZDmC8xIJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18839,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "BOARDVIEW PANDA10-6050A2545601-MB-A02 HP M4 (PANDA10-6050A2545601-MB-A02 HP M4)",
+      "slug": "laptop-hp-boardview-panda10-6050a2545601-mb-a02-hp-m4-panda10-6050a2545601-mb-a02-hp-m4",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP BOARDVIEW PANDA10-6050A2545601-MB-A02 HP M4 (PANDA10-6050A2545601-MB-A02 HP M4) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34379,
+          "type": "boardview",
+          "name": "HP - BOARDVIEW PANDA10-6050A2545601-MB-A02 HP M4 - PANDA10-6050A2545601-MB-A02 HP M4.brd",
+          "size": "257.1 KB",
+          "sizeBytes": 263238,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1BhWpJnwlhtNVuG95Q8L9CALYt8qz42sU/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19276,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "CHICAGO HR HPC MV 0308 HP CQ43-PCH 430",
+      "slug": "laptop-hp-chicago-hr-hpc-mv-0308-hp-cq43-pch-430",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP CHICAGO HR HPC MV 0308 HP CQ43-PCH 430 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34861,
+          "type": "schematic",
+          "name": "HP-COMPAQ - CHICAGO HR HPC MV 0308 HP CQ43-PCH 430 - Schematic.pdf",
+          "size": "1 MB",
+          "sizeBytes": 1055481,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1SGziiS6KmcMucYA1l5Kz2HGj3uBu5Yr0/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19277,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "Compaq CQ42-CQ45-CQ62-QUANTA AX3 WINBLEDON AX3.5 - DA0AX3MB6C2 DDR3 - REV 1A",
+      "slug": "laptop-hp-compaq-cq42-cq45-cq62-quanta-ax3-winbledon-ax35-da0ax3mb6c2-ddr3-rev-1a",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "DA0AX3MB6C2",
+      "officialTitle": "HP Compaq CQ42-CQ45-CQ62-QUANTA AX3 WINBLEDON AX3.5 - DA0AX3MB6C2 DDR3 - REV 1A (DA0AX3MB6C2) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34862,
+          "type": "schematic",
+          "name": "HP-COMPAQ - Compaq CQ42-CQ45-CQ62-QUANTA AX3 WINBLEDON AX3.5 - DA0AX3MB6C2 DDR3 - REV 1A - Schematic.pdf",
+          "size": "1.1 MB",
+          "sizeBytes": 1175814,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Fhm93vzkPHsBO0nMUku93SdIfFbnVsWb/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19278,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "DV4 - CQ41 LA-4117P SCHEMATIC",
+      "slug": "laptop-hp-dv4-cq41-la-4117p-schematic",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-4117P",
+      "officialTitle": "HP DV4 - CQ41 LA-4117P SCHEMATIC (LA-4117P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34863,
+          "type": "schematic",
+          "name": "HP-COMPAQ - DV4 - CQ41 LA-4117P SCHEMATIC - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1298095,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19mmwWlpe_wVL-Ykvo2TFtTD4QiN_Vdl1/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19279,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "FOXCONN Edwards Nano",
+      "slug": "laptop-hp-foxconn-edwards-nano",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP FOXCONN Edwards Nano — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34864,
+          "type": "schematic",
+          "name": "HP-COMPAQ - FOXCONN Edwards Nano - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1211015,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Vjd_zPhe1KmHyNViU9ldZJ-BxUQhAzoM/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19281,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP - Quanta G31A - DAG31AMB6D0",
+      "slug": "laptop-hp-hp-quanta-g31a-dag31amb6d0",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP - Quanta G31A - DAG31AMB6D0 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34866,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP - Quanta G31A - DAG31AMB6D0 - Schematic.pdf",
+          "size": "2.7 MB",
+          "sizeBytes": 2879848,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wImhP3_DBZrzuIumipikgmjiR94qc_BF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19282,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP 15 - Quanta X12 - X12A - DAX12AMB6D0 Schematics (Quanta X12 6L r1A)",
+      "slug": "laptop-hp-hp-15-quanta-x12-x12a-dax12amb6d0-schematics-quanta-x12-6l-r1a",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP 15 - Quanta X12 - X12A - DAX12AMB6D0 Schematics (Quanta X12 6L r1A) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34867,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP 15 - Quanta X12 - X12A - DAX12AMB6D0 Schematics - Quanta X12 6L r1A - Schematic.pdf",
+          "size": "2.2 MB",
+          "sizeBytes": 2344865,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1q1eEFkiqb6V8XBoGl4b_AeMaZ9qW-ZvI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19284,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP 15 - Quanta X12 - X12A - DAX12AMB6D0 Schematics (X12 10L BDW N16S DUAL EDP 15B r1a 0226 ICT)",
+      "slug": "laptop-hp-hp-15-quanta-x12-x12a-dax12amb6d0-schematics-x12-10l-bdw-n16s-dual-edp-15b-r1a-0226-ict",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP 15 - Quanta X12 - X12A - DAX12AMB6D0 Schematics (X12 10L BDW N16S DUAL EDP 15B r1a 0226 ICT) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34869,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP 15 - Quanta X12 - X12A - DAX12AMB6D0 Schematics - X12 10L BDW N16S DUAL EDP 15B r1a 0226 ICT - Schematic.pdf",
+          "size": "4.2 MB",
+          "sizeBytes": 4428883,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1BWjCTeITHU_70L2XFBb57fZIwc1f1sjp/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19283,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP 15 - Quanta X12 - X12A - DAX12AMB6D0 Schematics (X12A-MB-6L-D)",
+      "slug": "laptop-hp-hp-15-quanta-x12-x12a-dax12amb6d0-schematics-x12a-mb-6l-d",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "X12A-MB-6L",
+      "officialTitle": "HP HP 15 - Quanta X12 - X12A - DAX12AMB6D0 Schematics (X12A-MB-6L-D) (X12A-MB-6L) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34868,
+          "type": "boardview",
+          "name": "HP-COMPAQ - HP 15 - Quanta X12 - X12A - DAX12AMB6D0 Schematics - X12A-MB-6L-D - Boardview.bdv",
+          "size": "875.2 KB",
+          "sizeBytes": 896229,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1YSv2j_78FY9ZEH3bDZLS1Fr50sSFxAEK/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19285,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP 15 - Quanta Y21A - DAY21AMB6D0",
+      "slug": "laptop-hp-hp-15-quanta-y21a-day21amb6d0",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP 15 - Quanta Y21A - DAY21AMB6D0 — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34870,
+          "type": "boardview",
+          "name": "HP-COMPAQ - HP 15 - Quanta Y21A - DAY21AMB6D0 - Boardview.bdv",
+          "size": "1 MB",
+          "sizeBytes": 1061441,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1k27LSkgznmKm9PwTHW1Nw5s-MhR7SgQA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19286,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP 250 G3 - ZSO50 LA-A992P - LA-A993P",
+      "slug": "laptop-hp-hp-250-g3-zso50-la-a992p-la-a993p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-A992P",
+      "officialTitle": "HP HP 250 G3 - ZSO50 LA-A992P - LA-A993P (LA-A992P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34871,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP 250 G3 - ZSO50 LA-A992P - LA-A993P - Schematic.pdf",
+          "size": "775 KB",
+          "sizeBytes": 793643,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uFl0_KEWYJUUHftLYvFbQC3rXuK88jFI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19288,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP 4431S 6050A2411501 - 6050A2465101",
+      "slug": "laptop-hp-hp-4431s-6050a2411501-6050a2465101",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP 4431S 6050A2411501 - 6050A2465101 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34873,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP 4431S 6050A2411501 - 6050A2465101 - Schematic.pdf",
+          "size": "888.4 KB",
+          "sizeBytes": 909767,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1rbE5K1MClmAh0CqtWpVemKAqgeW1UKph/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19287,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP 4431S 6050A2411501 - 6050A2465101 -ROXETTE SEYMOUR-XT",
+      "slug": "laptop-hp-hp-4431s-6050a2411501-6050a2465101-roxette-seymour-xt",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP 4431S 6050A2411501 - 6050A2465101 -ROXETTE SEYMOUR-XT — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34872,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP 4431S 6050A2411501 - 6050A2465101 -ROXETTE SEYMOUR-XT - Schematic.pdf",
+          "size": "888.4 KB",
+          "sizeBytes": 909767,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1cUJkqiEiolzRiN6-nc2csK19dfez2Kpd/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19289,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP 510 610 6050A2256501-MB-AO4",
+      "slug": "laptop-hp-hp-510-610-6050a2256501-mb-ao4",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP 510 610 6050A2256501-MB-AO4 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34874,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP 510 610 6050A2256501-MB-AO4 - Schematic.pdf",
+          "size": "654.4 KB",
+          "sizeBytes": 670155,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_1OGfQT7fclkgF-kEOe5PLyDBRM2lvHD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19290,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP AIO - Quanta N69 - DA0N69MB6E0",
+      "slug": "laptop-hp-hp-aio-quanta-n69-da0n69mb6e0",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "DA0N69MB6E0",
+      "officialTitle": "HP HP AIO - Quanta N69 - DA0N69MB6E0 (DA0N69MB6E0) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34875,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP AIO - Quanta N69 - DA0N69MB6E0 - Schematic.pdf",
+          "size": "1.7 MB",
+          "sizeBytes": 1806663,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1S-lNG47LKDZDKxd2cqF576fstT5BMq0K/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19291,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP B1200 (6050A2136401)",
+      "slug": "laptop-hp-hp-b1200-6050a2136401",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP B1200 (6050A2136401) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34876,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP B1200 (6050A2136401) - Schematic.pdf",
+          "size": "3.2 MB",
+          "sizeBytes": 3379162,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Z3e9PJzrahUw6nkOhTgeZYFTH280TzvD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19292,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP COMPAL LA-4732P UMA - REV 1.0",
+      "slug": "laptop-hp-hp-compal-la-4732p-uma-rev-10",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-4732P",
+      "officialTitle": "HP HP COMPAL LA-4732P UMA - REV 1.0 (LA-4732P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34877,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP COMPAL LA-4732P UMA - REV 1.0 - Schematic.pdf",
+          "size": "1.4 MB",
+          "sizeBytes": 1510352,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1IKqhcZ88oDyUjvbkM6x5xBGm2jSvTFaO/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19293,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP COMPAQ PRESARIO CQ42 - QUANTA AX1 - REV 1A",
+      "slug": "laptop-hp-hp-compaq-presario-cq42-quanta-ax1-rev-1a",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP COMPAQ PRESARIO CQ42 - QUANTA AX1 - REV 1A — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34878,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP COMPAQ PRESARIO CQ42 - QUANTA AX1 - REV 1A - Schematic.pdf",
+          "size": "1.5 MB",
+          "sizeBytes": 1536250,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1tqqWko6tJJ52DoRbxbOz0UTDOABS220S/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18840,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP COMPAQ PRESARIO CQ42 G42 QUANTA AX1 DIS UMA",
+      "slug": "laptop-hp-hp-compaq-presario-cq42-g42-quanta-ax1-dis-uma",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP COMPAQ PRESARIO CQ42 G42 QUANTA AX1 DIS UMA — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34380,
+          "type": "boardview",
+          "name": "HP - HP COMPAQ PRESARIO CQ42 G42 QUANTA AX1 DIS UMA - Boardview.brd",
+          "size": "300.4 KB",
+          "sizeBytes": 307605,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1D5BX5u70jaMlnjmKMNfTGPMXhslKxkpm/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19294,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP CQ43-HP 430 CHICAGO HR HPC MV (CHICAGO HR HPC MV 0308 HP CQ43-PCH 430)",
+      "slug": "laptop-hp-hp-cq43-hp-430-chicago-hr-hpc-mv-chicago-hr-hpc-mv-0308-hp-cq43-pch-430",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP CQ43-HP 430 CHICAGO HR HPC MV (CHICAGO HR HPC MV 0308 HP CQ43-PCH 430) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34879,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP CQ43-HP 430 CHICAGO HR HPC MV - CHICAGO HR HPC MV 0308 HP CQ43-PCH 430 - Schematic.pdf",
+          "size": "1 MB",
+          "sizeBytes": 1055481,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WA3cGKstulY_lZd0GnIyPkO5ebjILFOI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19335,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP Compaq CQ40 Intel Compal LA-4101P",
+      "slug": "laptop-hp-hp-compaq-cq40-intel-compal-la-4101p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-4101P",
+      "officialTitle": "HP HP Compaq CQ40 Intel Compal LA-4101P (LA-4101P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34920,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP Compaq CQ40 Intel Compal LA-4101P - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1718852,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1n9M88ZFvY57S8vKxtErT7hSkYGls2AxU/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19297,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP DAY11AMB6D0 - Y11A (Y11A day11amb6d0 X4 0214 0900)",
+      "slug": "laptop-hp-hp-day11amb6d0-y11a-y11a-day11amb6d0-x4-0214-0900",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP DAY11AMB6D0 - Y11A (Y11A day11amb6d0 X4 0214 0900) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34882,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP DAY11AMB6D0 - Y11A - Y11A day11amb6d0 X4 0214 0900 - Schematic.pdf",
+          "size": "1.4 MB",
+          "sizeBytes": 1481680,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hYZ4ASMmqhO5fnOS3Ywsl7Mp3dm5RoY_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19298,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP DAY11AMB6D0 - Y11A (Y11A day11amb6d0-MB-E)",
+      "slug": "laptop-hp-hp-day11amb6d0-y11a-y11a-day11amb6d0-mb-e",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP DAY11AMB6D0 - Y11A (Y11A day11amb6d0-MB-E) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34883,
+          "type": "boardview",
+          "name": "HP-COMPAQ - HP DAY11AMB6D0 - Y11A - Y11A day11amb6d0-MB-E - Boardview.bdv",
+          "size": "936 KB",
+          "sizeBytes": 958465,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Xoq7jrmQTayvQEjZ0wnKxq_ohwlWjboE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19296,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP DAY11AMB6D0 - Y11A (day11amb6d0-d-bella)",
+      "slug": "laptop-hp-hp-day11amb6d0-y11a-day11amb6d0-d-bella",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP DAY11AMB6D0 - Y11A (day11amb6d0-d-bella) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34881,
+          "type": "boardview",
+          "name": "HP-COMPAQ - HP DAY11AMB6D0 - Y11A - day11amb6d0-d-bella - Boardview.brd",
+          "size": "29.4 MB",
+          "sizeBytes": 30871560,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1qWkcbUI6laToYE8nHPXwH-5VsV7y7dk5/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19299,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP DM1,DV1 (DA0NM9MB6D0) brazos mv 0727 HP DM1",
+      "slug": "laptop-hp-hp-dm1dv1-da0nm9mb6d0-brazos-mv-0727-hp-dm1",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "DA0NM9MB6D0",
+      "officialTitle": "HP HP DM1,DV1 (DA0NM9MB6D0) brazos mv 0727 HP DM1 (DA0NM9MB6D0) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34884,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP DM1,DV1 (DA0NM9MB6D0) brazos mv 0727 HP DM1 - Schematic.pdf",
+          "size": "993.6 KB",
+          "sizeBytes": 1017493,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1R6fmdYT0ccGWL_D1Zc_ZLTbMp4bOuDNC/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19300,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP DV4 NAL70(NCL70) DIS LA-4107P 1109",
+      "slug": "laptop-hp-hp-dv4-nal70ncl70-dis-la-4107p-1109",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-4107P",
+      "officialTitle": "HP HP DV4 NAL70(NCL70) DIS LA-4107P 1109 (LA-4107P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34885,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP DV4 NAL70(NCL70) DIS LA-4107P 1109 - Schematic.pdf",
+          "size": "2 MB",
+          "sizeBytes": 2106404,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1y0xby1T5FUfGq5FH2USIK5ycIdppX5rQ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19301,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP DV6000 AT1 AT2A DISCRETE FF HYN (31AT2MB0030) 12-27-06[1]",
+      "slug": "laptop-hp-hp-dv6000-at1-at2a-discrete-ff-hyn-31at2mb0030-12-27-061",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP DV6000 AT1 AT2A DISCRETE FF HYN (31AT2MB0030) 12-27-06[1] — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34886,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP DV6000 AT1 AT2A DISCRETE FF HYN (31AT2MB0030) 12-27-06[1] - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1347072,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wNqEJPvxvIH_UwLlmhJqgZvMiPSCUsl0/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19302,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP Elitebook 2540P - COMPAL LA-5251P SWATCH-UMA - REV 0.9",
+      "slug": "laptop-hp-hp-elitebook-2540p-compal-la-5251p-swatch-uma-rev-09",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-5251P",
+      "officialTitle": "HP HP Elitebook 2540P - COMPAL LA-5251P SWATCH-UMA - REV 0.9 (LA-5251P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34887,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP Elitebook 2540P - COMPAL LA-5251P SWATCH-UMA - REV 0.9 - Schematic.pdf",
+          "size": "1.4 MB",
+          "sizeBytes": 1426752,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1GXyTc9HBxODg8RbCMF7tVz13G8SmuyN-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19303,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP Elitebook 8460P ( Clash UMA 6050A2398701)",
+      "slug": "laptop-hp-hp-elitebook-8460p-clash-uma-6050a2398701",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP Elitebook 8460P ( Clash UMA 6050A2398701) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34888,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP Elitebook 8460P ( Clash UMA 6050A2398701) - Schematic.pdf",
+          "size": "853.8 KB",
+          "sizeBytes": 874327,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1df_lbMW_JQ1f4ii0DvFJJTBUCA6epiky/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19304,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP Envy m6-k010dx - VPU11 LA-9851P (LA-9851P)",
+      "slug": "laptop-hp-hp-envy-m6-k010dx-vpu11-la-9851p-la-9851p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-9851P",
+      "officialTitle": "HP HP Envy m6-k010dx - VPU11 LA-9851P (LA-9851P) (LA-9851P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34889,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP Envy m6-k010dx - VPU11 LA-9851P - LA-9851P - Schematic.pdf",
+          "size": "1 MB",
+          "sizeBytes": 1051893,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1gEUC_dQvQwxL8O2G9sJPkIgTRlZQwFHq/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19305,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP Envy m6-k010dx - VPU11 LA-9851P (LS-9313P IO BOARD)",
+      "slug": "laptop-hp-hp-envy-m6-k010dx-vpu11-la-9851p-ls-9313p-io-board",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-9851P",
+      "officialTitle": "HP HP Envy m6-k010dx - VPU11 LA-9851P (LS-9313P IO BOARD) (LA-9851P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34890,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP Envy m6-k010dx - VPU11 LA-9851P - LS-9313P IO BOARD - Schematic.pdf",
+          "size": "136.9 KB",
+          "sizeBytes": 140199,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Amtuads-7VjlzYyVqzW2ZYwFMhACBx2_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19306,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP Envy m6-k010dx - VPU11 LA-9851P (LS-9314P power btn)",
+      "slug": "laptop-hp-hp-envy-m6-k010dx-vpu11-la-9851p-ls-9314p-power-btn",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-9851P",
+      "officialTitle": "HP HP Envy m6-k010dx - VPU11 LA-9851P (LS-9314P power btn) (LA-9851P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34891,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP Envy m6-k010dx - VPU11 LA-9851P - LS-9314P power btn - Schematic.pdf",
+          "size": "52.1 KB",
+          "sizeBytes": 53303,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1YOH4EI-Ghrq5SYXAXlVFcXrxnsUskyoo/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19307,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP Envy m6-k010dx - VPU11 LA-9851P (LS-9851P Card ReaderBOARD)",
+      "slug": "laptop-hp-hp-envy-m6-k010dx-vpu11-la-9851p-ls-9851p-card-readerboard",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-9851P",
+      "officialTitle": "HP HP Envy m6-k010dx - VPU11 LA-9851P (LS-9851P Card ReaderBOARD) (LA-9851P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34892,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP Envy m6-k010dx - VPU11 LA-9851P - LS-9851P Card ReaderBOARD - Schematic.pdf",
+          "size": "118.5 KB",
+          "sizeBytes": 121394,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1e1OVbf5lcYXvfVNLKB8-hTBcfy3_caFi/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19308,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP G62 COMPAQ PRESARIO CQ62 - QUANTA AX2 7 - REV 1A",
+      "slug": "laptop-hp-hp-g62-compaq-presario-cq62-quanta-ax2-7-rev-1a",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP G62 COMPAQ PRESARIO CQ62 - QUANTA AX2 7 - REV 1A — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34893,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP G62 COMPAQ PRESARIO CQ62 - QUANTA AX2 7 - REV 1A - Schematic.pdf",
+          "size": "1.5 MB",
+          "sizeBytes": 1529423,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1UnWXptLNwpB1gjo-ff5Cn0wCbAjtMmaN/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19309,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP INVENTEC PANDA10 6050A2545601 (HP M4 INVENTEC PANDA10-6050A2545601)",
+      "slug": "laptop-hp-hp-inventec-panda10-6050a2545601-hp-m4-inventec-panda10-6050a2545601",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP INVENTEC PANDA10 6050A2545601 (HP M4 INVENTEC PANDA10-6050A2545601) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34894,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP INVENTEC PANDA10 6050A2545601 - HP M4 INVENTEC PANDA10-6050A2545601 - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1718328,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1vSppk1rlee0CK6nxrGgosQRb-rzhyfln/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19310,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP INVENTEC PANDA10 6050A2545601 (PANDA10-6050A2545601-MB-A02 HP M4)",
+      "slug": "laptop-hp-hp-inventec-panda10-6050a2545601-panda10-6050a2545601-mb-a02-hp-m4",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP INVENTEC PANDA10 6050A2545601 (PANDA10-6050A2545601-MB-A02 HP M4) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34895,
+          "type": "boardview",
+          "name": "HP-COMPAQ - HP INVENTEC PANDA10 6050A2545601 - PANDA10-6050A2545601-MB-A02 HP M4 - Boardview.brd",
+          "size": "257.1 KB",
+          "sizeBytes": 263238,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1bZVAbvuep85wvHarDRBsr6w0NEqnftwc/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19311,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP Mini 210 NM6 (DDR3)",
+      "slug": "laptop-hp-hp-mini-210-nm6-ddr3",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP Mini 210 NM6 (DDR3) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34896,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP Mini 210 NM6 (DDR3) - Schematic.pdf",
+          "size": "885.4 KB",
+          "sizeBytes": 906689,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ghFB8F6OYMZ33srYhtZfh1wJ59JSwta-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19312,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP Mini 210 NM6 Schematic (DDR2).PDF",
+      "slug": "laptop-hp-hp-mini-210-nm6-schematic-ddr2pdf",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP Mini 210 NM6 Schematic (DDR2).PDF — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34897,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP Mini 210 NM6 Schematic (DDR2).PDF - Schematic.pdf",
+          "size": "1.1 MB",
+          "sizeBytes": 1138670,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1RNny2ecCubaWEZn8kYlzsA7tfkTp08ji/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19325,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP PAVILION G4 R13 UMA-DIS",
+      "slug": "laptop-hp-hp-pavilion-g4-r13-uma-dis",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP PAVILION G4 R13 UMA-DIS — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34910,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP PAVILION G4 R13 UMA-DIS - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1346159,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1r3zxPO8eKaKcjat5TlBU6qE9TCv4hQJj/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19313,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP Pavilion 13-a series - Quanta Y72 - DA0Y72MB6C0 (HP Pavilion 13-a series - Quanta Y72 - DA0Y72MB6C0)",
+      "slug": "laptop-hp-hp-pavilion-13-a-series-quanta-y72-da0y72mb6c0-hp-pavilion-13-a-series-quanta-y72-da0y72mb6c0",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "DA0Y72MB6C0",
+      "officialTitle": "HP HP Pavilion 13-a series - Quanta Y72 - DA0Y72MB6C0 (HP Pavilion 13-a series - Quanta Y72 - DA0Y72MB6C0) (DA0Y72MB6C0) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34898,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP Pavilion 13-a series - Quanta Y72 - DA0Y72MB6C0 - HP Pavilion 13-a series - Quanta Y72 - DA0Y72MB6C0 - Schematic.pdf",
+          "size": "3.4 MB",
+          "sizeBytes": 3546713,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1EWGznvvF38t26uDEUsyYS6QCeCCIlkgy/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19314,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP Pavilion 13-a series - Quanta Y72 - DA0Y72MB6C0 (Quanta Y72)",
+      "slug": "laptop-hp-hp-pavilion-13-a-series-quanta-y72-da0y72mb6c0-quanta-y72",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "DA0Y72MB6C0",
+      "officialTitle": "HP HP Pavilion 13-a series - Quanta Y72 - DA0Y72MB6C0 (Quanta Y72) (DA0Y72MB6C0) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34899,
+          "type": "boardview",
+          "name": "HP-COMPAQ - HP Pavilion 13-a series - Quanta Y72 - DA0Y72MB6C0 - Quanta Y72 - Boardview.bdv",
+          "size": "685 KB",
+          "sizeBytes": 701491,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dXu3ZbyaSDQIB_TUK2AWul9V-92HsXh4/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19315,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP Pavilion 14 - Quanta U33 Volks UMA - DIS",
+      "slug": "laptop-hp-hp-pavilion-14-quanta-u33-volks-uma-dis",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP Pavilion 14 - Quanta U33 Volks UMA - DIS — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34900,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP Pavilion 14 - Quanta U33 Volks UMA - DIS - Schematic.pdf",
+          "size": "988.3 KB",
+          "sizeBytes": 1012040,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HSGX70x_4qFF9DHacJHbJKutdrIskK7Q/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19316,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP Pavilion 15 - LA-A996P",
+      "slug": "laptop-hp-hp-pavilion-15-la-a996p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-A996P",
+      "officialTitle": "HP HP Pavilion 15 - LA-A996P (LA-A996P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34901,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP Pavilion 15 - LA-A996P - Schematic.pdf",
+          "size": "857.7 KB",
+          "sizeBytes": 878293,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1i3o8xw0zNPjgF6rroS-nMfgvcE2WRBpj/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19319,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP Pavilion 15 - Quanta Y21A - DAY21AMB6D0 (Quanta Y21A DAY21AMB6D0 r1a Kaveri 14022014 HP Pavilion 15-P263CA)",
+      "slug": "laptop-hp-hp-pavilion-15-quanta-y21a-day21amb6d0-quanta-y21a-day21amb6d0-r1a-kaveri-14022014-hp-pavilion-15-p263ca",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP Pavilion 15 - Quanta Y21A - DAY21AMB6D0 (Quanta Y21A DAY21AMB6D0 r1a Kaveri 14022014 HP Pavilion 15-P263CA) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34904,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP Pavilion 15 - Quanta Y21A - DAY21AMB6D0 - Quanta Y21A DAY21AMB6D0 r1a Kaveri 14022014 HP Pavilion 15-P263CA - Schematic.pdf",
+          "size": "4.7 MB",
+          "sizeBytes": 4921783,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15dV3J4Ksgz4KGPKy596WbbST9RNZ1LmO/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19317,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP Pavilion 15 - Quanta Y21A - DAY21AMB6D0 (Quanta Y21A-MB-C)",
+      "slug": "laptop-hp-hp-pavilion-15-quanta-y21a-day21amb6d0-quanta-y21a-mb-c",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "Y21A-MB-C",
+      "officialTitle": "HP HP Pavilion 15 - Quanta Y21A - DAY21AMB6D0 (Quanta Y21A-MB-C) (Y21A-MB-C) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34902,
+          "type": "boardview",
+          "name": "HP-COMPAQ - HP Pavilion 15 - Quanta Y21A - DAY21AMB6D0 - Quanta Y21A-MB-C - Boardview.bdv",
+          "size": "1 MB",
+          "sizeBytes": 1061441,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uXkmIOdo6ooDDP3rZumxQd718g-yUkLj/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19318,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP Pavilion 15 - Quanta Y21A - DAY21AMB6D0 (Quanta Y21A-MB-D)",
+      "slug": "laptop-hp-hp-pavilion-15-quanta-y21a-day21amb6d0-quanta-y21a-mb-d",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "Y21A-MB-D",
+      "officialTitle": "HP HP Pavilion 15 - Quanta Y21A - DAY21AMB6D0 (Quanta Y21A-MB-D) (Y21A-MB-D) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34903,
+          "type": "boardview",
+          "name": "HP-COMPAQ - HP Pavilion 15 - Quanta Y21A - DAY21AMB6D0 - Quanta Y21A-MB-D - Boardview.bdv",
+          "size": "1 MB",
+          "sizeBytes": 1074248,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PAz0d7M7wLCeqLbC-2cFeyKfIffN5Z_T/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19320,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP Pavilion 15 series Quanta R62",
+      "slug": "laptop-hp-hp-pavilion-15-series-quanta-r62",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP Pavilion 15 series Quanta R62 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34905,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP Pavilion 15 series Quanta R62 - Schematic.pdf",
+          "size": "2.4 MB",
+          "sizeBytes": 2544182,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14QLuGQgmY43azBwAlIstnn16rXmJizhi/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19321,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP Pavilion 17-f000sr Y22A BEEMA TOPAZ HYNIX 2G 0324 ERD",
+      "slug": "laptop-hp-hp-pavilion-17-f000sr-y22a-beema-topaz-hynix-2g-0324-erd",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP Pavilion 17-f000sr Y22A BEEMA TOPAZ HYNIX 2G 0324 ERD — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34906,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP Pavilion 17-f000sr Y22A BEEMA TOPAZ HYNIX 2G 0324 ERD - Schematic.pdf",
+          "size": "1.4 MB",
+          "sizeBytes": 1470606,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1NyTmSPn4I5lRafbAhW3Znb-LMxdFNiFa/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19322,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP Pavilion 23 - Quanta N61A - DAN61AMB6F0",
+      "slug": "laptop-hp-hp-pavilion-23-quanta-n61a-dan61amb6f0",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP Pavilion 23 - Quanta N61A - DAN61AMB6F0 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34907,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP Pavilion 23 - Quanta N61A - DAN61AMB6F0 - Schematic.pdf",
+          "size": "4.4 MB",
+          "sizeBytes": 4570091,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DiLdI7vpGRR5oEilLFq-4EVjtJdJFTZR/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19323,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP Pavilion DM3 - HPMH-40GAB4000-D000 - REV D",
+      "slug": "laptop-hp-hp-pavilion-dm3-hpmh-40gab4000-d000-rev-d",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP Pavilion DM3 - HPMH-40GAB4000-D000 - REV D — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34908,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP Pavilion DM3 - HPMH-40GAB4000-D000 - REV D - Schematic.pdf",
+          "size": "744.6 KB",
+          "sizeBytes": 762453,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1K1GUSidePCPJ6jgOL0GYUkZV9TUWFRLb/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19324,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP Pavilion DV4 Compaq Presario CQ41 (Compal LA-4106P) laptop schematics",
+      "slug": "laptop-hp-hp-pavilion-dv4-compaq-presario-cq41-compal-la-4106p-laptop-schematics",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-4106P",
+      "officialTitle": "HP HP Pavilion DV4 Compaq Presario CQ41 (Compal LA-4106P) laptop schematics (LA-4106P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34909,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP Pavilion DV4 Compaq Presario CQ41 (Compal LA-4106P) laptop schematics - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1300946,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1EfyqmDYDXtgGqdIuK9ufAsedk72AzJrs/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19326,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP ProBook 430 G3 - Quanta X61 - DA0X61MB6G0",
+      "slug": "laptop-hp-hp-probook-430-g3-quanta-x61-da0x61mb6g0",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "DA0X61MB6G0",
+      "officialTitle": "HP HP ProBook 430 G3 - Quanta X61 - DA0X61MB6G0 (DA0X61MB6G0) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34911,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP ProBook 430 G3 - Quanta X61 - DA0X61MB6G0 - Schematic.pdf",
+          "size": "5.4 MB",
+          "sizeBytes": 5690942,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1SucMpjG0jf9Cw4ZFVOAymNZSC0bjL8R_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19327,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP ProBook 440 G4 - DA0X81MB6E0 - X81",
+      "slug": "laptop-hp-hp-probook-440-g4-da0x81mb6e0-x81",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "DA0X81MB6E0",
+      "officialTitle": "HP HP ProBook 440 G4 - DA0X81MB6E0 - X81 (DA0X81MB6E0) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34912,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP ProBook 440 G4 - DA0X81MB6E0 - X81 - Schematic.pdf",
+          "size": "3.3 MB",
+          "sizeBytes": 3511291,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1nIP-wyW9_oLzwk2cscvRxE5XNgji8XGB/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19328,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP ProBook 450 G3 - DAX63CMB6D - X63C Schematic (DAX63CMB6D - X63C)",
+      "slug": "laptop-hp-hp-probook-450-g3-dax63cmb6d-x63c-schematic-dax63cmb6d-x63c",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP ProBook 450 G3 - DAX63CMB6D - X63C Schematic (DAX63CMB6D - X63C) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34913,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP ProBook 450 G3 - DAX63CMB6D - X63C Schematic - DAX63CMB6D - X63C - Schematic.pdf",
+          "size": "7.6 MB",
+          "sizeBytes": 8020170,
+          "gdrive_direct_url": "https://drive.google.com/file/d/10SxVJp_SnuzYvJgjl_vn6S1qM26TYAEW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19329,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP ProBook 450 G3 - DAX63CMB6D - X63C Schematic (Quanta X63C)",
+      "slug": "laptop-hp-hp-probook-450-g3-dax63cmb6d-x63c-schematic-quanta-x63c",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP ProBook 450 G3 - DAX63CMB6D - X63C Schematic (Quanta X63C) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34914,
+          "type": "boardview",
+          "name": "HP-COMPAQ - HP ProBook 450 G3 - DAX63CMB6D - X63C Schematic - Quanta X63C - Boardview.bdv",
+          "size": "1.1 MB",
+          "sizeBytes": 1116450,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1OoQUqsyCRC3rvOvui61-_7T5tGgMv5cN/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19330,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP Spectre X360 - Quanta X32 - DA0X32MBAG0",
+      "slug": "laptop-hp-hp-spectre-x360-quanta-x32-da0x32mbag0",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "DA0X32MBAG0",
+      "officialTitle": "HP HP Spectre X360 - Quanta X32 - DA0X32MBAG0 (DA0X32MBAG0) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34915,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP Spectre X360 - Quanta X32 - DA0X32MBAG0 - Schematic.pdf",
+          "size": "2 MB",
+          "sizeBytes": 2115839,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1tL3L2G6obec_uX_RfRm7Lz1SJma25S2R/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19331,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP Stream 11-d000 - Quanta Y0A PUNCH BTM 6L r1a 0721 HP Stream 11-d000",
+      "slug": "laptop-hp-hp-stream-11-d000-quanta-y0a-punch-btm-6l-r1a-0721-hp-stream-11-d000",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP Stream 11-d000 - Quanta Y0A PUNCH BTM 6L r1a 0721 HP Stream 11-d000 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34916,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP Stream 11-d000 - Quanta Y0A PUNCH BTM 6L r1a 0721 HP Stream 11-d000 - Schematic.pdf",
+          "size": "1.8 MB",
+          "sizeBytes": 1838957,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1sHC4LacGxdUDV1eGpsAFjIXDaTsZ_qFf/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19332,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP TouchSmart 520 - Pegatron IPISB-NK Skema",
+      "slug": "laptop-hp-hp-touchsmart-520-pegatron-ipisb-nk-skema",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP TouchSmart 520 - Pegatron IPISB-NK Skema — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34917,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP TouchSmart 520 - Pegatron IPISB-NK Skema - Schematic.pdf",
+          "size": "1018 KB",
+          "sizeBytes": 1042408,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1C9_OokxEMAz8hGIpBEG9CmdXoAX0nEOP/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19333,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HP4411S-DDR3 6050A2297301-MB-A02 SS09C15 S-SERIES 2009 INVICTA (Intel-Discrete)-cycle15-DDR3",
+      "slug": "laptop-hp-hp4411s-ddr3-6050a2297301-mb-a02-ss09c15-s-series-2009-invicta-intel-discrete-cycle15-ddr3",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HP4411S-DDR3 6050A2297301-MB-A02 SS09C15 S-SERIES 2009 INVICTA (Intel-Discrete)-cycle15-DDR3 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34918,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HP4411S-DDR3 6050A2297301-MB-A02 SS09C15 S-SERIES 2009 INVICTA (Intel-Discrete)-cycle15-DDR3 - Schematic.pdf",
+          "size": "1 MB",
+          "sizeBytes": 1082566,
+          "gdrive_direct_url": "https://drive.google.com/file/d/101HxBZ2nIv3KHwT0vE7pTLQTH2vu7ju-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19334,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "HPMH-40GAB4000-D000 - REV D",
+      "slug": "laptop-hp-hpmh-40gab4000-d000-rev-d",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP HPMH-40GAB4000-D000 - REV D — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34919,
+          "type": "schematic",
+          "name": "HP-COMPAQ - HPMH-40GAB4000-D000 - REV D - Schematic.pdf",
+          "size": "744.6 KB",
+          "sizeBytes": 762453,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1otxa5Y46FBemVvdWYk2vdFfBKr4SXI7s/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19280,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "Harvey 14 6050A2493101-MB skema",
+      "slug": "laptop-hp-harvey-14-6050a2493101-mb-skema",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP Harvey 14 6050A2493101-MB skema — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34865,
+          "type": "schematic",
+          "name": "HP-COMPAQ - Harvey 14 6050A2493101-MB skema - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1350344,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1P0l38L42xuVVyCNnS1tqSFcWuH5-U1oh/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19295,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "Hp DA0R33MB6F1- R33 Skema",
+      "slug": "laptop-hp-hp-da0r33mb6f1-r33-skema",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "DA0R33MB6F1",
+      "officialTitle": "HP Hp DA0R33MB6F1- R33 Skema (DA0R33MB6F1) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34880,
+          "type": "schematic",
+          "name": "HP-COMPAQ - Hp DA0R33MB6F1- R33 Skema - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1630916,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Awg6Fo_7RcwJoDdoTs5u7x3FtN2l9mod/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18841,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "INVENTEC Danzka Dubra 08 DD08-6050A2154101-MB-AX1-2 - BoardView (INVENTEC Danzka Dubra 08 DD08-6050A2154101-MB-AX1-2 - BoardView.F2B)",
+      "slug": "laptop-hp-inventec-danzka-dubra-08-dd08-6050a2154101-mb-ax1-2-boardview-inventec-danzka-dubra-08-dd08-6050a2154101-mb-ax1-2-boardviewf2b",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP INVENTEC Danzka Dubra 08 DD08-6050A2154101-MB-AX1-2 - BoardView (INVENTEC Danzka Dubra 08 DD08-6050A2154101-MB-AX1-2 - BoardView.F2B) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34381,
+          "type": "boardview",
+          "name": "HP - INVENTEC Danzka Dubra 08 DD08-6050A2154101-MB-AX1-2 - BoardView - INVENTEC Danzka Dubra 08 DD08-6050A2154101-MB-AX1-2 - BoardView.F2B.f2b",
+          "size": "2.8 MB",
+          "sizeBytes": 2982093,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1j7KjekIDjFkbwM_4lxBsTA0yd3HJH-DS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18842,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "INVENTEC Danzka Dubra 08 DD08-6050A2154101-MB-AX1-2 - BoardView.F2B",
+      "slug": "laptop-hp-inventec-danzka-dubra-08-dd08-6050a2154101-mb-ax1-2-boardviewf2b",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP INVENTEC Danzka Dubra 08 DD08-6050A2154101-MB-AX1-2 - BoardView.F2B — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34382,
+          "type": "boardview",
+          "name": "HP - INVENTEC Danzka Dubra 08 DD08-6050A2154101-MB-AX1-2 - BoardView.F2B - Boardview.f2b",
+          "size": "2.8 MB",
+          "sizeBytes": 2982093,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1nbawIjDK6Ov2Gm_uWL-mRZLW_pLfgDFN/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19336,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "Inventec DDD - 6050A2137801 - 6050A2137901 - 6050A2151601 (6050A2137801-MB Inventec DDD Discrete GDDR2, Build PV, rA01)",
+      "slug": "laptop-hp-inventec-ddd-6050a2137801-6050a2137901-6050a2151601-6050a2137801-mb-inventec-ddd-discrete-gddr2-build-pv-ra01",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP Inventec DDD - 6050A2137801 - 6050A2137901 - 6050A2151601 (6050A2137801-MB Inventec DDD Discrete GDDR2, Build PV, rA01) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34921,
+          "type": "schematic",
+          "name": "HP-COMPAQ - Inventec DDD - 6050A2137801 - 6050A2137901 - 6050A2151601 - 6050A2137801-MB Inventec DDD Discrete GDDR2, Build PV, rA01 - Schematic.pdf",
+          "size": "1.1 MB",
+          "sizeBytes": 1174076,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1j9PGXg-M0EtTGGGVX7ZdhMBpmtgwqazB/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19337,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "Inventec DDD - 6050A2137801 - 6050A2137901 - 6050A2151601 (6050A2137901-MB Inventec DDD UMA, Build SI (Final), rAX1)",
+      "slug": "laptop-hp-inventec-ddd-6050a2137801-6050a2137901-6050a2151601-6050a2137901-mb-inventec-ddd-uma-build-si-final-rax1",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP Inventec DDD - 6050A2137801 - 6050A2137901 - 6050A2151601 (6050A2137901-MB Inventec DDD UMA, Build SI (Final), rAX1) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34922,
+          "type": "schematic",
+          "name": "HP-COMPAQ - Inventec DDD - 6050A2137801 - 6050A2137901 - 6050A2151601 - 6050A2137901-MB Inventec DDD UMA, Build SI (Final), rAX1 - Schematic.pdf",
+          "size": "1 MB",
+          "sizeBytes": 1051287,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uC2AHtd5EBMGosK8hiyZiy2gnLivHNVD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19338,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "Inventec DDD - 6050A2137801 - 6050A2137901 - 6050A2151601 (6050A2151601-MB Inventec DDD Discrete GDDR1, Build PV, rA01)",
+      "slug": "laptop-hp-inventec-ddd-6050a2137801-6050a2137901-6050a2151601-6050a2151601-mb-inventec-ddd-discrete-gddr1-build-pv-ra01",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP Inventec DDD - 6050A2137801 - 6050A2137901 - 6050A2151601 (6050A2151601-MB Inventec DDD Discrete GDDR1, Build PV, rA01) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34923,
+          "type": "schematic",
+          "name": "HP-COMPAQ - Inventec DDD - 6050A2137801 - 6050A2137901 - 6050A2151601 - 6050A2151601-MB Inventec DDD Discrete GDDR1, Build PV, rA01 - Schematic.pdf",
+          "size": "915.1 KB",
+          "sizeBytes": 937085,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1iCSCv32Xg8eU57C_hkjYjSq3n8ZgzoCz/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19339,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "Inventec KF14BR 6050A2449701 rB",
+      "slug": "laptop-hp-inventec-kf14br-6050a2449701-rb",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP Inventec KF14BR 6050A2449701 rB — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34924,
+          "type": "schematic",
+          "name": "HP-COMPAQ - Inventec KF14BR 6050A2449701 rB - Schematic.pdf",
+          "size": "759.9 KB",
+          "sizeBytes": 778095,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1SDFfqUxDRGB7mHCeQ32MJRIAcl1f9jsw/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19340,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "Inventec LUKE20 6050A2345301 PV rA01",
+      "slug": "laptop-hp-inventec-luke20-6050a2345301-pv-ra01",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP Inventec LUKE20 6050A2345301 PV rA01 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34925,
+          "type": "schematic",
+          "name": "HP-COMPAQ - Inventec LUKE20 6050A2345301 PV rA01 - Schematic.pdf",
+          "size": "902 KB",
+          "sizeBytes": 923625,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1UHWMZFrCOqq6ViEnn7k1Qj6dOzRlZplS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19341,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "LA-4103P cq40",
+      "slug": "laptop-hp-la-4103p-cq40",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-4103P",
+      "officialTitle": "HP LA-4103P cq40 (LA-4103P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34926,
+          "type": "schematic",
+          "name": "HP-COMPAQ - LA-4103P cq40 - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1295404,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1CmA_BD65vICC2C4W2CX_CbiZNLZqIex7/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19342,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "LA-4731P R0.1 0213 HP CQ35 DIS",
+      "slug": "laptop-hp-la-4731p-r01-0213-hp-cq35-dis",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-4731P",
+      "officialTitle": "HP LA-4731P R0.1 0213 HP CQ35 DIS (LA-4731P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34927,
+          "type": "schematic",
+          "name": "HP-COMPAQ - LA-4731P R0.1 0213 HP CQ35 DIS - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1676978,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1LOPM5yy4Gn-xxzzDtCjCNEiim3OUZd5G/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19344,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "LA-A992P",
+      "slug": "laptop-hp-la-a992p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-A992P",
+      "officialTitle": "HP LA-A992P (LA-A992P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34929,
+          "type": "schematic",
+          "name": "HP-COMPAQ - LA-A992P - Schematic.pdf",
+          "size": "1.1 MB",
+          "sizeBytes": 1135583,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Mf3HEue6RBISi4Mkam4GqWR51skQhuDy/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19345,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "LA-A995P.PDF",
+      "slug": "laptop-hp-la-a995ppdf",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-A995P",
+      "officialTitle": "HP LA-A995P.PDF (LA-A995P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34930,
+          "type": "schematic",
+          "name": "HP-COMPAQ - LA-A995P.PDF - Schematic.pdf",
+          "size": "982.6 KB",
+          "sizeBytes": 1006188,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1aPqJJsw7-uYME8qfnYEvprP7JKmG1b-8/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18843,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "PANDA10-6050A2545601-MB-A02 HP M4",
+      "slug": "laptop-hp-panda10-6050a2545601-mb-a02-hp-m4",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP PANDA10-6050A2545601-MB-A02 HP M4 — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34383,
+          "type": "boardview",
+          "name": "HP - PANDA10-6050A2545601-MB-A02 HP M4 - Boardview.brd",
+          "size": "257.1 KB",
+          "sizeBytes": 263238,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dXYEQbEMxpGgO_YBDGJ1s1KVlRKpoCsa/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19346,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "PROBOOK 440 G3 - DAX61CMB6C0 - X61C Schematic",
+      "slug": "laptop-hp-probook-440-g3-dax61cmb6c0-x61c-schematic",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP PROBOOK 440 G3 - DAX61CMB6C0 - X61C Schematic — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34931,
+          "type": "schematic",
+          "name": "HP-COMPAQ - PROBOOK 440 G3 - DAX61CMB6C0 - X61C Schematic - Schematic.pdf",
+          "size": "3.6 MB",
+          "sizeBytes": 3731626,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1vRKfTv70VJhjef5p3UouDRtqpveWpRjH/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19352,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "QUANTA R18D",
+      "slug": "laptop-hp-quanta-r18d",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP QUANTA R18D — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34937,
+          "type": "schematic",
+          "name": "HP-COMPAQ - QUANTA R18D - Schematic.pdf",
+          "size": "1 MB",
+          "sizeBytes": 1081101,
+          "gdrive_direct_url": "https://drive.google.com/file/d/10wZENB-JOH-CzRlJ9AswhF7TjaihQx63/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19347,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "Quanta 0P1",
+      "slug": "laptop-hp-quanta-0p1",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP Quanta 0P1 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34932,
+          "type": "schematic",
+          "name": "HP-COMPAQ - Quanta 0P1 - Schematic.pdf",
+          "size": "1.8 MB",
+          "sizeBytes": 1840451,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1FT_YfqxZn9DPxuFt5x-Z3GhnztHmJVMP/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19348,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "Quanta 0P1B KBL R17M H4G",
+      "slug": "laptop-hp-quanta-0p1b-kbl-r17m-h4g",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP Quanta 0P1B KBL R17M H4G — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34933,
+          "type": "schematic",
+          "name": "HP-COMPAQ - Quanta 0P1B KBL R17M H4G - Schematic.pdf",
+          "size": "1.8 MB",
+          "sizeBytes": 1880470,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WbRPDACDntUAsN5KL-Bt1TQ4qv95cjIC/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19349,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "Quanta 0P2 SA FT4 R17M Rev 1A.PDF",
+      "slug": "laptop-hp-quanta-0p2-sa-ft4-r17m-rev-1apdf",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP Quanta 0P2 SA FT4 R17M Rev 1A.PDF — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34934,
+          "type": "schematic",
+          "name": "HP-COMPAQ - Quanta 0P2 SA FT4 R17M Rev 1A.PDF - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1649200,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1n48wawd6Rki2_fUaZo330AqlGpWluaNj/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19350,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "Quanta N91A - DAN91AMB6D0",
+      "slug": "laptop-hp-quanta-n91a-dan91amb6d0",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP Quanta N91A - DAN91AMB6D0 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34935,
+          "type": "schematic",
+          "name": "HP-COMPAQ - Quanta N91A - DAN91AMB6D0 - Schematic.pdf",
+          "size": "2.5 MB",
+          "sizeBytes": 2598483,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mWnz_ugSQoKWiVCMxbEcPTc-NANTup_N/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19351,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "Quanta NM3 r1A",
+      "slug": "laptop-hp-quanta-nm3-r1a",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP Quanta NM3 r1A — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34936,
+          "type": "schematic",
+          "name": "HP-COMPAQ - Quanta NM3 r1A - Schematic.pdf",
+          "size": "1.5 MB",
+          "sizeBytes": 1583877,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DacTywEeI2VRLx13NQPUwdqIKbjAh3Cn/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19353,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "Quanta U81 DIS UMA",
+      "slug": "laptop-hp-quanta-u81-dis-uma",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP Quanta U81 DIS UMA — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34938,
+          "type": "schematic",
+          "name": "HP-COMPAQ - Quanta U81 DIS UMA - Schematic.pdf",
+          "size": "1.6 MB",
+          "sizeBytes": 1640597,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1EXyLKWNVGDB_m7ZcWxxqI75ffu3KbvlM/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19354,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "Quanta U82 DIS",
+      "slug": "laptop-hp-quanta-u82-dis",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP Quanta U82 DIS — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34939,
+          "type": "schematic",
+          "name": "HP-COMPAQ - Quanta U82 DIS - Schematic.pdf",
+          "size": "845.7 KB",
+          "sizeBytes": 865958,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZTsiJa1hx2EzqGZlHIMJOV3kWvqba2Zl/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19355,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "Quanta U83 r1A",
+      "slug": "laptop-hp-quanta-u83-r1a",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP Quanta U83 r1A — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34940,
+          "type": "schematic",
+          "name": "HP-COMPAQ - Quanta U83 r1A - Schematic.pdf",
+          "size": "1.4 MB",
+          "sizeBytes": 1454541,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1pPnFmBG67IQuAGqyyjZHBKZoNJoIyO1I/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19356,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "Quanta Y0H (Quanta Y0H DA0Y0HMB6F braswell db 0706 HP Stream 11-Y020WM)",
+      "slug": "laptop-hp-quanta-y0h-quanta-y0h-da0y0hmb6f-braswell-db-0706-hp-stream-11-y020wm",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "DA0Y0HMB6F",
+      "officialTitle": "HP Quanta Y0H (Quanta Y0H DA0Y0HMB6F braswell db 0706 HP Stream 11-Y020WM) (DA0Y0HMB6F) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34941,
+          "type": "schematic",
+          "name": "HP-COMPAQ - Quanta Y0H - Quanta Y0H DA0Y0HMB6F braswell db 0706 HP Stream 11-Y020WM - Schematic.pdf",
+          "size": "2.4 MB",
+          "sizeBytes": 2514975,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Cwvs409gXKYmVaL_ciRU3CuDRjCUMims/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19357,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "Quanta Y0H (Y0H-MB-C)",
+      "slug": "laptop-hp-quanta-y0h-y0h-mb-c",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "Y0H-MB-C",
+      "officialTitle": "HP Quanta Y0H (Y0H-MB-C) (Y0H-MB-C) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34942,
+          "type": "boardview",
+          "name": "HP-COMPAQ - Quanta Y0H - Y0H-MB-C - Boardview.bdv",
+          "size": "741 KB",
+          "sizeBytes": 758815,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1t-hVgvXxAfNLIbj8pICiPH2fphScSThW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19358,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "Quanta ZN5",
+      "slug": "laptop-hp-quanta-zn5",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP Quanta ZN5 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34943,
+          "type": "schematic",
+          "name": "HP-COMPAQ - Quanta ZN5 - Schematic.pdf",
+          "size": "1 MB",
+          "sizeBytes": 1062883,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1B3khUueMgGQ8Kr_swreJJxVXlFOLmazP/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19360,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "ST133i-6050A2314301-6050A2371701",
+      "slug": "laptop-hp-st133i-6050a2314301-6050a2371701",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "HP ST133i-6050A2314301-6050A2371701 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34945,
+          "type": "schematic",
+          "name": "HP-COMPAQ - ST133i-6050A2314301-6050A2371701 - Schematic.pdf",
+          "size": "905.6 KB",
+          "sizeBytes": 927370,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1qLS4NA7DetD4Pmx9qZ8rY8WCQxaMzRlP/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19359,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "Skema HP 11 - DA0Y0EMB6C0 - Y0E",
+      "slug": "laptop-hp-skema-hp-11-da0y0emb6c0-y0e",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "DA0Y0EMB6C0",
+      "officialTitle": "HP Skema HP 11 - DA0Y0EMB6C0 - Y0E (DA0Y0EMB6C0) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34944,
+          "type": "schematic",
+          "name": "HP-COMPAQ - Skema HP 11 - DA0Y0EMB6C0 - Y0E - Schematic.pdf",
+          "size": "2.2 MB",
+          "sizeBytes": 2304625,
+          "gdrive_direct_url": "https://drive.google.com/file/d/16ONZgnmB0m5ByOUkh1pASdGBBTP-fve5/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19361,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "ZSO41 LA-A997P r1.0 0422 r1.0 0520",
+      "slug": "laptop-hp-zso41-la-a997p-r10-0422-r10-0520",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-A997P",
+      "officialTitle": "HP ZSO41 LA-A997P r1.0 0422 r1.0 0520 (LA-A997P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34946,
+          "type": "schematic",
+          "name": "HP-COMPAQ - ZSO41 LA-A997P r1.0 0422 r1.0 0520 - Schematic.pdf",
+          "size": "919.2 KB",
+          "sizeBytes": 941249,
+          "gdrive_direct_url": "https://drive.google.com/file/d/11aYZulc-MFUIksB-qaxr5ZtjlI0iilih/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19343,
+      "category": "laptop",
+      "brand": "HP",
+      "brandSlug": "hp",
+      "modelName": "la-4902p r10 20091207 mv cartier uma",
+      "slug": "laptop-hp-la-4902p-r10-20091207-mv-cartier-uma",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-4902P",
+      "officialTitle": "HP la-4902p r10 20091207 mv cartier uma (LA-4902P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34928,
+          "type": "schematic",
+          "name": "HP-COMPAQ - la-4902p r10 20091207 mv cartier uma - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1388011,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1pX6QSy0HJQXP-xKWOlHmKcmSYzAVil05/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

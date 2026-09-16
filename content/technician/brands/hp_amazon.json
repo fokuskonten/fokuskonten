@@ -1,0 +1,34 @@
+{
+  "category": "hp",
+  "brand": "Amazon",
+  "brandSlug": "amazon",
+  "totalModels": 1,
+  "models": [
+    {
+      "id": 19596,
+      "category": "hp",
+      "brand": "Amazon",
+      "brandSlug": "amazon",
+      "modelName": "Qualcomm Firehose Loader Amazon (007B30E1)",
+      "slug": "hp-amazon-qualcomm-firehose-loader-amazon-007b30e1",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "HWID: 007B30E1",
+      "officialTitle": "Amazon Qualcomm Firehose Loader Amazon (007B30E1) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35197,
+          "type": "loader",
+          "name": "007b30e100000000_9ad772705cab4511_fhprg.bin",
+          "size": "70.2 KB",
+          "sizeBytes": 71848,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1LjHAS1MMeMUrtvxewxu7zj-Ul3OtN91k/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

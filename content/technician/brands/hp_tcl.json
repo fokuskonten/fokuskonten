@@ -1,0 +1,106 @@
+{
+  "category": "hp",
+  "brand": "TCL",
+  "brandSlug": "tcl",
+  "totalModels": 3,
+  "models": [
+    {
+      "id": 19707,
+      "category": "hp",
+      "brand": "TCL",
+      "brandSlug": "tcl",
+      "modelName": "Qualcomm Firehose Loader TCL (000B90E1)",
+      "slug": "hp-tcl-qualcomm-firehose-loader-tcl-000b90e1",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "HWID: 000B90E1",
+      "officialTitle": "TCL Qualcomm Firehose Loader TCL (000B90E1) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36023,
+          "type": "loader",
+          "name": "000b90e1013d0002_bf0bf8ad8467756b_fhprg_peek.bin",
+          "size": "367.9 KB",
+          "sizeBytes": 376780,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QuCCrq6-Ai1tkNuAt0dyYj3RfAFKotsp/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19708,
+      "category": "hp",
+      "brand": "TCL",
+      "brandSlug": "tcl",
+      "modelName": "Qualcomm Firehose Loader TCL (007200E1)",
+      "slug": "hp-tcl-qualcomm-firehose-loader-tcl-007200e1",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "HWID: 007200E1",
+      "officialTitle": "TCL Qualcomm Firehose Loader TCL (007200E1) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36024,
+          "type": "loader",
+          "name": "007200e100420006_625801c51eee90d7_fhprg.bin",
+          "size": "87.9 KB",
+          "sizeBytes": 89968,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ekoHZ2mPviT26IB5iVYmBN5YWIarRVp_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 36025,
+          "type": "loader",
+          "name": "007200e100420007_625801c51eee90d7_fhprg.bin",
+          "size": "68.3 KB",
+          "sizeBytes": 69936,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZR6_BbcVHEiQsmPlUy4Z9jdvSPvZWG7G/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19709,
+      "category": "hp",
+      "brand": "TCL",
+      "brandSlug": "tcl",
+      "modelName": "Qualcomm Firehose Loader TCL (007220E1)",
+      "slug": "hp-tcl-qualcomm-firehose-loader-tcl-007220e1",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "HWID: 007220E1",
+      "officialTitle": "TCL Qualcomm Firehose Loader TCL (007220E1) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36026,
+          "type": "loader",
+          "name": "007220e100420006_625801c51eee90d7_fhprg.bin",
+          "size": "87.9 KB",
+          "sizeBytes": 90000,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1H_D8VIEO8wcUyotY6FMyd5x6oD-BepIc/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 36027,
+          "type": "loader",
+          "name": "007220e100420007_625801c51eee90d7_fhprg.bin",
+          "size": "68.3 KB",
+          "sizeBytes": 69936,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Em1ZkCjURLZcKEjjL38CS_53TJqEUMTp/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

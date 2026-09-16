@@ -122,7 +122,7 @@ function UserInvoiceContent() {
       .finally(() => {
         setIsLoaded(true)
       })
-  }, [mounted, orderId])
+  }, [mounted, orderId, searchParams])
 
   // 3. Polling otomatis saat menunggu verifikasi pembayaran
   useEffect(() => {

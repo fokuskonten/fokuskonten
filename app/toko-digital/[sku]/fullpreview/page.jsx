@@ -1,8 +1,11 @@
 import digitalProducts from '@/content/apps/digitalProducts.json'
+import tokoAssetsIndex from '@/content/apps/toko_digital_assets_index.json'
 import FullPreviewClient from './FullPreviewClient'
 import path from 'path'
 import fs from 'fs'
 import { extractSkuFromSlug } from '../../slugHelper'
+import { redirect } from 'next/navigation'
+import ebookRoutes from '@/content/ebook/routes.json'
 
 export const dynamicParams = true
 
@@ -34,8 +37,8 @@ function getProductData(rawParam) {
           badge: row.badge,
           price: row.price,
           originalPrice: row.original_price,
-          coverImage: row.cover_image || `/covers/${row.sku}/${row.sku}_cover.webp`,
-          image: row.cover_image || `/covers/${row.sku}/${row.sku}_cover.webp`,
+          coverImage: row.cover_image || `https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/${row.sku}/${row.sku}_cover.webp`,
+          image: row.cover_image || `https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/${row.sku}/${row.sku}_cover.webp`,
           description: row.description,
           driveLink: row.drive_link,
           isPublished: row.is_published === 1
@@ -48,13 +51,27 @@ function getProductData(rawParam) {
 }
 
 /**
- * Memindai seluruh file .webp mockup yang tersedia di folder SKU produk
+ * Memindai seluruh file .webp mockup yang tersedia di katalog CDN / folder SKU produk
  */
 function getAllSkuImages(sku) {
   if (!sku) return []
   const cleanSku = sku.toUpperCase().trim()
 
-  // 1. Cek folder lokal public/covers/[SKU]
+  // 1. Cek dari index katalog aset toko digital CDN
+  const assetData = tokoAssetsIndex?.by_sku?.[cleanSku]
+  if (assetData?.files && assetData.files.length > 0) {
+    const validWebpFiles = assetData.files.filter((f) => {
+      const low = f.toLowerCase()
+      return low.endsWith('.webp') && !low.endsWith('.json')
+    })
+    if (validWebpFiles.length > 0) {
+      return validWebpFiles.map(
+        (f) => `https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/${cleanSku}/${f}`
+      )
+    }
+  }
+
+  // 2. Cek folder lokal public/covers/[SKU] (jika masih ada berkas)
   const targetDir = path.resolve(process.cwd(), 'public/covers', cleanSku)
   if (fs.existsSync(targetDir)) {
     try {
@@ -62,7 +79,6 @@ function getAllSkuImages(sku) {
       const webpFiles = files.filter((f) => f.toLowerCase().endsWith('.webp'))
 
       if (webpFiles.length > 0) {
-        // Urutkan: cover.webp terlebih dahulu, disusul slide_01, slide_02...
         webpFiles.sort((a, b) => {
           const aLow = a.toLowerCase()
           const bLow = b.toLowerCase()
@@ -76,10 +92,13 @@ function getAllSkuImages(sku) {
     } catch (_) {}
   }
 
-  // 2. Fallback jika ada array gallery di data produk
+  // 3. Fallback jika ada array gallery di data produk
   const prod = getProductData(cleanSku)
   if (prod?.gallery && prod.gallery.length > 0) {
-    return prod.gallery
+    return prod.gallery.filter((url) => {
+      const low = (url || '').toLowerCase()
+      return low.endsWith('.webp') && !low.endsWith('.json')
+    })
   }
 
   return prod?.coverImage ? [prod.coverImage] : []
@@ -96,7 +115,7 @@ export async function generateStaticParams() {
     const dbPath = path.resolve(process.cwd(), '../../Server-Fokuskonten/product_digital.db')
     if (fs.existsSync(dbPath)) {
       const db = new DatabaseSync(dbPath)
-      const rows = db.prepare('SELECT sku, title FROM digital_products WHERE is_published = 1').all()
+      const rows = db.prepare("SELECT sku, title FROM digital_products WHERE is_published = 1 AND (format != 'PDF' OR sku = 'IDEB00')").all()
       for (const r of rows) {
         if (r && r.sku) allItems.push(r)
       }
@@ -117,6 +136,17 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
+  const targetSku = extractSkuFromSlug(params?.sku)
+  if (targetSku && targetSku !== 'ideb00') {
+    const ebookMatch = ebookRoutes.find(r => r.s.toLowerCase() === targetSku)
+    if (ebookMatch) {
+      return {
+        title: `Katalog Visual: ${ebookMatch.t} | FokusKonten`,
+        description: `Lihat preview lengkap e-book di direktori FokusKonten.`
+      }
+    }
+  }
+
   const product = getProductData(params.sku)
   if (!product) {
     return { title: 'Koleksi Desain Tidak Ditemukan | FokusKonten' }
@@ -128,6 +158,14 @@ export async function generateMetadata({ params }) {
 }
 
 export default function FullPreviewPage({ params }) {
+  const targetSku = extractSkuFromSlug(params?.sku)
+  if (targetSku && targetSku !== 'ideb00') {
+    const ebookMatch = ebookRoutes.find(r => r.s.toLowerCase() === targetSku)
+    if (ebookMatch) {
+      redirect(`/ebook/${ebookMatch.c}/${ebookMatch.u}/`)
+    }
+  }
+
   const product = getProductData(params.sku)
 
   if (!product) {

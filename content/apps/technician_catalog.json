@@ -1,0 +1,1627 @@
+{
+  "generatedAt": "2026-09-16T16:26:51.175Z",
+  "stats": {
+    "totalCatalogModels": 6158,
+    "totalFiles": 9422,
+    "totalHpBrands": 57,
+    "totalLaptopBrands": 17
+  },
+  "hpBrands": [
+    {
+      "name": "Advan",
+      "slug": "advan",
+      "count": 72
+    },
+    {
+      "name": "Asus",
+      "slug": "asus",
+      "count": 65
+    },
+    {
+      "name": "Honor",
+      "slug": "honor",
+      "count": 121
+    },
+    {
+      "name": "Huawei",
+      "slug": "huawei",
+      "count": 334
+    },
+    {
+      "name": "Infinix",
+      "slug": "infinix",
+      "count": 125
+    },
+    {
+      "name": "Itel",
+      "slug": "itel",
+      "count": 70
+    },
+    {
+      "name": "Lenovo",
+      "slug": "lenovo",
+      "count": 104
+    },
+    {
+      "name": "Motorola",
+      "slug": "motorola",
+      "count": 142
+    },
+    {
+      "name": "Nokia",
+      "slug": "nokia",
+      "count": 154
+    },
+    {
+      "name": "OnePlus",
+      "slug": "oneplus",
+      "count": 145
+    },
+    {
+      "name": "Oppo",
+      "slug": "oppo",
+      "count": 536
+    },
+    {
+      "name": "Realme",
+      "slug": "realme",
+      "count": 319
+    },
+    {
+      "name": "Samsung",
+      "slug": "samsung",
+      "count": 633
+    },
+    {
+      "name": "Sony",
+      "slug": "sony",
+      "count": 52
+    },
+    {
+      "name": "Tecno",
+      "slug": "tecno",
+      "count": 97
+    },
+    {
+      "name": "Vivo",
+      "slug": "vivo",
+      "count": 847
+    },
+    {
+      "name": "Xiaomi",
+      "slug": "xiaomi",
+      "count": 1017
+    },
+    {
+      "name": "Amazon",
+      "slug": "amazon",
+      "count": 1
+    },
+    {
+      "name": "Qualcomm",
+      "slug": "qualcomm",
+      "count": 15
+    },
+    {
+      "name": "HTC",
+      "slug": "htc",
+      "count": 3
+    },
+    {
+      "name": "Gionee",
+      "slug": "gionee",
+      "count": 1
+    },
+    {
+      "name": "Meizu",
+      "slug": "meizu",
+      "count": 6
+    },
+    {
+      "name": "Alcatel",
+      "slug": "alcatel",
+      "count": 6
+    },
+    {
+      "name": "Archos",
+      "slug": "archos",
+      "count": 1
+    },
+    {
+      "name": "Acer",
+      "slug": "acer",
+      "count": 1
+    },
+    {
+      "name": "LGE",
+      "slug": "lge",
+      "count": 2
+    },
+    {
+      "name": "ZTE",
+      "slug": "zte",
+      "count": 9
+    },
+    {
+      "name": "Sonimtech",
+      "slug": "sonimtech",
+      "count": 1
+    },
+    {
+      "name": "AGM",
+      "slug": "agm",
+      "count": 1
+    },
+    {
+      "name": "Mobvoi",
+      "slug": "mobvoi",
+      "count": 1
+    },
+    {
+      "name": "Bluebird",
+      "slug": "bluebird",
+      "count": 1
+    },
+    {
+      "name": "Google",
+      "slug": "google",
+      "count": 2
+    },
+    {
+      "name": "QUALCOMM",
+      "slug": "qualcomm",
+      "count": 1
+    },
+    {
+      "name": "Light",
+      "slug": "light",
+      "count": 1
+    },
+    {
+      "name": "Bose",
+      "slug": "bose",
+      "count": 1
+    },
+    {
+      "name": "KYOCERA",
+      "slug": "kyocera",
+      "count": 1
+    },
+    {
+      "name": "Vsmart",
+      "slug": "vsmart",
+      "count": 1
+    },
+    {
+      "name": "Nothing",
+      "slug": "nothing",
+      "count": 3
+    },
+    {
+      "name": "Quectel",
+      "slug": "quectel",
+      "count": 4
+    },
+    {
+      "name": "BQ",
+      "slug": "bq",
+      "count": 1
+    },
+    {
+      "name": "Bullitt",
+      "slug": "bullitt",
+      "count": 1
+    },
+    {
+      "name": "XRSPACE",
+      "slug": "xrspace",
+      "count": 1
+    },
+    {
+      "name": "Avxav",
+      "slug": "avxav",
+      "count": 1
+    },
+    {
+      "name": "Netgear",
+      "slug": "netgear",
+      "count": 1
+    },
+    {
+      "name": "HiBy",
+      "slug": "hiby",
+      "count": 1
+    },
+    {
+      "name": "Inseego",
+      "slug": "inseego",
+      "count": 2
+    },
+    {
+      "name": "TCL",
+      "slug": "tcl",
+      "count": 3
+    },
+    {
+      "name": "Honeywell",
+      "slug": "honeywell",
+      "count": 1
+    },
+    {
+      "name": "Yulong coolpad",
+      "slug": "yulong-coolpad",
+      "count": 1
+    },
+    {
+      "name": "Iqoo",
+      "slug": "iqoo",
+      "count": 40
+    },
+    {
+      "name": "LG",
+      "slug": "lg",
+      "count": 2
+    },
+    {
+      "name": "Nexus",
+      "slug": "nexus",
+      "count": 3
+    },
+    {
+      "name": "MediaTek",
+      "slug": "mediatek",
+      "count": 218
+    },
+    {
+      "name": "Unisoc",
+      "slug": "unisoc",
+      "count": 63
+    },
+    {
+      "name": "Tool & Driver",
+      "slug": "tool-driver",
+      "count": 23
+    }
+  ],
+  "laptopBrands": [
+    {
+      "name": "Acer",
+      "slug": "acer",
+      "count": 250
+    },
+    {
+      "name": "Apple",
+      "slug": "apple",
+      "count": 24
+    },
+    {
+      "name": "Asus",
+      "slug": "asus",
+      "count": 149
+    },
+    {
+      "name": "Dell",
+      "slug": "dell",
+      "count": 70
+    },
+    {
+      "name": "HP",
+      "slug": "hp",
+      "count": 92
+    },
+    {
+      "name": "Lenovo",
+      "slug": "lenovo",
+      "count": 155
+    },
+    {
+      "name": "MSI",
+      "slug": "msi",
+      "count": 3
+    },
+    {
+      "name": "Samsung",
+      "slug": "samsung",
+      "count": 3
+    },
+    {
+      "name": "Toshiba",
+      "slug": "toshiba",
+      "count": 61
+    },
+    {
+      "name": "Advan",
+      "slug": "advan",
+      "count": 2
+    },
+    {
+      "name": "Axioo",
+      "slug": "axioo",
+      "count": 6
+    },
+    {
+      "name": "BenQ",
+      "slug": "benq",
+      "count": 2
+    },
+    {
+      "name": "CAMPURAN",
+      "slug": "campuran",
+      "count": 21
+    },
+    {
+      "name": "Fujitsu",
+      "slug": "fujitsu",
+      "count": 24
+    },
+    {
+      "name": "Proyektor",
+      "slug": "proyektor",
+      "count": 10
+    },
+    {
+      "name": "Sony",
+      "slug": "sony",
+      "count": 16
+    },
+    {
+      "name": "Laptop Tools",
+      "slug": "laptop-tools",
+      "count": 10
+    }
+  ],
+  "popularHpModels": [
+    {
+      "brand": "advan",
+      "slug": "hp-advan-tab-sketsa-2-tab-belajar",
+      "name": "Tab Sketsa 2 Tab Belajar"
+    },
+    {
+      "brand": "advan",
+      "slug": "hp-advan-tab-vx-tab-vx-lite",
+      "name": "Tab Vx Tab Vx Lite"
+    },
+    {
+      "brand": "asus",
+      "slug": "hp-asus-rog-phone",
+      "name": "ROG Phone"
+    },
+    {
+      "brand": "asus",
+      "slug": "hp-asus-rog-phone-2",
+      "name": "ROG Phone 2"
+    },
+    {
+      "brand": "asus",
+      "slug": "hp-asus-rog-phone-3",
+      "name": "ROG Phone 3"
+    },
+    {
+      "brand": "asus",
+      "slug": "hp-asus-rog-phone-5",
+      "name": "ROG Phone 5"
+    },
+    {
+      "brand": "asus",
+      "slug": "hp-asus-rog-phone-5s",
+      "name": "ROG Phone 5S"
+    },
+    {
+      "brand": "asus",
+      "slug": "hp-asus-rog-phone-6",
+      "name": "ROG Phone 6"
+    },
+    {
+      "brand": "asus",
+      "slug": "hp-asus-rog-phone-7",
+      "name": "ROG Phone 7"
+    },
+    {
+      "brand": "asus",
+      "slug": "hp-asus-rog-phone-8",
+      "name": "ROG Phone 8"
+    },
+    {
+      "brand": "asus",
+      "slug": "hp-asus-zenfone-10",
+      "name": "Zenfone 10"
+    },
+    {
+      "brand": "asus",
+      "slug": "hp-asus-zenfone-11-ultra",
+      "name": "Zenfone 11 Ultra"
+    },
+    {
+      "brand": "asus",
+      "slug": "hp-asus-zenfone-5",
+      "name": "Zenfone 5"
+    },
+    {
+      "brand": "asus",
+      "slug": "hp-asus-zenfone-5z",
+      "name": "Zenfone 5Z"
+    },
+    {
+      "brand": "asus",
+      "slug": "hp-asus-zenfone-6",
+      "name": "Zenfone 6"
+    },
+    {
+      "brand": "asus",
+      "slug": "hp-asus-zenfone-7",
+      "name": "Zenfone 7"
+    },
+    {
+      "brand": "asus",
+      "slug": "hp-asus-zenfone-8",
+      "name": "Zenfone 8"
+    },
+    {
+      "brand": "asus",
+      "slug": "hp-asus-zenfone-9",
+      "name": "Zenfone 9"
+    },
+    {
+      "brand": "asus",
+      "slug": "hp-asus-zenfone-max-m1",
+      "name": "Zenfone Max M1"
+    },
+    {
+      "brand": "asus",
+      "slug": "hp-asus-zenfone-max-m2",
+      "name": "Zenfone Max M2"
+    },
+    {
+      "brand": "asus",
+      "slug": "hp-asus-zenfone-max-pro-m1",
+      "name": "Zenfone Max Pro M1"
+    },
+    {
+      "brand": "asus",
+      "slug": "hp-asus-zenfone-max-pro-m2",
+      "name": "Zenfone Max Pro M2"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-10",
+      "name": "10"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-10-lite",
+      "name": "10 Lite"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-10i",
+      "name": "10I"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-10x-lite",
+      "name": "10X Lite"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-20",
+      "name": "20"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-20-lite",
+      "name": "20 Lite"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-20-pro",
+      "name": "20 Pro"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-200",
+      "name": "200"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-200-pro",
+      "name": "200 Pro"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-20e",
+      "name": "20E"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-20i",
+      "name": "20I"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-30",
+      "name": "30"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-30-pro",
+      "name": "30 Pro"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-30i",
+      "name": "30I"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-30s",
+      "name": "30S"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-50",
+      "name": "50"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-50-lite",
+      "name": "50 Lite"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-50-pro",
+      "name": "50 Pro"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-50-se",
+      "name": "50 Se"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-70",
+      "name": "70"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-70-lite",
+      "name": "70 Lite"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-70-pro",
+      "name": "70 Pro"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-7a",
+      "name": "7A"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-7c",
+      "name": "7C"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-7s",
+      "name": "7S"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-7x",
+      "name": "7X"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-8",
+      "name": "8"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-8-pro",
+      "name": "8 Pro"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-8a",
+      "name": "8A"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-8c",
+      "name": "8C"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-8s",
+      "name": "8S"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-8x",
+      "name": "8X"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-9",
+      "name": "9"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-9-lite",
+      "name": "9 Lite"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-90",
+      "name": "90"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-90-lite",
+      "name": "90 Lite"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-90-pro",
+      "name": "90 Pro"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-9a",
+      "name": "9A"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-9i",
+      "name": "9I"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-9s",
+      "name": "9S"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-9x",
+      "name": "9X"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-9x-lite",
+      "name": "9X Lite"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-9x-pro",
+      "name": "9X Pro"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-play",
+      "name": "Play"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-play-3",
+      "name": "Play 3"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-play-3e",
+      "name": "Play 3E"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-play-4",
+      "name": "Play 4"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-play-4t",
+      "name": "Play 4T"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-play-5",
+      "name": "Play 5"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-x6",
+      "name": "X6"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-x6a",
+      "name": "X6a"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-x7",
+      "name": "X7"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-x7a",
+      "name": "X7a"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-x7b",
+      "name": "X7b"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-x8",
+      "name": "X8"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-x8a",
+      "name": "X8a"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-x8b",
+      "name": "X8b"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-x9",
+      "name": "X9"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-x9a",
+      "name": "X9a"
+    },
+    {
+      "brand": "honor",
+      "slug": "hp-honor-x9b",
+      "name": "X9b"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-d01j-btv-dl09-btv-w09-btv-l0j-com-10",
+      "name": "D01j Btv Dl09 Btv W09 Btv L0j Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-e5573-cloud-usb-ways",
+      "name": "E5573 Cloud Usb Ways"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-harmony-tp-cable-chimera",
+      "name": "Harmony Tp Cable Chimera"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-honor-10-col-l29-com-10",
+      "name": "Honor 10 Col L29 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-honor-20i-hry-al00ta",
+      "name": "Honor 20I Hry Al00ta"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-honor-70-lite-rbn-nx1-edl",
+      "name": "Honor 70 Lite Rbn Nx1 Edl"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-honor-7c",
+      "name": "Honor 7C"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-honor-7c-2018-lnd-al30-edl",
+      "name": "Honor 7C 2018 Lnd Al30 Edl"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-honor-8-com-10",
+      "name": "Honor 8 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-honor-8-pro",
+      "name": "Honor 8 Pro"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-honor-8-pro-duk-l09-com-10",
+      "name": "Honor 8 Pro Duk L09 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-honor-8x-9x-10-lite",
+      "name": "Honor 8X 9X 10 Lite"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-honor-8x-jsn-al00a-com-10",
+      "name": "Honor 8X Jsn Al00a Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-honor-9-lite-lld-l31-lld-al10-com-10",
+      "name": "Honor 9 Lite Lld L31 Lld Al10 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-honor-9-stf-l09-com-10",
+      "name": "Honor 9 Stf L09 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-honor-9i-rne-l22-edl",
+      "name": "Honor 9I Rne L22 Edl"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-honor-holly-4-plus-trt-al00-edl",
+      "name": "Honor Holly 4 Plus Trt Al00 Edl"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-honor-magic-4-lge-an00-edl",
+      "name": "Honor Magic 4 Lge An00 Edl"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-honor-v10-bkl-al20-com-10",
+      "name": "Honor V10 Bkl Al20 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-honor-v30-oxf-an00-com-10",
+      "name": "Honor V30 Oxf An00 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-honor-v8-com-10",
+      "name": "Honor V8 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-honor-x10-5g-tel-an10-tel-an00-com-10",
+      "name": "Honor X10 5G Tel An10 Tel An00 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-honor-x6-vne-lx1-vne-lx2-vne-lx3-mtk-meta",
+      "name": "Honor X6 Vne Lx1 Vne Lx2 Vne Lx3 Mtk Meta"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-honor-x7a-rky-lx1-rky-lx2-rky-lx3-mtk",
+      "name": "Honor X7a Rky Lx1 Rky Lx2 Rky Lx3 Mtk"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-maimang-5-mla-al10-mla-lxx-edl",
+      "name": "Maimang 5 Mla Al10 Mla Lxx Edl"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-mate-10",
+      "name": "Mate 10"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-mate-10-alp-al00-alp-l29-com-10",
+      "name": "Mate 10 Alp Al00 Alp L29 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-mate-10-lite",
+      "name": "Mate 10 Lite"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-mate-10-pro",
+      "name": "Mate 10 Pro"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-mate-20",
+      "name": "Mate 20"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-mate-20-lite",
+      "name": "Mate 20 Lite"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-mate-20-lite-sne-xxx-com-10",
+      "name": "Mate 20 Lite Sne Xxx Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-mate-20-pro",
+      "name": "Mate 20 Pro"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-mate-20-x",
+      "name": "Mate 20 X"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-mate-20x-5g-evr-n29-evr-an00-com-10",
+      "name": "Mate 20X 5G Evr N29 Evr An00 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-mate-20x-com-10",
+      "name": "Mate 20X Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-mate-30",
+      "name": "Mate 30"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-mate-30-lite",
+      "name": "Mate 30 Lite"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-mate-30-pro",
+      "name": "Mate 30 Pro"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-mate-40",
+      "name": "Mate 40"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-mate-40-pro",
+      "name": "Mate 40 Pro"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-mate-60",
+      "name": "Mate 60"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-mate-60-pro",
+      "name": "Mate 60 Pro"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-mate-7",
+      "name": "Mate 7"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-mate-8",
+      "name": "Mate 8"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-mate-8-com-10",
+      "name": "Mate 8 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-mate-9",
+      "name": "Mate 9"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-mate-9-pro",
+      "name": "Mate 9 Pro"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-mate-9-pro-lon-xxx-com-10",
+      "name": "Mate 9 Pro Lon Xxx Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-matepad-bah4-l09-com-10",
+      "name": "Matepad Bah4 L09 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-mediapad-m1-80-3g-s8-301u-com-10",
+      "name": "Mediapad M1 8.0 3G S8 301U Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-mediapad-m5-lite-bah2-w09-com-10",
+      "name": "Mediapad M5 Lite Bah2 W09 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-mediapad-table-m5-cmr-w09-com-10",
+      "name": "Mediapad Table M5 Cmr W09 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nexus-6p-edl",
+      "name": "Nexus 6P Edl"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-10",
+      "name": "Nova 10"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-10-pro",
+      "name": "Nova 10 Pro"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-10-se",
+      "name": "Nova 10 Se"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-11-pro",
+      "name": "Nova 11 Pro"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-11-pro-goa-al80-goa-lx9-edl",
+      "name": "Nova 11 Pro Goa Al80 Goa Lx9 Edl"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-11i",
+      "name": "Nova 11I"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-12",
+      "name": "Nova 12"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-12-se",
+      "name": "Nova 12 Se"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-12i",
+      "name": "Nova 12I"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-2",
+      "name": "Nova 2"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-2-plus",
+      "name": "Nova 2 Plus"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-2-plus-bac-l21-com-10",
+      "name": "Nova 2 Plus Bac L21 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-2i",
+      "name": "Nova 2I"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-3",
+      "name": "Nova 3"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-3-par-al00-com-10",
+      "name": "Nova 3 Par Al00 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-3e",
+      "name": "Nova 3E"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-3i",
+      "name": "Nova 3I"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-3i-ine-lx2-ine-al00-com-10",
+      "name": "Nova 3I Ine Lx2 Ine Al00 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-3i-y9-prime-2019",
+      "name": "Nova 3I Y9 Prime 2019"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-4",
+      "name": "Nova 4"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-4-vce-l22-com-10",
+      "name": "Nova 4 Vce L22 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-4e",
+      "name": "Nova 4E"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-5i",
+      "name": "Nova 5I"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-6",
+      "name": "Nova 6"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-6-se",
+      "name": "Nova 6 Se"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-7",
+      "name": "Nova 7"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-7-pro",
+      "name": "Nova 7 Pro"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-7-se",
+      "name": "Nova 7 Se"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-7i-jny-xxx-com-10",
+      "name": "Nova 7I Jny Xxx Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-8",
+      "name": "Nova 8"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-8-pro",
+      "name": "Nova 8 Pro"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-8-se",
+      "name": "Nova 8 Se"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-8i",
+      "name": "Nova 8I"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-9",
+      "name": "Nova 9"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-9-pro",
+      "name": "Nova 9 Pro"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-9-se",
+      "name": "Nova 9 Se"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-can-xxx-edl",
+      "name": "Nova Can Xxx Edl"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-y60",
+      "name": "Nova Y60"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-y70",
+      "name": "Nova Y70"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-nova-y91",
+      "name": "Nova Y91"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-p-smart-2019-pot-lx1-com-10",
+      "name": "P Smart 2019 Pot Lx1 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-p-smart-fig-lx1-fig-lx2-fig-al10-com-10",
+      "name": "P Smart Fig Lx1 Fig Lx2 Fig Al10 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-p10",
+      "name": "P10"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-p10-lite",
+      "name": "P10 Lite"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-p10-lite-was-lx1-com-10",
+      "name": "P10 Lite Was Lx1 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-p10-plus",
+      "name": "P10 Plus"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-p10-plus-vky-l29-vky-l09-vky-al00-com-10",
+      "name": "P10 Plus Vky L29 Vky L09 Vky Al00 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-p10-vtr-l09-vtr-l29-vtr-al00-com-10",
+      "name": "P10 Vtr L09 Vtr L29 Vtr Al00 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-p20",
+      "name": "P20"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-p20-eml-l29-com-10",
+      "name": "P20 Eml L29 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-p20-lite",
+      "name": "P20 Lite"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-p20-lite-ane-lx1-com-10",
+      "name": "P20 Lite Ane Lx1 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-p20-pro",
+      "name": "P20 Pro"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-p20-pro-clt-l29-clt-l09-com-10",
+      "name": "P20 Pro Clt L29 Clt L09 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-p30",
+      "name": "P30"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-p30-lite",
+      "name": "P30 Lite"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-p30-lite-com-10",
+      "name": "P30 Lite Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-p30-lite-nova-5t",
+      "name": "P30 Lite Nova 5T"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-p30-pro",
+      "name": "P30 Pro"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-p30-vog-al00-com-10",
+      "name": "P30 Vog Al00 Com 1.0"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-p40",
+      "name": "P40"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-p40-lite",
+      "name": "P40 Lite"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-p40-pro",
+      "name": "P40 Pro"
+    },
+    {
+      "brand": "huawei",
+      "slug": "hp-huawei-p40-pro-els-an00-els-n04-els-nx9-com-10",
+      "name": "P40 Pro Els An00 Els N04 Els Nx9 Com 1.0"
+    }
+  ],
+  "popularLaptopModels": [
+    {
+      "brand": "acer",
+      "slug": "laptop-acer-acer-aspire-es1-572-la-d671p-boardview-lad671p-r10",
+      "name": "Acer Aspire ES1-572 - LA-D671P Boardview (LAD671P-R10)"
+    },
+    {
+      "brand": "acer",
+      "slug": "laptop-acer-acer-aspire-es1-572-la-d671p-boardview-lsd671p-r10",
+      "name": "Acer Aspire ES1-572 - LA-D671P Boardview (LSD671P-R10)"
+    },
+    {
+      "brand": "acer",
+      "slug": "laptop-acer-acer-aspire-one-725-zhg-mb-d",
+      "name": "Acer Aspire One 725 ZHG-MB-D"
+    },
+    {
+      "brand": "acer",
+      "slug": "laptop-acer-boardview-one-z1401-bottom",
+      "name": "BoardView One Z1401 (bottom)"
+    },
+    {
+      "brand": "acer",
+      "slug": "laptop-acer-boardview-one-z1401-top",
+      "name": "BoardView One Z1401 (top)"
+    },
+    {
+      "brand": "acer",
+      "slug": "laptop-acer-wistron-ea40-cx-12280-3-boardview",
+      "name": "WISTRON EA40-CX 12280-3 - BoardView"
+    },
+    {
+      "brand": "acer",
+      "slug": "laptop-acer-zq9-mb-b-bv",
+      "name": "ZQ9-MB-B-BV"
+    },
+    {
+      "brand": "apple",
+      "slug": "laptop-apple-a1278-820-2879-b",
+      "name": "A1278 820-2879-B"
+    },
+    {
+      "brand": "apple",
+      "slug": "laptop-apple-apple-imac-g5-a1058-051-6482-820-1540",
+      "name": "Apple iMac G5 A1058 - 051-6482 - 820-1540"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-1225c-20",
+      "name": "1225C 2.0"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-60nb0de0-mb5010x540up-mb",
+      "name": "60NB0DE0-MB5010(X540UP MB"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-1015p-rev-12-boardview",
+      "name": "ASUS 1015P REV 1.2 - BOARDVIEW"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-1215t-rev-20g-boardview",
+      "name": "ASUS 1215T Rev 2.0G - boardview"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-bu201la-bu201la-11",
+      "name": "ASUS BU201LA (BU201LA 1.1)"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-bu201la-bu201la-20",
+      "name": "ASUS BU201LA (BU201LA 2.0)"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-eeetop-pc-et2230i",
+      "name": "Asus EeeTop PC ET2230I"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-g46vw-boardview",
+      "name": "Asus G46VW Boardview"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-g750jw",
+      "name": "ASUS G750JW"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-gl553vd-rev-20",
+      "name": "Asus GL553VD Rev 2.0"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-k34ly-boardview",
+      "name": "ASUS K34LY BOARDVIEW"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-k40in-r22-bv-tsict",
+      "name": "ASUS K40IN R2.2 BV (TSICT)"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-k42f-20-32-33-boardview",
+      "name": "Asus K42F 2.0 3.2 3.3 Boardview"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-k42jr-rev-30-boardview",
+      "name": "ASUS K42JR REV 3.0 - BoardView"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-k43l-10-20-31-41-50-boardview",
+      "name": "Asus K43L 1.0 2.0 3.1 4.1 5.0 Boardview"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-k43ly-r31-boardview-k43ly-3160-nb2mb1000-a14fz",
+      "name": "Asus K43LY r3.1 boardview (K43LY 3.1,60-NB2MB1000-A14.FZ)"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-k43sa-boardview-asus-k43sa-20",
+      "name": "ASUS K43SA BOARDVIEW (asus K43SA 2.0)"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-k43sa-boardview-k43s-11",
+      "name": "ASUS K43SA BOARDVIEW (K43S 1.1)"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-k43sv-all-boardview",
+      "name": "ASUS K43SV ALL Boardview"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-k45dr-k45dr-e",
+      "name": "ASUS K45DR (K45DR E)"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-k45dr-k45dr-usb-d",
+      "name": "ASUS K45DR (K45DR USB D)"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-k46cm-k46vm-repair-guide",
+      "name": "Asus K46CM (K46VM) repair guide"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-k50ij-boardview",
+      "name": "ASUS K50IJ Boardview"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-k52jc-k52jc-mb-20",
+      "name": "ASUS K52JC (K52JC MB 2.0)"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-k52jc-k52jc-mb-21",
+      "name": "ASUS K52JC (K52JC MB 2.1)"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-k53sd-all-rev",
+      "name": "ASUS K53SD ALL REV"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-k55vm",
+      "name": "ASUS K55VM"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-k56cm-k56cm-20",
+      "name": "ASUS K56CM (K56CM 2.0)"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-n45sf-13-20-boardview-n45sf-13",
+      "name": "Asus N45SF 1.3 2.0 Boardview (N45SF 1.3)"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-n45sf-13-20-boardview-n45sf-20",
+      "name": "Asus N45SF 1.3 2.0 Boardview (N45SF 2.0)"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-n46jv-boardview-n46jv-mb-20",
+      "name": "ASUS N46JV Boardview (N46JV MB 2.0)"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-n46vz-n46vz-21",
+      "name": "ASUS N46VZ (N46VZ 2.1)"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-n46vz-n46vz-23",
+      "name": "ASUS N46VZ (N46VZ 2.3)"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-n53sv",
+      "name": "ASUS N53SV"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-n551jk",
+      "name": "ASUS N551JK"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-n55sf-boardview",
+      "name": "ASUS N55SF Boardview"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-n56jn-n56jn-20",
+      "name": "ASUS N56JN (N56JN 2.0)"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-pu451ld-pu451ld-20",
+      "name": "Asus PU451LD (PU451LD 2.0)"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-s400ca-boardview",
+      "name": "Asus S400CA Boardview"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-s551lb",
+      "name": "ASUS S551LB"
+    },
+    {
+      "brand": "asus",
+      "slug": "laptop-asus-asus-t100ta-t100ta-20",
+      "name": "ASUS T100TA (T100TA 2.0)"
+    }
+  ]
+}

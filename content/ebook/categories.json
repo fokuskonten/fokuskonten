@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Agama Islam & Tafsir",
+    "slug": "agama-islam",
+    "description": "Kajian naskah Islam, fiqih syariat, hadits shahih, dan mutiara tafsir Al-Qur'an.",
+    "count": 724
+  },
+  {
+    "name": "Novel & Fiksi",
+    "slug": "novel-fiksi",
+    "description": "Karya fiksi terpilih, novel romansa, drama misteri, petualangan, dan thriller.",
+    "count": 627
+  },
+  {
+    "name": "Pendidikan & Akademik",
+    "slug": "pendidikan-akademik",
+    "description": "Diktat keilmuan, modul ajar mahasiswa, kurikulum sekolah, dan referensi akademik.",
+    "count": 271
+  },
+  {
+    "name": "Pengembangan Diri & Motivasi",
+    "slug": "pengembangan-diri",
+    "description": "Strategi pembentukan kebiasaan, manajemen fokus, kepemimpinan, dan pola pikir bertumbuh.",
+    "count": 105
+  },
+  {
+    "name": "Bisnis, Finansial & Investasi",
+    "slug": "bisnis-finansial",
+    "description": "Panduan membangun bisnis, strategi marketing, analisis saham, dan manajemen arus kas.",
+    "count": 209
+  },
+  {
+    "name": "Kesehatan & Kedokteran",
+    "slug": "kesehatan-kedokteran",
+    "description": "Wawasan medis, terapi herbal, nutrisi seimbang, dan pola hidup sehat holistik.",
+    "count": 84
+  },
+  {
+    "name": "Kuliner & Resep Masakan",
+    "slug": "kuliner-resep",
+    "description": "Kompilasi resep masakan nusantara, teknik kuliner profesional, dan rahasia bumbu legendaris.",
+    "count": 79
+  },
+  {
+    "name": "Sains & Pengetahuan Umum",
+    "slug": "sains-pengetahuan",
+    "description": "Eksplorasi ilmu alam, fakta sejarah peradaban, teknologi masa depan, dan ensiklopedia.",
+    "count": 52
+  },
+  {
+    "name": "Hukum & Perundang-Undangan",
+    "slug": "hukum-undang-undang",
+    "description": "Kompilasi kitab undang-undang, studi perkara perdata pidana, dan kaidah peradilan hukum.",
+    "count": 49
+  },
+  {
+    "name": "Psikologi & Perilaku",
+    "slug": "psikologi-perilaku",
+    "description": "Dinamika kejiwaan, komunikasi antarpribadi, kecerdasan emosional, dan analisis perilaku manusia.",
+    "count": 44
+  },
+  {
+    "name": "Sastra & Puisi",
+    "slug": "sastra-puisi",
+    "description": "Antologi puisi mendalam, karya sastra pujangga klasik, dan kajian estetika bahasa.",
+    "count": 42
+  },
+  {
+    "name": "Pertanian & Peternakan",
+    "slug": "pertanian-peternakan",
+    "description": "Budidaya tanaman pangan, agroteknologi modern, hidroponik, dan peternakan terpadu.",
+    "count": 52
+  },
+  {
+    "name": "Politik & Sosial Kebijakan",
+    "slug": "politik-kebijakan",
+    "description": "Dinamika geopolitik global, sistem demokrasi, sosiologi kemasyarakatan, dan kebijakan publik.",
+    "count": 39
+  },
+  {
+    "name": "E-Book Edukasi Anak & Parenting",
+    "slug": "edukasi-anak",
+    "description": "Cerita bergambar mendidik, pembentukan karakter anak usia dini, dan pedoman orang tua.",
+    "count": 33
+  },
+  {
+    "name": "Karir & Dunia Kerja",
+    "slug": "karir-kerja",
+    "description": "Tips wawancara kerja, peningkatan keahlian profesional, negosiasi gaji, dan produktivitas kantor.",
+    "count": 25
+  },
+  {
+    "name": "Filsafat & Logika Pemikiran",
+    "slug": "filsafat-logika",
+    "description": "Dialektika pemikiran filsuf ternama, seni bernalar kritis, epistemologi, dan etika kehidupan.",
+    "count": 18
+  },
+  {
+    "name": "Majalah & Jurnal Digital",
+    "slug": "majalah-jurnal",
+    "description": "Edisi majalah tematik, liputan investigatif, dan rangkuman tren industri kreatif.",
+    "count": 10
+  },
+  {
+    "name": "Budaya, Tradisi & Sejarah",
+    "slug": "budaya-sejarah",
+    "description": "Warisan adat istiadat nusantara, narasi sejarah suku bangsa, dan kearifan lokal masa lalu.",
+    "count": 8
+  }
+]

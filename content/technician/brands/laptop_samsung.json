@@ -1,0 +1,96 @@
+{
+  "category": "laptop",
+  "brand": "Samsung",
+  "brandSlug": "samsung",
+  "totalModels": 3,
+  "models": [
+    {
+      "id": 18850,
+      "category": "laptop",
+      "brand": "Samsung",
+      "brandSlug": "samsung",
+      "modelName": "BA92-12068B BA41-02206A Samsung NP270E5E",
+      "slug": "laptop-samsung-ba92-12068b-ba41-02206a-samsung-np270e5e",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "BA41-02206A",
+      "officialTitle": "Samsung BA92-12068B BA41-02206A Samsung NP270E5E (BA41-02206A) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34390,
+          "type": "boardview",
+          "name": "SAMSUNG - BA92-12068B BA41-02206A Samsung NP270E5E - Boardview.cad",
+          "size": "1.8 MB",
+          "sizeBytes": 1838632,
+          "gdrive_direct_url": "https://drive.google.com/file/d/12WkSj35lHdxc5B_2g5KADTKyh2vJrY2P/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 34391,
+          "type": "boardview",
+          "name": "SAMSUNG - BA92-12068B BA41-02206A Samsung NP270E5E - Boardview.cad",
+          "size": "1.8 MB",
+          "sizeBytes": 1838632,
+          "gdrive_direct_url": "https://drive.google.com/file/d/12WkSj35lHdxc5B_2g5KADTKyh2vJrY2P/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18849,
+      "category": "laptop",
+      "brand": "Samsung",
+      "brandSlug": "samsung",
+      "modelName": "BA92-12068B BA41-02206A Samsung NP270E5E (BA92-12068B BA41-02206A Samsung NP270E5E)",
+      "slug": "laptop-samsung-ba92-12068b-ba41-02206a-samsung-np270e5e-ba92-12068b-ba41-02206a-samsung-np270e5e",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "BA41-02206A",
+      "officialTitle": "Samsung BA92-12068B BA41-02206A Samsung NP270E5E (BA92-12068B BA41-02206A Samsung NP270E5E) (BA41-02206A) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34389,
+          "type": "boardview",
+          "name": "SAMSUNG - BA92-12068B BA41-02206A Samsung NP270E5E - BA92-12068B BA41-02206A Samsung NP270E5E.cad",
+          "size": "1.8 MB",
+          "sizeBytes": 1838632,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1eMIeZb8pL6nrGk1jV6q5GJJV5Yj_e2Mj/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19525,
+      "category": "laptop",
+      "brand": "Samsung",
+      "brandSlug": "samsung",
+      "modelName": "LA-8862P QCLA4,5 r02",
+      "slug": "laptop-samsung-la-8862p-qcla45-r02",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-8862P",
+      "officialTitle": "Samsung LA-8862P QCLA4,5 r02 (LA-8862P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35126,
+          "type": "schematic",
+          "name": "SAMSUNG - LA-8862P QCLA4,5 r02 - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1310152,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1SIZAnvxzVruHrU5eOIgghPtlP3K72SLJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

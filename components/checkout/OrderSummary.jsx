@@ -1,6 +1,7 @@
 'use client'
 
 import { formatRupiah } from '@/lib/formatters'
+import CdnImage from '@/components/product/CdnImage'
 
 export default function OrderSummary({
   product = null,
@@ -30,8 +31,9 @@ export default function OrderSummary({
           items.map((it) => (
             <div key={it.sku} className="pt-3 first:pt-0 flex items-center gap-3">
               <div className="w-12 h-12 rounded-xl overflow-hidden bg-neutral-200 shrink-0 border border-neutral-200">
-                <img
+                <CdnImage
                   src={it.coverImage || `/covers/${it.sku}/${it.sku}_cover.webp`}
+                  sku={it.sku}
                   alt={it.title}
                   className="w-full h-full object-cover"
                 />
@@ -57,8 +59,9 @@ export default function OrderSummary({
         ) : (
           <div className="flex items-center gap-3.5">
             <div className="w-16 h-16 rounded-xl overflow-hidden bg-neutral-200 shrink-0 border border-neutral-200">
-              <img
+              <CdnImage
                 src={product.coverImage || `/covers/${product.sku}/${product.sku}_cover.webp`}
+                sku={product.sku}
                 alt={product.title}
                 className="w-full h-full object-cover"
               />

@@ -14,6 +14,7 @@ import {
 import { hasPurchasedSku } from '@/lib/buyerStore'
 import { formatRupiah } from '@/lib/formatters'
 import { useStoreHealth } from '@/lib/useStoreHealth'
+import CdnImage from '@/components/product/CdnImage'
 
 const VISIBLE_LIMIT = 3 // Item terlihat sebelum "Lihat selengkapnya"
 
@@ -164,18 +165,15 @@ export default function CartDrawer({ isOpen, onClose }) {
                       onClick={onClose}
                       className="w-14 h-14 rounded-xl overflow-hidden bg-neutral-100 border border-neutral-200 shrink-0"
                     >
-                      <img
+                      <CdnImage
                         src={item.coverImage}
+                        sku={item.sku}
                         alt={item.title}
                         draggable={false}
                         decoding="async"
+                        fallbackSelector=".item-fallback"
                         className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200"
                         style={{ transform: 'translateZ(0)' }}
-                        onError={(e) => {
-                          e.currentTarget.style.display = 'none'
-                          const fb = e.currentTarget.parentElement?.querySelector('.item-fallback')
-                          if (fb) fb.style.display = 'flex'
-                        }}
                       />
                       <div className="item-fallback hidden w-full h-full items-center justify-center bg-neutral-900 text-white text-[9px] font-bold">
                         .{item.format || 'CDR'}

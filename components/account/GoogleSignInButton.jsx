@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState, useRef, useCallback } from 'react'
 import { getBuyerProfile, setBuyerProfile } from '@/lib/buyerStore'
 
 /**
@@ -46,7 +46,7 @@ export default function GoogleSignInButton({ onGoogleSuccess, onLoginSuccess, on
   const [loading, setLoading] = useState(false)
   const googleBtnContainerRef = useRef(null)
 
-  const handleSuccess = async (profile) => {
+  const handleSuccess = useCallback(async (profile) => {
     if (!profile?.email) return
     setLoading(true)
 
@@ -90,7 +90,7 @@ export default function GoogleSignInButton({ onGoogleSuccess, onLoginSuccess, on
     if (typeof window !== 'undefined' && window.location.pathname.includes('/login')) {
       window.location.href = '/akun/'
     }
-  }
+  }, [onGoogleSuccess, onLoginSuccess])
 
   useEffect(() => {
     if (typeof window === 'undefined') return
@@ -176,7 +176,7 @@ export default function GoogleSignInButton({ onGoogleSuccess, onLoginSuccess, on
         } catch (_) {}
       }
     }
-  }, [onError])
+  }, [handleSuccess, onError])
 
   return (
     <div className="w-full flex flex-col items-center justify-center min-h-[44px]">

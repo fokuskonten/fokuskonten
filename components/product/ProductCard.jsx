@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { hasPurchasedSku, subscribeBuyerStore } from '@/lib/buyerStore'
 import { addToCart, hasInCart, subscribeCartStore } from '@/lib/cartStore'
+import CdnImage from './CdnImage'
 
 function formatRupiah(num) {
   return new Intl.NumberFormat('id-ID', {
@@ -80,6 +81,7 @@ export default function ProductCard({ product, compact = false, priority = false
 
   const productUrl = `/toko-digital/${(product.sku || '').toLowerCase()}/`
   const formatUpper = (product.format || 'CDR').toUpperCase()
+  const coverSrc = product.coverImage || (product.sku ? `${product.sku}_cover.webp` : '')
 
   if (compact) {
     return (
@@ -97,21 +99,16 @@ export default function ProductCard({ product, compact = false, priority = false
             onContextMenu={(e) => e.preventDefault()}
             className="block relative aspect-square bg-neutral-100 overflow-hidden flex items-center justify-center border-b border-neutral-100 select-none"
           >
-            {product.coverImage ? (
-              <img
-                src={product.coverImage}
+            {coverSrc ? (
+              <CdnImage
+                src={coverSrc}
+                sku={product.sku}
                 alt={product.title}
                 draggable={false}
-                loading={priority ? 'eager' : 'lazy'}
-                fetchPriority={priority ? 'high' : 'low'}
-                decoding="async"
+                priority={priority}
                 width={200}
                 height={200}
-                onError={(e) => {
-                  e.currentTarget.style.display = 'none'
-                  const fallback = e.currentTarget.parentElement.querySelector('.compact-fallback')
-                  if (fallback) fallback.style.display = 'flex'
-                }}
+                fallbackSelector=".compact-fallback"
                 className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-[1.02] pointer-events-none transform-gpu"
                 style={{
                   WebkitBackfaceVisibility: 'hidden',
@@ -123,7 +120,7 @@ export default function ProductCard({ product, compact = false, priority = false
 
             <div
               className="compact-fallback w-full h-full flex flex-col items-center justify-center p-3 text-center bg-gradient-to-br from-neutral-800 to-neutral-950 text-white"
-              style={{ display: product.coverImage ? 'none' : 'flex' }}
+              style={{ display: coverSrc ? 'none' : 'flex' }}
             >
               <svg className="w-6 h-6 text-neutral-400 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
@@ -213,21 +210,16 @@ export default function ProductCard({ product, compact = false, priority = false
           onContextMenu={(e) => e.preventDefault()}
           className="block relative aspect-square bg-neutral-100 overflow-hidden flex items-center justify-center border-b border-neutral-100 select-none"
         >
-          {product.coverImage ? (
-            <img
-              src={product.coverImage}
+          {coverSrc ? (
+            <CdnImage
+              src={coverSrc}
+              sku={product.sku}
               alt={product.title}
               draggable={false}
-              loading={priority ? 'eager' : 'lazy'}
-              fetchPriority={priority ? 'high' : 'low'}
-              decoding="async"
+              priority={priority}
               width={400}
               height={400}
-              onError={(e) => {
-                e.currentTarget.style.display = 'none'
-                const fallback = e.currentTarget.parentElement.querySelector('.card-img-fallback')
-                if (fallback) fallback.style.display = 'flex'
-              }}
+              fallbackSelector=".card-img-fallback"
               className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-[1.02] pointer-events-none transform-gpu"
               style={{
                 WebkitBackfaceVisibility: 'hidden',
@@ -239,7 +231,7 @@ export default function ProductCard({ product, compact = false, priority = false
 
           <div
             className="card-img-fallback w-full h-full flex-col items-center justify-center p-4 text-center bg-gradient-to-br from-neutral-800 to-neutral-950 text-white"
-            style={{ display: product.coverImage ? 'none' : 'flex' }}
+            style={{ display: coverSrc ? 'none' : 'flex' }}
           >
             <svg className="w-8 h-8 text-neutral-400 mb-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />

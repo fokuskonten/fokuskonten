@@ -128,7 +128,7 @@ export default function ProductDetailClient({ product }) {
       'DesainGrafis',
       'TemplateMaster',
       'InstantDownload',
-      'GoogleDriveVault',
+      'AksesLangsung',
       'StandardLicense'
     ]
     const titleWords = (product.title || '')
@@ -167,7 +167,7 @@ export default function ProductDetailClient({ product }) {
   }
 
   const generateWhatsAppLink = () => {
-    const message = `Halo Admin FokusKonten,%0A%0ASaya ingin memesan produk digital:%0A*${product.sku} - ${product.title}*%0AHarga: *${formatRupiah(product.price)}*%0AKategori: *${product.category}*%0A%0AMohon info rekening / QRIS pembayaran.%0AEmail Google Drive saya: [Tuliskan Email Anda]`
+    const message = `Halo Admin FokusKonten,%0A%0ASaya ingin memesan produk digital:%0A*${product.sku} - ${product.title}*%0AHarga: *${formatRupiah(product.price)}*%0AKategori: *${product.category}*%0A%0AMohon info rekening pembayaran resmi.%0AEmail aktif saya: [Tuliskan Email Anda]`
     return `https://wa.me/6285183011318?text=${message}`
   }
 

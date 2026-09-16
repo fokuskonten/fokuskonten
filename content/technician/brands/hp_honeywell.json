@@ -1,0 +1,34 @@
+{
+  "category": "hp",
+  "brand": "Honeywell",
+  "brandSlug": "honeywell",
+  "totalModels": 1,
+  "models": [
+    {
+      "id": 19711,
+      "category": "hp",
+      "brand": "Honeywell",
+      "brandSlug": "honeywell",
+      "modelName": "6290W",
+      "slug": "hp-honeywell-6290w",
+      "chipset": "Snapdragon 212",
+      "motherboardCode": "HWID: 009680E1",
+      "officialTitle": "Honeywell 6290W — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36030,
+          "type": "loader",
+          "name": "009680e100000000_56bcc7d452a30271_fhprg_peek.bin",
+          "size": "279.1 KB",
+          "sizeBytes": 285796,
+          "gdrive_direct_url": "https://drive.google.com/file/d/172f-Rrb4wNMJcQHP4ICskf80GbJpnZtw/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

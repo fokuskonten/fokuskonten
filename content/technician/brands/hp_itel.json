@@ -1,0 +1,1828 @@
+{
+  "category": "hp",
+  "brand": "Itel",
+  "brandSlug": "itel",
+  "totalModels": 70,
+  "models": [
+    {
+      "id": 18291,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "A25",
+      "slug": "hp-itel-a25",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel A25 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33820,
+          "type": "isp",
+          "name": "itel_a25_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1L_z6UHI2VMs3nhXU9XVGfLRWWNnpVoG_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18292,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "A26",
+      "slug": "hp-itel-a26",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel A26 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33821,
+          "type": "isp",
+          "name": "itel_a26_isp.jpg",
+          "size": "111.6 KB",
+          "sizeBytes": 114289,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1tp8G7qGwQzglQd4Ox9MHjq5VMb7hImQd/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18293,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "A27",
+      "slug": "hp-itel-a27",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel A27 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33822,
+          "type": "isp",
+          "name": "itel_a27_isp.jpg",
+          "size": "121 KB",
+          "sizeBytes": 123928,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1KbOxLTvJdtCeEw6zJ9zgD6lXhs-MeyOF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18294,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "A48",
+      "slug": "hp-itel-a48",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel A48 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33823,
+          "type": "isp",
+          "name": "itel_a48_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1IffJapcKeLwb4vofaqXf8D64MIs-CeDx/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18295,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "A49",
+      "slug": "hp-itel-a49",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel A49 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33824,
+          "type": "isp",
+          "name": "itel_a49_isp.jpg",
+          "size": "107 KB",
+          "sizeBytes": 109582,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1bVP59JgmyjU2qibeGw4wbWlWlUMyFAzk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18296,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "A56",
+      "slug": "hp-itel-a56",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel A56 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33825,
+          "type": "isp",
+          "name": "itel_a56_isp.jpg",
+          "size": "156.2 KB",
+          "sizeBytes": 159910,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1nnTqp1qR7iZdm0xUqPR191xh2iJLkUuX/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18297,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "A58",
+      "slug": "hp-itel-a58",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel A58 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33826,
+          "type": "isp",
+          "name": "itel_a58_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1D8Khhxe7S-1Yp7qOzz2i7-YeAgQzc32R/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18298,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "A58 Pro",
+      "slug": "hp-itel-a58-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel A58 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33827,
+          "type": "isp",
+          "name": "itel_a58_pro_isp.jpg",
+          "size": "165 KB",
+          "sizeBytes": 168946,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1MWR7qz4WG6rquwApb_kS6U3smKQ0kZ5I/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18299,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "A60",
+      "slug": "hp-itel-a60",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel A60 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33828,
+          "type": "isp",
+          "name": "itel_a60_isp.jpg",
+          "size": "141.9 KB",
+          "sizeBytes": 145356,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hQloqPmhpry3FbECsINWnw3LA3sgdcGV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18300,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "A60s",
+      "slug": "hp-itel-a60s",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel A60s — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33829,
+          "type": "isp",
+          "name": "itel_a60s_isp.jpg",
+          "size": "141.9 KB",
+          "sizeBytes": 145356,
+          "gdrive_direct_url": "https://drive.google.com/file/d/11WH6DiK5ksNDEM2AaUSmSruKCJe-0Wmm/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18301,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "A70",
+      "slug": "hp-itel-a70",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel A70 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33830,
+          "type": "isp",
+          "name": "itel_a70_isp.jpg",
+          "size": "56.5 KB",
+          "sizeBytes": 57879,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Zjx9zya2hPu7BPsTSiHf5lDD3_2TyhhF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18302,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "P33",
+      "slug": "hp-itel-p33",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel P33 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33831,
+          "type": "isp",
+          "name": "itel_p33_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Y17QUfmgWvRiKv7cKWy3S4wu31Qkm6kY/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18303,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "P33 Plus",
+      "slug": "hp-itel-p33-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel P33 Plus — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33832,
+          "type": "isp",
+          "name": "itel_p33_plus_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1oWMlY6KgNbdslmrrImVzWKs5eO6dgjdT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18304,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "P36",
+      "slug": "hp-itel-p36",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel P36 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33833,
+          "type": "isp",
+          "name": "itel_p36_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1avWCc9M72nYhMYpHIZw3OMgwtePNdOB8/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18305,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "P36 Pro",
+      "slug": "hp-itel-p36-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel P36 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33834,
+          "type": "isp",
+          "name": "itel_p36_pro_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/11y1k3Skj99PkP4lGaMANs_u-dQkFruWJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18306,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "P37",
+      "slug": "hp-itel-p37",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel P37 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33835,
+          "type": "isp",
+          "name": "itel_p37_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1tF4DqvhkgQtaGeQrvHs-j73i-Q7LUU2l/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18307,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "P37 Pro",
+      "slug": "hp-itel-p37-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel P37 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33836,
+          "type": "isp",
+          "name": "itel_p37_pro_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13IQaHvHMG4gY2kTgLXklrgROWPX5NQQ0/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18308,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "P38",
+      "slug": "hp-itel-p38",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel P38 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33837,
+          "type": "isp",
+          "name": "itel_p38_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1KrxwMcPnVlNAcTPqb3wftsTCeWBpxLTS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18309,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "P38 Pro",
+      "slug": "hp-itel-p38-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel P38 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33838,
+          "type": "isp",
+          "name": "itel_p38_pro_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dxX6kaP8dJXTMfDJQZx5awyycblLjQ7f/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18310,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "P40",
+      "slug": "hp-itel-p40",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel P40 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33839,
+          "type": "isp",
+          "name": "itel_p40_isp.jpg",
+          "size": "148.7 KB",
+          "sizeBytes": 152219,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1MIlMsAi19C5VAFRb9hx1VN-vLucE-78x/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18311,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "P40 Plus",
+      "slug": "hp-itel-p40-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel P40 Plus — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33840,
+          "type": "isp",
+          "name": "itel_p40_plus_isp.jpg",
+          "size": "148.7 KB",
+          "sizeBytes": 152219,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Y7lpgUjaSwL4d8DEXtxR1X3_O8BHxzLm/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18312,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "P55 5G",
+      "slug": "hp-itel-p55-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel P55 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33841,
+          "type": "isp",
+          "name": "itel_p55_5g_isp.jpg",
+          "size": "411.9 KB",
+          "sizeBytes": 421778,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1OLLrPoplFvcGJlkvVGRbi76yV0hBdTVt/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18313,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "P55 Plus",
+      "slug": "hp-itel-p55-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel P55 Plus — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33842,
+          "type": "isp",
+          "name": "itel_p55_plus_isp.jpg",
+          "size": "411.9 KB",
+          "sizeBytes": 421778,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1J3iZcebG0pVEDuOMy9fWvSZ1SRb8SjI5/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18314,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "P55t",
+      "slug": "hp-itel-p55t",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel P55t — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33843,
+          "type": "isp",
+          "name": "itel_p55t_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1BTYuewC4S39OVwYrg3M8yTWL_jXW5qio/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18315,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "S23",
+      "slug": "hp-itel-s23",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel S23 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33844,
+          "type": "isp",
+          "name": "itel_s23_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1CuIL0Y5ErCGliyl4gR7ons4RLBNuEHka/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18316,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "S23 Plus",
+      "slug": "hp-itel-s23-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel S23 Plus — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33845,
+          "type": "isp",
+          "name": "itel_s23_plus_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19E96Wh4kug30zcJOyBuzI00RscfsSGDL/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15388,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "S23 S23 Plus P40 P55",
+      "slug": "hp-itel-s23-s23-plus-p40-p55",
+      "chipset": "HiSilicon Kirin",
+      "motherboardCode": "",
+      "officialTitle": "Itel S23 S23 Plus P40 P55 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 30074,
+          "type": "testpoint",
+          "name": "itel_s23_s23_plus_p40_p55_tp.png",
+          "size": "978.4 KB",
+          "sizeBytes": 1001866,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13u9NIXMaaBspe0tJnSGcdqQu1EZqO86k/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/13u9NIXMaaBspe0tJnSGcdqQu1EZqO86k/view?usp=sharing",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18317,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "Vision 1",
+      "slug": "hp-itel-vision-1",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel Vision 1 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33846,
+          "type": "isp",
+          "name": "itel_vision_1_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1f3zCzadQXxRMD0lAysV4-Th7gXqJKzCA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15389,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "Vision 1 1 Plus 2 3",
+      "slug": "hp-itel-vision-1-1-plus-2-3",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Itel Vision 1 1 Plus 2 3 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 30075,
+          "type": "testpoint",
+          "name": "itel_vision_1_1_plus_2_3_tp.jpg",
+          "size": "157.2 KB",
+          "sizeBytes": 160977,
+          "gdrive_direct_url": "https://drive.google.com/file/d/132NjTosgqLfkOaV0B6twnFHClPW1VA0m/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/132NjTosgqLfkOaV0B6twnFHClPW1VA0m/view?usp=sharing",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18318,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "Vision 1 Plus",
+      "slug": "hp-itel-vision-1-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel Vision 1 Plus — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33847,
+          "type": "isp",
+          "name": "itel_vision_1_plus_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hRvsciTqQcZgyopv27MTEwRATbHAn4b7/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18319,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "Vision 1 Pro",
+      "slug": "hp-itel-vision-1-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel Vision 1 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33848,
+          "type": "isp",
+          "name": "itel_vision_1_pro_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1OvhErxAu5rTtwUn7h81JLq4jzt44FX6K/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18320,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "Vision 2",
+      "slug": "hp-itel-vision-2",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel Vision 2 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33849,
+          "type": "isp",
+          "name": "itel_vision_2_isp.jpg",
+          "size": "165.3 KB",
+          "sizeBytes": 169283,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1EHy1IqMB06K4CD5vRpOQo377SJLI4rfM/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18321,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "Vision 2 Plus",
+      "slug": "hp-itel-vision-2-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel Vision 2 Plus — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33850,
+          "type": "isp",
+          "name": "itel_vision_2_plus_isp.jpg",
+          "size": "165.3 KB",
+          "sizeBytes": 169283,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17MjF_LLajHjydYXr7aZcndCVBuUjhIKI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18322,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "Vision 3",
+      "slug": "hp-itel-vision-3",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel Vision 3 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33851,
+          "type": "isp",
+          "name": "itel_vision_3_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/11NDYbc9nYXPmVyJ1nw-KxfVrbksES0Y8/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18323,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "Vision 3 Plus",
+      "slug": "hp-itel-vision-3-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel Vision 3 Plus — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33852,
+          "type": "isp",
+          "name": "itel_vision_3_plus_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1neQ-CAw4dtt3UVD-uJZDusF9HngcCNEW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18324,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "Vision 5",
+      "slug": "hp-itel-vision-5",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel Vision 5 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33853,
+          "type": "isp",
+          "name": "itel_vision_5_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Y5iqVqhA3w-Oux217Qdkd0LIdSM6kvcQ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16847,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] A25",
+      "slug": "hp-itel-isp-a25",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] A25 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32374,
+          "type": "testpoint",
+          "name": "itel_a25_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1L_z6UHI2VMs3nhXU9XVGfLRWWNnpVoG_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16848,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] A26",
+      "slug": "hp-itel-isp-a26",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] A26 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32375,
+          "type": "testpoint",
+          "name": "itel_a26_isp.jpg",
+          "size": "111.6 KB",
+          "sizeBytes": 114289,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1tp8G7qGwQzglQd4Ox9MHjq5VMb7hImQd/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16849,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] A27",
+      "slug": "hp-itel-isp-a27",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] A27 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32376,
+          "type": "testpoint",
+          "name": "itel_a27_isp.jpg",
+          "size": "121 KB",
+          "sizeBytes": 123928,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1KbOxLTvJdtCeEw6zJ9zgD6lXhs-MeyOF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16850,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] A48",
+      "slug": "hp-itel-isp-a48",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] A48 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32377,
+          "type": "testpoint",
+          "name": "itel_a48_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1IffJapcKeLwb4vofaqXf8D64MIs-CeDx/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16851,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] A49",
+      "slug": "hp-itel-isp-a49",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] A49 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32378,
+          "type": "testpoint",
+          "name": "itel_a49_isp.jpg",
+          "size": "107 KB",
+          "sizeBytes": 109582,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1bVP59JgmyjU2qibeGw4wbWlWlUMyFAzk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16852,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] A56",
+      "slug": "hp-itel-isp-a56",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] A56 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32379,
+          "type": "testpoint",
+          "name": "itel_a56_isp.jpg",
+          "size": "156.2 KB",
+          "sizeBytes": 159910,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1nnTqp1qR7iZdm0xUqPR191xh2iJLkUuX/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16853,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] A58",
+      "slug": "hp-itel-isp-a58",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] A58 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32380,
+          "type": "testpoint",
+          "name": "itel_a58_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1D8Khhxe7S-1Yp7qOzz2i7-YeAgQzc32R/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16854,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] A58 Pro",
+      "slug": "hp-itel-isp-a58-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] A58 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32381,
+          "type": "testpoint",
+          "name": "itel_a58_pro_isp.jpg",
+          "size": "165 KB",
+          "sizeBytes": 168946,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1MWR7qz4WG6rquwApb_kS6U3smKQ0kZ5I/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16855,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] A60",
+      "slug": "hp-itel-isp-a60",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] A60 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32382,
+          "type": "testpoint",
+          "name": "itel_a60_isp.jpg",
+          "size": "141.9 KB",
+          "sizeBytes": 145356,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hQloqPmhpry3FbECsINWnw3LA3sgdcGV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16856,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] A60s",
+      "slug": "hp-itel-isp-a60s",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] A60s — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32383,
+          "type": "testpoint",
+          "name": "itel_a60s_isp.jpg",
+          "size": "141.9 KB",
+          "sizeBytes": 145356,
+          "gdrive_direct_url": "https://drive.google.com/file/d/11WH6DiK5ksNDEM2AaUSmSruKCJe-0Wmm/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16857,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] A70",
+      "slug": "hp-itel-isp-a70",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] A70 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32384,
+          "type": "testpoint",
+          "name": "itel_a70_isp.jpg",
+          "size": "56.5 KB",
+          "sizeBytes": 57879,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Zjx9zya2hPu7BPsTSiHf5lDD3_2TyhhF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16858,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] P33",
+      "slug": "hp-itel-isp-p33",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] P33 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32385,
+          "type": "testpoint",
+          "name": "itel_p33_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Y17QUfmgWvRiKv7cKWy3S4wu31Qkm6kY/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16859,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] P33 Plus",
+      "slug": "hp-itel-isp-p33-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] P33 Plus — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32386,
+          "type": "testpoint",
+          "name": "itel_p33_plus_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1oWMlY6KgNbdslmrrImVzWKs5eO6dgjdT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16860,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] P36",
+      "slug": "hp-itel-isp-p36",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] P36 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32387,
+          "type": "testpoint",
+          "name": "itel_p36_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1avWCc9M72nYhMYpHIZw3OMgwtePNdOB8/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16861,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] P36 Pro",
+      "slug": "hp-itel-isp-p36-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] P36 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32388,
+          "type": "testpoint",
+          "name": "itel_p36_pro_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/11y1k3Skj99PkP4lGaMANs_u-dQkFruWJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16862,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] P37",
+      "slug": "hp-itel-isp-p37",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] P37 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32389,
+          "type": "testpoint",
+          "name": "itel_p37_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1tF4DqvhkgQtaGeQrvHs-j73i-Q7LUU2l/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16863,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] P37 Pro",
+      "slug": "hp-itel-isp-p37-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] P37 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32390,
+          "type": "testpoint",
+          "name": "itel_p37_pro_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13IQaHvHMG4gY2kTgLXklrgROWPX5NQQ0/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16864,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] P38",
+      "slug": "hp-itel-isp-p38",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] P38 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32391,
+          "type": "testpoint",
+          "name": "itel_p38_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1KrxwMcPnVlNAcTPqb3wftsTCeWBpxLTS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16865,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] P38 Pro",
+      "slug": "hp-itel-isp-p38-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] P38 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32392,
+          "type": "testpoint",
+          "name": "itel_p38_pro_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dxX6kaP8dJXTMfDJQZx5awyycblLjQ7f/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16866,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] P40",
+      "slug": "hp-itel-isp-p40",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] P40 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32393,
+          "type": "testpoint",
+          "name": "itel_p40_isp.jpg",
+          "size": "148.7 KB",
+          "sizeBytes": 152219,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1MIlMsAi19C5VAFRb9hx1VN-vLucE-78x/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16867,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] P40 Plus",
+      "slug": "hp-itel-isp-p40-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] P40 Plus — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32394,
+          "type": "testpoint",
+          "name": "itel_p40_plus_isp.jpg",
+          "size": "148.7 KB",
+          "sizeBytes": 152219,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Y7lpgUjaSwL4d8DEXtxR1X3_O8BHxzLm/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16868,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] P55 5G",
+      "slug": "hp-itel-isp-p55-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] P55 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32395,
+          "type": "testpoint",
+          "name": "itel_p55_5g_isp.jpg",
+          "size": "411.9 KB",
+          "sizeBytes": 421778,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1OLLrPoplFvcGJlkvVGRbi76yV0hBdTVt/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16869,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] P55 Plus",
+      "slug": "hp-itel-isp-p55-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] P55 Plus — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32396,
+          "type": "testpoint",
+          "name": "itel_p55_plus_isp.jpg",
+          "size": "411.9 KB",
+          "sizeBytes": 421778,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1J3iZcebG0pVEDuOMy9fWvSZ1SRb8SjI5/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16870,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] P55t",
+      "slug": "hp-itel-isp-p55t",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] P55t — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32397,
+          "type": "testpoint",
+          "name": "itel_p55t_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1BTYuewC4S39OVwYrg3M8yTWL_jXW5qio/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16871,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] S23",
+      "slug": "hp-itel-isp-s23",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] S23 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32398,
+          "type": "testpoint",
+          "name": "itel_s23_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1CuIL0Y5ErCGliyl4gR7ons4RLBNuEHka/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16872,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] S23 Plus",
+      "slug": "hp-itel-isp-s23-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] S23 Plus — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32399,
+          "type": "testpoint",
+          "name": "itel_s23_plus_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19E96Wh4kug30zcJOyBuzI00RscfsSGDL/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16873,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] Vision 1",
+      "slug": "hp-itel-isp-vision-1",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] Vision 1 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32400,
+          "type": "testpoint",
+          "name": "itel_vision_1_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1f3zCzadQXxRMD0lAysV4-Th7gXqJKzCA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16874,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] Vision 1 Plus",
+      "slug": "hp-itel-isp-vision-1-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] Vision 1 Plus — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32401,
+          "type": "testpoint",
+          "name": "itel_vision_1_plus_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hRvsciTqQcZgyopv27MTEwRATbHAn4b7/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16875,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] Vision 1 Pro",
+      "slug": "hp-itel-isp-vision-1-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] Vision 1 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32402,
+          "type": "testpoint",
+          "name": "itel_vision_1_pro_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1OvhErxAu5rTtwUn7h81JLq4jzt44FX6K/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16876,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] Vision 2",
+      "slug": "hp-itel-isp-vision-2",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] Vision 2 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32403,
+          "type": "testpoint",
+          "name": "itel_vision_2_isp.jpg",
+          "size": "165.3 KB",
+          "sizeBytes": 169283,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1EHy1IqMB06K4CD5vRpOQo377SJLI4rfM/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16877,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] Vision 2 Plus",
+      "slug": "hp-itel-isp-vision-2-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] Vision 2 Plus — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32404,
+          "type": "testpoint",
+          "name": "itel_vision_2_plus_isp.jpg",
+          "size": "165.3 KB",
+          "sizeBytes": 169283,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17MjF_LLajHjydYXr7aZcndCVBuUjhIKI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16878,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] Vision 3",
+      "slug": "hp-itel-isp-vision-3",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] Vision 3 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32405,
+          "type": "testpoint",
+          "name": "itel_vision_3_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/11NDYbc9nYXPmVyJ1nw-KxfVrbksES0Y8/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16879,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] Vision 3 Plus",
+      "slug": "hp-itel-isp-vision-3-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] Vision 3 Plus — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32406,
+          "type": "testpoint",
+          "name": "itel_vision_3_plus_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1neQ-CAw4dtt3UVD-uJZDusF9HngcCNEW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16880,
+      "category": "hp",
+      "brand": "Itel",
+      "brandSlug": "itel",
+      "modelName": "[ISP] Vision 5",
+      "slug": "hp-itel-isp-vision-5",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Itel [ISP] Vision 5 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32407,
+          "type": "testpoint",
+          "name": "itel_vision_5_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Y5iqVqhA3w-Oux217Qdkd0LIdSM6kvcQ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

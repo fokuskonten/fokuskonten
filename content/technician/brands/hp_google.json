@@ -1,0 +1,100 @@
+{
+  "category": "hp",
+  "brand": "Google",
+  "brandSlug": "google",
+  "totalModels": 2,
+  "models": [
+    {
+      "id": 19662,
+      "category": "hp",
+      "brand": "Google",
+      "brandSlug": "google",
+      "modelName": "Nexus 5",
+      "slug": "hp-google-nexus-5",
+      "chipset": "Snapdragon 800",
+      "motherboardCode": "HWID: 007B00E1",
+      "officialTitle": "Google Nexus 5 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35921,
+          "type": "loader",
+          "name": "007b00e100000000_0eb76ac5db7868bb_fhprg.bin",
+          "size": "86.5 KB",
+          "sizeBytes": 88548,
+          "gdrive_direct_url": "https://drive.google.com/file/d/104MuVATxzp5fnkPzYBiz0SLd1MAMjBfX/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35922,
+          "type": "loader",
+          "name": "007b00e100311000_cc3153a80293939b_fhprg.bin",
+          "size": "303.5 KB",
+          "sizeBytes": 310828,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19jEMcnEx16iQSUYNkn10W9eYyio02Yda/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35923,
+          "type": "loader",
+          "name": "007b00e100310000_cc3153a80293939b_fhprg.bin",
+          "size": "298.3 KB",
+          "sizeBytes": 305412,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QZpBD-mXhFSMJ19D8LAW3J-uihQ59R7C/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35924,
+          "type": "loader",
+          "name": "007b00e100000000_be9070a346e77e14_fhprg.bin",
+          "size": "50.6 KB",
+          "sizeBytes": 51820,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1MRGlGxxh4resyrE3dOBccRj1o2Ldou-N/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19632,
+      "category": "hp",
+      "brand": "Google",
+      "brandSlug": "google",
+      "modelName": "Pixel 3a",
+      "slug": "hp-google-pixel-3a",
+      "chipset": "Snapdragon 670",
+      "motherboardCode": "HWID: 000910E1",
+      "officialTitle": "Google Pixel 3a — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35837,
+          "type": "loader",
+          "name": "000910e100010000_13d7a19aeb74fb1c_fhprg.bin",
+          "size": "677.1 KB",
+          "sizeBytes": 693304,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1c0mIvZ8aFGafqRzkVCBcGIIf846Jt-Bm/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35838,
+          "type": "loader",
+          "name": "000910e100720000_c924a35f39ce1cdd_fhprg_edlauth.bin",
+          "size": "705.2 KB",
+          "sizeBytes": 722160,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14zx2R1V2Uoy-oAuxmYzLmsuy_27BpCmB/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1614 @@
+{
+  "category": "laptop",
+  "brand": "Toshiba",
+  "brandSlug": "toshiba",
+  "totalModels": 61,
+  "models": [
+    {
+      "id": 19542,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "6050A2338402",
+      "slug": "laptop-toshiba-6050a2338402",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba 6050A2338402 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35143,
+          "type": "schematic",
+          "name": "TOSHIBA - 6050A2338402 - Schematic.pdf",
+          "size": "908.6 KB",
+          "sizeBytes": 930381,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1BNAsTQen8OMLWBOLYN0dhCuF-hATcdNA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19543,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "6050A2355301-MB MAS10M INVENTEC MANAUS 10M (Build Pre MP, REV A02, 2010-03-23)",
+      "slug": "laptop-toshiba-6050a2355301-mb-mas10m-inventec-manaus-10m-build-pre-mp-rev-a02-2010-03-23",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba 6050A2355301-MB MAS10M INVENTEC MANAUS 10M (Build Pre MP, REV A02, 2010-03-23) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35144,
+          "type": "schematic",
+          "name": "TOSHIBA - 6050A2355301-MB MAS10M INVENTEC MANAUS 10M (Build Pre MP, REV A02, 2010-03-23) - Schematic.pdf",
+          "size": "682 KB",
+          "sizeBytes": 698356,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1qCklQ5Oyi2gPZNRVemY0jyEtBdAf2Edp/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18851,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "BoardViewR4",
+      "slug": "laptop-toshiba-boardviewr4",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba BoardViewR4 — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34392,
+          "type": "boardview",
+          "name": "TOSHIBA - BoardViewR4 - Boardview.zip",
+          "size": "347.1 KB",
+          "sizeBytes": 355433,
+          "gdrive_direct_url": "https://drive.google.com/file/d/147fOuNtsBZ3mWWEDy8oc6PEcfUtSrKvL/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19544,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "C600 - C640 Inventec Insyde 6050A2357502",
+      "slug": "laptop-toshiba-c600-c640-inventec-insyde-6050a2357502",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba C600 - C640 Inventec Insyde 6050A2357502 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35145,
+          "type": "schematic",
+          "name": "TOSHIBA - C600 - C640 Inventec Insyde 6050A2357502 - Schematic.pdf",
+          "size": "608.4 KB",
+          "sizeBytes": 622964,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1lTBmNxjzERfo0zX_pL5ffs5YI3Ciscw5/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19545,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "COMPAL LA-6841P (PWWAA, Marseille LC) 2010-08-16, rev 0.1",
+      "slug": "laptop-toshiba-compal-la-6841p-pwwaa-marseille-lc-2010-08-16-rev-01",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-6841P",
+      "officialTitle": "Toshiba COMPAL LA-6841P (PWWAA, Marseille LC) 2010-08-16, rev 0.1 (LA-6841P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35146,
+          "type": "schematic",
+          "name": "TOSHIBA - COMPAL LA-6841P (PWWAA, Marseille LC) 2010-08-16, rev 0.1 - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1310107,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DSk-8-iT2ZCVgw7a7uigIp7tKLwuL_uY/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19548,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "CT10AB A02 20110125 Gerber(6050A2414501)",
+      "slug": "laptop-toshiba-ct10ab-a02-20110125-gerber6050a2414501",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba CT10AB A02 20110125 Gerber(6050A2414501) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35149,
+          "type": "schematic",
+          "name": "TOSHIBA - CT10AB A02 20110125 Gerber(6050A2414501) - Schematic.pdf",
+          "size": "673.8 KB",
+          "sizeBytes": 690021,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DDdsV0H-Ivh3nQKK4wj-P27Bjmfwn-Mp/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19546,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Compal LA-9862P",
+      "slug": "laptop-toshiba-compal-la-9862p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-9862P",
+      "officialTitle": "Toshiba Compal LA-9862P (LA-9862P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35147,
+          "type": "schematic",
+          "name": "TOSHIBA - Compal LA-9862P - Schematic.pdf",
+          "size": "7.6 MB",
+          "sizeBytes": 7978539,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WJjHcZ-ANdZefIHvu1luI-jlD1FDZUcy/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19547,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Compal LA-B301P r1.0",
+      "slug": "laptop-toshiba-compal-la-b301p-r10",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-B301P",
+      "officialTitle": "Toshiba Compal LA-B301P r1.0 (LA-B301P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35148,
+          "type": "schematic",
+          "name": "TOSHIBA - Compal LA-B301P r1.0 - Schematic.pdf",
+          "size": "1.7 MB",
+          "sizeBytes": 1792027,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DMJELbMj3leWhfqinr9qThCxZ2rqW9Tq/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18852,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "DB10AN-6050A2556901-MB-A02",
+      "slug": "laptop-toshiba-db10an-6050a2556901-mb-a02",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba DB10AN-6050A2556901-MB-A02 — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34393,
+          "type": "boardview",
+          "name": "TOSHIBA - DB10AN-6050A2556901-MB-A02 - Boardview.brd",
+          "size": "187.6 KB",
+          "sizeBytes": 192053,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17L1hKr7Ok2TEEOonCZwLAkF0PfTjmthJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19549,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Dakar10AC DK10AC-6050A2492001-MB-AX1 20111018 Toshiba Satellite C855D",
+      "slug": "laptop-toshiba-dakar10ac-dk10ac-6050a2492001-mb-ax1-20111018-toshiba-satellite-c855d",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba Dakar10AC DK10AC-6050A2492001-MB-AX1 20111018 Toshiba Satellite C855D — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35150,
+          "type": "schematic",
+          "name": "TOSHIBA - Dakar10AC DK10AC-6050A2492001-MB-AX1 20111018 Toshiba Satellite C855D - Schematic.pdf",
+          "size": "824.4 KB",
+          "sizeBytes": 844207,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14oTD2Fz2aSKVLQpSyXSc30msY02wFRQF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19550,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "E305 TE7 RAMP RB2A 1215 FINAL",
+      "slug": "laptop-toshiba-e305-te7-ramp-rb2a-1215-final",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba E305 TE7 RAMP RB2A 1215 FINAL — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35151,
+          "type": "schematic",
+          "name": "TOSHIBA - E305 TE7 RAMP RB2A 1215 FINAL - Schematic.pdf",
+          "size": "1 MB",
+          "sizeBytes": 1098795,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1lcFgpZBEp0BcCX32BCA8KWvIh9cC8_fG/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19551,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Inventec Bremen-10G BM10G-6050A2338501-MB-A02-27 MP build (A02) ATI",
+      "slug": "laptop-toshiba-inventec-bremen-10g-bm10g-6050a2338501-mb-a02-27-mp-build-a02-ati",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba Inventec Bremen-10G BM10G-6050A2338501-MB-A02-27 MP build (A02) ATI — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35152,
+          "type": "schematic",
+          "name": "TOSHIBA - Inventec Bremen-10G BM10G-6050A2338501-MB-A02-27 MP build (A02) ATI - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1362572,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1RRuCqbDTxdA-OG16l1NU_XJC0mDH7fZo/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19552,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "L300 INVENTEC Sacramento 10, Phoenix 10 6050A2170401-MB - 6050A2264901-MB",
+      "slug": "laptop-toshiba-l300-inventec-sacramento-10-phoenix-10-6050a2170401-mb-6050a2264901-mb",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba L300 INVENTEC Sacramento 10, Phoenix 10 6050A2170401-MB - 6050A2264901-MB — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35153,
+          "type": "schematic",
+          "name": "TOSHIBA - L300 INVENTEC Sacramento 10, Phoenix 10 6050A2170401-MB - 6050A2264901-MB - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1212828,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Ii14n0yTdk_rzSu-sEMkKI9hpxcTAyRm/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19554,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "L510 6050A2303001-MB-A03 PG10 Perugia 10M",
+      "slug": "laptop-toshiba-l510-6050a2303001-mb-a03-pg10-perugia-10m",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba L510 6050A2303001-MB-A03 PG10 Perugia 10M — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35155,
+          "type": "schematic",
+          "name": "TOSHIBA - L510 6050A2303001-MB-A03 PG10 Perugia 10M - Schematic.pdf",
+          "size": "1 MB",
+          "sizeBytes": 1083919,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15yD5dYGmQ91hVg91MFeGIzFkL53Zg0fF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19553,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "L510 6050A2303101-MB-A02",
+      "slug": "laptop-toshiba-l510-6050a2303101-mb-a02",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba L510 6050A2303101-MB-A02 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35154,
+          "type": "schematic",
+          "name": "TOSHIBA - L510 6050A2303101-MB-A02 - Schematic.pdf",
+          "size": "1.4 MB",
+          "sizeBytes": 1432043,
+          "gdrive_direct_url": "https://drive.google.com/file/d/18KRLQk0QrMZ_-jJgjmcmRUPO2DAwkdQE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19555,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "L510 PG10 Perugia 10 6050A2264201 MP 20091102",
+      "slug": "laptop-toshiba-l510-pg10-perugia-10-6050a2264201-mp-20091102",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba L510 PG10 Perugia 10 6050A2264201 MP 20091102 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35156,
+          "type": "schematic",
+          "name": "TOSHIBA - L510 PG10 Perugia 10 6050A2264201 MP 20091102 - Schematic.pdf",
+          "size": "909.2 KB",
+          "sizeBytes": 931046,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dHEPh7unILnCGKeuOsGNnjYUgIPGy4ku/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19556,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "L745D - DAOTE6MB6G0 - TE6 SKEMA",
+      "slug": "laptop-toshiba-l745d-daote6mb6g0-te6-skema",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba L745D - DAOTE6MB6G0 - TE6 SKEMA — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35157,
+          "type": "schematic",
+          "name": "TOSHIBA - L745D - DAOTE6MB6G0 - TE6 SKEMA - Schematic.pdf",
+          "size": "1.5 MB",
+          "sizeBytes": 1565509,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1OYLMWw2xSPD1CtsTvxZSOyIs3mPS5i_M/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19557,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "L750 Quanta BLB UMA F3A 1224",
+      "slug": "laptop-toshiba-l750-quanta-blb-uma-f3a-1224",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba L750 Quanta BLB UMA F3A 1224 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35158,
+          "type": "schematic",
+          "name": "TOSHIBA - L750 Quanta BLB UMA F3A 1224 - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1273319,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1tU1BEfDQlLEqK4Kz7CbjqPYUavWVYIiX/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19558,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "LA-5841P",
+      "slug": "laptop-toshiba-la-5841p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-5841P",
+      "officialTitle": "Toshiba LA-5841P (LA-5841P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35159,
+          "type": "schematic",
+          "name": "TOSHIBA - LA-5841P - Schematic.pdf",
+          "size": "802.6 KB",
+          "sizeBytes": 821854,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1leTkrYqhtwarGi7eZ9PWit5Ulc10OwX_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19559,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "LA-6858PR10 1107",
+      "slug": "laptop-toshiba-la-6858pr10-1107",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-6858PR10",
+      "officialTitle": "Toshiba LA-6858PR10 1107 (LA-6858PR10) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35160,
+          "type": "schematic",
+          "name": "TOSHIBA - LA-6858PR10 1107 - Schematic.pdf",
+          "size": "991.7 KB",
+          "sizeBytes": 1015451,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1t-liMBLDcbmbsvCMtf_Naz3g3gGx74dn/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19562,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "PS10S Sacramento 10S Phoenix 10S MP BUILD 20080123 6050A2170201-MB-A03 Toshiba S",
+      "slug": "laptop-toshiba-ps10s-sacramento-10s-phoenix-10s-mp-build-20080123-6050a2170201-mb-a03-toshiba-s",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba PS10S Sacramento 10S Phoenix 10S MP BUILD 20080123 6050A2170201-MB-A03 Toshiba S — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35163,
+          "type": "schematic",
+          "name": "TOSHIBA - PS10S Sacramento 10S Phoenix 10S MP BUILD 20080123 6050A2170201-MB-A03 Toshiba S - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1213746,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1srg00j9FgDb9CqWlEtoEbbVAvboy7p8x/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18854,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "QUANTA DABY3CMB8E0",
+      "slug": "laptop-toshiba-quanta-daby3cmb8e0",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba QUANTA DABY3CMB8E0 — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34395,
+          "type": "boardview",
+          "name": "TOSHIBA - QUANTA DABY3CMB8E0 - Boardview.brd",
+          "size": "317.3 KB",
+          "sizeBytes": 324944,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1GtIwMjNICwC3dGk0fOxDykNUuj-saRWN/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 34396,
+          "type": "boardview",
+          "name": "TOSHIBA - QUANTA DABY3CMB8E0 - Boardview.con",
+          "size": "1 B",
+          "sizeBytes": 1,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PEt15sPVlGPGotkn_zcMmARir0ZHln3N/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18853,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "QUANTA DABY3CMB8E0 - BY3C",
+      "slug": "laptop-toshiba-quanta-daby3cmb8e0-by3c",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba QUANTA DABY3CMB8E0 - BY3C — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34394,
+          "type": "boardview",
+          "name": "TOSHIBA - QUANTA DABY3CMB8E0 - BY3C - Boardview Pack.zip",
+          "size": "90.9 KB",
+          "sizeBytes": 93108,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1pskhLYeJy9kaljzcfKiNAtR-3SLM-Dh9/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19563,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "QUANTA DATE2DMB8EO TE2D DIS R2A 0225 TOSHIBA SATELLITE L600",
+      "slug": "laptop-toshiba-quanta-date2dmb8eo-te2d-dis-r2a-0225-toshiba-satellite-l600",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba QUANTA DATE2DMB8EO TE2D DIS R2A 0225 TOSHIBA SATELLITE L600 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35164,
+          "type": "schematic",
+          "name": "TOSHIBA - QUANTA DATE2DMB8EO TE2D DIS R2A 0225 TOSHIBA SATELLITE L600 - Schematic.pdf",
+          "size": "1.5 MB",
+          "sizeBytes": 1614692,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1RxYrkIAa8JGpyLvNc2IYnD-sSSnZuTRz/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18855,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "QUANTA DATE2DMB8EO TE2D-MB-C",
+      "slug": "laptop-toshiba-quanta-date2dmb8eo-te2d-mb-c",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "TE2D-MB-C",
+      "officialTitle": "Toshiba QUANTA DATE2DMB8EO TE2D-MB-C (TE2D-MB-C) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34397,
+          "type": "boardview",
+          "name": "TOSHIBA - QUANTA DATE2DMB8EO TE2D-MB-C - Boardview.brd",
+          "size": "307.9 KB",
+          "sizeBytes": 315333,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15g8kNNWurVVyj30Z06klOWkX-sSy7Fhu/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 34398,
+          "type": "boardview",
+          "name": "TOSHIBA - QUANTA DATE2DMB8EO TE2D-MB-C - Boardview.con",
+          "size": "1 B",
+          "sizeBytes": 1,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1OjmIViJnd7UQ_PqHwq4RwSSrSJeOCPbj/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19564,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Quanta TE4 R1A 1112 UMA TOSHIBA L700.PDF",
+      "slug": "laptop-toshiba-quanta-te4-r1a-1112-uma-toshiba-l700pdf",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba Quanta TE4 R1A 1112 UMA TOSHIBA L700.PDF — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35165,
+          "type": "schematic",
+          "name": "TOSHIBA - Quanta TE4 R1A 1112 UMA TOSHIBA L700.PDF - Schematic.pdf",
+          "size": "2.2 MB",
+          "sizeBytes": 2273327,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1j6ooz9ULFMZ9dZPxd06SjgW10Tqc39wi/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19565,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Skema BU5 INTEL UMA.pdf",
+      "slug": "laptop-toshiba-skema-bu5-intel-umapdf",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba Skema BU5 INTEL UMA.pdf — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35166,
+          "type": "schematic",
+          "name": "TOSHIBA - Skema BU5 INTEL UMA.pdf - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1244388,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uNiZ6gxSClQoC0qRLCsOghxmbtTKynhW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19570,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "TOSHIBA C850 DK10F-6050A2540701-MB-A02 SCHEMATIC",
+      "slug": "laptop-toshiba-toshiba-c850-dk10f-6050a2540701-mb-a02-schematic",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba TOSHIBA C850 DK10F-6050A2540701-MB-A02 SCHEMATIC — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35171,
+          "type": "schematic",
+          "name": "TOSHIBA - TOSHIBA C850 DK10F-6050A2540701-MB-A02 SCHEMATIC - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1292346,
+          "gdrive_direct_url": "https://drive.google.com/file/d/16tK5L-YjfbWksxFbZuLSLSg0azXAmP0R/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19572,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "TOSHIBA L510 6050A2250501-MB-A03",
+      "slug": "laptop-toshiba-toshiba-l510-6050a2250501-mb-a03",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba TOSHIBA L510 6050A2250501-MB-A03 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35173,
+          "type": "schematic",
+          "name": "TOSHIBA - TOSHIBA L510 6050A2250501-MB-A03 - Schematic.pdf",
+          "size": "1 MB",
+          "sizeBytes": 1084080,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1c6LS_4DFFH4RBsGESU6N0995P50KCZPI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19566,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "TOSHIBA NB200,NB205 - COMPAL LA-5121P",
+      "slug": "laptop-toshiba-toshiba-nb200nb205-compal-la-5121p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-5121P",
+      "officialTitle": "Toshiba TOSHIBA NB200,NB205 - COMPAL LA-5121P (LA-5121P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35167,
+          "type": "schematic",
+          "name": "TOSHIBA - TOSHIBA NB200,NB205 - COMPAL LA-5121P - Schematic.pdf",
+          "size": "1004.2 KB",
+          "sizeBytes": 1028323,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HmqH6tW1NFYEyk2-8zoCRedcCnKO6pZ4/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19591,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "TOSHIBA TE4 (Quanta TE4 R1A 1112 UMA TOSHIBA L700.PDF)",
+      "slug": "laptop-toshiba-toshiba-te4-quanta-te4-r1a-1112-uma-toshiba-l700pdf",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba TOSHIBA TE4 (Quanta TE4 R1A 1112 UMA TOSHIBA L700.PDF) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35192,
+          "type": "schematic",
+          "name": "TOSHIBA - TOSHIBA TE4 - Quanta TE4 R1A 1112 UMA TOSHIBA L700.PDF - Schematic.pdf",
+          "size": "2.2 MB",
+          "sizeBytes": 2273327,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1KRit64MGZAJtAqI09B_-lsaAcaLc16ta/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19592,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "TOSHIBA TE4 (TE4-MB-C)",
+      "slug": "laptop-toshiba-toshiba-te4-te4-mb-c",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "TE4-MB-C",
+      "officialTitle": "Toshiba TOSHIBA TE4 (TE4-MB-C) (TE4-MB-C) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 35193,
+          "type": "boardview",
+          "name": "TOSHIBA - TOSHIBA TE4 - TE4-MB-C - Boardview.brd",
+          "size": "231.4 KB",
+          "sizeBytes": 236996,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Wsyg-Gx6ZV7gAbzpGFlpotd7GHPKw_fg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19568,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Toshiba C40 DAOMTCMB8GO - MTC - MTCD (MTC)",
+      "slug": "laptop-toshiba-toshiba-c40-daomtcmb8go-mtc-mtcd-mtc",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba Toshiba C40 DAOMTCMB8GO - MTC - MTCD (MTC) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 35169,
+          "type": "boardview",
+          "name": "TOSHIBA - Toshiba C40 DAOMTCMB8GO - MTC - MTCD - MTC - Boardview.brd",
+          "size": "287.7 KB",
+          "sizeBytes": 294634,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Xos9Ucr1PC9jDV_FO209nrR_HMSx5V88/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19567,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Toshiba C40 DAOMTCMB8GO - MTC - MTCD (mtc mtcd b-test-v24-1211-1119-eric ICT CHECK.PDF)",
+      "slug": "laptop-toshiba-toshiba-c40-daomtcmb8go-mtc-mtcd-mtc-mtcd-b-test-v24-1211-1119-eric-ict-checkpdf",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba Toshiba C40 DAOMTCMB8GO - MTC - MTCD (mtc mtcd b-test-v24-1211-1119-eric ICT CHECK.PDF) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35168,
+          "type": "schematic",
+          "name": "TOSHIBA - Toshiba C40 DAOMTCMB8GO - MTC - MTCD - mtc mtcd b-test-v24-1211-1119-eric ICT CHECK.PDF - Schematic.pdf",
+          "size": "2.9 MB",
+          "sizeBytes": 3078842,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1V-tsVfZK0bPewys91CoR1LYqaPivpXm4/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19569,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Toshiba C600 - Inventec BR10ML 6050A2446201",
+      "slug": "laptop-toshiba-toshiba-c600-inventec-br10ml-6050a2446201",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba Toshiba C600 - Inventec BR10ML 6050A2446201 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35170,
+          "type": "schematic",
+          "name": "TOSHIBA - Toshiba C600 - Inventec BR10ML 6050A2446201 - Schematic.pdf",
+          "size": "754.3 KB",
+          "sizeBytes": 772386,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uv0Lmf7kt3OO0f_R_KVaCfTCSH5P5qgE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19571,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Toshiba L40 - VFKTA LA-9861P",
+      "slug": "laptop-toshiba-toshiba-l40-vfkta-la-9861p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-9861P",
+      "officialTitle": "Toshiba Toshiba L40 - VFKTA LA-9861P (LA-9861P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35172,
+          "type": "schematic",
+          "name": "TOSHIBA - Toshiba L40 - VFKTA LA-9861P - Schematic.pdf",
+          "size": "1.1 MB",
+          "sizeBytes": 1154800,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1cujBMX1UEbKHPfXUh4e0RTQFeHaPTK6t/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18856,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Toshiba L600 TE2D",
+      "slug": "laptop-toshiba-toshiba-l600-te2d",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba Toshiba L600 TE2D — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34399,
+          "type": "boardview",
+          "name": "TOSHIBA - Toshiba L600 TE2D - Boardview Pack.zip",
+          "size": "91 KB",
+          "sizeBytes": 93230,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1JurMMUlw1UDudbm3LeHFtxWY8w1Af8h-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19573,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Toshiba NB250 NB255 Compal LA-5122P",
+      "slug": "laptop-toshiba-toshiba-nb250-nb255-compal-la-5122p",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-5122P",
+      "officialTitle": "Toshiba Toshiba NB250 NB255 Compal LA-5122P (LA-5122P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35174,
+          "type": "schematic",
+          "name": "TOSHIBA - Toshiba NB250 NB255 Compal LA-5122P - Schematic.pdf",
+          "size": "555 KB",
+          "sizeBytes": 568353,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kmpek8LVJ57MRRpHjJ_062AnbZ16TI0k/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19574,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Toshiba Portege M600 - QUANTA BU1 (BU1-AUDIO-RAMP)",
+      "slug": "laptop-toshiba-toshiba-portege-m600-quanta-bu1-bu1-audio-ramp",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba Toshiba Portege M600 - QUANTA BU1 (BU1-AUDIO-RAMP) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35175,
+          "type": "schematic",
+          "name": "TOSHIBA - Toshiba Portege M600 - QUANTA BU1 - BU1-AUDIO-RAMP - Schematic.pdf",
+          "size": "110.9 KB",
+          "sizeBytes": 113565,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1jCJjwSvmzpyZXWaIkxz1NcNPkGa7f-2B/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19575,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Toshiba Portege M600 - QUANTA BU1 (BU1-FINGERPRINT-RAMP)",
+      "slug": "laptop-toshiba-toshiba-portege-m600-quanta-bu1-bu1-fingerprint-ramp",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba Toshiba Portege M600 - QUANTA BU1 (BU1-FINGERPRINT-RAMP) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35176,
+          "type": "schematic",
+          "name": "TOSHIBA - Toshiba Portege M600 - QUANTA BU1 - BU1-FINGERPRINT-RAMP - Schematic.pdf",
+          "size": "34.7 KB",
+          "sizeBytes": 35487,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PEW9lSHeFFSQYaOaKZixZ1RWV552BTbZ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19576,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Toshiba Portege M600 - QUANTA BU1 (BU1-LAN-RAMP)",
+      "slug": "laptop-toshiba-toshiba-portege-m600-quanta-bu1-bu1-lan-ramp",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba Toshiba Portege M600 - QUANTA BU1 (BU1-LAN-RAMP) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35177,
+          "type": "schematic",
+          "name": "TOSHIBA - Toshiba Portege M600 - QUANTA BU1 - BU1-LAN-RAMP - Schematic.pdf",
+          "size": "45.6 KB",
+          "sizeBytes": 46720,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Wm90aQS8iJ-sSujDtMiFuSnypNf8mkmK/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19577,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Toshiba Portege M600 - QUANTA BU1 (QUANTA BU1M NAPA REV RAMP)",
+      "slug": "laptop-toshiba-toshiba-portege-m600-quanta-bu1-quanta-bu1m-napa-rev-ramp",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba Toshiba Portege M600 - QUANTA BU1 (QUANTA BU1M NAPA REV RAMP) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35178,
+          "type": "schematic",
+          "name": "TOSHIBA - Toshiba Portege M600 - QUANTA BU1 - QUANTA BU1M NAPA REV RAMP - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1261375,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1OjfzJ4gerDyjcpsokUG8D7BzNdwsj0yh/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19578,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Toshiba Satellite C55-B LA-B303P r10",
+      "slug": "laptop-toshiba-toshiba-satellite-c55-b-la-b303p-r10",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-B303P",
+      "officialTitle": "Toshiba Toshiba Satellite C55-B LA-B303P r10 (LA-B303P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35179,
+          "type": "schematic",
+          "name": "TOSHIBA - Toshiba Satellite C55-B LA-B303P r10 - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1401232,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HgssqKo1nD4XDv9DsvpqsfnzRGkjQ41R/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18857,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Toshiba Satellite C55D DB10AN-6050A2556901-MB-A02 (DB10AN-6050A2556901-MB-A02)",
+      "slug": "laptop-toshiba-toshiba-satellite-c55d-db10an-6050a2556901-mb-a02-db10an-6050a2556901-mb-a02",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba Toshiba Satellite C55D DB10AN-6050A2556901-MB-A02 (DB10AN-6050A2556901-MB-A02) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34400,
+          "type": "boardview",
+          "name": "TOSHIBA - Toshiba Satellite C55D DB10AN-6050A2556901-MB-A02 - DB10AN-6050A2556901-MB-A02.brd",
+          "size": "187.6 KB",
+          "sizeBytes": 192053,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1vUQ0g_3aZ3WBkMrR81TZlZJzVSc_Y-ue/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19579,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Toshiba Satellite E105 - Inventec Minneapolis 10 MINNAP10 6050A2218301",
+      "slug": "laptop-toshiba-toshiba-satellite-e105-inventec-minneapolis-10-minnap10-6050a2218301",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba Toshiba Satellite E105 - Inventec Minneapolis 10 MINNAP10 6050A2218301 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35180,
+          "type": "schematic",
+          "name": "TOSHIBA - Toshiba Satellite E105 - Inventec Minneapolis 10 MINNAP10 6050A2218301 - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1246277,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1vNI3zGxQIsJW1O9SQwrgzoZOZj76mYnq/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19580,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Toshiba Satellite L370 (1f040 Quanta BU5D)",
+      "slug": "laptop-toshiba-toshiba-satellite-l370-1f040-quanta-bu5d",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba Toshiba Satellite L370 (1f040 Quanta BU5D) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35181,
+          "type": "schematic",
+          "name": "TOSHIBA - Toshiba Satellite L370 - 1f040 Quanta BU5D - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1261943,
+          "gdrive_direct_url": "https://drive.google.com/file/d/191bPNRiKBky_ARyJphBdoWJYoGtn7xa4/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19581,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Toshiba Satellite L370 (95964 Quanta BU5)",
+      "slug": "laptop-toshiba-toshiba-satellite-l370-95964-quanta-bu5",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba Toshiba Satellite L370 (95964 Quanta BU5) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35182,
+          "type": "schematic",
+          "name": "TOSHIBA - Toshiba Satellite L370 - 95964 Quanta BU5 - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1331966,
+          "gdrive_direct_url": "https://drive.google.com/file/d/11cJRI0DameFmV5leOrofXPHgxRX5WIl-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19582,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Toshiba Satellite L500 - Inventec Rotterdam 10M 6050A2250301",
+      "slug": "laptop-toshiba-toshiba-satellite-l500-inventec-rotterdam-10m-6050a2250301",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba Toshiba Satellite L500 - Inventec Rotterdam 10M 6050A2250301 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35183,
+          "type": "schematic",
+          "name": "TOSHIBA - Toshiba Satellite L500 - Inventec Rotterdam 10M 6050A2250301 - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1343436,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15sDDxy0bYCLccZegZKAnA-0KKNRMVl5X/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19583,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Toshiba Satellite L505D Rotterdam 10AR - RT10AR - 6050A2250801",
+      "slug": "laptop-toshiba-toshiba-satellite-l505d-rotterdam-10ar-rt10ar-6050a2250801",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba Toshiba Satellite L505D Rotterdam 10AR - RT10AR - 6050A2250801 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35184,
+          "type": "schematic",
+          "name": "TOSHIBA - Toshiba Satellite L505D Rotterdam 10AR - RT10AR - 6050A2250801 - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1215240,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ID16LfSX27BGM9CAWA49WH9frxXSdchl/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19584,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Toshiba Satellite L50D-A series - Pegatron VGADTG - 10ADTG",
+      "slug": "laptop-toshiba-toshiba-satellite-l50d-a-series-pegatron-vgadtg-10adtg",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba Toshiba Satellite L50D-A series - Pegatron VGADTG - 10ADTG — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35185,
+          "type": "schematic",
+          "name": "TOSHIBA - Toshiba Satellite L50D-A series - Pegatron VGADTG - 10ADTG - Schematic.pdf",
+          "size": "2.3 MB",
+          "sizeBytes": 2446986,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1AvOQR6qz7sV9IvB8TjtRlBUbV10AOR-q/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19585,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Toshiba Satellite L750D Quanta BLC- BLCD",
+      "slug": "laptop-toshiba-toshiba-satellite-l750d-quanta-blc-blcd",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba Toshiba Satellite L750D Quanta BLC- BLCD — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35186,
+          "type": "schematic",
+          "name": "TOSHIBA - Toshiba Satellite L750D Quanta BLC- BLCD - Schematic.pdf",
+          "size": "1.5 MB",
+          "sizeBytes": 1534295,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PyUdyHVrr5j7QOZIYuzqB2nuosK9s8hk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19586,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Toshiba Satellite L830 - QUANTA BU8",
+      "slug": "laptop-toshiba-toshiba-satellite-l830-quanta-bu8",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba Toshiba Satellite L830 - QUANTA BU8 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35187,
+          "type": "schematic",
+          "name": "TOSHIBA - Toshiba Satellite L830 - QUANTA BU8 - Schematic.pdf",
+          "size": "949.9 KB",
+          "sizeBytes": 972743,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1yxSucxaXImEp-h0C689t6DfS3m9cUmBF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19588,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Toshiba Satellite P850 LA-8391P r10 2829",
+      "slug": "laptop-toshiba-toshiba-satellite-p850-la-8391p-r10-2829",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-8391P",
+      "officialTitle": "Toshiba Toshiba Satellite P850 LA-8391P r10 2829 (LA-8391P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35189,
+          "type": "schematic",
+          "name": "TOSHIBA - Toshiba Satellite P850 LA-8391P r10 2829 - Schematic.pdf",
+          "size": "5.9 MB",
+          "sizeBytes": 6211133,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PbCSwPGXJJztXBeTWzA4-pxs44FSoz-X/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19587,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Toshiba Satellite P850 LA-8391P r10 2829 (Toshiba Satellite P850 LA-8391P r10 2829)",
+      "slug": "laptop-toshiba-toshiba-satellite-p850-la-8391p-r10-2829-toshiba-satellite-p850-la-8391p-r10-2829",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-8391P",
+      "officialTitle": "Toshiba Toshiba Satellite P850 LA-8391P r10 2829 (Toshiba Satellite P850 LA-8391P r10 2829) (LA-8391P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35188,
+          "type": "schematic",
+          "name": "TOSHIBA - Toshiba Satellite P850 LA-8391P r10 2829 - Toshiba Satellite P850 LA-8391P r10 2829 - Schematic.pdf",
+          "size": "5.9 MB",
+          "sizeBytes": 6211133,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1VFs09EnH_74XcefRlSnnRaZsUhFz7SYf/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19589,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Toshiba Satellite T210 - COMPAL LA-6031P NDU00 - REV 1.0",
+      "slug": "laptop-toshiba-toshiba-satellite-t210-compal-la-6031p-ndu00-rev-10",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-6031P",
+      "officialTitle": "Toshiba Toshiba Satellite T210 - COMPAL LA-6031P NDU00 - REV 1.0 (LA-6031P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35190,
+          "type": "schematic",
+          "name": "TOSHIBA - Toshiba Satellite T210 - COMPAL LA-6031P NDU00 - REV 1.0 - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1388470,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1nbHW5RHTc2BPoUIgcQepTjD0_C0H-a6J/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19590,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "Toshiba T135D - BU3A - BU3 DABU3AMB8E0 rev.E",
+      "slug": "laptop-toshiba-toshiba-t135d-bu3a-bu3-dabu3amb8e0-reve",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba Toshiba T135D - BU3A - BU3 DABU3AMB8E0 rev.E — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35191,
+          "type": "schematic",
+          "name": "TOSHIBA - Toshiba T135D - BU3A - BU3 DABU3AMB8E0 rev.E - Schematic.pdf",
+          "size": "701.5 KB",
+          "sizeBytes": 718324,
+          "gdrive_direct_url": "https://drive.google.com/file/d/12rBAIoR6XjGllJS6fNuVK7YaS2OID6kd/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19594,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "VDKTE LA-9869P R03 20130204",
+      "slug": "laptop-toshiba-vdkte-la-9869p-r03-20130204",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-9869P",
+      "officialTitle": "Toshiba VDKTE LA-9869P R03 20130204 (LA-9869P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35195,
+          "type": "schematic",
+          "name": "TOSHIBA - VDKTE LA-9869P R03 20130204 - Schematic.pdf",
+          "size": "1.4 MB",
+          "sizeBytes": 1436805,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1etvLtAloAw5trQO0psNFOvIMMfx8RmRC/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19595,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "VSKTA LA-9865P R10 R1.0 20130319",
+      "slug": "laptop-toshiba-vskta-la-9865p-r10-r10-20130319",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "LA-9865P",
+      "officialTitle": "Toshiba VSKTA LA-9865P R10 R1.0 20130319 (LA-9865P) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35196,
+          "type": "schematic",
+          "name": "TOSHIBA - VSKTA LA-9865P R10 R1.0 20130319 - Schematic.pdf",
+          "size": "2.5 MB",
+          "sizeBytes": 2641949,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17Dc7K-SGA1HJ_fXctvypUJvunW3O_BQU/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19560,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "mtc mtcd b-test-v24-1211-1119-eric ICT CHECK.PDF",
+      "slug": "laptop-toshiba-mtc-mtcd-b-test-v24-1211-1119-eric-ict-checkpdf",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba mtc mtcd b-test-v24-1211-1119-eric ICT CHECK.PDF — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35161,
+          "type": "schematic",
+          "name": "TOSHIBA - mtc mtcd b-test-v24-1211-1119-eric ICT CHECK.PDF - Schematic.pdf",
+          "size": "2.9 MB",
+          "sizeBytes": 3078842,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1knUFwFRBt5kjO2s8XBaRDQJUX5z_Qpmr/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19561,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "mtt b2-test-v05-1222-1445-eric",
+      "slug": "laptop-toshiba-mtt-b2-test-v05-1222-1445-eric",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba mtt b2-test-v05-1222-1445-eric — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35162,
+          "type": "schematic",
+          "name": "TOSHIBA - mtt b2-test-v05-1222-1445-eric - Schematic.pdf",
+          "size": "1.5 MB",
+          "sizeBytes": 1547344,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1AD2sFhaKZDvK1CajerKu1kQI7-4Lo9BW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19593,
+      "category": "laptop",
+      "brand": "Toshiba",
+      "brandSlug": "toshiba",
+      "modelName": "toshiba-c800-quanta-daby3cmb8e0-laptop-schematic",
+      "slug": "laptop-toshiba-toshiba-c800-quanta-daby3cmb8e0-laptop-schematic",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Toshiba toshiba-c800-quanta-daby3cmb8e0-laptop-schematic — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35194,
+          "type": "schematic",
+          "name": "TOSHIBA - toshiba-c800-quanta-daby3cmb8e0-laptop-schematic - Schematic.pdf",
+          "size": "1.1 MB",
+          "sizeBytes": 1172161,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15w2UIb4aN53RND5w_si8-O1KE77MDRa5/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

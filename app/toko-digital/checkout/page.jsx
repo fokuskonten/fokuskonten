@@ -288,7 +288,7 @@ function CheckoutContent() {
         originalPrice: cartItems.reduce((acc, it) => acc + (Number(it.originalPrice) || Number(it.price) * 2 || 0), 0),
         discountAmount: voucher ? voucher.discountAmount : 0,
         voucherCode: voucher ? voucher.code : null,
-        coverImage: cartItems[0]?.coverImage || `/covers/${cartItems[0]?.sku}/${cartItems[0]?.sku}_cover.webp`,
+        coverImage: cartItems[0]?.coverImage || `https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/${cartItems[0]?.sku}/${cartItems[0]?.sku}_cover.webp`,
         driveLink: '',
         customerName: name.trim(),
         customerEmail: email.trim().toLowerCase(),
@@ -301,7 +301,7 @@ function CheckoutContent() {
           format: it.format || 'CDR',
           price: Number(it.price) || 0,
           originalPrice: Number(it.originalPrice) || (Number(it.price) * 2),
-          coverImage: it.coverImage || `/covers/${it.sku}/${it.sku}_cover.webp`,
+          coverImage: it.coverImage || `https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/${it.sku}/${it.sku}_cover.webp`,
           driveLink: it.driveLink || '#'
         })),
         createdAt: Date.now()
@@ -317,7 +317,7 @@ function CheckoutContent() {
         originalPrice: singleProduct.originalPrice || basePrice * 2,
         discountAmount: voucher ? voucher.discountAmount : 0,
         voucherCode: voucher ? voucher.code : null,
-        coverImage: singleProduct.coverImage || `/covers/${singleProduct.sku}/${singleProduct.sku}_cover.webp`,
+        coverImage: singleProduct.coverImage || `https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/${singleProduct.sku}/${singleProduct.sku}_cover.webp`,
         driveLink: '',
         customerName: name.trim(),
         customerEmail: email.trim().toLowerCase(),
@@ -330,7 +330,7 @@ function CheckoutContent() {
           format: singleProduct.format || 'CDR',
           price: finalPrice,
           originalPrice: singleProduct.originalPrice || basePrice * 2,
-          coverImage: singleProduct.coverImage || `/covers/${singleProduct.sku}/${singleProduct.sku}_cover.webp`,
+          coverImage: singleProduct.coverImage || `https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/${singleProduct.sku}/${singleProduct.sku}_cover.webp`,
           driveLink: null
         }],
         createdAt: Date.now()

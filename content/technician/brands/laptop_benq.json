@@ -1,0 +1,60 @@
+{
+  "category": "laptop",
+  "brand": "BenQ",
+  "brandSlug": "benq",
+  "totalModels": 2,
+  "models": [
+    {
+      "id": 19162,
+      "category": "laptop",
+      "brand": "BenQ",
+      "brandSlug": "benq",
+      "modelName": "BenQ DAED8SMBF0 ED8S-RAMP-0510",
+      "slug": "laptop-benq-benq-daed8smbf0-ed8s-ramp-0510",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "BenQ BenQ DAED8SMBF0 ED8S-RAMP-0510 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34743,
+          "type": "schematic",
+          "name": "BENQ - BenQ DAED8SMBF0 ED8S-RAMP-0510 - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1210135,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QwyZsKL6KfS-exKsqKkG22IMnh9qXtGf/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19163,
+      "category": "laptop",
+      "brand": "BenQ",
+      "brandSlug": "benq",
+      "modelName": "Benq Joybook UI051 Compal LA5662P r02",
+      "slug": "laptop-benq-benq-joybook-ui051-compal-la5662p-r02",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "BenQ Benq Joybook UI051 Compal LA5662P r02 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 34744,
+          "type": "schematic",
+          "name": "BENQ - Benq Joybook UI051 Compal LA5662P r02 - Schematic.pdf",
+          "size": "828.9 KB",
+          "sizeBytes": 848834,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1akAqA1QeIzaZUrKpFk6zR3Di22e6f32H/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

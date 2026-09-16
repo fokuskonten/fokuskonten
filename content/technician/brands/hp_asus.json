@@ -1,0 +1,2808 @@
+{
+  "category": "hp",
+  "brand": "Asus",
+  "brandSlug": "asus",
+  "totalModels": 65,
+  "models": [
+    {
+      "id": 19640,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ASUS_I006D",
+      "slug": "hp-asus-asus_i006d",
+      "chipset": "Snapdragon 888 5G (5 nm)",
+      "motherboardCode": "HWID: 001350E1",
+      "officialTitle": "Asus ASUS_I006D — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35864,
+          "type": "loader",
+          "name": "001350e102e80000_61a5edda27fb2850_fhprg.bin",
+          "size": "901.7 KB",
+          "sizeBytes": 923360,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1y-R6vuWteEEfeEUBsstfMSHAhvYLkFl0/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35865,
+          "type": "loader",
+          "name": "001350e100514d67_a26bc25799770106_fhprg_op9.bin",
+          "size": "953.6 KB",
+          "sizeBytes": 976504,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Gya8ysBmd023SuY_hY_teAkGQn8PT0Sh/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19694,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "G550KL",
+      "slug": "hp-asus-g550kl",
+      "chipset": "Snapdragon 400",
+      "motherboardCode": "HWID: 009180E1",
+      "officialTitle": "Asus G550KL — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35993,
+          "type": "loader",
+          "name": "009180e100290041_cc3153a80293939b_fhprg_peek.bin",
+          "size": "88 KB",
+          "sizeBytes": 90140,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1EFdQVI9SThpvTIC77Icpdrs3hR5cyvqO/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35994,
+          "type": "loader",
+          "name": "009180e100420012_625801c51eee90d7_fhprg_peek.bin",
+          "size": "100.3 KB",
+          "sizeBytes": 102692,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1pzpd-SkkxKdRdi64i8fwvIKPsIf5w8Ox/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19718,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "PF550KL",
+      "slug": "hp-asus-pf550kl",
+      "chipset": "Snapdragon 801",
+      "motherboardCode": "HWID: 007B80E1",
+      "officialTitle": "Asus PF550KL — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36046,
+          "type": "loader",
+          "name": "007b80e100040000_8f522586c4464589_fhprg.bin",
+          "size": "64.1 KB",
+          "sizeBytes": 65668,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1m0-jjZq4tnji2U51LrCA2ANBufqlS0YK/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 36047,
+          "type": "loader",
+          "name": "007b80e100040000_f7b0ceb6514cd64c_fhprg_peek.bin",
+          "size": "312.4 KB",
+          "sizeBytes": 319864,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1BknZd3Q3lb0OPk29orD7-McCMCMK2J35/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19606,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Qualcomm Firehose Loader Asus (008F10E1)",
+      "slug": "hp-asus-qualcomm-firehose-loader-asus-008f10e1",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "HWID: 008F10E1",
+      "officialTitle": "Asus Qualcomm Firehose Loader Asus (008F10E1) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35580,
+          "type": "loader",
+          "name": "008f10e100290008_cc3153a80293939b_fhprg.bin",
+          "size": "75.4 KB",
+          "sizeBytes": 77232,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1SYkNVmr_IQysXm7REU2c0Kl_UrtniA1W/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19609,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Qualcomm Firehose Loader Asus (0091B0E1)",
+      "slug": "hp-asus-qualcomm-firehose-loader-asus-0091b0e1",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "HWID: 0091B0E1",
+      "officialTitle": "Asus Qualcomm Firehose Loader Asus (0091B0E1) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35601,
+          "type": "loader",
+          "name": "0091b0e100010001_0fd67ad01b2edfa7_fhprg_peek.bin",
+          "size": "98.5 KB",
+          "sizeBytes": 100896,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Qgq6VLnL0N7e3qMG58ZthDkdA6_uJH4v/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35602,
+          "type": "loader",
+          "name": "0091b0e111112222_f069a87f6d4364ef_fhprg_peek.bin",
+          "size": "99.2 KB",
+          "sizeBytes": 101544,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1j3DkNiNd0iniIKQLyUG_5dB265QQnE7p/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19618,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Qualcomm Firehose Loader Asus (60040000)",
+      "slug": "hp-asus-qualcomm-firehose-loader-asus-60040000",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "HWID: 60040000",
+      "officialTitle": "Asus Qualcomm Firehose Loader Asus (60040000) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35746,
+          "type": "loader",
+          "name": "6004000000010000_c924a35f39ce1cdd_fhprg.bin",
+          "size": "705.2 KB",
+          "sizeBytes": 722128,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kpNOqoagLPseAvv8N7thYpnlNqcin44j/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15125,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ROG Phone",
+      "slug": "hp-asus-rog-phone",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Asus ROG Phone — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29700,
+          "type": "testpoint",
+          "name": "asus_rog_phone_tp.jpg",
+          "size": "43 KB",
+          "sizeBytes": 44043,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1eAVORWy4-aDMk-a3wemyOPkA31t-Qrcr/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/BsT4nn",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29701,
+          "type": "isp",
+          "name": "asus_rog_phone_isp.jpg",
+          "size": "149.6 KB",
+          "sizeBytes": 153198,
+          "gdrive_direct_url": "https://drive.google.com/file/d/12QmEeivr8XBToDXhfbdzUDV-Te1xKHGB/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/K9D0b",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15126,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ROG Phone 2",
+      "slug": "hp-asus-rog-phone-2",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Asus ROG Phone 2 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29702,
+          "type": "testpoint",
+          "name": "asus_rog_phone_2_tp.jpg",
+          "size": "107.3 KB",
+          "sizeBytes": 109860,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mpxEJsncRDF8QoFIWha2RgZPT203kJNu/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/80jJz",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29703,
+          "type": "isp",
+          "name": "asus_rog_phone_2_isp.jpg",
+          "size": "149.6 KB",
+          "sizeBytes": 153198,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1pUEV4jj1kXxESIUY5ZcBb2LUA42DVGgK/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/8R2mdp9",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15127,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ROG Phone 3",
+      "slug": "hp-asus-rog-phone-3",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Asus ROG Phone 3 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29704,
+          "type": "testpoint",
+          "name": "asus_rog_phone_3_tp.jpg",
+          "size": "43 KB",
+          "sizeBytes": 44043,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mY6CP1bOqiTP6k033UpegFbuPnXbW4VC/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/cd9r",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29705,
+          "type": "isp",
+          "name": "asus_rog_phone_3_isp.jpg",
+          "size": "149.6 KB",
+          "sizeBytes": 153198,
+          "gdrive_direct_url": "https://drive.google.com/file/d/171tQqez3Tw8_yQFZHWr7WdaH56b-Eywl/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/OA11",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15128,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ROG Phone 5",
+      "slug": "hp-asus-rog-phone-5",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Asus ROG Phone 5 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29706,
+          "type": "testpoint",
+          "name": "asus_rog_phone_5_tp.png",
+          "size": "239.6 KB",
+          "sizeBytes": 245340,
+          "gdrive_direct_url": "https://drive.google.com/file/d/100J6FQHrdpnSfWto2fp5OBpfBim2l3Zx/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/KlCmLQ",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29707,
+          "type": "isp",
+          "name": "asus_rog_phone_5_isp.jpg",
+          "size": "586.6 KB",
+          "sizeBytes": 600706,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14T6fpXSc8wF4DQHzobDaxvkb96l283Tm/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15129,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ROG Phone 5S",
+      "slug": "hp-asus-rog-phone-5s",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Asus ROG Phone 5S — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29708,
+          "type": "testpoint",
+          "name": "asus_rog_phone_5s_tp.png",
+          "size": "239.6 KB",
+          "sizeBytes": 245340,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1osVcb-W_hfS4EFWPPPEgOWu3S86woCOf/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/agZS",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29709,
+          "type": "isp",
+          "name": "asus_rog_phone_5s_isp.jpg",
+          "size": "586.6 KB",
+          "sizeBytes": 600706,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ehvqvdCRt7lRKI9fP_45eViSF5XsM5NU/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18224,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ROG Phone 5S Pro",
+      "slug": "hp-asus-rog-phone-5s-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus ROG Phone 5S Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33751,
+          "type": "isp",
+          "name": "asus_rog_phone_5s_pro_isp.jpg",
+          "size": "2.5 MB",
+          "sizeBytes": 2637191,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_x9mXxFQC6debaolk19MQL3vny7cQMqp/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15130,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ROG Phone 6",
+      "slug": "hp-asus-rog-phone-6",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Asus ROG Phone 6 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29710,
+          "type": "testpoint",
+          "name": "asus_rog_phone_6_tp.jpg",
+          "size": "43 KB",
+          "sizeBytes": 44043,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_PhDJinJ1_45DYeVDrEl42Q0scIJaRXI/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/FOTJscl",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29711,
+          "type": "isp",
+          "name": "asus_rog_phone_6_isp.jpg",
+          "size": "149.6 KB",
+          "sizeBytes": 153198,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wRA5nLaL3AlYNB6YDwF6gsZXZqXszsm3/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18225,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ROG Phone 6 Pro",
+      "slug": "hp-asus-rog-phone-6-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus ROG Phone 6 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33752,
+          "type": "isp",
+          "name": "asus_rog_phone_6_pro_isp.jpg",
+          "size": "586.6 KB",
+          "sizeBytes": 600706,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hAK3p7A19ZvKV_eW3orsrGEbX40wAnbF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18226,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ROG Phone 6D",
+      "slug": "hp-asus-rog-phone-6d",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus ROG Phone 6D — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33753,
+          "type": "isp",
+          "name": "asus_rog_phone_6d_isp.jpg",
+          "size": "149.6 KB",
+          "sizeBytes": 153198,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17WRALvs1-7zi4jXGqIDcRc1xqbu7ZPKJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15131,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ROG Phone 7",
+      "slug": "hp-asus-rog-phone-7",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Asus ROG Phone 7 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29712,
+          "type": "testpoint",
+          "name": "asus_rog_phone_7_tp.jpg",
+          "size": "43 KB",
+          "sizeBytes": 44043,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1RwDVKatvJFq_mcNEMQq7Xh46FsSGUGQQ/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/Tu3u",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29713,
+          "type": "isp",
+          "name": "asus_rog_phone_7_isp.jpg",
+          "size": "149.6 KB",
+          "sizeBytes": 153198,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WzRxWdLk-mTEudi3Jmt7Qq4cW5syyR1F/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18227,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ROG Phone 7 Ultimate",
+      "slug": "hp-asus-rog-phone-7-ultimate",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus ROG Phone 7 Ultimate — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33754,
+          "type": "isp",
+          "name": "asus_rog_phone_7_ultimate_isp.jpg",
+          "size": "586.6 KB",
+          "sizeBytes": 600706,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1SBE3uEktrDg-4hzPs0_6xRQVlhYA_xKq/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15132,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ROG Phone 8",
+      "slug": "hp-asus-rog-phone-8",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Asus ROG Phone 8 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29714,
+          "type": "testpoint",
+          "name": "asus_rog_phone_8_tp.jpg",
+          "size": "43 KB",
+          "sizeBytes": 44043,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-DEhmSvj7fmyIJ5yRTlJjiydC4BqWNU0/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/nZLh",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29715,
+          "type": "isp",
+          "name": "asus_rog_phone_8_isp.jpg",
+          "size": "149.6 KB",
+          "sizeBytes": 153198,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Beu-tg4fELdKieNV1uGb63Yjqca-eu5f/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18228,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ROG Phone 8 Pro",
+      "slug": "hp-asus-rog-phone-8-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus ROG Phone 8 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33755,
+          "type": "isp",
+          "name": "asus_rog_phone_8_pro_isp.jpg",
+          "size": "285.4 KB",
+          "sizeBytes": 292241,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1y_nHsOcWLPLwSKLKiqn_p_xGHWcH1jxI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19600,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ZB553KL",
+      "slug": "hp-asus-zb553kl",
+      "chipset": "Snapdragon 425",
+      "motherboardCode": "HWID: 000560E1",
+      "officialTitle": "Asus ZB553KL — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35467,
+          "type": "loader",
+          "name": "000560e100000000_49d087ca08c6e2ca_fhprg_peek.bin",
+          "size": "213.9 KB",
+          "sizeBytes": 219032,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1D09bpWD7u9aVDumE6M91ZJq6bJxf1G-_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35468,
+          "type": "loader",
+          "name": "000560e100000000_4bc6a094d433f49f_fhprg_peek.bin",
+          "size": "213 KB",
+          "sizeBytes": 218076,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1bK5TVP466ozh5se6pZaGyBF1H4KJnvv0/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35469,
+          "type": "loader",
+          "name": "000560e1143a8937_18000eb7c3a236d5_fhprg_peek.bin",
+          "size": "192.6 KB",
+          "sizeBytes": 197228,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DtptOnj9H4kiXzB9GJ59E152WKvwoDIO/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35470,
+          "type": "loader",
+          "name": "000560e12016a239_ad38beb6615ba7fb_fhprg_peek.bin",
+          "size": "379.4 KB",
+          "sizeBytes": 388556,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QctpqpnIqoVWf_aqh14iCjFkrgmgj_ub/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35471,
+          "type": "loader",
+          "name": "000560e100000000_1a6ba5b80b9e7811_fhprg_peek.bin",
+          "size": "376.5 KB",
+          "sizeBytes": 385492,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1cCxYVZCWF3qbWjmaUCvEnpn1WuwTYkFS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35472,
+          "type": "loader",
+          "name": "000560e100000000_2eaa84eed250b21c_fhprg_peek.bin",
+          "size": "366.9 KB",
+          "sizeBytes": 375720,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Xmb5aEdvZKxuXzumhuO8Hbmr-eAvJm_E/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35473,
+          "type": "loader",
+          "name": "000560e10015003a_6bc369511da9cadb_fhprg_peek.bin",
+          "size": "373.1 KB",
+          "sizeBytes": 382048,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mM79jnmlOjiKHZ7nkbhiZ2x3BxkQ_Af_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35474,
+          "type": "loader",
+          "name": "000560e103680000_acbcf5a73035aefb_fhprg_peek.bin",
+          "size": "286.2 KB",
+          "sizeBytes": 293020,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1tgkGieVRO4Z82dTLAXmXDtVyb0WypFGY/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35475,
+          "type": "loader",
+          "name": "000560e100000000_ddb33f2a320b3536_fhprg_peek.bin",
+          "size": "373.2 KB",
+          "sizeBytes": 382176,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14I42rWNj0Q2rL9Jt0Qaf-_6O7ucevjiq/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35476,
+          "type": "loader",
+          "name": "000560e100460066_247c073c6f9e3f5a_fhprg_peek.bin",
+          "size": "373.3 KB",
+          "sizeBytes": 382268,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1buRS1rgiYLczQgV1h5JMSR7Y-YQHnsVM/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35477,
+          "type": "loader",
+          "name": "000560e100000000_f5f4192a33b28309_fhprg_peek.bin",
+          "size": "366.7 KB",
+          "sizeBytes": 375508,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1eqFruqMUp2ZcnabcLZuNS3U1V-_F9EF_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35478,
+          "type": "loader",
+          "name": "000560e100000000_49d087ca08c6e2ca_fhprg_peek.bin",
+          "size": "213.9 KB",
+          "sizeBytes": 219032,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1cjw5hwZ1uFsLlLV61UUKxYOHSOo7sw4m/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35479,
+          "type": "loader",
+          "name": "000560e100007705_adcb7c0b68663755_fhprg_peek.bin",
+          "size": "373.8 KB",
+          "sizeBytes": 382796,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1NxErwJdNCu6YwJ6BOXOq9r0HoAqLF6Qg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35480,
+          "type": "loader",
+          "name": "000560e112340001_fbd4de360136046b_fhprg_peek.bin",
+          "size": "374.2 KB",
+          "sizeBytes": 383156,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-VTTnZuZNFo8Jvj7HZ8iwbRJYIyjhNKP/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35481,
+          "type": "loader",
+          "name": "000560e100000000_92242cf8f6fad111_fhprg_peek.bin",
+          "size": "371.7 KB",
+          "sizeBytes": 380636,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1o8v3YC82DXlhpJAhNqrEjYoSHVNWisDz/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35482,
+          "type": "loader",
+          "name": "000560e100200000_9299a622487a9a04_fhprg.bin",
+          "size": "244.9 KB",
+          "sizeBytes": 250804,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZhB1HlghCodbJkdbpR1tLZNG4FasUxtt/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35483,
+          "type": "loader",
+          "name": "000560e100200000_a5bc77181d20c21d_fhprg.bin",
+          "size": "244.9 KB",
+          "sizeBytes": 250804,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hCKH3mb_chHHAjxHNwQuZRG7OgkwysDp/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35484,
+          "type": "loader",
+          "name": "000560e100420049_26f93e0bf4c11f91_fhprg_peek.bin",
+          "size": "379.3 KB",
+          "sizeBytes": 388452,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZjQCXX_0mJgxGlsqYGJab3e6lUaiomeT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35485,
+          "type": "loader",
+          "name": "000560e100000000_60ba997fef6da9f0_fhprg_peek.bin",
+          "size": "326.4 KB",
+          "sizeBytes": 334192,
+          "gdrive_direct_url": "https://drive.google.com/file/d/12AHni776K7C9WTSRBNBYUHWyTuLy8g2c/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35486,
+          "type": "loader",
+          "name": "000560e100000000_57158eaf1814d78f_fhprg_peek.bin",
+          "size": "376.9 KB",
+          "sizeBytes": 385928,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1lRr73kZibGkXHgMhzcvBv5i_1EsqFuYq/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35487,
+          "type": "loader",
+          "name": "000560e100480000_0dc319ba152db35e_fhprg_peek.bin",
+          "size": "381 KB",
+          "sizeBytes": 390124,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_eHg0_UNZSb9YWyDwma7VMkSKwrZFfHD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35488,
+          "type": "loader",
+          "name": "000560e100040000_168d0bad52b5d5cb_fhprg_peek.bin",
+          "size": "377.2 KB",
+          "sizeBytes": 386268,
+          "gdrive_direct_url": "https://drive.google.com/file/d/12_IsSYiv7YW_LRrQN4Toc-QIf1__uhSE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35489,
+          "type": "loader",
+          "name": "000560e100040000_43b4a0710e00b0b0_fhprg_peek.bin",
+          "size": "352.8 KB",
+          "sizeBytes": 361252,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1MTTMllG8dd0ZsCol2A7Txw_UHe0PbZsY/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35490,
+          "type": "loader",
+          "name": "000560e100040000_5e051af9d9a59ad3_fhprg_peek.bin",
+          "size": "378.4 KB",
+          "sizeBytes": 387448,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13H19JxPIDdLPvT9cWvLEaZQR2f0FK65O/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35491,
+          "type": "loader",
+          "name": "000560e100040000_9764995d53559360_fhprg_peek.bin",
+          "size": "375.9 KB",
+          "sizeBytes": 384876,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Hk1YYhdRp5b3WJlFg_kvA_vXhUM9GpEW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35492,
+          "type": "loader",
+          "name": "000560e100040000_ebff61216378436b_fhprg_peek.bin",
+          "size": "380.1 KB",
+          "sizeBytes": 389184,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1RO6EqrB4P3-4GjZLtdRob_XfjEAZ7-8w/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35493,
+          "type": "loader",
+          "name": "000560e100040000_9ce8065ce3f8ab88_fhprg_peek.bin",
+          "size": "351.9 KB",
+          "sizeBytes": 360388,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1gFdVF08zFL9M3UI06R_jicV8xGEbkA5O/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19631,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ZB630KL",
+      "slug": "hp-asus-zb630kl",
+      "chipset": "Snapdragon 660",
+      "motherboardCode": "HWID: 0008C0E1",
+      "officialTitle": "Asus ZB630KL — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35826,
+          "type": "loader",
+          "name": "0008c0e100010000_172aff6024730ca1_fhprg.bin",
+          "size": "592.2 KB",
+          "sizeBytes": 606400,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QMU71ZuxEO0b3U9ATYMtJPltrjhgblPL/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35827,
+          "type": "loader",
+          "name": "0008c0e100010000_982b2ece2e68f82c_fhprg.bin",
+          "size": "592.2 KB",
+          "sizeBytes": 606384,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DyTndG6_w8vysyR5D7FFBjVfLPkAF11J/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35828,
+          "type": "loader",
+          "name": "0008c0e100010000_982b2ece2e68f82c_fhprg_peek.bin",
+          "size": "592.7 KB",
+          "sizeBytes": 606912,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1pAYgpwipvHLgVEjvPPqqDr5QPSzvfFVE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35829,
+          "type": "loader",
+          "name": "0008c0e100010000_f8ab20526358c4fa_fhprg.bin",
+          "size": "592.3 KB",
+          "sizeBytes": 606464,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1CWTcLOMmJLX7WIDdP_cwDmG4bRfyVcJ6/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35830,
+          "type": "loader",
+          "name": "0008c0e100010000_a7b8b82545a98eca_fhprg_edlauth.bin",
+          "size": "619.8 KB",
+          "sizeBytes": 634672,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ALlZSCTqfO0hZqubiDX9Jntj5UVaK7SB/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35831,
+          "type": "loader",
+          "name": "0008c0e100010000_c0806e891f7d5537_fhprg.bin",
+          "size": "626.4 KB",
+          "sizeBytes": 641424,
+          "gdrive_direct_url": "https://drive.google.com/file/d/18qA57iJbEFlRdv6MBFqAAujpKbGgohci/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35832,
+          "type": "loader",
+          "name": "0008c0e100010000_fd27e15ff63fdd68_fhprg.bin",
+          "size": "616.4 KB",
+          "sizeBytes": 631232,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1p46O-Lu1KNu09r5mo15poSHuiWwV-P2R/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35833,
+          "type": "loader",
+          "name": "0008c0e100010000_1b55c83cc1c00f4f_fhprg_peek.bin",
+          "size": "616.4 KB",
+          "sizeBytes": 631232,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HwKxnw40umYjz9w0LlH5ytFf3BuoUr1t/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35834,
+          "type": "loader",
+          "name": "0008c0e100010000_a7b8b82545a98eca_fhprg_peek.bin",
+          "size": "617.9 KB",
+          "sizeBytes": 632736,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19eZqGONX4tjttLU35GY9re2WqLpw6tmu/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35835,
+          "type": "loader",
+          "name": "0008c0e100010000_f8ab20526358c4fa_fhprg_edlauth_peek.bin",
+          "size": "653.5 KB",
+          "sizeBytes": 669168,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hHjS7Pfmfx2nQ0e5IkXS-FwAACx0VghD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35836,
+          "type": "loader",
+          "name": "0008c0e100720000_a7b8b82545a98eca_fhprg_edlauth.bin",
+          "size": "653.9 KB",
+          "sizeBytes": 669552,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uTJUP0MyudpxhMRb9n7n_Pb2b7JxTlaW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19599,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ZC554KL",
+      "slug": "hp-asus-zc554kl",
+      "chipset": "Snapdragon 430",
+      "motherboardCode": "HWID: 0004F0E1",
+      "officialTitle": "Asus ZC554KL — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35445,
+          "type": "loader",
+          "name": "0004f0e100010001_ad38beb6615ba7fb_fhprg_peek.bin",
+          "size": "404.3 KB",
+          "sizeBytes": 414028,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1h--RA-r1Doj9tp9XPdhuRjYzfUg2JlDQ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35446,
+          "type": "loader",
+          "name": "0004f0e1143a8937_18000eb7c3a236d5_fhprg_peek.bin",
+          "size": "371.5 KB",
+          "sizeBytes": 380388,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ccFSOD6sjWCqB4uzYIa4Rii1WBkaZHX1/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35447,
+          "type": "loader",
+          "name": "0004f0e12016a239_ad38beb6615ba7fb_fhprg_peek.bin",
+          "size": "407.1 KB",
+          "sizeBytes": 416832,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1w3IMmSMAF7awNdQTtMy4w867QAM5F-Vu/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35448,
+          "type": "loader",
+          "name": "0004f0e100000000_cab02552dc28f562_fhprg_peek.bin",
+          "size": "397.3 KB",
+          "sizeBytes": 406792,
+          "gdrive_direct_url": "https://drive.google.com/file/d/11WIDD3-YrH9bZe4Yt3fyUZSx_32BtoAk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35449,
+          "type": "loader",
+          "name": "0004f0e100000000_8008b2cd7b7e36f1_fhprg_peek.bin",
+          "size": "203.5 KB",
+          "sizeBytes": 208392,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1b_On3OpMgOxW8r2Ykn2Rp4yguRPsB65f/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35450,
+          "type": "loader",
+          "name": "0004f0e100000000_1a6ba5b80b9e7811_fhprg_peek.bin",
+          "size": "402.1 KB",
+          "sizeBytes": 411732,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PgnlTBIcpufFGUSWSs60siH1n_84gBu-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35451,
+          "type": "loader",
+          "name": "0004f0e100000000_1a4eb7a66e3be7f8_fhprg_peek.bin",
+          "size": "402.1 KB",
+          "sizeBytes": 411732,
+          "gdrive_direct_url": "https://drive.google.com/file/d/16r4KxAcApewQo4_1p2V4Wx4O6725MsXL/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35452,
+          "type": "loader",
+          "name": "0004f0e100000000_7c6dca9bf5674291_fhprg_peek.bin",
+          "size": "369 KB",
+          "sizeBytes": 377884,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1bd-QvEgdXpkS_2X7gS2ZqYnTYMdW290G/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35453,
+          "type": "loader",
+          "name": "0004f0e100000000_ef11472d27ef4bc5_fhprg_peek.bin",
+          "size": "424.3 KB",
+          "sizeBytes": 434444,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1m1D8oM_jraYaAV3Wx8NxTryniGMqU9gb/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35454,
+          "type": "loader",
+          "name": "0004f0e115200001_c385a51ceab568a1_fhprg_peek.bin",
+          "size": "401.3 KB",
+          "sizeBytes": 410956,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ukNASpe2dWWhWPRkXvu_9wT9fW527rya/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35455,
+          "type": "loader",
+          "name": "0004f0e100150041_6bc369511da9cadb_fhprg_peek.bin",
+          "size": "219.3 KB",
+          "sizeBytes": 224524,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HU1CJTF-S9uOaYLCvO9Ys1-n8tPC24mq/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35456,
+          "type": "loader",
+          "name": "0004f0e100150042_6bc369511da9cadb_fhprg_peek.bin",
+          "size": "421.7 KB",
+          "sizeBytes": 431788,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15ixcvRpl-FnY7fOWDt5Wq947wIBMEoIf/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35457,
+          "type": "loader",
+          "name": "0004f0e103680000_a3ae63a6013eaeb7_fhprg_peek.bin",
+          "size": "318.7 KB",
+          "sizeBytes": 326396,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1u3xIDw1Xj21VaYY7GIatPbdaLJpoHGx6/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35458,
+          "type": "loader",
+          "name": "0004f0e100007a2a_99c8c13e374c34d8_fhprg_peek.bin",
+          "size": "398.3 KB",
+          "sizeBytes": 407884,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1TYnq5St9w9J69DYb1baGTdBPcOTD-lFO/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35459,
+          "type": "loader",
+          "name": "0004f0e100007705_9091aa8251decb88_fhprg_peek.bin",
+          "size": "395.6 KB",
+          "sizeBytes": 405064,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1TWXrPWCxwwN063BXigomkh4KTJrSqfLL/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35460,
+          "type": "loader",
+          "name": "0004f0e100000000_f5f4192a33b28309_fhprg_peek.bin",
+          "size": "214.5 KB",
+          "sizeBytes": 219680,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_11FBx3nEEB6hjdnFF_3O5V6YKBC_fS1/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35461,
+          "type": "loader",
+          "name": "0004f0e100007705_adcb7c0b68663755_fhprg_peek.bin",
+          "size": "401.6 KB",
+          "sizeBytes": 411200,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zj9zcq6gF8X3B37WtW85qp4mR_vQ3ztL/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35462,
+          "type": "loader",
+          "name": "0004f0e100000000_49d087ca08c6e2ca_fhprg_peek.bin",
+          "size": "215.4 KB",
+          "sizeBytes": 220604,
+          "gdrive_direct_url": "https://drive.google.com/file/d/18HQhVfqdwfEAbsA13G58EEmqGPAPuj1l/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35463,
+          "type": "loader",
+          "name": "0004f0e112340001_fbd4de360136046b_fhprg_peek.bin",
+          "size": "401.9 KB",
+          "sizeBytes": 411552,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kFQY9b10uXL9TDrVu1VUHf7-H8ScB_xR/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35464,
+          "type": "loader",
+          "name": "0004f0e100420020_3353db25b14df962_fhprg_peek.bin",
+          "size": "199.2 KB",
+          "sizeBytes": 203972,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17UlyLQIKoQFFDXTgjfDViJzKVO_hMg9Q/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35465,
+          "type": "loader",
+          "name": "0004f0e100000000_60ba997fef6da9f0_fhprg_peek.bin",
+          "size": "393.7 KB",
+          "sizeBytes": 403140,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1iCGeh2JatY-g5u5PyD8Efx6QJ7mJQb11/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35466,
+          "type": "loader",
+          "name": "0004f0e100000000_57158eaf1814d78f_fhprg_peek.bin",
+          "size": "402 KB",
+          "sizeBytes": 411692,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1nEUN-RbidyJpS-79TH5OQIQIVz68dSzl/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19597,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ZE520KL",
+      "slug": "hp-asus-ze520kl",
+      "chipset": "Snapdragon 625/636",
+      "motherboardCode": "HWID: 000460E1",
+      "officialTitle": "Asus ZE520KL — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35198,
+          "type": "loader",
+          "name": "000460e1143a8953_18000eb7c3a236d5_fhprg_peek.bin",
+          "size": "354.6 KB",
+          "sizeBytes": 363084,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-7qSO20dyLEiOtb4RmzxijHsUDV3ptbE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35199,
+          "type": "loader",
+          "name": "000460e120161721_802156631e5e856b_fhprg_peek.bin",
+          "size": "358 KB",
+          "sizeBytes": 366624,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Pj7vp2bT74Ru0BJvC6cO-syfThQF5oxi/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35200,
+          "type": "loader",
+          "name": "000460e100000000_cab02552dc28f562_fhprg_peek.bin",
+          "size": "368.7 KB",
+          "sizeBytes": 377528,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Sw-oNmdsOvUMoSvkxfFK0tWyjkRShZwn/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35201,
+          "type": "loader",
+          "name": "000460e100000000_7c6dca9bf5674291_fhprg_peek.bin",
+          "size": "357.4 KB",
+          "sizeBytes": 366016,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1S9L20XGTSYX5zERk5igiP-eBy-2K5WnT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35202,
+          "type": "loader",
+          "name": "000460e100000000_8cb593f251fb2bdd_fhprg_peek.bin",
+          "size": "357.4 KB",
+          "sizeBytes": 366016,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Rr8UKZxgteL8trhItQBHR7fFfkWV-DS0/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35203,
+          "type": "loader",
+          "name": "000460e100150021_6bc369511da9cadb_fhprg_peek.bin",
+          "size": "345.5 KB",
+          "sizeBytes": 353804,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Y37yN8Xc0Ule7eTAy5iCYpvPwQkbXnIJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35204,
+          "type": "loader",
+          "name": "000460e115900001_85c752ebecd1b0e6_fhprg_peek.bin",
+          "size": "353 KB",
+          "sizeBytes": 361444,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13OakveTWyxZo0P4_fQxdhnUyyEs_ZUyv/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35205,
+          "type": "loader",
+          "name": "000460e100000000_99c8c13e374c34d8_fhprg_peek.bin",
+          "size": "363.9 KB",
+          "sizeBytes": 372672,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1qxMS1BnD9wHS_2QjwUd2MGHZjE9Nz3sB/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35206,
+          "type": "loader",
+          "name": "000460e103680000_ba3906237561c8b3_fhprg_peek.bin",
+          "size": "317.9 KB",
+          "sizeBytes": 325580,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1MPNiFTPtJ7uTUaDiMBamojMzRMOci336/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35207,
+          "type": "loader",
+          "name": "000460e100000000_986c77a37680ea98_fhprg_peek.bin",
+          "size": "349 KB",
+          "sizeBytes": 357376,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xwes8LLZbkgBrqAgGbcIDHRV6Gt52UqG/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35208,
+          "type": "loader",
+          "name": "000460e100000000_ddb33f2a320b3536_fhprg_peek.bin",
+          "size": "351.8 KB",
+          "sizeBytes": 360196,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1NQ8LqE6SUuaox0pIJVjA0ZIdjjHM7JLW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35209,
+          "type": "loader",
+          "name": "000460e120161721_802156631e5e856b_fhprg.bin",
+          "size": "358 KB",
+          "sizeBytes": 366624,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zP6VCigzC-hdbo7-qrxiH-Liv_K8rbtK/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35210,
+          "type": "loader",
+          "name": "000460e101380000_40e4aeba3491dade_fhprg_peek.bin",
+          "size": "378.6 KB",
+          "sizeBytes": 387636,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1O21KER-MnPrsPzOLextQYTByDk-WF-Ue/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35211,
+          "type": "loader",
+          "name": "000460e100000000_90864ecb91f86a1c_fhprg_peek.bin",
+          "size": "350.6 KB",
+          "sizeBytes": 359048,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1N3u9u6PlNNlaxW3Rib0zBfvu-D1uPRaM/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35212,
+          "type": "loader",
+          "name": "000460e100000000_b77e94657e8ad917_fhprg_peek.bin",
+          "size": "349.1 KB",
+          "sizeBytes": 357528,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1tMA-qAGCx56VRW4qhXg2JqsIwTy8tWNk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35213,
+          "type": "loader",
+          "name": "000460e100000000_60be3e96593bd105_fhprg_peek.bin",
+          "size": "352.4 KB",
+          "sizeBytes": 360840,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zwH-yb_C9u59G-N8L9nLz7O75QvaYAMD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35214,
+          "type": "loader",
+          "name": "000460e100290021_cc3153a80293939b_fhprg_peek.bin",
+          "size": "341.2 KB",
+          "sizeBytes": 349388,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1C3jfzF2gZGveGYpR8namjjDeENqADsQJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35215,
+          "type": "loader",
+          "name": "000460e100000000_cc3153a80293939b_fhprg_bqxpro_8953_peek.bin",
+          "size": "350.6 KB",
+          "sizeBytes": 359048,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1rLrEUD0JDKZexy2nADBvn4X_zbUUzbkK/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35216,
+          "type": "loader",
+          "name": "000460e100007705_adcb7c0b68663755_fhprg_peek.bin",
+          "size": "351.4 KB",
+          "sizeBytes": 359812,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Mrfk8RE2UAzReVWuhUWod1vJfU8yo-3d/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35217,
+          "type": "loader",
+          "name": "000460e100200000_bd9277227da2ea0a_fhprg_peek.bin",
+          "size": "231.6 KB",
+          "sizeBytes": 237160,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1bzGnyueWmsV7p_oIjty4fXX2JhDauH-0/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35218,
+          "type": "loader",
+          "name": "000460e100110022_032a43cc8d3e2d3b_fhprg_peek.bin",
+          "size": "351.5 KB",
+          "sizeBytes": 359972,
+          "gdrive_direct_url": "https://drive.google.com/file/d/16NrR5BPopR_Y6mysHFnu0DiumtRLo5Ld/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35219,
+          "type": "loader",
+          "name": "000460e100110022_0a1fd0c71592505d_fhprg_peek.bin",
+          "size": "350.5 KB",
+          "sizeBytes": 358960,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1b7-z1sCFHeuJIOlro9YzA0jDylgV3LAu/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35220,
+          "type": "loader",
+          "name": "000460e100000000_60ba997fef6da9f0_fhprg_peek.bin",
+          "size": "351.9 KB",
+          "sizeBytes": 360300,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1n3_3r9v5jQ4uZNvW-yMWl3joKmgl6loB/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35221,
+          "type": "loader",
+          "name": "000460e100000000_da758fd52632ba66_fhprg_peek.bin",
+          "size": "350.1 KB",
+          "sizeBytes": 358492,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17TMq-ChC-Ha-agSBfzfD4QPuaYqpFGlP/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35222,
+          "type": "loader",
+          "name": "000460e100000000_57158eaf1814d78f.bin",
+          "size": "354.7 KB",
+          "sizeBytes": 363164,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1YmCQ2UthSUMhfLVGJe6s0pcJTSsa5oOg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35223,
+          "type": "loader",
+          "name": "000460e100000000_57158eaf1814d78f_fhprg_edlauth_peek.bin",
+          "size": "389.8 KB",
+          "sizeBytes": 399176,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wIHnRgP3Gj9K_e9qaEH1Aa5nc06U-zzg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35224,
+          "type": "loader",
+          "name": "000460e100040000_168d0bad52b5d5cb_fhprg_peek.bin",
+          "size": "356.4 KB",
+          "sizeBytes": 364972,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1yR-JA8Qsp47cgDEr8v7mRtscEKgFB7qr/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35225,
+          "type": "loader",
+          "name": "000460e100040000_3ab733d167600d9d_fhprg_peek.bin",
+          "size": "358.6 KB",
+          "sizeBytes": 367160,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1cDb8dOBimVcb0HplHmbB6MaMl_lCr8hI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35226,
+          "type": "loader",
+          "name": "000460e100040000_404d181e75af65a8_fhprg_peek.bin",
+          "size": "200.8 KB",
+          "sizeBytes": 205620,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1IcMTxpClgozF2Vxg85jhKWokjMfrMY_z/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19684,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "ZE554KL",
+      "slug": "hp-asus-ze554kl",
+      "chipset": "Snapdragon 630/636",
+      "motherboardCode": "HWID: 000AC0E1",
+      "officialTitle": "Asus ZE554KL — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35975,
+          "type": "loader",
+          "name": "000ac0e100000000_7be49b72f9e43372_fhprg_asus_peek.bin",
+          "size": "619.5 KB",
+          "sizeBytes": 634384,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1bgAW94W558BpvVTlmnZtgcRRXJ4tzCfy/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15133,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Zenfone 10",
+      "slug": "hp-asus-zenfone-10",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Asus Zenfone 10 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29716,
+          "type": "testpoint",
+          "name": "asus_zenfone_10_tp.jpg",
+          "size": "12.4 KB",
+          "sizeBytes": 12746,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17JnJrSPKx_i-Uq8o82SKOJyei9zQFfms/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/oODGgu7N",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29717,
+          "type": "isp",
+          "name": "asus_zenfone_10_isp.jpg",
+          "size": "681.7 KB",
+          "sizeBytes": 698066,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1BnwDyRvznKg0ivw8Bk50mxRlUeg1T4Za/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15134,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Zenfone 11 Ultra",
+      "slug": "hp-asus-zenfone-11-ultra",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Asus Zenfone 11 Ultra — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29718,
+          "type": "testpoint",
+          "name": "asus_zenfone_11_ultra_tp.jpg",
+          "size": "12.4 KB",
+          "sizeBytes": 12746,
+          "gdrive_direct_url": "https://drive.google.com/file/d/10G24OHwdlQNKmHU-cDeXYiisIka8a59I/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/f76NP",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29719,
+          "type": "isp",
+          "name": "asus_zenfone_11_ultra_isp.jpg",
+          "size": "90.4 KB",
+          "sizeBytes": 92529,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Kvxr34OB_WnkpPUi5ZOPCgh_FvGSCQAA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15135,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Zenfone 5",
+      "slug": "hp-asus-zenfone-5",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Asus Zenfone 5 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29720,
+          "type": "testpoint",
+          "name": "asus_zenfone_5_tp.jpg",
+          "size": "1.2 MB",
+          "sizeBytes": 1215205,
+          "gdrive_direct_url": "https://drive.google.com/file/d/10bc_3ZxLv0znlTk4JzKJVELHzEeHmI0W/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/V6lDmsU",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29721,
+          "type": "isp",
+          "name": "asus_zenfone_5_isp.jpg",
+          "size": "393 KB",
+          "sizeBytes": 402406,
+          "gdrive_direct_url": "https://drive.google.com/file/d/10IKrh8LI6bqtIeQroAmP0NVi2G_sq9fy/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15136,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Zenfone 5Z",
+      "slug": "hp-asus-zenfone-5z",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Asus Zenfone 5Z — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29722,
+          "type": "testpoint",
+          "name": "asus_zenfone_5z_tp.jpg",
+          "size": "278.1 KB",
+          "sizeBytes": 284812,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mjS5FmOLWLk7gK1_ujT8ieUkFLbn9sOb/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/Fy2Wte",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29723,
+          "type": "isp",
+          "name": "asus_zenfone_5z_isp.jpg",
+          "size": "159.8 KB",
+          "sizeBytes": 163681,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1cDEokhmROOZiVO46IHzfwUyBMsdP31bV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15137,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Zenfone 6",
+      "slug": "hp-asus-zenfone-6",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Asus Zenfone 6 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29724,
+          "type": "testpoint",
+          "name": "asus_zenfone_6_tp.jpg",
+          "size": "12.4 KB",
+          "sizeBytes": 12746,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1JyIiycyI6dzZa4yuxt9Agpv9CxLaPMiy/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/di01DD",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29725,
+          "type": "isp",
+          "name": "asus_zenfone_6_isp.jpg",
+          "size": "231.4 KB",
+          "sizeBytes": 236915,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1yllImpyBdniWnoIHFNlBsXC14z9Pe1-8/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15138,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Zenfone 7",
+      "slug": "hp-asus-zenfone-7",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Asus Zenfone 7 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29726,
+          "type": "testpoint",
+          "name": "asus_zenfone_7_tp.jpg",
+          "size": "12.4 KB",
+          "sizeBytes": 12746,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZNG24uzqRO1mavBWDSt2-0EmtkeNWA8x/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/QbXCMH",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29727,
+          "type": "isp",
+          "name": "asus_zenfone_7_isp.jpg",
+          "size": "231.4 KB",
+          "sizeBytes": 236915,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1su82bbzCiypTtUA1oSY6dFmgHWAORq5h/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18229,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Zenfone 7 Pro",
+      "slug": "hp-asus-zenfone-7-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus Zenfone 7 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33756,
+          "type": "isp",
+          "name": "asus_zenfone_7_pro_isp.jpg",
+          "size": "434.8 KB",
+          "sizeBytes": 445229,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1cLADM9ghgGxuw9ePDBNPUyLPCyUg1iKj/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15139,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Zenfone 8",
+      "slug": "hp-asus-zenfone-8",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Asus Zenfone 8 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29728,
+          "type": "testpoint",
+          "name": "asus_zenfone_8_tp.jpg",
+          "size": "12.4 KB",
+          "sizeBytes": 12746,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hlADjJnpLqUc-IeO2SoiycOBP0i4mS4T/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/0nU4iqF",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29729,
+          "type": "isp",
+          "name": "asus_zenfone_8_isp.jpg",
+          "size": "231.4 KB",
+          "sizeBytes": 236915,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hWFKX8M4c-owdluB_sZqMi-PmkHPfa14/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18230,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Zenfone 8 Flip",
+      "slug": "hp-asus-zenfone-8-flip",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus Zenfone 8 Flip — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33757,
+          "type": "isp",
+          "name": "asus_zenfone_8_flip_isp.jpg",
+          "size": "231.4 KB",
+          "sizeBytes": 236915,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xtThMYcjMpT2lmAobZ3dEy379Kq-Hucf/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15140,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Zenfone 9",
+      "slug": "hp-asus-zenfone-9",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Asus Zenfone 9 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29730,
+          "type": "testpoint",
+          "name": "asus_zenfone_9_tp.jpg",
+          "size": "12.4 KB",
+          "sizeBytes": 12746,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1fUXi5X4nJVMeGimshHtFwyiOm11eYl7t/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/W0Bm5w59",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29731,
+          "type": "isp",
+          "name": "asus_zenfone_9_isp.jpg",
+          "size": "231.4 KB",
+          "sizeBytes": 236915,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ps2GPsOM72pVs2uIBVRaxeciATot0Ch2/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15141,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Zenfone Max M1",
+      "slug": "hp-asus-zenfone-max-m1",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Asus Zenfone Max M1 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29732,
+          "type": "testpoint",
+          "name": "asus_zenfone_max_m1_tp.jpg",
+          "size": "138.3 KB",
+          "sizeBytes": 141640,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1tvYrJdVC-TuZUrgchBPBMc7CR6ttCpm-/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/E2FRyYsY",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29733,
+          "type": "isp",
+          "name": "asus_zenfone_max_m1_isp.jpg",
+          "size": "184.2 KB",
+          "sizeBytes": 188645,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hhSWNZCQ5bakCFj6_HrtKscdlTij9wI1/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15142,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Zenfone Max M2",
+      "slug": "hp-asus-zenfone-max-m2",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Asus Zenfone Max M2 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29734,
+          "type": "testpoint",
+          "name": "asus_zenfone_max_m2_tp.jpg",
+          "size": "12.4 KB",
+          "sizeBytes": 12746,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-GnAkVkI2nMMvCWqTQdXvuk16xPfvKAX/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/40nFQuA2",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29735,
+          "type": "isp",
+          "name": "asus_zenfone_max_m2_isp.jpg",
+          "size": "446.7 KB",
+          "sizeBytes": 457427,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hUvfuVpJY78wQIkApXH4zsl5w3OMbg92/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15143,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Zenfone Max Pro M1",
+      "slug": "hp-asus-zenfone-max-pro-m1",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Asus Zenfone Max Pro M1 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29736,
+          "type": "testpoint",
+          "name": "asus_zenfone_max_pro_m1_tp.jpg",
+          "size": "12.4 KB",
+          "sizeBytes": 12746,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1MMoCzIVFVEmOyewL09m_UMINe0RsJY70/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/aCpWiD",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29737,
+          "type": "isp",
+          "name": "asus_zenfone_max_pro_m1_isp.jpg",
+          "size": "126 KB",
+          "sizeBytes": 128987,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1KzxZB8qx-0NmxJ6IHcl2cNUYsg1J7nP9/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15144,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "Zenfone Max Pro M2",
+      "slug": "hp-asus-zenfone-max-pro-m2",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Asus Zenfone Max Pro M2 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 29738,
+          "type": "testpoint",
+          "name": "asus_zenfone_max_pro_m2_tp.jpg",
+          "size": "12.4 KB",
+          "sizeBytes": 12746,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1aYWIeQG6xlspsbNWcpJhPWGMp-1s4yOn/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/OHEZD",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 29739,
+          "type": "isp",
+          "name": "asus_zenfone_max_pro_m2_isp.jpg",
+          "size": "242.8 KB",
+          "sizeBytes": 248579,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1j45cpsUK-YTGOJQOJnEzpx6nQ_ZNCGVD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16659,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "[ISP] ROG Phone",
+      "slug": "hp-asus-isp-rog-phone",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus [ISP] ROG Phone — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32186,
+          "type": "testpoint",
+          "name": "asus_rog_phone_isp.jpg",
+          "size": "149.6 KB",
+          "sizeBytes": 153198,
+          "gdrive_direct_url": "https://drive.google.com/file/d/12QmEeivr8XBToDXhfbdzUDV-Te1xKHGB/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16660,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "[ISP] ROG Phone 2",
+      "slug": "hp-asus-isp-rog-phone-2",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus [ISP] ROG Phone 2 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32187,
+          "type": "testpoint",
+          "name": "asus_rog_phone_2_isp.jpg",
+          "size": "149.6 KB",
+          "sizeBytes": 153198,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1pUEV4jj1kXxESIUY5ZcBb2LUA42DVGgK/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16661,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "[ISP] ROG Phone 3",
+      "slug": "hp-asus-isp-rog-phone-3",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus [ISP] ROG Phone 3 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32188,
+          "type": "testpoint",
+          "name": "asus_rog_phone_3_isp.jpg",
+          "size": "149.6 KB",
+          "sizeBytes": 153198,
+          "gdrive_direct_url": "https://drive.google.com/file/d/171tQqez3Tw8_yQFZHWr7WdaH56b-Eywl/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16662,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "[ISP] ROG Phone 5",
+      "slug": "hp-asus-isp-rog-phone-5",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus [ISP] ROG Phone 5 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32189,
+          "type": "testpoint",
+          "name": "asus_rog_phone_5_isp.jpg",
+          "size": "586.6 KB",
+          "sizeBytes": 600706,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14T6fpXSc8wF4DQHzobDaxvkb96l283Tm/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16663,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "[ISP] ROG Phone 5S",
+      "slug": "hp-asus-isp-rog-phone-5s",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus [ISP] ROG Phone 5S — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32190,
+          "type": "testpoint",
+          "name": "asus_rog_phone_5s_isp.jpg",
+          "size": "586.6 KB",
+          "sizeBytes": 600706,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ehvqvdCRt7lRKI9fP_45eViSF5XsM5NU/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16664,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "[ISP] ROG Phone 5S Pro",
+      "slug": "hp-asus-isp-rog-phone-5s-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus [ISP] ROG Phone 5S Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32191,
+          "type": "testpoint",
+          "name": "asus_rog_phone_5s_pro_isp.jpg",
+          "size": "2.5 MB",
+          "sizeBytes": 2637191,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_x9mXxFQC6debaolk19MQL3vny7cQMqp/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16665,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "[ISP] ROG Phone 6",
+      "slug": "hp-asus-isp-rog-phone-6",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus [ISP] ROG Phone 6 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32192,
+          "type": "testpoint",
+          "name": "asus_rog_phone_6_isp.jpg",
+          "size": "149.6 KB",
+          "sizeBytes": 153198,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wRA5nLaL3AlYNB6YDwF6gsZXZqXszsm3/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16666,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "[ISP] ROG Phone 6 Pro",
+      "slug": "hp-asus-isp-rog-phone-6-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus [ISP] ROG Phone 6 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32193,
+          "type": "testpoint",
+          "name": "asus_rog_phone_6_pro_isp.jpg",
+          "size": "586.6 KB",
+          "sizeBytes": 600706,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hAK3p7A19ZvKV_eW3orsrGEbX40wAnbF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16667,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "[ISP] ROG Phone 6D",
+      "slug": "hp-asus-isp-rog-phone-6d",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus [ISP] ROG Phone 6D — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32194,
+          "type": "testpoint",
+          "name": "asus_rog_phone_6d_isp.jpg",
+          "size": "149.6 KB",
+          "sizeBytes": 153198,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17WRALvs1-7zi4jXGqIDcRc1xqbu7ZPKJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16668,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "[ISP] ROG Phone 7",
+      "slug": "hp-asus-isp-rog-phone-7",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus [ISP] ROG Phone 7 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32195,
+          "type": "testpoint",
+          "name": "asus_rog_phone_7_isp.jpg",
+          "size": "149.6 KB",
+          "sizeBytes": 153198,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WzRxWdLk-mTEudi3Jmt7Qq4cW5syyR1F/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16669,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "[ISP] ROG Phone 7 Ultimate",
+      "slug": "hp-asus-isp-rog-phone-7-ultimate",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus [ISP] ROG Phone 7 Ultimate — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32196,
+          "type": "testpoint",
+          "name": "asus_rog_phone_7_ultimate_isp.jpg",
+          "size": "586.6 KB",
+          "sizeBytes": 600706,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1SBE3uEktrDg-4hzPs0_6xRQVlhYA_xKq/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16670,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "[ISP] ROG Phone 8",
+      "slug": "hp-asus-isp-rog-phone-8",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus [ISP] ROG Phone 8 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32197,
+          "type": "testpoint",
+          "name": "asus_rog_phone_8_isp.jpg",
+          "size": "149.6 KB",
+          "sizeBytes": 153198,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Beu-tg4fELdKieNV1uGb63Yjqca-eu5f/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16671,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "[ISP] ROG Phone 8 Pro",
+      "slug": "hp-asus-isp-rog-phone-8-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus [ISP] ROG Phone 8 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32198,
+          "type": "testpoint",
+          "name": "asus_rog_phone_8_pro_isp.jpg",
+          "size": "285.4 KB",
+          "sizeBytes": 292241,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1y_nHsOcWLPLwSKLKiqn_p_xGHWcH1jxI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16672,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "[ISP] Zenfone 10",
+      "slug": "hp-asus-isp-zenfone-10",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus [ISP] Zenfone 10 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32199,
+          "type": "testpoint",
+          "name": "asus_zenfone_10_isp.jpg",
+          "size": "681.7 KB",
+          "sizeBytes": 698066,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1BnwDyRvznKg0ivw8Bk50mxRlUeg1T4Za/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16673,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "[ISP] Zenfone 11 Ultra",
+      "slug": "hp-asus-isp-zenfone-11-ultra",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus [ISP] Zenfone 11 Ultra — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32200,
+          "type": "testpoint",
+          "name": "asus_zenfone_11_ultra_isp.jpg",
+          "size": "90.4 KB",
+          "sizeBytes": 92529,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Kvxr34OB_WnkpPUi5ZOPCgh_FvGSCQAA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16674,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "[ISP] Zenfone 5",
+      "slug": "hp-asus-isp-zenfone-5",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus [ISP] Zenfone 5 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32201,
+          "type": "testpoint",
+          "name": "asus_zenfone_5_isp.jpg",
+          "size": "393 KB",
+          "sizeBytes": 402406,
+          "gdrive_direct_url": "https://drive.google.com/file/d/10IKrh8LI6bqtIeQroAmP0NVi2G_sq9fy/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16675,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "[ISP] Zenfone 5Z",
+      "slug": "hp-asus-isp-zenfone-5z",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus [ISP] Zenfone 5Z — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32202,
+          "type": "testpoint",
+          "name": "asus_zenfone_5z_isp.jpg",
+          "size": "159.8 KB",
+          "sizeBytes": 163681,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1cDEokhmROOZiVO46IHzfwUyBMsdP31bV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16676,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "[ISP] Zenfone 6",
+      "slug": "hp-asus-isp-zenfone-6",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus [ISP] Zenfone 6 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32203,
+          "type": "testpoint",
+          "name": "asus_zenfone_6_isp.jpg",
+          "size": "231.4 KB",
+          "sizeBytes": 236915,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1yllImpyBdniWnoIHFNlBsXC14z9Pe1-8/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16677,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "[ISP] Zenfone 7",
+      "slug": "hp-asus-isp-zenfone-7",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus [ISP] Zenfone 7 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32204,
+          "type": "testpoint",
+          "name": "asus_zenfone_7_isp.jpg",
+          "size": "231.4 KB",
+          "sizeBytes": 236915,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1su82bbzCiypTtUA1oSY6dFmgHWAORq5h/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16678,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "[ISP] Zenfone 7 Pro",
+      "slug": "hp-asus-isp-zenfone-7-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus [ISP] Zenfone 7 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32205,
+          "type": "testpoint",
+          "name": "asus_zenfone_7_pro_isp.jpg",
+          "size": "434.8 KB",
+          "sizeBytes": 445229,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1cLADM9ghgGxuw9ePDBNPUyLPCyUg1iKj/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16679,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "[ISP] Zenfone 8",
+      "slug": "hp-asus-isp-zenfone-8",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus [ISP] Zenfone 8 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32206,
+          "type": "testpoint",
+          "name": "asus_zenfone_8_isp.jpg",
+          "size": "231.4 KB",
+          "sizeBytes": 236915,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hWFKX8M4c-owdluB_sZqMi-PmkHPfa14/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16680,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "[ISP] Zenfone 8 Flip",
+      "slug": "hp-asus-isp-zenfone-8-flip",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus [ISP] Zenfone 8 Flip — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32207,
+          "type": "testpoint",
+          "name": "asus_zenfone_8_flip_isp.jpg",
+          "size": "231.4 KB",
+          "sizeBytes": 236915,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xtThMYcjMpT2lmAobZ3dEy379Kq-Hucf/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16681,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "[ISP] Zenfone 9",
+      "slug": "hp-asus-isp-zenfone-9",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus [ISP] Zenfone 9 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32208,
+          "type": "testpoint",
+          "name": "asus_zenfone_9_isp.jpg",
+          "size": "231.4 KB",
+          "sizeBytes": 236915,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ps2GPsOM72pVs2uIBVRaxeciATot0Ch2/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16682,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "[ISP] Zenfone Max M1",
+      "slug": "hp-asus-isp-zenfone-max-m1",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus [ISP] Zenfone Max M1 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32209,
+          "type": "testpoint",
+          "name": "asus_zenfone_max_m1_isp.jpg",
+          "size": "184.2 KB",
+          "sizeBytes": 188645,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hhSWNZCQ5bakCFj6_HrtKscdlTij9wI1/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16683,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "[ISP] Zenfone Max M2",
+      "slug": "hp-asus-isp-zenfone-max-m2",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus [ISP] Zenfone Max M2 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32210,
+          "type": "testpoint",
+          "name": "asus_zenfone_max_m2_isp.jpg",
+          "size": "446.7 KB",
+          "sizeBytes": 457427,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hUvfuVpJY78wQIkApXH4zsl5w3OMbg92/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16684,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "[ISP] Zenfone Max Pro M1",
+      "slug": "hp-asus-isp-zenfone-max-pro-m1",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus [ISP] Zenfone Max Pro M1 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32211,
+          "type": "testpoint",
+          "name": "asus_zenfone_max_pro_m1_isp.jpg",
+          "size": "126 KB",
+          "sizeBytes": 128987,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1KzxZB8qx-0NmxJ6IHcl2cNUYsg1J7nP9/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16685,
+      "category": "hp",
+      "brand": "Asus",
+      "brandSlug": "asus",
+      "modelName": "[ISP] Zenfone Max Pro M2",
+      "slug": "hp-asus-isp-zenfone-max-pro-m2",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Asus [ISP] Zenfone Max Pro M2 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32212,
+          "type": "testpoint",
+          "name": "asus_zenfone_max_pro_m2_isp.jpg",
+          "size": "242.8 KB",
+          "sizeBytes": 248579,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1j45cpsUK-YTGOJQOJnEzpx6nQ_ZNCGVD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

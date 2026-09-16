@@ -1,0 +1,86 @@
+{
+  "category": "laptop",
+  "brand": "MSI",
+  "brandSlug": "msi",
+  "totalModels": 3,
+  "models": [
+    {
+      "id": 18848,
+      "category": "laptop",
+      "brand": "MSI",
+      "brandSlug": "msi",
+      "modelName": "MS-7680",
+      "slug": "laptop-msi-ms-7680",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "MS-7680",
+      "officialTitle": "MSI MS-7680 (MS-7680) — Boardview CAD / FZ Motherboard Free Download + Panduan Cek Jalur Komponen Rusak",
+      "fileTypes": [
+        "boardview"
+      ],
+      "files": [
+        {
+          "id": 34388,
+          "type": "boardview",
+          "name": "MSI - MS-7680 - Boardview Pack.zip",
+          "size": "23.2 MB",
+          "sizeBytes": 24294525,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1FVGzXA4ypcpqq1FztLVqeFSlRxotvDrr/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19513,
+      "category": "laptop",
+      "brand": "MSI",
+      "brandSlug": "msi",
+      "modelName": "MSI GE62 6QD APACHE PRO - MS-16J5 - MS-1795",
+      "slug": "laptop-msi-msi-ge62-6qd-apache-pro-ms-16j5-ms-1795",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "MS-16J5",
+      "officialTitle": "MSI MSI GE62 6QD APACHE PRO - MS-16J5 - MS-1795 (MS-16J5) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35114,
+          "type": "schematic",
+          "name": "MSI - MSI GE62 6QD APACHE PRO - MS-16J5 - MS-1795 - Schematic.pdf",
+          "size": "1.5 MB",
+          "sizeBytes": 1569301,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1qCPvHFogVBn8eM6h4XkepcL3SrVLEgx0/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19514,
+      "category": "laptop",
+      "brand": "MSI",
+      "brandSlug": "msi",
+      "modelName": "skema MS-AC711",
+      "slug": "laptop-msi-skema-ms-ac711",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "MS-AC711",
+      "officialTitle": "MSI skema MS-AC711 (MS-AC711) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35115,
+          "type": "schematic",
+          "name": "MSI - skema MS-AC711 - Schematic.pdf",
+          "size": "1.8 MB",
+          "sizeBytes": 1848400,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1qtloOK_lCMqi7ma9N66b0-6q4hc4oGgL/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

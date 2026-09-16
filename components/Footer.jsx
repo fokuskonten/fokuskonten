@@ -37,6 +37,10 @@ const footerLinks = {
   Navigasi: [
     { label: 'Beranda', href: '/' },
     { label: 'Aplikasi', href: '/aplikasi/' },
+    { label: 'Toko Digital', href: '/toko-digital/' },
+    { label: 'Direktori E-Book', href: '/ebook/' },
+    { label: 'Teknisi HP', href: '/teknisi-hp/' },
+    { label: 'Skema Laptop', href: '/teknisi-laptop/' },
     { label: 'Tentang', href: '/tentang/' },
     { label: 'Layanan', href: '/layanan/' },
     { label: 'FAQ', href: '/faq/' },

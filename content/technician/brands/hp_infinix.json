@@ -1,0 +1,3456 @@
+{
+  "category": "hp",
+  "brand": "Infinix",
+  "brandSlug": "infinix",
+  "totalModels": 125,
+  "models": [
+    {
+      "id": 19779,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "425_1",
+      "slug": "hp-infinix-425_1",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Infinix 425_1 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36108,
+          "type": "loader",
+          "name": "425_1.mbn",
+          "size": "376.6 KB",
+          "sizeBytes": 385684,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Z0aWmV0m13wZlvTLPAMBOSsi72zACdEU/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19778,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "425_2",
+      "slug": "hp-infinix-425_2",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Infinix 425_2 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36107,
+          "type": "loader",
+          "name": "425_2.mbn",
+          "size": "374.8 KB",
+          "sizeBytes": 383792,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1NMkR_cWxr7js6qXkFJRWjRdNFmfXOKFM/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19777,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "430",
+      "slug": "hp-infinix-430",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "Infinix 430 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36106,
+          "type": "loader",
+          "name": "430.mbn",
+          "size": "404.2 KB",
+          "sizeBytes": 413912,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19QNSFUNh-9zFzXaQZKYcbjYafZ8-HMcj/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15370,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Hot 10",
+      "slug": "hp-infinix-hot-10",
+      "chipset": "MediaTek Helio / Dimensity",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Hot 10 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30038,
+          "type": "testpoint",
+          "name": "infinix_hot_10_tp.jpg",
+          "size": "126.5 KB",
+          "sizeBytes": 129512,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uAA5E66N4bGfhlj7KQQ8pJeFuxs12r9T/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/LMhjG8j",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30039,
+          "type": "isp",
+          "name": "infinix_hot_10_isp.jpg",
+          "size": "374.7 KB",
+          "sizeBytes": 383708,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Nx-2dcg2Xw6aPK7M7lpSAUQnowua_ELY/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15371,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Hot 10 Play",
+      "slug": "hp-infinix-hot-10-play",
+      "chipset": "MediaTek Helio / Dimensity",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Hot 10 Play — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30040,
+          "type": "testpoint",
+          "name": "infinix_hot_10_play_tp.jpg",
+          "size": "126.5 KB",
+          "sizeBytes": 129512,
+          "gdrive_direct_url": "https://drive.google.com/file/d/10OUGueghwO2-KsTFs33lCWCPdqRjHxBW/view?usp=sharing",
+          "safelink_url": "https://sfl.gl/RTI54xOt",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30041,
+          "type": "isp",
+          "name": "infinix_hot_10_play_isp.jpg",
+          "size": "170.2 KB",
+          "sizeBytes": 174317,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1rcC-cNPK-h6Njk0hNlvTml1cVg2GGAoY/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18249,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Hot 10S",
+      "slug": "hp-infinix-hot-10s",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Hot 10S — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33778,
+          "type": "isp",
+          "name": "infinix_hot_10s_isp.jpg",
+          "size": "374.7 KB",
+          "sizeBytes": 383708,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZkuM5ADZRY9tYUnpmFzBGct732ocJzVP/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15372,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Hot 11",
+      "slug": "hp-infinix-hot-11",
+      "chipset": "MediaTek Helio / Dimensity",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Hot 11 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30042,
+          "type": "testpoint",
+          "name": "infinix_hot_11_tp.jpg",
+          "size": "1018.3 KB",
+          "sizeBytes": 1042725,
+          "gdrive_direct_url": "https://drive.google.com/file/d/16AJgFDx6v3mCZ1CVnGAC0yZ5khDJxWG8/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/16AJgFDx6v3mCZ1CVnGAC0yZ5khDJxWG8/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30043,
+          "type": "isp",
+          "name": "infinix_hot_11_isp.jpg",
+          "size": "1018.3 KB",
+          "sizeBytes": 1042693,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1k3dgaxzqrx1LFu5QZQeKGlXaie9GScIo/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18250,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Hot 11 Play",
+      "slug": "hp-infinix-hot-11-play",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Hot 11 Play — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33779,
+          "type": "isp",
+          "name": "infinix_hot_11_play_isp.jpg",
+          "size": "1018.3 KB",
+          "sizeBytes": 1042693,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1C5ITQgV_lg2i5IVp2qy6BXAouoaB4iTO/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15373,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Hot 11S",
+      "slug": "hp-infinix-hot-11s",
+      "chipset": "MediaTek Helio / Dimensity",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Hot 11S — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30044,
+          "type": "testpoint",
+          "name": "infinix_hot_11s_tp.jpg",
+          "size": "1018.3 KB",
+          "sizeBytes": 1042725,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PrQIkAt2D-qTgN0JZjFJK7f30nf1BMJO/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1PrQIkAt2D-qTgN0JZjFJK7f30nf1BMJO/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30045,
+          "type": "isp",
+          "name": "infinix_hot_11s_isp.jpg",
+          "size": "1018.3 KB",
+          "sizeBytes": 1042693,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1s_b9T2Tyv0r6rcbBONxAohEOm6T9yYkk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15374,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Hot 12",
+      "slug": "hp-infinix-hot-12",
+      "chipset": "MediaTek Helio / Dimensity",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Hot 12 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30046,
+          "type": "testpoint",
+          "name": "infinix_hot_12_tp.jpg",
+          "size": "126.5 KB",
+          "sizeBytes": 129512,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ku2RwQxhpaHNBfv9fL_NCaCe6ionG9-A/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1ku2RwQxhpaHNBfv9fL_NCaCe6ionG9-A/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30047,
+          "type": "isp",
+          "name": "infinix_hot_12_isp.jpg",
+          "size": "68.8 KB",
+          "sizeBytes": 70433,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1LhUlT5lh-nss4GbY4lh7IKDofYWYSa5K/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18251,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Hot 12 Play",
+      "slug": "hp-infinix-hot-12-play",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Hot 12 Play — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33780,
+          "type": "isp",
+          "name": "infinix_hot_12_play_isp.jpg",
+          "size": "55.7 KB",
+          "sizeBytes": 57050,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1P4LZD3c-TyCy95MyxCeHHcWq6cff9KCn/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18252,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Hot 12I",
+      "slug": "hp-infinix-hot-12i",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Hot 12I — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33781,
+          "type": "isp",
+          "name": "infinix_hot_12i_isp.jpg",
+          "size": "68.8 KB",
+          "sizeBytes": 70433,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13N01w54KBlMUbNE_B-bTJ0Xvzot8ROlc/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15375,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Hot 20",
+      "slug": "hp-infinix-hot-20",
+      "chipset": "MediaTek Helio / Dimensity",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Hot 20 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30048,
+          "type": "testpoint",
+          "name": "infinix_hot_20_tp.jpg",
+          "size": "126.5 KB",
+          "sizeBytes": 129512,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xmx6on-EmKn2P_3zFjLc4qtdrxTWFlDa/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1xmx6on-EmKn2P_3zFjLc4qtdrxTWFlDa/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30049,
+          "type": "isp",
+          "name": "infinix_hot_20_isp.jpg",
+          "size": "178.3 KB",
+          "sizeBytes": 182582,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-KJp-4MfQ79WgpOBLrkFCQVERVSUnO7K/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18253,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Hot 20 5G",
+      "slug": "hp-infinix-hot-20-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Hot 20 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33782,
+          "type": "isp",
+          "name": "infinix_hot_20_5g_isp.jpg",
+          "size": "178.3 KB",
+          "sizeBytes": 182582,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PcmeIjcoQydb4B2KU_ahq1W5NiQIO1gs/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18254,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Hot 20I",
+      "slug": "hp-infinix-hot-20i",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Hot 20I — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33783,
+          "type": "isp",
+          "name": "infinix_hot_20i_isp.jpg",
+          "size": "178.3 KB",
+          "sizeBytes": 182582,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1aFQS0KBhQgs6LavhL4iMQ8g5jmdnqGAw/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18255,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Hot 20S",
+      "slug": "hp-infinix-hot-20s",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Hot 20S — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33784,
+          "type": "isp",
+          "name": "infinix_hot_20s_isp.jpg",
+          "size": "178.3 KB",
+          "sizeBytes": 182582,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dj8SCj3O39xp-ViUD5eQM6vxdWrDOMTg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15376,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Hot 30",
+      "slug": "hp-infinix-hot-30",
+      "chipset": "MediaTek Helio / Dimensity",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Hot 30 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30050,
+          "type": "testpoint",
+          "name": "infinix_hot_30_tp.jpg",
+          "size": "120.9 KB",
+          "sizeBytes": 123792,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1YB8InSfMaoWEcUpme39CF9UNshuha8FS/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1YB8InSfMaoWEcUpme39CF9UNshuha8FS/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30051,
+          "type": "isp",
+          "name": "infinix_hot_30_isp.jpg",
+          "size": "120.9 KB",
+          "sizeBytes": 123792,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Rol_O_Hsjl3WhnbV_fYIWY8EkifDxFSS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18256,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Hot 30 Play",
+      "slug": "hp-infinix-hot-30-play",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Hot 30 Play — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33785,
+          "type": "isp",
+          "name": "infinix_hot_30_play_isp.jpg",
+          "size": "376.9 KB",
+          "sizeBytes": 385961,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1T52BfvYBXCHtKpUSX9uqwKIAmflAfnid/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18257,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Hot 30I",
+      "slug": "hp-infinix-hot-30i",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Hot 30I — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33786,
+          "type": "isp",
+          "name": "infinix_hot_30i_isp.jpg",
+          "size": "96.4 KB",
+          "sizeBytes": 98688,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14Ja-Cspfz_jeR3MPGPWBe3cSMcyxBQ2C/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18258,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Hot 40",
+      "slug": "hp-infinix-hot-40",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Hot 40 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33787,
+          "type": "isp",
+          "name": "infinix_hot_40_isp.jpg",
+          "size": "108.8 KB",
+          "sizeBytes": 111461,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1pFcAU6vOeParDKwjeRcM30SAu87RllGu/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18259,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Hot 40 Pro",
+      "slug": "hp-infinix-hot-40-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Hot 40 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33788,
+          "type": "isp",
+          "name": "infinix_hot_40_pro_isp.jpg",
+          "size": "108.8 KB",
+          "sizeBytes": 111461,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1qvj92MRXN0nviTX5uCbBmnIEEJmcP_YB/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18260,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Hot 40I",
+      "slug": "hp-infinix-hot-40i",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Hot 40I — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33789,
+          "type": "isp",
+          "name": "infinix_hot_40i_isp.jpg",
+          "size": "303.2 KB",
+          "sizeBytes": 310524,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1x0qJaMXTdvkaJ5qH98xO8A6KQe_FLeJr/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15377,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Hot 8",
+      "slug": "hp-infinix-hot-8",
+      "chipset": "MediaTek Helio / Dimensity",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Hot 8 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30052,
+          "type": "testpoint",
+          "name": "infinix_hot_8_tp.jpg",
+          "size": "126.5 KB",
+          "sizeBytes": 129512,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-BXnzGWDu6x4Mm3O3Gjyd1N_-cO-2-sE/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1-BXnzGWDu6x4Mm3O3Gjyd1N_-cO-2-sE/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30053,
+          "type": "isp",
+          "name": "infinix_hot_8_isp.jpg",
+          "size": "164.2 KB",
+          "sizeBytes": 168162,
+          "gdrive_direct_url": "https://drive.google.com/file/d/12ZcaJj97HHoqNXXuT9o93t-rkx2V8jh4/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15378,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Hot 9",
+      "slug": "hp-infinix-hot-9",
+      "chipset": "MediaTek Helio / Dimensity",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Hot 9 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30054,
+          "type": "testpoint",
+          "name": "infinix_hot_9_tp.jpg",
+          "size": "126.5 KB",
+          "sizeBytes": 129512,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1D4wndHNpdbZ79Wx-NxkxFrXw185du2nW/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1D4wndHNpdbZ79Wx-NxkxFrXw185du2nW/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30055,
+          "type": "isp",
+          "name": "infinix_hot_9_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PdJfYSa8ozo4H2vQ8bJDOC8pw4nDwQrt/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18261,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Hot 9 Play",
+      "slug": "hp-infinix-hot-9-play",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Hot 9 Play — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33790,
+          "type": "isp",
+          "name": "infinix_hot_9_play_isp.jpg",
+          "size": "217.7 KB",
+          "sizeBytes": 222890,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Iyiik0RONvRuWWD_2oZrh0I6om-6Q7lt/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21226,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Infinix HelioG99 NVRAM Base",
+      "slug": "hp-infinix-infinix-heliog99-nvram-base",
+      "chipset": "Baseband & Network Calibration",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Infinix HelioG99 NVRAM Base — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "nvram"
+      ],
+      "files": [
+        {
+          "id": 39058,
+          "type": "nvram",
+          "name": "Infinix_HelioG99_NVRAM_Base.bin",
+          "size": "8 KB",
+          "sizeBytes": 8242,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dogMAZFrk4eik_yBf0I05Ncd20NPrWnl/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21227,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Infinix MT6765 NVRAM Base",
+      "slug": "hp-infinix-infinix-mt6765-nvram-base",
+      "chipset": "Baseband & Network Calibration",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Infinix MT6765 NVRAM Base — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "nvram"
+      ],
+      "files": [
+        {
+          "id": 39059,
+          "type": "nvram",
+          "name": "Infinix_MT6765_NVRAM_Base.bin",
+          "size": "8 KB",
+          "sizeBytes": 8242,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QBFsscnBfOUowM-Y5vKLwBs5L6xIizPD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15379,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Note 10",
+      "slug": "hp-infinix-note-10",
+      "chipset": "MediaTek Helio / Dimensity",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Note 10 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30056,
+          "type": "testpoint",
+          "name": "infinix_note_10_tp.jpg",
+          "size": "126.5 KB",
+          "sizeBytes": 129512,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1pCKJ3aJV6duJIpaVvUXh48utzK5vMihI/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1pCKJ3aJV6duJIpaVvUXh48utzK5vMihI/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30057,
+          "type": "isp",
+          "name": "infinix_note_10_isp.jpg",
+          "size": "374.7 KB",
+          "sizeBytes": 383708,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1gbXNHWtbWYYw5prD9_6gkgUh98G4pz1B/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18262,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Note 10 Pro",
+      "slug": "hp-infinix-note-10-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Note 10 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33791,
+          "type": "isp",
+          "name": "infinix_note_10_pro_isp.jpg",
+          "size": "374.7 KB",
+          "sizeBytes": 383708,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-r33W8BLe1qElC6m_Om1Fk2nkTHFBNkx/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15380,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Note 11",
+      "slug": "hp-infinix-note-11",
+      "chipset": "MediaTek Helio / Dimensity",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Note 11 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30058,
+          "type": "testpoint",
+          "name": "infinix_note_11_tp.jpg",
+          "size": "126.5 KB",
+          "sizeBytes": 129512,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1H-1WYNZHCfV410dhohvoGkH_i8JWGPpr/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1H-1WYNZHCfV410dhohvoGkH_i8JWGPpr/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30059,
+          "type": "isp",
+          "name": "infinix_note_11_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1r4K_M44LuUV-oCXtPwcuaoxff5h5Skc-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18263,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Note 11 Pro",
+      "slug": "hp-infinix-note-11-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Note 11 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33792,
+          "type": "isp",
+          "name": "infinix_note_11_pro_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1J_rRWM5Ni1dedHrKfVUT-V2bQLol1D-U/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18264,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Note 11S",
+      "slug": "hp-infinix-note-11s",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Note 11S — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33793,
+          "type": "isp",
+          "name": "infinix_note_11s_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1AmVadymYUyuQ_FYycwg3_xgxJFHHvD_V/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15381,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Note 12",
+      "slug": "hp-infinix-note-12",
+      "chipset": "MediaTek Helio / Dimensity",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Note 12 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30060,
+          "type": "testpoint",
+          "name": "infinix_note_12_tp.jpg",
+          "size": "126.5 KB",
+          "sizeBytes": 129512,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Js0EtkNlBd3GznuUUJA1o0dGVh1iwywS/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1Js0EtkNlBd3GznuUUJA1o0dGVh1iwywS/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30061,
+          "type": "isp",
+          "name": "infinix_note_12_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1v_oz6xptHIqF2_3UdxHv_Wy8g3mBMlrV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18265,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Note 12 2023",
+      "slug": "hp-infinix-note-12-2023",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Note 12 2023 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33794,
+          "type": "isp",
+          "name": "infinix_note_12_2023_isp.jpg",
+          "size": "63.4 KB",
+          "sizeBytes": 64912,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1u_9Wh3kBROqJG6DdbW9H6iK8nigEUQi3/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18266,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Note 12 G96",
+      "slug": "hp-infinix-note-12-g96",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Note 12 G96 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33795,
+          "type": "isp",
+          "name": "infinix_note_12_g96_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/198D6FjAQwD5AARB4XpQxHrEyNwqAVSbd/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18267,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Note 12 Vip",
+      "slug": "hp-infinix-note-12-vip",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Note 12 Vip — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33796,
+          "type": "isp",
+          "name": "infinix_note_12_vip_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mGdqRvbAicHWO642GN563pOcfntNHQCA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15382,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Note 30",
+      "slug": "hp-infinix-note-30",
+      "chipset": "MediaTek Helio / Dimensity",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Note 30 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30062,
+          "type": "testpoint",
+          "name": "infinix_note_30_tp.jpg",
+          "size": "126.5 KB",
+          "sizeBytes": 129512,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Cm-xwJxEp4HMXXHgfakSVeSTkeOd3fWO/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1Cm-xwJxEp4HMXXHgfakSVeSTkeOd3fWO/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30063,
+          "type": "isp",
+          "name": "infinix_note_30_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uyeJlwKfQaPnXM9ywjXaDmyfP_Lc0tVS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18268,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Note 30 5G",
+      "slug": "hp-infinix-note-30-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Note 30 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33797,
+          "type": "isp",
+          "name": "infinix_note_30_5g_isp.jpg",
+          "size": "108.8 KB",
+          "sizeBytes": 111425,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19VrGfXvYL02b0_p-sVfmSJ3WpX7oETZn/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18269,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Note 30 Pro",
+      "slug": "hp-infinix-note-30-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Note 30 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33798,
+          "type": "isp",
+          "name": "infinix_note_30_pro_isp.jpg",
+          "size": "98.6 KB",
+          "sizeBytes": 100945,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1IbfUhGxfi0dX0mHnA5zVBYagIm3fQzmA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18270,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Note 30 Vip",
+      "slug": "hp-infinix-note-30-vip",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Note 30 Vip — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33799,
+          "type": "isp",
+          "name": "infinix_note_30_vip_isp.jpg",
+          "size": "133.2 KB",
+          "sizeBytes": 136370,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HH-2GJAwntKcqD1lBJKbK8-wNEGc0gyk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18271,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Note 40",
+      "slug": "hp-infinix-note-40",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Note 40 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33800,
+          "type": "isp",
+          "name": "infinix_note_40_isp.jpg",
+          "size": "1.5 MB",
+          "sizeBytes": 1554685,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1nCWUwhZUDQ9XSGKOn85oP7op5KL7_4Ca/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18272,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Note 40 Pro",
+      "slug": "hp-infinix-note-40-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Note 40 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33801,
+          "type": "isp",
+          "name": "infinix_note_40_pro_isp.jpg",
+          "size": "1.5 MB",
+          "sizeBytes": 1554685,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xn2lMpf8s6CzPrLxQnwDiDLcE8XVU0qp/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18273,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Note 40 Pro Plus",
+      "slug": "hp-infinix-note-40-pro-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Note 40 Pro Plus — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33802,
+          "type": "isp",
+          "name": "infinix_note_40_pro_plus_isp.jpg",
+          "size": "1.5 MB",
+          "sizeBytes": 1554685,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QP8E7hvfAeKs863MpjhcOj_hxvu9Oj2Q/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18274,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Note 7",
+      "slug": "hp-infinix-note-7",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Note 7 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33803,
+          "type": "isp",
+          "name": "infinix_note_7_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1majEmF41ICoUeILgyaK7EowCj_ozy5XA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18275,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Note 7 Lite",
+      "slug": "hp-infinix-note-7-lite",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Note 7 Lite — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33804,
+          "type": "isp",
+          "name": "infinix_note_7_lite_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1I5uwW6G3f6UY9_kyYtY4U8b2ku_LTpAu/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18276,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Note 8",
+      "slug": "hp-infinix-note-8",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Note 8 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33805,
+          "type": "isp",
+          "name": "infinix_note_8_isp.jpg",
+          "size": "296.8 KB",
+          "sizeBytes": 303928,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1jU5dcDIfY9_OQNOCsXQjPHkZiyBoXjFR/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18277,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Note 8I",
+      "slug": "hp-infinix-note-8i",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Note 8I — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33806,
+          "type": "isp",
+          "name": "infinix_note_8i_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HIHPSz20dZdlueum602koVp7y2yyzPZj/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15383,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Smart 4",
+      "slug": "hp-infinix-smart-4",
+      "chipset": "MediaTek Helio / Dimensity",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Smart 4 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30064,
+          "type": "testpoint",
+          "name": "infinix_smart_4_tp.jpg",
+          "size": "104.3 KB",
+          "sizeBytes": 106786,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1BcHP5rqUKF_UwCcSv-y6_X7VNwA4BJt-/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1BcHP5rqUKF_UwCcSv-y6_X7VNwA4BJt-/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30065,
+          "type": "isp",
+          "name": "infinix_smart_4_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1g-svT-L7RaPniL5OfCymurLt8vYLEEuI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15384,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Smart 5",
+      "slug": "hp-infinix-smart-5",
+      "chipset": "MediaTek Helio / Dimensity",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Smart 5 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30066,
+          "type": "testpoint",
+          "name": "infinix_smart_5_tp.jpg",
+          "size": "877.6 KB",
+          "sizeBytes": 898651,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1J9UVYHE0tChgOR4gfp7fT041Wr7jvZzi/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1J9UVYHE0tChgOR4gfp7fT041Wr7jvZzi/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30067,
+          "type": "isp",
+          "name": "infinix_smart_5_isp.jpg",
+          "size": "177.3 KB",
+          "sizeBytes": 181575,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DX1wdFN5s-CFemIaS50BSlDkUavGW19b/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15385,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Smart 6",
+      "slug": "hp-infinix-smart-6",
+      "chipset": "MediaTek Helio / Dimensity",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Smart 6 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30068,
+          "type": "testpoint",
+          "name": "infinix_smart_6_tp.jpg",
+          "size": "877.6 KB",
+          "sizeBytes": 898651,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1lmHGBDexmUo5Dkl61jj4AnAn_oKFq5vX/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1lmHGBDexmUo5Dkl61jj4AnAn_oKFq5vX/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30069,
+          "type": "isp",
+          "name": "infinix_smart_6_isp.jpg",
+          "size": "296.8 KB",
+          "sizeBytes": 303928,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1v35mb-GAkAVwclaT7HOiYt0_kCXfKHxE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18278,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Smart 6 Plus",
+      "slug": "hp-infinix-smart-6-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Smart 6 Plus — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33807,
+          "type": "isp",
+          "name": "infinix_smart_6_plus_isp.jpg",
+          "size": "243 KB",
+          "sizeBytes": 248867,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZJBU-an3AVB5odt-SdxdTHNJYO0dsovk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15386,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Smart 7",
+      "slug": "hp-infinix-smart-7",
+      "chipset": "MediaTek Helio / Dimensity",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Smart 7 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30070,
+          "type": "testpoint",
+          "name": "infinix_smart_7_tp.jpg",
+          "size": "877.6 KB",
+          "sizeBytes": 898651,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HZSUtM25FnlRZ4b0-OBjd-JpwRiXKtIt/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1HZSUtM25FnlRZ4b0-OBjd-JpwRiXKtIt/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30071,
+          "type": "isp",
+          "name": "infinix_smart_7_isp.jpg",
+          "size": "145.8 KB",
+          "sizeBytes": 149340,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kp84o-Yy73kzYrLH8KnxiFKCWl70FN3D/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 15387,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Smart 8",
+      "slug": "hp-infinix-smart-8",
+      "chipset": "MediaTek Helio / Dimensity",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Smart 8 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "testpoint",
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 30072,
+          "type": "testpoint",
+          "name": "infinix_smart_8_tp.jpg",
+          "size": "137.3 KB",
+          "sizeBytes": 140578,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QFMQ-utEEt1m9ElMEp9l6tDbF8wA4pBs/view?usp=sharing",
+          "safelink_url": "https://drive.google.com/file/d/1QFMQ-utEEt1m9ElMEp9l6tDbF8wA4pBs/view?usp=sharing",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 30073,
+          "type": "isp",
+          "name": "infinix_smart_8_isp.jpg",
+          "size": "137.3 KB",
+          "sizeBytes": 140578,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HJA58aEUXQ6sHq5iIA6Vijp-FgL04sdA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18279,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Smart 8 Plus",
+      "slug": "hp-infinix-smart-8-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Smart 8 Plus — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33808,
+          "type": "isp",
+          "name": "infinix_smart_8_plus_isp.jpg",
+          "size": "137.3 KB",
+          "sizeBytes": 140578,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1B1pTkAtNnt_m6fkt3YmHRy4rnhtC8kDf/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18280,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Smart 8 Pro",
+      "slug": "hp-infinix-smart-8-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Smart 8 Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33809,
+          "type": "isp",
+          "name": "infinix_smart_8_pro_isp.jpg",
+          "size": "137.3 KB",
+          "sizeBytes": 140578,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1lKX28MW_YeuSebdYf5JJsa7QywBvOU88/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18281,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Zero 20",
+      "slug": "hp-infinix-zero-20",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Zero 20 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33810,
+          "type": "isp",
+          "name": "infinix_zero_20_isp.jpg",
+          "size": "178.3 KB",
+          "sizeBytes": 182582,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1jkqzKAijHyEcWcgxtzaabG5-KixZkVxI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18282,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Zero 30 4G",
+      "slug": "hp-infinix-zero-30-4g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Zero 30 4G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33811,
+          "type": "isp",
+          "name": "infinix_zero_30_4g_isp.jpg",
+          "size": "381.7 KB",
+          "sizeBytes": 390857,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1fH50Tz6x_bor87E1U-BZpGeUHFV23PSA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18283,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Zero 30 5G",
+      "slug": "hp-infinix-zero-30-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Zero 30 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33812,
+          "type": "isp",
+          "name": "infinix_zero_30_5g_isp.jpg",
+          "size": "381.7 KB",
+          "sizeBytes": 390857,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1XYdw-cKMxnFw_EX5IF3GeKg64sPF7gl_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18284,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Zero 5G",
+      "slug": "hp-infinix-zero-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Zero 5G — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33813,
+          "type": "isp",
+          "name": "infinix_zero_5g_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1aUKdNiiTPsyEdMuCdEBd_ykIMDSGrA3H/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18285,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Zero 5G 2023",
+      "slug": "hp-infinix-zero-5g-2023",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Zero 5G 2023 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33814,
+          "type": "isp",
+          "name": "infinix_zero_5g_2023_isp.jpg",
+          "size": "110.7 KB",
+          "sizeBytes": 113341,
+          "gdrive_direct_url": "https://drive.google.com/file/d/16slOUXWaVw8ffH99pcwtzM2SLYx_UMGy/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18286,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Zero 8",
+      "slug": "hp-infinix-zero-8",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Zero 8 — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33815,
+          "type": "isp",
+          "name": "infinix_zero_8_isp.jpg",
+          "size": "296.8 KB",
+          "sizeBytes": 303928,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Ylz6EDDZJruD0eX_fczuHlps5spw2jsT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18287,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Zero 8I",
+      "slug": "hp-infinix-zero-8i",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Zero 8I — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33816,
+          "type": "isp",
+          "name": "infinix_zero_8i_isp.jpg",
+          "size": "296.8 KB",
+          "sizeBytes": 303928,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1aeMWHoAoDgEDTmO-JmFERd6ucrH8u_ks/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18288,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Zero X",
+      "slug": "hp-infinix-zero-x",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Zero X — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33817,
+          "type": "isp",
+          "name": "infinix_zero_x_isp.jpg",
+          "size": "606.5 KB",
+          "sizeBytes": 621106,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1vdwLI7HEKP10FtNzyOgkmw81IueqEtef/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18289,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Zero X Neo",
+      "slug": "hp-infinix-zero-x-neo",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Zero X Neo — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33818,
+          "type": "isp",
+          "name": "infinix_zero_x_neo_isp.jpg",
+          "size": "228.5 KB",
+          "sizeBytes": 233970,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1yW1HU_FWjynbKAXG8-Y890pLA0pWOj8I/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 18290,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "Zero X Pro",
+      "slug": "hp-infinix-zero-x-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix Zero X Pro — Diagram ISP Pinout eMMC/UFS & Test Point Free Download + Panduan Jumper Direct Box",
+      "fileTypes": [
+        "isp"
+      ],
+      "files": [
+        {
+          "id": 33819,
+          "type": "isp",
+          "name": "infinix_zero_x_pro_isp.jpg",
+          "size": "296.8 KB",
+          "sizeBytes": 303928,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Bowo1ag_3zqdpKaPymfiguu0uyBoTneS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16787,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Hot 10",
+      "slug": "hp-infinix-isp-hot-10",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Hot 10 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32314,
+          "type": "testpoint",
+          "name": "infinix_hot_10_isp.jpg",
+          "size": "374.7 KB",
+          "sizeBytes": 383708,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Nx-2dcg2Xw6aPK7M7lpSAUQnowua_ELY/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16788,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Hot 10 Play",
+      "slug": "hp-infinix-isp-hot-10-play",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Hot 10 Play — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32315,
+          "type": "testpoint",
+          "name": "infinix_hot_10_play_isp.jpg",
+          "size": "170.2 KB",
+          "sizeBytes": 174317,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1rcC-cNPK-h6Njk0hNlvTml1cVg2GGAoY/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16789,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Hot 10S",
+      "slug": "hp-infinix-isp-hot-10s",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Hot 10S — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32316,
+          "type": "testpoint",
+          "name": "infinix_hot_10s_isp.jpg",
+          "size": "374.7 KB",
+          "sizeBytes": 383708,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZkuM5ADZRY9tYUnpmFzBGct732ocJzVP/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16790,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Hot 11",
+      "slug": "hp-infinix-isp-hot-11",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Hot 11 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32317,
+          "type": "testpoint",
+          "name": "infinix_hot_11_isp.jpg",
+          "size": "1018.3 KB",
+          "sizeBytes": 1042693,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1k3dgaxzqrx1LFu5QZQeKGlXaie9GScIo/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16791,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Hot 11 Play",
+      "slug": "hp-infinix-isp-hot-11-play",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Hot 11 Play — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32318,
+          "type": "testpoint",
+          "name": "infinix_hot_11_play_isp.jpg",
+          "size": "1018.3 KB",
+          "sizeBytes": 1042693,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1C5ITQgV_lg2i5IVp2qy6BXAouoaB4iTO/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16792,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Hot 11S",
+      "slug": "hp-infinix-isp-hot-11s",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Hot 11S — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32319,
+          "type": "testpoint",
+          "name": "infinix_hot_11s_isp.jpg",
+          "size": "1018.3 KB",
+          "sizeBytes": 1042693,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1s_b9T2Tyv0r6rcbBONxAohEOm6T9yYkk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16793,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Hot 12",
+      "slug": "hp-infinix-isp-hot-12",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Hot 12 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32320,
+          "type": "testpoint",
+          "name": "infinix_hot_12_isp.jpg",
+          "size": "68.8 KB",
+          "sizeBytes": 70433,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1LhUlT5lh-nss4GbY4lh7IKDofYWYSa5K/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16794,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Hot 12 Play",
+      "slug": "hp-infinix-isp-hot-12-play",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Hot 12 Play — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32321,
+          "type": "testpoint",
+          "name": "infinix_hot_12_play_isp.jpg",
+          "size": "55.7 KB",
+          "sizeBytes": 57050,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1P4LZD3c-TyCy95MyxCeHHcWq6cff9KCn/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16795,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Hot 12I",
+      "slug": "hp-infinix-isp-hot-12i",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Hot 12I — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32322,
+          "type": "testpoint",
+          "name": "infinix_hot_12i_isp.jpg",
+          "size": "68.8 KB",
+          "sizeBytes": 70433,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13N01w54KBlMUbNE_B-bTJ0Xvzot8ROlc/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16796,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Hot 20",
+      "slug": "hp-infinix-isp-hot-20",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Hot 20 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32323,
+          "type": "testpoint",
+          "name": "infinix_hot_20_isp.jpg",
+          "size": "178.3 KB",
+          "sizeBytes": 182582,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-KJp-4MfQ79WgpOBLrkFCQVERVSUnO7K/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16797,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Hot 20 5G",
+      "slug": "hp-infinix-isp-hot-20-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Hot 20 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32324,
+          "type": "testpoint",
+          "name": "infinix_hot_20_5g_isp.jpg",
+          "size": "178.3 KB",
+          "sizeBytes": 182582,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PcmeIjcoQydb4B2KU_ahq1W5NiQIO1gs/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16798,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Hot 20I",
+      "slug": "hp-infinix-isp-hot-20i",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Hot 20I — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32325,
+          "type": "testpoint",
+          "name": "infinix_hot_20i_isp.jpg",
+          "size": "178.3 KB",
+          "sizeBytes": 182582,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1aFQS0KBhQgs6LavhL4iMQ8g5jmdnqGAw/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16799,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Hot 20S",
+      "slug": "hp-infinix-isp-hot-20s",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Hot 20S — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32326,
+          "type": "testpoint",
+          "name": "infinix_hot_20s_isp.jpg",
+          "size": "178.3 KB",
+          "sizeBytes": 182582,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1dj8SCj3O39xp-ViUD5eQM6vxdWrDOMTg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16800,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Hot 30",
+      "slug": "hp-infinix-isp-hot-30",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Hot 30 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32327,
+          "type": "testpoint",
+          "name": "infinix_hot_30_isp.jpg",
+          "size": "120.9 KB",
+          "sizeBytes": 123792,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Rol_O_Hsjl3WhnbV_fYIWY8EkifDxFSS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16801,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Hot 30 Play",
+      "slug": "hp-infinix-isp-hot-30-play",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Hot 30 Play — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32328,
+          "type": "testpoint",
+          "name": "infinix_hot_30_play_isp.jpg",
+          "size": "376.9 KB",
+          "sizeBytes": 385961,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1T52BfvYBXCHtKpUSX9uqwKIAmflAfnid/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16802,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Hot 30I",
+      "slug": "hp-infinix-isp-hot-30i",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Hot 30I — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32329,
+          "type": "testpoint",
+          "name": "infinix_hot_30i_isp.jpg",
+          "size": "96.4 KB",
+          "sizeBytes": 98688,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14Ja-Cspfz_jeR3MPGPWBe3cSMcyxBQ2C/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16803,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Hot 40",
+      "slug": "hp-infinix-isp-hot-40",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Hot 40 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32330,
+          "type": "testpoint",
+          "name": "infinix_hot_40_isp.jpg",
+          "size": "108.8 KB",
+          "sizeBytes": 111461,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1pFcAU6vOeParDKwjeRcM30SAu87RllGu/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16804,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Hot 40 Pro",
+      "slug": "hp-infinix-isp-hot-40-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Hot 40 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32331,
+          "type": "testpoint",
+          "name": "infinix_hot_40_pro_isp.jpg",
+          "size": "108.8 KB",
+          "sizeBytes": 111461,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1qvj92MRXN0nviTX5uCbBmnIEEJmcP_YB/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16805,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Hot 40I",
+      "slug": "hp-infinix-isp-hot-40i",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Hot 40I — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32332,
+          "type": "testpoint",
+          "name": "infinix_hot_40i_isp.jpg",
+          "size": "303.2 KB",
+          "sizeBytes": 310524,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1x0qJaMXTdvkaJ5qH98xO8A6KQe_FLeJr/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16806,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Hot 8",
+      "slug": "hp-infinix-isp-hot-8",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Hot 8 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32333,
+          "type": "testpoint",
+          "name": "infinix_hot_8_isp.jpg",
+          "size": "164.2 KB",
+          "sizeBytes": 168162,
+          "gdrive_direct_url": "https://drive.google.com/file/d/12ZcaJj97HHoqNXXuT9o93t-rkx2V8jh4/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16807,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Hot 9",
+      "slug": "hp-infinix-isp-hot-9",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Hot 9 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32334,
+          "type": "testpoint",
+          "name": "infinix_hot_9_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1PdJfYSa8ozo4H2vQ8bJDOC8pw4nDwQrt/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16808,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Hot 9 Play",
+      "slug": "hp-infinix-isp-hot-9-play",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Hot 9 Play — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32335,
+          "type": "testpoint",
+          "name": "infinix_hot_9_play_isp.jpg",
+          "size": "217.7 KB",
+          "sizeBytes": 222890,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Iyiik0RONvRuWWD_2oZrh0I6om-6Q7lt/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16809,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Note 10",
+      "slug": "hp-infinix-isp-note-10",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Note 10 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32336,
+          "type": "testpoint",
+          "name": "infinix_note_10_isp.jpg",
+          "size": "374.7 KB",
+          "sizeBytes": 383708,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1gbXNHWtbWYYw5prD9_6gkgUh98G4pz1B/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16810,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Note 10 Pro",
+      "slug": "hp-infinix-isp-note-10-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Note 10 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32337,
+          "type": "testpoint",
+          "name": "infinix_note_10_pro_isp.jpg",
+          "size": "374.7 KB",
+          "sizeBytes": 383708,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-r33W8BLe1qElC6m_Om1Fk2nkTHFBNkx/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16811,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Note 11",
+      "slug": "hp-infinix-isp-note-11",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Note 11 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32338,
+          "type": "testpoint",
+          "name": "infinix_note_11_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1r4K_M44LuUV-oCXtPwcuaoxff5h5Skc-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16812,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Note 11 Pro",
+      "slug": "hp-infinix-isp-note-11-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Note 11 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32339,
+          "type": "testpoint",
+          "name": "infinix_note_11_pro_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1J_rRWM5Ni1dedHrKfVUT-V2bQLol1D-U/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16813,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Note 11S",
+      "slug": "hp-infinix-isp-note-11s",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Note 11S — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32340,
+          "type": "testpoint",
+          "name": "infinix_note_11s_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1AmVadymYUyuQ_FYycwg3_xgxJFHHvD_V/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16814,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Note 12",
+      "slug": "hp-infinix-isp-note-12",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Note 12 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32341,
+          "type": "testpoint",
+          "name": "infinix_note_12_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1v_oz6xptHIqF2_3UdxHv_Wy8g3mBMlrV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16815,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Note 12 2023",
+      "slug": "hp-infinix-isp-note-12-2023",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Note 12 2023 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32342,
+          "type": "testpoint",
+          "name": "infinix_note_12_2023_isp.jpg",
+          "size": "63.4 KB",
+          "sizeBytes": 64912,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1u_9Wh3kBROqJG6DdbW9H6iK8nigEUQi3/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16816,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Note 12 G96",
+      "slug": "hp-infinix-isp-note-12-g96",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Note 12 G96 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32343,
+          "type": "testpoint",
+          "name": "infinix_note_12_g96_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/198D6FjAQwD5AARB4XpQxHrEyNwqAVSbd/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16817,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Note 12 Vip",
+      "slug": "hp-infinix-isp-note-12-vip",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Note 12 Vip — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32344,
+          "type": "testpoint",
+          "name": "infinix_note_12_vip_isp.jpg",
+          "size": "143.8 KB",
+          "sizeBytes": 147278,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mGdqRvbAicHWO642GN563pOcfntNHQCA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16818,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Note 30",
+      "slug": "hp-infinix-isp-note-30",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Note 30 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32345,
+          "type": "testpoint",
+          "name": "infinix_note_30_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uyeJlwKfQaPnXM9ywjXaDmyfP_Lc0tVS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16819,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Note 30 5G",
+      "slug": "hp-infinix-isp-note-30-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Note 30 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32346,
+          "type": "testpoint",
+          "name": "infinix_note_30_5g_isp.jpg",
+          "size": "108.8 KB",
+          "sizeBytes": 111425,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19VrGfXvYL02b0_p-sVfmSJ3WpX7oETZn/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16820,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Note 30 Pro",
+      "slug": "hp-infinix-isp-note-30-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Note 30 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32347,
+          "type": "testpoint",
+          "name": "infinix_note_30_pro_isp.jpg",
+          "size": "98.6 KB",
+          "sizeBytes": 100945,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1IbfUhGxfi0dX0mHnA5zVBYagIm3fQzmA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16821,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Note 30 Vip",
+      "slug": "hp-infinix-isp-note-30-vip",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Note 30 Vip — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32348,
+          "type": "testpoint",
+          "name": "infinix_note_30_vip_isp.jpg",
+          "size": "133.2 KB",
+          "sizeBytes": 136370,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HH-2GJAwntKcqD1lBJKbK8-wNEGc0gyk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16822,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Note 40",
+      "slug": "hp-infinix-isp-note-40",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Note 40 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32349,
+          "type": "testpoint",
+          "name": "infinix_note_40_isp.jpg",
+          "size": "1.5 MB",
+          "sizeBytes": 1554685,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1nCWUwhZUDQ9XSGKOn85oP7op5KL7_4Ca/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16823,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Note 40 Pro",
+      "slug": "hp-infinix-isp-note-40-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Note 40 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32350,
+          "type": "testpoint",
+          "name": "infinix_note_40_pro_isp.jpg",
+          "size": "1.5 MB",
+          "sizeBytes": 1554685,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1xn2lMpf8s6CzPrLxQnwDiDLcE8XVU0qp/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16824,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Note 40 Pro Plus",
+      "slug": "hp-infinix-isp-note-40-pro-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Note 40 Pro Plus — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32351,
+          "type": "testpoint",
+          "name": "infinix_note_40_pro_plus_isp.jpg",
+          "size": "1.5 MB",
+          "sizeBytes": 1554685,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QP8E7hvfAeKs863MpjhcOj_hxvu9Oj2Q/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16825,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Note 7",
+      "slug": "hp-infinix-isp-note-7",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Note 7 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32352,
+          "type": "testpoint",
+          "name": "infinix_note_7_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1majEmF41ICoUeILgyaK7EowCj_ozy5XA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16826,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Note 7 Lite",
+      "slug": "hp-infinix-isp-note-7-lite",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Note 7 Lite — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32353,
+          "type": "testpoint",
+          "name": "infinix_note_7_lite_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1I5uwW6G3f6UY9_kyYtY4U8b2ku_LTpAu/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16827,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Note 8",
+      "slug": "hp-infinix-isp-note-8",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Note 8 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32354,
+          "type": "testpoint",
+          "name": "infinix_note_8_isp.jpg",
+          "size": "296.8 KB",
+          "sizeBytes": 303928,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1jU5dcDIfY9_OQNOCsXQjPHkZiyBoXjFR/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16828,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Note 8I",
+      "slug": "hp-infinix-isp-note-8i",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Note 8I — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32355,
+          "type": "testpoint",
+          "name": "infinix_note_8i_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HIHPSz20dZdlueum602koVp7y2yyzPZj/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16829,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Smart 4",
+      "slug": "hp-infinix-isp-smart-4",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Smart 4 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32356,
+          "type": "testpoint",
+          "name": "infinix_smart_4_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1g-svT-L7RaPniL5OfCymurLt8vYLEEuI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16830,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Smart 5",
+      "slug": "hp-infinix-isp-smart-5",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Smart 5 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32357,
+          "type": "testpoint",
+          "name": "infinix_smart_5_isp.jpg",
+          "size": "177.3 KB",
+          "sizeBytes": 181575,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DX1wdFN5s-CFemIaS50BSlDkUavGW19b/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16831,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Smart 6",
+      "slug": "hp-infinix-isp-smart-6",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Smart 6 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32358,
+          "type": "testpoint",
+          "name": "infinix_smart_6_isp.jpg",
+          "size": "296.8 KB",
+          "sizeBytes": 303928,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1v35mb-GAkAVwclaT7HOiYt0_kCXfKHxE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16832,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Smart 6 Plus",
+      "slug": "hp-infinix-isp-smart-6-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Smart 6 Plus — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32359,
+          "type": "testpoint",
+          "name": "infinix_smart_6_plus_isp.jpg",
+          "size": "243 KB",
+          "sizeBytes": 248867,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZJBU-an3AVB5odt-SdxdTHNJYO0dsovk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16833,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Smart 7",
+      "slug": "hp-infinix-isp-smart-7",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Smart 7 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32360,
+          "type": "testpoint",
+          "name": "infinix_smart_7_isp.jpg",
+          "size": "145.8 KB",
+          "sizeBytes": 149340,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1kp84o-Yy73kzYrLH8KnxiFKCWl70FN3D/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16834,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Smart 8",
+      "slug": "hp-infinix-isp-smart-8",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Smart 8 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32361,
+          "type": "testpoint",
+          "name": "infinix_smart_8_isp.jpg",
+          "size": "137.3 KB",
+          "sizeBytes": 140578,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1HJA58aEUXQ6sHq5iIA6Vijp-FgL04sdA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16835,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Smart 8 Plus",
+      "slug": "hp-infinix-isp-smart-8-plus",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Smart 8 Plus — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32362,
+          "type": "testpoint",
+          "name": "infinix_smart_8_plus_isp.jpg",
+          "size": "137.3 KB",
+          "sizeBytes": 140578,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1B1pTkAtNnt_m6fkt3YmHRy4rnhtC8kDf/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16836,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Smart 8 Pro",
+      "slug": "hp-infinix-isp-smart-8-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Smart 8 Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32363,
+          "type": "testpoint",
+          "name": "infinix_smart_8_pro_isp.jpg",
+          "size": "137.3 KB",
+          "sizeBytes": 140578,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1lKX28MW_YeuSebdYf5JJsa7QywBvOU88/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16837,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Zero 20",
+      "slug": "hp-infinix-isp-zero-20",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Zero 20 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32364,
+          "type": "testpoint",
+          "name": "infinix_zero_20_isp.jpg",
+          "size": "178.3 KB",
+          "sizeBytes": 182582,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1jkqzKAijHyEcWcgxtzaabG5-KixZkVxI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16838,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Zero 30 4G",
+      "slug": "hp-infinix-isp-zero-30-4g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Zero 30 4G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32365,
+          "type": "testpoint",
+          "name": "infinix_zero_30_4g_isp.jpg",
+          "size": "381.7 KB",
+          "sizeBytes": 390857,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1fH50Tz6x_bor87E1U-BZpGeUHFV23PSA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16839,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Zero 30 5G",
+      "slug": "hp-infinix-isp-zero-30-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Zero 30 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32366,
+          "type": "testpoint",
+          "name": "infinix_zero_30_5g_isp.jpg",
+          "size": "381.7 KB",
+          "sizeBytes": 390857,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1XYdw-cKMxnFw_EX5IF3GeKg64sPF7gl_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16840,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Zero 5G",
+      "slug": "hp-infinix-isp-zero-5g",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Zero 5G — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32367,
+          "type": "testpoint",
+          "name": "infinix_zero_5g_isp.jpg",
+          "size": "165.1 KB",
+          "sizeBytes": 169081,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1aUKdNiiTPsyEdMuCdEBd_ykIMDSGrA3H/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16841,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Zero 5G 2023",
+      "slug": "hp-infinix-isp-zero-5g-2023",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Zero 5G 2023 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32368,
+          "type": "testpoint",
+          "name": "infinix_zero_5g_2023_isp.jpg",
+          "size": "110.7 KB",
+          "sizeBytes": 113341,
+          "gdrive_direct_url": "https://drive.google.com/file/d/16slOUXWaVw8ffH99pcwtzM2SLYx_UMGy/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16842,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Zero 8",
+      "slug": "hp-infinix-isp-zero-8",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Zero 8 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32369,
+          "type": "testpoint",
+          "name": "infinix_zero_8_isp.jpg",
+          "size": "296.8 KB",
+          "sizeBytes": 303928,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Ylz6EDDZJruD0eX_fczuHlps5spw2jsT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16843,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Zero 8I",
+      "slug": "hp-infinix-isp-zero-8i",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Zero 8I — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32370,
+          "type": "testpoint",
+          "name": "infinix_zero_8i_isp.jpg",
+          "size": "296.8 KB",
+          "sizeBytes": 303928,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1aeMWHoAoDgEDTmO-JmFERd6ucrH8u_ks/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16844,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Zero X",
+      "slug": "hp-infinix-isp-zero-x",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Zero X — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32371,
+          "type": "testpoint",
+          "name": "infinix_zero_x_isp.jpg",
+          "size": "606.5 KB",
+          "sizeBytes": 621106,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1vdwLI7HEKP10FtNzyOgkmw81IueqEtef/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16845,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Zero X Neo",
+      "slug": "hp-infinix-isp-zero-x-neo",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Zero X Neo — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32372,
+          "type": "testpoint",
+          "name": "infinix_zero_x_neo_isp.jpg",
+          "size": "228.5 KB",
+          "sizeBytes": 233970,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1yW1HU_FWjynbKAXG8-Y890pLA0pWOj8I/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 16846,
+      "category": "hp",
+      "brand": "Infinix",
+      "brandSlug": "infinix",
+      "modelName": "[ISP] Zero X Pro",
+      "slug": "hp-infinix-isp-zero-x-pro",
+      "chipset": "eMMC / UFS Direct Memory",
+      "motherboardCode": "",
+      "officialTitle": "Infinix [ISP] Zero X Pro — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "testpoint"
+      ],
+      "files": [
+        {
+          "id": 32373,
+          "type": "testpoint",
+          "name": "infinix_zero_x_pro_isp.jpg",
+          "size": "296.8 KB",
+          "sizeBytes": 303928,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Bowo1ag_3zqdpKaPymfiguu0uyBoTneS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

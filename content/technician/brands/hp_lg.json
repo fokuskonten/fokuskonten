@@ -1,0 +1,60 @@
+{
+  "category": "hp",
+  "brand": "LG",
+  "brandSlug": "lg",
+  "totalModels": 2,
+  "models": [
+    {
+      "id": 19837,
+      "category": "hp",
+      "brand": "LG",
+      "brandSlug": "lg",
+      "modelName": "765_765G_768G",
+      "slug": "hp-lg-765_765g_768g",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "LG 765_765G_768G — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36166,
+          "type": "loader",
+          "name": "765_765G_768G.elf",
+          "size": "668.8 KB",
+          "sizeBytes": 684804,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Gh4p4GUyHWY7suTnrWzLxSGVb4-YwvO0/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 20079,
+      "category": "hp",
+      "brand": "LG",
+      "brandSlug": "lg",
+      "modelName": "V510",
+      "slug": "hp-lg-v510",
+      "chipset": "Qualcomm Snapdragon (No-Auth Loader)",
+      "motherboardCode": "",
+      "officialTitle": "LG V510 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36415,
+          "type": "loader",
+          "name": "V510",
+          "size": "693.2 KB",
+          "sizeBytes": 709808,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1eijD7YZu9CFn3H-80pVKFmNFvJGVK4Ou/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

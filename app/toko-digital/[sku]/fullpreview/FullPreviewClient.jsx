@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { addToCart, hasInCart, subscribeCartStore } from '@/lib/cartStore'
+import CdnImage from '@/components/product/CdnImage'
 
 export default function FullPreviewClient({ product, images = [], returnSlug }) {
   const router = useRouter()
@@ -156,9 +157,10 @@ export default function FullPreviewClient({ product, images = [], returnSlug }) 
               >
                 {/* Clean Frame Mockup (Square 1:1) */}
                 <div className="aspect-square w-full rounded-xl overflow-hidden bg-neutral-50/60 border border-neutral-100 flex items-center justify-center relative">
-                  <img
+                  <CdnImage
                     src={src}
-                    alt={`${product.title} - Slide ${idx + 1}`}
+                    sku={product?.sku}
+                    alt={`${product?.title} - Slide ${idx + 1}`}
                     loading="lazy"
                     draggable={false}
                     className="w-full h-full object-contain p-1.5 transition-transform duration-300 group-hover:scale-105"
@@ -166,8 +168,11 @@ export default function FullPreviewClient({ product, images = [], returnSlug }) 
 
                   {/* Hover Overlay Accent */}
                   <div className="absolute inset-0 bg-neutral-950/15 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <span className="px-2.5 py-1 rounded-full bg-neutral-950 text-white text-[10px] font-bold shadow-md tracking-tight">
-                      🔍 Perbesar
+                    <span className="px-2.5 py-1 rounded-full bg-neutral-950 text-white text-[10px] font-bold shadow-md tracking-tight flex items-center gap-1">
+                      <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                      </svg>
+                      <span>Perbesar</span>
                     </span>
                   </div>
                 </div>
@@ -189,8 +194,9 @@ export default function FullPreviewClient({ product, images = [], returnSlug }) 
       <div className="fixed bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 z-40 w-[92%] max-w-2xl bg-white/95 backdrop-blur-md rounded-2xl border border-neutral-200 shadow-[0_12px_36px_-6px_rgba(0,0,0,0.14)] p-3 sm:p-3.5 flex items-center justify-between gap-3">
         <div className="flex items-center gap-3 min-w-0">
           <div className="w-11 h-11 rounded-xl bg-neutral-100 border border-neutral-200 overflow-hidden shrink-0 hidden sm:block">
-            <img
+            <CdnImage
               src={images[0] || product.coverImage}
+              sku={product.sku}
               alt={product.title}
               className="w-full h-full object-contain p-0.5"
             />
@@ -261,9 +267,11 @@ export default function FullPreviewClient({ product, images = [], returnSlug }) 
           {/* Lightbox Main Image with Pristine White Frame & Soft Shadow */}
           <div className="relative flex-1 w-full max-w-5xl flex items-center justify-center p-2" onClick={(e) => e.stopPropagation()}>
             <div className="relative bg-white rounded-3xl p-3 sm:p-4 border border-neutral-200/90 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.15)] max-h-[82vh] flex items-center justify-center">
-              <img
+              <CdnImage
                 src={lightboxImg}
+                sku={product.sku}
                 alt="Fullscreen Preview"
+                priority={true}
                 className="max-h-[75vh] max-w-full object-contain rounded-2xl"
               />
             </div>
@@ -276,10 +284,13 @@ export default function FullPreviewClient({ product, images = [], returnSlug }) 
                   const idx = images.indexOf(lightboxImg)
                   setLightboxImg(images[idx - 1])
                 }}
-                className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white hover:bg-neutral-950 hover:text-white text-neutral-900 border border-neutral-200 shadow-[0_8px_20px_-4px_rgba(0,0,0,0.15)] flex items-center justify-center text-2xl font-bold transition-all cursor-pointer"
+                className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white hover:bg-neutral-950 hover:text-white text-neutral-900 border border-neutral-200 shadow-[0_8px_20px_-4px_rgba(0,0,0,0.15)] flex items-center justify-center transition-all cursor-pointer"
                 title="Slide Sebelumnya"
+                aria-label="Slide Sebelumnya"
               >
-                ‹
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
               </button>
             )}
 
@@ -291,10 +302,13 @@ export default function FullPreviewClient({ product, images = [], returnSlug }) 
                   const idx = images.indexOf(lightboxImg)
                   setLightboxImg(images[idx + 1])
                 }}
-                className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white hover:bg-neutral-950 hover:text-white text-neutral-900 border border-neutral-200 shadow-[0_8px_20px_-4px_rgba(0,0,0,0.15)] flex items-center justify-center text-2xl font-bold transition-all cursor-pointer"
+                className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white hover:bg-neutral-950 hover:text-white text-neutral-900 border border-neutral-200 shadow-[0_8px_20px_-4px_rgba(0,0,0,0.15)] flex items-center justify-center transition-all cursor-pointer"
                 title="Slide Berikutnya"
+                aria-label="Slide Berikutnya"
               >
-                ›
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
               </button>
             )}
           </div>

@@ -1,0 +1,34 @@
+{
+  "category": "hp",
+  "brand": "BQ",
+  "brandSlug": "bq",
+  "totalModels": 1,
+  "models": [
+    {
+      "id": 19685,
+      "category": "hp",
+      "brand": "BQ",
+      "brandSlug": "bq",
+      "modelName": "Aquaris X2",
+      "slug": "hp-bq-aquaris-x2",
+      "chipset": "Snapdragon 630/636",
+      "motherboardCode": "HWID: 000CC0E1",
+      "officialTitle": "BQ Aquaris X2 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35976,
+          "type": "loader",
+          "name": "000cc0e100000000_7be49b72f9e43372_fhprg_bqx2_peek.bin",
+          "size": "619.5 KB",
+          "sizeBytes": 634384,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1VGNY5y9eVI5hoipI67JGiIgdikgImEAD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

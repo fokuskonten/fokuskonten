@@ -1,0 +1,326 @@
+{
+  "category": "hp",
+  "brand": "HTC",
+  "brandSlug": "htc",
+  "totalModels": 3,
+  "models": [
+    {
+      "id": 19616,
+      "category": "hp",
+      "brand": "HTC",
+      "brandSlug": "htc",
+      "modelName": "10 evo",
+      "slug": "hp-htc-10-evo",
+      "chipset": "Snapdragon 810",
+      "motherboardCode": "HWID: 009400E1",
+      "officialTitle": "HTC 10 evo — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35725,
+          "type": "loader",
+          "name": "009400e100000000_b0d6c9fc8d2cf585_fhprg_peek.bin",
+          "size": "404 KB",
+          "sizeBytes": 413672,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wxrpeSxU2AVKVish4D9cSXir82VTILLJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35726,
+          "type": "loader",
+          "name": "009400e100150020_6bc369511da9cadb_fhprg_angler6p_peek.bin",
+          "size": "298.3 KB",
+          "sizeBytes": 305488,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1MFBSEJVdtw0rgWhnIj09l9FE-34TwwWa/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35727,
+          "type": "loader",
+          "name": "009400e100310000_b5baca995aec012d_fhprg.bin",
+          "size": "1 MB",
+          "sizeBytes": 1048576,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1pgBmdFgrYn0k7-4_hj9m6S8_S80EJ4bJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35728,
+          "type": "loader",
+          "name": "009400e100450000_c79d18e3664aa497_fhprg.bin",
+          "size": "277 KB",
+          "sizeBytes": 283688,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1akdAeIKZB5p4QZi0putmayybowoDZhAo/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35729,
+          "type": "loader",
+          "name": "009400e100000000_dbbd98bdc71d24ce_fhprg_peek.bin",
+          "size": "314.3 KB",
+          "sizeBytes": 321872,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mYlop5aonlglp8JLHugYWNaNCXlBfZyN/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35730,
+          "type": "loader",
+          "name": "009400e100150020_6bc369511da9cadb_fhprg_peek.bin",
+          "size": "298.3 KB",
+          "sizeBytes": 305488,
+          "gdrive_direct_url": "https://drive.google.com/file/d/18Mxtk41qm-7p1zBMZoc5jd6PAdyFR3Wp/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35731,
+          "type": "loader",
+          "name": "009400e100000000_57158eaf1814d78f_fhprg_peek.bin",
+          "size": "314.3 KB",
+          "sizeBytes": 321872,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-I08q6ngxqTWr2I5jL5ktG933SmR3Nuk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35732,
+          "type": "loader",
+          "name": "009400e100040000_4c5806ac3f959565_fhprg_peek.bin",
+          "size": "462 KB",
+          "sizeBytes": 473064,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1fjwwgDEcXpwoVsLfaH15nNLGlhbyKYOV/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35733,
+          "type": "loader",
+          "name": "009400e100040000_cf275499e5cadb17_fhprg_peek.bin",
+          "size": "314.3 KB",
+          "sizeBytes": 321872,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13mToGUQpdIdvMZ1zNbqZ1jlaHO-rtVkN/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19601,
+      "category": "hp",
+      "brand": "HTC",
+      "brandSlug": "htc",
+      "modelName": "U Ultra",
+      "slug": "hp-htc-u-ultra",
+      "chipset": "Snapdragon 821",
+      "motherboardCode": "HWID: 0005F0E1",
+      "officialTitle": "HTC U Ultra — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35494,
+          "type": "loader",
+          "name": "0005f0e10029003d_7be49b72f9e43372_fhprg_peek_zenfone_ares.bin",
+          "size": "463.5 KB",
+          "sizeBytes": 474576,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1iv-ToQORrsmXJGU1kEC7_xWXjHNNg1qH/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35495,
+          "type": "loader",
+          "name": "0005f0e110438996_18000eb7c3a236d5_fhprg_peek.bin",
+          "size": "442.6 KB",
+          "sizeBytes": 453188,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1LXZCIuT5uDyObrMERfchuSmyn278e0ZA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35496,
+          "type": "loader",
+          "name": "0005f0e100000000_cab02552dc28f562_fhprg_peek.bin",
+          "size": "445.6 KB",
+          "sizeBytes": 456340,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1goD_4NLHoSpSk91eC23ZToKxedFlanPw/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35497,
+          "type": "loader",
+          "name": "0005f0e100310000_2cf7619a278d2607_fhprg_peek.bin",
+          "size": "473.6 KB",
+          "sizeBytes": 484984,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1JEvq1jtd8nnRlog5iImxZ3N0i1kXj48c/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35498,
+          "type": "loader",
+          "name": "0005f0e12a703db9_c0c66e278fe81226_fhprg_peek_op3t.bin",
+          "size": "463.5 KB",
+          "sizeBytes": 474624,
+          "gdrive_direct_url": "https://drive.google.com/file/d/10IrmmbKhNaukPInVaiXJoEj_mbzCPhoz/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35499,
+          "type": "loader",
+          "name": "0005f0e10029003d_7be49b72f9e43372_fhprg_peek.bin",
+          "size": "463.5 KB",
+          "sizeBytes": 474576,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1D2oIrMlrFLlq4aXN3aZtbhKbz2xIJ20q/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35500,
+          "type": "loader",
+          "name": "0005f0e12a703db9_c0c66e278fe81226_fhprg_peek.bin",
+          "size": "478.8 KB",
+          "sizeBytes": 490320,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1_cnUQhhrt_ClDXfkmwqALWYzMBvDyYYd/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35501,
+          "type": "loader",
+          "name": "0005f0e100000000_b155b8bf19297f47_fhprg_peek.bin",
+          "size": "442.9 KB",
+          "sizeBytes": 453540,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1CU2LSmt-IWr3ovCPTMoZlVWQgS2iXPRZ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35502,
+          "type": "loader",
+          "name": "0005f0e100000000_355d47f912fea0af_fhprg_peek.bin",
+          "size": "445.5 KB",
+          "sizeBytes": 456188,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1gM0OOsY4w3H8wv2ekzeyFAwcESZwYSxQ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35503,
+          "type": "loader",
+          "name": "0005f0e100040000_d1b89b1385b0db46_fhprg_peek.bin",
+          "size": "458.4 KB",
+          "sizeBytes": 469372,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Y_KL0It4oePLZjsQynVhyHsTXfd0oJIo/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19629,
+      "category": "hp",
+      "brand": "HTC",
+      "brandSlug": "htc",
+      "modelName": "U11",
+      "slug": "hp-htc-u11",
+      "chipset": "Snapdragon 835",
+      "motherboardCode": "HWID: 0005E0E1",
+      "officialTitle": "HTC U11 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35814,
+          "type": "loader",
+          "name": "0005e0e100010000_d6ab87bc95c89389_fhprg.bin",
+          "size": "583.2 KB",
+          "sizeBytes": 597168,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wXyOHmrgvlFufjVVpb5bkU2shwjSg3_m/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35815,
+          "type": "loader",
+          "name": "0005e0e100010000_d1e8fa656b6a744e_fhprg.bin",
+          "size": "544.1 KB",
+          "sizeBytes": 557200,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1foMLPZQbwaRlo3i53CtF--NQ1nyqd1OF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35816,
+          "type": "loader",
+          "name": "0005e0e100010000_f8ab20526358c4fa_fhprg.bin",
+          "size": "544.3 KB",
+          "sizeBytes": 557328,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hwUKjHwGtDr8hrPAEAli4zozMef3QOIT/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35817,
+          "type": "loader",
+          "name": "0005e0e100010000_f8ab20526358c4fa_fhprg_peek.bin",
+          "size": "545 KB",
+          "sizeBytes": 558096,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uDVzPtihg0NCGf5cxsd1VuQ_cSZSKI73/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35818,
+          "type": "loader",
+          "name": "0005e0e12a7041db_de7a7d5af049e2a6_fhprg_peek_op5.bin",
+          "size": "586.1 KB",
+          "sizeBytes": 600192,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1m0TpjVdj5Rumu6dLBv089I2dYvmhCuyb/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35819,
+          "type": "loader",
+          "name": "0005e0e100010000_997d54715aadfd8d_fhprg_peek.bin",
+          "size": "591.1 KB",
+          "sizeBytes": 605328,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19iLQS5fS4zJWFrjgiXLIkIshHjBujdF8/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35820,
+          "type": "loader",
+          "name": "0005e0e100010000_a7b8b82545a98eca_fhprg_peek.bin",
+          "size": "583.6 KB",
+          "sizeBytes": 597616,
+          "gdrive_direct_url": "https://drive.google.com/file/d/18OESm3IJf5kG9DpIxGOnDv5EbVBssT4N/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35821,
+          "type": "loader",
+          "name": "0005e0e100010000_a7b8b82545a98eca_fhprg_peek_mi_a2.bin",
+          "size": "615.7 KB",
+          "sizeBytes": 630480,
+          "gdrive_direct_url": "https://drive.google.com/file/d/16E2yRudK6xA0f5OBQnv0oJhH68XtkbP-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

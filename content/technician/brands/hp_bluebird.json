@@ -1,0 +1,64 @@
+{
+  "category": "hp",
+  "brand": "Bluebird",
+  "brandSlug": "bluebird",
+  "totalModels": 1,
+  "models": [
+    {
+      "id": 19630,
+      "category": "hp",
+      "brand": "Bluebird",
+      "brandSlug": "bluebird",
+      "modelName": "VF550",
+      "slug": "hp-bluebird-vf550",
+      "chipset": "Snapdragon 625",
+      "motherboardCode": "HWID: 000660E1",
+      "officialTitle": "Bluebird VF550 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35822,
+          "type": "loader",
+          "name": "000660e160008000_b9eca30dfea46934_fhprg_peek.bin",
+          "size": "368.4 KB",
+          "sizeBytes": 377196,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WbxbwfEE2OFONaB1Lhao3G9_5aRri7S4/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35823,
+          "type": "loader",
+          "name": "000660e100000000_986c77a37680ea98_fhprg_peek.bin",
+          "size": "348.8 KB",
+          "sizeBytes": 357128,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1751UQaqS0CYpEi9Z7VuWPdyR-hsWVFkL/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35824,
+          "type": "loader",
+          "name": "000660e100000000_ddb33f2a320b3536_fhprg_peek.bin",
+          "size": "351.8 KB",
+          "sizeBytes": 360196,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1BEe5LQTcBQd0-x9H7AG8fffgFp1wnoKE/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35825,
+          "type": "loader",
+          "name": "000660e100000000_60be3e96593bd105_fhprg_peek.bin",
+          "size": "352.4 KB",
+          "sizeBytes": 360840,
+          "gdrive_direct_url": "https://drive.google.com/file/d/11ePFd2MMU3YraZY_HlqlJVAANhV9S2iD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

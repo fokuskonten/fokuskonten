@@ -1,0 +1,272 @@
+{
+  "category": "hp",
+  "brand": "Quectel",
+  "brandSlug": "quectel",
+  "totalModels": 4,
+  "models": [
+    {
+      "id": 19678,
+      "category": "hp",
+      "brand": "Quectel",
+      "brandSlug": "quectel",
+      "modelName": "EC25-E",
+      "slug": "hp-quectel-ec25-e",
+      "chipset": "Snapdragon X5 LTE Modem",
+      "motherboardCode": "HWID: 000480E1",
+      "officialTitle": "Quectel E — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35967,
+          "type": "loader",
+          "name": "000480e100000000_cc3153a80293939b_fhprg_9x07.mbn",
+          "size": "128.9 KB",
+          "sizeBytes": 132016,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uXcqMugdktfWtRoSGfiJszsPJ8RifMS0/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35968,
+          "type": "loader",
+          "name": "000480e100000000_cc3153a80293939b_9x07.bin",
+          "size": "128.9 KB",
+          "sizeBytes": 132016,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1D4lBNTh51SF1ZCXVvojsuza2G46sCsqL/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35969,
+          "type": "loader",
+          "name": "000480e100000000_cc3153a80293939b_enprg_peek.bin",
+          "size": "94.9 KB",
+          "sizeBytes": 97176,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uS7CrFs1Vvs_AHq47knRijkMS9BtXyOR/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19699,
+      "category": "hp",
+      "brand": "Quectel",
+      "brandSlug": "quectel",
+      "modelName": "Qualcomm Firehose Loader Quectel (000970E1)",
+      "slug": "hp-quectel-qualcomm-firehose-loader-quectel-000970e1",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "HWID: 000970E1",
+      "officialTitle": "Quectel Qualcomm Firehose Loader Quectel (000970E1) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36001,
+          "type": "loader",
+          "name": "000970e100000000_4a490d2fd467ae3f_fhprg_sdx24_poorwills_em120r.bin",
+          "size": "271.9 KB",
+          "sizeBytes": 278400,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Vkkt5BPjeeKmhLEhYPChrylgR2uSsUYk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 36002,
+          "type": "loader",
+          "name": "000970e100000000_d9357db88795b5a8_fhprg_quectel_em20_rg502.bin",
+          "size": "267.4 KB",
+          "sizeBytes": 273792,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1UDn2DL7HCN0g3SP44m_rlzq-NfiY-1ER/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19700,
+      "category": "hp",
+      "brand": "Quectel",
+      "brandSlug": "quectel",
+      "modelName": "Qualcomm Firehose Loader Quectel (001070E1)",
+      "slug": "hp-quectel-qualcomm-firehose-loader-quectel-001070e1",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "HWID: 001070E1",
+      "officialTitle": "Quectel Qualcomm Firehose Loader Quectel (001070E1) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36003,
+          "type": "loader",
+          "name": "001070e100000000_d40eee56f3194665_prog_firehose_nand_mdm9x05.elf",
+          "size": "444 KB",
+          "sizeBytes": 454688,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14-0TLyIwRs005jIq9JuEdkSkTKPw6aAx/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19702,
+      "category": "hp",
+      "brand": "Quectel",
+      "brandSlug": "quectel",
+      "modelName": "Qualcomm Firehose Loader Quectel (Universal)",
+      "slug": "hp-quectel-qualcomm-firehose-loader-quectel-universal",
+      "chipset": "Qualcomm Snapdragon",
+      "motherboardCode": "",
+      "officialTitle": "Quectel Qualcomm Firehose Loader Quectel (Universal) — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 36005,
+          "type": "loader",
+          "name": "prog_firehose_life_ddr_patched_Kamorta.elf",
+          "size": "653.1 KB",
+          "sizeBytes": 668796,
+          "gdrive_direct_url": "https://drive.google.com/file/d/17a_jP_MWD0SZjYACRqfpCcmxz0z5WXv_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 36006,
+          "type": "loader",
+          "name": "prog_firehose_lite_lemur_olympicle_rm530n_rm521fg.elf",
+          "size": "668 KB",
+          "sizeBytes": 684032,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1lBHWftGcjC6QcYkx4ajjv8T69W-ShTxP/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 36007,
+          "type": "loader",
+          "name": "prog_firehose_lite_olympicle_rg520n.elf",
+          "size": "668 KB",
+          "sizeBytes": 684032,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Z7g2uz4zS39rYH7tIY4CEZNm7o7ZE6w2/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 36008,
+          "type": "loader",
+          "name": "prog_firehose_lite_olympicle_rm520fg.elf",
+          "size": "668 KB",
+          "sizeBytes": 684032,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1MYlzx0pgpQkeMs-aH5urVdH2o_03SYnw/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 36009,
+          "type": "loader",
+          "name": "prog_firehose_lite_olympicle_rm520ng.elf",
+          "size": "660 KB",
+          "sizeBytes": 675840,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15RlF1b5BjTL0L0tCFx6ffBeDWqSTK8KY/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 36010,
+          "type": "loader",
+          "name": "prog_firehose_nand_mdm9x05LA.elf",
+          "size": "446.1 KB",
+          "sizeBytes": 456816,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mjluBqBAnB8cUcVeieul5qLFH7LFj5Su/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 36011,
+          "type": "loader",
+          "name": "prog_firehose_sdx24_poorwills_em120r.mbn",
+          "size": "271.9 KB",
+          "sizeBytes": 278400,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Vsn-HkeromEnEvYHaBkngi9GcSKzZU3k/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 36012,
+          "type": "loader",
+          "name": "prog_firehose_sdx35_rg255c.elf",
+          "size": "1.3 MB",
+          "sizeBytes": 1386920,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wTm3ZGlJr27pE5d47qmpSDu-d-td4AyS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 36013,
+          "type": "loader",
+          "name": "prog_firehose_sdx55_prairie_rm510q.mbn",
+          "size": "269.4 KB",
+          "sizeBytes": 275840,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1qVAQhzdz2NOLm1R0J7v9Sc1s6-NAeJG0/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 36014,
+          "type": "loader",
+          "name": "prog_firehose_sdx55_quectel.mbn",
+          "size": "267.9 KB",
+          "sizeBytes": 274304,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1JBCgmoFbNJ8HwaHU4ChFH6y8bN-v6oyu/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 36015,
+          "type": "loader",
+          "name": "prog_firehose_sdx55_rg501q.mbn",
+          "size": "269.9 KB",
+          "sizeBytes": 276352,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1vsFsYNK-q1p1M2QtGOAhyOdQu4r9d7BN/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 36016,
+          "type": "loader",
+          "name": "prog_firehose_sdx55_rg502.mbn",
+          "size": "268.9 KB",
+          "sizeBytes": 275328,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1SQPpGrtV4NpME0CKQMm6uEuMR8pAgQvm/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 36017,
+          "type": "loader",
+          "name": "prog_firehose_sdx55_rm502q.mbn",
+          "size": "269.4 KB",
+          "sizeBytes": 275840,
+          "gdrive_direct_url": "https://drive.google.com/file/d/11u6D4nsih0u729MvOz1pz-Rplyzv9-Xk/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 36018,
+          "type": "loader",
+          "name": "prog_firehose_sdx7x_pinnaclesle_rm551eg_rm550v.elf",
+          "size": "1.9 MB",
+          "sizeBytes": 2015016,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1mp8OlH_wGzP9ufwxOemIiCtAC1yYLkub/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

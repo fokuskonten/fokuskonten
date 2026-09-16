@@ -1,0 +1,250 @@
+{
+  "category": "hp",
+  "brand": "LGE",
+  "brandSlug": "lge",
+  "totalModels": 2,
+  "models": [
+    {
+      "id": 19645,
+      "category": "hp",
+      "brand": "LGE",
+      "brandSlug": "lge",
+      "modelName": "D410",
+      "slug": "hp-lge-d410",
+      "chipset": "Snapdragon 400",
+      "motherboardCode": "HWID: 008000E1",
+      "officialTitle": "LGE D410 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35874,
+          "type": "loader",
+          "name": "008000e100c80000_2de2b886d77f395c_fhprg.bin",
+          "size": "48.6 KB",
+          "sizeBytes": 49748,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Q1B5qa8E9h-d-kGaIEbJACS5daagSfuS/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35875,
+          "type": "loader",
+          "name": "008000e100000000_0eb76ac5db7868bb_fhprg.bin",
+          "size": "85.2 KB",
+          "sizeBytes": 87276,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1piZx0QE6gbvnpcqBKXYirg2XXWjEp8Hc/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19611,
+      "category": "hp",
+      "brand": "LGE",
+      "brandSlug": "lge",
+      "modelName": "H918TN",
+      "slug": "hp-lge-h918tn",
+      "chipset": "Snapdragon 820",
+      "motherboardCode": "HWID: 009470E1",
+      "officialTitle": "LGE H918TN — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35655,
+          "type": "loader",
+          "name": "009470e110438996_18000eb7c3a236d5_fhprg_peek.bin",
+          "size": "442.6 KB",
+          "sizeBytes": 453188,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Q2CBcXvMQ9WW21MeXE7IQSBa5CmLcP5o/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35656,
+          "type": "loader",
+          "name": "009470e100000000_1e36d5637772a25e_fhprg.bin",
+          "size": "449 KB",
+          "sizeBytes": 459752,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15ZK3N6mwK-EYj26lfq10IgloL4lLqQos/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35657,
+          "type": "loader",
+          "name": "009470e100000000_cab02552dc28f562_fhprg_peek.bin",
+          "size": "445.6 KB",
+          "sizeBytes": 456260,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zs8iFOjQPtb6tYtRhejHLLhoLap92p5C/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35658,
+          "type": "loader",
+          "name": "009470e101680000_81266d711d66d9fb_fhprg_peek.bin",
+          "size": "448 KB",
+          "sizeBytes": 458752,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WqKAIX6ct4VY1_foPrN8eqaupY31kwX-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35659,
+          "type": "loader",
+          "name": "009470e100000000_cab02552dc28f562_fhprg_lenovo_zuk.bin",
+          "size": "444.6 KB",
+          "sizeBytes": 455300,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1a8iuGSMeTXSRvWrYMMYRQMa8yrlaiTGH/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35660,
+          "type": "loader",
+          "name": "009470e100000000_b155b8bf19297f47_fhprg_LeEco_X722.bin",
+          "size": "441.8 KB",
+          "sizeBytes": 452372,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zUt88wHT46_M3Yv_GAleu0WYYVY3TQEG/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35661,
+          "type": "loader",
+          "name": "009470e100000000_ea490ebb7ab54005_fhprg_peek.bin",
+          "size": "439.1 KB",
+          "sizeBytes": 449588,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QevE1BHmv3H2ZypqQL8xo406NBEjPG0-/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35662,
+          "type": "loader",
+          "name": "009470e100310000_2cf7619a278d2607_fhprg_peek.bin",
+          "size": "435.8 KB",
+          "sizeBytes": 446240,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1gWbx2jx24X_6efxwpr-omd-FTDXciSac/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35663,
+          "type": "loader",
+          "name": "009470e12a703db9_c0c66e278fe81226_fhprg_peek_op3.bin",
+          "size": "463.3 KB",
+          "sizeBytes": 474464,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1qjqoZNstjB01Q-ysVsrSDRm0QV77nZOe/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35664,
+          "type": "loader",
+          "name": "009470e12a703db9_c0c66e278fe81226_fhprg_peek.bin",
+          "size": "440.4 KB",
+          "sizeBytes": 450924,
+          "gdrive_direct_url": "https://drive.google.com/file/d/19XQz70GBbMUMUKB7DIQ--pPQg4EVq9Es/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35665,
+          "type": "loader",
+          "name": "009470e100000021_c3251d67b89a7c3a_fhprg_peek.bin",
+          "size": "477.6 KB",
+          "sizeBytes": 489040,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Ki0tQDBcMnnVAu-KUAudYvaLxmMAXW_T/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35666,
+          "type": "loader",
+          "name": "009470e100200000_144cf47f1614ca83_fhprg_peek.bin",
+          "size": "437.4 KB",
+          "sizeBytes": 447892,
+          "gdrive_direct_url": "https://drive.google.com/file/d/11kmXyNJZRi7cPJ5n0NydjSdldZeaEFQd/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35667,
+          "type": "loader",
+          "name": "009470e100200000_f58523b351109241_fhprg_peek.bin",
+          "size": "440.3 KB",
+          "sizeBytes": 450908,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1v-di107H81zjvj0TF5iHBLeVbYPtUDPR/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35668,
+          "type": "loader",
+          "name": "009470e100420040_81a18d4dbc0d381d_fhprg_peek.bin",
+          "size": "477.7 KB",
+          "sizeBytes": 489200,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1JPEmsqhw2d7rz2G3CgQITTdSXujNgk8_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35669,
+          "type": "loader",
+          "name": "009470e100000000_60ba997fef6da9f0_fhprg_peek.bin",
+          "size": "460.3 KB",
+          "sizeBytes": 471376,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1y2g7Tlzm9sRiaK_4DssQJ0Kc9Rg-zCy7/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35670,
+          "type": "loader",
+          "name": "009470e100000000_da758fd52632ba66_fhprg_peek.bin",
+          "size": "463.8 KB",
+          "sizeBytes": 474944,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1C0GVpkoZap9LUbaVfAg7JTHZmacDhwIF/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35671,
+          "type": "loader",
+          "name": "009470e100000000_355d47f912fea0af_fhprg_peek.bin",
+          "size": "441.3 KB",
+          "sizeBytes": 451868,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1d9itKnL68SzS8YhDAtZvOorD6ap00ssB/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35672,
+          "type": "loader",
+          "name": "009470e100040000_6730b8e1d5fa7f85_fhprg_peek.bin",
+          "size": "443.9 KB",
+          "sizeBytes": 454580,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ZPWJlSKxFikG9Tfewc1C-YYATHQWM-oJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35673,
+          "type": "loader",
+          "name": "009470e100040000_d1b89b1385b0db46_fhprg_peek.bin",
+          "size": "433.3 KB",
+          "sizeBytes": 443732,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1aBwxIjgLtjFenC6Ghuk6AzRpsLbh8qo6/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

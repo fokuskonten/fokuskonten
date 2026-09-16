@@ -1,0 +1,424 @@
+{
+  "category": "laptop",
+  "brand": "Sony",
+  "brandSlug": "sony",
+  "totalModels": 16,
+  "models": [
+    {
+      "id": 19526,
+      "category": "laptop",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "M9A0 MP SONY MBX-226",
+      "slug": "laptop-sony-m9a0-mp-sony-mbx-226",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Sony M9A0 MP SONY MBX-226 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35127,
+          "type": "schematic",
+          "name": "SONY VAIO - M9A0 MP SONY MBX-226 - Schematic.pdf",
+          "size": "968.3 KB",
+          "sizeBytes": 991575,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1UzElcdooaie9tW6bRTq37RsPuPXKLYqA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19527,
+      "category": "laptop",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "MBX-250",
+      "slug": "laptop-sony-mbx-250",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Sony MBX-250 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35128,
+          "type": "schematic",
+          "name": "SONY VAIO - MBX-250 - Schematic.pdf",
+          "size": "3.5 MB",
+          "sizeBytes": 3639982,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ypluYC1VqL8nAvwJWmIJaFA8qWKXC88k/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19539,
+      "category": "laptop",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "SONY MBX-196 - QUANTA GD2 - REV 2A",
+      "slug": "laptop-sony-sony-mbx-196-quanta-gd2-rev-2a",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Sony SONY MBX-196 - QUANTA GD2 - REV 2A — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35140,
+          "type": "schematic",
+          "name": "SONY VAIO - SONY MBX-196 - QUANTA GD2 - REV 2A - Schematic.pdf",
+          "size": "1.5 MB",
+          "sizeBytes": 1526362,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1RXQP9Rq5JwvoN-z4eK12vm7GwW9bIVBu/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19538,
+      "category": "laptop",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "SONY VGN-SR5 M750 MBX-190 - REV 1.0",
+      "slug": "laptop-sony-sony-vgn-sr5-m750-mbx-190-rev-10",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Sony SONY VGN-SR5 M750 MBX-190 - REV 1.0 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35139,
+          "type": "schematic",
+          "name": "SONY VAIO - SONY VGN-SR5 M750 MBX-190 - REV 1.0 - Schematic.pdf",
+          "size": "2.3 MB",
+          "sizeBytes": 2444925,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1idoImod12Xk0jQmnNUg9hYarS-4HHSRm/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19540,
+      "category": "laptop",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "SONY VPCEH-112T MBX-249-DIS",
+      "slug": "laptop-sony-sony-vpceh-112t-mbx-249-dis",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Sony SONY VPCEH-112T MBX-249-DIS — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35141,
+          "type": "schematic",
+          "name": "SONY VAIO - SONY VPCEH-112T MBX-249-DIS - Schematic.pdf",
+          "size": "1.3 MB",
+          "sizeBytes": 1399729,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1bZHUTpmlrC_2EWc0RFggPfhmNu4uV4f9/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19541,
+      "category": "laptop",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "SVF142A25T - DAOHK8MB6EO HK8 REV：E",
+      "slug": "laptop-sony-svf142a25t-daohk8mb6eo-hk8-reve",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Sony SVF142A25T - DAOHK8MB6EO HK8 REV：E — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35142,
+          "type": "schematic",
+          "name": "SONY VAIO - SVF142A25T - DAOHK8MB6EO HK8 REV：E - Schematic.pdf",
+          "size": "1.1 MB",
+          "sizeBytes": 1155673,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ooeA-DdSqt1f7RLS9m99siRz_0JywOtI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19532,
+      "category": "laptop",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Sony IRX-5040 MBX-187",
+      "slug": "laptop-sony-sony-irx-5040-mbx-187",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Sony Sony IRX-5040 MBX-187 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35133,
+          "type": "schematic",
+          "name": "SONY VAIO - Sony IRX-5040 MBX-187 - Schematic.pdf",
+          "size": "716.1 KB",
+          "sizeBytes": 733243,
+          "gdrive_direct_url": "https://drive.google.com/file/d/10NxbRHgivsfqpsplwzYnNI4aUdMGrysI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19533,
+      "category": "laptop",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Sony MBX-189 - M760 - REV 1.0",
+      "slug": "laptop-sony-sony-mbx-189-m760-rev-10",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Sony Sony MBX-189 - M760 - REV 1.0 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35134,
+          "type": "schematic",
+          "name": "SONY VAIO - Sony MBX-189 - M760 - REV 1.0 - Schematic.pdf",
+          "size": "2.9 MB",
+          "sizeBytes": 3041994,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1pWaUBcFJ5InZTZTmOuy9I5qRRatWTJyr/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19534,
+      "category": "laptop",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Sony MBX-223 - M960 M970",
+      "slug": "laptop-sony-sony-mbx-223-m960-m970",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Sony Sony MBX-223 - M960 M970 — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35135,
+          "type": "schematic",
+          "name": "SONY VAIO - Sony MBX-223 - M960 M970 - Schematic.pdf",
+          "size": "935.4 KB",
+          "sizeBytes": 957840,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1Ro7DOCrDiWqOv8fOWgXhcn10Fo7w5I2Q/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19535,
+      "category": "laptop",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Sony MBX-224 - M960 M970 - H MODEL - REV SA",
+      "slug": "laptop-sony-sony-mbx-224-m960-m970-h-model-rev-sa",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Sony Sony MBX-224 - M960 M970 - H MODEL - REV SA — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35136,
+          "type": "schematic",
+          "name": "SONY VAIO - Sony MBX-224 - M960 M970 - H MODEL - REV SA - Schematic.pdf",
+          "size": "1.1 MB",
+          "sizeBytes": 1121905,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1WrdIRkaklgy6SGeBtgJPv8Ei9rmKIhHR/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19531,
+      "category": "laptop",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Sony MBX-237 V030 (MBX-237 v030 (PCG-41217T))",
+      "slug": "laptop-sony-sony-mbx-237-v030-mbx-237-v030-pcg-41217t",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Sony Sony MBX-237 V030 (MBX-237 v030 (PCG-41217T)) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35132,
+          "type": "schematic",
+          "name": "SONY VAIO - Sony MBX-237 V030 - MBX-237 v030 (PCG-41217T) - Schematic.pdf",
+          "size": "2.8 MB",
+          "sizeBytes": 2890038,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1g2TXbwHKes2WNharGwscWErhV8nFClz2/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19528,
+      "category": "laptop",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Sony MBX-237 V030 (MBX-237 v030 sim db dvt 1014 1630)",
+      "slug": "laptop-sony-sony-mbx-237-v030-mbx-237-v030-sim-db-dvt-1014-1630",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Sony Sony MBX-237 V030 (MBX-237 v030 sim db dvt 1014 1630) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35129,
+          "type": "schematic",
+          "name": "SONY VAIO - Sony MBX-237 V030 - MBX-237 v030 sim db dvt 1014 1630 - Schematic.pdf",
+          "size": "354.1 KB",
+          "sizeBytes": 362572,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15LXAUZ_al0O6GjJNNJSI8n9pqsy5-nuL/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19529,
+      "category": "laptop",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Sony MBX-237 V030 (MBX-237.V030 FOUCTION DB MP 0120 1050 E)",
+      "slug": "laptop-sony-sony-mbx-237-v030-mbx-237v030-fouction-db-mp-0120-1050-e",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Sony Sony MBX-237 V030 (MBX-237.V030 FOUCTION DB MP 0120 1050 E) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35130,
+          "type": "schematic",
+          "name": "SONY VAIO - Sony MBX-237 V030 - MBX-237.V030 FOUCTION DB MP 0120 1050 E - Schematic.pdf",
+          "size": "591.4 KB",
+          "sizeBytes": 605565,
+          "gdrive_direct_url": "https://drive.google.com/file/d/16BlKEnyRPc3xuN1AcR9l4NMsqU78G-_S/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19530,
+      "category": "laptop",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Sony MBX-237 V030 (MBX-237V030 DOCKING DB MP 0104 2030 F)",
+      "slug": "laptop-sony-sony-mbx-237-v030-mbx-237v030-docking-db-mp-0104-2030-f",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "",
+      "officialTitle": "Sony Sony MBX-237 V030 (MBX-237V030 DOCKING DB MP 0104 2030 F) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35131,
+          "type": "schematic",
+          "name": "SONY VAIO - Sony MBX-237 V030 - MBX-237V030 DOCKING DB MP 0104 2030 F - Schematic.pdf",
+          "size": "932.1 KB",
+          "sizeBytes": 954518,
+          "gdrive_direct_url": "https://drive.google.com/file/d/18I5khYgaR7N5hZzncZpj3yoRHt1HgZLO/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19536,
+      "category": "laptop",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Sony SVF15 Series schematic – DA0HK9MB6D0 – Sony HK9 MB schematic – Quanta HKC",
+      "slug": "laptop-sony-sony-svf15-series-schematic-da0hk9mb6d0-sony-hk9-mb-schematic-quanta-hkc",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "DA0HK9MB6D0",
+      "officialTitle": "Sony Sony SVF15 Series schematic – DA0HK9MB6D0 – Sony HK9 MB schematic – Quanta HKC (DA0HK9MB6D0) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35137,
+          "type": "schematic",
+          "name": "SONY VAIO - Sony SVF15 Series schematic – DA0HK9MB6D0 – Sony HK9 MB schematic – Quanta HKC - Schematic.pdf",
+          "size": "1.4 MB",
+          "sizeBytes": 1420840,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1vlMoHLhRzkDaLxY582TlX9cPuEwdz610/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 19537,
+      "category": "laptop",
+      "brand": "Sony",
+      "brandSlug": "sony",
+      "modelName": "Sony Vaio - DA0FI1MB8D0 - FI1",
+      "slug": "laptop-sony-sony-vaio-da0fi1mb8d0-fi1",
+      "chipset": "Laptop Controller & Motherboard Circuit",
+      "motherboardCode": "DA0FI1MB8D0",
+      "officialTitle": "Sony Sony Vaio - DA0FI1MB8D0 - FI1 (DA0FI1MB8D0) — Skema Diagram Rangkaian Motherboard Free Download + Panduan Pengukuran Tegangan No Power",
+      "fileTypes": [
+        "schematic"
+      ],
+      "files": [
+        {
+          "id": 35138,
+          "type": "schematic",
+          "name": "SONY VAIO - Sony Vaio - DA0FI1MB8D0 - FI1 - Schematic.pdf",
+          "size": "1.2 MB",
+          "sizeBytes": 1306514,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1oFx0BGuuAWo9w47Z30WIj7KrXt8bP295/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

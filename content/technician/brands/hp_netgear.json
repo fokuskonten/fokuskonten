@@ -1,0 +1,44 @@
+{
+  "category": "hp",
+  "brand": "Netgear",
+  "brandSlug": "netgear",
+  "totalModels": 1,
+  "models": [
+    {
+      "id": 19691,
+      "category": "hp",
+      "brand": "Netgear",
+      "brandSlug": "netgear",
+      "modelName": "MR1100",
+      "slug": "hp-netgear-mr1100",
+      "chipset": "Snapdragon X16 LTE",
+      "motherboardCode": "HWID: 000320E1",
+      "officialTitle": "Netgear MR1100 — Firehose Programmer Loader No Auth Free Download + Panduan Flash QFIL Unbrick",
+      "fileTypes": [
+        "loader"
+      ],
+      "files": [
+        {
+          "id": 35987,
+          "type": "loader",
+          "name": "000320e100000000_cc3153a80293939b_fhprg_nand_sim7080.elf",
+          "size": "446.1 KB",
+          "sizeBytes": 456816,
+          "gdrive_direct_url": "https://drive.google.com/file/d/15C7j-HsIK0jp5BWvjwI-_2iCC2SgdpmP/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        },
+        {
+          "id": 35988,
+          "type": "loader",
+          "name": "000320e10000a069_cc3153a80293939b_enprg9x55p.bin",
+          "size": "104.4 KB",
+          "sizeBytes": 106936,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wx28BMUDAjyAsUwlgNKHnbHZ6r3yTqUs/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

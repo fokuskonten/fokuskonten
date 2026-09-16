@@ -1,0 +1,268 @@
+{
+  "category": "laptop",
+  "brand": "Laptop Tools",
+  "brandSlug": "laptop-tools",
+  "totalModels": 10,
+  "models": [
+    {
+      "id": 21270,
+      "category": "laptop",
+      "brand": "Laptop Tools",
+      "brandSlug": "laptop-tools",
+      "modelName": "BIOS Dump Master Laptop — ACER - 25q64fv - BIOS Dump",
+      "slug": "laptop-laptop-tools-bios-dump-master-laptop-acer-25q64fv-bios-dump",
+      "chipset": "Laptop BIOS & Circuit Visualizer",
+      "motherboardCode": "",
+      "officialTitle": "Laptop Tools BIOS Dump Master Laptop — ACER - 25q64fv - BIOS Dump — Skema PDF & Boardview CAD Free Download + Panduan Analisa Jalur 19V & Standby",
+      "fileTypes": [
+        "bios"
+      ],
+      "files": [
+        {
+          "id": 39102,
+          "type": "bios",
+          "name": "ACER - 25q64fv - BIOS Dump.bin",
+          "size": "8 MB",
+          "sizeBytes": 8388608,
+          "gdrive_direct_url": "https://drive.google.com/file/d/13PE7bv7RY1GaJpQiJd58cBUVngfZbyIC/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21266,
+      "category": "laptop",
+      "brand": "Laptop Tools",
+      "brandSlug": "laptop-tools",
+      "modelName": "BIOS Dump Master Laptop — ACER - ACER 532H (LA-5651P) - AO 532H LA-5651P OK - BIOS",
+      "slug": "laptop-laptop-tools-bios-dump-master-laptop-acer-acer-532h-la-5651p-ao-532h-la-5651p-ok-bios",
+      "chipset": "Laptop BIOS & Circuit Visualizer",
+      "motherboardCode": "",
+      "officialTitle": "Laptop Tools BIOS Dump Master Laptop — ACER - ACER 532H (LA-5651P) - AO 532H LA-5651P OK - BIOS — Skema PDF & Boardview CAD Free Download + Panduan Analisa Jalur 19V & Standby",
+      "fileTypes": [
+        "bios"
+      ],
+      "files": [
+        {
+          "id": 39098,
+          "type": "bios",
+          "name": "ACER - ACER 532H (LA-5651P) - AO 532H LA-5651P OK - BIOS.bin",
+          "size": "1 MB",
+          "sizeBytes": 1048576,
+          "gdrive_direct_url": "https://drive.google.com/file/d/191SYHHq9v6XQse6rNFDfgqSRW9usDnKn/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21267,
+      "category": "laptop",
+      "brand": "Laptop Tools",
+      "brandSlug": "laptop-tools",
+      "modelName": "BIOS Dump Master Laptop — ACER - Acer E3-111-ZHJ DAOZHJMB6E0 REV E.BIN - BIOS Dump",
+      "slug": "laptop-laptop-tools-bios-dump-master-laptop-acer-acer-e3-111-zhj-daozhjmb6e0-rev-ebin-bios-dump",
+      "chipset": "Laptop BIOS & Circuit Visualizer",
+      "motherboardCode": "",
+      "officialTitle": "Laptop Tools BIOS Dump Master Laptop — ACER - Acer E3-111-ZHJ DAOZHJMB6E0 REV E.BIN - BIOS Dump — Skema PDF & Boardview CAD Free Download + Panduan Analisa Jalur 19V & Standby",
+      "fileTypes": [
+        "bios"
+      ],
+      "files": [
+        {
+          "id": 39099,
+          "type": "bios",
+          "name": "ACER - Acer E3-111-ZHJ DAOZHJMB6E0 REV E.BIN - BIOS Dump.bin",
+          "size": "8 MB",
+          "sizeBytes": 8388608,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1fo-1l7ULD607HLOQa-FSgn-wrcEJIl4J/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21269,
+      "category": "laptop",
+      "brand": "Laptop Tools",
+      "brandSlug": "laptop-tools",
+      "modelName": "BIOS Dump Master Laptop — ACER - e1-472g ori oke - BIOS Dump",
+      "slug": "laptop-laptop-tools-bios-dump-master-laptop-acer-e1-472g-ori-oke-bios-dump",
+      "chipset": "Laptop BIOS & Circuit Visualizer",
+      "motherboardCode": "",
+      "officialTitle": "Laptop Tools BIOS Dump Master Laptop — ACER - e1-472g ori oke - BIOS Dump — Skema PDF & Boardview CAD Free Download + Panduan Analisa Jalur 19V & Standby",
+      "fileTypes": [
+        "bios"
+      ],
+      "files": [
+        {
+          "id": 39101,
+          "type": "bios",
+          "name": "ACER - e1-472g ori oke - BIOS Dump.bin",
+          "size": "8 MB",
+          "sizeBytes": 8388608,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1z3RSmiq9POt3_Ifr6AvKW40th6RibmI_/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21268,
+      "category": "laptop",
+      "brand": "Laptop Tools",
+      "brandSlug": "laptop-tools",
+      "modelName": "BIOS Dump Master Laptop — DELL - 25L2005C - BIOS Dump",
+      "slug": "laptop-laptop-tools-bios-dump-master-laptop-dell-25l2005c-bios-dump",
+      "chipset": "Laptop BIOS & Circuit Visualizer",
+      "motherboardCode": "",
+      "officialTitle": "Laptop Tools BIOS Dump Master Laptop — DELL - 25L2005C - BIOS Dump — Skema PDF & Boardview CAD Free Download + Panduan Analisa Jalur 19V & Standby",
+      "fileTypes": [
+        "bios"
+      ],
+      "files": [
+        {
+          "id": 39100,
+          "type": "bios",
+          "name": "DELL - 25L2005C - BIOS Dump.bin",
+          "size": "256 KB",
+          "sizeBytes": 262144,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wQhmdpbNzLsllScHSU95NC6diS8WtsZw/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21271,
+      "category": "laptop",
+      "brand": "Laptop Tools",
+      "brandSlug": "laptop-tools",
+      "modelName": "BIOS Dump Master Laptop — DELL - Dell N4030 Bios EC main schematic - 25L2005C - BIOS",
+      "slug": "laptop-laptop-tools-bios-dump-master-laptop-dell-dell-n4030-bios-ec-main-schematic-25l2005c-bios",
+      "chipset": "Laptop BIOS & Circuit Visualizer",
+      "motherboardCode": "",
+      "officialTitle": "Laptop Tools BIOS Dump Master Laptop — DELL - Dell N4030 Bios EC main schematic - 25L2005C - BIOS — Skema PDF & Boardview CAD Free Download + Panduan Analisa Jalur 19V & Standby",
+      "fileTypes": [
+        "bios"
+      ],
+      "files": [
+        {
+          "id": 39103,
+          "type": "bios",
+          "name": "DELL - Dell N4030 Bios EC main schematic - 25L2005C - BIOS.bin",
+          "size": "256 KB",
+          "sizeBytes": 262144,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hxwzLFKRHR80Pxl9ri61bUls_MXh7NvA/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21275,
+      "category": "laptop",
+      "brand": "Laptop Tools",
+      "brandSlug": "laptop-tools",
+      "modelName": "BIOS Dump Master Laptop — DELL - Dell N4030 Bios EC main schematic - dell 4030 - HM57 - BIOS",
+      "slug": "laptop-laptop-tools-bios-dump-master-laptop-dell-dell-n4030-bios-ec-main-schematic-dell-4030-hm57-bios",
+      "chipset": "Laptop BIOS & Circuit Visualizer",
+      "motherboardCode": "",
+      "officialTitle": "Laptop Tools BIOS Dump Master Laptop — DELL - Dell N4030 Bios EC main schematic - dell 4030 - HM57 - BIOS — Skema PDF & Boardview CAD Free Download + Panduan Analisa Jalur 19V & Standby",
+      "fileTypes": [
+        "bios"
+      ],
+      "files": [
+        {
+          "id": 39107,
+          "type": "bios",
+          "name": "DELL - Dell N4030 Bios EC main schematic - dell 4030 - HM57 - BIOS.bin",
+          "size": "4 MB",
+          "sizeBytes": 4194304,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1rs-wOKgsDSxmH0ARKAeejutoonw5_owp/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21274,
+      "category": "laptop",
+      "brand": "Laptop Tools",
+      "brandSlug": "laptop-tools",
+      "modelName": "BIOS Dump Master Laptop — DELL - dell 4030 - HM57 - BIOS Dump",
+      "slug": "laptop-laptop-tools-bios-dump-master-laptop-dell-dell-4030-hm57-bios-dump",
+      "chipset": "Laptop BIOS & Circuit Visualizer",
+      "motherboardCode": "",
+      "officialTitle": "Laptop Tools BIOS Dump Master Laptop — DELL - dell 4030 - HM57 - BIOS Dump — Skema PDF & Boardview CAD Free Download + Panduan Analisa Jalur 19V & Standby",
+      "fileTypes": [
+        "bios"
+      ],
+      "files": [
+        {
+          "id": 39106,
+          "type": "bios",
+          "name": "DELL - dell 4030 - HM57 - BIOS Dump.bin",
+          "size": "4 MB",
+          "sizeBytes": 4194304,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1JCteIA4jEj3s06B7EYh0oUsr2YWlxXWN/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21272,
+      "category": "laptop",
+      "brand": "Laptop Tools",
+      "brandSlug": "laptop-tools",
+      "modelName": "Software Boardview Viewer Portable — BoardViewer_Portable",
+      "slug": "laptop-laptop-tools-software-boardview-viewer-portable-boardviewer_portable",
+      "chipset": "Laptop BIOS & Circuit Visualizer",
+      "motherboardCode": "",
+      "officialTitle": "Laptop Tools Software Boardview Viewer Portable — BoardViewer_Portable — Skema PDF & Boardview CAD Free Download + Panduan Analisa Jalur 19V & Standby",
+      "fileTypes": [
+        "software"
+      ],
+      "files": [
+        {
+          "id": 39104,
+          "type": "software",
+          "name": "BoardViewer_Portable.zip",
+          "size": "1.1 MB",
+          "sizeBytes": 1122238,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1JGbLhRAgvhLDAqqLk3s6UbLsFR1Gi1u8/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21273,
+      "category": "laptop",
+      "brand": "Laptop Tools",
+      "brandSlug": "laptop-tools",
+      "modelName": "Software Boardview Viewer Portable — OpenBoardView_Portable",
+      "slug": "laptop-laptop-tools-software-boardview-viewer-portable-openboardview_portable",
+      "chipset": "Laptop BIOS & Circuit Visualizer",
+      "motherboardCode": "",
+      "officialTitle": "Laptop Tools Software Boardview Viewer Portable — OpenBoardView_Portable — Skema PDF & Boardview CAD Free Download + Panduan Analisa Jalur 19V & Standby",
+      "fileTypes": [
+        "software"
+      ],
+      "files": [
+        {
+          "id": 39105,
+          "type": "software",
+          "name": "OpenBoardView_Portable.zip",
+          "size": "1.2 MB",
+          "sizeBytes": 1227763,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QyH1q8bCX3jP5XkcS-9dxkZOHoLq5R9E/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}

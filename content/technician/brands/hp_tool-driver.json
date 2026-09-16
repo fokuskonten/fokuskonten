@@ -1,0 +1,606 @@
+{
+  "category": "hp",
+  "brand": "Tool & Driver",
+  "brandSlug": "tool-driver",
+  "totalModels": 23,
+  "models": [
+    {
+      "id": 21260,
+      "category": "hp",
+      "brand": "Tool & Driver",
+      "brandSlug": "tool-driver",
+      "modelName": "ADB Fastboot Platform Tools — Google_Platform_Tools_Windows_VBMeta",
+      "slug": "hp-tool-driver-adb-fastboot-platform-tools-google_platform_tools_windows_vbmeta",
+      "chipset": "Universal Windows Driver & Flashing Tool",
+      "motherboardCode": "",
+      "officialTitle": "Tool & Driver ADB Fastboot Platform Tools — Google_Platform_Tools_Windows_VBMeta — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "tool"
+      ],
+      "files": [
+        {
+          "id": 39092,
+          "type": "tool",
+          "name": "Google_Platform_Tools_Windows_VBMeta.zip",
+          "size": "7.5 MB",
+          "sizeBytes": 7849864,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1-n6N2B40hq2NICWsTr3ZotcYVTH5Cn0a/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21258,
+      "category": "hp",
+      "brand": "Tool & Driver",
+      "brandSlug": "tool-driver",
+      "modelName": "ADB Fastboot Platform Tools — vbmeta_empty.img",
+      "slug": "hp-tool-driver-adb-fastboot-platform-tools-vbmeta_emptyimg",
+      "chipset": "Universal Windows Driver & Flashing Tool",
+      "motherboardCode": "",
+      "officialTitle": "Tool & Driver ADB Fastboot Platform Tools — vbmeta_empty.img — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "tool"
+      ],
+      "files": [
+        {
+          "id": 39090,
+          "type": "tool",
+          "name": "vbmeta_empty.img",
+          "size": "4 KB",
+          "sizeBytes": 4096,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1N0XMcnvVyvhxtsRSIFnnAVnBPjlb-4WW/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21244,
+      "category": "hp",
+      "brand": "Tool & Driver",
+      "brandSlug": "tool-driver",
+      "modelName": "Apple iOS Repair Tool — Apple_Mobile_Device_Driver_Setup",
+      "slug": "hp-tool-driver-apple-ios-repair-tool-apple_mobile_device_driver_setup",
+      "chipset": "Universal Windows Driver & Flashing Tool",
+      "motherboardCode": "",
+      "officialTitle": "Tool & Driver Apple iOS Repair Tool — Apple_Mobile_Device_Driver_Setup — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "tool"
+      ],
+      "files": [
+        {
+          "id": 39076,
+          "type": "tool",
+          "name": "Apple_Mobile_Device_Driver_Setup.zip",
+          "size": "69.5 KB",
+          "sizeBytes": 71123,
+          "gdrive_direct_url": "https://drive.google.com/file/d/10IlLmauLk2gjqpiKLdSe8jGTC6uAyciK/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21262,
+      "category": "hp",
+      "brand": "Tool & Driver",
+      "brandSlug": "tool-driver",
+      "modelName": "Apple iOS Repair Tool — Apple_iOS_Repair_Tool_Suite",
+      "slug": "hp-tool-driver-apple-ios-repair-tool-apple_ios_repair_tool_suite",
+      "chipset": "Universal Windows Driver & Flashing Tool",
+      "motherboardCode": "",
+      "officialTitle": "Tool & Driver Apple iOS Repair Tool — Apple_iOS_Repair_Tool_Suite — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "tool"
+      ],
+      "files": [
+        {
+          "id": 39094,
+          "type": "tool",
+          "name": "Apple_iOS_Repair_Tool_Suite.zip",
+          "size": "27.4 MB",
+          "sizeBytes": 28749853,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1LSZa6H0f_tP9ztil7RSQPFaxpiharhW0/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21254,
+      "category": "hp",
+      "brand": "Tool & Driver",
+      "brandSlug": "tool-driver",
+      "modelName": "Paket Driver USB Windows — Driver_ADB_Pack",
+      "slug": "hp-tool-driver-paket-driver-usb-windows-driver_adb_pack",
+      "chipset": "Universal Windows Driver & Flashing Tool",
+      "motherboardCode": "",
+      "officialTitle": "Tool & Driver Paket Driver USB Windows — Driver_ADB_Pack — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "driver"
+      ],
+      "files": [
+        {
+          "id": 39086,
+          "type": "driver",
+          "name": "Driver_ADB_Pack.zip",
+          "size": "8.3 MB",
+          "sizeBytes": 8672019,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1oboS1igdBgUZDAiWhTeX6S1e4Zjj_lbg/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21243,
+      "category": "hp",
+      "brand": "Tool & Driver",
+      "brandSlug": "tool-driver",
+      "modelName": "Paket Driver USB Windows — Driver_MediaTek_Pack",
+      "slug": "hp-tool-driver-paket-driver-usb-windows-driver_mediatek_pack",
+      "chipset": "Universal Windows Driver & Flashing Tool",
+      "motherboardCode": "",
+      "officialTitle": "Tool & Driver Paket Driver USB Windows — Driver_MediaTek_Pack — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "driver"
+      ],
+      "files": [
+        {
+          "id": 39075,
+          "type": "driver",
+          "name": "Driver_MediaTek_Pack.zip",
+          "size": "72 KB",
+          "sizeBytes": 73754,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1qenotbAw7dOCN8fjSPnjVLmlvwlRNdtZ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21245,
+      "category": "hp",
+      "brand": "Tool & Driver",
+      "brandSlug": "tool-driver",
+      "modelName": "Paket Driver USB Windows — Driver_Qualcomm_Pack",
+      "slug": "hp-tool-driver-paket-driver-usb-windows-driver_qualcomm_pack",
+      "chipset": "Universal Windows Driver & Flashing Tool",
+      "motherboardCode": "",
+      "officialTitle": "Tool & Driver Paket Driver USB Windows — Driver_Qualcomm_Pack — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "driver"
+      ],
+      "files": [
+        {
+          "id": 39077,
+          "type": "driver",
+          "name": "Driver_Qualcomm_Pack.zip",
+          "size": "148 KB",
+          "sizeBytes": 151534,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1DHNAkhfC6Em3It1b5u8AXCRuNPIDV-Ic/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21261,
+      "category": "hp",
+      "brand": "Tool & Driver",
+      "brandSlug": "tool-driver",
+      "modelName": "Paket Driver USB Windows — Driver_Samsung_Pack",
+      "slug": "hp-tool-driver-paket-driver-usb-windows-driver_samsung_pack",
+      "chipset": "Universal Windows Driver & Flashing Tool",
+      "motherboardCode": "",
+      "officialTitle": "Tool & Driver Paket Driver USB Windows — Driver_Samsung_Pack — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "driver"
+      ],
+      "files": [
+        {
+          "id": 39093,
+          "type": "driver",
+          "name": "Driver_Samsung_Pack.zip",
+          "size": "14.6 MB",
+          "sizeBytes": 15358111,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1QH2Lq5C4qVubj4GDk3fEzVKNkVzq0dQD/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21250,
+      "category": "hp",
+      "brand": "Tool & Driver",
+      "brandSlug": "tool-driver",
+      "modelName": "Paket Driver USB Windows — Driver_Sony_Pack",
+      "slug": "hp-tool-driver-paket-driver-usb-windows-driver_sony_pack",
+      "chipset": "Universal Windows Driver & Flashing Tool",
+      "motherboardCode": "",
+      "officialTitle": "Tool & Driver Paket Driver USB Windows — Driver_Sony_Pack — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "driver"
+      ],
+      "files": [
+        {
+          "id": 39082,
+          "type": "driver",
+          "name": "Driver_Sony_Pack.zip",
+          "size": "1.6 MB",
+          "sizeBytes": 1712465,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1enIc0zDfeLeRv8veT4XMuR7QTtGpp-aP/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21246,
+      "category": "hp",
+      "brand": "Tool & Driver",
+      "brandSlug": "tool-driver",
+      "modelName": "Paket Driver USB Windows — Driver_Unisoc_Pack",
+      "slug": "hp-tool-driver-paket-driver-usb-windows-driver_unisoc_pack",
+      "chipset": "Universal Windows Driver & Flashing Tool",
+      "motherboardCode": "",
+      "officialTitle": "Tool & Driver Paket Driver USB Windows — Driver_Unisoc_Pack — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "driver"
+      ],
+      "files": [
+        {
+          "id": 39078,
+          "type": "driver",
+          "name": "Driver_Unisoc_Pack.zip",
+          "size": "72.1 KB",
+          "sizeBytes": 73786,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1tg4V0Ece0LAAjxMiwtOVCIlnzLCM8Y36/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21255,
+      "category": "hp",
+      "brand": "Tool & Driver",
+      "brandSlug": "tool-driver",
+      "modelName": "Paket Driver USB Windows — Driver_usbdk_Pack",
+      "slug": "hp-tool-driver-paket-driver-usb-windows-driver_usbdk_pack",
+      "chipset": "Universal Windows Driver & Flashing Tool",
+      "motherboardCode": "",
+      "officialTitle": "Tool & Driver Paket Driver USB Windows — Driver_usbdk_Pack — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "driver"
+      ],
+      "files": [
+        {
+          "id": 39087,
+          "type": "driver",
+          "name": "Driver_usbdk_Pack.zip",
+          "size": "6 MB",
+          "sizeBytes": 6309294,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1YatkmZn09UEnMDZ-ZqCQyF5uU98qphnr/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21247,
+      "category": "hp",
+      "brand": "Tool & Driver",
+      "brandSlug": "tool-driver",
+      "modelName": "Paket Driver USB Windows — MediaTek_VCOM_Driver_Setup",
+      "slug": "hp-tool-driver-paket-driver-usb-windows-mediatek_vcom_driver_setup",
+      "chipset": "Universal Windows Driver & Flashing Tool",
+      "motherboardCode": "",
+      "officialTitle": "Tool & Driver Paket Driver USB Windows — MediaTek_VCOM_Driver_Setup — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "driver"
+      ],
+      "files": [
+        {
+          "id": 39079,
+          "type": "driver",
+          "name": "MediaTek_VCOM_Driver_Setup.zip",
+          "size": "69.4 KB",
+          "sizeBytes": 71111,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1uGM6BfjhBKc_Fk8T9Trv3YF9DNtYCulZ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21248,
+      "category": "hp",
+      "brand": "Tool & Driver",
+      "brandSlug": "tool-driver",
+      "modelName": "Paket Driver USB Windows — Qualcomm_QDLoader_Driver_Setup",
+      "slug": "hp-tool-driver-paket-driver-usb-windows-qualcomm_qdloader_driver_setup",
+      "chipset": "Universal Windows Driver & Flashing Tool",
+      "motherboardCode": "",
+      "officialTitle": "Tool & Driver Paket Driver USB Windows — Qualcomm_QDLoader_Driver_Setup — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "driver"
+      ],
+      "files": [
+        {
+          "id": 39080,
+          "type": "driver",
+          "name": "Qualcomm_QDLoader_Driver_Setup.zip",
+          "size": "69.5 KB",
+          "sizeBytes": 71119,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1A-RU67w9hF6IuY-nj6GBf_EgokH81VgI/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21251,
+      "category": "hp",
+      "brand": "Tool & Driver",
+      "brandSlug": "tool-driver",
+      "modelName": "Paket Driver USB Windows — Samsung_USB_Driver_Setup",
+      "slug": "hp-tool-driver-paket-driver-usb-windows-samsung_usb_driver_setup",
+      "chipset": "Universal Windows Driver & Flashing Tool",
+      "motherboardCode": "",
+      "officialTitle": "Tool & Driver Paket Driver USB Windows — Samsung_USB_Driver_Setup — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "driver"
+      ],
+      "files": [
+        {
+          "id": 39083,
+          "type": "driver",
+          "name": "Samsung_USB_Driver_Setup.zip",
+          "size": "508.1 KB",
+          "sizeBytes": 520291,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1ngg-z7HgPUBD2kheuB6liWGfNxosNyP8/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21249,
+      "category": "hp",
+      "brand": "Tool & Driver",
+      "brandSlug": "tool-driver",
+      "modelName": "Paket Driver USB Windows — Unisoc_SPRD_Driver_Setup",
+      "slug": "hp-tool-driver-paket-driver-usb-windows-unisoc_sprd_driver_setup",
+      "chipset": "Universal Windows Driver & Flashing Tool",
+      "motherboardCode": "",
+      "officialTitle": "Tool & Driver Paket Driver USB Windows — Unisoc_SPRD_Driver_Setup — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "driver"
+      ],
+      "files": [
+        {
+          "id": 39081,
+          "type": "driver",
+          "name": "Unisoc_SPRD_Driver_Setup.zip",
+          "size": "69.4 KB",
+          "sizeBytes": 71107,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1hpJm30w8s53rfd0Duh6tk-uRuSHVXbCt/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21257,
+      "category": "hp",
+      "brand": "Tool & Driver",
+      "brandSlug": "tool-driver",
+      "modelName": "Paket Driver USB Windows — UsbDk64",
+      "slug": "hp-tool-driver-paket-driver-usb-windows-usbdk64",
+      "chipset": "Universal Windows Driver & Flashing Tool",
+      "motherboardCode": "",
+      "officialTitle": "Tool & Driver Paket Driver USB Windows — UsbDk64 — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "driver"
+      ],
+      "files": [
+        {
+          "id": 39089,
+          "type": "driver",
+          "name": "UsbDk64.zip",
+          "size": "6 MB",
+          "sizeBytes": 6309276,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1R1bSx4v15nlV_uSuV5tczx7NyTkUlyT4/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21252,
+      "category": "hp",
+      "brand": "Tool & Driver",
+      "brandSlug": "tool-driver",
+      "modelName": "Paket Driver USB Windows — zadig",
+      "slug": "hp-tool-driver-paket-driver-usb-windows-zadig",
+      "chipset": "Universal Windows Driver & Flashing Tool",
+      "motherboardCode": "",
+      "officialTitle": "Tool & Driver Paket Driver USB Windows — zadig — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "driver"
+      ],
+      "files": [
+        {
+          "id": 39084,
+          "type": "driver",
+          "name": "zadig.zip",
+          "size": "5.1 MB",
+          "sizeBytes": 5321273,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1wnewWndrzrRmXhMQbMJvKaPeU0esnFF8/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21263,
+      "category": "hp",
+      "brand": "Tool & Driver",
+      "brandSlug": "tool-driver",
+      "modelName": "Qualcomm EDL Exploit Tool — Qualcomm_EDL_Fastpwn_Tool",
+      "slug": "hp-tool-driver-qualcomm-edl-exploit-tool-qualcomm_edl_fastpwn_tool",
+      "chipset": "Universal Windows Driver & Flashing Tool",
+      "motherboardCode": "",
+      "officialTitle": "Tool & Driver Qualcomm EDL Exploit Tool — Qualcomm_EDL_Fastpwn_Tool — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "tool"
+      ],
+      "files": [
+        {
+          "id": 39095,
+          "type": "tool",
+          "name": "Qualcomm_EDL_Fastpwn_Tool.zip",
+          "size": "37.1 MB",
+          "sizeBytes": 38892384,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1zl-7zTOJ4CArrsbTGVaYOwQfnAj0CjVs/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21265,
+      "category": "hp",
+      "brand": "Tool & Driver",
+      "brandSlug": "tool-driver",
+      "modelName": "Software Flasher Portable — MediaTek_MTKClient_Tool",
+      "slug": "hp-tool-driver-software-flasher-portable-mediatek_mtkclient_tool",
+      "chipset": "Universal Windows Driver & Flashing Tool",
+      "motherboardCode": "",
+      "officialTitle": "Tool & Driver Software Flasher Portable — MediaTek_MTKClient_Tool — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "software"
+      ],
+      "files": [
+        {
+          "id": 39097,
+          "type": "software",
+          "name": "MediaTek_MTKClient_Tool.zip",
+          "size": "61.3 MB",
+          "sizeBytes": 64266114,
+          "gdrive_direct_url": "https://drive.google.com/file/d/14bjTF1Mf5F59jRoI8-vQ2eDiY6j5uZUJ/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21264,
+      "category": "hp",
+      "brand": "Tool & Driver",
+      "brandSlug": "tool-driver",
+      "modelName": "Software Flasher Portable — SP_Flash_Tool_v5_Portable",
+      "slug": "hp-tool-driver-software-flasher-portable-sp_flash_tool_v5_portable",
+      "chipset": "Universal Windows Driver & Flashing Tool",
+      "motherboardCode": "",
+      "officialTitle": "Tool & Driver Software Flasher Portable — SP_Flash_Tool_v5_Portable — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "software"
+      ],
+      "files": [
+        {
+          "id": 39096,
+          "type": "software",
+          "name": "SP_Flash_Tool_v5_Portable.zip",
+          "size": "56.8 MB",
+          "sizeBytes": 59595103,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1nKT_MKeB8E2kvjtyvMCkYMftpj7cVsNh/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21253,
+      "category": "hp",
+      "brand": "Tool & Driver",
+      "brandSlug": "tool-driver",
+      "modelName": "Software Flasher Portable — Samsung_Odin_Portable",
+      "slug": "hp-tool-driver-software-flasher-portable-samsung_odin_portable",
+      "chipset": "Universal Windows Driver & Flashing Tool",
+      "motherboardCode": "",
+      "officialTitle": "Tool & Driver Software Flasher Portable — Samsung_Odin_Portable — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "software"
+      ],
+      "files": [
+        {
+          "id": 39085,
+          "type": "software",
+          "name": "Samsung_Odin_Portable.zip",
+          "size": "660 B",
+          "sizeBytes": 660,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1VQXTxeisZ_N2Ibc0LXSal730hCbn49C5/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21259,
+      "category": "hp",
+      "brand": "Tool & Driver",
+      "brandSlug": "tool-driver",
+      "modelName": "Software Flasher Portable — Unisoc_ResearchDownload_SPD",
+      "slug": "hp-tool-driver-software-flasher-portable-unisoc_researchdownload_spd",
+      "chipset": "Universal Windows Driver & Flashing Tool",
+      "motherboardCode": "",
+      "officialTitle": "Tool & Driver Software Flasher Portable — Unisoc_ResearchDownload_SPD — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "software"
+      ],
+      "files": [
+        {
+          "id": 39091,
+          "type": "software",
+          "name": "Unisoc_ResearchDownload_SPD.zip",
+          "size": "1.1 MB",
+          "sizeBytes": 1112503,
+          "gdrive_direct_url": "https://drive.google.com/file/d/1oHG8lUiOGxRzqsNLGAhrbD95xBmXXpy4/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    },
+    {
+      "id": 21256,
+      "category": "hp",
+      "brand": "Tool & Driver",
+      "brandSlug": "tool-driver",
+      "modelName": "Software Flasher Portable — Xiaomi_MiFlash_Portable",
+      "slug": "hp-tool-driver-software-flasher-portable-xiaomi_miflash_portable",
+      "chipset": "Universal Windows Driver & Flashing Tool",
+      "motherboardCode": "",
+      "officialTitle": "Tool & Driver Software Flasher Portable — Xiaomi_MiFlash_Portable — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal",
+      "fileTypes": [
+        "software"
+      ],
+      "files": [
+        {
+          "id": 39088,
+          "type": "software",
+          "name": "Xiaomi_MiFlash_Portable.zip",
+          "size": "621 B",
+          "sizeBytes": 621,
+          "gdrive_direct_url": "https://drive.google.com/file/d/11nRr05Bn7RyNPk1H_RQNRU1aQGG8IsRN/view?usp=sharing",
+          "safelink_url": "",
+          "checksum_sha256": ""
+        }
+      ]
+    }
+  ]
+}
