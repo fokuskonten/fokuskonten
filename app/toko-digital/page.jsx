@@ -37,10 +37,11 @@ function TokoDigitalContent() {
     showcase,
   } = storeSummary
 
-  const cdrCount = realtimeFormats.find(([fmt]) => fmt === 'CDR')?.[1] || 411
+  const ecourseCount = designCategories.find(([cat]) => cat === 'Ecourse & Tutorial')?.[1] || 136
+  const cdrCount = realtimeFormats.find(([fmt]) => fmt === 'CDR')?.[1] || 389
   const pptxCount = realtimeFormats.find(([fmt]) => fmt === 'PPTX')?.[1] || 140
   const pdfCount = realtimeFormats.find(([fmt]) => fmt === 'PDF')?.[1] || 2471
-  const othersCount = realtimeFormats.filter(([fmt]) => !['CDR', 'PPTX', 'PDF'].includes(fmt)).reduce((acc, [, c]) => acc + c, 0) || 47
+  const othersCount = realtimeFormats.filter(([fmt]) => !['CDR', 'PPTX', 'PDF', 'MP4'].includes(fmt)).reduce((acc, [, c]) => acc + c, 0) || 40
 
   const sortOptions = [
     { id: 'newest', label: 'Terbaru' },
@@ -139,17 +140,23 @@ function TokoDigitalContent() {
     } else if (sortBy === 'price_desc') {
       result.sort((a, b) => b.price - a.price)
     } else {
-      const checkFlagship = (p) => {
-        const f = (p.format || '').toUpperCase()
-        const c = (p.category || '').toLowerCase()
-        return (f === 'CDR' || f.startsWith('PPT') || c.includes('presentasi')) ? 1 : 0
+      const isEbookFilter = selectedFormat === 'PDF' || selectedCategory?.startsWith('E-Book')
+      if (isEbookFilter) {
+        // E-Book otomatis menampilkan harga termurah dulu
+        result.sort((a, b) => a.price - b.price || (b.sku || '').localeCompare(a.sku || '', undefined, { numeric: true }))
+      } else {
+        const checkFlagship = (p) => {
+          const f = (p.format || '').toUpperCase()
+          const c = (p.category || '').toLowerCase()
+          return (f === 'CDR' || f.startsWith('PPT') || f === 'MP4' || f.includes('WMF') || f.includes('SVG') || c.includes('presentasi') || c.includes('ecourse')) ? 1 : 0
+        }
+        result.sort((a, b) => {
+          const isFlagshipA = checkFlagship(a)
+          const isFlagshipB = checkFlagship(b)
+          if (isFlagshipB !== isFlagshipA) return isFlagshipB - isFlagshipA
+          return (b.sku || '').localeCompare(a.sku || '', undefined, { numeric: true })
+        })
       }
-      result.sort((a, b) => {
-        const isFlagshipA = checkFlagship(a)
-        const isFlagshipB = checkFlagship(b)
-        if (isFlagshipB !== isFlagshipA) return isFlagshipB - isFlagshipA
-        return (b.sku || '').localeCompare(a.sku || '', undefined, { numeric: true })
-      })
     }
 
     return result
@@ -468,7 +475,7 @@ function TokoDigitalContent() {
                       : 'bg-white border border-neutral-200 text-neutral-600 hover:border-neutral-400 hover:text-neutral-900'
                   }`}
                 >
-                  <span>{fmt === 'PDF' ? 'E-Book' : `.${fmt}`}</span>
+                  <span>{fmt === 'PDF' ? 'E-Book' : (fmt === 'MP4' ? 'Video & Ecourse' : `.${fmt}`)}</span>
                   <span className={`text-[10px] px-1.5 py-0.2 rounded-full ${isActive ? 'bg-white/20 text-white' : 'bg-neutral-100 text-neutral-500'}`}>
                     {count}
                   </span>
@@ -482,27 +489,29 @@ function TokoDigitalContent() {
       {/* ── 3. SHOWCASE PILIHAN & BUNDLE (5 SKAT MINIMALIS) ───────────── */}
       {!isFiltering && currentPage === 1 && showcase && (
         <div className="w-full max-w-7xl 2xl:max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 mb-12 sm:mb-16 space-y-12">
-          {/* Skat 1: Populer & The Big Bundle */}
-          {showcase.popular && showcase.popular.length > 0 && (
+          {/* Skat 1: Ecourse & Panduan Bisnis */}
+          {showcase.ecourse && showcase.ecourse.length > 0 && (
             <section className="space-y-4">
               <div className="flex items-center justify-between pb-3 border-b border-neutral-200">
-                <h2 className="text-lg sm:text-xl font-bold text-neutral-950 tracking-tight">
-                  Populer & Bundle Terbesar
-                </h2>
+                <div className="flex items-center gap-2.5">
+                  <h2 className="text-lg sm:text-xl font-bold text-neutral-950 tracking-tight">
+                    Ecourse &amp; Panduan Bisnis
+                  </h2>
+                  <span className="text-[11px] font-bold uppercase tracking-wider bg-neutral-900 text-white px-2.5 py-0.5 rounded-full font-mono">
+                    Koleksi Baru
+                  </span>
+                </div>
                 <button
                   type="button"
-                  onClick={() => {
-                    const el = document.getElementById('semua-katalog')
-                    if (el) el.scrollIntoView({ behavior: 'smooth' })
-                  }}
+                  onClick={() => handleCategorySelect('Ecourse & Tutorial')}
                   className="text-xs sm:text-sm font-semibold text-neutral-600 hover:text-black transition-colors flex items-center gap-1"
                 >
-                  <span>Lihat Semua</span>
+                  <span>Lihat Semua Ecourse ({ecourseCount})</span>
                   <span>&rarr;</span>
                 </button>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-6">
-                {showcase.popular.map((product) => (
+                {showcase.ecourse.map((product) => (
                   <ProductCard key={product.sku} product={product} />
                 ))}
               </div>
@@ -581,19 +590,19 @@ function TokoDigitalContent() {
             </section>
           )}
 
-          {/* Skat 5: Aset & Desain Lainnya (PSD / PNG / HD) */}
+          {/* Skat 5: Aset & Desain Lainnya (PSD / PNG / WMF / SVG) */}
           {showcase.others && showcase.others.length > 0 && (
             <section className="space-y-4">
               <div className="flex items-center justify-between pb-3 border-b border-neutral-200">
                 <h2 className="text-lg sm:text-xl font-bold text-neutral-950 tracking-tight">
-                  Aset & Desain Lainnya
+                  Aset &amp; Desain Lainnya
                 </h2>
                 <button
                   type="button"
-                  onClick={() => handleFormatSelect('PSD')}
+                  onClick={() => handleCategorySelect('Canva Elements & Clipart Vektor')}
                   className="text-xs sm:text-sm font-semibold text-neutral-600 hover:text-black transition-colors flex items-center gap-1"
                 >
-                  <span>Lihat Format PSD ({othersCount})</span>
+                  <span>Lihat Semua Aset Lainnya ({othersCount})</span>
                   <span>&rarr;</span>
                 </button>
               </div>
@@ -641,8 +650,8 @@ function TokoDigitalContent() {
         ) : (
           <>
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-6">
-              {paginatedProducts.map((product) => (
-                <ProductCard key={product.sku} product={product} />
+              {paginatedProducts.map((product, idx) => (
+                <ProductCard key={product.sku} product={product} priority={idx < 4} />
               ))}
             </div>
 

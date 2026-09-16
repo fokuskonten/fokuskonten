@@ -19,3 +19,4 @@ keystorebaru.txt
 .env*
 Buka_Landing_Page_CRM.bat
 serve_local.js
+config/

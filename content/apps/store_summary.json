@@ -1,11 +1,11 @@
 {
-  "totalActive": 3075,
-  "totalDesign": 604,
+  "totalActive": 3210,
+  "totalDesign": 739,
   "totalEbook": 2471,
   "designCategories": [
     [
-      "Video Konten",
-      35
+      "Ecourse & Tutorial",
+      136
     ],
     [
       "Vektor",
@@ -22,6 +22,10 @@
     [
       "Stiker & Striping",
       43
+    ],
+    [
+      "Video Konten",
+      35
     ],
     [
       "Canva Elements & Clipart Vektor",
@@ -72,11 +76,11 @@
       10
     ],
     [
-      "Photobooth",
+      "Undangan & Ucapan",
       7
     ],
     [
-      "Undangan & Ucapan",
+      "Photobooth",
       7
     ],
     [
@@ -92,6 +96,10 @@
       3
     ],
     [
+      "Infografis & Data",
+      2
+    ],
+    [
       "Mockup",
       2
     ],
@@ -100,19 +108,11 @@
       2
     ],
     [
-      "Infografis & Data",
-      2
-    ],
-    [
       "Kalender",
       1
     ],
     [
       "Tekstur & Brush",
-      1
-    ],
-    [
-      "Ecourse & Tutorial",
       1
     ]
   ],
@@ -228,6 +228,10 @@
       271
     ],
     [
+      "Ecourse & Tutorial",
+      136
+    ],
+    [
       "Vektor",
       126
     ],
@@ -294,6 +298,10 @@
     [
       "E-Book Politik",
       39
+    ],
+    [
+      "Video Konten",
+      35
     ],
     [
       "Canva Elements & Clipart Vektor",
@@ -364,11 +372,11 @@
       11
     ],
     [
-      "E-Book Majalah",
+      "Media Sosial & Banner",
       10
     ],
     [
-      "Media Sosial & Banner",
+      "E-Book Majalah",
       10
     ],
     [
@@ -376,11 +384,11 @@
       8
     ],
     [
-      "Photobooth",
+      "Undangan & Ucapan",
       7
     ],
     [
-      "Undangan & Ucapan",
+      "Photobooth",
       7
     ],
     [
@@ -396,6 +404,10 @@
       3
     ],
     [
+      "Infografis & Data",
+      2
+    ],
+    [
       "Mockup",
       2
     ],
@@ -404,19 +416,11 @@
       2
     ],
     [
-      "Infografis & Data",
-      2
-    ],
-    [
       "Kalender",
       1
     ],
     [
       "Tekstur & Brush",
-      1
-    ],
-    [
-      "Ecourse & Tutorial",
       1
     ]
   ],
@@ -431,7 +435,7 @@
     ],
     [
       "MP4",
-      35
+      170
     ],
     [
       "PPTX",
@@ -541,6 +545,96 @@
         "tag": "Format .PPTX"
       }
     ],
+    "ecourse": [
+      {
+        "sku": "ID6B17",
+        "title": "ContentYield - Ecourse Blog Monetize Traffic",
+        "category": "Ecourse & Tutorial",
+        "format": "MP4",
+        "price": 13500,
+        "originalPrice": 48000,
+        "coverImage": "/covers/ID6B17/ID6B17_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .MP4"
+      },
+      {
+        "sku": "ID0CF2",
+        "title": "PipelineSync - Ecourse Sales Funnel System",
+        "category": "Ecourse & Tutorial",
+        "format": "MP4",
+        "price": 11000,
+        "originalPrice": 35000,
+        "coverImage": "/covers/ID0CF2/ID0CF2_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .MP4"
+      },
+      {
+        "sku": "ID0146",
+        "title": "ApparelMeta - Ecourse Meta Ads Fashion",
+        "category": "Ecourse & Tutorial",
+        "format": "MP4",
+        "price": 8500,
+        "originalPrice": 25000,
+        "coverImage": "/covers/ID0146/ID0146_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .MP4"
+      },
+      {
+        "sku": "ID95DF",
+        "title": "WebFoundry - Ecourse Modern Web Design",
+        "category": "Ecourse & Tutorial",
+        "format": "MP4",
+        "price": 12000,
+        "originalPrice": 42000,
+        "coverImage": "/covers/ID95DF/ID95DF_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .MP4"
+      },
+      {
+        "sku": "ID1E48",
+        "title": "SelfPersona - Ecourse Personal Branding Authority",
+        "category": "Ecourse & Tutorial",
+        "format": "MP4",
+        "price": 10000,
+        "originalPrice": 35000,
+        "coverImage": "/covers/ID1E48/ID1E48_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .MP4"
+      },
+      {
+        "sku": "ID276D",
+        "title": "StreamMatrix - Ecourse Youtube Traffic Strategy",
+        "category": "Ecourse & Tutorial",
+        "format": "MP4",
+        "price": 20000,
+        "originalPrice": 60000,
+        "coverImage": "/covers/ID276D/ID276D_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .MP4"
+      },
+      {
+        "sku": "ID296A",
+        "title": "ToeflBoost - Ecourse TOEFL Preparation Listening",
+        "category": "Ecourse & Tutorial",
+        "format": "MP4",
+        "price": 9000,
+        "originalPrice": 27000,
+        "coverImage": "/covers/ID296A/ID296A_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .MP4"
+      },
+      {
+        "sku": "ID7243",
+        "title": "AdRevenue - Ecourse Google Adsense Monetize",
+        "category": "Ecourse & Tutorial",
+        "format": "MP4",
+        "price": 9000,
+        "originalPrice": 27000,
+        "coverImage": "/covers/ID7243/ID7243_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .MP4"
+      }
+    ],
     "cdr": [
       {
         "sku": "ID376B",
@@ -633,17 +727,6 @@
     ],
     "ppt": [
       {
-        "sku": "ID1108",
-        "title": "Dynamo - Fluid Kinetic Motion",
-        "category": "Video Animasi & Iklan",
-        "format": "PPTX",
-        "price": 35000,
-        "originalPrice": 75000,
-        "coverImage": "/covers/ID1108/ID1108_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .PPTX"
-      },
-      {
         "sku": "ID23B4",
         "title": "Aeterna - Universal Invitation Suite",
         "category": "Undangan & Ucapan",
@@ -719,211 +802,110 @@
         "coverImage": "/covers/ID8BD7/ID8BD7_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .PPTX"
+      },
+      {
+        "sku": "ID00D9",
+        "title": "VectorFlow - Process & Funnel Kit",
+        "category": "Presentasi & Pitch Deck",
+        "format": "PPTX",
+        "price": 8500,
+        "originalPrice": 25000,
+        "coverImage": "/covers/ID00D9/ID00D9_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .PPTX"
       }
     ],
     "ebook": [
       {
-        "sku": "ID3406",
-        "title": "Shahih Ibnu Hibban Jilid 8 (Karya: Imam Ibnu Hibban)",
-        "category": "E-Book Agama Islam",
+        "sku": "ID001A",
+        "title": "Tryout SBMPTN Saintek 2018 Paket Jilid 3",
+        "category": "E-Book Pendidikan",
         "format": "PDF",
-        "price": 32000,
-        "originalPrice": 70000,
-        "coverImage": "/covers/ID3406/ID3406_cover.webp",
-        "badge": "Best Seller",
+        "price": 15000,
+        "originalPrice": 35000,
+        "coverImage": "/covers/ID001A/ID001A_cover.webp",
+        "badge": "E-Book Digital",
         "tag": "Format .PDF"
       },
       {
-        "sku": "ID2E5C",
-        "title": "Shahih Ibnu Hibban Jilid 7 (Karya: Imam Ibnu Hibban)",
-        "category": "E-Book Agama Islam",
+        "sku": "ID0051",
+        "title": "Panduan Praktis Hukum Properti",
+        "category": "E-Book Hukum",
         "format": "PDF",
-        "price": 35000,
-        "originalPrice": 75000,
-        "coverImage": "/covers/ID2E5C/ID2E5C_cover.webp",
-        "badge": "Best Seller",
+        "price": 15000,
+        "originalPrice": 35000,
+        "coverImage": "/covers/ID0051/ID0051_cover.webp",
+        "badge": "E-Book Digital",
         "tag": "Format .PDF"
       },
       {
-        "sku": "ID9755",
-        "title": "Shahih Ibnu Hibban Jilid 1 (Karya: Imam Ibnu Hibban)",
-        "category": "E-Book Agama Islam",
+        "sku": "ID013D",
+        "title": "Menuju Penguatan Hak Korban Dalam RUU Penghapus",
+        "category": "E-Book Hukum",
         "format": "PDF",
-        "price": 35000,
-        "originalPrice": 75000,
-        "coverImage": "/covers/ID9755/ID9755_cover.webp",
-        "badge": "Best Seller",
+        "price": 15000,
+        "originalPrice": 35000,
+        "coverImage": "/covers/ID013D/ID013D_cover.webp",
+        "badge": "E-Book Digital",
         "tag": "Format .PDF"
       },
       {
-        "sku": "ID3B28",
-        "title": "Shahih Ibnu Hibban Jilid 3 (Karya: Imam Ibnu Hibban)",
-        "category": "E-Book Agama Islam",
+        "sku": "ID0594",
+        "title": "Mega Bank SBMPTN Saintek Jilid 2017",
+        "category": "E-Book Pendidikan",
         "format": "PDF",
-        "price": 32000,
-        "originalPrice": 70000,
-        "coverImage": "/covers/ID3B28/ID3B28_cover.webp",
-        "badge": "Best Seller",
+        "price": 15000,
+        "originalPrice": 35000,
+        "coverImage": "/covers/ID0594/ID0594_cover.webp",
+        "badge": "E-Book Digital",
         "tag": "Format .PDF"
       },
       {
-        "sku": "ID161B",
-        "title": "Shahih Ibnu Hibban Jilid 2 (Karya: Imam Ibnu Hibban)",
-        "category": "E-Book Agama Islam",
+        "sku": "ID0A64",
+        "title": "Keterampilan Abad Jilid 21 (Karya: Dan Steam)",
+        "category": "E-Book Pendidikan",
         "format": "PDF",
-        "price": 35000,
-        "originalPrice": 75000,
-        "coverImage": "/covers/ID161B/ID161B_cover.webp",
-        "badge": "Best Seller",
+        "price": 15000,
+        "originalPrice": 35000,
+        "coverImage": "/covers/ID0A64/ID0A64_cover.webp",
+        "badge": "E-Book Digital",
         "tag": "Format .PDF"
       },
       {
-        "sku": "ID6D23",
-        "title": "Shahih Ibnu Hibban Jilid 4 (Karya: Imam Ibnu Hibban)",
-        "category": "E-Book Agama Islam",
+        "sku": "ID0B3B",
+        "title": "Gerakan Sosial Sejarah Perkembangan Teori Antara Kekuatan Dan Kelemahannya",
+        "category": "E-Book Politik",
         "format": "PDF",
-        "price": 32000,
-        "originalPrice": 70000,
-        "coverImage": "/covers/ID6D23/ID6D23_cover.webp",
-        "badge": "Best Seller",
+        "price": 15000,
+        "originalPrice": 35000,
+        "coverImage": "/covers/ID0B3B/ID0B3B_cover.webp",
+        "badge": "E-Book Digital",
         "tag": "Format .PDF"
       },
       {
-        "sku": "ID4680",
-        "title": "Shahih Ibnu Hibban Jilid 5 (Karya: Imam Ibnu Hibban)",
-        "category": "E-Book Agama Islam",
+        "sku": "ID0BA4",
+        "title": "Big Book Fisika SMA Kelas 1 2 Jilid 3",
+        "category": "E-Book Pendidikan",
         "format": "PDF",
-        "price": 30000,
-        "originalPrice": 65000,
-        "coverImage": "/covers/ID4680/ID4680_cover.webp",
-        "badge": "Best Seller",
+        "price": 15000,
+        "originalPrice": 35000,
+        "coverImage": "/covers/ID0BA4/ID0BA4_cover.webp",
+        "badge": "E-Book Digital",
         "tag": "Format .PDF"
       },
       {
-        "sku": "IDB014",
-        "title": "Shahih Ibnu Hibban Jilid 6 (Karya: Imam Ibnu Hibban)",
-        "category": "E-Book Agama Islam",
+        "sku": "ID0BE0",
+        "title": "Algoritma Pemrograman Dalam Bahasa",
+        "category": "E-Book Pendidikan",
         "format": "PDF",
-        "price": 35000,
-        "originalPrice": 75000,
-        "coverImage": "/covers/IDB014/IDB014_cover.webp",
-        "badge": "Best Seller",
+        "price": 15000,
+        "originalPrice": 35000,
+        "coverImage": "/covers/ID0BE0/ID0BE0_cover.webp",
+        "badge": "E-Book Digital",
         "tag": "Format .PDF"
       }
     ],
     "others": [
-      {
-        "sku": "ID0D76",
-        "title": "WinterFrost 100 - Snowy Holiday Salju Natal",
-        "category": "Canva Elements & Clipart Vektor",
-        "format": "WMF/SVG",
-        "price": 3500,
-        "originalPrice": 12000,
-        "coverImage": "/covers/ID0D76/ID0D76_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .WMF/SVG"
-      },
-      {
-        "sku": "ID1301",
-        "title": "GoldRush 100 - Vintage Gold Miner Western Klasik",
-        "category": "Canva Elements & Clipart Vektor",
-        "format": "WMF/SVG",
-        "price": 5000,
-        "originalPrice": 12000,
-        "coverImage": "/covers/ID1301/ID1301_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .WMF/SVG"
-      },
-      {
-        "sku": "ID19F7",
-        "title": "FitLife 223 - Printable Fitness Koleksi Sticker",
-        "category": "Canva Elements & Clipart Vektor",
-        "format": "WMF/SVG",
-        "price": 5000,
-        "originalPrice": 12000,
-        "coverImage": "/covers/ID19F7/ID19F7_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .WMF/SVG"
-      },
-      {
-        "sku": "ID1A65",
-        "title": "EthnoVogue 137 - Traditional Costumes Baju Adat Dunia",
-        "category": "Canva Elements & Clipart Vektor",
-        "format": "WMF/SVG",
-        "price": 3000,
-        "originalPrice": 12000,
-        "coverImage": "/covers/ID1A65/ID1A65_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .WMF/SVG"
-      },
-      {
-        "sku": "ID1F68",
-        "title": "TerraVista 94 - Scenic Landscapes Panorama Alam Indah",
-        "category": "Canva Elements & Clipart Vektor",
-        "format": "WMF/SVG",
-        "price": 3000,
-        "originalPrice": 12000,
-        "coverImage": "/covers/ID1F68/ID1F68_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .WMF/SVG"
-      },
-      {
-        "sku": "ID2642",
-        "title": "CorpStrategy 99 - Corporate Business Meeting Rapat Kantor",
-        "category": "Canva Elements & Clipart Vektor",
-        "format": "WMF/SVG",
-        "price": 5000,
-        "originalPrice": 12000,
-        "coverImage": "/covers/ID2642/ID2642_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .WMF/SVG"
-      },
-      {
-        "sku": "ID27F6",
-        "title": "AgroFarm 97 - Country Farm Life Peternakan Desa",
-        "category": "Canva Elements & Clipart Vektor",
-        "format": "WMF/SVG",
-        "price": 5000,
-        "originalPrice": 12000,
-        "coverImage": "/covers/ID27F6/ID27F6_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .WMF/SVG"
-      },
-      {
-        "sku": "ID2B2A",
-        "title": "ApexPredator 99 - Wild Big Cats Macan Singa Rimba",
-        "category": "Canva Elements & Clipart Vektor",
-        "format": "WMF/SVG",
-        "price": 3500,
-        "originalPrice": 12000,
-        "coverImage": "/covers/ID2B2A/ID2B2A_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .WMF/SVG"
-      }
-    ],
-    "video": [
-      {
-        "sku": "ID1646",
-        "title": "NeonFuture - Mentahan Vidkon Visual Cyberpunk",
-        "category": "Video Konten",
-        "format": "MP4",
-        "price": 16000,
-        "originalPrice": 45000,
-        "coverImage": "/covers/ID1646/ID1646_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .MP4"
-      },
-      {
-        "sku": "ID1AF4",
-        "title": "HookMagnet - Bahan Vidkon Hook 3 Detik",
-        "category": "Video Konten",
-        "format": "MP4",
-        "price": 12000,
-        "originalPrice": 35000,
-        "coverImage": "/covers/ID1AF4/ID1AF4_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .MP4"
-      },
       {
         "sku": "ID3199",
         "title": "WallMotion - Mentahan Vidkon Visual 4K Loop",
@@ -936,57 +918,79 @@
         "tag": "Format .MP4"
       },
       {
-        "sku": "ID32DF",
-        "title": "LiveHustle - Stok Konten Live Selling Barbar",
+        "sku": "ID9919",
+        "title": "SigmaReel - Bahan Konten Quotes Shelby",
         "category": "Video Konten",
         "format": "MP4",
-        "price": 16000,
-        "originalPrice": 45000,
-        "coverImage": "/covers/ID32DF/ID32DF_cover.webp",
+        "price": 24000,
+        "originalPrice": 60000,
+        "coverImage": "/covers/ID9919/ID9919_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .MP4"
       },
       {
-        "sku": "ID380D",
-        "title": "HookStrike - Bahan Vidkon Tarikan Monster Mancing",
+        "sku": "IDE0C2",
+        "title": "FYPVault - Amunisi Konten Pemersatu Bangsa",
         "category": "Video Konten",
         "format": "MP4",
-        "price": 19000,
-        "originalPrice": 50000,
-        "coverImage": "/covers/ID380D/ID380D_cover.webp",
+        "price": 24000,
+        "originalPrice": 60000,
+        "coverImage": "/covers/IDE0C2/IDE0C2_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .MP4"
       },
       {
-        "sku": "ID3C1F",
-        "title": "ToolCraft - Vidkon Lifehack Pertukangan Kreatif",
+        "sku": "IDCB24",
+        "title": "QuranicFlow - Stok Konten Murottal Dakwah",
         "category": "Video Konten",
         "format": "MP4",
-        "price": 16000,
-        "originalPrice": 45000,
-        "coverImage": "/covers/ID3C1F/ID3C1F_cover.webp",
+        "price": 7500,
+        "originalPrice": 25000,
+        "coverImage": "/covers/IDCB24/IDCB24_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .MP4"
       },
       {
-        "sku": "ID4834",
-        "title": "DeepBlue - Mentahan Konten Samudra Misterius",
+        "sku": "IDE830",
+        "title": "RetroIndo - Mentahan Vidkon Bioskop Lawas",
         "category": "Video Konten",
         "format": "MP4",
-        "price": 12000,
-        "originalPrice": 35000,
-        "coverImage": "/covers/ID4834/ID4834_cover.webp",
+        "price": 7500,
+        "originalPrice": 25000,
+        "coverImage": "/covers/IDE830/IDE830_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .MP4"
       },
       {
-        "sku": "ID53FA",
-        "title": "LaughRiot - Bahan Konten Asupan Receh",
+        "sku": "IDC50B",
+        "title": "MeowFrenzy - Bahan Konten Anabul Tantrum",
         "category": "Video Konten",
         "format": "MP4",
-        "price": 16000,
-        "originalPrice": 45000,
-        "coverImage": "/covers/ID53FA/ID53FA_cover.webp",
+        "price": 7500,
+        "originalPrice": 25000,
+        "coverImage": "/covers/IDC50B/IDC50B_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .MP4"
+      },
+      {
+        "sku": "IDEBCB",
+        "title": "ThaiVibes - Amunisi Vidkon Komedi Thailand",
+        "category": "Video Konten",
+        "format": "MP4",
+        "price": 24000,
+        "originalPrice": 60000,
+        "coverImage": "/covers/IDEBCB/IDEBCB_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .MP4"
+      },
+      {
+        "sku": "IDFCC3",
+        "title": "DuskAura - Stok Konten Senja Indie",
+        "category": "Video Konten",
+        "format": "MP4",
+        "price": 27000,
+        "originalPrice": 70000,
+        "coverImage": "/covers/IDFCC3/IDFCC3_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .MP4"
       }

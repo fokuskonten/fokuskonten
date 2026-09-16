@@ -13,7 +13,7 @@ function formatRupiah(num) {
   }).format(num || 0)
 }
 
-export default function ProductCard({ product, compact = false }) {
+export default function ProductCard({ product, compact = false, priority = false }) {
   const [isOwned, setIsOwned] = useState(false)
   const [inCart, setInCart] = useState(false)
   const [isJustAdded, setIsJustAdded] = useState(false)
@@ -35,6 +35,22 @@ export default function ProductCard({ product, compact = false }) {
     setTimeout(() => {
       setIsJustAdded(false)
     }, 1200)
+  }
+
+  const handleProductClick = () => {
+    try {
+      if (typeof window === 'undefined' || !product?.sku) return
+      const skuUpper = product.sku.toUpperCase()
+      const key = `fk_clk_${skuUpper}`
+      if (sessionStorage.getItem(key)) return
+      sessionStorage.setItem(key, '1')
+      const targetUrl = `/api/v1/digital-products/${skuUpper}/click`
+      if (typeof navigator !== 'undefined' && navigator.sendBeacon) {
+        navigator.sendBeacon(targetUrl)
+      } else {
+        fetch(targetUrl, { method: 'POST', keepalive: true }).catch(() => {})
+      }
+    } catch (_) {}
   }
 
   useEffect(() => {
@@ -77,6 +93,7 @@ export default function ProductCard({ product, compact = false }) {
         <div>
           <Link
             href={productUrl}
+            onClick={handleProductClick}
             onContextMenu={(e) => e.preventDefault()}
             className="block relative aspect-square bg-neutral-100 overflow-hidden flex items-center justify-center border-b border-neutral-100 select-none"
           >
@@ -85,7 +102,8 @@ export default function ProductCard({ product, compact = false }) {
                 src={product.coverImage}
                 alt={product.title}
                 draggable={false}
-                loading="lazy"
+                loading={priority ? 'eager' : 'lazy'}
+                fetchPriority={priority ? 'high' : 'low'}
                 decoding="async"
                 width={200}
                 height={200}
@@ -119,7 +137,7 @@ export default function ProductCard({ product, compact = false }) {
               <span>{product.category}</span>
               <span className="font-mono text-neutral-500 bg-neutral-100 px-1 py-0.2 rounded font-semibold shrink-0">{product.sku}</span>
             </div>
-            <Link href={productUrl}>
+            <Link href={productUrl} onClick={handleProductClick}>
               <h4 className="font-bold text-neutral-950 text-xs leading-snug group-hover:text-black transition-colors line-clamp-2 min-h-[32px]">
                 {product.title}
               </h4>
@@ -191,6 +209,7 @@ export default function ProductCard({ product, compact = false }) {
         {/* Thumbnail Image Frame */}
         <Link
           href={productUrl}
+          onClick={handleProductClick}
           onContextMenu={(e) => e.preventDefault()}
           className="block relative aspect-square bg-neutral-100 overflow-hidden flex items-center justify-center border-b border-neutral-100 select-none"
         >
@@ -199,7 +218,8 @@ export default function ProductCard({ product, compact = false }) {
               src={product.coverImage}
               alt={product.title}
               draggable={false}
-              loading="lazy"
+              loading={priority ? 'eager' : 'lazy'}
+              fetchPriority={priority ? 'high' : 'low'}
               decoding="async"
               width={400}
               height={400}
@@ -235,7 +255,7 @@ export default function ProductCard({ product, compact = false }) {
             <span className="truncate max-w-[90px] sm:max-w-none">{product.category}</span>
             <span className="font-mono text-neutral-600 bg-neutral-100 px-1.5 py-0.5 rounded font-semibold text-[10px] sm:text-[11px] shrink-0">{product.sku}</span>
           </div>
-          <Link href={productUrl}>
+          <Link href={productUrl} onClick={handleProductClick}>
             <h3 className="font-bold text-neutral-950 text-xs sm:text-sm leading-snug group-hover:text-black transition-colors line-clamp-2 min-h-[32px] sm:min-h-[40px]">
               {product.title}
             </h3>
