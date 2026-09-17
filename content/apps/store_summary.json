@@ -1,6 +1,6 @@
 {
-  "totalActive": 744,
-  "totalDesign": 743,
+  "totalActive": 809,
+  "totalDesign": 808,
   "totalEbook": 0,
   "designCategories": [
     [
@@ -9,11 +9,15 @@
     ],
     [
       "Vektor",
-      126
+      132
     ],
     [
       "Presentasi & Pitch Deck",
       70
+    ],
+    [
+      "Undangan",
+      53
     ],
     [
       "Video Animasi & Iklan",
@@ -21,7 +25,11 @@
     ],
     [
       "Stiker & Striping",
-      43
+      46
+    ],
+    [
+      "Kaos",
+      37
     ],
     [
       "Video Konten",
@@ -32,44 +40,36 @@
       35
     ],
     [
-      "Undangan",
-      34
+      "Poster",
+      31
     ],
     [
       "Kemasan & Goodie Bag",
-      28
-    ],
-    [
-      "Kaos",
-      25
-    ],
-    [
-      "Poster",
-      23
+      29
     ],
     [
       "Logo & Maskot",
-      22
+      24
     ],
     [
       "Invoice & Nota",
-      17
+      18
+    ],
+    [
+      "Buku & Yasin",
+      16
     ],
     [
       "Kartu Nama",
       15
     ],
     [
-      "Daftar Menu & Kuliner",
+      "Banner & Spanduk",
       14
     ],
     [
-      "Buku & Yasin",
-      13
-    ],
-    [
-      "Banner & Spanduk",
-      11
+      "Daftar Menu & Kuliner",
+      14
     ],
     [
       "Media Sosial & Banner",
@@ -80,11 +80,15 @@
       7
     ],
     [
+      "Sertifikat",
+      7
+    ],
+    [
       "Photobooth",
       7
     ],
     [
-      "Sertifikat",
+      "Brosur & Flyer",
       6
     ],
     [
@@ -92,7 +96,7 @@
       5
     ],
     [
-      "Brosur & Flyer",
+      "Kalender",
       3
     ],
     [
@@ -108,12 +112,8 @@
       2
     ],
     [
-      "Kalender",
-      1
-    ],
-    [
       "Tekstur & Brush",
-      1
+      2
     ]
   ],
   "ebookCategories": [],
@@ -330,7 +330,7 @@
   "formats": [
     [
       "CDR",
-      389
+      454
     ],
     [
       "MP4",

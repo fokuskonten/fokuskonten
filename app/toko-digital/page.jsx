@@ -39,7 +39,7 @@ function TokoDigitalContent() {
 
   const ecourseCount = designCategories.find(([cat]) => cat === 'Ecourse & Tutorial')?.[1] || 136
   const videoCount = designCategories.find(([cat]) => cat === 'Video Konten')?.[1] || 35
-  const cdrCount = realtimeFormats.find(([fmt]) => fmt === 'CDR')?.[1] || 389
+  const cdrCount = realtimeFormats.find(([fmt]) => fmt === 'CDR')?.[1] || 454
   const pptxCount = realtimeFormats.find(([fmt]) => fmt === 'PPTX')?.[1] || 144
   const pdfCount = realtimeFormats.find(([fmt]) => fmt === 'PDF')?.[1] || 2471
   const othersCount = realtimeFormats.filter(([fmt]) => !['CDR', 'PPTX', 'PDF', 'MP4'].includes(fmt)).reduce((acc, [, c]) => acc + c, 0) || 40
