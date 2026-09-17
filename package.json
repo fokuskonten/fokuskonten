@@ -6,11 +6,6 @@
     "dev": "next dev",
     "prebuild": "node scripts/generate_sitemap.js",
     "build": "next build",
-    "build:all": "node scripts/smart_build.js all",
-    "build:toko": "node scripts/smart_build.js toko",
-    "build:ebook": "node scripts/smart_build.js ebook",
-    "build:fast": "node scripts/smart_build.js fast",
-    "build:pages": "node scripts/smart_build.js pages",
     "start": "next start",
     "lint": "next lint",
     "sitemap": "node scripts/generate_sitemap.js"
