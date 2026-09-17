@@ -5,15 +5,15 @@ import EbookBundleBanner from '@/components/ebook/EbookBundleBanner'
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Direktori & Perpustakaan Digital 2.470+ E-Book PDF Resmi | FokusKonten',
+  title: 'Direktori & Perpustakaan Digital 3.512+ E-Book PDF Resmi | FokusKonten',
   description: 'Katalog literatur digital lengkap, naskah kajian keilmuan, novel fiksi, agama, pengembangan diri, dan referensi akademik berformat PDF resmi terverifikasi.',
   keywords: [
     'direktori ebook', 'download ebook pdf', 'buku digital', 'perpustakaan digital',
     'katalog ebook', 'baca ebook online', 'fokuskonten ebook', 'resensi buku'
   ],
   openGraph: {
-    title: 'Direktori & Perpustakaan Digital 2.470+ E-Book PDF Resmi | FokusKonten',
-    description: 'Jelajahi 2.470+ judul naskah digital PDF terverifikasi dari 18 rumpun keilmuan dengan cuplikan baca dan unduhan langsung.',
+    title: 'Direktori & Perpustakaan Digital 3.512+ E-Book PDF Resmi | FokusKonten',
+    description: 'Jelajahi 3.512+ judul naskah digital PDF terverifikasi dari 18 rumpun keilmuan dengan cuplikan baca dan unduhan langsung.',
     url: 'https://fokuskonten.my.id/ebook/',
     siteName: 'FokusKonten',
     images: [
@@ -28,8 +28,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Direktori & Perpustakaan Digital 2.470+ E-Book PDF Resmi | FokusKonten',
-    description: 'Jelajahi 2.470+ judul naskah digital PDF terverifikasi dari 18 rumpun keilmuan.',
+    title: 'Direktori & Perpustakaan Digital 3.512+ E-Book PDF Resmi | FokusKonten',
+    description: 'Jelajahi 3.512+ judul naskah digital PDF terverifikasi dari 18 rumpun keilmuan.',
     images: ['https://fokuskonten.my.id/og-image.jpg']
   }
 }
@@ -42,7 +42,7 @@ export default function EbookDirectoryPage() {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
     name: 'Direktori & Perpustakaan Digital E-Book Resmi FokusKonten',
-    description: 'Koleksi komprehensif 2.470+ judul e-book PDF terverifikasi lintas 18 rumpun silo keilmuan.',
+    description: 'Koleksi komprehensif 3.512+ judul e-book PDF terverifikasi lintas 18 rumpun silo keilmuan.',
     url: 'https://fokuskonten.my.id/ebook/',
     numberOfItems: totalEbooks,
     publisher: {

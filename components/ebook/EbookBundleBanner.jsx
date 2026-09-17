@@ -23,11 +23,11 @@ export default function EbookBundleBanner({ className = '' }) {
           </div>
 
           <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-white leading-snug">
-            Koleksi Seluruh 2.400+ E-Book dalam 1 Folder Master
+            Koleksi Seluruh 3.512+ E-Book dalam 1 Folder Master
           </h3>
 
           <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed font-sans">
-            Malas mengunduh satu per satu? Dapatkan akses instan ke 1 folder cloud storage lengkap berisi 2.470+ judul e-book terorganisir per 18 kategori keilmuan. Sekali bayar, akses selamanya.
+            Malas mengunduh satu per satu? Dapatkan akses instan ke 1 folder cloud storage lengkap berisi 3.512+ judul e-book terorganisir per 18 kategori keilmuan. Sekali bayar, akses selamanya.
           </p>
         </div>
 

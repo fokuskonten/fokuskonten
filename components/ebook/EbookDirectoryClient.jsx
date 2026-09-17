@@ -68,7 +68,7 @@ export default function EbookDirectoryClient({ categories = [], initialRoutes = 
             type="search"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Cari dari 2.470+ judul e-book, nama penulis, atau kode SKU..."
+            placeholder="Cari dari 3.512+ judul e-book, nama penulis, atau kode SKU..."
             maxLength={60}
             className="w-full pl-11 pr-4 py-3.5 rounded-xl border border-neutral-300 focus:outline-hidden focus:ring-2 focus:ring-neutral-950 text-xs sm:text-sm font-sans placeholder-neutral-400"
           />
