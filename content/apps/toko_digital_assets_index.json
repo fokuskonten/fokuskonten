@@ -2,12 +2,12 @@
   "metadata": {
     "title": "FokusKonten Asset CDN — Toko Digital Product Covers & Slides Index",
     "version": "1.1.0",
-    "total_skus": 742,
-    "total_visual_files": 2849,
-    "total_covers": 742,
-    "total_slides": 2107,
-    "total_all_files": 4077,
-    "generated_at": "2026-09-16T22:42:36.203Z",
+    "total_skus": 807,
+    "total_visual_files": 3418,
+    "total_covers": 807,
+    "total_slides": 2611,
+    "total_all_files": 4646,
+    "generated_at": "2026-09-17T21:39:31.047Z",
     "cdn_base_urls": {
       "tier1_jsdelivr": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital",
       "tier2_raw_github": "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital",
@@ -642,6 +642,1664 @@
         "ID0D76_cover.png",
         "ID0D76_data.json"
       ]
+    },
+    "ID0E01": {
+      "sku": "ID0E01",
+      "cover": "ID0E01_cover.webp",
+      "slides": [
+        "ID0E01_slide_03.webp",
+        "ID0E01_slide_04.webp",
+        "ID0E01_slide_05.webp",
+        "ID0E01_slide_06.webp",
+        "ID0E01_slide_07.webp",
+        "ID0E01_slide_08.webp",
+        "ID0E01_slide_09.webp",
+        "ID0E01_slide_10.webp",
+        "ID0E01_slide_11.webp"
+      ],
+      "files": [
+        "ID0E01_cover.webp",
+        "ID0E01_slide_03.webp",
+        "ID0E01_slide_04.webp",
+        "ID0E01_slide_05.webp",
+        "ID0E01_slide_06.webp",
+        "ID0E01_slide_07.webp",
+        "ID0E01_slide_08.webp",
+        "ID0E01_slide_09.webp",
+        "ID0E01_slide_10.webp",
+        "ID0E01_slide_11.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E02": {
+      "sku": "ID0E02",
+      "cover": "ID0E02_cover.webp",
+      "slides": [
+        "ID0E02_slide_02.webp",
+        "ID0E02_slide_03.webp",
+        "ID0E02_slide_04.webp",
+        "ID0E02_slide_05.webp"
+      ],
+      "files": [
+        "ID0E02_cover.webp",
+        "ID0E02_slide_02.webp",
+        "ID0E02_slide_03.webp",
+        "ID0E02_slide_04.webp",
+        "ID0E02_slide_05.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E03": {
+      "sku": "ID0E03",
+      "cover": "ID0E03_cover.webp",
+      "slides": [
+        "ID0E03_slide_01.webp",
+        "ID0E03_slide_02.webp",
+        "ID0E03_slide_03.webp",
+        "ID0E03_slide_04.webp",
+        "ID0E03_slide_05.webp",
+        "ID0E03_slide_06.webp",
+        "ID0E03_slide_07.webp",
+        "ID0E03_slide_08.webp"
+      ],
+      "files": [
+        "ID0E03_cover.webp",
+        "ID0E03_slide_01.webp",
+        "ID0E03_slide_02.webp",
+        "ID0E03_slide_03.webp",
+        "ID0E03_slide_04.webp",
+        "ID0E03_slide_05.webp",
+        "ID0E03_slide_06.webp",
+        "ID0E03_slide_07.webp",
+        "ID0E03_slide_08.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E04": {
+      "sku": "ID0E04",
+      "cover": "ID0E04_cover.webp",
+      "slides": [
+        "ID0E04_slide_01.webp",
+        "ID0E04_slide_02.webp",
+        "ID0E04_slide_03.webp",
+        "ID0E04_slide_04.webp",
+        "ID0E04_slide_05.webp",
+        "ID0E04_slide_06.webp",
+        "ID0E04_slide_07.webp",
+        "ID0E04_slide_08.webp",
+        "ID0E04_slide_09.webp",
+        "ID0E04_slide_11.webp",
+        "ID0E04_slide_12.webp",
+        "ID0E04_slide_13.webp",
+        "ID0E04_slide_14.webp"
+      ],
+      "files": [
+        "ID0E04_cover.webp",
+        "ID0E04_slide_01.webp",
+        "ID0E04_slide_02.webp",
+        "ID0E04_slide_03.webp",
+        "ID0E04_slide_04.webp",
+        "ID0E04_slide_05.webp",
+        "ID0E04_slide_06.webp",
+        "ID0E04_slide_07.webp",
+        "ID0E04_slide_08.webp",
+        "ID0E04_slide_09.webp",
+        "ID0E04_slide_11.webp",
+        "ID0E04_slide_12.webp",
+        "ID0E04_slide_13.webp",
+        "ID0E04_slide_14.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E05": {
+      "sku": "ID0E05",
+      "cover": "ID0E05_cover.webp",
+      "slides": [
+        "ID0E05_slide_01.webp",
+        "ID0E05_slide_02.webp",
+        "ID0E05_slide_03.webp",
+        "ID0E05_slide_04.webp",
+        "ID0E05_slide_05.webp",
+        "ID0E05_slide_06.webp",
+        "ID0E05_slide_07.webp",
+        "ID0E05_slide_08.webp",
+        "ID0E05_slide_13.webp",
+        "ID0E05_slide_14.webp"
+      ],
+      "files": [
+        "ID0E05_cover.webp",
+        "ID0E05_slide_01.webp",
+        "ID0E05_slide_02.webp",
+        "ID0E05_slide_03.webp",
+        "ID0E05_slide_04.webp",
+        "ID0E05_slide_05.webp",
+        "ID0E05_slide_06.webp",
+        "ID0E05_slide_07.webp",
+        "ID0E05_slide_08.webp",
+        "ID0E05_slide_13.webp",
+        "ID0E05_slide_14.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E06": {
+      "sku": "ID0E06",
+      "cover": "ID0E06_cover.webp",
+      "slides": [
+        "ID0E06_slide_04.webp",
+        "ID0E06_slide_05.webp",
+        "ID0E06_slide_06.webp"
+      ],
+      "files": [
+        "ID0E06_cover.webp",
+        "ID0E06_slide_04.webp",
+        "ID0E06_slide_05.webp",
+        "ID0E06_slide_06.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E07": {
+      "sku": "ID0E07",
+      "cover": "ID0E07_cover.webp",
+      "slides": [
+        "ID0E07_slide_01.webp",
+        "ID0E07_slide_02.webp",
+        "ID0E07_slide_05.webp",
+        "ID0E07_slide_06.webp",
+        "ID0E07_slide_07.webp",
+        "ID0E07_slide_08.webp"
+      ],
+      "files": [
+        "ID0E07_cover.webp",
+        "ID0E07_slide_01.webp",
+        "ID0E07_slide_02.webp",
+        "ID0E07_slide_05.webp",
+        "ID0E07_slide_06.webp",
+        "ID0E07_slide_07.webp",
+        "ID0E07_slide_08.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E08": {
+      "sku": "ID0E08",
+      "cover": "ID0E08_cover.webp",
+      "slides": [
+        "ID0E08_slide_01.webp",
+        "ID0E08_slide_02.webp",
+        "ID0E08_slide_03.webp"
+      ],
+      "files": [
+        "ID0E08_cover.webp",
+        "ID0E08_slide_01.webp",
+        "ID0E08_slide_02.webp",
+        "ID0E08_slide_03.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E09": {
+      "sku": "ID0E09",
+      "cover": "ID0E09_cover.webp",
+      "slides": [
+        "ID0E09_slide_01.webp",
+        "ID0E09_slide_02.webp",
+        "ID0E09_slide_03.webp",
+        "ID0E09_slide_06.webp",
+        "ID0E09_slide_07.webp",
+        "ID0E09_slide_08.webp",
+        "ID0E09_slide_09.webp"
+      ],
+      "files": [
+        "ID0E09_cover.webp",
+        "ID0E09_slide_01.webp",
+        "ID0E09_slide_02.webp",
+        "ID0E09_slide_03.webp",
+        "ID0E09_slide_06.webp",
+        "ID0E09_slide_07.webp",
+        "ID0E09_slide_08.webp",
+        "ID0E09_slide_09.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E0A": {
+      "sku": "ID0E0A",
+      "cover": "ID0E0A_cover.webp",
+      "slides": [
+        "ID0E0A_slide_01.webp",
+        "ID0E0A_slide_02.webp",
+        "ID0E0A_slide_04.webp",
+        "ID0E0A_slide_05.webp",
+        "ID0E0A_slide_06.webp",
+        "ID0E0A_slide_07.webp",
+        "ID0E0A_slide_08.webp",
+        "ID0E0A_slide_09.webp",
+        "ID0E0A_slide_10.webp"
+      ],
+      "files": [
+        "ID0E0A_cover.webp",
+        "ID0E0A_slide_01.webp",
+        "ID0E0A_slide_02.webp",
+        "ID0E0A_slide_04.webp",
+        "ID0E0A_slide_05.webp",
+        "ID0E0A_slide_06.webp",
+        "ID0E0A_slide_07.webp",
+        "ID0E0A_slide_08.webp",
+        "ID0E0A_slide_09.webp",
+        "ID0E0A_slide_10.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E0B": {
+      "sku": "ID0E0B",
+      "cover": "ID0E0B_cover.webp",
+      "slides": [
+        "ID0E0B_slide_01.webp",
+        "ID0E0B_slide_02.webp",
+        "ID0E0B_slide_03.webp",
+        "ID0E0B_slide_04.webp",
+        "ID0E0B_slide_05.webp",
+        "ID0E0B_slide_06.webp"
+      ],
+      "files": [
+        "ID0E0B_cover.webp",
+        "ID0E0B_slide_01.webp",
+        "ID0E0B_slide_02.webp",
+        "ID0E0B_slide_03.webp",
+        "ID0E0B_slide_04.webp",
+        "ID0E0B_slide_05.webp",
+        "ID0E0B_slide_06.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E0C": {
+      "sku": "ID0E0C",
+      "cover": "ID0E0C_cover.webp",
+      "slides": [
+        "ID0E0C_slide_01.webp",
+        "ID0E0C_slide_02.webp",
+        "ID0E0C_slide_03.webp",
+        "ID0E0C_slide_04.webp",
+        "ID0E0C_slide_07.webp",
+        "ID0E0C_slide_08.webp"
+      ],
+      "files": [
+        "ID0E0C_cover.webp",
+        "ID0E0C_slide_01.webp",
+        "ID0E0C_slide_02.webp",
+        "ID0E0C_slide_03.webp",
+        "ID0E0C_slide_04.webp",
+        "ID0E0C_slide_07.webp",
+        "ID0E0C_slide_08.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E0D": {
+      "sku": "ID0E0D",
+      "cover": "ID0E0D_cover.webp",
+      "slides": [
+        "ID0E0D_slide_01.webp",
+        "ID0E0D_slide_02.webp",
+        "ID0E0D_slide_03.webp",
+        "ID0E0D_slide_04.webp",
+        "ID0E0D_slide_06.webp",
+        "ID0E0D_slide_07.webp",
+        "ID0E0D_slide_08.webp",
+        "ID0E0D_slide_10.webp",
+        "ID0E0D_slide_11.webp",
+        "ID0E0D_slide_12.webp",
+        "ID0E0D_slide_13.webp",
+        "ID0E0D_slide_14.webp",
+        "ID0E0D_slide_15.webp",
+        "ID0E0D_slide_16.webp",
+        "ID0E0D_slide_18.webp"
+      ],
+      "files": [
+        "ID0E0D_cover.webp",
+        "ID0E0D_slide_01.webp",
+        "ID0E0D_slide_02.webp",
+        "ID0E0D_slide_03.webp",
+        "ID0E0D_slide_04.webp",
+        "ID0E0D_slide_06.webp",
+        "ID0E0D_slide_07.webp",
+        "ID0E0D_slide_08.webp",
+        "ID0E0D_slide_10.webp",
+        "ID0E0D_slide_11.webp",
+        "ID0E0D_slide_12.webp",
+        "ID0E0D_slide_13.webp",
+        "ID0E0D_slide_14.webp",
+        "ID0E0D_slide_15.webp",
+        "ID0E0D_slide_16.webp",
+        "ID0E0D_slide_18.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E0E": {
+      "sku": "ID0E0E",
+      "cover": "ID0E0E_cover.webp",
+      "slides": [
+        "ID0E0E_slide_01.webp",
+        "ID0E0E_slide_02.webp",
+        "ID0E0E_slide_03.webp",
+        "ID0E0E_slide_04.webp",
+        "ID0E0E_slide_05.webp",
+        "ID0E0E_slide_06.webp",
+        "ID0E0E_slide_07.webp",
+        "ID0E0E_slide_08.webp"
+      ],
+      "files": [
+        "ID0E0E_cover.webp",
+        "ID0E0E_slide_01.webp",
+        "ID0E0E_slide_02.webp",
+        "ID0E0E_slide_03.webp",
+        "ID0E0E_slide_04.webp",
+        "ID0E0E_slide_05.webp",
+        "ID0E0E_slide_06.webp",
+        "ID0E0E_slide_07.webp",
+        "ID0E0E_slide_08.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E0F": {
+      "sku": "ID0E0F",
+      "cover": "ID0E0F_cover.webp",
+      "slides": [
+        "ID0E0F_slide_03.webp",
+        "ID0E0F_slide_04.webp",
+        "ID0E0F_slide_05.webp",
+        "ID0E0F_slide_06.webp"
+      ],
+      "files": [
+        "ID0E0F_cover.webp",
+        "ID0E0F_slide_03.webp",
+        "ID0E0F_slide_04.webp",
+        "ID0E0F_slide_05.webp",
+        "ID0E0F_slide_06.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E10": {
+      "sku": "ID0E10",
+      "cover": "ID0E10_cover.webp",
+      "slides": [
+        "ID0E10_slide_02.webp",
+        "ID0E10_slide_03.webp",
+        "ID0E10_slide_04.webp",
+        "ID0E10_slide_08.webp"
+      ],
+      "files": [
+        "ID0E10_cover.webp",
+        "ID0E10_slide_02.webp",
+        "ID0E10_slide_03.webp",
+        "ID0E10_slide_04.webp",
+        "ID0E10_slide_08.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E11": {
+      "sku": "ID0E11",
+      "cover": "ID0E11_cover.webp",
+      "slides": [
+        "ID0E11_slide_03.webp",
+        "ID0E11_slide_04.webp",
+        "ID0E11_slide_05.webp"
+      ],
+      "files": [
+        "ID0E11_cover.webp",
+        "ID0E11_slide_03.webp",
+        "ID0E11_slide_04.webp",
+        "ID0E11_slide_05.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E12": {
+      "sku": "ID0E12",
+      "cover": "ID0E12_cover.webp",
+      "slides": [
+        "ID0E12_slide_03.webp",
+        "ID0E12_slide_05.webp",
+        "ID0E12_slide_06.webp",
+        "ID0E12_slide_07.webp",
+        "ID0E12_slide_08.webp",
+        "ID0E12_slide_10.webp"
+      ],
+      "files": [
+        "ID0E12_cover.webp",
+        "ID0E12_slide_03.webp",
+        "ID0E12_slide_05.webp",
+        "ID0E12_slide_06.webp",
+        "ID0E12_slide_07.webp",
+        "ID0E12_slide_08.webp",
+        "ID0E12_slide_10.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E13": {
+      "sku": "ID0E13",
+      "cover": "ID0E13_cover.webp",
+      "slides": [
+        "ID0E13_slide_02.webp",
+        "ID0E13_slide_03.webp",
+        "ID0E13_slide_05.webp",
+        "ID0E13_slide_06.webp",
+        "ID0E13_slide_07.webp",
+        "ID0E13_slide_09.webp"
+      ],
+      "files": [
+        "ID0E13_cover.webp",
+        "ID0E13_slide_02.webp",
+        "ID0E13_slide_03.webp",
+        "ID0E13_slide_05.webp",
+        "ID0E13_slide_06.webp",
+        "ID0E13_slide_07.webp",
+        "ID0E13_slide_09.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E14": {
+      "sku": "ID0E14",
+      "cover": "ID0E14_cover.webp",
+      "slides": [
+        "ID0E14_slide_01.webp",
+        "ID0E14_slide_02.webp",
+        "ID0E14_slide_03.webp",
+        "ID0E14_slide_04.webp",
+        "ID0E14_slide_05.webp",
+        "ID0E14_slide_08.webp",
+        "ID0E14_slide_09.webp"
+      ],
+      "files": [
+        "ID0E14_cover.webp",
+        "ID0E14_slide_01.webp",
+        "ID0E14_slide_02.webp",
+        "ID0E14_slide_03.webp",
+        "ID0E14_slide_04.webp",
+        "ID0E14_slide_05.webp",
+        "ID0E14_slide_08.webp",
+        "ID0E14_slide_09.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E15": {
+      "sku": "ID0E15",
+      "cover": "ID0E15_cover.webp",
+      "slides": [
+        "ID0E15_slide_05.webp",
+        "ID0E15_slide_06.webp",
+        "ID0E15_slide_07.webp",
+        "ID0E15_slide_09.webp"
+      ],
+      "files": [
+        "ID0E15_cover.webp",
+        "ID0E15_slide_05.webp",
+        "ID0E15_slide_06.webp",
+        "ID0E15_slide_07.webp",
+        "ID0E15_slide_09.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E16": {
+      "sku": "ID0E16",
+      "cover": "ID0E16_cover.webp",
+      "slides": [
+        "ID0E16_slide_01.webp",
+        "ID0E16_slide_02.webp",
+        "ID0E16_slide_03.webp",
+        "ID0E16_slide_04.webp",
+        "ID0E16_slide_05.webp",
+        "ID0E16_slide_06.webp",
+        "ID0E16_slide_09.webp",
+        "ID0E16_slide_10.webp",
+        "ID0E16_slide_11.webp",
+        "ID0E16_slide_12.webp",
+        "ID0E16_slide_13.webp"
+      ],
+      "files": [
+        "ID0E16_cover.webp",
+        "ID0E16_slide_01.webp",
+        "ID0E16_slide_02.webp",
+        "ID0E16_slide_03.webp",
+        "ID0E16_slide_04.webp",
+        "ID0E16_slide_05.webp",
+        "ID0E16_slide_06.webp",
+        "ID0E16_slide_09.webp",
+        "ID0E16_slide_10.webp",
+        "ID0E16_slide_11.webp",
+        "ID0E16_slide_12.webp",
+        "ID0E16_slide_13.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E17": {
+      "sku": "ID0E17",
+      "cover": "ID0E17_cover.webp",
+      "slides": [
+        "ID0E17_slide_01.webp",
+        "ID0E17_slide_02.webp",
+        "ID0E17_slide_06.webp",
+        "ID0E17_slide_07.webp",
+        "ID0E17_slide_08.webp",
+        "ID0E17_slide_09.webp",
+        "ID0E17_slide_10.webp",
+        "ID0E17_slide_11.webp",
+        "ID0E17_slide_12.webp",
+        "ID0E17_slide_13.webp"
+      ],
+      "files": [
+        "ID0E17_cover.webp",
+        "ID0E17_slide_01.webp",
+        "ID0E17_slide_02.webp",
+        "ID0E17_slide_06.webp",
+        "ID0E17_slide_07.webp",
+        "ID0E17_slide_08.webp",
+        "ID0E17_slide_09.webp",
+        "ID0E17_slide_10.webp",
+        "ID0E17_slide_11.webp",
+        "ID0E17_slide_12.webp",
+        "ID0E17_slide_13.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E18": {
+      "sku": "ID0E18",
+      "cover": "ID0E18_cover.webp",
+      "slides": [
+        "ID0E18_slide_01.webp",
+        "ID0E18_slide_02.webp",
+        "ID0E18_slide_03.webp",
+        "ID0E18_slide_04.webp",
+        "ID0E18_slide_07.webp",
+        "ID0E18_slide_08.webp",
+        "ID0E18_slide_09.webp",
+        "ID0E18_slide_10.webp",
+        "ID0E18_slide_11.webp",
+        "ID0E18_slide_12.webp",
+        "ID0E18_slide_13.webp",
+        "ID0E18_slide_14.webp",
+        "ID0E18_slide_15.webp",
+        "ID0E18_slide_16.webp"
+      ],
+      "files": [
+        "ID0E18_cover.webp",
+        "ID0E18_slide_01.webp",
+        "ID0E18_slide_02.webp",
+        "ID0E18_slide_03.webp",
+        "ID0E18_slide_04.webp",
+        "ID0E18_slide_07.webp",
+        "ID0E18_slide_08.webp",
+        "ID0E18_slide_09.webp",
+        "ID0E18_slide_10.webp",
+        "ID0E18_slide_11.webp",
+        "ID0E18_slide_12.webp",
+        "ID0E18_slide_13.webp",
+        "ID0E18_slide_14.webp",
+        "ID0E18_slide_15.webp",
+        "ID0E18_slide_16.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E19": {
+      "sku": "ID0E19",
+      "cover": "ID0E19_cover.webp",
+      "slides": [
+        "ID0E19_slide_01.webp",
+        "ID0E19_slide_02.webp",
+        "ID0E19_slide_03.webp",
+        "ID0E19_slide_04.webp",
+        "ID0E19_slide_06.webp",
+        "ID0E19_slide_07.webp",
+        "ID0E19_slide_09.webp",
+        "ID0E19_slide_10.webp",
+        "ID0E19_slide_11.webp",
+        "ID0E19_slide_12.webp",
+        "ID0E19_slide_13.webp",
+        "ID0E19_slide_14.webp",
+        "ID0E19_slide_15.webp",
+        "ID0E19_slide_16.webp",
+        "ID0E19_slide_17.webp",
+        "ID0E19_slide_18.webp",
+        "ID0E19_slide_19.webp",
+        "ID0E19_slide_20.webp",
+        "ID0E19_slide_21.webp",
+        "ID0E19_slide_23.webp",
+        "ID0E19_slide_24.webp",
+        "ID0E19_slide_25.webp",
+        "ID0E19_slide_26.webp",
+        "ID0E19_slide_27.webp"
+      ],
+      "files": [
+        "ID0E19_cover.webp",
+        "ID0E19_slide_01.webp",
+        "ID0E19_slide_02.webp",
+        "ID0E19_slide_03.webp",
+        "ID0E19_slide_04.webp",
+        "ID0E19_slide_06.webp",
+        "ID0E19_slide_07.webp",
+        "ID0E19_slide_09.webp",
+        "ID0E19_slide_10.webp",
+        "ID0E19_slide_11.webp",
+        "ID0E19_slide_12.webp",
+        "ID0E19_slide_13.webp",
+        "ID0E19_slide_14.webp",
+        "ID0E19_slide_15.webp",
+        "ID0E19_slide_16.webp",
+        "ID0E19_slide_17.webp",
+        "ID0E19_slide_18.webp",
+        "ID0E19_slide_19.webp",
+        "ID0E19_slide_20.webp",
+        "ID0E19_slide_21.webp",
+        "ID0E19_slide_23.webp",
+        "ID0E19_slide_24.webp",
+        "ID0E19_slide_25.webp",
+        "ID0E19_slide_26.webp",
+        "ID0E19_slide_27.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E1A": {
+      "sku": "ID0E1A",
+      "cover": "ID0E1A_cover.webp",
+      "slides": [
+        "ID0E1A_slide_01.webp",
+        "ID0E1A_slide_02.webp",
+        "ID0E1A_slide_06.webp",
+        "ID0E1A_slide_07.webp",
+        "ID0E1A_slide_08.webp",
+        "ID0E1A_slide_09.webp",
+        "ID0E1A_slide_10.webp",
+        "ID0E1A_slide_11.webp",
+        "ID0E1A_slide_12.webp",
+        "ID0E1A_slide_13.webp",
+        "ID0E1A_slide_14.webp",
+        "ID0E1A_slide_15.webp",
+        "ID0E1A_slide_19.webp"
+      ],
+      "files": [
+        "ID0E1A_cover.webp",
+        "ID0E1A_slide_01.webp",
+        "ID0E1A_slide_02.webp",
+        "ID0E1A_slide_06.webp",
+        "ID0E1A_slide_07.webp",
+        "ID0E1A_slide_08.webp",
+        "ID0E1A_slide_09.webp",
+        "ID0E1A_slide_10.webp",
+        "ID0E1A_slide_11.webp",
+        "ID0E1A_slide_12.webp",
+        "ID0E1A_slide_13.webp",
+        "ID0E1A_slide_14.webp",
+        "ID0E1A_slide_15.webp",
+        "ID0E1A_slide_19.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E1B": {
+      "sku": "ID0E1B",
+      "cover": "ID0E1B_cover.webp",
+      "slides": [
+        "ID0E1B_slide_02.webp",
+        "ID0E1B_slide_03.webp",
+        "ID0E1B_slide_04.webp",
+        "ID0E1B_slide_07.webp"
+      ],
+      "files": [
+        "ID0E1B_cover.webp",
+        "ID0E1B_slide_02.webp",
+        "ID0E1B_slide_03.webp",
+        "ID0E1B_slide_04.webp",
+        "ID0E1B_slide_07.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E1C": {
+      "sku": "ID0E1C",
+      "cover": "ID0E1C_cover.webp",
+      "slides": [
+        "ID0E1C_slide_01.webp",
+        "ID0E1C_slide_02.webp",
+        "ID0E1C_slide_04.webp",
+        "ID0E1C_slide_05.webp",
+        "ID0E1C_slide_06.webp",
+        "ID0E1C_slide_08.webp",
+        "ID0E1C_slide_09.webp",
+        "ID0E1C_slide_10.webp"
+      ],
+      "files": [
+        "ID0E1C_cover.webp",
+        "ID0E1C_slide_01.webp",
+        "ID0E1C_slide_02.webp",
+        "ID0E1C_slide_04.webp",
+        "ID0E1C_slide_05.webp",
+        "ID0E1C_slide_06.webp",
+        "ID0E1C_slide_08.webp",
+        "ID0E1C_slide_09.webp",
+        "ID0E1C_slide_10.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E1E": {
+      "sku": "ID0E1E",
+      "cover": "ID0E1E_cover.webp",
+      "slides": [
+        "ID0E1E_slide_04.webp",
+        "ID0E1E_slide_05.webp",
+        "ID0E1E_slide_06.webp",
+        "ID0E1E_slide_07.webp",
+        "ID0E1E_slide_08.webp",
+        "ID0E1E_slide_09.webp",
+        "ID0E1E_slide_10.webp",
+        "ID0E1E_slide_11.webp",
+        "ID0E1E_slide_12.webp",
+        "ID0E1E_slide_13.webp"
+      ],
+      "files": [
+        "ID0E1E_cover.webp",
+        "ID0E1E_slide_04.webp",
+        "ID0E1E_slide_05.webp",
+        "ID0E1E_slide_06.webp",
+        "ID0E1E_slide_07.webp",
+        "ID0E1E_slide_08.webp",
+        "ID0E1E_slide_09.webp",
+        "ID0E1E_slide_10.webp",
+        "ID0E1E_slide_11.webp",
+        "ID0E1E_slide_12.webp",
+        "ID0E1E_slide_13.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E1F": {
+      "sku": "ID0E1F",
+      "cover": "ID0E1F_cover.webp",
+      "slides": [
+        "ID0E1F_slide_01.webp",
+        "ID0E1F_slide_02.webp",
+        "ID0E1F_slide_03.webp",
+        "ID0E1F_slide_04.webp",
+        "ID0E1F_slide_05.webp",
+        "ID0E1F_slide_06.webp",
+        "ID0E1F_slide_07.webp",
+        "ID0E1F_slide_08.webp",
+        "ID0E1F_slide_09.webp",
+        "ID0E1F_slide_10.webp",
+        "ID0E1F_slide_11.webp",
+        "ID0E1F_slide_12.webp"
+      ],
+      "files": [
+        "ID0E1F_cover.webp",
+        "ID0E1F_slide_01.webp",
+        "ID0E1F_slide_02.webp",
+        "ID0E1F_slide_03.webp",
+        "ID0E1F_slide_04.webp",
+        "ID0E1F_slide_05.webp",
+        "ID0E1F_slide_06.webp",
+        "ID0E1F_slide_07.webp",
+        "ID0E1F_slide_08.webp",
+        "ID0E1F_slide_09.webp",
+        "ID0E1F_slide_10.webp",
+        "ID0E1F_slide_11.webp",
+        "ID0E1F_slide_12.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E20": {
+      "sku": "ID0E20",
+      "cover": "ID0E20_cover.webp",
+      "slides": [
+        "ID0E20_slide_03.webp",
+        "ID0E20_slide_04.webp",
+        "ID0E20_slide_05.webp",
+        "ID0E20_slide_06.webp",
+        "ID0E20_slide_07.webp",
+        "ID0E20_slide_08.webp",
+        "ID0E20_slide_09.webp",
+        "ID0E20_slide_10.webp",
+        "ID0E20_slide_11.webp"
+      ],
+      "files": [
+        "ID0E20_cover.webp",
+        "ID0E20_slide_03.webp",
+        "ID0E20_slide_04.webp",
+        "ID0E20_slide_05.webp",
+        "ID0E20_slide_06.webp",
+        "ID0E20_slide_07.webp",
+        "ID0E20_slide_08.webp",
+        "ID0E20_slide_09.webp",
+        "ID0E20_slide_10.webp",
+        "ID0E20_slide_11.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E22": {
+      "sku": "ID0E22",
+      "cover": "ID0E22_cover.webp",
+      "slides": [
+        "ID0E22_slide_03.webp",
+        "ID0E22_slide_04.webp",
+        "ID0E22_slide_05.webp",
+        "ID0E22_slide_06.webp",
+        "ID0E22_slide_07.webp",
+        "ID0E22_slide_08.webp",
+        "ID0E22_slide_09.webp"
+      ],
+      "files": [
+        "ID0E22_cover.webp",
+        "ID0E22_slide_03.webp",
+        "ID0E22_slide_04.webp",
+        "ID0E22_slide_05.webp",
+        "ID0E22_slide_06.webp",
+        "ID0E22_slide_07.webp",
+        "ID0E22_slide_08.webp",
+        "ID0E22_slide_09.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E23": {
+      "sku": "ID0E23",
+      "cover": "ID0E23_cover.webp",
+      "slides": [
+        "ID0E23_slide_01.webp",
+        "ID0E23_slide_02.webp",
+        "ID0E23_slide_03.webp",
+        "ID0E23_slide_04.webp",
+        "ID0E23_slide_05.webp",
+        "ID0E23_slide_06.webp",
+        "ID0E23_slide_07.webp"
+      ],
+      "files": [
+        "ID0E23_cover.webp",
+        "ID0E23_slide_01.webp",
+        "ID0E23_slide_02.webp",
+        "ID0E23_slide_03.webp",
+        "ID0E23_slide_04.webp",
+        "ID0E23_slide_05.webp",
+        "ID0E23_slide_06.webp",
+        "ID0E23_slide_07.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E24": {
+      "sku": "ID0E24",
+      "cover": "ID0E24_cover.webp",
+      "slides": [
+        "ID0E24_slide_01.webp",
+        "ID0E24_slide_02.webp"
+      ],
+      "files": [
+        "ID0E24_cover.webp",
+        "ID0E24_slide_01.webp",
+        "ID0E24_slide_02.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E25": {
+      "sku": "ID0E25",
+      "cover": "ID0E25_cover.webp",
+      "slides": [
+        "ID0E25_slide_03.webp",
+        "ID0E25_slide_04.webp",
+        "ID0E25_slide_05.webp",
+        "ID0E25_slide_07.webp",
+        "ID0E25_slide_08.webp",
+        "ID0E25_slide_09.webp",
+        "ID0E25_slide_10.webp",
+        "ID0E25_slide_11.webp",
+        "ID0E25_slide_12.webp",
+        "ID0E25_slide_13.webp"
+      ],
+      "files": [
+        "ID0E25_cover.webp",
+        "ID0E25_slide_03.webp",
+        "ID0E25_slide_04.webp",
+        "ID0E25_slide_05.webp",
+        "ID0E25_slide_07.webp",
+        "ID0E25_slide_08.webp",
+        "ID0E25_slide_09.webp",
+        "ID0E25_slide_10.webp",
+        "ID0E25_slide_11.webp",
+        "ID0E25_slide_12.webp",
+        "ID0E25_slide_13.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E26": {
+      "sku": "ID0E26",
+      "cover": "ID0E26_cover.webp",
+      "slides": [
+        "ID0E26_slide_01.webp",
+        "ID0E26_slide_02.webp",
+        "ID0E26_slide_03.webp"
+      ],
+      "files": [
+        "ID0E26_cover.webp",
+        "ID0E26_slide_01.webp",
+        "ID0E26_slide_02.webp",
+        "ID0E26_slide_03.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E27": {
+      "sku": "ID0E27",
+      "cover": "ID0E27_cover.webp",
+      "slides": [
+        "ID0E27_slide_01.webp",
+        "ID0E27_slide_02.webp",
+        "ID0E27_slide_03.webp",
+        "ID0E27_slide_04.webp"
+      ],
+      "files": [
+        "ID0E27_cover.webp",
+        "ID0E27_slide_01.webp",
+        "ID0E27_slide_02.webp",
+        "ID0E27_slide_03.webp",
+        "ID0E27_slide_04.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E28": {
+      "sku": "ID0E28",
+      "cover": "ID0E28_cover.webp",
+      "slides": [
+        "ID0E28_slide_03.webp",
+        "ID0E28_slide_04.webp",
+        "ID0E28_slide_05.webp",
+        "ID0E28_slide_06.webp"
+      ],
+      "files": [
+        "ID0E28_cover.webp",
+        "ID0E28_slide_03.webp",
+        "ID0E28_slide_04.webp",
+        "ID0E28_slide_05.webp",
+        "ID0E28_slide_06.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E29": {
+      "sku": "ID0E29",
+      "cover": "ID0E29_cover.webp",
+      "slides": [
+        "ID0E29_slide_01.webp",
+        "ID0E29_slide_02.webp",
+        "ID0E29_slide_03.webp",
+        "ID0E29_slide_04.webp",
+        "ID0E29_slide_08.webp"
+      ],
+      "files": [
+        "ID0E29_cover.webp",
+        "ID0E29_slide_01.webp",
+        "ID0E29_slide_02.webp",
+        "ID0E29_slide_03.webp",
+        "ID0E29_slide_04.webp",
+        "ID0E29_slide_08.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E2A": {
+      "sku": "ID0E2A",
+      "cover": "ID0E2A_cover.webp",
+      "slides": [
+        "ID0E2A_slide_01.webp",
+        "ID0E2A_slide_02.webp",
+        "ID0E2A_slide_03.webp",
+        "ID0E2A_slide_04.webp",
+        "ID0E2A_slide_05.webp",
+        "ID0E2A_slide_06.webp",
+        "ID0E2A_slide_10.webp",
+        "ID0E2A_slide_11.webp",
+        "ID0E2A_slide_12.webp",
+        "ID0E2A_slide_13.webp",
+        "ID0E2A_slide_14.webp"
+      ],
+      "files": [
+        "ID0E2A_cover.webp",
+        "ID0E2A_slide_01.webp",
+        "ID0E2A_slide_02.webp",
+        "ID0E2A_slide_03.webp",
+        "ID0E2A_slide_04.webp",
+        "ID0E2A_slide_05.webp",
+        "ID0E2A_slide_06.webp",
+        "ID0E2A_slide_10.webp",
+        "ID0E2A_slide_11.webp",
+        "ID0E2A_slide_12.webp",
+        "ID0E2A_slide_13.webp",
+        "ID0E2A_slide_14.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E2B": {
+      "sku": "ID0E2B",
+      "cover": "ID0E2B_cover.webp",
+      "slides": [
+        "ID0E2B_slide_01.webp",
+        "ID0E2B_slide_02.webp",
+        "ID0E2B_slide_03.webp",
+        "ID0E2B_slide_04.webp",
+        "ID0E2B_slide_05.webp",
+        "ID0E2B_slide_06.webp",
+        "ID0E2B_slide_09.webp",
+        "ID0E2B_slide_10.webp",
+        "ID0E2B_slide_11.webp",
+        "ID0E2B_slide_12.webp",
+        "ID0E2B_slide_13.webp",
+        "ID0E2B_slide_14.webp"
+      ],
+      "files": [
+        "ID0E2B_cover.webp",
+        "ID0E2B_slide_01.webp",
+        "ID0E2B_slide_02.webp",
+        "ID0E2B_slide_03.webp",
+        "ID0E2B_slide_04.webp",
+        "ID0E2B_slide_05.webp",
+        "ID0E2B_slide_06.webp",
+        "ID0E2B_slide_09.webp",
+        "ID0E2B_slide_10.webp",
+        "ID0E2B_slide_11.webp",
+        "ID0E2B_slide_12.webp",
+        "ID0E2B_slide_13.webp",
+        "ID0E2B_slide_14.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E2C": {
+      "sku": "ID0E2C",
+      "cover": "ID0E2C_cover.webp",
+      "slides": [
+        "ID0E2C_slide_01.webp",
+        "ID0E2C_slide_02.webp",
+        "ID0E2C_slide_03.webp",
+        "ID0E2C_slide_04.webp",
+        "ID0E2C_slide_07.webp",
+        "ID0E2C_slide_08.webp",
+        "ID0E2C_slide_09.webp",
+        "ID0E2C_slide_10.webp"
+      ],
+      "files": [
+        "ID0E2C_cover.webp",
+        "ID0E2C_slide_01.webp",
+        "ID0E2C_slide_02.webp",
+        "ID0E2C_slide_03.webp",
+        "ID0E2C_slide_04.webp",
+        "ID0E2C_slide_07.webp",
+        "ID0E2C_slide_08.webp",
+        "ID0E2C_slide_09.webp",
+        "ID0E2C_slide_10.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E2D": {
+      "sku": "ID0E2D",
+      "cover": "ID0E2D_cover.webp",
+      "slides": [
+        "ID0E2D_slide_06.webp",
+        "ID0E2D_slide_07.webp",
+        "ID0E2D_slide_08.webp",
+        "ID0E2D_slide_09.webp",
+        "ID0E2D_slide_10.webp",
+        "ID0E2D_slide_11.webp",
+        "ID0E2D_slide_12.webp",
+        "ID0E2D_slide_13.webp",
+        "ID0E2D_slide_14.webp",
+        "ID0E2D_slide_15.webp"
+      ],
+      "files": [
+        "ID0E2D_cover.webp",
+        "ID0E2D_slide_06.webp",
+        "ID0E2D_slide_07.webp",
+        "ID0E2D_slide_08.webp",
+        "ID0E2D_slide_09.webp",
+        "ID0E2D_slide_10.webp",
+        "ID0E2D_slide_11.webp",
+        "ID0E2D_slide_12.webp",
+        "ID0E2D_slide_13.webp",
+        "ID0E2D_slide_14.webp",
+        "ID0E2D_slide_15.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E2E": {
+      "sku": "ID0E2E",
+      "cover": "ID0E2E_cover.webp",
+      "slides": [
+        "ID0E2E_slide_05.webp",
+        "ID0E2E_slide_06.webp",
+        "ID0E2E_slide_07.webp",
+        "ID0E2E_slide_08.webp",
+        "ID0E2E_slide_09.webp"
+      ],
+      "files": [
+        "ID0E2E_cover.webp",
+        "ID0E2E_slide_05.webp",
+        "ID0E2E_slide_06.webp",
+        "ID0E2E_slide_07.webp",
+        "ID0E2E_slide_08.webp",
+        "ID0E2E_slide_09.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E2F": {
+      "sku": "ID0E2F",
+      "cover": "ID0E2F_cover.webp",
+      "slides": [
+        "ID0E2F_slide_01.webp",
+        "ID0E2F_slide_02.webp",
+        "ID0E2F_slide_04.webp",
+        "ID0E2F_slide_05.webp",
+        "ID0E2F_slide_06.webp",
+        "ID0E2F_slide_07.webp",
+        "ID0E2F_slide_08.webp",
+        "ID0E2F_slide_09.webp",
+        "ID0E2F_slide_10.webp"
+      ],
+      "files": [
+        "ID0E2F_cover.webp",
+        "ID0E2F_slide_01.webp",
+        "ID0E2F_slide_02.webp",
+        "ID0E2F_slide_04.webp",
+        "ID0E2F_slide_05.webp",
+        "ID0E2F_slide_06.webp",
+        "ID0E2F_slide_07.webp",
+        "ID0E2F_slide_08.webp",
+        "ID0E2F_slide_09.webp",
+        "ID0E2F_slide_10.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E30": {
+      "sku": "ID0E30",
+      "cover": "ID0E30_cover.webp",
+      "slides": [
+        "ID0E30_slide_01.webp",
+        "ID0E30_slide_02.webp",
+        "ID0E30_slide_03.webp",
+        "ID0E30_slide_09.webp",
+        "ID0E30_slide_10.webp",
+        "ID0E30_slide_11.webp",
+        "ID0E30_slide_12.webp"
+      ],
+      "files": [
+        "ID0E30_cover.webp",
+        "ID0E30_slide_01.webp",
+        "ID0E30_slide_02.webp",
+        "ID0E30_slide_03.webp",
+        "ID0E30_slide_09.webp",
+        "ID0E30_slide_10.webp",
+        "ID0E30_slide_11.webp",
+        "ID0E30_slide_12.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E31": {
+      "sku": "ID0E31",
+      "cover": "ID0E31_cover.webp",
+      "slides": [
+        "ID0E31_slide_01.webp",
+        "ID0E31_slide_04.webp",
+        "ID0E31_slide_05.webp",
+        "ID0E31_slide_06.webp",
+        "ID0E31_slide_07.webp",
+        "ID0E31_slide_08.webp",
+        "ID0E31_slide_09.webp",
+        "ID0E31_slide_10.webp",
+        "ID0E31_slide_11.webp",
+        "ID0E31_slide_13.webp",
+        "ID0E31_slide_14.webp"
+      ],
+      "files": [
+        "ID0E31_cover.webp",
+        "ID0E31_slide_01.webp",
+        "ID0E31_slide_04.webp",
+        "ID0E31_slide_05.webp",
+        "ID0E31_slide_06.webp",
+        "ID0E31_slide_07.webp",
+        "ID0E31_slide_08.webp",
+        "ID0E31_slide_09.webp",
+        "ID0E31_slide_10.webp",
+        "ID0E31_slide_11.webp",
+        "ID0E31_slide_13.webp",
+        "ID0E31_slide_14.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E32": {
+      "sku": "ID0E32",
+      "cover": "ID0E32_cover.webp",
+      "slides": [
+        "ID0E32_slide_01.webp",
+        "ID0E32_slide_02.webp",
+        "ID0E32_slide_03.webp",
+        "ID0E32_slide_04.webp",
+        "ID0E32_slide_05.webp",
+        "ID0E32_slide_08.webp",
+        "ID0E32_slide_09.webp"
+      ],
+      "files": [
+        "ID0E32_cover.webp",
+        "ID0E32_slide_01.webp",
+        "ID0E32_slide_02.webp",
+        "ID0E32_slide_03.webp",
+        "ID0E32_slide_04.webp",
+        "ID0E32_slide_05.webp",
+        "ID0E32_slide_08.webp",
+        "ID0E32_slide_09.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E33": {
+      "sku": "ID0E33",
+      "cover": "ID0E33_cover.webp",
+      "slides": [
+        "ID0E33_slide_01.webp",
+        "ID0E33_slide_02.webp",
+        "ID0E33_slide_03.webp"
+      ],
+      "files": [
+        "ID0E33_cover.webp",
+        "ID0E33_slide_01.webp",
+        "ID0E33_slide_02.webp",
+        "ID0E33_slide_03.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E34": {
+      "sku": "ID0E34",
+      "cover": "ID0E34_cover.webp",
+      "slides": [
+        "ID0E34_slide_04.webp",
+        "ID0E34_slide_05.webp",
+        "ID0E34_slide_06.webp",
+        "ID0E34_slide_07.webp"
+      ],
+      "files": [
+        "ID0E34_cover.webp",
+        "ID0E34_slide_04.webp",
+        "ID0E34_slide_05.webp",
+        "ID0E34_slide_06.webp",
+        "ID0E34_slide_07.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E35": {
+      "sku": "ID0E35",
+      "cover": "ID0E35_cover.webp",
+      "slides": [
+        "ID0E35_slide_03.webp",
+        "ID0E35_slide_04.webp",
+        "ID0E35_slide_05.webp",
+        "ID0E35_slide_07.webp",
+        "ID0E35_slide_08.webp",
+        "ID0E35_slide_09.webp",
+        "ID0E35_slide_10.webp",
+        "ID0E35_slide_11.webp",
+        "ID0E35_slide_12.webp",
+        "ID0E35_slide_13.webp"
+      ],
+      "files": [
+        "ID0E35_cover.webp",
+        "ID0E35_slide_03.webp",
+        "ID0E35_slide_04.webp",
+        "ID0E35_slide_05.webp",
+        "ID0E35_slide_07.webp",
+        "ID0E35_slide_08.webp",
+        "ID0E35_slide_09.webp",
+        "ID0E35_slide_10.webp",
+        "ID0E35_slide_11.webp",
+        "ID0E35_slide_12.webp",
+        "ID0E35_slide_13.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E36": {
+      "sku": "ID0E36",
+      "cover": "ID0E36_cover.webp",
+      "slides": [
+        "ID0E36_slide_03.webp",
+        "ID0E36_slide_04.webp",
+        "ID0E36_slide_05.webp",
+        "ID0E36_slide_09.webp"
+      ],
+      "files": [
+        "ID0E36_cover.webp",
+        "ID0E36_slide_03.webp",
+        "ID0E36_slide_04.webp",
+        "ID0E36_slide_05.webp",
+        "ID0E36_slide_09.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E37": {
+      "sku": "ID0E37",
+      "cover": "ID0E37_cover.webp",
+      "slides": [
+        "ID0E37_slide_01.webp",
+        "ID0E37_slide_02.webp",
+        "ID0E37_slide_03.webp",
+        "ID0E37_slide_04.webp",
+        "ID0E37_slide_05.webp"
+      ],
+      "files": [
+        "ID0E37_cover.webp",
+        "ID0E37_slide_01.webp",
+        "ID0E37_slide_02.webp",
+        "ID0E37_slide_03.webp",
+        "ID0E37_slide_04.webp",
+        "ID0E37_slide_05.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E38": {
+      "sku": "ID0E38",
+      "cover": "ID0E38_cover.webp",
+      "slides": [
+        "ID0E38_slide_01.webp",
+        "ID0E38_slide_02.webp",
+        "ID0E38_slide_03.webp",
+        "ID0E38_slide_04.webp",
+        "ID0E38_slide_05.webp",
+        "ID0E38_slide_06.webp",
+        "ID0E38_slide_07.webp",
+        "ID0E38_slide_09.webp"
+      ],
+      "files": [
+        "ID0E38_cover.webp",
+        "ID0E38_slide_01.webp",
+        "ID0E38_slide_02.webp",
+        "ID0E38_slide_03.webp",
+        "ID0E38_slide_04.webp",
+        "ID0E38_slide_05.webp",
+        "ID0E38_slide_06.webp",
+        "ID0E38_slide_07.webp",
+        "ID0E38_slide_09.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E3A": {
+      "sku": "ID0E3A",
+      "cover": "ID0E3A_cover.webp",
+      "slides": [
+        "ID0E3A_slide_02.webp",
+        "ID0E3A_slide_03.webp",
+        "ID0E3A_slide_04.webp",
+        "ID0E3A_slide_05.webp",
+        "ID0E3A_slide_06.webp",
+        "ID0E3A_slide_07.webp",
+        "ID0E3A_slide_08.webp",
+        "ID0E3A_slide_11.webp",
+        "ID0E3A_slide_12.webp",
+        "ID0E3A_slide_13.webp",
+        "ID0E3A_slide_14.webp",
+        "ID0E3A_slide_15.webp",
+        "ID0E3A_slide_16.webp"
+      ],
+      "files": [
+        "ID0E3A_cover.webp",
+        "ID0E3A_slide_02.webp",
+        "ID0E3A_slide_03.webp",
+        "ID0E3A_slide_04.webp",
+        "ID0E3A_slide_05.webp",
+        "ID0E3A_slide_06.webp",
+        "ID0E3A_slide_07.webp",
+        "ID0E3A_slide_08.webp",
+        "ID0E3A_slide_11.webp",
+        "ID0E3A_slide_12.webp",
+        "ID0E3A_slide_13.webp",
+        "ID0E3A_slide_14.webp",
+        "ID0E3A_slide_15.webp",
+        "ID0E3A_slide_16.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E3B": {
+      "sku": "ID0E3B",
+      "cover": "ID0E3B_cover.webp",
+      "slides": [
+        "ID0E3B_slide_02.webp",
+        "ID0E3B_slide_03.webp",
+        "ID0E3B_slide_04.webp",
+        "ID0E3B_slide_05.webp",
+        "ID0E3B_slide_06.webp",
+        "ID0E3B_slide_09.webp",
+        "ID0E3B_slide_10.webp",
+        "ID0E3B_slide_11.webp",
+        "ID0E3B_slide_12.webp",
+        "ID0E3B_slide_13.webp"
+      ],
+      "files": [
+        "ID0E3B_cover.webp",
+        "ID0E3B_slide_02.webp",
+        "ID0E3B_slide_03.webp",
+        "ID0E3B_slide_04.webp",
+        "ID0E3B_slide_05.webp",
+        "ID0E3B_slide_06.webp",
+        "ID0E3B_slide_09.webp",
+        "ID0E3B_slide_10.webp",
+        "ID0E3B_slide_11.webp",
+        "ID0E3B_slide_12.webp",
+        "ID0E3B_slide_13.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E3C": {
+      "sku": "ID0E3C",
+      "cover": "ID0E3C_cover.webp",
+      "slides": [
+        "ID0E3C_slide_01.webp",
+        "ID0E3C_slide_02.webp",
+        "ID0E3C_slide_03.webp",
+        "ID0E3C_slide_04.webp",
+        "ID0E3C_slide_05.webp",
+        "ID0E3C_slide_06.webp",
+        "ID0E3C_slide_07.webp",
+        "ID0E3C_slide_08.webp",
+        "ID0E3C_slide_09.webp",
+        "ID0E3C_slide_12.webp",
+        "ID0E3C_slide_13.webp",
+        "ID0E3C_slide_14.webp",
+        "ID0E3C_slide_15.webp",
+        "ID0E3C_slide_16.webp",
+        "ID0E3C_slide_17.webp",
+        "ID0E3C_slide_18.webp",
+        "ID0E3C_slide_19.webp"
+      ],
+      "files": [
+        "ID0E3C_cover.webp",
+        "ID0E3C_slide_01.webp",
+        "ID0E3C_slide_02.webp",
+        "ID0E3C_slide_03.webp",
+        "ID0E3C_slide_04.webp",
+        "ID0E3C_slide_05.webp",
+        "ID0E3C_slide_06.webp",
+        "ID0E3C_slide_07.webp",
+        "ID0E3C_slide_08.webp",
+        "ID0E3C_slide_09.webp",
+        "ID0E3C_slide_12.webp",
+        "ID0E3C_slide_13.webp",
+        "ID0E3C_slide_14.webp",
+        "ID0E3C_slide_15.webp",
+        "ID0E3C_slide_16.webp",
+        "ID0E3C_slide_17.webp",
+        "ID0E3C_slide_18.webp",
+        "ID0E3C_slide_19.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E3D": {
+      "sku": "ID0E3D",
+      "cover": "ID0E3D_cover.webp",
+      "slides": [
+        "ID0E3D_slide_02.webp",
+        "ID0E3D_slide_03.webp",
+        "ID0E3D_slide_04.webp",
+        "ID0E3D_slide_05.webp",
+        "ID0E3D_slide_06.webp",
+        "ID0E3D_slide_07.webp",
+        "ID0E3D_slide_11.webp",
+        "ID0E3D_slide_12.webp",
+        "ID0E3D_slide_13.webp",
+        "ID0E3D_slide_14.webp",
+        "ID0E3D_slide_15.webp",
+        "ID0E3D_slide_16.webp"
+      ],
+      "files": [
+        "ID0E3D_cover.webp",
+        "ID0E3D_slide_02.webp",
+        "ID0E3D_slide_03.webp",
+        "ID0E3D_slide_04.webp",
+        "ID0E3D_slide_05.webp",
+        "ID0E3D_slide_06.webp",
+        "ID0E3D_slide_07.webp",
+        "ID0E3D_slide_11.webp",
+        "ID0E3D_slide_12.webp",
+        "ID0E3D_slide_13.webp",
+        "ID0E3D_slide_14.webp",
+        "ID0E3D_slide_15.webp",
+        "ID0E3D_slide_16.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E3E": {
+      "sku": "ID0E3E",
+      "cover": "ID0E3E_cover.webp",
+      "slides": [
+        "ID0E3E_slide_02.webp",
+        "ID0E3E_slide_03.webp",
+        "ID0E3E_slide_04.webp",
+        "ID0E3E_slide_05.webp",
+        "ID0E3E_slide_06.webp",
+        "ID0E3E_slide_07.webp",
+        "ID0E3E_slide_09.webp"
+      ],
+      "files": [
+        "ID0E3E_cover.webp",
+        "ID0E3E_slide_02.webp",
+        "ID0E3E_slide_03.webp",
+        "ID0E3E_slide_04.webp",
+        "ID0E3E_slide_05.webp",
+        "ID0E3E_slide_06.webp",
+        "ID0E3E_slide_07.webp",
+        "ID0E3E_slide_09.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E3F": {
+      "sku": "ID0E3F",
+      "cover": "ID0E3F_cover.webp",
+      "slides": [
+        "ID0E3F_slide_02.webp",
+        "ID0E3F_slide_03.webp",
+        "ID0E3F_slide_04.webp",
+        "ID0E3F_slide_05.webp",
+        "ID0E3F_slide_06.webp",
+        "ID0E3F_slide_07.webp",
+        "ID0E3F_slide_08.webp",
+        "ID0E3F_slide_11.webp"
+      ],
+      "files": [
+        "ID0E3F_cover.webp",
+        "ID0E3F_slide_02.webp",
+        "ID0E3F_slide_03.webp",
+        "ID0E3F_slide_04.webp",
+        "ID0E3F_slide_05.webp",
+        "ID0E3F_slide_06.webp",
+        "ID0E3F_slide_07.webp",
+        "ID0E3F_slide_08.webp",
+        "ID0E3F_slide_11.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E40": {
+      "sku": "ID0E40",
+      "cover": "ID0E40_cover.webp",
+      "slides": [
+        "ID0E40_slide_02.webp",
+        "ID0E40_slide_04.webp",
+        "ID0E40_slide_05.webp",
+        "ID0E40_slide_06.webp"
+      ],
+      "files": [
+        "ID0E40_cover.webp",
+        "ID0E40_slide_02.webp",
+        "ID0E40_slide_04.webp",
+        "ID0E40_slide_05.webp",
+        "ID0E40_slide_06.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E41": {
+      "sku": "ID0E41",
+      "cover": "ID0E41_cover.webp",
+      "slides": [
+        "ID0E41_slide_01.webp",
+        "ID0E41_slide_02.webp",
+        "ID0E41_slide_03.webp",
+        "ID0E41_slide_04.webp",
+        "ID0E41_slide_08.webp",
+        "ID0E41_slide_09.webp",
+        "ID0E41_slide_10.webp"
+      ],
+      "files": [
+        "ID0E41_cover.webp",
+        "ID0E41_slide_01.webp",
+        "ID0E41_slide_02.webp",
+        "ID0E41_slide_03.webp",
+        "ID0E41_slide_04.webp",
+        "ID0E41_slide_08.webp",
+        "ID0E41_slide_09.webp",
+        "ID0E41_slide_10.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E42": {
+      "sku": "ID0E42",
+      "cover": "ID0E42_cover.webp",
+      "slides": [
+        "ID0E42_slide_01.webp",
+        "ID0E42_slide_02.webp",
+        "ID0E42_slide_03.webp"
+      ],
+      "files": [
+        "ID0E42_cover.webp",
+        "ID0E42_slide_01.webp",
+        "ID0E42_slide_02.webp",
+        "ID0E42_slide_03.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E43": {
+      "sku": "ID0E43",
+      "cover": "ID0E43_cover.webp",
+      "slides": [
+        "ID0E43_slide_01.webp",
+        "ID0E43_slide_02.webp",
+        "ID0E43_slide_03.webp",
+        "ID0E43_slide_07.webp",
+        "ID0E43_slide_08.webp",
+        "ID0E43_slide_09.webp",
+        "ID0E43_slide_10.webp"
+      ],
+      "files": [
+        "ID0E43_cover.webp",
+        "ID0E43_slide_01.webp",
+        "ID0E43_slide_02.webp",
+        "ID0E43_slide_03.webp",
+        "ID0E43_slide_07.webp",
+        "ID0E43_slide_08.webp",
+        "ID0E43_slide_09.webp",
+        "ID0E43_slide_10.webp"
+      ],
+      "auxiliary_files": []
+    },
+    "ID0E44": {
+      "sku": "ID0E44",
+      "cover": "ID0E44_cover.webp",
+      "slides": [
+        "ID0E44_slide_01.webp",
+        "ID0E44_slide_02.webp",
+        "ID0E44_slide_03.webp",
+        "ID0E44_slide_04.webp"
+      ],
+      "files": [
+        "ID0E44_cover.webp",
+        "ID0E44_slide_01.webp",
+        "ID0E44_slide_02.webp",
+        "ID0E44_slide_03.webp",
+        "ID0E44_slide_04.webp"
+      ],
+      "auxiliary_files": []
     },
     "ID0EF8": {
       "sku": "ID0EF8",
