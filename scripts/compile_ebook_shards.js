@@ -40,7 +40,7 @@ const CATEGORY_MAP = {
   'E-Book Pertanian': { name: 'Pertanian & Peternakan', slug: 'pertanian-peternakan', desc: 'Budidaya tanaman pangan, agroteknologi modern, hidroponik, dan peternakan terpadu.' },
   'E-Book Peternakan': { name: 'Pertanian & Peternakan', slug: 'pertanian-peternakan', desc: 'Budidaya tanaman pangan, agroteknologi modern, hidroponik, dan peternakan terpadu.' },
   'E-Book Politik': { name: 'Politik & Sosial Kebijakan', slug: 'politik-kebijakan', desc: 'Dinamika geopolitik global, sistem demokrasi, sosiologi kemasyarakatan, dan kebijakan publik.' },
-  'E-Book Buku Anak': { name: 'E-Book Edukasi Anak & Parenting', slug: 'edukasi-anak', desc: 'Cerita bergambar mendidik, pembentukan karakter anak usia dini, dan pedoman orang tua.' },
+  'E-Book Buku Anak': { name: 'Edukasi Anak & Parenting', slug: 'edukasi-anak', desc: 'Cerita bergambar mendidik, pembentukan karakter anak usia dini, dan pedoman orang tua.' },
   'E-Book Kerja-Karir': { name: 'Karir & Dunia Kerja', slug: 'karir-kerja', desc: 'Tips wawancara kerja, peningkatan keahlian profesional, negosiasi gaji, dan produktivitas kantor.' },
   'E-Book Filsafat': { name: 'Filsafat & Logika Pemikiran', slug: 'filsafat-logika', desc: 'Dialektika pemikiran filsuf ternama, seni bernalar kritis, epistemologi, dan etika kehidupan.' },
   'E-Book Majalah': { name: 'Majalah & Jurnal Digital', slug: 'majalah-jurnal', desc: 'Edisi majalah tematik, liputan investigatif, dan rangkuman tren industri kreatif.' },
@@ -264,225 +264,90 @@ function hashString(s) {
   return Math.abs(h);
 }
 
-function buildEditorialSynopsis(cleanTitle, author, catName, rawDesc, sku = '') {
-  const cat = (catName || 'Literatur Digital').toLowerCase();
+function extractCleanSummary(rawDesc) {
+  if (!rawDesc) return '';
+  const m = rawDesc.match(/RINGKASAN (?:PRODUK|& NILAI KOLEKSI):\s*([\s\S]*?)(?=\n\s*(?:SPESIFIKASI|STANDAR|PANDUAN|CAKUPAN|$))/i);
+  if (m && m[1].trim().length > 20) {
+    return m[1].trim().replace(/\s+/g, ' ');
+  }
+  return '';
+}
+
+function getThematicPillars(catName, cleanTitle) {
+  const cat = (catName || '').toLowerCase();
   const t = (cleanTitle || '').toLowerCase();
-  const authorDisplay = author ? `karya ${author}` : 'kurasi pilihan tim redaksi FokusKonten';
-
-  const seed = hashString(cleanTitle + sku);
-  const v1 = seed % 4;
-  const v2 = (seed >> 2) % 4;
-  const v3 = (seed >> 4) % 4;
-  const v4 = (seed >> 6) % 4;
-
-  // Analisis tema spesifik berdasarkan judul & kategori
-  let domainName = catName;
-  let coreFocus = 'penguasaan konsep fundamental dan penerapannya secara terukur';
-  let pillars = [
-    {
-      title: 'Peletakan Fondasi Prinsipil',
-      desc: 'Membongkar akar pemikiran dasar dan kerangka metodologis yang menjadi pijakan seluruh pembahasan dalam naskah ini.'
-    },
-    {
-      title: 'Dinamika Analisis & Sudut Pandang Kritis',
-      desc: 'Menyajikan kajian tajam terhadap permasalahan nyata yang kerap luput dari perhatian literatur konvensional.'
-    },
-    {
-      title: 'Formulasi Solutif & Kaidah Praktis',
-      desc: 'Merangkum langkah-langkah implementasi teruji yang dapat dieksekusi secara terukur dan berkesinambungan.'
-    },
-    {
-      title: 'Visi Jangka Panjang & Ketahanan Pemahaman',
-      desc: 'Membekali pembaca dengan cara berpikir mandiri sehingga mampu beradaptasi terhadap perubahan situasi masa depan.'
-    }
-  ];
-  let audience = 'pembaca yang menginginkan pemahaman mendalam, terstruktur, dan aplikatif';
 
   if (cat.includes('agama') || cat.includes('tafsir') || cat.includes('islam') || t.includes('fiqih') || t.includes('hadits') || t.includes('doa') || t.includes('sholat')) {
-    domainName = 'Kajian Keislaman & Budi Pekerti';
-    coreFocus = 'pemurnian pemahaman tauhid, fiqih amaliah, dan penataan hati';
-    pillars = [
-      {
-        title: 'Kedalaman Dalil & Sanad Keilmuan',
-        desc: 'Mengulas nash-nash autentik Al-Qur\'an dan As-Sunnah dengan metodologi penafsiran ulama salaf yang mu’tabar.'
-      },
-      {
-        title: 'Kontekstualisasi Syariat dalam Realitas Kontemporer',
-        desc: 'Menjembatani kaidah hukum Islam klasik dengan problematika kehidupan modern secara proporsional dan bijaksana.'
-      },
-      {
-        title: 'Tazkiyatun Nufus & Pembenahan Akhlak',
-        desc: 'Menuntun pembaca melakukan introspeksi batiniah serta membentengi jiwa dari tipu daya syahwat dan fitnah syubhat.'
-      },
-      {
-        title: 'Konsistensi Ibadah & Amaliah Istiqamah',
-        desc: 'Memberikan panduan praktis agar setiap butir ilmu yang dipelajari bertransformasi menjadi amal saleh yang berkesinambungan.'
-      }
+    return [
+      { title: 'Landasan Dalil & Rujukan', desc: 'Menghimpun rujukan nash Al-Qur\'an dan hadits secara terstruktur untuk memperkuat pemahaman keilmuan Islam.' },
+      { title: 'Kaidah Hukum & Amaliah', desc: 'Menjabarkan pedoman ibadah dan amalan praktis yang dapat diterapkan secara proporsional dalam keseharian.' },
+      { title: 'Penataan Akhlak & Adab', desc: 'Menuntun pembinaan karakter, adab terpuji, dan kebersihan jiwa berlandaskan tuntunan yang shahih.' },
+      { title: 'Faedah & Keteladanan', desc: 'Menguraikan hikmah dan keteladanan yang relevan untuk memperkokoh komitmen keimanan.' }
     ];
-    audience = 'umat Muslim, penuntut ilmu syar\'i, serta siapa saja yang ingin memperkokoh komitmen keimanan di era modern';
-  } else if (cat.includes('bisnis') || cat.includes('finansial') || cat.includes('investasi') || cat.includes('ekonomi') || t.includes('saham') || t.includes('trading') || t.includes('omzet') || t.includes('uang') || t.includes('usaha')) {
-    domainName = 'Ekonomi, Bisnis & Pengelolaan Finansial';
-    coreFocus = 'kalkulasi strategi pasar, mitigasi risiko, dan akselerasi pertumbuhan modal';
-    pillars = [
-      {
-        title: 'Dekonstruksi Lanskap Pasar & Keunggulan Kompetitif',
-        desc: 'Mengidentifikasi ceruk peluang bernilai tinggi serta merumuskan proposisi nilai yang sulit disaingi kompetitor.'
-      },
-      {
-        title: 'Manajemen Arus Kas & Proteksi Likuiditas',
-        desc: 'Menata alokasi modal kerja dengan disiplin ketat guna menjamin ketahanan operasional dalam berbagai siklus ekonomi.'
-      },
-      {
-        title: 'Skalabilitas Model Bisnis & Efisiensi Sistem',
-        desc: 'Membangun standardisasi prosedur (SOP) dan alur kerja agar usaha mampu berekspansi tanpa mengorbankan kualitas.'
-      },
-      {
-        title: 'Pengambilan Keputusan Berbasis Data & Metrik Terukur',
-        desc: 'Menggeser spekulasi intuitif menjadi kepemimpinan strategis yang berlandaskan indikator kinerja utama (KPI) yang solid.'
-      }
-    ];
-    audience = 'wirausahawan, pelaku usaha mandiri, investor, dan profesional yang ingin membangun ketahanan finansial jangka panjang';
-  } else if (cat.includes('pengembangan') || cat.includes('psikologi') || cat.includes('motivasi') || t.includes('habit') || t.includes('fokus') || t.includes('mental')) {
-    domainName = 'Pengembangan Diri & Ketahanan Mental';
-    coreFocus = 'rekayasa pola pikir, penguasaan fokus, dan arsitektur disiplin harian';
-    pillars = [
-      {
-        title: 'Pematahan Bias Kognitif & Hambatan Mental',
-        desc: 'Membongkar keyakinan keliru yang membelenggu potensi diri dan menggantinya dengan paradigma bertumbuh (growth mindset).'
-      },
-      {
-        title: 'Arsitektur Kebiasaan Mikro yang Konsisten',
-        desc: 'Merancang sistem pemicu dan imbalan psikologis agar rutinitas produktif berjalan secara otomatis tanpa pemaksaan energi.'
-      },
-      {
-        title: 'Manajemen Energi Emosional & Ketahanan Tekanan',
-        desc: 'Mengelola stres dan kejenuhan mental dengan strategi regulasi diri yang terbukti menjaga stabilitas batiniah.'
-      },
-      {
-        title: 'Penguasaan Fokus Mendalam di Tengah Distraksi',
-        desc: 'Menyaring kebisingan informasi agar waktu terbaik dialokasikan secara maksimal untuk karya bernilai tertinggi.'
-      }
-    ];
-    audience = 'individu yang berkomitmen mencapai performa terbaik tanpa mengorbankan kesehatan mental dan keseimbangan hidup';
-  } else if (cat.includes('novel') || cat.includes('fiksi') || cat.includes('sastra') || t.includes('kisah') || t.includes('cinta')) {
-    domainName = 'Karya Naratif & Eksplorasi Sastra';
-    coreFocus = 'penjalinan emosi manusiawi, dinamika plot, dan refleksi filosofis';
-    pillars = [
-      {
-        title: 'Arsitektur Karakter & Kedalaman Motif',
-        desc: 'Menyajikan pergulatan batin para tokoh dengan dimensi psikologis yang berlapis, nyata, dan menyentuh empati pembaca.'
-      },
-      {
-        title: 'Eskalasi Konflik & Ritme Penuturan Memikat',
-        desc: 'Menjaga tensi dramatis melalui kejutan alur yang tersusun rapi hingga menghantarkan pembaca pada titik klimaks yang berkesan.'
-      },
-      {
-        title: 'Kekayaan Diksi & Estetika Penggambaran Suasana',
-        desc: 'Menggunakan keindahan bahasa deskriptif yang mampu menghidupkan ruang, waktu, dan atmosfer cerita di benak pembaca.'
-      },
-      {
-        title: 'Resonansi Makna & Renungan Kehidupan',
-        desc: 'Menyisipkan kritik sosial dan hikmah moral yang tetap bergema di dalam pikiran bahkan setelah bab terakhir selesai dibaca.'
-      }
-    ];
-    audience = 'pencinta literatur fiksi, penikmat kisah mendalam, dan siapa pun yang menghargai kekuatan narasi imajinatif';
-  } else if (cat.includes('kesehatan') || cat.includes('medis') || t.includes('diet') || t.includes('obat') || t.includes('penyakit') || t.includes('sehat')) {
-    domainName = 'Kesehatan, Nutrisi & Kebugaran Terpadu';
-    coreFocus = 'pendekatan preventif medis, biologi tubuh, dan pola hidup seimbang';
-    pillars = [
-      {
-        title: 'Prinsip Fisiologis & Mekanisme Tubuh',
-        desc: 'Menguraikan bagaimana sistem organ merespons asupan harian, pola tidur, dan beban fisik secara biologis.'
-      },
-      {
-        title: 'Nutrisi Berimbang & Penataan Metabolisme',
-        desc: 'Menjelaskan fungsi makronutrien dan mikronutrien dalam menjaga imunitas dan energi vital sepanjang hari.'
-      },
-      {
-        title: 'Pencegahan Dini & Mitigasi Risiko Penyakit',
-        desc: 'Mengenali tanda-tanda awal disfungsi tubuh serta langkah praktis untuk mengatasinya sebelum berkembang kronis.'
-      },
-      {
-        title: 'Protokol Kebiasaan Sehat Berkelanjutan',
-        desc: 'Menyusun jadwal aktivitas fisik dan pola makan yang realistis untuk dipelihara seumur hidup.'
-      }
-    ];
-    audience = 'masyarakat umum, pemerhati kesehatan, dan keluarga yang mengutamakan vitalitas hidup berkualitas';
-  } else if (cat.includes('pendidikan') || cat.includes('bahasa') || cat.includes('hukum') || cat.includes('sains')) {
-    domainName = 'Pendidikan, Kaidah Hukum & Keilmuan Terapan';
-    coreFocus = 'sistematika penalaran logis, validitas pembuktian, dan rujukan yuridis';
-    pillars = [
-      {
-        title: 'Peletakan Fondasi Epistemologis',
-        desc: 'Menjabarkan batasan terminologi, kerangka dasar teori, dan sumber rujukan primer secara berbobot.'
-      },
-      {
-        title: 'Analisis Metodologis & Pengujian Fakta',
-        desc: 'Mengurai hubungan sebab-akibat dengan pendekatan deduktif-induktif yang dapat dipertanggungjawabkan.'
-      },
-      {
-        title: 'Tinjauan Kritis Terhadap Literatur Sejenis',
-        desc: 'Mengidentifikasi celah dalam pemikiran terdahulu serta memberikan penyempurnaan sudut pandang yang lebih komprehensif.'
-      },
-      {
-        title: 'Sintesis Pengetahuan untuk Pengambilan Keputusan',
-        desc: 'Membimbing pembaca menarik konklusi obyektif yang menjadi landasan tindakan profesional.'
-      }
-    ];
-    audience = 'akademisi, praktisi hukum, mahasiswa, dan pemikir yang mengutamakan rigoritas intelektual';
   }
 
-  // 1. Variasi Pembuka Ikhtisar
-  const introVariants = [
-    `Naskah **${cleanTitle}** ${authorDisplay} hadir sebagai rujukan berbobot dalam ranah ${domainName}. Dokumen literatur ini disusun dengan presisi analitis guna membimbing pembaca menyelami pokok bahasan secara runtut, mendalam, dan bebas dari simplifikasi wacana populer.`,
-    `Dalam khazanah bacaan ${domainName}, naskah **${cleanTitle}** ${authorDisplay} menawarkan pendekatan kontekstual yang bernas. Naskah ini mengurai kompleksitas materi menjadi panduan konseptual yang jernih tanpa mereduksi ketajaman wawasan dan bobot substansinya.`,
-    `Melalui karya bertajuk **${cleanTitle}**, pembaca dipandu mengeksplorasi wawasan fundamental dalam domain ${domainName}. Naskah kurasi ${authorDisplay} ini menyajikan perspektif menyeluruh yang menjembatani kaidah teoritis dengan realitas tantangan nyata.`,
-    `Sebagai karya pilihan dalam cakupan ${domainName}, naskah **${cleanTitle}** ${authorDisplay} memberikan jawaban atas berbagai pertanyaan mendasar seputar materi terkait. Sistematika penulisan yang tertata rapi memungkinkan pembaca membangun kerangka pemahaman yang kokoh sejak lembaran pembuka.`
+  if (cat.includes('bisnis') || cat.includes('finansial') || cat.includes('investasi') || cat.includes('ekonomi') || cat.includes('uang') || t.includes('saham') || t.includes('trading') || t.includes('omzet')) {
+    return [
+      { title: 'Strategi Pasar & Peluang', desc: 'Mengulas cara mengidentifikasi kebutuhan pasar serta merumuskan keunggulan kompetitif usaha.' },
+      { title: 'Manajemen Keuangan & Arus Kas', desc: 'Menata alokasi modal, efisiensi operasional, dan perencanaan arus kas agar bisnis tumbuh berkelanjutan.' },
+      { title: 'Pengembangan Skala Bisnis', desc: 'Menyusun alur kerja terstruktur dan standardisasi operasional guna mendukung ekspansi usaha.' },
+      { title: 'Prinsip Mitigasi Risiko', desc: 'Membekali pembaca dengan cara berpikir terukur dalam mengambil keputusan investasi dan bisnis.' }
+    ];
+  }
+
+  if (cat.includes('pengembangan') || cat.includes('psikologi') || cat.includes('motivasi') || cat.includes('perilaku') || t.includes('habit') || t.includes('fokus') || t.includes('mental')) {
+    return [
+      { title: 'Pola Pikir & Pengenalan Diri', desc: 'Membantu mengenali potensi diri dan mengatasi hambatan mental yang menghalangi pencapaian target.' },
+      { title: 'Disiplin & Rutinitas Harian', desc: 'Merancang kebiasaan produktif yang dapat dijalankan secara konsisten tanpa membebani energi fisik dan mental.' },
+      { title: 'Fokus & Pengelolaan Waktu', desc: 'Mengasah kemampuan konsentrasi di tengah distraksi agar waktu teralokasi untuk hal-hal bernilai tinggi.' },
+      { title: 'Keseimbangan Hidup & Motivasi', desc: 'Menjaga ketahanan mental dan stabilitas emosi untuk mendukung produktivitas jangka panjang.' }
+    ];
+  }
+
+  if (cat.includes('novel') || cat.includes('fiksi') || cat.includes('sastra') || cat.includes('puisi') || t.includes('kisah') || t.includes('cinta')) {
+    return [
+      { title: 'Pengembangan Karakter', desc: 'Menghadirkan dinamika tokoh dengan motif emosional yang kuat dan dekat dengan realitas kehidupan.' },
+      { title: 'Dinamika Alur & Konflik', desc: 'Menyajikan jalinan cerita yang tertata rapi dengan ritme penuturan yang memikat dari awal hingga akhir.' },
+      { title: 'Atmosfer Cerita', desc: 'Menggambarkan suasana dan latar secara hidup sehingga pembaca dapat larut dalam imajinasi naskah.' },
+      { title: 'Refleksi Nilai Kehidupan', desc: 'Menyampaikan pesan moral dan hikmah kemanusiaan yang mendalam di balik alur cerita.' }
+    ];
+  }
+
+  if (cat.includes('kesehatan') || cat.includes('medis') || cat.includes('kuliner') || cat.includes('resep') || t.includes('diet') || t.includes('obat') || t.includes('sehat')) {
+    return [
+      { title: 'Panduan Praktis Teruji', desc: 'Menyajikan petunjuk langkah demi langkah yang mudah dipahami dan aman untuk dipraktikkan langsung.' },
+      { title: 'Nutrisi & Pola Hidup Seimbang', desc: 'Menguraikan manfaat asupan gizi berkualitas serta kebiasaan hidup sehat untuk menunjang kebugaran tubuh.' },
+      { title: 'Pencegahan & Perawatan Diri', desc: 'Memberikan wawasan penting mengenai cara menjaga daya tahan tubuh dan mengantisipasi gangguan kesehatan.' },
+      { title: 'Kebiasaan Positif Berkelanjutan', desc: 'Membantu pembaca membangun pola hidup yang konsisten dan nyaman dipelihara sehari-hari.' }
+    ];
+  }
+
+  // Default untuk Pendidikan, Hukum, Sains, Pertanian, Politik, Budaya, Umum
+  return [
+    { title: 'Fondasi Teori & Konsep', desc: 'Menjabarkan batasan materi, istilah utama, dan kerangka dasar secara berurutan dan terstruktur.' },
+    { title: 'Analisis & Studi Kasus', desc: 'Membahas penerapan konsep dalam situasi nyata disertai contoh relevan yang mudah dicerna.' },
+    { title: 'Rujukan & Fakta Pendukung', desc: 'Menyajikan data dan referensi faktual untuk memperkaya wawasan serta ketajaman penalaran.' },
+    { title: 'Rangkuman & Penerapan', desc: 'Merangkum intisari pembahasan sebagai bahan rujukan mandiri yang siap diaplikasikan.' }
   ];
+}
 
-  // 2. Variasi Paragraf Kedua Metodologi
-  const methodVariants = [
-    `Alur pemikiran dalam naskah ini dibangun secara dialektis. Setiap bab dirancang untuk menumbuhkan daya kritis pembaca, mengikis kerancuan asumsi yang kerap beredar di ruang publik, serta meletakkan batu pertama pemahaman yang berlandaskan prinsip-prinsip yang teruji.`,
-    `Kekuatan metodologis naskah ini bertumpu pada penyajian argumentasi yang solid dan mengalir tenang namun bertenaga. Penulis menyaring gagasan-gagasan inti secara cermat, memastikan setiap dalil yang dipaparkan memiliki relevansi langsung dengan tujuan telaah naskah.`,
-    `Pendekatan yang lugas dan berwibawa menjadikan naskah ini nyaman ditelaah secara bertahap. Penulis piawai meramu teori berbobot dengan uraian analitis, menghindarkan pembaca dari kejenuhan seraya menjaga ketajaman fokus pada setiap babak pembahasan.`,
-    `Alih-alih menyajikan pembahasan yang kering atau abstrak, karya ini menonjolkan aspek reflektif. Pembaca dipandu untuk memahami hubungan sebab-akibat secara multidimensional, membiasakan diri berpikir sistemik sebelum mengambil kesimpulan penting.`
-  ];
+function buildEditorialSynopsis(cleanTitle, author, catName, rawDesc, sku = '') {
+  const cleanSummary = extractCleanSummary(rawDesc);
+  const pillars = getThematicPillars(catName, cleanTitle);
+  const authorDisplay = author ? `karya ${author}` : 'koleksi literatur digital';
 
-  // 3. Variasi Paradigma Revolusioner
-  const paradigmVariants = [
-    `Ciri paling menonjol dari naskah ini adalah keberaniannya mendobrak kebiasaan literatur konvensional yang kerap berhenti pada tataran teori pasif. Pengarang membedah ${coreFocus} dengan menempatkan fakta lapangan sebagai cermin penguji, membuktikan bahwa penguasaan sejati lahir dari konsistensi berpikir yang kritis.`,
-    `Keunggulan pembeda karya ini terletak pada penolakannya terhadap formula instan yang dangkal. Penulis menunjukkan bahwa penguasaan atas ${coreFocus} membutuhkan pemahaman struktural yang utuh, menghasilkan wawasan transformatif yang memperkaya cara pandang pembaca secara menyeluruh.`,
-    `Naskah ini mengambil langkah revolusioner dengan menghubungkan titik-titik wawasan yang selama ini tampak terpisah. Melalui tinjauan kritis yang mendalam, karya ini menyingkap dimensi-dimensi krusial dalam ${coreFocus} yang kerap terlewatkan oleh publikasi sejenis.`,
-    `Nilai kebaruan naskah ini terwujud dalam kemampuannya mengontekstualisasikan prinsip-prinsip mendasar ke dalam dinamika zaman modern. Pengarang merumuskan peta navigasi pemikiran yang tajam, menjadikan naskah ini instrumen literatur yang adaptif dan bernilai strategis.`
-  ];
+  const introParagraph = cleanSummary || 
+    `Edisi digital "${cleanTitle}" ${authorDisplay} menyajikan bahasan lengkap dan sistematis dalam bidang ${catName}. Disusun sebagai referensi terpercaya yang informatif untuk memperluas pemahaman serta mendampingi proses belajar mandiri.`;
 
-  // 4. Variasi Catatan Panduan Kajian Mandiri
-  const guideVariants = [
-    `Agar kemanfaatan naskah digital ini dapat diserap secara paripurna, tim kurator FokusKonten merekomendasikan pembaca untuk mencermati bab pendahuluan guna menguasai batasan terminologi pengarang. Lakukan pembacaan reflektif pada setiap jeda bagian, tandai gagasan-gagasan inti yang relevan, dan segera integrasikan kaidah yang telah Anda pelajari ke dalam aksi nyata.`,
-    `Untuk memperoleh hasil kajian yang optimal, disarankan menelaah naskah ini secara berurutan tanpa melompati bab-bab pembuka fondasional. Catat poin-poin penting yang selaras dengan tantangan yang sedang Anda hadapi, dan diskusikan intisari pemikiran ini bersama rekan kajian untuk memperkaya perspektif Anda.`,
-    `Tim redaksi FokusKonten menyarankan pembaca meluangkan waktu khusus untuk membaca setiap sub-bab secara fokus. Jadikan setiap intisari bab sebagai bahan evaluasi berkala, sehingga dokumen digital ini tidak sekadar menjadi arsip bacaan, melainkan katalis perubahan positif yang berkesinambungan.`,
-    `Maksimalkan nilai dari naskah ini dengan memadukan pembacaan kritis dan refleksi pribadi. Telaah setiap argumen pengarang secara objektif, hubungkan prinsip-prinsip yang dijabarkan dengan pengalaman keseharian, dan jadikan panduan di dalamnya sebagai kompas rujukan yang terpercaya.`
-  ];
+  return `### 01. Ringkasan Naskah
+${introParagraph}
 
-  return `### 01. Ikhtisar Eksekutif & Orientasi Naskah
-${introVariants[v1]}
-
-${methodVariants[v2]}
-
-### 02. Paradigma Revolusioner & Gagasan Pembeda
-${paradigmVariants[v3]}
-
-Dengan gaya penuturan yang dewasa, tegas, dan berwibawa, dokumen ini mengungkap keterkaitan antara fondasi gagasan dan dampak aplikasinya dalam kehidupan nyata. Pembaca diajak berdialog secara cerdas untuk membangun cetak biru pemikiran yang mandiri.
-
-### 03. Bedah 4 Pilar Tematik & Pokok Bahasan Kritis
-Dalam telaah naskah ini, terdapat empat pilar konseptual utama yang dieksplorasi secara mendalam:
+### 02. Pokok Pembahasan
+Dalam edisi ini, topik bahasan dirangkum ke dalam beberapa aspek penting:
 ${pillars.map(p => `• **${p.title}**: ${p.desc}`).join('\n')}
 
-### 04. Relevansi Terapan & Sasaran Pembaca
-Naskah digital ini dirancang secara khusus untuk ${audience}. Manfaat substantif yang terkandung di dalamnya melampaui kepuasan literasi sesaat; setiap bab menyimpan wawasan yang dapat langsung dikonversi menjadi perbaikan strategi, ketajaman analisis masalah, hingga peningkatan mutu disiplin pribadi dan profesional Anda.
-
-### 05. Panduan Kajian Mandiri & Rekomendasi Redaksi
-${guideVariants[v4]}`;
+### 03. Format & Kenyamanan Membaca
+Dokumen digital ini disajikan dalam format PDF utuh yang siap dibuka langsung di smartphone, tablet, laptop, maupun aplikasi pembaca digital (e-reader). Berkas dirancang dengan tata letak yang rapi, teks yang jelas, serta kemudahan navigasi halaman untuk mendukung kenyamanan membaca Anda.`;
 }
 
 async function main() {
@@ -645,25 +510,27 @@ async function main() {
       durationText = `~${totalMinutes} Menit Baca`;
     }
 
-    // Cuplikan Bab 1 Sneak Peek Reader (Anti-Spoiler & Curiosity Gap)
+    // Cuplikan / Pengantar Bacaan Ramah Pengguna
     let sneakPeek = metadataCache[sku]?.sneakPeek;
-    if (!sneakPeek || sneakPeek.length < 200) {
-      sneakPeek = `Pada lembaran pembuka naskah "${cleanTitle}", pembaca langsung dihadapkan pada gagasan fundamental yang mengubah cara pandang umum. Melalui penjelasan yang terstruktur dan bahasa yang memikat, bab pertama ini mengupas tuntas akar permasalahan yang kerap dihadapi, sekaligus meletakkan fondasi strategi penting sebelum melangkah ke pembahasan yang lebih mendalam. Bab 1 selesai. Masih ada ${Math.max(1, totalPages - 15)} halaman naskah lengkap penuh wawasan menanti Anda...`;
+    const cleanSummary = extractCleanSummary(row.description);
+    if (!sneakPeek || sneakPeek.length < 100) {
+      const authorInfo = author ? `karya ${author}` : '';
+      sneakPeek = `Edisi digital "${cleanTitle}" ${authorInfo} hadir dalam format PDF lengkap. ${cleanSummary || 'Buku ini menyajikan pembahasan menyeluruh yang disusun secara sistematis untuk memudahkan pemahaman pembaca.'}\n\nNaskah lengkap siap diunduh dan disimpan langsung pada perangkat Anda untuk dibaca kapan saja secara offline.`;
     }
 
     // Sinopsis Editorial Komprehensif (Bebas dari Seluruh Template Toko & Bahasa Developer)
-    const quote = `“Pengetahuan sejati bukan sekadar apa yang kita ketahui, melainkan bagaimana pemahaman tersebut mampu mengubah tindakan kita sehari-hari.”`;
+    const quote = null;
     const synopsis = buildEditorialSynopsis(cleanTitle, author, catMeta.name, row.description, sku);
 
-    const curiosityHook = `Ulasan dalam naskah ini sengaja dihentikan pada titik klimaks pembahasan sebelum strategi rahasia bab inti diungkap secara gamblang. Penasaran bagaimana kelanjutan pembahasan dan formula lengkapnya? Tuntaskan membaca naskah aslinya melalui tombol unduhan di bawah ini.`;
+    const curiosityHook = 'Naskah lengkap tersedia dalam format PDF utuh tanpa potongan. Anda dapat langsung mengunduh dan menyimpannya untuk dibaca secara leluasa di smartphone, tablet, maupun komputer.';
 
-    // Table of Contents
+    // Kelengkapan & Spesifikasi Edisi Digital
     const tableOfContents = [
-      { chapter: 1, title: 'Bab 1: Intisari Pembuka & Peletakan Fondasi', status: 'Sudah Dibaca di Cuplikan' },
-      { chapter: 2, title: 'Bab 2: Analisis Mendalam & Pendekatan Konsep', status: 'Tersedia di E-Book Lengkap' },
-      { chapter: 3, title: 'Bab 3: Implementasi Nyata & Panduan Praktis', status: 'Tersedia di E-Book Lengkap' },
-      { chapter: 4, title: 'Bab 4: Eksplorasi Lanjutan & Studi Kasus', status: 'Tersedia di E-Book Lengkap' },
-      { chapter: 5, title: `Bab 5 s/d Bab Akhir: Rangkuman & Penutup (${totalPages} Hal)`, status: 'Tersedia di E-Book Lengkap' }
+      { chapter: '01', title: 'Format Dokumen Master', status: 'PDF Digital' },
+      { chapter: '02', title: 'Kelengkapan Naskah', status: `${totalPages} Halaman Utuh` },
+      { chapter: '03', title: 'Kualitas Teks & Tata Letak', status: 'Jernih & Terbaca' },
+      { chapter: '04', title: 'Akses Unduhan', status: 'Unduh Langsung' },
+      { chapter: '05', title: 'Kompatibilitas Perangkat', status: 'HP, Tablet & Laptop' }
     ];
 
     // Cover Image

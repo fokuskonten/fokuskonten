@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 
 /**
  * EbookCover3D.jsx — Komponen Tampilan Cover E-Book Asli Berstandar Toko Digital
@@ -48,15 +48,19 @@ export default function EbookCover3D({
   }, [coverImage, cleanSku])
 
   const [urlIndex, setUrlIndex] = useState(0)
-  const [isLoaded, setIsLoaded] = useState(false)
   const [hasExhausted, setHasExhausted] = useState(false)
+
+  // Reset saat SKU atau coverImage berganti
+  useEffect(() => {
+    setUrlIndex(0)
+    setHasExhausted(false)
+  }, [cleanSku, coverImage])
 
   const currentSrc = !hasExhausted && cdnFallbackUrls.length > 0 ? cdnFallbackUrls[urlIndex] : null
 
   const handleImageError = () => {
     if (urlIndex + 1 < cdnFallbackUrls.length) {
       setUrlIndex((prev) => prev + 1)
-      setIsLoaded(false)
     } else {
       setHasExhausted(true)
     }
@@ -76,17 +80,17 @@ export default function EbookCover3D({
       <div className={`relative w-full ${aspectRatio} rounded-xl bg-neutral-100 overflow-hidden flex items-center justify-center border border-neutral-200/80 shadow-[0_2px_10px_rgba(0,0,0,0.04)] select-none group-hover:border-neutral-300 transition-all`}>
         {currentSrc ? (
           <img
+            key={currentSrc}
             src={currentSrc}
             alt={`Sampul Resmi ${title}`}
             width={800}
             height={800}
             loading="lazy"
             decoding="async"
+            referrerPolicy="no-referrer"
+            crossOrigin="anonymous"
             onError={handleImageError}
-            onLoad={() => setIsLoaded(true)}
-            className={`w-full h-full object-contain pointer-events-none select-none transition-all duration-300 group-hover:scale-[1.03] ${
-              isLoaded ? 'opacity-100' : 'opacity-0'
-            }`}
+            className="w-full h-full object-contain pointer-events-none select-none transition-transform duration-300 group-hover:scale-[1.03]"
           />
         ) : (
           /* SVG Fallback Monokrom Elegan jika gambar tidak tersedia */

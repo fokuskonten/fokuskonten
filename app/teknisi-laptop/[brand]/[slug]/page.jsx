@@ -51,14 +51,19 @@ export async function generateMetadata({ params }) {
   const slug = params?.slug || ''
   const model = getStaticModel(brandSlug, slug)
 
-  const brandName = model?.brand || (brandSlug ? brandSlug.charAt(0).toUpperCase() + brandSlug.slice(1) : 'Laptop')
-  const modelName = model?.modelName || model?.model_name || slug
-  const mbCode = model?.motherboardCode || model?.motherboard_code || ''
-  const title = model?.officialTitle || `${brandName} ${modelName} ${mbCode ? '(' + mbCode + ') ' : ''}— Skema PDF & Boardview CAD Free Download + Panduan Jalur 19V & Standby`
+  const brandName = (model?.brand || (brandSlug ? brandSlug.charAt(0).toUpperCase() + brandSlug.slice(1) : 'Laptop')).trim()
+  let rawModelName = (model?.modelName || model?.model_name || slug).trim()
+  if (rawModelName.toLowerCase().startsWith(brandName.toLowerCase())) {
+    rawModelName = rawModelName.substring(brandName.length).trim()
+  }
+  const modelName = rawModelName
+  const fullModelName = `${brandName} ${modelName}`.trim()
+  const mbCode = (model?.motherboardCode || model?.motherboard_code || '').trim()
+  const title = model?.officialTitle || `${fullModelName} ${mbCode ? '(' + mbCode + ') ' : ''}— Skema PDF & Boardview CAD Free Download + Panduan Jalur 19V & Standby`
 
   return {
     title,
-    description: `Unduh skematik diagram PDF dan boardview CAD motherboard laptop ${brandName} ${modelName} ${mbCode} terverifikasi bebas proteksi.`
+    description: `Unduh skematik diagram PDF dan boardview CAD motherboard laptop ${fullModelName} ${mbCode} terverifikasi bebas proteksi.`
   }
 }
 

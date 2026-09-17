@@ -12,8 +12,12 @@
 export default function DeviceBlueprintSchematic({ model }) {
   if (!model) return null
 
-  const brand = (model.brand || 'Smartphone').toUpperCase()
-  const modelName = model.model_name || model.modelName || 'Perangkat'
+  const brand = (model.brand || 'Smartphone').trim()
+  let rawModelName = (model.model_name || model.modelName || 'Perangkat').trim()
+  if (rawModelName.toLowerCase().startsWith(brand.toLowerCase())) {
+    rawModelName = rawModelName.substring(brand.length).trim()
+  }
+  const modelName = rawModelName
   const chipset = model.chipset || 'Qualcomm Snapdragon / MediaTek'
   const isQualcomm = chipset.toLowerCase().includes('qualcomm') || chipset.toLowerCase().includes('snapdragon')
   const isMtk = chipset.toLowerCase().includes('mediatek') || chipset.toLowerCase().includes('helio') || chipset.toLowerCase().includes('dimensity')

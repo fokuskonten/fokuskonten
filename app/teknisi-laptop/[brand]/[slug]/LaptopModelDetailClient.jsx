@@ -7,7 +7,8 @@ import { getModelDetail } from '@/lib/technicianService'
 import DualDownloadRow from '@/components/teknisi/DualDownloadRow'
 import TraktirKopiModal from '@/components/teknisi/TraktirKopiModal'
 import BundlePromoBanner from '@/components/teknisi/BundlePromoBanner'
-import SidebarHPTools from '@/components/teknisi/SidebarHPTools'
+import SidebarLaptopTools from '@/components/teknisi/SidebarLaptopTools'
+import LaptopEducationalGuide from '@/components/teknisi/LaptopEducationalGuide'
 import LaptopDetailLoading from './loading'
 
 export default function LaptopModelDetailClient({ initialBrand, initialSlug, initialModel }) {
@@ -39,12 +40,17 @@ export default function LaptopModelDetailClient({ initialBrand, initialSlug, ini
   }
 
   const files = model.files || []
-  const brandName = model.brand || (brandSlug ? brandSlug.toUpperCase() : 'Laptop')
-  const modelName = model.modelName || model.model_name || slug
-  const mbCode = model.motherboardCode || model.motherboard_code || ''
+  const brandName = (model.brand || (brandSlug ? brandSlug.toUpperCase() : 'Laptop')).trim()
+  let rawModelName = (model.modelName || model.model_name || slug).trim()
+  if (rawModelName.toLowerCase().startsWith(brandName.toLowerCase())) {
+    rawModelName = rawModelName.substring(brandName.length).trim()
+  }
+  const modelName = rawModelName
+  const fullModelName = `${brandName} ${modelName}`.trim()
+  const mbCode = (model.motherboardCode || model.motherboard_code || '').trim()
 
   // Judul Baku Mas Muhari: Merek > Type > File > Free Download > + Panduan
-  const pageTitle = model.officialTitle || `${brandName} ${modelName} ${mbCode ? '(' + mbCode + ') ' : ''}— Skema PDF & Boardview CAD Free Download + Panduan Jalur 19V & Standby`
+  const pageTitle = model.officialTitle || `${fullModelName} ${mbCode ? '(' + mbCode + ') ' : ''}— Skema PDF & Boardview CAD Free Download + Panduan Jalur 19V & Standby`
 
   return (
     <div className="space-y-8">
@@ -99,8 +105,8 @@ export default function LaptopModelDetailClient({ initialBrand, initialSlug, ini
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono">
               <div className="p-3 bg-neutral-50 border border-neutral-200 rounded-xl space-y-1">
-                <span className="text-neutral-500 text-[10px] uppercase">Merek & Model Casing</span>
-                <p className="font-extrabold text-neutral-950 text-sm truncate">{brandName} {modelName}</p>
+                <span className="text-neutral-500 text-[10px] uppercase">Merek &amp; Model Casing</span>
+                <p className="font-extrabold text-neutral-950 text-sm truncate">{fullModelName}</p>
               </div>
               <div className="p-3 bg-neutral-50 border border-neutral-200 rounded-xl space-y-1">
                 <span className="text-neutral-500 text-[10px] uppercase">Kode Part Motherboard PCB</span>
@@ -117,44 +123,15 @@ export default function LaptopModelDetailClient({ initialBrand, initialSlug, ini
             </div>
           </div>
 
-          {/* Panduan Diagnosa Jalur Tegangan Standby */}
-          <div className="bg-white border border-neutral-200 rounded-2xl p-6 sm:p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] space-y-5">
-            <div className="flex items-center justify-between pb-3 border-b border-neutral-100">
-              <span className="text-xs sm:text-sm font-mono font-bold uppercase text-neutral-500 tracking-wider">
-                PANDUAN PENGUKURAN TEGANGAN & MATI TOTAL
-              </span>
-              <span className="px-2.5 py-1 bg-neutral-950 text-white font-mono text-xs font-bold rounded">
-                REPAIR GUIDE
-              </span>
-            </div>
-
-            <div className="space-y-4 text-sm sm:text-base text-neutral-800 font-sans leading-relaxed">
-              <p>
-                Gunakan berkas skema rangkaian dan boardview ini untuk melacak jalur distribusi tegangan utama motherboard <strong>{modelName}</strong>:
-              </p>
-              <div className="space-y-3 font-mono text-xs sm:text-sm pt-1">
-                <div className="flex items-start gap-3 p-3.5 bg-neutral-50 border border-neutral-200 rounded-xl">
-                  <span className="w-6 h-6 bg-neutral-950 text-white rounded-md flex items-center justify-center shrink-0 text-xs font-bold mt-0.5">1</span>
-                  <span className="text-neutral-700 leading-relaxed font-sans"><strong>Jalur Utama 19V (VIN / B+):</strong> Ukur tegangan pada kapasitor input dan kedua MOSFET switching pertama setelah konektor DC-IN.</span>
-                </div>
-                <div className="flex items-start gap-3 p-3.5 bg-neutral-50 border border-neutral-200 rounded-xl">
-                  <span className="w-6 h-6 bg-neutral-950 text-white rounded-md flex items-center justify-center shrink-0 text-xs font-bold mt-0.5">2</span>
-                  <span className="text-neutral-700 leading-relaxed font-sans"><strong>Jalur Standby 3V & 5V:</strong> Ukur output kedua induktor/lilitan coil PWM regulator standby sebelum tombol power ditekan.</span>
-                </div>
-                <div className="flex items-start gap-3 p-3.5 bg-neutral-50 border border-neutral-200 rounded-xl">
-                  <span className="w-6 h-6 bg-neutral-950 text-white rounded-md flex items-center justify-center shrink-0 text-xs font-bold mt-0.5">3</span>
-                  <span className="text-neutral-700 leading-relaxed font-sans"><strong>Sinyal Power Sequence:</strong> Pantau sinyal enable dari Embedded Controller (EC / KBC) menuju IC regulator CPU Core.</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          {/* Panduan Edukasi Teknis Analisis Skematik Motherboard */}
+          <LaptopEducationalGuide model={model} />
 
           {/* DAFTAR BERKAS DENGAN 2 TOMBOL AKSI */}
           <div className="bg-white border border-neutral-200 rounded-2xl p-6 sm:p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] space-y-6">
             <div className="flex items-center justify-between pb-4 border-b border-neutral-100">
               <div>
                 <h3 className="text-xl font-extrabold text-neutral-950 tracking-tight">
-                  Berkas Skema & Boardview ({files.length} File)
+                  Berkas Skema &amp; Boardview ({files.length} File)
                 </h3>
                 <p className="text-xs text-neutral-500 font-mono">
                   Pilih jalur unduhan gratis (Safelink) atau unduh cepat bebas iklan (Traktir Kopi)
@@ -189,7 +166,7 @@ export default function LaptopModelDetailClient({ initialBrand, initialSlug, ini
 
         {/* Kolom Kanan: 4 Kolom Sidebar Otoritas Sticky (Tidak Hilang Saat Scroll) */}
         <div className="lg:col-span-4 space-y-6 lg:sticky lg:top-24">
-          <SidebarHPTools />
+          <SidebarLaptopTools />
 
           {/* Kartu Software Viewer Resmi */}
           <div className="bg-white border border-neutral-200 rounded-2xl p-6 shadow-sm space-y-4">

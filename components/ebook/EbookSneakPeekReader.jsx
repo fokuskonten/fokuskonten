@@ -113,11 +113,10 @@ export default function EbookSneakPeekReader({ ebook, onScrollToDownload }) {
                     {item.title}
                   </span>
                 </div>
-                <span className={`px-2.5 py-1 rounded text-xs font-mono font-semibold shrink-0 ${
-                  item.status?.includes('Sudah')
+                <span className={`px-2.5 py-1 rounded text-xs font-mono font-semibold shrink-0 ${item.status?.includes('Sudah')
                     ? 'bg-neutral-200 text-neutral-900'
                     : 'bg-neutral-100 text-neutral-600'
-                }`}>
+                  }`}>
                   {item.status || 'Tersedia di E-Book'}
                 </span>
               </div>

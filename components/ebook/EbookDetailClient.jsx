@@ -19,8 +19,8 @@ import EbookDmcaModal from './EbookDmcaModal'
  */
 export default function EbookDetailClient({ ebook, relatedItems = [], categoryName = '' }) {
   const [isTraktirOpen, setIsTraktirOpen] = useState(false)
-  const [isDmcaOpen, setIsDmcaOpen]       = useState(false)
-  
+  const [isDmcaOpen, setIsDmcaOpen] = useState(false)
+
   const downloadSectionRef = useRef(null)
 
   if (!ebook) return null
@@ -38,13 +38,13 @@ export default function EbookDetailClient({ ebook, relatedItems = [], categoryNa
 
       {/* Kontainer Utama dengan Safe Bottom Padding pb-28 sm:pb-12 (Celah 31) */}
       <div className="pb-28 sm:pb-12 space-y-10">
-        
+
         {/* ── GRID UTAMA: 2 KOLOM (KONTEN EDITORIAL + SIDEBAR UNDUHAN) ── */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          
+
           {/* KOLOM KIRI (KONTEN EDITORIAL & BACAAN) - 8 KOLOM */}
           <article className="lg:col-span-8 space-y-8">
-            
+
             {/* Header Artikel E-Book */}
             <header className="bg-white text-neutral-900 border border-neutral-200 dark:bg-white dark:text-neutral-900 rounded-2xl p-6 sm:p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] space-y-4">
               <div className="flex flex-wrap items-center justify-between gap-2">
@@ -250,7 +250,7 @@ export default function EbookDetailClient({ ebook, relatedItems = [], categoryNa
 
           {/* KOLOM KANAN (SIDEBAR COVER 3D & AKSI UNDUHAN DESKTOP) - 4 KOLOM */}
           <aside aria-label="Sidebar Unduhan & Berkas" className="hidden lg:block lg:col-span-4 space-y-6 sticky top-8">
-            
+
             {/* 3D Showcase Sampul E-Book */}
             <div className="bg-white text-neutral-900 border border-neutral-200 dark:bg-white dark:text-neutral-900 rounded-2xl p-6 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col items-center text-center">
               <EbookCover3D

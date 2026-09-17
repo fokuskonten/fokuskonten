@@ -50,9 +50,14 @@ export default function SmartphoneModelDetailClient({ initialBrand, initialSlug,
   const ispFile = files.find(f => f.type === 'isp' || f.file_type === 'isp' || (f.file_name || f.name)?.includes('_isp'))
 
   // Judul Baku Mas Muhari: Merek > Type > File > Free Download > + Panduan
-  const brandName = model.brand || (brandSlug ? brandSlug.toUpperCase() : 'Smartphone')
-  const modelName = model.modelName || model.model_name || slug
-  const pageTitle = model.officialTitle || `${brandName} ${modelName} — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal`
+  const brandName = (model.brand || (brandSlug ? brandSlug.toUpperCase() : 'Smartphone')).trim()
+  let rawModelName = (model.modelName || model.model_name || slug).trim()
+  if (rawModelName.toLowerCase().startsWith(brandName.toLowerCase())) {
+    rawModelName = rawModelName.substring(brandName.length).trim()
+  }
+  const modelName = rawModelName
+  const fullModelName = `${brandName} ${modelName}`.trim()
+  const pageTitle = model.officialTitle || `${fullModelName} — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal`
 
   return (
     <div className="space-y-8">
@@ -102,7 +107,7 @@ export default function SmartphoneModelDetailClient({ initialBrand, initialSlug,
             <TestpointViewer
               model={model}
               file={tpFile}
-              modelName={`${brandName} ${modelName}`}
+              modelName={fullModelName}
             />
           )}
 
@@ -111,7 +116,7 @@ export default function SmartphoneModelDetailClient({ initialBrand, initialSlug,
             <IspPinoutViewer
               model={model}
               file={ispFile}
-              modelName={`${brandName} ${modelName}`}
+              modelName={fullModelName}
             />
           )}
 
