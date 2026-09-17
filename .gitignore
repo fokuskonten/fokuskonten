@@ -1,5 +1,6 @@
 node_modules/
 .next/
+.next_stash_out/
 out/
 .git/
 package-lock.json

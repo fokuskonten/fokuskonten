@@ -9,6 +9,9 @@ import EbookBundleBanner from '@/components/ebook/EbookBundleBanner'
 export const dynamicParams = true
 
 export async function generateStaticParams() {
+  if (process.env.BUILD_SCOPE && !['all', 'ebook', 'fast'].includes(process.env.BUILD_SCOPE.toLowerCase())) {
+    return [{ category: 'agama-islam' }]
+  }
   try {
     const list = Array.isArray(categories) ? categories : []
     return list.map((cat) => ({

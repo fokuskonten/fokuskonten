@@ -28,6 +28,9 @@ function getStaticBrandModels(brandSlug) {
 }
 
 export async function generateStaticParams() {
+  if (process.env.BUILD_SCOPE && !['all', 'technician', 'hp'].includes(process.env.BUILD_SCOPE.toLowerCase())) {
+    return [{ brand: 'xiaomi' }]
+  }
   return (technicianIndex.hpBrands || []).map((b) => ({
     brand: b.slug
   }))

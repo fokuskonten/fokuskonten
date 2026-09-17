@@ -105,6 +105,9 @@ function getAllSkuImages(sku) {
 }
 
 export async function generateStaticParams() {
+  if (process.env.BUILD_SCOPE && !['all', 'toko', 'fast'].includes(process.env.BUILD_SCOPE.toLowerCase())) {
+    return [{ sku: 'ideb00' }]
+  }
   const params = []
   const added = new Set()
 

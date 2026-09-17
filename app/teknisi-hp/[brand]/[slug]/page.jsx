@@ -23,6 +23,9 @@ function getStaticModel(brandSlug, slug) {
 }
 
 export async function generateStaticParams() {
+  if (process.env.BUILD_SCOPE && !['all', 'technician', 'hp'].includes(process.env.BUILD_SCOPE.toLowerCase())) {
+    return [{ brand: 'xiaomi', slug: 'hp-xiaomi-redmi-note-10' }]
+  }
   const brandsDir = path.join(process.cwd(), 'content/technician/brands')
   if (!fs.existsSync(brandsDir)) return []
 

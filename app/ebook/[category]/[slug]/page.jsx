@@ -13,6 +13,9 @@ export const dynamicParams = true
  * Eksekusi cepat < 50ms tanpa memory overhead (Celah 6).
  */
 export async function generateStaticParams() {
+  if (process.env.BUILD_SCOPE && !['all', 'ebook', 'fast'].includes(process.env.BUILD_SCOPE.toLowerCase())) {
+    return [{ category: 'agama-islam', slug: '10-kaidah-menghadapi-badai-fitnah-id507c' }]
+  }
   return routes.map((r) => ({
     category: r.c,
     slug: r.u

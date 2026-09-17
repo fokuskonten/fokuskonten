@@ -23,6 +23,9 @@ function getStaticModel(brandSlug, slug) {
 }
 
 export async function generateStaticParams() {
+  if (process.env.BUILD_SCOPE && !['all', 'technician', 'laptop'].includes(process.env.BUILD_SCOPE.toLowerCase())) {
+    return [{ brand: 'acer', slug: 'laptop-acer-jm31-cp-3-0225-1047-acer-aspire-as3820-as3820g-as3820t-as3820tg-as3820tz-as3820' }]
+  }
   const brandsDir = path.join(process.cwd(), 'content/technician/brands')
   if (!fs.existsSync(brandsDir)) return []
 
