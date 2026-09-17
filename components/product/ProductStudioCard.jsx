@@ -7,6 +7,9 @@ export default function ProductStudioCard({ generateWhatsAppLink }) {
         <img
           src="/logo.webp"
           alt="FokusKonten Logo"
+          width={40}
+          height={40}
+          style={{ width: '40px', height: '40px', maxWidth: '40px', maxHeight: '40px' }}
           className="w-10 h-10 object-contain drop-shadow-sm flex-shrink-0"
         />
         <div>

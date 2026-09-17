@@ -38,10 +38,29 @@ function TokoDigitalContent() {
   } = storeSummary
 
   const ecourseCount = designCategories.find(([cat]) => cat === 'Ecourse & Tutorial')?.[1] || 136
+  const videoCount = designCategories.find(([cat]) => cat === 'Video Konten')?.[1] || 35
   const cdrCount = realtimeFormats.find(([fmt]) => fmt === 'CDR')?.[1] || 389
-  const pptxCount = realtimeFormats.find(([fmt]) => fmt === 'PPTX')?.[1] || 140
+  const pptxCount = realtimeFormats.find(([fmt]) => fmt === 'PPTX')?.[1] || 144
   const pdfCount = realtimeFormats.find(([fmt]) => fmt === 'PDF')?.[1] || 2471
   const othersCount = realtimeFormats.filter(([fmt]) => !['CDR', 'PPTX', 'PDF', 'MP4'].includes(fmt)).reduce((acc, [, c]) => acc + c, 0) || 40
+
+  // Format filter tabs dengan pemisahan tegas Ecourse (136) dan Video Konten (35) sesuai SSOT Drive
+  const formatTabs = useMemo(() => {
+    const list = []
+    for (const [fmt, count] of realtimeFormats) {
+      if (fmt === 'MP4') {
+        list.push({ id: 'ECOURSE', label: 'Ecourse', count: ecourseCount })
+        list.push({ id: 'VIDEO_KONTEN', label: 'Video Konten', count: videoCount })
+      } else {
+        list.push({
+          id: fmt,
+          label: fmt === 'PDF' ? 'E-Book' : `.${fmt}`,
+          count
+        })
+      }
+    }
+    return list
+  }, [realtimeFormats, ecourseCount, videoCount])
 
   const sortOptions = [
     { id: 'newest', label: 'Terbaru' },
@@ -96,9 +115,15 @@ function TokoDigitalContent() {
         ((selectedCategory === 'E-Book' || selectedCategory === 'E-Book Digital') && p.category?.startsWith('E-Book')) ||
         (selectedCategory === 'Desain' && !p.category?.startsWith('E-Book'))
 
+      const fmtUpper = (selectedFormat || '').toUpperCase()
+      const isEcourseMatch = fmtUpper === 'ECOURSE' && (p.category === 'Ecourse & Tutorial' || (p.category || '').toLowerCase().includes('ecourse'))
+      const isVideoMatch = (fmtUpper === 'VIDEO_KONTEN' || fmtUpper === 'VIDEO KONTEN') && (p.category === 'Video Konten' || (p.category || '').toLowerCase().includes('video konten'))
+
       const matchFmt =
         selectedFormat === 'Semua' ||
-        (p.format && p.format.toUpperCase() === selectedFormat.toUpperCase()) ||
+        isEcourseMatch ||
+        isVideoMatch ||
+        (p.format && p.format.toUpperCase() === fmtUpper) ||
         (selectedFormat === 'PDF' && p.category?.startsWith('E-Book'))
 
       const title = (p.title || '').toLowerCase()
@@ -253,7 +278,15 @@ function TokoDigitalContent() {
               </span>
               {isFiltering && (
                 <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-neutral-900 text-white shadow-sm">
-                  <span>{selectedFormat !== 'Semua' ? (selectedFormat === 'PDF' ? 'E-Book' : `Format .${selectedFormat}`) : selectedCategory}</span>
+                  <span>
+                    {selectedFormat !== 'Semua'
+                      ? (selectedFormat.toUpperCase() === 'ECOURSE'
+                          ? 'Ecourse & Panduan'
+                          : (selectedFormat.toUpperCase() === 'VIDEO_KONTEN'
+                              ? 'Video Konten'
+                              : (selectedFormat === 'PDF' ? 'E-Book' : `Format .${selectedFormat}`)))
+                      : selectedCategory}
+                  </span>
                   <button
                     type="button"
                     onClick={resetAllFilters}
@@ -267,13 +300,21 @@ function TokoDigitalContent() {
             </div>
             <h1 suppressHydrationWarning className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-neutral-950 font-display tracking-tight">
               {mounted && selectedFormat !== 'Semua'
-                ? (selectedFormat === 'PDF' ? 'Katalog E-Book' : `Format .${selectedFormat}`)
+                ? (selectedFormat.toUpperCase() === 'ECOURSE'
+                    ? 'Katalog Ecourse & Panduan Bisnis'
+                    : (selectedFormat.toUpperCase() === 'VIDEO_KONTEN'
+                        ? 'Katalog Bahan Video Konten'
+                        : (selectedFormat === 'PDF' ? 'Katalog E-Book' : `Format .${selectedFormat}`)))
                 : (mounted && selectedCategory !== 'Semua' ? selectedCategory : 'Katalog Template & Desain')}
             </h1>
             <p suppressHydrationWarning className="text-sm text-neutral-500 mt-1 leading-relaxed">
               Menampilkan <strong>{mounted ? filteredProducts.length : totalActive}</strong> produk{' '}
               {mounted && selectedFormat !== 'Semua'
-                ? (selectedFormat === 'PDF' ? 'koleksi literatur digital siap baca.' : `format .${selectedFormat}`)
+                ? (selectedFormat.toUpperCase() === 'ECOURSE'
+                    ? 'materi pembelajaran & tutorial bisnis teruji.'
+                    : (selectedFormat.toUpperCase() === 'VIDEO_KONTEN'
+                        ? 'mentahan footage & amunisi video konten.'
+                        : (selectedFormat === 'PDF' ? 'koleksi literatur digital siap baca.' : `format .${selectedFormat}`)))
                 : (mounted && selectedCategory !== 'Semua' ? `kategori ${selectedCategory}` : 'siap pakai.')}
             </p>
           </div>
@@ -449,7 +490,7 @@ function TokoDigitalContent() {
         </div>
 
         {/* Format Quick Filter Tabs (Wrapping cleanly on all viewports) */}
-        {realtimeFormats.length > 0 && (
+        {formatTabs.length > 0 && (
           <div suppressHydrationWarning className="flex flex-wrap items-center gap-2 pt-4">
             <button
               type="button"
@@ -462,22 +503,22 @@ function TokoDigitalContent() {
             >
               Semua Format ({totalActive})
             </button>
-            {realtimeFormats.map(([fmt, count]) => {
-              const isActive = mounted && selectedFormat === fmt
+            {formatTabs.map((tab) => {
+              const isActive = mounted && selectedFormat.toUpperCase() === tab.id.toUpperCase()
               return (
                 <button
-                  key={fmt}
+                  key={tab.id}
                   type="button"
-                  onClick={() => handleFormatSelect(fmt)}
+                  onClick={() => handleFormatSelect(tab.id)}
                   className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 flex items-center gap-1.5 ${
                     isActive
                       ? 'bg-neutral-900 text-white shadow-sm'
                       : 'bg-white border border-neutral-200 text-neutral-600 hover:border-neutral-400 hover:text-neutral-900'
                   }`}
                 >
-                  <span>{fmt === 'PDF' ? 'E-Book' : (fmt === 'MP4' ? 'Video & Ecourse' : `.${fmt}`)}</span>
+                  <span>{tab.label}</span>
                   <span className={`text-[10px] px-1.5 py-0.2 rounded-full ${isActive ? 'bg-white/20 text-white' : 'bg-neutral-100 text-neutral-500'}`}>
-                    {count}
+                    {tab.count}
                   </span>
                 </button>
               )

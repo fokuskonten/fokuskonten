@@ -13,7 +13,6 @@ export const metadata = {
 
 export default function SmartphoneLayout({ children }) {
   const breadcrumbItems = [
-    { label: 'Beranda', href: '/' },
     { label: 'Direktori Teknisi', href: '/teknisi-hp' },
     { label: 'Smartphone Repair', href: '/teknisi-hp' }
   ]

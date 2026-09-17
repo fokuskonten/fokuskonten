@@ -6,12 +6,18 @@ import categories from '@/content/ebook/categories.json'
 import CategorySiloClient from '@/components/ebook/CategorySiloClient'
 import EbookBundleBanner from '@/components/ebook/EbookBundleBanner'
 
-export const dynamicParams = false
+export const dynamicParams = true
 
 export async function generateStaticParams() {
-  return categories.map((cat) => ({
-    category: cat.slug
-  }))
+  try {
+    const list = Array.isArray(categories) ? categories : []
+    return list.map((cat) => ({
+      category: cat.slug
+    }))
+  } catch (err) {
+    console.error('[generateStaticParams error]', err)
+    return []
+  }
 }
 
 export async function generateMetadata({ params }) {

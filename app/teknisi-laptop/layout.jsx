@@ -10,7 +10,6 @@ export const metadata = {
 
 export default function LaptopLayout({ children }) {
   const breadcrumbItems = [
-    { label: 'Beranda', href: '/' },
     { label: 'Direktori Teknisi', href: '/teknisi-hp' },
     { label: 'Skema Laptop & Boardview', href: '/teknisi-laptop' }
   ]

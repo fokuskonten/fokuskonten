@@ -351,7 +351,7 @@ export default function EbookTraktirModal({ isOpen, onClose, ebook }) {
                   <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3" />
                   </svg>
-                  <span>Bayar Rp 2.000 via QRIS</span>
+                  <span>Rp 2.000 via QRIS</span>
                 </>
               )}
             </button>

@@ -18,7 +18,8 @@ export default function EbookCover3D({
   category = '',
   className = '',
   aspectRatio = 'aspect-square',
-  size = 'full' // 'full' | 'sm' | 'md' | 'lg'
+  size = 'full', // 'full' | 'sm' | 'md' | 'lg'
+  variant = 'default' // 'default' | 'fullframe'
 }) {
   const cleanSku = (sku || '').trim().toUpperCase()
 
@@ -73,6 +74,55 @@ export default function EbookCover3D({
     md: 'w-full max-w-[300px]',
     lg: 'w-full max-w-[400px]'
   }[size] || 'w-full'
+
+  if (variant === 'fullframe') {
+    return (
+      <div className={`relative w-full ${aspectRatio} bg-neutral-100 overflow-hidden flex items-center justify-center border-b border-neutral-100 select-none ${className}`}>
+        {currentSrc ? (
+          <img
+            key={currentSrc}
+            src={currentSrc}
+            alt={`Sampul Resmi ${title}`}
+            width={800}
+            height={800}
+            loading="lazy"
+            decoding="async"
+            referrerPolicy="no-referrer"
+            crossOrigin="anonymous"
+            onError={handleImageError}
+            className="w-full h-full object-contain pointer-events-none select-none transition-transform duration-300 group-hover:scale-[1.02] transform-gpu"
+          />
+        ) : (
+          /* SVG Fallback Monokrom Elegan jika gambar tidak tersedia */
+          <div className="w-full h-full p-4 flex flex-col justify-between bg-neutral-900 text-white select-none relative overflow-hidden">
+            <div className="absolute -right-8 -top-8 w-28 h-28 rounded-full border border-neutral-700/40 pointer-events-none" />
+            <div className="absolute -left-8 -bottom-8 w-32 h-32 rounded-full border border-neutral-700/40 pointer-events-none" />
+            
+            <div className="z-10">
+              <span className="text-[10px] font-mono tracking-widest text-neutral-400 uppercase">
+                {cleanSku || 'FOKUSKONTEN'}
+              </span>
+              <p className="text-[11px] text-neutral-400 font-mono mt-0.5 uppercase tracking-wide">
+                {category || 'DIREKTORI E-BOOK'}
+              </p>
+            </div>
+
+            <div className="z-10 my-auto py-2">
+              <div className="w-8 h-1 bg-white mb-3" />
+              <h3 className="font-extrabold text-sm sm:text-base leading-snug line-clamp-3 text-white">
+                {title}
+              </h3>
+            </div>
+
+            <div className="z-10 pt-2 border-t border-neutral-800 flex items-center justify-between text-[10px] font-mono text-neutral-400">
+              <span>EDISI DIGITAL</span>
+              <span>VERIFIKASI PDF</span>
+            </div>
+          </div>
+        )}
+      </div>
+    )
+  }
 
   return (
     <div className={`relative inline-block ${sizeClasses} ${className}`}>

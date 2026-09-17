@@ -7,8 +7,7 @@ import EbookTraktirModal from './EbookTraktirModal'
 import EbookMobileActionBar from './EbookMobileActionBar'
 import EbookReadingProgressBar from './EbookReadingProgressBar'
 import EbookSneakPeekReader from './EbookSneakPeekReader'
-import EbookAudioPreview from './EbookAudioPreview'
-import EbookBookmarkButton from './EbookBookmarkButton'
+import EbookCuriosityHook from './EbookCuriosityHook'
 import EbookRelatedGrid from './EbookRelatedGrid'
 import EbookBundleBanner from './EbookBundleBanner'
 import EbookDmcaModal from './EbookDmcaModal'
@@ -17,6 +16,22 @@ import EbookDmcaModal from './EbookDmcaModal'
  * EbookDetailClient.jsx — Client Wrapper Halaman Artikel E-Book Lengkap
  * Mengelola state modal Traktir Kopi, modal DMCA, scroll anchor, dan audio preview.
  */
+function extractSubtitle(ebook) {
+  if (!ebook) return null
+  if (ebook.subtitle) return ebook.subtitle
+  const raw = ebook.articleTitle || ''
+  let clean = raw.replace(/^E-Book\s+/i, '').replace(/\s+PDF$/i, '').trim()
+  clean = clean.replace(/\(Karya:[^)]+\)/i, '').trim()
+  if (clean.includes('—')) {
+    const parts = clean.split('—')
+    return parts[parts.length - 1].trim()
+  } else if (clean.includes(' - ')) {
+    const parts = clean.split(' - ')
+    return parts[parts.length - 1].trim()
+  }
+  return null
+}
+
 export default function EbookDetailClient({ ebook, relatedItems = [], categoryName = '' }) {
   const [isTraktirOpen, setIsTraktirOpen] = useState(false)
   const [isDmcaOpen, setIsDmcaOpen] = useState(false)
@@ -24,6 +39,8 @@ export default function EbookDetailClient({ ebook, relatedItems = [], categoryNa
   const downloadSectionRef = useRef(null)
 
   if (!ebook) return null
+
+  const subtitle = extractSubtitle(ebook)
 
   const handleScrollToDownload = () => {
     if (downloadSectionRef.current) {
@@ -47,32 +64,37 @@ export default function EbookDetailClient({ ebook, relatedItems = [], categoryNa
 
             {/* Header Artikel E-Book */}
             <header className="bg-white text-neutral-900 border border-neutral-200 dark:bg-white dark:text-neutral-900 rounded-2xl p-6 sm:p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] space-y-4">
-              <div className="flex flex-wrap items-center justify-between gap-2">
-                <div className="flex items-center gap-2">
-                  <span className="px-2.5 py-0.5 rounded bg-neutral-950 text-white text-[10px] font-mono font-bold tracking-wider uppercase">
-                    E-BOOK RESMI
-                  </span>
-                  <span className="px-2.5 py-0.5 rounded bg-neutral-100 text-neutral-800 text-[10px] font-mono font-semibold uppercase">
-                    {ebook.category}
-                  </span>
-                </div>
-                <EbookBookmarkButton ebook={ebook} />
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="px-2.5 py-0.5 rounded bg-neutral-950 text-white text-[10px] font-mono font-bold tracking-wider uppercase">
+                  E-BOOK RESMI
+                </span>
+                <span className="px-2.5 py-0.5 rounded bg-neutral-100 text-neutral-800 text-[10px] font-mono font-semibold uppercase">
+                  {ebook.category}
+                </span>
               </div>
 
-              <h1 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-neutral-950 font-sans leading-tight">
-                {ebook.title}
-              </h1>
-
-              {/* Meta Penulis & Durasi */}
-              <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs sm:text-sm font-mono text-neutral-500 pt-2 border-t border-neutral-100">
-                {ebook.hasAuthor && ebook.authorDisplay && (
-                  <span className="font-bold text-neutral-900 font-serif text-sm sm:text-base">
-                    Karya: {ebook.authorDisplay}
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-neutral-950 font-sans leading-tight">
+                <span>{ebook.title}</span>
+                {subtitle && (
+                  <span className="text-neutral-500 font-medium text-lg sm:text-2xl lg:text-3xl ml-2 font-serif">
+                    — {subtitle}
                   </span>
                 )}
-                <span>Halaman: {ebook.pages || 'Lengkap'}</span>
-                <span>Durasi: {ebook.duration || '~1-2 Jam'}</span>
-                <span>Format: {ebook.format || 'PDF'}</span>
+              </h1>
+
+              {/* Sub Judul & Identitas Penulis (Menggantikan baris redundan Halaman/Durasi yang sudah ada di Spesifikasi) */}
+              <div className="flex flex-wrap items-center justify-between gap-3 text-xs sm:text-sm pt-3 border-t border-neutral-100 font-mono text-neutral-600">
+                <div className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-neutral-950 shrink-0" />
+                  <span>
+                    Sub Judul: <strong className="text-neutral-900 font-bold font-sans">{subtitle || `Resensi Literatur ${ebook.category || 'Digital'}`}</strong>
+                  </span>
+                </div>
+                {ebook.hasAuthor && ebook.authorDisplay && (
+                  <div className="text-neutral-600">
+                    Penulis: <span className="font-bold text-neutral-950 font-serif">{ebook.authorDisplay}</span>
+                  </div>
+                )}
               </div>
 
               {/* Tampilan Cover Asli pada Layar Mobile (lg:hidden) */}
@@ -86,18 +108,11 @@ export default function EbookDetailClient({ ebook, relatedItems = [], categoryNa
                 />
               </div>
 
-              {/* Audio Preview (Web Speech API / Server AI Voice) */}
-              <EbookAudioPreview
-                textToRead={ebook.sneakPeekText || ebook.synopsis}
-                title={ebook.title}
-                sku={ebook.sku}
-              />
             </header>
 
-            {/* Cuplikan Sneak Peek Reader Bab 1 & Curiosity Gap */}
+            {/* Cuplikan Sneak Peek Reader Bab 1 & Struktur Bab */}
             <EbookSneakPeekReader
               ebook={ebook}
-              onScrollToDownload={handleScrollToDownload}
             />
 
             {/* Sinopsis & Kajian Literatur Lengkap (Format Editorial Modern & Revolusioner) */}
@@ -210,6 +225,11 @@ export default function EbookDetailClient({ ebook, relatedItems = [], categoryNa
               </div>
             </section>
 
+            {/* ── KONTEN 2/3: KARTU PENASARAN NASKAH LENGKAP (CURIOSITY GAP) ── */}
+            <EbookCuriosityHook
+              curiosityHook={ebook.curiosityHook}
+            />
+
             {/* Area Unduhan Anchor Ref (Untuk Navigasi Mobile & Desktop) */}
             <div ref={downloadSectionRef} className="pt-2">
               <EbookDownloadRow
@@ -260,9 +280,6 @@ export default function EbookDetailClient({ ebook, relatedItems = [], categoryNa
                 category={ebook.category}
                 size="full"
               />
-              <span className="text-[11px] font-mono text-neutral-400 mt-3">
-                Sampul WebP Resolusi Tinggi (800x800 px)
-              </span>
             </div>
 
             {/* Kartu Spesifikasi Dokumen */}

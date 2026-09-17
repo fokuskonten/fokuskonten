@@ -33,33 +33,37 @@ export default function EbookRelatedGrid({ items = [], categoryName = '', catego
             <Link
               key={item.sku || item.s}
               href={itemUrl}
-              className="group bg-white text-neutral-900 border border-neutral-200 dark:bg-white dark:text-neutral-900 rounded-2xl p-3 sm:p-4 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-md transition-all flex flex-col justify-between"
+              className="group bg-white text-neutral-900 border border-neutral-200/80 dark:bg-white dark:text-neutral-900 rounded-2xl overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_14px_30px_rgba(0,0,0,0.12)] hover:-translate-y-1 hover:border-neutral-300 transition-all duration-200 flex flex-col justify-between"
             >
               <div>
-                <div className="w-full pb-3">
-                  <EbookCover3D
-                    coverImage={item.coverImage}
-                    title={item.title || item.t}
-                    sku={item.sku || item.s}
-                    category={categoryName}
-                    size="full"
-                  />
+                <EbookCover3D
+                  coverImage={item.coverImage}
+                  title={item.title || item.t}
+                  sku={item.sku || item.s}
+                  category={categoryName}
+                  variant="fullframe"
+                  size="full"
+                />
+                <div className="p-3 sm:p-3.5 pb-2">
+                  <h4 className="font-extrabold text-xs sm:text-sm text-neutral-950 leading-snug line-clamp-2 group-hover:underline">
+                    {item.title || item.t}
+                  </h4>
+                  {(item.author || item.a) && (
+                    <p className="text-[11px] text-neutral-500 line-clamp-1 mt-1 font-serif">
+                      {item.author || item.a}
+                    </p>
+                  )}
                 </div>
-                <h4 className="font-extrabold text-xs sm:text-sm text-neutral-950 leading-snug line-clamp-2 group-hover:underline">
-                  {item.title || item.t}
-                </h4>
-                {(item.author || item.a) && (
-                  <p className="text-[11px] text-neutral-500 line-clamp-1 mt-1 font-serif">
-                    {item.author || item.a}
-                  </p>
-                )}
               </div>
 
-              <div className="mt-3 pt-2 border-t border-neutral-100 flex items-center justify-between text-[10px] font-mono text-neutral-500">
-                <span>{item.pages ? `${item.pages} Hal` : 'PDF Lengkap'}</span>
-                <span className="font-bold text-neutral-900 group-hover:translate-x-0.5 transition-transform">
-                  Baca &rarr;
-                </span>
+              <div className="p-3 sm:p-3.5 pt-0">
+                <div className="pt-2 border-t border-neutral-100 flex items-center justify-between text-[10px] font-mono text-neutral-500">
+                  <span>{item.pages ? `${item.pages} Hal` : 'PDF Lengkap'}</span>
+                  <span className="font-bold text-neutral-900 group-hover:translate-x-0.5 transition-transform flex items-center gap-1">
+                    <span>Baca</span>
+                    <span>&rarr;</span>
+                  </span>
+                </div>
               </div>
             </Link>
           )

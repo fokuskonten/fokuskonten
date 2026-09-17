@@ -1,12 +1,15 @@
 import Link from 'next/link'
 
-export default function Breadcrumb({ items }) {
+export default function Breadcrumb({ items = [] }) {
+  // Anti-Redundansi: Jangan render item pertama jika itu sudah Beranda
+  const cleanItems = (items || []).filter((item, idx) => !(idx === 0 && (item.label?.toLowerCase() === 'beranda' || item.href === '/')))
+
   return (
     <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-sm text-neutral-400 mb-8">
       <Link href="/" className="hover:text-brand-600 transition-colors">
         Beranda
       </Link>
-      {items.map((item, i) => (
+      {cleanItems.map((item, i) => (
         <span key={i} className="flex items-center gap-1.5">
           <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />

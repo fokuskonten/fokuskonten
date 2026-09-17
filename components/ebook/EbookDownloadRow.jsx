@@ -2,16 +2,20 @@
 
 import { useState, useEffect } from 'react'
 import { getApiBaseUrl } from '@/lib/apiConfig'
+import { detectAdBlocker } from '@/lib/adblockDetector'
+import EbookAdblockModal from './EbookAdblockModal'
 
 /**
  * EbookDownloadRow.jsx — Komponen Baris Unduhan Dual Aksi (Safelink + Traktir Kopi)
  * Menyediakan opsi unduhan gratis via tautan sponsor iklan atau jalur cepat tanpa iklan.
+ * Dilengkapi deteksi adblocker di sisi klien untuk mengarahkan pengguna ke opsi Traktir Kopi.
  */
 export default function EbookDownloadRow({ ebook, onOpenTraktir }) {
   const [safelinkUrl, setSafelinkUrl] = useState(ebook?.safelinkUrl || null)
   const [safelinkStatus, setSafelinkStatus] = useState(ebook?.safelinkUrl ? 'ready' : 'idle')
   const [errorMsg, setErrorMsg] = useState('')
   const [isDownloading, setIsDownloading] = useState(false)
+  const [isAdblockModalOpen, setIsAdblockModalOpen] = useState(false)
 
   useEffect(() => {
     if (ebook?.safelinkUrl) {
@@ -27,31 +31,53 @@ export default function EbookDownloadRow({ ebook, onOpenTraktir }) {
   const pages = ebook.pages || 0
   const format = ebook.format || 'PDF'
 
-  async function handleSafelinkClick(e) {
+  async function resolveSafelinkTarget() {
     if (safelinkStatus === 'ready' && safelinkUrl) {
-      trackDownload('SAFELINK')
-      return
+      return safelinkUrl
     }
+    const apiUrl = getApiBaseUrl()
+    const res = await fetch(`${apiUrl}/ebook/safelink-instant/${sku}`)
+    const json = await res.json()
+    if (json.success && json.safelinkUrl) {
+      setSafelinkUrl(json.safelinkUrl)
+      setSafelinkStatus('ready')
+      return json.safelinkUrl
+    }
+    throw new Error(json.message || 'Tautan sponsor belum tersedia saat ini.')
+  }
 
-    setSafelinkStatus('loading')
+  async function handleSafelinkClick(e) {
+    if (e && e.preventDefault) e.preventDefault()
     setErrorMsg('')
+    setSafelinkStatus('loading')
 
     try {
-      const apiUrl = getApiBaseUrl()
-      const res = await fetch(`${apiUrl}/ebook/safelink-instant/${sku}`)
-      const json = await res.json()
+      // 1. Cek Pemblokir Iklan (Adblocker) secara cepat
+      const isBlocked = await detectAdBlocker()
 
-      if (json.success && json.safelinkUrl) {
-        setSafelinkUrl(json.safelinkUrl)
+      const targetUrl = await resolveSafelinkTarget()
+
+      if (isBlocked) {
+        // Tampilkan modal pemblokir iklan (tutup celah adblocker)
+        setIsAdblockModalOpen(true)
         setSafelinkStatus('ready')
-        trackDownload('SAFELINK')
-        window.open(json.safelinkUrl, '_blank', 'noopener,noreferrer')
-      } else {
-        throw new Error(json.message || 'Tautan sponsor belum tersedia saat ini.')
+        return
       }
+
+      // 2. Jika tidak ada adblocker, buka Safelinku seperti biasa
+      trackDownload('SAFELINK')
+      window.open(targetUrl, '_blank', 'noopener,noreferrer')
+      setSafelinkStatus('ready')
     } catch (err) {
-      setErrorMsg('Gagal memuat link. Silakan pilih opsi Unduh Cepat atau coba kembali.')
+      setErrorMsg('Gagal memuat link. Silakan pilih opsi Traktir Kopi atau coba kembali.')
       setSafelinkStatus('error')
+    }
+  }
+
+  function proceedDirectToSafelink() {
+    if (safelinkUrl) {
+      trackDownload('SAFELINK_BYPASS')
+      window.open(safelinkUrl, '_blank', 'noopener,noreferrer')
     }
   }
 
@@ -87,38 +113,21 @@ export default function EbookDownloadRow({ ebook, onOpenTraktir }) {
       <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-3.5">
         {/* Tombol 1: Unduh via Safelink (Gratis Beriklan) */}
         <div className="flex flex-col">
-          {safelinkStatus === 'ready' && safelinkUrl ? (
-            <a
-              href={safelinkUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => trackDownload('SAFELINK')}
-              className="w-full py-3 px-4 rounded-xl bg-neutral-100 hover:bg-neutral-200 text-neutral-950 font-bold text-xs sm:text-sm border border-neutral-300 transition-all text-center font-mono flex items-center justify-center gap-2"
-            >
-              <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-              <span>Unduh via Safelink (Gratis)</span>
-            </a>
-          ) : (
-            <button
-              type="button"
-              onClick={handleSafelinkClick}
-              disabled={safelinkStatus === 'loading'}
-              className="w-full py-3 px-4 rounded-xl bg-neutral-100 hover:bg-neutral-200 text-neutral-950 font-bold text-xs sm:text-sm border border-neutral-300 transition-all text-center font-mono flex items-center justify-center gap-2 disabled:opacity-60"
-            >
-              <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-              <span>
-                {safelinkStatus === 'loading'
-                  ? 'Menyiapkan Tautan...'
-                  : safelinkStatus === 'error'
-                    ? 'Coba Tautan Lagi'
-                    : 'Unduh via Safelink (Gratis)'}
-              </span>
-            </button>
-          )}
+          <button
+            type="button"
+            onClick={handleSafelinkClick}
+            disabled={safelinkStatus === 'loading'}
+            className="w-full py-3 px-4 rounded-xl bg-neutral-100 hover:bg-neutral-200 text-neutral-950 font-bold text-xs sm:text-sm border border-neutral-300 transition-all text-center font-mono flex items-center justify-center gap-2 disabled:opacity-60"
+          >
+            <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            <span>
+              {safelinkStatus === 'loading'
+                ? 'Memeriksa Tautan...'
+                : 'Unduh via Safelink (Gratis)'}
+            </span>
+          </button>
           <span className="text-[10px] text-neutral-400 font-mono text-center mt-1.5">
             Melewati halaman sponsor iklan CPM
           </span>
@@ -159,10 +168,19 @@ export default function EbookDownloadRow({ ebook, onOpenTraktir }) {
         <p className="flex items-start gap-1.5">
           <span className="text-neutral-950 font-bold">•</span>
           <span>
-            <strong className="text-neutral-900">Tautan Terblokir Provider?</strong> Aktifkan DNS 1.1.1.1 atau pilih opsi Traktir Kopi untuk bypass batasan jaringan operator secara aman.
+            <strong className="text-neutral-900">Tautan Terkendala Operator?</strong> Pilih opsi Traktir Kopi untuk mengunduh langsung dari server utama.
           </span>
         </p>
       </div>
+
+      {/* Modal Peringatan Pemblokir Iklan (Adblocker) */}
+      <EbookAdblockModal
+        isOpen={isAdblockModalOpen}
+        onClose={() => setIsAdblockModalOpen(false)}
+        onProceedToSafelink={proceedDirectToSafelink}
+        onOpenTraktir={onOpenTraktir}
+        ebook={ebook}
+      />
     </div>
   )
 }

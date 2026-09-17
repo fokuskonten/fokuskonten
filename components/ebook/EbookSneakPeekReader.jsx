@@ -1,19 +1,24 @@
 'use client'
 
+import { useState } from 'react'
+
 /**
- * EbookSneakPeekReader.jsx — Cuplikan Pembaca Bab 1 In-Browser & Curiosity Gap
- * Menyajikan cuplikan naskah bab pembuka, kutipan pengarang, dan daftar isi terstruktur.
+ * EbookSneakPeekReader.jsx — Cuplikan Pembaca Bab 1 In-Browser & Struktur Naskah
+ * Menyajikan lembar baca naskah pembuka dengan fitur expandable, kutipan pengarang, dan daftar isi terstruktur.
+ * Mematuhi STANDAR_UI_WEB_OFFICIAL.md (Anti-Nested Card, Zero-Icon Amatir, Monokrom Baku).
  */
-export default function EbookSneakPeekReader({ ebook, onScrollToDownload }) {
+export default function EbookSneakPeekReader({ ebook }) {
+  const [isExpanded, setIsExpanded] = useState(false)
+
   if (!ebook) return null
 
   const quote = ebook.quote
   const sneakPeek = ebook.sneakPeekText || ''
-  const curiosityHook = ebook.curiosityHook || ''
   const tableOfContents = Array.isArray(ebook.tableOfContents) ? ebook.tableOfContents : []
+  const isLongSneakPeek = sneakPeek.length > 350
 
   return (
-    <section aria-labelledby="sneak-peek-heading" className="space-y-6">
+    <section aria-labelledby="sneak-peek-heading" className="space-y-8">
       {/* 1. Kotak Kutipan Mutiara Pengarang (Jika Tersedia) */}
       {quote && (
         <blockquote className="relative p-5 sm:p-6 rounded-2xl bg-neutral-50 border-l-4 border-neutral-950 text-neutral-800 italic font-serif text-sm sm:text-base leading-relaxed shadow-xs">
@@ -32,7 +37,7 @@ export default function EbookSneakPeekReader({ ebook, onScrollToDownload }) {
       )}
 
       {/* 2. Lembaran Baca Bab 1 (In-Browser Reader) */}
-      <div className="bg-white text-neutral-900 border border-neutral-200 dark:bg-white dark:text-neutral-900 rounded-2xl p-6 sm:p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
+      <div className="bg-white text-neutral-900 border border-neutral-200 dark:bg-white dark:text-neutral-900 rounded-2xl p-6 sm:p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] space-y-6">
         <div className="flex items-center justify-between pb-4 border-b border-neutral-100">
           <div className="flex items-center gap-2">
             <span className="w-2.5 h-2.5 rounded-full bg-neutral-950" />
@@ -40,52 +45,38 @@ export default function EbookSneakPeekReader({ ebook, onScrollToDownload }) {
               Cuplikan Baca: Bab 1 Pembuka
             </h2>
           </div>
-          <span className="px-3 py-1 rounded bg-neutral-100 text-neutral-800 text-xs font-mono font-bold tracking-wider uppercase">
+          <span className="px-3 py-1 rounded bg-neutral-100 text-neutral-800 text-xs font-mono font-bold tracking-wider uppercase border border-neutral-200">
             PRATINJAU LEGAL (FAIR USE)
           </span>
         </div>
 
-        {/* Naskah Cuplikan — Tipografi Buku Nyaman Dibaca (Proporsional & Presisi) */}
-        <div className="mt-6 text-sm sm:text-[15px] leading-[1.8] text-neutral-700 space-y-4 font-sans">
-          {sneakPeek ? (
-            <p className="whitespace-pre-line text-neutral-800">
-              {sneakPeek}
-            </p>
-          ) : (
-            <p className="italic text-neutral-500 font-sans text-sm sm:text-base">
-              Cuplikan bab pembuka sedang disinkronisasi ke katalog bacaan.
-            </p>
+        {/* Naskah Cuplikan — Tipografi Nyaman & Expandable */}
+        <div className="relative">
+          <div
+            className={`text-sm sm:text-[15px] leading-[1.8] text-neutral-800 font-sans whitespace-pre-line transition-all duration-300 ${
+              isLongSneakPeek && !isExpanded ? 'max-h-72 overflow-hidden' : 'max-h-none'
+            }`}
+          >
+            {sneakPeek || 'Cuplikan bab pembuka sedang disinkronisasi ke katalog bacaan.'}
+          </div>
+
+          {/* Fade Gradient Overlay saat Cuplikan Diringkas */}
+          {isLongSneakPeek && !isExpanded && (
+            <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none" />
           )}
         </div>
 
-        {/* Curiosity Gap Cliffhanger Hook */}
-        {curiosityHook && (
-          <div className="mt-8 p-5 sm:p-6 rounded-2xl bg-neutral-50 border border-neutral-200 text-sm sm:text-base text-neutral-800 leading-relaxed font-sans">
-            <div className="flex items-start gap-3.5">
-              <div className="w-8 h-8 rounded-lg bg-neutral-950 text-white flex items-center justify-center shrink-0 mt-0.5 shadow-xs">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
-              </div>
-              <div className="space-y-2">
-                <strong className="block font-extrabold text-neutral-950 text-base sm:text-lg">
-                  Penasaran dengan Kelanjutan Naskah Lengkapnya?
-                </strong>
-                <p className="text-neutral-700 text-sm sm:text-base leading-relaxed">
-                  {curiosityHook}
-                </p>
-                {onScrollToDownload && (
-                  <button
-                    type="button"
-                    onClick={onScrollToDownload}
-                    className="mt-3 px-5 py-2.5 rounded-xl bg-neutral-950 hover:bg-neutral-800 text-white font-mono font-bold text-xs uppercase tracking-wider transition-colors inline-flex items-center gap-2 shadow-xs"
-                  >
-                    <span>Buka Tautan Unduhan Lengkap</span>
-                    <span>&darr;</span>
-                  </button>
-                )}
-              </div>
-            </div>
+        {/* Tombol Aksi Expand / Ringkas Cuplikan */}
+        {isLongSneakPeek && (
+          <div className="pt-2 flex justify-center border-t border-neutral-100">
+            <button
+              type="button"
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="px-6 py-2.5 rounded-xl border border-neutral-300 hover:border-neutral-950 bg-neutral-100 hover:bg-neutral-950 text-neutral-900 hover:text-white font-mono font-bold text-xs uppercase tracking-wider transition-colors inline-flex items-center gap-2 shadow-xs"
+            >
+              <span>{isExpanded ? 'Ringkas Cuplikan Naskah' : 'Baca Cuplikan Selengkapnya'}</span>
+              <span className="text-sm font-mono">{isExpanded ? '↑' : '↓'}</span>
+            </button>
           </div>
         )}
       </div>
@@ -94,9 +85,12 @@ export default function EbookSneakPeekReader({ ebook, onScrollToDownload }) {
       {tableOfContents.length > 0 && (
         <div className="bg-white text-neutral-900 border border-neutral-200 dark:bg-white dark:text-neutral-900 rounded-2xl p-6 sm:p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
           <div className="flex items-center justify-between pb-4 border-b border-neutral-100">
-            <h3 className="font-extrabold text-base sm:text-lg tracking-tight text-neutral-950 font-sans">
-              Daftar Bab &amp; Struktur Naskah
-            </h3>
+            <div className="flex items-center gap-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-neutral-950" />
+              <h3 className="font-extrabold text-base sm:text-lg tracking-tight text-neutral-950 font-sans">
+                Daftar Bab &amp; Struktur Naskah
+              </h3>
+            </div>
             <span className="text-xs sm:text-sm font-mono text-neutral-600 font-bold">
               {tableOfContents.length} Bab Terstruktur
             </span>
@@ -113,10 +107,11 @@ export default function EbookSneakPeekReader({ ebook, onScrollToDownload }) {
                     {item.title}
                   </span>
                 </div>
-                <span className={`px-2.5 py-1 rounded text-xs font-mono font-semibold shrink-0 ${item.status?.includes('Sudah')
+                <span className={`px-2.5 py-1 rounded text-xs font-mono font-semibold shrink-0 ${
+                  item.status?.includes('Sudah') || item.status?.includes('Bab 1')
                     ? 'bg-neutral-200 text-neutral-900'
                     : 'bg-neutral-100 text-neutral-600'
-                  }`}>
+                }`}>
                   {item.status || 'Tersedia di E-Book'}
                 </span>
               </div>
@@ -127,3 +122,4 @@ export default function EbookSneakPeekReader({ ebook, onScrollToDownload }) {
     </section>
   )
 }
+

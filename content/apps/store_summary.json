@@ -1,6 +1,6 @@
 {
-  "totalActive": 740,
-  "totalDesign": 739,
+  "totalActive": 744,
+  "totalDesign": 743,
   "totalEbook": 0,
   "designCategories": [
     [
@@ -13,11 +13,11 @@
     ],
     [
       "Presentasi & Pitch Deck",
-      69
+      70
     ],
     [
       "Video Animasi & Iklan",
-      47
+      50
     ],
     [
       "Stiker & Striping",
@@ -156,7 +156,7 @@
     ],
     [
       "Presentasi & Pitch Deck",
-      69
+      70
     ],
     [
       "E-Book Resep Masakan",
@@ -171,12 +171,12 @@
       52
     ],
     [
-      "E-Book Hukum",
-      49
+      "Video Animasi & Iklan",
+      50
     ],
     [
-      "Video Animasi & Iklan",
-      47
+      "E-Book Hukum",
+      49
     ],
     [
       "E-Book Psikologi",
@@ -275,11 +275,11 @@
       11
     ],
     [
-      "Media Sosial & Banner",
+      "E-Book Majalah",
       10
     ],
     [
-      "E-Book Majalah",
+      "Media Sosial & Banner",
       10
     ],
     [
@@ -338,7 +338,7 @@
     ],
     [
       "PPTX",
-      140
+      144
     ],
     [
       "WMF/SVG",
@@ -347,6 +347,10 @@
     [
       "PSD",
       4
+    ],
+    [
+      "PDF",
+      1
     ],
     [
       "PNG/HD",
