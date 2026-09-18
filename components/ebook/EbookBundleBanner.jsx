@@ -1,10 +1,16 @@
 import Link from 'next/link'
+import routes from '@/content/ebook/routes.json'
+import categories from '@/content/ebook/categories.json'
 
 /**
  * EbookBundleBanner.jsx — Banner Promosi Mega Bundle SKU IDEB00 (Rp 49.000)
- * Menawarkan akses instan ke 1 folder master 2.400+ E-Book tanpa unduh satu per satu.
+ * Menawarkan akses instan ke 1 folder master koleksi E-Book tanpa unduh satu per satu.
  */
 export default function EbookBundleBanner({ className = '' }) {
+  const totalEbooks = routes?.length || 3524
+  const totalCategories = categories?.length || 25
+  const roundedTotal = Math.floor(totalEbooks / 100) * 100
+
   return (
     <div className={`relative overflow-hidden rounded-2xl bg-neutral-950 text-white p-6 sm:p-8 shadow-xl border border-neutral-800 ${className}`}>
       {/* Background Accent Lines */}
@@ -23,11 +29,11 @@ export default function EbookBundleBanner({ className = '' }) {
           </div>
 
           <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-white leading-snug">
-            Koleksi Seluruh 3.512+ E-Book dalam 1 Folder Master
+            Koleksi Seluruh {roundedTotal.toLocaleString('id-ID')}+ E-Book dalam 1 Folder Master
           </h3>
 
           <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed font-sans">
-            Malas mengunduh satu per satu? Dapatkan akses instan ke 1 folder cloud storage lengkap berisi 3.512+ judul e-book terorganisir per 18 kategori keilmuan. Sekali bayar, akses selamanya.
+            Malas mengunduh satu per satu? Dapatkan akses instan ke 1 folder cloud storage lengkap berisi {totalEbooks.toLocaleString('id-ID')} judul e-book terorganisir per {totalCategories} kategori keilmuan. Sekali bayar, akses selamanya.
           </p>
         </div>
 

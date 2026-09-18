@@ -31,36 +31,82 @@ function TokoDigitalContent() {
     designCategories = [],
     ebookCategories = [],
     formats: realtimeFormats = [],
-    totalActive = 3069,
-    totalDesign = 598,
-    totalEbook = 2471,
     showcase,
   } = storeSummary
 
-  const ecourseCount = designCategories.find(([cat]) => cat === 'Ecourse & Tutorial')?.[1] || 136
-  const videoCount = designCategories.find(([cat]) => cat === 'Video Konten')?.[1] || 35
-  const cdrCount = realtimeFormats.find(([fmt]) => fmt === 'CDR')?.[1] || 454
-  const pptxCount = realtimeFormats.find(([fmt]) => fmt === 'PPTX')?.[1] || 144
-  const pdfCount = realtimeFormats.find(([fmt]) => fmt === 'PDF')?.[1] || 2471
-  const othersCount = realtimeFormats.filter(([fmt]) => !['CDR', 'PPTX', 'PDF', 'MP4'].includes(fmt)).reduce((acc, [, c]) => acc + c, 0) || 40
+  // ── SMART DETECTION REALTIME (Zero Hardcoding Manual) ───────────────────────
+  // Dihitung dinamis langsung dari data katalog aktif (catalogProducts)
+  const {
+    ecourseCount,
+    videoCount,
+    cdrCount,
+    pptxCount,
+    pdfCount,
+    othersCount,
+    totalActive,
+    totalDesign,
+    totalEbook
+  } = useMemo(() => {
+    let ecourse = 0
+    let video = 0
+    let cdr = 0
+    let pptx = 0
+    let pdf = 0
+    let others = 0
+    let design = 0
+    let ebook = 0
 
-  // Format filter tabs dengan pemisahan tegas Ecourse (136) dan Video Konten (35) sesuai SSOT Drive
+    for (const p of catalogProducts) {
+      const fmt = (p.format || '').toUpperCase()
+      const cat = p.category || ''
+
+      if (cat === 'Ecourse & Tutorial' || cat.toLowerCase().includes('ecourse')) {
+        ecourse++
+      } else if (cat === 'Video Konten' || cat.toLowerCase().includes('video konten')) {
+        video++
+      }
+
+      if (fmt === 'CDR') cdr++
+      else if (fmt === 'PPTX') pptx++
+      else if (fmt === 'PDF') {
+        pdf++
+        ebook++
+      } else if (fmt !== 'MP4') others++
+
+      if (fmt !== 'PDF') design++
+    }
+
+    return {
+      ecourseCount: ecourse,
+      videoCount: video,
+      cdrCount: cdr,
+      pptxCount: pptx,
+      pdfCount: pdf,
+      othersCount: others,
+      totalActive: catalogProducts.length,
+      totalDesign: design,
+      totalEbook: ebook
+    }
+  }, [])
+
+  // Format filter tabs dengan pemisahan tegas Ecourse dan Video Konten sesuai SSOT Drive
   const formatTabs = useMemo(() => {
     const list = []
-    for (const [fmt, count] of realtimeFormats) {
+    for (const [fmt, rawCount] of realtimeFormats) {
       if (fmt === 'MP4') {
         list.push({ id: 'ECOURSE', label: 'Ecourse', count: ecourseCount })
         list.push({ id: 'VIDEO_KONTEN', label: 'Video Konten', count: videoCount })
       } else {
+        const smartCount = fmt === 'CDR' ? cdrCount : fmt === 'PPTX' ? pptxCount : fmt === 'PDF' ? pdfCount : rawCount
         list.push({
           id: fmt,
           label: fmt === 'PDF' ? 'E-Book' : `.${fmt}`,
-          count
+          count: smartCount
         })
       }
     }
     return list
-  }, [realtimeFormats, ecourseCount, videoCount])
+  }, [realtimeFormats, ecourseCount, videoCount, cdrCount, pptxCount, pdfCount])
 
   const sortOptions = [
     { id: 'newest', label: 'Terbaru' },

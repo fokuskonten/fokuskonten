@@ -173,14 +173,14 @@ export default function EbookDirectoryClient({ categories = [], initialRoutes = 
         <div className="flex items-center justify-between">
           <div>
             <h2 id="silo-categories-heading" className="font-extrabold text-lg sm:text-xl text-neutral-950 tracking-tight font-sans">
-              18 Rumpun Silo Keilmuan E-Book
+              {categories.length} Rumpun Silo Keilmuan E-Book
             </h2>
             <p className="text-xs text-neutral-500 mt-0.5 font-sans">
               Telusuri koleksi lengkap naskah digital berformat PDF terverifikasi per disiplin ilmu.
             </p>
           </div>
           <span className="hidden sm:inline-block px-3 py-1 rounded bg-neutral-100 text-neutral-800 text-xs font-mono font-bold">
-            2.471 E-Book Terindeks
+            {initialRoutes.length.toLocaleString('id-ID')} E-Book Terindeks
           </span>
         </div>
 

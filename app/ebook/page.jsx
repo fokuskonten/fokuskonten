@@ -5,15 +5,15 @@ import EbookBundleBanner from '@/components/ebook/EbookBundleBanner'
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Direktori & Perpustakaan Digital 3.512+ E-Book PDF Resmi | FokusKonten',
+  title: 'Direktori & Perpustakaan Digital 3.500+ E-Book PDF Resmi | FokusKonten',
   description: 'Katalog literatur digital lengkap, naskah kajian keilmuan, novel fiksi, agama, pengembangan diri, dan referensi akademik berformat PDF resmi terverifikasi.',
   keywords: [
     'direktori ebook', 'download ebook pdf', 'buku digital', 'perpustakaan digital',
     'katalog ebook', 'baca ebook online', 'fokuskonten ebook', 'resensi buku'
   ],
   openGraph: {
-    title: 'Direktori & Perpustakaan Digital 3.512+ E-Book PDF Resmi | FokusKonten',
-    description: 'Jelajahi 3.512+ judul naskah digital PDF terverifikasi dari 18 rumpun keilmuan dengan cuplikan baca dan unduhan langsung.',
+    title: 'Direktori & Perpustakaan Digital 3.500+ E-Book PDF Resmi | FokusKonten',
+    description: 'Jelajahi 3.500+ judul naskah digital PDF terverifikasi dari 25 rumpun keilmuan dengan cuplikan baca dan unduhan langsung.',
     url: 'https://fokuskonten.my.id/ebook/',
     siteName: 'FokusKonten',
     images: [
@@ -28,8 +28,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Direktori & Perpustakaan Digital 3.512+ E-Book PDF Resmi | FokusKonten',
-    description: 'Jelajahi 3.512+ judul naskah digital PDF terverifikasi dari 18 rumpun keilmuan.',
+    title: 'Direktori & Perpustakaan Digital 3.500+ E-Book PDF Resmi | FokusKonten',
+    description: 'Jelajahi 3.500+ judul naskah digital PDF terverifikasi dari 25 rumpun keilmuan.',
     images: ['https://fokuskonten.my.id/og-image.jpg']
   }
 }
@@ -85,7 +85,7 @@ export default function EbookDirectoryPage() {
           </div>
 
           <h1 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-neutral-950 font-sans leading-tight">
-            Direktori 2.470+ E-Book PDF Resmi Terverifikasi
+            Direktori {totalEbooks > 0 ? `${(Math.floor(totalEbooks / 100) * 100).toLocaleString('id-ID')}+` : '3.500+'} E-Book PDF Resmi Terverifikasi
           </h1>
 
           <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed font-sans">
