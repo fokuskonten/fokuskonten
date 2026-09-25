@@ -100,7 +100,7 @@ function TokoDigitalContent() {
         const smartCount = fmt === 'CDR' ? cdrCount : fmt === 'PPTX' ? pptxCount : fmt === 'PDF' ? pdfCount : rawCount
         list.push({
           id: fmt,
-          label: fmt === 'PDF' ? 'E-Book' : `.${fmt}`,
+          label: fmt === 'PDF' ? 'E-Book' : (fmt === 'PHP/WEB' ? 'Web & PWA' : `.${fmt}`),
           count: smartCount
         })
       }
@@ -320,7 +320,7 @@ function TokoDigitalContent() {
           <div className="max-w-xl">
             <div className="flex items-center gap-2 mb-1.5 flex-wrap min-h-[22px]">
               <span suppressHydrationWarning className="text-xs font-bold uppercase tracking-wider text-neutral-400">
-                {mounted && selectedFormat === 'PDF' ? 'Koleksi E-Book' : 'Katalog Desain'}
+                {mounted && selectedFormat === 'PDF' ? 'Koleksi E-Book' : (selectedFormat === 'PHP/WEB' ? 'Source Code & Web' : 'Katalog Desain')}
               </span>
               {isFiltering && (
                 <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-neutral-900 text-white shadow-sm">
@@ -330,7 +330,7 @@ function TokoDigitalContent() {
                           ? 'Ecourse & Panduan'
                           : (selectedFormat.toUpperCase() === 'VIDEO_KONTEN'
                               ? 'Video Konten'
-                              : (selectedFormat === 'PDF' ? 'E-Book' : `Format .${selectedFormat}`)))
+                              : (selectedFormat === 'PDF' ? 'E-Book' : (selectedFormat === 'PHP/WEB' ? 'Web & PWA' : `Format .${selectedFormat}`))))
                       : selectedCategory}
                   </span>
                   <button
@@ -350,7 +350,7 @@ function TokoDigitalContent() {
                     ? 'Katalog Ecourse & Panduan Bisnis'
                     : (selectedFormat.toUpperCase() === 'VIDEO_KONTEN'
                         ? 'Katalog Bahan Video Konten'
-                        : (selectedFormat === 'PDF' ? 'Katalog E-Book' : `Format .${selectedFormat}`)))
+                        : (selectedFormat === 'PDF' ? 'Katalog E-Book' : (selectedFormat === 'PHP/WEB' ? 'Katalog Aplikasi Web & PWA' : `Format .${selectedFormat}`))))
                 : (mounted && selectedCategory !== 'Semua' ? selectedCategory : 'Katalog Template & Desain')}
             </h1>
             <p suppressHydrationWarning className="text-sm text-neutral-500 mt-1 leading-relaxed">
@@ -360,7 +360,7 @@ function TokoDigitalContent() {
                     ? 'materi pembelajaran & tutorial bisnis teruji.'
                     : (selectedFormat.toUpperCase() === 'VIDEO_KONTEN'
                         ? 'mentahan footage & amunisi video konten.'
-                        : (selectedFormat === 'PDF' ? 'koleksi literatur digital siap baca.' : `format .${selectedFormat}`)))
+                        : (selectedFormat === 'PDF' ? 'koleksi literatur digital siap baca.' : (selectedFormat === 'PHP/WEB' ? 'source code sistem & aplikasi teruji.' : `format .${selectedFormat}`))))
                 : (mounted && selectedCategory !== 'Semua' ? `kategori ${selectedCategory}` : 'siap pakai.')}
             </p>
           </div>

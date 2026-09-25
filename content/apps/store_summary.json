@@ -1,8 +1,12 @@
 {
-  "totalActive": 808,
-  "totalDesign": 808,
+  "totalActive": 993,
+  "totalDesign": 993,
   "totalEbook": 0,
   "designCategories": [
+    [
+      "Aplikasi",
+      185
+    ],
     [
       "Ecourse & Tutorial",
       136
@@ -21,7 +25,7 @@
     ],
     [
       "Video Animasi & Iklan",
-      50
+      47
     ],
     [
       "Stiker & Striping",
@@ -76,11 +80,11 @@
       10
     ],
     [
-      "Undangan & Ucapan",
+      "Sertifikat",
       7
     ],
     [
-      "Sertifikat",
+      "Undangan & Ucapan",
       7
     ],
     [
@@ -100,6 +104,10 @@
       3
     ],
     [
+      "Tekstur & Brush",
+      2
+    ],
+    [
       "Infografis & Data",
       2
     ],
@@ -112,8 +120,12 @@
       2
     ],
     [
-      "Tekstur & Brush",
-      2
+      "Teknisi Hardware",
+      1
+    ],
+    [
+      "Desain Grafis",
+      1
     ]
   ],
   "ebookCategories": [],
@@ -333,6 +345,10 @@
       454
     ],
     [
+      "PHP/WEB",
+      185
+    ],
+    [
       "MP4",
       170
     ],
@@ -346,7 +362,11 @@
     ],
     [
       "PSD",
-      4
+      5
+    ],
+    [
+      "ZIP / RAR",
+      1
     ],
     [
       "PNG/HD",
