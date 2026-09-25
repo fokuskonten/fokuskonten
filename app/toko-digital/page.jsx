@@ -420,42 +420,6 @@ function TokoDigitalContent() {
                         </button>
                       ))}
 
-                      {/* Section 2: Kategori E-Book Digital */}
-                      <div className="px-3 py-1.5 text-[10px] font-extrabold uppercase tracking-wider text-neutral-400 bg-neutral-50 rounded-lg my-1 flex items-center justify-between mt-2.5">
-                        <span>Kategori E-Book Digital</span>
-                        <span className="font-mono text-[9px] text-neutral-500 font-bold">({totalEbook})</span>
-                      </div>
-
-                      {/* Option: Semua E-Book Digital */}
-                      <button
-                        type="button"
-                        onClick={() => handleCategorySelect('E-Book Digital')}
-                        className={`w-full flex items-center justify-between px-3 py-1.5 rounded-lg text-xs font-semibold text-left transition-colors ${
-                          (selectedCategory === 'E-Book' || selectedCategory === 'E-Book Digital')
-                            ? 'bg-neutral-900 text-white font-bold'
-                            : 'text-neutral-800 hover:bg-neutral-100'
-                        }`}
-                      >
-                        <span>Semua E-Book Digital</span>
-                        <span className="font-mono text-[11px] opacity-75 shrink-0">({totalEbook})</span>
-                      </button>
-
-                      {ebookCategories.map(([cat, count]) => {
-                        const displayLabel = cat.startsWith('E-Book ') ? cat.replace('E-Book ', '') : cat
-                        return (
-                          <button
-                            key={cat}
-                            type="button"
-                            onClick={() => handleCategorySelect(cat)}
-                            className={`w-full flex items-center justify-between px-3 py-1.5 rounded-lg text-xs font-medium text-left transition-colors ${
-                              selectedCategory === cat ? 'bg-neutral-900 text-white font-bold' : 'text-neutral-700 hover:bg-neutral-100 hover:text-black'
-                            }`}
-                          >
-                            <span className="truncate pr-2">{displayLabel}</span>
-                            <span className="font-mono text-[11px] opacity-75 shrink-0">({count})</span>
-                          </button>
-                        )
-                      })}
                     </div>
                   </>
                 )}
@@ -653,31 +617,7 @@ function TokoDigitalContent() {
             </section>
           )}
 
-          {/* Skat 4: E-Book Digital (PDF) */}
-          {showcase.ebook && showcase.ebook.length > 0 && (
-            <section className="space-y-4">
-              <div className="flex items-center justify-between pb-3 border-b border-neutral-200">
-                <h2 className="text-lg sm:text-xl font-bold text-neutral-950 tracking-tight">
-                  E-Book Digital
-                </h2>
-                <button
-                  type="button"
-                  onClick={() => handleFormatSelect('PDF')}
-                  className="text-xs sm:text-sm font-semibold text-neutral-600 hover:text-black transition-colors flex items-center gap-1"
-                >
-                  <span>Lihat Semua E-Book ({pdfCount})</span>
-                  <span>&rarr;</span>
-                </button>
-              </div>
-              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-6">
-                {showcase.ebook.map((product) => (
-                  <ProductCard key={product.sku} product={product} />
-                ))}
-              </div>
-            </section>
-          )}
-
-          {/* Skat 5: Aset & Desain Lainnya (PSD / PNG / WMF / SVG) */}
+          {/* Skat 4: Aset & Desain Lainnya (PSD / PNG / WMF / SVG) */}
           {showcase.others && showcase.others.length > 0 && (
             <section className="space-y-4">
               <div className="flex items-center justify-between pb-3 border-b border-neutral-200">

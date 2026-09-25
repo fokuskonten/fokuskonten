@@ -9,33 +9,6 @@ import { getCartSummary, subscribeCartStore } from '@/lib/cartStore'
 import { getWhatsAppContextUrl } from '@/lib/useStoreHealth'
 import CartDrawer from '@/components/cart/CartDrawer'
 
-const EBOOK_CAT_SLUG_MAP = {
-  'E-Book Agama Islam': 'agama-islam',
-  'E-Book Tafsir': 'agama-islam',
-  'Buku & Yasin': 'agama-islam',
-  'E-Book Novel': 'novel-fiksi',
-  'E-Book Pendidikan': 'pendidikan-akademik',
-  'E-Book Pengembangan Diri': 'pengembangan-diri',
-  'E-Book Bisnis': 'bisnis-finansial',
-  'E-Book Bisnis Investasi': 'bisnis-finansial',
-  'E-Book Keuangan': 'bisnis-finansial',
-  'E-Book Bisnis Online': 'bisnis-finansial',
-  'E-Book Kesehatan': 'kesehatan-kedokteran',
-  'E-Book Resep Masakan': 'kuliner-resep',
-  'E-Book Kuliner': 'kuliner-resep',
-  'E-Book Pengetahuan': 'sains-pengetahuan',
-  'E-Book Hukum': 'hukum-undang-undang',
-  'E-Book Psikologi': 'psikologi-perilaku',
-  'E-Book Sastra': 'sastra-puisi',
-  'E-Book Pertanian': 'pertanian-peternakan',
-  'E-Book Peternakan': 'pertanian-peternakan',
-  'E-Book Politik': 'politik-kebijakan',
-  'E-Book Buku Anak': 'edukasi-anak',
-  'E-Book Kerja-Karir': 'karir-kerja',
-  'E-Book Filsafat': 'filsafat-logika',
-  'E-Book Majalah': 'majalah-jurnal',
-  'E-Book Budaya & Tradisi': 'budaya-sejarah'
-}
 
 const navLinks = [
   { href: '/', label: 'Beranda' },
@@ -124,17 +97,15 @@ export default function Navbar() {
     setIsMobileHardwareOpen(false)
   }, [pathname])
 
-  const [tokoCategoryTab, setTokoCategoryTab] = useState('desain') // 'desain' | 'ebook'
+  // E-Book dipisah sebagai Portal Independen di /ebook/ — tidak ada state tab di Toko
 
   // Realtime kategori & format dari summary ringan (< 2KB) - super cepat & hemat memori
   const {
     designCategories = [],
-    ebookCategories = [],
     categories: realtimeCategories = [],
     formats: realtimeFormats = [],
     totalActive: totalActiveProducts = 3069,
     totalDesign = 598,
-    totalEbook = 2471,
   } = storeSummary
 
   const handleTokoFilterClick = () => {
@@ -218,82 +189,29 @@ export default function Navbar() {
                             </span>
                           </Link>
 
-                          {/* 2. Tab Switcher: Kategori Desain vs E-Book Digital */}
-                          <div className="flex items-center gap-1.5 p-1 bg-neutral-100 rounded-xl mt-2.5">
-                            <button
-                              type="button"
-                              onClick={(e) => {
-                                e.stopPropagation()
-                                setTokoCategoryTab('desain')
-                              }}
-                              className={`flex-1 py-1.5 px-3 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-1.5 ${
-                                tokoCategoryTab === 'desain'
-                                  ? 'bg-white text-neutral-950 shadow-sm'
-                                  : 'text-neutral-500 hover:text-neutral-900'
-                              }`}
-                            >
-                              <span>Kategori Desain</span>
-                              <span className="text-[10px] font-mono opacity-70">({designCategories.length})</span>
-                            </button>
-                            <button
-                              type="button"
-                              onClick={(e) => {
-                                e.stopPropagation()
-                                setTokoCategoryTab('ebook')
-                              }}
-                              className={`flex-1 py-1.5 px-3 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-1.5 ${
-                                tokoCategoryTab === 'ebook'
-                                  ? 'bg-white text-neutral-950 shadow-sm'
-                                  : 'text-neutral-500 hover:text-neutral-900'
-                              }`}
-                            >
-                              <span>E-Book Digital</span>
-                              <span className="text-[10px] font-mono opacity-70">({ebookCategories.length})</span>
-                            </button>
-                          </div>
-
-                          {/* 3. Dynamic Category Grid */}
+                          {/* 2. Koleksi Template Desain — Direktori Kategori Toko Digital */}
                           <div className="mt-2.5 pt-2 border-t border-neutral-100">
                             <div className="px-2 py-1 text-[10px] font-extrabold uppercase tracking-wider text-neutral-400 flex items-center justify-between">
-                              <span>{tokoCategoryTab === 'desain' ? 'Koleksi Template Desain' : 'Koleksi E-Book Digital'}</span>
+                              <span>Koleksi Template Desain</span>
                               <span suppressHydrationWarning className="font-mono text-[9px] text-neutral-400">
-                                {tokoCategoryTab === 'desain' ? `${totalDesign} Desain` : `${totalEbook} E-Book`}
+                                {totalDesign} Desain
                               </span>
                             </div>
 
-                            {tokoCategoryTab === 'ebook' && (
-                              <div className="px-1 py-1 mb-1">
-                                <Link
-                                  href="/ebook/"
-                                  onClick={handleTokoFilterClick}
-                                  className="flex items-center justify-between px-3 py-1.5 rounded-xl bg-neutral-900 text-white font-bold text-xs hover:bg-black transition-all shadow-sm"
-                                >
-                                  <span>Lihat Semua E-Book Digital</span>
-                                  <span className="font-mono text-[10px] bg-white/20 px-1.5 py-0.2 rounded-full">{totalEbook}</span>
-                                </Link>
-                              </div>
-                            )}
-
                             <div className="grid grid-cols-2 gap-x-1.5 gap-y-0.5 mt-0.5 max-h-[46vh] overflow-y-auto pr-1 [scrollbar-width:thin]">
-                              {(tokoCategoryTab === 'desain' ? designCategories : ebookCategories).map(([cat, count]) => {
-                                const displayLabel = cat.startsWith('E-Book ') ? cat.replace('E-Book ', '') : cat
-                                const targetHref = tokoCategoryTab === 'ebook'
-                                  ? (EBOOK_CAT_SLUG_MAP[cat] ? `/ebook/${EBOOK_CAT_SLUG_MAP[cat]}/` : '/ebook/')
-                                  : `/toko-digital/?cat=${encodeURIComponent(cat)}`
-                                return (
-                                  <Link
-                                    key={cat}
-                                    href={targetHref}
-                                    onClick={handleTokoFilterClick}
-                                    className="flex items-center justify-between px-2.5 py-1.5 rounded-xl text-neutral-700 hover:text-neutral-950 hover:bg-neutral-100 font-medium transition-colors group"
-                                  >
-                                    <span className="truncate pr-1 text-[11.5px] group-hover:font-semibold">{displayLabel}</span>
-                                    <span suppressHydrationWarning className="text-neutral-400 group-hover:text-neutral-900 font-mono text-[10px] bg-neutral-100 px-1.5 py-0.5 rounded shrink-0">
-                                      {count}
-                                    </span>
-                                  </Link>
-                                )
-                              })}
+                              {designCategories.map(([cat, count]) => (
+                                <Link
+                                  key={cat}
+                                  href={`/toko-digital/?cat=${encodeURIComponent(cat)}`}
+                                  onClick={handleTokoFilterClick}
+                                  className="flex items-center justify-between px-2.5 py-1.5 rounded-xl text-neutral-700 hover:text-neutral-950 hover:bg-neutral-100 font-medium transition-colors group"
+                                >
+                                  <span className="truncate pr-1 text-[11.5px] group-hover:font-semibold">{cat}</span>
+                                  <span suppressHydrationWarning className="text-neutral-400 group-hover:text-neutral-900 font-mono text-[10px] bg-neutral-100 px-1.5 py-0.5 rounded shrink-0">
+                                    {count}
+                                  </span>
+                                </Link>
+                              ))}
                             </div>
                           </div>
 
@@ -304,14 +222,14 @@ export default function Navbar() {
                                 Format File
                               </div>
                               <div className="flex flex-wrap gap-1.5 px-1 py-1">
-                                {realtimeFormats.map(([fmt, count]) => (
+                                {realtimeFormats.filter(([fmt]) => fmt !== 'PDF').map(([fmt, count]) => (
                                   <Link
                                     key={fmt}
                                     href={`/toko-digital/?format=${encodeURIComponent(fmt)}`}
                                     onClick={handleTokoFilterClick}
                                     className="px-2.5 py-1 rounded-lg bg-neutral-100 hover:bg-neutral-200 text-neutral-800 text-[11px] font-bold font-mono transition-colors flex items-center gap-1"
                                   >
-                                    <span>{fmt === 'PDF' ? 'E-Book' : `.${fmt}`}</span>
+                                    <span>.{fmt}</span>
                                     <span className="text-[9px] text-neutral-500 font-normal">({count})</span>
                                   </Link>
                                 ))}
@@ -509,68 +427,35 @@ export default function Navbar() {
                         <span>Semua Produk <span suppressHydrationWarning>({totalActiveProducts})</span></span>
                       </Link>
 
-                      {/* Mobile Category Tab Switcher */}
-                      <div className="flex items-center gap-1 p-1 bg-neutral-100 rounded-lg">
-                        <button
-                          type="button"
-                          onClick={() => setTokoCategoryTab('desain')}
-                          className={`flex-1 py-1 rounded-md text-[11px] font-bold transition-all ${
-                            tokoCategoryTab === 'desain' ? 'bg-white text-neutral-950 shadow-sm' : 'text-neutral-500'
-                          }`}
-                        >
-                          Desain ({designCategories.length})
-                        </button>
-                        <button
-                          type="button"
-                          onClick={() => setTokoCategoryTab('ebook')}
-                          className={`flex-1 py-1 rounded-md text-[11px] font-bold transition-all ${
-                            tokoCategoryTab === 'ebook' ? 'bg-white text-neutral-950 shadow-sm' : 'text-neutral-500'
-                          }`}
-                        >
-                          E-Book ({ebookCategories.length})
-                        </button>
+                      {/* Koleksi Template Desain — Mobile Direktori Toko */}
+                      <div className="px-1 py-1 text-[10px] font-extrabold uppercase tracking-wider text-neutral-400 flex items-center justify-between">
+                        <span>Koleksi Template Desain</span>
+                        <span suppressHydrationWarning className="font-mono text-[9px]">{totalDesign} Desain</span>
                       </div>
 
-                      {tokoCategoryTab === 'ebook' && (
-                        <Link
-                          href="/ebook/"
-                          onClick={handleTokoFilterClick}
-                          className="flex items-center justify-between px-3 py-1.5 rounded-lg bg-neutral-900 text-white font-bold text-xs"
-                        >
-                          <span>Semua E-Book Digital</span>
-                          <span className="font-mono text-[10px] bg-white/20 px-1.5 py-0.2 rounded-full">{totalEbook}</span>
-                        </Link>
-                      )}
-
                       <div className="space-y-0.5 max-h-60 overflow-y-auto pr-1 mt-1 [scrollbar-width:thin]">
-                        {(tokoCategoryTab === 'desain' ? designCategories : ebookCategories).map(([cat, count]) => {
-                          const displayLabel = cat.startsWith('E-Book ') ? cat.replace('E-Book ', '') : cat
-                          const targetHref = tokoCategoryTab === 'ebook'
-                            ? (EBOOK_CAT_SLUG_MAP[cat] ? `/ebook/${EBOOK_CAT_SLUG_MAP[cat]}/` : '/ebook/')
-                            : `/toko-digital/?cat=${encodeURIComponent(cat)}`
-                          return (
-                            <Link
-                              key={cat}
-                              href={targetHref}
-                              onClick={handleTokoFilterClick}
-                              className="flex items-center justify-between px-3 py-1.5 rounded-lg text-xs text-neutral-600 hover:text-neutral-950 hover:bg-neutral-100"
-                            >
-                              <span>{displayLabel}</span>
-                              <span suppressHydrationWarning className="font-mono text-[10px] text-neutral-400 bg-neutral-100 px-1.5 py-0.5 rounded">({count})</span>
-                            </Link>
-                          )
-                        })}
+                        {designCategories.map(([cat, count]) => (
+                          <Link
+                            key={cat}
+                            href={`/toko-digital/?cat=${encodeURIComponent(cat)}`}
+                            onClick={handleTokoFilterClick}
+                            className="flex items-center justify-between px-3 py-1.5 rounded-lg text-xs text-neutral-600 hover:text-neutral-950 hover:bg-neutral-100"
+                          >
+                            <span>{cat}</span>
+                            <span suppressHydrationWarning className="font-mono text-[10px] text-neutral-400 bg-neutral-100 px-1.5 py-0.5 rounded">({count})</span>
+                          </Link>
+                        ))}
                       </div>
                       {realtimeFormats.length > 0 && (
                         <div className="pt-2 mt-1 border-t border-neutral-100 flex flex-wrap gap-1 px-1">
-                          {realtimeFormats.map(([fmt, count]) => (
+                          {realtimeFormats.filter(([fmt]) => fmt !== 'PDF').map(([fmt, count]) => (
                             <Link
                               key={fmt}
                               href={`/toko-digital/?format=${encodeURIComponent(fmt)}`}
                               onClick={handleTokoFilterClick}
                               className="px-2 py-0.5 rounded bg-neutral-100 text-[10px] font-mono font-bold text-neutral-700 hover:bg-neutral-200"
                             >
-                              {fmt === 'PDF' ? 'E-Book' : `.${fmt}`} ({count})
+                              .{fmt} ({count})
                             </Link>
                           ))}
                         </div>
