@@ -108,6 +108,23 @@ export default function Navbar() {
     totalDesign = 598,
   } = storeSummary
 
+  const navFormatItems = []
+  const ecourseCatCount = (designCategories.find(([c]) => c === 'Ecourse & Tutorial') || [null, 135])[1]
+  const videoCatCount = (designCategories.find(([c]) => c === 'Video Konten') || [null, 35])[1]
+  for (const [fmt, count] of realtimeFormats) {
+    if (fmt === 'PDF' || fmt === 'ISPLAN') continue
+    if (fmt === 'MP4') {
+      navFormatItems.push({ id: 'ECOURSE', label: 'Ecourse', count: ecourseCatCount })
+      navFormatItems.push({ id: 'VIDEO_KONTEN', label: 'Video Konten', count: videoCatCount })
+    } else {
+      navFormatItems.push({
+        id: fmt,
+        label: fmt === 'The Big Bang' ? 'The Big Bang' : (fmt === 'PHP/WEB' ? 'Web & PWA' : (fmt === 'EXE' ? 'Desktop .EXE' : `.${fmt}`)),
+        count,
+      })
+    }
+  }
+
   const handleTokoFilterClick = () => {
     setIsTokoOpen(false)
     setIsMobileTokoOpen(false)
@@ -216,21 +233,21 @@ export default function Navbar() {
                           </div>
 
                           {/* 3. Format File */}
-                          {realtimeFormats.length > 0 && (
+                          {navFormatItems.length > 0 && (
                             <div className="mt-2.5 pt-2 border-t border-neutral-100">
                               <div className="px-2 py-1 text-[10px] font-extrabold uppercase tracking-wider text-neutral-400">
                                 Format File
                               </div>
                               <div className="flex flex-wrap gap-1.5 px-1 py-1">
-                                {realtimeFormats.filter(([fmt]) => fmt !== 'PDF').map(([fmt, count]) => (
+                                {navFormatItems.map((item) => (
                                   <Link
-                                    key={fmt}
-                                    href={`/toko-digital/?format=${encodeURIComponent(fmt)}`}
+                                    key={item.id}
+                                    href={`/toko-digital/?format=${encodeURIComponent(item.id)}`}
                                     onClick={handleTokoFilterClick}
                                     className="px-2.5 py-1 rounded-lg bg-neutral-100 hover:bg-neutral-200 text-neutral-800 text-[11px] font-bold font-mono transition-colors flex items-center gap-1"
                                   >
-                                    <span>.{fmt}</span>
-                                    <span className="text-[9px] text-neutral-500 font-normal">({count})</span>
+                                    <span>{item.label}</span>
+                                    <span className="text-[9px] text-neutral-500 font-normal">({item.count})</span>
                                   </Link>
                                 ))}
                               </div>
@@ -448,14 +465,14 @@ export default function Navbar() {
                       </div>
                       {realtimeFormats.length > 0 && (
                         <div className="pt-2 mt-1 border-t border-neutral-100 flex flex-wrap gap-1 px-1">
-                          {realtimeFormats.filter(([fmt]) => fmt !== 'PDF').map(([fmt, count]) => (
+                          {navFormatItems.map((item) => (
                             <Link
-                              key={fmt}
-                              href={`/toko-digital/?format=${encodeURIComponent(fmt)}`}
+                              key={item.id}
+                              href={`/toko-digital/?format=${encodeURIComponent(item.id)}`}
                               onClick={handleTokoFilterClick}
                               className="px-2 py-0.5 rounded bg-neutral-100 text-[10px] font-mono font-bold text-neutral-700 hover:bg-neutral-200"
                             >
-                              .{fmt} ({count})
+                              {item.label} ({item.count})
                             </Link>
                           ))}
                         </div>

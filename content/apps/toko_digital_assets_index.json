@@ -2,12 +2,12 @@
   "metadata": {
     "title": "FokusKonten Asset CDN — Toko Digital Product Covers & Slides Index",
     "version": "1.1.0",
-    "total_skus": 989,
+    "total_skus": 1049,
     "total_visual_files": 3600,
     "total_covers": 989,
     "total_slides": 2611,
     "total_all_files": 8621,
-    "generated_at": "2026-09-25T13:00:54.758Z",
+    "generated_at": "2026-09-26T10:58:21.329Z",
     "cdn_base_urls": {
       "tier1_jsdelivr": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital",
       "tier2_raw_github": "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital",
@@ -20648,6 +20648,1148 @@
         "IDFFAF_cover.png",
         "IDFFAF_slide_spec.jpg"
       ]
+    },
+    "ID09A0": {
+      "sku": "ID09A0",
+      "cover": "ID09A0_cover.webp",
+      "files": [
+        "ID09A0_cover.webp",
+        "ID09A0_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID09A0/ID09A0_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID09A0/ID09A0_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID0C1B": {
+      "sku": "ID0C1B",
+      "cover": "ID0C1B_cover.webp",
+      "files": [
+        "ID0C1B_cover.webp",
+        "ID0C1B_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID0C1B/ID0C1B_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID0C1B/ID0C1B_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID0FED": {
+      "sku": "ID0FED",
+      "cover": "ID0FED_cover.webp",
+      "files": [
+        "ID0FED_cover.webp",
+        "ID0FED_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID0FED/ID0FED_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID0FED/ID0FED_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID14D7": {
+      "sku": "ID14D7",
+      "cover": "ID14D7_cover.webp",
+      "files": [
+        "ID14D7_cover.webp",
+        "ID14D7_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID14D7/ID14D7_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID14D7/ID14D7_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID1E7D": {
+      "sku": "ID1E7D",
+      "cover": "ID1E7D_cover.webp",
+      "files": [
+        "ID1E7D_cover.webp",
+        "ID1E7D_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID1E7D/ID1E7D_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID1E7D/ID1E7D_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID2461": {
+      "sku": "ID2461",
+      "cover": "ID2461_cover.webp",
+      "files": [
+        "ID2461_cover.webp",
+        "ID2461_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID2461/ID2461_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID2461/ID2461_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID29DE": {
+      "sku": "ID29DE",
+      "cover": "ID29DE_cover.webp",
+      "files": [
+        "ID29DE_cover.webp",
+        "ID29DE_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID29DE/ID29DE_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID29DE/ID29DE_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID367F": {
+      "sku": "ID367F",
+      "cover": "ID367F_cover.webp",
+      "files": [
+        "ID367F_cover.webp",
+        "ID367F_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID367F/ID367F_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID367F/ID367F_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID459B": {
+      "sku": "ID459B",
+      "cover": "ID459B_cover.webp",
+      "files": [
+        "ID459B_cover.webp",
+        "ID459B_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID459B/ID459B_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID459B/ID459B_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID4862": {
+      "sku": "ID4862",
+      "cover": "ID4862_cover.webp",
+      "files": [
+        "ID4862_cover.webp",
+        "ID4862_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID4862/ID4862_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID4862/ID4862_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID4CE5": {
+      "sku": "ID4CE5",
+      "cover": "ID4CE5_cover.webp",
+      "files": [
+        "ID4CE5_cover.webp",
+        "ID4CE5_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID4CE5/ID4CE5_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID4CE5/ID4CE5_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID51B8": {
+      "sku": "ID51B8",
+      "cover": "ID51B8_cover.webp",
+      "files": [
+        "ID51B8_cover.webp",
+        "ID51B8_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID51B8/ID51B8_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID51B8/ID51B8_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID5478": {
+      "sku": "ID5478",
+      "cover": "ID5478_cover.webp",
+      "files": [
+        "ID5478_cover.webp",
+        "ID5478_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID5478/ID5478_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID5478/ID5478_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID54E0": {
+      "sku": "ID54E0",
+      "cover": "ID54E0_cover.webp",
+      "files": [
+        "ID54E0_cover.webp",
+        "ID54E0_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID54E0/ID54E0_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID54E0/ID54E0_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID5C80": {
+      "sku": "ID5C80",
+      "cover": "ID5C80_cover.webp",
+      "files": [
+        "ID5C80_cover.webp",
+        "ID5C80_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID5C80/ID5C80_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID5C80/ID5C80_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID5FE2": {
+      "sku": "ID5FE2",
+      "cover": "ID5FE2_cover.webp",
+      "files": [
+        "ID5FE2_cover.webp",
+        "ID5FE2_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID5FE2/ID5FE2_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID5FE2/ID5FE2_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID6615": {
+      "sku": "ID6615",
+      "cover": "ID6615_cover.webp",
+      "files": [
+        "ID6615_cover.webp",
+        "ID6615_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID6615/ID6615_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID6615/ID6615_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID66C8": {
+      "sku": "ID66C8",
+      "cover": "ID66C8_cover.webp",
+      "files": [
+        "ID66C8_cover.webp",
+        "ID66C8_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID66C8/ID66C8_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID66C8/ID66C8_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID6B66": {
+      "sku": "ID6B66",
+      "cover": "ID6B66_cover.webp",
+      "files": [
+        "ID6B66_cover.webp",
+        "ID6B66_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID6B66/ID6B66_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID6B66/ID6B66_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID7328": {
+      "sku": "ID7328",
+      "cover": "ID7328_cover.webp",
+      "files": [
+        "ID7328_cover.webp",
+        "ID7328_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID7328/ID7328_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID7328/ID7328_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID78C9": {
+      "sku": "ID78C9",
+      "cover": "ID78C9_cover.webp",
+      "files": [
+        "ID78C9_cover.webp",
+        "ID78C9_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID78C9/ID78C9_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID78C9/ID78C9_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID7CD0": {
+      "sku": "ID7CD0",
+      "cover": "ID7CD0_cover.webp",
+      "files": [
+        "ID7CD0_cover.webp",
+        "ID7CD0_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID7CD0/ID7CD0_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID7CD0/ID7CD0_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID7D50": {
+      "sku": "ID7D50",
+      "cover": "ID7D50_cover.webp",
+      "files": [
+        "ID7D50_cover.webp",
+        "ID7D50_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID7D50/ID7D50_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID7D50/ID7D50_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID80F0": {
+      "sku": "ID80F0",
+      "cover": "ID80F0_cover.webp",
+      "files": [
+        "ID80F0_cover.webp",
+        "ID80F0_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID80F0/ID80F0_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID80F0/ID80F0_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID816D": {
+      "sku": "ID816D",
+      "cover": "ID816D_cover.webp",
+      "files": [
+        "ID816D_cover.webp",
+        "ID816D_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID816D/ID816D_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID816D/ID816D_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID878E": {
+      "sku": "ID878E",
+      "cover": "ID878E_cover.webp",
+      "files": [
+        "ID878E_cover.webp",
+        "ID878E_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID878E/ID878E_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID878E/ID878E_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID8D55": {
+      "sku": "ID8D55",
+      "cover": "ID8D55_cover.webp",
+      "files": [
+        "ID8D55_cover.webp",
+        "ID8D55_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID8D55/ID8D55_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID8D55/ID8D55_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID8E2F": {
+      "sku": "ID8E2F",
+      "cover": "ID8E2F_cover.webp",
+      "files": [
+        "ID8E2F_cover.webp",
+        "ID8E2F_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID8E2F/ID8E2F_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID8E2F/ID8E2F_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID8F84": {
+      "sku": "ID8F84",
+      "cover": "ID8F84_cover.webp",
+      "files": [
+        "ID8F84_cover.webp",
+        "ID8F84_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID8F84/ID8F84_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID8F84/ID8F84_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID90A4": {
+      "sku": "ID90A4",
+      "cover": "ID90A4_cover.webp",
+      "files": [
+        "ID90A4_cover.webp",
+        "ID90A4_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID90A4/ID90A4_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID90A4/ID90A4_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID96B2": {
+      "sku": "ID96B2",
+      "cover": "ID96B2_cover.webp",
+      "files": [
+        "ID96B2_cover.webp",
+        "ID96B2_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID96B2/ID96B2_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID96B2/ID96B2_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "ID96D4": {
+      "sku": "ID96D4",
+      "cover": "ID96D4_cover.webp",
+      "files": [
+        "ID96D4_cover.webp",
+        "ID96D4_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID96D4/ID96D4_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID96D4/ID96D4_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDA172": {
+      "sku": "IDA172",
+      "cover": "IDA172_cover.webp",
+      "files": [
+        "IDA172_cover.webp",
+        "IDA172_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDA172/IDA172_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDA172/IDA172_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDA328": {
+      "sku": "IDA328",
+      "cover": "IDA328_cover.webp",
+      "files": [
+        "IDA328_cover.webp",
+        "IDA328_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDA328/IDA328_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDA328/IDA328_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDA57C": {
+      "sku": "IDA57C",
+      "cover": "IDA57C_cover.webp",
+      "files": [
+        "IDA57C_cover.webp",
+        "IDA57C_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDA57C/IDA57C_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDA57C/IDA57C_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDA5A7": {
+      "sku": "IDA5A7",
+      "cover": "IDA5A7_cover.webp",
+      "files": [
+        "IDA5A7_cover.webp",
+        "IDA5A7_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDA5A7/IDA5A7_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDA5A7/IDA5A7_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDAA71": {
+      "sku": "IDAA71",
+      "cover": "IDAA71_cover.webp",
+      "files": [
+        "IDAA71_cover.webp",
+        "IDAA71_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDAA71/IDAA71_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDAA71/IDAA71_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDB05D": {
+      "sku": "IDB05D",
+      "cover": "IDB05D_cover.webp",
+      "files": [
+        "IDB05D_cover.webp",
+        "IDB05D_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDB05D/IDB05D_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDB05D/IDB05D_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDB279": {
+      "sku": "IDB279",
+      "cover": "IDB279_cover.webp",
+      "files": [
+        "IDB279_cover.webp",
+        "IDB279_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDB279/IDB279_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDB279/IDB279_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDC133": {
+      "sku": "IDC133",
+      "cover": "IDC133_cover.webp",
+      "files": [
+        "IDC133_cover.webp",
+        "IDC133_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDC133/IDC133_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDC133/IDC133_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDC212": {
+      "sku": "IDC212",
+      "cover": "IDC212_cover.webp",
+      "files": [
+        "IDC212_cover.webp",
+        "IDC212_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDC212/IDC212_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDC212/IDC212_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDC2AA": {
+      "sku": "IDC2AA",
+      "cover": "IDC2AA_cover.webp",
+      "files": [
+        "IDC2AA_cover.webp",
+        "IDC2AA_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDC2AA/IDC2AA_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDC2AA/IDC2AA_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDC5CD": {
+      "sku": "IDC5CD",
+      "cover": "IDC5CD_cover.webp",
+      "files": [
+        "IDC5CD_cover.webp",
+        "IDC5CD_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDC5CD/IDC5CD_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDC5CD/IDC5CD_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDC7AD": {
+      "sku": "IDC7AD",
+      "cover": "IDC7AD_cover.webp",
+      "files": [
+        "IDC7AD_cover.webp",
+        "IDC7AD_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDC7AD/IDC7AD_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDC7AD/IDC7AD_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDCA8F": {
+      "sku": "IDCA8F",
+      "cover": "IDCA8F_cover.webp",
+      "files": [
+        "IDCA8F_cover.webp",
+        "IDCA8F_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDCA8F/IDCA8F_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDCA8F/IDCA8F_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDCB4C": {
+      "sku": "IDCB4C",
+      "cover": "IDCB4C_cover.webp",
+      "files": [
+        "IDCB4C_cover.webp",
+        "IDCB4C_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDCB4C/IDCB4C_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDCB4C/IDCB4C_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDCBF2": {
+      "sku": "IDCBF2",
+      "cover": "IDCBF2_cover.webp",
+      "files": [
+        "IDCBF2_cover.webp",
+        "IDCBF2_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDCBF2/IDCBF2_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDCBF2/IDCBF2_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDD73F": {
+      "sku": "IDD73F",
+      "cover": "IDD73F_cover.webp",
+      "files": [
+        "IDD73F_cover.webp",
+        "IDD73F_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDD73F/IDD73F_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDD73F/IDD73F_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDD743": {
+      "sku": "IDD743",
+      "cover": "IDD743_cover.webp",
+      "files": [
+        "IDD743_cover.webp",
+        "IDD743_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDD743/IDD743_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDD743/IDD743_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDD962": {
+      "sku": "IDD962",
+      "cover": "IDD962_cover.webp",
+      "files": [
+        "IDD962_cover.webp",
+        "IDD962_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDD962/IDD962_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDD962/IDD962_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDD9CA": {
+      "sku": "IDD9CA",
+      "cover": "IDD9CA_cover.webp",
+      "files": [
+        "IDD9CA_cover.webp",
+        "IDD9CA_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDD9CA/IDD9CA_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDD9CA/IDD9CA_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDDCC9": {
+      "sku": "IDDCC9",
+      "cover": "IDDCC9_cover.webp",
+      "files": [
+        "IDDCC9_cover.webp",
+        "IDDCC9_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDDCC9/IDDCC9_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDDCC9/IDDCC9_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDE42D": {
+      "sku": "IDE42D",
+      "cover": "IDE42D_cover.webp",
+      "files": [
+        "IDE42D_cover.webp",
+        "IDE42D_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDE42D/IDE42D_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDE42D/IDE42D_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDE477": {
+      "sku": "IDE477",
+      "cover": "IDE477_cover.webp",
+      "files": [
+        "IDE477_cover.webp",
+        "IDE477_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDE477/IDE477_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDE477/IDE477_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDEBF0": {
+      "sku": "IDEBF0",
+      "cover": "IDEBF0_cover.webp",
+      "files": [
+        "IDEBF0_cover.webp",
+        "IDEBF0_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDEBF0/IDEBF0_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDEBF0/IDEBF0_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDEDDE": {
+      "sku": "IDEDDE",
+      "cover": "IDEDDE_cover.webp",
+      "files": [
+        "IDEDDE_cover.webp",
+        "IDEDDE_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDEDDE/IDEDDE_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDEDDE/IDEDDE_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDF0EE": {
+      "sku": "IDF0EE",
+      "cover": "IDF0EE_cover.webp",
+      "files": [
+        "IDF0EE_cover.webp",
+        "IDF0EE_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDF0EE/IDF0EE_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDF0EE/IDF0EE_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDF359": {
+      "sku": "IDF359",
+      "cover": "IDF359_cover.webp",
+      "files": [
+        "IDF359_cover.webp",
+        "IDF359_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDF359/IDF359_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDF359/IDF359_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDF874": {
+      "sku": "IDF874",
+      "cover": "IDF874_cover.webp",
+      "files": [
+        "IDF874_cover.webp",
+        "IDF874_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDF874/IDF874_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDF874/IDF874_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
+    },
+    "IDFE6F": {
+      "sku": "IDFE6F",
+      "cover": "IDFE6F_cover.webp",
+      "files": [
+        "IDFE6F_cover.webp",
+        "IDFE6F_slide_spec.jpg"
+      ],
+      "full_gallery": [
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDFE6F/IDFE6F_cover.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDFE6F/IDFE6F_slide_spec.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_01_cara_order.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_02_akses_download.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_03_garansi_kepuasan.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_04_kebijakan_produk.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_05_format_kompatibilitas_desktop.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_06_testimoni_pembeli.jpg",
+        "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/master_slide_07_faq_bantuan.jpg"
+      ]
     }
-  }
+  },
+  "total_skus": 1049,
+  "updated_at": "2026-09-26T12:51:36.413Z"
 }

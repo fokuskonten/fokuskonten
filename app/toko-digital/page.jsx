@@ -93,14 +93,17 @@ function TokoDigitalContent() {
   const formatTabs = useMemo(() => {
     const list = []
     for (const [fmt, rawCount] of realtimeFormats) {
+      if (fmt === 'PDF' || fmt === 'ISPLAN') continue
       if (fmt === 'MP4') {
         list.push({ id: 'ECOURSE', label: 'Ecourse', count: ecourseCount })
         list.push({ id: 'VIDEO_KONTEN', label: 'Video Konten', count: videoCount })
+      } else if (fmt === 'The Big Bang' || fmt === 'BIGBANG' || fmt === 'THE_BIG_BANG') {
+        list.push({ id: 'The Big Bang', label: 'The Big Bang', count: rawCount })
       } else {
         const smartCount = fmt === 'CDR' ? cdrCount : fmt === 'PPTX' ? pptxCount : fmt === 'PDF' ? pdfCount : rawCount
         list.push({
           id: fmt,
-          label: fmt === 'PDF' ? 'E-Book' : (fmt === 'PHP/WEB' ? 'Web & PWA' : `.${fmt}`),
+          label: fmt === 'PDF' ? 'E-Book' : (fmt === 'PHP/WEB' ? 'Web & PWA' : (fmt === 'EXE' ? 'Desktop .EXE' : `.${fmt}`)),
           count: smartCount
         })
       }
@@ -164,11 +167,14 @@ function TokoDigitalContent() {
       const fmtUpper = (selectedFormat || '').toUpperCase()
       const isEcourseMatch = fmtUpper === 'ECOURSE' && (p.category === 'Ecourse & Tutorial' || (p.category || '').toLowerCase().includes('ecourse'))
       const isVideoMatch = (fmtUpper === 'VIDEO_KONTEN' || fmtUpper === 'VIDEO KONTEN') && (p.category === 'Video Konten' || (p.category || '').toLowerCase().includes('video konten'))
+      const isBigBangMatch = (fmtUpper === 'THE BIG BANG' || fmtUpper === 'BIGBANG' || fmtUpper === 'THE_BIG_BANG') &&
+        (p.format === 'The Big Bang' || p.category === 'The Big Bang' || p.tag === 'The Big Bang' || ['IDEB00', 'ID-TEK-LAPTOP', 'ID-TEK-SMARTPHONE', 'ID-WP-BLOGGER'].includes(p.sku))
 
       const matchFmt =
         selectedFormat === 'Semua' ||
         isEcourseMatch ||
         isVideoMatch ||
+        isBigBangMatch ||
         (p.format && p.format.toUpperCase() === fmtUpper) ||
         (selectedFormat === 'PDF' && p.category?.startsWith('E-Book'))
 
@@ -320,7 +326,9 @@ function TokoDigitalContent() {
           <div className="max-w-xl">
             <div className="flex items-center gap-2 mb-1.5 flex-wrap min-h-[22px]">
               <span suppressHydrationWarning className="text-xs font-bold uppercase tracking-wider text-neutral-400">
-                {mounted && selectedFormat === 'PDF' ? 'Koleksi E-Book' : (selectedFormat === 'PHP/WEB' ? 'Source Code & Web' : 'Katalog Desain')}
+                {mounted && (selectedFormat.toUpperCase() === 'THE BIG BANG' || selectedFormat.toUpperCase() === 'BIGBANG')
+                  ? 'Repositori Unggulan'
+                  : (selectedFormat === 'PDF' ? 'Koleksi E-Book' : (selectedFormat === 'PHP/WEB' ? 'Source Code & Web' : 'Katalog Desain'))}
               </span>
               {isFiltering && (
                 <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-neutral-900 text-white shadow-sm">
@@ -330,7 +338,9 @@ function TokoDigitalContent() {
                           ? 'Ecourse & Panduan'
                           : (selectedFormat.toUpperCase() === 'VIDEO_KONTEN'
                               ? 'Video Konten'
-                              : (selectedFormat === 'PDF' ? 'E-Book' : (selectedFormat === 'PHP/WEB' ? 'Web & PWA' : `Format .${selectedFormat}`))))
+                              : (selectedFormat.toUpperCase() === 'THE BIG BANG' || selectedFormat.toUpperCase() === 'BIGBANG'
+                                  ? 'The Big Bang'
+                                  : (selectedFormat === 'PDF' ? 'E-Book' : (selectedFormat === 'PHP/WEB' ? 'Web & PWA' : `Format .${selectedFormat}`)))))
                       : selectedCategory}
                   </span>
                   <button
@@ -350,7 +360,9 @@ function TokoDigitalContent() {
                     ? 'Katalog Ecourse & Panduan Bisnis'
                     : (selectedFormat.toUpperCase() === 'VIDEO_KONTEN'
                         ? 'Katalog Bahan Video Konten'
-                        : (selectedFormat === 'PDF' ? 'Katalog E-Book' : (selectedFormat === 'PHP/WEB' ? 'Katalog Aplikasi Web & PWA' : `Format .${selectedFormat}`))))
+                        : (selectedFormat.toUpperCase() === 'THE BIG BANG' || selectedFormat.toUpperCase() === 'BIGBANG'
+                            ? 'The Big Bang — Repositori Unggulan Master'
+                            : (selectedFormat === 'PDF' ? 'Katalog E-Book' : (selectedFormat === 'PHP/WEB' ? 'Katalog Aplikasi Web & PWA' : `Format .${selectedFormat}`)))))
                 : (mounted && selectedCategory !== 'Semua' ? selectedCategory : 'Katalog Template & Desain')}
             </h1>
             <p suppressHydrationWarning className="text-sm text-neutral-500 mt-1 leading-relaxed">
@@ -360,7 +372,9 @@ function TokoDigitalContent() {
                     ? 'materi pembelajaran & tutorial bisnis teruji.'
                     : (selectedFormat.toUpperCase() === 'VIDEO_KONTEN'
                         ? 'mentahan footage & amunisi video konten.'
-                        : (selectedFormat === 'PDF' ? 'koleksi literatur digital siap baca.' : (selectedFormat === 'PHP/WEB' ? 'source code sistem & aplikasi teruji.' : `format .${selectedFormat}`))))
+                        : (selectedFormat.toUpperCase() === 'THE BIG BANG' || selectedFormat.toUpperCase() === 'BIGBANG'
+                            ? 'koleksi repositori master: E-Book, Skematik Laptop, Teknisi Smartphone, dan Webmaster.'
+                            : (selectedFormat === 'PDF' ? 'koleksi literatur digital siap baca.' : (selectedFormat === 'PHP/WEB' ? 'source code sistem & aplikasi teruji.' : `format .${selectedFormat}`)))))
                 : (mounted && selectedCategory !== 'Semua' ? `kategori ${selectedCategory}` : 'siap pakai.')}
             </p>
           </div>

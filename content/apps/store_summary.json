@@ -1,11 +1,11 @@
 {
-  "totalActive": 993,
-  "totalDesign": 993,
+  "totalActive": 1045,
+  "totalDesign": 1045,
   "totalEbook": 0,
   "designCategories": [
     [
       "Aplikasi",
-      185
+      241
     ],
     [
       "Ecourse & Tutorial",
@@ -13,7 +13,7 @@
     ],
     [
       "Vektor",
-      132
+      130
     ],
     [
       "Presentasi & Pitch Deck",
@@ -21,7 +21,7 @@
     ],
     [
       "Undangan",
-      53
+      52
     ],
     [
       "Video Animasi & Iklan",
@@ -33,7 +33,7 @@
     ],
     [
       "Kaos",
-      37
+      36
     ],
     [
       "Video Konten",
@@ -64,11 +64,11 @@
       16
     ],
     [
-      "Kartu Nama",
-      15
+      "Banner & Spanduk",
+      14
     ],
     [
-      "Banner & Spanduk",
+      "Kartu Nama",
       14
     ],
     [
@@ -100,6 +100,10 @@
       5
     ],
     [
+      "The Big Bang",
+      4
+    ],
+    [
       "Kalender",
       3
     ],
@@ -118,29 +122,13 @@
     [
       "Tekstur",
       2
-    ],
-    [
-      "Teknisi Hardware",
-      1
-    ],
-    [
-      "Desain Grafis",
-      1
     ]
   ],
   "ebookCategories": [],
   "categories": [
     [
-      "E-Book Agama Islam",
-      632
-    ],
-    [
-      "E-Book Novel",
-      627
-    ],
-    [
-      "E-Book Pendidikan",
-      271
+      "Aplikasi",
+      241
     ],
     [
       "Ecourse & Tutorial",
@@ -148,71 +136,27 @@
     ],
     [
       "Vektor",
-      126
-    ],
-    [
-      "E-Book Pengembangan Diri",
-      105
-    ],
-    [
-      "E-Book Bisnis",
-      97
-    ],
-    [
-      "E-Book Tafsir",
-      92
-    ],
-    [
-      "E-Book Kesehatan",
-      84
+      130
     ],
     [
       "Presentasi & Pitch Deck",
       70
     ],
     [
-      "E-Book Resep Masakan",
-      58
-    ],
-    [
-      "E-Book Pengetahuan",
-      52
-    ],
-    [
-      "E-Book Bisnis Investasi",
+      "Undangan",
       52
     ],
     [
       "Video Animasi & Iklan",
-      50
-    ],
-    [
-      "E-Book Hukum",
-      49
-    ],
-    [
-      "E-Book Psikologi",
-      44
+      47
     ],
     [
       "Stiker & Striping",
-      43
+      46
     ],
     [
-      "E-Book Sastra",
-      42
-    ],
-    [
-      "E-Book Keuangan",
-      41
-    ],
-    [
-      "E-Book Pertanian",
-      40
-    ],
-    [
-      "E-Book Politik",
-      39
+      "Kaos",
+      36
     ],
     [
       "Video Konten",
@@ -223,80 +167,44 @@
       35
     ],
     [
-      "Undangan",
-      34
-    ],
-    [
-      "E-Book Buku Anak",
-      33
+      "Poster",
+      31
     ],
     [
       "Kemasan & Goodie Bag",
-      28
-    ],
-    [
-      "E-Book Kerja-Karir",
-      25
-    ],
-    [
-      "Kaos",
-      25
-    ],
-    [
-      "Poster",
-      23
+      29
     ],
     [
       "Logo & Maskot",
-      22
-    ],
-    [
-      "E-Book Kuliner",
-      21
-    ],
-    [
-      "E-Book Bisnis Online",
-      19
-    ],
-    [
-      "E-Book Filsafat",
-      18
+      24
     ],
     [
       "Invoice & Nota",
-      17
+      18
+    ],
+    [
+      "Buku & Yasin",
+      16
+    ],
+    [
+      "Banner & Spanduk",
+      14
     ],
     [
       "Kartu Nama",
-      15
+      14
     ],
     [
       "Daftar Menu & Kuliner",
       14
     ],
     [
-      "Buku & Yasin",
-      13
-    ],
-    [
-      "E-Book Peternakan",
-      12
-    ],
-    [
-      "Banner & Spanduk",
-      11
-    ],
-    [
-      "E-Book Majalah",
-      10
-    ],
-    [
       "Media Sosial & Banner",
       10
     ],
     [
-      "E-Book Budaya & Tradisi",
-      8
+      "Sertifikat",
+      7
     ],
     [
       "Undangan & Ucapan",
@@ -307,7 +215,7 @@
       7
     ],
     [
-      "Sertifikat",
+      "Brosur & Flyer",
       6
     ],
     [
@@ -315,8 +223,16 @@
       5
     ],
     [
-      "Brosur & Flyer",
+      "The Big Bang",
+      4
+    ],
+    [
+      "Kalender",
       3
+    ],
+    [
+      "Tekstur & Brush",
+      2
     ],
     [
       "Infografis & Data",
@@ -329,14 +245,6 @@
     [
       "Tekstur",
       2
-    ],
-    [
-      "Kalender",
-      1
-    ],
-    [
-      "Tekstur & Brush",
-      1
     ]
   ],
   "formats": [
@@ -346,7 +254,7 @@
     ],
     [
       "PHP/WEB",
-      185
+      181
     ],
     [
       "MP4",
@@ -357,20 +265,16 @@
       141
     ],
     [
+      "EXE",
+      60
+    ],
+    [
       "WMF/SVG",
       35
     ],
     [
-      "PSD",
-      5
-    ],
-    [
-      "ZIP / RAR",
-      1
-    ],
-    [
-      "PNG/HD",
-      1
+      "The Big Bang",
+      4
     ]
   ],
   "showcase": {
