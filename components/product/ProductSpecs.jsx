@@ -40,11 +40,12 @@ function formatDescription(desc) {
       )
     }
 
-    // 2. Section ber-heading (Contoh: "RINGKASAN & NILAI PRODUK:", "SPESIFIKASI TEKNIS & KELENGKAPAN (MUTLAK):")
-    const cleanFirstLine = firstLine.replace(/:$/, '').trim()
+    // 2. Section ber-heading (Contoh: "[RINGKASAN PRODUK]", "[KELENGKAPAN & ISI MODUL]")
+    const cleanFirstLine = firstLine.replace(/^\[|\]$/g, '').replace(/:$/, '').trim()
     const isHeading =
+      (firstLine.startsWith('[') && firstLine.endsWith(']')) ||
       (firstLine.endsWith(':') && cleanFirstLine === cleanFirstLine.toUpperCase()) ||
-      (/^[A-Z0-9\s&()\-]+:?$/.test(firstLine) && lines.length > 1 && !firstLine.startsWith('PRODUK') && !firstLine.startsWith('KODE SKU') && !firstLine.startsWith('SKU') && !firstLine.startsWith('•') && !firstLine.startsWith('-'))
+      (/^[A-Z0-9\s&()\[\]\-]+:?$/.test(firstLine) && lines.length > 1 && !firstLine.startsWith('PRODUK') && !firstLine.startsWith('KODE SKU') && !firstLine.startsWith('SKU') && !firstLine.startsWith('•') && !firstLine.startsWith('-'))
 
     if (isHeading) {
       let heading = cleanFirstLine

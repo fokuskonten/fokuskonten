@@ -26,6 +26,8 @@ const formatSoftwareMap = {
   'TTF/OTF': { name: 'Font Typography Master', ext: '.TTF / .OTF', comp: 'Windows, macOS, Linux, CapCut, Canva', type: 'Typography Font Master', desc: 'Font Komersial Penuh dengan Karakter Alternatif' },
   'WAV/MP3': { name: 'Audio Sound FX', ext: '.WAV / .MP3', comp: 'Semua Video Editor & DAW Audio', type: 'Studio Lossless Audio SFX', desc: 'Sound Effects Berkualitas Studio Tanpa Noise' },
   'XLSX': { name: 'Microsoft Excel / Sheets', ext: '.XLSX', comp: 'Microsoft Excel 2016+ & Google Sheets', type: 'Automated Spreadsheet Dashboard', desc: 'Template Spreadsheet Otomatisasi & Rumus Siap Pakai' },
+  'EXE': { name: 'Aplikasi Desktop Windows', ext: '.EXE', comp: 'Windows 10 & Windows 11 (PC & Laptop)', type: 'Desktop Application Installer', desc: 'Paket Aplikasi Desktop Siap Pasang & Penggunaan Offline Lokal' },
+  'PHP/WEB': { name: 'Aplikasi Web & PWA', ext: '.PHP / .SQL', comp: 'Laragon, XAMPP, atau Hosting cPanel', type: 'Full Source Code Aplikasi Web', desc: 'Paket Source Code Aplikasi Web & Skema Database Lengkap' },
   'PDF': { name: 'E-Book Digital Master', ext: '.PDF', comp: 'Smartphone, Tablet, iPad, PC & E-Reader', type: 'Digital E-Book & Dokumen', desc: 'File Digital E-Book Berkualitas Tinggi, Teks Jernih & Siap Baca' }
 }
 
