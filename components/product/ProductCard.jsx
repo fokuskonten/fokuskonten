@@ -81,17 +81,24 @@ export default function ProductCard({ product, compact = false, priority = false
 
   const productUrl = `/toko-digital/${(product.sku || '').toLowerCase()}/`
   const formatUpper = (product.format || 'CDR').toUpperCase()
+  const formatLabel = formatUpper.includes('BIG BANG') 
+    ? 'BIG BANG' 
+    : (formatUpper === 'PHP/WEB' ? 'WEB & PWA' : `.${formatUpper}`)
   const coverSrc = product.coverImage || (product.sku ? `${product.sku}_cover.webp` : '')
 
   if (compact) {
     return (
       <div className="group bg-white rounded-xl border border-neutral-200/80 overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_20px_rgba(0,0,0,0.08)] hover:-translate-y-0.5 transition-all duration-200 flex flex-col justify-between relative">
-        {isOwned && (
+        {isOwned ? (
           <div className="absolute top-2 left-2 z-10 px-1.5 py-0.5 rounded bg-neutral-950 text-white text-[9px] font-bold tracking-wide border border-neutral-800 flex items-center gap-1 shadow-sm">
             <span>✓</span>
             <span>Di Koleksi</span>
           </div>
-        )}
+        ) : product.badge ? (
+          <div className="absolute top-2 left-2 z-10 px-1.5 py-0.5 rounded bg-neutral-950 text-white text-[9px] font-bold tracking-wide border border-neutral-800 shadow-sm">
+            <span>{product.badge}</span>
+          </div>
+        ) : null}
         <div>
           <Link
             href={productUrl}
@@ -156,9 +163,13 @@ export default function ProductCard({ product, compact = false, priority = false
             </div>
             <div className="flex items-center gap-1.5">
               <span className="font-mono text-neutral-800 bg-neutral-100 border border-neutral-200/80 px-1.5 py-0.5 rounded font-bold text-[9px]">
-                .{formatUpper}
+                {formatLabel}
               </span>
-              {!isOwned ? (
+              {product.badge === 'SEGERA HADIR' ? (
+                <span className="px-2 py-1 rounded-md bg-neutral-100 border border-neutral-300 text-neutral-500 font-mono text-[9px] font-bold">
+                  Segera Hadir
+                </span>
+              ) : !isOwned ? (
                 <button
                   type="button"
                   onClick={handleAddToCart}
@@ -196,12 +207,16 @@ export default function ProductCard({ product, compact = false, priority = false
 
   return (
     <div className="group bg-white rounded-2xl border border-neutral-200/80 overflow-hidden shadow-[0_4px_16px_rgba(0,0,0,0.06)] hover:shadow-[0_14px_30px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between relative">
-      {isOwned && (
+      {isOwned ? (
         <div className="absolute top-3 left-3 z-10 px-2 py-0.5 rounded-lg bg-neutral-950 text-white text-[10px] font-bold tracking-wide border border-neutral-800 flex items-center gap-1.5 shadow-md">
           <span>✓</span>
           <span>Di Koleksi Saya</span>
         </div>
-      )}
+      ) : product.badge ? (
+        <div className="absolute top-3 left-3 z-10 px-2.5 py-0.5 rounded-lg bg-neutral-950 text-white text-[10px] font-bold tracking-wide border border-neutral-800 shadow-md">
+          <span>{product.badge}</span>
+        </div>
+      ) : null}
       <div>
         {/* Thumbnail Image Frame */}
         <Link
@@ -278,9 +293,13 @@ export default function ProductCard({ product, compact = false, priority = false
 
           <div className="flex items-center gap-1 sm:gap-2">
             <span className="font-mono text-neutral-800 bg-neutral-100 border border-neutral-200/90 px-1.5 py-0.5 sm:px-2 sm:py-1 rounded-lg sm:rounded-xl font-bold text-[9px] sm:text-[11px] shadow-xs tracking-wide">
-              .{formatUpper}
+              {formatLabel}
             </span>
-            {!isOwned ? (
+            {product.badge === 'SEGERA HADIR' ? (
+              <span className="font-mono text-neutral-500 bg-neutral-100 border border-neutral-300 px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-lg sm:rounded-xl text-[10px] sm:text-xs font-bold shrink-0">
+                Segera Hadir
+              </span>
+            ) : !isOwned ? (
               <button
                 type="button"
                 onClick={handleAddToCart}

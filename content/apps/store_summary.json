@@ -1,23 +1,47 @@
 {
-  "totalActive": 1045,
-  "totalDesign": 1045,
-  "totalEbook": 0,
+  "totalActive": 5298,
+  "totalDesign": 1795,
+  "totalEbook": 3503,
   "designCategories": [
     [
       "Aplikasi",
-      241
-    ],
-    [
-      "Ecourse & Tutorial",
-      136
+      371
     ],
     [
       "Vektor",
-      130
+      292
+    ],
+    [
+      "Ecourse & Tutorial",
+      152
+    ],
+    [
+      "Lembar Kerja Edukasi",
+      100
+    ],
+    [
+      "Kaos",
+      96
     ],
     [
       "Presentasi & Pitch Deck",
-      70
+      74
+    ],
+    [
+      "Preset & LUTs",
+      66
+    ],
+    [
+      "Template Website",
+      61
+    ],
+    [
+      "Tekstur & Brush",
+      59
+    ],
+    [
+      "Dokumen & Template Bisnis",
+      56
     ],
     [
       "Undangan",
@@ -32,12 +56,8 @@
       46
     ],
     [
-      "Kaos",
-      36
-    ],
-    [
       "Video Konten",
-      35
+      40
     ],
     [
       "Canva Elements & Clipart Vektor",
@@ -45,7 +65,7 @@
     ],
     [
       "Poster",
-      31
+      32
     ],
     [
       "Kemasan & Goodie Bag",
@@ -56,20 +76,24 @@
       24
     ],
     [
+      "Desain Grafis",
+      20
+    ],
+    [
+      "Kartu Nama",
+      18
+    ],
+    [
       "Invoice & Nota",
       18
     ],
     [
-      "Buku & Yasin",
+      "Banner & Spanduk",
       16
     ],
     [
-      "Banner & Spanduk",
-      14
-    ],
-    [
-      "Kartu Nama",
-      14
+      "Buku & Yasin",
+      16
     ],
     [
       "Daftar Menu & Kuliner",
@@ -80,11 +104,15 @@
       10
     ],
     [
-      "Sertifikat",
-      7
+      "Brosur & Flyer",
+      9
     ],
     [
       "Undangan & Ucapan",
+      7
+    ],
+    [
+      "Sertifikat",
       7
     ],
     [
@@ -92,12 +120,12 @@
       7
     ],
     [
-      "Brosur & Flyer",
-      6
-    ],
-    [
       "Karakter & Animasi 3D",
       5
+    ],
+    [
+      "Infografis & Data",
+      4
     ],
     [
       "The Big Bang",
@@ -108,46 +136,231 @@
       3
     ],
     [
-      "Tekstur & Brush",
-      2
-    ],
-    [
-      "Infografis & Data",
-      2
-    ],
-    [
       "Mockup",
       2
     ],
     [
       "Tekstur",
       2
+    ],
+    [
+      "Video FX",
+      1
     ]
   ],
-  "ebookCategories": [],
-  "categories": [
+  "ebookCategories": [
     [
-      "Aplikasi",
-      241
+      "E-Book Novel",
+      815
     ],
     [
-      "Ecourse & Tutorial",
-      136
+      "E-Book Agama Islam",
+      670
     ],
     [
-      "Vektor",
+      "E-Book Pendidikan",
+      345
+    ],
+    [
+      "E-Book Pengembangan Diri",
+      216
+    ],
+    [
+      "E-Book Bisnis",
+      171
+    ],
+    [
+      "E-Book Kerja-Karir",
+      152
+    ],
+    [
+      "E-Book Resep Masakan",
+      147
+    ],
+    [
+      "E-Book Kesehatan",
       130
     ],
     [
+      "E-Book Pengetahuan",
+      123
+    ],
+    [
+      "E-Book Tafsir",
+      92
+    ],
+    [
+      "E-Book Bisnis Online",
+      85
+    ],
+    [
+      "E-Book Bisnis Investasi",
+      80
+    ],
+    [
+      "E-Book Psikologi",
+      79
+    ],
+    [
+      "E-Book Keuangan",
+      78
+    ],
+    [
+      "E-Book Buku Anak",
+      59
+    ],
+    [
+      "E-Book Hukum",
+      49
+    ],
+    [
+      "E-Book Sastra",
+      47
+    ],
+    [
+      "E-Book Politik",
+      45
+    ],
+    [
+      "E-Book Pertanian",
+      41
+    ],
+    [
+      "E-Book Kuliner",
+      21
+    ],
+    [
+      "E-Book Filsafat",
+      20
+    ],
+    [
+      "E-Book Peternakan",
+      15
+    ],
+    [
+      "E-Book Budaya & Tradisi",
+      13
+    ],
+    [
+      "E-Book Majalah",
+      10
+    ]
+  ],
+  "categories": [
+    [
+      "E-Book Novel",
+      815
+    ],
+    [
+      "E-Book Agama Islam",
+      670
+    ],
+    [
+      "Aplikasi",
+      371
+    ],
+    [
+      "E-Book Pendidikan",
+      345
+    ],
+    [
+      "Vektor",
+      292
+    ],
+    [
+      "E-Book Pengembangan Diri",
+      216
+    ],
+    [
+      "E-Book Bisnis",
+      171
+    ],
+    [
+      "Ecourse & Tutorial",
+      152
+    ],
+    [
+      "E-Book Kerja-Karir",
+      152
+    ],
+    [
+      "E-Book Resep Masakan",
+      147
+    ],
+    [
+      "E-Book Kesehatan",
+      130
+    ],
+    [
+      "E-Book Pengetahuan",
+      123
+    ],
+    [
+      "Lembar Kerja Edukasi",
+      100
+    ],
+    [
+      "Kaos",
+      96
+    ],
+    [
+      "E-Book Tafsir",
+      92
+    ],
+    [
+      "E-Book Bisnis Online",
+      85
+    ],
+    [
+      "E-Book Bisnis Investasi",
+      80
+    ],
+    [
+      "E-Book Psikologi",
+      79
+    ],
+    [
+      "E-Book Keuangan",
+      78
+    ],
+    [
       "Presentasi & Pitch Deck",
-      70
+      74
+    ],
+    [
+      "Preset & LUTs",
+      66
+    ],
+    [
+      "Template Website",
+      61
+    ],
+    [
+      "Tekstur & Brush",
+      59
+    ],
+    [
+      "E-Book Buku Anak",
+      59
+    ],
+    [
+      "Dokumen & Template Bisnis",
+      56
     ],
     [
       "Undangan",
       52
     ],
     [
+      "E-Book Hukum",
+      49
+    ],
+    [
       "Video Animasi & Iklan",
+      47
+    ],
+    [
+      "E-Book Sastra",
       47
     ],
     [
@@ -155,12 +368,16 @@
       46
     ],
     [
-      "Kaos",
-      36
+      "E-Book Politik",
+      45
+    ],
+    [
+      "E-Book Pertanian",
+      41
     ],
     [
       "Video Konten",
-      35
+      40
     ],
     [
       "Canva Elements & Clipart Vektor",
@@ -168,7 +385,7 @@
     ],
     [
       "Poster",
-      31
+      32
     ],
     [
       "Kemasan & Goodie Bag",
@@ -179,35 +396,63 @@
       24
     ],
     [
+      "E-Book Kuliner",
+      21
+    ],
+    [
+      "Desain Grafis",
+      20
+    ],
+    [
+      "E-Book Filsafat",
+      20
+    ],
+    [
+      "Kartu Nama",
+      18
+    ],
+    [
       "Invoice & Nota",
       18
+    ],
+    [
+      "Banner & Spanduk",
+      16
     ],
     [
       "Buku & Yasin",
       16
     ],
     [
-      "Banner & Spanduk",
-      14
-    ],
-    [
-      "Kartu Nama",
-      14
+      "E-Book Peternakan",
+      15
     ],
     [
       "Daftar Menu & Kuliner",
       14
     ],
     [
+      "E-Book Budaya & Tradisi",
+      13
+    ],
+    [
       "Media Sosial & Banner",
       10
     ],
     [
-      "Sertifikat",
-      7
+      "E-Book Majalah",
+      10
+    ],
+    [
+      "Brosur & Flyer",
+      9
     ],
     [
       "Undangan & Ucapan",
+      7
+    ],
+    [
+      "Sertifikat",
       7
     ],
     [
@@ -215,12 +460,12 @@
       7
     ],
     [
-      "Brosur & Flyer",
-      6
-    ],
-    [
       "Karakter & Animasi 3D",
       5
+    ],
+    [
+      "Infografis & Data",
+      4
     ],
     [
       "The Big Bang",
@@ -231,46 +476,70 @@
       3
     ],
     [
-      "Tekstur & Brush",
-      2
-    ],
-    [
-      "Infografis & Data",
-      2
-    ],
-    [
       "Mockup",
       2
     ],
     [
       "Tekstur",
       2
+    ],
+    [
+      "Video FX",
+      1
     ]
   ],
   "formats": [
     [
+      "PDF",
+      3624
+    ],
+    [
       "CDR",
-      454
+      459
     ],
     [
       "PHP/WEB",
-      181
+      368
     ],
     [
       "MP4",
-      170
+      192
+    ],
+    [
+      "WMF/SVG",
+      191
     ],
     [
       "PPTX",
-      141
+      145
+    ],
+    [
+      "LUTS/XMP",
+      76
+    ],
+    [
+      "AI/EPS",
+      68
     ],
     [
       "EXE",
       60
     ],
     [
-      "WMF/SVG",
-      35
+      "PNG/HD",
+      43
+    ],
+    [
+      "XLSX",
+      34
+    ],
+    [
+      "PSD",
+      21
+    ],
+    [
+      "DOCX",
+      13
     ],
     [
       "The Big Bang",
@@ -730,5 +999,6 @@
       }
     ]
   },
-  "totalProducts": 808
+  "totalProducts": 5298,
+  "lastUpdated": "2026-09-27T18:32:53.353Z"
 }

@@ -195,13 +195,38 @@ export default function QuinChatWidget() {
     try {
       const baseUrl = getApiBaseUrl()
       const aiUrl = baseUrl.endsWith('/api/v1') ? `${baseUrl}/ai/qween` : `${baseUrl}/api/v1/ai/qween`
-      const res = await fetch(aiUrl, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: userText })
-      })
       
-      if (!res.ok) throw new Error('AI Server Offline')
+      let res = null
+      try {
+        res = await fetch(aiUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message: userText })
+        })
+      } catch (fetchErr) {
+        console.warn('[QuinChatWidget] Primary AI URL gagal, mencoba failover:', fetchErr.message)
+      }
+
+      // Failover jika primary URL gagal (404/500/offline)
+      if (!res || !res.ok) {
+        const fallbackUrl = aiUrl.includes('localhost') || aiUrl.includes('127.0.0.1')
+          ? 'http://localhost:8090/api/v1/ai/qween'
+          : 'https://api.fokuskonten.my.id/api/v1/ai/qween'
+        
+        if (fallbackUrl !== aiUrl) {
+          try {
+            res = await fetch(fallbackUrl, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ message: userText })
+            })
+          } catch (fbErr) {
+            console.warn('[QuinChatWidget] Failover URL juga gagal:', fbErr.message)
+          }
+        }
+      }
+      
+      if (!res || !res.ok) throw new Error('AI Server Offline')
       
       const data = await res.json()
       streamAssistantReply(
@@ -209,6 +234,7 @@ export default function QuinChatWidget() {
         data.products || []
       )
     } catch (err) {
+      console.error('[QuinChatWidget Error]:', err)
       streamAssistantReply(
         `Mohon maaf, server konsultasi otomatis kami sedang dalam pemeliharaan berkala. Anda dapat langsung berkonsultasi via WhatsApp resmi: [085183011318](https://wa.me/6285183011318?text=${encodeURIComponent(`Halo FokusKonten,\n\n${userText}`)}) 🙏`,
         []
