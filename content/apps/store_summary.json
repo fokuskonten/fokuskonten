@@ -1,7 +1,7 @@
 {
-  "totalActive": 1718,
-  "totalDesign": 1718,
-  "totalEbook": 3503,
+  "totalActive": 1713,
+  "totalDesign": 1713,
+  "totalEbook": 0,
   "designCategories": [
     [
       "Aplikasi",
@@ -17,7 +17,7 @@
     ],
     [
       "Lembar Kerja Edukasi",
-      100
+      95
     ],
     [
       "Kaos",
@@ -100,7 +100,7 @@
       10
     ],
     [
-      "Photobooth",
+      "Desain Grafis",
       7
     ],
     [
@@ -108,7 +108,7 @@
       7
     ],
     [
-      "Desain Grafis",
+      "Photobooth",
       7
     ],
     [
@@ -132,11 +132,11 @@
       3
     ],
     [
-      "Mockup",
+      "Infografis & Data",
       2
     ],
     [
-      "Infografis & Data",
+      "Mockup",
       2
     ],
     [
@@ -144,104 +144,7 @@
       2
     ]
   ],
-  "ebookCategories": [
-    [
-      "E-Book Novel",
-      815
-    ],
-    [
-      "E-Book Agama Islam",
-      670
-    ],
-    [
-      "E-Book Pendidikan",
-      345
-    ],
-    [
-      "E-Book Pengembangan Diri",
-      216
-    ],
-    [
-      "E-Book Bisnis",
-      171
-    ],
-    [
-      "E-Book Kerja-Karir",
-      152
-    ],
-    [
-      "E-Book Resep Masakan",
-      147
-    ],
-    [
-      "E-Book Kesehatan",
-      130
-    ],
-    [
-      "E-Book Pengetahuan",
-      123
-    ],
-    [
-      "E-Book Tafsir",
-      92
-    ],
-    [
-      "E-Book Bisnis Online",
-      85
-    ],
-    [
-      "E-Book Bisnis Investasi",
-      80
-    ],
-    [
-      "E-Book Psikologi",
-      79
-    ],
-    [
-      "E-Book Keuangan",
-      78
-    ],
-    [
-      "E-Book Buku Anak",
-      59
-    ],
-    [
-      "E-Book Hukum",
-      49
-    ],
-    [
-      "E-Book Sastra",
-      47
-    ],
-    [
-      "E-Book Politik",
-      45
-    ],
-    [
-      "E-Book Pertanian",
-      41
-    ],
-    [
-      "E-Book Kuliner",
-      21
-    ],
-    [
-      "E-Book Filsafat",
-      20
-    ],
-    [
-      "E-Book Peternakan",
-      15
-    ],
-    [
-      "E-Book Budaya & Tradisi",
-      13
-    ],
-    [
-      "E-Book Majalah",
-      10
-    ]
-  ],
+  "ebookCategories": [],
   "categories": [
     [
       "Aplikasi",
@@ -257,7 +160,7 @@
     ],
     [
       "Lembar Kerja Edukasi",
-      100
+      95
     ],
     [
       "Kaos",
@@ -340,7 +243,7 @@
       10
     ],
     [
-      "Photobooth",
+      "Desain Grafis",
       7
     ],
     [
@@ -348,7 +251,7 @@
       7
     ],
     [
-      "Desain Grafis",
+      "Photobooth",
       7
     ],
     [
@@ -372,11 +275,11 @@
       3
     ],
     [
-      "Mockup",
+      "Infografis & Data",
       2
     ],
     [
-      "Infografis & Data",
+      "Mockup",
       2
     ],
     [
@@ -407,7 +310,7 @@
     ],
     [
       "PDF",
-      100
+      95
     ],
     [
       "LUTS/XMP",
