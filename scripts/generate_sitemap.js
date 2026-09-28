@@ -220,22 +220,42 @@ try {
   }
 
   const { DatabaseSync } = require('node:sqlite');
-  const dbPath = path.resolve(__dirname, '../../../Server-Fokuskonten/fokuskonten_master.db');
-  if (fs.existsSync(dbPath)) {
-    const db = new DatabaseSync(dbPath);
-    const catalogRows = db.prepare(`SELECT category, brand_slug, slug, updated_at FROM technician_catalog WHERE is_published = 1`).all();
-    for (const item of catalogRows) {
-      const seg = item.category === 'laptop' ? 'teknisi-laptop' : 'teknisi-hp';
+  const hpDbPath = path.resolve(__dirname, '../../../Server-Fokuskonten/technician_hp.db');
+  const laptopDbPath = path.resolve(__dirname, '../../../Server-Fokuskonten/technician_laptop.db');
+  let techCount = 0;
+
+  if (fs.existsSync(hpDbPath)) {
+    const hpDb = new DatabaseSync(hpDbPath, { readonly: true });
+    const hpRows = hpDb.prepare(`SELECT brand_slug, slug, updated_at FROM technician_catalog WHERE is_published = 1`).all();
+    for (const item of hpRows) {
       const lastmodDate = item.updated_at ? item.updated_at.split(' ')[0] : today;
       urls.push({
-        loc: `${baseUrl}/${seg}/${item.brand_slug}/${item.slug}/`,
+        loc: `${baseUrl}/teknisi-hp/${item.brand_slug}/${item.slug}/`,
         lastmod: lastmodDate,
         changefreq: 'weekly',
         priority: '0.8'
       });
     }
-    console.log(`Added ${catalogRows.length} technician models from SQLite to sitemap.`);
+    techCount += hpRows.length;
+    hpDb.close();
   }
+
+  if (fs.existsSync(laptopDbPath)) {
+    const laptopDb = new DatabaseSync(laptopDbPath, { readonly: true });
+    const laptopRows = laptopDb.prepare(`SELECT brand_slug, slug, updated_at FROM technician_catalog WHERE is_published = 1`).all();
+    for (const item of laptopRows) {
+      const lastmodDate = item.updated_at ? item.updated_at.split(' ')[0] : today;
+      urls.push({
+        loc: `${baseUrl}/teknisi-laptop/${item.brand_slug}/${item.slug}/`,
+        lastmod: lastmodDate,
+        changefreq: 'weekly',
+        priority: '0.8'
+      });
+    }
+    techCount += laptopRows.length;
+    laptopDb.close();
+  }
+  console.log(`Added ${techCount} technician models from SQLite to sitemap.`);
 } catch (e) {
   console.warn('Technician sitemap read error:', e.message);
 }

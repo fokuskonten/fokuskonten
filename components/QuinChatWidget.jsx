@@ -339,8 +339,14 @@ export default function QuinChatWidget() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/>
           </svg>
           <span className="absolute -top-1 -right-1 flex h-3.5 w-3.5">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-            <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-emerald-500 border-2 border-neutral-950" />
+            {isOffline ? (
+              <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-amber-400 border-2 border-neutral-950" />
+            ) : (
+              <>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+                <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-emerald-500 border-2 border-neutral-950" />
+              </>
+            )}
           </span>
         </div>
       </button>
@@ -351,7 +357,7 @@ export default function QuinChatWidget() {
         {/* Header */}
         <div className="bg-neutral-950 px-4 py-3.5 flex items-center justify-between border-b border-neutral-800">
           <div className="flex items-center gap-3">
-            <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-emerald-400 shadow-soft shrink-0">
+            <div className={`relative w-10 h-10 rounded-full overflow-hidden border-2 ${isOffline ? 'border-amber-400/80' : 'border-emerald-400'} shadow-soft shrink-0`}>
               <img 
                 src="/cs-avatar.png" 
                 alt="Kalila - Layanan Pelanggan" 
@@ -363,14 +369,14 @@ export default function QuinChatWidget() {
                 <h3 className="text-white font-semibold text-sm tracking-tight">Kalila — Layanan Pelanggan</h3>
               </div>
               {isOffline ? (
-                <p className="text-emerald-400 text-[11px] font-medium flex items-center gap-1.5 mt-0.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                  Layanan Terhubung • Helpdesk Resmi
+                <p className="text-amber-400 text-[11px] font-medium flex items-center gap-1.5 mt-0.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
+                  Helpdesk WhatsApp Resmi
                 </p>
               ) : (
                 <p className="text-emerald-400 text-[11px] font-medium flex items-center gap-1.5 mt-0.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                  Online • FokusKonten Support Resmi
+                  Online • Kalila AI Siap Membantu
                 </p>
               )}
             </div>
