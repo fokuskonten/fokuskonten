@@ -60,14 +60,17 @@ function getAllSkuImages(sku) {
   // 1. Cek dari index katalog aset toko digital CDN
   const assetData = tokoAssetsIndex?.by_sku?.[cleanSku]
   if (assetData?.files && assetData.files.length > 0) {
-    const validWebpFiles = assetData.files.filter((f) => {
+    const validFiles = assetData.files.filter((f) => {
       const low = f.toLowerCase()
-      return low.endsWith('.webp') && !low.endsWith('.json')
+      return (low.endsWith('.webp') || low.endsWith('.jpg') || low.endsWith('.png')) && !low.endsWith('.json')
     })
-    if (validWebpFiles.length > 0) {
-      return validWebpFiles.map(
-        (f) => `https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/${cleanSku}/${f}`
-      )
+    if (validFiles.length > 0) {
+      return validFiles.map((f) => {
+        if (f.startsWith('master_slide_')) {
+          return `https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko/${f}`
+        }
+        return `https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/${cleanSku}/${f}`
+      })
     }
   }
 
@@ -76,10 +79,13 @@ function getAllSkuImages(sku) {
   if (fs.existsSync(targetDir)) {
     try {
       const files = fs.readdirSync(targetDir)
-      const webpFiles = files.filter((f) => f.toLowerCase().endsWith('.webp'))
+      const validFiles = files.filter((f) => {
+        const low = f.toLowerCase()
+        return (low.endsWith('.webp') || low.endsWith('.jpg') || low.endsWith('.png')) && !low.endsWith('.json')
+      })
 
-      if (webpFiles.length > 0) {
-        webpFiles.sort((a, b) => {
+      if (validFiles.length > 0) {
+        validFiles.sort((a, b) => {
           const aLow = a.toLowerCase()
           const bLow = b.toLowerCase()
           if (aLow.includes('cover')) return -1
@@ -87,7 +93,7 @@ function getAllSkuImages(sku) {
           return aLow.localeCompare(bLow, undefined, { numeric: true })
         })
 
-        return webpFiles.map((f) => `/covers/${cleanSku}/${f}`)
+        return validFiles.map((f) => `/covers/${cleanSku}/${f}`)
       }
     } catch (_) {}
   }
@@ -95,10 +101,7 @@ function getAllSkuImages(sku) {
   // 3. Fallback jika ada array gallery di data produk
   const prod = getProductData(cleanSku)
   if (prod?.gallery && prod.gallery.length > 0) {
-    return prod.gallery.filter((url) => {
-      const low = (url || '').toLowerCase()
-      return low.endsWith('.webp') && !low.endsWith('.json')
-    })
+    return prod.gallery
   }
 
   return prod?.coverImage ? [prod.coverImage] : []

@@ -61,18 +61,24 @@ function getProductData(rawParam) {
   // Sinkronkan cover & gallery dengan CDN Index
   const assetEntry = tokoAssetsIndex?.by_sku?.[cleanUpperSku]
   const cdnBase = 'https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital'
+  const cdnSupportBase = 'https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/slide-pendukung-toko'
 
-  if (assetEntry && assetEntry.files && assetEntry.files.length > 0) {
-    const coverFile = assetEntry.cover || `${cleanUpperSku}_cover.webp`
-    const coverUrl = `${cdnBase}/${cleanUpperSku}/${coverFile}`
-    prod.coverImage = coverUrl
-    prod.image = coverUrl
-    const validWebpFiles = assetEntry.files.filter((f) => {
-      const low = f.toLowerCase()
-      return low.endsWith('.webp') && !low.endsWith('.json')
-    })
-    prod.gallery = validWebpFiles.map((f) => `${cdnBase}/${cleanUpperSku}/${f}`)
-  } else if (!prod.coverImage || prod.coverImage.startsWith('/covers/')) {
+  if (!prod.gallery || prod.gallery.length === 0) {
+    if (assetEntry && assetEntry.files && assetEntry.files.length > 0) {
+      const validFiles = assetEntry.files.filter((f) => {
+        const low = f.toLowerCase()
+        return (low.endsWith('.webp') || low.endsWith('.jpg') || low.endsWith('.png')) && !low.endsWith('.json')
+      })
+      prod.gallery = validFiles.map((f) => {
+        if (f.startsWith('master_slide_')) {
+          return `${cdnSupportBase}/${f}`
+        }
+        return `${cdnBase}/${cleanUpperSku}/${f}`
+      })
+    }
+  }
+
+  if (!prod.coverImage || prod.coverImage.startsWith('/covers/')) {
     const coverUrl = `${cdnBase}/${cleanUpperSku}/${cleanUpperSku}_cover.webp`
     prod.coverImage = coverUrl
     prod.image = coverUrl

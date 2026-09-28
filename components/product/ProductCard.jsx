@@ -74,7 +74,7 @@ export default function ProductCard({ product, compact = false, priority = false
 
   if (!product) return null
 
-  const origPrice = product.originalPrice || product.price * 2
+  const origPrice = product.originalPrice || product.original_price || product.price * 2
   const discountPercent = origPrice > product.price
     ? Math.round(((origPrice - product.price) / origPrice) * 100)
     : null
@@ -84,18 +84,19 @@ export default function ProductCard({ product, compact = false, priority = false
   const formatLabel = formatUpper.includes('BIG BANG') 
     ? 'BIG BANG' 
     : (formatUpper === 'PHP/WEB' ? 'WEB & PWA' : `.${formatUpper}`)
-  const coverSrc = product.coverImage || (product.sku ? `${product.sku}_cover.webp` : '')
+  const coverSrc = product.coverImage || product.cover_image || (product.sku ? `${product.sku}_cover.webp` : '')
 
   if (compact) {
     return (
       <div className="group bg-white rounded-xl border border-neutral-200/80 overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_20px_rgba(0,0,0,0.08)] hover:-translate-y-0.5 transition-all duration-200 flex flex-col justify-between relative">
-        {isOwned ? (
+        {isOwned && (
           <div className="absolute top-2 left-2 z-10 px-1.5 py-0.5 rounded bg-neutral-950 text-white text-[9px] font-bold tracking-wide border border-neutral-800 flex items-center gap-1 shadow-sm">
             <span>✓</span>
             <span>Di Koleksi</span>
           </div>
-        ) : product.badge ? (
-          <div className="absolute top-2 left-2 z-10 px-1.5 py-0.5 rounded bg-neutral-950 text-white text-[9px] font-bold tracking-wide border border-neutral-800 shadow-sm">
+        )}
+        {product.badge ? (
+          <div className="absolute top-2 right-2 z-10 px-1.5 py-0.5 rounded bg-neutral-950 text-white text-[9px] font-bold tracking-wide border border-neutral-800 shadow-sm">
             <span>{product.badge}</span>
           </div>
         ) : null}
@@ -207,13 +208,14 @@ export default function ProductCard({ product, compact = false, priority = false
 
   return (
     <div className="group bg-white rounded-2xl border border-neutral-200/80 overflow-hidden shadow-[0_4px_16px_rgba(0,0,0,0.06)] hover:shadow-[0_14px_30px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between relative">
-      {isOwned ? (
+      {isOwned && (
         <div className="absolute top-3 left-3 z-10 px-2 py-0.5 rounded-lg bg-neutral-950 text-white text-[10px] font-bold tracking-wide border border-neutral-800 flex items-center gap-1.5 shadow-md">
           <span>✓</span>
           <span>Di Koleksi Saya</span>
         </div>
-      ) : product.badge ? (
-        <div className="absolute top-3 left-3 z-10 px-2.5 py-0.5 rounded-lg bg-neutral-950 text-white text-[10px] font-bold tracking-wide border border-neutral-800 shadow-md">
+      )}
+      {product.badge ? (
+        <div className="absolute top-3 right-3 z-10 px-2.5 py-0.5 rounded-lg bg-neutral-950 text-white text-[10px] font-bold tracking-wide border border-neutral-800 shadow-md">
           <span>{product.badge}</span>
         </div>
       ) : null}

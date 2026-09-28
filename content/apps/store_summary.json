@@ -1,19 +1,19 @@
 {
-  "totalActive": 5298,
-  "totalDesign": 1795,
+  "totalActive": 1718,
+  "totalDesign": 1718,
   "totalEbook": 3503,
   "designCategories": [
     [
       "Aplikasi",
-      371
+      366
     ],
     [
       "Vektor",
-      292
+      284
     ],
     [
       "Ecourse & Tutorial",
-      152
+      147
     ],
     [
       "Lembar Kerja Edukasi",
@@ -21,7 +21,7 @@
     ],
     [
       "Kaos",
-      96
+      91
     ],
     [
       "Presentasi & Pitch Deck",
@@ -29,23 +29,19 @@
     ],
     [
       "Preset & LUTs",
-      66
+      65
     ],
     [
       "Template Website",
       61
     ],
     [
-      "Tekstur & Brush",
-      59
-    ],
-    [
-      "Dokumen & Template Bisnis",
-      56
-    ],
-    [
       "Undangan",
       52
+    ],
+    [
+      "Tekstur & Brush",
+      48
     ],
     [
       "Video Animasi & Iklan",
@@ -56,16 +52,20 @@
       46
     ],
     [
-      "Video Konten",
-      40
+      "Dokumen & Template Bisnis",
+      45
     ],
     [
       "Canva Elements & Clipart Vektor",
       35
     ],
     [
+      "Video Konten",
+      35
+    ],
+    [
       "Poster",
-      32
+      31
     ],
     [
       "Kemasan & Goodie Bag",
@@ -76,24 +76,20 @@
       24
     ],
     [
-      "Desain Grafis",
-      20
-    ],
-    [
-      "Kartu Nama",
-      18
-    ],
-    [
       "Invoice & Nota",
       18
     ],
     [
-      "Banner & Spanduk",
+      "Buku & Yasin",
       16
     ],
     [
-      "Buku & Yasin",
-      16
+      "Banner & Spanduk",
+      14
+    ],
+    [
+      "Kartu Nama",
+      14
     ],
     [
       "Daftar Menu & Kuliner",
@@ -104,11 +100,7 @@
       10
     ],
     [
-      "Brosur & Flyer",
-      9
-    ],
-    [
-      "Undangan & Ucapan",
+      "Photobooth",
       7
     ],
     [
@@ -116,16 +108,20 @@
       7
     ],
     [
-      "Photobooth",
+      "Desain Grafis",
       7
+    ],
+    [
+      "Undangan & Ucapan",
+      7
+    ],
+    [
+      "Brosur & Flyer",
+      6
     ],
     [
       "Karakter & Animasi 3D",
       5
-    ],
-    [
-      "Infografis & Data",
-      4
     ],
     [
       "The Big Bang",
@@ -140,12 +136,12 @@
       2
     ],
     [
-      "Tekstur",
+      "Infografis & Data",
       2
     ],
     [
-      "Video FX",
-      1
+      "Tekstur",
+      2
     ]
   ],
   "ebookCategories": [
@@ -248,52 +244,16 @@
   ],
   "categories": [
     [
-      "E-Book Novel",
-      815
-    ],
-    [
-      "E-Book Agama Islam",
-      670
-    ],
-    [
       "Aplikasi",
-      371
-    ],
-    [
-      "E-Book Pendidikan",
-      345
+      366
     ],
     [
       "Vektor",
-      292
-    ],
-    [
-      "E-Book Pengembangan Diri",
-      216
-    ],
-    [
-      "E-Book Bisnis",
-      171
+      284
     ],
     [
       "Ecourse & Tutorial",
-      152
-    ],
-    [
-      "E-Book Kerja-Karir",
-      152
-    ],
-    [
-      "E-Book Resep Masakan",
       147
-    ],
-    [
-      "E-Book Kesehatan",
-      130
-    ],
-    [
-      "E-Book Pengetahuan",
-      123
     ],
     [
       "Lembar Kerja Edukasi",
@@ -301,27 +261,7 @@
     ],
     [
       "Kaos",
-      96
-    ],
-    [
-      "E-Book Tafsir",
-      92
-    ],
-    [
-      "E-Book Bisnis Online",
-      85
-    ],
-    [
-      "E-Book Bisnis Investasi",
-      80
-    ],
-    [
-      "E-Book Psikologi",
-      79
-    ],
-    [
-      "E-Book Keuangan",
-      78
+      91
     ],
     [
       "Presentasi & Pitch Deck",
@@ -329,38 +269,22 @@
     ],
     [
       "Preset & LUTs",
-      66
+      65
     ],
     [
       "Template Website",
       61
     ],
     [
-      "Tekstur & Brush",
-      59
-    ],
-    [
-      "E-Book Buku Anak",
-      59
-    ],
-    [
-      "Dokumen & Template Bisnis",
-      56
-    ],
-    [
       "Undangan",
       52
     ],
     [
-      "E-Book Hukum",
-      49
+      "Tekstur & Brush",
+      48
     ],
     [
       "Video Animasi & Iklan",
-      47
-    ],
-    [
-      "E-Book Sastra",
       47
     ],
     [
@@ -368,24 +292,20 @@
       46
     ],
     [
-      "E-Book Politik",
+      "Dokumen & Template Bisnis",
       45
-    ],
-    [
-      "E-Book Pertanian",
-      41
-    ],
-    [
-      "Video Konten",
-      40
     ],
     [
       "Canva Elements & Clipart Vektor",
       35
     ],
     [
+      "Video Konten",
+      35
+    ],
+    [
       "Poster",
-      32
+      31
     ],
     [
       "Kemasan & Goodie Bag",
@@ -396,59 +316,31 @@
       24
     ],
     [
-      "E-Book Kuliner",
-      21
-    ],
-    [
-      "Desain Grafis",
-      20
-    ],
-    [
-      "E-Book Filsafat",
-      20
-    ],
-    [
-      "Kartu Nama",
-      18
-    ],
-    [
       "Invoice & Nota",
       18
-    ],
-    [
-      "Banner & Spanduk",
-      16
     ],
     [
       "Buku & Yasin",
       16
     ],
     [
-      "E-Book Peternakan",
-      15
+      "Banner & Spanduk",
+      14
+    ],
+    [
+      "Kartu Nama",
+      14
     ],
     [
       "Daftar Menu & Kuliner",
       14
     ],
     [
-      "E-Book Budaya & Tradisi",
-      13
-    ],
-    [
       "Media Sosial & Banner",
       10
     ],
     [
-      "E-Book Majalah",
-      10
-    ],
-    [
-      "Brosur & Flyer",
-      9
-    ],
-    [
-      "Undangan & Ucapan",
+      "Photobooth",
       7
     ],
     [
@@ -456,16 +348,20 @@
       7
     ],
     [
-      "Photobooth",
+      "Desain Grafis",
       7
+    ],
+    [
+      "Undangan & Ucapan",
+      7
+    ],
+    [
+      "Brosur & Flyer",
+      6
     ],
     [
       "Karakter & Animasi 3D",
       5
-    ],
-    [
-      "Infografis & Data",
-      4
     ],
     [
       "The Big Bang",
@@ -480,66 +376,66 @@
       2
     ],
     [
-      "Tekstur",
+      "Infografis & Data",
       2
     ],
     [
-      "Video FX",
-      1
+      "Tekstur",
+      2
     ]
   ],
   "formats": [
     [
-      "PDF",
-      3624
-    ],
-    [
       "CDR",
-      459
+      457
     ],
     [
       "PHP/WEB",
-      368
-    ],
-    [
-      "MP4",
-      192
+      367
     ],
     [
       "WMF/SVG",
-      191
+      189
+    ],
+    [
+      "MP4",
+      181
     ],
     [
       "PPTX",
       145
     ],
     [
-      "LUTS/XMP",
-      76
+      "PDF",
+      100
     ],
     [
-      "AI/EPS",
-      68
+      "LUTS/XMP",
+      76
     ],
     [
       "EXE",
       60
     ],
     [
+      "AI/EPS",
+      52
+    ],
+    [
       "PNG/HD",
-      43
+      35
     ],
     [
       "XLSX",
-      34
-    ],
-    [
-      "PSD",
-      21
+      32
     ],
     [
       "DOCX",
       13
+    ],
+    [
+      "PSD",
+      7
     ],
     [
       "The Big Bang",
@@ -999,6 +895,6 @@
       }
     ]
   },
-  "totalProducts": 5298,
-  "lastUpdated": "2026-09-27T18:32:53.353Z"
+  "totalProducts": 1718,
+  "lastUpdated": "2026-09-28T04:13:34.496Z"
 }
