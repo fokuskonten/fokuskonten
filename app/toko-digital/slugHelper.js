@@ -25,6 +25,19 @@ export function extractSkuFromSlug(rawParam) {
   if (!rawParam) return ''
   const decoded = decodeURIComponent(rawParam).trim().toLowerCase()
   
+  // 0. Cek SKU khusus yang mengandung tanda hubung (hyphen)
+  const hyphenSkus = [
+    'id-audio-master',
+    'id-tek-smartphone',
+    'id-tek-laptop',
+    'id-wp-blogger'
+  ]
+  for (const hSku of hyphenSkus) {
+    if (decoded === hSku || decoded.startsWith(hSku + '-')) {
+      return hSku
+    }
+  }
+
   // 1. Format standar: [SKU]-[judul], ambil segmen pertama sebelum dash
   const parts = decoded.split('-')
   if (parts[0] && /^id[a-z0-9]+$/i.test(parts[0])) {

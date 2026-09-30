@@ -15,44 +15,48 @@ function getProductData(rawParam) {
   const targetSku = extractSkuFromSlug(rawParam)
   const cleanUpperSku = (targetSku || '').toUpperCase()
   
-  // 1. Cek dari digitalProducts.json
-  const fromJson = digitalProducts.find((p) => {
-    const pSku = (p.sku || '').toLowerCase()
-    return pSku === targetSku
-  })
-  
-  let prod = fromJson ? { ...fromJson } : null
+  let prod = null
 
-  // 2. Fallback baca langsung dari SQLite DB product_digital.db
-  if (!prod) {
-    try {
-      const { DatabaseSync } = require('node:sqlite')
-      const dbPath = path.resolve(process.cwd(), '../../Server-Fokuskonten/product_digital.db')
-      if (fs.existsSync(dbPath)) {
-        const db = new DatabaseSync(dbPath)
-        const row = db.prepare('SELECT * FROM digital_products WHERE LOWER(sku) = ?').get(targetSku)
-        if (row) {
-          prod = {
-            sku: row.sku,
-            title: row.title,
-            name: row.title,
-            category: row.category,
-            format: row.format,
-            badge: row.badge,
-            price: row.price,
-            originalPrice: row.original_price,
-            coverImage: row.cover_image,
-            image: row.cover_image,
-            gallery: [],
-            description: row.description,
-            driveLink: row.drive_link,
-            backupDriveLink: row.backup_drive_link,
-            isPublished: row.is_published === 1
-          }
+  // 1. Prioritas Utama: Baca langsung dari SQLite DB product_digital.db jika tersedia (Lokal Master)
+  try {
+    const { DatabaseSync } = require('node:sqlite')
+    const dbPath = path.resolve(process.cwd(), '../../Server-Fokuskonten/product_digital.db')
+    if (fs.existsSync(dbPath)) {
+      const db = new DatabaseSync(dbPath)
+      const row = db.prepare('SELECT * FROM digital_products WHERE LOWER(sku) = ?').get(targetSku)
+      if (row) {
+        prod = {
+          sku: row.sku,
+          title: row.title,
+          name: row.title,
+          category: row.category,
+          format: row.format,
+          badge: row.badge,
+          price: row.price,
+          originalPrice: row.original_price,
+          coverImage: row.cover_image,
+          image: row.cover_image,
+          gallery: [],
+          description: row.description,
+          driveLink: row.drive_link,
+          backupDriveLink: row.backup_drive_link,
+          isPublished: row.is_published === 1
         }
       }
-    } catch (err) {
-      // Fallback silent
+      db.close()
+    }
+  } catch (err) {
+    // Fallback silent
+  }
+
+  // 2. Fallback Sekoci: Cek dari digitalProducts.json jika DB tidak ada (GitHub Actions / Cloud)
+  if (!prod) {
+    const fromJson = digitalProducts.find((p) => {
+      const pSku = (p.sku || '').toLowerCase()
+      return pSku === targetSku
+    })
+    if (fromJson) {
+      prod = { ...fromJson }
     }
   }
 

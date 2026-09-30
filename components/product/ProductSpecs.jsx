@@ -184,7 +184,7 @@ export default function ProductSpecs({ fmtMeta, cleanDesc, tags = [] }) {
           </div>
           <div className="flex items-center justify-between py-2 border-b border-neutral-100">
             <span className="text-neutral-500 font-medium">Format File</span>
-            <span className="font-bold text-neutral-900 text-right">.{fmtMeta?.ext || 'CDR'}</span>
+            <span className="font-bold text-neutral-900 text-right">{fmtMeta?.ext ? (fmtMeta.ext.startsWith('.') ? fmtMeta.ext : '.' + fmtMeta.ext) : '.CDR'}</span>
           </div>
           <div className="flex items-center justify-between py-2 border-b border-neutral-100">
             <span className="text-neutral-500 font-medium">Tipe File</span>

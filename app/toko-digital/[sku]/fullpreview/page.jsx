@@ -13,14 +13,7 @@ function getProductData(rawParam) {
   if (!rawParam) return null
   const targetSku = extractSkuFromSlug(rawParam)
 
-  // 1. Cek dari digitalProducts.json
-  const fromJson = digitalProducts.find((p) => {
-    const pSku = (p.sku || '').toLowerCase()
-    return pSku === targetSku
-  })
-  if (fromJson) return fromJson
-
-  // 2. Fallback baca dari product_digital.db
+  // 1. Prioritas Utama: Baca langsung dari SQLite DB product_digital.db jika tersedia (Lokal Master)
   try {
     const { DatabaseSync } = require('node:sqlite')
     const dbPath = path.resolve(process.cwd(), '../../Server-Fokuskonten/product_digital.db')
@@ -28,6 +21,7 @@ function getProductData(rawParam) {
       const db = new DatabaseSync(dbPath)
       const row = db.prepare('SELECT * FROM digital_products WHERE LOWER(sku) = ?').get(targetSku)
       if (row) {
+        db.close()
         return {
           sku: row.sku,
           title: row.title,
@@ -44,8 +38,16 @@ function getProductData(rawParam) {
           isPublished: row.is_published === 1
         }
       }
+      db.close()
     }
   } catch (_) {}
+
+  // 2. Fallback Sekoci: Cek dari digitalProducts.json jika DB tidak ada (GitHub Actions / Cloud)
+  const fromJson = digitalProducts.find((p) => {
+    const pSku = (p.sku || '').toLowerCase()
+    return pSku === targetSku
+  })
+  if (fromJson) return fromJson
 
   return null
 }

@@ -1,6 +1,6 @@
 {
-  "totalActive": 1713,
-  "totalDesign": 1713,
+  "totalActive": 1715,
+  "totalDesign": 1715,
   "totalEbook": 0,
   "designCategories": [
     [
@@ -9,7 +9,7 @@
     ],
     [
       "Vektor",
-      284
+      285
     ],
     [
       "Ecourse & Tutorial",
@@ -104,6 +104,10 @@
       7
     ],
     [
+      "Undangan & Ucapan",
+      7
+    ],
+    [
       "Sertifikat",
       7
     ],
@@ -112,20 +116,16 @@
       7
     ],
     [
-      "Undangan & Ucapan",
-      7
-    ],
-    [
       "Brosur & Flyer",
       6
     ],
     [
-      "Karakter & Animasi 3D",
+      "The Big Bang",
       5
     ],
     [
-      "The Big Bang",
-      4
+      "Karakter & Animasi 3D",
+      5
     ],
     [
       "Kalender",
@@ -152,7 +152,7 @@
     ],
     [
       "Vektor",
-      284
+      285
     ],
     [
       "Ecourse & Tutorial",
@@ -247,6 +247,10 @@
       7
     ],
     [
+      "Undangan & Ucapan",
+      7
+    ],
+    [
       "Sertifikat",
       7
     ],
@@ -255,20 +259,16 @@
       7
     ],
     [
-      "Undangan & Ucapan",
-      7
-    ],
-    [
       "Brosur & Flyer",
       6
     ],
     [
-      "Karakter & Animasi 3D",
+      "The Big Bang",
       5
     ],
     [
-      "The Big Bang",
-      4
+      "Karakter & Animasi 3D",
+      5
     ],
     [
       "Kalender",
@@ -326,7 +326,7 @@
     ],
     [
       "PNG/HD",
-      35
+      36
     ],
     [
       "XLSX",
@@ -341,8 +341,24 @@
       7
     ],
     [
-      "The Big Bang",
-      4
+      "WAV/MP3",
+      1
+    ],
+    [
+      "ZIP/PHP",
+      1
+    ],
+    [
+      "PDF/ISP/PINOUT",
+      1
+    ],
+    [
+      "PDF/BRD/CAD",
+      1
+    ],
+    [
+      "PDF/EPUB",
+      1
     ]
   ],
   "showcase": {
