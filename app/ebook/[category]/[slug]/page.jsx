@@ -158,41 +158,74 @@ export default function EbookDetailPage({ params }) {
 
   const relatedItems = getRelatedEbooks(params.category, ebook.sku)
 
-  // Bilateral SEO Separation: Menggunakan Schema @type: "Book" (Celah 25)
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Book',
-    name: ebook.title,
-    headline: ebook.articleTitle || ebook.title,
-    author: ebook.hasAuthor && ebook.authorDisplay
-      ? {
-          '@type': 'Person',
-          name: ebook.authorDisplay
-        }
-      : undefined,
-    bookFormat: 'https://schema.org/EBook',
-    numberOfPages: ebook.pages || undefined,
-    inLanguage: 'id',
-    image: ebook.coverImage?.startsWith('http')
-      ? ebook.coverImage
-      : `https://fokuskonten.my.id${ebook.coverImage}`,
-    url: `https://fokuskonten.my.id/ebook/${ebook.categorySlug}/${params.slug}/`,
-    publisher: {
-      '@type': 'Organization',
-      name: 'FokusKonten',
-      url: 'https://fokuskonten.my.id'
+  const ebookFaqItems = [
+    {
+      q: `Bagaimana cara membaca naskah e-book ${ebook.title}?`,
+      a: 'Naskah e-book berformat PDF standar yang dapat dibuka di seluruh perangkat smartphone, tablet, laptop, dan komputer menggunakan aplikasi pembaca PDF seperti Adobe Acrobat Reader, Google Play Buku, atau peramban web modern.'
     },
-    offers: {
-      '@type': 'Offer',
-      price: '2000',
-      priceCurrency: 'IDR',
-      availability: 'https://schema.org/InStock',
-      seller: {
-        '@type': 'Organization',
-        name: 'FokusKonten'
-      }
+    {
+      q: 'Apakah naskah e-book ini bisa dicetak atau dibaca secara offline?',
+      a: 'Ya. Berkas PDF yang diunduh bebas dari proteksi DRM yang membatasi, sehingga dapat disimpan secara permanen untuk dibaca offline maupun dicetak mandiri untuk kepentingan kajian pribadi.'
+    },
+    {
+      q: 'Apa perbedaan antara opsi unduh Safelink (Gratis) dan Traktir Kopi?',
+      a: 'Opsi unduh gratis mengarahkan Anda melalui halaman verifikasi sponsor iklan pihak ketiga. Opsi Traktir Kopi (Rp 2.000) memberikan akses unduh langsung berkecepatan tinggi dari server utama tanpa jeda iklan sponsor.'
+    },
+    {
+      q: 'Apakah dokumen naskah ini memenuhi kaidah Fair Use?',
+      a: 'Pratinjau bab pembuka dan kajian telaah editorial pada halaman ini disusun secara mandiri untuk tujuan edukasi dan apresiasi literatur (Fair Use). Tautan berkas merujuk pada repositori arsip digital publik untuk mempermudah akses rujukan ilmiah.'
     }
-  }
+  ]
+
+  // Bilateral SEO Separation: Menggunakan Schema @type: "Book" & "FAQPage" (Celah 25)
+  const jsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Book',
+      name: ebook.title,
+      headline: ebook.articleTitle || ebook.title,
+      author: ebook.hasAuthor && ebook.authorDisplay
+        ? {
+            '@type': 'Person',
+            name: ebook.authorDisplay
+          }
+        : undefined,
+      bookFormat: 'https://schema.org/EBook',
+      numberOfPages: ebook.pages || undefined,
+      inLanguage: 'id',
+      image: ebook.coverImage?.startsWith('http')
+        ? ebook.coverImage
+        : `https://fokuskonten.my.id${ebook.coverImage}`,
+      url: `https://fokuskonten.my.id/ebook/${ebook.categorySlug}/${params.slug}/`,
+      publisher: {
+        '@type': 'Organization',
+        name: 'FokusKonten',
+        url: 'https://fokuskonten.my.id'
+      },
+      offers: {
+        '@type': 'Offer',
+        price: '2000',
+        priceCurrency: 'IDR',
+        availability: 'https://schema.org/InStock',
+        seller: {
+          '@type': 'Organization',
+          name: 'FokusKonten'
+        }
+      }
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: ebookFaqItems.map((item) => ({
+        '@type': 'Question',
+        name: item.q,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.a
+        }
+      }))
+    }
+  ]
 
   return (
     <main className="min-h-screen bg-[#f8fafc] text-neutral-900 dark:bg-[#f8fafc] dark:text-neutral-900">

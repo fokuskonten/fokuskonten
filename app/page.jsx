@@ -1,4 +1,41 @@
 import Link from 'next/link'
+import FaqSection from '@/components/FaqSection'
+
+const homeFaqs = [
+  {
+    q: 'Apa saja layanan dan produk digital resmi yang disediakan FokusKonten?',
+    a: 'FokusKonten menghadirkan aplikasi bisnis Android mandiri (seperti software kasir Apotek Pro dan Toko Kelontong Pro), ribuan template desain grafis siap pakai (CorelDRAW, Photoshop, PowerPoint), direktori literatur e-book terverifikasi, serta arsip skematik teknisi hardware ponsel dan laptop.'
+  },
+  {
+    q: 'Apakah seluruh berkas dan template dapat langsung diunduh dan digunakan selamanya?',
+    a: 'Ya. Seluruh pembelian produk digital di FokusKonten bersifat beli putus (sekali bayar tanpa biaya langganan berulang). Tautan unduhan master dapat diakses langsung, disimpan ke perangkat lokal, dan digunakan untuk kebutuhan usaha maupun komersial tanpa batas waktu.'
+  },
+  {
+    q: 'Bagaimana standar keamanan dan keaslian berkas yang disediakan?',
+    a: 'Setiap berkas digital, installer aplikasi, dan dokumen skematik telah melalui verifikasi laboratorium mandiri untuk memastikan integritas data, bebas proteksi password yang menyulitkan, dan bersih dari kode berbahaya. Aplikasi Android kami juga telah terverifikasi aman melalui Google Play Protect.'
+  },
+  {
+    q: 'Apakah FokusKonten melayani pembuatan software kustom untuk kebutuhan bisnis?',
+    a: 'Ya. Kami melayani perancangan dan pengembangan aplikasi Android, sistem kasir toko khusus, dashboard manajemen, serta software utilitas Windows sesuai alur kerja bisnis Anda dengan arsitektur tangguh yang dapat bekerja tanpa ketergantungan koneksi internet (offline-first).'
+  },
+  {
+    q: 'Bagaimana jika saya memerlukan bantuan teknis atau mengalami kendala unduhan?',
+    a: 'Layanan dukungan pelanggan kami siap membantu melalui WhatsApp resmi di +62 851-8301-1318 maupun email resmi. Tim teknis siap memandu proses instalasi, aktivasi, dan pemulihan berkas jika Anda mengalami kendala teknis.'
+  }
+]
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: homeFaqs.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.a
+    }
+  }))
+}
 
 const stats = [
   { value: '100%', label: 'Offline-First Ready' },
@@ -141,6 +178,10 @@ const features = [
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <section className="min-h-[85vh] flex items-center relative overflow-hidden pt-24 pb-16 bg-gradient-to-b from-neutral-50 via-white to-white">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-0 right-0 w-[550px] h-[550px] bg-brand-500/5 rounded-full blur-3xl -translate-y-1/3 translate-x-1/4" />
@@ -297,6 +338,17 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* FAQ Ekosistem FokusKonten */}
+      <section className="py-20 bg-neutral-50/60 border-t border-neutral-100">
+        <div className="container-page max-w-4xl mx-auto">
+          <FaqSection
+            items={homeFaqs}
+            title="Pertanyaan yang Sering Diajukan"
+            subtitle="Informasi terpercaya seputar layanan, produk digital, lisensi, dan dukungan teknis FokusKonten"
+          />
         </div>
       </section>
 

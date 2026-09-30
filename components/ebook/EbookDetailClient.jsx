@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef } from 'react'
+import { useState, useRef, useMemo } from 'react'
 import EbookCover3D from './EbookCover3D'
 import EbookDownloadRow from './EbookDownloadRow'
 import EbookTraktirModal from './EbookTraktirModal'
@@ -11,6 +11,7 @@ import EbookCuriosityHook from './EbookCuriosityHook'
 import EbookRelatedGrid from './EbookRelatedGrid'
 import EbookBundleBanner from './EbookBundleBanner'
 import EbookDmcaModal from './EbookDmcaModal'
+import FaqSection from '@/components/FaqSection'
 
 import { cleanOrExtractSubtitle } from '@/lib/ebookArticleHelper'
 
@@ -36,6 +37,28 @@ export default function EbookDetailClient({ ebook, relatedItems = [], categoryNa
   const [isDmcaOpen, setIsDmcaOpen] = useState(false)
 
   const downloadSectionRef = useRef(null)
+
+  const ebookFaqs = useMemo(() => {
+    if (!ebook) return []
+    return [
+      {
+        q: `Bagaimana cara membaca naskah e-book ${ebook.title}?`,
+        a: 'Naskah e-book berformat PDF standar yang dapat dibuka di seluruh perangkat smartphone, tablet, laptop, dan komputer menggunakan aplikasi pembaca PDF seperti Adobe Acrobat Reader, Google Play Buku, atau peramban web modern.'
+      },
+      {
+        q: 'Apakah naskah e-book ini bisa dicetak atau dibaca secara offline?',
+        a: 'Ya. Berkas PDF yang diunduh bebas dari proteksi DRM yang membatasi, sehingga dapat disimpan secara permanen untuk dibaca offline maupun dicetak mandiri untuk kepentingan kajian pribadi.'
+      },
+      {
+        q: 'Apa perbedaan antara opsi unduh Safelink (Gratis) dan Traktir Kopi?',
+        a: 'Opsi unduh gratis mengarahkan Anda melalui halaman verifikasi sponsor iklan pihak ketiga. Opsi Traktir Kopi (Rp 2.000) memberikan akses unduh langsung berkecepatan tinggi dari server utama tanpa jeda iklan sponsor.'
+      },
+      {
+        q: 'Apakah dokumen naskah ini memenuhi kaidah Fair Use?',
+        a: 'Pratinjau bab pembuka dan kajian telaah editorial pada halaman ini disusun secara mandiri untuk tujuan edukasi dan apresiasi literatur (Fair Use). Tautan berkas merujuk pada repositori arsip digital publik untuk mempermudah akses rujukan ilmiah.'
+      }
+    ]
+  }, [ebook])
 
   if (!ebook) return null
 
@@ -257,6 +280,13 @@ export default function EbookDetailClient({ ebook, relatedItems = [], categoryNa
 
             {/* Mega Bundle Promo Banner */}
             <EbookBundleBanner />
+
+            {/* FAQ E-Book */}
+            <FaqSection
+              items={ebookFaqs}
+              title="Pertanyaan yang Sering Diajukan"
+              subtitle="Informasi seputar format bacaan PDF, aksesibilitas, dan lisensi naskah"
+            />
 
             {/* Kotak Fair Use & Tombol Takedown Hak Cipta Cepat (Celah 4) */}
             <div className="bg-white text-neutral-900 border border-neutral-200 dark:bg-white dark:text-neutral-900 rounded-2xl p-5 sm:p-6 text-xs text-neutral-600 leading-relaxed space-y-2 shadow-xs">

@@ -14,6 +14,7 @@ import DualDownloadRow from '@/components/teknisi/DualDownloadRow'
 import TraktirKopiModal from '@/components/teknisi/TraktirKopiModal'
 import BundlePromoBanner from '@/components/teknisi/BundlePromoBanner'
 import SidebarHPTools from '@/components/teknisi/SidebarHPTools'
+import FaqSection from '@/components/FaqSection'
 import SmartphoneDetailLoading from './loading'
 
 export default function SmartphoneModelDetailClient({ initialBrand, initialSlug, initialModel }) {
@@ -58,6 +59,25 @@ export default function SmartphoneModelDetailClient({ initialBrand, initialSlug,
   const modelName = rawModelName
   const fullModelName = `${brandName} ${modelName}`.trim()
   const pageTitle = model.officialTitle || `${fullModelName} — Test Point EDL 9008 & Firehose Loader Free Download + Panduan Flashing Anti Gagal`
+
+  const faqItems = [
+    {
+      q: `Bagaimana cara menemukan dan menghubungkan titik Testpoint EDL 9008 pada ${fullModelName}?`,
+      a: `Titik testpoint ${fullModelName} umumnya berada di dekat konektor fleksibel baterai atau di bawah plat pelindung motherboard. Lepas konektor baterai terlebih dahulu, hubungkan kedua titik testpoint ke Ground menggunakan pinset presisi, lalu colokkan kabel USB ke komputer hingga terdeteksi sebagai Qualcomm HS-USB QDLoader 9008.`
+    },
+    {
+      q: `Kapan teknisi harus melakukan jumper direct ISP pinout pada ${fullModelName}?`,
+      a: 'Jumper direct ISP (CMD, CLK, DAT0, VCC, VCCQ, GND) diperlukan ketika ponsel mengalami mati total parah (hardbrick), partisi bootloader rusak, atau tidak merespons koneksi USB standar, sehingga perbaikan harus dilakukan langsung melalui hardware box flasher.'
+    },
+    {
+      q: 'Apakah berkas firmware, firehose loader, dan skematik ini bebas proteksi password?',
+      a: 'Ya, seluruh berkas teknisi yang disediakan di FokusKonten telah diverifikasi langsung oleh tim teknisi laboratorium dan dapat digunakan langsung tanpa proteksi password arsip.'
+    },
+    {
+      q: 'Bagaimana jika perangkat tidak terdeteksi di Device Manager setelah testpoint dilakukan?',
+      a: 'Pastikan menggunakan kabel data USB berkualitas baik, sambungkan ke port USB belakang PC, pastikan driver Qualcomm QDLoader 64-bit terpasang sempurna, dan pastikan baterai terlepas saat jumper disentuhkan.'
+    }
+  ]
 
   return (
     <div className="space-y-8">
@@ -161,6 +181,13 @@ export default function SmartphoneModelDetailClient({ initialBrand, initialSlug,
 
           {/* SATU BANNER PROMOSI PAKET BUNDLE SKU TOKO DIGITAL */}
           <BundlePromoBanner category="hp" />
+
+          {/* FAQ SPESIFIK MODEL SMARTPHONE */}
+          <FaqSection
+            items={faqItems}
+            title="Pertanyaan yang Sering Diajukan"
+            subtitle={`Panduan praktis testpoint, jumper ISP, dan flashing ${fullModelName}`}
+          />
 
         </div>
 

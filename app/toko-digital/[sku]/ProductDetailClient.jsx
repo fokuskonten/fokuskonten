@@ -9,6 +9,7 @@ import ProductGallery from '@/components/product/ProductGallery'
 import ProductPurchaseBox from '@/components/product/ProductPurchaseBox'
 import ProductSpecs from '@/components/product/ProductSpecs'
 import ProductRelatedGrid from '@/components/product/ProductRelatedGrid'
+import FaqSection from '@/components/FaqSection'
 import { hasPurchasedSku, subscribeBuyerStore } from '@/lib/buyerStore'
 import { addToCart, hasInCart, subscribeCartStore } from '@/lib/cartStore'
 
@@ -91,6 +92,28 @@ export default function ProductDetailClient({ product }) {
     }
     if (product && product.category) cats.add(product.category.trim())
     return Array.from(cats)
+  }, [product])
+
+  const productFaqs = useMemo(() => {
+    if (!product) return []
+    return [
+      {
+        q: `Bagaimana cara mengunduh berkas master ${product.title || product.sku} setelah pembayaran?`,
+        a: 'Setelah transaksi terkonfirmasi, Anda akan langsung dialihkan ke halaman unduhan dan menerima akses folder cloud storage resmi untuk mengunduh seluruh berkas master secara penuh dan aman.'
+      },
+      {
+        q: 'Apakah lisensi produk digital ini berlaku selamanya tanpa biaya langganan?',
+        a: 'Ya, seluruh produk digital di FokusKonten menggunakan lisensi beli putus (sekali bayar). Berkas master menjadi milik Anda sepenuhnya dan dapat digunakan untuk proyek komersial maupun pribadi tanpa batas waktu.'
+      },
+      {
+        q: 'Software apa yang dibutuhkan untuk membuka dan mengedit berkas ini?',
+        a: `Berkas ${product.format ? 'format ' + product.format : ''} ini kompatibel dengan software standar industri pada komputer PC dan laptop. Anda dapat membuka dan mengedit setiap layer maupun elemen sesuai petunjuk spesifikasi pada halaman ini.`
+      },
+      {
+        q: 'Apakah ada jaminan garansi jika berkas rusak atau tautan unduhan bermasalah?',
+        a: 'Ya, kami memberikan jaminan garansi berkas 100%. Jika berkas mengalami kerusakan saat diunduh atau tautan terputus, tim bantuan teknis FokusKonten siap memulihkan akses dan mengirimkan tautan pengganti dalam 1x24 jam kerja.'
+      }
+    ]
   }, [product])
 
   const handleSearchSubmit = (e) => {
@@ -310,7 +333,16 @@ export default function ProductDetailClient({ product }) {
           </div>
         </div>
 
-        {/* ── 4. RELATED PRODUCTS SECTION ─────────────────────────────────── */}
+        {/* ── 4. FAQ PRODUK DIGITAL ────────────────────────────────────────── */}
+        <div className="my-10">
+          <FaqSection
+            items={productFaqs}
+            title="Pertanyaan yang Sering Diajukan"
+            subtitle="Informasi seputar lisensi, berkas unduhan, dan jaminan produk digital"
+          />
+        </div>
+
+        {/* ── 5. RELATED PRODUCTS SECTION ─────────────────────────────────── */}
         <ProductRelatedGrid
           category={product.category}
           relatedProducts={relatedProducts}

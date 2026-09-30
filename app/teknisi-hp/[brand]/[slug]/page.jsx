@@ -135,6 +135,44 @@ export default function Page({ params }) {
           { '@type': 'HowToTool', name: 'Kabel USB Data' },
           { '@type': 'HowToTool', name: 'Firehose Loader (.elf)' }
         ]
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': `${canonicalUrl}#faq`,
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: `Bagaimana cara menemukan dan menghubungkan titik Testpoint EDL 9008 pada ${fullModelName}?`,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: `Titik testpoint ${fullModelName} umumnya berada di dekat konektor fleksibel baterai atau di bawah plat pelindung motherboard. Lepas konektor baterai terlebih dahulu, hubungkan kedua titik testpoint ke Ground menggunakan pinset presisi, lalu colokkan kabel USB ke komputer hingga terdeteksi sebagai Qualcomm HS-USB QDLoader 9008.`
+            }
+          },
+          {
+            '@type': 'Question',
+            name: `Kapan teknisi harus melakukan jumper direct ISP pinout pada ${fullModelName}?`,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Jumper direct ISP (CMD, CLK, DAT0, VCC, VCCQ, GND) diperlukan ketika ponsel mengalami mati total parah (hardbrick), partisi bootloader rusak, atau tidak merespons koneksi USB standar, sehingga perbaikan harus dilakukan langsung melalui hardware box flasher.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'Apakah berkas firmware, firehose loader, dan skematik ini bebas proteksi password?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Ya, seluruh berkas teknisi yang disediakan di FokusKonten telah diverifikasi langsung oleh tim teknisi laboratorium dan dapat digunakan langsung tanpa proteksi password arsip.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'Bagaimana jika perangkat tidak terdeteksi di Device Manager setelah testpoint dilakukan?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Pastikan menggunakan kabel data USB berkualitas baik, sambungkan ke port USB belakang PC, pastikan driver Qualcomm QDLoader 64-bit terpasang sempurna, dan pastikan baterai terlepas saat jumper disentuhkan.'
+            }
+          }
+        ]
       }
     ]
   }

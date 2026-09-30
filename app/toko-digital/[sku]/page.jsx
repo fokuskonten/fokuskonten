@@ -189,30 +189,63 @@ export default function ProductDetailPage({ params }) {
   const product = getProductData(params.sku)
   if (!product) return <ProductDetailClient product={null} />
 
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Product',
-    name: product.title || product.name,
-    image: product.coverImage ? (product.coverImage.startsWith('http') ? product.coverImage : `https://fokuskonten.my.id${product.coverImage}`) : undefined,
-    description: product.description ? product.description.slice(0, 250) : '',
-    sku: product.sku,
-    category: product.category,
-    brand: {
-      '@type': 'Brand',
-      name: 'FokusKonten'
+  const productFaqItems = [
+    {
+      q: `Bagaimana cara mengunduh berkas master ${product.title || product.sku} setelah pembayaran?`,
+      a: 'Setelah transaksi terkonfirmasi, Anda akan langsung dialihkan ke halaman unduhan dan menerima akses folder cloud storage resmi untuk mengunduh seluruh berkas master secara penuh dan aman.'
     },
-    offers: {
-      '@type': 'Offer',
-      url: `https://fokuskonten.my.id/toko-digital/${product.sku.toLowerCase()}/`,
-      priceCurrency: 'IDR',
-      price: product.price,
-      availability: 'https://schema.org/InStock',
-      seller: {
-        '@type': 'Organization',
-        name: 'FokusKonten'
-      }
+    {
+      q: 'Apakah lisensi produk digital ini berlaku selamanya tanpa biaya langganan?',
+      a: 'Ya, seluruh produk digital di FokusKonten menggunakan lisensi beli putus (sekali bayar). Berkas master menjadi milik Anda sepenuhnya dan dapat digunakan untuk proyek komersial maupun pribadi tanpa batas waktu.'
+    },
+    {
+      q: 'Software apa yang dibutuhkan untuk membuka dan mengedit berkas ini?',
+      a: `Berkas ${product.format ? 'format ' + product.format : ''} ini kompatibel dengan software standar industri pada komputer PC dan laptop. Anda dapat membuka dan mengedit setiap layer maupun elemen sesuai petunjuk spesifikasi pada halaman ini.`
+    },
+    {
+      q: 'Apakah ada jaminan garansi jika berkas rusak atau tautan unduhan bermasalah?',
+      a: 'Ya, kami memberikan jaminan garansi berkas 100%. Jika berkas mengalami kerusakan saat diunduh atau tautan terputus, tim bantuan teknis FokusKonten siap memulihkan akses dan mengirimkan tautan pengganti dalam 1x24 jam kerja.'
     }
-  }
+  ]
+
+  const jsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Product',
+      name: product.title || product.name,
+      image: product.coverImage ? (product.coverImage.startsWith('http') ? product.coverImage : `https://fokuskonten.my.id${product.coverImage}`) : undefined,
+      description: product.description ? product.description.slice(0, 250) : '',
+      sku: product.sku,
+      category: product.category,
+      brand: {
+        '@type': 'Brand',
+        name: 'FokusKonten'
+      },
+      offers: {
+        '@type': 'Offer',
+        url: `https://fokuskonten.my.id/toko-digital/${product.sku.toLowerCase()}/`,
+        priceCurrency: 'IDR',
+        price: product.price,
+        availability: 'https://schema.org/InStock',
+        seller: {
+          '@type': 'Organization',
+          name: 'FokusKonten'
+        }
+      }
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: productFaqItems.map((item) => ({
+        '@type': 'Question',
+        name: item.q,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.a
+        }
+      }))
+    }
+  ]
 
   return (
     <>

@@ -71,12 +71,97 @@ export async function generateMetadata({ params }) {
 }
 
 export default function Page({ params }) {
-  const initialModel = getStaticModel(params.brand, params.slug)
+  const brandSlug = params.brand
+  const slug = params.slug
+  const initialModel = getStaticModel(brandSlug, slug)
+
+  const brandName = (initialModel?.brand || (brandSlug ? brandSlug.charAt(0).toUpperCase() + brandSlug.slice(1) : 'Laptop')).trim()
+  let rawModelName = (initialModel?.modelName || initialModel?.model_name || slug).trim()
+  if (rawModelName.toLowerCase().startsWith(brandName.toLowerCase())) {
+    rawModelName = rawModelName.substring(brandName.length).trim()
+  }
+  const modelName = rawModelName
+  const fullModelName = `${brandName} ${modelName}`.trim()
+  const mbCode = (initialModel?.motherboardCode || initialModel?.motherboard_code || '').trim()
+  const canonicalUrl = `https://fokuskonten.my.id/teknisi-laptop/${brandSlug}/${slug}`
+
+  const laptopFaqItems = [
+    {
+      q: `Software apa yang diperlukan untuk membuka berkas skematik PDF dan boardview ${fullModelName}?`,
+      a: 'Untuk dokumen skematik diagram rangkaian, Anda dapat membukanya menggunakan Adobe Acrobat Reader atau Foxit PDF Reader. Untuk berkas tata letak komponen boardview (.CAD, .BRD, .BDV, .FZ), disarankan menggunakan aplikasi gratis OpenBoardView atau BoardViewer pada PC Windows.'
+    },
+    {
+      q: 'Bagaimana urutan pengukuran tegangan (power sequence) pada motherboard laptop yang mati total?',
+      a: 'Langkah awal dimulai dari pengukuran jalur tegangan utama adaptor 19V (VIN/DCBATOUT) di resistor sensing arus. Selanjutnya pastikan tegangan standby 3V dan 5V telah hadir pada IC PWM regulator sebelum menekan tombol power, dilanjutkan dengan sinyal EC/KBC dan power good (PGOOD).'
+    },
+    {
+      q: 'Mengapa tegangan standby 3V dan 5V tidak keluar pada pengukuran awal?',
+      a: 'Pada banyak arsitektur motherboard laptop modern, tegangan 3V dan 5V bersifat always-on hanya sebagian, atau baru aktif setelah menerima sinyal enable (EN) dari Embedded Controller (EC/KBC). Pastikan juga tidak ada resistansi rendah atau short-circuit ke ground pada lilitan (inductor) 3V/5V.'
+    },
+    {
+      q: 'Apakah skematik diagram dan boardview ini sesuai dengan kode motherboard laptop saya?',
+      a: `Pastikan kode motherboard fisik yang tertera di PCB motherboard laptop Anda (${mbCode || 'kode motherboard pada spesifikasi'}) cocok dengan judul berkas. Seluruh berkas telah diverifikasi revisi jalurnya sesuai dengan cetak sirkuit PCB pabrikan.`
+    }
+  ]
+
+  const schemaJsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'TechArticle',
+        '@id': `${canonicalUrl}#article`,
+        headline: `${fullModelName} ${mbCode ? '(' + mbCode + ') ' : ''}— Skematik Diagram & Boardview`,
+        description: `Panduan dan berkas teknis motherboard laptop ${fullModelName} ${mbCode}: skematik sirkuit PDF dan tata letak boardview CAD.`,
+        url: canonicalUrl,
+        inLanguage: 'id-ID',
+        author: {
+          '@type': 'Organization',
+          name: 'FokusKonten',
+          url: 'https://fokuskonten.my.id'
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'FokusKonten',
+          url: 'https://fokuskonten.my.id',
+          logo: { '@type': 'ImageObject', url: 'https://fokuskonten.my.id/logo.png' }
+        },
+        mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl },
+        breadcrumb: {
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Beranda', item: 'https://fokuskonten.my.id' },
+            { '@type': 'ListItem', position: 2, name: 'Direktori Teknisi Laptop', item: 'https://fokuskonten.my.id/teknisi-laptop' },
+            { '@type': 'ListItem', position: 3, name: brandName, item: `https://fokuskonten.my.id/teknisi-laptop/${brandSlug}` },
+            { '@type': 'ListItem', position: 4, name: fullModelName, item: canonicalUrl }
+          ]
+        }
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': `${canonicalUrl}#faq`,
+        mainEntity: laptopFaqItems.map((item) => ({
+          '@type': 'Question',
+          name: item.q,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: item.a
+          }
+        }))
+      }
+    ]
+  }
+
   return (
-    <LaptopModelDetailClient
-      initialBrand={params.brand}
-      initialSlug={params.slug}
-      initialModel={initialModel}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaJsonLd) }}
+      />
+      <LaptopModelDetailClient
+        initialBrand={brandSlug}
+        initialSlug={slug}
+        initialModel={initialModel}
+      />
+    </>
   )
 }

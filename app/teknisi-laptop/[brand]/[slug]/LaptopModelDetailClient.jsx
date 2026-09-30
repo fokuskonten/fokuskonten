@@ -9,6 +9,7 @@ import TraktirKopiModal from '@/components/teknisi/TraktirKopiModal'
 import BundlePromoBanner from '@/components/teknisi/BundlePromoBanner'
 import SidebarLaptopTools from '@/components/teknisi/SidebarLaptopTools'
 import LaptopEducationalGuide from '@/components/teknisi/LaptopEducationalGuide'
+import FaqSection from '@/components/FaqSection'
 import LaptopDetailLoading from './loading'
 
 export default function LaptopModelDetailClient({ initialBrand, initialSlug, initialModel }) {
@@ -51,6 +52,25 @@ export default function LaptopModelDetailClient({ initialBrand, initialSlug, ini
 
   // Judul Baku Mas Muhari: Merek > Type > File > Free Download > + Panduan
   const pageTitle = model.officialTitle || `${fullModelName} ${mbCode ? '(' + mbCode + ') ' : ''}— Skema PDF & Boardview CAD Free Download + Panduan Jalur 19V & Standby`
+
+  const faqItems = [
+    {
+      q: `Software apa yang diperlukan untuk membuka berkas skematik PDF dan boardview ${fullModelName}?`,
+      a: 'Untuk dokumen skematik diagram rangkaian, Anda dapat membukanya menggunakan Adobe Acrobat Reader atau Foxit PDF Reader. Untuk berkas tata letak komponen boardview (.CAD, .BRD, .BDV, .FZ), disarankan menggunakan aplikasi gratis OpenBoardView atau BoardViewer pada PC Windows.'
+    },
+    {
+      q: 'Bagaimana urutan pengukuran tegangan (power sequence) pada motherboard laptop yang mati total?',
+      a: 'Langkah awal dimulai dari pengukuran jalur tegangan utama adaptor 19V (VIN/DCBATOUT) di resistor sensing arus. Selanjutnya pastikan tegangan standby 3V dan 5V telah hadir pada IC PWM regulator sebelum menekan tombol power, dilanjutkan dengan sinyal EC/KBC dan power good (PGOOD).'
+    },
+    {
+      q: 'Mengapa tegangan standby 3V dan 5V tidak keluar pada pengukuran awal?',
+      a: 'Pada banyak arsitektur motherboard laptop modern, tegangan 3V dan 5V bersifat always-on hanya sebagian, atau baru aktif setelah menerima sinyal enable (EN) dari Embedded Controller (EC/KBC). Pastikan juga tidak ada resistansi rendah atau short-circuit ke ground pada lilitan (inductor) 3V/5V.'
+    },
+    {
+      q: 'Apakah skematik diagram dan boardview ini sesuai dengan kode motherboard laptop saya?',
+      a: `Pastikan kode motherboard fisik yang tertera di PCB motherboard laptop Anda (${mbCode || 'kode motherboard pada spesifikasi'}) cocok dengan judul berkas. Seluruh berkas telah diverifikasi revisi jalurnya sesuai dengan cetak sirkuit PCB pabrikan.`
+    }
+  ]
 
   return (
     <div className="space-y-8">
@@ -161,6 +181,13 @@ export default function LaptopModelDetailClient({ initialBrand, initialSlug, ini
 
           {/* SATU BANNER PROMOSI PAKET BUNDLE SKU TOKO DIGITAL LAPTOP */}
           <BundlePromoBanner category="laptop" />
+
+          {/* FAQ SPESIFIK SKEMATIK LAPTOP */}
+          <FaqSection
+            items={faqItems}
+            title="Pertanyaan yang Sering Diajukan"
+            subtitle={`Panduan pengukuran daya 19V, standby 3V/5V, dan pembacaan boardview ${fullModelName}`}
+          />
 
         </div>
 
