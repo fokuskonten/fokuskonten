@@ -95,11 +95,7 @@ export default function ProductCard({ product, compact = false, priority = false
             <span>Di Koleksi</span>
           </div>
         )}
-        {product.badge ? (
-          <div className="absolute top-2 right-2 z-10 px-1.5 py-0.5 rounded bg-neutral-950 text-white text-[9px] font-bold tracking-wide border border-neutral-800 shadow-sm">
-            <span>{product.badge}</span>
-          </div>
-        ) : null}
+
         <div>
           <Link
             href={productUrl}
