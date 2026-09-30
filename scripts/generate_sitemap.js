@@ -320,6 +320,56 @@ try {
   console.warn('Technician sitemap read error:', e.message);
 }
 
+// ── 7b. AUTO-DISCOVERY SEMUA HALAMAN STATIS out/ (TRUE FULL WEBSITE COVERAGE) ──
+try {
+  const outDir = path.resolve(__dirname, '../out');
+  if (fs.existsSync(outDir)) {
+    const knownLocs = new Set(urls.map(u => u.loc.endsWith('/') ? u.loc : `${u.loc}/`));
+    const skipList = new Set(['/404/', '/login/', '/akun/', '/404.html']);
+
+    function scanAllHtml(dir, base = '') {
+      let results = [];
+      const entries = fs.readdirSync(dir, { withFileTypes: true });
+      for (const entry of entries) {
+        const full = path.join(dir, entry.name);
+        const rel = (base ? base + '/' : '') + entry.name;
+        if (entry.isDirectory()) {
+          results = results.concat(scanAllHtml(full, rel));
+        } else if (entry.name.endsWith('.html')) {
+          results.push(rel);
+        }
+      }
+      return results;
+    }
+
+    const allHtml = scanAllHtml(outDir);
+    let extraCount = 0;
+
+    for (const h of allHtml) {
+      let r = '/' + h;
+      if (r.endsWith('index.html')) r = r.slice(0, -'index.html'.length);
+      else if (r.endsWith('.html')) r = r.slice(0, -'.html'.length) + '/';
+
+      if (skipList.has(r)) continue;
+
+      const locUrl = `${baseUrl}${r}`;
+      if (!knownLocs.has(locUrl)) {
+        knownLocs.add(locUrl);
+        urls.push({
+          loc: locUrl,
+          lastmod: today,
+          changefreq: r.includes('/fullpreview/') ? 'monthly' : 'weekly',
+          priority: r.includes('/fullpreview/') ? '0.6' : '0.8'
+        });
+        extraCount++;
+      }
+    }
+    console.log(`Added ${extraCount} additional compiled pages (fullpreview, applications, landpage, aliases) from out/ to sitemap.`);
+  }
+} catch (e) {
+  console.warn('Auto-discovery out/ error:', e.message);
+}
+
 // ── 8. SHARDING SITEMAP PER 1.000 URL (FASE 5 SUPERIOR ENTERPRISE) ───────────
 const SHARD_SIZE = 1000;
 const totalShards = Math.ceil(urls.length / SHARD_SIZE);
