@@ -12,22 +12,21 @@ import EbookRelatedGrid from './EbookRelatedGrid'
 import EbookBundleBanner from './EbookBundleBanner'
 import EbookDmcaModal from './EbookDmcaModal'
 
+import { cleanOrExtractSubtitle } from '@/lib/ebookArticleHelper'
+
 /**
  * EbookDetailClient.jsx — Client Wrapper Halaman Artikel E-Book Lengkap
  * Mengelola state modal Traktir Kopi, modal DMCA, scroll anchor, dan audio preview.
  */
 function extractSubtitle(ebook) {
   if (!ebook) return null
-  if (ebook.subtitle) return ebook.subtitle
-  const raw = ebook.articleTitle || ''
-  let clean = raw.replace(/^E-Book\s+/i, '').replace(/\s+PDF$/i, '').trim()
-  clean = clean.replace(/\(Karya:[^)]+\)/i, '').trim()
-  if (clean.includes('—')) {
-    const parts = clean.split('—')
-    return parts[parts.length - 1].trim()
-  } else if (clean.includes(' - ')) {
-    const parts = clean.split(' - ')
-    return parts[parts.length - 1].trim()
+  if (ebook.subtitle) {
+    const cleaned = cleanOrExtractSubtitle(ebook.subtitle, ebook.category, ebook.title)
+    if (cleaned) return cleaned
+  }
+  if (ebook.articleTitle) {
+    const cleaned = cleanOrExtractSubtitle(ebook.articleTitle, ebook.category, ebook.title)
+    if (cleaned) return cleaned
   }
   return null
 }
@@ -71,6 +70,14 @@ export default function EbookDetailClient({ ebook, relatedItems = [], categoryNa
                 <span className="px-2.5 py-0.5 rounded bg-neutral-100 text-neutral-800 text-[10px] font-mono font-semibold uppercase">
                   {ebook.category}
                 </span>
+                {Array.isArray(ebook.tags) && ebook.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="px-2 py-0.5 rounded bg-neutral-100 border border-neutral-300 text-neutral-950 text-[10px] font-mono font-bold uppercase tracking-wider"
+                  >
+                    {tag}
+                  </span>
+                ))}
               </div>
 
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-neutral-950 font-sans leading-tight">
@@ -82,12 +89,15 @@ export default function EbookDetailClient({ ebook, relatedItems = [], categoryNa
                 )}
               </h1>
 
-              {/* Sub Judul & Identitas Penulis (Menggantikan baris redundan Halaman/Durasi yang sudah ada di Spesifikasi) */}
+              {/* Sub Judul atau Koleksi Rumpun & Identitas Penulis */}
               <div className="flex flex-wrap items-center justify-between gap-3 text-xs sm:text-sm pt-3 border-t border-neutral-100 font-mono text-neutral-600">
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-neutral-950 shrink-0" />
                   <span>
-                    Sub Judul: <strong className="text-neutral-900 font-bold font-sans">{subtitle || `Resensi Literatur ${ebook.category || 'Digital'}`}</strong>
+                    {subtitle ? 'Sub Judul: ' : 'Koleksi: '}
+                    <strong className="text-neutral-900 font-bold font-sans">
+                      {subtitle || ebook.category || 'Literatur Digital'}
+                    </strong>
                   </span>
                 </div>
                 {ebook.hasAuthor && ebook.authorDisplay && (

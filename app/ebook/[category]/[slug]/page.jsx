@@ -5,11 +5,12 @@ import { notFound } from 'next/navigation'
 import routes from '@/content/ebook/routes.json'
 import categories from '@/content/ebook/categories.json'
 import EbookDetailClient from '@/components/ebook/EbookDetailClient'
+import { enrichShardItem } from '@/lib/ebookArticleHelper'
 
 export const dynamicParams = true
 
 /**
- * generateStaticParams() — Membangkitkan 2.471 rute statis O(1) dari routes.json ramping (< 90 KB)
+ * generateStaticParams() — Membangkitkan rute statis O(1) dari routes.json ramping (< 90 KB)
  * Eksekusi cepat < 50ms tanpa memory overhead (Celah 6).
  */
 export async function generateStaticParams() {
@@ -23,18 +24,62 @@ export async function generateStaticParams() {
 }
 
 /**
- * Membaca data item e-book secara atomik O(1) dari content/ebook/items/[slug].json
+ * Membaca data item e-book secara atomik O(1)
+ * Prioritas 1: Berkas item lama di content/ebook/items/[slug].json
+ * Prioritas 2: Shard kategori di content/ebook/shards/[categorySlug].json (Zero 13.000 files)
  */
-function getEbookItem(slug) {
+const _shardCache = new Map()
+const _itemMapByCatSlug = new Map()
+
+function getShard(categorySlug) {
+  if (!categorySlug) return null
+  if (_shardCache.has(categorySlug)) return _shardCache.get(categorySlug)
+  try {
+    const shardPath = path.resolve(process.cwd(), 'content/ebook/shards', `${categorySlug}.json`)
+    if (fs.existsSync(shardPath)) {
+      const shard = JSON.parse(fs.readFileSync(shardPath, 'utf-8'))
+      _shardCache.set(categorySlug, shard)
+
+      const itemMap = new Map()
+      for (const item of shard.items || []) {
+        if (item.slug) itemMap.set(item.slug.toLowerCase(), item)
+        if (item.sku) itemMap.set(item.sku.toLowerCase(), item)
+      }
+      _itemMapByCatSlug.set(categorySlug, itemMap)
+      return shard
+    }
+  } catch (err) {
+    console.warn(`[getShard] Gagal membaca shard ${categorySlug}:`, err.message)
+  }
+  return null
+}
+
+/**
+ * Membaca data item e-book secara atomik O(1)
+ * Prioritas 1: Shard kategori di-cache in-memory O(1) Map
+ * Prioritas 2: Berkas item lama di content/ebook/items/[slug].json
+ */
+function getEbookItem(slug, categorySlug) {
   if (!slug) return null
+
+  if (categorySlug) {
+    const shard = getShard(categorySlug)
+    if (shard) {
+      const itemMap = _itemMapByCatSlug.get(categorySlug)
+      const item = itemMap ? itemMap.get(slug.toLowerCase()) : null
+      if (item) {
+        return enrichShardItem(item, shard.name, shard.slug)
+      }
+    }
+  }
+
   try {
     const itemPath = path.resolve(process.cwd(), 'content/ebook/items', `${slug}.json`)
     if (fs.existsSync(itemPath)) {
       return JSON.parse(fs.readFileSync(itemPath, 'utf-8'))
     }
-  } catch (err) {
-    console.warn(`[getEbookItem] Gagal membaca item ${slug}:`, err.message)
-  }
+  } catch (_) {}
+
   return null
 }
 
@@ -43,19 +88,15 @@ function getEbookItem(slug) {
  */
 function getRelatedEbooks(categorySlug, currentSku) {
   if (!categorySlug) return []
-  try {
-    const shardPath = path.resolve(process.cwd(), 'content/ebook/shards', `${categorySlug}.json`)
-    if (fs.existsSync(shardPath)) {
-      const shard = JSON.parse(fs.readFileSync(shardPath, 'utf-8'))
-      const allItems = shard.items || []
-      return allItems.filter((i) => i.sku !== currentSku).slice(0, 4)
-    }
-  } catch (_) {}
+  const shard = getShard(categorySlug)
+  if (shard && shard.items) {
+    return shard.items.filter((i) => i.sku !== currentSku).slice(0, 4)
+  }
   return []
 }
 
 export async function generateMetadata({ params }) {
-  const ebook = getEbookItem(params.slug)
+  const ebook = getEbookItem(params.slug, params.category)
   if (!ebook) {
     return { title: 'Naskah E-Book Tidak Ditemukan | FokusKonten' }
   }
@@ -70,8 +111,15 @@ export async function generateMetadata({ params }) {
     title,
     description,
     keywords: [
-      ebook.title, `ebook ${ebook.category?.toLowerCase()}`, 'download ebook pdf',
-      ebook.authorDisplay || '', ebook.sku, 'buku digital', 'fokuskonten'
+      ebook.title,
+      `ebook ${ebook.category?.toLowerCase()}`,
+      'download ebook pdf',
+      ebook.authorDisplay || '',
+      ebook.sku,
+      'naskah digital',
+      'literatur pdf resmi',
+      'fokuskonten',
+      ...(ebook.tags || [])
     ].filter(Boolean),
     openGraph: {
       title,
@@ -98,7 +146,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default function EbookDetailPage({ params }) {
-  const ebook = getEbookItem(params.slug)
+  const ebook = getEbookItem(params.slug, params.category)
   if (!ebook) {
     notFound()
   }

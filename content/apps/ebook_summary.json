@@ -1,0 +1,97 @@
+{
+  "generatedAt": "2026-09-30T15:20:50.136Z",
+  "totalEbooks": 16622,
+  "totalCategories": 18,
+  "categories": [
+    {
+      "name": "Sains & Pengetahuan Umum",
+      "slug": "sains-pengetahuan",
+      "count": 11704
+    },
+    {
+      "name": "Novel & Fiksi",
+      "slug": "novel-fiksi",
+      "count": 948
+    },
+    {
+      "name": "Agama Islam & Tafsir",
+      "slug": "agama-islam",
+      "count": 884
+    },
+    {
+      "name": "Bisnis, Finansial & Investasi",
+      "slug": "bisnis-finansial",
+      "count": 692
+    },
+    {
+      "name": "Pendidikan & Akademik",
+      "slug": "pendidikan-akademik",
+      "count": 535
+    },
+    {
+      "name": "E-Book Edukasi Anak & Parenting",
+      "slug": "edukasi-anak",
+      "count": 520
+    },
+    {
+      "name": "Pengembangan Diri & Motivasi",
+      "slug": "pengembangan-diri",
+      "count": 322
+    },
+    {
+      "name": "Kuliner & Resep Masakan",
+      "slug": "kuliner-resep",
+      "count": 278
+    },
+    {
+      "name": "Kesehatan & Kedokteran",
+      "slug": "kesehatan-kedokteran",
+      "count": 267
+    },
+    {
+      "name": "Karir & Dunia Kerja",
+      "slug": "karir-kerja",
+      "count": 153
+    },
+    {
+      "name": "Psikologi & Perilaku",
+      "slug": "psikologi-perilaku",
+      "count": 79
+    },
+    {
+      "name": "Pertanian & Peternakan",
+      "slug": "pertanian-peternakan",
+      "count": 56
+    },
+    {
+      "name": "Hukum & Perundang-Undangan",
+      "slug": "hukum-undang-undang",
+      "count": 49
+    },
+    {
+      "name": "Sastra & Puisi",
+      "slug": "sastra-puisi",
+      "count": 47
+    },
+    {
+      "name": "Politik & Sosial Kebijakan",
+      "slug": "politik-kebijakan",
+      "count": 45
+    },
+    {
+      "name": "Filsafat & Logika Pemikiran",
+      "slug": "filsafat-logika",
+      "count": 20
+    },
+    {
+      "name": "Budaya, Tradisi & Sejarah",
+      "slug": "budaya-sejarah",
+      "count": 13
+    },
+    {
+      "name": "Majalah & Jurnal Digital",
+      "slug": "majalah-jurnal",
+      "count": 10
+    }
+  ]
+}

@@ -3,49 +3,67 @@
     "name": "Agama Islam & Tafsir",
     "slug": "agama-islam",
     "description": "Kajian naskah Islam, fiqih syariat, hadits shahih, dan mutiara tafsir Al-Qur'an.",
-    "count": 762
+    "count": 898
   },
   {
     "name": "Novel & Fiksi",
     "slug": "novel-fiksi",
     "description": "Karya fiksi terpilih, novel romansa, drama misteri, petualangan, dan thriller.",
-    "count": 815
+    "count": 1150
   },
   {
     "name": "Pendidikan & Akademik",
     "slug": "pendidikan-akademik",
     "description": "Diktat keilmuan, modul ajar mahasiswa, kurikulum sekolah, dan referensi akademik.",
-    "count": 345
+    "count": 2377
   },
   {
     "name": "Pengembangan Diri & Motivasi",
     "slug": "pengembangan-diri",
     "description": "Strategi pembentukan kebiasaan, manajemen fokus, kepemimpinan, dan pola pikir bertumbuh.",
-    "count": 216
+    "count": 350
   },
   {
     "name": "Bisnis, Finansial & Investasi",
     "slug": "bisnis-finansial",
     "description": "Panduan membangun bisnis, strategi marketing, analisis saham, dan manajemen arus kas.",
-    "count": 414
+    "count": 693
   },
   {
     "name": "Kesehatan & Kedokteran",
     "slug": "kesehatan-kedokteran",
     "description": "Wawasan medis, terapi herbal, nutrisi seimbang, dan pola hidup sehat holistik.",
-    "count": 130
+    "count": 265
   },
   {
     "name": "Kuliner & Resep Masakan",
     "slug": "kuliner-resep",
     "description": "Kompilasi resep masakan nusantara, teknik kuliner profesional, dan rahasia bumbu legendaris.",
-    "count": 168
+    "count": 307
   },
   {
     "name": "Sains & Pengetahuan Umum",
     "slug": "sains-pengetahuan",
     "description": "Eksplorasi ilmu alam, fakta sejarah peradaban, teknologi masa depan, dan ensiklopedia.",
-    "count": 123
+    "count": 6638
+  },
+  {
+    "name": "Seni, Desain, Arsitektur & Musik",
+    "slug": "seni-musik-desain",
+    "description": "Eksplorasi seni rupa, desain grafis, harmoni musik nusantara-global, dan kaidah arsitektur ruang.",
+    "count": 206
+  },
+  {
+    "name": "Pembelajaran Bahasa & Ujian Bahasa Asing",
+    "slug": "pembelajaran-bahasa",
+    "description": "Panduan tata bahasa, persiapan TOEFL, IELTS, percakapan asing, dan kamus praktis.",
+    "count": 1779
+  },
+  {
+    "name": "Teknologi, IT & Rekayasa Komputer",
+    "slug": "teknologi-it",
+    "description": "Pemrograman software, arsitektur jaringan, sains data, keamanan siber, dan sistem komputer.",
+    "count": 212
   },
   {
     "name": "Hukum & Perundang-Undangan",
@@ -57,7 +75,7 @@
     "name": "Psikologi & Perilaku",
     "slug": "psikologi-perilaku",
     "description": "Dinamika kejiwaan, komunikasi antarpribadi, kecerdasan emosional, dan analisis perilaku manusia.",
-    "count": 79
+    "count": 69
   },
   {
     "name": "Sastra & Puisi",
@@ -69,7 +87,7 @@
     "name": "Pertanian & Peternakan",
     "slug": "pertanian-peternakan",
     "description": "Budidaya tanaman pangan, agroteknologi modern, hidroponik, dan peternakan terpadu.",
-    "count": 56
+    "count": 62
   },
   {
     "name": "Politik & Sosial Kebijakan",
@@ -78,22 +96,22 @@
     "count": 45
   },
   {
-    "name": "Edukasi Anak & Parenting",
+    "name": "E-Book Edukasi Anak & Parenting",
     "slug": "edukasi-anak",
     "description": "Cerita bergambar mendidik, pembentukan karakter anak usia dini, dan pedoman orang tua.",
-    "count": 59
+    "count": 773
   },
   {
     "name": "Karir & Dunia Kerja",
     "slug": "karir-kerja",
     "description": "Tips wawancara kerja, peningkatan keahlian profesional, negosiasi gaji, dan produktivitas kantor.",
-    "count": 152
+    "count": 150
   },
   {
     "name": "Filsafat & Logika Pemikiran",
     "slug": "filsafat-logika",
     "description": "Dialektika pemikiran filsuf ternama, seni bernalar kritis, epistemologi, dan etika kehidupan.",
-    "count": 20
+    "count": 18
   },
   {
     "name": "Majalah & Jurnal Digital",
@@ -106,47 +124,5 @@
     "slug": "budaya-sejarah",
     "description": "Warisan adat istiadat nusantara, narasi sejarah suku bangsa, dan kearifan lokal masa lalu.",
     "count": 13
-  },
-  {
-    "name": "Banner & Spanduk",
-    "slug": "banner-spanduk",
-    "description": "Koleksi naskah e-book digital pilihan resmi FokusKonten.",
-    "count": 1
-  },
-  {
-    "name": "Desain Grafis",
-    "slug": "desain-grafis",
-    "description": "Koleksi naskah e-book digital pilihan resmi FokusKonten.",
-    "count": 3
-  },
-  {
-    "name": "Dokumen & Template Bisnis",
-    "slug": "dokumen-template-bisnis",
-    "description": "Koleksi naskah e-book digital pilihan resmi FokusKonten.",
-    "count": 11
-  },
-  {
-    "name": "Ecourse & Tutorial",
-    "slug": "ecourse-tutorial",
-    "description": "Koleksi naskah e-book digital pilihan resmi FokusKonten.",
-    "count": 2
-  },
-  {
-    "name": "Preset & LUTs",
-    "slug": "preset-luts",
-    "description": "Koleksi naskah e-book digital pilihan resmi FokusKonten.",
-    "count": 1
-  },
-  {
-    "name": "Tekstur & Brush",
-    "slug": "tekstur-brush",
-    "description": "Koleksi naskah e-book digital pilihan resmi FokusKonten.",
-    "count": 2
-  },
-  {
-    "name": "Vektor",
-    "slug": "vektor",
-    "description": "Koleksi naskah e-book digital pilihan resmi FokusKonten.",
-    "count": 1
   }
 ]

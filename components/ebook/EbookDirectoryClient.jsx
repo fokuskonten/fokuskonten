@@ -21,24 +21,41 @@ export default function EbookDirectoryClient({ categories = [], initialRoutes = 
     return () => clearTimeout(timer)
   }, [searchQuery])
 
-  // Filter hasil pencarian instan (maks 12 item tercepat)
+  // Filter hasil pencarian instan (maks 24 item tercepat)
   const searchResults = useMemo(() => {
     if (!debouncedQuery) return []
-    const tokens = debouncedQuery.split(/\s+/).filter(Boolean)
+    const raw = debouncedQuery.toLowerCase().trim()
+    const normalized = raw.replace(/[-_]+/g, ' ').trim()
+    const tokens = normalized.split(/\s+/).filter(Boolean)
 
     const matches = []
     for (const r of initialRoutes) {
+      const rSku = (r.s || '').toLowerCase()
+      const rSlug = (r.u || '').toLowerCase()
+      const rSlugNormalized = rSlug.replace(/[-_]+/g, ' ')
+      const rTitle = (r.t || '').toLowerCase()
+      const rAuthor = (r.a || '').toLowerCase()
+
+      // 1. Direct match pada slug, SKU, atau judul utuh
+      if (rSlug.includes(raw) || rSku === raw || rTitle.includes(raw) || rTitle.includes(normalized)) {
+        matches.push(r)
+        if (matches.length >= 24) break
+        continue
+      }
+
+      // 2. Token match pada judul, slug ter-normalisasi, author, atau SKU
       const matchAllTokens = tokens.every((token) => {
         return (
-          (r.t && r.t.toLowerCase().includes(token)) ||
-          (r.a && r.a.toLowerCase().includes(token)) ||
-          (r.s && r.s.toLowerCase().includes(token))
+          rTitle.includes(token) ||
+          rSlugNormalized.includes(token) ||
+          rAuthor.includes(token) ||
+          rSku.includes(token)
         )
       })
 
       if (matchAllTokens) {
         matches.push(r)
-        if (matches.length >= 12) break
+        if (matches.length >= 24) break
       }
     }
     return matches
@@ -68,8 +85,8 @@ export default function EbookDirectoryClient({ categories = [], initialRoutes = 
             type="search"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Cari dari 3.512+ judul e-book, nama penulis, atau kode SKU..."
-            maxLength={60}
+            placeholder="Cari dari 16.600+ naskah e-book, nama penulis, atau kode SKU..."
+            maxLength={80}
             className="w-full pl-11 pr-4 py-3.5 rounded-xl border border-neutral-300 focus:outline-hidden focus:ring-2 focus:ring-neutral-950 text-xs sm:text-sm font-sans placeholder-neutral-400"
           />
         </div>
@@ -135,7 +152,7 @@ export default function EbookDirectoryClient({ categories = [], initialRoutes = 
                 >
                   <div>
                     <EbookCover3D
-                      coverImage={`https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/ebook/${r.s}/${r.s}_cover.webp`}
+                      coverImage={`https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets-ebook@main/ebook/${r.s}/${r.s}_cover.webp`}
                       title={r.t}
                       sku={r.s}
                       variant="fullframe"

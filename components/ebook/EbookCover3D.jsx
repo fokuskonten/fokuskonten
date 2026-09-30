@@ -27,10 +27,11 @@ export default function EbookCover3D({
   const cdnFallbackUrls = useMemo(() => {
     const urls = []
     
-    // Prioritas 1: jsDelivr Edge CDN resmi jika SKU tersedia
+    // Prioritas 1: jsDelivr Edge CDN resmi jika SKU tersedia (Repo Sekoci E-Book Baru)
     if (cleanSku) {
+      urls.push(`https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets-ebook@main/ebook/${cleanSku}/${cleanSku}_cover.webp`)
+      urls.push(`https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets-ebook/main/ebook/${cleanSku}/${cleanSku}_cover.webp`)
       urls.push(`https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/ebook/${cleanSku}/${cleanSku}_cover.webp`)
-      urls.push(`https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/ebook/${cleanSku}/${cleanSku}_cover.webp`)
     }
     
     // Prioritas 2: Custom coverImage jika berupa URL eksternal penuh

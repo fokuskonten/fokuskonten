@@ -118,6 +118,66 @@ try {
       }
     }
     console.log(`Added ${routes.length} individual ebook articles to sitemap.`);
+
+    // 4b. 301 Redirects untuk 511 Naskah Duplikat yang Digabung (ebook_products_merged_archive)
+    try {
+      const { DatabaseSync } = require('node:sqlite');
+      const ebookDbPath = path.resolve(__dirname, '../../../Server-Fokuskonten/ebook_catalog.db');
+      if (fs.existsSync(ebookDbPath)) {
+        const db = new DatabaseSync(ebookDbPath, { readonly: true });
+        const archiveRows = db.prepare('SELECT sku, title, merged_to_sku FROM ebook_products_merged_archive').all();
+        
+        const routeBySku = new Map();
+        routes.forEach(r => {
+          if (r.s) routeBySku.set(r.s.toUpperCase(), r);
+        });
+
+        function slugifyRedirect(text) {
+          return text
+            .toString()
+            .toLowerCase()
+            .trim()
+            .replace(/\s+/g, '-')
+            .replace(/[^\w\-]+/g, '')
+            .replace(/\-\-+/g, '-')
+            .replace(/^-+/, '')
+            .replace(/-+$/, '');
+        }
+
+        let mergedRedirectsCount = 0;
+        for (const item of archiveRows) {
+          if (!item.merged_to_sku) continue;
+          const masterRoute = routeBySku.get(item.merged_to_sku.toUpperCase());
+          if (!masterRoute) continue;
+
+          const targetUrl = `/ebook/${masterRoute.c}/${masterRoute.u}/`;
+          const oldBaseSlug = slugifyRedirect((item.title || '').replace(/^ID[0-9A-Fa-f]{3,8}\s*[-–—:]\s*/i, ''));
+          const oldSkuLower = (item.sku || '').toLowerCase();
+
+          const possibleOldUrls = [
+            `/ebook/${masterRoute.c}/${oldBaseSlug}/`,
+            `/ebook/${masterRoute.c}/${oldBaseSlug}`,
+            `/ebook/${masterRoute.c}/${oldBaseSlug}-${oldSkuLower}/`,
+            `/ebook/${masterRoute.c}/${oldBaseSlug}-${oldSkuLower}`,
+            `/toko-digital/${oldSkuLower}/`,
+            `/toko-digital/${oldSkuLower}`,
+            `/toko-digital/detail/${oldSkuLower}/`,
+            `/toko-digital/detail/${oldSkuLower}`
+          ];
+
+          possibleOldUrls.forEach(oldUrl => {
+            if (oldUrl !== targetUrl) {
+              redirectLines.push(`${oldUrl} ${targetUrl} 301`);
+              mergedRedirectsCount++;
+            }
+          });
+        }
+        db.close();
+        console.log(`Added ${mergedRedirectsCount} redirect rules from ebook_products_merged_archive.`);
+      }
+    } catch (err) {
+      console.warn('Merged archive redirects read error:', err.message);
+    }
   }
 } catch (e) {
   console.warn('Ebook files read error:', e.message);
