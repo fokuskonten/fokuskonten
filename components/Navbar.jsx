@@ -52,7 +52,12 @@ export default function Navbar() {
   const [isCartBumping, setIsCartBumping] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [buyerProfile, setBuyerProfile] = useState(null)
+  const [mounted, setMounted] = useState(false)
   const pathname = usePathname()
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   useEffect(() => {
     setBuyerProfile(getBuyerProfile())
@@ -155,7 +160,11 @@ export default function Navbar() {
             </span>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-1">
+          <nav 
+            key={mounted ? 'nav-mounted' : 'nav-static'} 
+            suppressHydrationWarning 
+            className="hidden md:flex items-center gap-1"
+          >
             {navLinks.map((link) => {
               if (link.isDropdown) {
                 return (
@@ -402,7 +411,11 @@ export default function Navbar() {
           isOpen ? 'max-h-[36rem] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="glass border-t border-neutral-200/50 px-4 py-4 space-y-1">
+        <div 
+          key={mounted ? 'mobile-nav-mounted' : 'mobile-nav-static'}
+          suppressHydrationWarning
+          className="glass border-t border-neutral-200/50 px-4 py-4 space-y-1"
+        >
           {navLinks.map((link) => {
             if (link.isDropdown) {
               return (
