@@ -64,6 +64,11 @@ export default function SoundtrackDetailClient({ track }) {
     }
   }, [sku, cdnUrl])
 
+  const activeCutIndexRef = useRef(activeCutIndex)
+  useEffect(() => {
+    activeCutIndexRef.current = activeCutIndex
+  }, [activeCutIndex])
+
   // Audio Event Handlers
   useEffect(() => {
     const audio = audioRef.current
@@ -81,7 +86,10 @@ export default function SoundtrackDetailClient({ track }) {
     }
 
     const handleError = () => {
-      const fallback = `/api/v1/soundtrack/stream/${sku}`
+      const isVariation = activeCutIndexRef.current !== null && activeCutIndexRef.current !== undefined
+      const fallback = isVariation
+        ? `/api/v1/soundtrack/stream-variation/${sku}/${activeCutIndexRef.current}`
+        : `/api/v1/soundtrack/stream/${sku}`
       if (audio.src !== fallback && !audio.src.endsWith(fallback)) {
         audio.src = fallback
         audio.play().then(() => setIsPlaying(true)).catch(() => setIsPlaying(false))

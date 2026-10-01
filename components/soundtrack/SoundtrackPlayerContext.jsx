@@ -61,13 +61,17 @@ export function SoundtrackPlayerProvider({ children }) {
 
     const onError = () => {
       setIsBuffering(false)
-      // Coba fallback ke stream backend lokal jika pemutaran CDN gagal
+      // Coba fallback ke stream backend jika pemutaran CDN gagal
       const active = currentTrackRef.current
       if (active) {
         const sku = active.s || active.track_sku
-        const fallbackUrl = `/api/v1/soundtrack/stream/${sku}`
+        const isVariation = active.vIdx !== undefined && active.vIdx !== null
+        const fallbackUrl = isVariation
+          ? `/api/v1/soundtrack/stream-variation/${sku}/${active.vIdx}`
+          : `/api/v1/soundtrack/stream/${sku}`
+
         if (audio.src !== fallbackUrl && !audio.src.endsWith(fallbackUrl)) {
-          console.warn('[SoundtrackPlayer] CDN gagal, mengalihkan otomatis ke stream lokal:', fallbackUrl)
+          console.warn('[SoundtrackPlayer] CDN gagal, mengalihkan otomatis ke stream backend:', fallbackUrl)
           audio.src = fallbackUrl
           audio.play().then(() => {
             setIsPlaying(true)
