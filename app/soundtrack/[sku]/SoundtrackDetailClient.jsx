@@ -278,57 +278,215 @@ export default function SoundtrackDetailClient({ track }) {
           </div>
         </div>
 
-        {/* Dual-Action Monetization & Download Buttons */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-          {/* Action 1: Traktir Kopi Rp 2.000 */}
-          <div className="p-5 bg-neutral-50 border border-neutral-300 rounded-xl space-y-3">
-            <div className="flex items-center justify-between">
-              <span className="text-xs font-extrabold uppercase font-sans text-neutral-900 tracking-wider">
-                Unduh Cepat Tanpa Iklan
-              </span>
-              <span className="px-2 py-0.5 bg-neutral-950 text-white font-mono font-bold text-xs rounded">
-                Rp 2.000
-              </span>
+        {/* ── AREA UNDUHAN RESMI MASTER STUDIO ───────────────────────────── */}
+        <div className="space-y-6 pt-2">
+          {/* Header Section Unduhan */}
+          <div className="flex items-center justify-between border-b border-neutral-200 pb-3">
+            <div className="flex items-center gap-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-neutral-950" />
+              <h2 className="text-base sm:text-lg font-extrabold text-neutral-950 font-display">
+                Pilihan Unduhan Master Studio
+              </h2>
             </div>
-            <p className="text-xs text-neutral-600 font-sans leading-relaxed">
-              Dapatkan tautan unduhan instan berkecepatan tinggi via QRIS Midtrans bebas jeda iklan Safelinku.
-            </p>
-            <button
-              type="button"
-              onClick={() => {
-                setTraktirTrack(track)
-                setTraktirOpen(true)
-              }}
-              className="w-full py-3 bg-neutral-950 hover:bg-neutral-800 text-white text-xs font-extrabold rounded-lg transition font-sans flex items-center justify-center gap-2 shadow-sm active:scale-95"
-            >
-              <span>Traktir Kopi (Unduh Instan)</span>
-              <span className="font-mono text-xs">→</span>
-            </button>
+            <span className="text-xs font-mono font-bold text-neutral-500">
+              Format Master Asli Uncompressed (WAV / MP3)
+            </span>
           </div>
 
-          {/* Action 2: Safelinku Free Download */}
-          <div className="p-5 bg-white border border-neutral-200 rounded-xl space-y-3">
-            <div className="flex items-center justify-between">
-              <span className="text-xs font-extrabold uppercase font-sans text-neutral-900 tracking-wider">
-                Unduh Gratis
-              </span>
-              <span className="px-2 py-0.5 bg-neutral-100 border border-neutral-300 text-neutral-900 font-mono font-bold text-xs rounded">
-                Rp 0
+          {/* Row / Box 1: Track Utama (Versi Penuh Master) */}
+          <div className="p-5 bg-neutral-50 border border-neutral-200 rounded-2xl space-y-4">
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <div className="flex items-center gap-2.5">
+                <span className="w-6 h-6 bg-neutral-950 text-white font-mono font-bold text-xs rounded-md flex items-center justify-center">
+                  ★
+                </span>
+                <div>
+                  <h3 className="font-extrabold text-neutral-950 text-sm sm:text-base font-display">
+                    Versi Penuh Master (Full Track Original)
+                  </h3>
+                  <p className="text-xs text-neutral-500 font-sans">
+                    Durasi {formatDuration(duration)} • Berkas master lengkap siap produksi
+                  </p>
+                </div>
+              </div>
+              <span className="px-2.5 py-1 bg-white border border-neutral-300 font-mono text-xs font-bold text-neutral-900 rounded-md">
+                Master Studio Penuh
               </span>
             </div>
-            <p className="text-xs text-neutral-600 font-sans leading-relaxed">
-              Unduh berkas biner Opus gratis melalui portal tautan sponsor Safelinku.
-            </p>
-            <a
-              href={safelinkUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full py-3 bg-neutral-100 hover:bg-neutral-200 border border-neutral-300 text-neutral-950 text-xs font-extrabold rounded-lg transition font-sans flex items-center justify-center gap-2 active:scale-95"
-            >
-              <span>Unduh Gratis (Safelinku)</span>
-              <span className="font-mono text-xs">↓</span>
-            </a>
+
+            {/* Dual Action Buttons Track Utama */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+              {/* Action 1: Traktir Kopi Rp 2.000 */}
+              <button
+                type="button"
+                onClick={() => {
+                  setTraktirTrack({
+                    ...track,
+                    vIdx: null,
+                    variationName: 'Versi Penuh Master (Full Track)'
+                  })
+                  setTraktirOpen(true)
+                }}
+                className="p-3.5 bg-neutral-950 hover:bg-neutral-800 text-white rounded-xl transition font-sans flex items-center justify-between gap-3 shadow-sm active:scale-95 text-left group"
+              >
+                <div className="min-w-0">
+                  <div className="flex items-center gap-1.5">
+                    <span className="font-bold text-xs">Traktir Kopi (Unduh Instan)</span>
+                    <span className="px-1.5 py-0.2 bg-white text-neutral-950 font-mono font-bold text-[10px] rounded">
+                      Bebas Iklan
+                    </span>
+                  </div>
+                  <span className="text-[11px] text-neutral-400 block truncate">
+                    Tautan direct unduhan instan via QRIS Midtrans
+                  </span>
+                </div>
+                <span className="px-2.5 py-1 bg-neutral-800 group-hover:bg-neutral-700 text-white font-mono font-bold text-xs rounded-lg flex-shrink-0">
+                  Rp 2.000 →
+                </span>
+              </button>
+
+              {/* Action 2: Safelinku Free Download */}
+              <a
+                href={safelinkUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3.5 bg-white hover:bg-neutral-100 border border-neutral-300 text-neutral-950 rounded-xl transition font-sans flex items-center justify-between gap-3 active:scale-95 text-left group"
+              >
+                <div className="min-w-0">
+                  <div className="flex items-center gap-1.5">
+                    <span className="font-bold text-xs">Unduh Gratis (Safelinku)</span>
+                    <span className="px-1.5 py-0.2 bg-neutral-100 border border-neutral-300 text-neutral-800 font-mono font-bold text-[10px] rounded">
+                      Sponsor
+                    </span>
+                  </div>
+                  <span className="text-[11px] text-neutral-500 block truncate">
+                    Unduh gratis lewat gerbang sponsor iklan
+                  </span>
+                </div>
+                <span className="px-2.5 py-1 bg-neutral-100 group-hover:bg-neutral-200 border border-neutral-300 font-mono font-bold text-xs rounded-lg text-neutral-900 flex-shrink-0">
+                  Rp 0 ↓
+                </span>
+              </a>
+            </div>
           </div>
+
+          {/* Row / List 2: Variasi Potongan Studio (Jika Ada) */}
+          {variationsList && variationsList.length > 0 && (
+            <div className="space-y-4 pt-2">
+              <div className="flex flex-wrap items-center justify-between gap-2 border-b border-neutral-100 pb-2">
+                <div className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-neutral-950" />
+                  <h3 className="text-sm sm:text-base font-extrabold text-neutral-950 font-display">
+                    Daftar Unduhan Variasi Potongan ({variationsList.length} Versi Master Tersedia)
+                  </h3>
+                </div>
+                <span className="text-xs text-neutral-500 font-sans">
+                  Pilih variasi potongan di bawah untuk mengunduh versi master yang sesuai
+                </span>
+              </div>
+
+              <div className="space-y-2.5">
+                {variationsList.map((item, idx) => {
+                  const fileName = typeof item === 'string' ? item : (item.n || `Versi ${idx + 1}`)
+                  const cleanFileName = fileName.replace(/_/g, ' ')
+                  const formats = typeof item === 'object' && item.f ? item.f.join(' / ') : 'WAV / MP3'
+                  const isCutActive = activeCutIndex === idx && isPlaying
+                  const varSafelinkUrl = getSoundtrackSafelinkUrl(sku, idx)
+
+                  return (
+                    <div
+                      key={idx}
+                      className={`p-3.5 sm:p-4 rounded-xl border transition-all flex flex-col md:flex-row md:items-center justify-between gap-3.5 ${
+                        isCutActive
+                          ? 'bg-neutral-100 border-neutral-950 shadow-sm'
+                          : 'bg-white hover:bg-neutral-50 border-neutral-200'
+                      }`}
+                    >
+                      {/* Info Variasi & Mini Player */}
+                      <div className="flex items-center gap-3 min-w-0 flex-1">
+                        <button
+                          type="button"
+                          onClick={() => handlePlayCut(idx, item)}
+                          aria-label={isCutActive ? `Jeda ${cleanFileName}` : `Putar variasi ${cleanFileName}`}
+                          className={`w-8 h-8 sm:w-9 sm:h-9 rounded-full flex items-center justify-center flex-shrink-0 transition active:scale-95 shadow-sm ${
+                            isCutActive
+                              ? 'bg-neutral-950 text-white'
+                              : 'bg-neutral-100 hover:bg-neutral-950 hover:text-white text-neutral-900 border border-neutral-300'
+                          }`}
+                          title={isCutActive ? 'Jeda Pratinjau' : 'Putar Pratinjau'}
+                        >
+                          {isCutActive ? (
+                            <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                              <rect x="6" y="5" width="4" height="14" rx="1" />
+                              <rect x="14" y="5" width="4" height="14" rx="1" />
+                            </svg>
+                          ) : (
+                            <svg className="w-3.5 h-3.5 fill-current translate-x-0.5" viewBox="0 0 24 24">
+                              <path d="M8 5v14l11-7z" />
+                            </svg>
+                          )}
+                        </button>
+
+                        <span className="w-6 h-6 bg-neutral-950 text-white font-mono font-bold text-xs rounded-md flex items-center justify-center flex-shrink-0">
+                          {idx + 1}
+                        </span>
+
+                        <div className="min-w-0 flex-1">
+                          <div className="flex items-center gap-2">
+                            <span className="font-extrabold text-neutral-950 font-display text-xs sm:text-sm truncate block" title={fileName}>
+                              {cleanFileName}
+                            </span>
+                            <span className="px-1.5 py-0.5 bg-neutral-100 border border-neutral-200 text-neutral-600 font-mono text-[10px] rounded uppercase flex-shrink-0">
+                              {formats}
+                            </span>
+                          </div>
+                          <span className="text-[11px] text-neutral-500 font-sans block truncate">
+                            Variasi potongan uncompressed untuk editing video
+                          </span>
+                        </div>
+                      </div>
+
+                      {/* Tombol Unduh Khusus Variasi Ini */}
+                      <div className="flex items-center gap-2 flex-shrink-0 justify-end pt-2 md:pt-0 border-t md:border-t-0 border-neutral-100">
+                        {/* Traktir Kopi Variasi */}
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setTraktirTrack({
+                              ...track,
+                              vIdx: idx,
+                              variationName: cleanFileName,
+                              t: `${title} (${cleanFileName})`,
+                              title: `${title} (${cleanFileName})`
+                            })
+                            setTraktirOpen(true)
+                          }}
+                          className="px-3 py-2 bg-neutral-950 hover:bg-neutral-800 text-white rounded-lg text-xs font-bold transition flex items-center gap-1.5 active:scale-95 shadow-sm font-sans"
+                          title={`Traktir Kopi Rp 2.000: Unduh Instan Bebas Iklan untuk ${cleanFileName}`}
+                        >
+                          <span className="font-mono text-[11px]">Rp 2k</span>
+                          <span>Traktir Kopi</span>
+                          <span className="font-mono text-[10px]">→</span>
+                        </button>
+
+                        {/* Safelinku Gratis Variasi */}
+                        <a
+                          href={varSafelinkUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="px-3 py-2 bg-neutral-100 hover:bg-neutral-200 border border-neutral-300 text-neutral-950 rounded-lg text-xs font-bold transition flex items-center gap-1.5 active:scale-95 font-sans"
+                          title={`Unduh Gratis via Safelinku: ${cleanFileName}`}
+                        >
+                          <span>Unduh Gratis</span>
+                          <span className="font-mono text-[10px]">↓</span>
+                        </a>
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
@@ -370,113 +528,6 @@ export default function SoundtrackDetailClient({ track }) {
           </span>
         </div>
       </div>
-
-      {/* ── VARIASI FILE TERSEDIA DI MASTER FOLDER ───────────────────────────── */}
-      {variationsList && variationsList.length > 0 && (
-        <div className="bg-white border border-neutral-200 rounded-2xl p-6 sm:p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] space-y-4">
-          <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-neutral-950" />
-            <h3 className="text-base sm:text-lg font-extrabold text-neutral-950 font-display">
-              Variasi Berkas Studio Master ({variationsList.length} File Terdeteksi)
-            </h3>
-          </div>
-          <p className="text-xs text-neutral-600 font-sans leading-relaxed">
-            Lagu ini diproduksi dengan variasi pemotongan durasi dan format audio berikut yang disertakan utuh dalam paket master:
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
-            {variationsList.map((item, idx) => {
-              const fileName = typeof item === 'string' ? item : (item.n || `Versi ${idx + 1}`)
-              const cleanFileName = fileName.replace(/_/g, ' ')
-              const formats = typeof item === 'object' && item.f ? item.f.join(' / ') : null
-              const isCutActive = activeCutIndex === idx && isPlaying
-              const varSafelinkUrl = getSoundtrackSafelinkUrl(sku, idx)
-
-              return (
-                <div
-                  key={idx}
-                  className={`flex flex-col sm:flex-row sm:items-center justify-between p-3 rounded-xl border text-xs transition-all gap-2.5 ${
-                    isCutActive
-                      ? 'bg-neutral-100 border-neutral-950 shadow-sm'
-                      : 'bg-neutral-50 hover:bg-neutral-100/70 border-neutral-200'
-                  }`}
-                >
-                  <div className="flex items-center gap-2.5 min-w-0 flex-1">
-                    <button
-                      type="button"
-                      onClick={() => handlePlayCut(idx, item)}
-                      aria-label={isCutActive ? `Jeda ${cleanFileName}` : `Putar variasi ${cleanFileName}`}
-                      className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center flex-shrink-0 transition active:scale-95 shadow-sm ${
-                        isCutActive
-                          ? 'bg-neutral-950 text-white ring-2 ring-neutral-950/20'
-                          : 'bg-white hover:bg-neutral-950 hover:text-white text-neutral-900 border border-neutral-300'
-                      }`}
-                      title={isCutActive ? 'Jeda' : 'Putar'}
-                    >
-                      {isCutActive ? (
-                        <svg className="w-3 h-3 fill-current" viewBox="0 0 24 24">
-                          <rect x="6" y="5" width="4" height="14" rx="1" />
-                          <rect x="14" y="5" width="4" height="14" rx="1" />
-                        </svg>
-                      ) : (
-                        <svg className="w-3 h-3 fill-current translate-x-0.5" viewBox="0 0 24 24">
-                          <path d="M8 5v14l11-7z" />
-                        </svg>
-                      )}
-                    </button>
-                    <span className="w-5 h-5 bg-white border border-neutral-300 rounded text-[10px] font-mono font-bold flex items-center justify-center text-neutral-800 flex-shrink-0">
-                      {idx + 1}
-                    </span>
-                    <div className="min-w-0 flex-1">
-                      <span className="truncate block font-bold text-neutral-950 font-display text-xs sm:text-sm" title={fileName}>
-                        {cleanFileName}
-                      </span>
-                      {formats && (
-                        <span className="font-mono text-[10px] text-neutral-500 font-bold uppercase">
-                          {formats}
-                        </span>
-                      )}
-                    </div>
-                  </div>
-
-                  {/* Action Buttons: Traktir Kopi & Safelinku */}
-                  <div className="flex items-center gap-1.5 flex-shrink-0 justify-end pt-1 sm:pt-0 border-t sm:border-t-0 border-neutral-200">
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setTraktirTrack({
-                          ...track,
-                          vIdx: idx,
-                          t: `${title} (${cleanFileName})`,
-                          title: `${title} (${cleanFileName})`
-                        })
-                        setTraktirOpen(true)
-                      }}
-                      className="px-2 py-1 bg-neutral-950 hover:bg-neutral-800 text-white rounded-lg text-xs font-bold transition flex items-center gap-1 active:scale-95 shadow-sm"
-                      title={`Traktir Kopi Rp 2.000 (Unduh Instan ${cleanFileName} Bebas Iklan)`}
-                    >
-                      <span className="font-mono text-[11px]">Rp 2k</span>
-                      <span className="hidden md:inline font-sans text-xs">Instan</span>
-                    </button>
-
-                    <a
-                      href={varSafelinkUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-2 py-1 bg-white hover:bg-neutral-200 border border-neutral-300 rounded-lg text-xs font-bold text-neutral-900 transition flex items-center gap-1 active:scale-95"
-                      title={`Unduh gratis berkas audio master ${cleanFileName} via Safelinku`}
-                    >
-                      <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
-                        <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
-                      </svg>
-                      <span className="hidden sm:inline font-sans text-xs">Gratis</span>
-                    </a>
-                  </div>
-                </div>
-              )
-            })}
-          </div>
-        </div>
-      )}
 
       {/* ── STANDAR WORKFLOW ARTIKEL TEKNIS & LISENSI KOMERSIAL (HUKUM 15) ───── */}
       <div className="bg-white border border-neutral-200 rounded-2xl p-6 sm:p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] space-y-6">

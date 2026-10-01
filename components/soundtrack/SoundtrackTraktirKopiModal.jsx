@@ -46,6 +46,8 @@ export default function SoundtrackTraktirKopiModal({ isOpen, onClose, track }) {
   const sku = track.s || track.track_sku || 'ST'
   const title = track.t || track.title || 'Soundtrack Master'
   const genre = track.g || track.genre || 'Cinematic'
+  const vIdx = track.vIdx !== undefined && track.vIdx !== null ? track.vIdx : null
+  const variationName = track.variationName || null
 
   const rawItemCode = track.ic || track.item_code || (() => {
     const url = track.u || track.cdn_url || ''
@@ -70,6 +72,8 @@ export default function SoundtrackTraktirKopiModal({ isOpen, onClose, track }) {
         body: JSON.stringify({
           sku,
           title,
+          vIdx,
+          variationName,
           email: email.trim() || 'pendengar@fokuskonten.my.id'
         })
       })
@@ -193,11 +197,21 @@ export default function SoundtrackTraktirKopiModal({ isOpen, onClose, track }) {
           /* Payment Form */
           <form onSubmit={handlePay} className="space-y-4">
             {/* Track Info Box */}
-            <div className="p-3 bg-neutral-50 border border-neutral-200 rounded-xl">
-              <span className="text-[11px] text-neutral-500 font-sans block">Lagu Pilihan:</span>
+            <div className="p-3 bg-neutral-50 border border-neutral-200 rounded-xl space-y-1">
+              <span className="text-[11px] text-neutral-500 font-sans block">Lagu & Versi Pilihan:</span>
               <span className="text-sm font-extrabold text-neutral-950 font-display block truncate">
                 {title}
               </span>
+              {variationName && (
+                <div className="flex items-center gap-1.5 pt-1">
+                  <span className="px-1.5 py-0.5 bg-neutral-950 text-white font-mono font-bold text-[10px] rounded">
+                    VARIASI #{vIdx + 1}
+                  </span>
+                  <span className="text-xs text-neutral-700 font-sans truncate">
+                    {variationName}
+                  </span>
+                </div>
+              )}
               <div className="flex items-center justify-between mt-2 pt-2 border-t border-neutral-200 text-xs">
                 <span className="text-neutral-600 font-sans">Nominal Traktir:</span>
                 <span className="font-mono font-extrabold text-neutral-950">Rp 2.000</span>
