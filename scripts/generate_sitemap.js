@@ -9,6 +9,7 @@ const staticPages = [
   { path: '/', changefreq: 'daily', priority: '1.0' },
   { path: '/toko-digital/', changefreq: 'daily', priority: '0.9' },
   { path: '/ebook/', changefreq: 'daily', priority: '1.0' },
+  { path: '/soundtrack/', changefreq: 'daily', priority: '0.9' },
   { path: '/aplikasi/', changefreq: 'weekly', priority: '0.9' },
   { path: '/tentang/', changefreq: 'monthly', priority: '0.7' },
   { path: '/layanan/', changefreq: 'monthly', priority: '0.7' },
@@ -76,6 +77,48 @@ try {
   }
 } catch (e) {
   console.warn('Products file read error:', e.message);
+}
+
+// 3.5. Audio Soundtrack Tracks (3.439 Tracks)
+try {
+  const vol1File = path.resolve(__dirname, '../content/soundtrack/catalog_vol1.json');
+  const vol2File = path.resolve(__dirname, '../content/soundtrack/catalog_vol2.json');
+  let soundtrackCount = 0;
+
+  if (fs.existsSync(vol1File)) {
+    const vol1 = JSON.parse(fs.readFileSync(vol1File, 'utf-8'));
+    for (const t of vol1) {
+      const sku = (t.s || t.track_sku);
+      if (sku) {
+        urls.push({
+          loc: `${baseUrl}/soundtrack/${sku.toLowerCase()}/`,
+          lastmod: today,
+          changefreq: 'weekly',
+          priority: '0.7'
+        });
+        soundtrackCount++;
+      }
+    }
+  }
+
+  if (fs.existsSync(vol2File)) {
+    const vol2 = JSON.parse(fs.readFileSync(vol2File, 'utf-8'));
+    for (const t of vol2) {
+      const sku = (t.s || t.track_sku);
+      if (sku) {
+        urls.push({
+          loc: `${baseUrl}/soundtrack/${sku.toLowerCase()}/`,
+          lastmod: today,
+          changefreq: 'weekly',
+          priority: '0.7'
+        });
+        soundtrackCount++;
+      }
+    }
+  }
+  console.log(`Added ${soundtrackCount} soundtrack tracks to sitemap.`);
+} catch (e) {
+  console.warn('Soundtrack tracks sitemap read error:', e.message);
 }
 
 // 4. E-Book Categories & Routes (2.470+ E-Books)

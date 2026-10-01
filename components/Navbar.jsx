@@ -15,6 +15,7 @@ const navLinks = [
   { href: '/aplikasi/', label: 'Aplikasi' },
   { href: '/toko-digital/', label: 'Toko', isDropdown: true },
   { href: '/ebook/', label: 'E-Book' },
+  { href: '/soundtrack/', label: 'Soundtrack' },
   { 
     href: '/teknisi-hp/', 
     label: 'Tools Hardware', 
@@ -336,12 +337,13 @@ export default function Navbar() {
                 )
               }
 
+              const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href))
               return (
                 <Link
                   key={link.href}
                   href={link.href}
                   className={`px-3.5 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${
-                    pathname === link.href
+                    isActive
                       ? 'text-neutral-950 bg-neutral-100 font-semibold'
                       : 'text-neutral-600 hover:text-neutral-950 hover:bg-neutral-100/60'
                   }`}
@@ -544,12 +546,14 @@ export default function Navbar() {
               )
             }
 
+            const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href))
             return (
               <Link
                 key={link.href}
                 href={link.href}
+                onClick={() => setIsOpen(false)}
                 className={`flex items-center px-4 py-2.5 rounded-xl text-sm font-medium transition-all ${
-                  pathname === link.href
+                  isActive
                     ? 'bg-neutral-100 text-neutral-950 font-semibold'
                     : 'text-neutral-600 hover:text-neutral-950 hover:bg-neutral-100/60'
                 }`}

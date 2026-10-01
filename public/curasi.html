@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Koleksi Panduan Resmi (194 Video Terkurasi) — FokusKonten</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --border: #e2e8f0;
+      --border-strong: #cbd5e1;
+      --text-main: #09090b;
+      --text-muted: #64748b;
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+      --shadow-md: 0 6px 20px -4px rgba(0,0,0,0.08);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.5;
+      padding-bottom: 120px;
+    }
+    .container { max-width: 1240px; margin: 0 auto; padding: 0 16px; }
+
+    /* Sticky Header */
+    header {
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      padding: 14px 0;
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .brand-wrap { display: flex; align-items: center; gap: 10px; }
+    .brand-logo {
+      width: 34px; height: 34px; background: #000; color: #fff;
+      font-weight: 800; font-size: 14px; display: flex;
+      align-items: center; justify-content: center; border-radius: var(--radius-sm);
+    }
+    .brand-title { font-size: 16px; font-weight: 800; }
+    .brand-sub { font-size: 11px; color: var(--text-muted); font-family: monospace; }
+
+    /* Filter Tag Info */
+    .filter-notice {
+      background: #09090b;
+      color: #fff;
+      padding: 6px 14px;
+      border-radius: var(--radius-sm);
+      font-size: 12px;
+      font-family: monospace;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Controls Panel */
+    .controls-panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      margin: 22px 0 16px;
+      box-shadow: var(--shadow-sm);
+    }
+    .search-input {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-md);
+      font-size: 14px;
+      outline: none;
+      background: var(--bg);
+      margin-bottom: 14px;
+    }
+    .search-input:focus { background: #fff; border-color: #000; }
+
+    .cat-selector-label {
+      font-size: 11px;
+      font-weight: 700;
+      font-family: monospace;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .tabs-scroll { display: flex; flex-wrap: wrap; gap: 8px; max-width: 100%; }
+    .tab-btn {
+      white-space: nowrap; padding: 7px 14px; border-radius: 999px;
+      border: 1px solid var(--border); background: var(--surface);
+      color: var(--text-muted); font-size: 12px; font-weight: 600; cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .tab-btn:hover { border-color: #94a3b8; color: #09090b; }
+    .tab-btn.active { background: #000; color: #fff; border-color: #000; }
+
+    /* Controls Bar: Mode Frame & Status */
+    .filter-bar-row {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 10px; margin: 12px 0 16px; padding: 10px 14px;
+      background: #f8fafc; border: 1px solid var(--border); border-radius: var(--radius-md);
+    }
+    .btn-action-mini {
+      padding: 6px 12px; border-radius: var(--radius-sm);
+      border: 1px solid var(--border); font-size: 11px;
+      font-weight: 700; cursor: pointer; background: #fff;
+      transition: all 0.15s ease;
+    }
+    .btn-action-mini:hover { background: #f1f5f9; border-color: #09090b; }
+
+    /* Video Cards Grid */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 18px;
+      margin-top: 16px;
+    }
+    .video-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s ease;
+      position: relative;
+    }
+    .video-card:hover {
+      border-color: #09090b;
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    /* Mini Frame Switcher on Cards */
+    .card-frame-switcher {
+      display: flex;
+      gap: 4px;
+      background: #f8fafc;
+      border-bottom: 1px solid var(--border);
+      padding: 6px 10px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .frame-btn-group { display: flex; gap: 4px; }
+    .btn-frame-mini {
+      font-size: 10px;
+      font-family: monospace;
+      padding: 2px 6px;
+      border: 1px solid var(--border);
+      background: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+      color: #475569;
+    }
+    .btn-frame-mini:hover { background: #f1f5f9; border-color: #000; }
+    .btn-frame-mini.active {
+      background: #09090b;
+      color: #fff;
+      border-color: #09090b;
+    }
+
+    /* CARD MEDIA AREA (INLINE PLAYER) */
+    .card-media {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      background: #000;
+      overflow: hidden;
+    }
+    .thumb-img {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;
+    }
+    .inline-iframe {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      border: none;
+    }
+    .btn-close-inline {
+      position: absolute;
+      top: 8px; right: 8px;
+      background: #09090b;
+      color: #fff;
+      border: 1px solid #3f3f46;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      cursor: pointer;
+      z-index: 25;
+      font-family: monospace;
+    }
+    .play-overlay-btn {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .play-overlay-btn:hover { background: rgba(0,0,0,0.4); }
+    .play-btn-circle {
+      width: 44px; height: 44px;
+      background: #ffffff;
+      color: #000000;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+      padding-left: 2px;
+    }
+    .play-text {
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 700;
+      background: rgba(0,0,0,0.75);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    .card-body {
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+      font-size: 10px;
+      font-family: monospace;
+      color: var(--text-muted);
+    }
+    .card-badge {
+      font-weight: 700;
+      text-transform: uppercase;
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+      color: #09090b;
+    }
+    .card-title {
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 12px;
+      flex-grow: 1;
+    }
+    .card-actions {
+      display: flex;
+      gap: 6px;
+      margin-top: auto;
+      padding-top: 10px;
+      border-top: 1px solid var(--border);
+    }
+    .btn-play-card {
+      flex: 1;
+      padding: 8px 10px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-strong);
+      background: #09090b;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: background 0.15s ease;
+    }
+    .btn-play-card:hover { background: #27272a; }
+    .btn-yt-tab {
+      padding: 8px 12px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      background: #ffffff;
+      color: #09090b;
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: 700;
+      font-family: monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn-yt-tab:hover { background: #f1f5f9; }
+
+    /* Sticky Bottom Toolbar */
+    .sticky-toolbar {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: #09090b;
+      color: #ffffff;
+      padding: 14px 20px;
+      z-index: 60;
+      box-shadow: 0 -4px 25px rgba(0,0,0,0.25);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+    .progress-stats {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: monospace;
+      font-size: 12px;
+    }
+    .stat-box {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.15);
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+    }
+    .stat-val { font-weight: 800; color: #fff; font-size: 14px; }
+
+    .toolbar-actions { display: flex; align-items: center; gap: 10px; }
+    .btn-primary-toolbar {
+      background: #ffffff;
+      color: #09090b;
+      border: none;
+      padding: 10px 20px;
+      border-radius: var(--radius-sm);
+      font-weight: 800;
+      font-size: 12px;
+      font-family: monospace;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn-primary-toolbar:hover { background: #e2e8f0; transform: translateY(-1px); }
+
+    /* Modal Master / Export */
+    .export-modal {
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.85);
+      z-index: 110; display: none;
+      align-items: center; justify-content: center; padding: 20px;
+    }
+    .export-modal.open { display: flex; }
+    .export-card {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      width: 100%; max-width: 640px;
+      padding: 24px; max-height: 85vh;
+      display: flex; flex-direction: column;
+    }
+    .export-textarea {
+      width: 100%; height: 240px;
+      font-family: monospace; font-size: 11px;
+      padding: 10px; border: 1px solid var(--border-strong);
+      border-radius: var(--radius-sm); margin: 14px 0;
+      resize: none; background: #f8fafc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header>
+    <div class="container nav-inner">
+      <div class="brand-wrap">
+        <div class="brand-logo">FK</div>
+        <div>
+          <div class="brand-title">Koleksi Panduan Resmi FokusKonten (194 Video Pilihan)</div>
+          <div class="brand-sub">Hasil sortir kurasi manual Anda — 777 video non-relevan/shorts/kriya fisik telah dieliminasi</div>
+        </div>
+      </div>
+      <div>
+        <div class="filter-notice">
+          <span>STATUS: 194 VIDEO AKTIF</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Controls Panel -->
+    <div class="controls-panel">
+      <!-- Search Input -->
+      <input type="text" id="searchInput" class="search-input" placeholder="Cari di dalam 194 video terpilih (misal: coreldraw, stiker, pas foto, blender, shortcut)...">
+
+      <!-- Controls Bar: Mode Frame, Urutan & Status -->
+      <div class="filter-bar-row">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="font-size:12px; font-weight:700; font-family:monospace; color:var(--text-main);" id="viewSummaryText">
+            Menampilkan 194 video panduan terkurasi
+          </span>
+        </div>
+        <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+          <div style="display:flex; align-items:center; gap:6px;">
+            <span style="font-size:11px; font-weight:700; font-family:monospace; color:var(--text-muted);">Urutan:</span>
+            <button class="btn-action-mini" id="btnSortNewest" style="background:#09090b; color:#fff;">Terbaru</button>
+            <button class="btn-action-mini" id="btnSortOldest" style="background:#fff; color:#09090b;">Terlama</button>
+          </div>
+          <div style="display:flex; align-items:center; gap:6px;">
+            <span style="font-size:11px; font-weight:700; font-family:monospace; color:var(--text-muted);">Pratinjau:</span>
+            <button class="btn-action-mini" id="btnModeThumb" style="background:#09090b; color:#fff;">Thumbnail</button>
+            <button class="btn-action-mini" id="btnModeFrame50" style="background:#fff; color:#09090b;">Frame 50%</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category Pills -->
+      <div class="cat-selector-label">Filter Playlist:</div>
+      <div class="tabs-scroll" id="catTabs"></div>
+    </div>
+
+    <!-- Video Grid -->
+    <div class="video-grid" id="videoGrid"></div>
+  </div>
+
+  <!-- Sticky Bottom Toolbar -->
+  <div class="sticky-toolbar">
+    <div class="progress-stats">
+      <div class="stat-box">
+        <span>TOTAL RESMI: </span>
+        <span class="stat-val">194</span>
+      </div>
+      <div class="stat-box">
+        <span>PLAYLIST: </span>
+        <span class="stat-val">14</span>
+      </div>
+      <div class="stat-box">
+        <span>DIELIMINASI: </span>
+        <span class="stat-val">777 VIDEO</span>
+      </div>
+    </div>
+
+    <div class="toolbar-actions">
+      <button class="btn-primary-toolbar" id="btnOpenExport">
+        LIHAT / UNDUH MASTER JSON (194)
+      </button>
+    </div>
+  </div>
+
+  <!-- Modal Master / Export -->
+  <div class="export-modal" id="exportModal">
+    <div class="export-card">
+      <h3 style="font-size:18px; font-weight:800; margin-bottom:4px;">Master Data 194 Video Terkurasi</h3>
+      <p style="font-size:12px; color:var(--text-muted);">
+        Berikut adalah seluruh kumpulan 194 video hasil sortir manual Anda yang siap digunakan untuk portal panduan resmi:
+      </p>
+      <textarea id="exportTextarea" class="export-textarea" readonly></textarea>
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+        <button class="btn-action-mini" id="btnCloseExport">Tutup</button>
+        <button class="btn-primary-toolbar" style="background:#09090b; color:#fff;" id="btnDownloadJson">
+          Unduh Berkas JSON (.json)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const ALL_VIDEOS = [{"num":966,"id":"euMLtHrsC2k","url":"https://youtu.be/euMLtHrsC2k","oldTitle":"cara blokir koneksi internet pada aplikasi pc kitapake fab v1 9","title":"Cara Blokir Akses Internet Aplikasi Tertentu di PC Pakai Firewall App Blocker (FAB)","category":"Teknologi & Utilitas Modern — *Blokir Akses Internet Aplikasi dengan FAB Sordum*","playlist":"Windows & Software Tutorial","playlistId":"PLn3CvGWXaCQFycdDIc3pvuZDUsZvi4BYV","tags":["fokuskonten","tutorial","edukasi","firewallblocker","tipswindows","sordum","cara","blokir","akses","internet"],"parentCat":"Windows & Software Tutorial","badge":"WINDOWS & SOFTWARE TUTORIAL","contentType":"RECORDING"},{"num":965,"id":"B_RVxEnFHK0","url":"https://youtu.be/B_RVxEnFHK0","oldTitle":"cara cepat kasih watermark video sekaligus tanpa render","title":"Cara Cepat Memberi Watermark Banyak Video Sekaligus Tanpa Render Ulang","category":"Produksi Video — *Teknik Stabilisasi & Konversi Format Video*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","videoediting","stabilizervideo","konversivideo","cara","cepat","memberi","watermark"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":860,"id":"bGbk1j0_JJ0","url":"https://youtu.be/bGbk1j0_JJ0","oldTitle":"1 Jam Jago Jualan di Shopee, Semua Marketpleace","title":"Panduan Praktis Buka Toko & Mulai Jualan di Shopee serta Marketplace Lainnya","category":"Edukasi Workshop — *Dokumentasi & Sharing Praktik Kerja Mandiri*","playlist":"Toko Online With Blogger","playlistId":"PLn3CvGWXaCQHCpNxTcBvf3VXxGiiywQCX","tags":["fokuskonten","tutorial","edukasi","sharingpengalaman","edukasikreatif","karyamandiri","jam","jago","jualan","shopee"],"parentCat":"Toko Online With Blogger","badge":"TOKO ONLINE WITH BLOGGER","contentType":"RECORDING"},{"num":859,"id":"76OgJCstE4k","url":"https://youtu.be/76OgJCstE4k","oldTitle":"1 Jam Belajar Produk Digital Secara Luas","title":"Panduan Lengkap Bisnis Produk Digital: Cara Membuat, Menjual & Monetisasi dari Nol","category":"Edukasi Workshop — *Dokumentasi & Sharing Praktik Kerja Mandiri*","playlist":"Youtube Template & Trik","playlistId":"PLn3CvGWXaCQEMmcDNj29Z3WRBqP4xXJog","tags":["fokuskonten","tutorial","edukasi","sharingpengalaman","edukasikreatif","karyamandiri","panduan","lengkap","bisnis","produk"],"parentCat":"Youtube Template & Trik","badge":"YOUTUBE TEMPLATE & TRIK","contentType":"RECORDING"},{"num":858,"id":"NFJpSHlKRuw","url":"https://youtu.be/NFJpSHlKRuw","oldTitle":"Best App! 20 Menit Belajar Bulk Rename Utility | Managent File","title":"Tutorial Bulk Rename Utility: Trik Mengganti Ribuan Nama File Otomatis dalam Hitungan Detik","category":"Manajemen Berkas — *Batch Rename Berkas Sekaligus*","playlist":"Windows & Software Tutorial","playlistId":"PLn3CvGWXaCQFycdDIc3pvuZDUsZvi4BYV","tags":["fokuskonten","tutorial","edukasi","bulkrename","manajemenfile","tipskomp","bulk","rename","utility"],"parentCat":"Windows & Software Tutorial","badge":"WINDOWS & SOFTWARE TUTORIAL","contentType":"RECORDING"},{"num":857,"id":"Fz2XWhsyM7k","url":"https://youtu.be/Fz2XWhsyM7k","oldTitle":"Best App! Cara Merubah Gambar | Type, Resolusi, WM  Drag n Drop Full Fitur","title":"Best App Cara Mengubah Gambar — Type, Resolusi, Wm Drag N Drop Full Fitur","category":"Edukasi Workshop — *Dokumentasi & Sharing Praktik Kerja Mandiri*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","sharingpengalaman","edukasikreatif","karyamandiri","best","app","cara","mengubah"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":855,"id":"ow3e9JaPTsM","url":"https://youtu.be/ow3e9JaPTsM","oldTitle":"Cara Membuat Folder Sekaligus Menggunakan Database Nama Project Kita di Excel","title":"Cara Membuat Ratusan Folder Otomatis dari Database Nama Excel","category":"Sistem Windows — *Optimasi Kinerja & Perintah Windows*","playlist":"Windows & Software Tutorial","playlistId":"PLn3CvGWXaCQFycdDIc3pvuZDUsZvi4BYV","tags":["fokuskonten","tutorial","edukasi","windows10","perintahcmd","tipskomp","panduan","lengkap","cara","membuat"],"parentCat":"Windows & Software Tutorial","badge":"WINDOWS & SOFTWARE TUTORIAL","contentType":"RECORDING"},{"num":854,"id":"GU_SMWANWdc","url":"https://youtu.be/GU_SMWANWdc","oldTitle":"Cara Menggukanakan Hotkey! Cara Merubah Fungsi Tombol Keyboard Menggunakan Auto Hotkey","title":"Cara Menggukanakan Hotkey Cara Mengubah Fungsi Tombol Keyboard Menggunakan Auto Hotkey","category":"Edukasi Workshop — *Dokumentasi & Sharing Praktik Kerja Mandiri*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","sharingpengalaman","edukasikreatif","karyamandiri","cara","menggukanakan","hotkey"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":853,"id":"SDCWgrQZn1k","url":"https://youtu.be/SDCWgrQZn1k","oldTitle":"Super Easy! 20 Menit Belajar 3D Produk di Boxshoot 5 | Keperluan Bisnis, Mockup, Printing, Dll","title":"Super Easy 20 Menit Belajar 3D Produk di Boxshoot 5 — Keperluan Bisn...","category":"Edukasi Workshop — *Dokumentasi & Sharing Praktik Kerja Mandiri*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","sharingpengalaman","edukasikreatif","karyamandiri","super","easy","menit","belajar"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":852,"id":"QhcqSNu8xAQ","url":"https://youtu.be/QhcqSNu8xAQ","oldTitle":"30 Menit Belajar Lighroom Dekstop PC","title":"30 Menit Belajar Lighroom Desktop PC","category":"Edukasi Workshop — *Dokumentasi & Sharing Praktik Kerja Mandiri*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","sharingpengalaman","edukasikreatif","karyamandiri","menit","belajar","lighroom","desktop"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":850,"id":"y94rSIGYduM","url":"https://youtu.be/y94rSIGYduM","oldTitle":"12 Aplikasi yang wajib banget3 diinstal di pc kalian!!","title":"12 Software & Aplikasi PC Windows Terbaik yang Wajib Kamu Instal","category":"Sistem Windows — *Optimasi Kinerja & Perintah Windows*","playlist":"Windows & Software Tutorial","playlistId":"PLn3CvGWXaCQFycdDIc3pvuZDUsZvi4BYV","tags":["fokuskonten","tutorial","edukasi","windows10","perintahcmd","tipskomp","software","aplikasi","windows","terbaik"],"parentCat":"Windows & Software Tutorial","badge":"WINDOWS & SOFTWARE TUTORIAL","contentType":"RECORDING"},{"num":849,"id":"g6nJneWN3H8","url":"https://youtu.be/g6nJneWN3H8","oldTitle":"Belajar Blender Part 3 untuk Pertukangan Mebel dan Furniture","title":"Tutorial Blender 3D untuk Desain Pertukangan Mebel & Furniture (Part 3)","category":"Blender 3D — *Desain 3D Furniture & Mebel Interior*","playlist":"Blender Basic","playlistId":"PLn3CvGWXaCQFX-Kl6lxW53fFELqOyXy1O","tags":["fokuskonten","tutorial","edukasi","blender3d","desainfurniture","3dmodeling","blender","untuk","desain"],"parentCat":"Blender Basic","badge":"BLENDER BASIC","contentType":"RECORDING"},{"num":848,"id":"0ui69I8yW7E","url":"https://youtu.be/0ui69I8yW7E","oldTitle":"Belajar Desain 3d untuk Kebutuhan Furniture Mebel interior lainnya di Aplikasi Blender untuk pemula","title":"Tutorial Blender 3D untuk Desain Furniture & Mebel Interior Pemula","category":"Blender 3D — *Desain 3D Furniture & Mebel Interior*","playlist":"Blender Basic","playlistId":"PLn3CvGWXaCQFX-Kl6lxW53fFELqOyXy1O","tags":["fokuskonten","tutorial","edukasi","blender3d","desainfurniture","3dmodeling","blender","untuk","desain"],"parentCat":"Blender Basic","badge":"BLENDER BASIC","contentType":"RECORDING"},{"num":847,"id":"zhTdjwQBYB4","url":"https://youtu.be/zhTdjwQBYB4","oldTitle":"Perkenalan Blender Pada Pertukangan Mebel Furtinitur Interior Lainnya","title":"Pengenalan Software Blender 3D untuk Kebutuhan Desain Mebel & Interior","category":"Blender 3D — *Desain 3D Furniture & Mebel Interior*","playlist":"Blender Basic","playlistId":"PLn3CvGWXaCQFX-Kl6lxW53fFELqOyXy1O","tags":["fokuskonten","tutorial","edukasi","blender3d","desainfurniture","3dmodeling","pengenalan","software","blender","untuk"],"parentCat":"Blender Basic","badge":"BLENDER BASIC","contentType":"RECORDING"},{"num":576,"id":"gVC64xRI6Xk","url":"https://youtu.be/gVC64xRI6Xk","oldTitle":"JAGO CETAK DI CORELDRAW","title":"Panduan Lengkap Setting Master Cetak & Separasi Warna di CorelDRAW","category":"Industri Percetakan — *Alur Kerja & Manajemen Usaha Cetak*","playlist":"Ecourse Jago CorelDRAW","playlistId":"PLn3CvGWXaCQH0n21t3Gro0LpuN6hWCBOc","tags":["fokuskonten","tutorial","edukasi","usahapercetakan","percetakan","bisnispercetakan","jago","cetak","coreldraw","menggunakan"],"parentCat":"Ecourse Jago CorelDRAW","badge":"ECOURSE JAGO CORELDRAW","contentType":"RECORDING"},{"num":575,"id":"uWyaGOxgcuQ","url":"https://youtu.be/uWyaGOxgcuQ","oldTitle":"Dasar Kurva | Tutorial CorelDraw Bagian 1 Part 12","title":"Panduan Dasar Menggambar Garis Kurva Pen Tool di CorelDRAW (Part 12)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Basic","playlistId":"PLn3CvGWXaCQGRdMyMXq_z7acboRRmrw-e","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","panduan","dasar","menggambar","garis"],"parentCat":"CorelDraw Basic","badge":"CORELDRAW BASIC","contentType":"RECORDING"},{"num":574,"id":"uTmpaW2emzI","url":"https://youtu.be/uTmpaW2emzI","oldTitle":"Interface Corel | Tutorial CorelDraw Bagian 1 Part 2","title":"Pengenalan Workspace, Navigasi, dan Manajemen File CorelDRAW (Part 2)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","pengenalan","workspace","navigasi","dan"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":573,"id":"sjAYzwi186E","url":"https://youtu.be/sjAYzwi186E","oldTitle":"Save, Impotr dan Export | Tutorial CorelDraw Bagian 1 Part 5","title":"Pengenalan Workspace, Navigasi, dan Manajemen File CorelDRAW (Part 5)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","pengenalan","workspace","navigasi","dan"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":572,"id":"k2jZpG08Aj0","url":"https://youtu.be/k2jZpG08Aj0","oldTitle":"Mewarnai Objek | Tutorial CorelDraw Bagian 1 Part 7","title":"Tutorial CorelDRAW: Cara Mewarnai Objek & Kombinasi Warna Desain (Part 7)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","mewarnai","objek","menggunakan"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":571,"id":"jPgLqdgjjJk","url":"https://youtu.be/jPgLqdgjjJk","oldTitle":"Artistik Media | Tutorial CorelDraw Bagian 1 Part 13","title":"Kupas Fitur Artistic Media Tool untuk Goresan Kuas Vektor CorelDRAW...","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","kupas","fitur","artistic","media"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":570,"id":"htsM4ShsZkk","url":"https://youtu.be/htsM4ShsZkk","oldTitle":"Navigasi | Tutorial CorelDraw Bagian 1 Part 4","title":"Pengenalan Workspace, Navigasi, dan Manajemen File CorelDRAW (Part 4)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","pengenalan","workspace","navigasi","dan"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":569,"id":"f0_CeJFDWtc","url":"https://youtu.be/f0_CeJFDWtc","oldTitle":"Paragraph Teks | Tutorial CorelDraw Bagian 1 Part 16","title":"Teknik Olah Tipografi Artistic & Paragraph Text di CorelDRAW (Part 16)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","teknik","olah","tipografi","artistic"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":568,"id":"csnkOcMaLmk","url":"https://youtu.be/csnkOcMaLmk","oldTitle":"Membuat Brush | Tutorial CorelDraw Bagian 1 Part 14","title":"Membuat Brush di CorelDRAW (Part 14)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","membuat","brush","menggunakan"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":567,"id":"c_kKGe9mHXQ","url":"https://youtu.be/c_kKGe9mHXQ","oldTitle":"Perbedaan bitmap dan vektor | Tutorial CorelDraw Bagian 1 Part 1","title":"Tips Praktis Mengolah dan Mengedit Gambar Bitmap di CorelDRAW (Part 1)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","tips","praktis","mengolah","dan"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":566,"id":"TUvBCmhvchY","url":"https://youtu.be/TUvBCmhvchY","oldTitle":"Letak dan Distribusi | Tutorial CorelDraw Bagian 1 Part 10","title":"Letak dan Distribusi di CorelDRAW (Part 10)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","letak","dan","distribusi","menggunakan"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":565,"id":"SbokrtuZyU4","url":"https://youtu.be/SbokrtuZyU4","oldTitle":"Interactive Distort Tools | Tutorial CorelDraw Bagian 1 Part 20","title":"Eksplorasi Efek Bentuk Unik dengan Distort Tool di CorelDRAW (Part 20)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","eksplorasi","efek","bentuk","unik"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":564,"id":"OQKjbxO2_uk","url":"https://youtu.be/OQKjbxO2_uk","oldTitle":"Boolean/Shaping | Tutorial CorelDraw Bagian 1 Part 11","title":"Trik Menggabung dan Memotong Objek (Weld, Trim, Intersect) di CorelDRAW (Part 11)","category":"Percetakan Nota — *Cetak Nota NCR & Perhitungan Per Rim*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","cetaknota","kertasncr","percetakan","trik","menggabung","dan","memotong"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":563,"id":"D88zsc6uxbE","url":"https://youtu.be/D88zsc6uxbE","oldTitle":"Interactive Drop Shadow | Tutorial CorelDraw Bagian 1 Part 21","title":"Bikin Efek Bayangan Realistis Pakai Drop Shadow Tool CorelDRAW (Part...","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","bikin","efek","bayangan","realistis"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":562,"id":"AMPAhUFimmU","url":"https://youtu.be/AMPAhUFimmU","oldTitle":"Teknik Duplikasi | Tutorial CorelDraw Bagian 1 Part 8","title":"Trik Cepat Duplikasi Objek Rapi dan Otomatis di CorelDRAW (Part 8)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","trik","cepat","duplikasi","objek"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":561,"id":"9ah3Cz18ocM","url":"https://youtu.be/9ah3Cz18ocM","oldTitle":"Interactive Contour Tools | Tutorial CorelDraw Bagian 1 Part 19","title":"Cara Menggunakan Contour Tool CorelDRAW untuk Garis Tepi Presisi (Part 19)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","cara","menggunakan","contour","tool"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":560,"id":"7kBw_4_X7PU","url":"https://youtu.be/7kBw_4_X7PU","oldTitle":"Artistik Teks | Tutorial CorelDraw Bagian 1 Part 15","title":"Teknik Olah Tipografi Artistic & Paragraph Text di CorelDRAW (Part 15)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","teknik","olah","tipografi","artistic"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":559,"id":"6X1MBr4xo70","url":"https://youtu.be/6X1MBr4xo70","oldTitle":"Snap Objek | Tutorial CorelDraw Bagian 1 Part 3","title":"Setting Fitur Snap to Objects CorelDRAW Agar Desain Selalu Presisi (...","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","setting","fitur","snap","objects"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":558,"id":"59si94CDQvg","url":"https://youtu.be/59si94CDQvg","oldTitle":"Interactive Bland Tools | Tutorial CorelDraw Bagian 1 Part 18","title":"Trik Menguasai Blend Tool CorelDRAW untuk Efek Gradasi Objek Halus (Part 18)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","trik","menguasai","blend","tool"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":557,"id":"1TxfltAZrJU","url":"https://youtu.be/1TxfltAZrJU","oldTitle":"Font dan Karakter | Tutorial CorelDraw Bagian 1 Part 17","title":"Panduan Pengaturan Font, Teks, & Karakter Khusus di CorelDRAW (Part 17)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","tips","memilih","dan","mengatur"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":556,"id":"11fmeSAN_k8","url":"https://youtu.be/11fmeSAN_k8","oldTitle":"Dasar Menggambar | Tutorial CorelDraw Bagian 1 Part 6","title":"Panduan Dasar Menggambar Garis Kurva Pen Tool di CorelDRAW (Part 6)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Basic","playlistId":"PLn3CvGWXaCQGRdMyMXq_z7acboRRmrw-e","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","panduan","dasar","menggambar","garis"],"parentCat":"CorelDraw Basic","badge":"CORELDRAW BASIC","contentType":"RECORDING"},{"num":555,"id":"-7WgZomaH6M","url":"https://youtu.be/-7WgZomaH6M","oldTitle":"Teknik Seleksi | Tutorial CorelDraw Bagian 1 Part 9","title":"Trik Cepat Seleksi Berbagai Objek Rumit di CorelDRAW (Part 9)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","trik","cepat","seleksi","berbagai"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":554,"id":"xn-AytZ2MVE","url":"https://youtu.be/xn-AytZ2MVE","oldTitle":"Tips Bekerja dengan Bitmap | Tutorial CorelDraw Bagian 2 Part 6","title":"Tips Praktis Mengolah dan Mengedit Gambar Bitmap di CorelDRAW (Part 6)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","tips","praktis","mengolah","dan"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":553,"id":"uGq4vhaKOyA","url":"https://youtu.be/uGq4vhaKOyA","oldTitle":"Print Merge | Tutorial CorelDraw Bagian 2 Part 8","title":"Cetak Ribuan Data Otomatis Pakai Fitur Print Merge CorelDRAW (Part 8)","category":"Industri Percetakan — *Alur Kerja & Manajemen Usaha Cetak*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","usahapercetakan","percetakan","bisnispercetakan","cetak","ribuan","data","otomatis"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":552,"id":"tmVzwLEsxU8","url":"https://youtu.be/tmVzwLEsxU8","oldTitle":"Desain Brosur Bagian 2 | Tutorial CorelDraw Bagian 3 Part 19","title":"Tutorial Desain Brosur Promosi Menarik untuk Usaha di CorelDRAW (Part 19)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","desain","brosur","promosi"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":551,"id":"t7-U5oCzouo","url":"https://youtu.be/t7-U5oCzouo","oldTitle":"Pembuatan ID Card, Bagian 2 | Tutorial CorelDraw Bagian 4 Part 4","title":"Panduan Lengkap Desain ID Card Keren Siap Cetak di CorelDRAW (Part 4)","category":"Industri Percetakan — *Alur Kerja & Manajemen Usaha Cetak*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","usahapercetakan","percetakan","bisnispercetakan","panduan","lengkap","desain","card"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":550,"id":"t3kc_2oi76Y","url":"https://youtu.be/t3kc_2oi76Y","oldTitle":"Pembuatan ID Card, Bagian 4 | Tutorial CorelDraw Bagian 4 Part 6","title":"Panduan Lengkap Desain ID Card Keren Siap Cetak di CorelDRAW (Part 6)","category":"Industri Percetakan — *Alur Kerja & Manajemen Usaha Cetak*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","usahapercetakan","percetakan","bisnispercetakan","panduan","lengkap","desain","card"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":549,"id":"s2ZIhWHAH00","url":"https://youtu.be/s2ZIhWHAH00","oldTitle":"Desain Kemasan, Bagian 2 | Tutorial CorelDraw Bagian 3 Part 1","title":"Panduan Desain Pola Kemasan Produk Packaging Box di CorelDRAW (Part 1)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","panduan","desain","pola","kemasan"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":548,"id":"rzyHv-CfhQ8","url":"https://youtu.be/rzyHv-CfhQ8","oldTitle":"Efek Deboss | Tutorial CorelDraw Bagian 2 Part 4","title":"Teknik Membuat Efek Cekung Deboss Keren di CorelDRAW (Part 4)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","teknik","membuat","efek","cekung"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":547,"id":"m8knXamsyOs","url":"https://youtu.be/m8knXamsyOs","oldTitle":"Pembuatan ID Card, Bagian 3 | Tutorial CorelDraw Bagian 4 Part 5","title":"Panduan Lengkap Desain ID Card Keren Siap Cetak di CorelDRAW (Part 5)","category":"Industri Percetakan — *Alur Kerja & Manajemen Usaha Cetak*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","usahapercetakan","percetakan","bisnispercetakan","panduan","lengkap","desain","card"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":546,"id":"lilB624Byms","url":"https://youtu.be/lilB624Byms","oldTitle":"Pembuatan ID Card, Bagian 5 | Tutorial CorelDraw Bagian 4 Part 7","title":"Panduan Lengkap Desain ID Card Keren Siap Cetak di CorelDRAW (Part 7)","category":"Industri Percetakan — *Alur Kerja & Manajemen Usaha Cetak*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","usahapercetakan","percetakan","bisnispercetakan","panduan","lengkap","desain","card"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":545,"id":"lCz_YWv6xuc","url":"https://youtu.be/lCz_YWv6xuc","oldTitle":"Membuat Kartu Nama Bagian 3 | Tutorial CorelDraw Bagian 2 Part 16","title":"Panduan Desain Kartu Nama Bisnis Elegan di CorelDRAW (Part 16)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","panduan","desain","kartu","nama"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":544,"id":"l197FmxS7PM","url":"https://youtu.be/l197FmxS7PM","oldTitle":"Desain CD/DVD Cover Bagian 1 | Tutorial CorelDraw Bagian 3 Part 7","title":"Panduan Desain Label dan Cover Kaset CD DVD di CorelDRAW (Part 7)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","panduan","desain","label","dan"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":543,"id":"kR73DLQ12E8","url":"https://youtu.be/kR73DLQ12E8","oldTitle":"Desain Kemasan, Bagian 3 | Tutorial CorelDraw Bagian 3 Part 2","title":"Panduan Desain Pola Kemasan Produk Packaging Box di CorelDRAW (Part 2)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","panduan","desain","pola","kemasan"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":542,"id":"k4WGA9fbags","url":"https://youtu.be/k4WGA9fbags","oldTitle":"Desain CD/DVD Cover Bagian 5 | Tutorial CorelDraw Bagian 3 Part 11","title":"Panduan Desain Label dan Cover Kaset CD DVD di CorelDRAW (Part 11)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","panduan","desain","label","dan"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":541,"id":"h3UA-sCblZA","url":"https://youtu.be/h3UA-sCblZA","oldTitle":"Desain Kalender Duduk | Tutorial CorelDraw Bagian 3 Part 17","title":"Cara Membuat Desain Kalender Duduk Meja di CorelDRAW (Part 17)","category":"Woodcraft — *Teknik Pengolahan Kayu Solid & Palet*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","woodworking","kayupalet","diywood","cara","membuat","desain","kalender"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":540,"id":"gu28pt8IeSI","url":"https://youtu.be/gu28pt8IeSI","oldTitle":"Transparency Tool | Tutorial CorelDraw Bagian 1 Part 23","title":"Teknik Gradasi Transparansi Objek dengan Transparency Tool CorelDRAW...","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","teknik","gradasi","transparansi","objek"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":539,"id":"gn86ZupLIDA","url":"https://youtu.be/gn86ZupLIDA","oldTitle":"Efek Pada Bitmap | Tutorial CorelDraw Bagian 2 Part 7","title":"Tips Praktis Mengolah dan Mengedit Gambar Bitmap di CorelDRAW (Part 7)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","tips","praktis","mengolah","dan"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":538,"id":"cRDXtJCUbfQ","url":"https://youtu.be/cRDXtJCUbfQ","oldTitle":"Desain Kemasan, Bagian 5 | Tutorial CorelDraw Bagian 3 Part 4","title":"Panduan Desain Pola Kemasan Produk Packaging Box di CorelDRAW (Part 4)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","panduan","desain","pola","kemasan"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":537,"id":"_BgMOE79pWY","url":"https://youtu.be/_BgMOE79pWY","oldTitle":"Membuat Efek Shadow | Tutorial CorelDraw Bagian 2 Part 1","title":"Membuat Efek Shadow di CorelDRAW (Part 1)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","membuat","efek","shadow","menggunakan"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":536,"id":"_0q0tO6DIlQ","url":"https://youtu.be/_0q0tO6DIlQ","oldTitle":"CD/DVD Label | Tutorial CorelDraw Bagian 3 Part 13","title":"Panduan Desain Label dan Cover Kaset CD DVD di CorelDRAW (Part 13)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","panduan","desain","label","dan"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":535,"id":"ZTSB-Udc4NQ","url":"https://youtu.be/ZTSB-Udc4NQ","oldTitle":"Desain Kemasan, Bagian 7 | Tutorial CorelDraw Bagian 3 Part 6","title":"Panduan Desain Pola Kemasan Produk Packaging Box di CorelDRAW (Part 6)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","panduan","desain","pola","kemasan"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":534,"id":"ZFdpYTxWXcg","url":"https://youtu.be/ZFdpYTxWXcg","oldTitle":"Kartu Peserta Kegiatan Bagian 2 | Tutorial CorelDraw Bagian 2 Part 20","title":"Tutorial Desain Kartu Tanda Peserta Kegiatan Panitia di CorelDRAW (Part 20)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","desain","kartu","tanda"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":533,"id":"Xu1JEvUohQw","url":"https://youtu.be/Xu1JEvUohQw","oldTitle":"Desain CD/DVD Cover Bagian 3 | Tutorial CorelDraw Bagian 3 Part 9","title":"Panduan Desain Label dan Cover Kaset CD DVD di CorelDRAW (Part 9)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","panduan","desain","label","dan"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":532,"id":"U-18V5tQD7w","url":"https://youtu.be/U-18V5tQD7w","oldTitle":"Desain CD/DVD Cover Bagian 2 | Tutorial CorelDraw Bagian 3 Part 8","title":"Panduan Desain Label dan Cover Kaset CD DVD di CorelDRAW (Part 8)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","panduan","desain","label","dan"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":531,"id":"RNVopKpiHu4","url":"https://youtu.be/RNVopKpiHu4","oldTitle":"Logo Sony Ericsson | Tutorial CorelDraw Bagian 2 Part 13","title":"Studi Kasus Desain Vektor Logo Sony Ericsson di CorelDRAW (Part 13)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","studi","kasus","desain","vektor"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":530,"id":"QslV4y12Mg4","url":"https://youtu.be/QslV4y12Mg4","oldTitle":"Tips Print Besar Dengan Tile | Tutorial CorelDraw Bagian 2 Part 10","title":"Cara Print Banner Ukuran Besar dengan Metode Tile di CorelDRAW (Part 10)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","cara","print","banner","ukuran"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":529,"id":"LyoGGWxVYGU","url":"https://youtu.be/LyoGGWxVYGU","oldTitle":"Efek Bavel | Tutorial CorelDraw Bagian 2 Part 2","title":"Cara Menggunakan Efek Bevel Objek 3D di CorelDRAW (Part 2)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","cara","menggunakan","efek","bevel"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":528,"id":"IAzY04KSvB0","url":"https://youtu.be/IAzY04KSvB0","oldTitle":"Desain Kalender Bagian 1 | Tutorial CorelDraw Bagian 3 Part 15","title":"Cara Membuat Desain Kalender Custom Dinding & Meja di CorelDRAW (Part 15)","category":"Woodcraft — *Rak Dinding & Ambalan Kayu Minimalis*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","rakdinding","ambalankayu","woodworking","cara","membuat","desain","kalender"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":527,"id":"HyiE_8ZwB30","url":"https://youtu.be/HyiE_8ZwB30","oldTitle":"Desain CD/DVD Cover Bagian 6 | Tutorial CorelDraw Bagian 3 Part 12","title":"Panduan Desain Label dan Cover Kaset CD DVD di CorelDRAW (Part 12)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","panduan","desain","label","dan"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":526,"id":"GQSH8oggLwo","url":"https://youtu.be/GQSH8oggLwo","oldTitle":"Berlatih Efek Embos | Tutorial CorelDraw Bagian 1 Part 24","title":"Cara Bikin Efek Timbul Emboss Realistis di CorelDRAW (Part 24)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","cara","bikin","efek","timbul"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":525,"id":"FlkVtNCCqbE","url":"https://youtu.be/FlkVtNCCqbE","oldTitle":"Trace Bitmap | Tutorial CorelDraw Bagian 2 Part 17","title":"Cara Mengubah Gambar Bitmap Jadi Vektor dengan Fitur Trace CorelDRAW (Part 17)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","cara","mengubah","gambar","bitmap"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":524,"id":"EtbX3AIDMnY","url":"https://youtu.be/EtbX3AIDMnY","oldTitle":"Membuat Logo Mengkilat | Tutorial CorelDraw Bagian 2 Part 12","title":"Tutorial Membuat Desain Logo Vektor Mengilap 3D di CorelDRAW (Part 12)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","membuat","desain","logo"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":523,"id":"D5T0nfQQR7o","url":"https://youtu.be/D5T0nfQQR7o","oldTitle":"Keunikan Power Clip | Tutorial CorelDraw Bagian 2 Part 3","title":"Kupas Tuntas Fitur PowerClip CorelDRAW untuk Memasukkan Gambar ke Ob...","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","kupas","tuntas","fitur","powerclip"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":522,"id":"BuZ6BvAd6iw","url":"https://youtu.be/BuZ6BvAd6iw","oldTitle":"Tips Print Ukuran Besar | Tutorial CorelDraw Bagian 2 Part 9","title":"Cara Print Banner Ukuran Besar dengan Metode Tile di CorelDRAW (Part 9)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","cara","print","banner","ukuran"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":521,"id":"BsQLUlbeDqo","url":"https://youtu.be/BsQLUlbeDqo","oldTitle":"Desain Menu/Jadwal | Tutorial CorelDraw Bagian 2 Part 18","title":"Tutorial Desain Daftar Menu Makanan & Jadwal Menarik di CorelDRAW (Part 18)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","desain","daftar","menu"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":520,"id":"BmQjoj6WQsA","url":"https://youtu.be/BmQjoj6WQsA","oldTitle":"Desain Kemasan, Bagian 6 | Tutorial CorelDraw Bagian 3 Part 5","title":"Panduan Desain Pola Kemasan Produk Packaging Box di CorelDRAW (Part 5)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","panduan","desain","pola","kemasan"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":519,"id":"9iexxRpQ6KI","url":"https://youtu.be/9iexxRpQ6KI","oldTitle":"Desain Kemasan, Bagian 4 | Tutorial CorelDraw Bagian 3 Part 3","title":"Panduan Desain Pola Kemasan Produk Packaging Box di CorelDRAW (Part 3)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","panduan","desain","pola","kemasan"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":518,"id":"6lpDuisqEiQ","url":"https://youtu.be/6lpDuisqEiQ","oldTitle":"Efek Lens | Tutorial CorelDraw Bagian 2 Part 5","title":"Menggunakan Efek Lens CorelDRAW untuk Tampilan Transparan & Kaca (Pa...","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","menggunakan","efek","lens"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":517,"id":"4zpFW39Bhws","url":"https://youtu.be/4zpFW39Bhws","oldTitle":"Desain CD/DVD Cover Bagian 4 | Tutorial CorelDraw Bagian 3 Part 10","title":"Panduan Desain Label dan Cover Kaset CD DVD di CorelDRAW (Part 10)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","panduan","desain","label","dan"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":516,"id":"3uBEwtgyfuc","url":"https://youtu.be/3uBEwtgyfuc","oldTitle":"Desain Kemasan Bagian 1 | Tutorial CorelDraw Bagian 2 Part 21","title":"Panduan Desain Pola Kemasan Produk Packaging Box di CorelDRAW (Part 21)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","panduan","desain","pola","kemasan"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":515,"id":"38RFgDwNY0M","url":"https://youtu.be/38RFgDwNY0M","oldTitle":"Membuat Kartu Nama Bagian 1 | Tutorial CorelDraw Bagian 2 Part 14","title":"Panduan Desain Kartu Nama Bisnis Elegan di CorelDRAW (Part 14)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","panduan","desain","kartu","nama"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":514,"id":"0AmvFhX00QE","url":"https://youtu.be/0AmvFhX00QE","oldTitle":"Desain Bookled | Tutorial CorelDraw Bagian 4 Part 2","title":"Cara Membuat Desain Booklet Lipat Buku Panduan di CorelDRAW (Part 2)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","cara","membuat","desain","booklet"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":513,"id":"zMDgUIBTW6A","url":"https://youtu.be/zMDgUIBTW6A","oldTitle":"Desain Layout | Tutorial CorelDraw Bagian 2 Part 11","title":"Panduan Mengatur Desain Layout Halaman Cetak di CorelDRAW (Part 11)","category":"Industri Percetakan — *Alur Kerja & Manajemen Usaha Cetak*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","usahapercetakan","percetakan","bisnispercetakan","panduan","mengatur","desain","layout"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":512,"id":"mZUz1hKTkj0","url":"https://youtu.be/mZUz1hKTkj0","oldTitle":"Membuat Kartu Nama Bagian 2 | Tutorial CorelDraw Bagian 2 Part 15","title":"Panduan Desain Kartu Nama Bisnis Elegan di CorelDRAW (Part 15)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","panduan","desain","kartu","nama"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":511,"id":"VMktbj74hXc","url":"https://youtu.be/VMktbj74hXc","oldTitle":"Berlatih Efek Metal | Tutorial CorelDraw Bagian 1 Part 25","title":"Teknik Membuat Efek Tulisan Metal Mengilap di CorelDRAW (Part 25)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","teknik","membuat","efek","tulisan"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":510,"id":"Jz44wCRh3b0","url":"https://youtu.be/Jz44wCRh3b0","oldTitle":"Interactive Envelope Tools | Tutorial CorelDraw Bagian 1 Part 22","title":"Teknik Melengkungkan Objek & Teks Pakai Envelope Tool CorelDRAW (Par...","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","teknik","melengkungkan","objek","teks"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":509,"id":"HRrvv3y6xZg","url":"https://youtu.be/HRrvv3y6xZg","oldTitle":"Desain Content Majalah | Tutorial CorelDraw Bagian 4 Part 1","title":"Panduan Desain Tata Letak Konten Majalah yang Rapi di CorelDRAW (Part 1)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","panduan","desain","tata","letak"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":508,"id":"H38K0HMqUXw","url":"https://youtu.be/H38K0HMqUXw","oldTitle":"Kartu Peserta Kegiatan Bagian 1 | Tutorial CorelDraw Bagian 2 Part 19","title":"Tutorial Desain Kartu Tanda Peserta Kegiatan Panitia di CorelDRAW (Part 19)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","desain","kartu","tanda"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":507,"id":"B7BLqNH-t00","url":"https://youtu.be/B7BLqNH-t00","oldTitle":"Desain Kalender Bagian 2 | Tutorial CorelDraw Bagian 3 Part 16","title":"Cara Membuat Desain Kalender Custom Dinding & Meja di CorelDRAW (Part 16)","category":"Woodcraft — *Rak Dinding & Ambalan Kayu Minimalis*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","rakdinding","ambalankayu","woodworking","cara","membuat","desain","kalender"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":506,"id":"9guzTiuB4jk","url":"https://youtu.be/9guzTiuB4jk","oldTitle":"Pembuatan ID Card, Bagian 1 | Tutorial CorelDraw Bagian 4 Part 3","title":"Panduan Lengkap Desain ID Card Keren Siap Cetak di CorelDRAW (Part 3)","category":"Industri Percetakan — *Alur Kerja & Manajemen Usaha Cetak*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","usahapercetakan","percetakan","bisnispercetakan","panduan","lengkap","desain","card"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":505,"id":"2Esw0HHO82w","url":"https://youtu.be/2Esw0HHO82w","oldTitle":"Desain Brosur Bagian 1 | Tutorial CorelDraw Bagian 3 Part 18","title":"Tutorial Desain Brosur Promosi Menarik untuk Usaha di CorelDRAW (Part 18)","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","desain","brosur","promosi"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":341,"id":"LenwBJ_r2dQ","url":"https://youtu.be/LenwBJ_r2dQ","oldTitle":"Desain Undangan | Tutorial CorelDraw Bagian 3 Part 14","title":"Panduan Lengkap Desain Undangan Pernikahan Siap Cetak di CorelDRAW (Part 14)","category":"Percetakan Undangan — *Kalkulasi & Produksi Undangan Pernikahan*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","undanganpernikahan","cetakundangan","bisnispercetakan","panduan","lengkap","desain","undangan"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":340,"id":"W1H3PR4Ala8","url":"https://youtu.be/W1H3PR4Ala8","oldTitle":"CARA INSTAL MOPACK V1.5","title":"Panduan Lengkap Cara Install Plugin MoPack v1.5 di Adobe Premiere Pro","category":"Edukasi Workshop — *Dokumentasi & Sharing Praktik Kerja Mandiri*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","sharingpengalaman","edukasikreatif","karyamandiri","cara","install","mopack"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":337,"id":"B-PIS8i89-E","url":"https://youtu.be/B-PIS8i89-E","oldTitle":"Cara Desain Nota di CorelDraw","title":"Panduan Praktis Desain Nota Penjualan 2 Ply Siap Cetak di CorelDRAW","category":"Percetakan Nota — *Cetak Nota NCR & Perhitungan Per Rim*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","cetaknota","kertasncr","percetakan","cara","desain","nota","coreldraw"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":336,"id":"yr9PgdTA0hc","url":"https://youtu.be/yr9PgdTA0hc","oldTitle":"Tektik Gold Atau Silver di Coreldraw","title":"Teknik Membuat Efek Warna Emas & Perak (Gold/Silver) Mewah di CorelDRAW","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","tektik","gold","atau","silver"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":335,"id":"6ye6PR-ocJw","url":"https://youtu.be/6ye6PR-ocJw","oldTitle":"CARA DESAIN SPANDUK WARUNG DI CORELDRAW","title":"Cara Desain Spanduk Banner Warung Makan Menarik & Terbaca di CorelDRAW","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","cara","desain","spanduk","warung"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":334,"id":"pYpRbpGvUIk","url":"https://youtu.be/pYpRbpGvUIk","oldTitle":"CARA DESAIN KOP SURAT DI CORELDRAW DAN WORD","title":"Cara Desain Kop Surat di CorelDRAW dan Word di CorelDRAW","category":"Percetakan Dokumen — *Desain & Standar Cetak Kop Surat Resmi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","kopsurat","desaindokumen","percetakan","cara","desain","kop","surat"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":333,"id":"7orFKCxLNyU","url":"https://youtu.be/7orFKCxLNyU","oldTitle":"CARA DESAIN STEMPEL DI CORELDRAW","title":"Cara Desain Stempel Otomatis / Flash di CorelDRAW Sesuai Ukuran Gagang","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","cara","desain","stempel"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":277,"id":"ugyVCbteZPo","url":"https://youtu.be/ugyVCbteZPo","oldTitle":"#17 Kesimpulan Akhir | Premiere Pro Tutorial","title":"Rangkuman & Kunci Sukses Mahir Editing Video Premiere Pro (Part 17)","category":"Adobe Premiere — *Editing Video di Premiere Pro*","playlist":"Premiere Pro Basic","playlistId":"PLn3CvGWXaCQETBiSdvP1U1vjAweCpGPY2","tags":["fokuskonten","tutorial","edukasi","premierepro","videoediting","tutorialvideo","kesimpulan","akhir","premiere","pro"],"parentCat":"Premiere Pro Basic","badge":"PREMIERE PRO BASIC","contentType":"RECORDING"},{"num":276,"id":"6Tqer_ClEv4","url":"https://youtu.be/6Tqer_ClEv4","oldTitle":"#16 Method Export Settings | Premiere Pro Tutorial","title":"Settingan Export Video Premiere Pro Kualitas Jernih Ukuran Ringan (Part 16)","category":"Adobe Premiere — *Editing Video di Premiere Pro*","playlist":"Premiere Pro Basic","playlistId":"PLn3CvGWXaCQETBiSdvP1U1vjAweCpGPY2","tags":["fokuskonten","tutorial","edukasi","premierepro","videoediting","tutorialvideo","method","export","settings","premiere"],"parentCat":"Premiere Pro Basic","badge":"PREMIERE PRO BASIC","contentType":"RECORDING"},{"num":275,"id":"LSkZ3WK3tx0","url":"https://youtu.be/LSkZ3WK3tx0","oldTitle":"#15 MOGRT Explanation | Premiere Pro Tutorial","title":"Cara Menggunakan Template Grafis MOGRT di Premiere Pro dengan Mudah (Part 15)","category":"Adobe Premiere — *Editing Video di Premiere Pro*","playlist":"Premiere Pro Basic","playlistId":"PLn3CvGWXaCQETBiSdvP1U1vjAweCpGPY2","tags":["fokuskonten","tutorial","edukasi","premierepro","videoediting","tutorialvideo","mogrt","explanation","premiere","pro"],"parentCat":"Premiere Pro Basic","badge":"PREMIERE PRO BASIC","contentType":"RECORDING"},{"num":274,"id":"eZngLOBPWoo","url":"https://youtu.be/eZngLOBPWoo","oldTitle":"#14 Extension Explanation | Premiere Pro Tutorial","title":"Mengenal Fungsi Plugin & Ekstensi Penting di Adobe Premiere Pro (Part 14)","category":"Adobe Premiere — *Editing Video di Premiere Pro*","playlist":"Premiere Pro Basic","playlistId":"PLn3CvGWXaCQETBiSdvP1U1vjAweCpGPY2","tags":["fokuskonten","tutorial","edukasi","premierepro","videoediting","tutorialvideo","extension","explanation","premiere","pro"],"parentCat":"Premiere Pro Basic","badge":"PREMIERE PRO BASIC","contentType":"RECORDING"},{"num":273,"id":"4Zs8OkW0KEA","url":"https://youtu.be/4Zs8OkW0KEA","oldTitle":"#13 Method Audio Mixing Audio Effects | Premiere Pro Tutorial","title":"Cara Mixing Audio & Menghilangkan Noise Suara di Premiere Pro (Part 13)","category":"Adobe Premiere — *Editing Video di Premiere Pro*","playlist":"Premiere Pro Basic","playlistId":"PLn3CvGWXaCQETBiSdvP1U1vjAweCpGPY2","tags":["fokuskonten","tutorial","edukasi","premierepro","videoediting","tutorialvideo","method","audio","mixing"],"parentCat":"Premiere Pro Basic","badge":"PREMIERE PRO BASIC","contentType":"RECORDING"},{"num":272,"id":"Dn6IvYDO7YA","url":"https://youtu.be/Dn6IvYDO7YA","oldTitle":"#12 Method Color Correction | Premiere Pro Tutorial","title":"Teknik Color Correction & Grading Video Menggunakan Lumetri Color (Part 12)","category":"Adobe Premiere — *Editing Video di Premiere Pro*","playlist":"Premiere Pro Basic","playlistId":"PLn3CvGWXaCQETBiSdvP1U1vjAweCpGPY2","tags":["fokuskonten","tutorial","edukasi","premierepro","videoediting","tutorialvideo","method","color","correction","premiere"],"parentCat":"Premiere Pro Basic","badge":"PREMIERE PRO BASIC","contentType":"RECORDING"},{"num":270,"id":"A-4Fqb7K2d0","url":"https://youtu.be/A-4Fqb7K2d0","oldTitle":"#10 KeyFrame Method | Premiere Pro Tutorial","title":"Teknik Animasi Keyframe di Premiere Pro untuk Gerakan Objek Mulus (Part 10)","category":"Adobe Premiere — *Editing Video di Premiere Pro*","playlist":"Premiere Pro Basic","playlistId":"PLn3CvGWXaCQETBiSdvP1U1vjAweCpGPY2","tags":["fokuskonten","tutorial","edukasi","premierepro","videoediting","tutorialvideo","keyframe","method","premiere","pro"],"parentCat":"Premiere Pro Basic","badge":"PREMIERE PRO BASIC","contentType":"RECORDING"},{"num":269,"id":"uBlXDm6Ivbk","url":"https://youtu.be/uBlXDm6Ivbk","oldTitle":"#09 Create Title | Premiere Pro Tutorial","title":"Cara Membuat Teks Judul & Lower Third di Premiere Pro (Part 9)","category":"Adobe Premiere — *Editing Video di Premiere Pro*","playlist":"Premiere Pro Basic","playlistId":"PLn3CvGWXaCQETBiSdvP1U1vjAweCpGPY2","tags":["fokuskonten","tutorial","edukasi","premierepro","videoediting","tutorialvideo","create","title","premiere","pro"],"parentCat":"Premiere Pro Basic","badge":"PREMIERE PRO BASIC","contentType":"RECORDING"},{"num":268,"id":"38_yolDCgOo","url":"https://youtu.be/38_yolDCgOo","oldTitle":"#08 Create And Use Presets | Premiere Pro Tutorial","title":"Cara Membuat & Menyimpan Efek Preset Sendiri di Premiere Pro (Part 8)","category":"Adobe Premiere — *Editing Video di Premiere Pro*","playlist":"Premiere Pro Basic","playlistId":"PLn3CvGWXaCQETBiSdvP1U1vjAweCpGPY2","tags":["fokuskonten","tutorial","edukasi","premierepro","videoediting","tutorialvideo","create","and","use","presets"],"parentCat":"Premiere Pro Basic","badge":"PREMIERE PRO BASIC","contentType":"RECORDING"},{"num":267,"id":"J74uzZ5024A","url":"https://youtu.be/J74uzZ5024A","oldTitle":"#04 Pengenalan interface | Premiere Pro Tutorial","title":"Mengenal Antarmuka & Panel Utama Adobe Premiere Pro (Part 4)","category":"Adobe Premiere — *Editing Video di Premiere Pro*","playlist":"Premiere Pro Basic","playlistId":"PLn3CvGWXaCQETBiSdvP1U1vjAweCpGPY2","tags":["fokuskonten","tutorial","edukasi","premierepro","videoediting","tutorialvideo","pengenalan","interface","premiere","pro"],"parentCat":"Premiere Pro Basic","badge":"PREMIERE PRO BASIC","contentType":"RECORDING"},{"num":266,"id":"Bm9gWlojoWw","url":"https://youtu.be/Bm9gWlojoWw","oldTitle":"#07 Create Transitions di Premiere Pro Tutorial","title":"Cara Membuat Transisi Video yang Mulus di Adobe Premiere Pro (Part 7)","category":"Adobe Premiere — *Editing Video di Premiere Pro*","playlist":"Premiere Pro Basic","playlistId":"PLn3CvGWXaCQETBiSdvP1U1vjAweCpGPY2","tags":["fokuskonten","tutorial","edukasi","premierepro","videoediting","tutorialvideo","create","transitions","premiere","pro"],"parentCat":"Premiere Pro Basic","badge":"PREMIERE PRO BASIC","contentType":"RECORDING"},{"num":265,"id":"a0ct4PmG_Jw","url":"https://youtu.be/a0ct4PmG_Jw","oldTitle":"#06 Cutting Method | Premiere Pro Tutorial","title":"Teknik Dasar Cutting & Trimming Klip Video di Premiere Pro (Part 6)","category":"Adobe Premiere — *Editing Video di Premiere Pro*","playlist":"Premiere Pro Basic","playlistId":"PLn3CvGWXaCQETBiSdvP1U1vjAweCpGPY2","tags":["fokuskonten","tutorial","edukasi","premierepro","videoediting","tutorialvideo","cutting","method","premiere","pro"],"parentCat":"Premiere Pro Basic","badge":"PREMIERE PRO BASIC","contentType":"RECORDING"},{"num":264,"id":"jjbsQRdPQ60","url":"https://youtu.be/jjbsQRdPQ60","oldTitle":"#05 Important Shortcuts | Premiere Pro Tutorial","title":"Daftar Shortcut Penting Premiere Pro yang Wajib Dihafal agar Cepat (Part 5)","category":"Adobe Premiere — *Editing Video di Premiere Pro*","playlist":"Premiere Pro Basic","playlistId":"PLn3CvGWXaCQETBiSdvP1U1vjAweCpGPY2","tags":["fokuskonten","tutorial","edukasi","premierepro","videoediting","tutorialvideo","important","shortcuts","premiere","pro"],"parentCat":"Premiere Pro Basic","badge":"PREMIERE PRO BASIC","contentType":"RECORDING"},{"num":263,"id":"s2pvfuwJOsg","url":"https://youtu.be/s2pvfuwJOsg","oldTitle":"#03 Requirement | Premiere Pro Tutorial","title":"Spesifikasi Komputer Minimal Menjalankan Premiere Pro Tanpa Lag (Part 3)","category":"Adobe Premiere — *Editing Video di Premiere Pro*","playlist":"Premiere Pro Basic","playlistId":"PLn3CvGWXaCQETBiSdvP1U1vjAweCpGPY2","tags":["fokuskonten","tutorial","edukasi","premierepro","videoediting","tutorialvideo","requirement","premiere","pro"],"parentCat":"Premiere Pro Basic","badge":"PREMIERE PRO BASIC","contentType":"RECORDING"},{"num":262,"id":"PP3OTo_rFIo","url":"https://youtu.be/PP3OTo_rFIo","oldTitle":"#02 Tujuan Mengedit Video | Premiere Pro Tutorial","title":"Pentingnya Memahami Alur & Tujuan Mengedit Video bagi Pemula (Part 2)","category":"Adobe Premiere — *Editing Video di Premiere Pro*","playlist":"Premiere Pro Basic","playlistId":"PLn3CvGWXaCQETBiSdvP1U1vjAweCpGPY2","tags":["fokuskonten","tutorial","edukasi","premierepro","videoediting","tutorialvideo","tujuan","mengedit","video","premiere"],"parentCat":"Premiere Pro Basic","badge":"PREMIERE PRO BASIC","contentType":"RECORDING"},{"num":261,"id":"lgmgO2QGE3k","url":"https://youtu.be/lgmgO2QGE3k","oldTitle":"#01 Classroom Introduction | Premiere Pro Tutorial","title":"Belajar Premiere Pro dari Nol: Pengenalan Kelas Editing Video (Part 1)","category":"Adobe Premiere — *Editing Video di Premiere Pro*","playlist":"Premiere Pro Basic","playlistId":"PLn3CvGWXaCQETBiSdvP1U1vjAweCpGPY2","tags":["fokuskonten","tutorial","edukasi","premierepro","videoediting","tutorialvideo","classroom","introduction","premiere","pro"],"parentCat":"Premiere Pro Basic","badge":"PREMIERE PRO BASIC","contentType":"RECORDING"},{"num":249,"id":"x1-QRYNbxSo","url":"https://youtu.be/x1-QRYNbxSo","oldTitle":"BASIC LIQUID DI CORELDRAW","title":"Tutorial Membuat Efek Gradasi Liquid Modern di CorelDRAW Pemula","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Basic","playlistId":"PLn3CvGWXaCQGRdMyMXq_z7acboRRmrw-e","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","basic","liquid","menggunakan"],"parentCat":"CorelDraw Basic","badge":"CORELDRAW BASIC","contentType":"RECORDING"},{"num":248,"id":"E5gp4zwBki4","url":"https://youtu.be/E5gp4zwBki4","oldTitle":"BASIC PATTERNS DI CORELDRAW","title":"Tutorial Membuat Motif Pola Desain (Basic Pattern) di CorelDRAW","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Basic","playlistId":"PLn3CvGWXaCQGRdMyMXq_z7acboRRmrw-e","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","basic","patterns","menggunakan"],"parentCat":"CorelDraw Basic","badge":"CORELDRAW BASIC","contentType":"RECORDING"},{"num":238,"id":"bnhcxfKZZTg","url":"https://youtu.be/bnhcxfKZZTg","oldTitle":"BASIC SNAPING OBJECT DI CORELDRAW","title":"Setting Fitur Snap to Objects CorelDRAW Agar Desain Selalu Presisi","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","setting","fitur","snap","objects"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":237,"id":"HjDJsSYOCi0","url":"https://youtu.be/HjDJsSYOCi0","oldTitle":"BASIC PERBEDAAN BITMAP DAN VECTOR PADA DESAIN","title":"Basic Perbedaan Bitmap dan Vector pada Desain","category":"Edukasi Workshop — *Dokumentasi & Sharing Praktik Kerja Mandiri*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","sharingpengalaman","edukasikreatif","karyamandiri","basic","perbedaan","bitmap","dan"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":227,"id":"iVbjpOXosw4","url":"https://youtu.be/iVbjpOXosw4","oldTitle":"BASIC GRADIENTS BACKGROUND DI CORELDRAW","title":"Basic Gradients Background di CorelDRAW","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Basic","playlistId":"PLn3CvGWXaCQGRdMyMXq_z7acboRRmrw-e","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","basic","gradients","background"],"parentCat":"CorelDraw Basic","badge":"CORELDRAW BASIC","contentType":"RECORDING"},{"num":226,"id":"DrKxEdnAm-M","url":"https://youtu.be/DrKxEdnAm-M","oldTitle":"BASIC SHADOW TOOL DI CORELDRAW","title":"Basic Shadow Tool di CorelDRAW","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Basic","playlistId":"PLn3CvGWXaCQGRdMyMXq_z7acboRRmrw-e","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","basic","shadow","tool"],"parentCat":"CorelDraw Basic","badge":"CORELDRAW BASIC","contentType":"RECORDING"},{"num":224,"id":"uoU4-VoTWAE","url":"https://youtu.be/uoU4-VoTWAE","oldTitle":"MENGATASI DOWNLOAD BERHENTI DI CHROME / IDM (INTERNET DOWNLOAD MANAGER)","title":"Mengatasi Download Berhenti di Chrome / IDM (Internet Download Manager)","category":"Utility Download — *Manajemen Unduhan Internet Download Manager*","playlist":"Windows & Software Tutorial","playlistId":"PLn3CvGWXaCQFycdDIc3pvuZDUsZvi4BYV","tags":["fokuskonten","tutorial","edukasi","idm","downloadcepat","solusidigital","mengatasi","download","berhenti","chrome"],"parentCat":"Windows & Software Tutorial","badge":"WINDOWS & SOFTWARE TUTORIAL","contentType":"RECORDING"},{"num":223,"id":"wrGIa-sR3aY","url":"https://youtu.be/wrGIa-sR3aY","oldTitle":"CARA MENGATASI VGA CARD NOT SUPPORT PREMIERE PRO ATAU AFTER EFFECTS","title":"Solusi Praktis: Cara Mengatasi VGA Card Not Support Premiere Pro atau After Effects Tanpa Ribet","category":"Hardware PC — *Kartu Grafis GPU & PCI Express*","playlist":"Rakit PC Pemula","playlistId":"PLn3CvGWXaCQHqNh0ZRk0BTJx0ed2PVjVI","tags":["fokuskonten","tutorial","edukasi","vgacard","gpukomputer","kartugrafis","solusi","praktis","cara","mengatasi"],"parentCat":"Rakit PC Pemula","badge":"RAKIT PC PEMULA","contentType":"RECORDING"},{"num":222,"id":"b3Km4m0uFcc","url":"https://youtu.be/b3Km4m0uFcc","oldTitle":"CARA MENGATASI EXTENSION ADOBE TIDAK TAMPIL DI PREMIERE PRO / AFTER EFFECTS / PHOTOSHOP","title":"Cara Mengatasi Extension Adobe Tidak Muncul di Premiere Pro & After Effects","category":"Adobe Photoshop — *Olah Visual & Manipulasi Foto Photoshop*","playlist":"Premiere Pro Basic","playlistId":"PLn3CvGWXaCQETBiSdvP1U1vjAweCpGPY2","tags":["fokuskonten","tutorial","edukasi","photoshop","editingfoto","desaingrafis","solusi","praktis","cara","mengatasi"],"parentCat":"Premiere Pro Basic","badge":"PREMIERE PRO BASIC","contentType":"RECORDING"},{"num":221,"id":"6vgejST2jYs","url":"https://youtu.be/6vgejST2jYs","oldTitle":"CARA INSTAL ATOMX EXTENSION DI ADOBE PREMIERE PRO & AFTER EFFECTS","title":"Cara Install Atomx Extension di Adobe Premiere Pro & After Effects","category":"Adobe Premiere — *Editing Video di Premiere Pro*","playlist":"Premiere Pro Basic","playlistId":"PLn3CvGWXaCQETBiSdvP1U1vjAweCpGPY2","tags":["fokuskonten","tutorial","edukasi","premierepro","videoediting","tutorialvideo","cara","install","atomx","extension"],"parentCat":"Premiere Pro Basic","badge":"PREMIERE PRO BASIC","contentType":"RECORDING"},{"num":220,"id":"NyluszjxbrE","url":"https://youtu.be/NyluszjxbrE","oldTitle":"CARA INSTAL PLUGINS VIDEOCOPILOT DI ADOBE AFTER EFFECTS","title":"Cara Install Plugins Videocopilot di Adobe After Effects","category":"Adobe After Effects — *Motion Graphics di After Effects*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","aftereffects","motiongraphics","visualeffects","cara","install","plugins","videocopilot"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":219,"id":"BAvXhF1sPeo","url":"https://youtu.be/BAvXhF1sPeo","oldTitle":"CARA INSTAL Seamless Transitions V6","title":"Cara Install Seamless Transitions V6","category":"Edukasi Workshop — *Dokumentasi & Sharing Praktik Kerja Mandiri*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","sharingpengalaman","edukasikreatif","karyamandiri","cara","install","seamless","transitions"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":218,"id":"1GeqjnQZiK8","url":"https://youtu.be/1GeqjnQZiK8","oldTitle":"CARA INSTAL PREMIUM BUILDER","title":"Cara Install Premium Builder","category":"Edukasi Workshop — *Dokumentasi & Sharing Praktik Kerja Mandiri*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","sharingpengalaman","edukasikreatif","karyamandiri","cara","install","premium","builder"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":217,"id":"ffH-LKgcJz4","url":"https://youtu.be/ffH-LKgcJz4","oldTitle":"CARA INSTAL PREMIERE STUDIO TEXT PRESETS","title":"Cara Install Premiere Pro Studio Text Presets","category":"Adobe Premiere — *Editing Video di Premiere Pro*","playlist":"Premiere Pro Basic","playlistId":"PLn3CvGWXaCQETBiSdvP1U1vjAweCpGPY2","tags":["fokuskonten","tutorial","edukasi","premierepro","videoediting","tutorialvideo","cara","install","premiere","pro"],"parentCat":"Premiere Pro Basic","badge":"PREMIERE PRO BASIC","contentType":"RECORDING"},{"num":216,"id":"RxuKXA30uPA","url":"https://youtu.be/RxuKXA30uPA","oldTitle":"CARA INSTAL MOTION VIEWER","title":"Panduan Lengkap Cara Install Extension Motion Viewer di Premiere Pro","category":"Edukasi Workshop — *Dokumentasi & Sharing Praktik Kerja Mandiri*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","sharingpengalaman","edukasikreatif","karyamandiri","cara","install","motion","viewer"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":215,"id":"DdF0w241rgs","url":"https://youtu.be/DdF0w241rgs","oldTitle":"CARA INSTAL MOTION FACTORY TERBARU","title":"Cara Install Motion Factory Terbaru","category":"Edukasi Workshop — *Dokumentasi & Sharing Praktik Kerja Mandiri*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","sharingpengalaman","edukasikreatif","karyamandiri","cara","install","motion","factory"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":214,"id":"pHVJ6vsRA7I","url":"https://youtu.be/pHVJ6vsRA7I","oldTitle":"CARA INSTAL MOTION FACTORY KLASIK DI ADOBE AFTER EFFECTS","title":"Cara Install Motion Factory Klasik di Adobe After Effects","category":"Adobe After Effects — *Motion Graphics di After Effects*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","aftereffects","motiongraphics","visualeffects","cara","install","motion","factory"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":213,"id":"bY7reS5K8nE","url":"https://youtu.be/bY7reS5K8nE","oldTitle":"CARA INSTAL MOTION BRO 2","title":"Cara Install Motion Bro (Part 2)","category":"Edukasi Workshop — *Dokumentasi & Sharing Praktik Kerja Mandiri*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","sharingpengalaman","edukasikreatif","karyamandiri","cara","install","motion","bro"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":212,"id":"kBtVpGoJNk4","url":"https://youtu.be/kBtVpGoJNk4","oldTitle":"CARA INSTAL MOPACK v1.3","title":"Panduan Lengkap Cara Install Plugin MoPack v1.3 di Adobe Premiere Pro","category":"Edukasi Workshop — *Dokumentasi & Sharing Praktik Kerja Mandiri*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","sharingpengalaman","edukasikreatif","karyamandiri","cara","install","mopack"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":211,"id":"UdGhuhSLlzs","url":"https://youtu.be/UdGhuhSLlzs","oldTitle":"CARA INSTAL JOLY WEDDING PACK","title":"Cara Install Joly Wedding Pack","category":"Edukasi Workshop — *Dokumentasi & Sharing Praktik Kerja Mandiri*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","sharingpengalaman","edukasikreatif","karyamandiri","cara","install","joly","wedding"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":210,"id":"9itBL6-lUK8","url":"https://youtu.be/9itBL6-lUK8","oldTitle":"CARA INSTAL DIVIDER EXTENSION","title":"Cara Install Divider Extension","category":"Edukasi Workshop — *Dokumentasi & Sharing Praktik Kerja Mandiri*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","sharingpengalaman","edukasikreatif","karyamandiri","cara","install","divider","extension"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":209,"id":"tSdZ0dUXdqQ","url":"https://youtu.be/tSdZ0dUXdqQ","oldTitle":"CARA INSTAL CREATIVE LAB","title":"Panduan Lengkap Cara Install Plugin Creative Lab di Adobe Premiere Pro","category":"Edukasi Workshop — *Dokumentasi & Sharing Praktik Kerja Mandiri*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","sharingpengalaman","edukasikreatif","karyamandiri","cara","install","creative","lab"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":208,"id":"ozZlfxKKDxc","url":"https://youtu.be/ozZlfxKKDxc","oldTitle":"CARA INSTAL BRISKLAND","title":"Panduan Lengkap Cara Install Plugin Briskland di Adobe Premiere Pro","category":"Edukasi Workshop — *Dokumentasi & Sharing Praktik Kerja Mandiri*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","sharingpengalaman","edukasikreatif","karyamandiri","cara","install","briskland"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":207,"id":"jRyzBAgeLsU","url":"https://youtu.be/jRyzBAgeLsU","oldTitle":"CARA INSTAL ANIMATION STUDIO EXTENSION ADOBE AFTER EFFECTS","title":"Cara Install Animation Studio Extension Adobe After Effects","category":"Adobe After Effects — *Motion Graphics di After Effects*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","aftereffects","motiongraphics","visualeffects","cara","install","animation","studio"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":203,"id":"C_TTt4K7jdE","url":"https://youtu.be/C_TTt4K7jdE","oldTitle":"CORELDRAW TO CANVA CONVERT FILE","title":"CorelDRAW To Canva Convert File di CorelDRAW","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","canva","convert","file"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":202,"id":"Ab_qQ5H6oEw","url":"https://youtu.be/Ab_qQ5H6oEw","oldTitle":"Trik Rahasia Script Macro di Coreldraw Cara Merubah Type File Sekaligus","title":"Trik Rahasia Script Macro di CorelDRAW Cara Mengubah Type File Sekaligus di CorelDRAW","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","trik","rahasia","script","macro"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":188,"id":"iDW5BTSwPlo","url":"https://youtu.be/iDW5BTSwPlo","oldTitle":"COLORFUL 3D TEXT DI PHOTOSHOP","title":"Tutorial Membuat Efek Teks 3D Warna-Warni (Colorful 3D Text) di Photoshop","category":"Adobe Photoshop — *Olah Visual & Manipulasi Foto Photoshop*","playlist":"Photoshop Tutorial","playlistId":"PLn3CvGWXaCQEIPJAvFgUpPuCVT0bIVate","tags":["fokuskonten","tutorial","edukasi","photoshop","editingfoto","desaingrafis","colorful","text"],"parentCat":"Photoshop Tutorial","badge":"PHOTOSHOP TUTORIAL","contentType":"RECORDING"},{"num":177,"id":"cwXWztNsTTw","url":"https://youtu.be/cwXWztNsTTw","oldTitle":"30 Menit Belajar Setting Master Plat Mesin Toko, GTO, Gestener, SM, dll","title":"30 Menit Belajar Setting Master Plat Mesin Toko, GTO, Gestener, Sm,","category":"Percetakan Offset — *Setting Master Plat Mesin Offset Toko & GTO*","playlist":"Percetakan & Sablon","playlistId":"PLn3CvGWXaCQG6MKs-842TE2bVw6Myzj7x","tags":["fokuskonten","tutorial","edukasi","mesinoffset","placetak","mesintoko820","menit","belajar","setting","master"],"parentCat":"Percetakan & Sablon","badge":"PERCETAKAN & SABLON","contentType":"ORGANIK"},{"num":173,"id":"IEECCWelFko","url":"https://youtu.be/IEECCWelFko","oldTitle":"Nyeting Foto Banyak | Untuk di Cetak Pake Coreldraw","title":"Nyeting Foto Banyak untuk di Cetak Pake CorelDRAW di CorelDRAW","category":"Industri Percetakan — *Alur Kerja & Manajemen Usaha Cetak*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","usahapercetakan","percetakan","bisnispercetakan","nyeting","foto","banyak","untuk"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":167,"id":"3T_wUKklfJk","url":"https://youtu.be/3T_wUKklfJk","oldTitle":"Fitur IDM Yang Membantu Kita Mendownload Sekaligus Jadwal Atau Priodic","title":"Fitur IDM yang Membantu Kita Mendownload Sekaligus Jadwal atau Priodic","category":"Utility Download — *Manajemen Unduhan Internet Download Manager*","playlist":"Windows & Software Tutorial","playlistId":"PLn3CvGWXaCQFycdDIc3pvuZDUsZvi4BYV","tags":["fokuskonten","tutorial","edukasi","idm","downloadcepat","solusidigital","fitur","yang","membantu"],"parentCat":"Windows & Software Tutorial","badge":"WINDOWS & SOFTWARE TUTORIAL","contentType":"RECORDING"},{"num":166,"id":"IDuW-u36ILk","url":"https://youtu.be/IDuW-u36ILk","oldTitle":"Autotracing!! Cara Buat Efek Line Api Pada Video Kita di After Effects","title":"Tutorial After Effects: Cara Membuat Efek Garis Api Bercahaya (Saber Glow)","category":"Adobe After Effects — *Motion Graphics di After Effects*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","aftereffects","motiongraphics","visualeffects","autotracing","cara","buat","efek"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":165,"id":"Yb7OAmSY1Rk","url":"https://youtu.be/Yb7OAmSY1Rk","oldTitle":"System AI Detect | Cara Remove Background Video Tanpa Greenscreen Hasil Maksimal Sekali!!","title":"Teknologi AI: Cara Cepat Hapus Background Video Tanpa Greenscreen Hasil Rapi","category":"Adobe Photoshop — *Olah Visual & Manipulasi Foto Photoshop*","playlist":"Photoshop Tutorial","playlistId":"PLn3CvGWXaCQEIPJAvFgUpPuCVT0bIVate","tags":["fokuskonten","tutorial","edukasi","photoshop","editingfoto","desaingrafis","system","detect","cara","remove"],"parentCat":"Photoshop Tutorial","badge":"PHOTOSHOP TUTORIAL","contentType":"RECORDING"},{"num":164,"id":"1p_KUun3Gj8","url":"https://youtu.be/1p_KUun3Gj8","oldTitle":"CARA HAPUS BACKGROUND VIDEO DI PREMIERE PRO","title":"Cara Hapus Background Video di Premiere Pro Tanpa Greenscreen","category":"Adobe Premiere — *Editing Video di Premiere Pro*","playlist":"Premiere Pro Basic","playlistId":"PLn3CvGWXaCQETBiSdvP1U1vjAweCpGPY2","tags":["fokuskonten","tutorial","edukasi","premierepro","videoediting","tutorialvideo","cara","hapus","background","video"],"parentCat":"Premiere Pro Basic","badge":"PREMIERE PRO BASIC","contentType":"RECORDING"},{"num":163,"id":"4u_dBBMC25I","url":"https://youtu.be/4u_dBBMC25I","oldTitle":"Hasil Smoot Banget Cara Stabilizer Video Tanpa Gimbal","title":"Cara Menstabilkan Video Goyang Tanpa Gimbal: Hasil Halus & Sinematik","category":"Produksi Video — *Teknik Stabilisasi & Konversi Format Video*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","videoediting","stabilizervideo","konversivideo","hasil","smoot","banget","cara"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":159,"id":"7qZ1Im5dqZ0","url":"https://youtu.be/7qZ1Im5dqZ0","oldTitle":"Cara Membuat Mockup Produk Digital Ecourse Assets Aplikasi Dll","title":"Panduan Lengkap Cara Membuat Mockup Produk Digital Ecourse Assets Aplikasi yang Rapi dan Mudah","category":"Edukasi Workshop — *Dokumentasi & Sharing Praktik Kerja Mandiri*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","sharingpengalaman","edukasikreatif","karyamandiri","panduan","lengkap","cara","membuat"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":158,"id":"ttUxBzvsqEs","url":"https://youtu.be/ttUxBzvsqEs","oldTitle":"Cara Menggunakan Paket Premiere Pro Project Files Transition Video Presets dl","title":"Cara Menggunakan Template & Project Files Preset Transisi di Premiere Pro","category":"Adobe Premiere — *Editing Video di Premiere Pro*","playlist":"Premiere Pro Basic","playlistId":"PLn3CvGWXaCQETBiSdvP1U1vjAweCpGPY2","tags":["fokuskonten","tutorial","edukasi","premierepro","videoediting","tutorialvideo","cara","menggunakan","paket","premiere"],"parentCat":"Premiere Pro Basic","badge":"PREMIERE PRO BASIC","contentType":"RECORDING"},{"num":157,"id":"WvslMcca8AU","url":"https://youtu.be/WvslMcca8AU","oldTitle":"Wipe Transition Color Grading di Premiere Pro","title":"Tutorial Wipe Transition & Color Grading Sinematik di Adobe Premiere Pro","category":"Adobe Premiere — *Editing Video di Premiere Pro*","playlist":"Premiere Pro Basic","playlistId":"PLn3CvGWXaCQETBiSdvP1U1vjAweCpGPY2","tags":["fokuskonten","tutorial","edukasi","premierepro","videoediting","tutorialvideo","wipe","transition","color","grading"],"parentCat":"Premiere Pro Basic","badge":"PREMIERE PRO BASIC","contentType":"RECORDING"},{"num":156,"id":"rBlNquJQGVc","url":"https://youtu.be/rBlNquJQGVc","oldTitle":"Cara Menggunakan Photoshop Action Sekali Klik | Edit Background Color Grading","title":"Cara Menggunakan Photoshop Action Sekali Klik — Edit Background Color Grading","category":"Adobe Photoshop — *Photoshop Action Sekali Klik & Brush Efek*","playlist":"Photoshop Tutorial","playlistId":"PLn3CvGWXaCQEIPJAvFgUpPuCVT0bIVate","tags":["fokuskonten","tutorial","edukasi","photoshopaction","vectorart","brushphotoshop","cara","menggunakan","photoshop","action"],"parentCat":"Photoshop Tutorial","badge":"PHOTOSHOP TUTORIAL","contentType":"RECORDING"},{"num":155,"id":"KnwnSirh-Cc","url":"https://youtu.be/KnwnSirh-Cc","oldTitle":"Cara Menggunakan Photoshop Action With Brush | Edit Photo Mixed Potrait di Photoshop","title":"Cara Menggunakan Photoshop Action With Brush — Edit Photo Mixed Potrait di Photoshop","category":"Adobe Photoshop — *Photoshop Action Sekali Klik & Brush Efek*","playlist":"Photoshop Tutorial","playlistId":"PLn3CvGWXaCQEIPJAvFgUpPuCVT0bIVate","tags":["fokuskonten","tutorial","edukasi","photoshopaction","vectorart","brushphotoshop","cara","menggunakan","photoshop","action"],"parentCat":"Photoshop Tutorial","badge":"PHOTOSHOP TUTORIAL","contentType":"RECORDING"},{"num":149,"id":"-CQlIhbMJ3Y","url":"https://youtu.be/-CQlIhbMJ3Y","oldTitle":"Cara Menggunakan Photoshop Action Sekali Klik |  Edit Photo Smudge Hasil Maksimal","title":"Cara Menggunakan Photoshop Action Sekali Klik — Edit Photo Smudge Hasil Maksimal","category":"Adobe Photoshop — *Photoshop Action Sekali Klik & Brush Efek*","playlist":"Photoshop Tutorial","playlistId":"PLn3CvGWXaCQEIPJAvFgUpPuCVT0bIVate","tags":["fokuskonten","tutorial","edukasi","photoshopaction","vectorart","brushphotoshop","cara","menggunakan","photoshop","action"],"parentCat":"Photoshop Tutorial","badge":"PHOTOSHOP TUTORIAL","contentType":"RECORDING"},{"num":147,"id":"jUcMShJLtEU","url":"https://youtu.be/jUcMShJLtEU","oldTitle":"Cara Menggunakan Photoshop Action With Brush |  Edit Photo Seperti Joker Keren Abiss!!!","title":"Cara Menggunakan Photoshop Action With Brush — Edit Photo Seperti Joker Keren Abiss","category":"Adobe Photoshop — *Photoshop Action Sekali Klik & Brush Efek*","playlist":"Photoshop Tutorial","playlistId":"PLn3CvGWXaCQEIPJAvFgUpPuCVT0bIVate","tags":["fokuskonten","tutorial","edukasi","photoshopaction","vectorart","brushphotoshop","cara","menggunakan","photoshop","action"],"parentCat":"Photoshop Tutorial","badge":"PHOTOSHOP TUTORIAL","contentType":"RECORDING"},{"num":146,"id":"4QR06JkzNFU","url":"https://youtu.be/4QR06JkzNFU","oldTitle":"30 MENIT JAGO CAMTASIA","title":"Panduan Cepat Belajar Edit Video Pemula di Camtasia dalam 30 Menit","category":"TechSmith Camtasia — *Screen Recording Camtasia*","playlist":"Camtasia Tutorial","playlistId":"PLn3CvGWXaCQGGlLmKUzEgrl8qEeFVW2bo","tags":["fokuskonten","tutorial","edukasi","camtasia","screenrecorder","videoediting","panduan","cepat","belajar","edit"],"parentCat":"Camtasia Tutorial","badge":"CAMTASIA TUTORIAL","contentType":"RECORDING"},{"num":145,"id":"QZJSnLMQtv4","url":"https://youtu.be/QZJSnLMQtv4","oldTitle":"Pengguna Coreldraw Wajib Bisa Sourtcut Ini Dijamin Ampuh Mempercepat Pekerjaan Kita","title":"Shortcut Rahasia CorelDRAW yang Terbukti Mempercepat Kerja Desain","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","pengguna","wajib","bisa"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":144,"id":"3g6G_BlN3Uo","url":"https://youtu.be/3g6G_BlN3Uo","oldTitle":"Cara Menggunakan Photoshop Action With Brush | Edit Photo Advanced Drawing","title":"Cara Menggunakan Photoshop Action With Brush — Edit Photo Advanced Drawing","category":"Adobe Photoshop — *Photoshop Action Sekali Klik & Brush Efek*","playlist":"Photoshop Tutorial","playlistId":"PLn3CvGWXaCQEIPJAvFgUpPuCVT0bIVate","tags":["fokuskonten","tutorial","edukasi","photoshopaction","vectorart","brushphotoshop","cara","menggunakan","photoshop","action"],"parentCat":"Photoshop Tutorial","badge":"PHOTOSHOP TUTORIAL","contentType":"RECORDING"},{"num":143,"id":"HCv2NIxoAfc","url":"https://youtu.be/HCv2NIxoAfc","oldTitle":"Cara Menggunakan Photoshop Action Sekali Klik| Edit Photo Vector Art Hasil Maksimal Maaantaapss!!","title":"Cara Menggunakan Photoshop Action Sekali Klik — Edit Photo Vector Art Hasil Maksimal Maaanta...","category":"Adobe Photoshop — *Photoshop Action Sekali Klik & Brush Efek*","playlist":"Photoshop Tutorial","playlistId":"PLn3CvGWXaCQEIPJAvFgUpPuCVT0bIVate","tags":["fokuskonten","tutorial","edukasi","photoshopaction","vectorart","brushphotoshop","cara","menggunakan","photoshop","action"],"parentCat":"Photoshop Tutorial","badge":"PHOTOSHOP TUTORIAL","contentType":"RECORDING"},{"num":142,"id":"zEy8zGP81FY","url":"https://youtu.be/zEy8zGP81FY","oldTitle":"Ketika Semua Jadi Satu Keperluan Editing Video","title":"Pentingnya Workflow Terpadu dalam Editing Video: Audio, Visual, & Grafis","category":"Produksi Video — *Teknik Stabilisasi & Konversi Format Video*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","videoediting","stabilizervideo","konversivideo","ketika","semua","jadi","satu"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":139,"id":"zsRycxFtViw","url":"https://youtu.be/zsRycxFtViw","oldTitle":"Cara Menggunakan Photoshop Action Sekali Klik | Edit Photo Artistic Watercolor di Photoshop","title":"Cara Menggunakan Photoshop Action Sekali Klik — Edit Photo Artistic Watercolor di Photoshop","category":"Adobe Photoshop — *Photoshop Action Sekali Klik & Brush Efek*","playlist":"Photoshop Tutorial","playlistId":"PLn3CvGWXaCQEIPJAvFgUpPuCVT0bIVate","tags":["fokuskonten","tutorial","edukasi","photoshopaction","vectorart","brushphotoshop","cara","menggunakan","photoshop","action"],"parentCat":"Photoshop Tutorial","badge":"PHOTOSHOP TUTORIAL","contentType":"RECORDING"},{"num":129,"id":"ydpxa9RDGNQ","url":"https://youtu.be/ydpxa9RDGNQ","oldTitle":"Cara Desain Kalender Custom 2022","title":"Cara Desain Kalender Custom 2022 Siap Cetak","category":"Industri Percetakan — *Alur Kerja & Manajemen Usaha Cetak*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","usahapercetakan","percetakan","bisnispercetakan","desain","grafis","cara"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":128,"id":"laySCv8Pf2s","url":"https://youtu.be/laySCv8Pf2s","oldTitle":"30 MENIT JAGO MICROSOFT WORD","title":"30 Menit Jago Microsoft Word","category":"Microsoft Office — *Produktivitas Dokumen Word & PowerPoint*","playlist":"Windows & Software Tutorial","playlistId":"PLn3CvGWXaCQFycdDIc3pvuZDUsZvi4BYV","tags":["fokuskonten","tutorial","edukasi","microsoftword","powerpoint","produktivitas","menit","jago","microsoft","word"],"parentCat":"Windows & Software Tutorial","badge":"WINDOWS & SOFTWARE TUTORIAL","contentType":"RECORDING"},{"num":121,"id":"37a5zmQQjlo","url":"https://youtu.be/37a5zmQQjlo","oldTitle":"30 MENIT JAGO PREMIERE PRO","title":"30 Menit Mahir Adobe Premiere Pro: Panduan Editing Video Pemula dari Dasar","category":"Adobe Premiere — *Editing Video di Premiere Pro*","playlist":"Premiere Pro Basic","playlistId":"PLn3CvGWXaCQETBiSdvP1U1vjAweCpGPY2","tags":["fokuskonten","tutorial","edukasi","premierepro","videoediting","tutorialvideo","menit","jago","premiere","pro"],"parentCat":"Premiere Pro Basic","badge":"PREMIERE PRO BASIC","contentType":"RECORDING"},{"num":114,"id":"iyP5bGob8Ek","url":"https://youtu.be/iyP5bGob8Ek","oldTitle":"Apa itu Camtasia? Pengenalan Aplikasi Editing Vidio, part1","title":"Apa Itu Camtasia? Pengenalan Aplikasi Editing Video (Part 1)","category":"TechSmith Camtasia — *Screen Recording Camtasia*","playlist":"Camtasia Tutorial","playlistId":"PLn3CvGWXaCQGGlLmKUzEgrl8qEeFVW2bo","tags":["fokuskonten","tutorial","edukasi","camtasia","screenrecorder","videoediting","apa","itu","pengenalan"],"parentCat":"Camtasia Tutorial","badge":"CAMTASIA TUTORIAL","contentType":"RECORDING"},{"num":113,"id":"fLA4pvADL-8","url":"https://youtu.be/fLA4pvADL-8","oldTitle":"Fitur Camtasia Pengenalan Aplikasi Editing Vidio, part2","title":"Fitur Camtasia Pengenalan Aplikasi Editing Video (Part 2)","category":"TechSmith Camtasia — *Screen Recording Camtasia*","playlist":"Camtasia Tutorial","playlistId":"PLn3CvGWXaCQGGlLmKUzEgrl8qEeFVW2bo","tags":["fokuskonten","tutorial","edukasi","camtasia","screenrecorder","videoediting","fitur","pengenalan","aplikasi"],"parentCat":"Camtasia Tutorial","badge":"CAMTASIA TUTORIAL","contentType":"RECORDING"},{"num":112,"id":"6Vw4aEKDi38","url":"https://youtu.be/6Vw4aEKDi38","oldTitle":"Fitur Move Copas Cut to Cut Pada Camtasia Pengenalan Aplikasi Editing Vidio, part 3","title":"Fitur Move Copas Cut To Cut pada Camtasia Pengenalan Aplikasi Editing Video (Part 3)","category":"TechSmith Camtasia — *Screen Recording Camtasia*","playlist":"Camtasia Tutorial","playlistId":"PLn3CvGWXaCQGGlLmKUzEgrl8qEeFVW2bo","tags":["fokuskonten","tutorial","edukasi","camtasia","screenrecorder","videoediting","fitur","move","copas","cut"],"parentCat":"Camtasia Tutorial","badge":"CAMTASIA TUTORIAL","contentType":"RECORDING"},{"num":111,"id":"6M9YOH8okNc","url":"https://youtu.be/6M9YOH8okNc","oldTitle":"Fitur Camtasia Properties Dan Share Pengenalan Aplikasi Editing Vidio, part 4","title":"Fitur Camtasia Properties dan Share Pengenalan Aplikasi Editing Video (Part 4)","category":"TechSmith Camtasia — *Screen Recording Camtasia*","playlist":"Camtasia Tutorial","playlistId":"PLn3CvGWXaCQGGlLmKUzEgrl8qEeFVW2bo","tags":["fokuskonten","tutorial","edukasi","camtasia","screenrecorder","videoediting","fitur","properties","dan"],"parentCat":"Camtasia Tutorial","badge":"CAMTASIA TUTORIAL","contentType":"RECORDING"},{"num":110,"id":"ouUUBp5H3kg","url":"https://youtu.be/ouUUBp5H3kg","oldTitle":"Setingan Obs Studio Recording Hasil Maksimal 60 Fps 1080","title":"Settingan OBS Studio Recording Hasil Maksimal 60 FPS 1080","category":"OBS Studio — *Perekaman Layar & Streaming OBS Studio*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","obsstudio","streaming","rekamlayar","settingan","obs","studio","recording"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":109,"id":"VYZA8D46hg0","url":"https://youtu.be/VYZA8D46hg0","oldTitle":"Cara Cek Temperatur Komputer,Laptop, Keperluan Render Game Dll","title":"Cara Memantau Suhu Komputer Saat Render Video & Main Game Berat","category":"Hardware PC — *Manajemen Sirkulasi Airflow & Suhu Komponen*","playlist":"Rakit PC Pemula","playlistId":"PLn3CvGWXaCQHqNh0ZRk0BTJx0ed2PVjVI","tags":["fokuskonten","tutorial","edukasi","airflowcasing","suhukomputer","coolingpc","cara","cek","temperatur","komputer"],"parentCat":"Rakit PC Pemula","badge":"RAKIT PC PEMULA","contentType":"RECORDING"},{"num":104,"id":"mkMU4-ma9Dc","url":"https://youtu.be/mkMU4-ma9Dc","oldTitle":"Seting Shortcut Coreldraw Dengan X Mouse Mantaabs Rekemonded Bangeets","title":"Daftar Shortcut Rahasia CorelDRAW yang Mempercepat Waktu Desain","category":"CorelDRAW — *Tombol Shortcut Mempercepat Desain CorelDRAW*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","shortcutcorel","coreldraw","desaincepat","setting","shortcut","pakai"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":103,"id":"fiCqEZdiBxo","url":"https://youtu.be/fiCqEZdiBxo","oldTitle":"Cara Kompress File Sekecil Mungkin","title":"Cara Kompres Ukuran File Besar Jadi Super Kecil Tanpa Rusak Kualitas","category":"Sistem Windows — *Optimasi Kinerja & Perintah Windows*","playlist":"Windows & Software Tutorial","playlistId":"PLn3CvGWXaCQFycdDIc3pvuZDUsZvi4BYV","tags":["fokuskonten","tutorial","edukasi","windows10","perintahcmd","tipskomp","cara","kompress","file","sekecil"],"parentCat":"Windows & Software Tutorial","badge":"WINDOWS & SOFTWARE TUTORIAL","contentType":"RECORDING"},{"num":102,"id":"dkzozK7oTfc","url":"https://youtu.be/dkzozK7oTfc","oldTitle":"BELAJAR APLIKASI BULK RENAME UTILITY  Mempercepat Pekerjaan Di Komputer","title":"Belajar Aplikasi Bulk Rename Utility Mempercepat Pekerjaan di Komp...","category":"Manajemen Berkas — *Batch Rename Berkas Sekaligus*","playlist":"Rakit PC Pemula","playlistId":"PLn3CvGWXaCQHqNh0ZRk0BTJx0ed2PVjVI","tags":["fokuskonten","tutorial","edukasi","bulkrename","manajemenfile","tipskomp","belajar","aplikasi","bulk","rename"],"parentCat":"Rakit PC Pemula","badge":"RAKIT PC PEMULA","contentType":"RECORDING"},{"num":101,"id":"iup70eJwFus","url":"https://youtu.be/iup70eJwFus","oldTitle":"Cara Upload Produk Sekaligus Massal Di Tokopedia","title":"Cara Cepat Upload Ratusan Produk Sekaligus Massal di Tokopedia","category":"Edukasi Workshop — *Dokumentasi & Sharing Praktik Kerja Mandiri*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","sharingpengalaman","edukasikreatif","karyamandiri","cara","upload","produk","sekaligus"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":100,"id":"s_i0SlNNKF0","url":"https://youtu.be/s_i0SlNNKF0","oldTitle":"Cara Mengambil Text Dari Gambar","title":"Cara Mengambil Text dari Gambar","category":"Edukasi Workshop — *Dokumentasi & Sharing Praktik Kerja Mandiri*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","sharingpengalaman","edukasikreatif","karyamandiri","cara","mengambil","text","dari"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":99,"id":"yKB-uJeHiXA","url":"https://youtu.be/yKB-uJeHiXA","oldTitle":"Cara Membersihkan File Adobe Di Windows Secara Keseluruhan","title":"Cara Membersihkan File Adobe di Windows secara Keseluruhan","category":"Sistem Windows — *Optimasi Kinerja & Perintah Windows*","playlist":"Windows & Software Tutorial","playlistId":"PLn3CvGWXaCQFycdDIc3pvuZDUsZvi4BYV","tags":["fokuskonten","tutorial","edukasi","windows10","perintahcmd","tipskomp","cara","membersihkan","file","adobe"],"parentCat":"Windows & Software Tutorial","badge":"WINDOWS & SOFTWARE TUTORIAL","contentType":"RECORDING"},{"num":98,"id":"lxtZwNclCig","url":"https://youtu.be/lxtZwNclCig","oldTitle":"5 Fitur Coreldraw Yang Menarik Dan Jarang Orang Yang Tau!!","title":"5 Fitur Tersembunyi CorelDRAW yang Sangat Berguna Mempercepat Pekerj...","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","fitur","yang","menarik"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":97,"id":"Xo-8SG_tUKQ","url":"https://youtu.be/Xo-8SG_tUKQ","oldTitle":"Cara Desain Nota Olshop Di Coreldraw","title":"Cara Desain Nota Toko Online Custom di CorelDRAW Cepat & Rapi","category":"Percetakan Nota — *Cetak Nota NCR & Perhitungan Per Rim*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","cetaknota","kertasncr","percetakan","cara","desain","nota","olshop"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":96,"id":"w5lYLr6KPb4","url":"https://youtu.be/w5lYLr6KPb4","oldTitle":"Cara Desain Nota Kwitansi Dasar Pemula | Tutorial Coreldraw","title":"Cara Desain Nota dan Kwitansi Sendiri di CorelDRAW untuk Pemula","category":"Percetakan Nota — *Cetak Nota NCR & Perhitungan Per Rim*","playlist":"CorelDraw Basic","playlistId":"PLn3CvGWXaCQGRdMyMXq_z7acboRRmrw-e","tags":["fokuskonten","tutorial","edukasi","cetaknota","kertasncr","percetakan","cara","desain","nota","kwitansi"],"parentCat":"CorelDraw Basic","badge":"CORELDRAW BASIC","contentType":"RECORDING"},{"num":94,"id":"cDmx1b5JmO4","url":"https://youtu.be/cDmx1b5JmO4","oldTitle":"Cara Menjadikan Satu Warna Pada Foto Full Color","title":"Cara Cepat Mengubah Foto Berwarna Menjadi Satu Warna Monokrom di Photoshop","category":"Teori Desain Grafis — *Prinsip Desain & Alur Kerja Grafis*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","teoridesain","desaingrafis","prinsipdesain","cara","mengubah","satu","warna"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":72,"id":"92PJCgjAMMM","url":"https://youtu.be/92PJCgjAMMM","oldTitle":"Cara Mengatasi Link Kadaluarsa Di IDM Saat Download","title":"Solusi Praktis: Cara Mengatasi Link Kadaluarsa di IDM saat Download Tanpa Ribet","category":"Utility Download — *Manajemen Unduhan Internet Download Manager*","playlist":"Windows & Software Tutorial","playlistId":"PLn3CvGWXaCQFycdDIc3pvuZDUsZvi4BYV","tags":["fokuskonten","tutorial","edukasi","idm","downloadcepat","solusidigital","solusi","praktis","cara","mengatasi"],"parentCat":"Windows & Software Tutorial","badge":"WINDOWS & SOFTWARE TUTORIAL","contentType":"RECORDING"},{"num":71,"id":"Ui1mQcrNzI0","url":"https://youtu.be/Ui1mQcrNzI0","oldTitle":"Cara Merubah Format Video Ke Berbagai Type Via PC / Laptop","title":"Cara Cepat Mengubah Format Video Menjadi MP4 Ringan Kualitas Tetap Jernih","category":"Produksi Video — *Teknik Stabilisasi & Konversi Format Video*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","videoediting","stabilizervideo","konversivideo","cara","mengubah","format","video"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":70,"id":"Ri-HinvY4dI","url":"https://youtu.be/Ri-HinvY4dI","oldTitle":"Perbedaan Mode Sunyi Dengan Normal Saat Mencetak Dengan Printer | Beserta Cara Setingnya","title":"Perbedaan Mode Sunyi dengan Normal saat Mencetak dengan Printer — Beserta Cara Setingnya","category":"Industri Percetakan — *Alur Kerja & Manajemen Usaha Cetak*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","usahapercetakan","percetakan","bisnispercetakan","perbedaan","mode","sunyi","dengan"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":62,"id":"KeR8Xf_6yi0","url":"https://youtu.be/KeR8Xf_6yi0","oldTitle":"Cara Menonaktifkan Windows Update Dengan Otomatis One Click Permanent","title":"Cara Mematikan Windows Update Permanen di Windows 10 & 11 Tanpa Balik Lagi","category":"Sistem Windows — *Optimasi Kinerja & Perintah Windows*","playlist":"Windows & Software Tutorial","playlistId":"PLn3CvGWXaCQFycdDIc3pvuZDUsZvi4BYV","tags":["fokuskonten","tutorial","edukasi","windows10","perintahcmd","tipskomp","cara","menonaktifkan","windows","update"],"parentCat":"Windows & Software Tutorial","badge":"WINDOWS & SOFTWARE TUTORIAL","contentType":"RECORDING"},{"num":61,"id":"kOnmDC8MyQE","url":"https://youtu.be/kOnmDC8MyQE","oldTitle":"Cara Chek Temperature Suhu Komponen Komputer / Laptop Kita","title":"Cara Cek Suhu Temperatur CPU & GPU Komputer Laptop agar Tidak Overheat","category":"Hardware PC — *Manajemen Sirkulasi Airflow & Suhu Komponen*","playlist":"Rakit PC Pemula","playlistId":"PLn3CvGWXaCQHqNh0ZRk0BTJx0ed2PVjVI","tags":["fokuskonten","tutorial","edukasi","airflowcasing","suhukomputer","coolingpc","cara","cek","temperature","suhu"],"parentCat":"Rakit PC Pemula","badge":"RAKIT PC PEMULA","contentType":"RECORDING"},{"num":58,"id":"r_MqEtIL0XI","url":"https://youtu.be/r_MqEtIL0XI","oldTitle":"Cara Mengatasi Tidak Bisa Download File Yang Dianggap Virus Oleh Chrome Atau Browser Lain","title":"Solusi Mengatasi File Dianggap Virus oleh Chrome saat Download","category":"Sistem Windows — *Optimasi Kinerja & Perintah Windows*","playlist":"Windows & Software Tutorial","playlistId":"PLn3CvGWXaCQFycdDIc3pvuZDUsZvi4BYV","tags":["fokuskonten","tutorial","edukasi","windows10","perintahcmd","tipskomp","solusi","praktis","cara","mengatasi"],"parentCat":"Windows & Software Tutorial","badge":"WINDOWS & SOFTWARE TUTORIAL","contentType":"RECORDING"},{"num":54,"id":"zDJ5yFsTM10","url":"https://youtu.be/zDJ5yFsTM10","oldTitle":"CARA INSTALASI DRIVER CANON IP2770","title":"Panduan Lengkap Cara Install Driver Printer Canon iP2770 di Windows","category":"Printer Canon — *Operasional & Perawatan Printer Canon*","playlist":"Percetakan & Sablon","playlistId":"PLn3CvGWXaCQG6MKs-842TE2bVw6Myzj7x","tags":["fokuskonten","tutorial","edukasi","printercanon","serviceprinter","percetakan","cara","instalasi","driver","canon"],"parentCat":"Percetakan & Sablon","badge":"PERCETAKAN & SABLON","contentType":"RECORDING"},{"num":53,"id":"XG3GC7tXdik","url":"https://youtu.be/XG3GC7tXdik","oldTitle":"CARA INSTALASI DRIVER PRINTER EPSON L1300","title":"Cara Instalasi Driver Printer Epson L1300","category":"Printer Epson — *Operasional & Perawatan Printer Epson*","playlist":"Percetakan & Sablon","playlistId":"PLn3CvGWXaCQG6MKs-842TE2bVw6Myzj7x","tags":["fokuskonten","tutorial","edukasi","printerepson","serviceprinter","percetakan","cara","instalasi","driver","printer"],"parentCat":"Percetakan & Sablon","badge":"PERCETAKAN & SABLON","contentType":"RECORDING"},{"num":52,"id":"e0Q62-KksMM","url":"https://youtu.be/e0Q62-KksMM","oldTitle":"Cara Cepat Mencari File Di Komputer","title":"Cara Cepat Mencari File yang Hilang di Komputer Windows Menggunakan Everything","category":"Sistem Windows — *Optimasi Kinerja & Perintah Windows*","playlist":"Rakit PC Pemula","playlistId":"PLn3CvGWXaCQHqNh0ZRk0BTJx0ed2PVjVI","tags":["fokuskonten","tutorial","edukasi","windows10","perintahcmd","tipskomp","cara","cepat","mencari","file"],"parentCat":"Rakit PC Pemula","badge":"RAKIT PC PEMULA","contentType":"RECORDING"},{"num":51,"id":"yMxlhcKYtME","url":"https://youtu.be/yMxlhcKYtME","oldTitle":"30 MENIT JAGO CORELDRAW","title":"30 Menit Mahir CorelDRAW: Panduan Lengkap Desain Grafis Pemula dari Dasar","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"Ecourse Jago CorelDRAW","playlistId":"PLn3CvGWXaCQH0n21t3Gro0LpuN6hWCBOc","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","menit","jago","menggunakan"],"parentCat":"Ecourse Jago CorelDRAW","badge":"ECOURSE JAGO CORELDRAW","contentType":"RECORDING"},{"num":50,"id":"PyT_2cm15pc","url":"https://youtu.be/PyT_2cm15pc","oldTitle":"5 TOOLS CORELDRAW MEMPERCEPAT PEKERJAAN KITA","title":"5 Tools Rahasia CorelDRAW yang Mempercepat Pekerjaan Desain Grafis","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","tools","rahasia","yang"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":49,"id":"Sd-BLfxVLD0","url":"https://youtu.be/Sd-BLfxVLD0","oldTitle":"5 Langkah Mendesain Produk Sebelum Di Approve","title":"5 Langkah Penting Mendesain Produk Sebelum ACC Klien agar Tidak Revisi Terus","category":"Edukasi Workshop — *Dokumentasi & Sharing Praktik Kerja Mandiri*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","sharingpengalaman","edukasikreatif","karyamandiri","langkah","mendesain","produk","sebelum"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":48,"id":"7t0KrwtFGvQ","url":"https://youtu.be/7t0KrwtFGvQ","oldTitle":"Cara Menentukan Harga Cetak Stiker","title":"Rumus Menghitung Harga Jual Cetak Stiker agar Tetap Untung & Bersaing","category":"Percetakan Stiker — *Cetak & Cutting Stiker Vinyl / Cromo*","playlist":"Tutorial Cetak","playlistId":"PLn3CvGWXaCQExhq4MteNNWDBt7mRYVN2f","tags":["fokuskonten","tutorial","edukasi","cetakstiker","stikervinyl","stikercromo","cara","menentukan","harga","cetak"],"parentCat":"Tutorial Cetak","badge":"TUTORIAL CETAK","contentType":"RECORDING"},{"num":45,"id":"wtHpsrOdCc4","url":"https://youtu.be/wtHpsrOdCc4","oldTitle":"Cara Mudah Melawati Link Safe linKu DENGAN CEPAT & MUDAH 2020","title":"Cara Mudah Melewati Link Safe Linku dengan Cepat & Mudah 2020","category":"Edukasi Workshop — *Dokumentasi & Sharing Praktik Kerja Mandiri*","playlist":"SHARING PENGALAMAN","playlistId":"PLn3CvGWXaCQHk6vwkzmhIhmJXuo4HIOiS","tags":["fokuskonten","tutorial","edukasi","sharingpengalaman","edukasikreatif","karyamandiri","cara","mudah","melewati","link"],"parentCat":"SHARING PENGALAMAN","badge":"SHARING PENGALAMAN","contentType":"RECORDING"},{"num":41,"id":"iq1NXYz9ctE","url":"https://youtu.be/iq1NXYz9ctE","oldTitle":"Cara Mengatasi Versi Corel Draw Terlalu Tinggi","title":"Cara Mengatasi Versi CorelDRAW Terlalu Tinggi di CorelDRAW","category":"CorelDRAW — *Teknik Desain Vektor CorelDRAW Presisi*","playlist":"CorelDraw Tutorial","playlistId":"PLn3CvGWXaCQEymnNS_ruTTT0b5eh0mWw_","tags":["fokuskonten","tutorial","edukasi","coreldraw","desaingrafis","tutorialcoreldraw","cara","mengatasi","versi"],"parentCat":"CorelDraw Tutorial","badge":"CORELDRAW TUTORIAL","contentType":"RECORDING"},{"num":40,"id":"xTVKnCItQEE","url":"https://youtu.be/xTVKnCItQEE","oldTitle":"CARA MENINGKATKAN PERFORMA WINDOWS","title":"Cara Meningkatkan Performa Windows","category":"Sistem Windows — *Optimasi Kinerja & Perintah Windows*","playlist":"Windows & Software Tutorial","playlistId":"PLn3CvGWXaCQFycdDIc3pvuZDUsZvi4BYV","tags":["fokuskonten","tutorial","edukasi","windows10","perintahcmd","tipskomp","cara","meningkatkan","performa","windows"],"parentCat":"Windows & Software Tutorial","badge":"WINDOWS & SOFTWARE TUTORIAL","contentType":"RECORDING"},{"num":39,"id":"A5DaJ_mbED0","url":"https://youtu.be/A5DaJ_mbED0","oldTitle":"Cara Download Sekaligus Di Google Drive Dengan Hp","title":"Cara Download Banyak File di Google Drive Sekaligus Menggunakan HP Android","category":"Cloud Storage — *Solusi Limit Kuota Google Drive 24 Jam*","playlist":"Windows & Software Tutorial","playlistId":"PLn3CvGWXaCQFycdDIc3pvuZDUsZvi4BYV","tags":["fokuskonten","tutorial","edukasi","googledrive","solusidigital","tipskomp","cara","download","sekaligus","google"],"parentCat":"Windows & Software Tutorial","badge":"WINDOWS & SOFTWARE TUTORIAL","contentType":"RECORDING"},{"num":29,"id":"gsYgYXYMz8M","url":"https://youtu.be/gsYgYXYMz8M","oldTitle":"Cara Membuat Formulir Undangan Pendataan Mempelai Di Google From","title":"Panduan Membuat Formulir Undangan Pendataan Mempelai di Google Forms","category":"Percetakan Undangan — *Kalkulasi & Produksi Undangan Pernikahan*","playlist":"Percetakan & Sablon","playlistId":"PLn3CvGWXaCQG6MKs-842TE2bVw6Myzj7x","tags":["fokuskonten","tutorial","edukasi","undanganpernikahan","cetakundangan","bisnispercetakan","panduan","lengkap","cara","membuat"],"parentCat":"Percetakan & Sablon","badge":"PERCETAKAN & SABLON","contentType":"RECORDING"},{"num":6,"id":"TwSu8pnkQSI","url":"https://youtu.be/TwSu8pnkQSI","oldTitle":"Cara Remove Background Foto Tercepat","title":"Cara Cepat Menghapus Background Foto dalam Hitungan Detik Tanpa Ribet","category":"Adobe Photoshop — *Olah Visual & Manipulasi Foto Photoshop*","playlist":"Photoshop Tutorial","playlistId":"PLn3CvGWXaCQEIPJAvFgUpPuCVT0bIVate","tags":["fokuskonten","tutorial","edukasi","photoshop","editingfoto","desaingrafis","cara","remove","background","foto"],"parentCat":"Photoshop Tutorial","badge":"PHOTOSHOP TUTORIAL","contentType":"RECORDING"}];
+    const CATEGORIES = [{"name":"CorelDraw Tutorial","count":85},{"name":"SHARING PENGALAMAN","count":33},{"name":"Premiere Pro Basic","count":23},{"name":"Windows & Software Tutorial","count":14},{"name":"Photoshop Tutorial","count":10},{"name":"CorelDraw Basic","count":7},{"name":"Rakit PC Pemula","count":5},{"name":"Camtasia Tutorial","count":5},{"name":"Percetakan & Sablon","count":4},{"name":"Blender Basic","count":3},{"name":"Ecourse Jago CorelDRAW","count":2},{"name":"Toko Online With Blogger","count":1},{"name":"Tutorial Cetak","count":1},{"name":"Youtube Template & Trik","count":1}];
+
+    let currentCat = 'ALL';
+    let currentSort = 'newest';
+    let globalImageMode = 'thumb';
+    let cardFrameModeMap = new Map();
+    let searchQuery = '';
+    let currentlyPlayingId = null;
+
+    const videoGrid = document.getElementById('videoGrid');
+    const catTabs = document.getElementById('catTabs');
+    const searchInput = document.getElementById('searchInput');
+    const viewSummaryText = document.getElementById('viewSummaryText');
+    const btnSortNewest = document.getElementById('btnSortNewest');
+    const btnSortOldest = document.getElementById('btnSortOldest');
+    const btnModeThumb = document.getElementById('btnModeThumb');
+    const btnModeFrame50 = document.getElementById('btnModeFrame50');
+
+    const exportModal = document.getElementById('exportModal');
+    const exportTextarea = document.getElementById('exportTextarea');
+    const btnOpenExport = document.getElementById('btnOpenExport');
+    const btnCloseExport = document.getElementById('btnCloseExport');
+    const btnDownloadJson = document.getElementById('btnDownloadJson');
+
+    function getCardImageUrl(id) {
+      const customFrame = cardFrameModeMap.get(id);
+      if (customFrame) {
+        if (customFrame === 'thumb') return 'https://img.youtube.com/vi/' + id + '/mqdefault.jpg';
+        return 'https://img.youtube.com/vi/' + id + '/' + customFrame + '.jpg';
+      }
+      if (globalImageMode === 'frame50') {
+        return 'https://img.youtube.com/vi/' + id + '/2.jpg';
+      }
+      return 'https://img.youtube.com/vi/' + id + '/mqdefault.jpg';
+    }
+
+    function setCardFrame(id, frameKey) {
+      cardFrameModeMap.set(id, frameKey);
+      const imgEl = document.getElementById('thumb-img-' + id);
+      if (imgEl) {
+        imgEl.src = getCardImageUrl(id);
+      }
+      const switcher = document.getElementById('frame-switcher-' + id);
+      if (switcher) {
+        switcher.querySelectorAll('.btn-frame-mini').forEach(b => {
+          if (b.getAttribute('data-frame') === frameKey) {
+            b.classList.add('active');
+          } else {
+            b.classList.remove('active');
+          }
+        });
+      }
+    }
+
+    function playInCard(id) {
+      if (currentlyPlayingId && currentlyPlayingId !== id) {
+        stopInCard(currentlyPlayingId);
+      }
+
+      currentlyPlayingId = id;
+      const mediaWrap = document.getElementById('media-' + id);
+      if (mediaWrap) {
+        const originParam = window.location.origin && window.location.origin !== 'null' ? '&origin=' + encodeURIComponent(window.location.origin) : '';
+        const embedUrl = 'https://www.youtube.com/embed/' + id + '?autoplay=1&enablejsapi=1&playsinline=1&rel=0' + originParam;
+        
+        mediaWrap.innerHTML = `
+          <iframe 
+            class="inline-iframe"
+            src="${embedUrl}" 
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
+          <button class="btn-close-inline" onclick="event.stopPropagation(); stopInCard('${id}')">✕ Tutup</button>
+        `;
+      }
+    }
+
+    function stopInCard(id) {
+      if (currentlyPlayingId === id) currentlyPlayingId = null;
+      const mediaWrap = document.getElementById('media-' + id);
+      if (mediaWrap) {
+        const thumbUrl = getCardImageUrl(id);
+        mediaWrap.innerHTML = `
+          <img class="thumb-img" id="thumb-img-${id}" src="${thumbUrl}" alt="Thumbnail" loading="lazy">
+          <div class="play-overlay-btn" onclick="playInCard('${id}')">
+            <div class="play-btn-circle">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+            <span class="play-text">Putar di Sini</span>
+          </div>
+        `;
+      }
+    }
+
+    function renderTabs() {
+      let html = '<button class="tab-btn active" data-cat="ALL">Semua Playlist (' + ALL_VIDEOS.length + ')</button>';
+      CATEGORIES.forEach(c => {
+        html += `
+          <button class="tab-btn" data-cat="${c.name}">
+            ${c.name} (${c.count})
+          </button>
+        `;
+      });
+      catTabs.innerHTML = html;
+
+      catTabs.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          catTabs.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentCat = btn.getAttribute('data-cat');
+          renderVideos();
+        });
+      });
+    }
+
+    btnModeThumb.addEventListener('click', () => {
+      globalImageMode = 'thumb';
+      cardFrameModeMap.clear();
+      btnModeThumb.style.background = '#09090b';
+      btnModeThumb.style.color = '#fff';
+      btnModeFrame50.style.background = '#fff';
+      btnModeFrame50.style.color = '#09090b';
+      renderVideos();
+    });
+
+    btnModeFrame50.addEventListener('click', () => {
+      globalImageMode = 'frame50';
+      cardFrameModeMap.clear();
+      btnModeFrame50.style.background = '#09090b';
+      btnModeFrame50.style.color = '#fff';
+      btnModeThumb.style.background = '#fff';
+      btnModeThumb.style.color = '#09090b';
+      renderVideos();
+    });
+
+    btnSortNewest.addEventListener('click', () => {
+      currentSort = 'newest';
+      btnSortNewest.style.background = '#09090b';
+      btnSortNewest.style.color = '#fff';
+      btnSortOldest.style.background = '#fff';
+      btnSortOldest.style.color = '#09090b';
+      renderVideos();
+    });
+
+    btnSortOldest.addEventListener('click', () => {
+      currentSort = 'oldest';
+      btnSortOldest.style.background = '#09090b';
+      btnSortOldest.style.color = '#fff';
+      btnSortNewest.style.background = '#fff';
+      btnSortNewest.style.color = '#09090b';
+      renderVideos();
+    });
+
+    function getFilteredVideos() {
+      const q = searchQuery.toLowerCase().trim();
+      let list = ALL_VIDEOS.filter(v => {
+        if (currentCat !== 'ALL' && v.playlist !== currentCat) return false;
+
+        if (q) {
+          const matchTitle = (v.title || '').toLowerCase().includes(q);
+          const matchPl = (v.playlist || '').toLowerCase().includes(q);
+          return matchTitle || matchPl;
+        }
+
+        return true;
+      });
+
+      if (currentSort === 'newest') {
+        list.sort((a, b) => b.num - a.num);
+      } else {
+        list.sort((a, b) => a.num - b.num);
+      }
+
+      return list;
+    }
+
+    function renderVideos() {
+      const filtered = getFilteredVideos();
+
+      const sortLabel = currentSort === 'newest' ? '(Terbaru ke Terlama)' : '(Terlama ke Terbaru)';
+      viewSummaryText.textContent = (currentCat === 'ALL')
+        ? 'Menampilkan seluruh ' + filtered.length + ' video panduan resmi ' + sortLabel
+        : 'Menampilkan ' + filtered.length + ' video pada playlist ' + currentCat + ' ' + sortLabel;
+
+      if (filtered.length === 0) {
+        videoGrid.innerHTML = `
+          <div style="grid-column: 1/-1; text-align:center; padding:60px 20px; background:#fff; border:1px dashed #cbd5e1; border-radius:12px;">
+            <h4 style="font-weight:800; font-size:16px; margin-bottom:4px;">Tidak Ada Video yang Cocok</h4>
+            <p style="font-size:13px; color:#64748b; max-width:400px; margin:0 auto;">
+              Tidak ada video yang cocok dengan pencarian Anda.
+            </p>
+          </div>
+        `;
+        return;
+      }
+
+      videoGrid.innerHTML = filtered.map(v => {
+        const thumbUrl = getCardImageUrl(v.id);
+        const activeFrame = cardFrameModeMap.get(v.id) || (globalImageMode === 'frame50' ? '2' : 'thumb');
+        const isPlayingThis = (currentlyPlayingId === v.id);
+
+        return `
+          <div class="video-card" id="card-${v.id}">
+            <div class="card-frame-switcher">
+              <span style="font-size:10px; font-weight:800; font-family:monospace; background:#09090b; color:#fff; padding:2px 6px; border-radius:4px;">
+                #${v.num}
+              </span>
+              <div class="frame-btn-group" id="frame-switcher-${v.id}">
+                <button class="btn-frame-mini ${activeFrame === 'thumb' ? 'active' : ''}" data-frame="thumb" onclick="event.stopPropagation(); setCardFrame('${v.id}', 'thumb')">Thumb</button>
+                <button class="btn-frame-mini ${activeFrame === '1' ? 'active' : ''}" data-frame="1" onclick="event.stopPropagation(); setCardFrame('${v.id}', '1')">25%</button>
+                <button class="btn-frame-mini ${activeFrame === '2' ? 'active' : ''}" data-frame="2" onclick="event.stopPropagation(); setCardFrame('${v.id}', '2')">50%</button>
+                <button class="btn-frame-mini ${activeFrame === '3' ? 'active' : ''}" data-frame="3" onclick="event.stopPropagation(); setCardFrame('${v.id}', '3')">75%</button>
+              </div>
+            </div>
+
+            <div class="card-media" id="media-${v.id}">
+              ${isPlayingThis ? `
+                <iframe 
+                  class="inline-iframe"
+                  src="https://www.youtube.com/embed/${v.id}?autoplay=1&enablejsapi=1&playsinline=1&rel=0${window.location.origin && window.location.origin !== 'null' ? '&origin=' + encodeURIComponent(window.location.origin) : ''}" 
+                  title="${v.title.replace(/"/g, '&quot;')}"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+                <button class="btn-close-inline" onclick="event.stopPropagation(); stopInCard('${v.id}')">✕ Tutup</button>
+              ` : `
+                <img class="thumb-img" id="thumb-img-${v.id}" src="${thumbUrl}" alt="${v.title.replace(/"/g, '&quot;')}" loading="lazy">
+                <div class="play-overlay-btn" onclick="playInCard('${v.id}')">
+                  <div class="play-btn-circle">
+                    <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  </div>
+                  <span class="play-text">Putar di Sini</span>
+                </div>
+              `}
+            </div>
+
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-badge">${v.playlist}</span>
+                <span>ID: ${v.id}</span>
+              </div>
+              <div class="card-title">${v.title}</div>
+
+              <div class="card-actions">
+                <button class="btn-play-card" onclick="playInCard('${v.id}')" title="Putar langsung di kartu">
+                  ▶ Putar Video
+                </button>
+                <a href="${v.url}" target="_blank" rel="noopener" class="btn-yt-tab" title="Buka di YouTube tab baru">
+                  ↗ YT
+                </a>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    searchInput.addEventListener('input', (e) => {
+      searchQuery = e.target.value;
+      renderVideos();
+    });
+
+    btnOpenExport.addEventListener('click', () => {
+      exportTextarea.value = JSON.stringify(ALL_VIDEOS, null, 2);
+      exportModal.classList.add('open');
+    });
+
+    btnCloseExport.addEventListener('click', () => {
+      exportModal.classList.remove('open');
+    });
+
+    btnDownloadJson.addEventListener('click', () => {
+      const jsonStr = JSON.stringify(ALL_VIDEOS, null, 2);
+      const blob = new Blob([jsonStr], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'master_panduan_' + ALL_VIDEOS.length + '_video_fokuskonten.json';
+      a.click();
+      URL.revokeObjectURL(url);
+    });
+
+    renderTabs();
+    renderVideos();
+  </script>
+</body>
+</html>
