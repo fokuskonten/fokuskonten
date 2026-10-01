@@ -1,5 +1,42 @@
 [
   {
+    "id": "ideb00",
+    "sku": "IDEB00",
+    "name": "Mega Bundle Koleksi 17.117+ E-Book Master — Perpustakaan Digital Lengkap",
+    "title": "Mega Bundle Koleksi 17.117+ E-Book Master — Perpustakaan Digital Lengkap",
+    "category": "The Big Bang",
+    "format": "The Big Bang",
+    "tag": "The Big Bang",
+    "badge": "17.117+ BUKU",
+    "price": 200000,
+    "originalPrice": 750000,
+    "is_published": 1,
+    "isPublished": true,
+    "rating": 5,
+    "reviewsCount": 120,
+    "salesCount": 450,
+    "image": "/covers/IDEB00/IDEB00_cover.webp",
+    "coverImage": "/covers/IDEB00/IDEB00_cover.webp",
+    "gallery": [
+      "/covers/IDEB00/IDEB00_cover.webp"
+    ],
+    "description": "PRODUK: Mega Bundle Koleksi 17.117+ E-Book Master — Perpustakaan Digital Lengkap\nKODE SKU: IDEB00\nKATEGORI: The Big Bang\n\nRINGKASAN PRODUK:\nKoleksi pustaka literatur digital raksasa. Terdiri dari belasan ribu e-book terkurasi dengan ragam kategori fungsional: Bisnis, Pemasaran, Finansial, Pengembangan Karir, Materi Akademik, hingga Kesehatan dan Gaya Hidup.\n\nKELENGKAPAN & ISI MODUL:\n• Format Master File: E-Book Digital (.PDF/.EPUB)\n• Total Kelengkapan: 17.117+ Berkas Bacaan Premium\n• Total Ukuran Data Fisik: Mega Cloud Storage (Tersimpan aman di awan, baca sesuai keinginan)\n• Standar Struktur: Klasifikasi Kategori (Dipecah dalam 25+ direktori bidang ilmu)\n• Modul 01 - Bisnis & Pemasaran: Strategi, finansial, dan manajemen\n• Modul 02 - Pengembangan Diri: Karir, psikologi, dan keterampilan\n• Modul 03 - Akademik & Edukasi: Ilmu pengetahuan dan literatur sains\n• Modul 04 - Fiksi & Hiburan: Novel dan karya sastra\n• Kompatibilitas Penampil: Semua Perangkat (PC/Laptop Windows, macOS, Smartphone Android, iOS, & Tablet)\n• Fleksibilitas Akses: 100% Offline Reading (Dapat diunduh permanen, bebas dipelajari tanpa batas waktu)\n\nSTANDAR PENGIRIMAN & AKSES LAYANAN:\n• Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n• Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n• Dual Cloud Mirror Backup: Didukung server cadangan resmi berkecepatan tinggi (FokusKonten & FokusAkustik) untuk menjamin kelancaran unduhan 24/7 tanpa kendala downtime.\n• Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n• Lisensi Fleksibel: Materi pembelajaran dapat diunduh dan diarsipkan secara permanen untuk referensi mandiri berkelanjutan.\n\nPANDUAN PEMESANAN:\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.\n3. Cek email Anda untuk mengarsipkan invoice resmi pesanan Anda.",
+    "driveLink": null,
+    "backupDriveLink": null,
+    "features": [
+      "Mega Cloud Storage Direktori Terlengkap",
+      "Akses Unduh & Referensi Seumur Hidup (Lifetime)",
+      "Struktur Modul Terklasifikasi & Rapi",
+      "Dukungan Update Berkelanjutan"
+    ],
+    "specifications": {
+      "Format": "The Big Bang Master",
+      "Kompatibilitas": "Semua Perangkat (PC, Laptop, Smartphone, Tablet)",
+      "Kategori": "The Big Bang",
+      "Pengiriman": "Akses Instan di Dashboard Akun Web"
+    }
+  },
+  {
     "id": "id22d2",
     "sku": "ID22D2",
     "name": "VintageInvite - Ornamen Floral Vintage Romantis Wedding Invitation",
@@ -46,8 +83,8 @@
     "name": "Mega Repositori Stock Music & Audio SFX Master",
     "title": "Mega Repositori Stock Music & Audio SFX Master",
     "category": "The Big Bang",
-    "format": "WAV/MP3",
-    "tag": "Format .WAV/MP3",
+    "format": "The Big Bang",
+    "tag": "The Big Bang",
     "badge": "Unggulan",
     "price": 200000,
     "originalPrice": 750000,
@@ -65,14 +102,14 @@
     "driveLink": null,
     "backupDriveLink": null,
     "features": [
-      "Format Master File: .WAV/MP3",
-      "Aset Beresolusi Tinggi & Siap Pakai",
-      "Akses Instan di Dashboard Akun Web",
-      "Lisensi Penggunaan Komersial & Personal"
+      "Mega Cloud Storage Direktori Terlengkap",
+      "Akses Unduh & Referensi Seumur Hidup (Lifetime)",
+      "Struktur Modul Terklasifikasi & Rapi",
+      "Dukungan Update Berkelanjutan"
     ],
     "specifications": {
-      "Format": ".WAV/MP3",
-      "Kompatibilitas": "Semua Perangkat",
+      "Format": "The Big Bang Master",
+      "Kompatibilitas": "Semua Perangkat (PC, Laptop, Smartphone, Tablet)",
       "Kategori": "The Big Bang",
       "Pengiriman": "Akses Instan di Dashboard Akun Web"
     }
@@ -83,8 +120,8 @@
     "name": "Mega Repositori WordPress & Blogger Master (Segera Hadir)",
     "title": "Mega Repositori WordPress & Blogger Master (Segera Hadir)",
     "category": "The Big Bang",
-    "format": "ZIP/PHP",
-    "tag": "Format .ZIP/PHP",
+    "format": "The Big Bang",
+    "tag": "The Big Bang",
     "badge": "SEGERA HADIR",
     "price": 200000,
     "originalPrice": 750000,
@@ -102,14 +139,14 @@
     "driveLink": null,
     "backupDriveLink": null,
     "features": [
-      "Format Master File: .ZIP/PHP",
-      "Aset Beresolusi Tinggi & Siap Pakai",
-      "Akses Instan di Dashboard Akun Web",
-      "Lisensi Penggunaan Komersial & Personal"
+      "Mega Cloud Storage Direktori Terlengkap",
+      "Akses Unduh & Referensi Seumur Hidup (Lifetime)",
+      "Struktur Modul Terklasifikasi & Rapi",
+      "Dukungan Update Berkelanjutan"
     ],
     "specifications": {
-      "Format": ".ZIP/PHP",
-      "Kompatibilitas": "Semua Perangkat",
+      "Format": "The Big Bang Master",
+      "Kompatibilitas": "Semua Perangkat (PC, Laptop, Smartphone, Tablet)",
       "Kategori": "The Big Bang",
       "Pengiriman": "Akses Instan di Dashboard Akun Web"
     }
@@ -202,8 +239,8 @@
     "name": "Mega Cloud Direktori Teknisi Smartphone Master 10.000+ Model Multi-Brand",
     "title": "Mega Cloud Direktori Teknisi Smartphone Master 10.000+ Model Multi-Brand",
     "category": "The Big Bang",
-    "format": "PDF/ISP/PINOUT",
-    "tag": "Format .PDF/ISP/PINOUT",
+    "format": "The Big Bang",
+    "tag": "The Big Bang",
     "badge": "10.000+ MODEL",
     "price": 200000,
     "originalPrice": 750000,
@@ -221,14 +258,14 @@
     "driveLink": null,
     "backupDriveLink": null,
     "features": [
-      "Format Master File: .PDF/ISP/PINOUT",
-      "Aset Beresolusi Tinggi & Siap Pakai",
-      "Akses Instan di Dashboard Akun Web",
-      "Lisensi Penggunaan Komersial & Personal"
+      "Mega Cloud Storage Direktori Terlengkap",
+      "Akses Unduh & Referensi Seumur Hidup (Lifetime)",
+      "Struktur Modul Terklasifikasi & Rapi",
+      "Dukungan Update Berkelanjutan"
     ],
     "specifications": {
-      "Format": ".PDF/ISP/PINOUT",
-      "Kompatibilitas": "Semua Perangkat",
+      "Format": "The Big Bang Master",
+      "Kompatibilitas": "Semua Perangkat (PC, Laptop, Smartphone, Tablet)",
       "Kategori": "The Big Bang",
       "Pengiriman": "Akses Instan di Dashboard Akun Web"
     }
@@ -27968,8 +28005,8 @@
     "name": "Mega Cloud Direktori Teknisi Laptop Master 2.040+ Skematik & Boardview",
     "title": "Mega Cloud Direktori Teknisi Laptop Master 2.040+ Skematik & Boardview",
     "category": "The Big Bang",
-    "format": "PDF/BRD/CAD",
-    "tag": "Format .PDF/BRD/CAD",
+    "format": "The Big Bang",
+    "tag": "The Big Bang",
     "badge": "2.040+ SKEMA",
     "price": 200000,
     "originalPrice": 750000,
@@ -27987,14 +28024,14 @@
     "driveLink": null,
     "backupDriveLink": null,
     "features": [
-      "Format Master File: .PDF/BRD/CAD",
-      "Aset Beresolusi Tinggi & Siap Pakai",
-      "Akses Instan di Dashboard Akun Web",
-      "Lisensi Penggunaan Komersial & Personal"
+      "Mega Cloud Storage Direktori Terlengkap",
+      "Akses Unduh & Referensi Seumur Hidup (Lifetime)",
+      "Struktur Modul Terklasifikasi & Rapi",
+      "Dukungan Update Berkelanjutan"
     ],
     "specifications": {
-      "Format": ".PDF/BRD/CAD",
-      "Kompatibilitas": "Semua Perangkat",
+      "Format": "The Big Bang Master",
+      "Kompatibilitas": "Semua Perangkat (PC, Laptop, Smartphone, Tablet)",
       "Kategori": "The Big Bang",
       "Pengiriman": "Akses Instan di Dashboard Akun Web"
     }
@@ -72373,43 +72410,6 @@
       "Format": ".PHP/WEB",
       "Kompatibilitas": "Semua Perangkat",
       "Kategori": "Aplikasi",
-      "Pengiriman": "Akses Instan di Dashboard Akun Web"
-    }
-  },
-  {
-    "id": "ideb00",
-    "sku": "IDEB00",
-    "name": "Mega Bundle Koleksi 17.117+ E-Book Master — Perpustakaan Digital Lengkap",
-    "title": "Mega Bundle Koleksi 17.117+ E-Book Master — Perpustakaan Digital Lengkap",
-    "category": "The Big Bang",
-    "format": "PDF/EPUB",
-    "tag": "Format .PDF/EPUB",
-    "badge": "17.117+ BUKU",
-    "price": 200000,
-    "originalPrice": 750000,
-    "is_published": 1,
-    "isPublished": true,
-    "rating": 5,
-    "reviewsCount": 120,
-    "salesCount": 450,
-    "image": "/covers/IDEB00/IDEB00_cover.webp",
-    "coverImage": "/covers/IDEB00/IDEB00_cover.webp",
-    "gallery": [
-      "/covers/IDEB00/IDEB00_cover.webp"
-    ],
-    "description": "PRODUK: Mega Bundle Koleksi 17.117+ E-Book Master — Perpustakaan Digital Lengkap\nKODE SKU: IDEB00\nKATEGORI: The Big Bang\n\nRINGKASAN PRODUK:\nKoleksi pustaka literatur digital raksasa. Terdiri dari belasan ribu e-book terkurasi dengan ragam kategori fungsional: Bisnis, Pemasaran, Finansial, Pengembangan Karir, Materi Akademik, hingga Kesehatan dan Gaya Hidup.\n\nKELENGKAPAN & ISI MODUL:\n• Format Master File: E-Book Digital (.PDF/.EPUB)\n• Total Kelengkapan: 17.117+ Berkas Bacaan Premium\n• Total Ukuran Data Fisik: Mega Cloud Storage (Tersimpan aman di awan, baca sesuai keinginan)\n• Standar Struktur: Klasifikasi Kategori (Dipecah dalam 25+ direktori bidang ilmu)\n• Modul 01 - Bisnis & Pemasaran: Strategi, finansial, dan manajemen\n• Modul 02 - Pengembangan Diri: Karir, psikologi, dan keterampilan\n• Modul 03 - Akademik & Edukasi: Ilmu pengetahuan dan literatur sains\n• Modul 04 - Fiksi & Hiburan: Novel dan karya sastra\n• Kompatibilitas Penampil: Semua Perangkat (PC/Laptop Windows, macOS, Smartphone Android, iOS, & Tablet)\n• Fleksibilitas Akses: 100% Offline Reading (Dapat diunduh permanen, bebas dipelajari tanpa batas waktu)\n\nSTANDAR PENGIRIMAN & AKSES LAYANAN:\n• Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n• Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n• Dual Cloud Mirror Backup: Didukung server cadangan resmi berkecepatan tinggi (FokusKonten & FokusAkustik) untuk menjamin kelancaran unduhan 24/7 tanpa kendala downtime.\n• Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n• Lisensi Fleksibel: Materi pembelajaran dapat diunduh dan diarsipkan secara permanen untuk referensi mandiri berkelanjutan.\n\nPANDUAN PEMESANAN:\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.\n3. Cek email Anda untuk mengarsipkan invoice resmi pesanan Anda.",
-    "driveLink": null,
-    "backupDriveLink": null,
-    "features": [
-      "Format Master File: .PDF/EPUB",
-      "Aset Beresolusi Tinggi & Siap Pakai",
-      "Akses Instan di Dashboard Akun Web",
-      "Lisensi Penggunaan Komersial & Personal"
-    ],
-    "specifications": {
-      "Format": ".PDF/EPUB",
-      "Kompatibilitas": "Semua Perangkat",
-      "Kategori": "The Big Bang",
       "Pengiriman": "Akses Instan di Dashboard Akun Web"
     }
   }

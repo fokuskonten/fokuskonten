@@ -168,7 +168,7 @@ function TokoDigitalContent() {
       const isEcourseMatch = fmtUpper === 'ECOURSE' && (p.category === 'Ecourse & Tutorial' || (p.category || '').toLowerCase().includes('ecourse'))
       const isVideoMatch = (fmtUpper === 'VIDEO_KONTEN' || fmtUpper === 'VIDEO KONTEN') && (p.category === 'Video Konten' || (p.category || '').toLowerCase().includes('video konten'))
       const isBigBangMatch = (fmtUpper === 'THE BIG BANG' || fmtUpper === 'BIGBANG' || fmtUpper === 'THE_BIG_BANG') &&
-        (p.format === 'The Big Bang' || p.category === 'The Big Bang' || p.tag === 'The Big Bang' || ['IDEB00', 'ID-TEK-LAPTOP', 'ID-TEK-SMARTPHONE', 'ID-WP-BLOGGER'].includes(p.sku))
+        (p.format === 'The Big Bang' || p.category === 'The Big Bang' || p.tag === 'The Big Bang' || ['IDEB00', 'ID-TEK-LAPTOP', 'ID-TEK-SMARTPHONE', 'ID-WP-BLOGGER', 'ID-AUDIO-MASTER'].includes(p.sku))
 
       const matchFmt =
         selectedFormat === 'Semua' ||

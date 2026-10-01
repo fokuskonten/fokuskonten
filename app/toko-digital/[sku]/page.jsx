@@ -38,8 +38,6 @@ function getProductData(rawParam) {
           image: row.cover_image,
           gallery: [],
           description: row.description,
-          driveLink: row.drive_link,
-          backupDriveLink: row.backup_drive_link,
           isPublished: row.is_published === 1
         }
       }

@@ -30,8 +30,7 @@ export default function CountdownAdSense({ file }) {
 
   if (!file) return null
 
-  const fileId = file.gdrive_file_id || ''
-  const directUrl = file.gdrive_direct_url || `https://drive.google.com/file/d/${fileId}/view?usp=sharing`
+  const directUrl = file.safelink_url || (file.id ? `/api/v1/technician/shield/safelink?id=${file.id}` : '#')
 
   return (
     <div className="bg-white border border-neutral-200 rounded-2xl p-6 sm:p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] space-y-6">
@@ -46,7 +45,7 @@ export default function CountdownAdSense({ file }) {
       {/* Header Info */}
       <div className="text-center space-y-2 pb-4 border-b border-neutral-100">
         <span className="px-3 py-1 bg-neutral-950 text-white font-mono font-bold text-xs rounded-lg uppercase tracking-wider">
-          SERVER UTAMA GDrive
+          SERVER UTAMA TERVERIFIKASI
         </span>
         <h3 className="text-lg font-extrabold text-neutral-950 font-mono">{file.file_name}</h3>
         <p className="text-xs text-neutral-500 font-mono">Ukuran Berkas: {file.file_size_formatted || '4.2 MB'}</p>
@@ -75,7 +74,7 @@ export default function CountdownAdSense({ file }) {
             <div className="inline-flex items-center justify-center px-6 py-3 bg-neutral-100 border border-neutral-300 rounded-xl font-mono text-sm font-extrabold text-neutral-950">
               Menyiapkan Server Utama dalam <span className="text-base text-neutral-950 mx-2 underline decoration-2">{seconds}</span> detik...
             </div>
-            <p className="text-xs text-neutral-500 font-mono">Verifikasi checksum SHA-256 dan integritas lumbung GDrive master</p>
+            <p className="text-xs text-neutral-500 font-mono">Verifikasi checksum SHA-256 dan integritas berkas master</p>
           </div>
         ) : (
           <div className="space-y-3">
@@ -85,9 +84,9 @@ export default function CountdownAdSense({ file }) {
               rel="noopener noreferrer"
               className="inline-block w-full sm:w-auto px-8 py-3.5 bg-neutral-950 hover:bg-neutral-800 text-white font-extrabold text-sm rounded-xl shadow-xl transition-all font-mono tracking-wider uppercase"
             >
-              Buka Berkas Google Drive Master
+              Unduh Berkas Resmi Terverifikasi
             </a>
-            <p className="text-xs text-neutral-500 font-mono">Unduhan langsung kecepatan tinggi tanpa batasan kuota</p>
+            <p className="text-xs text-neutral-500 font-mono">Unduhan langsung kecepatan tinggi melalui jaringan aman</p>
           </div>
         )}
       </div>

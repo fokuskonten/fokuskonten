@@ -58,9 +58,18 @@ export const portfolioData = {
       bahasa: 'Bahasa Indonesia',
       tipe: 'Aplikasi Android Resmi',
     },
+    playstoreUrl: 'https://play.google.com/store/apps/details?id=com.fokuskonten.apotekpro',
+    apkDownload: {
+      url: 'https://github.com/fokuskonten/fokuskonten/releases/download/apps-v1.0/Apotek_Pro_v1.0.2.apk',
+      version: 'v1.0.2',
+      size: '60.3 MB',
+      filename: 'Apotek_Pro_v1.0.2.apk'
+    },
+    whatsappUrl: 'https://wa.me/6285183011318?text=Halo%20FokusKonten,%20saya%20tertarik%20dengan%20Apotek%20Pro',
     cta: {
-      primary: { label: 'Download di Google Play', href: 'https://play.google.com/store/apps/details?id=com.fokuskonten.apotekpro', type: 'playstore' },
-      secondary: { label: 'Konsultasi WhatsApp', href: 'https://wa.me/6285183011318?text=Halo%20FokusKonten,%20saya%20tertarik%20dengan%20Apotek%20Pro', type: 'whatsapp' },
+      primary: { label: 'Google Play', href: 'https://play.google.com/store/apps/details?id=com.fokuskonten.apotekpro', type: 'playstore' },
+      secondary: { label: 'Unduh Berkas APK', href: 'https://github.com/fokuskonten/fokuskonten/releases/download/apps-v1.0/Apotek_Pro_v1.0.2.apk', type: 'apk' },
+      tertiary: { label: 'Konsultasi WhatsApp', href: 'https://wa.me/6285183011318?text=Halo%20FokusKonten,%20saya%20tertarik%20dengan%20Apotek%20Pro', type: 'whatsapp' },
     },
     privacyPolicy: '/aplikasi/apotekpro/privacy',
     termsOfService: '/aplikasi/apotekpro/terms',
@@ -125,9 +134,18 @@ export const portfolioData = {
       tipe: 'Aplikasi Android Resmi',
     },
     video: 'https://www.youtube.com/embed/EL0Rsx5PcsA',
+    playstoreUrl: 'https://play.google.com/store/apps/details?id=com.fokuskonten.tokokelontongpro',
+    apkDownload: {
+      url: 'https://github.com/fokuskonten/fokuskonten/releases/download/apps-v1.0/Kelontong_Pro_v1.0.0.apk',
+      version: 'v1.0.0',
+      size: '56.8 MB',
+      filename: 'Kelontong_Pro_v1.0.0.apk'
+    },
+    whatsappUrl: 'https://wa.me/6285183011318?text=Halo%20FokusKonten,%20saya%20tertarik%20dengan%20Kelontong%20Pro',
     cta: {
-      primary: { label: 'Download di Google Play', href: 'https://play.google.com/store/apps/details?id=com.fokuskonten.tokokelontongpro', type: 'playstore' },
-      secondary: { label: 'Konsultasi WhatsApp', href: 'https://wa.me/6285183011318?text=Halo%20FokusKonten,%20saya%20tertarik%20dengan%20Kelontong%20Pro', type: 'whatsapp' },
+      primary: { label: 'Google Play', href: 'https://play.google.com/store/apps/details?id=com.fokuskonten.tokokelontongpro', type: 'playstore' },
+      secondary: { label: 'Unduh Berkas APK', href: 'https://github.com/fokuskonten/fokuskonten/releases/download/apps-v1.0/Kelontong_Pro_v1.0.0.apk', type: 'apk' },
+      tertiary: { label: 'Konsultasi WhatsApp', href: 'https://wa.me/6285183011318?text=Halo%20FokusKonten,%20saya%20tertarik%20dengan%20Kelontong%20Pro', type: 'whatsapp' },
     },
     privacyPolicy: '/aplikasi/tokokelontongpro/privacy',
     termsOfService: '/aplikasi/tokokelontongpro/terms',
@@ -193,9 +211,18 @@ export const portfolioData = {
     },
     headerImage: '/screenshots/bacaquran/header.png',
     video: 'https://www.youtube.com/embed/DuhmnK7Gnq0',
+    playstoreUrl: 'https://play.google.com/store/apps/details?id=com.fokuskonten.bacaquran',
+    apkDownload: {
+      url: 'https://github.com/fokuskonten/fokuskonten/releases/download/apps-v1.0/BacaQuran_v1.2.0.apk',
+      version: 'v1.2.0',
+      size: '4.7 MB',
+      filename: 'BacaQuran_v1.2.0.apk'
+    },
+    whatsappUrl: 'https://wa.me/6285183011318?text=Halo%20FokusKonten,%20masukan%20untuk%20BacaQur%27an',
     cta: {
-      primary: { label: 'Download di Google Play', href: 'https://play.google.com/store/apps/details?id=com.fokuskonten.bacaquran', type: 'playstore' },
-      secondary: { label: 'Beri Masukan', href: 'https://wa.me/6285183011318?text=Halo%20FokusKonten,%20masukan%20untuk%20BacaQur%27an', type: 'whatsapp' },
+      primary: { label: 'Google Play', href: 'https://play.google.com/store/apps/details?id=com.fokuskonten.bacaquran', type: 'playstore' },
+      secondary: { label: 'Unduh Berkas APK', href: 'https://github.com/fokuskonten/fokuskonten/releases/download/apps-v1.0/BacaQuran_v1.2.0.apk', type: 'apk' },
+      tertiary: { label: 'Konsultasi WhatsApp', href: 'https://wa.me/6285183011318?text=Halo%20FokusKonten,%20masukan%20untuk%20BacaQur%27an', type: 'whatsapp' },
     },
   },
   gamepuzzle: {
@@ -258,9 +285,18 @@ export const portfolioData = {
     },
     headerImage: '/screenshots/gamepuzzle/header2.jpg',
     video: 'https://www.youtube.com/embed/vvSRUtPkpgU',
+    playstoreUrl: 'https://play.google.com/store/apps/details?id=com.fokuskonten.gamepuzzle',
+    apkDownload: {
+      url: 'https://github.com/fokuskonten/fokuskonten/releases/download/apps-v1.0/2048_Puzzle_v1.4.3.apk',
+      version: 'v1.4.3',
+      size: '9.5 MB',
+      filename: '2048_Puzzle_v1.4.3.apk'
+    },
+    whatsappUrl: 'https://wa.me/6285183011318',
     cta: {
-      primary: { label: 'Download di Google Play', href: 'https://play.google.com/store/apps/details?id=com.fokuskonten.gamepuzzle', type: 'playstore' },
-      secondary: { label: 'Hubungi Kami', href: 'https://wa.me/6285183011318', type: 'whatsapp' },
+      primary: { label: 'Google Play', href: 'https://play.google.com/store/apps/details?id=com.fokuskonten.gamepuzzle', type: 'playstore' },
+      secondary: { label: 'Unduh Berkas APK', href: 'https://github.com/fokuskonten/fokuskonten/releases/download/apps-v1.0/2048_Puzzle_v1.4.3.apk', type: 'apk' },
+      tertiary: { label: 'Konsultasi WhatsApp', href: 'https://wa.me/6285183011318', type: 'whatsapp' },
     },
   },
   mcjob: {

@@ -34,7 +34,6 @@ function getProductData(rawParam) {
           coverImage: row.cover_image || `https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/${row.sku}/${row.sku}_cover.webp`,
           image: row.cover_image || `https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/${row.sku}/${row.sku}_cover.webp`,
           description: row.description,
-          driveLink: row.drive_link,
           isPublished: row.is_published === 1
         }
       }

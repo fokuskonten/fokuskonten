@@ -70,7 +70,7 @@ export default function EbookDirectoryPage() {
             </li>
             <li>/</li>
             <li className="text-neutral-950 font-bold" aria-current="page">
-              Direktori E-Book
+              Direktori Ebook
             </li>
           </ol>
         </nav>
@@ -85,7 +85,7 @@ export default function EbookDirectoryPage() {
           </div>
 
           <h1 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-neutral-950 font-sans leading-tight">
-            Direktori {totalEbooks > 0 ? `${(Math.floor(totalEbooks / 100) * 100).toLocaleString('id-ID')}+` : '3.500+'} E-Book PDF Resmi Terverifikasi
+            Direktori {totalEbooks > 0 ? `${(Math.floor(totalEbooks / 100) * 100).toLocaleString('id-ID')}+` : '3.500+'} Ebook PDF Resmi Terverifikasi
           </h1>
 
           <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed font-sans">
@@ -97,7 +97,7 @@ export default function EbookDirectoryPage() {
             <div className="flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-neutral-950" />
               <strong className="text-neutral-950">{totalEbooks.toLocaleString('id-ID')}</strong>
-              <span className="text-neutral-500">Judul E-Book</span>
+              <span className="text-neutral-500">Judul Ebook</span>
             </div>
             <div className="flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-neutral-950" />

@@ -736,11 +736,9 @@ async function main() {
     // Cover Image
     const coverImage = `https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/ebook/${sku}/${sku}_cover.webp`;
 
-    // Safelink URL Otomatis & Terverifikasi (Monetisasi Celah 14)
-    const directTarget = (row.backup_drive_link || row.drive_link || '').trim();
-    const safelinkUrl = directTarget
-      ? `https://sfl.gl/st?api=41bce343d0c4077814e1430901df36f0f18bb967&url=${encodeURIComponent(directTarget)}`
-      : (safelinkCache[sku] || null);
+    // Safelink URL Otomatis & Terverifikasi (Zero Data Leak)
+    // Mengarah ke endpoint resolver Express backend tanpa membocorkan Drive atau API key di JSON publik
+    const safelinkUrl = `/api/v1/ebook/safelink-instant/${sku}`;
 
     // 1. Payload Detail Atomik (1-2 KB per file)
     const itemDetail = {

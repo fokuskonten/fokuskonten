@@ -10,11 +10,15 @@ function getStaticModel(brandSlug, slug) {
       const data = JSON.parse(fs.readFileSync(brandFile, 'utf8'))
       const found = (data.models || []).find(m => m.slug === slug)
       if (found) {
+        const safeFiles = (found.files || []).map(f => {
+          const { gdrive_direct_url, gdrive_file_id, gdrive_mirror_url, gdrive_mirror_id, ...clean } = f
+          return clean
+        })
         return {
           ...found,
           brand: data.brand || found.brand,
           brandSlug: data.brandSlug || brandSlug,
-          files: found.files || []
+          files: safeFiles
         }
       }
     }

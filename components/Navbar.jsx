@@ -14,7 +14,7 @@ const navLinks = [
   { href: '/', label: 'Beranda' },
   { href: '/aplikasi/', label: 'Aplikasi' },
   { href: '/toko-digital/', label: 'Toko', isDropdown: true },
-  { href: '/ebook/', label: 'E-Book' },
+  { href: '/ebook/', label: 'Ebook' },
   { href: '/soundtrack/', label: 'Soundtrack' },
   { 
     href: '/teknisi-hp/', 
@@ -35,6 +35,9 @@ const navLinks = [
       }
     ]
   },
+]
+
+const secondaryNavLinks = [
   { href: '/tentang/', label: 'Tentang' },
   { href: '/layanan/', label: 'Layanan' },
   { href: '/faq/', label: 'FAQ' },
@@ -177,7 +180,7 @@ export default function Navbar() {
                     <Link
                       href={link.href}
                       onClick={handleTokoFilterClick}
-                      className={`px-3.5 py-2 rounded-xl text-sm font-medium transition-all duration-200 flex items-center gap-1.5 ${
+                      className={`px-3.5 py-2 rounded-xl text-sm font-medium transition-all duration-200 flex items-center gap-1.5 whitespace-nowrap ${
                         pathname.startsWith('/toko-digital')
                           ? 'text-neutral-950 bg-neutral-100 font-semibold'
                           : 'text-neutral-600 hover:text-neutral-950 hover:bg-neutral-100/60'
@@ -285,7 +288,7 @@ export default function Navbar() {
                         setIsHardwareOpen(false)
                         setIsOpen(false)
                       }}
-                      className={`px-3.5 py-2 rounded-xl text-sm font-medium transition-all duration-200 flex items-center gap-1.5 ${
+                      className={`px-3.5 py-2 rounded-xl text-sm font-medium transition-all duration-200 flex items-center gap-1.5 whitespace-nowrap ${
                         isHardwareActive
                           ? 'text-neutral-950 bg-neutral-100 font-semibold'
                           : 'text-neutral-600 hover:text-neutral-950 hover:bg-neutral-100/60'
@@ -351,7 +354,7 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`px-3.5 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${
+                  className={`px-3.5 py-2 rounded-xl text-sm font-medium transition-all duration-200 whitespace-nowrap ${
                     isActive
                       ? 'text-neutral-950 bg-neutral-100 font-semibold'
                       : 'text-neutral-600 hover:text-neutral-950 hover:bg-neutral-100/60'
@@ -363,7 +366,7 @@ export default function Navbar() {
             })}
             <Link
               href={buyerProfile?.email ? '/akun/' : '/login/'}
-              className={`px-3.5 py-2 rounded-xl text-sm font-medium transition-all duration-200 flex items-center gap-1.5 ${
+              className={`px-3.5 py-2 rounded-xl text-sm font-medium transition-all duration-200 flex items-center gap-1.5 whitespace-nowrap ${
                 (pathname === '/akun/' || pathname === '/login/')
                   ? 'text-neutral-950 bg-neutral-100 font-semibold'
                   : 'text-neutral-600 hover:text-neutral-950 hover:bg-neutral-100/60'
@@ -611,6 +614,32 @@ export default function Navbar() {
               </span>
             )}
           </button>
+
+          {/* Secondary Links Mobile */}
+          <div className="pt-2 mt-2 border-t border-neutral-100 space-y-0.5">
+            <span className="text-[10px] font-mono uppercase tracking-wider text-neutral-400 px-4 block pb-1">
+              Informasi & Bantuan
+            </span>
+            <div className="grid grid-cols-2 gap-1 px-2">
+              {secondaryNavLinks.map((link) => {
+                const isActive = pathname === link.href
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setIsOpen(false)}
+                    className={`flex items-center px-3 py-2 rounded-xl text-xs font-medium transition-all ${
+                      isActive
+                        ? 'bg-neutral-100 text-neutral-950 font-semibold'
+                        : 'text-neutral-500 hover:text-neutral-950 hover:bg-neutral-100/60'
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                )
+              })}
+            </div>
+          </div>
 
           <a
             href={getWhatsAppContextUrl({ pathname })}

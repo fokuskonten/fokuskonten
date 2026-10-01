@@ -3493,6 +3493,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://fokuskonten.my.id/curasi/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://fokuskonten.my.id/dmca/</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -3518,6 +3524,12 @@
   </url>
   <url>
     <loc>https://fokuskonten.my.id/muhari/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fokuskonten.my.id/panduan/</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -5984,18 +5996,6 @@
   </url>
   <url>
     <loc>https://fokuskonten.my.id/toko-digital/id20fc/fullpreview/</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/id20fd/fullpreview/</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/id20fe/fullpreview/</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

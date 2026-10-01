@@ -29,21 +29,21 @@ export default function EbookBundleBanner({ className = '' }) {
           </div>
 
           <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-white leading-snug">
-            Koleksi Seluruh {roundedTotal.toLocaleString('id-ID')}+ E-Book dalam 1 Folder Master
+            Koleksi Seluruh {roundedTotal.toLocaleString('id-ID')}+ Ebook dalam 1 Folder Master
           </h3>
 
           <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed font-sans">
-            Malas mengunduh satu per satu? Dapatkan akses instan ke 1 folder cloud storage lengkap berisi {totalEbooks.toLocaleString('id-ID')} judul e-book terorganisir per {totalCategories} kategori keilmuan. Sekali bayar, akses selamanya.
+            Malas mengunduh satu per satu? Dapatkan akses instan ke 1 folder cloud storage lengkap berisi {totalEbooks.toLocaleString('id-ID')} judul ebook terorganisir per {totalCategories} kategori keilmuan. Sekali bayar, akses selamanya.
           </p>
         </div>
 
         <div className="shrink-0 flex flex-col sm:flex-row md:flex-col items-start md:items-end gap-3 w-full sm:w-auto">
           <div className="text-left md:text-right">
             <span className="text-[11px] font-mono text-neutral-400 line-through">
-              Rp 149.000
+              Rp 750.000
             </span>
             <div className="text-2xl sm:text-3xl font-mono font-black text-white">
-              Rp 49.000
+              Rp 200.000
             </div>
           </div>
 

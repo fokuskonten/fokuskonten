@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-01T15:47:49.104Z",
+  "lastUpdated": "2026-10-01T22:13:19.172Z",
   "totalTracks": 3439,
   "totalSizeBytes": 2874715636,
   "volumes": [
@@ -66,7 +66,7 @@
       "g": "Cinematic",
       "m": "Cinematic",
       "u": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-soundtrack-vol1@main/3d_world_logo_reveal_5450489.opus",
-      "l": "https://sfl.gl/st?api=41bce343d0c4077814e1430901df36f0f18bb967&url=https%3A%2F%2Fapi.fokuskonten.my.id%2Fapi%2Fv1%2Fsoundtrack%2Fdownload-stream%2FST1-0001",
+      "l": "https://api.fokuskonten.my.id/api/v1/soundtrack/download-stream/ST1-0001",
       "vc": 1
     },
     {
@@ -80,7 +80,7 @@
       "g": "Piano & Romantic",
       "m": "Piano & Romantic",
       "u": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-soundtrack-vol1@main/20s_piano_bar_168809.opus",
-      "l": "https://sfl.gl/st?api=41bce343d0c4077814e1430901df36f0f18bb967&url=https%3A%2F%2Fapi.fokuskonten.my.id%2Fapi%2Fv1%2Fsoundtrack%2Fdownload-stream%2FST1-0002",
+      "l": "https://api.fokuskonten.my.id/api/v1/soundtrack/download-stream/ST1-0002",
       "vc": 1
     },
     {
@@ -94,7 +94,7 @@
       "g": "Cinematic",
       "m": "Cinematic",
       "u": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-soundtrack-vol1@main/50_s_hollywood_romance_157986.opus",
-      "l": "https://sfl.gl/st?api=41bce343d0c4077814e1430901df36f0f18bb967&url=https%3A%2F%2Fapi.fokuskonten.my.id%2Fapi%2Fv1%2Fsoundtrack%2Fdownload-stream%2FST1-0003",
+      "l": "https://api.fokuskonten.my.id/api/v1/soundtrack/download-stream/ST1-0003",
       "vc": 2
     },
     {
@@ -108,7 +108,7 @@
       "g": "Cinematic",
       "m": "Cinematic",
       "u": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-soundtrack-vol1@main/8_bit_mysterious_dungeon_23130190.opus",
-      "l": "https://sfl.gl/st?api=41bce343d0c4077814e1430901df36f0f18bb967&url=https%3A%2F%2Fapi.fokuskonten.my.id%2Fapi%2Fv1%2Fsoundtrack%2Fdownload-stream%2FST1-0004",
+      "l": "https://api.fokuskonten.my.id/api/v1/soundtrack/download-stream/ST1-0004",
       "vc": 1
     },
     {
@@ -122,7 +122,7 @@
       "g": "Rock",
       "m": "Rock",
       "u": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-soundtrack-vol1@main/70s_style_indie_rock_13582133.opus",
-      "l": "https://sfl.gl/st?api=41bce343d0c4077814e1430901df36f0f18bb967&url=https%3A%2F%2Fapi.fokuskonten.my.id%2Fapi%2Fv1%2Fsoundtrack%2Fdownload-stream%2FST1-0005",
+      "l": "https://api.fokuskonten.my.id/api/v1/soundtrack/download-stream/ST1-0005",
       "vc": 1
     },
     {
@@ -136,7 +136,7 @@
       "g": "Cinematic",
       "m": "Cinematic",
       "u": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-soundtrack-vol1@main/80s_21294708.opus",
-      "l": "https://sfl.gl/st?api=41bce343d0c4077814e1430901df36f0f18bb967&url=https%3A%2F%2Fapi.fokuskonten.my.id%2Fapi%2Fv1%2Fsoundtrack%2Fdownload-stream%2FST1-0006",
+      "l": "https://api.fokuskonten.my.id/api/v1/soundtrack/download-stream/ST1-0006",
       "vc": 1
     },
     {
@@ -150,7 +150,7 @@
       "g": "Cinematic",
       "m": "Cinematic",
       "u": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-soundtrack-vol1@main/80_s_disco_retrospect_4671181.opus",
-      "l": "https://sfl.gl/st?api=41bce343d0c4077814e1430901df36f0f18bb967&url=https%3A%2F%2Fapi.fokuskonten.my.id%2Fapi%2Fv1%2Fsoundtrack%2Fdownload-stream%2FST1-0007",
+      "l": "https://api.fokuskonten.my.id/api/v1/soundtrack/download-stream/ST1-0007",
       "vc": 1
     },
     {
@@ -164,7 +164,7 @@
       "g": "Cinematic",
       "m": "Cinematic",
       "u": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-soundtrack-vol1@main/a_beautiful_life_5352585.opus",
-      "l": "https://sfl.gl/st?api=41bce343d0c4077814e1430901df36f0f18bb967&url=https%3A%2F%2Fapi.fokuskonten.my.id%2Fapi%2Fv1%2Fsoundtrack%2Fdownload-stream%2FST1-0008",
+      "l": "https://api.fokuskonten.my.id/api/v1/soundtrack/download-stream/ST1-0008",
       "vc": 1
     },
     {
@@ -178,7 +178,7 @@
       "g": "Cinematic",
       "m": "Cinematic",
       "u": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-soundtrack-vol1@main/a_bittersweet_ending_21019234.opus",
-      "l": "https://sfl.gl/st?api=41bce343d0c4077814e1430901df36f0f18bb967&url=https%3A%2F%2Fapi.fokuskonten.my.id%2Fapi%2Fv1%2Fsoundtrack%2Fdownload-stream%2FST1-0009",
+      "l": "https://api.fokuskonten.my.id/api/v1/soundtrack/download-stream/ST1-0009",
       "vc": 1
     },
     {
@@ -192,7 +192,7 @@
       "g": "Cinematic",
       "m": "Cinematic",
       "u": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-soundtrack-vol1@main/a_bright_flash_logo_236498.opus",
-      "l": "https://sfl.gl/st?api=41bce343d0c4077814e1430901df36f0f18bb967&url=https%3A%2F%2Fapi.fokuskonten.my.id%2Fapi%2Fv1%2Fsoundtrack%2Fdownload-stream%2FST1-0010",
+      "l": "https://api.fokuskonten.my.id/api/v1/soundtrack/download-stream/ST1-0010",
       "vc": 1
     },
     {
@@ -206,7 +206,7 @@
       "g": "Corporate",
       "m": "Corporate",
       "u": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-soundtrack-vol1@main/a_business_22003025.opus",
-      "l": "https://sfl.gl/st?api=41bce343d0c4077814e1430901df36f0f18bb967&url=https%3A%2F%2Fapi.fokuskonten.my.id%2Fapi%2Fv1%2Fsoundtrack%2Fdownload-stream%2FST1-0011",
+      "l": "https://api.fokuskonten.my.id/api/v1/soundtrack/download-stream/ST1-0011",
       "vc": 1
     },
     {
@@ -220,7 +220,7 @@
       "g": "Cinematic",
       "m": "Cinematic",
       "u": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-soundtrack-vol1@main/80s_mood_13135772.opus",
-      "l": "https://sfl.gl/st?api=41bce343d0c4077814e1430901df36f0f18bb967&url=https%3A%2F%2Fapi.fokuskonten.my.id%2Fapi%2Fv1%2Fsoundtrack%2Fdownload-stream%2FST1-0012",
+      "l": "https://api.fokuskonten.my.id/api/v1/soundtrack/download-stream/ST1-0012",
       "vc": 1
     },
     {
@@ -234,7 +234,7 @@
       "g": "Cinematic",
       "m": "Cinematic",
       "u": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-soundtrack-vol1@main/a_cheerful_world_1467287.opus",
-      "l": "https://sfl.gl/st?api=41bce343d0c4077814e1430901df36f0f18bb967&url=https%3A%2F%2Fapi.fokuskonten.my.id%2Fapi%2Fv1%2Fsoundtrack%2Fdownload-stream%2FST1-0013",
+      "l": "https://api.fokuskonten.my.id/api/v1/soundtrack/download-stream/ST1-0013",
       "vc": 1
     },
     {
@@ -248,7 +248,7 @@
       "g": "Cinematic",
       "m": "Cinematic",
       "u": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-soundtrack-vol1@main/a_bright_and_hopeful_future_236175.opus",
-      "l": "https://sfl.gl/st?api=41bce343d0c4077814e1430901df36f0f18bb967&url=https%3A%2F%2Fapi.fokuskonten.my.id%2Fapi%2Fv1%2Fsoundtrack%2Fdownload-stream%2FST1-0014",
+      "l": "https://api.fokuskonten.my.id/api/v1/soundtrack/download-stream/ST1-0014",
       "vc": 1
     },
     {
@@ -262,7 +262,7 @@
       "g": "Cinematic",
       "m": "Cinematic",
       "u": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-soundtrack-vol1@main/a_few_more_notes_3244535.opus",
-      "l": "https://sfl.gl/st?api=41bce343d0c4077814e1430901df36f0f18bb967&url=https%3A%2F%2Fapi.fokuskonten.my.id%2Fapi%2Fv1%2Fsoundtrack%2Fdownload-stream%2FST1-0015",
+      "l": "https://api.fokuskonten.my.id/api/v1/soundtrack/download-stream/ST1-0015",
       "vc": 1
     },
     {
@@ -276,7 +276,7 @@
       "g": "Cinematic",
       "m": "Cinematic",
       "u": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-soundtrack-vol1@main/a_few_notes_3167395.opus",
-      "l": "https://sfl.gl/st?api=41bce343d0c4077814e1430901df36f0f18bb967&url=https%3A%2F%2Fapi.fokuskonten.my.id%2Fapi%2Fv1%2Fsoundtrack%2Fdownload-stream%2FST1-0016",
+      "l": "https://api.fokuskonten.my.id/api/v1/soundtrack/download-stream/ST1-0016",
       "vc": 1
     },
     {
@@ -290,7 +290,7 @@
       "g": "Cinematic",
       "m": "Cinematic",
       "u": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-soundtrack-vol1@main/a_child_13693950.opus",
-      "l": "https://sfl.gl/st?api=41bce343d0c4077814e1430901df36f0f18bb967&url=https%3A%2F%2Fapi.fokuskonten.my.id%2Fapi%2Fv1%2Fsoundtrack%2Fdownload-stream%2FST1-0017",
+      "l": "https://api.fokuskonten.my.id/api/v1/soundtrack/download-stream/ST1-0017",
       "vc": 1
     },
     {
@@ -304,7 +304,7 @@
       "g": "Cinematic",
       "m": "Cinematic",
       "u": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-soundtrack-vol1@main/a_good_life_232638.opus",
-      "l": "https://sfl.gl/st?api=41bce343d0c4077814e1430901df36f0f18bb967&url=https%3A%2F%2Fapi.fokuskonten.my.id%2Fapi%2Fv1%2Fsoundtrack%2Fdownload-stream%2FST1-0018",
+      "l": "https://api.fokuskonten.my.id/api/v1/soundtrack/download-stream/ST1-0018",
       "vc": 1
     },
     {
@@ -318,7 +318,7 @@
       "g": "Cinematic",
       "m": "Cinematic",
       "u": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-soundtrack-vol1@main/a_christmas_story_20880495.opus",
-      "l": "https://sfl.gl/st?api=41bce343d0c4077814e1430901df36f0f18bb967&url=https%3A%2F%2Fapi.fokuskonten.my.id%2Fapi%2Fv1%2Fsoundtrack%2Fdownload-stream%2FST1-0019",
+      "l": "https://api.fokuskonten.my.id/api/v1/soundtrack/download-stream/ST1-0019",
       "vc": 1
     },
     {
@@ -332,7 +332,7 @@
       "g": "Cinematic",
       "m": "Cinematic",
       "u": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-soundtrack-vol1@main/a_drive_to_remember_2214163.opus",
-      "l": "https://sfl.gl/st?api=41bce343d0c4077814e1430901df36f0f18bb967&url=https%3A%2F%2Fapi.fokuskonten.my.id%2Fapi%2Fv1%2Fsoundtrack%2Fdownload-stream%2FST1-0020",
+      "l": "https://api.fokuskonten.my.id/api/v1/soundtrack/download-stream/ST1-0020",
       "vc": 5
     },
     {
@@ -346,7 +346,7 @@
       "g": "Cinematic",
       "m": "Cinematic",
       "u": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-soundtrack-vol1@main/a_guy_named_jones_11438928.opus",
-      "l": "https://sfl.gl/st?api=41bce343d0c4077814e1430901df36f0f18bb967&url=https%3A%2F%2Fapi.fokuskonten.my.id%2Fapi%2Fv1%2Fsoundtrack%2Fdownload-stream%2FST1-0021",
+      "l": "https://api.fokuskonten.my.id/api/v1/soundtrack/download-stream/ST1-0021",
       "vc": 1
     },
     {
@@ -360,7 +360,7 @@
       "g": "Cinematic",
       "m": "Cinematic",
       "u": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-soundtrack-vol1@main/a_gentle_spring_morning_16894644.opus",
-      "l": "https://sfl.gl/st?api=41bce343d0c4077814e1430901df36f0f18bb967&url=https%3A%2F%2Fapi.fokuskonten.my.id%2Fapi%2Fv1%2Fsoundtrack%2Fdownload-stream%2FST1-0022",
+      "l": "https://api.fokuskonten.my.id/api/v1/soundtrack/download-stream/ST1-0022",
       "vc": 1
     },
     {
@@ -374,7 +374,7 @@
       "g": "Happy & Fun",
       "m": "Happy & Fun",
       "u": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-soundtrack-vol1@main/a_happy_19655827.opus",
-      "l": "https://sfl.gl/st?api=41bce343d0c4077814e1430901df36f0f18bb967&url=https%3A%2F%2Fapi.fokuskonten.my.id%2Fapi%2Fv1%2Fsoundtrack%2Fdownload-stream%2FST1-0023",
+      "l": "https://api.fokuskonten.my.id/api/v1/soundtrack/download-stream/ST1-0023",
       "vc": 1
     },
     {
@@ -388,7 +388,7 @@
       "g": "Happy & Fun",
       "m": "Happy & Fun",
       "u": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-soundtrack-vol1@main/a_happy_beautiful_day_4274413.opus",
-      "l": "https://sfl.gl/st?api=41bce343d0c4077814e1430901df36f0f18bb967&url=https%3A%2F%2Fapi.fokuskonten.my.id%2Fapi%2Fv1%2Fsoundtrack%2Fdownload-stream%2FST1-0024",
+      "l": "https://api.fokuskonten.my.id/api/v1/soundtrack/download-stream/ST1-0024",
       "vc": 2
     }
   ]

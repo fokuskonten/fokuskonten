@@ -61,6 +61,7 @@ function getShard(categorySlug) {
  */
 function getEbookItem(slug, categorySlug) {
   if (!slug) return null
+  let result = null
 
   if (categorySlug) {
     const shard = getShard(categorySlug)
@@ -68,17 +69,25 @@ function getEbookItem(slug, categorySlug) {
       const itemMap = _itemMapByCatSlug.get(categorySlug)
       const item = itemMap ? itemMap.get(slug.toLowerCase()) : null
       if (item) {
-        return enrichShardItem(item, shard.name, shard.slug)
+        result = enrichShardItem(item, shard.name, shard.slug)
       }
     }
   }
 
-  try {
-    const itemPath = path.resolve(process.cwd(), 'content/ebook/items', `${slug}.json`)
-    if (fs.existsSync(itemPath)) {
-      return JSON.parse(fs.readFileSync(itemPath, 'utf-8'))
-    }
-  } catch (_) {}
+  if (!result) {
+    try {
+      const itemPath = path.resolve(process.cwd(), 'content/ebook/items', `${slug}.json`)
+      if (fs.existsSync(itemPath)) {
+        result = JSON.parse(fs.readFileSync(itemPath, 'utf-8'))
+      }
+    } catch (_) {}
+  }
+
+  if (result) {
+    // Hardening: buang safelinkUrl statis & direct link gdrive mentah
+    const { safelinkUrl, drive_link, driveLink, ...safeItem } = result
+    return { ...safeItem, safelinkUrl: null }
+  }
 
   return null
 }
