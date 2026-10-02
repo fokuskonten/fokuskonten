@@ -112,7 +112,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />
-        {/* <QuinChatWidget /> */}
+        <QuinChatWidget />
         <CartFloat />
         <BackToTop />
 

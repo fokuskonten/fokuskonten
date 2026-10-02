@@ -13,6 +13,12 @@ const DEFAULT_MESSAGES = [
   }
 ]
 
+const THINKING_STEPS = [
+  'Memindai basis data & katalog produk...',
+  'Menganalisis wawasan teknis & panduan...',
+  'Menyusun jawaban resmi...'
+]
+
 export default function QuinChatWidget() {
   const { isOffline } = useStoreHealth()
   const pathname = usePathname() || ''
@@ -20,6 +26,7 @@ export default function QuinChatWidget() {
   const [messages, setMessages] = useState(DEFAULT_MESSAGES)
   const [input, setInput] = useState('')
   const [isLoading, setIsLoading] = useState(false)
+  const [thinkingPhase, setThinkingPhase] = useState(0)
   const [hasHydrated, setHasHydrated] = useState(false)
   const messagesEndRef = useRef(null)
 
@@ -98,18 +105,23 @@ export default function QuinChatWidget() {
 
   useEffect(() => {
     scrollToBottom()
-  }, [messages])
+  }, [messages, isLoading, thinkingPhase])
 
-  const typingTimerRef = useRef(null)
-
+  // Efek rotasi status thinking
   useEffect(() => {
-    return () => {
-      if (typingTimerRef.current) clearTimeout(typingTimerRef.current)
+    if (!isLoading) {
+      setThinkingPhase(0)
+      return
     }
-  }, [])
+    const timer1 = setTimeout(() => setThinkingPhase(1), 1100)
+    const timer2 = setTimeout(() => setThinkingPhase(2), 2600)
+    return () => {
+      clearTimeout(timer1)
+      clearTimeout(timer2)
+    }
+  }, [isLoading])
 
   const handleResetChat = () => {
-    if (typingTimerRef.current) clearTimeout(typingTimerRef.current)
     setMessages(DEFAULT_MESSAGES)
     setIsLoading(false)
     try {
@@ -117,53 +129,13 @@ export default function QuinChatWidget() {
     } catch (e) {}
   }
 
-  const streamAssistantReply = (fullReply, products = []) => {
+  // Tampilkan jawaban seketika tanpa efek ketik lambat
+  const displayAssistantReply = (fullReply, products = []) => {
     setIsLoading(false)
-    const text = fullReply || ''
-    const totalLength = text.length
-
-    // Append new empty assistant message
     setMessages(prev => [
       ...prev,
-      { role: 'assistant', content: '', isTyping: true, products: [] }
+      { role: 'assistant', content: fullReply || '', products: products || [] }
     ])
-
-    let currentIndex = 0
-
-    const getNextDelay = (char) => {
-      if (char === '.' || char === '!' || char === '?') return 140
-      if (char === ',' || char === ';') return 70
-      if (char === '\n') return 90
-      return Math.floor(Math.random() * 14) + 14
-    }
-
-    const typeNextChunk = () => {
-      // Natural chunking: 1-3 chars per tick
-      const step = text.length > 300 ? 3 : text.length > 150 ? 2 : 1
-      currentIndex = Math.min(totalLength, currentIndex + step)
-      const currentText = text.slice(0, currentIndex)
-
-      setMessages(prev => {
-        const copy = [...prev]
-        const lastIdx = copy.length - 1
-        if (lastIdx >= 0 && copy[lastIdx].role === 'assistant') {
-          copy[lastIdx] = {
-            ...copy[lastIdx],
-            content: currentText,
-            isTyping: currentIndex < totalLength,
-            products: currentIndex >= totalLength ? products : []
-          }
-        }
-        return copy
-      })
-
-      if (currentIndex < totalLength) {
-        const nextChar = text[currentIndex] || ''
-        typingTimerRef.current = setTimeout(typeNextChunk, getNextDelay(nextChar))
-      }
-    }
-
-    typingTimerRef.current = setTimeout(typeNextChunk, 160)
   }
 
   const handleSend = async (e) => {
@@ -186,7 +158,7 @@ export default function QuinChatWidget() {
         replyText = `Terima kasih telah menghubungi FokusKonten.\n\nSaat ini sistem transaksi otomatis sedang dalam pemeliharaan sistem berkala. Pertanyaan Anda mengenai:\n*"${userText}"*\n\ntelah kami siapkan agar langsung ditangani oleh Helpdesk resmi kami:\n\n👉 [💬 Lanjutkan ke Helpdesk WhatsApp: "${userText}"](https://wa.me/6285183011318?text=${encodeURIComponent(waText)})\n\nPengiriman akses Google Drive dan lisensi komersial tetap dilayani secara penuh.`
       }
 
-      streamAssistantReply(replyText, [])
+      displayAssistantReply(replyText, [])
       return
     }
 
@@ -229,13 +201,13 @@ export default function QuinChatWidget() {
       if (!res || !res.ok) throw new Error('AI Server Offline')
       
       const data = await res.json()
-      streamAssistantReply(
+      displayAssistantReply(
         data.reply || 'Maaf, saya sedang memproses jawaban...',
         data.products || []
       )
     } catch (err) {
       console.error('[QuinChatWidget Error]:', err)
-      streamAssistantReply(
+      displayAssistantReply(
         `Mohon maaf, server konsultasi otomatis kami sedang dalam pemeliharaan berkala. Anda dapat langsung berkonsultasi via WhatsApp resmi: [085183011318](https://wa.me/6285183011318?text=${encodeURIComponent(`Halo FokusKonten,\n\n${userText}`)}) 🙏`,
         []
       )
@@ -289,7 +261,7 @@ export default function QuinChatWidget() {
           <Link 
             key={match.index} 
             href={linkUrl} 
-            className="text-blue-600 hover:text-blue-800 underline font-semibold transition-colors"
+            className="text-neutral-950 hover:text-neutral-700 underline font-semibold transition-colors"
           >
             {linkText}
           </Link>
@@ -299,7 +271,7 @@ export default function QuinChatWidget() {
             href={linkUrl} 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="text-blue-600 hover:text-blue-800 underline font-semibold transition-colors"
+            className="text-neutral-950 hover:text-neutral-700 underline font-semibold transition-colors"
           >
             {linkText} ↗
           </a>
@@ -472,11 +444,22 @@ export default function QuinChatWidget() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="bg-white border border-neutral-200/90 rounded-2xl rounded-tl-none p-3 shadow-sm">
-                <div className="flex gap-1.5 items-center">
-                  <span className="w-2 h-2 bg-neutral-400 rounded-full animate-bounce"></span>
-                  <span className="w-2 h-2 bg-neutral-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></span>
-                  <span className="w-2 h-2 bg-neutral-400 rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></span>
+              <div className="bg-white border border-neutral-200/90 rounded-2xl rounded-tl-none p-3.5 shadow-sm max-w-[85%]">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-neutral-100 border border-neutral-300 text-[10px] font-mono font-bold text-neutral-800">
+                    <span className="w-1.5 h-1.5 rounded-full bg-neutral-900 animate-ping" />
+                    THINKING
+                  </span>
+                  <span className="text-[10px] font-mono text-neutral-400">Kalila AI</span>
+                </div>
+                <div className="flex items-center gap-2 text-xs text-neutral-600 font-medium">
+                  <svg className="animate-spin w-3.5 h-3.5 text-neutral-800 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                  </svg>
+                  <span className="transition-all duration-300">
+                    {THINKING_STEPS[thinkingPhase] || THINKING_STEPS[0]}
+                  </span>
                 </div>
               </div>
             </div>
