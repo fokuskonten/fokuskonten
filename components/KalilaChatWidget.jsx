@@ -125,6 +125,7 @@ export default function KalilaChatWidget() {
     setMessages(DEFAULT_MESSAGES)
     setIsLoading(false)
     try {
+      localStorage.removeItem('fk_chat_history_v3')
       localStorage.removeItem('fk_chat_history_v2')
     } catch (e) {}
   }
@@ -324,12 +325,12 @@ export default function KalilaChatWidget() {
       </button>
 
       {/* Chat Window */}
-      <div className={`fixed bottom-24 lg:bottom-6 right-4 lg:right-6 z-50 w-[360px] max-w-[calc(100vw-2rem)] h-[520px] max-h-[calc(100vh-7rem)] bg-white rounded-3xl shadow-2xl border border-neutral-200/90 flex flex-col transition-all duration-300 origin-bottom-right font-sans overflow-hidden ${isOpen ? 'scale-100 opacity-100' : 'scale-0 opacity-0 pointer-events-none'}`}>
+      <div className={`fixed bottom-24 lg:bottom-6 right-4 lg:right-6 z-50 w-[380px] sm:w-[400px] max-w-[calc(100vw-1.5rem)] h-[540px] sm:h-[580px] max-h-[calc(100vh-5rem)] bg-white rounded-3xl shadow-2xl border border-neutral-200 flex flex-col transition-all duration-300 origin-bottom-right font-sans overflow-hidden ${isOpen ? 'scale-100 opacity-100' : 'scale-0 opacity-0 pointer-events-none'}`}>
         
         {/* Header */}
-        <div className="bg-neutral-950 px-4 py-3.5 flex items-center justify-between border-b border-neutral-800">
+        <div className="bg-neutral-950 px-5 py-4 flex items-center justify-between border-b border-neutral-800">
           <div className="flex items-center gap-3">
-            <div className={`relative w-10 h-10 rounded-full overflow-hidden border-2 ${isOffline ? 'border-amber-400/80' : 'border-emerald-400'} shadow-soft shrink-0`}>
+            <div className={`relative w-11 h-11 rounded-full overflow-hidden border-2 ${isOffline ? 'border-amber-400/80' : 'border-emerald-400'} shadow-soft shrink-0`}>
               <img 
                 src="/cs-avatar.png" 
                 alt="Kalila - Layanan Pelanggan" 
@@ -338,22 +339,22 @@ export default function KalilaChatWidget() {
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <h3 className="text-white font-semibold text-sm tracking-tight">Kalila — Layanan Pelanggan</h3>
+                <h3 className="text-white font-semibold text-base tracking-tight">Kalila — Layanan Pelanggan</h3>
               </div>
               {isOffline ? (
-                <p className="text-amber-400 text-[11px] font-medium flex items-center gap-1.5 mt-0.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
+                <p className="text-amber-400 text-xs font-medium flex items-center gap-1.5 mt-0.5">
+                  <span className="w-2 h-2 rounded-full bg-amber-400" />
                   Helpdesk WhatsApp Resmi
                 </p>
               ) : (
-                <p className="text-emerald-400 text-[11px] font-medium flex items-center gap-1.5 mt-0.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                  Online • Kalila AI Siap Membantu
+                <p className="text-emerald-400 text-xs font-medium flex items-center gap-1.5 mt-0.5">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                  Online • Asisten Digital FokusKonten
                 </p>
               )}
             </div>
           </div>
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-1.5">
             <button 
               type="button" 
               onClick={handleResetChat} 
@@ -379,11 +380,11 @@ export default function KalilaChatWidget() {
         </div>
 
         {/* Messages */}
-        <div className="flex-1 overflow-y-auto p-4 space-y-3.5 bg-neutral-50/70 text-xs sm:text-sm">
+        <div className="flex-1 overflow-y-auto p-4 sm:p-5 space-y-4 bg-neutral-50/70 text-[13.5px] sm:text-[14px]">
           {messages.map((msg, i) => (
-            <div key={i} className={`flex gap-2 items-start ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
+            <div key={i} className={`flex gap-2.5 items-start ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
               {msg.role !== 'user' && (
-                <div className="relative w-7 h-7 rounded-full overflow-hidden shrink-0 border border-neutral-200 shadow-xs mt-0.5">
+                <div className="relative w-8 h-8 rounded-full overflow-hidden shrink-0 border border-neutral-200 shadow-xs mt-0.5">
                   <img 
                     src="/cs-avatar.png" 
                     alt="Kalila" 
@@ -391,7 +392,7 @@ export default function KalilaChatWidget() {
                   />
                 </div>
               )}
-              <div className={`max-w-[85%] rounded-2xl p-3 leading-relaxed ${msg.role === 'user' ? 'bg-neutral-950 text-white rounded-tr-none shadow-soft' : 'bg-white border border-neutral-200/90 text-neutral-800 rounded-tl-none shadow-sm'}`}>
+              <div className={`max-w-[88%] rounded-2xl p-3.5 sm:p-4 leading-relaxed ${msg.role === 'user' ? 'bg-neutral-950 text-white rounded-tr-none shadow-soft font-medium' : 'bg-white border border-neutral-200 text-neutral-800 rounded-tl-none shadow-xs'}`}>
                 <div className="whitespace-pre-wrap">
                   {renderMessageContent(msg.content)}
                   {msg.isTyping && (
@@ -401,30 +402,30 @@ export default function KalilaChatWidget() {
 
                 {/* Lampiran Kartu Produk Ready di Web */}
                 {msg.products && msg.products.length > 0 && (
-                  <div className="mt-3 pt-2.5 border-t border-neutral-200/80 space-y-1.5">
-                    <div className="text-[10px] font-bold tracking-wider text-neutral-500 uppercase flex items-center gap-1">
-                      <span>🛒</span> Produk Ready di Web:
+                  <div className="mt-3.5 pt-3 border-t border-neutral-200/80 space-y-2">
+                    <div className="text-[11px] font-bold tracking-wider text-neutral-500 uppercase flex items-center gap-1.5">
+                      <span className="w-2 h-2 rounded-full bg-neutral-950 inline-block" /> Produk & Literatur Terverifikasi:
                     </div>
-                    <div className="space-y-1.5">
+                    <div className="space-y-2">
                       {msg.products.map((prod) => (
                         <Link
                           key={prod.sku}
                           href={prod.url || `/toko-digital/${prod.sku}`}
-                          className="flex items-center justify-between p-2 rounded-xl bg-neutral-50 hover:bg-blue-50 border border-neutral-200 hover:border-blue-300 transition-all group block text-left"
+                          className="flex items-center justify-between p-2.5 rounded-xl bg-neutral-50 hover:bg-neutral-100 border border-neutral-200 hover:border-neutral-300 transition-all group block text-left"
                         >
                           <div className="min-w-0 pr-2">
-                            <div className="font-semibold text-xs text-neutral-900 group-hover:text-blue-700 truncate">
+                            <div className="font-semibold text-xs text-neutral-900 group-hover:text-neutral-950 truncate">
                               {prod.title}
                             </div>
-                            <div className="text-[10px] text-neutral-500">
-                              SKU: {prod.sku} • Format: <span className="font-medium text-neutral-700">{prod.format}</span>
+                            <div className="text-[11px] text-neutral-500 mt-0.5">
+                              SKU: <span className="font-mono">{prod.sku}</span> • Format: <span className="font-medium text-neutral-700">{prod.format}</span>
                             </div>
                           </div>
                           <div className="shrink-0 text-right">
-                            <span className="inline-block text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200 group-hover:bg-emerald-100">
+                            <span className="inline-block text-[11px] font-mono font-bold text-neutral-950 bg-white px-2.5 py-1 rounded-md border border-neutral-300 group-hover:bg-neutral-950 group-hover:text-white transition-colors">
                               {prod.price && !isNaN(Number(prod.price))
                                 ? `Rp ${Number(prod.price).toLocaleString('id-ID')} ↗`
-                                : `${prod.price || 'Konsultasi'} ↗`}
+                                : `${prod.price || 'Akses Langsung'} ↗`}
                             </span>
                           </div>
                         </Link>
@@ -436,17 +437,17 @@ export default function KalilaChatWidget() {
             </div>
           ))}
           {isLoading && (
-            <div className="flex gap-2 items-start justify-start">
-              <div className="relative w-7 h-7 rounded-full overflow-hidden shrink-0 border border-neutral-200 shadow-xs mt-0.5">
+            <div className="flex gap-2.5 items-start justify-start">
+              <div className="relative w-8 h-8 rounded-full overflow-hidden shrink-0 border border-neutral-200 shadow-xs mt-0.5">
                 <img 
                   src="/cs-avatar.png" 
                   alt="Kalila" 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="bg-white border border-neutral-200/90 rounded-2xl rounded-tl-none p-3.5 shadow-sm max-w-[85%]">
-                <div className="flex items-center gap-2 text-xs text-neutral-600 font-medium">
-                  <svg className="animate-spin w-3.5 h-3.5 text-neutral-800 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <div className="bg-white border border-neutral-200 rounded-2xl rounded-tl-none p-3.5 sm:p-4 shadow-xs max-w-[88%]">
+                <div className="flex items-center gap-2.5 text-xs text-neutral-600 font-medium">
+                  <svg className="animate-spin w-4 h-4 text-neutral-950 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                     <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                   </svg>
@@ -462,7 +463,7 @@ export default function KalilaChatWidget() {
 
         {/* Quick Context Chips saat Offline */}
         {isOffline && (
-          <div className="px-3.5 py-2 bg-neutral-50/90 border-t border-neutral-200/80 flex flex-wrap gap-1.5 items-center">
+          <div className="px-4 py-2.5 bg-neutral-50/90 border-t border-neutral-200 flex flex-wrap gap-2 items-center">
             <span className="text-[10px] font-display font-semibold text-neutral-400 uppercase tracking-wider block w-full mb-0.5">
               Layanan Langsung via Helpdesk:
             </span>
@@ -482,19 +483,19 @@ export default function KalilaChatWidget() {
         )}
 
         {/* Input Form */}
-        <form onSubmit={handleSend} className="p-3 bg-white border-t border-neutral-200/80">
+        <form onSubmit={handleSend} className="p-3.5 sm:p-4 bg-white border-t border-neutral-200">
           <div className="relative flex items-center">
             <input
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder={isOffline ? "Ketik pertanyaan untuk Helpdesk Resmi..." : "Ketik pertanyaan seputar produk, aplikasi, atau pesanan..."}
-              className="w-full pl-3.5 pr-11 py-2.5 rounded-xl bg-neutral-100/80 border border-neutral-200 focus:border-neutral-950 focus:bg-white focus:ring-1 focus:ring-neutral-950 text-xs sm:text-sm outline-none transition-all placeholder:text-neutral-400"
+              placeholder={isOffline ? "Ketik pesan untuk Helpdesk..." : "Ketik pesan Anda..."}
+              className="w-full pl-4 pr-12 py-3 rounded-2xl bg-neutral-100/90 border border-neutral-200 focus:border-neutral-950 focus:bg-white focus:ring-2 focus:ring-neutral-950/15 text-sm outline-none transition-all placeholder:text-neutral-400"
             />
             <button
               type="submit"
               disabled={!input.trim() || isLoading}
-              className="absolute right-1.5 w-8 h-8 flex items-center justify-center rounded-lg bg-neutral-950 text-white hover:bg-neutral-800 disabled:opacity-40 transition-all cursor-pointer shadow-soft"
+              className="absolute right-2 w-9 h-9 flex items-center justify-center rounded-xl bg-neutral-950 text-white hover:bg-neutral-800 disabled:opacity-40 transition-all cursor-pointer shadow-soft"
               aria-label="Kirim Pesan"
               title={isOffline ? "Kirim Pertanyaan" : "Kirim Pesan"}
             >
