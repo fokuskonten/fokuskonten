@@ -19,7 +19,7 @@ const THINKING_STEPS = [
   'Menyusun jawaban resmi...'
 ]
 
-export default function QuinChatWidget() {
+export default function KalilaChatWidget() {
   const { isOffline } = useStoreHealth()
   const pathname = usePathname() || ''
   const [isOpen, setIsOpen] = useState(false)
@@ -166,7 +166,7 @@ export default function QuinChatWidget() {
 
     try {
       const baseUrl = getApiBaseUrl()
-      const aiUrl = baseUrl.endsWith('/api/v1') ? `${baseUrl}/ai/qween` : `${baseUrl}/api/v1/ai/qween`
+      const aiUrl = baseUrl.endsWith('/api/v1') ? `${baseUrl}/ai/kalila` : `${baseUrl}/api/v1/ai/kalila`
       
       let res = null
       try {
@@ -176,14 +176,14 @@ export default function QuinChatWidget() {
           body: JSON.stringify({ message: userText })
         })
       } catch (fetchErr) {
-        console.warn('[QuinChatWidget] Primary AI URL gagal, mencoba failover:', fetchErr.message)
+        console.warn('[KalilaWidget] Primary AI URL gagal, mencoba failover:', fetchErr.message)
       }
 
       // Failover jika primary URL gagal (404/500/offline)
       if (!res || !res.ok) {
         const fallbackUrl = aiUrl.includes('localhost') || aiUrl.includes('127.0.0.1')
-          ? 'http://localhost:8090/api/v1/ai/qween'
-          : 'https://api.fokuskonten.my.id/api/v1/ai/qween'
+          ? 'http://localhost:8090/api/v1/ai/kalila'
+          : 'https://api.fokuskonten.my.id/api/v1/ai/kalila'
         
         if (fallbackUrl !== aiUrl) {
           try {
@@ -193,7 +193,7 @@ export default function QuinChatWidget() {
               body: JSON.stringify({ message: userText })
             })
           } catch (fbErr) {
-            console.warn('[QuinChatWidget] Failover URL juga gagal:', fbErr.message)
+            console.warn('[KalilaWidget] Failover URL juga gagal:', fbErr.message)
           }
         }
       }
@@ -206,7 +206,7 @@ export default function QuinChatWidget() {
         data.products || []
       )
     } catch (err) {
-      console.error('[QuinChatWidget Error]:', err)
+      console.error('[KalilaWidget Error]:', err)
       displayAssistantReply(
         `Mohon maaf, server konsultasi otomatis kami sedang dalam pemeliharaan berkala. Anda dapat langsung berkonsultasi via WhatsApp resmi: [085183011318](https://wa.me/6285183011318?text=${encodeURIComponent(`Halo FokusKonten,\n\n${userText}`)}) 🙏`,
         []
@@ -445,13 +445,6 @@ export default function QuinChatWidget() {
                 />
               </div>
               <div className="bg-white border border-neutral-200/90 rounded-2xl rounded-tl-none p-3.5 shadow-sm max-w-[85%]">
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-neutral-100 border border-neutral-300 text-[10px] font-mono font-bold text-neutral-800">
-                    <span className="w-1.5 h-1.5 rounded-full bg-neutral-900 animate-ping" />
-                    THINKING
-                  </span>
-                  <span className="text-[10px] font-mono text-neutral-400">Kalila AI</span>
-                </div>
                 <div className="flex items-center gap-2 text-xs text-neutral-600 font-medium">
                   <svg className="animate-spin w-3.5 h-3.5 text-neutral-800 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>

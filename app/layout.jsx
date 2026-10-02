@@ -2,7 +2,7 @@ import { Suspense } from 'react'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import QuinChatWidget from '@/components/QuinChatWidget'
+import KalilaChatWidget from '@/components/KalilaChatWidget'
 import CartFloat from '@/components/CartFloat'
 import BackToTop from '@/components/BackToTop'
 import SessionScrollRestorer from '@/components/SessionScrollRestorer'
@@ -112,7 +112,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />
-        <QuinChatWidget />
+        <KalilaChatWidget />
         <CartFloat />
         <BackToTop />
 
