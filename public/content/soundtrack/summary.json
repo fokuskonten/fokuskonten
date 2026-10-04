@@ -1,8 +1,12 @@
 {
-  "lastUpdated": "2026-10-02T04:26:54.236Z",
-  "totalTracks": 3439,
-  "totalSizeBytes": 2874715636,
+  "lastUpdated": "2026-10-04T07:31:22.344Z",
+  "totalTracks": 3454,
+  "totalSizeBytes": 2956321362,
   "volumes": [
+    {
+      "vol": "STUDIO",
+      "count": 15
+    },
     {
       "vol": "VOL1",
       "count": 1807
@@ -15,7 +19,7 @@
   "genres": [
     {
       "genre": "Cinematic",
-      "count": 1750
+      "count": 1765
     },
     {
       "genre": "Epic & Cinematic",

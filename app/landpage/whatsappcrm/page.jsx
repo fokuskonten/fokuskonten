@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import AppVideoWalkthrough from '@/components/AppVideoWalkthrough'
 
 export const metadata = {
   title: 'WhatsApp Lead CRM Pro — Mesin Otomasi Database Prospek & Follow-Up Penjualan',
@@ -295,14 +296,11 @@ export default function WhatsAppCrmDedicatedSalesPage() {
             Lihat langsung kemudahan menarik kontak prospek, menyusun pipeline Kanban, dan mengirim broadcast otomatis:
           </p>
 
-          <div className="w-full rounded-2xl overflow-hidden border border-neutral-200 shadow-md bg-black aspect-video mb-8">
-            <iframe
-              src={demoVideoUrl}
-              title="WhatsApp Lead CRM Pro Video Demo"
-              className="w-full h-full"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
+          <div className="mb-8">
+            <AppVideoWalkthrough
+              video={demoVideoUrl}
+              name="WhatsApp Lead CRM Pro"
+              isDesktop={true}
             />
           </div>
 

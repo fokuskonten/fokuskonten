@@ -3,6 +3,7 @@ import Link from 'next/link'
 import appsData from '@/content/apps/apps.json'
 import { portfolioData } from '@/content/apps/portfolioData'
 import Breadcrumb from '@/components/Breadcrumb'
+import AppVideoWalkthrough from '@/components/AppVideoWalkthrough'
 
 export async function generateStaticParams() {
   return appsData.map((app) => ({ id: app.id }))
@@ -231,86 +232,12 @@ export default function AppDetailPage({ params }) {
                     Video Walkthrough &amp; Demo
                   </h3>
 
-                  {portfolio.video.includes('youtube') || portfolio.video.includes('youtu.be') ? (
-                    portfolio.specs?.format?.includes('Desktop') || portfolio.category?.includes('Desktop') ? (
-                      /* YOUTUBE DESKTOP: Widescreen */
-                      <div className="w-full rounded-3xl overflow-hidden border border-neutral-200/80 shadow-card bg-black aspect-video">
-                        <iframe
-                          src={portfolio.video.replace('www.youtube.com', 'www.youtube-nocookie.com').replace('shorts/', 'embed/').replace('watch?v=', 'embed/').split('?')[0] + '?rel=0'}
-                          title={`${portfolio.name} Video Demo`}
-                          className="w-full h-full"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                          referrerPolicy="strict-origin-when-cross-origin"
-                          allowFullScreen
-                        />
-                      </div>
-                    ) : (
-                      /* YOUTUBE MOBILE SHORTS: Vertical 9:16 Frame */
-                      <div className="flex justify-center py-4">
-                        <div className="w-full max-w-[310px] sm:max-w-[330px] aspect-[9/16] rounded-[36px] overflow-hidden border border-neutral-200/80 shadow-2xl shadow-neutral-950/20 bg-black">
-                          <iframe
-                            src={portfolio.video.replace('www.youtube.com', 'www.youtube-nocookie.com').replace('shorts/', 'embed/').replace('watch?v=', 'embed/').split('?')[0] + '?rel=0'}
-                            title={`${portfolio.name} Video Demo`}
-                            className="w-full h-full"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerPolicy="strict-origin-when-cross-origin"
-                            allowFullScreen
-                          />
-                        </div>
-                      </div>
-                    )
-                  ) : portfolio.specs?.format?.includes('Desktop') || portfolio.category?.includes('Desktop') ? (
-                    /* DESKTOP SOFTWARE: Widescreen Window */
-                    <div className="w-full rounded-3xl overflow-hidden border border-neutral-200/80 shadow-card bg-neutral-950 p-2 sm:p-3">
-                      <div className="flex items-center gap-2 px-3 py-2 border-b border-neutral-800 mb-2">
-                        <span className="w-3 h-3 rounded-full bg-red-500/80 inline-block" />
-                        <span className="w-3 h-3 rounded-full bg-yellow-500/80 inline-block" />
-                        <span className="w-3 h-3 rounded-full bg-green-500/80 inline-block" />
-                        <span className="text-[11px] text-neutral-400 font-mono ml-2 truncate">
-                          {portfolio.name} — Windows Desktop
-                        </span>
-                      </div>
-                      <video
-                        src={portfolio.video}
-                        controls
-                        playsInline
-                        preload="metadata"
-                        className="w-full h-auto rounded-2xl"
-                      />
-                    </div>
-                  ) : portfolio.videoFrame === 'phone' ? (
-                    /* MOBILE APPS DENGAN FRAME HP KUSTOM */
-                    <div className="flex justify-center py-4">
-                      <div className="relative w-full max-w-[300px] sm:max-w-[320px] rounded-[44px] p-3 bg-neutral-950 border-[5px] border-neutral-800 shadow-2xl shadow-black/30">
-                        {/* Camera Punch-Hole Notch */}
-                        <div className="absolute top-4 left-1/2 -translate-x-1/2 w-14 h-3.5 bg-neutral-900 rounded-full z-10 flex items-center justify-center">
-                          <div className="w-2 h-2 rounded-full bg-neutral-800" />
-                        </div>
-
-                        {/* Phone Screen with Video */}
-                        <div className="overflow-hidden rounded-[34px] bg-black aspect-[9/19.5] flex items-center justify-center">
-                          <video
-                            src={portfolio.video}
-                            controls
-                            playsInline
-                            preload="metadata"
-                            className="w-full h-full object-cover"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  ) : (
-                    /* MOBILE APPS: Video dengan Soft Floating Shadow alami */
-                    <div className="flex justify-center py-4">
-                      <video
-                        src={portfolio.video}
-                        controls
-                        playsInline
-                        preload="metadata"
-                        className="max-h-[580px] w-auto max-w-full rounded-[36px] shadow-2xl shadow-neutral-950/20"
-                      />
-                    </div>
-                  )}
+                  <AppVideoWalkthrough
+                    video={portfolio.video}
+                    name={portfolio.name}
+                    isDesktop={portfolio.specs?.format?.includes('Desktop') || portfolio.category?.includes('Desktop')}
+                    videoFrame={portfolio.videoFrame}
+                  />
                 </div>
               )}
 
