@@ -67,7 +67,7 @@ export default function BrandModelsClient({ initialBrand, initialData }) {
 
         {loading ? (
           <div className="py-12 text-center text-xs font-mono text-neutral-400">Memuat katalog model...</div>
-        ) : !data || data.data.length === 0 ? (
+        ) : !data || !Array.isArray(data.data) || data.data.length === 0 ? (
           <div className="py-12 text-center text-xs font-mono text-neutral-500">
             Belum ada model terverifikasi untuk merek ini.
           </div>

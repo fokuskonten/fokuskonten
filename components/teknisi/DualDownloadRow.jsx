@@ -1,13 +1,12 @@
 'use client'
-
+ 
 import { useState, useEffect } from 'react'
+import { getApiBaseUrl } from '@/lib/apiConfig'
 
 /**
  * DualDownloadRow.jsx — Komponen Baris Berkas Datar dengan 2 Tombol Aksi
  * Semua React Hooks dipanggil di atas — tidak ada conditional hooks.
  */
-
-const BACKEND = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:8090'
 
 export default function DualDownloadRow({ file, onOpenTraktir }) {
   const [safelinkUrl, setSafelinkUrl] = useState(null)
@@ -39,13 +38,13 @@ export default function DualDownloadRow({ file, onOpenTraktir }) {
     }
     setSafelinkStatus('loading')
     try {
-      const res = await fetch(`${BACKEND}/api/v1/technician/shield/safelink?id=${fileDbId}`)
+      const res = await fetch(`${getApiBaseUrl()}/technician/shield/safelink?id=${fileDbId}`)
       const json = await res.json()
       if (json.success && json.url) {
         setSafelinkUrl(json.url)
         setSafelinkStatus('ready')
       } else if (json.fallback) {
-        setSafelinkUrl(`${BACKEND}/api/v1/technician/shield/resolve/${json.fallback}`)
+        setSafelinkUrl(`${getApiBaseUrl()}/technician/shield/resolve/${json.fallback}`)
         setSafelinkStatus('ready')
       } else {
         throw new Error(json.error || 'Gagal mendapatkan link')

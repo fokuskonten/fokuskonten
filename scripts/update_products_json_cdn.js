@@ -4,6 +4,7 @@ const path = require('path');
 const ROOT_DIR = path.resolve(__dirname, '../../..');
 const INDEX_PATH = path.join(ROOT_DIR, 'Web/fokuskonte.my.id/content/apps/toko_digital_assets_index.json');
 const PRODUCTS_JSON = path.join(ROOT_DIR, 'Web/fokuskonte.my.id/content/apps/digitalProducts.json');
+const CATALOG_JSON = path.join(ROOT_DIR, 'Web/fokuskonte.my.id/content/apps/catalog_products.json');
 const SUMMARY_JSON = path.join(ROOT_DIR, 'Web/fokuskonte.my.id/content/apps/store_summary.json');
 
 const assetsIndex = JSON.parse(fs.readFileSync(INDEX_PATH, 'utf8'));
@@ -34,7 +35,8 @@ for (const p of products) {
 }
 
 fs.writeFileSync(PRODUCTS_JSON, JSON.stringify(products, null, 2), 'utf8');
-console.log(`Updated ${updatedCount} products in digitalProducts.json with ${totalSlidesCount} total slide URLs.`);
+fs.writeFileSync(CATALOG_JSON, JSON.stringify(products, null, 2), 'utf8');
+console.log(`Updated ${updatedCount} products in digitalProducts.json and catalog_products.json with ${totalSlidesCount} total slide URLs.`);
 
 // Update store_summary.json
 if (fs.existsSync(SUMMARY_JSON)) {
@@ -62,7 +64,6 @@ if (fs.existsSync(SUMMARY_JSON)) {
 }
 
 // Update catalog_products.json
-const CATALOG_JSON = path.join(ROOT_DIR, 'Web/fokuskonte.my.id/content/apps/catalog_products.json');
 if (fs.existsSync(CATALOG_JSON)) {
   const catalog = JSON.parse(fs.readFileSync(CATALOG_JSON, 'utf8'));
   let catUpdated = 0;

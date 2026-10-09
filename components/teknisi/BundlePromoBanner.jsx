@@ -10,21 +10,21 @@ export default function BundlePromoBanner({ category = 'hp', onOpenCheckout }) {
   const isLaptop = category === 'laptop'
 
   const bundleData = isLaptop ? {
-    sku: 'ID107002',
+    sku: 'ID-TEK-LAPTOP',
     badge: 'PAKET LENGKAP BUNDLE LAPTOP',
-    title: 'Full Schematic & Boardview Laptop Premium (Ribuan Skema Master)',
-    description: 'Akses 1 folder utuh Google Drive berisi 1.000+ skema PDF dan boardview CAD Asus, Acer, Lenovo, HP, Dell, Apple MacBook. Hemat waktu tanpa perlu unduh satu per satu via iklan.',
-    originalPrice: 'Rp 99.000',
-    price: 'Rp 39.000',
-    coverImage: '/covers/ID107002/cover.webp'
+    title: 'Mega Cloud Direktori Teknisi Laptop Master 2.040+ Skematik & Boardview',
+    description: 'Akses 1 folder utuh Google Drive berisi 2.040+ skema PDF dan boardview CAD Asus, Acer, Lenovo, HP, Dell, Apple MacBook. Hemat waktu tanpa perlu unduh satu per satu via iklan.',
+    originalPrice: 'Rp 750.000',
+    price: 'Rp 200.000',
+    coverImage: '/covers/ID-TEK-LAPTOP/ID-TEK-LAPTOP_cover.webp'
   } : {
-    sku: 'ID-TEK-MEGA',
+    sku: 'ID-TEK-SMARTPHONE',
     badge: 'PAKET LENGKAP BUNDLE SMARTPHONE',
-    title: 'Mega Cloud Teknisi Smartphone Master (Testpoint EDL, ISP Pinout & Firehose)',
-    description: 'Akses 1 folder utuh Google Drive berisi 8.400+ berkas sakti teknisi HP (Xiaomi, Vivo, Samsung, Oppo, Realme, Infinix). Koleksi teruji anti-matot langsung sinkron ke Drive Anda.',
-    originalPrice: 'Rp 149.000',
-    price: 'Rp 49.000',
-    coverImage: '/covers/ID107002/cover.webp'
+    title: 'Mega Cloud Direktori Teknisi Smartphone Master 10.000+ Model Multi-Brand',
+    description: 'Akses 1 folder utuh Google Drive berisi 10.000+ berkas sakti teknisi HP (Xiaomi, Vivo, Samsung, Oppo, Realme, Infinix). Koleksi teruji anti-matot langsung sinkron ke Drive Anda.',
+    originalPrice: 'Rp 750.000',
+    price: 'Rp 200.000',
+    coverImage: '/covers/ID-TEK-SMARTPHONE/ID-TEK-SMARTPHONE_cover.webp'
   }
 
   const handleAction = () => {

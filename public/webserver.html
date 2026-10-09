@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panduan Resmi Web Server & Runtime - FokusKonten</title>
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --primary-dark: #0f172a;
+      --primary-light: #3b82f6;
+      --accent: #d97706;
+      --accent-light: #fef3c7;
+      --bg-sidebar: #f8fafc;
+      --bg-content: #ffffff;
+      --border: #e2e8f0;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --code-bg: #0f172a;
+      --code-text: #38bdf8;
+      --success: #10b981;
+      --success-bg: #ecfdf5;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --sidebar-width: 320px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text-main);
+      background-color: var(--bg-content);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* Top Bar Header */
+    header {
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+      color: white;
+      height: 60px;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #2563eb;
+      flex-shrink: 0;
+      z-index: 10;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .brand-badge {
+      background: #f59e0b;
+      color: #0f172a;
+      font-weight: 800;
+      font-size: 11px;
+      padding: 4px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .brand-title {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+
+    .header-links {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 13px;
+    }
+
+    .btn-toggle-sidebar {
+      display: none;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: white;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    /* Main Container (Two-Pane Layout like CHM) */
+    .app-container {
+      display: flex;
+      flex: 1;
+      height: calc(100vh - 60px);
+      overflow: hidden;
+    }
+
+    /* Left Sidebar (The "List di Samping") */
+    aside.sidebar {
+      width: var(--sidebar-width);
+      background: var(--bg-sidebar);
+      border-right: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      height: 100%;
+      user-select: none;
+    }
+
+    .search-box {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border);
+      background: white;
+    }
+
+    .search-input-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .search-input-wrapper input {
+      width: 100%;
+      padding: 8px 12px 8px 34px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font-size: 13px;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .search-input-wrapper input:focus {
+      border-color: var(--primary-light);
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 10px;
+      color: var(--text-muted);
+      font-size: 14px;
+      pointer-events: none;
+    }
+
+    /* Sidebar Tree View Navigation */
+    .nav-tree {
+      flex: 1;
+      overflow-y: auto;
+      padding: 12px 8px;
+    }
+
+    .nav-group-title {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--text-muted);
+      padding: 10px 12px 4px 12px;
+    }
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 12px;
+      border-radius: 6px;
+      font-size: 13.5px;
+      font-weight: 500;
+      color: #334155;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      margin-bottom: 2px;
+    }
+
+    .nav-item:hover {
+      background-color: #e2e8f0;
+      color: var(--primary-dark);
+    }
+
+    .nav-item.active {
+      background-color: #dbeafe;
+      color: var(--primary);
+      font-weight: 700;
+      border-left: 3px solid var(--primary-light);
+    }
+
+    .nav-icon {
+      font-size: 15px;
+      width: 18px;
+      text-align: center;
+      opacity: 0.85;
+    }
+
+    .nav-tag {
+      margin-left: auto;
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+
+    .tag-blue { background: #dbeafe; color: #1e40af; }
+    .tag-amber { background: #fef3c7; color: #92400e; }
+    .tag-green { background: #d1fae5; color: #065f46; }
+    .tag-purple { background: #ede9fe; color: #5b21b6; }
+
+    /* Right Content Pane */
+    main.content-pane {
+      flex: 1;
+      height: 100%;
+      overflow-y: auto;
+      padding: 36px 48px;
+      background: var(--bg-content);
+      scroll-behavior: smooth;
+    }
+
+    .content-max-width {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Section Styles */
+    section {
+      margin-bottom: 56px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    section:last-child {
+      border-bottom: none;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #1e293b;
+      margin-top: 24px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #f1f5f9;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #334155;
+      margin-top: 18px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: #334155;
+      margin-bottom: 14px;
+    }
+
+    /* Highlight Banner / Card */
+    .banner-welcome {
+      background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+      border: 1px solid #bfdbfe;
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-bottom: 28px;
+    }
+
+    .banner-welcome h2 {
+      margin-top: 0;
+      border-bottom: none;
+      color: #1e40af;
+      font-size: 18px;
+    }
+
+    .banner-welcome p {
+      color: #1e3a8a;
+      margin-bottom: 0;
+      font-size: 14px;
+    }
+
+    /* Package Table */
+    .table-container {
+      margin: 18px 0;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 13.5px;
+    }
+
+    thead th {
+      background: #f8fafc;
+      color: #475569;
+      font-weight: 700;
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    tbody td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #f1f5f9;
+      color: #334155;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    tbody tr:hover {
+      background-color: #f8fafc;
+    }
+
+    .cell-badge {
+      display: inline-block;
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    /* Code Block & Copy Button */
+    .code-box {
+      background: var(--code-bg);
+      border-radius: 8px;
+      margin: 14px 0;
+      overflow: hidden;
+      border: 1px solid #1e293b;
+    }
+
+    .code-header {
+      background: #1e293b;
+      padding: 8px 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      color: #94a3b8;
+    }
+
+    .btn-copy {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #f1f5f9;
+      font-size: 11px;
+      padding: 3px 9px;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: background 0.15s;
+    }
+
+    .btn-copy:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    pre code {
+      display: block;
+      padding: 14px;
+      color: var(--code-text);
+      font-family: Consolas, Monaco, "Courier New", monospace;
+      font-size: 13px;
+      line-height: 1.5;
+      overflow-x: auto;
+    }
+
+    /* Alert Boxes */
+    .alert {
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      font-size: 13.5px;
+      line-height: 1.5;
+    }
+
+    .alert-danger {
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      color: #991b1b;
+    }
+
+    .alert-warning {
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      color: #92400e;
+    }
+
+    .alert-success {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      color: #166534;
+    }
+
+    .alert-icon {
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    /* Step Cards */
+    .step-card {
+      border-left: 3px solid var(--primary-light);
+      background: #f8fafc;
+      padding: 14px 18px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 12px;
+    }
+
+    .step-num {
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 4px;
+      font-size: 13px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .btn-toggle-sidebar {
+        display: block;
+      }
+
+      aside.sidebar {
+        position: fixed;
+        left: -320px;
+        top: 60px;
+        bottom: 0;
+        z-index: 100;
+        transition: left 0.3s ease;
+        box-shadow: 4px 0 16px rgba(0, 0, 0, 0.15);
+      }
+
+      aside.sidebar.open {
+        left: 0;
+      }
+
+      main.content-pane {
+        padding: 24px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Header Bar -->
+  <header>
+    <div class="brand">
+      <button class="btn-toggle-sidebar" id="sidebarToggle">☰ Menu</button>
+      <span class="brand-badge">Official Hub</span>
+      <span class="brand-title">PANDUAN WEB SERVER &amp; MODUL RUNTIME</span>
+    </div>
+    <div class="header-links">
+      <span style="opacity: 0.8; font-size: 12px;">Google Drive Terverifikasi &bull; 31 Paket Resmi</span>
+    </div>
+  </header>
+
+  <div class="app-container">
+
+    <!-- Left Sidebar (List di Samping) -->
+    <aside class="sidebar" id="sidebar">
+      <div class="search-box">
+        <div class="search-input-wrapper">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="Cari aplikasi atau solusi error..." autocomplete="off">
+        </div>
+      </div>
+
+      <nav class="nav-tree" id="navTree">
+        <div class="nav-group-title">Mulai Dari Sini</div>
+        <a class="nav-item active" href="#intro" data-target="intro">
+          <span class="nav-icon">📖</span>
+          <span>Panduan Memulai</span>
+          <span class="nav-tag tag-blue">Penting</span>
+        </a>
+
+        <div class="nav-group-title">Katalog Modul Resmi</div>
+        <a class="nav-item" href="#subfolder1" data-target="subfolder1">
+          <span class="nav-icon">🌐</span>
+          <span>1. Web Server &amp; DB</span>
+          <span class="nav-tag tag-blue">8 Paket</span>
+        </a>
+        <a class="nav-item" href="#subfolder2" data-target="subfolder2">
+          <span class="nav-icon">⚙️</span>
+          <span>2. Runtime Bahasa</span>
+          <span class="nav-tag tag-purple">11 Paket</span>
+        </a>
+        <a class="nav-item" href="#subfolder3" data-target="subfolder3">
+          <span class="nav-icon">🗄️</span>
+          <span>3. Database Tools</span>
+          <span class="nav-tag tag-amber">3 Paket</span>
+        </a>
+        <a class="nav-item" href="#subfolder4" data-target="subfolder4">
+          <span class="nav-icon">🛠️</span>
+          <span>4. Developer Tools</span>
+          <span class="nav-tag tag-green">9 Paket</span>
+        </a>
+
+        <div class="nav-group-title">Bantuan &amp; Solusi Error</div>
+        <a class="nav-item" href="#error-port80" data-target="error-port80">
+          <span class="nav-icon">⚠️</span>
+          <span>Port 80/443 Bentrok</span>
+        </a>
+        <a class="nav-item" href="#error-vcruntime" data-target="error-vcruntime">
+          <span class="nav-icon">⚠️</span>
+          <span>VCRUNTIME140.dll Hilang</span>
+        </a>
+        <a class="nav-item" href="#error-ssl" data-target="error-ssl">
+          <span class="nav-icon">🔒</span>
+          <span>SSL HTTPS Lokal (PWA)</span>
+        </a>
+        <a class="nav-item" href="#error-multi-php" data-target="error-multi-php">
+          <span class="nav-icon">🔄</span>
+          <span>Ganti Versi PHP di XAMPP</span>
+        </a>
+        <a class="nav-item" href="#error-db-import" data-target="error-db-import">
+          <span class="nav-icon">📦</span>
+          <span>Limit Upload Database Besar</span>
+        </a>
+
+        <div class="nav-group-title">Ringkasan Perintah</div>
+        <a class="nav-item" href="#cheatsheet" data-target="cheatsheet">
+          <span class="nav-icon">📋</span>
+          <span>Cheat Sheet Perintah Cepat</span>
+        </a>
+      </nav>
+    </aside>
+
+    <!-- Right Content Pane (Lembar Materi Panduan) -->
+    <main class="content-pane" id="contentPane">
+      <div class="content-max-width">
+
+        <!-- Section 1: Intro -->
+        <section id="intro">
+          <h1>Panduan Lengkap Web Server, Runtime &amp; Solusi Praktis</h1>
+          <div class="banner-welcome">
+            <h2>Selamat Datang di Hub Modul Pendukung Resmi</h2>
+            <p>Folder ini kami sediakan khusus untuk menunjang seluruh aplikasi web, sistem kasir, dan aplikasi PWA Anda agar dapat berjalan lancar di komputer tanpa repot mencari installer satu per satu di internet. Seluruh berkas telah dipaket rapi dalam format ZIP resmi, aman, dan bebas virus.</p>
+          </div>
+
+          <h3>Cara Praktis Menggunakan Folder Ini:</h3>
+          <div class="step-card">
+            <div class="step-num">LANGKAH 1</div>
+            <div>Buka subfolder yang sesuai dengan kebutuhan aplikasi Anda (1 s/d 4).</div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">LANGKAH 2</div>
+            <div>Unduh berkas <code>.zip</code> yang dibutuhkan ke komputer Anda.</div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">LANGKAH 3</div>
+            <div>Ekstrak berkas (klik kanan &gt; Extract All atau gunakan 7-Zip) lalu jalankan installernya seperti biasa.</div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">LANGKAH 4</div>
+            <div>Jika mengalami kendala (seperti port bentrok atau file DLL hilang), pilih menu di samping kiri untuk melihat solusinya seketika!</div>
+          </div>
+        </section>
+
+        <!-- Section 2: Subfolder 1 -->
+        <section id="subfolder1">
+          <h2>🌐 1. Web Server &amp; Database</h2>
+          <p>Folder ini berisi paket server lokal lengkap (Apache, Nginx, MariaDB/MySQL, dan Redis). Pilih paket yang sesuai dengan kebutuhan aplikasi web Anda:</p>
+
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Nama Berkas Installer</th>
+                  <th>Ukuran</th>
+                  <th>Rekomendasi Penggunaan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Laragon-Full-WAMP-Suite.zip</strong></td>
+                  <td>228 MB</td>
+                  <td><span class="cell-badge tag-green">Sangat Direkomendasikan</span> Paling stabil, cepat, dan otomatis membuat virtual host (nama domain lokal) untuk PHP &amp; Node.js.</td>
+                </tr>
+                <tr>
+                  <td><strong>XAMPP-Windows-PHP-8.2-VS16.zip</strong></td>
+                  <td>148 MB</td>
+                  <td>Untuk aplikasi web modern berbasis Laravel 10+, CodeIgniter 4, atau WordPress terbaru.</td>
+                </tr>
+                <tr>
+                  <td><strong>XAMPP-Windows-PHP-8.1-VS16.zip</strong></td>
+                  <td>146 MB</td>
+                  <td>Standar industri aplikasi web saat ini.</td>
+                </tr>
+                <tr>
+                  <td><strong>XAMPP-Windows-PHP-8.0-VS16.zip</strong></td>
+                  <td>143 MB</td>
+                  <td>Pilihan tepat untuk Laravel 8/9 dan sistem kantor menengah.</td>
+                </tr>
+                <tr>
+                  <td><strong>XAMPP-Windows-PHP-7.4-VC15.zip</strong></td>
+                  <td>139 MB</td>
+                  <td><span class="cell-badge tag-amber">Populer</span> Untuk aplikasi lawas yang masih membutuhkan PHP 7.4.</td>
+                </tr>
+                <tr>
+                  <td><strong>XAMPP-Windows-PHP-5.6-VC11.zip</strong></td>
+                  <td>111 MB</td>
+                  <td>Khusus untuk aplikasi lawas (legacy) yang masih menggunakan ekstensi <code>mysql_*</code> lama.</td>
+                </tr>
+                <tr>
+                  <td><strong>Nginx-Server-Windows-1.26.zip</strong></td>
+                  <td>1.9 MB</td>
+                  <td>Web server berkecepatan tinggi, ringan, cocok untuk reverse proxy dan aplikasi PWA.</td>
+                </tr>
+                <tr>
+                  <td><strong>Redis-Server-Windows-x64.zip</strong></td>
+                  <td>6.2 MB</td>
+                  <td>In-memory database untuk caching cepat dan queue background job.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Section 3: Subfolder 2 -->
+        <section id="subfolder2">
+          <h2>⚙️ 2. Runtime &amp; Bahasa Pemrograman</h2>
+          <p>Koleksi mesin eksekusi resmi untuk menjalankan backend berbasis JavaScript, Python, Java, dan PHP Composer:</p>
+
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Nama Berkas Installer</th>
+                  <th>Ukuran</th>
+                  <th>Keterangan &amp; Kompatibilitas</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>NodeJS-v22-Jod-LTS-x64.zip</strong></td>
+                  <td>29 MB</td>
+                  <td>Versi LTS terbaru. Sangat cocok untuk React 19, Next.js terbaru, dan Vite build tool.</td>
+                </tr>
+                <tr>
+                  <td><strong>NodeJS-v20-Iron-LTS-x64.zip</strong></td>
+                  <td>24 MB</td>
+                  <td><span class="cell-badge tag-green">Rekomendasi Utama</span> Versi paling stabil dan didukung oleh hampir seluruh template web &amp; PWA.</td>
+                </tr>
+                <tr>
+                  <td><strong>NodeJS-v18-Hydrogen-LTS-x64.zip</strong></td>
+                  <td>28 MB</td>
+                  <td>Untuk proyek frontend atau template dashboard yang belum kompatibel dengan Node 20+.</td>
+                </tr>
+                <tr>
+                  <td><strong>Python-3.12-Windows-x64.zip</strong></td>
+                  <td>25 MB</td>
+                  <td>Untuk backend AI, Flask, FastAPI, Django, dan automasi skrip.</td>
+                </tr>
+                <tr>
+                  <td><strong>Python-3.11-Windows-x64.zip</strong></td>
+                  <td>24 MB</td>
+                  <td>Alternatif stabil dengan dukungan library analitik data yang sangat luas.</td>
+                </tr>
+                <tr>
+                  <td><strong>Python-3.10-Windows-x64.zip</strong></td>
+                  <td>27 MB</td>
+                  <td>Untuk skrip yang membutuhkan kompatibilitas library machine learning tertentu.</td>
+                </tr>
+                <tr>
+                  <td><strong>Java-OpenJDK-21-Temurin-LTS.zip</strong></td>
+                  <td>170 MB</td>
+                  <td>Java versi 21 LTS untuk aplikasi enterprise terbaru dan Spring Boot 3.</td>
+                </tr>
+                <tr>
+                  <td><strong>Java-OpenJDK-17-Temurin-LTS.zip</strong></td>
+                  <td>159 MB</td>
+                  <td>Standar industri Spring Boot dan aplikasi kasir desktop modern.</td>
+                </tr>
+                <tr>
+                  <td><strong>Java-OpenJDK-11-Temurin-LTS.zip</strong></td>
+                  <td>166 MB</td>
+                  <td>Untuk aplikasi Java generasi transisi.</td>
+                </tr>
+                <tr>
+                  <td><strong>Java-OpenJDK-8-Temurin-LTS.zip</strong></td>
+                  <td>84 MB</td>
+                  <td><span class="cell-badge tag-amber">Klasik</span> Diperlukan untuk sistem kasir POS lawas yang dibangun dengan Java 8.</td>
+                </tr>
+                <tr>
+                  <td><strong>Composer-PHP-Dependency-Manager.zip</strong></td>
+                  <td>1.2 MB</td>
+                  <td>Wajib ada untuk mengunduh package PHP (seperti Laravel, PhpSpreadsheet, dll).</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Section 4: Subfolder 3 -->
+        <section id="subfolder3">
+          <h2>🗄️ 3. Database Tools &amp; Management</h2>
+          <p>Aplikasi antarmuka visual untuk mengelola database, impor file SQL besar, dan melihat tabel data tanpa harus lewat browser phpMyAdmin:</p>
+
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Nama Berkas</th>
+                  <th>Ukuran</th>
+                  <th>Kelebihan &amp; Cara Penggunaan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>HeidiSQL-Setup-x64.zip</strong></td>
+                  <td>16.4 MB</td>
+                  <td><span class="cell-badge tag-green">Paling Ringan &amp; Cepat</span> Langsung terbuka dalam 1 detik. Sangat andal untuk mengimpor berkas SQL ukuran besar (ratusan MB) yang sering gagal jika diimpor lewat browser phpMyAdmin!</td>
+                </tr>
+                <tr>
+                  <td><strong>DBeaver-Community-x64.zip</strong></td>
+                  <td>111 MB</td>
+                  <td>Manajer database universal profesional. Mendukung MySQL, PostgreSQL, SQLite, SQL Server, dan Oracle dalam satu aplikasi.</td>
+                </tr>
+                <tr>
+                  <td><strong>SQLite-Database-Browser-x64.zip</strong></td>
+                  <td>18 MB</td>
+                  <td>Khusus untuk mengedit database lokal berkas tunggal (<code>.sqlite</code> / <code>.db</code>) yang biasa dipakai aplikasi kasir ringan atau mobile app.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Section 5: Subfolder 4 -->
+        <section id="subfolder4">
+          <h2>🛠️ 4. Developer Tools &amp; Prasyarat Sistem</h2>
+          <p>Kumpulan piranti penunjang, text editor, sertifikat SSL lokal, dan pustaka prasyarat Windows:</p>
+
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Nama Berkas</th>
+                  <th>Ukuran</th>
+                  <th>Fungsi Utama</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Visual-C++-Redistributable-All-in-One.zip</strong></td>
+                  <td>30.4 MB</td>
+                  <td><span class="cell-badge tag-blue">Penting</span> Wajib dipasang pertama kali di Windows baru agar Apache/PHP tidak error "Missing DLL". Paket ini sudah mencakup semua versi VC++ 2005 hingga 2022.</td>
+                </tr>
+                <tr>
+                  <td><strong>mkcert-Local-SSL-Generator-x64.zip</strong></td>
+                  <td>2.7 MB</td>
+                  <td><span class="cell-badge tag-green">Kunci PWA</span> Membuat sertifikat SSL lokal yang dipercaya 100% oleh browser (gembok hijau/aman). Wajib untuk mengetes fitur kamera, service worker, atau PWA di HP lewat jaringan Wi-Fi lokal!</td>
+                </tr>
+                <tr>
+                  <td><strong>ngrok-Localhost-Tunnel-x64.zip</strong></td>
+                  <td>11.7 MB</td>
+                  <td>Membagikan aplikasi web lokal ke internet secara instan sehingga bisa langsung diuji oleh klien atau dibuka lewat HP di mana saja.</td>
+                </tr>
+                <tr>
+                  <td><strong>TCPView-Port-Monitor-Sysinternals.zip</strong></td>
+                  <td>1.5 MB</td>
+                  <td>Melihat aplikasi apa yang sedang mengunci port 80, 443, atau 3306 secara visual dan mematikan proses yang menghalangi dengan sekali klik.</td>
+                </tr>
+                <tr>
+                  <td><strong>Git-for-Windows-64bit.zip</strong></td>
+                  <td>61.8 MB</td>
+                  <td>Terminal Git Bash resmi untuk Windows.</td>
+                </tr>
+                <tr>
+                  <td><strong>VSCode-User-Setup-x64.zip</strong></td>
+                  <td>232 MB</td>
+                  <td>Editor kode standar industri dengan ribuan ekstensi gratis.</td>
+                </tr>
+                <tr>
+                  <td><strong>Notepad++-x64-Installer.zip</strong></td>
+                  <td>7.1 MB</td>
+                  <td>Editor teks ultra-ringan untuk mengedit berkas konfigurasi <code>.env</code>, <code>httpd.conf</code>, atau <code>php.ini</code>.</td>
+                </tr>
+                <tr>
+                  <td><strong>Postman-API-Platform-x64.zip</strong></td>
+                  <td>200 MB</td>
+                  <td>Aplikasi pengujian API REST / JSON untuk aplikasi web dan mobile.</td>
+                </tr>
+                <tr>
+                  <td><strong>7-Zip-Archiver-x64.zip</strong></td>
+                  <td>1.9 MB</td>
+                  <td>Aplikasi pembuka arsip ZIP/RAR paling cepat dan stabil di Windows.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Section 6: Solusi Error Port 80/443 -->
+        <section id="error-port80">
+          <h2>⚠️ Solusi 1: Apache XAMPP Gagal Start (Port 80 / 443 Bentrok)</h2>
+          <div class="alert alert-danger">
+            <span class="alert-icon">🛑</span>
+            <div><strong>Penyebab Umum:</strong> Di Windows 10/11, port 80 sering dipakai otomatis oleh <em>World Wide Web Publishing Service (IIS)</em>, Skype, atau layanan Windows lain, sehingga Apache menampilkan pesan merah: <code>Port 80 in use by "Unable to open process"</code>.</div>
+          </div>
+
+          <h3>Cara Cepat Mengetahui Aplikasi Pemblokir:</h3>
+          <p>Buka <strong>Command Prompt (cmd)</strong> sebagai Administrator, lalu jalankan perintah berikut:</p>
+          <div class="code-box">
+            <div class="code-header">
+              <span>Command Prompt (CMD)</span>
+              <button class="btn-copy" onclick="copyCode(this)">📋 Salin</button>
+            </div>
+            <pre><code>netstat -ano | findstr :80</code></pre>
+          </div>
+          <p>Perhatikan angka <strong>PID</strong> di kolom paling kanan (misal <code>4812</code>). Cek aplikasi pemilik PID tersebut dengan perintah:</p>
+          <div class="code-box">
+            <div class="code-header">
+              <span>Command Prompt (CMD)</span>
+              <button class="btn-copy" onclick="copyCode(this)">📋 Salin</button>
+            </div>
+            <pre><code>tasklist | findstr 4812</code></pre>
+          </div>
+
+          <h3>Solusi Paling Praktis (Matikan IIS yang Menyita Port 80):</h3>
+          <p>Jalankan perintah ini sekali saja di CMD Administrator untuk menonaktifkan IIS bawaan Windows:</p>
+          <div class="code-box">
+            <div class="code-header">
+              <span>Command Prompt (CMD Administrator)</span>
+              <button class="btn-copy" onclick="copyCode(this)">📋 Salin</button>
+            </div>
+            <pre><code>net stop was /y
+sc config was start= disabled
+net stop w3svc /y
+sc config w3svc start= disabled</code></pre>
+          </div>
+          <p>Setelah perintah di atas dijalankan, klik tombol <strong>Start</strong> pada Apache di XAMPP Control Panel. Apache dijamin akan langsung berwarna hijau!</p>
+        </section>
+
+        <!-- Section 7: Solusi VC++ Runtime -->
+        <section id="error-vcruntime">
+          <h2>⚠️ Solusi 2: Error "VCRUNTIME140.dll" atau "MSVCR110.dll is missing"</h2>
+          <div class="alert alert-warning">
+            <span class="alert-icon">💡</span>
+            <div><strong>Penyebab:</strong> Versi PHP dan Apache dikompilasi menggunakan pustaka Microsoft Visual C++. Jika Windows Anda baru diinstal atau belum memiliki pustaka ini, server tidak bisa dijalankan sama sekali.</div>
+          </div>
+          <h3>Langkah Penanganan 1-Klik:</h3>
+          <div class="step-card">
+            <div class="step-num">LANGKAH 1</div>
+            <div>Buka subfolder <strong>4. Developer Tools &amp; Prasyarat Sistem</strong> di Google Drive.</div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">LANGKAH 2</div>
+            <div>Unduh berkas <strong>Visual-C++-Redistributable-All-in-One.zip</strong>.</div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">LANGKAH 3</div>
+            <div>Ekstrak file ZIP tersebut, klik kanan pada <code>install_all.bat</code>, lalu pilih <strong>Run as administrator</strong>.</div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">LANGKAH 4</div>
+            <div>Skrip akan otomatis memasang seluruh paket Visual C++ dari versi 2005 hingga 2022 secara otomatis tanpa perlu restart komputer. Masalah DLL hilang selesai 100%!</div>
+          </div>
+        </section>
+
+        <!-- Section 8: Solusi SSL Lokal PWA -->
+        <section id="error-ssl">
+          <h2>🔒 Solusi 3: Menjalankan SSL HTTPS Lokal untuk PWA &amp; HP</h2>
+          <div class="alert alert-success">
+            <span class="alert-icon">✨</span>
+            <div><strong>Mengapa Butuh HTTPS di Localhost?</strong> Fitur Progressive Web App (PWA), Service Worker, Notifikasi Web, dan akses Kamera Web <strong>wajib</strong> berjalan di atas protokol HTTPS. Tanpa HTTPS yang valid, browser HP akan memblokir fitur-fitur tersebut.</div>
+          </div>
+
+          <h3>Cara Mudah Membuat Sertifikat SSL Lokal Terpercaya:</h3>
+          <p>1. Ekstrak <strong>mkcert-Local-SSL-Generator-x64.zip</strong> dari subfolder 4.<br>
+          2. Buka CMD Administrator di folder tempat <code>mkcert.exe</code> berada, lalu ketik perintah berikut:</p>
+          <div class="code-box">
+            <div class="code-header">
+              <span>Command Prompt (CMD)</span>
+              <button class="btn-copy" onclick="copyCode(this)">📋 Salin</button>
+            </div>
+            <pre><code>mkcert -install
+mkcert localhost 127.0.0.1 ::1 192.168.1.100</code></pre>
+          </div>
+          <p><em>(Ganti <code>192.168.1.100</code> dengan alamat IP lokal komputer Anda)</em>.</p>
+          <p>Dua berkas sertifikat (<code>localhost+3.pem</code> dan <code>localhost+3-key.pem</code>) akan langsung tercipta dan siap dipasang ke konfigurasi Apache, Nginx, atau Laragon Anda. Browser Anda akan langsung menampilkan tanda gembok hijau aman tanpa peringatan merah!</p>
+        </section>
+
+        <!-- Section 9: Solusi Multi PHP -->
+        <section id="error-multi-php">
+          <h2>🔄 Solusi 4: Cara Menambah / Ganti Versi PHP di XAMPP &amp; Laragon</h2>
+          <p>Jika Anda memiliki aplikasi yang membutuhkan versi PHP berbeda (misal ada proyek yang butuh PHP 7.4 dan proyek lain butuh PHP 8.2):</p>
+          
+          <div class="step-card">
+            <div class="step-num">TIPS TERBAIK DI LARAGON</div>
+            <div>Di Laragon, ganti versi PHP sangat mudah: cukup unduh folder PHP yang diinginkan, letakkan di <code>C:\laragon\bin\php\</code>, lalu klik kanan ikon Laragon &gt; <strong>PHP &gt; Version</strong> &gt; pilih versi yang diinginkan. Selesai dalam 3 detik!</div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num">DI XAMPP</div>
+            <div>Buka folder <code>C:\xampp</code>. Rename folder <code>php</code> saat ini menjadi <code>php_82</code>, lalu buat folder <code>php</code> baru dan masukkan isi folder versi PHP yang Anda inginkan. Buka file <code>apache\conf\extra\httpd-xampp.conf</code> untuk mencocokkan modul loader PHP-nya.</div>
+          </div>
+        </section>
+
+        <!-- Section 10: Solusi Database Besar -->
+        <section id="error-db-import">
+          <h2>📦 Solusi 5: Mengatasi Error Upload Database Besar di phpMyAdmin</h2>
+          <div class="alert alert-warning">
+            <span class="alert-icon">⚠️</span>
+            <div>Secara default, phpMyAdmin membatasi ukuran berkas upload hanya 2 MB atau 40 MB. Jika mengimpor file SQL di atas batas tersebut, akan muncul error <em>"413 Request Entity Too Large"</em> atau proses terhenti di tengah jalan.</div>
+          </div>
+
+          <h3>2 Cara Mudah Mengatasinya:</h3>
+          <p><strong>Cara 1 (Paling Cepat &amp; Direkomendasikan):</strong> Gunakan aplikasi <strong>HeidiSQL</strong> (ada di subfolder 3). Buka HeidiSQL, koneksikan ke port 3306 (user <code>root</code>, password kosong), klik menu <em>Tools &gt; Load SQL file...</em> lalu klik Run. Berkas SQL ukuran 500 MB sekalipun akan selesai diimpor dalam hitungan detik tanpa batas limit browser!</p>
+          
+          <p><strong>Cara 2 (Lewat Terminal Command Line MySQL):</strong></p>
+          <div class="code-box">
+            <div class="code-header">
+              <span>Command Prompt (CMD)</span>
+              <button class="btn-copy" onclick="copyCode(this)">📋 Salin</button>
+            </div>
+            <pre><code>cd C:\xampp\mysql\bin
+mysql -u root -p nama_database &lt; "D:\backup_database.sql"</code></pre>
+          </div>
+        </section>
+
+        <!-- Section 11: Cheat Sheet -->
+        <section id="cheatsheet">
+          <h2>📋 Cheat Sheet Perintah Cepat Pengembang</h2>
+          <p>Kumpulan perintah praktis yang sering digunakan saat mengoperasikan server lokal:</p>
+
+          <div class="code-box">
+            <div class="code-header">
+              <span>Memeriksa Port yang Sedang Digunakan</span>
+              <button class="btn-copy" onclick="copyCode(this)">📋 Salin</button>
+            </div>
+            <pre><code>netstat -ano | findstr :80
+netstat -ano | findstr :3306</code></pre>
+          </div>
+
+          <div class="code-box">
+            <div class="code-header">
+              <span>Memaksa Mematikan Aplikasi Berdasarkan PID</span>
+              <button class="btn-copy" onclick="copyCode(this)">📋 Salin</button>
+            </div>
+            <pre><code>taskkill /F /PID &lt;NOMOR_PID&gt;</code></pre>
+          </div>
+
+          <div class="code-box">
+            <div class="code-header">
+              <span>Memeriksa Versi Runtime yang Aktif</span>
+              <button class="btn-copy" onclick="copyCode(this)">📋 Salin</button>
+            </div>
+            <pre><code>php -v
+node -v
+python --version
+java -version</code></pre>
+          </div>
+
+          <div class="code-box">
+            <div class="code-header">
+              <span>Menghubungkan Localhost ke Internet dengan Ngrok</span>
+              <button class="btn-copy" onclick="copyCode(this)">📋 Salin</button>
+            </div>
+            <pre><code>ngrok http 80</code></pre>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+  </div>
+
+  <script>
+    // 1-Click Copy Code Function
+    function copyCode(btn) {
+      const codeBlock = btn.closest('.code-box').querySelector('pre code');
+      if (!codeBlock) return;
+      const text = codeBlock.innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '✅ Tersalin!';
+        btn.style.background = 'rgba(16, 185, 129, 0.4)';
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          btn.style.background = '';
+        }, 2000);
+      });
+    }
+
+    // Sidebar Live Search
+    const searchInput = document.getElementById('searchInput');
+    const navItems = document.querySelectorAll('.nav-item');
+    const contentSections = document.querySelectorAll('main section');
+
+    searchInput.addEventListener('input', function(e) {
+      const query = e.target.value.toLowerCase().trim();
+      
+      navItems.forEach(item => {
+        const text = item.innerText.toLowerCase();
+        const targetId = item.getAttribute('data-target');
+        const section = document.getElementById(targetId);
+        const sectionText = section ? section.innerText.toLowerCase() : '';
+
+        if (!query || text.includes(query) || sectionText.includes(query)) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+
+    // Sidebar Active Item Sync
+    navItems.forEach(item => {
+      item.addEventListener('click', function(e) {
+        navItems.forEach(i => i.classList.remove('active'));
+        this.classList.add('active');
+
+        // Mobile close sidebar
+        if (window.innerWidth <= 768) {
+          document.getElementById('sidebar').classList.remove('open');
+        }
+      });
+    });
+
+    // Mobile Sidebar Toggle
+    const sidebarToggle = document.getElementById('sidebarToggle');
+    if (sidebarToggle) {
+      sidebarToggle.addEventListener('click', function() {
+        document.getElementById('sidebar').classList.toggle('open');
+      });
+    }
+  </script>
+</body>
+</html>

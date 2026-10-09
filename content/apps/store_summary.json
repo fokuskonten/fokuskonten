@@ -1,6 +1,6 @@
 {
-  "totalActive": 1714,
-  "totalDesign": 1714,
+  "totalActive": 1712,
+  "totalDesign": 1712,
   "totalEbook": 0,
   "designCategories": [
     [
@@ -40,10 +40,6 @@
       52
     ],
     [
-      "Tekstur & Brush",
-      48
-    ],
-    [
       "Video Animasi & Iklan",
       47
     ],
@@ -52,15 +48,19 @@
       46
     ],
     [
+      "Tekstur & Brush",
+      46
+    ],
+    [
       "Dokumen & Template Bisnis",
       45
     ],
     [
-      "Video Konten",
+      "Canva Elements & Clipart Vektor",
       35
     ],
     [
-      "Canva Elements & Clipart Vektor",
+      "Video Konten",
       35
     ],
     [
@@ -84,6 +84,10 @@
       16
     ],
     [
+      "Banner & Spanduk",
+      14
+    ],
+    [
       "Kartu Nama",
       14
     ],
@@ -92,16 +96,8 @@
       14
     ],
     [
-      "Banner & Spanduk",
-      14
-    ],
-    [
       "Media Sosial & Banner",
       10
-    ],
-    [
-      "Desain Grafis",
-      7
     ],
     [
       "Sertifikat",
@@ -109,6 +105,10 @@
     ],
     [
       "Photobooth",
+      7
+    ],
+    [
+      "Desain Grafis",
       7
     ],
     [
@@ -132,11 +132,11 @@
       3
     ],
     [
-      "Mockup",
+      "Tekstur",
       2
     ],
     [
-      "Tekstur",
+      "Mockup",
       2
     ],
     [
@@ -183,10 +183,6 @@
       52
     ],
     [
-      "Tekstur & Brush",
-      48
-    ],
-    [
       "Video Animasi & Iklan",
       47
     ],
@@ -195,15 +191,19 @@
       46
     ],
     [
+      "Tekstur & Brush",
+      46
+    ],
+    [
       "Dokumen & Template Bisnis",
       45
     ],
     [
-      "Video Konten",
+      "Canva Elements & Clipart Vektor",
       35
     ],
     [
-      "Canva Elements & Clipart Vektor",
+      "Video Konten",
       35
     ],
     [
@@ -227,6 +227,10 @@
       16
     ],
     [
+      "Banner & Spanduk",
+      14
+    ],
+    [
       "Kartu Nama",
       14
     ],
@@ -235,16 +239,8 @@
       14
     ],
     [
-      "Banner & Spanduk",
-      14
-    ],
-    [
       "Media Sosial & Banner",
       10
-    ],
-    [
-      "Desain Grafis",
-      7
     ],
     [
       "Sertifikat",
@@ -252,6 +248,10 @@
     ],
     [
       "Photobooth",
+      7
+    ],
+    [
+      "Desain Grafis",
       7
     ],
     [
@@ -275,11 +275,11 @@
       3
     ],
     [
-      "Mockup",
+      "Tekstur",
       2
     ],
     [
-      "Tekstur",
+      "Mockup",
       2
     ],
     [
@@ -314,7 +314,7 @@
     ],
     [
       "LUTS/XMP",
-      75
+      73
     ],
     [
       "EXE",
@@ -810,6 +810,7 @@
       }
     ]
   },
-  "totalProducts": 1715,
-  "lastUpdated": "2026-10-04T21:57:59.260Z"
+  "totalProducts": 1712,
+  "lastUpdated": "2026-10-09T09:37:21.577Z",
+  "totalEcourse": 147
 }

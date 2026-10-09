@@ -52,7 +52,7 @@ export default function SidebarLaptopTools() {
       {/* Action Buttons */}
       <div className="space-y-3 pt-1">
         <Link
-          href="/toko-digital/idlt00/"
+          href="/toko-digital/id-tek-laptop/"
           className="block w-full py-3 bg-white text-neutral-950 text-center font-extrabold text-xs rounded-xl hover:bg-neutral-100 transition-colors uppercase tracking-wider font-mono shadow-md"
         >
           Akses Paket Master Laptop

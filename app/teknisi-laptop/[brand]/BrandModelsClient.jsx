@@ -66,7 +66,7 @@ export default function LaptopBrandModelsClient({ initialBrand, initialData }) {
 
         {loading ? (
           <div className="py-12 text-center text-xs font-mono text-neutral-400">Memuat katalog laptop...</div>
-        ) : !data || data.data.length === 0 ? (
+        ) : !data || !Array.isArray(data.data) || data.data.length === 0 ? (
           <div className="py-12 text-center text-xs font-mono text-neutral-500">
             Belum ada model motherboard terverifikasi untuk merek ini.
           </div>

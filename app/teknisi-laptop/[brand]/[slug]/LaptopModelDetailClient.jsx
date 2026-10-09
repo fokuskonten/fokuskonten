@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { notFound } from 'next/navigation'
 import { getModelDetail } from '@/lib/technicianService'
 import DualDownloadRow from '@/components/teknisi/DualDownloadRow'
 import TraktirKopiModal from '@/components/teknisi/TraktirKopiModal'
@@ -37,7 +36,38 @@ export default function LaptopModelDetailClient({ initialBrand, initialSlug, ini
   }
 
   if (!model) {
-    notFound()
+    const brandName = (brandSlug ? brandSlug.toUpperCase() : 'Laptop')
+    return (
+      <div className="bg-white border border-neutral-200 rounded-2xl p-8 sm:p-12 text-center space-y-6 max-w-2xl mx-auto my-12 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
+        <span className="px-3 py-1 bg-neutral-950 text-white font-mono text-xs font-bold rounded uppercase tracking-wider">
+          SKEMA DALAM PROSES SINKRONISASI
+        </span>
+        <div className="space-y-2">
+          <h1 className="text-2xl sm:text-3xl font-extrabold text-neutral-950 tracking-tight font-mono">
+            Data Skematik Motherboard Belum Tersedia
+          </h1>
+          <p className="text-xs sm:text-sm text-neutral-600 font-sans leading-relaxed">
+            Berkas diagram skema PDF atau boardview CAD untuk motherboard laptop ini sedang dalam proses verifikasi laboratorium atau tautan tidak terdaftar.
+          </p>
+        </div>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+          {brandSlug && (
+            <Link
+              href={`/teknisi-laptop/${brandSlug}/`}
+              className="w-full sm:w-auto px-6 py-3 bg-neutral-950 hover:bg-neutral-800 text-white font-mono font-bold text-xs rounded-xl transition-colors uppercase tracking-wider"
+            >
+              Lihat Katalog {brandName}
+            </Link>
+          )}
+          <Link
+            href="/teknisi-laptop/"
+            className="w-full sm:w-auto px-6 py-3 bg-neutral-100 hover:bg-neutral-200 border border-neutral-300 text-neutral-950 font-mono font-bold text-xs rounded-xl transition-colors uppercase tracking-wider"
+          >
+            Kembali ke Hub Skema Laptop
+          </Link>
+        </div>
+      </div>
+    )
   }
 
   const files = model.files || []
