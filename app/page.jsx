@@ -4,7 +4,7 @@ import FaqSection from '@/components/FaqSection'
 const homeFaqs = [
   {
     q: 'Apa saja layanan dan produk digital resmi yang disediakan FokusKonten?',
-    a: 'FokusKonten menghadirkan aplikasi bisnis Android mandiri (seperti software kasir Apotek Pro dan Toko Kelontong Pro), ribuan template desain grafis siap pakai (CorelDRAW, Photoshop, PowerPoint), direktori literatur e-book terverifikasi, serta arsip skematik teknisi hardware ponsel dan laptop.'
+    a: 'FokusKonten menghadirkan software aplikasi bisnis Android mandiri (seperti sistem kasir Apotek Pro dan Kelontong Pro), utilitas desktop Windows EXE, serta ribuan template desain grafis dan aset digital siap pakai (CorelDRAW, Photoshop, PowerPoint).'
   },
   {
     q: 'Apakah seluruh berkas dan template dapat langsung diunduh dan digunakan selamanya?',
@@ -12,7 +12,7 @@ const homeFaqs = [
   },
   {
     q: 'Bagaimana standar keamanan dan keaslian berkas yang disediakan?',
-    a: 'Setiap berkas digital, installer aplikasi, dan dokumen skematik telah melalui verifikasi laboratorium mandiri untuk memastikan integritas data, bebas proteksi password yang menyulitkan, dan bersih dari kode berbahaya. Aplikasi Android kami juga telah terverifikasi aman melalui Google Play Protect.'
+    a: 'Setiap berkas digital dan installer aplikasi telah melalui verifikasi laboratorium mandiri untuk memastikan integritas data, bebas proteksi password yang menyulitkan, dan bersih dari kode berbahaya. Aplikasi Android kami juga telah terverifikasi aman melalui Google Play Protect.'
   },
   {
     q: 'Apakah FokusKonten melayani pembuatan software kustom untuk kebutuhan bisnis?',

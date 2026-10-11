@@ -14,25 +14,6 @@ const navLinks = [
   { href: '/', label: 'Beranda' },
   { href: '/aplikasi/', label: 'Aplikasi' },
   { href: '/toko-digital/', label: 'Toko', isDropdown: true },
-  { 
-    href: '/teknisi-hp/', 
-    label: 'Tools Hardware', 
-    isHardwareDropdown: true,
-    subLinks: [
-      {
-        href: '/teknisi-hp/',
-        title: 'Teknisi Smartphone (HP)',
-        desc: 'Testpoint EDL 9008, Direct ISP Pinout, QCN & Skema Jalur',
-        badge: '5.200+ Model'
-      },
-      {
-        href: '/teknisi-laptop/',
-        title: 'Skema & Boardview Laptop',
-        desc: 'Skema Motherboard, Boardview CAD/FZ & Kumpulan File BIOS',
-        badge: '890+ Skema'
-      }
-    ]
-  },
 ]
 
 const secondaryNavLinks = [
@@ -46,8 +27,6 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [isTokoOpen, setIsTokoOpen] = useState(false)
   const [isMobileTokoOpen, setIsMobileTokoOpen] = useState(false)
-  const [isHardwareOpen, setIsHardwareOpen] = useState(false)
-  const [isMobileHardwareOpen, setIsMobileHardwareOpen] = useState(false)
   const [isCartOpen, setIsCartOpen] = useState(false)
   const [cartCount, setCartCount] = useState(0)
   const [isCartBumping, setIsCartBumping] = useState(false)
@@ -100,8 +79,6 @@ export default function Navbar() {
     setIsOpen(false)
     setIsTokoOpen(false)
     setIsMobileTokoOpen(false)
-    setIsHardwareOpen(false)
-    setIsMobileHardwareOpen(false)
   }, [pathname])
 
   // E-Book dipisah sebagai Portal Independen di /ebook/ — tidak ada state tab di Toko
@@ -271,82 +248,6 @@ export default function Navbar() {
                 )
               }
 
-              if (link.isHardwareDropdown) {
-                const isHardwareActive = pathname.startsWith('/teknisi-hp') || pathname.startsWith('/teknisi-laptop')
-                return (
-                  <div 
-                    key={link.href}
-                    className="relative"
-                    onMouseEnter={() => setIsHardwareOpen(true)}
-                    onMouseLeave={() => setIsHardwareOpen(false)}
-                  >
-                    <Link
-                      href={link.href}
-                      onClick={() => {
-                        setIsHardwareOpen(false)
-                        setIsOpen(false)
-                      }}
-                      className={`px-3.5 py-2 rounded-xl text-sm font-medium transition-all duration-200 flex items-center gap-1.5 whitespace-nowrap ${
-                        isHardwareActive
-                          ? 'text-neutral-950 bg-neutral-100 font-semibold'
-                          : 'text-neutral-600 hover:text-neutral-950 hover:bg-neutral-100/60'
-                      }`}
-                    >
-                      <span>{link.label}</span>
-                      <svg 
-                        className={`w-3.5 h-3.5 text-neutral-400 transition-transform duration-200 ${isHardwareOpen ? 'rotate-180 text-neutral-900' : ''}`} 
-                        fill="none" 
-                        viewBox="0 0 24 24" 
-                        stroke="currentColor" 
-                        strokeWidth="2"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </Link>
-
-                    {/* Hardware Dropdown Popover */}
-                    {isHardwareOpen && (
-                      <div className="absolute left-0 top-full pt-1.5 z-50 animate-in fade-in zoom-in-95 duration-150">
-                        <div className="w-[330px] bg-white rounded-2xl border border-neutral-200 shadow-2xl p-2.5 space-y-1">
-                          <div className="px-3 py-1.5 text-[10px] font-extrabold uppercase tracking-wider text-neutral-400 flex items-center justify-between border-b border-neutral-100 pb-2 mb-1">
-                            <span>Direktori Hardware</span>
-                            <span className="font-mono text-[9px] bg-neutral-950 text-white px-1.5 py-0.5 rounded">FokusKonten</span>
-                          </div>
-                          {link.subLinks.map((sub) => {
-                            const isSubActive = pathname === sub.href || (sub.href !== '/teknisi-hp/' && pathname.startsWith(sub.href))
-                            return (
-                              <Link
-                                key={sub.href}
-                                href={sub.href}
-                                onClick={() => {
-                                  setIsHardwareOpen(false)
-                                  setIsOpen(false)
-                                }}
-                                className={`block p-2.5 rounded-xl transition-all group ${
-                                  isSubActive ? 'bg-neutral-100 text-neutral-950' : 'hover:bg-neutral-50 text-neutral-700'
-                                }`}
-                              >
-                                <div className="flex items-center justify-between">
-                                  <span className="text-xs font-bold text-neutral-950 group-hover:text-black">
-                                    {sub.title}
-                                  </span>
-                                  <span className="font-mono text-[9px] font-semibold px-2 py-0.5 rounded-full bg-neutral-200/70 text-neutral-700 group-hover:bg-neutral-950 group-hover:text-white transition-colors">
-                                    {sub.badge}
-                                  </span>
-                                </div>
-                                <p className="text-[11px] text-neutral-500 font-mono mt-0.5 leading-snug">
-                                  {sub.desc}
-                                </p>
-                              </Link>
-                            )
-                          })}
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                )
-              }
-
               const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href))
               return (
                 <Link
@@ -493,67 +394,6 @@ export default function Navbar() {
                           ))}
                         </div>
                       )}
-                    </div>
-                  )}
-                </div>
-              )
-            }
-
-            if (link.isHardwareDropdown) {
-              const isHardwareActive = pathname.startsWith('/teknisi-hp') || pathname.startsWith('/teknisi-laptop')
-              return (
-                <div key={link.href} className="space-y-1">
-                  <div className="flex items-center justify-between px-4 py-2.5 rounded-xl text-sm font-medium">
-                    <Link
-                      href={link.href}
-                      onClick={() => setIsOpen(false)}
-                      className={`font-semibold flex items-center gap-2 ${
-                        isHardwareActive ? 'text-neutral-950' : 'text-neutral-900'
-                      }`}
-                    >
-                      <span>{link.label}</span>
-                      <span className="text-xs bg-neutral-200 px-2 py-0.5 rounded-full font-mono text-neutral-700">
-                        Hardware
-                      </span>
-                    </Link>
-                    <button
-                      type="button"
-                      onClick={() => setIsMobileHardwareOpen(!isMobileHardwareOpen)}
-                      className="p-1.5 rounded-lg text-neutral-500 hover:bg-neutral-100"
-                      aria-label="Toggle Hardware Menu"
-                    >
-                      <svg
-                        className={`w-4 h-4 transition-transform duration-200 ${isMobileHardwareOpen ? 'rotate-180' : ''}`}
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </button>
-                  </div>
-
-                  {isMobileHardwareOpen && (
-                    <div className="pl-4 pr-2 space-y-1 pb-2">
-                      {link.subLinks.map((sub) => (
-                        <Link
-                          key={sub.href}
-                          href={sub.href}
-                          onClick={() => {
-                            setIsMobileHardwareOpen(false)
-                            setIsOpen(false)
-                          }}
-                          className="block p-2.5 rounded-xl bg-neutral-50 hover:bg-neutral-100 transition-colors"
-                        >
-                          <div className="flex items-center justify-between">
-                            <span className="text-xs font-bold text-neutral-900">{sub.title}</span>
-                            <span className="text-[9px] font-mono bg-neutral-200 text-neutral-700 px-1.5 py-0.5 rounded">
-                              {sub.badge}
-                            </span>
-                          </div>
-                          <p className="text-[10px] text-neutral-500 font-mono mt-0.5">{sub.desc}</p>
-                        </Link>
-                      ))}
                     </div>
                   )}
                 </div>
