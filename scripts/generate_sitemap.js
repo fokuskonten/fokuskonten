@@ -8,7 +8,6 @@ const today = new Date().toISOString().split('T')[0];
 const staticPages = [
   { path: '/', changefreq: 'daily', priority: '1.0' },
   { path: '/toko-digital/', changefreq: 'daily', priority: '0.9' },
-  { path: '/ebook/', changefreq: 'daily', priority: '1.0' },
   { path: '/soundtrack/', changefreq: 'daily', priority: '0.9' },
   { path: '/aplikasi/', changefreq: 'weekly', priority: '0.9' },
   { path: '/tentang/', changefreq: 'monthly', priority: '0.7' },

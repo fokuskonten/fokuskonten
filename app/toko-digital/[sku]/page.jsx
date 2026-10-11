@@ -6,7 +6,6 @@ import fs from 'fs'
 
 import { extractSkuFromSlug } from '../slugHelper'
 import { redirect } from 'next/navigation'
-import ebookRoutes from '@/content/ebook/routes.json'
 
 export const dynamicParams = true
 
@@ -127,17 +126,6 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const targetSku = extractSkuFromSlug(params?.sku)
-  if (targetSku && targetSku !== 'ideb00') {
-    const ebookMatch = ebookRoutes.find(r => r.s.toLowerCase() === targetSku)
-    if (ebookMatch) {
-      return {
-        title: `${ebookMatch.t} | Direktori E-Book FokusKonten`,
-        description: `Baca dan unduh e-book resmi di direktori literatur FokusKonten.`
-      }
-    }
-  }
-
   const product = getProductData(params.sku)
   if (!product) {
     return { title: 'Produk Tidak Ditemukan | FokusKonten' }
@@ -150,7 +138,7 @@ export async function generateMetadata({ params }) {
   return {
     title,
     description,
-    keywords: [product.title, product.category, 'download ebook', 'buku digital', 'fokuskonten', product.format || 'PDF'],
+    keywords: [product.title, product.category, 'desain grafis', 'template resmi', 'fokuskonten', product.format || 'ZIP'],
     openGraph: {
       title,
       description,
@@ -176,14 +164,6 @@ export async function generateMetadata({ params }) {
 }
 
 export default function ProductDetailPage({ params }) {
-  const targetSku = extractSkuFromSlug(params?.sku)
-  if (targetSku && targetSku !== 'ideb00') {
-    const ebookMatch = ebookRoutes.find(r => r.s.toLowerCase() === targetSku)
-    if (ebookMatch) {
-      redirect(`/ebook/${ebookMatch.c}/${ebookMatch.u}/`)
-    }
-  }
-
   const product = getProductData(params.sku)
   if (!product) return <ProductDetailClient product={null} />
 

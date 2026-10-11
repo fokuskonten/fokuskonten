@@ -5,7 +5,6 @@ import path from 'path'
 import fs from 'fs'
 import { extractSkuFromSlug } from '../../slugHelper'
 import { redirect } from 'next/navigation'
-import ebookRoutes from '@/content/ebook/routes.json'
 
 export const dynamicParams = true
 
@@ -143,17 +142,6 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const targetSku = extractSkuFromSlug(params?.sku)
-  if (targetSku && targetSku !== 'ideb00') {
-    const ebookMatch = ebookRoutes.find(r => r.s.toLowerCase() === targetSku)
-    if (ebookMatch) {
-      return {
-        title: `Katalog Visual: ${ebookMatch.t} | FokusKonten`,
-        description: `Lihat preview lengkap e-book di direktori FokusKonten.`
-      }
-    }
-  }
-
   const product = getProductData(params.sku)
   if (!product) {
     return { title: 'Koleksi Desain Tidak Ditemukan | FokusKonten' }
@@ -165,14 +153,6 @@ export async function generateMetadata({ params }) {
 }
 
 export default function FullPreviewPage({ params }) {
-  const targetSku = extractSkuFromSlug(params?.sku)
-  if (targetSku && targetSku !== 'ideb00') {
-    const ebookMatch = ebookRoutes.find(r => r.s.toLowerCase() === targetSku)
-    if (ebookMatch) {
-      redirect(`/ebook/${ebookMatch.c}/${ebookMatch.u}/`)
-    }
-  }
-
   const product = getProductData(params.sku)
 
   if (!product) {
