@@ -38,7 +38,6 @@ const footerLinks = {
     { label: 'Beranda', href: '/' },
     { label: 'Aplikasi', href: '/aplikasi/' },
     { label: 'Toko Digital', href: '/toko-digital/' },
-    { label: 'Katalog Soundtrack', href: '/soundtrack/' },
     { label: 'Teknisi HP', href: '/teknisi-hp/' },
     { label: 'Skema Laptop', href: '/teknisi-laptop/' },
     { label: 'Tentang', href: '/tentang/' },

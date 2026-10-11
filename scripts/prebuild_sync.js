@@ -25,16 +25,8 @@ if (fs.existsSync(dbPath) && fs.existsSync(servicePath)) {
   console.log('[PREBUILD] Lingkungan Cloud/CI terdeteksi (tanpa SQLite fisik). Menggunakan sekoci JSON eksisting.');
 }
 
-// Sinkronkan Soundtrack Sekoci JSON jika soundtrack.db lokal tersedia
-const soundtrackScript = path.resolve(__dirname, '../../../Server-Fokuskonten/scripts/export_soundtrack_sekoci.js');
-if (fs.existsSync(soundtrackScript)) {
-  try {
-    console.log('[PREBUILD] Mengekspor sekoci soundtrack dari soundtrack.db...');
-    require(soundtrackScript);
-  } catch (e) {
-    console.warn('[PREBUILD WARNING] Gagal ekspor soundtrack sekoci:', e.message);
-  }
-}
+// [DECOMMISSIONED/ARCHIVED] Soundtrack telah diarsipkan ke _ARSIP_SOUNDTRACK/
+// Sinkronkan Soundtrack Sekoci JSON dinonaktifkan.
 
 // Selalu jalankan generate_sitemap.js
 try {

@@ -14,7 +14,6 @@ const navLinks = [
   { href: '/', label: 'Beranda' },
   { href: '/aplikasi/', label: 'Aplikasi' },
   { href: '/toko-digital/', label: 'Toko', isDropdown: true },
-  { href: '/soundtrack/', label: 'Soundtrack' },
   { 
     href: '/teknisi-hp/', 
     label: 'Tools Hardware', 
