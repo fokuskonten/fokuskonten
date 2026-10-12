@@ -274,7 +274,7 @@
   "formats": [
     [
       "CDR",
-      432
+      435
     ],
     [
       "PHP/WEB",
@@ -327,14 +327,6 @@
     [
       "EPS/AI",
       11
-    ],
-    [
-      "CDR/CDT",
-      2
-    ],
-    [
-      "CDR/CMX",
-      1
     ]
   ],
   "showcase": {
