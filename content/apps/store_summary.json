@@ -1,11 +1,11 @@
 {
-  "totalActive": 1561,
-  "totalDesign": 1561,
+  "totalActive": 1501,
+  "totalDesign": 1501,
   "totalEbook": 0,
   "designCategories": [
     [
       "Aplikasi",
-      366
+      306
     ],
     [
       "Vektor",
@@ -140,7 +140,7 @@
   "categories": [
     [
       "Aplikasi",
-      366
+      306
     ],
     [
       "Vektor",
@@ -295,10 +295,6 @@
     [
       "LUTS/XMP",
       73
-    ],
-    [
-      "EXE",
-      60
     ],
     [
       "AI/EPS",
