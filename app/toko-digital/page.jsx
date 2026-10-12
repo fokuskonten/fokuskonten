@@ -95,7 +95,9 @@ function TokoDigitalContent() {
     for (const [fmt, rawCount] of realtimeFormats) {
       if (fmt === 'PDF' || fmt === 'ISPLAN') continue
       if (fmt === 'MP4') {
-        list.push({ id: 'ECOURSE', label: 'Ecourse', count: ecourseCount })
+        if (ecourseCount > 0) {
+          list.push({ id: 'ECOURSE', label: 'Ecourse', count: ecourseCount })
+        }
         list.push({ id: 'VIDEO_KONTEN', label: 'Video Konten', count: videoCount })
       } else if (fmt === 'The Big Bang' || fmt === 'BIGBANG' || fmt === 'THE_BIG_BANG') {
         list.push({ id: 'The Big Bang', label: 'The Big Bang', count: rawCount })

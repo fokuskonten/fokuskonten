@@ -1,6 +1,6 @@
 {
-  "totalActive": 1710,
-  "totalDesign": 1710,
+  "totalActive": 1561,
+  "totalDesign": 1561,
   "totalEbook": 0,
   "designCategories": [
     [
@@ -10,10 +10,6 @@
     [
       "Vektor",
       285
-    ],
-    [
-      "Ecourse & Tutorial",
-      147
     ],
     [
       "Lembar Kerja Edukasi",
@@ -100,15 +96,15 @@
       10
     ],
     [
+      "Desain Grafis",
+      8
+    ],
+    [
       "Sertifikat",
       7
     ],
     [
       "Photobooth",
-      7
-    ],
-    [
-      "Desain Grafis",
       7
     ],
     [
@@ -125,10 +121,6 @@
     ],
     [
       "Kalender",
-      3
-    ],
-    [
-      "The Big Bang",
       3
     ],
     [
@@ -155,10 +147,6 @@
       285
     ],
     [
-      "Ecourse & Tutorial",
-      147
-    ],
-    [
       "Lembar Kerja Edukasi",
       95
     ],
@@ -243,15 +231,15 @@
       10
     ],
     [
+      "Desain Grafis",
+      8
+    ],
+    [
       "Sertifikat",
       7
     ],
     [
       "Photobooth",
-      7
-    ],
-    [
-      "Desain Grafis",
       7
     ],
     [
@@ -268,10 +256,6 @@
     ],
     [
       "Kalender",
-      3
-    ],
-    [
-      "The Big Bang",
       3
     ],
     [
@@ -301,10 +285,6 @@
       187
     ],
     [
-      "MP4",
-      181
-    ],
-    [
       "PPTX",
       145
     ],
@@ -329,6 +309,10 @@
       40
     ],
     [
+      "MP4",
+      35
+    ],
+    [
       "XLSX",
       32
     ],
@@ -343,10 +327,6 @@
     [
       "EPS/AI",
       11
-    ],
-    [
-      "The Big Bang",
-      3
     ],
     [
       "CDR/CDT",
@@ -448,96 +428,7 @@
         "tag": "Format .PPTX"
       }
     ],
-    "ecourse": [
-      {
-        "sku": "ID6B17",
-        "title": "ContentYield - Ecourse Blog Monetize Traffic",
-        "category": "Ecourse & Tutorial",
-        "format": "MP4",
-        "price": 13500,
-        "originalPrice": 48000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID6B17/ID6B17_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .MP4"
-      },
-      {
-        "sku": "ID0CF2",
-        "title": "PipelineSync - Ecourse Sales Funnel System",
-        "category": "Ecourse & Tutorial",
-        "format": "MP4",
-        "price": 11000,
-        "originalPrice": 35000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID0CF2/ID0CF2_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .MP4"
-      },
-      {
-        "sku": "ID0146",
-        "title": "ApparelMeta - Ecourse Meta Ads Fashion",
-        "category": "Ecourse & Tutorial",
-        "format": "MP4",
-        "price": 8500,
-        "originalPrice": 25000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID0146/ID0146_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .MP4"
-      },
-      {
-        "sku": "ID95DF",
-        "title": "WebFoundry - Ecourse Modern Web Design",
-        "category": "Ecourse & Tutorial",
-        "format": "MP4",
-        "price": 12000,
-        "originalPrice": 42000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID95DF/ID95DF_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .MP4"
-      },
-      {
-        "sku": "ID1E48",
-        "title": "SelfPersona - Ecourse Personal Branding Authority",
-        "category": "Ecourse & Tutorial",
-        "format": "MP4",
-        "price": 10000,
-        "originalPrice": 35000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID1E48/ID1E48_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .MP4"
-      },
-      {
-        "sku": "ID276D",
-        "title": "StreamMatrix - Ecourse Youtube Traffic Strategy",
-        "category": "Ecourse & Tutorial",
-        "format": "MP4",
-        "price": 20000,
-        "originalPrice": 60000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID276D/ID276D_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .MP4"
-      },
-      {
-        "sku": "ID296A",
-        "title": "ToeflBoost - Ecourse TOEFL Preparation Listening",
-        "category": "Ecourse & Tutorial",
-        "format": "MP4",
-        "price": 9000,
-        "originalPrice": 27000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID296A/ID296A_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .MP4"
-      },
-      {
-        "sku": "ID7243",
-        "title": "AdRevenue - Ecourse Google Adsense Monetize",
-        "category": "Ecourse & Tutorial",
-        "format": "MP4",
-        "price": 9000,
-        "originalPrice": 27000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID7243/ID7243_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .MP4"
-      }
-    ],
+    "ecourse": [],
     "cdr": [
       {
         "sku": "ID376B",

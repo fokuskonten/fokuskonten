@@ -96,12 +96,14 @@ export default function Navbar() {
   } = storeSummary
 
   const navFormatItems = []
-  const ecourseCatCount = (designCategories.find(([c]) => c === 'Ecourse & Tutorial') || [null, 135])[1]
-  const videoCatCount = (designCategories.find(([c]) => c === 'Video Konten') || [null, 35])[1]
+  const ecourseCatCount = (designCategories.find(([c]) => c === 'Ecourse & Tutorial') || [null, 0])[1] || 0
+  const videoCatCount = (designCategories.find(([c]) => c === 'Video Konten') || [null, 35])[1] || 0
   for (const [fmt, count] of realtimeFormats) {
     if (fmt === 'PDF' || fmt === 'ISPLAN') continue
     if (fmt === 'MP4') {
-      navFormatItems.push({ id: 'ECOURSE', label: 'Ecourse', count: ecourseCatCount })
+      if (ecourseCatCount > 0) {
+        navFormatItems.push({ id: 'ECOURSE', label: 'Ecourse', count: ecourseCatCount })
+      }
       navFormatItems.push({ id: 'VIDEO_KONTEN', label: 'Video Konten', count: videoCatCount })
     } else {
       navFormatItems.push({
