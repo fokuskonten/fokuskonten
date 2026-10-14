@@ -1,6 +1,6 @@
 {
-  "totalActive": 1501,
-  "totalDesign": 1501,
+  "totalActive": 1497,
+  "totalDesign": 1497,
   "totalEbook": 0,
   "designCategories": [
     [
@@ -9,7 +9,7 @@
     ],
     [
       "Vektor",
-      285
+      284
     ],
     [
       "Lembar Kerja Edukasi",
@@ -17,7 +17,7 @@
     ],
     [
       "Kaos",
-      91
+      89
     ],
     [
       "Presentasi & Pitch Deck",
@@ -120,12 +120,12 @@
       3
     ],
     [
-      "Mockup",
+      "Infografis & Data",
       2
     ],
     [
-      "Infografis & Data",
-      2
+      "Mockup",
+      1
     ]
   ],
   "ebookCategories": [],
@@ -136,7 +136,7 @@
     ],
     [
       "Vektor",
-      285
+      284
     ],
     [
       "Lembar Kerja Edukasi",
@@ -144,7 +144,7 @@
     ],
     [
       "Kaos",
-      91
+      89
     ],
     [
       "Presentasi & Pitch Deck",
@@ -247,18 +247,18 @@
       3
     ],
     [
-      "Mockup",
+      "Infografis & Data",
       2
     ],
     [
-      "Infografis & Data",
-      2
+      "Mockup",
+      1
     ]
   ],
   "formats": [
     [
       "CDR",
-      435
+      432
     ],
     [
       "PHP/WEB",
@@ -297,11 +297,11 @@
       32
     ],
     [
-      "PSD",
-      14
+      "DOCX",
+      13
     ],
     [
-      "DOCX",
+      "PSD",
       13
     ]
   ],
