@@ -1,6 +1,6 @@
 {
-  "totalActive": 1497,
-  "totalDesign": 1497,
+  "totalActive": 1496,
+  "totalDesign": 1496,
   "totalEbook": 0,
   "designCategories": [
     [
@@ -9,7 +9,7 @@
     ],
     [
       "Vektor",
-      284
+      283
     ],
     [
       "Lembar Kerja Edukasi",
@@ -136,7 +136,7 @@
     ],
     [
       "Vektor",
-      284
+      283
     ],
     [
       "Lembar Kerja Edukasi",
@@ -258,7 +258,7 @@
   "formats": [
     [
       "CDR",
-      432
+      431
     ],
     [
       "PHP/WEB",
