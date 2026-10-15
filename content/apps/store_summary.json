@@ -1,6 +1,6 @@
 {
-  "totalActive": 1353,
-  "totalDesign": 1353,
+  "totalActive": 1289,
+  "totalDesign": 1289,
   "totalEbook": 0,
   "designCategories": [
     [
@@ -18,10 +18,6 @@
     [
       "Presentasi & Pitch Deck",
       74
-    ],
-    [
-      "Preset & LUTs",
-      64
     ],
     [
       "Template Website",
@@ -143,10 +139,6 @@
       74
     ],
     [
-      "Preset & LUTs",
-      64
-    ],
-    [
       "Template Website",
       61
     ],
@@ -265,10 +257,6 @@
       145
     ],
     [
-      "LUTS/XMP",
-      73
-    ],
-    [
       "AI/EPS",
       63
     ],
@@ -295,6 +283,10 @@
     [
       "PSD",
       10
+    ],
+    [
+      "LUTS/XMP",
+      9
     ]
   ],
   "showcase": {

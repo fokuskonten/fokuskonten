@@ -3,11 +3,11 @@
   "CDR",
   "WMF/SVG",
   "PPTX",
-  "LUTS/XMP",
   "AI/EPS",
   "PNG/HD",
   "Video Konten",
   "XLSX",
   "DOCX",
-  "PSD"
+  "PSD",
+  "LUTS/XMP"
 ]
