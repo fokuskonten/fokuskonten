@@ -1,6 +1,6 @@
 [
-  "CDR",
   "PHP/WEB",
+  "CDR",
   "WMF/SVG",
   "PPTX",
   "LUTS/XMP",
@@ -8,6 +8,6 @@
   "PNG/HD",
   "Video Konten",
   "XLSX",
-  "PSD",
-  "DOCX"
+  "DOCX",
+  "PSD"
 ]

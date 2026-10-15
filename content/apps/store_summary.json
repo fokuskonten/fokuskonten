@@ -1,6 +1,6 @@
 {
-  "totalActive": 1496,
-  "totalDesign": 1496,
+  "totalActive": 1354,
+  "totalDesign": 1354,
   "totalEbook": 0,
   "designCategories": [
     [
@@ -9,15 +9,11 @@
     ],
     [
       "Vektor",
-      283
-    ],
-    [
-      "Lembar Kerja Edukasi",
-      95
+      265
     ],
     [
       "Kaos",
-      89
+      79
     ],
     [
       "Presentasi & Pitch Deck",
@@ -33,23 +29,23 @@
     ],
     [
       "Undangan",
-      59
+      49
     ],
     [
       "Tekstur & Brush",
-      48
+      47
     ],
     [
       "Video Animasi & Iklan",
       47
     ],
     [
-      "Stiker & Striping",
-      46
-    ],
-    [
       "Dokumen & Template Bisnis",
       45
+    ],
+    [
+      "Stiker & Striping",
+      39
     ],
     [
       "Canva Elements & Clipart Vektor",
@@ -60,36 +56,36 @@
       35
     ],
     [
-      "Poster",
+      "Lembar Kerja Edukasi",
       31
     ],
     [
+      "Poster",
+      30
+    ],
+    [
       "Kemasan & Goodie Bag",
-      29
+      27
     ],
     [
       "Logo & Maskot",
-      24
-    ],
-    [
-      "Invoice & Nota",
-      18
-    ],
-    [
-      "Buku & Yasin",
       16
     ],
     [
+      "Invoice & Nota",
+      15
+    ],
+    [
+      "Buku & Yasin",
+      15
+    ],
+    [
       "Kartu Nama",
-      14
+      12
     ],
     [
       "Banner & Spanduk",
-      14
-    ],
-    [
-      "Daftar Menu & Kuliner",
-      14
+      11
     ],
     [
       "Media Sosial & Banner",
@@ -108,7 +104,7 @@
       7
     ],
     [
-      "Brosur & Flyer",
+      "Daftar Menu & Kuliner",
       6
     ],
     [
@@ -116,16 +112,16 @@
       5
     ],
     [
+      "Brosur & Flyer",
+      4
+    ],
+    [
       "Kalender",
-      3
+      2
     ],
     [
       "Infografis & Data",
       2
-    ],
-    [
-      "Mockup",
-      1
     ]
   ],
   "ebookCategories": [],
@@ -136,15 +132,11 @@
     ],
     [
       "Vektor",
-      283
-    ],
-    [
-      "Lembar Kerja Edukasi",
-      95
+      265
     ],
     [
       "Kaos",
-      89
+      79
     ],
     [
       "Presentasi & Pitch Deck",
@@ -160,23 +152,23 @@
     ],
     [
       "Undangan",
-      59
+      49
     ],
     [
       "Tekstur & Brush",
-      48
+      47
     ],
     [
       "Video Animasi & Iklan",
       47
     ],
     [
-      "Stiker & Striping",
-      46
-    ],
-    [
       "Dokumen & Template Bisnis",
       45
+    ],
+    [
+      "Stiker & Striping",
+      39
     ],
     [
       "Canva Elements & Clipart Vektor",
@@ -187,36 +179,36 @@
       35
     ],
     [
-      "Poster",
+      "Lembar Kerja Edukasi",
       31
     ],
     [
+      "Poster",
+      30
+    ],
+    [
       "Kemasan & Goodie Bag",
-      29
+      27
     ],
     [
       "Logo & Maskot",
-      24
-    ],
-    [
-      "Invoice & Nota",
-      18
-    ],
-    [
-      "Buku & Yasin",
       16
     ],
     [
+      "Invoice & Nota",
+      15
+    ],
+    [
+      "Buku & Yasin",
+      15
+    ],
+    [
       "Kartu Nama",
-      14
+      12
     ],
     [
       "Banner & Spanduk",
-      14
-    ],
-    [
-      "Daftar Menu & Kuliner",
-      14
+      11
     ],
     [
       "Media Sosial & Banner",
@@ -235,7 +227,7 @@
       7
     ],
     [
-      "Brosur & Flyer",
+      "Daftar Menu & Kuliner",
       6
     ],
     [
@@ -243,26 +235,26 @@
       5
     ],
     [
+      "Brosur & Flyer",
+      4
+    ],
+    [
       "Kalender",
-      3
+      2
     ],
     [
       "Infografis & Data",
       2
-    ],
-    [
-      "Mockup",
-      1
     ]
   ],
   "formats": [
     [
-      "CDR",
-      431
-    ],
-    [
       "PHP/WEB",
       367
+    ],
+    [
+      "CDR",
+      358
     ],
     [
       "WMF/SVG",
@@ -271,10 +263,6 @@
     [
       "PPTX",
       145
-    ],
-    [
-      "PDF",
-      97
     ],
     [
       "LUTS/XMP",
@@ -286,23 +274,27 @@
     ],
     [
       "PNG/HD",
-      40
+      38
     ],
     [
       "MP4",
       35
     ],
     [
+      "PDF",
+      33
+    ],
+    [
       "XLSX",
       32
     ],
     [
-      "PSD",
+      "DOCX",
       13
     ],
     [
-      "DOCX",
-      13
+      "PSD",
+      10
     ]
   ],
   "showcase": {
@@ -439,28 +431,6 @@
         "price": 8500,
         "originalPrice": 20000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID7F75/ID7F75_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .CDR"
-      },
-      {
-        "sku": "ID483B",
-        "title": "UrbanTribes 100 - Artwork Kaos Etnik Streetwear",
-        "category": "Kaos",
-        "format": "CDR",
-        "price": 10000,
-        "originalPrice": 25000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID483B/ID483B_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .CDR"
-      },
-      {
-        "sku": "IDCE8E",
-        "title": "BlessInvite 100 - Desain Undangan Khitanan Anak",
-        "category": "Undangan",
-        "format": "CDR",
-        "price": 9000,
-        "originalPrice": 20000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDCE8E/IDCE8E_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .CDR"
       },
