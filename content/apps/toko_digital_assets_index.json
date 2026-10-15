@@ -3,11 +3,11 @@
     "title": "FokusKonten Asset CDN — Toko Digital Product Covers & Slides Index",
     "version": "1.1.0",
     "total_skus": 1730,
-    "total_visual_files": 10111,
+    "total_visual_files": 10148,
     "total_covers": 1730,
-    "total_slides": 8381,
-    "total_all_files": 22005,
-    "generated_at": "2026-10-14T19:06:09.971Z",
+    "total_slides": 8418,
+    "total_all_files": 22079,
+    "generated_at": "2026-10-15T04:00:02.372Z",
     "cdn_base_urls": {
       "tier1_jsdelivr": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital",
       "tier2_raw_github": "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital",
@@ -31640,7 +31640,8 @@
         "ID3683_slide_02.webp",
         "ID3683_slide_03.webp",
         "ID3683_slide_04.webp",
-        "ID3683_slide_05.webp"
+        "ID3683_slide_05.webp",
+        "ID3683_slide_06.webp"
       ],
       "files": [
         "ID3683_cover.webp",
@@ -31648,7 +31649,8 @@
         "ID3683_slide_02.webp",
         "ID3683_slide_03.webp",
         "ID3683_slide_04.webp",
-        "ID3683_slide_05.webp"
+        "ID3683_slide_05.webp",
+        "ID3683_slide_06.webp"
       ],
       "auxiliary_files": [
         "ID3683_cover.jpg",
@@ -31658,6 +31660,7 @@
         "ID3683_slide_03.jpg",
         "ID3683_slide_04.jpg",
         "ID3683_slide_05.jpg",
+        "ID3683_slide_06.jpg",
         "ID3683_slide_spec.jpg"
       ]
     },
@@ -35866,6 +35869,7 @@
       "slides": [
         "ID7498_slide_01.webp",
         "ID7498_slide_02.webp",
+        "ID7498_slide_03.webp",
         "ID7498_slide_04.webp",
         "ID7498_slide_06.webp"
       ],
@@ -35873,6 +35877,7 @@
         "ID7498_cover.webp",
         "ID7498_slide_01.webp",
         "ID7498_slide_02.webp",
+        "ID7498_slide_03.webp",
         "ID7498_slide_04.webp",
         "ID7498_slide_06.webp"
       ],
@@ -35881,6 +35886,7 @@
         "ID7498_cover.png",
         "ID7498_slide_01.jpg",
         "ID7498_slide_02.jpg",
+        "ID7498_slide_03.jpg",
         "ID7498_slide_04.jpg",
         "ID7498_slide_06.jpg",
         "ID7498_slide_spec.jpg"
@@ -35891,6 +35897,7 @@
       "cover": "ID749B_cover.webp",
       "slides": [
         "ID749B_slide_01.webp",
+        "ID749B_slide_02.webp",
         "ID749B_slide_03.webp",
         "ID749B_slide_05.webp",
         "ID749B_slide_06.webp",
@@ -35899,6 +35906,7 @@
       "files": [
         "ID749B_cover.webp",
         "ID749B_slide_01.webp",
+        "ID749B_slide_02.webp",
         "ID749B_slide_03.webp",
         "ID749B_slide_05.webp",
         "ID749B_slide_06.webp",
@@ -35908,6 +35916,7 @@
         "ID749B_cover.jpg",
         "ID749B_cover.png",
         "ID749B_slide_01.jpg",
+        "ID749B_slide_02.jpg",
         "ID749B_slide_03.jpg",
         "ID749B_slide_05.jpg",
         "ID749B_slide_06.jpg",
@@ -36224,13 +36233,21 @@
       "slides": [
         "ID7905_slide_01.webp",
         "ID7905_slide_02.webp",
-        "ID7905_slide_03.webp"
+        "ID7905_slide_03.webp",
+        "ID7905_slide_04.webp",
+        "ID7905_slide_05.webp",
+        "ID7905_slide_06.webp",
+        "ID7905_slide_07.webp"
       ],
       "files": [
         "ID7905_cover.webp",
         "ID7905_slide_01.webp",
         "ID7905_slide_02.webp",
-        "ID7905_slide_03.webp"
+        "ID7905_slide_03.webp",
+        "ID7905_slide_04.webp",
+        "ID7905_slide_05.webp",
+        "ID7905_slide_06.webp",
+        "ID7905_slide_07.webp"
       ],
       "auxiliary_files": [
         "ID7905_cover.jpg",
@@ -36238,6 +36255,10 @@
         "ID7905_slide_01.jpg",
         "ID7905_slide_02.jpg",
         "ID7905_slide_03.jpg",
+        "ID7905_slide_04.jpg",
+        "ID7905_slide_05.jpg",
+        "ID7905_slide_06.jpg",
+        "ID7905_slide_07.jpg",
         "ID7905_slide_spec.jpg"
       ]
     },
@@ -37562,17 +37583,23 @@
       "sku": "ID8868",
       "cover": "ID8868_cover.webp",
       "slides": [
+        "ID8868_slide_01.webp",
+        "ID8868_slide_02.webp",
         "ID8868_slide_03.webp",
         "ID8868_slide_04.webp"
       ],
       "files": [
         "ID8868_cover.webp",
+        "ID8868_slide_01.webp",
+        "ID8868_slide_02.webp",
         "ID8868_slide_03.webp",
         "ID8868_slide_04.webp"
       ],
       "auxiliary_files": [
         "ID8868_cover.jpg",
         "ID8868_cover.png",
+        "ID8868_slide_01.jpg",
+        "ID8868_slide_02.jpg",
         "ID8868_slide_03.jpg",
         "ID8868_slide_04.jpg",
         "ID8868_slide_spec.jpg"
@@ -39680,15 +39707,21 @@
       "sku": "IDA36D",
       "cover": "IDA36D_cover.webp",
       "slides": [
+        "IDA36D_slide_01.webp",
+        "IDA36D_slide_02.webp",
         "IDA36D_slide_04.webp"
       ],
       "files": [
         "IDA36D_cover.webp",
+        "IDA36D_slide_01.webp",
+        "IDA36D_slide_02.webp",
         "IDA36D_slide_04.webp"
       ],
       "auxiliary_files": [
         "IDA36D_cover.jpg",
         "IDA36D_cover.png",
+        "IDA36D_slide_01.jpg",
+        "IDA36D_slide_02.jpg",
         "IDA36D_slide_04.jpg",
         "IDA36D_slide_spec.jpg"
       ]
@@ -39697,12 +39730,16 @@
       "sku": "IDA372",
       "cover": "IDA372_cover.webp",
       "slides": [
+        "IDA372_slide_01.webp",
+        "IDA372_slide_02.webp",
         "IDA372_slide_03.webp",
         "IDA372_slide_04.webp",
         "IDA372_slide_05.webp"
       ],
       "files": [
         "IDA372_cover.webp",
+        "IDA372_slide_01.webp",
+        "IDA372_slide_02.webp",
         "IDA372_slide_03.webp",
         "IDA372_slide_04.webp",
         "IDA372_slide_05.webp"
@@ -39710,6 +39747,8 @@
       "auxiliary_files": [
         "IDA372_cover.jpg",
         "IDA372_cover.png",
+        "IDA372_slide_01.jpg",
+        "IDA372_slide_02.jpg",
         "IDA372_slide_03.jpg",
         "IDA372_slide_04.jpg",
         "IDA372_slide_05.jpg",
@@ -40328,17 +40367,26 @@
       "sku": "IDAD70",
       "cover": "IDAD70_cover.webp",
       "slides": [
+        "IDAD70_slide_01.webp",
+        "IDAD70_slide_02.webp",
+        "IDAD70_slide_03.webp",
         "IDAD70_slide_04.webp",
         "IDAD70_slide_05.webp"
       ],
       "files": [
         "IDAD70_cover.webp",
+        "IDAD70_slide_01.webp",
+        "IDAD70_slide_02.webp",
+        "IDAD70_slide_03.webp",
         "IDAD70_slide_04.webp",
         "IDAD70_slide_05.webp"
       ],
       "auxiliary_files": [
         "IDAD70_cover.jpg",
         "IDAD70_cover.png",
+        "IDAD70_slide_01.jpg",
+        "IDAD70_slide_02.jpg",
+        "IDAD70_slide_03.jpg",
         "IDAD70_slide_04.jpg",
         "IDAD70_slide_05.jpg",
         "IDAD70_slide_spec.jpg"
@@ -40369,7 +40417,8 @@
         "IDAE15_slide_02.webp",
         "IDAE15_slide_03.webp",
         "IDAE15_slide_04.webp",
-        "IDAE15_slide_05.webp"
+        "IDAE15_slide_05.webp",
+        "IDAE15_slide_06.webp"
       ],
       "files": [
         "IDAE15_cover.webp",
@@ -40377,7 +40426,8 @@
         "IDAE15_slide_02.webp",
         "IDAE15_slide_03.webp",
         "IDAE15_slide_04.webp",
-        "IDAE15_slide_05.webp"
+        "IDAE15_slide_05.webp",
+        "IDAE15_slide_06.webp"
       ],
       "auxiliary_files": [
         "IDAE15_cover.jpg",
@@ -40387,6 +40437,7 @@
         "IDAE15_slide_03.jpg",
         "IDAE15_slide_04.jpg",
         "IDAE15_slide_05.jpg",
+        "IDAE15_slide_06.jpg",
         "IDAE15_slide_spec.jpg"
       ]
     },
@@ -40678,6 +40729,7 @@
       "cover": "IDB238_cover.webp",
       "slides": [
         "IDB238_slide_01.webp",
+        "IDB238_slide_02.webp",
         "IDB238_slide_03.webp",
         "IDB238_slide_04.webp",
         "IDB238_slide_05.webp"
@@ -40685,6 +40737,7 @@
       "files": [
         "IDB238_cover.webp",
         "IDB238_slide_01.webp",
+        "IDB238_slide_02.webp",
         "IDB238_slide_03.webp",
         "IDB238_slide_04.webp",
         "IDB238_slide_05.webp"
@@ -40693,6 +40746,7 @@
         "IDB238_cover.jpg",
         "IDB238_cover.png",
         "IDB238_slide_01.jpg",
+        "IDB238_slide_02.jpg",
         "IDB238_slide_03.jpg",
         "IDB238_slide_04.jpg",
         "IDB238_slide_05.jpg",
@@ -41507,18 +41561,24 @@
       "cover": "IDBD41_cover.webp",
       "slides": [
         "IDBD41_slide_01.webp",
-        "IDBD41_slide_03.webp"
+        "IDBD41_slide_02.webp",
+        "IDBD41_slide_03.webp",
+        "IDBD41_slide_04.webp"
       ],
       "files": [
         "IDBD41_cover.webp",
         "IDBD41_slide_01.webp",
-        "IDBD41_slide_03.webp"
+        "IDBD41_slide_02.webp",
+        "IDBD41_slide_03.webp",
+        "IDBD41_slide_04.webp"
       ],
       "auxiliary_files": [
         "IDBD41_cover.jpg",
         "IDBD41_cover.png",
         "IDBD41_slide_01.jpg",
+        "IDBD41_slide_02.jpg",
         "IDBD41_slide_03.jpg",
+        "IDBD41_slide_04.jpg",
         "IDBD41_slide_spec.jpg"
       ]
     },
@@ -41953,7 +42013,9 @@
         "IDC0FA_slide_02.webp",
         "IDC0FA_slide_03.webp",
         "IDC0FA_slide_04.webp",
-        "IDC0FA_slide_06.webp"
+        "IDC0FA_slide_05.webp",
+        "IDC0FA_slide_06.webp",
+        "IDC0FA_slide_07.webp"
       ],
       "files": [
         "IDC0FA_cover.webp",
@@ -41961,7 +42023,9 @@
         "IDC0FA_slide_02.webp",
         "IDC0FA_slide_03.webp",
         "IDC0FA_slide_04.webp",
-        "IDC0FA_slide_06.webp"
+        "IDC0FA_slide_05.webp",
+        "IDC0FA_slide_06.webp",
+        "IDC0FA_slide_07.webp"
       ],
       "auxiliary_files": [
         "IDC0FA_cover.jpg",
@@ -41970,7 +42034,9 @@
         "IDC0FA_slide_02.jpg",
         "IDC0FA_slide_03.jpg",
         "IDC0FA_slide_04.jpg",
+        "IDC0FA_slide_05.jpg",
         "IDC0FA_slide_06.jpg",
+        "IDC0FA_slide_07.jpg",
         "IDC0FA_slide_spec.jpg"
       ]
     },
@@ -42337,16 +42403,22 @@
       "sku": "IDC685",
       "cover": "IDC685_cover.webp",
       "slides": [
-        "IDC685_slide_02.webp"
+        "IDC685_slide_01.webp",
+        "IDC685_slide_02.webp",
+        "IDC685_slide_03.webp"
       ],
       "files": [
         "IDC685_cover.webp",
-        "IDC685_slide_02.webp"
+        "IDC685_slide_01.webp",
+        "IDC685_slide_02.webp",
+        "IDC685_slide_03.webp"
       ],
       "auxiliary_files": [
         "IDC685_cover.jpg",
         "IDC685_cover.png",
+        "IDC685_slide_01.jpg",
         "IDC685_slide_02.jpg",
+        "IDC685_slide_03.jpg",
         "IDC685_slide_spec.jpg"
       ]
     },
@@ -42504,16 +42576,34 @@
       "sku": "IDC921",
       "cover": "IDC921_cover.webp",
       "slides": [
-        "IDC921_slide_01.webp"
+        "IDC921_slide_01.webp",
+        "IDC921_slide_02.webp",
+        "IDC921_slide_03.webp",
+        "IDC921_slide_04.webp",
+        "IDC921_slide_05.webp",
+        "IDC921_slide_06.webp",
+        "IDC921_slide_07.webp"
       ],
       "files": [
         "IDC921_cover.webp",
-        "IDC921_slide_01.webp"
+        "IDC921_slide_01.webp",
+        "IDC921_slide_02.webp",
+        "IDC921_slide_03.webp",
+        "IDC921_slide_04.webp",
+        "IDC921_slide_05.webp",
+        "IDC921_slide_06.webp",
+        "IDC921_slide_07.webp"
       ],
       "auxiliary_files": [
         "IDC921_cover.jpg",
         "IDC921_cover.png",
         "IDC921_slide_01.jpg",
+        "IDC921_slide_02.jpg",
+        "IDC921_slide_03.jpg",
+        "IDC921_slide_04.jpg",
+        "IDC921_slide_05.jpg",
+        "IDC921_slide_06.jpg",
+        "IDC921_slide_07.jpg",
         "IDC921_slide_spec.jpg"
       ]
     },
@@ -43359,7 +43449,8 @@
         "IDD60B_slide_03.webp",
         "IDD60B_slide_04.webp",
         "IDD60B_slide_05.webp",
-        "IDD60B_slide_06.webp"
+        "IDD60B_slide_06.webp",
+        "IDD60B_slide_07.webp"
       ],
       "files": [
         "IDD60B_cover.webp",
@@ -43368,7 +43459,8 @@
         "IDD60B_slide_03.webp",
         "IDD60B_slide_04.webp",
         "IDD60B_slide_05.webp",
-        "IDD60B_slide_06.webp"
+        "IDD60B_slide_06.webp",
+        "IDD60B_slide_07.webp"
       ],
       "auxiliary_files": [
         "IDD60B_cover.jpg",
@@ -43379,6 +43471,7 @@
         "IDD60B_slide_04.jpg",
         "IDD60B_slide_05.jpg",
         "IDD60B_slide_06.jpg",
+        "IDD60B_slide_07.jpg",
         "IDD60B_slide_spec.jpg"
       ]
     },
@@ -43452,12 +43545,14 @@
       "cover": "IDD664_cover.webp",
       "slides": [
         "IDD664_slide_01.webp",
+        "IDD664_slide_02.webp",
         "IDD664_slide_03.webp",
         "IDD664_slide_04.webp"
       ],
       "files": [
         "IDD664_cover.webp",
         "IDD664_slide_01.webp",
+        "IDD664_slide_02.webp",
         "IDD664_slide_03.webp",
         "IDD664_slide_04.webp"
       ],
@@ -43465,6 +43560,7 @@
         "IDD664_cover.jpg",
         "IDD664_cover.png",
         "IDD664_slide_01.jpg",
+        "IDD664_slide_02.jpg",
         "IDD664_slide_03.jpg",
         "IDD664_slide_04.jpg",
         "IDD664_slide_spec.jpg"
@@ -43645,6 +43741,7 @@
         "IDD87A_slide_02.webp",
         "IDD87A_slide_03.webp",
         "IDD87A_slide_04.webp",
+        "IDD87A_slide_05.webp",
         "IDD87A_slide_06.webp",
         "IDD87A_slide_07.webp"
       ],
@@ -43654,6 +43751,7 @@
         "IDD87A_slide_02.webp",
         "IDD87A_slide_03.webp",
         "IDD87A_slide_04.webp",
+        "IDD87A_slide_05.webp",
         "IDD87A_slide_06.webp",
         "IDD87A_slide_07.webp"
       ],
@@ -43664,6 +43762,7 @@
         "IDD87A_slide_02.jpg",
         "IDD87A_slide_03.jpg",
         "IDD87A_slide_04.jpg",
+        "IDD87A_slide_05.jpg",
         "IDD87A_slide_06.jpg",
         "IDD87A_slide_07.jpg",
         "IDD87A_slide_spec.jpg"
@@ -43912,17 +44011,20 @@
       "sku": "IDDB11",
       "cover": "IDDB11_cover.webp",
       "slides": [
+        "IDDB11_slide_01.webp",
         "IDDB11_slide_02.webp",
         "IDDB11_slide_04.webp"
       ],
       "files": [
         "IDDB11_cover.webp",
+        "IDDB11_slide_01.webp",
         "IDDB11_slide_02.webp",
         "IDDB11_slide_04.webp"
       ],
       "auxiliary_files": [
         "IDDB11_cover.jpg",
         "IDDB11_cover.png",
+        "IDDB11_slide_01.jpg",
         "IDDB11_slide_02.jpg",
         "IDDB11_slide_04.jpg",
         "IDDB11_slide_spec.jpg"
@@ -44206,7 +44308,9 @@
         "IDDE1E_slide_02.webp",
         "IDDE1E_slide_03.webp",
         "IDDE1E_slide_04.webp",
-        "IDDE1E_slide_06.webp"
+        "IDDE1E_slide_05.webp",
+        "IDDE1E_slide_06.webp",
+        "IDDE1E_slide_07.webp"
       ],
       "files": [
         "IDDE1E_cover.webp",
@@ -44214,7 +44318,9 @@
         "IDDE1E_slide_02.webp",
         "IDDE1E_slide_03.webp",
         "IDDE1E_slide_04.webp",
-        "IDDE1E_slide_06.webp"
+        "IDDE1E_slide_05.webp",
+        "IDDE1E_slide_06.webp",
+        "IDDE1E_slide_07.webp"
       ],
       "auxiliary_files": [
         "IDDE1E_cover.jpg",
@@ -44223,7 +44329,9 @@
         "IDDE1E_slide_02.jpg",
         "IDDE1E_slide_03.jpg",
         "IDDE1E_slide_04.jpg",
+        "IDDE1E_slide_05.jpg",
         "IDDE1E_slide_06.jpg",
+        "IDDE1E_slide_07.jpg",
         "IDDE1E_slide_spec.jpg"
       ]
     },
@@ -45942,12 +46050,14 @@
       "slides": [
         "IDEF37_slide_01.webp",
         "IDEF37_slide_02.webp",
+        "IDEF37_slide_03.webp",
         "IDEF37_slide_05.webp"
       ],
       "files": [
         "IDEF37_cover.webp",
         "IDEF37_slide_01.webp",
         "IDEF37_slide_02.webp",
+        "IDEF37_slide_03.webp",
         "IDEF37_slide_05.webp"
       ],
       "auxiliary_files": [
@@ -45955,6 +46065,7 @@
         "IDEF37_cover.png",
         "IDEF37_slide_01.jpg",
         "IDEF37_slide_02.jpg",
+        "IDEF37_slide_03.jpg",
         "IDEF37_slide_05.jpg",
         "IDEF37_slide_spec.jpg"
       ]
