@@ -1,6 +1,6 @@
 {
-  "totalActive": 1100,
-  "totalDesign": 1100,
+  "totalActive": 955,
+  "totalDesign": 955,
   "totalEbook": 0,
   "designCategories": [
     [
@@ -16,28 +16,20 @@
       79
     ],
     [
-      "Presentasi & Pitch Deck",
-      74
-    ],
-    [
       "Template Website",
       61
-    ],
-    [
-      "Undangan",
-      49
     ],
     [
       "Tekstur & Brush",
       47
     ],
     [
-      "Video Animasi & Iklan",
-      47
-    ],
-    [
       "Dokumen & Template Bisnis",
       45
+    ],
+    [
+      "Undangan",
+      42
     ],
     [
       "Stiker & Striping",
@@ -80,10 +72,6 @@
       11
     ],
     [
-      "Media Sosial & Banner",
-      10
-    ],
-    [
       "Sertifikat",
       7
     ],
@@ -100,19 +88,11 @@
       6
     ],
     [
-      "Karakter & Animasi 3D",
-      5
-    ],
-    [
       "Brosur & Flyer",
       4
     ],
     [
       "Kalender",
-      2
-    ],
-    [
-      "Infografis & Data",
       2
     ]
   ],
@@ -131,28 +111,20 @@
       79
     ],
     [
-      "Presentasi & Pitch Deck",
-      74
-    ],
-    [
       "Template Website",
       61
-    ],
-    [
-      "Undangan",
-      49
     ],
     [
       "Tekstur & Brush",
       47
     ],
     [
-      "Video Animasi & Iklan",
-      47
-    ],
-    [
       "Dokumen & Template Bisnis",
       45
+    ],
+    [
+      "Undangan",
+      42
     ],
     [
       "Stiker & Striping",
@@ -195,10 +167,6 @@
       11
     ],
     [
-      "Media Sosial & Banner",
-      10
-    ],
-    [
       "Sertifikat",
       7
     ],
@@ -215,19 +183,11 @@
       6
     ],
     [
-      "Karakter & Animasi 3D",
-      5
-    ],
-    [
       "Brosur & Flyer",
       4
     ],
     [
       "Kalender",
-      2
-    ],
-    [
-      "Infografis & Data",
       2
     ]
   ],
@@ -239,10 +199,6 @@
     [
       "CDR",
       357
-    ],
-    [
-      "PPTX",
-      145
     ],
     [
       "AI/EPS",
@@ -322,50 +278,6 @@
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID7F75/ID7F75_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .CDR"
-      },
-      {
-        "sku": "ID1108",
-        "title": "Dynamo - Fluid Kinetic Motion",
-        "category": "Video Animasi & Iklan",
-        "format": "PPTX",
-        "price": 35000,
-        "originalPrice": 75000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID1108/ID1108_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .PPTX"
-      },
-      {
-        "sku": "ID23B4",
-        "title": "Aeterna - Universal Invitation Suite",
-        "category": "Undangan & Ucapan",
-        "format": "PPTX",
-        "price": 8500,
-        "originalPrice": 25000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID23B4/ID23B4_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .PPTX"
-      },
-      {
-        "sku": "ID8E26",
-        "title": "Vows & Velvet - Royal Nuptial Deck",
-        "category": "Presentasi & Pitch Deck",
-        "format": "PPTX",
-        "price": 15000,
-        "originalPrice": 50000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID8E26/ID8E26_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .PPTX"
-      },
-      {
-        "sku": "IDDE48",
-        "title": "ConversionX - Sales Pitch Engine",
-        "category": "Presentasi & Pitch Deck",
-        "format": "PPTX",
-        "price": 18000,
-        "originalPrice": 50000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDDE48/IDDE48_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .PPTX"
       }
     ],
     "ecourse": [],
@@ -437,96 +349,7 @@
         "tag": "Format .CDR"
       }
     ],
-    "ppt": [
-      {
-        "sku": "ID23B4",
-        "title": "Aeterna - Universal Invitation Suite",
-        "category": "Undangan & Ucapan",
-        "format": "PPTX",
-        "price": 8500,
-        "originalPrice": 25000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID23B4/ID23B4_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .PPTX"
-      },
-      {
-        "sku": "ID8E26",
-        "title": "Vows & Velvet - Royal Nuptial Deck",
-        "category": "Presentasi & Pitch Deck",
-        "format": "PPTX",
-        "price": 15000,
-        "originalPrice": 50000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID8E26/ID8E26_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .PPTX"
-      },
-      {
-        "sku": "IDDE48",
-        "title": "ConversionX - Sales Pitch Engine",
-        "category": "Presentasi & Pitch Deck",
-        "format": "PPTX",
-        "price": 18000,
-        "originalPrice": 50000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDDE48/IDDE48_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .PPTX"
-      },
-      {
-        "sku": "ID3121",
-        "title": "HauteElegance - Luxury Aesthetic Deck",
-        "category": "Presentasi & Pitch Deck",
-        "format": "PPTX",
-        "price": 8000,
-        "originalPrice": 25000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID3121/ID3121_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .PPTX"
-      },
-      {
-        "sku": "ID4517",
-        "title": "MotionCrafter - Animated Brand Reel",
-        "category": "Video Animasi & Iklan",
-        "format": "PPTX",
-        "price": 6000,
-        "originalPrice": 25000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID4517/ID4517_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .PPTX"
-      },
-      {
-        "sku": "ID8724",
-        "title": "BannerForge - Commercial Graphic Kit",
-        "category": "Media Sosial & Banner",
-        "format": "PPTX",
-        "price": 6000,
-        "originalPrice": 25000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID8724/ID8724_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .PPTX"
-      },
-      {
-        "sku": "ID8BD7",
-        "title": "Titan 500 - Monumental Slide Vault",
-        "category": "Presentasi & Pitch Deck",
-        "format": "PPTX",
-        "price": 18000,
-        "originalPrice": 40000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID8BD7/ID8BD7_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .PPTX"
-      },
-      {
-        "sku": "ID00D9",
-        "title": "VectorFlow - Process & Funnel Kit",
-        "category": "Presentasi & Pitch Deck",
-        "format": "PPTX",
-        "price": 8500,
-        "originalPrice": 25000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID00D9/ID00D9_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .PPTX"
-      }
-    ],
+    "ppt": [],
     "ebook": [],
     "others": [
       {
