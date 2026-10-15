@@ -1,6 +1,6 @@
 {
-  "totalActive": 1354,
-  "totalDesign": 1354,
+  "totalActive": 1353,
+  "totalDesign": 1353,
   "totalEbook": 0,
   "designCategories": [
     [
@@ -92,15 +92,15 @@
       10
     ],
     [
-      "Desain Grafis",
-      8
-    ],
-    [
       "Sertifikat",
       7
     ],
     [
       "Photobooth",
+      7
+    ],
+    [
+      "Desain Grafis",
       7
     ],
     [
@@ -215,15 +215,15 @@
       10
     ],
     [
-      "Desain Grafis",
-      8
-    ],
-    [
       "Sertifikat",
       7
     ],
     [
       "Photobooth",
+      7
+    ],
+    [
+      "Desain Grafis",
       7
     ],
     [
@@ -254,7 +254,7 @@
     ],
     [
       "CDR",
-      358
+      357
     ],
     [
       "WMF/SVG",
