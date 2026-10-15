@@ -1,6 +1,6 @@
 {
-  "totalActive": 1289,
-  "totalDesign": 1289,
+  "totalActive": 1100,
+  "totalDesign": 1100,
   "totalEbook": 0,
   "designCategories": [
     [
@@ -9,7 +9,7 @@
     ],
     [
       "Vektor",
-      265
+      111
     ],
     [
       "Kaos",
@@ -42,10 +42,6 @@
     [
       "Stiker & Striping",
       39
-    ],
-    [
-      "Canva Elements & Clipart Vektor",
-      35
     ],
     [
       "Video Konten",
@@ -128,7 +124,7 @@
     ],
     [
       "Vektor",
-      265
+      111
     ],
     [
       "Kaos",
@@ -161,10 +157,6 @@
     [
       "Stiker & Striping",
       39
-    ],
-    [
-      "Canva Elements & Clipart Vektor",
-      35
     ],
     [
       "Video Konten",
@@ -249,16 +241,12 @@
       357
     ],
     [
-      "WMF/SVG",
-      187
-    ],
-    [
       "PPTX",
       145
     ],
     [
       "AI/EPS",
-      63
+      62
     ],
     [
       "PNG/HD",
@@ -282,7 +270,7 @@
     ],
     [
       "PSD",
-      10
+      9
     ],
     [
       "LUTS/XMP",
