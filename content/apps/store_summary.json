@@ -1,15 +1,11 @@
 {
-  "totalActive": 644,
-  "totalDesign": 644,
+  "totalActive": 458,
+  "totalDesign": 458,
   "totalEbook": 0,
   "designCategories": [
     [
       "Aplikasi",
-      266
-    ],
-    [
-      "Template Website",
-      61
+      141
     ],
     [
       "Undangan",
@@ -96,11 +92,7 @@
   "categories": [
     [
       "Aplikasi",
-      266
-    ],
-    [
-      "Template Website",
-      61
+      141
     ],
     [
       "Undangan",
@@ -185,12 +177,12 @@
   ],
   "formats": [
     [
-      "PHP/WEB",
-      327
-    ],
-    [
       "CDR",
       200
+    ],
+    [
+      "PHP/WEB",
+      141
     ],
     [
       "MP4",
