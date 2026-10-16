@@ -40,6 +40,7 @@ function TokoDigitalContent() {
     ecourseCount,
     videoCount,
     cdrCount,
+    pwaCount,
     pptxCount,
     pdfCount,
     othersCount,
@@ -50,6 +51,7 @@ function TokoDigitalContent() {
     let ecourse = 0
     let video = 0
     let cdr = 0
+    let pwa = 0
     let pptx = 0
     let pdf = 0
     let others = 0
@@ -67,6 +69,7 @@ function TokoDigitalContent() {
       }
 
       if (fmt === 'CDR') cdr++
+      else if (fmt === 'PWA' || fmt === 'PHP/WEB') pwa++
       else if (fmt === 'PPTX') pptx++
       else if (fmt === 'PDF') {
         pdf++
@@ -80,6 +83,7 @@ function TokoDigitalContent() {
       ecourseCount: ecourse,
       videoCount: video,
       cdrCount: cdr,
+      pwaCount: pwa,
       pptxCount: pptx,
       pdfCount: pdf,
       othersCount: others,
@@ -102,7 +106,7 @@ function TokoDigitalContent() {
       } else if (fmt === 'The Big Bang' || fmt === 'BIGBANG' || fmt === 'THE_BIG_BANG') {
         list.push({ id: 'The Big Bang', label: 'The Big Bang', count: rawCount })
       } else {
-        const smartCount = fmt === 'CDR' ? cdrCount : fmt === 'PPTX' ? pptxCount : fmt === 'PDF' ? pdfCount : rawCount
+        const smartCount = fmt === 'CDR' ? cdrCount : (fmt === 'PWA' || fmt === 'PHP/WEB') ? pwaCount : fmt === 'PPTX' ? pptxCount : fmt === 'PDF' ? pdfCount : rawCount
         list.push({
           id: fmt,
           label: fmt === 'PDF' ? 'E-Book' : ((fmt === 'PWA' || fmt === 'PHP/WEB') ? 'PWA' : (fmt === 'EXE' ? 'Desktop .EXE' : `.${fmt}`)),
@@ -111,7 +115,7 @@ function TokoDigitalContent() {
       }
     }
     return list
-  }, [realtimeFormats, ecourseCount, videoCount, cdrCount, pptxCount, pdfCount])
+  }, [realtimeFormats, ecourseCount, videoCount, cdrCount, pwaCount, pptxCount, pdfCount])
 
   const sortOptions = [
     { id: 'newest', label: 'Terbaru' },
@@ -556,29 +560,29 @@ function TokoDigitalContent() {
       {/* ── 3. SHOWCASE PILIHAN & BUNDLE (5 SKAT MINIMALIS) ───────────── */}
       {!isFiltering && currentPage === 1 && showcase && (
         <div className="w-full max-w-7xl 2xl:max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 mb-12 sm:mb-16 space-y-12">
-          {/* Skat 1: Ecourse & Panduan Bisnis */}
-          {showcase.ecourse && showcase.ecourse.length > 0 && (
+          {/* Skat 1: Aplikasi PWA Mandiri */}
+          {showcase.pwa && showcase.pwa.length > 0 && (
             <section className="space-y-4">
               <div className="flex items-center justify-between pb-3 border-b border-neutral-200">
                 <div className="flex items-center gap-2.5">
                   <h2 className="text-lg sm:text-xl font-bold text-neutral-950 tracking-tight">
-                    Ecourse &amp; Panduan Bisnis
+                    Aplikasi PWA Mandiri
                   </h2>
                   <span className="text-[11px] font-bold uppercase tracking-wider bg-neutral-900 text-white px-2.5 py-0.5 rounded-full font-mono">
-                    Koleksi Baru
+                    Siap Pakai
                   </span>
                 </div>
                 <button
                   type="button"
-                  onClick={() => handleCategorySelect('Ecourse & Tutorial')}
+                  onClick={() => handleFormatSelect('PWA')}
                   className="text-xs sm:text-sm font-semibold text-neutral-600 hover:text-black transition-colors flex items-center gap-1"
                 >
-                  <span>Lihat Semua Ecourse ({ecourseCount})</span>
+                  <span>Lihat Semua PWA ({pwaCount})</span>
                   <span>&rarr;</span>
                 </button>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-6">
-                {showcase.ecourse.map((product) => (
+                {showcase.pwa.map((product) => (
                   <ProductCard key={product.sku} product={product} />
                 ))}
               </div>
@@ -609,48 +613,53 @@ function TokoDigitalContent() {
             </section>
           )}
 
-          {/* Skat 3: Template PowerPoint (PPTX) */}
-          {showcase.ppt && showcase.ppt.length > 0 && (
+          {/* Skat 3: Video & Konten Kreatif */}
+          {showcase.others && showcase.others.length > 0 && (
             <section className="space-y-4">
               <div className="flex items-center justify-between pb-3 border-b border-neutral-200">
                 <h2 className="text-lg sm:text-xl font-bold text-neutral-950 tracking-tight">
-                  Template PowerPoint (PPTX)
+                  Video &amp; Konten Kreatif
                 </h2>
                 <button
                   type="button"
-                  onClick={() => handleFormatSelect('PPTX')}
+                  onClick={() => handleFormatSelect('VIDEO_KONTEN')}
                   className="text-xs sm:text-sm font-semibold text-neutral-600 hover:text-black transition-colors flex items-center gap-1"
                 >
-                  <span>Lihat Semua PPT ({pptxCount})</span>
+                  <span>Lihat Semua Video ({videoCount})</span>
                   <span>&rarr;</span>
                 </button>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-6">
-                {showcase.ppt.map((product) => (
+                {showcase.others.map((product) => (
                   <ProductCard key={product.sku} product={product} />
                 ))}
               </div>
             </section>
           )}
 
-          {/* Skat 4: Aset & Desain Lainnya (PSD / PNG / WMF / SVG) */}
-          {showcase.others && showcase.others.length > 0 && (
+          {/* Skat 4: Ecourse & Panduan Bisnis */}
+          {showcase.ecourse && showcase.ecourse.length > 0 && (
             <section className="space-y-4">
               <div className="flex items-center justify-between pb-3 border-b border-neutral-200">
-                <h2 className="text-lg sm:text-xl font-bold text-neutral-950 tracking-tight">
-                  Aset &amp; Desain Lainnya
-                </h2>
+                <div className="flex items-center gap-2.5">
+                  <h2 className="text-lg sm:text-xl font-bold text-neutral-950 tracking-tight">
+                    Ecourse &amp; Panduan Bisnis
+                  </h2>
+                  <span className="text-[11px] font-bold uppercase tracking-wider bg-neutral-900 text-white px-2.5 py-0.5 rounded-full font-mono">
+                    Koleksi Baru
+                  </span>
+                </div>
                 <button
                   type="button"
-                  onClick={() => handleCategorySelect('Canva Elements & Clipart Vektor')}
+                  onClick={() => handleCategorySelect('Ecourse & Tutorial')}
                   className="text-xs sm:text-sm font-semibold text-neutral-600 hover:text-black transition-colors flex items-center gap-1"
                 >
-                  <span>Lihat Semua Aset Lainnya ({othersCount})</span>
+                  <span>Lihat Semua Ecourse ({ecourseCount})</span>
                   <span>&rarr;</span>
                 </button>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-6">
-                {showcase.others.map((product) => (
+                {showcase.ecourse.map((product) => (
                   <ProductCard key={product.sku} product={product} />
                 ))}
               </div>

@@ -256,7 +256,96 @@
         "tag": "Format .CDR"
       }
     ],
-    "ecourse": [],
+    "pwa": [
+      {
+        "sku": "IDF06C",
+        "title": "AdminPOS - Software Kasir Toko Retail Penjualan Dan Stok Barang",
+        "category": "Aplikasi",
+        "format": "PWA",
+        "price": 18000,
+        "originalPrice": 66000,
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDF06C/IDF06C_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .PWA"
+      },
+      {
+        "sku": "ID0A03",
+        "title": "LaundryPro - Aplikasi Kasir Laundry Kiloan Cetak Nota Dan Lacak Cucian",
+        "category": "Aplikasi",
+        "format": "PWA",
+        "price": 20000,
+        "originalPrice": 90000,
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID0A03/ID0A03_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .PWA"
+      },
+      {
+        "sku": "IDC55B",
+        "title": "DinasOrder - Aplikasi SPPD Surat Perintah Tugas Perjalanan Dinas",
+        "category": "Aplikasi",
+        "format": "PWA",
+        "price": 5000,
+        "originalPrice": 32000,
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDC55B/IDC55B_cover.webp",
+        "badge": "Terlaris",
+        "tag": "Format .PWA"
+      },
+      {
+        "sku": "ID194F",
+        "title": "GenPharma - Software Kasir Apotek Penjualan Obat Cetak Struk Resep",
+        "category": "Aplikasi",
+        "format": "PWA",
+        "price": 17000,
+        "originalPrice": 75000,
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID194F/ID194F_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .PWA"
+      },
+      {
+        "sku": "ID28D0",
+        "title": "PharmaExpress - Software Kasir Apotek Cepat Kelola Stok Obat Masuk",
+        "category": "Aplikasi",
+        "format": "PWA",
+        "price": 17000,
+        "originalPrice": 75000,
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID28D0/ID28D0_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .PWA"
+      },
+      {
+        "sku": "IDF9EC",
+        "title": "ExamMasterCBT - Software Ujian Online Sekolah Bank Soal Acak Siswa",
+        "category": "Aplikasi",
+        "format": "PWA",
+        "price": 15000,
+        "originalPrice": 66000,
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDF9EC/IDF9EC_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .PWA"
+      },
+      {
+        "sku": "ID49CC",
+        "title": "KotakInfaqDigital - Aplikasi Hitung Kotak Amal Masjid Laporan Kas",
+        "category": "Aplikasi",
+        "format": "PWA",
+        "price": 12000,
+        "originalPrice": 20000,
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID49CC/ID49CC_cover.webp",
+        "badge": "Terlaris",
+        "tag": "Format .PWA"
+      },
+      {
+        "sku": "IDACB2",
+        "title": "MediLog - Aplikasi Logbook Harian Perawat Nakes Dan Tindakan Pasien",
+        "category": "Aplikasi",
+        "format": "PWA",
+        "price": 12000,
+        "originalPrice": 60000,
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDACB2/IDACB2_cover.webp",
+        "badge": "Terlaris",
+        "tag": "Format .PWA"
+      }
+    ],
     "cdr": [
       {
         "sku": "ID376B",
@@ -323,10 +412,30 @@
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDDF04/IDDF04_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .CDR"
+      },
+      {
+        "sku": "ID9CBF",
+        "title": "AeroStripe 1200 - File Cutting Lis Striping",
+        "category": "Stiker & Striping",
+        "format": "CDR",
+        "price": 18000,
+        "originalPrice": 40000,
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID9CBF/ID9CBF_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .CDR"
+      },
+      {
+        "sku": "ID5383",
+        "title": "PrintVow 1300 - Bundle Desain Undangan Pernikahan",
+        "category": "Undangan",
+        "format": "CDR",
+        "price": 20000,
+        "originalPrice": 50000,
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID5383/ID5383_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .CDR"
       }
     ],
-    "ppt": [],
-    "ebook": [],
     "others": [
       {
         "sku": "ID3199",
@@ -393,10 +502,32 @@
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDFCC3/IDFCC3_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .MP4"
+      },
+      {
+        "sku": "ID1AF4",
+        "title": "HookMagnet - Bahan Vidkon Hook 3 Detik",
+        "category": "Video Konten",
+        "format": "MP4",
+        "price": 12000,
+        "originalPrice": 35000,
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID1AF4/ID1AF4_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .MP4"
+      },
+      {
+        "sku": "ID9C29",
+        "title": "ReviveCraft - Vidkon Restorasi Barang Karat",
+        "category": "Video Konten",
+        "format": "MP4",
+        "price": 12000,
+        "originalPrice": 35000,
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID9C29/ID9C29_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .MP4"
       }
     ]
   },
-  "totalProducts": 1712,
-  "lastUpdated": "2026-10-09T09:37:21.577Z",
-  "totalEcourse": 147
+  "totalProducts": 448,
+  "lastUpdated": "2026-10-16T05:45:43.363Z",
+  "totalEcourse": 0
 }
