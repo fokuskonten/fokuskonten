@@ -1,6 +1,6 @@
 {
-  "totalActive": 703,
-  "totalDesign": 703,
+  "totalActive": 684,
+  "totalDesign": 684,
   "totalEbook": 0,
   "designCategories": [
     [
@@ -10,10 +10,6 @@
     [
       "Template Website",
       61
-    ],
-    [
-      "Kaos",
-      49
     ],
     [
       "Undangan",
@@ -33,6 +29,10 @@
     ],
     [
       "Vektor",
+      30
+    ],
+    [
+      "Kaos",
       30
     ],
     [
@@ -103,10 +103,6 @@
       61
     ],
     [
-      "Kaos",
-      49
-    ],
-    [
       "Undangan",
       40
     ],
@@ -124,6 +120,10 @@
     ],
     [
       "Vektor",
+      30
+    ],
+    [
+      "Kaos",
       30
     ],
     [
@@ -190,7 +190,7 @@
     ],
     [
       "CDR",
-      239
+      240
     ],
     [
       "MP4",
@@ -199,10 +199,6 @@
     [
       "PDF",
       31
-    ],
-    [
-      "AI/EPS",
-      27
     ],
     [
       "XLSX",
@@ -214,15 +210,11 @@
     ],
     [
       "PNG/HD",
-      5
+      9
     ],
     [
-      "LUTS/XMP",
-      4
-    ],
-    [
-      "PSD",
-      1
+      "AI/EPS",
+      8
     ]
   ],
   "showcase": {
