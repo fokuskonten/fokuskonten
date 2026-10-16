@@ -28,7 +28,8 @@ const formatSoftwareMap = {
   'WAV/MP3': { name: 'Audio Sound FX', ext: '.WAV / .MP3', comp: 'Semua Video Editor & DAW Audio', type: 'Studio Lossless Audio SFX', desc: 'Sound Effects Berkualitas Studio Tanpa Noise' },
   'XLSX': { name: 'Microsoft Excel / Sheets', ext: '.XLSX', comp: 'Microsoft Excel 2016+ & Google Sheets', type: 'Automated Spreadsheet Dashboard', desc: 'Template Spreadsheet Otomatisasi & Rumus Siap Pakai' },
   'EXE': { name: 'Aplikasi Desktop Windows', ext: '.EXE', comp: 'Windows 10 & Windows 11 (PC & Laptop)', type: 'Desktop Application Installer', desc: 'Paket Aplikasi Desktop Siap Pasang & Penggunaan Offline Lokal' },
-  'PHP/WEB': { name: 'Aplikasi Web & PWA', ext: '.PHP / .SQL', comp: 'Laragon, XAMPP, atau Hosting cPanel', type: 'Full Source Code Aplikasi Web', desc: 'Paket Source Code Aplikasi Web & Skema Database Lengkap' },
+  'PWA': { name: 'Aplikasi PWA Mandiri', ext: '.PWA / .HTML', comp: 'Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)', type: 'Progressive Web App Mandiri', desc: 'Aplikasi PWA Siap Pasang & Bisa Digunakan Tanpa Koneksi Internet' },
+  'PHP/WEB': { name: 'Aplikasi PWA Mandiri', ext: '.PWA / .HTML', comp: 'Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)', type: 'Progressive Web App Mandiri', desc: 'Aplikasi PWA Siap Pasang & Bisa Digunakan Tanpa Koneksi Internet' },
   'PDF': { name: 'E-Book Digital Master', ext: '.PDF', comp: 'Smartphone, Tablet, iPad, PC & E-Reader', type: 'Digital E-Book & Dokumen', desc: 'File Digital E-Book Berkualitas Tinggi, Teks Jernih & Siap Baca' },
   'The Big Bang': { name: 'The Big Bang Master', ext: 'Cloud Master Direct', comp: 'Semua Perangkat (PC, Laptop, Smartphone, Tablet)', type: 'Mega Master Bundle', desc: 'Repositori Master Aset Digital & Direktori Terlengkap' }
 }

@@ -108,7 +108,7 @@ export default function Navbar() {
     } else {
       navFormatItems.push({
         id: fmt,
-        label: fmt === 'The Big Bang' ? 'The Big Bang' : (fmt === 'PHP/WEB' ? 'Web & PWA' : (fmt === 'EXE' ? 'Desktop .EXE' : `.${fmt}`)),
+        label: fmt === 'The Big Bang' ? 'The Big Bang' : ((fmt === 'PWA' || fmt === 'PHP/WEB') ? 'PWA' : (fmt === 'EXE' ? 'Desktop .EXE' : `.${fmt}`)),
         count,
       })
     }

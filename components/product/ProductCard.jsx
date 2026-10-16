@@ -83,7 +83,7 @@ export default function ProductCard({ product, compact = false, priority = false
   const formatUpper = (product.format || 'CDR').toUpperCase()
   const formatLabel = formatUpper.includes('BIG BANG') 
     ? 'BIG BANG' 
-    : (formatUpper === 'PHP/WEB' ? 'WEB & PWA' : `.${formatUpper}`)
+    : ((formatUpper === 'PWA' || formatUpper === 'PHP/WEB') ? 'PWA' : `.${formatUpper}`)
   const coverSrc = product.coverImage || product.cover_image || (product.sku ? `${product.sku}_cover.webp` : '')
 
   if (compact) {
