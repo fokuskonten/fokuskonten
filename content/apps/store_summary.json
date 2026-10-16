@@ -1,6 +1,6 @@
 {
-  "totalActive": 836,
-  "totalDesign": 836,
+  "totalActive": 703,
+  "totalDesign": 703,
   "totalEbook": 0,
   "designCategories": [
     [
@@ -8,24 +8,16 @@
       266
     ],
     [
-      "Vektor",
-      111
-    ],
-    [
       "Template Website",
       61
     ],
     [
       "Kaos",
-      51
+      49
     ],
     [
       "Undangan",
-      42
-    ],
-    [
-      "Stiker & Striping",
-      39
+      40
     ],
     [
       "Video Konten",
@@ -40,16 +32,20 @@
       31
     ],
     [
-      "Poster",
+      "Vektor",
       30
     ],
     [
-      "Kemasan & Goodie Bag",
-      27
+      "Poster",
+      25
     ],
     [
-      "Logo & Maskot",
-      16
+      "Stiker & Striping",
+      23
+    ],
+    [
+      "Kemasan & Goodie Bag",
+      17
     ],
     [
       "Invoice & Nota",
@@ -69,7 +65,11 @@
     ],
     [
       "Tekstur & Brush",
-      10
+      9
+    ],
+    [
+      "Logo & Maskot",
+      8
     ],
     [
       "Sertifikat",
@@ -77,10 +77,6 @@
     ],
     [
       "Photobooth",
-      7
-    ],
-    [
-      "Daftar Menu & Kuliner",
       6
     ],
     [
@@ -88,8 +84,8 @@
       4
     ],
     [
-      "Desain Grafis",
-      4
+      "Daftar Menu & Kuliner",
+      3
     ],
     [
       "Kalender",
@@ -103,24 +99,16 @@
       266
     ],
     [
-      "Vektor",
-      111
-    ],
-    [
       "Template Website",
       61
     ],
     [
       "Kaos",
-      51
+      49
     ],
     [
       "Undangan",
-      42
-    ],
-    [
-      "Stiker & Striping",
-      39
+      40
     ],
     [
       "Video Konten",
@@ -135,16 +123,20 @@
       31
     ],
     [
-      "Poster",
+      "Vektor",
       30
     ],
     [
-      "Kemasan & Goodie Bag",
-      27
+      "Poster",
+      25
     ],
     [
-      "Logo & Maskot",
-      16
+      "Stiker & Striping",
+      23
+    ],
+    [
+      "Kemasan & Goodie Bag",
+      17
     ],
     [
       "Invoice & Nota",
@@ -164,7 +156,11 @@
     ],
     [
       "Tekstur & Brush",
-      10
+      9
+    ],
+    [
+      "Logo & Maskot",
+      8
     ],
     [
       "Sertifikat",
@@ -172,10 +168,6 @@
     ],
     [
       "Photobooth",
-      7
-    ],
-    [
-      "Daftar Menu & Kuliner",
       6
     ],
     [
@@ -183,8 +175,8 @@
       4
     ],
     [
-      "Desain Grafis",
-      4
+      "Daftar Menu & Kuliner",
+      3
     ],
     [
       "Kalender",
@@ -193,24 +185,24 @@
   ],
   "formats": [
     [
-      "CDR",
-      357
-    ],
-    [
       "PHP/WEB",
       327
+    ],
+    [
+      "CDR",
+      239
     ],
     [
       "MP4",
       35
     ],
     [
-      "AI/EPS",
-      34
+      "PDF",
+      31
     ],
     [
-      "PDF",
-      33
+      "AI/EPS",
+      27
     ],
     [
       "XLSX",
@@ -222,15 +214,15 @@
     ],
     [
       "PNG/HD",
-      6
-    ],
-    [
-      "PSD",
-      6
+      5
     ],
     [
       "LUTS/XMP",
       4
+    ],
+    [
+      "PSD",
+      1
     ]
   ],
   "showcase": {
