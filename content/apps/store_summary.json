@@ -1,6 +1,6 @@
 {
-  "totalActive": 458,
-  "totalDesign": 458,
+  "totalActive": 448,
+  "totalDesign": 448,
   "totalEbook": 0,
   "designCategories": [
     [
@@ -12,16 +12,16 @@
       36
     ],
     [
-      "Video Konten",
-      35
-    ],
-    [
       "Dokumen & Template Bisnis",
       34
     ],
     [
       "Lembar Kerja Edukasi",
       31
+    ],
+    [
+      "Video Konten",
+      25
     ],
     [
       "Stiker & Striping",
@@ -99,16 +99,16 @@
       36
     ],
     [
-      "Video Konten",
-      35
-    ],
-    [
       "Dokumen & Template Bisnis",
       34
     ],
     [
       "Lembar Kerja Edukasi",
       31
+    ],
+    [
+      "Video Konten",
+      25
     ],
     [
       "Stiker & Striping",
@@ -185,12 +185,12 @@
       141
     ],
     [
-      "MP4",
-      35
-    ],
-    [
       "PDF",
       31
+    ],
+    [
+      "MP4",
+      25
     ],
     [
       "XLSX",
@@ -358,28 +358,6 @@
         "price": 24000,
         "originalPrice": 60000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDE0C2/IDE0C2_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .MP4"
-      },
-      {
-        "sku": "IDCB24",
-        "title": "QuranicFlow - Stok Konten Murottal Dakwah",
-        "category": "Video Konten",
-        "format": "MP4",
-        "price": 7500,
-        "originalPrice": 25000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDCB24/IDCB24_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .MP4"
-      },
-      {
-        "sku": "IDE830",
-        "title": "RetroIndo - Mentahan Vidkon Bioskop Lawas",
-        "category": "Video Konten",
-        "format": "MP4",
-        "price": 7500,
-        "originalPrice": 25000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDE830/IDE830_cover.webp",
         "badge": "Unggulan",
         "tag": "Format .MP4"
       },
