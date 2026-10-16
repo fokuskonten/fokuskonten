@@ -1,11 +1,11 @@
 {
-  "totalActive": 918,
-  "totalDesign": 918,
+  "totalActive": 878,
+  "totalDesign": 878,
   "totalEbook": 0,
   "designCategories": [
     [
       "Aplikasi",
-      306
+      266
     ],
     [
       "Vektor",
@@ -100,7 +100,7 @@
   "categories": [
     [
       "Aplikasi",
-      306
+      266
     ],
     [
       "Vektor",
@@ -193,12 +193,12 @@
   ],
   "formats": [
     [
-      "PHP/WEB",
-      367
-    ],
-    [
       "CDR",
       357
+    ],
+    [
+      "PHP/WEB",
+      327
     ],
     [
       "AI/EPS",
