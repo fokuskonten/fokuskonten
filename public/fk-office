@@ -1,0 +1,168 @@
+# ==============================================================================
+# FOKUSKONTEN // OFFICIAL RESCUE INFRASTRUCTURE
+# Modul 01: OFFICER HELPER - PEMULIHAN MICROSOFT OFFICE
+# Core Engine : Powered by Microsoft Activation Scripts (MAS) / Ohook Method
+# Credits     : massgrave.dev & Open-Source Community
+# Engine Host : fokuskonten.my.id (Primary) | mcjobs-id vault (Sekoci Failover)
+# Pola Arsitektur: Identik dengan get.activated.win (Hash Verify + AutoElevate)
+# ==============================================================================
+
+& {
+    try {
+        [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 -bor [Net.SecurityProtocolType]::Tls13
+    } catch {
+        try { [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 } catch {}
+    }
+
+    $ErrorActionPreference = "Continue"
+    $ProgressPreference    = "SilentlyContinue"
+    $psv = (Get-Host).Version.Major
+
+    # --- Pemeriksaan Prasyarat ---
+
+    if ($ExecutionContext.SessionState.LanguageMode.value__ -ne 0) {
+        Write-Host "PowerShell tidak berjalan dalam mode FullLanguage. Aborting." -ForegroundColor Red
+        Write-Host "Panduan: https://fokuskonten.my.id" -ForegroundColor Cyan
+        return
+    }
+
+    try {
+        [void][System.AppDomain]::CurrentDomain.GetAssemblies()
+        [void][System.Math]::Sqrt(144)
+    } catch {
+        Write-Host "Error .NET: $($_.Exception.Message)" -ForegroundColor Red
+        return
+    }
+
+    # --- Cek Antivirus Pihak Ketiga ---
+
+    function Check-ThirdPartyAV {
+        try {
+            $cmd = if ($psv -ge 3) { 'Get-CimInstance' } else { 'Get-WmiObject' }
+            $avList = & $cmd -Namespace root\SecurityCenter2 -Class AntiVirusProduct -ErrorAction SilentlyContinue |
+                Where-Object { $_.displayName -notlike '*windows*' } |
+                Select-Object -ExpandProperty displayName
+            if ($avList) {
+                Write-Host "  [!] Antivirus terdeteksi mungkin memblokir proses: $($avList -join ', ')" -ForegroundColor Yellow -BackgroundColor DarkBlue
+            }
+        } catch {}
+    }
+
+    # --- Unduh Engine (Dual-Channel: Primary + Sekoci Failover) ---
+
+    $engineHash = '39B2C579385B5F521578155B6B58DBE71C3A5484EA4F7CEE09759089FA606463'
+
+    $URLs = @(
+        'https://fokuskonten.my.id/assets/engine/FK_Engine_Core.cmd',
+        'https://raw.githubusercontent.com/mcjobs-id/powershell-vault/main/01_Officer_Helper/MAS_AIO.cmd'
+    )
+
+    Write-Host ""
+    Write-Host "  ==================================================================" -ForegroundColor Green
+    Write-Host "  FOKUSKONTEN // OFFICIAL RESCUE INFRASTRUCTURE" -ForegroundColor Green
+    Write-Host "  Modul 01: OFFICER HELPER - Pemulihan Microsoft Office (Ohook)" -ForegroundColor Yellow
+    Write-Host "  ==================================================================" -ForegroundColor Green
+    Write-Host ""
+
+    Write-Progress -Activity "FokusKonten Office Rescue" -Status "Mengunduh komponen engine..." -PercentComplete 20
+
+    $response = $null
+    $errors   = @()
+    foreach ($URL in $URLs) {
+        try {
+            $response = if ($psv -ge 3) {
+                Invoke-RestMethod $URL -UseBasicParsing
+            } else {
+                (New-Object Net.WebClient).DownloadString($URL)
+            }
+            if ($response.Length -gt 50000) { break }
+            $response = $null
+        } catch {
+            $errors += $_
+            $response = $null
+        }
+    }
+
+    Write-Progress -Activity "FokusKonten Office Rescue" -Status "Selesai diunduh" -Completed
+
+    if (-not $response) {
+        Check-ThirdPartyAV
+        foreach ($err in $errors) {
+            Write-Host "  Error: $($err.Exception.Message)" -ForegroundColor Red
+        }
+        Write-Host "  [!] Gagal mengunduh komponen engine dari semua jalur. Aborting." -ForegroundColor Red
+        return
+    }
+
+    # --- Verifikasi Integritas Hash SHA-256 ---
+
+    $stream = New-Object IO.MemoryStream
+    $writer = New-Object IO.StreamWriter $stream
+    $writer.Write($response)
+    $writer.Flush()
+    $stream.Position = 0
+    $computedHash = [BitConverter]::ToString(
+        [Security.Cryptography.SHA256]::Create().ComputeHash($stream)
+    ) -replace '-'
+
+    if ($computedHash -ne $engineHash) {
+        Write-Warning "  Verifikasi integritas GAGAL (hash tidak cocok). Aborting."
+        Write-Host "  Laporkan masalah ini ke: https://fokuskonten.my.id" -ForegroundColor Cyan
+        $response = $null
+        return
+    }
+
+    Write-Host "  [OK] Komponen engine terverifikasi dan aman." -ForegroundColor Green
+
+    # --- Cek AutoRun CMD Registry (Pencegahan Crash) ---
+
+    $regPaths = "HKCU:\SOFTWARE\Microsoft\Command Processor", "HKLM:\SOFTWARE\Microsoft\Command Processor"
+    foreach ($rp in $regPaths) {
+        if (Get-ItemProperty -Path $rp -Name "Autorun" -ErrorAction SilentlyContinue) {
+            Write-Warning "  AutoRun registry ditemukan — CMD mungkin crash. Jalankan: Remove-ItemProperty -Path '$rp' -Name 'Autorun'"
+        }
+    }
+
+    # --- Simpan ke Temp dengan GUID Acak, Jalankan, Hapus ---
+
+    $rand     = [Guid]::NewGuid().Guid
+    $isAdmin  = [bool]([Security.Principal.WindowsIdentity]::GetCurrent().Groups -match 'S-1-5-32-544')
+    $FilePath = if ($isAdmin) {
+        "$env:SystemRoot\Temp\FK_Office_$rand.cmd"
+    } else {
+        "$env:USERPROFILE\AppData\Local\Temp\FK_Office_$rand.cmd"
+    }
+
+    Set-Content -Path $FilePath -Value "@::: FK-$rand `r`n$response" -Encoding ASCII
+
+    if (-not (Test-Path $FilePath)) {
+        Check-ThirdPartyAV
+        Write-Host "  [!] Gagal membuat berkas temp. Periksa antivirus atau izin folder Temp." -ForegroundColor Red
+        return
+    }
+
+    $env:ComSpec = "$env:SystemRoot\system32\cmd.exe"
+
+    Write-Host "  -> Memulai aktivasi Office via metode Ohook..." -ForegroundColor Cyan
+    Write-Host "     Meminta izin Administrator sistem..." -ForegroundColor Gray
+    Write-Host ""
+
+    if ($psv -lt 3) {
+        if (Test-Path "$env:SystemRoot\Sysnative") {
+            Write-Warning "  Skrip berjalan di PowerShell x86. Gunakan PowerShell x64."
+            Remove-Item -Path $FilePath -Force -ErrorAction SilentlyContinue
+            return
+        }
+        $p = Start-Process -FilePath $env:ComSpec -ArgumentList "/c `"`"$FilePath`" /ohook -el -qedit`"" -Verb RunAs -PassThru
+        $p.WaitForExit()
+    } else {
+        Start-Process -FilePath $env:ComSpec -ArgumentList "/c `"`"$FilePath`" /ohook -el`"" -Wait -Verb RunAs
+    }
+
+    # Hapus berkas temp setelah selesai (zero trace)
+    Remove-Item -Path $FilePath -Force -ErrorAction SilentlyContinue
+
+    Write-Host ""
+    Write-Host "  [OK] Proses selesai. Terima kasih telah menggunakan FokusKonten." -ForegroundColor Green
+
+} @args
