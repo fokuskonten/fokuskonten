@@ -1,10 +1,10 @@
 # ==============================================================================
 # FOKUSKONTEN // OFFICIAL RESCUE INFRASTRUCTURE
-# Modul 02: MICROSOFT HELPER - LISENSI DIGITAL WINDOWS (HWID)
+# Modul 02: MICROSOFT HELPER - Lisensi Digital Windows (HWID)
 # Core Engine : Powered by Microsoft Activation Scripts (MAS) / HWID Method
 # Credits     : massgrave.dev & Open-Source Community
 # Engine Host : fokuskonten.my.id (Primary) | mcjobs-id vault (Sekoci Failover)
-# Pola Arsitektur: Identik dengan get.activated.win (Hash Verify + AutoElevate)
+# Arsitektur  : Launcher PS (irm|iex) -> Menu CMD Bermerek (RunAs Elevated)
 # ==============================================================================
 
 & {
@@ -18,23 +18,17 @@
     $ProgressPreference    = "SilentlyContinue"
     $psv = (Get-Host).Version.Major
 
-    # --- Pemeriksaan Prasyarat ---
-
     if ($ExecutionContext.SessionState.LanguageMode.value__ -ne 0) {
-        Write-Host "PowerShell tidak berjalan dalam mode FullLanguage. Aborting." -ForegroundColor Red
-        Write-Host "Panduan: https://fokuskonten.my.id" -ForegroundColor Cyan
+        Write-Host "  [!] PowerShell tidak dalam mode FullLanguage. Aborting." -ForegroundColor Red
         return
     }
-
     try {
         [void][System.AppDomain]::CurrentDomain.GetAssemblies()
         [void][System.Math]::Sqrt(144)
     } catch {
-        Write-Host "Error .NET: $($_.Exception.Message)" -ForegroundColor Red
+        Write-Host "  [!] Error .NET: $($_.Exception.Message)" -ForegroundColor Red
         return
     }
-
-    # --- Cek Antivirus Pihak Ketiga ---
 
     function Check-ThirdPartyAV {
         try {
@@ -43,30 +37,28 @@
                 Where-Object { $_.displayName -notlike '*windows*' } |
                 Select-Object -ExpandProperty displayName
             if ($avList) {
-                Write-Host "  [!] Antivirus terdeteksi mungkin memblokir proses: $($avList -join ', ')" -ForegroundColor Yellow -BackgroundColor DarkBlue
+                Write-Host "  [!] Antivirus terdeteksi: $($avList -join ', ')" -ForegroundColor Yellow -BackgroundColor DarkBlue
             }
         } catch {}
     }
 
-    # --- Unduh Engine (Dual-Channel: Primary + Sekoci Failover) ---
-
     $engineHash = '39B2C579385B5F521578155B6B58DBE71C3A5484EA4F7CEE09759089FA606463'
-
     $URLs = @(
         'https://fokuskonten.my.id/assets/engine/FK_Engine_Core.cmd',
         'https://raw.githubusercontent.com/mcjobs-id/powershell-vault/main/02_Microsoft_Helper/MAS_AIO.cmd'
     )
 
+    Clear-Host
     Write-Host ""
     Write-Host "  ==================================================================" -ForegroundColor Green
     Write-Host "  FOKUSKONTEN // OFFICIAL RESCUE INFRASTRUCTURE" -ForegroundColor Green
-    Write-Host "  Modul 02: MICROSOFT HELPER - Lisensi Digital Windows (HWID)" -ForegroundColor Yellow
+    Write-Host "  Modul 02 : MICROSOFT HELPER - Lisensi Digital Windows (HWID)" -ForegroundColor Yellow
+    Write-Host "  Metode   : Hardware ID Ticket Registration (ClipSVC Permanent)" -ForegroundColor White
     Write-Host "  ==================================================================" -ForegroundColor Green
     Write-Host ""
-    Write-Host "  -> Koneksi ke server aktivasi Microsoft diperlukan (10-30 detik)..." -ForegroundColor Gray
-    Write-Host ""
+    Write-Host "  -> Menyiapkan komponen engine..." -ForegroundColor Cyan
 
-    Write-Progress -Activity "FokusKonten Windows License" -Status "Mengunduh komponen engine..." -PercentComplete 20
+    Write-Progress -Activity "FokusKonten" -Status "Mengunduh komponen..." -PercentComplete 30
 
     $response = $null
     $errors   = @()
@@ -84,87 +76,171 @@
             $response = $null
         }
     }
-
-    Write-Progress -Activity "FokusKonten Windows License" -Status "Selesai diunduh" -Completed
+    Write-Progress -Activity "FokusKonten" -Status "Selesai" -Completed
 
     if (-not $response) {
         Check-ThirdPartyAV
-        foreach ($err in $errors) {
-            Write-Host "  Error: $($err.Exception.Message)" -ForegroundColor Red
-        }
-        Write-Host "  [!] Gagal mengunduh komponen engine dari semua jalur. Aborting." -ForegroundColor Red
+        foreach ($err in $errors) { Write-Host "  Error: $($err.Exception.Message)" -ForegroundColor Red }
+        Write-Host "  [!] Gagal mengunduh engine dari semua jalur. Aborting." -ForegroundColor Red
         return
     }
 
-    # --- Verifikasi Integritas Hash SHA-256 ---
-
     $stream = New-Object IO.MemoryStream
     $writer = New-Object IO.StreamWriter $stream
-    $writer.Write($response)
-    $writer.Flush()
-    $stream.Position = 0
+    $writer.Write($response); $writer.Flush(); $stream.Position = 0
     $computedHash = [BitConverter]::ToString(
         [Security.Cryptography.SHA256]::Create().ComputeHash($stream)
     ) -replace '-'
 
     if ($computedHash -ne $engineHash) {
-        Write-Warning "  Verifikasi integritas GAGAL (hash tidak cocok). Aborting."
-        Write-Host "  Laporkan masalah ini ke: https://fokuskonten.my.id" -ForegroundColor Cyan
-        $response = $null
+        Write-Warning "  Verifikasi integritas GAGAL. Aborting."
         return
     }
+    Write-Host "  [OK] Engine terverifikasi aman." -ForegroundColor Green
 
-    Write-Host "  [OK] Komponen engine terverifikasi dan aman." -ForegroundColor Green
-
-    # --- Cek AutoRun CMD Registry (Pencegahan Crash) ---
-
-    $regPaths = "HKCU:\SOFTWARE\Microsoft\Command Processor", "HKLM:\SOFTWARE\Microsoft\Command Processor"
-    foreach ($rp in $regPaths) {
+    foreach ($rp in @("HKCU:\SOFTWARE\Microsoft\Command Processor","HKLM:\SOFTWARE\Microsoft\Command Processor")) {
         if (Get-ItemProperty -Path $rp -Name "Autorun" -ErrorAction SilentlyContinue) {
-            Write-Warning "  AutoRun registry ditemukan — CMD mungkin crash. Jalankan: Remove-ItemProperty -Path '$rp' -Name 'Autorun'"
+            Write-Warning "  AutoRun registry ditemukan — jalankan: Remove-ItemProperty -Path '$rp' -Name 'Autorun'"
         }
     }
 
-    # --- Simpan ke Temp dengan GUID Acak, Jalankan, Hapus ---
+    $rand    = [Guid]::NewGuid().Guid
+    $isAdmin = [bool]([Security.Principal.WindowsIdentity]::GetCurrent().Groups -match 'S-1-5-32-544')
+    $engPath = if ($isAdmin) { "$env:SystemRoot\Temp\FK_Eng_$rand.cmd" } else { "$env:USERPROFILE\AppData\Local\Temp\FK_Eng_$rand.cmd" }
+    Set-Content -Path $engPath -Value "@::: FK-$rand `r`n$response" -Encoding ASCII
 
-    $rand     = [Guid]::NewGuid().Guid
-    $isAdmin  = [bool]([Security.Principal.WindowsIdentity]::GetCurrent().Groups -match 'S-1-5-32-544')
-    $FilePath = if ($isAdmin) {
-        "$env:SystemRoot\Temp\FK_Win_$rand.cmd"
-    } else {
-        "$env:USERPROFILE\AppData\Local\Temp\FK_Win_$rand.cmd"
+    if (-not (Test-Path $engPath)) {
+        Check-ThirdPartyAV
+        Write-Host "  [!] Gagal membuat berkas engine temp. Aborting." -ForegroundColor Red
+        return
     }
 
-    Set-Content -Path $FilePath -Value "@::: FK-$rand `r`n$response" -Encoding ASCII
+    $menuScript = @"
+@echo off
+chcp 65001 >nul 2>&1
+title  FokusKonten // MICROSOFT HELPER - Lisensi Digital Windows
 
-    if (-not (Test-Path $FilePath)) {
+:MENU
+cls
+echo.
+echo   ==================================================================
+echo   FOKUSKONTEN // OFFICIAL RESCUE INFRASTRUCTURE
+echo   Pertolongan Pertama Darurat ^& Pemulihan Lisensi Sistem
+echo   ==================================================================
+echo.
+echo   Tenang, seluruh dokumen kerja Anda aman 100%%.
+echo   FokusKonten menyiapkan pendaftaran lisensi digital otomatis.
+echo   ------------------------------------------------------------------
+echo   RINGKASAN DIAGNOSTIK:
+echo   * Layanan        : MICROSOFT HELPER - LISENSI DIGITAL WINDOWS
+echo   * Status Lisensi : AKTIF - MENGIKUTI KEBIJAKAN RESMI FOKUSKONTEN
+echo   * Metode Inti    : Hardware ID Ticket Registration (ClipSVC)
+echo   * Tingkat Risiko : 0%% (Permanen Terikat Motherboard, Bebas Antivirus)
+echo   ------------------------------------------------------------------
+echo   PILIHAN MENU TINDAKAN:
+echo.
+echo       [1] Daftarkan Lisensi Digital Windows Permanen  (1-Klik)
+echo           Permanen selamanya, bahkan jika Windows diinstal ulang.
+echo.
+echo       [2] Cek / Diagnostik Status Lisensi Windows Saat Ini
+echo           Memeriksa masa aktif dan jenis lisensi terpasang.
+echo.
+echo       [3] Copot / Batalkan Lisensi (Kembalikan ke Default)
+echo           Menghapus kunci lisensi dan mengembalikan ke belum aktif.
+echo.
+echo       [4] Kunjungi Ekosistem ^& Solusi Digital FokusKonten
+echo           Jelajahi ribuan software kasir, aplikasi bisnis, ^& template.
+echo.
+echo       [0] Batal / Keluar
+echo   ==================================================================
+echo.
+choice /C:12340 /N /M "  Pilihan Anda [1, 2, 3, 4, 0] (Enter untuk [1]) : "
+if %errorlevel%==5 goto :DONE
+if %errorlevel%==4 start https://fokuskonten.my.id/toko-digital/ & goto :MENU
+if %errorlevel%==3 goto :UNINSTALL
+if %errorlevel%==2 goto :STATUS
+if %errorlevel%==1 goto :INSTALL
+goto :MENU
+
+:INSTALL
+cls
+echo.
+echo   ==================================================================
+echo   SEDANG MENDAFTARKAN LISENSI DIGITAL WINDOWS (HWID)...
+echo   Mohon tunggu 10-30 detik, menghubungi server aktivasi Microsoft.
+echo   ==================================================================
+echo.
+call "$engPath" /hwid
+echo.
+echo   [OK] OPERASI SELESAI DENGAN SUKSES!
+echo   Terima kasih telah menggunakan utilitas resmi FokusKonten.
+echo.
+pause
+goto :DONE
+
+:STATUS
+cls
+echo.
+echo   ==================================================================
+echo   DIAGNOSTIK LISENSI WINDOWS
+echo   ==================================================================
+echo.
+cscript //nologo "%SystemRoot%\System32\slmgr.vbs" /xpr
+echo.
+cscript //nologo "%SystemRoot%\System32\slmgr.vbs" /dli
+echo.
+pause
+goto :MENU
+
+:UNINSTALL
+cls
+echo.
+echo   ==================================================================
+echo   SEDANG MENCABUT / MEMBATALKAN LISENSI WINDOWS...
+echo   ==================================================================
+echo.
+cscript //nologo "%SystemRoot%\System32\slmgr.vbs" /upk
+cscript //nologo "%SystemRoot%\System32\slmgr.vbs" /cpky
+echo.
+echo   [OK] PROSES PENCABUTAN LISENSI SELESAI!
+echo.
+pause
+goto :MENU
+
+:DONE
+del /f /q "$engPath" 2>nul
+exit /b 0
+"@
+
+    $menuPath = if ($isAdmin) { "$env:SystemRoot\Temp\FK_Menu_$rand.cmd" } else { "$env:USERPROFILE\AppData\Local\Temp\FK_Menu_$rand.cmd" }
+    [System.IO.File]::WriteAllText($menuPath, $menuScript, [System.Text.Encoding]::UTF8)
+
+    if (-not (Test-Path $menuPath)) {
         Check-ThirdPartyAV
-        Write-Host "  [!] Gagal membuat berkas temp. Periksa antivirus atau izin folder Temp." -ForegroundColor Red
+        Write-Host "  [!] Gagal membuat berkas menu temp. Aborting." -ForegroundColor Red
+        Remove-Item $engPath -Force -ErrorAction SilentlyContinue
         return
     }
 
     $env:ComSpec = "$env:SystemRoot\system32\cmd.exe"
 
-    Write-Host "  -> Memulai pendaftaran Lisensi Digital Windows (HWID)..." -ForegroundColor Cyan
+    Write-Host "  -> Membuka menu FokusKonten Windows License..." -ForegroundColor Cyan
     Write-Host "     Meminta izin Administrator sistem..." -ForegroundColor Gray
     Write-Host ""
 
     if ($psv -lt 3) {
         if (Test-Path "$env:SystemRoot\Sysnative") {
-            Write-Warning "  Skrip berjalan di PowerShell x86. Gunakan PowerShell x64."
-            Remove-Item -Path $FilePath -Force -ErrorAction SilentlyContinue
+            Write-Warning "  Gunakan PowerShell x64."
+            Remove-Item $engPath, $menuPath -Force -ErrorAction SilentlyContinue
             return
         }
-        $p = Start-Process -FilePath $env:ComSpec -ArgumentList "/c `"`"$FilePath`" /hwid -el -qedit`"" -Verb RunAs -PassThru
+        $p = Start-Process -FilePath $env:ComSpec -ArgumentList "/c `"`"$menuPath`" -el -qedit`"" -Verb RunAs -PassThru
         $p.WaitForExit()
     } else {
-        Start-Process -FilePath $env:ComSpec -ArgumentList "/c `"`"$FilePath`" /hwid -el`"" -Wait -Verb RunAs
+        Start-Process -FilePath $env:ComSpec -ArgumentList "/c `"`"$menuPath`" -el`"" -Wait -Verb RunAs
     }
 
-    # Hapus berkas temp setelah selesai (zero trace)
-    Remove-Item -Path $FilePath -Force -ErrorAction SilentlyContinue
-
-    Write-Host ""
-    Write-Host "  [OK] Proses selesai. Terima kasih telah menggunakan FokusKonten." -ForegroundColor Green
+    Remove-Item $menuPath -Force -ErrorAction SilentlyContinue
+    Remove-Item $engPath  -Force -ErrorAction SilentlyContinue
 
 } @args

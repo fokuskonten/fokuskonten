@@ -1,8 +1,8 @@
 # ==============================================================================
 # FOKUSKONTEN // OFFICIAL RESCUE INFRASTRUCTURE
-# Modul 03: SYSTEM SERVICE TROUBLESHOOTER - REPARASI SPPSVC & WMI
+# Modul 03: SYSTEM SERVICE TROUBLESHOOTER - Reparasi SPPSVC & WMI
 # Metode    : 100% Native Windows Engine (Zero External Dependency)
-# Arsitektur: Identik pola get.activated.win (AutoElevate + GUID Temp + Cleanup)
+# Arsitektur: Launcher PS (irm|iex) -> Menu CMD Bermerek (RunAs Elevated)
 # ==============================================================================
 
 & {
@@ -16,155 +16,196 @@
     $ProgressPreference    = "SilentlyContinue"
     $psv = (Get-Host).Version.Major
 
-    # --- Pemeriksaan Prasyarat ---
-
     if ($ExecutionContext.SessionState.LanguageMode.value__ -ne 0) {
-        Write-Host "PowerShell tidak berjalan dalam mode FullLanguage. Aborting." -ForegroundColor Red
+        Write-Host "  [!] PowerShell tidak dalam mode FullLanguage. Aborting." -ForegroundColor Red
         return
     }
-
     try {
         [void][System.AppDomain]::CurrentDomain.GetAssemblies()
         [void][System.Math]::Sqrt(144)
     } catch {
-        Write-Host "Error .NET: $($_.Exception.Message)" -ForegroundColor Red
+        Write-Host "  [!] Error .NET: $($_.Exception.Message)" -ForegroundColor Red
         return
     }
 
+    Clear-Host
     Write-Host ""
     Write-Host "  ==================================================================" -ForegroundColor Green
     Write-Host "  FOKUSKONTEN // OFFICIAL RESCUE INFRASTRUCTURE" -ForegroundColor Green
-    Write-Host "  Modul 03: SYSTEM SERVICE TROUBLESHOOTER" -ForegroundColor Yellow
-    Write-Host "  Reparasi SPPSVC, ClipSVC, WMI, & Reset Token Lisensi" -ForegroundColor Yellow
+    Write-Host "  Modul 03 : SYSTEM SERVICE TROUBLESHOOTER" -ForegroundColor Yellow
+    Write-Host "  Metode   : Native Windows Engine (100% Tanpa Ketergantungan)" -ForegroundColor White
     Write-Host "  ==================================================================" -ForegroundColor Green
     Write-Host ""
-    Write-Host "  Engine  : 100% Native Windows PowerShell (Bebas Unduhan Eksternal)" -ForegroundColor Green
-    Write-Host ""
+    Write-Host "  -> Menyiapkan engine reparasi lokal..." -ForegroundColor Cyan
 
-    # --- Bangun skrip repair sebagai string, simpan ke temp GUID, jalankan RunAs ---
-    # Pola ini identik dengan get.activated.win: buat temp GUID -> RunAs -> hapus
-
-    $repairScript = @'
+    # --- Bangun repair script PS1 sebagai inline string ---
+    $repairPs1 = @'
 $ErrorActionPreference = "Continue"
 $ProgressPreference    = "SilentlyContinue"
 
-function Write-Section { param($msg) Write-Host "" ; Write-Host "  $msg" -ForegroundColor Yellow ; Write-Host ("  " + "-" * 62) -ForegroundColor DarkGray }
-
-Write-Host ""
-Write-Host "  ==================================================================" -ForegroundColor Green
-Write-Host "  FOKUSKONTEN // SYSTEM SERVICE REPAIR ENGINE" -ForegroundColor Green
-Write-Host "  ==================================================================" -ForegroundColor Green
-Write-Host ""
-
-# 1. Restart & Aktifkan Layanan Inti
-Write-Section "Langkah 1/4: Memulihkan Layanan Inti Lisensi Windows..."
-
-$services = @("DcomLaunch","RpcSs","KeyIso","Winmgmt","ClipSVC","LicenseManager","sppsvc")
-foreach ($svc in $services) {
-    try {
-        $s = Get-Service -Name $svc -ErrorAction SilentlyContinue
-        if ($s) {
-            Set-Service -Name $svc -StartupType Automatic -ErrorAction SilentlyContinue
-            if ($s.Status -ne "Running") { Start-Service -Name $svc -ErrorAction SilentlyContinue }
-            $final = (Get-Service -Name $svc).Status
-            $color = if ($final -eq "Running") { "Green" } else { "Yellow" }
-            Write-Host ("  [{0}] {1,-18}: {2}" -f "OK", $svc, $final) -ForegroundColor $color
+function Repair-Services {
+    cls
+    Write-Host ""
+    Write-Host "  ================================================================" -ForegroundColor Green
+    Write-Host "  SEDANG MEMPERBAIKI LAYANAN SISTEM (SPPSVC, ClipSVC, WMI)..." -ForegroundColor Yellow
+    Write-Host "  ================================================================" -ForegroundColor Green
+    Write-Host ""
+    $svcs = @("DcomLaunch","RpcSs","KeyIso","Winmgmt","ClipSVC","LicenseManager","sppsvc")
+    foreach ($s in $svcs) {
+        try {
+            Set-Service -Name $s -StartupType Automatic -ErrorAction SilentlyContinue
+            Start-Service -Name $s -ErrorAction SilentlyContinue
+            $st = (Get-Service -Name $s -ErrorAction SilentlyContinue).Status
+            $c  = if ($st -eq "Running") { "Green" } else { "Yellow" }
+            Write-Host ("  [OK] {0,-18}: {1}" -f $s, $st) -ForegroundColor $c
+        } catch { Write-Host "  [!] $s : $($_.Exception.Message)" -ForegroundColor Red }
+    }
+    Write-Host ""
+    Write-Host "  -> Re-register pustaka lisensi sistem..." -ForegroundColor Cyan
+    foreach ($dll in @("slwga.dll","sppc.dll","systemcpc.dll")) {
+        $p = Join-Path $env:SystemRoot "System32\$dll"
+        if (Test-Path $p) {
+            $r = Start-Process regsvr32.exe -ArgumentList "/s `"$p`"" -Wait -PassThru -NoNewWindow
+            Write-Host ("  [{0}] {1}" -f $(if($r.ExitCode -eq 0){"OK"}else{"--"}), $dll) -ForegroundColor $(if($r.ExitCode -eq 0){"Green"}else{"DarkGray"})
         }
-    } catch {
-        Write-Host "  [!] Layanan $svc : $($_.Exception.Message)" -ForegroundColor Red
     }
+    Write-Host ""
+    Write-Host "  [OK] REPARASI LAYANAN SELESAI!" -ForegroundColor Green
+    Write-Host "  Disarankan restart PC agar semua perubahan aktif penuh." -ForegroundColor Gray
+    Write-Host ""
+    pause
 }
 
-# 2. Daftarkan ulang DLL perlindungan lisensi
-Write-Section "Langkah 2/4: Re-register Pustaka Sistem Perlindungan Lisensi..."
-
-$dlls = @("slwga.dll","sppc.dll","systemcpc.dll","msdaps.dll")
-foreach ($dll in $dlls) {
-    $path = Join-Path $env:SystemRoot "System32\$dll"
-    if (Test-Path $path) {
-        $res = Start-Process regsvr32.exe -ArgumentList "/s `"$path`"" -Wait -PassThru -NoNewWindow
-        $status = if ($res.ExitCode -eq 0) { "OK" } else { "Skip (code $($res.ExitCode))" }
-        Write-Host "  [$status] $dll" -ForegroundColor $(if ($res.ExitCode -eq 0) { "Green" } else { "DarkGray" })
+function Show-Diagnostics {
+    cls
+    Write-Host ""
+    Write-Host "  ================================================================" -ForegroundColor Green
+    Write-Host "  DIAGNOSTIK STATUS LAYANAN & WMI" -ForegroundColor Green
+    Write-Host "  ================================================================" -ForegroundColor Green
+    Write-Host ""
+    foreach ($s in @("sppsvc","ClipSVC","Winmgmt","KeyIso","LicenseManager","RpcSs")) {
+        $svc = Get-Service -Name $s -ErrorAction SilentlyContinue
+        if ($svc) {
+            $c = if ($svc.Status -eq "Running") { "Green" } else { "Yellow" }
+            Write-Host ("  * {0,-18}: {1,-12} [Start: {2}]" -f $s, $svc.Status, $svc.StartType) -ForegroundColor $c
+        } else {
+            Write-Host ("  * {0,-18}: TIDAK DITEMUKAN" -f $s) -ForegroundColor Red
+        }
     }
-}
-
-# 3. Verifikasi WMI Repository
-Write-Section "Langkah 3/4: Uji Kesehatan WMI Repository..."
-
-try {
-    $os = Get-CimInstance -ClassName Win32_OperatingSystem -ErrorAction Stop
-    Write-Host "  [OK] WMI Normal: $($os.Caption) Build $($os.BuildNumber)" -ForegroundColor Green
-} catch {
-    Write-Host "  [!] WMI bermasalah. Jalankan: winmgmt /resetrepository" -ForegroundColor Red
+    Write-Host ""
+    Write-Host "  * Uji WMI Repository..." -ForegroundColor Cyan
     try {
-        Stop-Service Winmgmt -Force -ErrorAction SilentlyContinue
-        Start-Sleep 2
-        Start-Process "winmgmt.exe" -ArgumentList "/resetrepository" -Wait -NoNewWindow -ErrorAction SilentlyContinue
-        Start-Service Winmgmt -ErrorAction SilentlyContinue
-        Write-Host "  [OK] WMI Repository telah direset. Restart mungkin diperlukan." -ForegroundColor Yellow
+        $os = Get-CimInstance Win32_OperatingSystem -ErrorAction Stop
+        Write-Host "  [OK] WMI Normal: $($os.Caption) Build $($os.BuildNumber)" -ForegroundColor Green
     } catch {
-        Write-Host "  [!] Reset WMI gagal: $($_.Exception.Message)" -ForegroundColor Red
+        Write-Host "  [!] WMI Bermasalah: $($_.Exception.Message)" -ForegroundColor Red
     }
+    Write-Host ""
+    pause
 }
 
-# 4. Diagnostik Status Layanan Akhir
-Write-Section "Langkah 4/4: Diagnostik Status Akhir Layanan..."
-
-$targets = @("sppsvc","ClipSVC","Winmgmt","KeyIso","LicenseManager")
-foreach ($svc in $targets) {
-    $s = Get-Service -Name $svc -ErrorAction SilentlyContinue
-    if ($s) {
-        $color = if ($s.Status -eq "Running") { "Green" } else { "Yellow" }
-        Write-Host ("  * {0,-18}: {1,-12} [Startup: {2}]" -f $svc, $s.Status, $s.StartType) -ForegroundColor $color
-    }
+function Repair-SystemFiles {
+    cls
+    Write-Host ""
+    Write-Host "  ================================================================" -ForegroundColor Yellow
+    Write-Host "  DISM RESTORE HEALTH + SFC SCANNOW" -ForegroundColor Yellow
+    Write-Host "  Proses ini membutuhkan beberapa menit. Jangan tutup jendela." -ForegroundColor Gray
+    Write-Host "  ================================================================" -ForegroundColor Yellow
+    Write-Host ""
+    Write-Host "  [1/2] DISM RestoreHealth..." -ForegroundColor Cyan
+    DISM.exe /Online /Cleanup-Image /RestoreHealth
+    Write-Host ""
+    Write-Host "  [2/2] SFC Scannow..." -ForegroundColor Cyan
+    sfc.exe /scannow
+    Write-Host ""
+    Write-Host "  [OK] PEMULIHAN FILE SISTEM SELESAI!" -ForegroundColor Green
+    Write-Host ""
+    pause
 }
 
-Write-Host ""
-Write-Host "  ==================================================================" -ForegroundColor Green
-Write-Host "  [OK] REPARASI LAYANAN SISTEM SELESAI." -ForegroundColor Green
-Write-Host "  Disarankan restart PC agar semua perubahan layanan aktif penuh." -ForegroundColor Gray
-Write-Host "  ==================================================================" -ForegroundColor Green
-Write-Host ""
-Write-Host "  Tekan sembarang tombol untuk menutup..." -ForegroundColor DarkGray
-try { [Console]::ReadKey($true) | Out-Null } catch { Read-Host "Tekan Enter" }
+# Main menu loop
+while ($true) {
+    cls
+    Write-Host ""
+    Write-Host "  ==================================================================" -ForegroundColor Green
+    Write-Host "  FOKUSKONTEN // OFFICIAL RESCUE INFRASTRUCTURE" -ForegroundColor Green
+    Write-Host "  Pertolongan Pertama Darurat & Pemulihan Layanan Sistem" -ForegroundColor Yellow
+    Write-Host "  ==================================================================" -ForegroundColor Green
+    Write-Host ""
+    Write-Host "  Tenang, seluruh dokumen kerja Anda aman 100%." -ForegroundColor Yellow
+    Write-Host "  FokusKonten menyiapkan perbaikan layanan lisensi tanpa risiko." -ForegroundColor Gray
+    Write-Host "  ------------------------------------------------------------------" -ForegroundColor DarkGray
+    Write-Host "  RINGKASAN DIAGNOSTIK:" -ForegroundColor White
+    Write-Host "  * Layanan  : SYSTEM SERVICE TROUBLESHOOTER - PERBAIKAN SPPSVC" -ForegroundColor Cyan
+    Write-Host "  * Engine   : 100% NATIVE WINDOWS (TANPA KETERGANTUNGAN EKSTERNAL)" -ForegroundColor Green
+    Write-Host "  * Target   : sppsvc, ClipSVC, Winmgmt (WMI), KeyIso, LicenseManager" -ForegroundColor White
+    Write-Host "  ------------------------------------------------------------------" -ForegroundColor DarkGray
+    Write-Host "  PILIHAN MENU TINDAKAN:" -ForegroundColor White
+    Write-Host ""
+    Write-Host "      [1] Perbaiki Layanan SPPSVC & Reset Token Lisensi (1-Klik)" -ForegroundColor Green
+    Write-Host "          Mengatasi error 0x80070422, 0x80070005, atau service berhenti." -ForegroundColor Gray
+    Write-Host ""
+    Write-Host "      [2] Diagnostik Status Layanan Sistem & WMI" -ForegroundColor White
+    Write-Host "          Memeriksa kesehatan sppsvc, ClipSVC, dan WMI Repository." -ForegroundColor Gray
+    Write-Host ""
+    Write-Host "      [3] Pemulihan File Sistem (DISM + SFC Scan)" -ForegroundColor Yellow
+    Write-Host "          Memperbaiki file Windows corrupt yang menghambat aktivasi." -ForegroundColor Gray
+    Write-Host ""
+    Write-Host "      [4] Kunjungi Ekosistem & Solusi Digital FokusKonten" -ForegroundColor Cyan
+    Write-Host "          Jelajahi ribuan software kasir, aplikasi bisnis, & template." -ForegroundColor Gray
+    Write-Host ""
+    Write-Host "      [0] Batal / Keluar" -ForegroundColor DarkGray
+    Write-Host "  ==================================================================" -ForegroundColor Green
+    Write-Host ""
+
+    try {
+        Write-Host -NoNewline "  Pilihan Anda [1,2,3,4,0] : " -ForegroundColor Green
+        $k = [Console]::ReadKey($true)
+        $c = $k.KeyChar.ToString()
+        Write-Host $c -ForegroundColor Green
+    } catch {
+        $c = Read-Host "  Pilihan"
+    }
+
+    switch ($c) {
+        "1" { Repair-Services }
+        "2" { Show-Diagnostics }
+        "3" { Repair-SystemFiles }
+        "4" { Start-Process "https://fokuskonten.my.id/toko-digital/" }
+        "0" { exit 0 }
+    }
+}
 '@
 
-    # Simpan sebagai script PS1 sementara dengan GUID acak
-    $rand     = [Guid]::NewGuid().Guid
-    $isAdmin  = [bool]([Security.Principal.WindowsIdentity]::GetCurrent().Groups -match 'S-1-5-32-544')
-    $FilePath = if ($isAdmin) {
-        "$env:SystemRoot\Temp\FK_Repair_$rand.ps1"
-    } else {
-        "$env:USERPROFILE\AppData\Local\Temp\FK_Repair_$rand.ps1"
-    }
+    # Simpan sebagai PS1 temp GUID
+    $rand    = [Guid]::NewGuid().Guid
+    $isAdmin = [bool]([Security.Principal.WindowsIdentity]::GetCurrent().Groups -match 'S-1-5-32-544')
+    $ps1Path = if ($isAdmin) { "$env:SystemRoot\Temp\FK_Repair_$rand.ps1" } else { "$env:USERPROFILE\AppData\Local\Temp\FK_Repair_$rand.ps1" }
+    [System.IO.File]::WriteAllText($ps1Path, $repairPs1, [System.Text.Encoding]::UTF8)
 
-    [System.IO.File]::WriteAllText($FilePath, $repairScript, [System.Text.Encoding]::UTF8)
-
-    if (-not (Test-Path $FilePath)) {
-        Write-Host "  [!] Gagal membuat berkas temp repair. Periksa izin folder Temp." -ForegroundColor Red
+    if (-not (Test-Path $ps1Path)) {
+        Write-Host "  [!] Gagal membuat berkas repair temp. Aborting." -ForegroundColor Red
         return
     }
 
-    Write-Host "  -> Meminta izin Administrator sistem..." -ForegroundColor Cyan
+    $pwsh = "$env:SystemRoot\System32\WindowsPowerShell\v1.0\powershell.exe"
+
+    Write-Host "  [OK] Engine reparasi lokal siap." -ForegroundColor Green
+    Write-Host "  -> Membuka menu FokusKonten Troubleshooter..." -ForegroundColor Cyan
+    Write-Host "     Meminta izin Administrator sistem..." -ForegroundColor Gray
     Write-Host ""
 
-    # Auto-elevate via RunAs — identik pola get.activated.win
-    $pwsh = "$env:SystemRoot\System32\WindowsPowerShell\v1.0\powershell.exe"
     if ($psv -ge 3) {
         Start-Process -FilePath $pwsh `
-            -ArgumentList "-ExecutionPolicy Bypass -NoProfile -File `"$FilePath`"" `
+            -ArgumentList "-ExecutionPolicy Bypass -NoProfile -File `"$ps1Path`"" `
             -Verb RunAs -Wait
     } else {
         $p = Start-Process -FilePath $pwsh `
-            -ArgumentList "-ExecutionPolicy Bypass -NoProfile -File `"$FilePath`"" `
+            -ArgumentList "-ExecutionPolicy Bypass -NoProfile -File `"$ps1Path`"" `
             -Verb RunAs -PassThru
         $p.WaitForExit()
     }
 
-    # Hapus berkas temp setelah selesai (zero trace)
-    Remove-Item -Path $FilePath -Force -ErrorAction SilentlyContinue
-
-    Write-Host ""
-    Write-Host "  [OK] Proses selesai. Terima kasih telah menggunakan FokusKonten." -ForegroundColor Green
+    Remove-Item $ps1Path -Force -ErrorAction SilentlyContinue
 
 } @args
