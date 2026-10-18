@@ -1,6 +1,6 @@
 {
-  "totalActive": 447,
-  "totalDesign": 447,
+  "totalActive": 446,
+  "totalDesign": 446,
   "totalEbook": 0,
   "designCategories": [
     [
@@ -28,11 +28,11 @@
       21
     ],
     [
-      "Poster",
-      21
+      "Vektor",
+      20
     ],
     [
-      "Vektor",
+      "Poster",
       20
     ],
     [
@@ -115,11 +115,11 @@
       21
     ],
     [
-      "Poster",
-      21
+      "Vektor",
+      20
     ],
     [
-      "Vektor",
+      "Poster",
       20
     ],
     [
@@ -178,7 +178,7 @@
   "formats": [
     [
       "CDR",
-      199
+      198
     ],
     [
       "PWA",
@@ -527,7 +527,7 @@
       }
     ]
   },
-  "totalProducts": 447,
-  "lastUpdated": "2026-10-18T11:37:42.689Z",
+  "totalProducts": 446,
+  "lastUpdated": "2026-10-18T13:05:02.097Z",
   "totalEcourse": 0
 }
