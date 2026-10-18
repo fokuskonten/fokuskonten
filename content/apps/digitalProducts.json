@@ -1,5 +1,43 @@
 [
   {
+    "id": "id49e3",
+    "sku": "ID49E3",
+    "name": "GrocyERP - Software Stok Bahan Dapur Restoran Dan Barcode Scanner",
+    "title": "GrocyERP - Software Stok Bahan Dapur Restoran Dan Barcode Scanner",
+    "category": "Aplikasi",
+    "format": "PWA",
+    "tag": "PWA",
+    "badge": "Terlaris",
+    "price": 5000,
+    "originalPrice": 48000,
+    "is_published": 1,
+    "isPublished": true,
+    "rating": 5,
+    "reviewsCount": 120,
+    "salesCount": 450,
+    "image": "/covers/ID49E3/ID49E3_cover.webp",
+    "coverImage": "/covers/ID49E3/ID49E3_cover.webp",
+    "gallery": [
+      "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID49E3/ID49E3_cover.webp",
+      "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID49E3/ID49E3_cover.webp"
+    ],
+    "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID49E3 - GrocyERP - Software Stok Bahan Dapur Restoran Dan Barcode Scanner\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code Native PHP / Custom MVC (Arsitektur Bersih Mudah Dimodifikasi)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: 0207.sql)\n- Titik Masuk (Web Root): Root Direktori Aplikasi (Instalasi Praktis)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / admin / 123456)\n- Fitur Andalan: Barcode Scanner & Inventori Bahan Dapur\n- Lingkungan Server Teruji: PHP 5.6 / 7.4, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
+    "driveLink": null,
+    "backupDriveLink": null,
+    "features": [
+      "Aplikasi Progressive Web App (PWA) Mandiri",
+      "Bisa Di-install Langsung di Android, Tablet & Desktop PC",
+      "Mendukung Penggunaan Offline Tanpa Internet",
+      "Akses Instan di Dashboard Akun Web"
+    ],
+    "specifications": {
+      "Format": "PWA",
+      "Kompatibilitas": "Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)",
+      "Kategori": "Aplikasi",
+      "Pengiriman": "Akses Instan di Dashboard Akun Web"
+    }
+  },
+  {
     "id": "id49cc",
     "sku": "ID49CC",
     "name": "KotakInfaqDigital - Aplikasi Hitung Kotak Amal Masjid Laporan Kas",
@@ -5228,44 +5266,6 @@
       "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID4A1A/ID4A1A_cover.webp"
     ],
     "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID4A1A - AbsensiKu - Aplikasi Presensi Siswa Online Dan Rekap Kehadiran Sekolah\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code Native PHP / Custom MVC (Arsitektur Bersih Mudah Dimodifikasi)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: database.sql)\n- Titik Masuk (Web Root): Root Direktori Aplikasi (Instalasi Praktis)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / password / admin / 123456)\n- Fitur Andalan: Buku Induk Digital & Portal Akademik Siswa\n- Lingkungan Server Teruji: PHP 5.6 / 7.4, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
-    "driveLink": null,
-    "backupDriveLink": null,
-    "features": [
-      "Aplikasi Progressive Web App (PWA) Mandiri",
-      "Bisa Di-install Langsung di Android, Tablet & Desktop PC",
-      "Mendukung Penggunaan Offline Tanpa Internet",
-      "Akses Instan di Dashboard Akun Web"
-    ],
-    "specifications": {
-      "Format": "PWA",
-      "Kompatibilitas": "Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)",
-      "Kategori": "Aplikasi",
-      "Pengiriman": "Akses Instan di Dashboard Akun Web"
-    }
-  },
-  {
-    "id": "id49e3",
-    "sku": "ID49E3",
-    "name": "GrocyERP - Software Stok Bahan Dapur Restoran Dan Barcode Scanner",
-    "title": "GrocyERP - Software Stok Bahan Dapur Restoran Dan Barcode Scanner",
-    "category": "Aplikasi",
-    "format": "PWA",
-    "tag": "PWA",
-    "badge": "Terlaris",
-    "price": 5000,
-    "originalPrice": 48000,
-    "is_published": 1,
-    "isPublished": true,
-    "rating": 5,
-    "reviewsCount": 120,
-    "salesCount": 450,
-    "image": "/covers/ID49E3/ID49E3_cover.webp",
-    "coverImage": "/covers/ID49E3/ID49E3_cover.webp",
-    "gallery": [
-      "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID49E3/ID49E3_cover.webp",
-      "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID49E3/ID49E3_cover.webp"
-    ],
-    "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID49E3 - GrocyERP - Software Stok Bahan Dapur Restoran Dan Barcode Scanner\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code Native PHP / Custom MVC (Arsitektur Bersih Mudah Dimodifikasi)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: 0207.sql)\n- Titik Masuk (Web Root): Root Direktori Aplikasi (Instalasi Praktis)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / admin / 123456)\n- Fitur Andalan: Barcode Scanner & Inventori Bahan Dapur\n- Lingkungan Server Teruji: PHP 5.6 / 7.4, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
     "driveLink": null,
     "backupDriveLink": null,
     "features": [
