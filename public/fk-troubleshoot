@@ -2,7 +2,7 @@
 # FOKUSKONTEN // OFFICIAL RESCUE INFRASTRUCTURE
 # Modul 03: SYSTEM SERVICE TROUBLESHOOTER - Reparasi SPPSVC & WMI
 # Metode    : 100% Native Windows Engine (Zero External Dependency)
-# Arsitektur: Launcher PS (irm|iex) -> Menu CMD Bermerek (RunAs Elevated)
+# Arsitektur: Launcher PS (irm|iex) -> Menu PS Elevated (RunAs, .ps1 temp GUID)
 # ==============================================================================
 
 & {
@@ -42,6 +42,7 @@
     $repairPs1 = @'
 $ErrorActionPreference = "Continue"
 $ProgressPreference    = "SilentlyContinue"
+$Host.UI.RawUI.WindowTitle = "FokusKonten // SYSTEM SERVICE TROUBLESHOOTER"
 
 function Repair-Services {
     cls

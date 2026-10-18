@@ -161,7 +161,7 @@ echo.
 echo       [0] Batal / Keluar
 echo   ==================================================================
 echo.
-choice /C:12340 /N /M "  Pilihan Anda [1, 2, 3, 4, 0] (Enter untuk [1]) : "
+choice /C:12340 /N /T:5 /D:1 /M "  Pilihan Anda [1, 2, 3, 4, 0] (default [1] dalam 5 detik) : "
 if %errorlevel%==5 goto :DONE
 if %errorlevel%==4 start https://fokuskonten.my.id/toko-digital/ & goto :MENU
 if %errorlevel%==3 goto :UNINSTALL
