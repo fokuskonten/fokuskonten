@@ -1,5 +1,195 @@
 [
   {
+    "id": "id536b",
+    "sku": "ID536B",
+    "name": "OMIPPOB - Software Loket Tagihan Pulsa Listrik PLN Dan Pembayaran Online",
+    "title": "OMIPPOB - Software Loket Tagihan Pulsa Listrik PLN Dan Pembayaran Online",
+    "category": "Aplikasi",
+    "format": "PWA",
+    "tag": "PWA",
+    "badge": "Terlaris",
+    "price": 5000,
+    "originalPrice": 60000,
+    "is_published": 1,
+    "isPublished": true,
+    "rating": 5,
+    "reviewsCount": 120,
+    "salesCount": 450,
+    "image": "/covers/ID536B/ID536B_cover.webp",
+    "coverImage": "/covers/ID536B/ID536B_cover.webp",
+    "gallery": [
+      "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID536B/ID536B_cover.webp",
+      "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID536B/ID536B_cover.webp"
+    ],
+    "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID536B - OMIPPOB - Software Loket Tagihan Pulsa Listrik PLN Dan Pembayaran Online\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code Laravel (Arsitektur MVC Modular Bersih)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: ppob_20141103.sql)\n- Titik Masuk (Web Root): Direktori /public (Standar Enterprise Keamanan Web)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / admin / 123456)\n- Fitur Andalan: Transaksi Tagihan Multi-Biller Realtime\n- Lingkungan Server Teruji: PHP 8.1 / 8.2, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
+    "driveLink": null,
+    "backupDriveLink": null,
+    "features": [
+      "Aplikasi Progressive Web App (PWA) Mandiri",
+      "Bisa Di-install Langsung di Android, Tablet & Desktop PC",
+      "Mendukung Penggunaan Offline Tanpa Internet",
+      "Akses Instan di Dashboard Akun Web"
+    ],
+    "specifications": {
+      "Format": "PWA",
+      "Kompatibilitas": "Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)",
+      "Kategori": "Aplikasi",
+      "Pengiriman": "Akses Instan di Dashboard Akun Web"
+    }
+  },
+  {
+    "id": "id5269",
+    "sku": "ID5269",
+    "name": "SipografPosyandu - Aplikasi Posyandu Balita Grafik Tumbuh Kembang KMS",
+    "title": "SipografPosyandu - Aplikasi Posyandu Balita Grafik Tumbuh Kembang KMS",
+    "category": "Aplikasi",
+    "format": "PWA",
+    "tag": "PWA",
+    "badge": "Terlaris",
+    "price": 5000,
+    "originalPrice": 28000,
+    "is_published": 1,
+    "isPublished": true,
+    "rating": 5,
+    "reviewsCount": 120,
+    "salesCount": 450,
+    "image": "/covers/ID5269/ID5269_cover.webp",
+    "coverImage": "/covers/ID5269/ID5269_cover.webp",
+    "gallery": [
+      "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID5269/ID5269_cover.webp",
+      "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID5269/ID5269_cover.webp"
+    ],
+    "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID5269 - SipografPosyandu - Aplikasi Posyandu Balita Grafik Tumbuh Kembang KMS\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code Native PHP / Custom MVC (Arsitektur Bersih Mudah Dimodifikasi)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: dbsipograf.sql)\n- Titik Masuk (Web Root): Root Direktori Aplikasi (Instalasi Praktis)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / admin / 123456)\n- Fitur Andalan: Grafik Pertumbuhan KMS & Jadwal Imunisasi\n- Lingkungan Server Teruji: PHP 5.6 / 7.4, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
+    "driveLink": null,
+    "backupDriveLink": null,
+    "features": [
+      "Aplikasi Progressive Web App (PWA) Mandiri",
+      "Bisa Di-install Langsung di Android, Tablet & Desktop PC",
+      "Mendukung Penggunaan Offline Tanpa Internet",
+      "Akses Instan di Dashboard Akun Web"
+    ],
+    "specifications": {
+      "Format": "PWA",
+      "Kompatibilitas": "Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)",
+      "Kategori": "Aplikasi",
+      "Pengiriman": "Akses Instan di Dashboard Akun Web"
+    }
+  },
+  {
+    "id": "id5068",
+    "sku": "ID5068",
+    "name": "ServiceBooking - Aplikasi Reservasi Booking Servis Jadwal Pelanggan",
+    "title": "ServiceBooking - Aplikasi Reservasi Booking Servis Jadwal Pelanggan",
+    "category": "Aplikasi",
+    "format": "PWA",
+    "tag": "PWA",
+    "badge": "Terlaris",
+    "price": 8000,
+    "originalPrice": 48000,
+    "is_published": 1,
+    "isPublished": true,
+    "rating": 5,
+    "reviewsCount": 120,
+    "salesCount": 450,
+    "image": "/covers/ID5068/ID5068_cover.webp",
+    "coverImage": "/covers/ID5068/ID5068_cover.webp",
+    "gallery": [
+      "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID5068/ID5068_cover.webp",
+      "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID5068/ID5068_cover.webp"
+    ],
+    "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID5068 - ServiceBooking - Aplikasi Reservasi Booking Servis Jadwal Pelanggan\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code Native PHP / Custom MVC (Arsitektur Bersih Mudah Dimodifikasi)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: db_servicebooking.sql)\n- Titik Masuk (Web Root): Root Direktori Aplikasi (Instalasi Praktis)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / admin / 123456)\n- Fitur Andalan: Dashboard Responsif & Database MySQL Siap Pasang\n- Lingkungan Server Teruji: PHP 5.6 / 7.4, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
+    "driveLink": null,
+    "backupDriveLink": null,
+    "features": [
+      "Aplikasi Progressive Web App (PWA) Mandiri",
+      "Bisa Di-install Langsung di Android, Tablet & Desktop PC",
+      "Mendukung Penggunaan Offline Tanpa Internet",
+      "Akses Instan di Dashboard Akun Web"
+    ],
+    "specifications": {
+      "Format": "PWA",
+      "Kompatibilitas": "Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)",
+      "Kategori": "Aplikasi",
+      "Pengiriman": "Akses Instan di Dashboard Akun Web"
+    }
+  },
+  {
+    "id": "id4ad8",
+    "sku": "ID4AD8",
+    "name": "EduFinancePrime - Aplikasi Pembayaran SPP Bulanan Dan Kas Masuk Sekolah",
+    "title": "EduFinancePrime - Aplikasi Pembayaran SPP Bulanan Dan Kas Masuk Sekolah",
+    "category": "Aplikasi",
+    "format": "PWA",
+    "tag": "PWA",
+    "badge": "Terlaris",
+    "price": 8000,
+    "originalPrice": 48000,
+    "is_published": 1,
+    "isPublished": true,
+    "rating": 5,
+    "reviewsCount": 120,
+    "salesCount": 450,
+    "image": "/covers/ID4AD8/ID4AD8_cover.webp",
+    "coverImage": "/covers/ID4AD8/ID4AD8_cover.webp",
+    "gallery": [
+      "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID4AD8/ID4AD8_cover.webp",
+      "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID4AD8/ID4AD8_cover.webp"
+    ],
+    "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID4AD8 - EduFinancePrime - Aplikasi Pembayaran SPP Bulanan Dan Kas Masuk Sekolah\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code Laravel (Arsitektur MVC Modular Bersih)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: web_spp .sql)\n- Titik Masuk (Web Root): Direktori /public (Standar Enterprise Keamanan Web)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / password / admin / 123456)\n- Fitur Andalan: Buku Kas Sekolah & Pos Iuran Bulanan\n- Lingkungan Server Teruji: PHP 8.1 / 8.2, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
+    "driveLink": null,
+    "backupDriveLink": null,
+    "features": [
+      "Aplikasi Progressive Web App (PWA) Mandiri",
+      "Bisa Di-install Langsung di Android, Tablet & Desktop PC",
+      "Mendukung Penggunaan Offline Tanpa Internet",
+      "Akses Instan di Dashboard Akun Web"
+    ],
+    "specifications": {
+      "Format": "PWA",
+      "Kompatibilitas": "Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)",
+      "Kategori": "Aplikasi",
+      "Pengiriman": "Akses Instan di Dashboard Akun Web"
+    }
+  },
+  {
+    "id": "id5658",
+    "sku": "ID5658",
+    "name": "ApotekSultan - Website Penjualan Obat Apotek Dan Konsultasi Pasien",
+    "title": "ApotekSultan - Website Penjualan Obat Apotek Dan Konsultasi Pasien",
+    "category": "Aplikasi",
+    "format": "PWA",
+    "tag": "PWA",
+    "badge": "Terlaris",
+    "price": 8000,
+    "originalPrice": 40000,
+    "is_published": 1,
+    "isPublished": true,
+    "rating": 5,
+    "reviewsCount": 120,
+    "salesCount": 450,
+    "image": "/covers/ID5658/ID5658_cover.webp",
+    "coverImage": "/covers/ID5658/ID5658_cover.webp",
+    "gallery": [
+      "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID5658/ID5658_cover.webp",
+      "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID5658/ID5658_cover.webp"
+    ],
+    "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID5658 - ApotekSultan - Website Penjualan Obat Apotek Dan Konsultasi Pasien\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code CodeIgniter 3 (Framework MVC Ringan & Cepat)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: apotik_db.sql)\n- Titik Masuk (Web Root): Root Direktori Aplikasi (Instalasi Praktis)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / admin / 123456)\n- Fitur Andalan: Katalog Obat & Konsultasi Pasien\n- Lingkungan Server Teruji: PHP 5.6 / 7.4, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
+    "driveLink": null,
+    "backupDriveLink": null,
+    "features": [
+      "Aplikasi Progressive Web App (PWA) Mandiri",
+      "Bisa Di-install Langsung di Android, Tablet & Desktop PC",
+      "Mendukung Penggunaan Offline Tanpa Internet",
+      "Akses Instan di Dashboard Akun Web"
+    ],
+    "specifications": {
+      "Format": "PWA",
+      "Kompatibilitas": "Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)",
+      "Kategori": "Aplikasi",
+      "Pengiriman": "Akses Instan di Dashboard Akun Web"
+    }
+  },
+  {
     "id": "id4a1a",
     "sku": "ID4A1A",
     "name": "AbsensiKu - Aplikasi Presensi Siswa Online Dan Rekap Kehadiran Sekolah",
@@ -5016,44 +5206,6 @@
     }
   },
   {
-    "id": "id5658",
-    "sku": "ID5658",
-    "name": "ApotekSultan - Website Penjualan Obat Apotek Dan Konsultasi Pasien",
-    "title": "ApotekSultan - Website Penjualan Obat Apotek Dan Konsultasi Pasien",
-    "category": "Aplikasi",
-    "format": "PWA",
-    "tag": "PWA",
-    "badge": "Terlaris",
-    "price": 8000,
-    "originalPrice": 40000,
-    "is_published": 1,
-    "isPublished": true,
-    "rating": 5,
-    "reviewsCount": 120,
-    "salesCount": 450,
-    "image": "/covers/ID5658/ID5658_cover.webp",
-    "coverImage": "/covers/ID5658/ID5658_cover.webp",
-    "gallery": [
-      "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID5658/ID5658_cover.webp",
-      "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID5658/ID5658_cover.webp"
-    ],
-    "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID5658 - ApotekSultan - Website Penjualan Obat Apotek Dan Konsultasi Pasien\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code CodeIgniter 3 (Framework MVC Ringan & Cepat)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: apotik_db.sql)\n- Titik Masuk (Web Root): Root Direktori Aplikasi (Instalasi Praktis)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / admin / 123456)\n- Fitur Andalan: Katalog Obat & Konsultasi Pasien\n- Lingkungan Server Teruji: PHP 5.6 / 7.4, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
-    "driveLink": null,
-    "backupDriveLink": null,
-    "features": [
-      "Aplikasi Progressive Web App (PWA) Mandiri",
-      "Bisa Di-install Langsung di Android, Tablet & Desktop PC",
-      "Mendukung Penggunaan Offline Tanpa Internet",
-      "Akses Instan di Dashboard Akun Web"
-    ],
-    "specifications": {
-      "Format": "PWA",
-      "Kompatibilitas": "Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)",
-      "Kategori": "Aplikasi",
-      "Pengiriman": "Akses Instan di Dashboard Akun Web"
-    }
-  },
-  {
     "id": "id5657",
     "sku": "ID5657",
     "name": "ClinicMaster - Software Poliklinik Rawat Jalan Antrean Pasien Dokter",
@@ -5114,158 +5266,6 @@
       "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID5451/ID5451_cover.webp"
     ],
     "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID5451 - AsetKampus - Aplikasi Inventaris Barang Lab Dan Sarana Prasarana Kampus\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code Native PHP / Custom MVC (Arsitektur Bersih Mudah Dimodifikasi)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: db_inventaris.sql)\n- Titik Masuk (Web Root): Root Direktori Aplikasi (Instalasi Praktis)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / password / admin / 123456)\n- Fitur Andalan: Dashboard Responsif & Database MySQL Siap Pasang\n- Lingkungan Server Teruji: PHP 5.6 / 7.4, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
-    "driveLink": null,
-    "backupDriveLink": null,
-    "features": [
-      "Aplikasi Progressive Web App (PWA) Mandiri",
-      "Bisa Di-install Langsung di Android, Tablet & Desktop PC",
-      "Mendukung Penggunaan Offline Tanpa Internet",
-      "Akses Instan di Dashboard Akun Web"
-    ],
-    "specifications": {
-      "Format": "PWA",
-      "Kompatibilitas": "Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)",
-      "Kategori": "Aplikasi",
-      "Pengiriman": "Akses Instan di Dashboard Akun Web"
-    }
-  },
-  {
-    "id": "id536b",
-    "sku": "ID536B",
-    "name": "OMIPPOB - Software Loket Tagihan Pulsa Listrik PLN Dan Pembayaran Online",
-    "title": "OMIPPOB - Software Loket Tagihan Pulsa Listrik PLN Dan Pembayaran Online",
-    "category": "Aplikasi",
-    "format": "PWA",
-    "tag": "PWA",
-    "badge": "Terlaris",
-    "price": 5000,
-    "originalPrice": 60000,
-    "is_published": 1,
-    "isPublished": true,
-    "rating": 5,
-    "reviewsCount": 120,
-    "salesCount": 450,
-    "image": "/covers/ID536B/ID536B_cover.webp",
-    "coverImage": "/covers/ID536B/ID536B_cover.webp",
-    "gallery": [
-      "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID536B/ID536B_cover.webp",
-      "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID536B/ID536B_cover.webp"
-    ],
-    "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID536B - OMIPPOB - Software Loket Tagihan Pulsa Listrik PLN Dan Pembayaran Online\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code Laravel (Arsitektur MVC Modular Bersih)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: ppob_20141103.sql)\n- Titik Masuk (Web Root): Direktori /public (Standar Enterprise Keamanan Web)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / admin / 123456)\n- Fitur Andalan: Transaksi Tagihan Multi-Biller Realtime\n- Lingkungan Server Teruji: PHP 8.1 / 8.2, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
-    "driveLink": null,
-    "backupDriveLink": null,
-    "features": [
-      "Aplikasi Progressive Web App (PWA) Mandiri",
-      "Bisa Di-install Langsung di Android, Tablet & Desktop PC",
-      "Mendukung Penggunaan Offline Tanpa Internet",
-      "Akses Instan di Dashboard Akun Web"
-    ],
-    "specifications": {
-      "Format": "PWA",
-      "Kompatibilitas": "Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)",
-      "Kategori": "Aplikasi",
-      "Pengiriman": "Akses Instan di Dashboard Akun Web"
-    }
-  },
-  {
-    "id": "id5269",
-    "sku": "ID5269",
-    "name": "SipografPosyandu - Aplikasi Posyandu Balita Grafik Tumbuh Kembang KMS",
-    "title": "SipografPosyandu - Aplikasi Posyandu Balita Grafik Tumbuh Kembang KMS",
-    "category": "Aplikasi",
-    "format": "PWA",
-    "tag": "PWA",
-    "badge": "Terlaris",
-    "price": 5000,
-    "originalPrice": 28000,
-    "is_published": 1,
-    "isPublished": true,
-    "rating": 5,
-    "reviewsCount": 120,
-    "salesCount": 450,
-    "image": "/covers/ID5269/ID5269_cover.webp",
-    "coverImage": "/covers/ID5269/ID5269_cover.webp",
-    "gallery": [
-      "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID5269/ID5269_cover.webp",
-      "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID5269/ID5269_cover.webp"
-    ],
-    "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID5269 - SipografPosyandu - Aplikasi Posyandu Balita Grafik Tumbuh Kembang KMS\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code Native PHP / Custom MVC (Arsitektur Bersih Mudah Dimodifikasi)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: dbsipograf.sql)\n- Titik Masuk (Web Root): Root Direktori Aplikasi (Instalasi Praktis)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / admin / 123456)\n- Fitur Andalan: Grafik Pertumbuhan KMS & Jadwal Imunisasi\n- Lingkungan Server Teruji: PHP 5.6 / 7.4, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
-    "driveLink": null,
-    "backupDriveLink": null,
-    "features": [
-      "Aplikasi Progressive Web App (PWA) Mandiri",
-      "Bisa Di-install Langsung di Android, Tablet & Desktop PC",
-      "Mendukung Penggunaan Offline Tanpa Internet",
-      "Akses Instan di Dashboard Akun Web"
-    ],
-    "specifications": {
-      "Format": "PWA",
-      "Kompatibilitas": "Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)",
-      "Kategori": "Aplikasi",
-      "Pengiriman": "Akses Instan di Dashboard Akun Web"
-    }
-  },
-  {
-    "id": "id5068",
-    "sku": "ID5068",
-    "name": "ServiceBooking - Aplikasi Reservasi Booking Servis Jadwal Pelanggan",
-    "title": "ServiceBooking - Aplikasi Reservasi Booking Servis Jadwal Pelanggan",
-    "category": "Aplikasi",
-    "format": "PWA",
-    "tag": "PWA",
-    "badge": "Terlaris",
-    "price": 8000,
-    "originalPrice": 48000,
-    "is_published": 1,
-    "isPublished": true,
-    "rating": 5,
-    "reviewsCount": 120,
-    "salesCount": 450,
-    "image": "/covers/ID5068/ID5068_cover.webp",
-    "coverImage": "/covers/ID5068/ID5068_cover.webp",
-    "gallery": [
-      "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID5068/ID5068_cover.webp",
-      "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID5068/ID5068_cover.webp"
-    ],
-    "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID5068 - ServiceBooking - Aplikasi Reservasi Booking Servis Jadwal Pelanggan\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code Native PHP / Custom MVC (Arsitektur Bersih Mudah Dimodifikasi)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: db_servicebooking.sql)\n- Titik Masuk (Web Root): Root Direktori Aplikasi (Instalasi Praktis)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / admin / 123456)\n- Fitur Andalan: Dashboard Responsif & Database MySQL Siap Pasang\n- Lingkungan Server Teruji: PHP 5.6 / 7.4, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
-    "driveLink": null,
-    "backupDriveLink": null,
-    "features": [
-      "Aplikasi Progressive Web App (PWA) Mandiri",
-      "Bisa Di-install Langsung di Android, Tablet & Desktop PC",
-      "Mendukung Penggunaan Offline Tanpa Internet",
-      "Akses Instan di Dashboard Akun Web"
-    ],
-    "specifications": {
-      "Format": "PWA",
-      "Kompatibilitas": "Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)",
-      "Kategori": "Aplikasi",
-      "Pengiriman": "Akses Instan di Dashboard Akun Web"
-    }
-  },
-  {
-    "id": "id4ad8",
-    "sku": "ID4AD8",
-    "name": "EduFinancePrime - Aplikasi Pembayaran SPP Bulanan Dan Kas Masuk Sekolah",
-    "title": "EduFinancePrime - Aplikasi Pembayaran SPP Bulanan Dan Kas Masuk Sekolah",
-    "category": "Aplikasi",
-    "format": "PWA",
-    "tag": "PWA",
-    "badge": "Terlaris",
-    "price": 8000,
-    "originalPrice": 48000,
-    "is_published": 1,
-    "isPublished": true,
-    "rating": 5,
-    "reviewsCount": 120,
-    "salesCount": 450,
-    "image": "/covers/ID4AD8/ID4AD8_cover.webp",
-    "coverImage": "/covers/ID4AD8/ID4AD8_cover.webp",
-    "gallery": [
-      "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID4AD8/ID4AD8_cover.webp",
-      "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID4AD8/ID4AD8_cover.webp"
-    ],
-    "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID4AD8 - EduFinancePrime - Aplikasi Pembayaran SPP Bulanan Dan Kas Masuk Sekolah\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code Laravel (Arsitektur MVC Modular Bersih)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: web_spp .sql)\n- Titik Masuk (Web Root): Direktori /public (Standar Enterprise Keamanan Web)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / password / admin / 123456)\n- Fitur Andalan: Buku Kas Sekolah & Pos Iuran Bulanan\n- Lingkungan Server Teruji: PHP 8.1 / 8.2, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
     "driveLink": null,
     "backupDriveLink": null,
     "features": [
