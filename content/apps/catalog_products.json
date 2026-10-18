@@ -1,5 +1,43 @@
 [
   {
+    "id": "id0a00",
+    "sku": "ID0A00",
+    "name": "KasirV1 - Software Kasir Toko Kelontong Minimarket Dan Barcode Scanner",
+    "title": "KasirV1 - Software Kasir Toko Kelontong Minimarket Dan Barcode Scanner",
+    "category": "Aplikasi",
+    "format": "PWA",
+    "tag": "PWA",
+    "badge": "Unggulan",
+    "price": 15000,
+    "originalPrice": 66000,
+    "is_published": 1,
+    "isPublished": true,
+    "rating": 5,
+    "reviewsCount": 120,
+    "salesCount": 450,
+    "image": "/covers/ID0A00/ID0A00_cover.webp",
+    "coverImage": "/covers/ID0A00/ID0A00_cover.webp",
+    "gallery": [
+      "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID0A00/ID0A00_cover.webp",
+      "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID0A00/ID0A00_cover.webp"
+    ],
+    "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID0A00 - KasirV1 - Software Kasir Toko Kelontong Minimarket Dan Barcode Scanner\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code Native PHP / Custom MVC (Arsitektur Bersih Mudah Dimodifikasi)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: kasirdb.sql)\n- Titik Masuk (Web Root): Root Direktori Aplikasi (Instalasi Praktis)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / admin / 123456)\n- Fitur Andalan: Scan Barcode & Laba Rugi Penjualan\n- Lingkungan Server Teruji: PHP 5.6 / 7.4, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
+    "driveLink": null,
+    "backupDriveLink": null,
+    "features": [
+      "Aplikasi Progressive Web App (PWA) Mandiri",
+      "Bisa Di-install Langsung di Android, Tablet & Desktop PC",
+      "Mendukung Penggunaan Offline Tanpa Internet",
+      "Akses Instan di Dashboard Akun Web"
+    ],
+    "specifications": {
+      "Format": "PWA",
+      "Kompatibilitas": "Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)",
+      "Kategori": "Aplikasi",
+      "Pengiriman": "Akses Instan di Dashboard Akun Web"
+    }
+  },
+  {
     "id": "idfeb2",
     "sku": "IDFEB2",
     "name": "LaundryClean - Software Kasir Laundry Kiloan Satuan Dan Cetak Nota Cuci",
@@ -5168,44 +5206,6 @@
     }
   },
   {
-    "id": "id0a00",
-    "sku": "ID0A00",
-    "name": "KasirV1 - Software Kasir Toko Kelontong Minimarket Dan Barcode Scanner",
-    "title": "KasirV1 - Software Kasir Toko Kelontong Minimarket Dan Barcode Scanner",
-    "category": "Aplikasi",
-    "format": "PWA",
-    "tag": "PWA",
-    "badge": "Unggulan",
-    "price": 15000,
-    "originalPrice": 66000,
-    "is_published": 1,
-    "isPublished": true,
-    "rating": 5,
-    "reviewsCount": 120,
-    "salesCount": 450,
-    "image": "/covers/ID0A00/ID0A00_cover.webp",
-    "coverImage": "/covers/ID0A00/ID0A00_cover.webp",
-    "gallery": [
-      "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID0A00/ID0A00_cover.webp",
-      "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID0A00/ID0A00_cover.webp"
-    ],
-    "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID0A00 - KasirV1 - Software Kasir Toko Kelontong Minimarket Dan Barcode Scanner\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code Native PHP / Custom MVC (Arsitektur Bersih Mudah Dimodifikasi)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: kasirdb.sql)\n- Titik Masuk (Web Root): Root Direktori Aplikasi (Instalasi Praktis)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / admin / 123456)\n- Fitur Andalan: Scan Barcode & Laba Rugi Penjualan\n- Lingkungan Server Teruji: PHP 5.6 / 7.4, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
-    "driveLink": null,
-    "backupDriveLink": null,
-    "features": [
-      "Aplikasi Progressive Web App (PWA) Mandiri",
-      "Bisa Di-install Langsung di Android, Tablet & Desktop PC",
-      "Mendukung Penggunaan Offline Tanpa Internet",
-      "Akses Instan di Dashboard Akun Web"
-    ],
-    "specifications": {
-      "Format": "PWA",
-      "Kompatibilitas": "Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)",
-      "Kategori": "Aplikasi",
-      "Pengiriman": "Akses Instan di Dashboard Akun Web"
-    }
-  },
-  {
     "id": "id04f9",
     "sku": "ID04F9",
     "name": "MDSFarmasi - Software Kasir Apotek Stok Obat Dan Penjualan Resep Dokter",
@@ -10203,48 +10203,6 @@
       "Format": ".CDR",
       "Kompatibilitas": "CorelDraw X7, 2020 hingga versi 2024 terbaru",
       "Kategori": "Vektor",
-      "Pengiriman": "Akses Instan di Dashboard Akun Web"
-    }
-  },
-  {
-    "id": "id3b7c",
-    "sku": "ID3B7C",
-    "name": "DistroVault 9600 - Mega Bundle Desain Kaos",
-    "title": "DistroVault 9600 - Mega Bundle Desain Kaos",
-    "category": "Kaos",
-    "format": "CDR",
-    "tag": "Format .CDR",
-    "badge": "Unggulan",
-    "price": 16000,
-    "originalPrice": 35000,
-    "is_published": 1,
-    "isPublished": true,
-    "rating": 5,
-    "reviewsCount": 120,
-    "salesCount": 450,
-    "image": "/covers/ID3B7C/ID3B7C_cover.webp",
-    "coverImage": "/covers/ID3B7C/ID3B7C_cover.webp",
-    "gallery": [
-      "/covers/ID3B7C/ID3B7C_cover.webp",
-      "/covers/ID3B7C/ID3B7C_slide_01.webp",
-      "/covers/ID3B7C/ID3B7C_slide_02.webp",
-      "/covers/ID3B7C/ID3B7C_slide_03.webp",
-      "/covers/ID3B7C/ID3B7C_slide_04.webp",
-      "/covers/ID3B7C/ID3B7C_slide_05.webp"
-    ],
-    "description": "PRODUK: DistroVault 9600 - Mega Bundle Desain Kaos\nKODE SKU: ID3B7C\nKATEGORI: Kaos\n\nRINGKASAN PRODUK:\nMaster suite vektor lengkap \"DistroVault 9600 - Mega Bundle Desain Kaos\". Menyediakan fleksibilitas kerja maksimal dengan dukungan ganda: 5282 file master CorelDraw (.CDR) serta 1876 file format standar industri Encapsulated PostScript (.EPS). Sangat ideal untuk kolaborasi studio lintas platform software grafis tanpa hambatan konversi.\n\nKELENGKAPAN & ISI MODUL:\n• Format Master File: 5282 File Master CorelDraw (.CDR) Individual Terpisah (1 file per desain/variasi)\n• Format Vektor Universal: 1876 File Vektor Universal (.EPS) Kompatibel Adobe Illustrator & Inkscape\n• Pratinjau Visual: Disertakan 1492 File Pratinjau Visual Resolusi Tinggi (.PNG / .JPG) untuk katalog & referensi cepat\n• Tipografi & Font: Disertakan 171+ File Font Tipografi Asli (.TTF / .OTF) di folder khusus, bebas risiko missing font\n• Total Ukuran Data Fisik: 3.29 GB (Total file uncompressed murni siap pakai)\n• Kompatibilitas Software: CorelDraw Version X4, X7, 2020 hingga Versi Terbaru (Kompatibel Penuh)\n• Standar Resolusi: Scalable Vector Graphics (Bebas diperbesar tanpa batas ukuran & tanpa pecah)\n• Mode Warna: Standar Cetak CMYK & Digital RGB (Mudah disesuaikan)\n• Kerapian Layer: Kurva rapi, node presisi, dan elemen terorganisir siap potong (Cutting/Plotter) & siap cetak\n\nSTANDAR PENGIRIMAN & AKSES LAYANAN:\n• Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n• Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n• Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n• Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal maupun proyek komersial percetakan / klien Anda.\n\nPANDUAN PEMESANAN:\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.\n3. Cek email Anda untuk mengarsipkan invoice resmi pesanan Anda.",
-    "driveLink": null,
-    "backupDriveLink": null,
-    "features": [
-      "Format Master File: .CDR",
-      "Aset Beresolusi Tinggi & Siap Pakai",
-      "Akses Instan di Dashboard Akun Web",
-      "Lisensi Penggunaan Komersial & Personal"
-    ],
-    "specifications": {
-      "Format": ".CDR",
-      "Kompatibilitas": "CorelDraw X7, 2020 hingga versi 2024 terbaru",
-      "Kategori": "Kaos",
       "Pengiriman": "Akses Instan di Dashboard Akun Web"
     }
   },

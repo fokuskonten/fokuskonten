@@ -1,6 +1,6 @@
 {
-  "totalActive": 448,
-  "totalDesign": 448,
+  "totalActive": 447,
+  "totalDesign": 447,
   "totalEbook": 0,
   "designCategories": [
     [
@@ -32,11 +32,11 @@
       21
     ],
     [
-      "Kaos",
-      21
+      "Vektor",
+      20
     ],
     [
-      "Vektor",
+      "Kaos",
       20
     ],
     [
@@ -119,11 +119,11 @@
       21
     ],
     [
-      "Kaos",
-      21
+      "Vektor",
+      20
     ],
     [
-      "Vektor",
+      "Kaos",
       20
     ],
     [
@@ -178,7 +178,7 @@
   "formats": [
     [
       "CDR",
-      200
+      199
     ],
     [
       "PWA",
@@ -527,7 +527,7 @@
       }
     ]
   },
-  "totalProducts": 448,
-  "lastUpdated": "2026-10-17T13:23:48.158Z",
+  "totalProducts": 447,
+  "lastUpdated": "2026-10-18T11:37:42.689Z",
   "totalEcourse": 0
 }
