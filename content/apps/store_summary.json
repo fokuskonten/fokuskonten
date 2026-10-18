@@ -32,11 +32,11 @@
       20
     ],
     [
-      "Kaos",
+      "Poster",
       20
     ],
     [
-      "Poster",
+      "Kaos",
       20
     ],
     [
@@ -80,11 +80,11 @@
       3
     ],
     [
-      "Kalender",
+      "Daftar Menu & Kuliner",
       2
     ],
     [
-      "Daftar Menu & Kuliner",
+      "Kalender",
       2
     ]
   ],
@@ -119,11 +119,11 @@
       20
     ],
     [
-      "Kaos",
+      "Poster",
       20
     ],
     [
-      "Poster",
+      "Kaos",
       20
     ],
     [
@@ -167,11 +167,11 @@
       3
     ],
     [
-      "Kalender",
+      "Daftar Menu & Kuliner",
       2
     ],
     [
-      "Daftar Menu & Kuliner",
+      "Kalender",
       2
     ]
   ],
@@ -528,6 +528,6 @@
     ]
   },
   "totalProducts": 446,
-  "lastUpdated": "2026-10-18T15:34:29.164Z",
+  "lastUpdated": "2026-10-18T15:40:49.551Z",
   "totalEcourse": 0
 }
