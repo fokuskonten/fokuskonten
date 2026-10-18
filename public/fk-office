@@ -125,43 +125,43 @@
     $menuScript = @"
 @echo off
 chcp 65001 >nul 2>&1
+color 1F
 title  FokusKonten // OFFICER HELPER - Microsoft Office
 
 :MENU
 cls
 echo.
-echo   ==================================================================
-echo   FOKUSKONTEN // OFFICIAL RESCUE INFRASTRUCTURE
-echo   Pertolongan Pertama Darurat ^& Pemulihan Lisensi Sistem
-echo   ==================================================================
+echo   ################################################################
+echo   ##  FOKUSKONTEN  //  OFFICER HELPER                          ##
+echo   ##  Pemulihan Lisensi Microsoft Office  ^|  Layanan Resmi     ##
+echo   ################################################################
 echo.
-echo   Tenang, seluruh dokumen kerja Anda aman 100%%.
-echo   FokusKonten menyiapkan pemulihan lisensi otomatis tanpa risiko.
-echo   ------------------------------------------------------------------
-echo   RINGKASAN DIAGNOSTIK:
-echo   * Layanan        : OFFICER HELPER - PEMULIHAN MICROSOFT OFFICE
-echo   * Status Lisensi : AKTIF - MENGIKUTI KEBIJAKAN RESMI FOKUSKONTEN
-echo   * Metode Inti    : OHook Dynamic Hook Injection (sppc.dll)
-echo   * Tingkat Risiko : 0%% (Bebas Antivirus, Tanpa Ubah Dokumen Kerja)
-echo   ------------------------------------------------------------------
-echo   PILIHAN MENU TINDAKAN:
+echo   Dokumen Word, Excel, PowerPoint, dan Outlook Anda aman 100%%.
+echo   Tidak ada file kerja yang disentuh atau diubah selama proses.
+echo   ----------------------------------------------------------------
+echo   DETAIL LAYANAN OFFICE:
+echo   * Produk   : Microsoft Office ^(Word / Excel / PowerPoint / Outlook^)
+echo   * Metode   : OHook - Dynamic Hook Injection via sppc.dll
+echo   * Komponen : ospp.vbs ^| sppc.dll ^| Office Licensing Service
+echo   * Risiko   : 0%% - Bebas antivirus, tanpa ubah dokumen kerja
+echo   ----------------------------------------------------------------
+echo   MENU TINDAKAN:
 echo.
-echo       [1] Pasang / Aktifkan Lisensi Office Otomatis  (1-Klik)
-echo           Aktivasi permanen bebas banner notifikasi lisensi.
+echo       [1] Pasang Lisensi Office Otomatis  ^(Disarankan^)
+echo           Aktivasi permanen. Banner lisensi Office hilang sepenuhnya.
 echo.
-echo       [2] Cek / Diagnostik Status Lisensi Office Saat Ini
-echo           Memeriksa masa aktif lisensi dan partial key terpasang.
+echo       [2] Cek Status Lisensi Office Saat Ini
+echo           Tampilkan partial key, masa aktif, dan laporan ospp.vbs.
 echo.
-echo       [3] Copot / Batalkan Lisensi (Kembalikan ke Default)
-echo           Mencabut hook lisensi dan mengembalikan Office ke semula.
+echo       [3] Copot Lisensi Office  ^(Kembalikan ke Semula^)
+echo           Cabut OHook dan pulihkan Office ke kondisi awal.
 echo.
-echo       [4] Kunjungi Ekosistem ^& Solusi Digital FokusKonten
-echo           Jelajahi ribuan software kasir, aplikasi bisnis, ^& template.
+echo       [4] Toko Digital FokusKonten - Software ^& Template Bisnis
 echo.
-echo       [0] Batal / Keluar
-echo   ==================================================================
+echo       [0] Keluar
+echo   ################################################################
 echo.
-choice /C:12340 /N /T:5 /D:1 /M "  Pilihan Anda [1, 2, 3, 4, 0] (default [1] dalam 5 detik) : "
+choice /C:12340 /N /T:5 /D:1 /M "  Pilihan Anda [1,2,3,4,0] (default [1] dalam 5 detik) : "
 if %errorlevel%==5 goto :DONE
 if %errorlevel%==4 start https://fokuskonten.my.id/toko-digital/ & goto :MENU
 if %errorlevel%==3 goto :UNINSTALL
@@ -172,15 +172,16 @@ goto :MENU
 :INSTALL
 cls
 echo.
-echo   ==================================================================
-echo   SEDANG MENERAPKAN PEMULIHAN MICROSOFT OFFICE...
-echo   Mohon tunggu, proses ini membutuhkan beberapa saat.
-echo   ==================================================================
+echo   ################################################################
+echo   ##  MEMASANG LISENSI MICROSOFT OFFICE VIA OHOOK...           ##
+echo   ##  Proses berjalan - mohon tunggu beberapa saat.            ##
+echo   ################################################################
 echo.
 call "$engPath" /ohook
 echo.
-echo   [OK] OPERASI SELESAI DENGAN SUKSES!
-echo   Terima kasih telah menggunakan utilitas resmi FokusKonten.
+echo   [OK] LISENSI OFFICE BERHASIL DIPASANG!
+echo   Banner notifikasi lisensi tidak akan muncul lagi.
+echo   Terima kasih telah menggunakan layanan resmi FokusKonten.
 echo.
 pause
 goto :DONE
@@ -188,9 +189,9 @@ goto :DONE
 :STATUS
 cls
 echo.
-echo   ==================================================================
-echo   DIAGNOSTIK LISENSI MICROSOFT OFFICE
-echo   ==================================================================
+echo   ################################################################
+echo   ##  STATUS LISENSI MICROSOFT OFFICE  ^(ospp.vbs /dstatus^)    ##
+echo   ################################################################
 echo.
 for /f "delims=" %%i in ('dir /b /s "C:\Program Files\Microsoft Office\ospp.vbs" 2^>nul') do cscript //nologo "%%i" /dstatus
 for /f "delims=" %%i in ('dir /b /s "C:\Program Files (x86)\Microsoft Office\ospp.vbs" 2^>nul') do cscript //nologo "%%i" /dstatus
@@ -201,13 +202,14 @@ goto :MENU
 :UNINSTALL
 cls
 echo.
-echo   ==================================================================
-echo   SEDANG MENCABUT / MEMBATALKAN LISENSI OFFICE...
-echo   ==================================================================
+echo   ################################################################
+echo   ##  MENCABUT LISENSI OFFICE  ^(OHook Uninstall^)              ##
+echo   ################################################################
 echo.
 call "$engPath" /Ohook-Uninstall
 echo.
-echo   [OK] PROSES PENCABUTAN LISENSI SELESAI!
+echo   [OK] LISENSI OFFICE BERHASIL DICABUT!
+echo   Office kembali ke kondisi awal ^(unlicensed^).
 echo.
 pause
 goto :MENU

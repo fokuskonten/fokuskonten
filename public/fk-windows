@@ -118,43 +118,43 @@
     $menuScript = @"
 @echo off
 chcp 65001 >nul 2>&1
+color 0A
 title  FokusKonten // MICROSOFT HELPER - Lisensi Digital Windows
 
 :MENU
 cls
 echo.
-echo   ==================================================================
-echo   FOKUSKONTEN // OFFICIAL RESCUE INFRASTRUCTURE
-echo   Pertolongan Pertama Darurat ^& Pemulihan Lisensi Sistem
-echo   ==================================================================
+echo   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+echo   >>  FOKUSKONTEN  //  MICROSOFT HELPER                        >>
+echo   >>  Pendaftaran Lisensi Digital Windows  ^|  HWID Method      >>
+echo   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 echo.
-echo   Tenang, seluruh dokumen kerja Anda aman 100%%.
-echo   FokusKonten menyiapkan pendaftaran lisensi digital otomatis.
-echo   ------------------------------------------------------------------
-echo   RINGKASAN DIAGNOSTIK:
-echo   * Layanan        : MICROSOFT HELPER - LISENSI DIGITAL WINDOWS
-echo   * Status Lisensi : AKTIF - MENGIKUTI KEBIJAKAN RESMI FOKUSKONTEN
-echo   * Metode Inti    : Hardware ID Ticket Registration (ClipSVC)
-echo   * Tingkat Risiko : 0%% (Permanen Terikat Motherboard, Bebas Antivirus)
-echo   ------------------------------------------------------------------
-echo   PILIHAN MENU TINDAKAN:
+echo   Lisensi Windows akan terdaftar permanen ke motherboard PC ini.
+echo   Berlaku selamanya - bahkan setelah Windows diinstal ulang.
+echo   ----------------------------------------------------------------
+echo   DETAIL LAYANAN WINDOWS:
+echo   * Produk   : Microsoft Windows 10 / 11 ^(Home / Pro / Education^)
+echo   * Metode   : HWID - Hardware ID Ticket Registration via ClipSVC
+echo   * Komponen : ClipSVC ^| LicenseManager ^| slmgr.vbs
+echo   * Sifat    : Permanen terikat motherboard, bebas aktivasi ulang
+echo   ----------------------------------------------------------------
+echo   MENU TINDAKAN:
 echo.
-echo       [1] Daftarkan Lisensi Digital Windows Permanen  (1-Klik)
-echo           Permanen selamanya, bahkan jika Windows diinstal ulang.
+echo       [1] Daftarkan Lisensi HWID Windows Permanen  ^(Disarankan^)
+echo           Terhubung ke server Microsoft - proses 10-30 detik.
 echo.
-echo       [2] Cek / Diagnostik Status Lisensi Windows Saat Ini
-echo           Memeriksa masa aktif dan jenis lisensi terpasang.
+echo       [2] Cek Status Lisensi Windows Saat Ini
+echo           Tampilkan jenis lisensi, masa aktif, dan channel ID.
 echo.
-echo       [3] Copot / Batalkan Lisensi (Kembalikan ke Default)
-echo           Menghapus kunci lisensi dan mengembalikan ke belum aktif.
+echo       [3] Hapus Kunci Lisensi  ^(Reset ke Belum Aktif^)
+echo           Jalankan slmgr /upk dan /cpky untuk reset total.
 echo.
-echo       [4] Kunjungi Ekosistem ^& Solusi Digital FokusKonten
-echo           Jelajahi ribuan software kasir, aplikasi bisnis, ^& template.
+echo       [4] Toko Digital FokusKonten - Software ^& Template Bisnis
 echo.
-echo       [0] Batal / Keluar
-echo   ==================================================================
+echo       [0] Keluar
+echo   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 echo.
-choice /C:12340 /N /T:5 /D:1 /M "  Pilihan Anda [1, 2, 3, 4, 0] (default [1] dalam 5 detik) : "
+choice /C:12340 /N /T:5 /D:1 /M "  Pilihan Anda [1,2,3,4,0] (default [1] dalam 5 detik) : "
 if %errorlevel%==5 goto :DONE
 if %errorlevel%==4 start https://fokuskonten.my.id/toko-digital/ & goto :MENU
 if %errorlevel%==3 goto :UNINSTALL
@@ -165,15 +165,17 @@ goto :MENU
 :INSTALL
 cls
 echo.
-echo   ==================================================================
-echo   SEDANG MENDAFTARKAN LISENSI DIGITAL WINDOWS (HWID)...
-echo   Mohon tunggu 10-30 detik, menghubungi server aktivasi Microsoft.
-echo   ==================================================================
+echo   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+echo   >>  MENDAFTARKAN LISENSI DIGITAL WINDOWS  ^(HWID^)...          >>
+echo   >>  Menghubungi server aktivasi Microsoft...                  >>
+echo   >>  Mohon tunggu 10-30 detik. Jangan tutup jendela ini.      >>
+echo   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 echo.
 call "$engPath" /hwid
 echo.
-echo   [OK] OPERASI SELESAI DENGAN SUKSES!
-echo   Terima kasih telah menggunakan utilitas resmi FokusKonten.
+echo   [OK] LISENSI WINDOWS BERHASIL DIDAFTARKAN!
+echo   Lisensi ini permanen dan terikat ke motherboard PC Anda.
+echo   Terima kasih telah menggunakan layanan resmi FokusKonten.
 echo.
 pause
 goto :DONE
@@ -181,9 +183,9 @@ goto :DONE
 :STATUS
 cls
 echo.
-echo   ==================================================================
-echo   DIAGNOSTIK LISENSI WINDOWS
-echo   ==================================================================
+echo   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+echo   >>  STATUS LISENSI WINDOWS  ^(slmgr.vbs^)                     >>
+echo   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 echo.
 cscript //nologo "%SystemRoot%\System32\slmgr.vbs" /xpr
 echo.
@@ -195,14 +197,15 @@ goto :MENU
 :UNINSTALL
 cls
 echo.
-echo   ==================================================================
-echo   SEDANG MENCABUT / MEMBATALKAN LISENSI WINDOWS...
-echo   ==================================================================
+echo   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+echo   >>  MENGHAPUS KUNCI LISENSI WINDOWS...                       >>
+echo   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 echo.
 cscript //nologo "%SystemRoot%\System32\slmgr.vbs" /upk
 cscript //nologo "%SystemRoot%\System32\slmgr.vbs" /cpky
 echo.
-echo   [OK] PROSES PENCABUTAN LISENSI SELESAI!
+echo   [OK] KUNCI LISENSI WINDOWS BERHASIL DIHAPUS!
+echo   Windows kembali ke status belum aktif.
 echo.
 pause
 goto :MENU

@@ -43,6 +43,7 @@
 $ErrorActionPreference = "Continue"
 $ProgressPreference    = "SilentlyContinue"
 $Host.UI.RawUI.WindowTitle = "FokusKonten // SYSTEM SERVICE TROUBLESHOOTER"
+try { $Host.UI.RawUI.BackgroundColor = 'DarkRed'; $Host.UI.RawUI.ForegroundColor = 'White'; Clear-Host } catch {}
 
 function Repair-Services {
     cls
@@ -128,35 +129,35 @@ function Repair-SystemFiles {
 while ($true) {
     cls
     Write-Host ""
-    Write-Host "  ==================================================================" -ForegroundColor Green
-    Write-Host "  FOKUSKONTEN // OFFICIAL RESCUE INFRASTRUCTURE" -ForegroundColor Green
-    Write-Host "  Pertolongan Pertama Darurat & Pemulihan Layanan Sistem" -ForegroundColor Yellow
-    Write-Host "  ==================================================================" -ForegroundColor Green
+    Write-Host "  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" -ForegroundColor Yellow
+    Write-Host "  !!  FOKUSKONTEN  //  SYSTEM SERVICE TROUBLESHOOTER            !!" -ForegroundColor Yellow
+    Write-Host "  !!  Perbaikan Darurat Layanan Lisensi Windows                 !!" -ForegroundColor White
+    Write-Host "  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" -ForegroundColor Yellow
     Write-Host ""
-    Write-Host "  Tenang, seluruh dokumen kerja Anda aman 100%." -ForegroundColor Yellow
-    Write-Host "  FokusKonten menyiapkan perbaikan layanan lisensi tanpa risiko." -ForegroundColor Gray
+    Write-Host "  Terdeteksi gangguan pada layanan lisensi sistem Anda." -ForegroundColor Red
+    Write-Host "  FokusKonten akan memperbaiki fondasi sistem sebelum proses lanjut." -ForegroundColor White
     Write-Host "  ------------------------------------------------------------------" -ForegroundColor DarkGray
-    Write-Host "  RINGKASAN DIAGNOSTIK:" -ForegroundColor White
+    Write-Host "  DETAIL LAYANAN REPAIR:" -ForegroundColor White
     Write-Host "  * Layanan  : SYSTEM SERVICE TROUBLESHOOTER - PERBAIKAN SPPSVC" -ForegroundColor Cyan
     Write-Host "  * Engine   : 100% NATIVE WINDOWS (TANPA KETERGANTUNGAN EKSTERNAL)" -ForegroundColor Green
     Write-Host "  * Target   : sppsvc, ClipSVC, Winmgmt (WMI), KeyIso, LicenseManager" -ForegroundColor White
+    Write-Host "  * Error    : 0x80070422 / 0x80070005 / 0x80004005 / Service Stopped" -ForegroundColor Red
     Write-Host "  ------------------------------------------------------------------" -ForegroundColor DarkGray
-    Write-Host "  PILIHAN MENU TINDAKAN:" -ForegroundColor White
+    Write-Host "  MENU TINDAKAN DARURAT:" -ForegroundColor White
     Write-Host ""
-    Write-Host "      [1] Perbaiki Layanan SPPSVC & Reset Token Lisensi (1-Klik)" -ForegroundColor Green
+    Write-Host "      [1] Perbaiki Layanan SPPSVC & Reset Token Lisensi (1-Klik)" -ForegroundColor Yellow
     Write-Host "          Mengatasi error 0x80070422, 0x80070005, atau service berhenti." -ForegroundColor Gray
     Write-Host ""
     Write-Host "      [2] Diagnostik Status Layanan Sistem & WMI" -ForegroundColor White
     Write-Host "          Memeriksa kesehatan sppsvc, ClipSVC, dan WMI Repository." -ForegroundColor Gray
     Write-Host ""
-    Write-Host "      [3] Pemulihan File Sistem (DISM + SFC Scan)" -ForegroundColor Yellow
-    Write-Host "          Memperbaiki file Windows corrupt yang menghambat aktivasi." -ForegroundColor Gray
+    Write-Host "      [3] Pemulihan File Sistem (DISM + SFC Scan)" -ForegroundColor White
+    Write-Host "          Memperbaiki file Windows corrupt yang menghambat perbaikan." -ForegroundColor Gray
     Write-Host ""
-    Write-Host "      [4] Kunjungi Ekosistem & Solusi Digital FokusKonten" -ForegroundColor Cyan
-    Write-Host "          Jelajahi ribuan software kasir, aplikasi bisnis, & template." -ForegroundColor Gray
+    Write-Host "      [4] Toko Digital FokusKonten - Software & Template Bisnis" -ForegroundColor Cyan
     Write-Host ""
-    Write-Host "      [0] Batal / Keluar" -ForegroundColor DarkGray
-    Write-Host "  ==================================================================" -ForegroundColor Green
+    Write-Host "      [0] Keluar" -ForegroundColor DarkGray
+    Write-Host "  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" -ForegroundColor Yellow
     Write-Host ""
 
     try {
