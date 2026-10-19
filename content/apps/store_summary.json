@@ -1,11 +1,15 @@
 {
-  "totalActive": 405,
-  "totalDesign": 405,
+  "totalActive": 472,
+  "totalDesign": 472,
   "totalEbook": 0,
   "designCategories": [
     [
       "Aplikasi",
       100
+    ],
+    [
+      "The Big Bang",
+      67
     ],
     [
       "Undangan",
@@ -93,6 +97,10 @@
     [
       "Aplikasi",
       100
+    ],
+    [
+      "The Big Bang",
+      67
     ],
     [
       "Undangan",
@@ -183,6 +191,10 @@
     [
       "PWA",
       100
+    ],
+    [
+      "The Big Bang",
+      67
     ],
     [
       "PDF",
@@ -494,7 +506,7 @@
       }
     ]
   },
-  "totalProducts": 405,
-  "lastUpdated": "2026-10-19T15:10:28.602Z",
+  "totalProducts": 472,
+  "lastUpdated": "2026-10-19T17:04:25.762Z",
   "totalEcourse": 0
 }
