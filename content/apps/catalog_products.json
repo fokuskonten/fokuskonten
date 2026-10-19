@@ -1,5 +1,50 @@
 [
   {
+    "id": "id01a0",
+    "sku": "ID01A0",
+    "name": "MediCenter - Aplikasi Pasien Klinik Rawat Jalan Dan Resep Dokter Obat",
+    "title": "MediCenter - Aplikasi Pasien Klinik Rawat Jalan Dan Resep Dokter Obat",
+    "category": "Aplikasi",
+    "format": "PWA",
+    "tag": "PWA",
+    "badge": "Unggulan",
+    "price": 20000,
+    "originalPrice": 75000,
+    "is_published": 1,
+    "isPublished": true,
+    "rating": 5,
+    "reviewsCount": 120,
+    "salesCount": 450,
+    "image": "https://cf.shopee.co.id/file/sg-11134201-825ay-muhkva0a8xzea5",
+    "coverImage": "https://cf.shopee.co.id/file/sg-11134201-825ay-muhkva0a8xzea5",
+    "gallery": [
+      "https://cf.shopee.co.id/file/sg-11134201-825ay-muhkva0a8xzea5",
+      "https://cf.shopee.co.id/file/sg-11134201-8257y-muhkvarnupkw28",
+      "https://cf.shopee.co.id/file/sg-11134201-825aw-muhkvbgej0ncd1",
+      "https://cf.shopee.co.id/file/sg-11134201-825b8-muhkvc9c7abq91",
+      "https://cf.shopee.co.id/file/sg-11134201-8258e-muhkvcyqu0hvc6",
+      "https://cf.shopee.co.id/file/sg-11134201-8258f-muhkvdq8kpvu6c",
+      "https://cf.shopee.co.id/file/sg-11134201-825az-muhkvejwo16sd4",
+      "https://cf.shopee.co.id/file/sg-11134201-825ae-muhkvf8fw0760c",
+      "https://cf.shopee.co.id/file/sg-11134201-825b7-muhkvfxw5onb1a"
+    ],
+    "description": "[RINGKASAN PRODUK]\nMaster source code dan paket aplikasi digital teruji \"ID01A0 - MediCenter - Aplikasi Pasien Klinik Rawat Jalan Dan Resep Dokter Obat\". Dihadirkan dalam paket lengkap siap pakai, dirancang khusus untuk mempermudah digitalisasi rekam medis, antrean pasien, inventaris obat apotek, dan kasir pembayaran klinik pratama maupun dokter praktik mandiri.\n\n[FITUR UTAMA & MODUL APLIKASI]\n- Modul Antrean & Registrasi Pasien (Poli Umum, Poli Gigi, Poli Jantung, dll.)\n- Rekam Medis Elektronik Pasien (Diagnosa ICD, Riwayat Penyakit & Tindakan Medis)\n- Farmasi & Apotek (Katalog Obat, Resep Dokter, Satuan Multi-Kemasan, Purchase Order)\n- Kasir & Billing Pembayaran (Cetak Kwitansi Berobat & Laporan Transaksi Kasir)\n- Manajemen Pengguna Multi-Role (Administrator Medis, Dokter, Petugas Loket, Kasir)\n- Master Data Poliklinik & Pengaturan Tarif Tindakan Medis Fleksibel\n\n[KELENGKAPAN DALAM PAKET MASTER]\n- Full Source Code Aplikasi (Framework Laravel Bersih, Modular & Bebas Enkripsi)\n- Basis Data Relasional Lengkap MySQL (Dump: laravelssklinik.sql)\n- Panduan Penggunaan Resmi (Berkas 00_PANDUAN_PENGGUNAAN.pdf)\n- Informasi Akun Login Bawaan (00_AKUN_LOGIN_DAN_INFO_MEDICENTER.txt)\n- Installer Praktis Windows (SETUP_OTOMATIS.bat & BUKA_APLIKASI.bat)\n- Dukungan Script IRM PowerShell untuk Pemasangan Cepat\n\n[PERSYARATAN SISTEM]\n- Web Server Lokal: Apache / Nginx (Kompatibel XAMPP atau Laragon)\n- Versi PHP Teruji: PHP 8.1 / 8.2\n- Basis Data: MySQL / MariaDB\n- Sistem Operasi: Windows 10 / 11\n\n[KETENTUAN PENGIRIMAN & LAYANAN]\n- Pengiriman Otomatis Instan: Tautan unduh master berkas Google Drive resmi langsung terkirim melalui Chat Shopee setelah pesanan terverifikasi.\n- Akses Berkas Penuh: Unduhan berkecepatan tinggi, bebas kendala, dan akses penyimpanan aman.\n- Lisensi Penggunaan: Bebas digunakan untuk kebutuhan operasional klinik mandiri, instansi, maupun portofolio klien.\n\n[CARA PEMESANAN]\n1. Masukkan produk ke keranjang dan selesaikan transaksi sesuai instruksi Shopee.\n2. Buka fitur Chat Shopee Anda untuk menerima tautan akses master berkas pesanan.\n3. Unduh berkas master dan jalankan aplikasi sesuai panduan resmi yang disertakan.",
+    "driveLink": null,
+    "backupDriveLink": null,
+    "features": [
+      "Aplikasi Progressive Web App (PWA) Mandiri",
+      "Bisa Di-install Langsung di Android, Tablet & Desktop PC",
+      "Mendukung Penggunaan Offline Tanpa Internet",
+      "Akses Instan di Dashboard Akun Web"
+    ],
+    "specifications": {
+      "Format": "PWA",
+      "Kompatibilitas": "Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)",
+      "Kategori": "Aplikasi",
+      "Pengiriman": "Akses Instan di Dashboard Akun Web"
+    }
+  },
+  {
     "id": "id536b",
     "sku": "ID536B",
     "name": "OMIPPOB - Software Loket Tagihan Pulsa Listrik PLN Dan Pembayaran Online",
@@ -5660,44 +5705,6 @@
       "Format": ".CDR",
       "Kompatibilitas": "CorelDraw X7, 2020 hingga versi 2024 terbaru",
       "Kategori": "Vektor",
-      "Pengiriman": "Akses Instan di Dashboard Akun Web"
-    }
-  },
-  {
-    "id": "id01a0",
-    "sku": "ID01A0",
-    "name": "MediCenter - Aplikasi Pasien Klinik Rawat Jalan Dan Resep Dokter Obat",
-    "title": "MediCenter - Aplikasi Pasien Klinik Rawat Jalan Dan Resep Dokter Obat",
-    "category": "Aplikasi",
-    "format": "PWA",
-    "tag": "PWA",
-    "badge": "Unggulan",
-    "price": 20000,
-    "originalPrice": 75000,
-    "is_published": 1,
-    "isPublished": true,
-    "rating": 5,
-    "reviewsCount": 120,
-    "salesCount": 450,
-    "image": "/covers/ID01A0/ID01A0_cover.webp",
-    "coverImage": "/covers/ID01A0/ID01A0_cover.webp",
-    "gallery": [
-      "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID01A0/ID01A0_cover.webp",
-      "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID01A0/ID01A0_cover.webp"
-    ],
-    "description": "[RINGKASAN PRODUK]\nMaster source code dan paket aplikasi digital teruji \"ID01A0 - MediCenter - Aplikasi Pasien Klinik Rawat Jalan Dan Resep Dokter Obat\". Dihadirkan dalam paket lengkap siap pakai, dirancang khusus untuk mempermudah digitalisasi rekam medis, antrean pasien, inventaris obat apotek, dan kasir pembayaran klinik pratama maupun dokter praktik mandiri.\n\n[FITUR UTAMA & MODUL APLIKASI]\n- Modul Antrean & Registrasi Pasien (Poli Umum, Poli Gigi, Poli Jantung, dll.)\n- Rekam Medis Elektronik Pasien (Diagnosa ICD, Riwayat Penyakit & Tindakan Medis)\n- Farmasi & Apotek (Katalog Obat, Resep Dokter, Satuan Multi-Kemasan, Purchase Order)\n- Kasir & Billing Pembayaran (Cetak Kwitansi Berobat & Laporan Transaksi Kasir)\n- Manajemen Pengguna Multi-Role (Administrator Medis, Dokter, Petugas Loket, Kasir)\n- Master Data Poliklinik & Pengaturan Tarif Tindakan Medis Fleksibel\n\n[KELENGKAPAN DALAM PAKET MASTER]\n- Full Source Code Aplikasi (Framework Laravel Bersih, Modular & Bebas Enkripsi)\n- Basis Data Relasional Lengkap MySQL (Dump: laravelssklinik.sql)\n- Panduan Penggunaan Resmi (Berkas 00_PANDUAN_PENGGUNAAN.pdf)\n- Informasi Akun Login Bawaan (00_AKUN_LOGIN_DAN_INFO_MEDICENTER.txt)\n- Installer Praktis Windows (SETUP_OTOMATIS.bat & BUKA_APLIKASI.bat)\n- Dukungan Script IRM PowerShell untuk Pemasangan Cepat\n\n[PERSYARATAN SISTEM]\n- Web Server Lokal: Apache / Nginx (Kompatibel XAMPP atau Laragon)\n- Versi PHP Teruji: PHP 8.1 / 8.2\n- Basis Data: MySQL / MariaDB\n- Sistem Operasi: Windows 10 / 11\n\n[KETENTUAN PENGIRIMAN & LAYANAN]\n- Pengiriman Otomatis Instan: Tautan unduh master berkas Google Drive resmi langsung terkirim melalui Chat Shopee setelah pesanan terverifikasi.\n- Akses Berkas Penuh: Unduhan berkecepatan tinggi, bebas kendala, dan akses penyimpanan aman.\n- Lisensi Penggunaan: Bebas digunakan untuk kebutuhan operasional klinik mandiri, instansi, maupun portofolio klien.\n\n[CARA PEMESANAN]\n1. Masukkan produk ke keranjang dan selesaikan transaksi sesuai instruksi Shopee.\n2. Buka fitur Chat Shopee Anda untuk menerima tautan akses master berkas pesanan.\n3. Unduh berkas master dan jalankan aplikasi sesuai panduan resmi yang disertakan.",
-    "driveLink": null,
-    "backupDriveLink": null,
-    "features": [
-      "Aplikasi Progressive Web App (PWA) Mandiri",
-      "Bisa Di-install Langsung di Android, Tablet & Desktop PC",
-      "Mendukung Penggunaan Offline Tanpa Internet",
-      "Akses Instan di Dashboard Akun Web"
-    ],
-    "specifications": {
-      "Format": "PWA",
-      "Kompatibilitas": "Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)",
-      "Kategori": "Aplikasi",
       "Pengiriman": "Akses Instan di Dashboard Akun Web"
     }
   },
