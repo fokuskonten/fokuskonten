@@ -1,11 +1,11 @@
 {
-  "totalActive": 413,
-  "totalDesign": 413,
+  "totalActive": 405,
+  "totalDesign": 405,
   "totalEbook": 0,
   "designCategories": [
     [
       "Aplikasi",
-      108
+      100
     ],
     [
       "Undangan",
@@ -92,7 +92,7 @@
   "categories": [
     [
       "Aplikasi",
-      108
+      100
     ],
     [
       "Undangan",
@@ -182,7 +182,7 @@
     ],
     [
       "PWA",
-      108
+      100
     ],
     [
       "PDF",
@@ -494,7 +494,7 @@
       }
     ]
   },
-  "totalProducts": 413,
-  "lastUpdated": "2026-10-19T14:52:26.189Z",
+  "totalProducts": 405,
+  "lastUpdated": "2026-10-19T15:10:28.602Z",
   "totalEcourse": 0
 }

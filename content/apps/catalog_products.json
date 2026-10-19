@@ -1375,44 +1375,6 @@
     }
   },
   {
-    "id": "id041e",
-    "sku": "ID041E",
-    "name": "KSPArtha - Software Koperasi Simpan Pinjam Bunga Dan Angsuran Anggota",
-    "title": "KSPArtha - Software Koperasi Simpan Pinjam Bunga Dan Angsuran Anggota",
-    "category": "Aplikasi",
-    "format": "PWA",
-    "tag": "PWA",
-    "badge": "Unggulan",
-    "price": 20000,
-    "originalPrice": 90000,
-    "is_published": 1,
-    "isPublished": true,
-    "rating": 5,
-    "reviewsCount": 120,
-    "salesCount": 450,
-    "image": "/covers/ID041E/ID041E_cover.webp",
-    "coverImage": "/covers/ID041E/ID041E_cover.webp",
-    "gallery": [
-      "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID041E/ID041E_cover.webp",
-      "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID041E/ID041E_cover.webp"
-    ],
-    "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID041E - KSPArtha - Software Koperasi Simpan Pinjam Bunga Dan Angsuran Anggota\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code Native PHP / Custom MVC (Arsitektur Bersih Mudah Dimodifikasi)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: ksp.sql)\n- Titik Masuk (Web Root): Root Direktori Aplikasi (Instalasi Praktis)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / password / admin / 123456)\n- Fitur Andalan: Otomasi Bunga & Angsuran Anggota\n- Lingkungan Server Teruji: PHP 5.6 / 7.4, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
-    "driveLink": null,
-    "backupDriveLink": null,
-    "features": [
-      "Aplikasi Progressive Web App (PWA) Mandiri",
-      "Bisa Di-install Langsung di Android, Tablet & Desktop PC",
-      "Mendukung Penggunaan Offline Tanpa Internet",
-      "Akses Instan di Dashboard Akun Web"
-    ],
-    "specifications": {
-      "Format": "PWA",
-      "Kompatibilitas": "Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)",
-      "Kategori": "Aplikasi",
-      "Pengiriman": "Akses Instan di Dashboard Akun Web"
-    }
-  },
-  {
     "id": "id0ebf",
     "sku": "ID0EBF",
     "name": "SmartRental - Software Rental Sewa Mobil Lepas Kunci Dan Hitung Tarif Denda",
@@ -2629,44 +2591,6 @@
     }
   },
   {
-    "id": "idaaf9",
-    "sku": "IDAAF9",
-    "name": "KSUMandiri - Software Koperasi Serba Usaha Toko Warga Simpan Pinjam",
-    "title": "KSUMandiri - Software Koperasi Serba Usaha Toko Warga Simpan Pinjam",
-    "category": "Aplikasi",
-    "format": "PWA",
-    "tag": "PWA",
-    "badge": "Unggulan",
-    "price": 18000,
-    "originalPrice": 66000,
-    "is_published": 1,
-    "isPublished": true,
-    "rating": 5,
-    "reviewsCount": 120,
-    "salesCount": 450,
-    "image": "/covers/IDAAF9/IDAAF9_cover.webp",
-    "coverImage": "/covers/IDAAF9/IDAAF9_cover.webp",
-    "gallery": [
-      "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDAAF9/IDAAF9_cover.webp",
-      "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/IDAAF9/IDAAF9_cover.webp"
-    ],
-    "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"IDAAF9 - KSUMandiri - Software Koperasi Serba Usaha Toko Warga Simpan Pinjam\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code CodeIgniter 3 (Framework MVC Ringan & Cepat)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: dbdesember.sql)\n- Titik Masuk (Web Root): Root Direktori Aplikasi (Instalasi Praktis)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / admin / 123456)\n- Fitur Andalan: Unit Toko Retail & Simpan Pinjam Warga\n- Lingkungan Server Teruji: PHP 5.6 / 7.4, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
-    "driveLink": null,
-    "backupDriveLink": null,
-    "features": [
-      "Aplikasi Progressive Web App (PWA) Mandiri",
-      "Bisa Di-install Langsung di Android, Tablet & Desktop PC",
-      "Mendukung Penggunaan Offline Tanpa Internet",
-      "Akses Instan di Dashboard Akun Web"
-    ],
-    "specifications": {
-      "Format": "PWA",
-      "Kompatibilitas": "Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)",
-      "Kategori": "Aplikasi",
-      "Pengiriman": "Akses Instan di Dashboard Akun Web"
-    }
-  },
-  {
     "id": "ida9d5",
     "sku": "IDA9D5",
     "name": "Sikopsipin - Software Koperasi Simpan Pinjam Anggota Dan Pembagian SHU",
@@ -3047,44 +2971,6 @@
     }
   },
   {
-    "id": "id9288",
-    "sku": "ID9288",
-    "name": "KSPMaster - Software Koperasi Simpan Pinjam Pinjaman Anggota SHU",
-    "title": "KSPMaster - Software Koperasi Simpan Pinjam Pinjaman Anggota SHU",
-    "category": "Aplikasi",
-    "format": "PWA",
-    "tag": "PWA",
-    "badge": "Unggulan",
-    "price": 15000,
-    "originalPrice": 54000,
-    "is_published": 1,
-    "isPublished": true,
-    "rating": 5,
-    "reviewsCount": 120,
-    "salesCount": 450,
-    "image": "/covers/ID9288/ID9288_cover.webp",
-    "coverImage": "/covers/ID9288/ID9288_cover.webp",
-    "gallery": [
-      "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID9288/ID9288_cover.webp",
-      "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID9288/ID9288_cover.webp"
-    ],
-    "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID9288 - KSPMaster - Software Koperasi Simpan Pinjam Pinjaman Anggota SHU\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code Native PHP / Custom MVC (Arsitektur Bersih Mudah Dimodifikasi)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: dbkoperasi.sql)\n- Titik Masuk (Web Root): Root Direktori Aplikasi (Instalasi Praktis)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / admin / 123456)\n- Fitur Andalan: Buku Kas Pinjaman & Perhitungan SHU\n- Lingkungan Server Teruji: PHP 5.6 / 7.4, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
-    "driveLink": null,
-    "backupDriveLink": null,
-    "features": [
-      "Aplikasi Progressive Web App (PWA) Mandiri",
-      "Bisa Di-install Langsung di Android, Tablet & Desktop PC",
-      "Mendukung Penggunaan Offline Tanpa Internet",
-      "Akses Instan di Dashboard Akun Web"
-    ],
-    "specifications": {
-      "Format": "PWA",
-      "Kompatibilitas": "Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)",
-      "Kategori": "Aplikasi",
-      "Pengiriman": "Akses Instan di Dashboard Akun Web"
-    }
-  },
-  {
     "id": "id91af",
     "sku": "ID91AF",
     "name": "SIMANIS - Aplikasi Akademik Madrasah Sekolah Jadwal Kelas Dan Rekap Nilai",
@@ -3183,44 +3069,6 @@
       "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID8DF2/ID8DF2_cover.webp"
     ],
     "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID8DF2 - GudangElektronik - Software Kasir Sparepart Toko Dan Manajemen Stok Gudang\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code Native PHP / Custom MVC (Arsitektur Bersih Mudah Dimodifikasi)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: inventaris_barang_elektronik.sql)\n- Titik Masuk (Web Root): Root Direktori Aplikasi (Instalasi Praktis)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / admin / 123456)\n- Fitur Andalan: Scan Barcode Cepat & Cetak Struk Penjualan\n- Lingkungan Server Teruji: PHP 5.6 / 7.4, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
-    "driveLink": null,
-    "backupDriveLink": null,
-    "features": [
-      "Aplikasi Progressive Web App (PWA) Mandiri",
-      "Bisa Di-install Langsung di Android, Tablet & Desktop PC",
-      "Mendukung Penggunaan Offline Tanpa Internet",
-      "Akses Instan di Dashboard Akun Web"
-    ],
-    "specifications": {
-      "Format": "PWA",
-      "Kompatibilitas": "Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)",
-      "Kategori": "Aplikasi",
-      "Pengiriman": "Akses Instan di Dashboard Akun Web"
-    }
-  },
-  {
-    "id": "id862a",
-    "sku": "ID862A",
-    "name": "WashVue - Software Kasir Laundry Kiloan Lacak Cucian Notifikasi Ambil",
-    "title": "WashVue - Software Kasir Laundry Kiloan Lacak Cucian Notifikasi Ambil",
-    "category": "Aplikasi",
-    "format": "PWA",
-    "tag": "PWA",
-    "badge": "Unggulan",
-    "price": 15000,
-    "originalPrice": 54000,
-    "is_published": 1,
-    "isPublished": true,
-    "rating": 5,
-    "reviewsCount": 120,
-    "salesCount": 450,
-    "image": "/covers/ID862A/ID862A_cover.webp",
-    "coverImage": "/covers/ID862A/ID862A_cover.webp",
-    "gallery": [
-      "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID862A/ID862A_cover.webp",
-      "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID862A/ID862A_cover.webp"
-    ],
-    "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID862A - WashVue - Software Kasir Laundry Kiloan Lacak Cucian Notifikasi Ambil\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code Laravel (Arsitektur MVC Modular Bersih)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: laravel_vuelaundry.sql)\n- Titik Masuk (Web Root): Direktori /public (Standar Enterprise Keamanan Web)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / password / admin / 123456)\n- Fitur Andalan: Cetak Struk Kiloan & Lacak Cucian\n- Lingkungan Server Teruji: PHP 8.1 / 8.2, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
     "driveLink": null,
     "backupDriveLink": null,
     "features": [
@@ -3655,44 +3503,6 @@
     }
   },
   {
-    "id": "id6703",
-    "sku": "ID6703",
-    "name": "EcoTrash - Aplikasi Bank Sampah Saldo Warga Dan Pembukuan Setoran Sampah",
-    "title": "EcoTrash - Aplikasi Bank Sampah Saldo Warga Dan Pembukuan Setoran Sampah",
-    "category": "Aplikasi",
-    "format": "PWA",
-    "tag": "PWA",
-    "badge": "Terlaris",
-    "price": 12000,
-    "originalPrice": 28000,
-    "is_published": 1,
-    "isPublished": true,
-    "rating": 5,
-    "reviewsCount": 120,
-    "salesCount": 450,
-    "image": "/covers/ID6703/ID6703_cover.webp",
-    "coverImage": "/covers/ID6703/ID6703_cover.webp",
-    "gallery": [
-      "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID6703/ID6703_cover.webp",
-      "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID6703/ID6703_cover.webp"
-    ],
-    "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID6703 - EcoTrash - Aplikasi Bank Sampah Saldo Warga Dan Pembukuan Setoran Sampah\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code Native PHP / Custom MVC (Arsitektur Bersih Mudah Dimodifikasi)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: banksampah.sql)\n- Titik Masuk (Web Root): Root Direktori Aplikasi (Instalasi Praktis)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / password / admin / 123456)\n- Fitur Andalan: Dashboard Responsif & Database MySQL Siap Pasang\n- Lingkungan Server Teruji: PHP 5.6 / 7.4, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
-    "driveLink": null,
-    "backupDriveLink": null,
-    "features": [
-      "Aplikasi Progressive Web App (PWA) Mandiri",
-      "Bisa Di-install Langsung di Android, Tablet & Desktop PC",
-      "Mendukung Penggunaan Offline Tanpa Internet",
-      "Akses Instan di Dashboard Akun Web"
-    ],
-    "specifications": {
-      "Format": "PWA",
-      "Kompatibilitas": "Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)",
-      "Kategori": "Aplikasi",
-      "Pengiriman": "Akses Instan di Dashboard Akun Web"
-    }
-  },
-  {
     "id": "id6680",
     "sku": "ID6680",
     "name": "IndekosPro - Software Manajemen Rumah Kos Dan Notifikasi Tagihan Sewa",
@@ -3791,120 +3601,6 @@
       "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID62A5/ID62A5_cover.webp"
     ],
     "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID62A5 - LaraParkir - Software Parkir Kendaraan Otomatis Dan Cetak Karcis Barcode\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code Laravel (Arsitektur MVC Modular Bersih)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: db_parkir.sql)\n- Titik Masuk (Web Root): Direktori /public (Standar Enterprise Keamanan Web)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / admin / 123456)\n- Fitur Andalan: Kalkulasi Durasi Jam & Palang Otomatis\n- Lingkungan Server Teruji: PHP 8.1 / 8.2, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
-    "driveLink": null,
-    "backupDriveLink": null,
-    "features": [
-      "Aplikasi Progressive Web App (PWA) Mandiri",
-      "Bisa Di-install Langsung di Android, Tablet & Desktop PC",
-      "Mendukung Penggunaan Offline Tanpa Internet",
-      "Akses Instan di Dashboard Akun Web"
-    ],
-    "specifications": {
-      "Format": "PWA",
-      "Kompatibilitas": "Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)",
-      "Kategori": "Aplikasi",
-      "Pengiriman": "Akses Instan di Dashboard Akun Web"
-    }
-  },
-  {
-    "id": "id5f5d",
-    "sku": "ID5F5D",
-    "name": "SLiMS9Bulian - Software Perpustakaan Digital Otomasi Sirkulasi Barcode",
-    "title": "SLiMS9Bulian - Software Perpustakaan Digital Otomasi Sirkulasi Barcode",
-    "category": "Aplikasi",
-    "format": "PWA",
-    "tag": "PWA",
-    "badge": "Terlaris",
-    "price": 5000,
-    "originalPrice": 28000,
-    "is_published": 1,
-    "isPublished": true,
-    "rating": 5,
-    "reviewsCount": 120,
-    "salesCount": 450,
-    "image": "/covers/ID5F5D/ID5F5D_cover.webp",
-    "coverImage": "/covers/ID5F5D/ID5F5D_cover.webp",
-    "gallery": [
-      "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID5F5D/ID5F5D_cover.webp",
-      "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID5F5D/ID5F5D_cover.webp"
-    ],
-    "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID5F5D - SLiMS9Bulian - Software Perpustakaan Digital Otomasi Sirkulasi Barcode\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code Native PHP / Custom MVC (Arsitektur Bersih Mudah Dimodifikasi)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: senayan.sql)\n- Titik Masuk (Web Root): Root Direktori Aplikasi (Instalasi Praktis)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / password / admin / 123456)\n- Fitur Andalan: Sirkulasi Mandiri & Cetak Barcode Buku\n- Lingkungan Server Teruji: PHP 5.6 / 7.4, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
-    "driveLink": null,
-    "backupDriveLink": null,
-    "features": [
-      "Aplikasi Progressive Web App (PWA) Mandiri",
-      "Bisa Di-install Langsung di Android, Tablet & Desktop PC",
-      "Mendukung Penggunaan Offline Tanpa Internet",
-      "Akses Instan di Dashboard Akun Web"
-    ],
-    "specifications": {
-      "Format": "PWA",
-      "Kompatibilitas": "Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)",
-      "Kategori": "Aplikasi",
-      "Pengiriman": "Akses Instan di Dashboard Akun Web"
-    }
-  },
-  {
-    "id": "id5e9f",
-    "sku": "ID5E9F",
-    "name": "InvoicePlane - Software Pembuat Invoice Tagihan Usaha Dan Manajemen Klien",
-    "title": "InvoicePlane - Software Pembuat Invoice Tagihan Usaha Dan Manajemen Klien",
-    "category": "Aplikasi",
-    "format": "PWA",
-    "tag": "PWA",
-    "badge": "Terlaris",
-    "price": 5000,
-    "originalPrice": 20000,
-    "is_published": 1,
-    "isPublished": true,
-    "rating": 5,
-    "reviewsCount": 120,
-    "salesCount": 450,
-    "image": "/covers/ID5E9F/ID5E9F_cover.webp",
-    "coverImage": "/covers/ID5E9F/ID5E9F_cover.webp",
-    "gallery": [
-      "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID5E9F/ID5E9F_cover.webp",
-      "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID5E9F/ID5E9F_cover.webp"
-    ],
-    "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID5E9F - InvoicePlane - Software Pembuat Invoice Tagihan Usaha Dan Manajemen Klien\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code Native PHP / Custom MVC (Arsitektur Bersih Mudah Dimodifikasi)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: invoiceplane.sql)\n- Titik Masuk (Web Root): Root Direktori Aplikasi (Instalasi Praktis)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / admin / 123456)\n- Fitur Andalan: Dashboard Responsif & Database MySQL Siap Pasang\n- Lingkungan Server Teruji: PHP 5.6 / 7.4, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
-    "driveLink": null,
-    "backupDriveLink": null,
-    "features": [
-      "Aplikasi Progressive Web App (PWA) Mandiri",
-      "Bisa Di-install Langsung di Android, Tablet & Desktop PC",
-      "Mendukung Penggunaan Offline Tanpa Internet",
-      "Akses Instan di Dashboard Akun Web"
-    ],
-    "specifications": {
-      "Format": "PWA",
-      "Kompatibilitas": "Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)",
-      "Kategori": "Aplikasi",
-      "Pengiriman": "Akses Instan di Dashboard Akun Web"
-    }
-  },
-  {
-    "id": "id5e4b",
-    "sku": "ID5E4B",
-    "name": "MediRecord - Aplikasi Rekam Medis Pasien Catatan Diagnosa Dokter",
-    "title": "MediRecord - Aplikasi Rekam Medis Pasien Catatan Diagnosa Dokter",
-    "category": "Aplikasi",
-    "format": "PWA",
-    "tag": "PWA",
-    "badge": "Unggulan",
-    "price": 17000,
-    "originalPrice": 75000,
-    "is_published": 1,
-    "isPublished": true,
-    "rating": 5,
-    "reviewsCount": 120,
-    "salesCount": 450,
-    "image": "/covers/ID5E4B/ID5E4B_cover.webp",
-    "coverImage": "/covers/ID5E4B/ID5E4B_cover.webp",
-    "gallery": [
-      "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID5E4B/ID5E4B_cover.webp",
-      "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID5E4B/ID5E4B_cover.webp"
-    ],
-    "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID5E4B - MediRecord - Aplikasi Rekam Medis Pasien Catatan Diagnosa Dokter\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code Laravel (Arsitektur MVC Modular Bersih)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: laravelrekammediss.sql)\n- Titik Masuk (Web Root): Direktori /public (Standar Enterprise Keamanan Web)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / admin / 123456)\n- Fitur Andalan: Riwayat Rekam Medis & Cetak Resep Dokter\n- Lingkungan Server Teruji: PHP 8.1 / 8.2, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
     "driveLink": null,
     "backupDriveLink": null,
     "features": [
