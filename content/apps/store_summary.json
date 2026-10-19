@@ -1,11 +1,11 @@
 {
-  "totalActive": 472,
-  "totalDesign": 472,
+  "totalActive": 471,
+  "totalDesign": 471,
   "totalEbook": 0,
   "designCategories": [
     [
       "Aplikasi",
-      100
+      99
     ],
     [
       "The Big Bang",
@@ -96,7 +96,7 @@
   "categories": [
     [
       "Aplikasi",
-      100
+      99
     ],
     [
       "The Big Bang",
@@ -190,7 +190,7 @@
     ],
     [
       "PWA",
-      100
+      99
     ],
     [
       "The Big Bang",
@@ -506,7 +506,7 @@
       }
     ]
   },
-  "totalProducts": 472,
-  "lastUpdated": "2026-10-19T17:04:25.762Z",
+  "totalProducts": 471,
+  "lastUpdated": "2026-10-19T17:10:28.816Z",
   "totalEcourse": 0
 }
