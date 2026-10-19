@@ -16,6 +16,12 @@ let totalSlidesCount = 0;
 
 for (const p of products) {
   const sku = (p.sku || '').toUpperCase();
+
+  // Pertahankan galeri jika produk sudah memiliki >= 5 slide (misal Shopee CDN atau slide mandiri)
+  if (p.gallery && p.gallery.length >= 5 && p.gallery.some(u => u.includes('shopee') || u.includes('slide') || u.includes('http'))) {
+    continue;
+  }
+
   const asset = assetsIndex.by_sku[sku];
 
   if (asset && asset.files && asset.files.length > 0) {
@@ -71,6 +77,12 @@ if (fs.existsSync(CATALOG_JSON)) {
   for (const p of catalog) {
     const sku = (p.sku || '').toUpperCase();
     if (sku === 'IDEB00') continue; // Pertahankan fallback lokal IDEB00
+
+    // Pertahankan galeri jika produk sudah memiliki >= 5 slide (misal Shopee CDN atau slide mandiri)
+    if (p.gallery && p.gallery.length >= 5 && p.gallery.some(u => u.includes('shopee') || u.includes('slide') || u.includes('http'))) {
+      continue;
+    }
+
     const asset = assetsIndex.by_sku[sku];
 
     if (asset && asset.files && asset.files.length > 0) {

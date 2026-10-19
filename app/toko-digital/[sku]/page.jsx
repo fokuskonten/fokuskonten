@@ -24,6 +24,15 @@ function getProductData(rawParam) {
       const db = new DatabaseSync(dbPath)
       const row = db.prepare('SELECT * FROM digital_products WHERE LOWER(sku) = ?').get(targetSku)
       if (row) {
+        let galleryImgs = []
+        if (row.gallery_json) {
+          try {
+            const parsed = JSON.parse(row.gallery_json)
+            if (Array.isArray(parsed) && parsed.length > 0) {
+              galleryImgs = parsed
+            }
+          } catch (_) {}
+        }
         prod = {
           sku: row.sku,
           title: row.title,
@@ -35,7 +44,7 @@ function getProductData(rawParam) {
           originalPrice: row.original_price,
           coverImage: row.cover_image,
           image: row.cover_image,
-          gallery: [],
+          gallery: galleryImgs,
           description: row.description,
           isPublished: row.is_published === 1
         }
