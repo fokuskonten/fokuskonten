@@ -152,6 +152,44 @@
     }
   },
   {
+    "id": "id58aa",
+    "sku": "ID58AA",
+    "name": "ESchoolCBT - Software Ujian Daring Sekolah Timer Dan Acak Soal Jawaban",
+    "title": "ESchoolCBT - Software Ujian Daring Sekolah Timer Dan Acak Soal Jawaban",
+    "category": "Aplikasi",
+    "format": "PWA",
+    "tag": "PWA",
+    "badge": "Unggulan",
+    "price": 18000,
+    "originalPrice": 66000,
+    "is_published": 1,
+    "isPublished": true,
+    "rating": 5,
+    "reviewsCount": 120,
+    "salesCount": 450,
+    "image": "/covers/ID58AA/ID58AA_cover.webp",
+    "coverImage": "/covers/ID58AA/ID58AA_cover.webp",
+    "gallery": [
+      "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID58AA/ID58AA_cover.webp",
+      "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID58AA/ID58AA_cover.webp"
+    ],
+    "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID58AA - ESchoolCBT - Software Ujian Daring Sekolah Timer Dan Acak Soal Jawaban\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code Native PHP / Custom MVC (Arsitektur Bersih Mudah Dimodifikasi)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: cbt_db.sql)\n- Titik Masuk (Web Root): Root Direktori Aplikasi (Instalasi Praktis)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / password / admin / 123456)\n- Fitur Andalan: Acak Jawaban & Timer Ujian Daring\n- Lingkungan Server Teruji: PHP 5.6 / 7.4, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
+    "driveLink": null,
+    "backupDriveLink": null,
+    "features": [
+      "Aplikasi Progressive Web App (PWA) Mandiri",
+      "Bisa Di-install Langsung di Android, Tablet & Desktop PC",
+      "Mendukung Penggunaan Offline Tanpa Internet",
+      "Akses Instan di Dashboard Akun Web"
+    ],
+    "specifications": {
+      "Format": "PWA",
+      "Kompatibilitas": "Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)",
+      "Kategori": "Aplikasi",
+      "Pengiriman": "Akses Instan di Dashboard Akun Web"
+    }
+  },
+  {
     "id": "id5658",
     "sku": "ID5658",
     "name": "ApotekSultan - Website Penjualan Obat Apotek Dan Konsultasi Pasien",
@@ -5152,44 +5190,6 @@
       "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID5978/ID5978_cover.webp"
     ],
     "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID5978 - SPPKu - Aplikasi Pembukuan SPP Sekolah Dan Catatan Tagihan Tunggakan Siswa\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code CodeIgniter 3 (Framework MVC Ringan & Cepat)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: spp.sql)\n- Titik Masuk (Web Root): Root Direktori Aplikasi (Instalasi Praktis)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / password / admin / 123456)\n- Fitur Andalan: Notifikasi Tagihan & Catatan SPP\n- Lingkungan Server Teruji: PHP 5.6 / 7.4, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
-    "driveLink": null,
-    "backupDriveLink": null,
-    "features": [
-      "Aplikasi Progressive Web App (PWA) Mandiri",
-      "Bisa Di-install Langsung di Android, Tablet & Desktop PC",
-      "Mendukung Penggunaan Offline Tanpa Internet",
-      "Akses Instan di Dashboard Akun Web"
-    ],
-    "specifications": {
-      "Format": "PWA",
-      "Kompatibilitas": "Semua Perangkat (Android, PC, Laptop, Chrome, Edge - Offline Ready)",
-      "Kategori": "Aplikasi",
-      "Pengiriman": "Akses Instan di Dashboard Akun Web"
-    }
-  },
-  {
-    "id": "id58aa",
-    "sku": "ID58AA",
-    "name": "ESchoolCBT - Software Ujian Daring Sekolah Timer Dan Acak Soal Jawaban",
-    "title": "ESchoolCBT - Software Ujian Daring Sekolah Timer Dan Acak Soal Jawaban",
-    "category": "Aplikasi",
-    "format": "PWA",
-    "tag": "PWA",
-    "badge": "Unggulan",
-    "price": 18000,
-    "originalPrice": 66000,
-    "is_published": 1,
-    "isPublished": true,
-    "rating": 5,
-    "reviewsCount": 120,
-    "salesCount": 450,
-    "image": "/covers/ID58AA/ID58AA_cover.webp",
-    "coverImage": "/covers/ID58AA/ID58AA_cover.webp",
-    "gallery": [
-      "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID58AA/ID58AA_cover.webp",
-      "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital/ID58AA/ID58AA_cover.webp"
-    ],
-    "description": "[RINGKASAN PRODUK]\nMaster paket aplikasi digital teruji \"ID58AA - ESchoolCBT - Software Ujian Daring Sekolah Timer Dan Acak Soal Jawaban\". Dihadirkan secara terorganisir ke dalam paket bundle siap pasang, dirancang khusus untuk mempercepat digitalisasi operasional, efisiensi alur kerja, dan standarisasi sistem tanpa perlu membangun dari nol.\n\n[KELENGKAPAN & ISI MODUL]\n- Format Master Source Code: Full Source Code Native PHP / Custom MVC (Arsitektur Bersih Mudah Dimodifikasi)\n- Basis Data Teruji: Skema Relasional Lengkap MySQL (Dump: cbt_db.sql)\n- Titik Masuk (Web Root): Root Direktori Aplikasi (Instalasi Praktis)\n- Panduan Resmi: Berkas 00_PANDUAN_INSTALASI_DAN_LOGIN.pdf (V5 Single-Page A4)\n- Dokumentasi & Kredensial: File README.md resmi FokusKonten (Akun Bawaan: admin / password / admin / 123456)\n- Fitur Andalan: Acak Jawaban & Timer Ujian Daring\n- Lingkungan Server Teruji: PHP 5.6 / 7.4, MySQL / MariaDB, Laragon / XAMPP, Composer\n- Kerapian Kode: Struktur direktori rapi, bebas berkas sampah, siap deploy & modifikasi\n\n[STANDAR PENGIRIMAN & AKSES LAYANAN]\n- Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n- Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n- Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n- Lisensi Fleksibel: Bebas digunakan untuk kebutuhan personal, instansi mandiri, maupun proyek komersial klien Anda.\n\n[PANDUAN PEMESANAN]\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.",
     "driveLink": null,
     "backupDriveLink": null,
     "features": [
