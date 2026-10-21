@@ -123,7 +123,7 @@ export default function ProductPurchaseBox({ product, fmtMeta }) {
           <svg className="w-4 h-4 text-neutral-900 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
           </svg>
-          <span><strong>Format .{fmtMeta?.ext || 'CDR'}:</strong> Siap pakai dan mudah diedit.</span>
+          <span><strong>Format {fmtMeta?.ext ? (fmtMeta.ext.startsWith('.') ? fmtMeta.ext : '.' + fmtMeta.ext) : '.CDR'}:</strong> Siap pakai dan mudah diedit.</span>
         </div>
         <div className="flex items-start gap-2.5">
           <svg className="w-4 h-4 text-neutral-900 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>

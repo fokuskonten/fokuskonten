@@ -1,6 +1,6 @@
 {
-  "totalActive": 489,
-  "totalDesign": 489,
+  "totalActive": 486,
+  "totalDesign": 486,
   "totalEbook": 0,
   "designCategories": [
     [
@@ -44,12 +44,12 @@
       20
     ],
     [
-      "Jasa Digital",
-      18
-    ],
-    [
       "Kemasan & Goodie Bag",
       17
+    ],
+    [
+      "Jasa Digital",
+      15
     ],
     [
       "Buku & Yasin",
@@ -139,12 +139,12 @@
       20
     ],
     [
-      "Jasa Digital",
-      18
-    ],
-    [
       "Kemasan & Goodie Bag",
       17
+    ],
+    [
+      "Jasa Digital",
+      15
     ],
     [
       "Buku & Yasin",
@@ -218,7 +218,7 @@
     ],
     [
       "POWERSHELL IRM",
-      18
+      15
     ],
     [
       "DOCX",
@@ -335,6 +335,39 @@
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID49CC/ID49CC_cover.webp",
         "badge": "Terlaris",
         "tag": "Format .PWA"
+      },
+      {
+        "sku": "IDFC4A",
+        "title": "BengkelPro - Software Kasir Bengkel Servis Mobil Motor Dan Antrian Bengkel",
+        "category": "Aplikasi",
+        "format": "PWA",
+        "price": 5000,
+        "originalPrice": 60000,
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDFC4A/IDFC4A_cover.webp",
+        "badge": "Terlaris",
+        "tag": "PWA"
+      },
+      {
+        "sku": "IDF405",
+        "title": "VetClinic - Software Kasir Pet Shop Dan Rekam Medis Klinik Hewan",
+        "category": "Aplikasi",
+        "format": "PWA",
+        "price": 18000,
+        "originalPrice": 84000,
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDF405/IDF405_cover.webp",
+        "badge": "Unggulan",
+        "tag": "PWA"
+      },
+      {
+        "sku": "IDF3F3",
+        "title": "MediCareClinic - Software Pasien Klinik Periksa Dokter Dan Kasir Obat",
+        "category": "Aplikasi",
+        "format": "PWA",
+        "price": 17000,
+        "originalPrice": 90000,
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDF3F3/IDF3F3_cover.webp",
+        "badge": "Unggulan",
+        "tag": "PWA"
       }
     ],
     "cdr": [
@@ -516,9 +549,99 @@
         "badge": "Unggulan",
         "tag": "Format .MP4"
       }
+    ],
+    "powershell": [
+      {
+        "sku": "FK-PSH-101",
+        "title": "Jasa Modding Tampilan Terminal Windows Ala Hacker Matrix Cyberpunk - Setup PowerShell Oh My Posh Keren 1 Klik",
+        "category": "Jasa Digital",
+        "format": "POWERSHELL IRM",
+        "price": 2000,
+        "originalPrice": 40000,
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/FK-PSH-101/FK-PSH-101_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .POWERSHELL IRM"
+      },
+      {
+        "sku": "FK-PSH-115",
+        "title": "Jasa Kembalikan Menu Klik Kanan Klasik Penuh Windows 10 di Windows 11 - 1 Klik Beres Langsung Aktif Resmi FokusKonten",
+        "category": "Jasa Digital",
+        "format": "POWERSHELL IRM",
+        "price": 2000,
+        "originalPrice": 40000,
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/FK-PSH-115/FK-PSH-115_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .POWERSHELL IRM"
+      },
+      {
+        "sku": "FK-PSH-63",
+        "title": "Jasa Ganti Edisi Windows Home Menjadi Windows Pro - Bantuan Upgrade Win 11 & 10 Tanpa Instal Ulang 1-Klik",
+        "category": "Jasa Digital",
+        "format": "POWERSHELL IRM",
+        "price": 2000,
+        "originalPrice": 40000,
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/FK-PSH-63/FK-PSH-63_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .POWERSHELL IRM"
+      },
+      {
+        "sku": "FK-PSH-30",
+        "title": "Jasa Kompres PDF CPNS BUMN Di Bawah 300KB 500KB - Bantuan Kecilkan Dokumen Ijazah KTP 1-Klik Teks Tajam",
+        "category": "Jasa Digital",
+        "format": "POWERSHELL IRM",
+        "price": 2000,
+        "originalPrice": 40000,
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/FK-PSH-30/FK-PSH-30_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .POWERSHELL IRM"
+      },
+      {
+        "sku": "FK-PSH-37",
+        "title": "Jasa Pasang Bersih Microsoft Office Custom Anti Bloatware - Bantuan Setting Word Excel Hemat SSD 1-Klik",
+        "category": "Jasa Digital",
+        "format": "POWERSHELL IRM",
+        "price": 2000,
+        "originalPrice": 40000,
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/FK-PSH-37/FK-PSH-37_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .POWERSHELL IRM"
+      },
+      {
+        "sku": "FK-PSH-24",
+        "title": "Jasa Konfigurasi WinRAR Lisensi Resmi Bebas Notifikasi - Pasang Baru dan Hapus Pop Up Evaluasi 1-Klik FokusKonten",
+        "category": "Jasa Digital",
+        "format": "POWERSHELL IRM",
+        "price": 2000,
+        "originalPrice": 40000,
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/FK-PSH-24/FK-PSH-24_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .POWERSHELL IRM"
+      },
+      {
+        "sku": "FK-PSH-22",
+        "title": "Jasa Optimasi Spotify Desktop Bebas Iklan Audio Banner SpotX - Bantuan Dengar Musik Nyaman Tanpa Jeda 1-Klik",
+        "category": "Jasa Digital",
+        "format": "POWERSHELL IRM",
+        "price": 2000,
+        "originalPrice": 40000,
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/FK-PSH-22/FK-PSH-22_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .POWERSHELL IRM"
+      },
+      {
+        "sku": "FK-PSH-17",
+        "title": "Jasa Pembuatan Multi Boot USB Flashdisk Ventoy Pro - Bantuan Flashdisk Teknisi Multi ISO 1-Klik",
+        "category": "Jasa Digital",
+        "format": "POWERSHELL IRM",
+        "price": 2000,
+        "originalPrice": 40000,
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/FK-PSH-17/FK-PSH-17_cover.webp",
+        "badge": "Unggulan",
+        "tag": "Format .POWERSHELL IRM"
+      }
     ]
   },
-  "totalProducts": 489,
-  "lastUpdated": "2026-10-21T03:13:12.970Z",
+  "totalProducts": 486,
+  "lastUpdated": "2026-10-21T17:44:53.392Z",
   "totalEcourse": 0
 }

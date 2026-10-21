@@ -41,6 +41,7 @@ function TokoDigitalContent() {
     videoCount,
     cdrCount,
     pwaCount,
+    pshCount,
     pptxCount,
     pdfCount,
     othersCount,
@@ -52,6 +53,7 @@ function TokoDigitalContent() {
     let video = 0
     let cdr = 0
     let pwa = 0
+    let psh = 0
     let pptx = 0
     let pdf = 0
     let others = 0
@@ -70,6 +72,7 @@ function TokoDigitalContent() {
 
       if (fmt === 'CDR') cdr++
       else if (fmt === 'PWA' || fmt === 'PHP/WEB') pwa++
+      else if (fmt === 'POWERSHELL IRM' || fmt === 'POWERSHELL' || cat === 'Jasa Digital') psh++
       else if (fmt === 'PPTX') pptx++
       else if (fmt === 'PDF') {
         pdf++
@@ -84,6 +87,7 @@ function TokoDigitalContent() {
       videoCount: video,
       cdrCount: cdr,
       pwaCount: pwa,
+      pshCount: psh,
       pptxCount: pptx,
       pdfCount: pdf,
       othersCount: others,
@@ -105,6 +109,8 @@ function TokoDigitalContent() {
         list.push({ id: 'VIDEO_KONTEN', label: 'Video Konten', count: videoCount })
       } else if (fmt === 'The Big Bang' || fmt === 'BIGBANG' || fmt === 'THE_BIG_BANG') {
         list.push({ id: 'The Big Bang', label: 'The Big Bang', count: rawCount })
+      } else if (fmt === 'POWERSHELL IRM' || fmt === 'POWERSHELL') {
+        list.push({ id: 'POWERSHELL IRM', label: 'PowerShell', count: pshCount || rawCount })
       } else {
         const smartCount = fmt === 'CDR' ? cdrCount : (fmt === 'PWA' || fmt === 'PHP/WEB') ? pwaCount : fmt === 'PPTX' ? pptxCount : fmt === 'PDF' ? pdfCount : rawCount
         list.push({
@@ -115,7 +121,7 @@ function TokoDigitalContent() {
       }
     }
     return list
-  }, [realtimeFormats, ecourseCount, videoCount, cdrCount, pwaCount, pptxCount, pdfCount])
+  }, [realtimeFormats, ecourseCount, videoCount, cdrCount, pwaCount, pshCount, pptxCount, pdfCount])
 
   const sortOptions = [
     { id: 'newest', label: 'Terbaru' },
@@ -334,7 +340,7 @@ function TokoDigitalContent() {
               <span suppressHydrationWarning className="text-xs font-bold uppercase tracking-wider text-neutral-400">
                 {mounted && (selectedFormat.toUpperCase() === 'THE BIG BANG' || selectedFormat.toUpperCase() === 'BIGBANG')
                   ? 'Repositori Unggulan'
-                  : (selectedFormat === 'PDF' ? 'Koleksi E-Book' : ((selectedFormat === 'PWA' || selectedFormat === 'PHP/WEB') ? 'Aplikasi PWA' : 'Katalog Desain'))}
+                  : (selectedFormat === 'PDF' ? 'Koleksi E-Book' : ((selectedFormat === 'PWA' || selectedFormat === 'PHP/WEB') ? 'Aplikasi PWA' : (selectedFormat.toUpperCase() === 'POWERSHELL IRM' ? 'Utilitas PowerShell' : 'Katalog Desain')))}
               </span>
               {isFiltering && (
                 <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-neutral-900 text-white shadow-sm">
@@ -346,7 +352,7 @@ function TokoDigitalContent() {
                               ? 'Video Konten'
                               : (selectedFormat.toUpperCase() === 'THE BIG BANG' || selectedFormat.toUpperCase() === 'BIGBANG'
                                   ? 'The Big Bang'
-                                  : (selectedFormat === 'PDF' ? 'E-Book' : ((selectedFormat === 'PWA' || selectedFormat === 'PHP/WEB') ? 'PWA' : `Format .${selectedFormat}`)))))
+                                  : (selectedFormat === 'PDF' ? 'E-Book' : ((selectedFormat === 'PWA' || selectedFormat === 'PHP/WEB') ? 'PWA' : (selectedFormat.toUpperCase() === 'POWERSHELL IRM' ? 'PowerShell' : `Format .${selectedFormat}`))))))
                       : selectedCategory}
                   </span>
                   <button
@@ -368,7 +374,7 @@ function TokoDigitalContent() {
                         ? 'Katalog Bahan Video Konten'
                         : (selectedFormat.toUpperCase() === 'THE BIG BANG' || selectedFormat.toUpperCase() === 'BIGBANG'
                             ? 'The Big Bang — Repositori Unggulan Master'
-                            : (selectedFormat === 'PDF' ? 'Katalog E-Book' : ((selectedFormat === 'PWA' || selectedFormat === 'PHP/WEB') ? 'Katalog Aplikasi PWA' : `Format .${selectedFormat}`)))))
+                            : (selectedFormat === 'PDF' ? 'Katalog E-Book' : ((selectedFormat === 'PWA' || selectedFormat === 'PHP/WEB') ? 'Katalog Aplikasi PWA' : (selectedFormat.toUpperCase() === 'POWERSHELL IRM' ? 'Katalog Jasa & Utilitas PowerShell' : `Format .${selectedFormat}`))))))
                 : (mounted && selectedCategory !== 'Semua' ? selectedCategory : 'Katalog Template & Desain')}
             </h1>
             <p suppressHydrationWarning className="text-sm text-neutral-500 mt-1 leading-relaxed">
@@ -380,7 +386,7 @@ function TokoDigitalContent() {
                         ? 'mentahan footage & amunisi video konten.'
                         : (selectedFormat.toUpperCase() === 'THE BIG BANG' || selectedFormat.toUpperCase() === 'BIGBANG'
                             ? 'koleksi repositori master: E-Book, Skematik Laptop, Teknisi Smartphone, dan Webmaster.'
-                            : (selectedFormat === 'PDF' ? 'koleksi literatur digital siap baca.' : ((selectedFormat === 'PWA' || selectedFormat === 'PHP/WEB') ? 'aplikasi sistem PWA teruji.' : `format .${selectedFormat}`)))))
+                            : (selectedFormat === 'PDF' ? 'koleksi literatur digital siap baca.' : ((selectedFormat === 'PWA' || selectedFormat === 'PHP/WEB') ? 'aplikasi sistem PWA teruji.' : (selectedFormat.toUpperCase() === 'POWERSHELL IRM' ? 'solusi otomasi & utilitas terminal 1-klik teruji.' : `format .${selectedFormat}`))))))
                 : (mounted && selectedCategory !== 'Semua' ? `kategori ${selectedCategory}` : 'siap pakai.')}
             </p>
           </div>
@@ -560,7 +566,36 @@ function TokoDigitalContent() {
       {/* ── 3. SHOWCASE PILIHAN & BUNDLE (5 SKAT MINIMALIS) ───────────── */}
       {!isFiltering && currentPage === 1 && showcase && (
         <div className="w-full max-w-7xl 2xl:max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 mb-12 sm:mb-16 space-y-12">
-          {/* Skat 1: Aplikasi PWA Mandiri */}
+          {/* Skat 1: Jasa & Utilitas PowerShell */}
+          {showcase.powershell && showcase.powershell.length > 0 && (
+            <section className="space-y-4">
+              <div className="flex items-center justify-between pb-3 border-b border-neutral-200">
+                <div className="flex items-center gap-2.5">
+                  <h2 className="text-lg sm:text-xl font-bold text-neutral-950 tracking-tight">
+                    Jasa &amp; Utilitas PowerShell
+                  </h2>
+                  <span className="text-[11px] font-bold uppercase tracking-wider bg-neutral-900 text-white px-2.5 py-0.5 rounded-full font-mono">
+                    1-Klik Beres
+                  </span>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => handleFormatSelect('POWERSHELL IRM')}
+                  className="text-xs sm:text-sm font-semibold text-neutral-600 hover:text-black transition-colors flex items-center gap-1"
+                >
+                  <span>Lihat Semua Jasa ({pshCount || 15})</span>
+                  <span>&rarr;</span>
+                </button>
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-6">
+                {showcase.powershell.slice(0, 8).map((product) => (
+                  <ProductCard key={product.sku} product={product} />
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Skat 2: Aplikasi PWA Mandiri */}
           {showcase.pwa && showcase.pwa.length > 0 && (
             <section className="space-y-4">
               <div className="flex items-center justify-between pb-3 border-b border-neutral-200">
@@ -582,7 +617,7 @@ function TokoDigitalContent() {
                 </button>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-6">
-                {showcase.pwa.map((product) => (
+                {showcase.pwa.slice(0, 8).map((product) => (
                   <ProductCard key={product.sku} product={product} />
                 ))}
               </div>
@@ -606,7 +641,7 @@ function TokoDigitalContent() {
                 </button>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-6">
-                {showcase.cdr.map((product) => (
+                {showcase.cdr.slice(0, 8).map((product) => (
                   <ProductCard key={product.sku} product={product} />
                 ))}
               </div>
@@ -630,7 +665,7 @@ function TokoDigitalContent() {
                 </button>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-6">
-                {showcase.others.map((product) => (
+                {showcase.others.slice(0, 8).map((product) => (
                   <ProductCard key={product.sku} product={product} />
                 ))}
               </div>
