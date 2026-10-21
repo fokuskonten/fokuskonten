@@ -1,6 +1,6 @@
 {
-  "totalActive": 471,
-  "totalDesign": 471,
+  "totalActive": 489,
+  "totalDesign": 489,
   "totalEbook": 0,
   "designCategories": [
     [
@@ -44,6 +44,10 @@
       20
     ],
     [
+      "Jasa Digital",
+      18
+    ],
+    [
       "Kemasan & Goodie Bag",
       17
     ],
@@ -56,19 +60,19 @@
       14
     ],
     [
-      "Kartu Nama",
-      11
-    ],
-    [
       "Banner & Spanduk",
       11
     ],
     [
-      "Tekstur & Brush",
-      7
+      "Kartu Nama",
+      11
     ],
     [
       "Sertifikat",
+      7
+    ],
+    [
+      "Tekstur & Brush",
       7
     ],
     [
@@ -84,11 +88,11 @@
       3
     ],
     [
-      "Daftar Menu & Kuliner",
+      "Kalender",
       2
     ],
     [
-      "Kalender",
+      "Daftar Menu & Kuliner",
       2
     ]
   ],
@@ -135,6 +139,10 @@
       20
     ],
     [
+      "Jasa Digital",
+      18
+    ],
+    [
       "Kemasan & Goodie Bag",
       17
     ],
@@ -147,19 +155,19 @@
       14
     ],
     [
-      "Kartu Nama",
-      11
-    ],
-    [
       "Banner & Spanduk",
       11
     ],
     [
-      "Tekstur & Brush",
-      7
+      "Kartu Nama",
+      11
     ],
     [
       "Sertifikat",
+      7
+    ],
+    [
+      "Tekstur & Brush",
       7
     ],
     [
@@ -175,11 +183,11 @@
       3
     ],
     [
-      "Daftar Menu & Kuliner",
+      "Kalender",
       2
     ],
     [
-      "Kalender",
+      "Daftar Menu & Kuliner",
       2
     ]
   ],
@@ -207,6 +215,10 @@
     [
       "XLSX",
       24
+    ],
+    [
+      "POWERSHELL IRM",
+      18
     ],
     [
       "DOCX",
@@ -506,7 +518,7 @@
       }
     ]
   },
-  "totalProducts": 471,
-  "lastUpdated": "2026-10-20T07:03:52.098Z",
+  "totalProducts": 489,
+  "lastUpdated": "2026-10-21T02:24:48.591Z",
   "totalEcourse": 0
 }

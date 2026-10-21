@@ -2,12 +2,12 @@
   "metadata": {
     "title": "FokusKonten Asset CDN — Toko Digital Product Covers & Slides Index",
     "version": "1.1.0",
-    "total_skus": 814,
-    "total_visual_files": 4520,
-    "total_covers": 814,
-    "total_slides": 3706,
-    "total_all_files": 9893,
-    "generated_at": "2026-10-19T17:01:40.723Z",
+    "total_skus": 830,
+    "total_visual_files": 4652,
+    "total_covers": 830,
+    "total_slides": 3822,
+    "total_all_files": 10158,
+    "generated_at": "2026-10-21T02:14:29.220Z",
     "cdn_base_urls": {
       "tier1_jsdelivr": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital",
       "tier2_raw_github": "https://raw.githubusercontent.com/mcjobs-id/fokuskonten-assets/main/toko-digital",
@@ -15,6 +15,510 @@
     }
   },
   "by_sku": {
+    "FK-PSH-01": {
+      "sku": "FK-PSH-01",
+      "cover": "FK-PSH-01_cover.webp",
+      "slides": [
+        "FK-PSH-01_slide_03.webp",
+        "FK-PSH-01_slide_04.webp",
+        "FK-PSH-01_slide_05.webp",
+        "FK-PSH-01_slide_06.webp",
+        "FK-PSH-01_slide_07.webp",
+        "FK-PSH-01_slide_08.webp"
+      ],
+      "files": [
+        "FK-PSH-01_cover.webp",
+        "FK-PSH-01_slide_03.webp",
+        "FK-PSH-01_slide_04.webp",
+        "FK-PSH-01_slide_05.webp",
+        "FK-PSH-01_slide_06.webp",
+        "FK-PSH-01_slide_07.webp",
+        "FK-PSH-01_slide_08.webp"
+      ],
+      "auxiliary_files": [
+        "FK-PSH-01_cover.jpg",
+        "FK-PSH-01_slide_03.jpg",
+        "FK-PSH-01_slide_04.jpg",
+        "FK-PSH-01_slide_05.jpg",
+        "FK-PSH-01_slide_06.jpg",
+        "FK-PSH-01_slide_07.jpg",
+        "FK-PSH-01_slide_08.jpg"
+      ]
+    },
+    "FK-PSH-02": {
+      "sku": "FK-PSH-02",
+      "cover": "FK-PSH-02_cover.webp",
+      "slides": [
+        "FK-PSH-02_slide_03.webp",
+        "FK-PSH-02_slide_04.webp",
+        "FK-PSH-02_slide_05.webp",
+        "FK-PSH-02_slide_06.webp",
+        "FK-PSH-02_slide_07.webp",
+        "FK-PSH-02_slide_08.webp"
+      ],
+      "files": [
+        "FK-PSH-02_cover.webp",
+        "FK-PSH-02_slide_03.webp",
+        "FK-PSH-02_slide_04.webp",
+        "FK-PSH-02_slide_05.webp",
+        "FK-PSH-02_slide_06.webp",
+        "FK-PSH-02_slide_07.webp",
+        "FK-PSH-02_slide_08.webp"
+      ],
+      "auxiliary_files": [
+        "FK-PSH-02_cover.jpg",
+        "FK-PSH-02_slide_03.jpg",
+        "FK-PSH-02_slide_04.jpg",
+        "FK-PSH-02_slide_05.jpg",
+        "FK-PSH-02_slide_06.jpg",
+        "FK-PSH-02_slide_07.jpg",
+        "FK-PSH-02_slide_08.jpg"
+      ]
+    },
+    "FK-PSH-04": {
+      "sku": "FK-PSH-04",
+      "cover": "FK-PSH-04_cover.webp",
+      "slides": [
+        "FK-PSH-04_slide_03.webp",
+        "FK-PSH-04_slide_04.webp",
+        "FK-PSH-04_slide_05.webp",
+        "FK-PSH-04_slide_06.webp",
+        "FK-PSH-04_slide_07.webp",
+        "FK-PSH-04_slide_08.webp"
+      ],
+      "files": [
+        "FK-PSH-04_cover.webp",
+        "FK-PSH-04_slide_03.webp",
+        "FK-PSH-04_slide_04.webp",
+        "FK-PSH-04_slide_05.webp",
+        "FK-PSH-04_slide_06.webp",
+        "FK-PSH-04_slide_07.webp",
+        "FK-PSH-04_slide_08.webp"
+      ],
+      "auxiliary_files": [
+        "FK-PSH-04_cover.jpg",
+        "FK-PSH-04_slide_03.jpg",
+        "FK-PSH-04_slide_04.jpg",
+        "FK-PSH-04_slide_05.jpg",
+        "FK-PSH-04_slide_06.jpg",
+        "FK-PSH-04_slide_07.jpg",
+        "FK-PSH-04_slide_08.jpg"
+      ]
+    },
+    "FK-PSH-05": {
+      "sku": "FK-PSH-05",
+      "cover": "FK-PSH-05_cover.webp",
+      "slides": [
+        "FK-PSH-05_slide_03.webp",
+        "FK-PSH-05_slide_04.webp",
+        "FK-PSH-05_slide_05.webp",
+        "FK-PSH-05_slide_06.webp",
+        "FK-PSH-05_slide_07.webp",
+        "FK-PSH-05_slide_08.webp"
+      ],
+      "files": [
+        "FK-PSH-05_cover.webp",
+        "FK-PSH-05_slide_03.webp",
+        "FK-PSH-05_slide_04.webp",
+        "FK-PSH-05_slide_05.webp",
+        "FK-PSH-05_slide_06.webp",
+        "FK-PSH-05_slide_07.webp",
+        "FK-PSH-05_slide_08.webp"
+      ],
+      "auxiliary_files": [
+        "FK-PSH-05_cover.jpg",
+        "FK-PSH-05_slide_03.jpg",
+        "FK-PSH-05_slide_04.jpg",
+        "FK-PSH-05_slide_05.jpg",
+        "FK-PSH-05_slide_06.jpg",
+        "FK-PSH-05_slide_07.jpg",
+        "FK-PSH-05_slide_08.jpg"
+      ]
+    },
+    "FK-PSH-06": {
+      "sku": "FK-PSH-06",
+      "cover": "FK-PSH-06_cover.webp",
+      "slides": [
+        "FK-PSH-06_slide_01.webp",
+        "FK-PSH-06_slide_02.webp",
+        "FK-PSH-06_slide_03.webp",
+        "FK-PSH-06_slide_04.webp",
+        "FK-PSH-06_slide_05.webp",
+        "FK-PSH-06_slide_06.webp",
+        "FK-PSH-06_slide_07.webp",
+        "FK-PSH-06_slide_08.webp"
+      ],
+      "files": [
+        "FK-PSH-06_cover.webp",
+        "FK-PSH-06_slide_01.webp",
+        "FK-PSH-06_slide_02.webp",
+        "FK-PSH-06_slide_03.webp",
+        "FK-PSH-06_slide_04.webp",
+        "FK-PSH-06_slide_05.webp",
+        "FK-PSH-06_slide_06.webp",
+        "FK-PSH-06_slide_07.webp",
+        "FK-PSH-06_slide_08.webp"
+      ],
+      "auxiliary_files": [
+        "FK-PSH-06_cover.jpg",
+        "FK-PSH-06_slide_01.jpg",
+        "FK-PSH-06_slide_02.jpg",
+        "FK-PSH-06_slide_03.jpg",
+        "FK-PSH-06_slide_04.jpg",
+        "FK-PSH-06_slide_05.jpg",
+        "FK-PSH-06_slide_06.jpg",
+        "FK-PSH-06_slide_07.jpg",
+        "FK-PSH-06_slide_08.jpg"
+      ]
+    },
+    "FK-PSH-101": {
+      "sku": "FK-PSH-101",
+      "cover": "FK-PSH-101_cover.webp",
+      "slides": [
+        "FK-PSH-101_slide_01.webp",
+        "FK-PSH-101_slide_02.webp",
+        "FK-PSH-101_slide_03.webp",
+        "FK-PSH-101_slide_04.webp",
+        "FK-PSH-101_slide_05.webp",
+        "FK-PSH-101_slide_06.webp",
+        "FK-PSH-101_slide_07.webp",
+        "FK-PSH-101_slide_08.webp"
+      ],
+      "files": [
+        "FK-PSH-101_cover.webp",
+        "FK-PSH-101_slide_01.webp",
+        "FK-PSH-101_slide_02.webp",
+        "FK-PSH-101_slide_03.webp",
+        "FK-PSH-101_slide_04.webp",
+        "FK-PSH-101_slide_05.webp",
+        "FK-PSH-101_slide_06.webp",
+        "FK-PSH-101_slide_07.webp",
+        "FK-PSH-101_slide_08.webp"
+      ],
+      "auxiliary_files": [
+        "FK-PSH-101_cover.jpg",
+        "FK-PSH-101_slide_01.jpg",
+        "FK-PSH-101_slide_02.jpg",
+        "FK-PSH-101_slide_03.jpg",
+        "FK-PSH-101_slide_04.jpg",
+        "FK-PSH-101_slide_05.jpg",
+        "FK-PSH-101_slide_06.jpg",
+        "FK-PSH-101_slide_07.jpg",
+        "FK-PSH-101_slide_08.jpg"
+      ]
+    },
+    "FK-PSH-11": {
+      "sku": "FK-PSH-11",
+      "cover": "FK-PSH-11_cover.webp",
+      "slides": [
+        "FK-PSH-11_slide_03.webp",
+        "FK-PSH-11_slide_04.webp",
+        "FK-PSH-11_slide_05.webp",
+        "FK-PSH-11_slide_06.webp",
+        "FK-PSH-11_slide_07.webp",
+        "FK-PSH-11_slide_08.webp"
+      ],
+      "files": [
+        "FK-PSH-11_cover.webp",
+        "FK-PSH-11_slide_03.webp",
+        "FK-PSH-11_slide_04.webp",
+        "FK-PSH-11_slide_05.webp",
+        "FK-PSH-11_slide_06.webp",
+        "FK-PSH-11_slide_07.webp",
+        "FK-PSH-11_slide_08.webp"
+      ],
+      "auxiliary_files": [
+        "FK-PSH-11_cover.jpg",
+        "FK-PSH-11_slide_03.jpg",
+        "FK-PSH-11_slide_04.jpg",
+        "FK-PSH-11_slide_05.jpg",
+        "FK-PSH-11_slide_06.jpg",
+        "FK-PSH-11_slide_07.jpg",
+        "FK-PSH-11_slide_08.jpg"
+      ]
+    },
+    "FK-PSH-115": {
+      "sku": "FK-PSH-115",
+      "cover": "FK-PSH-115_cover.webp",
+      "slides": [
+        "FK-PSH-115_slide_01.webp",
+        "FK-PSH-115_slide_02.webp",
+        "FK-PSH-115_slide_03.webp",
+        "FK-PSH-115_slide_04.webp",
+        "FK-PSH-115_slide_05.webp",
+        "FK-PSH-115_slide_06.webp",
+        "FK-PSH-115_slide_07.webp",
+        "FK-PSH-115_slide_08.webp"
+      ],
+      "files": [
+        "FK-PSH-115_cover.webp",
+        "FK-PSH-115_slide_01.webp",
+        "FK-PSH-115_slide_02.webp",
+        "FK-PSH-115_slide_03.webp",
+        "FK-PSH-115_slide_04.webp",
+        "FK-PSH-115_slide_05.webp",
+        "FK-PSH-115_slide_06.webp",
+        "FK-PSH-115_slide_07.webp",
+        "FK-PSH-115_slide_08.webp"
+      ],
+      "auxiliary_files": [
+        "FK-PSH-115_cover.jpg",
+        "FK-PSH-115_slide_01.jpg",
+        "FK-PSH-115_slide_02.jpg",
+        "FK-PSH-115_slide_03.jpg",
+        "FK-PSH-115_slide_04.jpg",
+        "FK-PSH-115_slide_05.jpg",
+        "FK-PSH-115_slide_06.jpg",
+        "FK-PSH-115_slide_07.jpg",
+        "FK-PSH-115_slide_08.jpg"
+      ]
+    },
+    "FK-PSH-17": {
+      "sku": "FK-PSH-17",
+      "cover": "FK-PSH-17_cover.webp",
+      "slides": [
+        "FK-PSH-17_slide_01.webp",
+        "FK-PSH-17_slide_02.webp",
+        "FK-PSH-17_slide_03.webp",
+        "FK-PSH-17_slide_04.webp",
+        "FK-PSH-17_slide_05.webp",
+        "FK-PSH-17_slide_06.webp",
+        "FK-PSH-17_slide_07.webp",
+        "FK-PSH-17_slide_08.webp"
+      ],
+      "files": [
+        "FK-PSH-17_cover.webp",
+        "FK-PSH-17_slide_01.webp",
+        "FK-PSH-17_slide_02.webp",
+        "FK-PSH-17_slide_03.webp",
+        "FK-PSH-17_slide_04.webp",
+        "FK-PSH-17_slide_05.webp",
+        "FK-PSH-17_slide_06.webp",
+        "FK-PSH-17_slide_07.webp",
+        "FK-PSH-17_slide_08.webp"
+      ],
+      "auxiliary_files": [
+        "FK-PSH-17_cover.jpg",
+        "FK-PSH-17_slide_01.jpg",
+        "FK-PSH-17_slide_02.jpg",
+        "FK-PSH-17_slide_03.jpg",
+        "FK-PSH-17_slide_04.jpg",
+        "FK-PSH-17_slide_05.jpg",
+        "FK-PSH-17_slide_06.jpg",
+        "FK-PSH-17_slide_07.jpg",
+        "FK-PSH-17_slide_08.jpg"
+      ]
+    },
+    "FK-PSH-19": {
+      "sku": "FK-PSH-19",
+      "cover": "FK-PSH-19_cover.webp",
+      "slides": [
+        "FK-PSH-19_slide_01.webp",
+        "FK-PSH-19_slide_02.webp",
+        "FK-PSH-19_slide_03.webp",
+        "FK-PSH-19_slide_04.webp",
+        "FK-PSH-19_slide_05.webp",
+        "FK-PSH-19_slide_06.webp",
+        "FK-PSH-19_slide_07.webp",
+        "FK-PSH-19_slide_08.webp"
+      ],
+      "files": [
+        "FK-PSH-19_cover.webp",
+        "FK-PSH-19_slide_01.webp",
+        "FK-PSH-19_slide_02.webp",
+        "FK-PSH-19_slide_03.webp",
+        "FK-PSH-19_slide_04.webp",
+        "FK-PSH-19_slide_05.webp",
+        "FK-PSH-19_slide_06.webp",
+        "FK-PSH-19_slide_07.webp",
+        "FK-PSH-19_slide_08.webp"
+      ],
+      "auxiliary_files": [
+        "FK-PSH-19_cover.jpg",
+        "FK-PSH-19_slide_01.jpg",
+        "FK-PSH-19_slide_02.jpg",
+        "FK-PSH-19_slide_03.jpg",
+        "FK-PSH-19_slide_04.jpg",
+        "FK-PSH-19_slide_05.jpg",
+        "FK-PSH-19_slide_06.jpg",
+        "FK-PSH-19_slide_07.jpg",
+        "FK-PSH-19_slide_08.jpg"
+      ]
+    },
+    "FK-PSH-22": {
+      "sku": "FK-PSH-22",
+      "cover": "FK-PSH-22_cover.webp",
+      "slides": [
+        "FK-PSH-22_slide_01.webp",
+        "FK-PSH-22_slide_02.webp",
+        "FK-PSH-22_slide_03.webp",
+        "FK-PSH-22_slide_04.webp",
+        "FK-PSH-22_slide_05.webp",
+        "FK-PSH-22_slide_06.webp",
+        "FK-PSH-22_slide_07.webp",
+        "FK-PSH-22_slide_08.webp"
+      ],
+      "files": [
+        "FK-PSH-22_cover.webp",
+        "FK-PSH-22_slide_01.webp",
+        "FK-PSH-22_slide_02.webp",
+        "FK-PSH-22_slide_03.webp",
+        "FK-PSH-22_slide_04.webp",
+        "FK-PSH-22_slide_05.webp",
+        "FK-PSH-22_slide_06.webp",
+        "FK-PSH-22_slide_07.webp",
+        "FK-PSH-22_slide_08.webp"
+      ],
+      "auxiliary_files": [
+        "FK-PSH-22_cover.jpg",
+        "FK-PSH-22_slide_01.jpg",
+        "FK-PSH-22_slide_02.jpg",
+        "FK-PSH-22_slide_03.jpg",
+        "FK-PSH-22_slide_04.jpg",
+        "FK-PSH-22_slide_05.jpg",
+        "FK-PSH-22_slide_06.jpg",
+        "FK-PSH-22_slide_07.jpg",
+        "FK-PSH-22_slide_08.jpg"
+      ]
+    },
+    "FK-PSH-24": {
+      "sku": "FK-PSH-24",
+      "cover": "FK-PSH-24_cover.webp",
+      "slides": [
+        "FK-PSH-24_slide_03.webp",
+        "FK-PSH-24_slide_04.webp",
+        "FK-PSH-24_slide_05.webp",
+        "FK-PSH-24_slide_06.webp",
+        "FK-PSH-24_slide_07.webp",
+        "FK-PSH-24_slide_08.webp"
+      ],
+      "files": [
+        "FK-PSH-24_cover.webp",
+        "FK-PSH-24_slide_03.webp",
+        "FK-PSH-24_slide_04.webp",
+        "FK-PSH-24_slide_05.webp",
+        "FK-PSH-24_slide_06.webp",
+        "FK-PSH-24_slide_07.webp",
+        "FK-PSH-24_slide_08.webp"
+      ],
+      "auxiliary_files": [
+        "FK-PSH-24_cover.jpg",
+        "FK-PSH-24_slide_03.jpg",
+        "FK-PSH-24_slide_04.jpg",
+        "FK-PSH-24_slide_05.jpg",
+        "FK-PSH-24_slide_06.jpg",
+        "FK-PSH-24_slide_07.jpg",
+        "FK-PSH-24_slide_08.jpg"
+      ]
+    },
+    "FK-PSH-30": {
+      "sku": "FK-PSH-30",
+      "cover": "FK-PSH-30_cover.webp",
+      "slides": [
+        "FK-PSH-30_slide_01.webp",
+        "FK-PSH-30_slide_02.webp",
+        "FK-PSH-30_slide_03.webp",
+        "FK-PSH-30_slide_04.webp",
+        "FK-PSH-30_slide_05.webp",
+        "FK-PSH-30_slide_06.webp",
+        "FK-PSH-30_slide_07.webp",
+        "FK-PSH-30_slide_08.webp"
+      ],
+      "files": [
+        "FK-PSH-30_cover.webp",
+        "FK-PSH-30_slide_01.webp",
+        "FK-PSH-30_slide_02.webp",
+        "FK-PSH-30_slide_03.webp",
+        "FK-PSH-30_slide_04.webp",
+        "FK-PSH-30_slide_05.webp",
+        "FK-PSH-30_slide_06.webp",
+        "FK-PSH-30_slide_07.webp",
+        "FK-PSH-30_slide_08.webp"
+      ],
+      "auxiliary_files": [
+        "FK-PSH-30_cover.jpg",
+        "FK-PSH-30_slide_01.jpg",
+        "FK-PSH-30_slide_02.jpg",
+        "FK-PSH-30_slide_03.jpg",
+        "FK-PSH-30_slide_04.jpg",
+        "FK-PSH-30_slide_05.jpg",
+        "FK-PSH-30_slide_06.jpg",
+        "FK-PSH-30_slide_07.jpg",
+        "FK-PSH-30_slide_08.jpg"
+      ]
+    },
+    "FK-PSH-37": {
+      "sku": "FK-PSH-37",
+      "cover": "FK-PSH-37_cover.webp",
+      "slides": [
+        "FK-PSH-37_slide_01.webp",
+        "FK-PSH-37_slide_02.webp",
+        "FK-PSH-37_slide_03.webp",
+        "FK-PSH-37_slide_04.webp",
+        "FK-PSH-37_slide_05.webp",
+        "FK-PSH-37_slide_06.webp",
+        "FK-PSH-37_slide_07.webp",
+        "FK-PSH-37_slide_08.webp"
+      ],
+      "files": [
+        "FK-PSH-37_cover.webp",
+        "FK-PSH-37_slide_01.webp",
+        "FK-PSH-37_slide_02.webp",
+        "FK-PSH-37_slide_03.webp",
+        "FK-PSH-37_slide_04.webp",
+        "FK-PSH-37_slide_05.webp",
+        "FK-PSH-37_slide_06.webp",
+        "FK-PSH-37_slide_07.webp",
+        "FK-PSH-37_slide_08.webp"
+      ],
+      "auxiliary_files": [
+        "FK-PSH-37_cover.jpg",
+        "FK-PSH-37_slide_01.jpg",
+        "FK-PSH-37_slide_02.jpg",
+        "FK-PSH-37_slide_03.jpg",
+        "FK-PSH-37_slide_04.jpg",
+        "FK-PSH-37_slide_05.jpg",
+        "FK-PSH-37_slide_06.jpg",
+        "FK-PSH-37_slide_07.jpg",
+        "FK-PSH-37_slide_08.jpg"
+      ]
+    },
+    "FK-PSH-63": {
+      "sku": "FK-PSH-63",
+      "cover": "FK-PSH-63_cover.webp",
+      "slides": [
+        "FK-PSH-63_slide_01.webp",
+        "FK-PSH-63_slide_02.webp",
+        "FK-PSH-63_slide_03.webp",
+        "FK-PSH-63_slide_04.webp",
+        "FK-PSH-63_slide_05.webp",
+        "FK-PSH-63_slide_06.webp",
+        "FK-PSH-63_slide_07.webp",
+        "FK-PSH-63_slide_08.webp"
+      ],
+      "files": [
+        "FK-PSH-63_cover.webp",
+        "FK-PSH-63_slide_01.webp",
+        "FK-PSH-63_slide_02.webp",
+        "FK-PSH-63_slide_03.webp",
+        "FK-PSH-63_slide_04.webp",
+        "FK-PSH-63_slide_05.webp",
+        "FK-PSH-63_slide_06.webp",
+        "FK-PSH-63_slide_07.webp",
+        "FK-PSH-63_slide_08.webp"
+      ],
+      "auxiliary_files": [
+        "FK-PSH-63_cover.jpg",
+        "FK-PSH-63_slide_01.jpg",
+        "FK-PSH-63_slide_02.jpg",
+        "FK-PSH-63_slide_03.jpg",
+        "FK-PSH-63_slide_04.jpg",
+        "FK-PSH-63_slide_05.jpg",
+        "FK-PSH-63_slide_06.jpg",
+        "FK-PSH-63_slide_07.jpg",
+        "FK-PSH-63_slide_08.jpg"
+      ]
+    },
     "ID-AUDIO-MASTER": {
       "sku": "ID-AUDIO-MASTER",
       "cover": "ID-AUDIO-MASTER_cover.webp",
@@ -19620,6 +20124,43 @@
         "TBB-DAV-RESOLVE_slide_06.jpg",
         "TBB-DAV-RESOLVE_slide_07.jpg",
         "TBB-DAV-RESOLVE_slide_08.jpg"
+      ]
+    },
+    "TBB-DIR-300G": {
+      "sku": "TBB-DIR-300G",
+      "cover": "TBB-DIR-300G_cover.webp",
+      "slides": [
+        "TBB-DIR-300G_slide_01.webp",
+        "TBB-DIR-300G_slide_02.webp",
+        "TBB-DIR-300G_slide_03.webp",
+        "TBB-DIR-300G_slide_04.webp",
+        "TBB-DIR-300G_slide_05.webp",
+        "TBB-DIR-300G_slide_06.webp",
+        "TBB-DIR-300G_slide_07.webp",
+        "TBB-DIR-300G_slide_08.webp"
+      ],
+      "files": [
+        "TBB-DIR-300G_cover.webp",
+        "TBB-DIR-300G_slide_01.webp",
+        "TBB-DIR-300G_slide_02.webp",
+        "TBB-DIR-300G_slide_03.webp",
+        "TBB-DIR-300G_slide_04.webp",
+        "TBB-DIR-300G_slide_05.webp",
+        "TBB-DIR-300G_slide_06.webp",
+        "TBB-DIR-300G_slide_07.webp",
+        "TBB-DIR-300G_slide_08.webp"
+      ],
+      "auxiliary_files": [
+        "TBB-DIR-300G_cover.jpg",
+        "TBB-DIR-300G_slide_01.jpg",
+        "TBB-DIR-300G_slide_02.jpg",
+        "TBB-DIR-300G_slide_03.jpg",
+        "TBB-DIR-300G_slide_04.jpg",
+        "TBB-DIR-300G_slide_05.jpg",
+        "TBB-DIR-300G_slide_06.jpg",
+        "TBB-DIR-300G_slide_07.jpg",
+        "TBB-DIR-300G_slide_08.jpg",
+        "TBB-DIR-300G_slide_spec.jpg"
       ]
     },
     "TBB-DOC-LEGAL": {
