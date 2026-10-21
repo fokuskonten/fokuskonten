@@ -25,7 +25,13 @@ export function extractSkuFromSlug(rawParam) {
   if (!rawParam) return ''
   const decoded = decodeURIComponent(rawParam).trim().toLowerCase()
   
-  // 0. Cek SKU khusus yang mengandung tanda hubung (hyphen)
+  // 0. Cek prefix SKU PowerShell: FK-PSH-[A-Z0-9]+ (bisa mandiri atau diikuti slug judul)
+  const pshMatch = decoded.match(/^(fk-psh-[a-z0-9]+)/i)
+  if (pshMatch) {
+    return pshMatch[1].toLowerCase()
+  }
+
+  // Cek SKU khusus yang mengandung tanda hubung (hyphen)
   const hyphenSkus = [
     'id-audio-master',
     'id-tek-smartphone',
@@ -51,6 +57,9 @@ export function extractSkuFromSlug(rawParam) {
   }
 
   // 3. Fallback regex pencarian pola SKU di mana saja dalam slug
+  const pshAnyMatch = decoded.match(/(fk-psh-[a-z0-9]+)/i)
+  if (pshAnyMatch) return pshAnyMatch[1].toLowerCase()
+
   const match = decoded.match(/(id[a-z0-9]+)/i)
   if (match) return match[1].toLowerCase()
 
