@@ -1,12 +1,8 @@
 {
-  "totalActive": 486,
-  "totalDesign": 486,
+  "totalActive": 415,
+  "totalDesign": 415,
   "totalEbook": 0,
   "designCategories": [
-    [
-      "Aplikasi",
-      99
-    ],
     [
       "The Big Bang",
       67
@@ -22,6 +18,10 @@
     [
       "Lembar Kerja Edukasi",
       31
+    ],
+    [
+      "Aplikasi",
+      28
     ],
     [
       "Video Konten",
@@ -99,10 +99,6 @@
   "ebookCategories": [],
   "categories": [
     [
-      "Aplikasi",
-      99
-    ],
-    [
       "The Big Bang",
       67
     ],
@@ -117,6 +113,10 @@
     [
       "Lembar Kerja Edukasi",
       31
+    ],
+    [
+      "Aplikasi",
+      28
     ],
     [
       "Video Konten",
@@ -197,16 +197,16 @@
       198
     ],
     [
-      "PWA",
-      99
-    ],
-    [
       "The Big Bang",
       67
     ],
     [
       "PDF",
       31
+    ],
+    [
+      "PWA",
+      28
     ],
     [
       "MP4",
@@ -304,28 +304,6 @@
         "tag": "Format .PWA"
       },
       {
-        "sku": "ID194F",
-        "title": "GenPharma - Software Kasir Apotek Penjualan Obat Cetak Struk Resep",
-        "category": "Aplikasi",
-        "format": "PWA",
-        "price": 17000,
-        "originalPrice": 75000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID194F/ID194F_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .PWA"
-      },
-      {
-        "sku": "ID28D0",
-        "title": "PharmaExpress - Software Kasir Apotek Cepat Kelola Stok Obat Masuk",
-        "category": "Aplikasi",
-        "format": "PWA",
-        "price": 17000,
-        "originalPrice": 75000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID28D0/ID28D0_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .PWA"
-      },
-      {
         "sku": "ID49CC",
         "title": "KotakInfaqDigital - Aplikasi Hitung Kotak Amal Masjid Laporan Kas",
         "category": "Aplikasi",
@@ -359,14 +337,36 @@
         "tag": "PWA"
       },
       {
-        "sku": "IDF3F3",
-        "title": "MediCareClinic - Software Pasien Klinik Periksa Dokter Dan Kasir Obat",
+        "sku": "IDE356",
+        "title": "NetBilling - Software Tagihan WiFi RT RW Net Billing Isolir Pelanggan",
         "category": "Aplikasi",
         "format": "PWA",
-        "price": 17000,
-        "originalPrice": 90000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDF3F3/IDF3F3_cover.webp",
+        "price": 10000,
+        "originalPrice": 32000,
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDE356/IDE356_cover.webp",
+        "badge": "Terlaris",
+        "tag": "PWA"
+      },
+      {
+        "sku": "IDCAD2",
+        "title": "SimpanPinjamPlus - Software Koperasi Simpan Pinjam Angsuran Bunga",
+        "category": "Aplikasi",
+        "format": "PWA",
+        "price": 20000,
+        "originalPrice": 60000,
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDCAD2/IDCAD2_cover.webp",
         "badge": "Unggulan",
+        "tag": "PWA"
+      },
+      {
+        "sku": "IDB9E4",
+        "title": "PrintMaster - Software Kasir Percetakan Brosur Spanduk Dan Rekap Order Nota",
+        "category": "Aplikasi",
+        "format": "PWA",
+        "price": 5000,
+        "originalPrice": 28000,
+        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDB9E4/IDB9E4_cover.webp",
+        "badge": "Terlaris",
         "tag": "PWA"
       }
     ],
@@ -641,7 +641,7 @@
       }
     ]
   },
-  "totalProducts": 486,
-  "lastUpdated": "2026-10-21T17:44:53.392Z",
+  "totalProducts": 415,
+  "lastUpdated": "2026-10-23T17:00:21.321Z",
   "totalEcourse": 0
 }
