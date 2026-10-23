@@ -133,13 +133,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fokuskonten.my.id/toko-digital/id-tek-laptop/</loc>
+    <loc>https://fokuskonten.my.id/toko-digital/id-tek-smartphone/</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fokuskonten.my.id/toko-digital/id-tek-smartphone/</loc>
+    <loc>https://fokuskonten.my.id/toko-digital/id-tek-laptop/</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -2827,6 +2827,18 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://fokuskonten.my.id/toko-digital/id-tek-laptop/fullpreview/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://fokuskonten.my.id/toko-digital/id-tek-smartphone/fullpreview/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://fokuskonten.my.id/toko-digital/id01a0/fullpreview/</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -4837,88 +4849,16 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-ae-ext/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-ae-ext/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://fokuskonten.my.id/toko-digital/tbb-ae-proj/fullpreview/</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-all-exclusive/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-all-exclusive/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-anm-bloop/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-anm-bloop/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://fokuskonten.my.id/toko-digital/tbb-anm-studio/fullpreview/</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-apk-android/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-apk-android/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-art-artstation/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-art-artstation/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-atm-atmosfx/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-atm-atmosfx/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fokuskonten.my.id/toko-digital/tbb-atx-atomx/fullpreview/</loc>
@@ -4933,66 +4873,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-bgd-studio/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-bgd-studio/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-brd-template/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-brd-template/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-brs-mega/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-brs-mega/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-bst-seller/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-bst-seller/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-crd-business/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-crd-business/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://fokuskonten.my.id/toko-digital/tbb-crv-5daydeal/fullpreview/</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -5003,30 +4883,6 @@
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-dir-300g/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-dir-300g/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-doc-legal/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-doc-legal/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fokuskonten.my.id/toko-digital/tbb-edu-ecourse/fullpreview/</loc>
@@ -5041,64 +4897,16 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-fcp-studio/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-fcp-studio/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://fokuskonten.my.id/toko-digital/tbb-fnt-mega/fullpreview/</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-gam-iso/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-gam-iso/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://fokuskonten.my.id/toko-digital/tbb-gra-flyer/fullpreview/</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-gra-inkydeals/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-gra-inkydeals/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-inv-wedding/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-inv-wedding/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fokuskonten.my.id/toko-digital/tbb-knt-all/fullpreview/</loc>
@@ -5108,6 +4916,12 @@
   </url>
   <url>
     <loc>https://fokuskonten.my.id/toko-digital/tbb-lgt-preset/fullpreview/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://fokuskonten.my.id/toko-digital/tbb-lib-16k/fullpreview/</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -5131,42 +4945,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-mot-myfx/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-mot-myfx/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-mot-xmotion/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-mot-xmotion/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-ovl-cinema/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-ovl-cinema/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://fokuskonten.my.id/toko-digital/tbb-ppt-exp/fullpreview/</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -5183,18 +4961,6 @@
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-ps-plugin/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-ps-plugin/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fokuskonten.my.id/toko-digital/tbb-psd-mockup/fullpreview/</loc>
@@ -5215,70 +4981,10 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-str-blkmarket/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-str-blkmarket/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-tek-hp5200/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-tek-hp5200/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-tek-lap960/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-tek-lap960/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-tex-pattern/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-tex-pattern/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://fokuskonten.my.id/toko-digital/tbb-tsh-distro/fullpreview/</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-txt-effect/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-txt-effect/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fokuskonten.my.id/toko-digital/tbb-vec-illust/fullpreview/</loc>
@@ -5287,58 +4993,10 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-vfx-acidbite/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-vfx-acidbite/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-vfx-akvstudio/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-vfx-akvstudio/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://fokuskonten.my.id/toko-digital/tbb-vfx-bigfilms/fullpreview/</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-vfx-cinepacks/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-vfx-cinepacks/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-vfx-fxmonster/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-vfx-fxmonster/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fokuskonten.my.id/toko-digital/tbb-vfx-lensdistortion/fullpreview/</loc>
@@ -5347,58 +5005,10 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-vfx-reelburn/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-vfx-reelburn/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-vfx-studioplanet/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-vfx-studioplanet/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-vfx-videocopilot/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-vfx-videocopilot/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://fokuskonten.my.id/toko-digital/tbb-vid-640studio/fullpreview/</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-vid-busyboxx/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-vid-busyboxx/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fokuskonten.my.id/toko-digital/tbb-vid-easyedit/fullpreview/</loc>
@@ -5407,46 +5017,10 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-vid-ext/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-vid-ext/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-vid-ezco/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-vid-ezco/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://fokuskonten.my.id/toko-digital/tbb-vid-pb87/fullpreview/</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-vid-proj/fullpreview/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fokuskonten.my.id/toko-digital/tbb-vid-proj/</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fokuskonten.my.id/toko-digital/tbb-wtc-floral/fullpreview/</loc>

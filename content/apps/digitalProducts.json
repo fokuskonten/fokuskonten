@@ -1,42 +1,5 @@
 [
   {
-    "id": "id-tek-laptop",
-    "sku": "ID-TEK-LAPTOP",
-    "name": "Mega Cloud Direktori Teknisi Laptop Master 2.040+ Skematik & Boardview",
-    "title": "Mega Cloud Direktori Teknisi Laptop Master 2.040+ Skematik & Boardview",
-    "category": "The Big Bang",
-    "format": "The Big Bang",
-    "tag": "The Big Bang",
-    "badge": "2.040+ SKEMA",
-    "price": 200000,
-    "originalPrice": 750000,
-    "is_published": 1,
-    "isPublished": true,
-    "rating": 5,
-    "reviewsCount": 120,
-    "salesCount": 450,
-    "image": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID-TEK-LAPTOP/ID-TEK-LAPTOP_cover.webp",
-    "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID-TEK-LAPTOP/ID-TEK-LAPTOP_cover.webp",
-    "gallery": [
-      "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID-TEK-LAPTOP/ID-TEK-LAPTOP_cover.webp"
-    ],
-    "description": "PRODUK: Mega Cloud Direktori Teknisi Laptop Master 2.000+ Skematik & Boardview\nKODE SKU: ID-TEK-LAPTOP\nKATEGORI: The Big Bang\n\nRINGKASAN PRODUK:\nDirektori referensi teknisi laptop komprehensif. Menghimpun ribuan berkas skema jalur PCB (motherboard), boardview interaktif, dan arsip BIOS dump untuk berbagai merek perangkat komputasi. Digunakan sebagai panduan pemetaan jalur komponen dalam proses analisis dan perbaikan perangkat keras.\n\nKELENGKAPAN & ISI MODUL:\n• Format Master File: Skema, Boardview & BIOS (.PDF/.BRD/.CAD/.BIN)\n• Total Kelengkapan: 2.042+ File Master Teknikal\n• Total Ukuran Data Fisik: Mega Cloud Storage (Akses langsung tanpa memenuhi memori lokal)\n• Standar Struktur: Hierarki Merek (Asus, Acer, Lenovo, HP, Dell, MacBook, MSI)\n• Modul 01 - Schematic Diagram: Pemetaan jalur arus PDF\n• Modul 02 - Boardview Files: Denah tata letak komponen PCB\n• Modul 03 - BIOS Dump: File sistem dasar siap flash\n• Modul 04 - Panduan Servis: Referensi pembacaan sirkuit\n• Kompatibilitas Penampil: Penampil PDF & Perangkat Lunak Boardview (PC/Laptop Windows)\n• Fleksibilitas Akses: Akses Seumur Hidup (Bebas unduh file satuan sesuai kebutuhan pengerjaan)\n\nSTANDAR PENGIRIMAN & AKSES LAYANAN:\n• Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n• Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n• Dual Cloud Mirror Backup: Didukung server cadangan resmi berkecepatan tinggi (FokusKonten & FokusAkustik) untuk menjamin kelancaran unduhan 24/7 tanpa kendala downtime.\n• Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n• Lisensi Fleksibel: Materi pembelajaran dapat diunduh dan diarsipkan secara permanen untuk referensi mandiri berkelanjutan.\n\nPANDUAN PEMESANAN:\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.\n3. Cek email Anda untuk mengarsipkan invoice resmi pesanan Anda.",
-    "driveLink": null,
-    "backupDriveLink": null,
-    "features": [
-      "Mega Cloud Storage Direktori Terlengkap",
-      "Akses Unduh & Referensi Seumur Hidup (Lifetime)",
-      "Struktur Modul Terklasifikasi & Rapi",
-      "Dukungan Update Berkelanjutan"
-    ],
-    "specifications": {
-      "Format": "The Big Bang Master",
-      "Kompatibilitas": "Semua Perangkat (PC, Laptop, Smartphone, Tablet)",
-      "Kategori": "The Big Bang",
-      "Pengiriman": "Akses Instan di Dashboard Akun Web"
-    }
-  },
-  {
     "id": "id-tek-smartphone",
     "sku": "ID-TEK-SMARTPHONE",
     "name": "Mega Cloud Direktori Teknisi Smartphone Master 10.000+ Model Multi-Brand",
@@ -58,6 +21,43 @@
       "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID-TEK-SMARTPHONE/ID-TEK-SMARTPHONE_cover.webp"
     ],
     "description": "PRODUK: Mega Cloud Direktori Teknisi Smartphone Master 10.000+ Model Multi-Brand\nKODE SKU: ID-TEK-SMARTPHONE\nKATEGORI: The Big Bang\n\nRINGKASAN PRODUK:\nDirektori referensi teknisi ponsel pintar tingkat lanjut. Menyediakan lebih dari puluhan ribu pustaka skematik perangkat keras lintas merek, titik Test Point, ISP Pinout, dan arsip Firmware fungsional untuk perbaikan hardware, pemulihan sistem boot, dan kalibrasi sinyal.\n\nKELENGKAPAN & ISI MODUL:\n• Format Master File: Skematik, Pinout & Firmware (.PDF/.PNG/.BIN)\n• Total Kelengkapan: 10.002+ File Referensi Teknikal\n• Total Ukuran Data Fisik: Mega Cloud Storage (Akses langsung per merek)\n• Standar Struktur: Terorganisasi berdasarkan Modul (Test Point, Pinout ISP, Firmware, Skema)\n• Modul 01 - Skematik & Hardware: Denah sirkuit ponsel\n• Modul 02 - ISP Pinout & Test Point: Titik Direct eMMC/UFS/EDL\n• Modul 03 - Firmware & Loaders: Berkas pemulihan Qualcomm/MediaTek\n• Modul 04 - Tools & Drivers: Perangkat lunak pendukung teknisi\n• Kompatibilitas Penampil: Semua Perangkat Windows (PC/Laptop)\n• Fleksibilitas Akses: Bebas diunduh satuan kapan pun saat unit masuk untuk perbaikan\n\nSTANDAR PENGIRIMAN & AKSES LAYANAN:\n• Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n• Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n• Dual Cloud Mirror Backup: Didukung server cadangan resmi berkecepatan tinggi (FokusKonten & FokusAkustik) untuk menjamin kelancaran unduhan 24/7 tanpa kendala downtime.\n• Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n• Lisensi Fleksibel: Materi pembelajaran dapat diunduh dan diarsipkan secara permanen untuk referensi mandiri berkelanjutan.\n\nPANDUAN PEMESANAN:\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.\n3. Cek email Anda untuk mengarsipkan invoice resmi pesanan Anda.",
+    "driveLink": null,
+    "backupDriveLink": null,
+    "features": [
+      "Mega Cloud Storage Direktori Terlengkap",
+      "Akses Unduh & Referensi Seumur Hidup (Lifetime)",
+      "Struktur Modul Terklasifikasi & Rapi",
+      "Dukungan Update Berkelanjutan"
+    ],
+    "specifications": {
+      "Format": "The Big Bang Master",
+      "Kompatibilitas": "Semua Perangkat (PC, Laptop, Smartphone, Tablet)",
+      "Kategori": "The Big Bang",
+      "Pengiriman": "Akses Instan di Dashboard Akun Web"
+    }
+  },
+  {
+    "id": "id-tek-laptop",
+    "sku": "ID-TEK-LAPTOP",
+    "name": "Mega Cloud Direktori Teknisi Laptop Master 2.040+ Skematik & Boardview",
+    "title": "Mega Cloud Direktori Teknisi Laptop Master 2.040+ Skematik & Boardview",
+    "category": "The Big Bang",
+    "format": "The Big Bang",
+    "tag": "The Big Bang",
+    "badge": "2.040+ SKEMA",
+    "price": 200000,
+    "originalPrice": 750000,
+    "is_published": 1,
+    "isPublished": true,
+    "rating": 5,
+    "reviewsCount": 120,
+    "salesCount": 450,
+    "image": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID-TEK-LAPTOP/ID-TEK-LAPTOP_cover.webp",
+    "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID-TEK-LAPTOP/ID-TEK-LAPTOP_cover.webp",
+    "gallery": [
+      "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID-TEK-LAPTOP/ID-TEK-LAPTOP_cover.webp"
+    ],
+    "description": "PRODUK: Mega Cloud Direktori Teknisi Laptop Master 2.000+ Skematik & Boardview\nKODE SKU: ID-TEK-LAPTOP\nKATEGORI: The Big Bang\n\nRINGKASAN PRODUK:\nDirektori referensi teknisi laptop komprehensif. Menghimpun ribuan berkas skema jalur PCB (motherboard), boardview interaktif, dan arsip BIOS dump untuk berbagai merek perangkat komputasi. Digunakan sebagai panduan pemetaan jalur komponen dalam proses analisis dan perbaikan perangkat keras.\n\nKELENGKAPAN & ISI MODUL:\n• Format Master File: Skema, Boardview & BIOS (.PDF/.BRD/.CAD/.BIN)\n• Total Kelengkapan: 2.042+ File Master Teknikal\n• Total Ukuran Data Fisik: Mega Cloud Storage (Akses langsung tanpa memenuhi memori lokal)\n• Standar Struktur: Hierarki Merek (Asus, Acer, Lenovo, HP, Dell, MacBook, MSI)\n• Modul 01 - Schematic Diagram: Pemetaan jalur arus PDF\n• Modul 02 - Boardview Files: Denah tata letak komponen PCB\n• Modul 03 - BIOS Dump: File sistem dasar siap flash\n• Modul 04 - Panduan Servis: Referensi pembacaan sirkuit\n• Kompatibilitas Penampil: Penampil PDF & Perangkat Lunak Boardview (PC/Laptop Windows)\n• Fleksibilitas Akses: Akses Seumur Hidup (Bebas unduh file satuan sesuai kebutuhan pengerjaan)\n\nSTANDAR PENGIRIMAN & AKSES LAYANAN:\n• Akses Instan di Dashboard: File master otomatis aktif seketika di Dashboard Akun Anda pada menu \"Aset Digital\" setelah pembayaran terverifikasi.\n• Invoice Resmi via Email: Bukti transaksi dan invoice resmi otomatis dikirimkan ke email Anda, lengkap dengan akses langsung menuju file pesanan.\n• Dual Cloud Mirror Backup: Didukung server cadangan resmi berkecepatan tinggi (FokusKonten & FokusAkustik) untuk menjamin kelancaran unduhan 24/7 tanpa kendala downtime.\n• Cloud Storage Berkecepatan Tinggi: Terhubung ke server Google Drive berkecepatan tinggi, bebas hambatan download, dan akses seumur hidup (Lifetime Access).\n• Lisensi Fleksibel: Materi pembelajaran dapat diunduh dan diarsipkan secara permanen untuk referensi mandiri berkelanjutan.\n\nPANDUAN PEMESANAN:\n1. Klik tombol \"Beli Sekarang\", pilih metode pembayaran (QRIS / Virtual Account), dan selesaikan transaksi.\n2. Setelah pembayaran sukses, file master langsung terbuka dan siap diunduh di Dashboard Akun Anda.\n3. Cek email Anda untuk mengarsipkan invoice resmi pesanan Anda.",
     "driveLink": null,
     "backupDriveLink": null,
     "features": [
