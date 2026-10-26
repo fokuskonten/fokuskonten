@@ -15,8 +15,8 @@ const featuredProducts = [
     badge: 'Apotek POS',
     description: 'Sistem kasir dan manajemen apotek modern. Pencatatan stok obat, deteksi batch kadaluarsa, resep dokter, dan cetak struk printer Bluetooth thermal offline-first.',
     icon: '/app-icons/apotekpro.png',
-    href: '/aplikasi/apotekpro',
-    actionText: 'Lihat Detail',
+    href: '/landpage/apotekpro',
+    actionText: 'Lihat Landing Page',
     type: 'app',
   },
   {
@@ -26,8 +26,8 @@ const featuredProducts = [
     badge: 'Retail POS',
     description: 'Aplikasi kasir praktis toko kelontong & sembako. Scan barcode cepat, pencatatan hutang pelanggan, dan rekap omzet harian instan.',
     icon: '/app-icons/tokokelontongpro.png',
-    href: '/aplikasi/tokokelontongpro',
-    actionText: 'Lihat Detail',
+    href: '/landpage/tokokelontongpro',
+    actionText: 'Lihat Landing Page',
     type: 'app',
   },
   {

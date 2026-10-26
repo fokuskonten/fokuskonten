@@ -119,33 +119,53 @@ export default function TokoKelontongProDedicatedSalesPage() {
   const targetAudiences = [
     {
       role: 'Pemilik Toko Sembako, Agen Grosir & Juragan Warung',
-      badge: 'Pemilik Toko & Pengelola Usaha',
-      badgeColor: 'text-blue-700',
+      badge: 'Pemilik Toko, Pengelola Modal & Juragan Grosir',
+      badgeColor: 'text-sky-700',
       img: '/screenshots/tokokelontongpro/human/laki.png',
       alt: 'Pemilik Toko Sembako Kelontong Pro',
-      gradient: 'from-blue-50/60 via-white to-white',
+      gradient: 'from-sky-50/80 via-sky-50/30 to-white',
+      floatingBadge: 'Audit Keuntungan Bersih & Bon Utang',
+      floatingPill: 'Kontrol Stok Dus, Kulakan & Modal HPP',
       desc: 'Cocok bagi pemilik toko kelontong mandiri, agen sembako, dan pedagang grosir yang ingin mengawasi uang kasir, memantau buku bon utang warga, dan memastikan untung warung tidak bocor.',
-      points: [
-        'Ketahui keuntungan bersih harian dan modal barang terjual otomatis',
-        'Buku bon utang warga tercatat rapi lengkap dengan tanggal jatuh tempo',
-        'Cek sisa stok di rak warung lebih cepat tanpa perlu hitung manual berulang',
-        'Seluruh data warung tersimpan privat di handphone Anda sendiri',
+      tags: [
+        'Laporan Laba Harian',
+        'Buku Bon Utang Warga',
+        'Daftar Kulakan Habis',
+        'Stock Opname Cepat',
+        'Proteksi Modal HPP',
       ],
+      points: [
+        'Ketahui keuntungan bersih harian dan modal barang terjual secara otomatis tanpa rekap buku folio',
+        'Buku bon utang warga tercatat rapi lengkap dengan tanggal jatuh tempo dan tombol tagih WhatsApp',
+        'Cek sisa stok di rak warung lebih cepat dengan peringatan batas minimum barang kulakan',
+        'Seluruh data penjualan tersimpan privat di handphone Anda sendiri tanpa biaya sewa selamanya',
+      ],
+      metric: 'Bebas Sewa Bulanan • 100% Data Dagangan Aman Tersimpan di HP',
     },
     {
       role: 'Kasir Toko Kelontong, Penjaga Warung & Anggota Keluarga',
-      badge: 'Kasir & Pelayanan Penjualan',
+      badge: 'Pelayanan Penjualan Kasir & Front Office',
       badgeColor: 'text-emerald-700',
       img: '/screenshots/tokokelontongpro/human/girl.png',
       alt: 'Kasir Toko Kelontong Pro',
-      gradient: 'from-emerald-50/70 via-white to-white',
-      desc: 'Sangat mudah dipakai oleh penjaga warung, anak, atau kasir baru. Tampilan tombol besar dan jelas membuat siapa pun langsung lancar melayani pembeli dalam hitungan menit.',
-      points: [
-        'Scan barcode kemasan kilat pakai kamera HP tanpa repot beli alat scanner',
-        'Pecah harga otomatis saat pembeli membeli eceran dari kemasan karton',
-        'Cetak nota struk belanja bluetooth dan bagikan bukti bayar ke WhatsApp',
-        'Menu kasir berbahasa Indonesia sederhana, mudah dipahami orang awam',
+      gradient: 'from-emerald-50/80 via-emerald-50/30 to-white',
+      floatingBadge: 'Scan Barcode Kamera Cepat 1 Detik',
+      floatingPill: 'Pecah Dus ke Renceng & Struk Bluetooth',
+      desc: 'Sangat mudah dipakai oleh penjaga warung, anak, atau kasir baru. Tampilan tombol besar dan jelas membuat siapa pun langsung lancar melayani pembeli dalam hitungan menit tanpa bingung.',
+      tags: [
+        'Scan Barcode HP',
+        'Pecah Satuan Dus',
+        'Cetak Struk Thermal',
+        'Hitung Kembalian Otomatis',
+        'Kirim Nota WhatsApp',
       ],
+      points: [
+        'Scan barcode kemasan kilat pakai kamera HP tanpa repot beli alat scanner barcode tambahan',
+        'Pecah harga otomatis saat pembeli membeli eceran dari kemasan karton atau rencengan',
+        'Cetak nota struk belanja bluetooth dan bagikan bukti bayar ke nomor WhatsApp pembeli',
+        'Menu kasir berbahasa Indonesia sederhana, mudah dipahami orang awam tanpa pelatihan rumit',
+      ],
+      metric: 'Layanan Antrean 3x Lebih Kilat • Kasir Tetap Bekerja Lancar Tanpa Kuota',
     },
   ]
 
@@ -340,7 +360,7 @@ export default function TokoKelontongProDedicatedSalesPage() {
 
       {/* ── BREADCRUMB & STATUS NAVIGASI ──────────────────────────────── */}
       <div className="pt-24 sm:pt-28 pb-4 bg-neutral-50/70 border-b border-neutral-100">
-        <div className="container-page max-w-5xl mx-auto px-4 sm:px-6 flex items-center justify-between text-xs font-mono">
+        <div className="container-page max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between text-xs font-mono">
           <div className="flex items-center gap-2 text-neutral-500">
             <Link href="/" className="hover:text-black transition-colors">Beranda</Link>
             <span>/</span>
@@ -356,9 +376,9 @@ export default function TokoKelontongProDedicatedSalesPage() {
 
       {/* ── HERO SALES SECTION ─────────────────────────────────────────── */}
       <section className="pt-12 sm:pt-16 pb-16 bg-white border-b border-neutral-200/80">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
-          <h1 className="heading-xl text-3xl sm:text-5xl lg:text-6xl text-neutral-950 tracking-tight leading-tight sm:leading-none mb-6 text-balance">
+          <h1 className="heading-xl text-3xl sm:text-5xl lg:text-6xl text-neutral-950 tracking-tight leading-tight sm:leading-none mb-6 text-balance max-w-5xl mx-auto">
             Kasir Toko Kelontong &amp; Sembako Cepat <br className="hidden sm:inline" />
             Beli Dus Jual Renceng, Bebas Iuran Bulanan
           </h1>
@@ -368,7 +388,7 @@ export default function TokoKelontongProDedicatedSalesPage() {
           </p>
 
           {/* DUA TOMBOL AKSI UTAMA — GOOGLE PLAY SEBAGAI PRIMADONA */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-10 max-w-xl mx-auto">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-12 max-w-xl mx-auto">
             <a
               href={playTestingWebUrl}
               target="_blank"
@@ -398,7 +418,7 @@ export default function TokoKelontongProDedicatedSalesPage() {
           </div>
 
           {/* BANNER FEATURE GRAPHIC RESMI */}
-          <div className="rounded-3xl overflow-hidden border border-neutral-200/80 shadow-[0_4px_24px_-4px_rgba(0,0,0,0.08)] max-w-4xl mx-auto mb-12 bg-white">
+          <div className="rounded-3xl overflow-hidden border border-neutral-200/80 shadow-[0_4px_24px_-4px_rgba(0,0,0,0.08)] max-w-6xl mx-auto mb-12 bg-white">
             <img
               src="/screenshots/tokokelontongpro/hero_banner_pos.png"
               alt="Kelontong Pro Commercial Hero Banner"
@@ -407,40 +427,48 @@ export default function TokoKelontongProDedicatedSalesPage() {
           </div>
 
           {/* 4 STATS GRID DENGAN IKON 3D MENONJOL BEBAS TANPA KOTAK */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-4xl mx-auto p-6 sm:p-7 rounded-3xl bg-neutral-50 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto p-6 sm:p-8 rounded-3xl bg-neutral-50 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
             <div className="p-3 text-center flex flex-col items-center">
-              <img
-                src="/app-icons/kelontongpro/3d/stat_offline.png"
-                alt="Kasir 100% Offline"
-                className="w-14 h-14 sm:w-16 sm:h-16 object-contain mb-3 drop-shadow-md hover:scale-110 transition-transform"
-              />
+              <div className="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center mb-3">
+                <img
+                  src="/app-icons/kelontongpro/3d/stat_offline.png"
+                  alt="Kasir 100% Offline"
+                  className="max-w-full max-h-full object-contain drop-shadow-md hover:scale-110 transition-transform"
+                />
+              </div>
               <div className="font-display text-2xl sm:text-3xl font-bold text-neutral-950">Tanpa Kuota</div>
               <div className="text-xs text-neutral-500 font-medium mt-1">Kasir 100% Offline</div>
             </div>
             <div className="p-3 text-center flex flex-col items-center">
-              <img
-                src="/app-icons/kelontongpro/3d/stat_scanner.png"
-                alt="Scan Barcode Kilat"
-                className="w-14 h-14 sm:w-16 sm:h-16 object-contain mb-3 drop-shadow-md hover:scale-110 transition-transform"
-              />
+              <div className="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center mb-3">
+                <img
+                  src="/app-icons/kelontongpro/3d/stat_scanner.png"
+                  alt="Scan Barcode Kilat"
+                  className="max-w-full max-h-full object-contain drop-shadow-md hover:scale-110 transition-transform"
+                />
+              </div>
               <div className="font-display text-2xl sm:text-3xl font-bold text-neutral-950">1 Detik</div>
               <div className="text-xs text-neutral-500 font-medium mt-1">Scan Barcode Kilat</div>
             </div>
             <div className="p-3 text-center flex flex-col items-center">
-              <img
-                src="/app-icons/kelontongpro/3d/stat_satuan.png"
-                alt="Pecah Dus ke Eceran"
-                className="w-14 h-14 sm:w-16 sm:h-16 object-contain mb-3 drop-shadow-md hover:scale-110 transition-transform"
-              />
+              <div className="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center mb-3">
+                <img
+                  src="/app-icons/kelontongpro/3d/stat_satuan.png"
+                  alt="Pecah Dus ke Eceran"
+                  className="max-w-full max-h-full object-contain drop-shadow-md hover:scale-110 transition-transform"
+                />
+              </div>
               <div className="font-display text-2xl sm:text-3xl font-bold text-neutral-950">Otomatis</div>
               <div className="text-xs text-neutral-500 font-medium mt-1">Pecah Dus ke Eceran</div>
             </div>
             <div className="p-3 text-center flex flex-col items-center">
-              <img
-                src="/app-icons/kelontongpro/3d/stat_rp0.png"
-                alt="Rp 0 Bebas Iuran"
-                className="w-14 h-14 sm:w-16 sm:h-16 object-contain mb-3 drop-shadow-md hover:scale-110 transition-transform"
-              />
+              <div className="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center mb-3">
+                <img
+                  src="/app-icons/kelontongpro/3d/stat_rp0.png"
+                  alt="Rp 0 Bebas Iuran"
+                  className="max-w-full max-h-full object-contain drop-shadow-md hover:scale-110 transition-transform"
+                />
+              </div>
               <div className="font-display text-2xl sm:text-3xl font-bold text-neutral-950">Rp 0</div>
               <div className="text-xs text-neutral-500 font-medium mt-1">Bebas Iuran Bulanan</div>
             </div>
@@ -454,8 +482,8 @@ export default function TokoKelontongProDedicatedSalesPage() {
 
       {/* ── PAIN POINTS SECTION ────────────────────────────────────────── */}
       <section className="py-20 bg-neutral-50/60 border-b border-neutral-200/80">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-2xl mx-auto mb-14">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-14">
             <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3 block">Tantangan Nyata Warung Sembako</span>
             <h2 className="heading-xl text-2xl sm:text-4xl text-neutral-950 mb-3">
               Apakah Masalah Ini Sering Terjadi di Warung Anda?
@@ -465,13 +493,29 @@ export default function TokoKelontongProDedicatedSalesPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {painPoints.map((item, idx) => (
-              <div key={idx} className="p-6 sm:p-7 rounded-3xl bg-white border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
-                <h3 className="font-display text-base sm:text-lg font-bold text-neutral-950 mb-2">{item.title}</h3>
-                <p className="text-neutral-600 text-xs sm:text-sm leading-relaxed">{item.desc}</p>
+              <div key={idx} className="p-6 sm:p-7 rounded-3xl bg-white border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between">
+                <div>
+                  <h3 className="font-display text-base sm:text-lg font-bold text-neutral-950 mb-2.5 leading-snug">{item.title}</h3>
+                  <p className="text-neutral-600 text-xs sm:text-sm leading-relaxed font-sans">{item.desc}</p>
+                </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+
+      {/* ── BANNER PROMOSI LANDSCAPE 16:9 KEDUA ───────────────────────────── */}
+      <section className="py-16 bg-neutral-50/70 border-b border-neutral-200/80">
+        <div className="container-page">
+          <div className="rounded-3xl overflow-hidden border border-neutral-200/80 shadow-[0_4px_24px_-4px_rgba(0,0,0,0.08)] max-w-6xl mx-auto bg-white">
+            <img
+              src="/screenshots/tokokelontongpro/hero_banner_landscape.png"
+              alt="Kelontong Pro Solusi Kasir Sembako Modern"
+              className="w-full h-auto object-cover"
+            />
           </div>
         </div>
       </section>
@@ -485,7 +529,7 @@ export default function TokoKelontongProDedicatedSalesPage() {
 
       {/* ── 8 MODUL RITEL TOKO LENGKAP ─────────────────────────────────── */}
       <section className="py-24 bg-white border-b border-neutral-200/80">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3.5 block">8 Modul Kasir Toko</span>
             <h2 className="heading-xl text-3xl sm:text-5xl text-neutral-950 mb-4 tracking-tight">
@@ -514,11 +558,13 @@ export default function TokoKelontongProDedicatedSalesPage() {
                       </h3>
                     </div>
                     {m.icon && (
-                      <img
-                        src={m.icon}
-                        alt={m.headline}
-                        className="w-16 h-16 sm:w-20 sm:h-20 object-contain shrink-0 drop-shadow-md group-hover:scale-110 transition-transform duration-300"
-                      />
+                      <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center shrink-0">
+                        <img
+                          src={m.icon}
+                          alt={m.headline}
+                          className="max-w-full max-h-full object-contain drop-shadow-md group-hover:scale-110 transition-transform duration-300"
+                        />
+                      </div>
                     )}
                   </div>
                   <p className="text-xs sm:text-sm font-medium text-neutral-600 font-sans leading-relaxed mb-6 pb-4 border-b border-neutral-100">
@@ -546,36 +592,52 @@ export default function TokoKelontongProDedicatedSalesPage() {
         </div>
       </section>
 
-      {/* ── SECTION: TARGET PENGGUNA RESMI (FOTO CUTOUT TRANSPARAN) ──────── */}
+      {/* ── SECTION: TARGET PENGGUNA RESMI (DUAL PERSONA SHOWCASE LAPANG) ── */}
       <section className="py-24 bg-neutral-50/70 border-b border-neutral-200/80">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-2xl mx-auto mb-14">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3.5 block">Target Pengguna</span>
-            <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-950 mb-3 tracking-tight">
+            <h2 className="heading-xl text-3xl sm:text-5xl text-neutral-950 mb-4 tracking-tight">
               Sangat Tepat Digunakan Untuk Siapa?
             </h2>
-            <p className="text-neutral-600 text-sm sm:text-base leading-relaxed font-sans">
+            <p className="text-neutral-600 text-sm sm:text-base leading-relaxed font-sans max-w-2xl mx-auto">
               Dibuat khusus untuk mendukung operasional harian warung sembako, toko kelontong, dan agen grosir di seluruh Indonesia:
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
             {targetAudiences.map((aud, i) => (
               <div
                 key={i}
-                className="rounded-3xl overflow-hidden border border-neutral-200/90 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] bg-white flex flex-col justify-between hover:shadow-xl hover:border-neutral-400 transition-all duration-300 group"
+                className="rounded-3xl overflow-hidden border border-neutral-200/90 shadow-[0_4px_24px_-4px_rgba(0,0,0,0.07)] bg-white flex flex-col justify-between hover:shadow-2xl hover:border-neutral-400 transition-all duration-300 group"
               >
-                {/* Foto Cutout Persona Header Bersih Transparan */}
-                <div className={`bg-gradient-to-b ${aud.gradient} pt-8 px-6 flex justify-center items-end border-b border-neutral-100 relative overflow-hidden h-72 sm:h-80`}>
+                {/* Visual Model Persona Proporsional Tinggi Menonjol */}
+                <div className={`bg-gradient-to-b ${aud.gradient} pt-8 px-6 flex justify-center items-end border-b border-neutral-100 relative overflow-hidden h-[420px] sm:h-[480px] lg:h-[500px]`}>
+                  {/* Floating Status Badge di Atas */}
+                  <div className="absolute top-4 left-4 right-4 flex items-center justify-between pointer-events-none z-10">
+                    <span className="px-3.5 py-1.5 rounded-full bg-white/95 text-neutral-900 text-xs font-mono font-semibold shadow-md backdrop-blur-sm border border-neutral-200/80 flex items-center gap-2">
+                      <span className="w-2 h-2 rounded-full bg-sky-500 animate-pulse"></span>
+                      <span>{aud.floatingBadge}</span>
+                    </span>
+                  </div>
+
+                  {/* Foto Model Persona Utuh */}
                   <img
                     src={aud.img}
                     alt={aud.alt}
-                    className="h-full w-auto object-contain object-bottom drop-shadow-md transition-transform duration-300 group-hover:scale-105"
+                    className="h-full w-auto object-contain object-bottom drop-shadow-2xl transition-transform duration-300 group-hover:scale-[1.03]"
                   />
+
+                  {/* Floating Pill Kategori di Bawah Foto */}
+                  <div className="absolute bottom-3 left-4 right-4 text-center pointer-events-none z-10">
+                    <span className="px-3 py-1 rounded-full bg-neutral-950/80 text-white text-[11px] font-mono tracking-wider shadow-sm backdrop-blur-sm">
+                      {aud.floatingPill}
+                    </span>
+                  </div>
                 </div>
 
-                {/* Konten Keterangan Persona */}
-                <div className="p-7 sm:p-8 flex-1 flex flex-col justify-between">
+                {/* Deskripsi, Workflow Tags & Poin Peran Komprehensif */}
+                <div className="p-7 sm:p-9 flex-1 flex flex-col justify-between">
                   <div>
                     <div className={`text-xs font-mono font-bold uppercase tracking-wider mb-2.5 ${aud.badgeColor}`}>
                       {aud.badge}
@@ -583,20 +645,46 @@ export default function TokoKelontongProDedicatedSalesPage() {
                     <h3 className="font-display font-bold text-neutral-950 text-xl sm:text-2xl mb-3 leading-snug">
                       {aud.role}
                     </h3>
-                    <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed font-sans mb-6">
+                    <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed font-sans mb-5">
                       {aud.desc}
                     </p>
+
+                    {/* Alur Kerja & Modul Terkait (Workflow Tags) */}
+                    <div className="mb-6">
+                      <span className="text-[11px] font-mono uppercase tracking-wider text-neutral-400 font-bold block mb-2">
+                        Alur Kerja &amp; Fitur Harian:
+                      </span>
+                      <div className="flex flex-wrap gap-1.5">
+                        {aud.tags.map((tag, tIdx) => (
+                          <span
+                            key={tIdx}
+                            className="px-2.5 py-1 rounded-lg bg-neutral-100 text-neutral-800 text-[11px] font-mono font-medium border border-neutral-200/80"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
                   </div>
 
-                  <div className="pt-4 border-t border-neutral-100 space-y-2.5">
-                    {aud.points.map((pt, pIdx) => (
-                      <div key={pIdx} className="flex items-start gap-2.5 text-xs sm:text-sm text-neutral-700 font-sans">
-                        <svg className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span>{pt}</span>
-                      </div>
-                    ))}
+                  <div>
+                    {/* Poin Tanggung Jawab Operasional */}
+                    <div className="pt-5 border-t border-neutral-100 space-y-2.5 mb-6">
+                      {aud.points.map((pt, pIdx) => (
+                        <div key={pIdx} className="flex items-start gap-2.5 text-xs sm:text-sm text-neutral-700 font-sans leading-relaxed">
+                          <svg className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                          </svg>
+                          <span>{pt}</span>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Ringkasan Hasil Nyata */}
+                    <div className="p-3.5 rounded-2xl bg-neutral-50 border border-neutral-200/80 text-xs font-mono text-neutral-700 flex items-center gap-2">
+                      <span className="text-emerald-600 font-bold">✓</span>
+                      <span>{aud.metric}</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -607,7 +695,7 @@ export default function TokoKelontongProDedicatedSalesPage() {
 
       {/* ── COMPARISON SECTION ─────────────────────────────────────────── */}
       <section className="py-20 bg-white border-b border-neutral-200/80">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3 block">Perbandingan Nyata</span>
             <h2 className="heading-xl text-2xl sm:text-4xl text-neutral-950 mb-3">
@@ -635,7 +723,7 @@ export default function TokoKelontongProDedicatedSalesPage() {
 
       {/* ── 3-STEP INSTALLATION & GETTING STARTED (CLEAN SHOWCASE) ──────── */}
       <section className="py-20 bg-white border-b border-neutral-200/80">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3.5 block">Alur Pemasangan</span>
           <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-950 mb-3">
             3 Langkah Cepat Pasang Kelontong Pro di Kasir Anda
@@ -655,11 +743,13 @@ export default function TokoKelontongProDedicatedSalesPage() {
                       Akses Grup
                     </span>
                   </div>
-                  <img
-                    src="/app-icons/kelontongpro/3d/step_01_grup.png"
-                    alt="Grup Penguji"
-                    className="w-14 h-14 sm:w-16 sm:h-16 object-contain drop-shadow-md shrink-0"
-                  />
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center shrink-0">
+                    <img
+                      src="/app-icons/kelontongpro/3d/step_01_grup.png"
+                      alt="Grup Penguji"
+                      className="max-w-full max-h-full object-contain drop-shadow-md"
+                    />
+                  </div>
                 </div>
                 <h3 className="font-display text-lg font-bold text-neutral-950 mb-2">Gabung Grup Penguji</h3>
                 <p className="text-xs text-neutral-600 leading-relaxed mb-4">
@@ -690,11 +780,13 @@ export default function TokoKelontongProDedicatedSalesPage() {
                       Akses Uji Coba
                     </span>
                   </div>
-                  <img
-                    src="/app-icons/kelontongpro/3d/step_02_akses.png"
-                    alt="Akses Play Store"
-                    className="w-14 h-14 sm:w-16 sm:h-16 object-contain drop-shadow-md shrink-0"
-                  />
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center shrink-0">
+                    <img
+                      src="/app-icons/kelontongpro/3d/step_02_akses.png"
+                      alt="Akses Play Store"
+                      className="max-w-full max-h-full object-contain drop-shadow-md"
+                    />
+                  </div>
                 </div>
                 <h3 className="font-display text-lg font-bold text-neutral-950 mb-2">Terima Akses Pengujian</h3>
                 <p className="text-xs text-neutral-600 leading-relaxed mb-4">
@@ -725,11 +817,13 @@ export default function TokoKelontongProDedicatedSalesPage() {
                       Pasang di Kasir
                     </span>
                   </div>
-                  <img
-                    src="/app-icons/kelontongpro/3d/step_03_kasir.png"
-                    alt="Pasang di Kasir"
-                    className="w-14 h-14 sm:w-16 sm:h-16 object-contain drop-shadow-md shrink-0"
-                  />
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center shrink-0">
+                    <img
+                      src="/app-icons/kelontongpro/3d/step_03_kasir.png"
+                      alt="Pasang di Kasir"
+                      className="max-w-full max-h-full object-contain drop-shadow-md"
+                    />
+                  </div>
                 </div>
                 <h3 className="font-display text-lg font-bold text-neutral-950 mb-2">Pasang di Google Play</h3>
                 <p className="text-xs text-neutral-600 leading-relaxed mb-4">
@@ -778,7 +872,7 @@ export default function TokoKelontongProDedicatedSalesPage() {
 
       {/* ── FAQ SECTION ────────────────────────────────────────────────── */}
       <section className="py-20 bg-neutral-50/70 border-b border-neutral-200/80">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3 block">Bantuan &amp; Tanya Jawab</span>
             <h2 className="heading-xl text-2xl sm:text-4xl text-neutral-950 mb-3">
@@ -802,7 +896,7 @@ export default function TokoKelontongProDedicatedSalesPage() {
 
       {/* ── BOTTOM CALL TO ACTION (TEMA PUTIH TERANG BERSIH ENTERPRISE) ──── */}
       <section className="py-20 sm:py-24 bg-white border-t border-neutral-200/80 text-center">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3 block">
             Solusi Kasir Toko Tanpa Ribet
           </span>

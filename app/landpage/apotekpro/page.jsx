@@ -90,34 +90,54 @@ export default function ApotekProDedicatedSalesPage() {
 
   const targetAudiences = [
     {
-      role: 'Apoteker (APA) & Tenaga Teknis Farmasi (TTK)',
-      badge: 'Praktik Farmasi & Pelayanan Resep',
+      role: 'Apoteker Pengelola (APA) & Asisten Apoteker (TTK)',
+      badge: 'Praktik Farmasi & Pelayanan Resep Klinis',
       badgeColor: 'text-emerald-700',
       img: '/screenshots/apotekpro/human/girl.png',
       alt: 'Apoteker Wanita Apotek Pro',
-      gradient: 'from-emerald-50/70 via-white to-white',
-      desc: 'Dirancang untuk apoteker, asisten apoteker, dan kasir yang mengelola pelayanan resep obat harian, membutuhkan kalkulator dosis racikan puyer cepat, serta mengawasi peringatan obat kedaluwarsa berstandar FEFO tanpa cemas.',
-      points: [
-        'Kalkulator dosis racikan puyer otomatis memotong stok presisi',
-        'Deteksi dini kedaluwarsa dengan alarm visual nomor batch FEFO',
-        'Pencarian obat barcode cepat via kamera HP atau scanner USB',
-        'Cetak struk thermal bluetooth & kirim nota rincian ke WhatsApp',
+      gradient: 'from-emerald-50/80 via-emerald-50/30 to-white',
+      floatingBadge: '100% Akurasi Dosis & Resep Racikan',
+      floatingPill: 'Standar CDOB & Farmasi Klinis',
+      desc: 'Dirancang khusus untuk apoteker, tenaga teknis farmasi, dan kasir yang mengelola pelayanan resep obat harian. Membutuhkan kalkulator racikan puyer cepat tanpa salah dosis miligram, serta pemantauan otomatis tanggal kedaluwarsa berstandar FEFO.',
+      tags: [
+        'Skrining Resep Dokter',
+        'Kalkulator Puyer Dosis',
+        'Alarm Batch FEFO',
+        'Cetak Salinan Resep & Etiket',
+        'Pencarian Posisi Rak Obat',
       ],
+      points: [
+        'Kalkulator racikan puyer otomatis membagi dosis miligram anak/dewasa dan memotong stok presisi',
+        'Deteksi dini obat kedaluwarsa dengan alarm visual nomor batch FEFO sebelum terlanjur rugi',
+        'Pencarian kilat letak lemari dan baris etalase obat langsung terpampang di layar kasir',
+        'Cetak struk thermal bluetooth, etiket aturan pakai, dan kirim rincian nota langsung ke WhatsApp',
+      ],
+      metric: '0 Insiden Salah Takar Resep • Waktu Layani Racikan < 2 Menit',
     },
     {
-      role: 'Pemilik Sarana Apotek (PSA) & Dokter Klinik',
-      badge: 'Manajemen Bisnis & Pemilik Sarana',
-      badgeColor: 'text-blue-700',
+      role: 'Pemilik Sarana Apotek (PSA) & Investor Farmasi',
+      badge: 'Manajemen Bisnis, Finansial & Gudang PBF',
+      badgeColor: 'text-sky-700',
       img: '/screenshots/apotekpro/human/laki.png',
       alt: 'Pemilik Apotek & Dokter Apotek Pro',
-      gradient: 'from-blue-50/60 via-white to-white',
-      desc: 'Pilihan tepat bagi pemilik apotek mandiri, pengelola klinik pratama, dan apotek jejaring untuk memantau omzet per shift kasir, mengawasi buku defecta pemesanan obat ke PBF, dan mengamankan profit 100% offline tanpa iuran bulanan.',
-      points: [
-        'Rekonsiliasi laci kas otomatis mencegah kebocoran dana per shift',
-        'Buku defecta digital siap cetak draf Surat Pesanan (SP) ke PBF',
-        'Laporan laba rugi bersih & rekap PPN otomatis siap audit',
-        'Database lokal terenkripsi aman tersimpan di perangkat kasir',
+      gradient: 'from-sky-50/80 via-sky-50/30 to-white',
+      floatingBadge: 'Audit Shift & Laci Kas Real-Time',
+      floatingPill: 'Transparansi Omzet, HPP & Pesanan PBF',
+      desc: 'Pilihan tepat bagi pemilik apotek mandiri, pengelola klinik pratama, dan apotek jejaring untuk mengamankan perputaran modal usaha, memantau rekonsiliasi shift kasir, menerbitkan Surat Pesanan (SP) ke PBF, dan mengunci profit 100% offline.',
+      tags: [
+        'Rekonsiliasi Shift Kasir',
+        'Buku Defecta Digital PBF',
+        'Laporan Laba Bersih & PPN',
+        'Proteksi PIN Harga Modal HPP',
+        'Cetak Draf Surat Pesanan (SP)',
       ],
+      points: [
+        'Rekonsiliasi laci kas otomatis mencegah kebocoran modal dan selisih uang setoran per shift kasir',
+        'Buku defecta digital otomatis mencatat obat yang menipis dan siap cetak draf Surat Pesanan (SP)',
+        'Laporan laba rugi bersih harian (omzet dikurangi HPP) dan rekapitulasi PPN otomatis siap audit',
+        'Kunci PIN rahasia untuk menu laba dan harga kulakan agar aman dari penglihatan operator kasir',
+      ],
+      metric: 'Bebas Iuran Sewa Selamanya • 100% Data Privat Tersimpan Lokal di Handphone',
     },
   ]
 
@@ -334,7 +354,7 @@ export default function ApotekProDedicatedSalesPage() {
 
       {/* ── BREADCRUMB & BACK NAVIGATION ──────────────────────────────── */}
       <div className="pt-24 sm:pt-28 pb-4 bg-neutral-50/70 border-b border-neutral-100">
-        <div className="container-page max-w-5xl mx-auto px-4 sm:px-6 flex items-center justify-between text-xs font-mono">
+        <div className="container-page max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between text-xs font-mono">
           <div className="flex items-center gap-2 text-neutral-500">
             <Link href="/" className="hover:text-black transition-colors">Beranda</Link>
             <span>/</span>
@@ -350,9 +370,9 @@ export default function ApotekProDedicatedSalesPage() {
 
       {/* ── HERO SALES SECTION ─────────────────────────────────────────── */}
       <section className="pt-12 sm:pt-16 pb-16 bg-white border-b border-neutral-200/80">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
-          <h1 className="heading-xl text-3xl sm:text-5xl lg:text-6xl text-neutral-950 tracking-tight leading-tight sm:leading-none mb-6 text-balance">
+          <h1 className="heading-xl text-3xl sm:text-5xl lg:text-6xl text-neutral-950 tracking-tight leading-tight sm:leading-none mb-6 text-balance max-w-5xl mx-auto">
             Kelola Stok Apotek &amp; Kasir Resep Presisi <br className="hidden sm:inline" />
             Tanpa Takut Obat Kedaluwarsa
           </h1>
@@ -362,7 +382,7 @@ export default function ApotekProDedicatedSalesPage() {
           </p>
 
           {/* DUA TOMBOL AKSI UTAMA — GOOGLE PLAY SEBAGAI PRIMADONA */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-10 max-w-xl mx-auto">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-12 max-w-xl mx-auto">
             <a
               href={playTestingWebUrl}
               target="_blank"
@@ -392,7 +412,7 @@ export default function ApotekProDedicatedSalesPage() {
           </div>
 
           {/* BANNER FEATURE GRAPHIC RESMI */}
-          <div className="rounded-3xl overflow-hidden border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] max-w-4xl mx-auto mb-12 bg-white">
+          <div className="rounded-3xl overflow-hidden border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] max-w-6xl mx-auto mb-12 bg-white">
             <img
               src="/screenshots/apotekpro/Apotek_Pro_Feature_Graphic_1024x500.png"
               alt="Apotek Pro Feature Graphic Banner Resmi"
@@ -401,7 +421,7 @@ export default function ApotekProDedicatedSalesPage() {
           </div>
 
           {/* 4 STATS GRID DENGAN IKON 3D EMERALD MENONJOL */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-4xl mx-auto p-6 sm:p-7 rounded-3xl bg-neutral-50 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto p-6 sm:p-8 rounded-3xl bg-neutral-50 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
             <div className="p-3 flex flex-col items-center text-center">
               <img
                 src="/app-icons/apotekpro/3d/stat_hybrid.png"
@@ -448,8 +468,8 @@ export default function ApotekProDedicatedSalesPage() {
 
       {/* ── PAIN POINTS SECTION ────────────────────────────────────────── */}
       <section className="py-20 bg-neutral-50/60 border-b border-neutral-200/80">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-2xl mx-auto mb-14">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-14">
             <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3 block">Tantangan Nyata Apotek</span>
             <h2 className="heading-xl text-2xl sm:text-4xl text-neutral-950 mb-3">
               Apakah Masalah Ini Kerap Terjadi di Apotek Anda?
@@ -459,16 +479,19 @@ export default function ApotekProDedicatedSalesPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {painPoints.map((item, idx) => (
-              <div key={idx} className="p-6 sm:p-7 rounded-3xl bg-white border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
-                <h3 className="font-display text-base sm:text-lg font-bold text-neutral-950 mb-2">{item.title}</h3>
-                <p className="text-neutral-600 text-xs sm:text-sm leading-relaxed">{item.desc}</p>
+              <div key={idx} className="p-6 sm:p-7 rounded-3xl bg-white border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between">
+                <div>
+                  <h3 className="font-display text-base sm:text-lg font-bold text-neutral-950 mb-2.5 leading-snug">{item.title}</h3>
+                  <p className="text-neutral-600 text-xs sm:text-sm leading-relaxed font-sans">{item.desc}</p>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
+
 
       {/* ── GALERI GESER INTERAKTIF PREVIEW APLIKASI ────────────────────── */}
       <AppScreenshotGallery
@@ -479,7 +502,7 @@ export default function ApotekProDedicatedSalesPage() {
 
       {/* ── 10 MODUL RESMI FARMASI TERINTEGRASI ──────────────────────────── */}
       <section className="py-24 bg-white border-b border-neutral-200/80">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3.5 block">10 Modul Farmasi Lengkap</span>
             <h2 className="heading-xl text-3xl sm:text-5xl text-neutral-950 mb-4 tracking-tight">
@@ -540,36 +563,52 @@ export default function ApotekProDedicatedSalesPage() {
         </div>
       </section>
 
-      {/* ── SECTION: TARGET PENGGUNA (SERUPA DENGAN CRM) ───────────────── */}
+      {/* ── SECTION: TARGET PENGGUNA (DUAL PERSONA ENTERPRISE SHOWCASE) ───── */}
       <section className="py-24 bg-neutral-50/70 border-b border-neutral-200/80">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-2xl mx-auto mb-14">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3.5 block">Target Pengguna Resmi</span>
-            <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-950 mb-3 tracking-tight">
+            <h2 className="heading-xl text-3xl sm:text-5xl text-neutral-950 mb-4 tracking-tight">
               Cocok Digunakan oleh Siapa Saja?
             </h2>
-            <p className="text-neutral-600 text-sm sm:text-base leading-relaxed font-sans">
+            <p className="text-neutral-600 text-sm sm:text-base leading-relaxed font-sans max-w-2xl mx-auto">
               Dirancang khusus untuk mendukung operasional pelayanan resep apotek dan transparansi bisnis farmasi di Indonesia:
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
             {targetAudiences.map((aud, i) => (
               <div
                 key={i}
-                className="rounded-3xl overflow-hidden border border-neutral-200/90 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] bg-white flex flex-col justify-between hover:shadow-xl hover:border-neutral-400 transition-all duration-300 group"
+                className="rounded-3xl overflow-hidden border border-neutral-200/90 shadow-[0_4px_24px_-4px_rgba(0,0,0,0.07)] bg-white flex flex-col justify-between hover:shadow-2xl hover:border-neutral-400 transition-all duration-300 group"
               >
-                {/* Visual Model Dokter / Farmasi */}
-                <div className={`bg-gradient-to-b ${aud.gradient} pt-8 px-6 flex justify-center items-end border-b border-neutral-100 relative overflow-hidden h-72 sm:h-80`}>
+                {/* Visual Model Dokter / Farmasi Proporsional Tinggi Menonjol */}
+                <div className={`bg-gradient-to-b ${aud.gradient} pt-8 px-6 flex justify-center items-end border-b border-neutral-100 relative overflow-hidden h-[420px] sm:h-[480px] lg:h-[500px]`}>
+                  {/* Floating Status Badge di Atas */}
+                  <div className="absolute top-4 left-4 right-4 flex items-center justify-between pointer-events-none z-10">
+                    <span className="px-3.5 py-1.5 rounded-full bg-white/95 text-neutral-900 text-xs font-mono font-semibold shadow-md backdrop-blur-sm border border-neutral-200/80 flex items-center gap-2">
+                      <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                      <span>{aud.floatingBadge}</span>
+                    </span>
+                  </div>
+
+                  {/* Foto Model Persona Utuh */}
                   <img
                     src={aud.img}
                     alt={aud.alt}
-                    className="h-full w-auto object-contain object-bottom drop-shadow-md transition-transform duration-300 group-hover:scale-105"
+                    className="h-full w-auto object-contain object-bottom drop-shadow-2xl transition-transform duration-300 group-hover:scale-[1.03]"
                   />
+
+                  {/* Floating Pill Kategori di Bawah Foto */}
+                  <div className="absolute bottom-3 left-4 right-4 text-center pointer-events-none z-10">
+                    <span className="px-3 py-1 rounded-full bg-neutral-950/80 text-white text-[11px] font-mono tracking-wider shadow-sm backdrop-blur-sm">
+                      {aud.floatingPill}
+                    </span>
+                  </div>
                 </div>
 
-                {/* Deskripsi & Poin Peran */}
-                <div className="p-7 sm:p-8 flex-1 flex flex-col justify-between">
+                {/* Deskripsi, Workflow Tags & Poin Peran Komprehensif */}
+                <div className="p-7 sm:p-9 flex-1 flex flex-col justify-between">
                   <div>
                     <div className={`text-xs font-mono font-bold uppercase tracking-wider mb-2.5 ${aud.badgeColor}`}>
                       {aud.badge}
@@ -577,20 +616,46 @@ export default function ApotekProDedicatedSalesPage() {
                     <h3 className="font-display font-bold text-neutral-950 text-xl sm:text-2xl mb-3 leading-snug">
                       {aud.role}
                     </h3>
-                    <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed font-sans mb-6">
+                    <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed font-sans mb-5">
                       {aud.desc}
                     </p>
+
+                    {/* Alur Kerja & Modul Terkait (Workflow Tags) */}
+                    <div className="mb-6">
+                      <span className="text-[11px] font-mono uppercase tracking-wider text-neutral-400 font-bold block mb-2">
+                        Alur Kerja &amp; Fitur Harian:
+                      </span>
+                      <div className="flex flex-wrap gap-1.5">
+                        {aud.tags.map((tag, tIdx) => (
+                          <span
+                            key={tIdx}
+                            className="px-2.5 py-1 rounded-lg bg-neutral-100 text-neutral-800 text-[11px] font-mono font-medium border border-neutral-200/80"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
                   </div>
 
-                  <div className="pt-4 border-t border-neutral-100 space-y-2.5">
-                    {aud.points.map((pt, pIdx) => (
-                      <div key={pIdx} className="flex items-start gap-2.5 text-xs sm:text-sm text-neutral-700 font-sans">
-                        <svg className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span>{pt}</span>
-                      </div>
-                    ))}
+                  <div>
+                    {/* Poin Tanggung Jawab Operasional */}
+                    <div className="pt-5 border-t border-neutral-100 space-y-2.5 mb-6">
+                      {aud.points.map((pt, pIdx) => (
+                        <div key={pIdx} className="flex items-start gap-2.5 text-xs sm:text-sm text-neutral-700 font-sans leading-relaxed">
+                          <svg className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                          </svg>
+                          <span>{pt}</span>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Ringkasan Hasil Nyata */}
+                    <div className="p-3.5 rounded-2xl bg-neutral-50 border border-neutral-200/80 text-xs font-mono text-neutral-700 flex items-center gap-2">
+                      <span className="text-emerald-600 font-bold">✓</span>
+                      <span>{aud.metric}</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -601,7 +666,7 @@ export default function ApotekProDedicatedSalesPage() {
 
       {/* ── COMPARISON SECTION ─────────────────────────────────────────── */}
       <section className="py-20 bg-white border-b border-neutral-200/80">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3 block">Efisiensi &amp; Perbandingan</span>
             <h2 className="heading-xl text-2xl sm:text-4xl text-neutral-950 mb-3">
@@ -629,7 +694,7 @@ export default function ApotekProDedicatedSalesPage() {
 
       {/* ── 3-STEP INSTALLATION & GETTING STARTED (CLEAN SHOWCASE) ──────── */}
       <section className="py-20 bg-white border-b border-neutral-200/80">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3.5 block">Alur Akses Resmi</span>
           <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-950 mb-3">
             3 Langkah Cepat Memasang Apotek Pro di Kasir Anda
@@ -773,7 +838,7 @@ export default function ApotekProDedicatedSalesPage() {
 
       {/* ── FAQ SECTION ────────────────────────────────────────────────── */}
       <section className="py-20 bg-neutral-50/70 border-b border-neutral-200/80">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3 block">Bantuan &amp; Panduan</span>
             <h2 className="heading-xl text-2xl sm:text-3xl text-neutral-950 mb-3">
@@ -784,7 +849,7 @@ export default function ApotekProDedicatedSalesPage() {
 
           <div className="space-y-4">
             {faqs.map((f, idx) => (
-              <div key={idx} className="p-6 rounded-3xl bg-white border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
+              <div key={idx} className="p-6 sm:p-7 rounded-3xl bg-white border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
                 <h3 className="font-display text-sm sm:text-base font-bold text-neutral-950 mb-2">{f.q}</h3>
                 <p className="text-neutral-600 text-xs sm:text-sm leading-relaxed font-sans">{f.a}</p>
               </div>
@@ -795,7 +860,7 @@ export default function ApotekProDedicatedSalesPage() {
 
       {/* ── BOTTOM CALL TO ACTION ───────────────────────────────────────── */}
       <section className="py-20 sm:py-24 bg-white border-t border-neutral-200/80 text-center">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3 block">
             Solusi Kasir Farmasi Tanpa Ribet
           </span>

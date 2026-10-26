@@ -113,62 +113,61 @@ export default function AppScreenshotGallery({
 
   return (
     <section className="py-20 sm:py-24 bg-white border-b border-neutral-200/80 overflow-hidden">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        
-        {/* HEADER SECTION TENGAH PROPORSIONAL */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          {label ? (
-            <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3.5 block">{label}</span>
-          ) : null}
-          <h2 className="heading-xl text-2xl sm:text-4xl text-neutral-950 mb-3 tracking-tight">
-            {title}
-          </h2>
-          <p className="text-neutral-600 text-sm sm:text-base leading-relaxed font-sans max-w-2xl mx-auto mb-6">
-            {subtitle}
-          </p>
+      {/* HEADER SECTION TENGAH PROPORSIONAL */}
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center mb-12">
+        {label ? (
+          <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3.5 block">{label}</span>
+        ) : null}
+        <h2 className="heading-xl text-2xl sm:text-4xl text-neutral-950 mb-3 tracking-tight">
+          {title}
+        </h2>
+        <p className="text-neutral-600 text-sm sm:text-base leading-relaxed font-sans max-w-2xl mx-auto mb-6">
+          {subtitle}
+        </p>
 
-          {/* Navigasi Panah & Counter Slide Ditengah Sempurna */}
-          <div className="flex items-center justify-center gap-3">
-            <button
-              type="button"
-              onClick={() => scrollByDirection('left')}
-              disabled={!canScrollLeft}
-              aria-label="Geser ke kiri"
-              className="w-10 h-10 rounded-full border border-neutral-300 bg-white hover:bg-neutral-50 hover:border-black disabled:opacity-30 disabled:hover:border-neutral-300 disabled:hover:bg-white flex items-center justify-center transition-all shadow-sm cursor-pointer disabled:cursor-not-allowed"
-            >
-              <svg className="w-4 h-4 text-neutral-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
+        {/* Navigasi Panah & Counter Slide Ditengah Sempurna */}
+        <div className="flex items-center justify-center gap-3">
+          <button
+            type="button"
+            onClick={() => scrollByDirection('left')}
+            disabled={!canScrollLeft}
+            aria-label="Geser ke kiri"
+            className="w-10 h-10 rounded-full border border-neutral-300 bg-white hover:bg-neutral-50 hover:border-black disabled:opacity-30 disabled:hover:border-neutral-300 disabled:hover:bg-white flex items-center justify-center transition-all shadow-sm cursor-pointer disabled:cursor-not-allowed"
+          >
+            <svg className="w-4 h-4 text-neutral-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
 
-            <div className="px-4 py-1.5 rounded-full bg-neutral-100 text-neutral-800 text-xs font-mono font-semibold border border-neutral-200 shadow-sm flex items-center gap-1.5">
-              <span>{String(activeIndex + 1).padStart(2, '0')}</span>
-              <span className="text-neutral-400">/</span>
-              <span>{String(items.length).padStart(2, '0')}</span>
-            </div>
-
-            <button
-              type="button"
-              onClick={() => scrollByDirection('right')}
-              disabled={!canScrollRight}
-              aria-label="Geser ke kanan"
-              className="w-10 h-10 rounded-full border border-neutral-300 bg-white hover:bg-neutral-50 hover:border-black disabled:opacity-30 disabled:hover:border-neutral-300 disabled:hover:bg-white flex items-center justify-center transition-all shadow-sm cursor-pointer disabled:cursor-not-allowed"
-            >
-              <svg className="w-4 h-4 text-neutral-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
+          <div className="px-4 py-1.5 rounded-full bg-neutral-100 text-neutral-800 text-xs font-mono font-semibold border border-neutral-200 shadow-sm flex items-center gap-1.5">
+            <span>{String(activeIndex + 1).padStart(2, '0')}</span>
+            <span className="text-neutral-400">/</span>
+            <span>{String(items.length).padStart(2, '0')}</span>
           </div>
-        </div>
 
-        {/* TRACK GALERI GESER HORIZONTAL */}
+          <button
+            type="button"
+            onClick={() => scrollByDirection('right')}
+            disabled={!canScrollRight}
+            aria-label="Geser ke kanan"
+            className="w-10 h-10 rounded-full border border-neutral-300 bg-white hover:bg-neutral-50 hover:border-black disabled:opacity-30 disabled:hover:border-neutral-300 disabled:hover:bg-white flex items-center justify-center transition-all shadow-sm cursor-pointer disabled:cursor-not-allowed"
+          >
+            <svg className="w-4 h-4 text-neutral-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      {/* TRACK GALERI GESER HORIZONTAL MELEBAR PENUH (EDGE-TO-EDGE / FULL-WIDTH) */}
+      <div className="w-full">
         <div
           ref={scrollRef}
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUpOrLeave}
           onMouseLeave={handleMouseUpOrLeave}
-          className={`flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-6 pt-2 select-none -mx-4 px-4 sm:mx-0 sm:px-0 ${
+          className={`flex gap-6 sm:gap-8 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-8 pt-2 select-none px-4 sm:px-8 lg:px-12 xl:px-16 ${
             isDragging ? 'cursor-grabbing' : 'cursor-grab'
           }`}
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
