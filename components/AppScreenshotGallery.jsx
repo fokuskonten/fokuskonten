@@ -177,34 +177,43 @@ export default function AppScreenshotGallery({
             <div
               key={item.id || idx}
               onClick={() => !isDragging && setLightboxIndex(idx)}
-              className="w-[270px] sm:w-[310px] shrink-0 snap-start flex flex-col group cursor-pointer"
+              className="w-[280px] sm:w-[320px] shrink-0 snap-start flex flex-col group cursor-pointer"
             >
-              {/* Gambar Pratinjau Mockup Handphone Bersih */}
-              <div className="relative rounded-2xl overflow-hidden bg-neutral-100/70 border border-neutral-200/90 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] group-hover:shadow-xl group-hover:border-neutral-400 group-hover:-translate-y-1 transition-all duration-300 aspect-[9/18.5] flex items-center justify-center">
-                <img
-                  src={item.img}
-                  alt={item.title}
-                  draggable="false"
-                  className="w-full h-full object-contain p-1.5 transition-transform duration-300 group-hover:scale-[1.02]"
-                />
-                
-                {/* Overlay Hint Zoom saat Hover */}
-                <div className="absolute inset-0 bg-neutral-950/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <span className="px-3.5 py-1.5 rounded-full bg-white/95 text-neutral-950 text-xs font-mono font-semibold shadow-lg backdrop-blur-sm flex items-center gap-1.5">
-                    <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
-                    </svg>
-                    <span>Perbesar</span>
-                  </span>
+              {/* Mockup Frame Handphone Otentik Bershadow */}
+              <div className="relative rounded-[2.6rem] p-2 sm:p-2.5 bg-neutral-900 border-[3px] border-neutral-800 shadow-[0_20px_50px_-10px_rgba(0,0,0,0.25)] group-hover:shadow-[0_28px_65px_-10px_rgba(0,0,0,0.38)] group-hover:-translate-y-2 transition-all duration-300">
+                {/* Punch-hole kamera depan atas */}
+                <div className="w-2.5 h-2.5 rounded-full bg-neutral-950 border border-neutral-700 mx-auto absolute top-3.5 left-1/2 -translate-x-1/2 z-20 pointer-events-none" />
+
+                {/* Layar Smartphone Internal */}
+                <div className="relative rounded-[2.1rem] overflow-hidden bg-white aspect-[9/19.5]">
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    draggable="false"
+                    className="w-full h-full object-cover scale-[1.05] object-center transition-transform duration-300 group-hover:scale-[1.08]"
+                  />
+                  
+                  {/* Overlay Hint Zoom saat Hover */}
+                  <div className="absolute inset-0 bg-neutral-950/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span className="px-3.5 py-1.5 rounded-full bg-white/95 text-neutral-950 text-xs font-mono font-semibold shadow-lg backdrop-blur-sm flex items-center gap-1.5">
+                      <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                      </svg>
+                      <span>Perbesar</span>
+                    </span>
+                  </div>
                 </div>
+
+                {/* Home Indicator Bar Bawah */}
+                <div className="w-24 h-1 rounded-full bg-neutral-700/80 mx-auto mt-2 pointer-events-none" />
               </div>
 
-              {/* Keterangan Teks Bersih di Bawah Gambar */}
-              <div className="pt-4 px-1">
-                <div className="text-[11px] font-mono text-neutral-400 font-semibold mb-1">
+              {/* Keterangan Teks Bersih & Padat di Bawah Mockup */}
+              <div className="pt-4 px-2 text-center sm:text-left">
+                <div className="text-[11px] font-mono text-neutral-400 font-bold mb-1">
                   LAYAR {String(idx + 1).padStart(2, '0')}
                 </div>
-                <h3 className="font-display font-bold text-sm sm:text-base text-neutral-950 mb-1.5 group-hover:text-black transition-colors line-clamp-1">
+                <h3 className="font-display font-bold text-sm sm:text-base text-neutral-950 mb-1 group-hover:text-black transition-colors line-clamp-1">
                   {item.title}
                 </h3>
                 <p className="text-neutral-600 text-xs leading-relaxed font-sans line-clamp-2">

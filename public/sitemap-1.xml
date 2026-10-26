@@ -2749,6 +2749,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://fokuskonten.my.id/landingpage/apotekpro/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://fokuskonten.my.id/landpage/apotekpro/</loc>
     <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -4934,6 +4940,18 @@
   </url>
   <url>
     <loc>https://fokuskonten.my.id/toko-digital/invoice/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fokuskonten.my.id/toko-digital/landingpage/apotekpro/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fokuskonten.my.id/toko-digital/landpage/apotekpro/</loc>
     <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

@@ -40,50 +40,50 @@ export default function ApotekProDedicatedSalesPage() {
   const galleryScreenshots = [
     {
       id: '01',
-      title: 'Dashboard Apotek & Ringkasan Bisnis',
-      desc: 'Pantau omset, profit, dan performa apotek secara real-time.',
+      title: 'Dashboard Apotek & Ringkasan Penjualan',
+      desc: 'Pantau omzet harian, laba kotor, dan performa kasir seketika.',
       img: '/screenshots/apotekpro/raw/01_Dashboard_Utama_Apotek.png',
     },
     {
       id: '02',
-      title: 'Kasir POS Cepat & Input Resep',
-      desc: 'Transaksi obat bebas dan racikan dokter dalam hitungan detik.',
+      title: 'Kasir Penjualan Cepat & Resep',
+      desc: 'Layani obat bebas dan resep racikan dokter hanya dalam hitungan detik.',
       img: '/screenshots/apotekpro/raw/02_Kasir_POS_Penjualan.png',
     },
     {
       id: '03',
-      title: 'Manajemen Stok & Standar CDOB',
-      desc: 'Kelola multi-satuan, batas stok, nomor batch, dan kartu stok terperinci.',
+      title: 'Manajemen Stok & Kartu Obat',
+      desc: 'Kelola multi-satuan, batas aman stok, nomor batch, dan riwayat mutasi obat.',
       img: '/screenshots/apotekpro/raw/03_Manajemen_Stok_Obat_CDOB.png',
     },
     {
       id: '04',
-      title: 'Kalkulator Pintar Dosis & Racikan',
-      desc: 'Perhitungan dosis obat anak & dewasa otomatis dan presisi.',
+      title: 'Kalkulator Dosis Racikan Puyer',
+      desc: 'Hitung takaran miligram otomatis dan potong stok obat secara presisi.',
       img: '/screenshots/apotekpro/raw/04_Kalkulator_Dosis_dan_Racikan.png',
     },
     {
       id: '05',
       title: 'Riwayat Transaksi & Cetak Nota',
-      desc: 'Pantau arus kas penjualan harian & cetak struk kasir bluetooth mudah.',
+      desc: 'Cetak nota bluetooth kasir atau bagikan rincian belanja ke WhatsApp pasien.',
       img: '/screenshots/apotekpro/raw/05_Riwayat_Transaksi_dan_Nota.png',
     },
     {
       id: '06',
-      title: 'Pembelian, PO & Gudang',
-      desc: 'Pencatatan faktur PBF, buku defecta digital, dan mutasi stok cabang.',
+      title: 'Buku Defecta & Pesanan Distributor',
+      desc: 'Deteksi otomatis obat menipis dan buat Surat Pesanan (SP) ke PBF.',
       img: '/screenshots/apotekpro/raw/06_Pembelian_PO_dan_Gudang.png',
     },
     {
       id: '07',
-      title: 'Laporan Keuangan & PPN',
-      desc: 'Buku kas, arus kas, laba rugi, dan hitung pajak otomatis.',
+      title: 'Laporan Laba Rugi & Rekap Pajak',
+      desc: 'Ketahui laba bersih dan pembukuan kas harian tanpa rekap manual.',
       img: '/screenshots/apotekpro/raw/07_Laporan_Keuangan_dan_PPN.png',
     },
     {
       id: '08',
-      title: 'Analisis Bisnis & AI Pintar',
-      desc: 'Prediksi penjualan masa depan & produk terlaris apotek.',
+      title: 'Analisis Performa & Obat Terlaris',
+      desc: 'Lihat tren obat paling laris untuk perencanaan belanja stok berikutnya.',
       img: '/screenshots/apotekpro/raw/08_Analisis_Bisnis_dan_AI.png',
     },
   ]
@@ -124,126 +124,126 @@ export default function ApotekProDedicatedSalesPage() {
   const coreModules = [
     {
       num: '01',
-      screens: 'POSCashierScreen & PrescriptionScreen',
-      headline: 'Kasir Penjualan Apotek Cepat & Input Resep Dokter',
-      subHeadline: 'Transaksi obat bebas dan obat racikan dalam hitungan detik',
+      icon: '/app-icons/apotekpro/3d/modul_01_kasir.png',
+      headline: 'Kasir Penjualan Cepat & Pelayanan Resep',
+      subHeadline: 'Transaksi obat bebas dan resep dokter dalam hitungan detik',
       features: [
-        'Penjualan Cepat Obat Bebas, Bebas Terbatas, dan Obat Keras',
-        'Modul Khusus Resep Dokter & Kalkulasi Otomatis Biaya Racikan',
-        'Dukungan Barcode Scanner Kamera HP & Pemindai Bluetooth/USB',
-        'Multi-Metode Pembayaran: Tunai, QRIS, Transfer Bank, dan Piutang Pasien',
-        'Pengurangan Stok Otomatis Secara Real-Time Pasca-Pembayaran',
+        'Pelayanan cepat obat bebas, bebas terbatas, dan obat keras',
+        'Kalkulator resep racikan puyer dengan biaya racik otomatis',
+        'Pemindaian barcode via kamera ponsel atau scanner bluetooth',
+        'Pilihan pembayaran tunai, QRIS, transfer bank, dan nota tempo',
+        'Stok obat otomatis terpotong tepat saat transaksi selesai',
       ],
     },
     {
       num: '02',
-      screens: 'InventoryScreen & UnitManagementScreen',
-      headline: 'Manajemen Inventaris Obat & Konversi Multi-Satuan',
-      subHeadline: 'Pengelolaan satuan berjenjang dari box hingga butir tanpa selisih',
+      icon: '/app-icons/apotekpro/3d/modul_02_inventaris.png',
+      headline: 'Manajemen Stok & Konversi Satuan Obat',
+      subHeadline: 'Kelola isi box, strip, dan butir tablet tanpa selisih hitung',
       features: [
-        'Konversi Satuan Fleksibel Otomatis (Box ke Strip, Strip ke Tablet/Kapsul)',
-        'Penetapan Multi-Tier Harga Jual (Harga Umum, Grosir, dan Pasien Resep)',
-        'Riwayat Kartu Stok Terperinci (Pemasukan, Penjualan, Mutasi, dan Penyesuaian)',
-        'Pencarian Cepat Berdasarkan Nama Obat, Barcode, Kategori, atau Indikasi',
-        'Fitur Stock Opname Fisik dengan Laporan Selisih Stok Otomatis',
+        'Konversi satuan otomatis (box ke strip, strip ke tablet/kapsul)',
+        'Pengaturan harga jual umum, grosir, dan langganan resep',
+        'Kartu stok lengkap mencatat obat masuk, keluar, dan penyesuaian',
+        'Pencarian kilat berdasarkan nama obat, barcode, atau kategori',
+        'Fitur cek fisik (stock opname) dengan laporan selisih otomatis',
       ],
     },
     {
       num: '03',
-      screens: 'ExpiryTrackerScreen & BatchReportScreen',
-      headline: 'Alarm Obat Kedaluwarsa & Pelacakan Nomor Batch',
-      subHeadline: 'Pantau masa simpan obat secara presisi untuk menjamin keamanan pasien',
+      icon: '/app-icons/apotekpro/3d/modul_03_expired.png',
+      headline: 'Alarm Kedaluwarsa & Pelacakan Batch',
+      subHeadline: 'Jual obat yang mendekati kedaluwarsa lebih awal berstandar FEFO',
       features: [
-        'Pencatatan Nomor Batch dan Tanggal Kedaluwarsa (ED) Per Lot Masuk',
-        'Sistem Alarm Visual Berperingkat: Merah (<30 Hari), Kuning (<90 Hari)',
-        'Pengurutan Penjualan Berbasis FEFO (First Expired, First Out) & FIFO',
-        'Filter Khusus Stok Kritis untuk Mempercepat Pengajuan Retur ke PBF',
-        'Laporan Lengkap Riwayat Distribusi Batch Obat Terdaftar',
+        'Catat nomor batch dan tanggal kedaluwarsa setiap barang masuk',
+        'Peringatan warna otomatis untuk obat mendekati batas edar',
+        'Prioritas penjualan berstandar FEFO (First Expired, First Out)',
+        'Daftar khusus obat kritis untuk mempermudah retur ke distributor',
+        'Laporan riwayat batch obat untuk keamanan pelayanan pasien',
       ],
     },
     {
       num: '04',
-      screens: 'DefectaScreen & PurchaseOrderScreen',
-      headline: 'Buku Defecta Digital & Pengadaan Barang PBF',
-      subHeadline: 'Tidak ada lagi obat habis tanpa sengaja berkat deteksi batas minimum',
+      icon: '/app-icons/apotekpro/3d/modul_04_defecta.png',
+      headline: 'Buku Defecta Digital & Pesanan Distributor',
+      subHeadline: 'Cegah obat habis di etalase dengan batas peringatan stok minimum',
       features: [
-        'Deteksi Otomatis Obat Menipis Langsung Masuk ke Buku Defecta',
-        'Penerbitan Surat Pesanan (SP) Resmi ke Pedagang Besar Farmasi (PBF)',
-        'Database Terpadu Supplier, Kontak Salesman PBF, dan Termin Pembayaran',
-        'Fitur Retur Obat Rusak atau Mendekati Expired Lengkap dengan Bukti Serah Terima',
-        'Pencatatan Penerimaan Barang (Goods Receiving) Berdasarkan Faktur',
+        'Obat yang menipis otomatis masuk ke daftar belanja (defecta)',
+        'Cetak draf Surat Pesanan (SP) resmi ke Pedagang Besar Farmasi (PBF)',
+        'Buku kontak distributor, nomor salesman, dan termin pembayaran',
+        'Pencatatan retur obat rusak atau mendekati batas kedaluwarsa',
+        'Pencatatan penerimaan barang sesuai faktur pengiriman',
       ],
     },
     {
       num: '05',
-      screens: 'RakEtalaseScreen & RakManagementScreen',
-      headline: 'Pemetaan Posisi Rak & Etalase Obat Visual',
-      subHeadline: 'Temukan letak obat di apotek dengan instan saat kasir melayani antrean',
+      icon: '/app-icons/apotekpro/3d/modul_05_rak.png',
+      headline: 'Peta Lokasi Rak & Etalase Obat',
+      subHeadline: 'Temukan letak obat seketika saat melayani antrean pasien',
       features: [
-        'Pemetaan Presisi Berbasis Nomor Lemari, Kode Rak, dan Posisi Baris',
-        'Informasi Posisi Rak Terpampang Langsung di Layar Pencarian Kasir',
-        'Zonasi Khusus: Lemari Prekursor/Psikotropika, Lemari Suhu Dingin, & Display Bebas',
-        'Optimasi Waktu Pengambilan Obat bagi Apoteker dan Asisten Apoteker',
+        'Pemetaan nomor lemari, kode rak, dan baris etalase obat',
+        'Posisi rak obat langsung muncul di layar kasir saat pencarian',
+        'Pengelompokan lemari obat khusus dan etalase swalayan',
+        'Mempercepat waktu penyiapan obat oleh staf kasir',
       ],
     },
     {
       num: '06',
-      screens: 'ReceiptPrintScreen & PrinterSettingScreen',
-      headline: 'Cetak Struk Kasir Thermal & Etiket Obat Pasien',
-      subHeadline: 'Kompatibel dengan printer thermal bluetooth ukuran 58mm dan 80mm',
+      icon: '/app-icons/apotekpro/3d/modul_06_struk.png',
+      headline: 'Cetak Nota Kasir & Label Etiket Obat',
+      subHeadline: 'Mendukung printer thermal bluetooth ukuran 58mm dan 80mm',
       features: [
-        'Sambungan Langsung Bluetooth & USB ke Segala Merek Printer Thermal',
-        'Kustomisasi Identitas Apotek: Nama Toko, Nomor SIA/SIPA, Alamat & Pesan Sehat',
-        'Cetak Salinan Resep (Copy Resep) dan Label Etiket Aturan Pakai Pasien',
-        'Pratinjau Struk Digital & Kemudahan Ekspor Struk ke Format WhatsApp/PDF',
+        'Koneksi langsung ke printer thermal bluetooth tanpa kabel',
+        'Cetak nama apotek, nomor izin SIPA, alamat, dan nota kasir',
+        'Cetak salinan resep (copy resep) dan etiket aturan pakai obat',
+        'Pratinjau nota digital dan kirim rincian belanja ke WhatsApp',
       ],
     },
     {
       num: '07',
-      screens: 'ProfitLossScreen & CashFlowScreen',
-      headline: 'Laporan Laba Rugi Real-Time & Arus Kas Apotek',
-      subHeadline: 'Ketahui keuntungan bersih dan pergerakan kas harian tanpa rekap manual',
+      icon: '/app-icons/apotekpro/3d/modul_07_labarugi.png',
+      headline: 'Laporan Laba Bersih & Arus Kas',
+      subHeadline: 'Ketahui keuntungan bersih dan arus kas tanpa hitung manual',
       features: [
-        'Kalkulasi Otomatis Laba Bersih (Total Penjualan dikurangi HPP Modal Produk)',
-        'Rekapitulasi Arus Kas Masuk dan Kas Keluar Operasional Farmasi',
-        'Laporan Rekapitulasi Pajak PPN Penjualan Siap Cetak',
-        'Analisis Tren Produk Terlaris dan Performa Penjualan Berdasarkan Periode',
+        'Perhitungan otomatis laba bersih dari omzet dikurangi modal HPP',
+        'Rekap penerimaan uang kas dan pengeluaran operasional apotek',
+        'Laporan rekapitulasi pajak PPN penjualan siap cetak',
+        'Analisis produk obat terlaris per hari, minggu, atau bulan',
       ],
     },
     {
       num: '08',
-      screens: 'ShiftManagementScreen & BusinessDataCashierScreen',
-      headline: 'Manajemen Shift Kasir & Rekonsiliasi Laci Kas',
-      subHeadline: 'Mencegah kebocoran dana operasional di setiap pergantian operator kasir',
+      icon: '/app-icons/apotekpro/3d/modul_08_shift.png',
+      headline: 'Manajemen Shift & Tutup Kasir',
+      subHeadline: 'Cegah selisih dana tunai pada setiap pergantian operator',
       features: [
-        'Pencatatan Kas Awal (Modal Pecahan) saat Membuka Shift Kasir',
-        'Rekonsiliasi Otomatis: Uang Fisik di Laci vs Total Penerimaan di Sistem',
-        'Deteksi Selisih Kas (Lebih/Kurang) Disertai Berita Acara Tutup Kasir',
-        'Rekapitulasi Transaksi Per Kasir untuk Evaluasi Transparansi Staf',
+        'Catat modal kas awal saat operator kasir mulai bertugas',
+        'Rekonsiliasi otomatis: uang fisik di laci kas vs catatan aplikasi',
+        'Deteksi selisih kas disertai laporan serah terima tutup shift',
+        'Rekapitulasi riwayat transaksi per operator kasir',
       ],
     },
     {
       num: '09',
-      screens: 'UserManagementScreen & SecurityScreen',
-      headline: 'Pembagian Hak Akses Pengguna & Keamanan PIN',
-      subHeadline: 'Kendali penuh di tangan pemilik untuk melindungi data finansial dan stok',
+      icon: '/app-icons/apotekpro/3d/modul_09_keamanan.png',
+      headline: 'Hak Akses Staf & Keamanan PIN',
+      subHeadline: 'Lindungi data modal obat dan laporan keuangan apotek',
       features: [
-        'Pembagian Peran Pengguna: Pemilik Apotek (Owner), Apoteker (APA), dan Kasir',
-        'Proteksi Akses Laporan Keuangan dan Perubahan Master Harga Menggunakan PIN',
-        'Fitur Audit Trail: Merekam Riwayat Penghapusan Transaksi dan Penyesuaian Stok',
-        'Pengawasan Sesi Perangkat Aktif untuk Keamanan Akun',
+        'Pembagian peran pengguna: Pemilik (Owner), Apoteker, dan Kasir',
+        'Kunci PIN rahasia untuk menu laba rugi dan ubah harga jual',
+        'Catatan riwayat pembatalan transaksi dan penyesuaian stok',
+        'Pengawasan perangkat kasir aktif untuk mencegah penyalahgunaan',
       ],
     },
     {
       num: '10',
-      screens: 'LocalBackupScreen & CloudBackupScreen',
-      headline: 'Bekerja 100% Offline Tanpa Ketergantungan Kuota',
-      subHeadline: 'Solusi software kasir mandiri yang selalu aktif meski jaringan terputus',
+      icon: '/app-icons/apotekpro/3d/modul_10_offline.png',
+      headline: 'Operasional 100% Offline Tanpa Kuota',
+      subHeadline: 'Kasir tetap melayani lancar meski jaringan internet padam',
       features: [
-        'Operasional Penuh Tanpa Memerlukan Sambungan Internet (Lokal di Handphone/Tablet)',
-        'Pencadangan Database Lokal Satu-Klik ke Memori Internal atau Kartu SD',
-        'Sekoci Sinkronisasi Cadangan Cloud Aman Saat Terhubung Jaringan',
-        'Zero Monthly Fee: Sekali Pasang, Beroperasi Permanen Tanpa Tagihan Bulanan',
+        'Bekerja mandiri tanpa internet langsung di tablet atau smartphone',
+        'Cadangkan database lokal satu kali klik ke memori perangkat',
+        'Pilihan cadangan aman ke cloud saat terhubung internet',
+        'Bebas iuran bulanan: sekali pasang aktif seterusnya',
       ],
     },
   ]
@@ -292,7 +292,7 @@ export default function ApotekProDedicatedSalesPage() {
     {
       feature: 'Konektivitas & Kestabilan',
       oldWay: 'Software berbasis cloud macet total saat koneksi internet/Wi-Fi apotek down',
-      apotekPro: 'Arsitektur Multi Hybrid: 100% Offline Room SQLite lokal + sekoci cloud aman',
+      apotekPro: '100% Offline mandiri di perangkat kasir + cadangan cloud aman',
     },
     {
       feature: 'Laporan Laba Rugi & Pajak',
@@ -309,7 +309,7 @@ export default function ApotekProDedicatedSalesPage() {
   const faqs = [
     {
       q: 'Apakah Apotek Pro benar-benar bisa bekerja penuh tanpa internet?',
-      a: 'Benar 100%. Apotek Pro dirancang dengan arsitektur Offline-First (Room SQLite lokal mandiri). Seluruh proses transaksi kasir, input resep racikan, manajemen stok, dan cetak struk bluetooth berjalan lancar tanpa memerlukan sambungan internet maupun kuota data.',
+      a: 'Benar 100%. Apotek Pro beroperasi mandiri secara lokal (100% Offline). Seluruh transaksi kasir, perhitungan resep puyer, manajemen stok, dan cetak nota bluetooth berjalan lancar tanpa memerlukan sambungan internet maupun kuota data.',
     },
     {
       q: 'Bagaimana cara mencoba aplikasinya di handphone atau tablet saya?',
@@ -375,7 +375,7 @@ export default function ApotekProDedicatedSalesPage() {
                 <path d="M17.271 10.941l3.197 1.84c.895.516.895 1.364 0 1.88l-3.197 1.84-2.42-2.42 2.42-3.14z" fill="#FFCE00"/>
                 <path d="M14.851 10.000L5.38 3.48l11.89 6.845-2.42 2.419z" fill="#00E676"/>
               </svg>
-              <span>Pasang Uji Coba (Playstore)</span>
+              <span>Pasang via Google Play</span>
             </a>
 
             <a
@@ -387,7 +387,7 @@ export default function ApotekProDedicatedSalesPage() {
               <svg className="w-5 h-5 text-neutral-900 shrink-0" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
               </svg>
-              <span>Konsultasi Teknis via WhatsApp</span>
+              <span>Konsultasi WhatsApp</span>
             </a>
           </div>
 
@@ -400,21 +400,41 @@ export default function ApotekProDedicatedSalesPage() {
             />
           </div>
 
-          {/* 4 STATS GRID */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto p-6 rounded-3xl bg-neutral-50 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
-            <div className="p-3 text-center">
+          {/* 4 STATS GRID DENGAN IKON 3D EMERALD MENONJOL */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-4xl mx-auto p-6 sm:p-7 rounded-3xl bg-neutral-50 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
+            <div className="p-3 flex flex-col items-center text-center">
+              <img
+                src="/app-icons/apotekpro/3d/stat_hybrid.png"
+                alt="Hybrid Multi-Device"
+                className="w-14 h-14 sm:w-16 sm:h-16 object-contain mb-3 drop-shadow-md hover:scale-110 transition-transform"
+              />
               <div className="font-display text-2xl sm:text-3xl font-bold text-neutral-950">Hybrid</div>
               <div className="text-xs text-neutral-500 font-medium mt-1">Online &amp; Offline</div>
             </div>
-            <div className="p-3 text-center">
+            <div className="p-3 flex flex-col items-center text-center">
+              <img
+                src="/app-icons/apotekpro/3d/stat_fefo.png"
+                alt="FEFO Alarm Batch"
+                className="w-14 h-14 sm:w-16 sm:h-16 object-contain mb-3 drop-shadow-md hover:scale-110 transition-transform"
+              />
               <div className="font-display text-2xl sm:text-3xl font-bold text-neutral-950">FEFO</div>
               <div className="text-xs text-neutral-500 font-medium mt-1">Alarm Batch Expired</div>
             </div>
-            <div className="p-3 text-center">
+            <div className="p-3 flex flex-col items-center text-center">
+              <img
+                src="/app-icons/apotekpro/3d/stat_puyer.png"
+                alt="Kalkulator Puyer"
+                className="w-14 h-14 sm:w-16 sm:h-16 object-contain mb-3 drop-shadow-md hover:scale-110 transition-transform"
+              />
               <div className="font-display text-2xl sm:text-3xl font-bold text-neutral-950">Puyer</div>
               <div className="text-xs text-neutral-500 font-medium mt-1">Hitung Racikan Resep</div>
             </div>
-            <div className="p-3 text-center">
+            <div className="p-3 flex flex-col items-center text-center">
+              <img
+                src="/app-icons/apotekpro/3d/stat_rp0.png"
+                alt="Rp 0 Bebas Iuran"
+                className="w-14 h-14 sm:w-16 sm:h-16 object-contain mb-3 drop-shadow-md hover:scale-110 transition-transform"
+              />
               <div className="font-display text-2xl sm:text-3xl font-bold text-neutral-950">Rp 0</div>
               <div className="text-xs text-neutral-500 font-medium mt-1">Bebas Iuran Bulanan</div>
             </div>
@@ -466,7 +486,7 @@ export default function ApotekProDedicatedSalesPage() {
               Sistem Kasir &amp; Tata Kelola Apotek Terpadu
             </h2>
             <p className="text-neutral-600 text-sm sm:text-base leading-relaxed font-sans max-w-2xl mx-auto">
-              Dibangun dari arsitektur nyata kode Kotlin Android Apotek Pro, setiap modul dirancang untuk menjawab kebutuhan operasional harian apoteker dan kasir apotek di lapangan.
+              Dirancang khusus menjawab kebutuhan harian apotek: mulai dari pelayanan kasir cepat, pemotongan stok racikan otomatis, hingga pembukuan obat yang akurat.
             </p>
           </div>
 
@@ -477,15 +497,24 @@ export default function ApotekProDedicatedSalesPage() {
                 className="rounded-3xl border border-neutral-200/90 bg-white p-7 sm:p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] hover:shadow-xl hover:border-neutral-400 transition-all flex flex-col justify-between group"
               >
                 <div>
-                  {/* Nomor Modul Bersih */}
-                  <div className="text-xs font-mono font-bold uppercase tracking-wider text-neutral-400 mb-3">
-                    MODUL {m.num}
+                  {/* Header Modul dengan Ikon 3D Emerald Menonjol Bebas Tanpa Pembungkus */}
+                  <div className="flex items-start justify-between gap-4 mb-3">
+                    <div className="flex-1">
+                      <span className="text-xs font-mono font-bold uppercase tracking-wider text-neutral-400 block mb-2">
+                        MODUL {m.num}
+                      </span>
+                      <h3 className="font-display text-xl sm:text-2xl font-bold text-neutral-950 leading-snug group-hover:text-black transition-colors">
+                        {m.headline}
+                      </h3>
+                    </div>
+                    {m.icon && (
+                      <img
+                        src={m.icon}
+                        alt={m.headline}
+                        className="w-16 h-16 sm:w-20 sm:h-20 object-contain shrink-0 drop-shadow-md group-hover:scale-110 transition-transform duration-300"
+                      />
+                    )}
                   </div>
-
-                  {/* Headline & Sub-Headline */}
-                  <h3 className="font-display text-xl sm:text-2xl font-bold text-neutral-950 mb-2 leading-snug group-hover:text-black transition-colors">
-                    {m.headline}
-                  </h3>
                   <p className="text-xs sm:text-sm font-medium text-neutral-600 font-sans leading-relaxed mb-6 pb-4 border-b border-neutral-100">
                     {m.subHeadline}
                   </p>
@@ -614,10 +643,17 @@ export default function ApotekProDedicatedSalesPage() {
             <div className="p-7 rounded-3xl border border-neutral-200/80 bg-neutral-50/60 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between">
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-2xl font-mono font-extrabold text-neutral-950">01</span>
-                  <span className="text-xs font-mono font-semibold uppercase tracking-wider text-neutral-400">
-                    Akses Grup
-                  </span>
+                  <div>
+                    <span className="text-2xl font-mono font-extrabold text-neutral-950 block">01</span>
+                    <span className="text-xs font-mono font-semibold uppercase tracking-wider text-neutral-400">
+                      Akses Grup
+                    </span>
+                  </div>
+                  <img
+                    src="/app-icons/apotekpro/3d/step_01_grup.png"
+                    alt="Grup Penguji"
+                    className="w-14 h-14 sm:w-16 sm:h-16 object-contain drop-shadow-md shrink-0"
+                  />
                 </div>
                 <h3 className="font-display text-lg font-bold text-neutral-950 mb-2">Gabung Grup Penguji</h3>
                 <p className="text-xs text-neutral-600 leading-relaxed mb-4">
@@ -642,10 +678,17 @@ export default function ApotekProDedicatedSalesPage() {
             <div className="p-7 rounded-3xl border-2 border-neutral-900 bg-white shadow-xl flex flex-col justify-between">
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-2xl font-mono font-extrabold text-neutral-950">02</span>
-                  <span className="text-xs font-mono font-bold uppercase tracking-wider text-emerald-700">
-                    Akses Uji Coba
-                  </span>
+                  <div>
+                    <span className="text-2xl font-mono font-extrabold text-neutral-950 block">02</span>
+                    <span className="text-xs font-mono font-bold uppercase tracking-wider text-emerald-700">
+                      Akses Uji Coba
+                    </span>
+                  </div>
+                  <img
+                    src="/app-icons/apotekpro/3d/step_02_akses.png"
+                    alt="Akses Play Store"
+                    className="w-14 h-14 sm:w-16 sm:h-16 object-contain drop-shadow-md shrink-0"
+                  />
                 </div>
                 <h3 className="font-display text-lg font-bold text-neutral-950 mb-2">Terima Akses Pengujian</h3>
                 <p className="text-xs text-neutral-600 leading-relaxed mb-4">
@@ -670,10 +713,17 @@ export default function ApotekProDedicatedSalesPage() {
             <div className="p-7 rounded-3xl border border-neutral-200/80 bg-neutral-50/60 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between">
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-2xl font-mono font-extrabold text-neutral-950">03</span>
-                  <span className="text-xs font-mono font-semibold uppercase tracking-wider text-neutral-400">
-                    Pasang di Kasir
-                  </span>
+                  <div>
+                    <span className="text-2xl font-mono font-extrabold text-neutral-950 block">03</span>
+                    <span className="text-xs font-mono font-semibold uppercase tracking-wider text-neutral-400">
+                      Pasang di Kasir
+                    </span>
+                  </div>
+                  <img
+                    src="/app-icons/apotekpro/3d/step_03_kasir.png"
+                    alt="Pasang di Kasir"
+                    className="w-14 h-14 sm:w-16 sm:h-16 object-contain drop-shadow-md shrink-0"
+                  />
                 </div>
                 <h3 className="font-display text-lg font-bold text-neutral-950 mb-2">Pasang di Google Play</h3>
                 <p className="text-xs text-neutral-600 leading-relaxed mb-4">
@@ -709,7 +759,7 @@ export default function ApotekProDedicatedSalesPage() {
                 <path d="M17.271 10.941l3.197 1.84c.895.516.895 1.364 0 1.88l-3.197 1.84-2.42-2.42 2.42-3.14z" fill="#FFCE00"/>
                 <path d="M14.851 10.000L5.38 3.48l11.89 6.845-2.42 2.419z" fill="#00E676"/>
               </svg>
-              <span>Pasang Uji Coba (Playstore)</span>
+              <span>Pasang via Google Play</span>
             </a>
 
             <div className="flex items-center justify-center gap-2 text-xs text-neutral-500 pt-1">
@@ -768,7 +818,7 @@ export default function ApotekProDedicatedSalesPage() {
                 <path d="M17.271 10.941l3.197 1.84c.895.516.895 1.364 0 1.88l-3.197 1.84-2.42-2.42 2.42-3.14z" fill="#FFCE00"/>
                 <path d="M14.851 10.000L5.38 3.48l11.89 6.845-2.42 2.419z" fill="#00E676"/>
               </svg>
-              <span>Pasang Uji Coba (Playstore)</span>
+              <span>Pasang via Google Play</span>
             </a>
             <a
               href={waConsultUrl}
@@ -779,7 +829,7 @@ export default function ApotekProDedicatedSalesPage() {
               <svg className="w-5 h-5 text-neutral-900 shrink-0" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
               </svg>
-              <span>Konsultasi WhatsApp Tim Pengembang</span>
+              <span>Konsultasi WhatsApp</span>
             </a>
           </div>
         </div>
