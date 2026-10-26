@@ -28,9 +28,9 @@ export default function BlogDetailPage({ params }) {
       <article className="container-page max-w-3xl mx-auto px-4 sm:px-6">
         {/* Navigation */}
         <div className="mb-6 flex items-center gap-2 text-xs text-neutral-500">
-          <Link href="/" className="hover:text-indigo-600 transition-colors">Beranda</Link>
+          <Link href="/" className="hover:text-neutral-900 transition-colors">Beranda</Link>
           <span>/</span>
-          <Link href="/blog" className="hover:text-indigo-600 transition-colors">Blog</Link>
+          <Link href="/blog" className="hover:text-neutral-900 transition-colors">Blog</Link>
           <span>/</span>
           <span className="text-neutral-800 truncate max-w-[200px]">{post.title}</span>
         </div>
@@ -53,7 +53,7 @@ export default function BlogDetailPage({ params }) {
         </header>
 
         {/* Lead Excerpt */}
-        <div className="p-5 rounded-2xl bg-indigo-50/70 border border-indigo-100/80 mb-8 text-neutral-700 text-sm sm:text-base leading-relaxed">
+        <div className="p-5 rounded-2xl bg-neutral-50 border border-neutral-200 mb-8 text-neutral-700 text-sm sm:text-base leading-relaxed">
           {post.excerpt}
         </div>
 
@@ -102,7 +102,7 @@ export default function BlogDetailPage({ params }) {
             </Link>
             <Link
               href="/aplikasi"
-              className="px-4 py-2.5 rounded-xl bg-indigo-600 text-white font-semibold text-xs hover:bg-indigo-500 transition-all"
+              className="px-4 py-2.5 rounded-xl bg-neutral-800 border border-neutral-700 text-white font-semibold text-xs hover:bg-neutral-700 transition-all"
             >
               Katalog Aplikasi
             </Link>

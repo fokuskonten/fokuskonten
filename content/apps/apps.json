@@ -76,15 +76,63 @@
         "description": "Software CRM desktop Windows (.EXE) untuk manajemen database prospek WhatsApp, pipeline penjualan, dan tindak lanjut (follow-up) lead otomatis."
     },
     {
-        "id": "hptools",
-        "name": "FokusKonten HP Tools",
-        "package": "com.fokuskonten.hptools",
+        "id": "jumptools",
+        "name": "JumperTools",
+        "package": "com.fokuskonten.jumptools",
+        "category": "Utilitas",
+        "status": "published",
+        "version": "2.0.0",
+        "targetSdk": 36,
+        "minSdk": 24,
+        "icon": "/app-icons/jumptools.png",
+        "description": "Software desktop Windows (.EXE) C# .NET 8 WPF utilitas teknisi smartphone multi-chipset (Qualcomm EDL 9008, MediaTek Brom, Samsung Odin, SPD) untuk flashing firmware, bypass, unbrick, dan diagnosa hardware."
+    },
+    {
+        "id": "reimage",
+        "name": "FokusKonten ReImage",
+        "package": "com.fokuskonten.reimage",
         "category": "Utilitas",
         "status": "published",
         "version": "1.0.0",
         "targetSdk": 36,
         "minSdk": 24,
-        "icon": "/app-icons/hptools.png",
-        "description": "Software desktop utilitas teknisi smartphone Windows untuk diagnosa perangkat, bypass, otomasi servis, dan manajemen firmware ponsel multi-brand."
+        "icon": "/app-icons/reimage.png",
+        "description": "Software desktop Windows (.EXE) native .NET 8 WPF x64 + Rust libcaesium multi-core untuk optimasi kompresi lossless/lossy, reduksi byte target presisi, dan konversi format gambar WebP/JPG/PNG super cepat."
+    },
+    {
+        "id": "smartvidkon",
+        "name": "Smart Vidkon Automation",
+        "package": "com.fokuskonten.smartvidkon",
+        "category": "Produktivitas",
+        "status": "published",
+        "version": "1.0.0",
+        "targetSdk": 36,
+        "minSdk": 24,
+        "icon": "/app-icons/smartvidkon.png",
+        "description": "Software desktop Windows (.EXE) otomasi produksi video vertikal 9:16 (Shorts/Reels/TikTok) berbasis akselerasi hardware NVIDIA NVENC, transkripsi Whisper per-kata, TTS AI, dan perakitan otomatis."
+    },
+    {
+        "id": "smartmotion",
+        "name": "Smart Motion Automation",
+        "package": "com.fokuskonten.smartmotion",
+        "category": "Produktivitas",
+        "status": "published",
+        "version": "1.0.0",
+        "targetSdk": 36,
+        "minSdk": 24,
+        "icon": "/app-icons/smartmotion.png",
+        "description": "Software desktop Windows (.EXE) orkestrasi timeline kinetik tipografi vertikal 60 FPS menggunakan engine React Remotion, arsitektur dua jalur Corporate & Cartoon, serta integrasi visual semantik otomatis."
+    },
+    {
+        "id": "ptnti",
+        "name": "PT. Nurcahya Teknik Industry",
+        "package": "id.my.fokuskonten.ptnti",
+        "category": "Web PWA",
+        "status": "published",
+        "version": "1.0.0",
+        "targetSdk": 36,
+        "minSdk": 24,
+        "icon": "/app-icons/ptnti.png",
+        "description": "Progressive Web App (PWA) profil industri manufaktur presisi, machining CNC Bubut & Milling 3-Axis, stamping dies, jig & fixture, dan fabrikasi logam presisi PT Nurcahya Teknik Industry."
     }
 ]

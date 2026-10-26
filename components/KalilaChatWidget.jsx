@@ -303,7 +303,7 @@ export default function KalilaChatWidget() {
       {/* Floating Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`fixed bottom-24 lg:bottom-6 right-4 lg:right-6 z-50 w-14 h-14 rounded-full bg-neutral-950 text-white shadow-lg shadow-black/35 hover:shadow-2xl hover:shadow-black/50 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-1 border border-neutral-800 cursor-pointer ${isOpen ? 'scale-0 opacity-0' : 'scale-100 opacity-100'}`}
+        className={`fixed bottom-20 lg:bottom-16 right-4 lg:right-6 z-50 w-14 h-14 rounded-full bg-neutral-950 text-white shadow-lg shadow-black/35 hover:shadow-2xl hover:shadow-black/50 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-1 border border-neutral-800 cursor-pointer ${isOpen ? 'scale-0 opacity-0' : 'scale-100 opacity-100'}`}
         aria-label="Tanya Customer Service FokusKonten"
         title="Chat Customer Service Resmi"
       >
@@ -325,7 +325,7 @@ export default function KalilaChatWidget() {
       </button>
 
       {/* Chat Window */}
-      <div className={`fixed bottom-24 lg:bottom-6 right-4 lg:right-6 z-50 w-[380px] sm:w-[400px] max-w-[calc(100vw-1.5rem)] h-[540px] sm:h-[580px] max-h-[calc(100vh-5rem)] bg-white rounded-3xl shadow-2xl border border-neutral-200 flex flex-col transition-all duration-300 origin-bottom-right font-sans overflow-hidden ${isOpen ? 'scale-100 opacity-100' : 'scale-0 opacity-0 pointer-events-none'}`}>
+      <div className={`fixed bottom-20 lg:bottom-16 right-4 lg:right-6 z-50 w-[380px] sm:w-[400px] max-w-[calc(100vw-1.5rem)] h-[540px] sm:h-[580px] max-h-[calc(100vh-5rem)] bg-white rounded-3xl shadow-2xl border border-neutral-200 flex flex-col transition-all duration-300 origin-bottom-right font-sans overflow-hidden ${isOpen ? 'scale-100 opacity-100' : 'scale-0 opacity-0 pointer-events-none'}`}>
         
         {/* Header */}
         <div className="bg-neutral-950 px-5 py-4 flex items-center justify-between border-b border-neutral-800">

@@ -34,7 +34,7 @@ export default function BlogPage() {
                   </span>
                   <span>{post.readTime || '5 menit'}</span>
                 </div>
-                <h2 className="font-display font-bold text-lg text-neutral-900 mb-2 hover:text-indigo-600 transition-colors">
+                <h2 className="font-display font-bold text-lg text-neutral-900 mb-2 hover:text-neutral-600 transition-colors">
                   <Link href={'/blog/' + post.slug}>
                     {post.title}
                   </Link>
@@ -43,11 +43,11 @@ export default function BlogPage() {
                   {post.excerpt}
                 </p>
               </div>
-              <div className="pt-4 border-t border-neutral-100 flex items-center justify-between text-xs">
+              <div className="pt-4 border-t border-neutral-100 flex items-center justify-between text-xs font-mono">
                 <span className="text-neutral-400">{post.date}</span>
                 <Link
                   href={'/blog/' + post.slug}
-                  className="font-semibold text-indigo-600 hover:text-indigo-700 inline-flex items-center gap-1"
+                  className="font-semibold text-neutral-950 hover:text-neutral-600 inline-flex items-center gap-1 transition-colors"
                 >
                   Baca Selengkapnya &rarr;
                 </Link>

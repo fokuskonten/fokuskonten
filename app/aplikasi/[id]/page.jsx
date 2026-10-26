@@ -29,6 +29,14 @@ export async function generateMetadata({ params }) {
   }
 }
 
+const portfolioAliases = {
+  ptnti: '/portfolio/pt-nurcahya-teknik-industry',
+  mcjob: '/portfolio/mcjob-platform-karir',
+  jumptools: '/portfolio/jumptools-suite',
+  smartvidkon: '/portfolio/smart-vidkon-automation',
+  smartmotion: '/portfolio/smart-motion-automation',
+}
+
 export default function AppDetailPage({ params }) {
   const app = appsData.find((a) => a.id === params.id)
   const portfolio = portfolioData[params.id] || app
@@ -55,6 +63,8 @@ export default function AppDetailPage({ params }) {
     },
   }
 
+  const portfolioLink = portfolioAliases[params.id]
+
   return (
     <>
       {/* ── HERO HEADER SECTION ───────────────────────────────────────── */}
@@ -75,25 +85,31 @@ export default function AppDetailPage({ params }) {
             />
             <div className="flex-1">
               <div className="flex flex-wrap items-center gap-2 mb-3">
-                <span className="px-3 py-1 rounded-full text-xs font-display font-semibold bg-neutral-950 text-white">
+                <span className="px-3 py-1 rounded-full text-xs font-display font-semibold bg-neutral-950 text-white shadow-sm">
                   {portfolio.badge || portfolio.category}
                 </span>
-                <span className="text-xs text-neutral-500 font-medium">
-                  {portfolio.category}
-                </span>
-                {portfolio.specs?.platform && (
-                  <span className="text-xs text-neutral-400 font-mono">
-                    {portfolio.specs.platform}
-                  </span>
-                )}
               </div>
 
               <h1 className="heading-xl text-3xl sm:text-4xl text-neutral-900 mb-2">
                 {portfolio.name}
               </h1>
-              <p className="text-base sm:text-lg text-neutral-600 font-medium leading-relaxed max-w-2xl">
+              <p className="text-base sm:text-lg text-neutral-600 font-medium leading-relaxed max-w-2xl mb-4">
                 {portfolio.tagline || portfolio.description}
               </p>
+
+              {portfolioLink && (
+                <div className="inline-flex flex-wrap items-center gap-2 px-3.5 py-2 rounded-xl bg-neutral-100 border border-neutral-300/80 text-xs text-neutral-800">
+                  <span className="font-mono font-bold text-neutral-950">Studi Kasus Portofolio</span>
+                  <span>— Dokumentasi arsitektur dan spesifikasi teknis lengkap telah tersedia.</span>
+                  <Link
+                    href={portfolioLink}
+                    className="font-bold underline text-black hover:text-neutral-700 inline-flex items-center gap-1"
+                  >
+                    <span>Buka Lembar Portofolio</span>
+                    <span aria-hidden="true">&rarr;</span>
+                  </Link>
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -329,6 +345,19 @@ export default function AppDetailPage({ params }) {
                   </p>
 
                   <div className="space-y-3">
+                    {/* Dedicated Landing Page Promo (Jika Tersedia) */}
+                    {portfolio?.landingUrl && (
+                      <Link
+                        href={portfolio.landingUrl}
+                        className="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl font-display font-semibold text-xs text-white bg-emerald-600 hover:bg-emerald-700 shadow-md shadow-emerald-600/20 transition-all"
+                      >
+                        <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                        <span>Lihat Penawaran &amp; Akses Beta</span>
+                      </Link>
+                    )}
+
                     {/* Google Play (Jika Tersedia) */}
                     {(portfolio?.playstoreUrl || cta.primary?.type === 'playstore') && (
                       <a
@@ -474,20 +503,8 @@ export default function AppDetailPage({ params }) {
                     </div>
                   )}
 
-                  <div className="mt-6 pt-5 border-t border-neutral-100 space-y-3 text-xs">
-                    <a
-                      href={waAppUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-neutral-600 hover:text-black font-medium transition-colors"
-                    >
-                      <svg className="w-4 h-4 text-neutral-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                      </svg>
-                      Konsultasi Teknis Pengembang
-                    </a>
-
-                    {portfolio.privacyPolicy && (
+                  {portfolio.privacyPolicy && (
+                    <div className="mt-6 pt-5 border-t border-neutral-100 text-xs">
                       <Link
                         href={portfolio.privacyPolicy}
                         className="flex items-center gap-2 text-neutral-500 hover:text-black transition-colors"
@@ -497,8 +514,8 @@ export default function AppDetailPage({ params }) {
                         </svg>
                         Kebijakan Privasi Aplikasi
                       </Link>
-                    )}
-                  </div>
+                    </div>
+                  )}
                 </div>
 
                 {/* Other Released Products */}

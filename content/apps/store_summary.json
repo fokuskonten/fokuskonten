@@ -244,7 +244,10 @@
         "originalPrice": 10000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID376B/ID376B_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .CDR"
+        "tag": "Format .CDR",
+        "shopeeCode": "11099258799",
+        "shopeeItemId": "11099258799",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/11099258799"
       },
       {
         "sku": "ID1496",
@@ -255,7 +258,10 @@
         "originalPrice": 30000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID1496/ID1496_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .CDR"
+        "tag": "Format .CDR",
+        "shopeeCode": "21969000357",
+        "shopeeItemId": "21969000357",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/21969000357"
       },
       {
         "sku": "ID1686",
@@ -266,7 +272,10 @@
         "originalPrice": 25000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID1686/ID1686_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .CDR"
+        "tag": "Format .CDR",
+        "shopeeCode": "19069003011",
+        "shopeeItemId": "19069003011",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/19069003011"
       },
       {
         "sku": "ID7F75",
@@ -277,7 +286,10 @@
         "originalPrice": 20000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID7F75/ID7F75_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .CDR"
+        "tag": "Format .CDR",
+        "shopeeCode": "15855424431",
+        "shopeeItemId": "15855424431",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/15855424431"
       }
     ],
     "pwa": [
@@ -290,7 +302,10 @@
         "originalPrice": 90000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID0A03/ID0A03_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .PWA"
+        "tag": "Format .PWA",
+        "shopeeCode": "43734764276",
+        "shopeeItemId": "43734764276",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/43734764276"
       },
       {
         "sku": "IDC55B",
@@ -301,7 +316,10 @@
         "originalPrice": 32000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDC55B/IDC55B_cover.webp",
         "badge": "Terlaris",
-        "tag": "Format .PWA"
+        "tag": "Format .PWA",
+        "shopeeCode": "57518414853",
+        "shopeeItemId": "57518414853",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/57518414853"
       },
       {
         "sku": "ID49CC",
@@ -312,7 +330,10 @@
         "originalPrice": 20000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID49CC/ID49CC_cover.webp",
         "badge": "Terlaris",
-        "tag": "Format .PWA"
+        "tag": "Format .PWA",
+        "shopeeCode": "57518414850",
+        "shopeeItemId": "57518414850",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/57518414850"
       },
       {
         "sku": "IDFC4A",
@@ -323,7 +344,10 @@
         "originalPrice": 60000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDFC4A/IDFC4A_cover.webp",
         "badge": "Terlaris",
-        "tag": "PWA"
+        "tag": "PWA",
+        "shopeeCode": "44284769224",
+        "shopeeItemId": "44284769224",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/44284769224"
       },
       {
         "sku": "IDF405",
@@ -334,7 +358,10 @@
         "originalPrice": 84000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDF405/IDF405_cover.webp",
         "badge": "Unggulan",
-        "tag": "PWA"
+        "tag": "PWA",
+        "shopeeCode": "43734764252",
+        "shopeeItemId": "43734764252",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/43734764252"
       },
       {
         "sku": "IDE356",
@@ -345,7 +372,10 @@
         "originalPrice": 32000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDE356/IDE356_cover.webp",
         "badge": "Terlaris",
-        "tag": "PWA"
+        "tag": "PWA",
+        "shopeeCode": "43834764286",
+        "shopeeItemId": "43834764286",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/43834764286"
       },
       {
         "sku": "IDCAD2",
@@ -356,7 +386,10 @@
         "originalPrice": 60000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDCAD2/IDCAD2_cover.webp",
         "badge": "Unggulan",
-        "tag": "PWA"
+        "tag": "PWA",
+        "shopeeCode": "50768430624",
+        "shopeeItemId": "50768430624",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/50768430624"
       },
       {
         "sku": "IDB9E4",
@@ -367,7 +400,10 @@
         "originalPrice": 28000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDB9E4/IDB9E4_cover.webp",
         "badge": "Terlaris",
-        "tag": "PWA"
+        "tag": "PWA",
+        "shopeeCode": "46668449524",
+        "shopeeItemId": "46668449524",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/46668449524"
       }
     ],
     "cdr": [
@@ -380,7 +416,10 @@
         "originalPrice": 10000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID376B/ID376B_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .CDR"
+        "tag": "Format .CDR",
+        "shopeeCode": "11099258799",
+        "shopeeItemId": "11099258799",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/11099258799"
       },
       {
         "sku": "ID1496",
@@ -391,7 +430,10 @@
         "originalPrice": 30000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID1496/ID1496_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .CDR"
+        "tag": "Format .CDR",
+        "shopeeCode": "21969000357",
+        "shopeeItemId": "21969000357",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/21969000357"
       },
       {
         "sku": "ID1686",
@@ -402,7 +444,10 @@
         "originalPrice": 25000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID1686/ID1686_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .CDR"
+        "tag": "Format .CDR",
+        "shopeeCode": "19069003011",
+        "shopeeItemId": "19069003011",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/19069003011"
       },
       {
         "sku": "ID7F75",
@@ -413,7 +458,10 @@
         "originalPrice": 20000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID7F75/ID7F75_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .CDR"
+        "tag": "Format .CDR",
+        "shopeeCode": "15855424431",
+        "shopeeItemId": "15855424431",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/15855424431"
       },
       {
         "sku": "ID44C4",
@@ -424,7 +472,10 @@
         "originalPrice": 20000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID44C4/ID44C4_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .CDR"
+        "tag": "Format .CDR",
+        "shopeeCode": "8019754729",
+        "shopeeItemId": "8019754729",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/8019754729"
       },
       {
         "sku": "IDDF04",
@@ -435,7 +486,10 @@
         "originalPrice": 15000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDDF04/IDDF04_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .CDR"
+        "tag": "Format .CDR",
+        "shopeeCode": "20477918930",
+        "shopeeItemId": "20477918930",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/20477918930"
       },
       {
         "sku": "ID9CBF",
@@ -446,7 +500,10 @@
         "originalPrice": 40000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID9CBF/ID9CBF_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .CDR"
+        "tag": "Format .CDR",
+        "shopeeCode": "10887776037",
+        "shopeeItemId": "10887776037",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/10887776037"
       },
       {
         "sku": "ID5383",
@@ -457,7 +514,10 @@
         "originalPrice": 50000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID5383/ID5383_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .CDR"
+        "tag": "Format .CDR",
+        "shopeeCode": "19569015334",
+        "shopeeItemId": "19569015334",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/19569015334"
       }
     ],
     "others": [
@@ -470,7 +530,10 @@
         "originalPrice": 60000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID3199/ID3199_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .MP4"
+        "tag": "Format .MP4",
+        "shopeeCode": "50751851582",
+        "shopeeItemId": "50751851582",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/50751851582"
       },
       {
         "sku": "ID9919",
@@ -481,7 +544,10 @@
         "originalPrice": 60000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID9919/ID9919_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .MP4"
+        "tag": "Format .MP4",
+        "shopeeCode": "45251875669",
+        "shopeeItemId": "45251875669",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/45251875669"
       },
       {
         "sku": "IDE0C2",
@@ -492,7 +558,10 @@
         "originalPrice": 60000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDE0C2/IDE0C2_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .MP4"
+        "tag": "Format .MP4",
+        "shopeeCode": "23737272884",
+        "shopeeItemId": "23737272884",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/23737272884"
       },
       {
         "sku": "IDC50B",
@@ -503,7 +572,10 @@
         "originalPrice": 25000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDC50B/IDC50B_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .MP4"
+        "tag": "Format .MP4",
+        "shopeeCode": "56101851212",
+        "shopeeItemId": "56101851212",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/56101851212"
       },
       {
         "sku": "IDEBCB",
@@ -514,7 +586,10 @@
         "originalPrice": 60000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDEBCB/IDEBCB_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .MP4"
+        "tag": "Format .MP4",
+        "shopeeCode": "57651841857",
+        "shopeeItemId": "57651841857",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/57651841857"
       },
       {
         "sku": "IDFCC3",
@@ -525,7 +600,10 @@
         "originalPrice": 70000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/IDFCC3/IDFCC3_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .MP4"
+        "tag": "Format .MP4",
+        "shopeeCode": "48701871522",
+        "shopeeItemId": "48701871522",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/48701871522"
       },
       {
         "sku": "ID1AF4",
@@ -536,7 +614,10 @@
         "originalPrice": 35000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID1AF4/ID1AF4_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .MP4"
+        "tag": "Format .MP4",
+        "shopeeCode": "53251846589",
+        "shopeeItemId": "53251846589",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/53251846589"
       },
       {
         "sku": "ID9C29",
@@ -547,7 +628,10 @@
         "originalPrice": 35000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/ID9C29/ID9C29_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .MP4"
+        "tag": "Format .MP4",
+        "shopeeCode": "46101861650",
+        "shopeeItemId": "46101861650",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/46101861650"
       }
     ],
     "powershell": [
@@ -560,7 +644,10 @@
         "originalPrice": 40000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/FK-PSH-101/FK-PSH-101_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .POWERSHELL IRM"
+        "tag": "Format .POWERSHELL IRM",
+        "shopeeCode": "54869588113",
+        "shopeeItemId": "54869588113",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/54869588113"
       },
       {
         "sku": "FK-PSH-115",
@@ -571,7 +658,10 @@
         "originalPrice": 40000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/FK-PSH-115/FK-PSH-115_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .POWERSHELL IRM"
+        "tag": "Format .POWERSHELL IRM",
+        "shopeeCode": "48019615874",
+        "shopeeItemId": "48019615874",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/48019615874"
       },
       {
         "sku": "FK-PSH-63",
@@ -582,7 +672,10 @@
         "originalPrice": 40000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/FK-PSH-63/FK-PSH-63_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .POWERSHELL IRM"
+        "tag": "Format .POWERSHELL IRM",
+        "shopeeCode": "51569597293",
+        "shopeeItemId": "51569597293",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/51569597293"
       },
       {
         "sku": "FK-PSH-30",
@@ -593,7 +686,10 @@
         "originalPrice": 40000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/FK-PSH-30/FK-PSH-30_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .POWERSHELL IRM"
+        "tag": "Format .POWERSHELL IRM",
+        "shopeeCode": "52619592978",
+        "shopeeItemId": "52619592978",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/52619592978"
       },
       {
         "sku": "FK-PSH-37",
@@ -604,7 +700,10 @@
         "originalPrice": 40000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/FK-PSH-37/FK-PSH-37_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .POWERSHELL IRM"
+        "tag": "Format .POWERSHELL IRM",
+        "shopeeCode": "58119593048",
+        "shopeeItemId": "58119593048",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/58119593048"
       },
       {
         "sku": "FK-PSH-24",
@@ -615,7 +714,10 @@
         "originalPrice": 40000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/FK-PSH-24/FK-PSH-24_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .POWERSHELL IRM"
+        "tag": "Format .POWERSHELL IRM",
+        "shopeeCode": "52119592958",
+        "shopeeItemId": "52119592958",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/52119592958"
       },
       {
         "sku": "FK-PSH-22",
@@ -626,7 +728,10 @@
         "originalPrice": 40000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/FK-PSH-22/FK-PSH-22_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .POWERSHELL IRM"
+        "tag": "Format .POWERSHELL IRM",
+        "shopeeCode": "50269602287",
+        "shopeeItemId": "50269602287",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/50269602287"
       },
       {
         "sku": "FK-PSH-17",
@@ -637,11 +742,14 @@
         "originalPrice": 40000,
         "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/FK-PSH-17/FK-PSH-17_cover.webp",
         "badge": "Unggulan",
-        "tag": "Format .POWERSHELL IRM"
+        "tag": "Format .POWERSHELL IRM",
+        "shopeeCode": "49569617293",
+        "shopeeItemId": "49569617293",
+        "shopeeUrl": "https://shopee.co.id/product/106517440/49569617293"
       }
     ]
   },
   "totalProducts": 381,
-  "lastUpdated": "2026-10-23T17:24:19.864Z",
+  "lastUpdated": "2026-10-26T21:49:00.118Z",
   "totalEcourse": 0
 }

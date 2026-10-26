@@ -10,6 +10,7 @@ import ProductPurchaseBox from '@/components/product/ProductPurchaseBox'
 import ProductSpecs from '@/components/product/ProductSpecs'
 import ProductRelatedGrid from '@/components/product/ProductRelatedGrid'
 import FaqSection from '@/components/FaqSection'
+import ShopeeIcon from '@/components/product/ShopeeIcon'
 import { hasPurchasedSku, subscribeBuyerStore } from '@/lib/buyerStore'
 import { addToCart, hasInCart, subscribeCartStore } from '@/lib/cartStore'
 
@@ -199,6 +200,8 @@ export default function ProductDetailClient({ product }) {
   }
 
   const cleanDesc = product.description || 'Paket produk master digital resmi FokusKonten.'
+  const shopeeCode = product.shopeeCode || product.shopeeItemId || product.shopee_code
+  const shopeeUrl = product.shopeeUrl || (shopeeCode ? `https://shopee.co.id/product/106517440/${shopeeCode}` : 'https://shopee.co.id/fokuskonten')
 
   return (
     <div className="min-h-screen pt-28 sm:pt-32 pb-32 sm:pb-24 bg-white text-neutral-900">
@@ -373,6 +376,19 @@ export default function ProductDetailClient({ product }) {
             </Link>
           ) : (
             <>
+              {shopeeUrl && (
+                <a
+                  href={shopeeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2.5 rounded-xl bg-[#EE4D2D] hover:bg-[#d73f20] text-white shadow-sm flex items-center justify-center cursor-pointer active:scale-95 group/shopee"
+                  title="Beli di Shopee Resmi"
+                  aria-label="Beli di Shopee Resmi"
+                >
+                  <ShopeeIcon className="w-4 h-4 fill-white transition-transform duration-200 group-hover/shopee:scale-110" />
+                </a>
+              )}
+
               <button
                 type="button"
                 onClick={handleAddToCart}

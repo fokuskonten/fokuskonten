@@ -35,6 +35,9 @@ function getProductData(rawParam) {
         }
         prod = {
           sku: row.sku,
+          shopeeCode: row.shopee_code || null,
+          shopeeItemId: row.shopee_code || null,
+          shopeeUrl: row.shopee_code ? `https://shopee.co.id/product/106517440/${row.shopee_code}` : 'https://shopee.co.id/fokuskonten',
           title: row.title,
           name: row.title,
           category: row.category,

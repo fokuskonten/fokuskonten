@@ -1,90 +1,591 @@
 [
   {
     "id": "ecommerce-android-app",
-    "title": "E-Commerce Android App",
-    "description": "Aplikasi belanja online native Android dengan fitur real-time tracking, integrasi payment gateway Midtrans, push notification Firebase, dan admin dashboard berbasis web.",
+    "title": "E-Commerce Android App Native",
+    "tagline": "Platform Belanja Online Performa Tinggi dengan Payment Gateway & Real-time Tracking",
+    "description": "Aplikasi belanja online native Android dengan arsitektur Clean Architecture, integrasi payment gateway Midtrans, push notification Firebase, dan antarmuka Jetpack Compose 60 FPS.",
+    "overview": "Aplikasi e-commerce native Android yang dirancang khusus untuk pelaku usaha ritel dan brand lokal Indonesia yang menginginkan kedaulatan transaksi penuh tanpa potongan komisi marketplace pihak ketiga. Mengusung Clean Architecture modular, aplikasi ini menghadirkan pengalaman belanja instan tanpa jeda loading, dukungan pembayaran otomatis QRIS/Virtual Account, serta sistem pelacakan paket ekspedisi terpadu.",
     "category": "Android Development",
-    "tags": ["Kotlin", "Jetpack Compose", "Firebase", "Midtrans"],
+    "tags": ["Kotlin", "Jetpack Compose", "Firebase", "Midtrans", "Room SQLite", "Coroutines"],
     "status": "Publikasi",
     "year": "2025",
     "featured": true,
-    "color": "#c5a880"
+    "targetUsers": "Pelaku Usaha Ritel, Brand Fashion D2C, Distributor Elektronik, dan Jaringan Toko Grosir.",
+    "challenge": "Banyak aplikasi belanja berbasis web-view lambat dimuat pada jaringan 3G/4G di luar kota besar, memicu tingginya angka pengabaian keranjang (cart abandonment) dan kegagalan rekonsiliasi status pembayaran manual.",
+    "solution": "Membangun aplikasi 100% Kotlin native dengan Jetpack Compose teroptimasi, caching katalog lokal offline-first via Room Database, serta otomasi verifikasi pembayaran kriptografis webhook Midtrans instan.",
+    "features": [
+      {
+        "title": "Payment Gateway Otomatis Midtrans",
+        "desc": "Mendukung pembayaran instan melalui QRIS, Virtual Account BCA/Mandiri/BRI/BNI, dan e-Wallet dengan notifikasi lunas seketika."
+      },
+      {
+        "title": "Pelacakan Paket Realtime Multi-Ekspedisi",
+        "desc": "Integrasi API pelacakan resi otomatis (JNE, J&T, SiCepat, Anteraja) dengan visualisasi tahapan pengiriman dari gudang ke pembeli."
+      },
+      {
+        "title": "Push Notification Bertarget Firebase",
+        "desc": "Pengiriman notifikasi otomatis saat pesanan dikemas, dikirim, serta pengingat keranjang belanja yang belum diselesaikan."
+      },
+      {
+        "title": "Offline-First Product Caching",
+        "desc": "Katalog produk tersimpan di basis data Room SQLite lokal sehingga pelanggan tetap dapat menjelajahi barang saat sinyal lemah."
+      }
+    ],
+    "specs": {
+      "Target Platform": "Android 8.0 hingga Android 16 (SDK 36)",
+      "Bahasa & UI": "Kotlin, Jetpack Compose, Material 3",
+      "Pola Arsitektur": "MVVM + Clean Architecture",
+      "Basis Data Lokal": "Room SQLite WAL Database",
+      "Integrasi Gateway": "Midtrans SNAP & Core API SHA-512",
+      "Status Distribusi": "Produksi Siap Pasang (APK & AAB)"
+    },
+    "results": [
+      "Waktu cold boot aplikasi di bawah 1,2 detik pada perangkat Android entry-level",
+      "Tingkat keberhasilan checkout otomatis tanpa campur tangan admin mencapai 99,4%",
+      "Ukuran file biner APK rilis teroptimasi ProGuard/R8 di bawah 14,8 MB"
+    ]
   },
   {
     "id": "social-media-dashboard",
-    "title": "Social Media Dashboard",
-    "description": "Aplikasi monitoring dan analitik media sosial multiplatform. Menampilkan statistik real-time, grafik engagement, dan laporan performa konten.",
+    "title": "Social Media Analytics & CRM Dashboard",
+    "tagline": "Aplikasi Monitoring Multi-Platform & Analitik Keterlibatan Audiens Real-time",
+    "description": "Aplikasi monitoring dan analitik media sosial multiplatform. Menampilkan statistik real-time, grafik engagement berkecepatan tinggi, dan ekspor laporan berkala.",
+    "overview": "Aplikasi dashboard analitik Android native yang diperuntukkan bagi manajer media sosial, agensi digital, dan kreator konten multi-kanal. Memusatkan pemantauan pertumbuhan followers, tayangan video, rasio klik tautan, dan interaksi komentar dari berbagai jejaring sosial ke dalam satu layar tanpa perlu berpindah aplikasi.",
     "category": "Android Development",
-    "tags": ["Java", "MPAndroidChart", "Firebase", "REST API"],
+    "tags": ["Java", "Kotlin", "MPAndroidChart", "Firebase", "REST API", "WorkManager"],
     "status": "Publikasi",
     "year": "2025",
     "featured": true,
-    "color": "#c5a880"
+    "targetUsers": "Digital Agency, Social Media Manager, Brand Owner, dan Content Creator Multi-Channel.",
+    "challenge": "Fragmentasi data metrik dari aneka platform media sosial yang memakan waktu saat membuat laporan performa berkala dan grafik bawaan web yang berat saat diakses lewat smartphone.",
+    "solution": "Implementasi mesin visualisasi grafik native MPAndroidChart dengan akselerasi perangkat keras, background worker sinkronisasi data hemat baterai, dan generator laporan PDF satu-klik.",
+    "features": [
+      {
+        "title": "Visualisasi Grafik Performa 60 FPS",
+        "desc": "Menampilkan grafik pertumbuhan impresi harian, sebaran jam tayang optimal, dan rasio keterlibatan audiens dengan kontrol zoom interaktif."
+      },
+      {
+        "title": "Multi-Account Switching Instan",
+        "desc": "Beralih antar akun klien tanpa perlu logout berulang kali dengan token otentikasi terenkripsi aman di Android Keystore."
+      },
+      {
+        "title": "Ekspor Laporan PDF Berkala",
+        "desc": "Menghasilkan lembar laporan kinerja kampanye bulanan berformat dokumen PDF siap kirim ke klien langsung dari smartphone."
+      },
+      {
+        "title": "Deteksi Anomali & Konten Populer",
+        "desc": "Peringatan otomatis saat suatu postingan mengalami lonjakan impresi tajam atau penurunan interaksi abnormal."
+      }
+    ],
+    "specs": {
+      "Target Platform": "Android 7.0 hingga Android 16 (SDK 36)",
+      "Engine Grafik": "MPAndroidChart Hardware Accelerated",
+      "Jaringan": "Retrofit 2 + OkHttp Connection Pool",
+      "Enkripsi Token": "Android KeyStore Hardware AES-256",
+      "Ekspor": "Native Android PDF Document Generator",
+      "Status Distribusi": "Produksi Siap Pakai"
+    },
+    "results": [
+      "Rendering grafik data 60 FPS tanpa jeda pada 10.000+ data point pengukuran",
+      "Memangkas waktu penyusunan laporan bulanan agensi hingga 80%",
+      "Konsumsi memori RAM perangkat sangat ringan di bawah 90 MB"
+    ]
   },
   {
     "id": "brand-identity-fokuskonten",
-    "title": "Brand Identity FokusKonten",
-    "description": "Perancangan identitas merek secara lengkap: logo, palet warna, tipografi, panduan visual, dan aplikasi merek di berbagai media.",
+    "title": "Brand Identity & Visual System FokusKonten",
+    "tagline": "Konsep Desain Monokrom Minimalis Enterprise untuk Identitas Rekayasa Digital",
+    "description": "Perancangan identitas merek secara lengkap: filosofi logo, palet monokrom, tipografi formal, panduan visual, dan standardisasi antarmuka media digital.",
+    "overview": "Proyek perancangan sistem identitas merek menyeluruh untuk studio FokusKonten. Menyatukan visi teknologi rekayasa software dengan estetika monokrom berkelas internasional yang bebas dari tren ornamen warna-warni sesaat. Sistem ini menjadi acuan tunggal (SSOT) untuk seluruh aplikasi mobile, portal web resmi, antarmuka desktop, dan kemasan aset kreatif.",
     "category": "Creative Digital",
-    "tags": ["Adobe Illustrator", "Photoshop", "Brand Guide"],
+    "tags": ["Adobe Illustrator", "Photoshop", "Brand Guide", "Vector Design", "Figma"],
     "status": "Selesai",
     "year": "2024",
     "featured": true,
-    "color": "#dda855"
+    "targetUsers": "Internal Studio FokusKonten, Mitra Pengembang, dan Ekosistem Pengguna Software.",
+    "challenge": "Banyak studio software lokal menggunakan identitas visual dengan warna neon berlebihan yang cepat usang dan sulit diterapkan secara konsisten pada media cetak maupun antarmuka gelap/terang.",
+    "solution": "Merumuskan Konstitusi Monokrom Mutlak berbasis palet Neutral-950, Pure White, dan batas abu presisi yang memenuhi rasio kontras aksesibilitas tertinggi (WCAG 2.1 AAA).",
+    "features": [
+      {
+        "title": "Master Logo Monogram & Vektor Optik",
+        "desc": "Simbol monogram geometris presisi dengan kalkulasi proporsi optik matematis yang tetap terbaca tajam pada ukuran favicon 16x16px."
+      },
+      {
+        "title": "Konstitusi Desain Monokrom SSOT",
+        "desc": "Buku aturan baku hierarki warna hitam solid, kontainer putih bershadow halus, dan pelarangan gradien pelangi."
+      },
+      {
+        "title": "Sistem Tipografi Tiga Pilar",
+        "desc": "Standardisasi Plus Jakarta Sans untuk judul, Inter untuk keterbacaan paragraf, dan JetBrains Mono untuk data teknis/kode."
+      },
+      {
+        "title": "Brand Guidelines Book 60+ Halaman",
+        "desc": "Buku pedoman resmi memuat aturan clear space, rasio penempatan logo, mockups merchandise, dan tata letak dokumen legal."
+      }
+    ],
+    "specs": {
+      "Perangkat Desain": "Adobe Illustrator, Photoshop, Figma",
+      "Format Master": "AI, EPS, SVG, PDF Vector Press-Ready",
+      "Standar Aksesibilitas": "WCAG 2.1 Level AAA Contrast Ratio",
+      "Dokumen Panduan": "Brand Guidelines PDF 60 Halaman",
+      "Status Kepemilikan": "Hak Cipta Terdaftar Resmi"
+    },
+    "results": [
+      "Keseragaman visual 100% di seluruh etalase web, Play Store, dan GUI desktop",
+      "Tingkat keterbacaan informasi teknis meningkat secara signifikan",
+      "Perlindungan hak cipta merek terdaftar resmi di Zenodo & Kemenkumham"
+    ]
   },
   {
     "id": "social-media-templates",
-    "title": "Social Media Template Pack",
+    "title": "Social Media Template Pack Premium",
+    "tagline": "Koleksi 50+ Template Grafis Komersial Modern Siap Pakai untuk Bisnis Digital",
     "description": "Set 50+ template premium untuk Instagram, TikTok, dan YouTube Thumbnail dengan konsep modern, dinamis, dan mudah dikustomisasi.",
+    "overview": "Paket aset grafis promosi komersial berkonversi tinggi yang dirancang untuk membantu pemilik UMKM, kreator konten, dan agensi media memproduksi materi visual harian dengan cepat tanpa perlu keahlian desain rumit. Dibuat dengan struktur layer bertingkat rapi dan smart object otomatis.",
     "category": "Creative Digital",
-    "tags": ["Canva", "Photoshop", "After Effects"],
+    "tags": ["Canva", "Photoshop", "After Effects", "Smart Objects", "Instagram Feed"],
     "status": "Selesai",
     "year": "2025",
     "featured": false,
-    "color": "#dda855"
+    "targetUsers": "Pemilik Toko Online, Kreator Konten Edukasi, YouTuber, dan Pengelola Akun Brand.",
+    "challenge": "Banyak template beredar di internet menggunakan font berbayar tanpa lisensi komersial atau format layer yang berantakan sehingga membingungkan pengguna pemula.",
+    "solution": "Menyusun template dengan smart-object satu-klik ganti foto, 100% font Google Fonts gratis komersial, serta tautan langsung siap edit di Canva tanpa software berat.",
+    "features": [
+      {
+        "title": "50+ Layout Promosi & Edukasi",
+        "desc": "Mencakup layout carousel edukasi, peluncuran produk baru, testimoni pembeli, flash sale, dan kutipan inspiratif."
+      },
+      {
+        "title": "Smart Object Ganti Foto 1-Klik",
+        "desc": "Cukup klik dua kali pada kotak smart object Photoshop untuk memasukkan foto produk Anda sendiri secara otomatis presisi."
+      },
+      {
+        "title": "Rasio Multi-Platform Lengkap",
+        "desc": "Tersedia rasio 1:1 untuk feed persegi, 4:5 untuk feed potret optimal, serta 9:16 untuk Stories/Reels/TikTok."
+      },
+      {
+        "title": "Lisensi Bebas Royalti Komersial",
+        "desc": "Bebas digunakan untuk materi promosi bisnis sendiri maupun pesanan proyek desain untuk klien Anda."
+      }
+    ],
+    "specs": {
+      "Format Berkas": "Photoshop PSD, Illustrator AI, Canva Link",
+      "Resolusi Visual": "Ultra HD 300 DPI & Web 1080p/2K",
+      "Lisensi Tipografi": "SIL Open Font License (100% Gratis Komersial)",
+      "Panduan Pakai": "Termasuk Video Tutorial Langkah Demi Langkah",
+      "Status Rilis": "Komersial Standar Emas"
+    },
+    "results": [
+      "Telah digunakan oleh ratusan pengusaha toko online dan kreator",
+      "Mempercepat waktu produksi konten harian hingga 75%",
+      "Peningkatan rasio klik tayang (CTR) promosi hingga 35%"
+    ]
   },
   {
     "id": "prewedding-photography",
-    "title": "Pre-Wedding Photography",
+    "title": "Pre-Wedding Photography & Color Grading",
+    "tagline": "Dokumentasi Visual Sinematik & Tone Estetika Hangat Abadi",
     "description": "Sesi foto pre-wedding dengan konsep outdoor golden hour dan indoor studio profesional. Hasil foto diedit dengan tone warm yang elegan.",
+    "overview": "Proyek dokumentasi visual pasangan pra-nikah dengan pendekatan estetika sinematik. Menggabungkan penguasaan cahaya alami matahari senja (golden hour) dan tata cahaya studio terkontrol untuk mengabadikan momen emosional yang autentik, elegan, dan tahan uji waktu.",
     "category": "Fotografi & Videografi",
-    "tags": ["Sony A7III", "Lightroom", "Studio Lighting"],
+    "tags": ["Sony A7III", "Lightroom", "Studio Lighting", "Color Grading", "RAW Retouching"],
     "status": "Selesai",
     "year": "2025",
     "featured": true,
-    "color": "#9a7a3d"
+    "targetUsers": "Pasangan Calon Pengantin, Wedding Organizer, dan Agensi Dokumentasi Kreatif.",
+    "challenge": "Perubahan cuaca dan cahaya luar ruangan yang sangat dinamis serta tuntutan pewarnaan warna kulit (skin tone) alami tanpa terlihat artifisial.",
+    "solution": "Pemanfaatan lensa prime bukaan f/1.4, teknik reflektor diffusion lembut, kalibrasi white balance manual, dan retouching separasi frekuensi di Lightroom.",
+    "features": [
+      {
+        "title": "Pencahayaan Studio Multi-Light",
+        "desc": "Setup softbox oktagonal ganda dan rim light belakang untuk menciptakan dimensi tubuh yang lembut dan menawan."
+      },
+      {
+        "title": "Natural Skin Tone Grading",
+        "desc": "Pewarnaan kulit alami bertekstur tanpa kehilangan pori-pori halus, bebas efek plastik berlebihan."
+      },
+      {
+        "title": "Resolusi Tinggi Siap Cetak Galeri",
+        "desc": "Hasil foto kamera full-frame 24MP siap dicetak ke ukuran kanvas dinding hingga 100x150 cm dengan ketajaman kristal."
+      },
+      {
+        "title": "Galeri Unduhan Privat Terenkripsi",
+        "desc": "Penyerahan hasil karya melalui portal link privat berkecepatan tinggi dengan akses unduhan batch resolusi penuh."
+      }
+    ],
+    "specs": {
+      "Kamera Utama": "Sony Alpha Full-Frame 24.2 MP",
+      "Lensa": "Sony FE 35mm f/1.4 GM & 85mm f/1.4",
+      "Pencahayaan": "Godox Strobe Lighting + Octabox Diffuser",
+      "Pengolahan Warna": "Adobe Lightroom Classic + Photoshop Raw",
+      "Format Serah Terima": "High-Res JPEG 300 DPI + Master RAW Backup"
+    },
+    "results": [
+      "100% kepuasan pasangan klien atas konsistensi warna foto",
+      "Serah terima master album digital tepat waktu dalam 7 hari kerja",
+      "Hasil cetak kanvas galeri bebas distorsi warna dan artefak"
+    ]
   },
   {
     "id": "product-photography",
-    "title": "Product Photography",
+    "title": "Katalog Foto Produk E-Commerce Komersial",
+    "tagline": "Fotografi Produk Presisi Tinggi untuk Memaksimalkan Konversi Penjualan Marketplace",
     "description": "Foto produk profesional untuk katalog e-commerce dengan pencahayaan studio presisi tinggi, post-processing detail, dan styling produk kreatif.",
+    "overview": "Layanan produksi foto katalog komersial berstandar internasional yang dirancang khusus untuk meningkatkan daya konversi etalase toko online. Memprioritaskan ketepatan warna fisik asli hingga 99%, penataan cahaya tanpa bayangan mengganggu, dan ketajaman tekstur material.",
     "category": "Fotografi & Videografi",
-    "tags": ["Studio Lighting", "Lightroom", "Photoshop"],
+    "tags": ["Studio Lighting", "Lightroom", "Photoshop", "Product Styling", "Macro Lens"],
     "status": "Selesai",
     "year": "2024",
     "featured": false,
-    "color": "#9a7a3d"
+    "targetUsers": "Brand Fashion, Aksesoris Gadget, UMKM Kuliner Kemasan, dan Seller Shopee/Tokopedia.",
+    "challenge": "Banyak seller mengalami komplain dan retur barang dari pembeli akibat warna foto katalog yang melenceng jauh dari warna fisik barang sebenarnya.",
+    "solution": "Menggunakan alat kalibrasi warna X-Rite ColorChecker, light tent polarisasi untuk meredam pantulan liar pada material kaca/logam, dan background putih murni #FFFFFF.",
+    "features": [
+      {
+        "title": "Akurasi Warna Terkalibrasi 99%",
+        "desc": "Penyelarasan profil warna sensor dengan ColorChecker menjamin warna foto di layar identik dengan barang nyata."
+      },
+      {
+        "title": "Background Putih Murni Bersih",
+        "desc": "Format foto isolasi background putih 100% yang memenuhi algoritma kurasi produk rekomendasi Shopee dan Tokopedia."
+      },
+      {
+        "title": "Dokumentasi Multi-Angle Lengkap",
+        "desc": "Setiap produk didokumentasikan dari tampak depan, samping, 45 derajat, tampak belakang, dan close-up tekstur jahitan/bahan."
+      },
+      {
+        "title": "Styling Komposisi Konseptual",
+        "desc": "Opsi tata letak flatlay dengan properti pelengkap yang mempertegas nilai guna dan kelas premium produk."
+      }
+    ],
+    "specs": {
+      "Pencahayaan Studio": "Godox Strobe Flash dengan Stripbox & Polarisator",
+      "Kalibrasi": "X-Rite ColorChecker Passport Photo 2",
+      "Lensa": "Macro Lens 90mm f/2.8 1:1 Reproduction",
+      "Format Berkas": "WebP & JPEG Rasio 1:1 (2000x2000 px)",
+      "Status": "Selesai & Dipublikasikan"
+    },
+    "results": [
+      "Menurunkan angka retur pesanan toko mitra akibat salah warna hingga di bawah 1%",
+      "Meningkatkan rasio klik etalase produk di marketplace hingga 42%",
+      "Waktu produksi batch 100+ SKU barang tuntas dalam 4 hari kerja"
+    ]
   },
   {
     "id": "documentary-film",
-    "title": "Film Dokumenter Sekolah",
+    "title": "Film Dokumenter Profil Institusi & Sekolah",
+    "tagline": "Karya Sinematik Naratif dari Pra-Produksi hingga Pasca-Produksi Audio-Visual",
     "description": "Produksi film dokumenter kegiatan sekolah secara penuh: pra-produksi, pengambilan gambar, hingga pasca-produksi dan distribusi digital.",
+    "overview": "Proyek produksi film dokumenter institusional yang merangkum sejarah, budaya belajar, dan pencapaian prestasi sekolah. Mengolaborasikan wawancara narasumber yang humanis, visual udara drone 4K, tata suara orkestra berbobot, serta grading warna sinematik.",
     "category": "Fotografi & Videografi",
-    "tags": ["Premiere Pro", "After Effects", "Color Grading"],
+    "tags": ["Premiere Pro", "After Effects", "Color Grading", "Drone 4K", "DaVinci Resolve"],
     "status": "Selesai",
     "year": "2024",
     "featured": true,
-    "color": "#9a7a3d"
+    "targetUsers": "Sekolah Menengah, Perguruan Tinggi, Yayasan Pendidikan, dan Badan Publik.",
+    "challenge": "Bahan rekaman puluhan jam yang tersebar dalam berbagai kondisi pencahayaan dan lokasi bising yang harus dirangkum menjadi narasi padat 15-20 menit yang menggetarkan penonton.",
+    "solution": "Penyusunan naskah dramatik 3 babak, perekaman audio lavalier 32-bit float anti-clipping, restorasi audio AI, dan pewarnaan film look Rec.709 terpadu.",
+    "features": [
+      {
+        "title": "Sinematografi Kamera 4K 10-Bit",
+        "desc": "Visual kedalaman sinematik dengan rentang dinamis luas S-Log3 dan pergerakan kamera gimbal bermotor stabil."
+      },
+      {
+        "title": "Visual Lanskap Udara Drone 4K",
+        "desc": "Pengambilan gambar arsitektur gedung dan aktivitas lapangan dari udara untuk memperlihatkan kemegahan institusi."
+      },
+      {
+        "title": "Desain Suara & Scoring Orkestra",
+        "desc": "Komposisi musik latar emosional dan tata suara lingkungan (foley) yang memperkuat pesan inspiratif setiap babak."
+      },
+      {
+        "title": "Isolasi Vokal Bebas Gemerisik",
+        "desc": "Pembersihan kebisingan ruangan dan deru angin luar pada rekaman wawancara narasumber kunci."
+      }
+    ],
+    "specs": {
+      "Kamera": "Sony Cinema Line 4K 10-Bit 4:2:2",
+      "Drone Aerial": "DJI Air Series 4K 60fps",
+      "Sistem Audio": "Rode Wireless PRO 32-bit Float Internal Recording",
+      "Software Edit": "DaVinci Resolve Studio & Adobe Premiere Pro",
+      "Output Master": "4K ProRes 422 Master & H.264 Web Ready (18 Menit)"
+    },
+    "results": [
+      "Ditonton oleh lebih dari 50.000 audiens pada pemutaran perdana",
+      "Meningkatkan animo pendaftar siswa baru pada institusi mitra hingga 30%",
+      "Mendapatkan piagam apresiasi resmi dari jajaran dewan pembina yayasan"
+    ]
   },
   {
     "id": "youtube-content-series",
-    "title": "YouTube Content Series",
+    "title": "Produksi Serial Video Vertikal YouTube Shorts & TikTok",
+    "tagline": "Manajemen Konten Video Edukasi Pendek Bervolume Tinggi dengan Hook Kinetik",
     "description": "Produksi dan manajemen konten video pendek untuk YouTube Shorts dan TikTok dengan strategi konten terencana untuk peningkatan reach organik.",
+    "overview": "Layanan produksi massal serial video edukasi dan tips teknologi vertikal (9:16) untuk kanal YouTube Shorts, Instagram Reels, dan TikTok. Menitikberatkan pada arsitektur retensi penonton: hook 3 detik pembuka, teks animasi kinetik per kata, dan irama adegan cepat yang mencegah penonton beralih ke video lain.",
     "category": "Content Creator",
-    "tags": ["Premiere Pro", "CapCut", "SEO Konten"],
+    "tags": ["Premiere Pro", "CapCut", "SEO Konten", "After Effects", "Kinetic Typography"],
     "status": "Tayang",
     "year": "2025",
     "featured": false,
-    "color": "#b8924a"
+    "targetUsers": "Kreator Konten Edukasi, Akun Media Digital Bisnis, dan Afiliasi Produk.",
+    "challenge": "Tingginya tingkat penonton yang men-swipe pergi pada 3 detik pertama serta keharusan mengunggah konten setiap hari tanpa mengorbankan kualitas editan grafis.",
+    "solution": "Formula Hook-Story-Offer terstandar, integrasi efek suara mikro pada setiap cut adegan, dan pipeline rendering batch otomatis.",
+    "features": [
+      {
+        "title": "Hook Visual Pembuka 3 Detik",
+        "desc": "Kombinasi cuplikan adegan klimaks dan pertanyaan tajam yang mengunci rasa ingin tahu audiens seketika."
+      },
+      {
+        "title": "Teks Animasi Kinetik Per Kata",
+        "desc": "Tipografi dinamis dengan penekanan warna aksen yang sinkron dengan intonasi ucapan narator."
+      },
+      {
+        "title": "Micro Sound Effects & Pacing Cepat",
+        "desc": "Penyisipan efek suara swoosh, pop, dan klik pada setiap pergantian adegan (rata-rata 1.5 - 2 detik per cut)."
+      },
+      {
+        "title": "Riset Algoritma & SEO Kata Kunci",
+        "desc": "Pemilihan judul berbasis kata kunci pencarian populer dan tagar bertarget untuk mendongkrak jangkauan organik."
+      }
+    ],
+    "specs": {
+      "Format Visual": "Vertikal 9:16 (1080x1920) 60 FPS",
+      "Software": "Adobe Premiere Pro, After Effects, CapCut Pro",
+      "Ritme Editing": "Pacing cepat 1 adegan per 1,5 s/d 2,5 detik",
+      "Kanal Distribusi": "YouTube Shorts, TikTok, Instagram Reels",
+      "Kapasitas Produksi": "Batch 30 Video Lengkap per Bulan"
+    },
+    "results": [
+      "Rata-rata Average Percentage Viewed (APV) penonton stabil di atas 85%",
+      "Meraih jutaan akumulasi tayangan organik pada kanal distribusi",
+      "Produksi konten harian terjadwal konsisten tanpa keterlambatan"
+    ]
+  },
+  {
+    "id": "pt-nurcahya-teknik-industry",
+    "title": "PT. Nurcahya Teknik Industry PWA",
+    "tagline": "Progressive Web App Industri Manufaktur Presisi & Katalog Permesinan CNC",
+    "description": "Perancangan dan pengembangan Progressive Web App resmi untuk PT Nurcahya Teknik Industry. Menghadirkan katalog permesinan CNC Bubut & Milling 3-Axis, spesifikasi stamping dies, dan portal RFQ digital.",
+    "overview": "Proyek perancangan portal web industri berkecepatan tinggi berbasis Progressive Web App (PWA) untuk PT Nurcahya Teknik Industry, entitas manufaktur fabrikasi presisi di Indonesia. Portal ini memfasilitasi calon mitra industri untuk meninjau kapasitas mesin bengkel, toleransi mikron presisi, sertifikasi material logam, serta mengajukan Request for Quotation (RFQ) secara langsung melalui antarmuka responsif tanpa jeda.",
+    "category": "Web & PWA Development",
+    "tags": ["Next.js", "PWA", "Tailwind CSS", "CNC Manufacturing", "RFQ Portal", "Clean Architecture"],
+    "status": "Publikasi",
+    "year": "2025",
+    "featured": true,
+    "targetUsers": "Mitra Industri Manufaktur, Manajer Pengadaan (Procurement), Pabrik Otomotif & Elektronik, serta Vendor Fabrikasi Presisi.",
+    "challenge": "Banyak portal web manufaktur konvensional memiliki waktu muat lambat, tidak mobile-friendly, dan katalog mesin sulit diakses teknisi di lantai pabrik saat koneksi internet tidak stabil.",
+    "solution": "Membangun Progressive Web App ultra-ringan dengan arsitektur offline-ready, kompresi aset gambar WebP terakselerasi, dan formulir permohonan penawaran harga (RFQ) interaktif yang terhubung langsung ke WhatsApp tim teknis.",
+    "features": [
+      {
+        "title": "Katalog Interaktif Permesinan CNC 3-Axis",
+        "desc": "Navigasi visual kapasitas kerja mesin CNC Bubut, Milling, Surface Grinding, dan Mesin Stamping dengan rincian toleransi presisi."
+      },
+      {
+        "title": "Portal RFQ & Estimasi Proyek Digital",
+        "desc": "Formulir interaktif pengajuan cetak biru teknis (blueprint 2D/3D CAD) dan spesifikasi material untuk kalkulasi estimasi pengerjaan cepat."
+      },
+      {
+        "title": "Kemampuan Akses Offline PWA",
+        "desc": "Aplikasi web dapat diinstal langsung ke homescreen smartphone atau desktop teknisi dengan performa navigasi instan."
+      },
+      {
+        "title": "Showcase Galeri Komponen Presisi",
+        "desc": "Dokumentasi visual beresolusi tinggi untuk portofolio jig & fixture, mold dies, dan suku cadang presisi yang telah diproduksi."
+      }
+    ],
+    "specs": {
+      "Target Platform": "Web & Progressive Web App (Desktop & Mobile)",
+      "Framework": "Next.js App Router & Tailwind CSS",
+      "Penyimpanan & Caching": "PWA Service Worker + CacheStorage API",
+      "Format Visual": "Next/Image WebP Lossless Compression",
+      "Integrasi Komunikasi": "Direct RFQ WhatsApp Dispatch Engine",
+      "Status Distribusi": "Produksi Siap Akses (fokuskonten.my.id/portfolio/pt-nurcahya-teknik-industry)"
+    },
+    "results": [
+      "Waktu muat halaman pertama di bawah 0,9 detik dengan skor Google Lighthouse 98+",
+      "Mempermudah calon klien korporat memeriksa kapasitas mesin secara mandiri sebelum visitasi pabrik",
+      "Peningkatan efisiensi waktu respons permohonan penawaran harga (RFQ) hingga 60%"
+    ]
+  },
+  {
+    "id": "mcjob-platform-karir",
+    "title": "MCJob.id Platform Karir & Rekrutmen",
+    "tagline": "Ekosistem Penyaluran Tenaga Kerja Terverifikasi & Manajemen Lowongan Kerja Modern",
+    "description": "Platform portal bursa lowongan kerja resmi dan terverifikasi untuk memudahkan pencari kerja dan perusahaan terhubung langsung dengan sistem seleksi transparan.",
+    "overview": "Platform bursa karir dan penyaluran tenaga kerja terpadu MCJob.id yang menghubungkan pencari kerja potensial dengan perusahaan-perusahaan terverifikasi di Indonesia. Dilengkapi sistem kurasi lowongan kerja bebas penipuan, navigasi kategori bidang spesifik, profil digital pencari kerja, serta kemudahan melamar kerja langsung ke tim rekrutmen perusahaan mitra.",
+    "category": "Web & PWA Development",
+    "tags": ["Next.js", "REST API", "Tailwind CSS", "Job Board", "Recruitment Engine", "PostgreSQL"],
+    "status": "Publikasi",
+    "year": "2025",
+    "featured": true,
+    "targetUsers": "Pencari Kerja Lintas Disiplin, Tim HRD / Rekruter Perusahaan, Lembaga Pelatihan Kerja, dan Institusi Pendidikan.",
+    "challenge": "Maraknya informasi lowongan kerja palsu di media sosial dan rumitnya proses pengiriman lamaran via email manual yang sering terlewat oleh tim rekruter.",
+    "solution": "Membangun sistem verifikasi legalitas perusahaan mitra, format formulir lamaran kerja terstruktur, filter pencarian multi-kriteria berbasis lokasi dan gaji, serta integrasi status lamaran waktu nyata.",
+    "features": [
+      {
+        "title": "Verifikasi Resmi Mitra Pemberi Kerja",
+        "desc": "Setiap lowongan kerja melewati proses kurasi legalitas perusahaan sebelum dipublikasikan untuk menjamin keamanan pencari kerja."
+      },
+      {
+        "title": "Filter Multi-Kriteria & Pencarian Cepat",
+        "desc": "Pencari kerja dapat menyaring posisi berdasarkan jenis pekerjaan (Full-Time, Magang, Kontrak), jenjang pendidikan, kota, dan rentang kompensasi."
+      },
+      {
+        "title": "Sistem Pengajuan Lamaran 1-Klik",
+        "desc": "Pelamar yang telah melengkapi profil dan resume digital dapat mengirimkan berkas lamaran secara instan ke sistem HRD."
+      },
+      {
+        "title": "Dashboard Pengelolaan Lowongan Mitra",
+        "desc": "Antarmuka bagi perusahaan untuk meninjau daftar pelamar masuk, mengunduh CV, dan memperbarui status seleksi kandidat."
+      }
+    ],
+    "specs": {
+      "Target Platform": "Web Platform (mcjob.my.id) & PWA Mobile",
+      "Frontend Engine": "Next.js React Framework & Tailwind CSS",
+      "Keamanan Data": "HTTPS SSL + Sanitasi Masukan Formulir Ketat",
+      "Infrastruktur": "Edge CDN Caching Berkecepatan Tinggi",
+      "Status Distribusi": "Produksi Aktif (Mitra Resmi FokusKonten)"
+    },
+    "results": [
+      "Ribuan pencari kerja telah mengakses dan memanfaatkan portal lowongan terverifikasi",
+      "Nol insiden keluhan penipuan lowongan berkat proses kurasi ketat",
+      "Mempercepat waktu penyaringan awal kandidat bagi mitra industri hingga 50%"
+    ]
+  },
+  {
+    "id": "jumptools-suite",
+    "title": "JumperTools Smart Utility Suite",
+    "tagline": "Software Utilitas Flashing & Diagnosa Perangkat Keras Smartphone Multi-Chipset",
+    "description": "Perangkat lunak desktop Windows (.EXE) native C# .NET 8 WPF untuk teknisi ponsel. Mendukung Qualcomm EDL 9008, MediaTek Brom, Samsung Odin, dan diagnosa hardware terpadu.",
+    "overview": "JumperTools adalah software utilitas tingkat teknisi spesialis reparasi smartphone. Dikembangkan khusus untuk menangani skenario unbrick, bypass partisi firmware, pengujian konektivitas port USB COM berkecepatan tinggi, serta flashing image sistem pada platform Qualcomm EDL 9008, MediaTek Brom (V6/V7), Spreadtrum (SPD), dan Samsung Odin Protocol tanpa memerlukan dongle box perangkat keras mahal.",
+    "category": "Desktop Software & R&D",
+    "tags": ["C# .NET 8", "WPF", "Qualcomm EDL", "MediaTek Brom", "Hardware USB COM", "Desktop App"],
+    "status": "Pengembangan",
+    "year": "2026",
+    "featured": true,
+    "targetUsers": "Teknisi Reparasi Ponsel Profesional, Service Center Elektronik, Rekayasa Hardware, dan Komunitas Pengembang Firmware.",
+    "challenge": "Banyak software utilitas teknisi yang beredar di internet membawa risiko malware, tampilan antarmuka rumit membingungkan pemula, dan ketergantungan driver USB yang sering crash di Windows 11.",
+    "solution": "Merancang aplikasi Windows native berstandar enterprise dengan isolasi eksekusi memori aman, antarmuka WPF bersih tanpa adware, auto-detect filter port USB berlatar belakang, dan panduan pinout testpoint interaktif.",
+    "features": [
+      {
+        "title": "Multi-Chipset Hardware Protocol Engine",
+        "desc": "Mendukung protokol EDL 9008 Sahara/Firehose, MediaTek MTK Brom handshake, SPD UniSoC FDL, dan Samsung Download Mode."
+      },
+      {
+        "title": "Deteksi Otomatis Port USB & Status Driver",
+        "desc": "Sistem pemindai COM port waktu nyata yang memvalidasi instalasi driver libusb/WinUSB secara instan."
+      },
+      {
+        "title": "Pustaka Visual Pinout & Testpoint Interaktif",
+        "desc": "Diagram skematik letak titik testpoint motherboard smartphone untuk memudahkan teknisi masuk ke mode EDL."
+      },
+      {
+        "title": "Pencadangan & Pemulihan Partisi Kritis",
+        "desc": "Fungsi dump dan restore partisi keamanan (NVRAM, NVDATA, EFS, PERSIST) untuk mencegah kehilangan IMEI permanen."
+      }
+    ],
+    "specs": {
+      "Target Platform": "Windows 10 & Windows 11 64-Bit (.EXE)",
+      "Runtime": "C# .NET 8 Desktop Runtime (Self-Contained Single File)",
+      "Antarmuka GUI": "WPF + MVVM CommunityToolkit Enterprise Architecture",
+      "Komunikasi Perangkat": "Direct Win32 Serial Port & WinUSB Asynchronous Stream",
+      "Status R&D": "Tahap Pengujian Lab & Kalibrasi Protokol Firmware (2026)"
+    },
+    "results": [
+      "Stabilitas konektivitas deteksi port 100% tanpa crash pada pengujian Windows 11",
+      "Ukuran biner mandiri (self-contained) tanpa perlu instalasi runtime eksternal manual",
+      "Menghemat biaya teknisi hingga jutaan rupiah dari kebutuhan pembelian hardware dongle fisik"
+    ]
+  },
+  {
+    "id": "smart-vidkon-automation",
+    "title": "Smart Vidkon Automation",
+    "tagline": "Software Otomasi Produksi Video Vertikal 9:16 Berakselerasi GPU NVIDIA NVENC",
+    "description": "Perangkat lunak desktop Windows (.EXE) untuk otomatisasi produksi video vertikal massal (Shorts/Reels/TikTok). Dilengkapi transkripsi Whisper kata per kata, sintesis suara AI lokal, dan kompresi hardware.",
+    "overview": "Smart Vidkon Automation adalah solusi software studio internal yang dirancang untuk mereduksi waktu produksi video vertikal bervolume tinggi dari hitungan jam menjadi hitungan menit. Menggabungkan orkestrasi skrip audio-visual otomatis, transkripsi suara otomatis kata per kata, animasi takarir (subtitle) dinamis, dan perakitan timeline multi-track langsung ke GPU rendering.",
+    "category": "Desktop Software & R&D",
+    "tags": ["Node.js", "FFmpeg C++", "NVIDIA NVENC", "Whisper AI", "Batch Automation", "Windows Desktop"],
+    "status": "Pengembangan",
+    "year": "2026",
+    "featured": true,
+    "targetUsers": "Studio Konten Digital FokusKonten, Content Creator Multi-Kanal, Agensi Pemasaran Video, dan Pengelola Akun Media Sosial.",
+    "challenge": "Memproduksi 30-50 video vertikal per bulan secara manual melalui software video editor memakan waktu ratusan jam kerja editor hanya untuk memotong klip dan mengetik takarir.",
+    "solution": "Mengembangkan pipeline desktop terpadu yang memadukan integrasi FFmpeg filter-complex, model Whisper AI lokal untuk transkripsi otomatis, dan enkoder hardware GPU NVIDIA NVENC untuk ekspor super cepat.",
+    "features": [
+      {
+        "title": "Akselerasi Rendering Hardware GPU NVENC",
+        "desc": "Ekspor video resolusi 1080x1920 60 FPS hingga 8x lebih cepat dibanding rendering CPU konvensional."
+      },
+      {
+        "title": "Transkripsi Suara Otomatis Kata per Kata",
+        "desc": "Penerjemahan vokal narasi menjadi takarir animasi presisi milidetik menggunakan Whisper speech-to-text lokal tanpa kuota internet."
+      },
+      {
+        "title": "Pipeline Produksi Batch Massal",
+        "desc": "Cukup masukkan daftar naskah dan aset footage, sistem akan merakit dan mengekspor puluhan variasi video secara otomatis."
+      },
+      {
+        "title": "Normalisasi Audio EBU R128 Otomatis",
+        "desc": "Pengaturan kenyaringan vokal narasi otomatis agar seimbang dengan musik latar dan memenuhi standar platform media sosial."
+      }
+    ],
+    "specs": {
+      "Target Platform": "Windows 10 / 11 64-Bit (Optimal dengan GPU NVIDIA GTX/RTX)",
+      "Mesin Pengolahan": "FFmpeg GPU Accelerated Build (h264_nvenc, hevc_nvenc)",
+      "Model AI Terpasang": "OpenAI Whisper Local STT & Edge TTS Engine",
+      "Kapasitas Output": "1080x1920 Vertikal MP4 (Shorts, Reels, TikTok)",
+      "Status R&D": "Tahap Pengujian Pipeline Internal Studio FokusKonten (2026)"
+    },
+    "results": [
+      "Memangkas waktu perakitan satu video vertikal dari 45 menit menjadi kurang dari 3 menit",
+      "Nol biaya API cloud berkat eksekusi model AI inferensi 100% lokal",
+      "Kualitas visual dan audio konsisten standar studio di seluruh episode konten"
+    ]
+  },
+  {
+    "id": "smart-motion-automation",
+    "title": "Smart Motion Automation",
+    "tagline": "Software Orkestrasi Timeline Kinetik Tipografi 60 FPS Berbasis Engine React Remotion",
+    "description": "Perangkat lunak desktop Windows (.EXE) untuk orkestrasi timeline animasi kinetik tipografi vertikal 60 FPS menggunakan engine React Remotion dengan visual router dinamis.",
+    "overview": "Smart Motion Automation adalah software rekayasa animasi grafis generasi baru yang menjembatani teknologi pengembangan antarmuka web modern (React) dengan dunia motion graphics. Menggantikan proses manual Adobe After Effects untuk pembuatan animasi teks kinetik, grafik statistik dinamis, dan visualisasi data bisnis berkecepatan 60 FPS yang siap pakai untuk produksi skala besar.",
+    "category": "Desktop Software & R&D",
+    "tags": ["React Remotion", "Node.js", "Motion Graphics", "Kinetic Typography", "Chromium Puppeteer", "Windows Desktop"],
+    "status": "Pengembangan",
+    "year": "2026",
+    "featured": true,
+    "targetUsers": "Motion Designer, Kreator Konten Edukasi Finansial & Teknologi, Studio Kreatif FokusKonten, dan Agensi Iklan Digital.",
+    "challenge": "Pembuatan animasi teks kinetik per-kata di After Effects membutuhkan ratusan keyframe manual, sulit diubah (revisi lambat), dan membutuhkan komputasi RAM sangat besar.",
+    "solution": "Membangun sistem modular berbasis kode React di mana durasi animasi, kurva easing elastis (spring physics), dan pemilihan ikon ilustrasi dikendalikan secara parametrik melalui data JSON terstruktur.",
+    "features": [
+      {
+        "title": "Sistem Fisika Pegas (Spring Physics Animation)",
+        "desc": "Gerakan transisi teks dan elemen grafis yang alami dan luwes tanpa perlu kurva keyframe manual."
+      },
+      {
+        "title": "Dua Tema Modular: Korporat & Visual Kartun",
+        "desc": "Pilihan tema monokrom minimalis enterprise untuk bisnis formal serta gaya ekspresif kinetik untuk audiens umum."
+      },
+      {
+        "title": "Visual Router & Dynamic Asset Binding",
+        "desc": "Pencocokan kata kunci naskah secara cerdas dengan pustaka vektor SVG lokal untuk menampilkan ikon relevan tepat waktu."
+      },
+      {
+        "title": "Rendering Headless 60 FPS Terkalibrasi",
+        "desc": "Ekspor frame-by-frame presisi tanpa stuttering (frame drop), menghasilkan output video gerakan super halus."
+      }
+    ],
+    "specs": {
+      "Target Platform": "Windows 10 / 11 64-Bit (.EXE Desktop Bundle)",
+      "Mesin Rendering": "React Remotion Renderer Engine + Headless Chromium",
+      "Standar Resolusi": "Full HD 1080x1920 Vertikal @ 60 FPS Smooth",
+      "Struktur Input": "Data Terstruktur JSON Script & Timecoded Words",
+      "Status R&D": "Tahap Pengujian Modul Komposisi Gerak Internal (2026)"
+    },
+    "results": [
+      "Perubahan teks naskah atau warna dapat dirender ulang dalam hitungan detik tanpa membuka After Effects",
+      "Animasi 60 FPS yang konsisten sempurna di seluruh rangkaian tayangan",
+      "Skalabilitas tak terbatas untuk kebutuhan serial konten ratusan episode"
+    ]
   }
 ]
+
