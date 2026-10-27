@@ -431,7 +431,7 @@ export const portfolioData = {
     },
     headerImage: '/screenshots/whatsappcrm/header.png',
     bannerOverlay: true,
-    video: 'https://www.youtube.com/embed/hdsWgj9GdLc',
+    landingUrl: '/landpage/whatsappcrm',
     cta: {
       primary: { label: 'Konsultasi & Pemesanan Lisensi', href: 'https://wa.me/6285183011318?text=Halo%20FokusKonten,%20saya%20ingin%20info%20WhatsApp%20Lead%20CRM', type: 'whatsapp' },
       secondary: { label: 'Lihat Layanan Kami', href: '/layanan', type: 'internal' },

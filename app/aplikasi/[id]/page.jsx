@@ -97,6 +97,20 @@ export default function AppDetailPage({ params }) {
                 {portfolio.tagline || portfolio.description}
               </p>
 
+              {portfolio?.landingUrl && (
+                <div className="inline-flex flex-wrap items-center gap-2 px-3.5 py-2 rounded-xl bg-neutral-950 text-white text-xs mt-2 shadow-sm">
+                  <span className="font-mono font-bold text-emerald-400">Panggung Resmi</span>
+                  <span>— Tonton video showcase, galeri tangkapan layar HD otentik, dan penawaran lengkap.</span>
+                  <Link
+                    href={portfolio.landingUrl}
+                    className="font-bold underline text-white hover:text-neutral-300 inline-flex items-center gap-1"
+                  >
+                    <span>Buka Halaman Presentasi</span>
+                    <span aria-hidden="true">&rarr;</span>
+                  </Link>
+                </div>
+              )}
+
               {portfolioLink && (
                 <div className="inline-flex flex-wrap items-center gap-2 px-3.5 py-2 rounded-xl bg-neutral-100 border border-neutral-300/80 text-xs text-neutral-800">
                   <span className="font-mono font-bold text-neutral-950">Studi Kasus Portofolio</span>
@@ -349,12 +363,12 @@ export default function AppDetailPage({ params }) {
                     {portfolio?.landingUrl && (
                       <Link
                         href={portfolio.landingUrl}
-                        className="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl font-display font-semibold text-xs text-white bg-emerald-600 hover:bg-emerald-700 shadow-md shadow-emerald-600/20 transition-all"
+                        className="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl font-display font-semibold text-xs text-white bg-neutral-950 hover:bg-neutral-800 shadow-sm transition-all"
                       >
                         <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                         </svg>
-                        <span>Lihat Penawaran &amp; Akses Beta</span>
+                        <span>Buka Halaman Presentasi Resmi</span>
                       </Link>
                     )}
 

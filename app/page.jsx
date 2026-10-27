@@ -37,8 +37,8 @@ const featuredProducts = [
     badge: 'Desktop CRM',
     description: 'Software desktop Windows (.EXE) untuk manajemen prospek WhatsApp, pipeline penjualan, dan tindak lanjut pesan otomatis.',
     icon: '/app-icons/whatsappcrm.png',
-    href: '/aplikasi/whatsappcrm',
-    actionText: 'Lihat Detail',
+    href: '/landpage/whatsappcrm',
+    actionText: 'Lihat Landing Page',
     type: 'desktop',
   },
   {
@@ -59,8 +59,8 @@ const featuredProducts = [
     badge: "Al-Qur'an Digital",
     description: "Aplikasi baca Al-Qur'an digital dengan tampilan nyaman di mata, terjemahan lengkap, tanda tajwid, dan mode offline.",
     icon: '/app-icons/bacaquran.png',
-    href: '/aplikasi/bacaquran',
-    actionText: 'Lihat Detail',
+    href: '/landpage/bacaquran',
+    actionText: 'Lihat Landing Page',
     type: 'app',
   },
   {
@@ -70,8 +70,8 @@ const featuredProducts = [
     badge: 'Game Logika',
     description: 'Game puzzle angka klasik 2048 yang ringan, responsif, melatih konsentrasi, dan asyik dimainkan kapan saja.',
     icon: '/app-icons/gamepuzzle.png',
-    href: '/aplikasi/gamepuzzle',
-    actionText: 'Lihat Detail',
+    href: '/landpage/2048puzzle',
+    actionText: 'Lihat Landing Page',
     type: 'app',
   },
 ]
