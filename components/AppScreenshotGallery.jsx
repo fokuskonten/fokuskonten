@@ -44,6 +44,7 @@ export default function AppScreenshotGallery({
       el.removeEventListener('scroll', updateScrollState)
       window.removeEventListener('resize', updateScrollState)
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [items.length])
 
   // Navigasi geser satu langkah
@@ -184,12 +185,12 @@ export default function AppScreenshotGallery({
                 <div className="w-2.5 h-2.5 rounded-full bg-neutral-950 border border-neutral-700 mx-auto absolute top-3.5 left-1/2 -translate-x-1/2 z-20 pointer-events-none" />
 
                 {/* Layar Smartphone Internal */}
-                <div className="relative rounded-[2.1rem] overflow-hidden bg-white aspect-[9/19.5]">
+                <div className="relative rounded-[2.1rem] overflow-hidden bg-white aspect-[9/20]">
                   <img
                     src={item.img}
                     alt={item.title}
                     draggable="false"
-                    className="w-full h-full object-cover scale-[1.05] object-center transition-transform duration-300 group-hover:scale-[1.08]"
+                    className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.02]"
                   />
                   
                   {/* Overlay Hint Zoom saat Hover */}

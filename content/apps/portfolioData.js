@@ -291,6 +291,8 @@ export const portfolioData = {
     },
     headerImage: '/screenshots/gamepuzzle/header2.jpg',
     video: 'https://www.youtube.com/embed/vvSRUtPkpgU',
+    landingUrl: '/landpage/puzzle',
+    testingUrl: 'https://play.google.com/apps/testing/com.fokuskonten.gamepuzzle',
     playstoreUrl: 'https://play.google.com/store/apps/details?id=com.fokuskonten.gamepuzzle',
     apkDownload: {
       url: 'https://github.com/fokuskonten/fokuskonten/releases/download/apps-v1.0/2048_Puzzle_v1.4.3.apk',
@@ -300,7 +302,7 @@ export const portfolioData = {
     },
     whatsappUrl: 'https://wa.me/6285183011318',
     cta: {
-      primary: { label: 'Google Play', href: 'https://play.google.com/store/apps/details?id=com.fokuskonten.gamepuzzle', type: 'playstore' },
+      primary: { label: 'Buka Halaman Resmi Game', href: '/landpage/puzzle', type: 'internal' },
       secondary: { label: 'Unduh Berkas APK', href: 'https://github.com/fokuskonten/fokuskonten/releases/download/apps-v1.0/2048_Puzzle_v1.4.3.apk', type: 'apk' },
       tertiary: { label: 'Konsultasi WhatsApp', href: 'https://wa.me/6285183011318', type: 'whatsapp' },
     },
