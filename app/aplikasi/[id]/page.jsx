@@ -373,17 +373,17 @@ export default function AppDetailPage({ params }) {
                     )}
 
                     {/* Google Play (Jika Tersedia) */}
-                    {(portfolio?.playstoreUrl || cta.primary?.type === 'playstore') && (
+                    {(portfolio?.googleGroupUrl || portfolio?.playstoreUrl || cta.primary?.type === 'playstore') && (
                       <a
-                        href={portfolio?.playstoreUrl || cta.primary?.href}
-                        target="_blank"
+                        href={portfolio?.landingUrl ? `${portfolio.landingUrl}#alur-pengujian` : (portfolio?.googleGroupUrl || portfolio?.playstoreUrl || cta.primary?.href || 'https://groups.google.com/g/penguji-fokuskonten')}
+                        target={portfolio?.landingUrl ? '_self' : '_blank'}
                         rel="noopener noreferrer"
-                        className="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl font-display font-semibold text-xs text-white bg-black hover:bg-neutral-800 shadow-md shadow-black/20 transition-all"
+                        className="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl font-display font-semibold text-xs text-neutral-950 bg-white hover:bg-neutral-50 border border-neutral-300 shadow-sm transition-all"
                       >
                         <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor">
                           <path d="M1.326 1.973C1.256 2.294 1.22 2.634 1.22 3v18c0 .366.036.706.106 1.027L12 12 1.326 1.973zm.905-.642l11.17 10.736L23.723 3.38c-.443-.269-1-.43-1.607-.43H4.202c-.717 0-1.356.248-1.971.38zM23.66 4.797L13.334 15.05l5.914 5.686 4.02-3.878c.442-.374.732-.932.732-1.558V6.19c0-.515-.121-1-.34-1.394zM12 13.14L1.628 22.21A3.573 3.573 0 004.202 23h15.596c.46 0 .893-.112 1.28-.31L18.87 19.87 12 13.14z"/>
                         </svg>
-                        <span>Google Play</span>
+                        <span>{portfolio?.googleGroupUrl ? 'Uji Coba Play Store (Gabung Grup)' : 'Google Play'}</span>
                       </a>
                     )}
 
@@ -412,7 +412,7 @@ export default function AppDetailPage({ params }) {
                         href={portfolio?.externalUrl || cta.primary?.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl font-display font-semibold text-xs text-white bg-black hover:bg-neutral-800 shadow-md shadow-black/20 transition-all"
+                        className="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl font-display font-semibold text-xs text-neutral-950 bg-white hover:bg-neutral-50 border border-neutral-300 shadow-sm transition-all"
                       >
                         <span>Buka Portal Web</span>
                         <svg className="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">

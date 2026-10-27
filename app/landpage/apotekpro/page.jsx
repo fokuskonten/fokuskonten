@@ -384,9 +384,7 @@ export default function ApotekProDedicatedSalesPage() {
           {/* DUA TOMBOL AKSI UTAMA — GOOGLE PLAY SEBAGAI PRIMADONA */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-12 max-w-xl mx-auto">
             <a
-              href={playTestingWebUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#alur-pengujian"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-display font-bold text-sm sm:text-base text-neutral-950 bg-white border-2 border-neutral-300 hover:border-black hover:bg-neutral-50 shadow-md hover:shadow-lg transition-all duration-200 group"
             >
               <svg className="w-6 h-6 shrink-0 transition-transform duration-200 group-hover:scale-110" viewBox="0 0 24 24" fill="none">
@@ -395,7 +393,7 @@ export default function ApotekProDedicatedSalesPage() {
                 <path d="M17.271 10.941l3.197 1.84c.895.516.895 1.364 0 1.88l-3.197 1.84-2.42-2.42 2.42-3.14z" fill="#FFCE00"/>
                 <path d="M14.851 10.000L5.38 3.48l11.89 6.845-2.42 2.419z" fill="#00E676"/>
               </svg>
-              <span>Pasang via Google Play</span>
+              <span>Uji Coba Play Store (Gabung Grup)</span>
             </a>
 
             <a
@@ -693,7 +691,7 @@ export default function ApotekProDedicatedSalesPage() {
       </section>
 
       {/* ── 3-STEP INSTALLATION & GETTING STARTED (CLEAN SHOWCASE) ──────── */}
-      <section className="py-20 bg-white border-b border-neutral-200/80">
+      <section id="alur-pengujian" className="py-20 bg-white border-b border-neutral-200/80 scroll-mt-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3.5 block">Alur Akses Resmi</span>
           <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-950 mb-3">
@@ -813,7 +811,7 @@ export default function ApotekProDedicatedSalesPage() {
           {/* DUA TOMBOL AKSI UTAMA DENGAN FALLBACK */}
           <div className="max-w-xl mx-auto space-y-4">
             <a
-              href={playTestingWebUrl}
+              href={googleGroupUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-display font-bold text-sm sm:text-base text-neutral-950 bg-white border-2 border-neutral-300 hover:border-black hover:bg-neutral-50 shadow-md hover:shadow-lg transition-all duration-200 group"
@@ -824,12 +822,12 @@ export default function ApotekProDedicatedSalesPage() {
                 <path d="M17.271 10.941l3.197 1.84c.895.516.895 1.364 0 1.88l-3.197 1.84-2.42-2.42 2.42-3.14z" fill="#FFCE00"/>
                 <path d="M14.851 10.000L5.38 3.48l11.89 6.845-2.42 2.419z" fill="#00E676"/>
               </svg>
-              <span>Pasang via Google Play</span>
+              <span>Mulai Langkah 1: Gabung Grup Penguji</span>
             </a>
 
             <div className="flex items-center justify-center gap-2 text-xs text-neutral-500 pt-1">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-              <span>Kompatibel Tablet &amp; Smartphone Android (API 24+)</span>
+              <span>Setelah gabung grup, lanjutkan ke Langkah 2 &amp; 3 di atas</span>
             </div>
           </div>
 
@@ -872,9 +870,7 @@ export default function ApotekProDedicatedSalesPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-4">
             <a
-              href={playTestingWebUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#alur-pengujian"
               className="w-full sm:w-auto px-8 py-4 rounded-xl font-display font-bold text-sm sm:text-base text-neutral-950 bg-white hover:bg-neutral-50 transition-all duration-200 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.12)] border-2 border-neutral-200 hover:border-neutral-400 inline-flex items-center justify-center gap-3 group"
             >
               <svg className="w-5 h-5 shrink-0 transition-transform duration-200 group-hover:scale-110" viewBox="0 0 24 24" fill="none">
@@ -883,7 +879,7 @@ export default function ApotekProDedicatedSalesPage() {
                 <path d="M17.271 10.941l3.197 1.84c.895.516.895 1.364 0 1.88l-3.197 1.84-2.42-2.42 2.42-3.14z" fill="#FFCE00"/>
                 <path d="M14.851 10.000L5.38 3.48l11.89 6.845-2.42 2.419z" fill="#00E676"/>
               </svg>
-              <span>Pasang via Google Play</span>
+              <span>Uji Coba Play Store (Gabung Grup)</span>
             </a>
             <a
               href={waConsultUrl}
