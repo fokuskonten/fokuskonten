@@ -2767,6 +2767,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://fokuskonten.my.id/landingpage/hptools/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fokuskonten.my.id/landingpage/jumptools/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://fokuskonten.my.id/landingpage/puzzle/</loc>
     <lastmod>2026-10-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -2804,6 +2816,18 @@
   </url>
   <url>
     <loc>https://fokuskonten.my.id/landpage/bacaquran/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fokuskonten.my.id/landpage/hptools/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fokuskonten.my.id/landpage/jumptools/</loc>
     <lastmod>2026-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
