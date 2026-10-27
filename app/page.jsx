@@ -121,8 +121,8 @@ const inDevelopmentProjects = [
     badge: 'Sedang Berjalan',
     description: 'Perangkat lunak utilitas teknisi smartphone multi-chipset (Qualcomm EDL 9008, MediaTek Brom, Samsung Odin) untuk penanganan perangkat keras dan firmware.',
     icon: '/app-icons/jumptools.png',
-    href: '/portfolio/jumptools-suite',
-    actionText: 'Lihat Detail Proyek',
+    href: '/landpage/jumptools',
+    actionText: 'Lihat Landing Page',
     type: 'desktop',
   },
   {
