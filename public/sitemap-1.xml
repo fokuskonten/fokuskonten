@@ -2755,6 +2755,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://fokuskonten.my.id/landpage/2048puzzle/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://fokuskonten.my.id/landpage/apotekpro/</loc>
     <lastmod>2026-10-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -2762,6 +2768,12 @@
   </url>
   <url>
     <loc>https://fokuskonten.my.id/landpage/bacaquran/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fokuskonten.my.id/landpage/puzzle/</loc>
     <lastmod>2026-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

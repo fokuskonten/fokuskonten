@@ -6,7 +6,8 @@ export default function AppScreenshotGallery({
   title = 'Galeri Antarmuka Apotek Pro',
   subtitle = 'Geser ke kanan atau kiri untuk melihat langsung alur kerja kasir, kalkulator racikan resep, hingga pembukuan obat.',
   label = '',
-  items = []
+  items = [],
+  isDesktop = false
 }) {
   const scrollRef = useRef(null)
   const [canScrollLeft, setCanScrollLeft] = useState(false)
@@ -177,36 +178,74 @@ export default function AppScreenshotGallery({
             <div
               key={item.id || idx}
               onClick={() => !isDragging && setLightboxIndex(idx)}
-              className="w-[280px] sm:w-[320px] shrink-0 snap-start flex flex-col group cursor-pointer"
+              className={isDesktop ? "w-[360px] sm:w-[480px] lg:w-[540px] shrink-0 snap-start flex flex-col group cursor-pointer" : "w-[280px] sm:w-[320px] shrink-0 snap-start flex flex-col group cursor-pointer"}
             >
-              {/* Mockup Frame Handphone Otentik Bershadow */}
-              <div className="relative rounded-[2.6rem] p-2 sm:p-2.5 bg-neutral-900 border-[3px] border-neutral-800 shadow-[0_20px_50px_-10px_rgba(0,0,0,0.25)] group-hover:shadow-[0_28px_65px_-10px_rgba(0,0,0,0.38)] group-hover:-translate-y-2 transition-all duration-300">
-                {/* Punch-hole kamera depan atas */}
-                <div className="w-2.5 h-2.5 rounded-full bg-neutral-950 border border-neutral-700 mx-auto absolute top-3.5 left-1/2 -translate-x-1/2 z-20 pointer-events-none" />
-
-                {/* Layar Smartphone Internal */}
-                <div className="relative rounded-[2.1rem] overflow-hidden bg-white aspect-[9/20]">
-                  <img
-                    src={item.img}
-                    alt={item.title}
-                    draggable="false"
-                    className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.02]"
-                  />
-                  
-                  {/* Overlay Hint Zoom saat Hover */}
-                  <div className="absolute inset-0 bg-neutral-950/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <span className="px-3.5 py-1.5 rounded-full bg-white/95 text-neutral-950 text-xs font-mono font-semibold shadow-lg backdrop-blur-sm flex items-center gap-1.5">
-                      <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
-                      </svg>
-                      <span>Perbesar</span>
+              {isDesktop ? (
+                /* Mockup Frame Desktop / Laptop Window Bershadow */
+                <div className="relative rounded-2xl p-2.5 sm:p-3 bg-neutral-900 border-[2px] border-neutral-800 shadow-[0_20px_50px_-10px_rgba(0,0,0,0.25)] group-hover:shadow-[0_28px_65px_-10px_rgba(0,0,0,0.38)] group-hover:-translate-y-2 transition-all duration-300">
+                  {/* Title Bar Desktop */}
+                  <div className="flex items-center justify-between pb-2 px-1">
+                    <div className="flex items-center gap-1.5">
+                      <span className="w-2.5 h-2.5 rounded-full bg-neutral-700/90" />
+                      <span className="w-2.5 h-2.5 rounded-full bg-neutral-700/90" />
+                      <span className="w-2.5 h-2.5 rounded-full bg-neutral-700/90" />
+                    </div>
+                    <span className="text-[10px] font-mono text-neutral-400 font-semibold tracking-wider truncate max-w-[200px]">
+                      {item.title}
                     </span>
+                    <span className="w-8" />
+                  </div>
+
+                  {/* Layar Internal Desktop 16:10 */}
+                  <div className="relative rounded-xl overflow-hidden bg-neutral-950 aspect-[16/10]">
+                    <img
+                      src={item.img}
+                      alt={item.title}
+                      draggable="false"
+                      className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.02]"
+                    />
+                    
+                    {/* Overlay Hint Zoom saat Hover */}
+                    <div className="absolute inset-0 bg-neutral-950/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                      <span className="px-3.5 py-1.5 rounded-full bg-white/95 text-neutral-950 text-xs font-mono font-semibold shadow-lg backdrop-blur-sm flex items-center gap-1.5">
+                        <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                        </svg>
+                        <span>Perbesar</span>
+                      </span>
+                    </div>
                   </div>
                 </div>
+              ) : (
+                /* Mockup Frame Handphone Otentik Bershadow */
+                <div className="relative rounded-[2.6rem] p-2 sm:p-2.5 bg-neutral-900 border-[3px] border-neutral-800 shadow-[0_20px_50px_-10px_rgba(0,0,0,0.25)] group-hover:shadow-[0_28px_65px_-10px_rgba(0,0,0,0.38)] group-hover:-translate-y-2 transition-all duration-300">
+                  {/* Punch-hole kamera depan atas */}
+                  <div className="w-2.5 h-2.5 rounded-full bg-neutral-950 border border-neutral-700 mx-auto absolute top-3.5 left-1/2 -translate-x-1/2 z-20 pointer-events-none" />
 
-                {/* Home Indicator Bar Bawah */}
-                <div className="w-24 h-1 rounded-full bg-neutral-700/80 mx-auto mt-2 pointer-events-none" />
-              </div>
+                  {/* Layar Smartphone Internal */}
+                  <div className="relative rounded-[2.1rem] overflow-hidden bg-white aspect-[9/20]">
+                    <img
+                      src={item.img}
+                      alt={item.title}
+                      draggable="false"
+                      className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.02]"
+                    />
+                    
+                    {/* Overlay Hint Zoom saat Hover */}
+                    <div className="absolute inset-0 bg-neutral-950/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                      <span className="px-3.5 py-1.5 rounded-full bg-white/95 text-neutral-950 text-xs font-mono font-semibold shadow-lg backdrop-blur-sm flex items-center gap-1.5">
+                        <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                        </svg>
+                        <span>Perbesar</span>
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Home Indicator Bar Bawah */}
+                  <div className="w-24 h-1 rounded-full bg-neutral-700/80 mx-auto mt-2 pointer-events-none" />
+                </div>
+              )}
 
               {/* Keterangan Teks Bersih & Padat di Bawah Mockup */}
               <div className="pt-4 px-2 text-center sm:text-left">
@@ -250,7 +289,7 @@ export default function AppScreenshotGallery({
           onClick={() => setLightboxIndex(null)}
         >
           <div
-            className="relative max-w-3xl w-full max-h-[92vh] bg-white rounded-3xl p-5 sm:p-7 shadow-2xl flex flex-col border border-neutral-200"
+            className={`relative ${isDesktop ? 'max-w-5xl' : 'max-w-3xl'} w-full max-h-[92vh] bg-white rounded-3xl p-5 sm:p-7 shadow-2xl flex flex-col border border-neutral-200`}
             onClick={(e) => e.stopPropagation()}
           >
             {/* Header Modal */}
@@ -281,7 +320,7 @@ export default function AppScreenshotGallery({
               <img
                 src={items[lightboxIndex].img}
                 alt={items[lightboxIndex].title}
-                className="max-h-[65vh] w-auto object-contain rounded-xl shadow-md border border-neutral-100"
+                className={`${isDesktop ? 'max-h-[72vh]' : 'max-h-[65vh]'} w-auto object-contain rounded-xl shadow-md border border-neutral-100`}
               />
             </div>
 
