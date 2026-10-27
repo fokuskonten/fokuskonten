@@ -7,7 +7,7 @@ export const metadata = {
   openGraph: {
     title: 'JumperTools Pro — Universal Smartphone Hardware & Flasher Suite',
     description: 'Software desktop Windows x64 native untuk teknisi ponsel profesional. Flashing multi-chipset Qualcomm, MediaTek, Samsung, dan UNISOC tanpa ketergantungan box hardware mahal.',
-    images: [{ url: '/screenshots/jumptools/header.jpg', width: 1200, height: 630, alt: 'JumperTools Pro Banner Resmi' }],
+    images: [{ url: '/app-icons/jumptools.png', width: 512, height: 512, alt: 'JumperTools Pro Icon Resmi' }],
   },
 }
 
@@ -192,12 +192,9 @@ export default function JumperToolsDedicatedLandingPage() {
         </div>
       </div>
 
-      {/* ── HERO SALES SECTION ─────────────────────────────────────────── */}
+      {/* ── HERO SALES SECTION (LANGSUNG H1 BERSIH SETARA APOTEK PRO) ──── */}
       <section className="pt-12 sm:pt-16 pb-16 bg-white border-b border-neutral-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-950 text-white text-xs font-mono font-semibold mb-6 shadow-sm">
-            <span>SUITE TEKNISI PONSEL PROFESIONAL</span>
-          </div>
 
           <h1 className="heading-xl text-3xl sm:text-5xl lg:text-6xl text-neutral-950 tracking-tight leading-tight sm:leading-none mb-6 text-balance max-w-5xl mx-auto">
             Perbaikan Firmware &amp; Diagnosa Smartphone <br className="hidden sm:inline" />
@@ -230,13 +227,90 @@ export default function JumperToolsDedicatedLandingPage() {
             </Link>
           </div>
 
-          {/* BANNER VISUAL MOCKUP RESMI (PUTIH BERSIH BERSHADOW) */}
-          <div className="rounded-3xl overflow-hidden border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] max-w-6xl mx-auto mb-12 bg-white">
-            <img
-              src="/screenshots/jumptools/header.jpg"
-              alt="JumperTools Pro Banner Resmi"
-              className="w-full h-auto object-cover"
-            />
+          {/* ── SASIS JENDELA DESKTOP WINDOWS CENTERPIECE (PUTIH BERSIH) ──── */}
+          <div className="max-w-5xl mx-auto rounded-3xl overflow-hidden border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] bg-white mb-12 text-left">
+            {/* Titlebar Jendela Windows */}
+            <div className="px-5 py-3.5 bg-neutral-50 border-b border-neutral-200/80 flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="w-7 h-7 rounded-full bg-white p-0.5 border border-neutral-300 shrink-0">
+                  <img
+                    src="/app-icons/jumptools.png"
+                    alt="JumperTools Pro Icon"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <span className="font-mono text-xs font-semibold text-neutral-900 tracking-wide truncate">
+                  JumperTools Pro v1.0.0 — Universal Flasher &amp; Hardware Suite (win-x64)
+                </span>
+                <span className="hidden sm:inline-block px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold bg-neutral-100 text-neutral-800 border border-neutral-300">
+                  ONLINE: COM4
+                </span>
+              </div>
+              <div className="flex items-center gap-2 shrink-0">
+                <span className="w-2.5 h-2.5 rounded-full bg-neutral-300 inline-block" />
+                <span className="w-2.5 h-2.5 rounded-full bg-neutral-300 inline-block" />
+                <span className="w-2.5 h-2.5 rounded-full bg-neutral-300 inline-block" />
+              </div>
+            </div>
+
+            {/* Ribbon Bar Protokol Chipset */}
+            <div className="px-5 py-3 bg-white border-b border-neutral-200/80 flex flex-wrap items-center gap-2 text-xs font-mono">
+              <span className="px-3 py-1.5 rounded-lg bg-neutral-950 text-white font-bold">
+                Qualcomm EDL 9008
+              </span>
+              <span className="px-3 py-1.5 rounded-lg bg-neutral-100 text-neutral-800 border border-neutral-200 font-medium">
+                MediaTek Brom / DA
+              </span>
+              <span className="px-3 py-1.5 rounded-lg bg-neutral-100 text-neutral-800 border border-neutral-200 font-medium">
+                Samsung Odin / PIT
+              </span>
+              <span className="px-3 py-1.5 rounded-lg bg-neutral-100 text-neutral-800 border border-neutral-200 font-medium">
+                UNISOC SPD PAC
+              </span>
+            </div>
+
+            {/* Konten Dashboard Sasis Bersih */}
+            <div className="p-6 sm:p-8 space-y-6">
+              {/* 4 Kartu Parameter Servis */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
+                <div className="p-4 rounded-xl bg-neutral-50 border border-neutral-200/80">
+                  <span className="text-[11px] font-mono font-bold text-neutral-500 block mb-1">PORT USB AKTIF</span>
+                  <span className="text-base sm:text-lg font-bold font-mono text-neutral-950">COM4 (QDLoader)</span>
+                </div>
+                <div className="p-4 rounded-xl bg-neutral-50 border border-neutral-200/80">
+                  <span className="text-[11px] font-mono font-bold text-neutral-500 block mb-1">STATUS PARTISI</span>
+                  <span className="text-base sm:text-lg font-bold font-mono text-neutral-950">Modem/EFS Aman</span>
+                </div>
+                <div className="p-4 rounded-xl bg-neutral-50 border border-neutral-200/80">
+                  <span className="text-[11px] font-mono font-bold text-neutral-500 block mb-1">MODE OPERASIONAL</span>
+                  <span className="text-base sm:text-lg font-bold font-mono text-neutral-950">100% Offline Lokal</span>
+                </div>
+                <div className="p-4 rounded-xl bg-neutral-50 border border-neutral-200/80">
+                  <span className="text-[11px] font-mono font-bold text-neutral-500 block mb-1">STATUS LISENSI</span>
+                  <span className="text-base sm:text-lg font-bold font-mono text-neutral-950">Permanen HWID</span>
+                </div>
+              </div>
+
+              {/* Rincian Operasi Aman */}
+              <div className="p-5 rounded-2xl bg-neutral-50 border border-neutral-200/80 space-y-3">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-neutral-200 text-xs font-mono text-neutral-600">
+                  <span className="font-semibold text-neutral-950">Status: Sistem Verifikasi Sektor Firmware Siaga</span>
+                  <span>Protokol: Emergency Download (EDL) Mode</span>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                  <div>
+                    <span className="font-mono font-bold text-neutral-400 block mb-1">PERLINDUNGAN JARINGAN</span>
+                    <p className="font-semibold text-neutral-950">Kunci Partisi Radio Otomatis</p>
+                    <p className="text-neutral-500 mt-0.5">Mencegah ponsel kehilangan sinyal seluler dan nomor IMEI.</p>
+                  </div>
+                  <div>
+                    <span className="font-mono font-bold text-neutral-400 block mb-1">VERIFIKASI INTEGRITAS</span>
+                    <p className="font-semibold text-neutral-950">Pemeriksaan Keaslian Berkas</p>
+                    <p className="text-neutral-500 mt-0.5">Memastikan tidak ada berkas corrupt yang terpasang ke memori ponsel.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* 4 STATS GRID KEUNGGULAN UTAMA */}

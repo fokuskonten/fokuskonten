@@ -189,14 +189,9 @@ export default function ReImageDedicatedLandingPage() {
         </div>
       </div>
 
-      {/* ── HERO SALES SECTION ─────────────────────────────────────────── */}
+      {/* ── HERO SALES SECTION (LANGSUNG H1 BERSIH SETARA APOTEK PRO) ──── */}
       <section className="pt-12 sm:pt-16 pb-16 bg-white border-b border-neutral-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-100 border border-neutral-300 text-xs font-mono font-bold text-neutral-950 shadow-sm mb-6">
-            <span className="w-2 h-2 rounded-full bg-neutral-950" />
-            <span>SOFTWARE DESKTOP WINDOWS (64-BIT)</span>
-          </div>
 
           <h1 className="heading-xl text-3xl sm:text-5xl lg:text-6xl text-neutral-950 tracking-tight leading-tight sm:leading-none mb-6 text-balance max-w-5xl mx-auto">
             Kompresi Gambar Massal Cepat &amp; Presisi <br className="hidden sm:inline" />
