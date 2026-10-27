@@ -48,8 +48,8 @@ const featuredProducts = [
     badge: 'Image Optimizer',
     description: 'Software desktop kompresi gambar berbasis Rust libcaesium. Konversi instan WebP, AVIF, JPEG, dan PNG tanpa penurunan mutu visual.',
     icon: '/app-icons/reimage.png',
-    href: '/aplikasi/reimage',
-    actionText: 'Lihat Detail',
+    href: '/landpage/reimage',
+    actionText: 'Lihat Landing Page',
     type: 'desktop',
   },
   {

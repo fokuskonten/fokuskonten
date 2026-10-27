@@ -628,6 +628,7 @@ export const portfolioData = {
       format: 'Aplikasi Desktop Single-File (.EXE)',
       tipe: 'Image Optimization & Conversion Suite',
     },
+    landingUrl: '/landpage/reimage',
     cta: {
       primary: { label: 'Konsultasi & Lisensi ReImage', href: 'https://wa.me/6285183011318?text=Halo%20FokusKonten,%20saya%20tertarik%20dengan%20FokusKonten%20ReImage%20Pro', type: 'whatsapp' },
       secondary: { label: 'Lihat Layanan Kami', href: '/layanan', type: 'internal' },
