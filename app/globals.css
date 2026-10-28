@@ -109,6 +109,205 @@
   }
 }
 
+/* ── SISTEM GERAK MINIMALIS FOKUSKONTEN ─────────────────────────────
+   Prinsip: hanya opacity/transform (GPU), sekali jalan, hormati prefers-reduced-motion.
+   Kelas .fk-motion dipasang oleh skrip inline di <head>; tanpa JS, semua konten tetap terlihat. */
+
+/* Reveal saat masuk viewport (dipicu MotionProvider) — Gesit & Responsif (0.32s) */
+.fk-motion [data-reveal]:not(.is-revealed) {
+  opacity: 0;
+}
+.fk-motion [data-reveal].is-revealed {
+  animation: fkReveal 0.32s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+  animation-delay: calc(min(var(--reveal-i, 0), 6) * 28ms);
+}
+
+/* Selang-seling arah masuk kartu di dalam grid umum: ganjil samping kiri, genap bawah, kelipatan 3 samping kanan */
+.fk-motion .grid > [data-reveal]:nth-child(odd).is-revealed {
+  animation-name: fkRevealLeft;
+}
+.fk-motion .grid > [data-reveal]:nth-child(even).is-revealed {
+  animation-name: fkRevealUp;
+}
+.fk-motion .grid.lg\:grid-cols-3 > [data-reveal]:nth-child(3n).is-revealed,
+.fk-motion .grid.xl\:grid-cols-3 > [data-reveal]:nth-child(3n).is-revealed {
+  animation-name: fkRevealRight;
+}
+
+/* Optimasi Khusus Kartu Katalog Toko Digital: Naik lurus (10px), super gesit (0.28s), micro-stagger 20ms */
+.fk-motion [data-reveal].product-card-motion.is-revealed {
+  animation-name: fkRevealUp !important;
+  animation-duration: 0.28s;
+  animation-delay: calc(min(var(--reveal-i, 0), 4) * 20ms);
+}
+
+@keyframes fkReveal {
+  from { opacity: 0; transform: translate3d(0, 12px, 0); }
+}
+@keyframes fkRevealUp {
+  from { opacity: 0; transform: translate3d(0, 10px, 0); }
+}
+@keyframes fkRevealLeft {
+  from { opacity: 0; transform: translate3d(-10px, 0, 0); }
+}
+@keyframes fkRevealRight {
+  from { opacity: 0; transform: translate3d(10px, 0, 0); }
+}
+
+/* Efek Solidify / Memadat untuk Chip dan Tombol CTA — Gesit & Presisi (0.22s) */
+.fk-motion [data-reveal].is-revealed .group\/btn,
+.fk-motion [data-reveal].is-revealed .label,
+.fk-motion [data-reveal].is-revealed .label-brand,
+.fk-motion [data-reveal].is-revealed .label-warm {
+  animation: fkSolidify 0.22s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+  animation-delay: calc(min(var(--reveal-i, 0), 6) * 28ms + 35ms);
+}
+@keyframes fkSolidify {
+  from {
+    opacity: 0;
+    transform: scale(0.97) translate3d(0, 3px, 0);
+    filter: blur(1.5px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translate3d(0, 0, 0);
+    filter: blur(0);
+  }
+}
+
+/* Animasi Bounce Smooth untuk Teks Menu Floating (Spring Elastic) */
+@keyframes fkMenuBounce {
+  0% {
+    opacity: 0;
+    transform: translate3d(24px, 0, 0) scale(0.88);
+  }
+  65% {
+    opacity: 1;
+    transform: translate3d(-3px, 0, 0) scale(1.03);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+.fk-menu-bounce {
+  animation: fkMenuBounce 0.34s cubic-bezier(0.34, 1.56, 0.64, 1) backwards;
+}
+
+/* Urutan muncul hero saat halaman dibuka — Gesit (0.38s) */
+.fk-hero-in,
+.fk-word {
+  animation: fkHeroIn 0.38s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+.fk-hero-in { animation-delay: calc(var(--hero-i, 0) * 45ms + 30ms); }
+.fk-word {
+  display: inline-block;
+  animation-delay: calc(var(--w, 0) * 25ms + 25ms);
+}
+@keyframes fkHeroIn {
+  from { opacity: 0; transform: translate3d(0, 10px, 0); filter: blur(4px); }
+}
+
+/* Latar grid tipis hero (statis) */
+.fk-grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(15, 23, 42, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.05) 1px, transparent 1px);
+  background-size: 44px 44px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, #000 35%, transparent 100%);
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, #000 35%, transparent 100%);
+}
+
+/* Konsol etalase hero */
+.fk-progress {
+  transform: scaleX(0);
+  transform-origin: left center;
+  animation: fkProgress 4.2s linear forwards;
+}
+@keyframes fkProgress { to { transform: scaleX(1); } }
+
+.fk-swap { animation: fkSwap 0.45s cubic-bezier(0.16, 1, 0.3, 1) both; }
+@keyframes fkSwap { from { opacity: 0; transform: translate3d(0, 6px, 0); } }
+
+.fk-type {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: bottom;
+  padding-right: 2px;
+  border-right: 1.5px solid currentColor;
+  width: calc(var(--n) * 1ch + 4px);
+  animation:
+    fkType calc(var(--n) * 28ms) steps(var(--n), end) 150ms both,
+    fkCaret 0.9s step-end infinite;
+}
+@keyframes fkType { from { width: 0; } }
+@keyframes fkCaret { 50% { border-color: transparent; } }
+
+.fk-cursor-blink {
+  animation: fkCursorBlink 0.85s step-end infinite;
+}
+@keyframes fkCursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Sorotan halus mengikuti kursor di kartu (desktop saja) */
+@media (hover: hover) and (pointer: fine) {
+  [data-spotlight] { position: relative; isolation: isolate; }
+  [data-spotlight]::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    pointer-events: none;
+    background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), rgba(0, 0, 0, 0.045), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  [data-spotlight]:hover::before { opacity: 1; }
+}
+
+/* Garis progres baca di landing page (CSS scroll-driven, tanpa JS) */
+.fk-scroll-progress { display: none; }
+@supports (animation-timeline: scroll()) {
+  .fk-scroll-progress {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    z-index: 70;
+    pointer-events: none;
+    background: #0a0a0a;
+    transform-origin: 0 50%;
+    animation: fkScrollProgress linear both;
+    animation-timeline: scroll(root);
+  }
+}
+@keyframes fkScrollProgress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+/* Aksesibilitas: matikan semua gerak jika pengguna meminta */
+@media (prefers-reduced-motion: reduce) {
+  .fk-motion [data-reveal]:not(.is-revealed) { opacity: 1; }
+  .fk-motion [data-reveal].is-revealed,
+  .fk-hero-in,
+  .fk-word,
+  .fk-swap { animation: none !important; }
+  .fk-type { animation: none !important; border-right-color: transparent; }
+  .fk-progress { animation: none !important; transform: scaleX(1); }
+}
+
+/* Cetak: jangan pernah ada konten tersembunyi atau garis progres di kertas */
+@media print {
+  [data-reveal] { opacity: 1 !important; animation: none !important; }
+  .fk-scroll-progress { display: none !important; }
+}
+
 @media print {
   @page {
     size: A4 portrait;

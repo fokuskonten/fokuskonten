@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useRef, useMemo } from 'react'
+import { useState, useEffect, useRef, useMemo, useCallback } from 'react'
 
 export default function PersonaPresentationSlider({
   slides = [],
@@ -37,25 +37,25 @@ export default function PersonaPresentationSlider({
     if (!slides || slides.length === 0) return 0
     if (slides.length === 1) return 0
     return (trackIndex - 1 + slides.length) % slides.length
-  }, [trackIndex, slides.length])
+  }, [trackIndex, slides])
 
   // Slide aktif saat ini untuk label caption
   const currentSlide = slides[activeIndex] || {}
 
   // Navigasi Next & Prev
-  const goToNext = (e) => {
+  const goToNext = useCallback((e) => {
     e?.stopPropagation()
     if (slides.length <= 1) return
     setIsTransitioning(true)
     setTrackIndex((prev) => prev + 1)
-  }
+  }, [slides.length])
 
-  const goToPrev = (e) => {
+  const goToPrev = useCallback((e) => {
     e?.stopPropagation()
     if (slides.length <= 1) return
     setIsTransitioning(true)
     setTrackIndex((prev) => prev - 1)
-  }
+  }, [slides.length])
 
   const goToSlide = (slideIdx) => {
     if (slides.length <= 1) return
@@ -103,7 +103,7 @@ export default function PersonaPresentationSlider({
 
     window.addEventListener('keydown', handleKeyDown)
     return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [lightboxOpen])
+  }, [lightboxOpen, goToNext, goToPrev])
 
   // ── GESTUR SWIPE & MOUSE DRAG REALTIME BERSTANDAR TINGGI ───────────
   const handlePointerDown = (e) => {

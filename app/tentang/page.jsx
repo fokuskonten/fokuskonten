@@ -29,7 +29,7 @@ export default function AboutPage() {
         </nav>
 
         {/* ── 1. PAGE TITLE & HEADER ────────────────────────────────────── */}
-        <div className="mb-10">
+        <div className="mb-10 fk-hero-in">
           <span className="label-brand mb-3 inline-block">Profil FokusKonten</span>
           <h1 className="heading-xl text-3xl sm:text-4xl lg:text-5xl text-neutral-900 mb-4 text-balance">
             FokusKonten —{' '}
@@ -41,7 +41,7 @@ export default function AboutPage() {
         </div>
 
         {/* ── 2. BALANCED & GROUNDED SIGNATURE BANNER ─────────── */}
-        <div className="relative mb-14 rounded-3xl overflow-hidden border border-neutral-800 shadow-xl bg-neutral-950 min-h-[330px] sm:min-h-[360px] flex items-center w-full">
+        <div data-reveal className="relative mb-14 rounded-3xl overflow-hidden border border-neutral-800 shadow-xl bg-neutral-950 min-h-[330px] sm:min-h-[360px] flex items-center w-full">
           {/* Eagle Image on Right - Contained & Full Height (Never Clipped) */}
           <div className="absolute right-0 top-0 bottom-0 h-full w-full sm:w-2/3 lg:w-1/2 pointer-events-none flex justify-end overflow-hidden">
             <img
@@ -160,7 +160,7 @@ export default function AboutPage() {
         </div>
 
         {/* ── 4. EXPANSIVE 5-COLUMN BALANCED TIMELINE ────────────────────── */}
-        <div className="mb-16">
+        <div className="mb-16" data-reveal>
           <div className="mb-8">
             <span className="label-brand mb-3 inline-block">Linimasa</span>
             <h2 className="heading-xl text-2xl sm:text-3xl text-neutral-900">Perjalanan &amp; Perkembangan</h2>
@@ -169,6 +169,9 @@ export default function AboutPage() {
             {milestones.map((m, idx) => (
               <div
                 key={m.year}
+                data-reveal
+                data-spotlight
+                style={{ '--reveal-i': idx }}
                 className={`bg-white rounded-2xl border border-neutral-200/80 p-5 shadow-sm hover:shadow-md hover:border-neutral-400 transition-all flex flex-col justify-between ${
                   idx === 4 ? 'sm:col-span-2 lg:col-span-1' : ''
                 }`}
@@ -200,25 +203,39 @@ export default function AboutPage() {
 
         {/* ── 5. VISION & MISSION (CLEAN DUAL CARDS) ─────────────────────── */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-          <div className="rounded-2xl bg-white border border-neutral-200/80 p-7 sm:p-8 shadow-sm hover:shadow-md transition-shadow">
-            <div className="w-10 h-10 rounded-xl bg-neutral-100 flex items-center justify-center text-neutral-900 mb-4">
-              <svg className="w-5 h-5 text-neutral-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                <path strokeLinecap="round" strokeLinejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-              </svg>
+          <div
+            data-reveal
+            data-spotlight
+            style={{ '--reveal-i': 0 }}
+            className="rounded-2xl bg-white border border-neutral-200/80 p-6 sm:p-7 shadow-sm hover:shadow-md transition-shadow"
+          >
+            <div className="flex items-center gap-3.5 mb-3.5">
+              <div className="w-11 h-11 rounded-xl bg-neutral-100 border border-neutral-200/70 flex items-center justify-center text-neutral-900 shrink-0 shadow-xs">
+                <svg className="w-5 h-5 text-neutral-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+              </div>
+              <h3 className="font-display font-semibold text-neutral-900 text-lg leading-snug">Visi Kami</h3>
             </div>
-            <h3 className="font-display font-semibold text-neutral-900 text-lg mb-2.5">Visi Kami</h3>
             <p className="text-neutral-600 text-sm leading-relaxed">
               Menjadi pengembang software dan aplikasi terpercaya dari Indonesia yang menghadirkan solusi digital berkualitas tinggi, tangguh, dan mudah diakses untuk seluruh lapisan masyarakat dan pelaku usaha.
             </p>
           </div>
-          <div className="rounded-2xl bg-white border border-neutral-200/80 p-7 sm:p-8 shadow-sm hover:shadow-md transition-shadow">
-            <div className="w-10 h-10 rounded-xl bg-neutral-100 flex items-center justify-center text-neutral-900 mb-4">
-              <svg className="w-5 h-5 text-neutral-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
+          <div
+            data-reveal
+            data-spotlight
+            style={{ '--reveal-i': 1 }}
+            className="rounded-2xl bg-white border border-neutral-200/80 p-6 sm:p-7 shadow-sm hover:shadow-md transition-shadow"
+          >
+            <div className="flex items-center gap-3.5 mb-3.5">
+              <div className="w-11 h-11 rounded-xl bg-neutral-100 border border-neutral-200/70 flex items-center justify-center text-neutral-900 shrink-0 shadow-xs">
+                <svg className="w-5 h-5 text-neutral-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="font-display font-semibold text-neutral-900 text-lg leading-snug">Misi Kami</h3>
             </div>
-            <h3 className="font-display font-semibold text-neutral-900 text-lg mb-2.5">Misi Kami</h3>
             <ul className="space-y-2.5 text-neutral-600 text-sm leading-relaxed">
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-neutral-950 shrink-0 mt-2" />

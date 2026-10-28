@@ -17,8 +17,10 @@ export default function AppCard({ app, index = 0 }) {
 
   return (
     <div
+      data-reveal
+      data-spotlight
+      style={{ '--reveal-i': index }}
       className="group relative bg-white rounded-3xl border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] hover:shadow-xl hover:border-neutral-400 transition-all duration-300 hover:-translate-y-1 overflow-hidden flex flex-col justify-between"
-      style={{ animationDelay: `${index * 50}ms` }}
     >
       <div className="p-6 sm:p-7 relative">
         <div className="flex items-start gap-4">

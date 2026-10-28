@@ -171,6 +171,7 @@ export default function JumperToolsDedicatedLandingPage() {
 
   return (
     <div className="bg-white min-h-screen text-neutral-900 font-sans antialiased selection:bg-neutral-950 selection:text-white">
+      <div className="fk-scroll-progress" aria-hidden="true" />
       {/* ── BREADCRUMB & NAVIGASI ATAS ─────────────────────────────────── */}
       <div className="pt-24 sm:pt-28 pb-4 bg-neutral-50/70 border-b border-neutral-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-3 text-xs font-mono">
@@ -196,17 +197,17 @@ export default function JumperToolsDedicatedLandingPage() {
       <section className="pt-12 sm:pt-16 pb-16 bg-white border-b border-neutral-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
-          <h1 className="heading-xl text-3xl sm:text-5xl lg:text-6xl text-neutral-950 tracking-tight leading-tight sm:leading-none mb-6 text-balance max-w-5xl mx-auto">
+          <h1 className="fk-hero-in heading-xl text-3xl sm:text-5xl lg:text-6xl text-neutral-950 tracking-tight leading-tight sm:leading-none mb-6 text-balance max-w-5xl mx-auto" style={{ '--hero-i': 0 }}>
             Perbaikan Firmware &amp; Diagnosa Smartphone <br className="hidden sm:inline" />
             Tanpa Box Hardware Mahal
           </h1>
 
-          <p className="text-base sm:text-lg text-neutral-600 max-w-3xl mx-auto leading-relaxed mb-10 font-normal">
+          <p className="fk-hero-in text-base sm:text-lg text-neutral-600 max-w-3xl mx-auto leading-relaxed mb-10 font-normal" style={{ '--hero-i': 1 }}>
             Software desktop Windows 64-bit untuk meja servis teknisi ponsel profesional. Menyatukan protokol resmi flashing Qualcomm, MediaTek, Samsung, dan UNISOC dalam satu aplikasi praktis dengan pengaman partisi IMEI otomatis dan 100% bekerja offline.
           </p>
 
           {/* DUA TOMBOL AKSI UTAMA */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-14 max-w-xl mx-auto">
+          <div className="fk-hero-in flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-14 max-w-xl mx-auto" style={{ '--hero-i': 2 }}>
             <a
               href={waContactUrl}
               target="_blank"
@@ -228,7 +229,7 @@ export default function JumperToolsDedicatedLandingPage() {
           </div>
 
           {/* ── SASIS JENDELA DESKTOP WINDOWS CENTERPIECE (PUTIH BERSIH) ──── */}
-          <div className="max-w-5xl mx-auto rounded-3xl overflow-hidden border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] bg-white mb-12 text-left">
+          <div className="fk-hero-in max-w-5xl mx-auto rounded-3xl overflow-hidden border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] bg-white mb-12 text-left" style={{ '--hero-i': 3 }}>
             {/* Titlebar Jendela Windows */}
             <div className="px-5 py-3.5 bg-neutral-50 border-b border-neutral-200/80 flex items-center justify-between">
               <div className="flex items-center gap-3">
@@ -314,7 +315,7 @@ export default function JumperToolsDedicatedLandingPage() {
           </div>
 
           {/* 4 STATS GRID KEUNGGULAN UTAMA */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto p-6 sm:p-8 rounded-3xl bg-neutral-50 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
+          <div className="fk-hero-in grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto p-6 sm:p-8 rounded-3xl bg-neutral-50 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]" style={{ '--hero-i': 4 }}>
             <div className="p-3 flex flex-col items-center text-center">
               <div className="w-10 h-10 rounded-xl bg-neutral-950 text-white flex items-center justify-center font-mono font-bold text-sm mb-3">
                 01
@@ -350,7 +351,7 @@ export default function JumperToolsDedicatedLandingPage() {
       {/* ── KERESAHAN NYATA TEKNISI (PAIN POINTS) ───────────────────────── */}
       <section className="py-20 sm:py-24 border-b border-neutral-200/80 bg-neutral-50/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center mb-14 sm:mb-16">
+          <div className="max-w-3xl mx-auto text-center mb-14 sm:mb-16" data-reveal>
             <span className="font-mono text-xs font-semibold px-3 py-1 rounded-full bg-neutral-950 text-white mb-3 inline-block">
               TANTANGAN MEJA KERJA
             </span>
@@ -366,6 +367,8 @@ export default function JumperToolsDedicatedLandingPage() {
             {painPoints.map((point, idx) => (
               <div
                 key={idx}
+                data-reveal
+                style={{ '--reveal-i': idx }}
                 className="bg-white rounded-2xl p-6 sm:p-8 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between"
               >
                 <div>
@@ -388,7 +391,7 @@ export default function JumperToolsDedicatedLandingPage() {
       {/* ── 4 PROTOKOL CHIPSET TERINTEGRASI ────────────────────────── */}
       <section className="py-20 sm:py-24 border-b border-neutral-200/80 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center mb-14 sm:mb-16">
+          <div className="max-w-3xl mx-auto text-center mb-14 sm:mb-16" data-reveal>
             <span className="font-mono text-xs font-semibold px-3 py-1 rounded-full bg-neutral-100 text-neutral-900 border border-neutral-300 mb-3 inline-block">
               DUKUNGAN LENGKAP MULTI-CHIPSET
             </span>
@@ -401,9 +404,11 @@ export default function JumperToolsDedicatedLandingPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
-            {chipsetPillars.map((chip) => (
+            {chipsetPillars.map((chip, idx) => (
               <div
                 key={chip.id}
+                data-reveal
+                style={{ '--reveal-i': idx }}
                 className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] hover:border-neutral-400 transition-all flex flex-col justify-between"
               >
                 <div>
@@ -437,7 +442,7 @@ export default function JumperToolsDedicatedLandingPage() {
       {/* ── 6 FITUR UNGGULAN SERVIS ─────────────────────────────────────── */}
       <section className="py-20 sm:py-24 border-b border-neutral-200/80 bg-neutral-50/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center mb-14 sm:mb-16">
+          <div className="max-w-3xl mx-auto text-center mb-14 sm:mb-16" data-reveal>
             <span className="font-mono text-xs font-semibold px-3 py-1 rounded-full bg-neutral-950 text-white mb-3 inline-block">
               KEAMANAN MEJA KERJA
             </span>
@@ -450,9 +455,12 @@ export default function JumperToolsDedicatedLandingPage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {technicianFeatures.map((feat) => (
+            {technicianFeatures.map((feat, idx) => (
               <div
                 key={feat.num}
+                data-reveal
+                data-spotlight
+                style={{ '--reveal-i': idx }}
                 className="bg-white rounded-2xl p-6 sm:p-7 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] hover:border-neutral-400 transition-all"
               >
                 <div className="w-10 h-10 rounded-xl bg-neutral-950 text-white flex items-center justify-center font-mono font-bold text-sm mb-5 shadow-sm">
@@ -473,7 +481,7 @@ export default function JumperToolsDedicatedLandingPage() {
       {/* ── 3 LANGKAH ALUR KERJA CEPAT ──────────────────────────────────── */}
       <section className="py-20 sm:py-24 border-b border-neutral-200/80 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center mb-14 sm:mb-16">
+          <div className="max-w-3xl mx-auto text-center mb-14 sm:mb-16" data-reveal>
             <span className="font-mono text-xs font-semibold px-3 py-1 rounded-full bg-neutral-100 text-neutral-900 border border-neutral-300 mb-3 inline-block">
               ALUR KERJA PRAKTIS
             </span>
@@ -486,9 +494,11 @@ export default function JumperToolsDedicatedLandingPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-            {workflowSteps.map((wf) => (
+            {workflowSteps.map((wf, idx) => (
               <div
                 key={wf.step}
+                data-reveal
+                style={{ '--reveal-i': idx }}
                 className="bg-white rounded-2xl p-6 sm:p-8 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] text-center relative"
               >
                 <div className="font-mono text-3xl font-extrabold text-neutral-300 mb-4">
@@ -509,7 +519,7 @@ export default function JumperToolsDedicatedLandingPage() {
       {/* ── KOMPARASI HEAD-TO-HEAD (CARA LAMA VS JUMPTOOLS PRO) ─────────── */}
       <section className="py-20 sm:py-24 border-b border-neutral-200/80 bg-neutral-50/50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center mb-14 sm:mb-16">
+          <div className="max-w-3xl mx-auto text-center mb-14 sm:mb-16" data-reveal>
             <span className="font-mono text-xs font-semibold px-3 py-1 rounded-full bg-neutral-950 text-white mb-3 inline-block">
               KOMPARASI MEJA SERVIS
             </span>
@@ -521,7 +531,7 @@ export default function JumperToolsDedicatedLandingPage() {
             </p>
           </div>
 
-          <div className="bg-white rounded-3xl border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] divide-y divide-neutral-100 overflow-hidden">
+          <div className="bg-white rounded-3xl border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] divide-y divide-neutral-100 overflow-hidden" data-reveal>
             {comparisons.map((c, idx) => (
               <div key={idx} className="p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
                 <div className="lg:col-span-4">
@@ -545,7 +555,7 @@ export default function JumperToolsDedicatedLandingPage() {
       {/* ── FAQ TEKNISI ─────────────────────────────────────────────────── */}
       <section className="py-20 sm:py-24 border-b border-neutral-200/80 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 sm:mb-14">
+          <div className="text-center mb-12 sm:mb-14" data-reveal>
             <span className="font-mono text-xs font-semibold px-3 py-1 rounded-full bg-neutral-950 text-white mb-3 inline-block">
               FAQ TEKNISI
             </span>
@@ -561,6 +571,8 @@ export default function JumperToolsDedicatedLandingPage() {
             {faqs.map((faq, idx) => (
               <div
                 key={idx}
+                data-reveal
+                style={{ '--reveal-i': idx }}
                 className="bg-neutral-50/70 rounded-2xl p-6 sm:p-7 border border-neutral-200/80 shadow-sm"
               >
                 <h3 className="font-display font-bold text-base sm:text-lg text-neutral-950 mb-2">
@@ -577,7 +589,7 @@ export default function JumperToolsDedicatedLandingPage() {
 
       {/* ── CTA PENUTUP (KONTAK & LISENSI) ───────────────────────────────── */}
       <section className="py-20 sm:py-24 bg-neutral-50/70 border-b border-neutral-200/80">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-reveal>
           <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-950 mb-4 tracking-tight">
             Siap Mengoptimalkan Meja Kerja Servis Anda?
           </h2>

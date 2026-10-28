@@ -25,7 +25,7 @@ export default function AppsPage() {
   return (
     <>
       <section className="pt-28 sm:pt-32 pb-8 bg-gradient-to-b from-neutral-50 to-white">
-        <div className="container-page">
+        <div className="container-page fk-hero-in">
           <Breadcrumb items={[{ label: 'Aplikasi' }]} />
           <SectionHeading
             label="Katalog Resmi"
@@ -40,7 +40,7 @@ export default function AppsPage() {
           <AppsExplorer apps={officialApps} />
 
           {/* Jembatan Penghubung ke Halaman Portofolio */}
-          <div className="mt-16 rounded-3xl bg-neutral-50 border border-neutral-200/80 p-8 sm:p-10 text-center shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
+          <div data-reveal className="mt-16 rounded-3xl bg-neutral-50 border border-neutral-200/80 p-8 sm:p-10 text-center shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
             <span className="inline-block px-3.5 py-1 rounded-full text-xs font-mono font-semibold bg-neutral-950 text-white mb-3">
               Portofolio &amp; Kemitraan
             </span>

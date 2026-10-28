@@ -1,7 +1,11 @@
 import Link from 'next/link'
+import HeroHeadline from '@/components/motion/HeroHeadline'
+import AppConsole from '@/components/motion/AppConsole'
+import CountUp from '@/components/motion/CountUp'
+import ParticleMesh from '@/components/motion/ParticleMesh'
 
 const stats = [
-  { value: '100%', label: 'Offline-First Ready' },
+  { value: '100%', label: 'Offline-First Ready', countUp: true },
   { value: 'SDK 36', label: 'Standar Android Termutakhir' },
   { value: 'Multi-Platform', label: 'Android, Web & Windows' },
   { value: '24/7', label: 'Stabilitas & Keamanan Data' },
@@ -129,7 +133,7 @@ const inDevelopmentProjects = [
   },
   {
     id: 'smart-vidkon-automation',
-    name: 'Smart Vidkon Automation',
+    name: 'Smart Vidkon',
     category: 'Windows Desktop',
     badge: 'Sedang Berjalan',
     description: 'Software pembuat video vertikal 9:16 otomatis dengan transkripsi suara kata per kata dan akselerasi GPU.',
@@ -140,7 +144,7 @@ const inDevelopmentProjects = [
   },
   {
     id: 'smart-motion-automation',
-    name: 'Smart Motion Automation',
+    name: 'Smart Motion',
     category: 'Windows Desktop',
     badge: 'Sedang Berjalan',
     description: 'Software pembuat video animasi teks kinetik 60 FPS menggunakan engine React Remotion.',
@@ -190,33 +194,54 @@ const features = [
   },
 ]
 
+// Etalase hero lintas platform: hanya produk unggulan dan karya klien siap pakai (tanpa proyek sedang berjalan).
+const consoleItems = [
+  'apotekpro',
+  'tokokelontongpro',
+  'bacaquran',
+  'gamepuzzle',
+  'whatsappcrm',
+  'pt-nurcahya-teknik-industry',
+]
+  .map((id) => [...featuredProducts, ...clientProjects].find((p) => p.id === id))
+  .filter(Boolean)
+
 export default function HomePage() {
   return (
     <>
       <section className="relative overflow-hidden pt-28 sm:pt-36 lg:pt-40 pb-16 sm:pb-20 lg:pb-24 bg-gradient-to-b from-neutral-50 via-white to-white">
         <div className="absolute inset-0 pointer-events-none">
+          <ParticleMesh particleCount={45} connectionDistance={115} speed={0.35} className="absolute inset-0 z-0 opacity-80" />
+          <div className="absolute inset-0 fk-grid-bg" />
           <div className="absolute top-0 right-0 w-[550px] h-[550px] bg-brand-500/5 rounded-full blur-3xl -translate-y-1/3 translate-x-1/4" />
           <div className="absolute bottom-0 left-0 w-[450px] h-[450px] bg-accent-500/5 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4" />
         </div>
 
         <div className="container-page relative z-10 w-full">
           <div className="max-w-4xl lg:max-w-5xl 2xl:max-w-6xl mx-auto text-center">
-            <h1 className="heading-xl text-3xl sm:text-5xl lg:text-6xl text-neutral-900 mb-6 sm:mb-8 text-balance tracking-tight">
-              Solusi Software &amp; Aplikasi Andal untuk{' '}
-              <span className="text-gradient-brand">Bisnis dan Produktivitas</span>
-            </h1>
+            <HeroHeadline
+              lead="Solusi Software & Aplikasi Andal untuk"
+              highlight="Bisnis dan Produktivitas"
+              className="heading-xl text-3xl sm:text-5xl lg:text-6xl text-neutral-900 mb-6 sm:mb-8 text-balance tracking-tight"
+            />
 
-            <p className="text-neutral-600 text-sm sm:text-base lg:text-lg leading-relaxed max-w-3xl lg:max-w-4xl mx-auto mb-8 sm:mb-12">
+            <p
+              className="text-neutral-600 text-sm sm:text-base lg:text-lg leading-relaxed max-w-3xl lg:max-w-4xl mx-auto mb-8 sm:mb-12 fk-hero-in"
+              style={{ '--hero-i': 5 }}
+            >
               FokusKonten menghadirkan aplikasi kasir (Apotek Pro, Kelontong Pro), software desktop CRM, hingga Al-Qur&apos;an digital yang praktis, cepat, dan siap pakai untuk bisnis Anda.
             </p>
 
-            <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+            <div
+              className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 fk-hero-in"
+              style={{ '--hero-i': 6 }}
+            >
               <Link
                 href="/aplikasi"
-                className="inline-flex items-center gap-2 px-7 py-4 rounded-xl font-display font-semibold text-sm text-white bg-black hover:bg-neutral-800 shadow-md shadow-black/20 transition-all duration-200"
+                className="group inline-flex items-center gap-2 px-7 py-4 rounded-xl font-display font-semibold text-sm text-white bg-black hover:bg-neutral-800 shadow-md shadow-black/20 transition-all duration-200"
               >
                 Jelajahi Aplikasi
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                <svg className="w-4 h-4 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
               </Link>
@@ -227,6 +252,10 @@ export default function HomePage() {
                 Layanan Kustom
               </Link>
             </div>
+
+            <div className="mt-12 sm:mt-16 fk-hero-in" style={{ '--hero-i': 7 }}>
+              <AppConsole items={consoleItems} />
+            </div>
           </div>
         </div>
       </section>
@@ -234,9 +263,11 @@ export default function HomePage() {
       <section className="py-10 sm:py-14 border-y border-neutral-100 bg-neutral-50/70">
         <div className="container-page">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
-            {stats.map((stat) => (
-              <div key={stat.label} className="text-center py-2">
-                <div className="font-display font-bold text-2xl sm:text-3xl lg:text-4xl text-neutral-900">{stat.value}</div>
+            {stats.map((stat, idx) => (
+              <div key={stat.label} className="text-center py-2" data-reveal style={{ '--reveal-i': idx }}>
+                <div className="font-display font-bold text-2xl sm:text-3xl lg:text-4xl text-neutral-900">
+                  {stat.countUp ? <CountUp value={stat.value} /> : stat.value}
+                </div>
                 <div className="text-neutral-500 text-xs sm:text-sm mt-1.5">{stat.label}</div>
               </div>
             ))}
@@ -246,8 +277,7 @@ export default function HomePage() {
 
       <section className="py-20 sm:py-24 bg-white">
         <div className="container-page">
-          <div className="max-w-4xl mx-auto text-center mb-14 sm:mb-16">
-            <span className="label-brand mb-3.5 inline-block">Produk Unggulan</span>
+          <div className="max-w-4xl mx-auto text-center mb-14 sm:mb-16" data-reveal>
             <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-900 mb-4">
               Produk &amp; Karya Unggulan FokusKonten
             </h2>
@@ -257,32 +287,31 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
-            {featuredProducts.map((item) => (
+            {featuredProducts.map((item, idx) => (
               <div
                 key={item.id}
-                className="bg-white rounded-3xl border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] p-6 sm:p-7 flex flex-col justify-between hover:shadow-xl hover:border-neutral-400 transition-all duration-300 group"
+                data-reveal
+                data-spotlight
+                style={{ '--reveal-i': idx }}
+                className="bg-white rounded-3xl border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] p-6 sm:p-7 flex flex-col justify-between hover:shadow-xl hover:border-neutral-400 hover:-translate-y-0.5 transition-all duration-300 group"
               >
                 <div>
-                  <div className="flex items-start justify-between gap-3 mb-5">
+                  <div className="flex items-center gap-3.5 mb-4">
                     <Link href={item.href} className="shrink-0 block">
                       <img
                         src={item.icon}
                         alt={item.name}
-                        className="w-14 h-14 rounded-2xl object-contain bg-neutral-50 p-1 border border-neutral-100 shadow-sm group-hover:scale-105 transition-transform"
+                        className="w-12 h-12 rounded-xl object-contain bg-neutral-50 p-1 border border-neutral-100 shadow-sm group-hover:scale-105 transition-transform"
                       />
                     </Link>
-                    <div>
-                      <span className="inline-block px-3 py-1 rounded-full text-[11px] font-mono font-semibold bg-neutral-100 text-neutral-800 border border-neutral-300">
-                        {item.category}
-                      </span>
+                    <div className="min-w-0 flex-1">
+                      <Link href={item.href} className="block group/title">
+                        <h3 className="heading-lg text-lg sm:text-xl text-neutral-900 group-hover/title:text-black group-hover/title:underline transition-colors">
+                          {item.name}
+                        </h3>
+                      </Link>
                     </div>
                   </div>
-
-                  <Link href={item.href} className="block group/title">
-                    <h3 className="heading-lg text-xl text-neutral-900 group-hover/title:text-black group-hover/title:underline transition-colors mb-2">
-                      {item.name}
-                    </h3>
-                  </Link>
                   <p className="text-neutral-600 text-xs sm:text-sm leading-relaxed mb-6 font-sans">
                     {item.description}
                   </p>
@@ -291,10 +320,10 @@ export default function HomePage() {
                 <div className="pt-5 border-t border-neutral-100">
                   <Link
                     href={item.href}
-                    className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-display font-semibold text-xs text-white bg-black hover:bg-neutral-800 shadow-sm transition-all"
+                    className="group/btn w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-display font-semibold text-xs text-white bg-black hover:bg-neutral-800 shadow-sm transition-all"
                   >
                     {item.actionText}
-                    <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                    <svg className="w-3.5 h-3.5 transition-transform group-hover/btn:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                     </svg>
                   </Link>
@@ -303,7 +332,7 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div className="text-center mt-10 sm:mt-12">
+          <div className="text-center mt-10 sm:mt-12" data-reveal>
             <Link
               href="/aplikasi"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-display font-semibold text-sm text-neutral-900 bg-white border border-neutral-300 hover:border-neutral-950 hover:bg-neutral-50 shadow-sm transition-all duration-200"
@@ -319,8 +348,7 @@ export default function HomePage() {
 
       <section className="py-20 sm:py-24 bg-white border-t border-neutral-100">
         <div className="container-page">
-          <div className="max-w-4xl mx-auto text-center mb-14 sm:mb-16">
-            <span className="label-warm mb-3.5 inline-block font-mono">Pesanan &amp; Kemitraan</span>
+          <div className="max-w-4xl mx-auto text-center mb-14 sm:mb-16" data-reveal>
             <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-900 mb-4">
               Karya Pesanan &amp; Studi Kasus Klien
             </h2>
@@ -330,19 +358,22 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {clientProjects.map((item) => (
+            {clientProjects.map((item, idx) => (
               <div
                 key={item.id}
-                className="bg-white rounded-3xl border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] p-6 sm:p-7 flex flex-col justify-between hover:shadow-xl hover:border-neutral-400 transition-all duration-300 group"
+                data-reveal
+                data-spotlight
+                style={{ '--reveal-i': idx }}
+                className="bg-white rounded-3xl border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] p-6 sm:p-7 flex flex-col justify-between hover:shadow-xl hover:border-neutral-400 hover:-translate-y-0.5 transition-all duration-300 group"
               >
                 <div>
-                  <div className="flex items-start justify-between gap-3 mb-5">
+                  <div className="flex items-center gap-3.5 mb-4">
                     {item.external ? (
                       <a href={item.href} target="_blank" rel="noopener noreferrer" className="shrink-0 block">
                         <img
                           src={item.icon}
                           alt={item.name}
-                          className="w-14 h-14 rounded-2xl object-contain bg-neutral-50 p-1 border border-neutral-100 shadow-sm group-hover:scale-105 transition-transform"
+                          className="w-12 h-12 rounded-xl object-contain bg-neutral-50 p-1 border border-neutral-100 shadow-sm group-hover:scale-105 transition-transform"
                         />
                       </a>
                     ) : (
@@ -350,30 +381,26 @@ export default function HomePage() {
                         <img
                           src={item.icon}
                           alt={item.name}
-                          className="w-14 h-14 rounded-2xl object-contain bg-neutral-50 p-1 border border-neutral-100 shadow-sm group-hover:scale-105 transition-transform"
+                          className="w-12 h-12 rounded-xl object-contain bg-neutral-50 p-1 border border-neutral-100 shadow-sm group-hover:scale-105 transition-transform"
                         />
                       </Link>
                     )}
-                    <div>
-                      <span className="inline-block px-3 py-1 rounded-full text-[11px] font-mono font-semibold bg-neutral-100 text-neutral-800 border border-neutral-300">
-                        {item.category}
-                      </span>
+                    <div className="min-w-0 flex-1">
+                      {item.external ? (
+                        <a href={item.href} target="_blank" rel="noopener noreferrer" className="block group/title">
+                          <h3 className="heading-lg text-lg sm:text-xl text-neutral-900 group-hover/title:text-black group-hover/title:underline transition-colors">
+                            {item.name}
+                          </h3>
+                        </a>
+                      ) : (
+                        <Link href={item.href} className="block group/title">
+                          <h3 className="heading-lg text-lg sm:text-xl text-neutral-900 group-hover/title:text-black group-hover/title:underline transition-colors">
+                            {item.name}
+                          </h3>
+                        </Link>
+                      )}
                     </div>
                   </div>
-
-                  {item.external ? (
-                    <a href={item.href} target="_blank" rel="noopener noreferrer" className="block group/title">
-                      <h3 className="heading-lg text-xl text-neutral-900 group-hover/title:text-black group-hover/title:underline transition-colors mb-2">
-                        {item.name}
-                      </h3>
-                    </a>
-                  ) : (
-                    <Link href={item.href} className="block group/title">
-                      <h3 className="heading-lg text-xl text-neutral-900 group-hover/title:text-black group-hover/title:underline transition-colors mb-2">
-                        {item.name}
-                      </h3>
-                    </Link>
-                  )}
                   <p className="text-neutral-600 text-xs sm:text-sm leading-relaxed mb-6 font-sans">
                     {item.description}
                   </p>
@@ -385,20 +412,20 @@ export default function HomePage() {
                       href={item.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-display font-semibold text-xs text-white bg-black hover:bg-neutral-800 shadow-sm transition-all"
+                      className="group/btn w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-display font-semibold text-xs text-white bg-black hover:bg-neutral-800 shadow-sm transition-all"
                     >
                       {item.actionText}
-                      <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                      <svg className="w-3.5 h-3.5 transition-transform group-hover/btn:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                       </svg>
                     </a>
                   ) : (
                     <Link
                       href={item.href}
-                      className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-display font-semibold text-xs text-white bg-black hover:bg-neutral-800 shadow-sm transition-all"
+                      className="group/btn w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-display font-semibold text-xs text-white bg-black hover:bg-neutral-800 shadow-sm transition-all"
                     >
                       {item.actionText}
-                      <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                      <svg className="w-3.5 h-3.5 transition-transform group-hover/btn:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                       </svg>
                     </Link>
@@ -408,7 +435,7 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div className="text-center mt-12 sm:mt-14">
+          <div className="text-center mt-12 sm:mt-14" data-reveal>
             <Link
               href="/portfolio"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-display font-semibold text-sm text-neutral-900 bg-white border border-neutral-300 hover:border-neutral-950 hover:bg-neutral-50 shadow-sm transition-all duration-200"
@@ -424,8 +451,7 @@ export default function HomePage() {
 
       <section className="py-20 sm:py-24 bg-white border-t border-neutral-100">
         <div className="container-page">
-          <div className="max-w-4xl mx-auto text-center mb-14 sm:mb-16">
-            <span className="label-brand mb-3.5 inline-block font-mono">Sedang Berjalan</span>
+          <div className="max-w-4xl mx-auto text-center mb-14 sm:mb-16" data-reveal>
             <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-900 mb-4">
               Proyek Dalam Tahap Pengembangan
             </h2>
@@ -435,26 +461,25 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {inDevelopmentProjects.map((item) => (
+            {inDevelopmentProjects.map((item, idx) => (
               <div
                 key={item.id}
-                className="bg-white rounded-3xl border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] p-6 sm:p-7 flex flex-col justify-between hover:shadow-xl hover:border-neutral-400 transition-all duration-300 group"
+                data-reveal
+                data-spotlight
+                style={{ '--reveal-i': idx }}
+                className="bg-white rounded-3xl border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] p-6 sm:p-7 flex flex-col justify-between hover:shadow-xl hover:border-neutral-400 hover:-translate-y-0.5 transition-all duration-300 group"
               >
                 <div>
-                  <div className="flex items-start justify-between gap-3 mb-5">
+                  <div className="flex items-center gap-3.5 mb-4">
                     <img
                       src={item.icon}
                       alt={item.name}
-                      className="w-14 h-14 rounded-2xl object-contain bg-neutral-50 p-1 border border-neutral-100 shadow-sm group-hover:scale-105 transition-transform"
+                      className="w-12 h-12 rounded-xl object-contain bg-neutral-50 p-1 border border-neutral-100 shadow-sm group-hover:scale-105 transition-transform shrink-0"
                     />
-                    <div>
-                      <span className="inline-block px-3 py-1 rounded-full text-[11px] font-mono font-semibold bg-neutral-900 text-white">
-                        {item.badge}
-                      </span>
+                    <div className="min-w-0 flex-1">
+                      <h3 className="heading-lg text-lg sm:text-xl text-neutral-900">{item.name}</h3>
                     </div>
                   </div>
-
-                  <h3 className="heading-lg text-xl text-neutral-900 mb-2">{item.name}</h3>
                   <p className="text-neutral-600 text-xs sm:text-sm leading-relaxed mb-6 font-sans">
                     {item.description}
                   </p>
@@ -463,10 +488,10 @@ export default function HomePage() {
                 <div className="pt-5 border-t border-neutral-100">
                   <Link
                     href={item.href}
-                    className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-display font-semibold text-xs text-white bg-black hover:bg-neutral-800 shadow-sm transition-all"
+                    className="group/btn w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-display font-semibold text-xs text-white bg-black hover:bg-neutral-800 shadow-sm transition-all"
                   >
                     {item.actionText}
-                    <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                    <svg className="w-3.5 h-3.5 transition-transform group-hover/btn:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                     </svg>
                   </Link>
@@ -479,8 +504,7 @@ export default function HomePage() {
 
       <section className="py-20 bg-neutral-50/70 border-t border-neutral-100">
         <div className="container-page">
-          <div className="max-w-4xl mx-auto text-center mb-14">
-            <span className="label-brand mb-3 inline-block">Kualitas &amp; Keandalan Aplikasi</span>
+          <div className="max-w-4xl mx-auto text-center mb-14" data-reveal>
             <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-900 mb-4">
               Aplikasi Cepat, Ringan, dan Siap Pakai
             </h2>
@@ -491,49 +515,65 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((f, i) => (
-              <div key={i} className="bg-white rounded-2xl border border-neutral-200/80 p-6 shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 rounded-xl bg-neutral-100 flex items-center justify-center mb-5 text-neutral-900">
-                  {f.icon}
+              <div
+                key={i}
+                data-reveal
+                data-spotlight
+                style={{ '--reveal-i': i }}
+                className="bg-white rounded-2xl border border-neutral-200/80 p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex items-center gap-3.5 mb-3.5">
+                    <div className="w-11 h-11 rounded-xl bg-neutral-100 border border-neutral-200/70 flex items-center justify-center text-neutral-950 shrink-0 shadow-xs">
+                      {f.icon}
+                    </div>
+                    <h3 className="font-display font-semibold text-base text-neutral-900 leading-snug">
+                      {f.title}
+                    </h3>
+                  </div>
+                  <p className="text-neutral-600 text-xs sm:text-sm leading-relaxed">{f.desc}</p>
                 </div>
-                <h3 className="font-display font-semibold text-base text-neutral-900 mb-2">{f.title}</h3>
-                <p className="text-neutral-500 text-xs sm:text-sm leading-relaxed">{f.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-16 bg-neutral-950 text-white relative overflow-hidden">
-        <div className="container-page relative z-10">
-          <div className="max-w-4xl lg:max-w-5xl mx-auto text-center">
-            <span className="inline-block px-3.5 py-1 rounded-full text-xs font-display font-semibold bg-white text-neutral-950 shadow-sm mb-4">
-              Layanan Pembuatan Aplikasi
-            </span>
-            <h2 className="heading-xl text-3xl sm:text-4xl text-white mb-4">
-              Butuh Aplikasi Android Khusus untuk Usaha Anda?
-            </h2>
-            <p className="text-neutral-400 text-sm sm:text-base leading-relaxed mb-8 max-w-2xl mx-auto">
-              Diskusikan kebutuhan aplikasi kasir, manajemen inventaris, toko online, atau aplikasi pendukung operasional usaha Anda langsung dengan tim pengembang FokusKonten.
-            </p>
-            <div className="flex flex-wrap items-center justify-center gap-3">
+      <section className="py-20 sm:py-24 bg-white border-t border-neutral-100">
+        <div className="container-page">
+          <div
+            data-reveal
+            className="relative max-w-4xl lg:max-w-5xl mx-auto text-center bg-white border border-neutral-200 rounded-3xl p-8 sm:p-12 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] overflow-hidden"
+          >
+            <ParticleMesh particleCount={22} connectionDistance={95} speed={0.25} className="absolute inset-0 z-0 opacity-40 pointer-events-none" />
+            <div className="relative z-10">
+              <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-900 mb-4">
+                Butuh Aplikasi Android Khusus untuk Usaha Anda?
+              </h2>
+              <p className="text-neutral-600 text-sm sm:text-base leading-relaxed mb-8 max-w-2xl mx-auto">
+                Diskusikan kebutuhan aplikasi kasir, manajemen inventaris, toko online, atau aplikasi pendukung operasional usaha Anda langsung dengan tim pengembang FokusKonten.
+              </p>
+              <div className="flex flex-wrap items-center justify-center gap-3">
               <a
                 href="https://wa.me/6285183011318"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-display font-semibold text-sm bg-white text-neutral-950 hover:bg-neutral-100 transition-all shadow-lg"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-display font-semibold text-sm bg-black text-white hover:bg-neutral-800 transition-all shadow-md shadow-black/20"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
                 Konsultasi via WhatsApp
               </a>
               <Link
                 href="/layanan"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-display font-semibold text-sm bg-white text-neutral-950 hover:bg-neutral-100 transition-all shadow-lg"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-display font-semibold text-sm text-neutral-900 bg-white border border-neutral-300 hover:border-neutral-950 hover:bg-neutral-50 shadow-sm transition-all"
               >
                 Informasi Layanan
               </Link>
             </div>
           </div>
+        </div>
         </div>
       </section>
     </>

@@ -400,6 +400,7 @@ export default function ApotekProDedicatedSalesPage() {
 
   return (
     <div className="bg-white min-h-screen text-neutral-900 font-sans antialiased">
+      <div className="fk-scroll-progress" aria-hidden="true" />
 
       {/* ── BREADCRUMB & BACK NAVIGATION ──────────────────────────────── */}
       <div className="pt-24 sm:pt-28 pb-4 bg-neutral-50/70 border-b border-neutral-100">
@@ -421,17 +422,26 @@ export default function ApotekProDedicatedSalesPage() {
       <section className="pt-12 sm:pt-16 pb-16 bg-white border-b border-neutral-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
-          <h1 className="heading-xl text-3xl sm:text-5xl lg:text-6xl text-neutral-950 tracking-tight leading-tight sm:leading-none mb-6 text-balance max-w-5xl mx-auto">
+          <h1
+            className="heading-xl text-3xl sm:text-5xl lg:text-6xl text-neutral-950 tracking-tight leading-tight sm:leading-none mb-6 text-balance max-w-5xl mx-auto fk-hero-in"
+            style={{ '--hero-i': 0 }}
+          >
             Kelola Stok Apotek &amp; Kasir Resep Presisi <br className="hidden sm:inline" />
             Tanpa Takut Obat Kedaluwarsa
           </h1>
 
-          <p className="text-base sm:text-lg text-neutral-600 max-w-3xl mx-auto leading-relaxed mb-10 font-normal">
+          <p
+            className="text-base sm:text-lg text-neutral-600 max-w-3xl mx-auto leading-relaxed mb-10 font-normal fk-hero-in"
+            style={{ '--hero-i': 1 }}
+          >
             Software kasir POS farmasi pintar berstandar FEFO (First Expired First Out). Hitung dosis resep racikan dokter otomatis, buku defecta digital anti-kehabisan stok, dan cetak struk bluetooth 100% offline tanpa iuran bulanan di perangkat Android Anda.
           </p>
 
           {/* DUA TOMBOL AKSI UTAMA — GOOGLE PLAY SEBAGAI PRIMADONA */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-12 max-w-xl mx-auto">
+          <div
+            className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-12 max-w-xl mx-auto fk-hero-in"
+            style={{ '--hero-i': 2 }}
+          >
             <a
               href="#alur-pengujian"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-display font-bold text-sm sm:text-base text-neutral-950 bg-white border-2 border-neutral-300 hover:border-black hover:bg-neutral-50 shadow-md hover:shadow-lg transition-all duration-200 group"
@@ -459,7 +469,10 @@ export default function ApotekProDedicatedSalesPage() {
           </div>
 
           {/* ── SHOWCASE UTAMA: 2 SET PRESENTASI SLIDE RESMI (MASING-MASING 4 SLIDE) ── */}
-          <div className="max-w-6xl mx-auto mb-14 text-left">
+          <div
+            className="max-w-6xl mx-auto mb-14 text-left fk-hero-in"
+            style={{ '--hero-i': 3 }}
+          >
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
               <div className="flex flex-col">
                 <PersonaPresentationSlider
@@ -480,7 +493,10 @@ export default function ApotekProDedicatedSalesPage() {
           </div>
 
           {/* 4 STATS GRID DENGAN IKON 3D EMERALD MENONJOL */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto p-6 sm:p-8 rounded-3xl bg-neutral-50 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
+          <div
+            className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto p-6 sm:p-8 rounded-3xl bg-neutral-50 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] fk-hero-in"
+            style={{ '--hero-i': 4 }}
+          >
             <div className="p-3 flex flex-col items-center text-center">
               <img
                 src="/app-icons/apotekpro/3d/stat_hybrid.png"
@@ -523,12 +539,14 @@ export default function ApotekProDedicatedSalesPage() {
       </section>
 
       {/* ── THE DUAL-REEL VIDEO SHOWCASE (CURHATAN & DEMO LIVE) ─────────── */}
-      <DualReelVideoShowcase />
+      <div data-reveal>
+        <DualReelVideoShowcase />
+      </div>
 
       {/* ── PAIN POINTS SECTION ────────────────────────────────────────── */}
       <section className="py-20 bg-neutral-50/60 border-b border-neutral-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-14">
+          <div className="text-center max-w-3xl mx-auto mb-14" data-reveal>
             <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3 block">Tantangan Nyata Apotek</span>
             <h2 className="heading-xl text-2xl sm:text-4xl text-neutral-950 mb-3">
               Apakah Masalah Ini Kerap Terjadi di Apotek Anda?
@@ -540,7 +558,12 @@ export default function ApotekProDedicatedSalesPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {painPoints.map((item, idx) => (
-              <div key={idx} className="p-6 sm:p-7 rounded-3xl bg-white border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between">
+              <div
+                key={idx}
+                data-reveal
+                style={{ '--reveal-i': idx }}
+                className="p-6 sm:p-7 rounded-3xl bg-white border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between"
+              >
                 <div>
                   <h3 className="font-display text-base sm:text-lg font-bold text-neutral-950 mb-2.5 leading-snug">{item.title}</h3>
                   <p className="text-neutral-600 text-xs sm:text-sm leading-relaxed font-sans">{item.desc}</p>
@@ -553,16 +576,18 @@ export default function ApotekProDedicatedSalesPage() {
 
 
       {/* ── GALERI GESER INTERAKTIF PREVIEW APLIKASI ────────────────────── */}
-      <AppScreenshotGallery
-        title="Galeri Antarmuka Apotek Pro"
-        subtitle="Geser ke kanan atau kiri untuk melihat langsung alur kerja kasir POS, kalkulator racikan resep dokter, hingga pembukuan obat."
-        items={galleryScreenshots}
-      />
+      <div data-reveal>
+        <AppScreenshotGallery
+          title="Galeri Antarmuka Apotek Pro"
+          subtitle="Geser ke kanan atau kiri untuk melihat langsung alur kerja kasir POS, kalkulator racikan resep dokter, hingga pembukuan obat."
+          items={galleryScreenshots}
+        />
+      </div>
 
       {/* ── 10 MODUL RESMI FARMASI TERINTEGRASI ──────────────────────────── */}
       <section className="py-24 bg-white border-b border-neutral-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-16" data-reveal>
             <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3.5 block">10 Modul Farmasi Lengkap</span>
             <h2 className="heading-xl text-3xl sm:text-5xl text-neutral-950 mb-4 tracking-tight">
               Sistem Kasir &amp; Tata Kelola Apotek Terpadu
@@ -573,10 +598,13 @@ export default function ApotekProDedicatedSalesPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-            {coreModules.map((m) => (
+            {coreModules.map((m, idx) => (
               <div
                 key={m.num}
-                className="rounded-3xl border border-neutral-200/90 bg-white p-7 sm:p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] hover:shadow-xl hover:border-neutral-400 transition-all flex flex-col justify-between group"
+                data-reveal
+                data-spotlight
+                style={{ '--reveal-i': idx }}
+                className="rounded-3xl border border-neutral-200/90 bg-white p-7 sm:p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] hover:shadow-xl hover:border-neutral-400 hover:-translate-y-0.5 transition-all flex flex-col justify-between group"
               >
                 <div>
                   {/* Header Modul dengan Ikon 3D Emerald Menonjol Bebas Tanpa Pembungkus */}
@@ -625,7 +653,7 @@ export default function ApotekProDedicatedSalesPage() {
       {/* ── SECTION: TARGET PENGGUNA (DUAL PERSONA ENTERPRISE SHOWCASE) ───── */}
       <section className="py-24 bg-neutral-50/70 border-b border-neutral-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-16" data-reveal>
             <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3.5 block">Target Pengguna Resmi</span>
             <h2 className="heading-xl text-3xl sm:text-5xl text-neutral-950 mb-4 tracking-tight">
               Cocok Digunakan oleh Siapa Saja?
@@ -639,7 +667,10 @@ export default function ApotekProDedicatedSalesPage() {
             {targetAudiences.map((aud, i) => (
               <div
                 key={i}
-                className="rounded-3xl overflow-hidden border border-neutral-200/90 shadow-[0_4px_24px_-4px_rgba(0,0,0,0.07)] bg-white flex flex-col justify-between hover:shadow-2xl hover:border-neutral-400 transition-all duration-300 group"
+                data-reveal
+                data-spotlight
+                style={{ '--reveal-i': i }}
+                className="rounded-3xl overflow-hidden border border-neutral-200/90 shadow-[0_4px_24px_-4px_rgba(0,0,0,0.07)] bg-white flex flex-col justify-between hover:shadow-2xl hover:border-neutral-400 hover:-translate-y-0.5 transition-all duration-300 group"
               >
                 {/* Visual Model Dokter / Farmasi Proporsional Tinggi Menonjol */}
                 <div className={`bg-gradient-to-b ${aud.gradient} pt-8 px-6 flex justify-center items-end border-b border-neutral-100 relative overflow-hidden h-[420px] sm:h-[480px] lg:h-[500px]`}>
@@ -711,7 +742,7 @@ export default function ApotekProDedicatedSalesPage() {
       {/* ── COMPARISON SECTION ─────────────────────────────────────────── */}
       <section className="py-20 bg-white border-b border-neutral-200/80">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
+          <div className="text-center mb-14" data-reveal>
             <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3 block">Efisiensi &amp; Perbandingan</span>
             <h2 className="heading-xl text-2xl sm:text-4xl text-neutral-950 mb-3">
               Perbandingan: Cara Konvensional vs Apotek Pro
@@ -723,7 +754,12 @@ export default function ApotekProDedicatedSalesPage() {
 
           <div className="space-y-4">
             {comparisons.map((item, idx) => (
-              <div key={idx} className="p-5 sm:p-6 rounded-2xl bg-white border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div
+                key={idx}
+                data-reveal
+                style={{ '--reveal-i': idx }}
+                className="p-5 sm:p-6 rounded-2xl bg-white border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col sm:flex-row sm:items-center justify-between gap-3"
+              >
                 <span className="font-display font-bold text-neutral-950 text-sm sm:w-1/3">{item.feature}</span>
                 <div className="flex-1 text-xs sm:text-sm text-neutral-400 line-through sm:pr-4 font-sans">{item.oldWay}</div>
                 <div className="flex-1 text-xs sm:text-sm font-semibold text-neutral-950 font-sans flex items-center gap-2">
@@ -738,7 +774,7 @@ export default function ApotekProDedicatedSalesPage() {
 
       {/* ── 3-STEP INSTALLATION & GETTING STARTED (CLEAN SHOWCASE) ──────── */}
       <section id="alur-pengujian" className="py-20 bg-white border-b border-neutral-200/80 scroll-mt-24">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-reveal>
           <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3.5 block">Alur Akses Resmi</span>
           <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-950 mb-3">
             3 Langkah Cepat Memasang Apotek Pro di Kasir Anda
@@ -749,7 +785,11 @@ export default function ApotekProDedicatedSalesPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left mb-12">
             {/* Step 1 */}
-            <div className="p-7 rounded-3xl border border-neutral-200/80 bg-neutral-50/60 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between">
+            <div
+              data-reveal
+              style={{ '--reveal-i': 0 }}
+              className="p-7 rounded-3xl border border-neutral-200/80 bg-neutral-50/60 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between"
+            >
               <div>
                 <div className="flex items-center justify-between mb-4">
                   <div>
@@ -784,7 +824,11 @@ export default function ApotekProDedicatedSalesPage() {
             </div>
 
             {/* Step 2 */}
-            <div className="p-7 rounded-3xl border-2 border-neutral-900 bg-white shadow-xl flex flex-col justify-between">
+            <div
+              data-reveal
+              style={{ '--reveal-i': 1 }}
+              className="p-7 rounded-3xl border-2 border-neutral-900 bg-white shadow-xl flex flex-col justify-between"
+            >
               <div>
                 <div className="flex items-center justify-between mb-4">
                   <div>
@@ -819,7 +863,11 @@ export default function ApotekProDedicatedSalesPage() {
             </div>
 
             {/* Step 3 */}
-            <div className="p-7 rounded-3xl border border-neutral-200/80 bg-neutral-50/60 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between">
+            <div
+              data-reveal
+              style={{ '--reveal-i': 2 }}
+              className="p-7 rounded-3xl border border-neutral-200/80 bg-neutral-50/60 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between"
+            >
               <div>
                 <div className="flex items-center justify-between mb-4">
                   <div>
@@ -855,7 +903,7 @@ export default function ApotekProDedicatedSalesPage() {
           </div>
 
           {/* PILIHAN JALUR INSTALASI: GOOGLE GROUP VS UNDUH APK LOKAL */}
-          <div className="max-w-2xl mx-auto space-y-6">
+          <div className="max-w-2xl mx-auto space-y-6" data-reveal>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {/* Opsi 1: Google Group & Play Store */}
               <div className="p-5 rounded-2xl border-2 border-emerald-600 bg-emerald-50/40 flex flex-col justify-between">
@@ -927,7 +975,7 @@ export default function ApotekProDedicatedSalesPage() {
       {/* ── FAQ SECTION ────────────────────────────────────────────────── */}
       <section className="py-20 bg-neutral-50/70 border-b border-neutral-200/80">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <div className="text-center mb-12" data-reveal>
             <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3 block">Bantuan &amp; Panduan</span>
             <h2 className="heading-xl text-2xl sm:text-3xl text-neutral-950 mb-3">
               Pertanyaan yang Sering Diajukan
@@ -937,7 +985,12 @@ export default function ApotekProDedicatedSalesPage() {
 
           <div className="space-y-4">
             {faqs.map((f, idx) => (
-              <div key={idx} className="p-6 sm:p-7 rounded-3xl bg-white border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
+              <div
+                key={idx}
+                data-reveal
+                style={{ '--reveal-i': idx }}
+                className="p-6 sm:p-7 rounded-3xl bg-white border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]"
+              >
                 <h3 className="font-display text-sm sm:text-base font-bold text-neutral-950 mb-2">{f.q}</h3>
                 <p className="text-neutral-600 text-xs sm:text-sm leading-relaxed font-sans">{f.a}</p>
               </div>
@@ -948,7 +1001,7 @@ export default function ApotekProDedicatedSalesPage() {
 
       {/* ── BOTTOM CALL TO ACTION ───────────────────────────────────────── */}
       <section className="py-20 sm:py-24 bg-white border-t border-neutral-200/80 text-center">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8" data-reveal>
           <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3 block">
             Solusi Kasir Farmasi Tanpa Ribet
           </span>

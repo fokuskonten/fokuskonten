@@ -3,9 +3,10 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import KalilaChatWidget from '@/components/KalilaChatWidget'
-import CartFloat from '@/components/CartFloat'
 import BackToTop from '@/components/BackToTop'
+import FloatingMenu from '@/components/FloatingMenu'
 import SessionScrollRestorer from '@/components/SessionScrollRestorer'
+import MotionProvider from '@/components/motion/MotionProvider'
 
 
 export const metadata = {
@@ -78,8 +79,14 @@ const jsonLd = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="id">
+    <html lang="id" suppressHydrationWarning>
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "(function(){var d=document.documentElement;d.classList.add('fk-motion');setTimeout(function(){if(!window.__fkMotionReady){d.classList.remove('fk-motion')}},3000)})()",
+          }}
+        />
         <link rel="icon" href="/favicon.ico?v=3" sizes="any" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=3" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3" />
@@ -113,8 +120,9 @@ export default function RootLayout({ children }) {
         <main className="min-h-screen">{children}</main>
         <Footer />
         <KalilaChatWidget />
-        <CartFloat />
         <BackToTop />
+        <FloatingMenu />
+        <MotionProvider />
 
       </body>
     </html>

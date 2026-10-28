@@ -85,11 +85,26 @@ export default function KalilaChatWidget() {
       const savedIsOpen = localStorage.getItem('fk_chat_open_v3') || localStorage.getItem('fk_chat_open_v2')
       if (savedIsOpen === 'true') {
         setIsOpen(true)
+        if (typeof window !== 'undefined') {
+          window.dispatchEvent(new CustomEvent('kalila-state-change', { detail: { isOpen: true } }))
+        }
       }
     } catch (e) {
       console.warn('Storage read error', e)
     }
     setHasHydrated(true)
+  }, [])
+
+  // Tutup otomatis jika menu floating navigasi atau drawer keranjang dibuka
+  useEffect(() => {
+    const handleCloseChat = () => {
+      setIsOpen(false)
+      if (typeof window !== 'undefined') {
+        window.dispatchEvent(new CustomEvent('kalila-state-change', { detail: { isOpen: false } }))
+      }
+    }
+    window.addEventListener('close-kalila-chat', handleCloseChat)
+    return () => window.removeEventListener('close-kalila-chat', handleCloseChat)
   }, [])
 
   // Save chat history & open state to localStorage
@@ -300,37 +315,44 @@ export default function KalilaChatWidget() {
 
   return (
     <>
-      {/* Floating Button */}
+      {/* Floating Button Kalila — Ukuran Proporsional 48px */}
       <button
-        onClick={() => setIsOpen(!isOpen)}
-        className={`fixed bottom-20 lg:bottom-16 right-4 lg:right-6 z-50 w-14 h-14 rounded-full bg-neutral-950 text-white shadow-lg shadow-black/35 hover:shadow-2xl hover:shadow-black/50 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-1 border border-neutral-800 cursor-pointer ${isOpen ? 'scale-0 opacity-0' : 'scale-100 opacity-100'}`}
+        onClick={() => {
+          const nextState = !isOpen
+          setIsOpen(nextState)
+          if (typeof window !== 'undefined') {
+            window.dispatchEvent(new CustomEvent('close-floating-menu'))
+            window.dispatchEvent(new CustomEvent('kalila-state-change', { detail: { isOpen: nextState } }))
+          }
+        }}
+        className={`fixed bottom-20 lg:bottom-12 right-4 lg:right-8 z-50 w-12 h-12 rounded-full bg-neutral-950 text-white shadow-lg shadow-black/35 hover:shadow-2xl hover:shadow-black/50 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-1 border border-neutral-800 cursor-pointer ${isOpen ? 'scale-0 opacity-0 pointer-events-none' : 'scale-100 opacity-100'}`}
         aria-label="Tanya Customer Service FokusKonten"
         title="Chat Customer Service Resmi"
       >
         <div className="relative flex items-center justify-center">
-          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/>
           </svg>
-          <span className="absolute -top-1 -right-1 flex h-3.5 w-3.5">
+          <span className="absolute -top-1 -right-1 flex h-3 w-3">
             {isOffline ? (
-              <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-amber-400 border-2 border-neutral-950" />
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-amber-400 border-2 border-neutral-950" />
             ) : (
               <>
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-                <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-emerald-500 border-2 border-neutral-950" />
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500 border-2 border-neutral-950" />
               </>
             )}
           </span>
         </div>
       </button>
 
-      {/* Chat Window */}
-      <div className={`fixed bottom-20 lg:bottom-16 right-4 lg:right-6 z-50 w-[380px] sm:w-[400px] max-w-[calc(100vw-1.5rem)] h-[540px] sm:h-[580px] max-h-[calc(100vh-5rem)] bg-white rounded-3xl shadow-2xl border border-neutral-200 flex flex-col transition-all duration-300 origin-bottom-right font-sans overflow-hidden ${isOpen ? 'scale-100 opacity-100' : 'scale-0 opacity-0 pointer-events-none'}`}>
+      {/* Chat Window Ringkas & Tidak Mendominasi Layar */}
+      <div className={`fixed bottom-20 lg:bottom-12 right-4 lg:right-8 z-50 w-[315px] sm:w-[345px] max-w-[calc(100vw-1.5rem)] h-[440px] sm:h-[480px] max-h-[calc(100vh-5rem)] bg-white rounded-2xl shadow-2xl border border-neutral-200 flex flex-col transition-all duration-300 origin-bottom-right font-sans overflow-hidden ${isOpen ? 'scale-100 opacity-100' : 'scale-0 opacity-0 pointer-events-none'}`}>
         
-        {/* Header */}
-        <div className="bg-neutral-950 px-5 py-4 flex items-center justify-between border-b border-neutral-800">
-          <div className="flex items-center gap-3">
-            <div className={`relative w-11 h-11 rounded-full overflow-hidden border-2 ${isOffline ? 'border-amber-400/80' : 'border-emerald-400'} shadow-soft shrink-0`}>
+        {/* Header Ringkas */}
+        <div className="bg-neutral-950 px-4 py-3 flex items-center justify-between border-b border-neutral-800">
+          <div className="flex items-center gap-2.5">
+            <div className={`relative w-9 h-9 rounded-full overflow-hidden border-2 ${isOffline ? 'border-amber-400/80' : 'border-emerald-400'} shadow-soft shrink-0`}>
               <img 
                 src="/cs-avatar.png" 
                 alt="Kalila - Layanan Pelanggan" 
@@ -338,41 +360,46 @@ export default function KalilaChatWidget() {
               />
             </div>
             <div>
-              <div className="flex items-center gap-2">
-                <h3 className="text-white font-semibold text-base tracking-tight">Kalila — Layanan Pelanggan</h3>
+              <div className="flex items-center gap-1.5">
+                <h3 className="text-white font-semibold text-sm tracking-tight">Kalila — CS</h3>
               </div>
               {isOffline ? (
-                <p className="text-amber-400 text-xs font-medium flex items-center gap-1.5 mt-0.5">
-                  <span className="w-2 h-2 rounded-full bg-amber-400" />
-                  Helpdesk WhatsApp Resmi
+                <p className="text-amber-400 text-[11px] font-medium flex items-center gap-1 mt-0.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
+                  Helpdesk WA Resmi
                 </p>
               ) : (
-                <p className="text-emerald-400 text-xs font-medium flex items-center gap-1.5 mt-0.5">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                  Online • Asisten Digital FokusKonten
+                <p className="text-emerald-400 text-[11px] font-medium flex items-center gap-1 mt-0.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                  Online • Asisten Digital
                 </p>
               )}
             </div>
           </div>
-          <div className="flex items-center gap-1.5">
+          <div className="flex items-center gap-1">
             <button 
               type="button" 
               onClick={handleResetChat} 
-              className="w-8 h-8 rounded-lg bg-neutral-900 hover:bg-neutral-800 flex items-center justify-center text-neutral-400 hover:text-white transition-colors cursor-pointer"
+              className="w-7 h-7 rounded-lg bg-neutral-900 hover:bg-neutral-800 flex items-center justify-center text-neutral-400 hover:text-white transition-colors cursor-pointer"
               aria-label="Mulai Percakapan Baru"
               title="Mulai Percakapan Baru"
             >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
               </svg>
             </button>
             <button 
               type="button" 
-              onClick={() => setIsOpen(false)} 
-              className="w-8 h-8 rounded-lg bg-neutral-900 hover:bg-neutral-800 flex items-center justify-center text-neutral-400 hover:text-white transition-colors cursor-pointer"
+              onClick={() => {
+                setIsOpen(false)
+                if (typeof window !== 'undefined') {
+                  window.dispatchEvent(new CustomEvent('kalila-state-change', { detail: { isOpen: false } }))
+                }
+              }} 
+              className="w-7 h-7 rounded-lg bg-neutral-900 hover:bg-neutral-800 flex items-center justify-center text-neutral-400 hover:text-white transition-colors cursor-pointer"
               aria-label="Tutup Chat"
             >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
               </svg>
             </button>
@@ -380,11 +407,11 @@ export default function KalilaChatWidget() {
         </div>
 
         {/* Messages */}
-        <div className="flex-1 overflow-y-auto p-4 sm:p-5 space-y-4 bg-neutral-50/70 text-[13.5px] sm:text-[14px]">
+        <div className="flex-1 overflow-y-auto p-3.5 space-y-3 bg-neutral-50/70 text-xs sm:text-[13px]">
           {messages.map((msg, i) => (
-            <div key={i} className={`flex gap-2.5 items-start ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
+            <div key={i} className={`flex gap-2 items-start ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
               {msg.role !== 'user' && (
-                <div className="relative w-8 h-8 rounded-full overflow-hidden shrink-0 border border-neutral-200 shadow-xs mt-0.5">
+                <div className="relative w-7 h-7 rounded-full overflow-hidden shrink-0 border border-neutral-200 shadow-xs mt-0.5">
                   <img 
                     src="/cs-avatar.png" 
                     alt="Kalila" 
@@ -392,40 +419,40 @@ export default function KalilaChatWidget() {
                   />
                 </div>
               )}
-              <div className={`max-w-[88%] rounded-2xl p-3.5 sm:p-4 leading-relaxed ${msg.role === 'user' ? 'bg-neutral-950 text-white rounded-tr-none shadow-soft font-medium' : 'bg-white border border-neutral-200 text-neutral-800 rounded-tl-none shadow-xs'}`}>
+              <div className={`max-w-[88%] rounded-xl p-3 leading-relaxed ${msg.role === 'user' ? 'bg-neutral-950 text-white rounded-tr-none shadow-soft font-medium' : 'bg-white border border-neutral-200 text-neutral-800 rounded-tl-none shadow-xs'}`}>
                 <div className="whitespace-pre-wrap">
                   {renderMessageContent(msg.content)}
                   {msg.isTyping && (
-                    <span className="inline-block w-1.5 h-3.5 bg-neutral-900 ml-1 animate-pulse align-middle rounded-full" />
+                    <span className="inline-block w-1.5 h-3 bg-neutral-900 ml-1 animate-pulse align-middle rounded-full" />
                   )}
                 </div>
 
                 {/* Lampiran Kartu Produk Ready di Web */}
                 {msg.products && msg.products.length > 0 && (
-                  <div className="mt-3.5 pt-3 border-t border-neutral-200/80 space-y-2">
-                    <div className="text-[11px] font-bold tracking-wider text-neutral-500 uppercase flex items-center gap-1.5">
-                      <span className="w-2 h-2 rounded-full bg-neutral-950 inline-block" /> Produk & Literatur Terverifikasi:
+                  <div className="mt-3 pt-2.5 border-t border-neutral-200/80 space-y-1.5">
+                    <div className="text-[10px] font-bold tracking-wider text-neutral-500 uppercase flex items-center gap-1.5">
+                      <span className="w-1.5 h-1.5 rounded-full bg-neutral-950 inline-block" /> Produk Terverifikasi:
                     </div>
-                    <div className="space-y-2">
+                    <div className="space-y-1.5">
                       {msg.products.map((prod) => (
                         <Link
                           key={prod.sku}
                           href={prod.url || `/toko-digital/${prod.sku}`}
-                          className="flex items-center justify-between p-2.5 rounded-xl bg-neutral-50 hover:bg-neutral-100 border border-neutral-200 hover:border-neutral-300 transition-all group block text-left"
+                          className="flex items-center justify-between p-2 rounded-lg bg-neutral-50 hover:bg-neutral-100 border border-neutral-200 hover:border-neutral-300 transition-all group block text-left"
                         >
                           <div className="min-w-0 pr-2">
                             <div className="font-semibold text-xs text-neutral-900 group-hover:text-neutral-950 truncate">
                               {prod.title}
                             </div>
-                            <div className="text-[11px] text-neutral-500 mt-0.5">
+                            <div className="text-[10px] text-neutral-500 mt-0.5">
                               SKU: <span className="font-mono">{prod.sku}</span> • Format: <span className="font-medium text-neutral-700">{prod.format}</span>
                             </div>
                           </div>
                           <div className="shrink-0 text-right">
-                            <span className="inline-block text-[11px] font-mono font-bold text-neutral-950 bg-white px-2.5 py-1 rounded-md border border-neutral-300 group-hover:bg-neutral-950 group-hover:text-white transition-colors">
+                            <span className="inline-block text-[10px] font-mono font-bold text-neutral-950 bg-white px-2 py-0.5 rounded border border-neutral-300 group-hover:bg-neutral-950 group-hover:text-white transition-colors">
                               {prod.price && !isNaN(Number(prod.price))
                                 ? `Rp ${Number(prod.price).toLocaleString('id-ID')} ↗`
-                                : `${prod.price || 'Akses Langsung'} ↗`}
+                                : `${prod.price || 'Akses'} ↗`}
                             </span>
                           </div>
                         </Link>
@@ -437,17 +464,17 @@ export default function KalilaChatWidget() {
             </div>
           ))}
           {isLoading && (
-            <div className="flex gap-2.5 items-start justify-start">
-              <div className="relative w-8 h-8 rounded-full overflow-hidden shrink-0 border border-neutral-200 shadow-xs mt-0.5">
+            <div className="flex gap-2 items-start justify-start">
+              <div className="relative w-7 h-7 rounded-full overflow-hidden shrink-0 border border-neutral-200 shadow-xs mt-0.5">
                 <img 
                   src="/cs-avatar.png" 
                   alt="Kalila" 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="bg-white border border-neutral-200 rounded-2xl rounded-tl-none p-3.5 sm:p-4 shadow-xs max-w-[88%]">
-                <div className="flex items-center gap-2.5 text-xs text-neutral-600 font-medium">
-                  <svg className="animate-spin w-4 h-4 text-neutral-950 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <div className="bg-white border border-neutral-200 rounded-xl rounded-tl-none p-3 shadow-xs max-w-[88%]">
+                <div className="flex items-center gap-2 text-xs text-neutral-600 font-medium">
+                  <svg className="animate-spin w-3.5 h-3.5 text-neutral-950 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                     <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                   </svg>
@@ -463,7 +490,7 @@ export default function KalilaChatWidget() {
 
         {/* Quick Context Chips saat Offline */}
         {isOffline && (
-          <div className="px-4 py-2.5 bg-neutral-50/90 border-t border-neutral-200 flex flex-wrap gap-2 items-center">
+          <div className="px-3.5 py-2 bg-neutral-50/90 border-t border-neutral-200 flex flex-wrap gap-1.5 items-center">
             <span className="text-[10px] font-display font-semibold text-neutral-400 uppercase tracking-wider block w-full mb-0.5">
               Layanan Langsung via Helpdesk:
             </span>
@@ -473,33 +500,33 @@ export default function KalilaChatWidget() {
                 href={chip.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-medium bg-white text-neutral-800 border border-neutral-200/90 hover:bg-neutral-950 hover:text-white hover:border-neutral-950 transition-all shadow-xs"
+                className="inline-flex items-center gap-1 px-2 py-1 rounded-lg text-[10px] font-medium bg-white text-neutral-800 border border-neutral-200/90 hover:bg-neutral-950 hover:text-white hover:border-neutral-950 transition-all shadow-xs"
               >
                 <span>{chip.label}</span>
-                <span className="text-[10px] opacity-60">↗</span>
+                <span className="text-[9px] opacity-60">↗</span>
               </a>
             ))}
           </div>
         )}
 
-        {/* Input Form */}
-        <form onSubmit={handleSend} className="p-3.5 sm:p-4 bg-white border-t border-neutral-200">
+        {/* Input Form Ringkas */}
+        <form onSubmit={handleSend} className="p-2.5 sm:p-3 bg-white border-t border-neutral-200">
           <div className="relative flex items-center">
             <input
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder={isOffline ? "Ketik pesan untuk Helpdesk..." : "Ketik pesan Anda..."}
-              className="w-full pl-4 pr-12 py-3 rounded-2xl bg-neutral-100/90 border border-neutral-200 focus:border-neutral-950 focus:bg-white focus:ring-2 focus:ring-neutral-950/15 text-sm outline-none transition-all placeholder:text-neutral-400"
+              className="w-full pl-3.5 pr-10 py-2.5 rounded-xl bg-neutral-100/90 border border-neutral-200 focus:border-neutral-950 focus:bg-white focus:ring-2 focus:ring-neutral-950/15 text-xs sm:text-[13px] outline-none transition-all placeholder:text-neutral-400"
             />
             <button
               type="submit"
               disabled={!input.trim() || isLoading}
-              className="absolute right-2 w-9 h-9 flex items-center justify-center rounded-xl bg-neutral-950 text-white hover:bg-neutral-800 disabled:opacity-40 transition-all cursor-pointer shadow-soft"
+              className="absolute right-1.5 w-7 h-7 flex items-center justify-center rounded-lg bg-neutral-950 text-white hover:bg-neutral-800 disabled:opacity-40 transition-all cursor-pointer shadow-soft"
               aria-label="Kirim Pesan"
               title={isOffline ? "Kirim Pertanyaan" : "Kirim Pesan"}
             >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14M12 5l7 7-7 7"/>
               </svg>
             </button>

@@ -391,6 +391,7 @@ export default function WhatsAppCrmDedicatedSalesPage() {
 
   return (
     <div className="bg-white min-h-screen text-neutral-900 font-sans antialiased">
+      <div className="fk-scroll-progress" aria-hidden="true" />
 
       {/* ── BREADCRUMB NAVIGASI ─────────────────────────── */}
       <div className="pt-24 sm:pt-28 pb-4 bg-neutral-50/70 border-b border-neutral-100">
@@ -417,18 +418,18 @@ export default function WhatsAppCrmDedicatedSalesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
           {/* Judul Utama Persuasif Berwibawa */}
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-neutral-950 tracking-tight leading-tight sm:leading-none mb-6 text-balance max-w-5xl mx-auto">
+          <h1 className="fk-hero-in text-3xl sm:text-5xl lg:text-6xl font-extrabold text-neutral-950 tracking-tight leading-tight sm:leading-none mb-6 text-balance max-w-5xl mx-auto" style={{ '--hero-i': 0 }}>
             Mesin Otomasi Database Calon Pembeli &amp; Follow-Up Penjualan <br className="hidden sm:inline" />
             Bebas Biaya Langganan Bulanan
           </h1>
 
           {/* Deskripsi Nilai Bisnis Nyata */}
-          <p className="text-base sm:text-lg text-neutral-600 max-w-3xl mx-auto leading-relaxed mb-10 font-normal">
+          <p className="fk-hero-in text-base sm:text-lg text-neutral-600 max-w-3xl mx-auto leading-relaxed mb-10 font-normal" style={{ '--hero-i': 1 }}>
             Tinggalkan cara lama mencatat nomor manual. Tarik ribuan kontak tertarget dari Google Maps per kota, kirim broadcast promo massal dengan sapaan nama otomatis dan jeda acak aman, serta layani chat calon pembeli 24 jam nonstop di laptop sendiri.
           </p>
 
           {/* Opsi Unduh & Aksi Penjualan Terarah */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-6 max-w-2xl mx-auto">
+          <div className="fk-hero-in flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-6 max-w-2xl mx-auto" style={{ '--hero-i': 2 }}>
             <a
               href={directExeUrl}
               className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-bold text-sm sm:text-base text-white bg-neutral-950 hover:bg-neutral-800 shadow-md hover:shadow-lg transition-all duration-200 group"
@@ -456,7 +457,7 @@ export default function WhatsAppCrmDedicatedSalesPage() {
           </div>
 
           {/* Kotak Edukasi Windows Defender SmartScreen */}
-          <div className="max-w-2xl mx-auto mb-14 p-4 sm:p-5 rounded-2xl bg-amber-50/80 border border-amber-200 text-left shadow-xs">
+          <div className="fk-hero-in max-w-2xl mx-auto mb-14 p-4 sm:p-5 rounded-2xl bg-amber-50/80 border border-amber-200 text-left shadow-xs" style={{ '--hero-i': 3 }}>
             <div className="flex items-start gap-3">
               <div className="w-7 h-7 rounded-lg bg-amber-100 border border-amber-300 text-amber-900 font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">
                 !
@@ -469,7 +470,7 @@ export default function WhatsAppCrmDedicatedSalesPage() {
           </div>
 
           {/* ── SHOWCASE UTAMA: 2 SET PRESENTASI SLIDE RESMI (MASING-MASING 4 SLIDE) ── */}
-          <div className="max-w-6xl mx-auto mb-14 text-left">
+          <div className="fk-hero-in max-w-6xl mx-auto mb-14 text-left" style={{ '--hero-i': 4 }}>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
               <div className="flex flex-col">
                 <PersonaPresentationSlider
@@ -490,7 +491,7 @@ export default function WhatsAppCrmDedicatedSalesPage() {
           </div>
 
           {/* 4 Stats Grid Berwibawa */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto p-6 sm:p-8 rounded-3xl bg-neutral-50 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
+          <div className="fk-hero-in grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto p-6 sm:p-8 rounded-3xl bg-neutral-50 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]" style={{ '--hero-i': 5 }}>
             <div className="p-3 text-center flex flex-col items-center">
               <div className="w-10 h-10 rounded-xl bg-neutral-950 text-white font-mono font-bold text-sm flex items-center justify-center mb-3">
                 01
@@ -528,12 +529,14 @@ export default function WhatsAppCrmDedicatedSalesPage() {
       </section>
 
       {/* ── VIDEO SHOWCASE PRESENTASI RESMI ───────────────────────────── */}
-      <WhatsAppCrmVideoShowcase />
+      <div data-reveal>
+        <WhatsAppCrmVideoShowcase />
+      </div>
 
       {/* ── SECTION: MASALAH OPERASIONAL PEBISNIS (MAX-W-6XL) ──────────── */}
       <section className="py-20 bg-neutral-50/70 border-b border-neutral-200/80">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-14">
+          <div className="text-center max-w-3xl mx-auto mb-14" data-reveal>
             <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3 block">
               Tantangan Operasional
             </span>
@@ -549,6 +552,8 @@ export default function WhatsAppCrmDedicatedSalesPage() {
             {painPoints.map((item, i) => (
               <div
                 key={i}
+                data-reveal
+                style={{ '--reveal-i': i }}
                 className="p-7 rounded-3xl bg-white border border-neutral-200/90 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between hover:border-neutral-400 transition-colors"
               >
                 <div>
@@ -573,7 +578,7 @@ export default function WhatsAppCrmDedicatedSalesPage() {
       {/* ── SECTION: TARGET PENGGUNA RESMI (DUAL PERSONA LAPANG MAX-W-7XL) */}
       <section className="py-24 bg-white border-b border-neutral-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-16" data-reveal>
             <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3 block">
               Target Pengguna
             </span>
@@ -589,6 +594,8 @@ export default function WhatsAppCrmDedicatedSalesPage() {
             {targetAudiences.map((aud, i) => (
               <div
                 key={i}
+                data-reveal
+                style={{ '--reveal-i': i }}
                 className="rounded-3xl overflow-hidden border border-neutral-200/90 shadow-[0_4px_24px_-4px_rgba(0,0,0,0.07)] bg-white flex flex-col justify-between hover:shadow-2xl hover:border-neutral-400 transition-all duration-300 group"
               >
                 {/* Visual Model Persona Bersih Sesuai Standar Apotek Pro & Kelontong Pro */}
@@ -660,7 +667,7 @@ export default function WhatsAppCrmDedicatedSalesPage() {
       {/* ── SECTION: 6 MODUL MESIN PENJUALAN (MAX-W-7XL) ───────────────── */}
       <section className="py-24 bg-neutral-50/70 border-b border-neutral-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-16" data-reveal>
             <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3 block">
               Mesin Penjualan Lengkap
             </span>
@@ -673,9 +680,12 @@ export default function WhatsAppCrmDedicatedSalesPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {coreModules.map((m) => (
+            {coreModules.map((m, idx) => (
               <div
                 key={m.num}
+                data-reveal
+                data-spotlight
+                style={{ '--reveal-i': idx }}
                 className="rounded-3xl border border-neutral-200/90 bg-white p-7 sm:p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] hover:shadow-xl hover:border-neutral-400 transition-all flex flex-col justify-between group"
               >
                 <div>
@@ -714,18 +724,20 @@ export default function WhatsAppCrmDedicatedSalesPage() {
       </section>
 
       {/* ── REL GALERI SCREENSHOT DESKTOP EDGE-TO-EDGE ──────────────────── */}
-      <AppScreenshotGallery
-        isDesktop={true}
-        title="Galeri Antarmuka WhatsApp Lead CRM"
-        subtitle="Geser ke kanan atau kiri untuk melihat langsung alur kerja mesin penarik prospek, broadcast promo massal, papan pipeline penjualan, hingga asisten AI lokal."
-        label="TAMPILAN NYATA SOFTWARE WINDOWS"
-        items={galleryScreenshots}
-      />
+      <div data-reveal>
+        <AppScreenshotGallery
+          isDesktop={true}
+          title="Galeri Antarmuka WhatsApp Lead CRM"
+          subtitle="Geser ke kanan atau kiri untuk melihat langsung alur kerja mesin penarik prospek, broadcast promo massal, papan pipeline penjualan, hingga asisten AI lokal."
+          label="TAMPILAN NYATA SOFTWARE WINDOWS"
+          items={galleryScreenshots}
+        />
+      </div>
 
       {/* ── SECTION: KOMPARASI CARA LAMA VS CRM (MAX-W-6XL) ─────────────── */}
       <section className="py-20 bg-neutral-50/70 border-b border-neutral-200/80">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14 max-w-3xl mx-auto">
+          <div className="text-center mb-14 max-w-3xl mx-auto" data-reveal>
             <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3 block">
               Perbandingan Nyata
             </span>
@@ -741,6 +753,8 @@ export default function WhatsAppCrmDedicatedSalesPage() {
             {comparisons.map((item, idx) => (
               <div
                 key={idx}
+                data-reveal
+                style={{ '--reveal-i': idx }}
                 className="p-5 sm:p-6 rounded-2xl bg-white border border-neutral-200/90 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:border-neutral-400 transition-colors"
               >
                 <span className="font-bold text-neutral-950 text-sm sm:w-1/3">
@@ -762,20 +776,24 @@ export default function WhatsAppCrmDedicatedSalesPage() {
       {/* ── SECTION: 3 LANGKAH AKTIVASI LISENSI RESMI (MAX-W-7XL) ──────── */}
       <section className="py-24 bg-white border-b border-neutral-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3 block">
-            Alur Aktivasi
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-neutral-950 mb-4 tracking-tight">
-            3 Langkah Mudah Memulai Otomasi Penjualan Anda
-          </h2>
-          <p className="text-neutral-600 text-sm sm:text-base max-w-2xl mx-auto mb-14 leading-relaxed">
-            Tanpa prosedur teknis yang rumit. Ikuti langkah sederhana ini untuk mengubah laptop Windows Anda menjadi mesin penjualan otomatis hari ini:
-          </p>
+          <div data-reveal>
+            <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3 block">
+              Alur Aktivasi
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-neutral-950 mb-4 tracking-tight">
+              3 Langkah Mudah Memulai Otomasi Penjualan Anda
+            </h2>
+            <p className="text-neutral-600 text-sm sm:text-base max-w-2xl mx-auto mb-14 leading-relaxed">
+              Tanpa prosedur teknis yang rumit. Ikuti langkah sederhana ini untuk mengubah laptop Windows Anda menjadi mesin penjualan otomatis hari ini:
+            </p>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mb-12">
             {activationSteps.map((s, i) => (
               <div
                 key={i}
+                data-reveal
+                style={{ '--reveal-i': i }}
                 className={`p-7 rounded-3xl border ${i === 1 ? 'border-2 border-neutral-950 bg-white shadow-xl' : 'border-neutral-200/90 bg-neutral-50/60 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]'} flex flex-col justify-between`}
               >
                 <div>
@@ -823,7 +841,7 @@ export default function WhatsAppCrmDedicatedSalesPage() {
       {/* ── SECTION: PENAWARAN RESMI & PEMESANAN LISENSI (MAX-W-6XL) ────── */}
       <section className="py-20 bg-neutral-50/70 border-b border-neutral-200/80">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="p-8 sm:p-12 rounded-3xl bg-white border border-neutral-300 shadow-xl text-center">
+          <div className="p-8 sm:p-12 rounded-3xl bg-white border border-neutral-300 shadow-xl text-center" data-reveal>
             
             <div className="flex justify-center mb-5">
               <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-neutral-50 border border-neutral-200/90 shadow-sm flex items-center justify-center p-2.5">
@@ -899,7 +917,7 @@ export default function WhatsAppCrmDedicatedSalesPage() {
       {/* ── SECTION: TANYA JAWAB UMUM (FAQ) (MAX-W-6XL) ─────────────────── */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <div className="text-center mb-12" data-reveal>
             <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-2 block">
               Pusat Informasi
             </span>
@@ -912,6 +930,8 @@ export default function WhatsAppCrmDedicatedSalesPage() {
             {faqs.map((faq, i) => (
               <div
                 key={i}
+                data-reveal
+                style={{ '--reveal-i': i }}
                 className="p-6 rounded-2xl bg-neutral-50/80 border border-neutral-200/90 shadow-xs"
               >
                 <h3 className="text-base font-bold text-neutral-950 mb-2.5">

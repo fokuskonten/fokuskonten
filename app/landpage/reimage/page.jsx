@@ -168,6 +168,7 @@ export default function ReImageDedicatedLandingPage() {
 
   return (
     <div className="bg-white min-h-screen text-neutral-900 font-sans antialiased selection:bg-neutral-950 selection:text-white">
+      <div className="fk-scroll-progress" aria-hidden="true" />
       {/* ── BREADCRUMB & STATUS PROYEK BERJALAN ─────────────────────────── */}
       <div className="pt-24 sm:pt-28 pb-4 bg-neutral-50/70 border-b border-neutral-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-3 text-xs font-mono">
@@ -193,17 +194,17 @@ export default function ReImageDedicatedLandingPage() {
       <section className="pt-12 sm:pt-16 pb-16 bg-white border-b border-neutral-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
-          <h1 className="heading-xl text-3xl sm:text-5xl lg:text-6xl text-neutral-950 tracking-tight leading-tight sm:leading-none mb-6 text-balance max-w-5xl mx-auto">
+          <h1 className="fk-hero-in heading-xl text-3xl sm:text-5xl lg:text-6xl text-neutral-950 tracking-tight leading-tight sm:leading-none mb-6 text-balance max-w-5xl mx-auto" style={{ '--hero-i': 0 }}>
             Kompresi Gambar Massal Cepat &amp; Presisi <br className="hidden sm:inline" />
             Tanpa Penurunan Mutu Visual
           </h1>
 
-          <p className="text-base sm:text-lg text-neutral-600 max-w-3xl mx-auto leading-relaxed mb-10 font-normal">
+          <p className="fk-hero-in text-base sm:text-lg text-neutral-600 max-w-3xl mx-auto leading-relaxed mb-10 font-normal" style={{ '--hero-i': 1 }}>
             Software desktop Windows 64-bit untuk optimasi gambar produk e-commerce, website toko online, dan lampiran dokumen kantor. Kompresi ratusan foto sekaligus secara mandiri di komputer sendiri tanpa biaya langganan cloud.
           </p>
 
           {/* DUA TOMBOL AKSI UTAMA */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-14 max-w-xl mx-auto">
+          <div className="fk-hero-in flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-14 max-w-xl mx-auto" style={{ '--hero-i': 2 }}>
             <a
               href={waContactUrl}
               target="_blank"
@@ -225,7 +226,7 @@ export default function ReImageDedicatedLandingPage() {
           </div>
 
           {/* SASIS MOCKUP RESMI (PUTIH BERSIH BERSHADOW HALUS) */}
-          <div className="max-w-5xl mx-auto rounded-3xl overflow-hidden border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] bg-white mb-12 text-left">
+          <div className="fk-hero-in max-w-5xl mx-auto rounded-3xl overflow-hidden border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] bg-white mb-12 text-left" style={{ '--hero-i': 3 }}>
             {/* Titlebar Bersih Monokrom */}
             <div className="px-5 py-3.5 bg-neutral-50 border-b border-neutral-200/80 flex items-center justify-between">
               <div className="flex items-center gap-3">
@@ -292,7 +293,7 @@ export default function ReImageDedicatedLandingPage() {
           </div>
 
           {/* 4 STATS GRID KEUNGGULAN UTAMA */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto p-6 sm:p-8 rounded-3xl bg-neutral-50 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
+          <div className="fk-hero-in grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto p-6 sm:p-8 rounded-3xl bg-neutral-50 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]" style={{ '--hero-i': 4 }}>
             <div className="p-3 flex flex-col items-center text-center">
               <div className="w-10 h-10 rounded-xl bg-neutral-950 text-white flex items-center justify-center font-mono font-bold text-sm mb-3">
                 01
@@ -329,7 +330,7 @@ export default function ReImageDedicatedLandingPage() {
       {/* ── KERESAHAN NYATA PENGGUNA (PAIN POINTS) ───────────────────────── */}
       <section className="py-20 sm:py-24 border-b border-neutral-200/80 bg-neutral-50/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center mb-14 sm:mb-16">
+          <div className="max-w-3xl mx-auto text-center mb-14 sm:mb-16" data-reveal>
             <span className="font-mono text-xs font-semibold px-3 py-1 rounded-full bg-neutral-950 text-white mb-3 inline-block">
               TANTANGAN PENGELOLAAN GAMBAR
             </span>
@@ -345,6 +346,8 @@ export default function ReImageDedicatedLandingPage() {
             {painPoints.map((point, idx) => (
               <div
                 key={idx}
+                data-reveal
+                style={{ '--reveal-i': idx }}
                 className="bg-white rounded-2xl p-6 sm:p-8 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between"
               >
                 <div>
@@ -367,7 +370,7 @@ export default function ReImageDedicatedLandingPage() {
       {/* ── 6 PRESET KOMERSIAL FAKTUAL ──────────────────────────────────── */}
       <section className="py-20 sm:py-24 border-b border-neutral-200/80 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center mb-14 sm:mb-16">
+          <div className="max-w-3xl mx-auto text-center mb-14 sm:mb-16" data-reveal>
             <span className="font-mono text-xs font-semibold px-3 py-1 rounded-full bg-neutral-100 text-neutral-900 border border-neutral-300 mb-3 inline-block">
               PRESET SIAP PAKAI
             </span>
@@ -380,9 +383,12 @@ export default function ReImageDedicatedLandingPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {commercialPresets.map((preset) => (
+            {commercialPresets.map((preset, idx) => (
               <div
                 key={preset.id}
+                data-reveal
+                data-spotlight
+                style={{ '--reveal-i': idx }}
                 className="bg-white rounded-2xl p-6 sm:p-7 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] hover:border-neutral-400 transition-all flex flex-col justify-between"
               >
                 <div>
@@ -409,7 +415,7 @@ export default function ReImageDedicatedLandingPage() {
       {/* ── 4 KEUNGGULAN UTAMA SOFTWARE ─────────────────────────────────── */}
       <section className="py-20 sm:py-24 border-b border-neutral-200/80 bg-neutral-50/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center mb-14 sm:mb-16">
+          <div className="max-w-3xl mx-auto text-center mb-14 sm:mb-16" data-reveal>
             <span className="font-mono text-xs font-semibold px-3 py-1 rounded-full bg-neutral-950 text-white mb-3 inline-block">
               KEUNGGULAN UTAMA
             </span>
@@ -422,9 +428,11 @@ export default function ReImageDedicatedLandingPage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
-            {techPillars.map((tp) => (
+            {techPillars.map((tp, idx) => (
               <div
                 key={tp.num}
+                data-reveal
+                style={{ '--reveal-i': idx }}
                 className="bg-white rounded-2xl p-6 sm:p-8 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]"
               >
                 <div className="w-10 h-10 rounded-xl bg-neutral-950 text-white flex items-center justify-center font-mono font-bold text-sm mb-4 shadow-sm">
@@ -441,7 +449,7 @@ export default function ReImageDedicatedLandingPage() {
       {/* ── SECTION: ROADMAP TRANSPARANSI PROYEK BERJALAN ──────────────── */}
       <section id="roadmap" className="py-20 sm:py-24 border-b border-neutral-200/80 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-14">
+          <div className="text-center max-w-3xl mx-auto mb-14" data-reveal>
             <span className="font-mono text-xs font-semibold px-3 py-1 rounded-full bg-neutral-100 text-neutral-900 border border-neutral-300 mb-3 inline-block">
               TRANSPARANSI PRODUK
             </span>
@@ -454,9 +462,11 @@ export default function ReImageDedicatedLandingPage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {roadmapStages.map((stage) => (
+            {roadmapStages.map((stage, idx) => (
               <div
                 key={stage.step}
+                data-reveal
+                style={{ '--reveal-i': idx }}
                 className="bg-white rounded-2xl p-6 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between"
               >
                 <div>
@@ -482,7 +492,7 @@ export default function ReImageDedicatedLandingPage() {
       {/* ── KOMPARASI HEAD-TO-HEAD (CARA LAMA VS REIMAGE PRO) ───────────── */}
       <section className="py-20 sm:py-24 border-b border-neutral-200/80 bg-neutral-50/50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center mb-14 sm:mb-16">
+          <div className="max-w-3xl mx-auto text-center mb-14 sm:mb-16" data-reveal>
             <span className="font-mono text-xs font-semibold px-3 py-1 rounded-full bg-neutral-950 text-white mb-3 inline-block">
               KOMPARASI EFISIENSI
             </span>
@@ -494,7 +504,7 @@ export default function ReImageDedicatedLandingPage() {
             </p>
           </div>
 
-          <div className="bg-white rounded-3xl border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] divide-y divide-neutral-100 overflow-hidden">
+          <div className="bg-white rounded-3xl border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] divide-y divide-neutral-100 overflow-hidden" data-reveal>
             {comparisons.map((c, idx) => (
               <div key={idx} className="p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
                 <div className="lg:col-span-4">
@@ -517,7 +527,7 @@ export default function ReImageDedicatedLandingPage() {
 
       {/* ── CTA PENUTUP (PROGRAM BETA & KONTAK) ─────────────────────────── */}
       <section className="py-20 sm:py-24 bg-neutral-50/70 border-b border-neutral-200/80">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-reveal>
           <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-950 mb-4 tracking-tight">
             Ingin Menguji Coba FokusKonten ReImage Pro?
           </h2>

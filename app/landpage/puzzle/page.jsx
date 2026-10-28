@@ -235,6 +235,7 @@ export default function GamePuzzleDedicatedLandingPage() {
 
   return (
     <div className="bg-white min-h-screen text-neutral-900 font-sans antialiased">
+      <div className="fk-scroll-progress" aria-hidden="true" />
 
       {/* ── BREADCRUMB & STATUS NAVIGASI ──────────────────────────────── */}
       <div className="pt-24 sm:pt-28 pb-4 bg-neutral-50/70 border-b border-neutral-100">
@@ -257,22 +258,22 @@ export default function GamePuzzleDedicatedLandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
           {/* BADGE RESMI IDENTITAS GAME */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-100 border border-neutral-300 text-neutral-800 text-xs font-mono mb-6">
+          <div className="fk-hero-in inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-100 border border-neutral-300 text-neutral-800 text-xs font-mono mb-6" style={{ '--hero-i': 0 }}>
             <span className="w-2 h-2 rounded-full bg-emerald-500" />
             <span>Game Edukasi Asah Otak • 100% Offline-First</span>
           </div>
 
-          <h1 className="heading-xl text-3xl sm:text-5xl lg:text-6xl text-neutral-950 tracking-tight leading-tight sm:leading-none mb-6 text-balance max-w-5xl mx-auto">
+          <h1 className="fk-hero-in heading-xl text-3xl sm:text-5xl lg:text-6xl text-neutral-950 tracking-tight leading-tight sm:leading-none mb-6 text-balance max-w-5xl mx-auto" style={{ '--hero-i': 1 }}>
             Latih Logika &amp; Asah Strategi Otak <br className="hidden sm:inline" />
             dengan Sensasi Puzzle Angka Legendaris
           </h1>
 
-          <p className="text-base sm:text-lg text-neutral-600 max-w-3xl mx-auto leading-relaxed mb-10 font-normal">
+          <p className="fk-hero-in text-base sm:text-lg text-neutral-600 max-w-3xl mx-auto leading-relaxed mb-10 font-normal" style={{ '--hero-i': 2 }}>
             Game puzzle angka klasik 2048 berkinerja tinggi karya FokusKonten. Nikmati 7 mode tantangan unik, pilihan papan 3x3 hingga 5x5, tombol 3D responsif, dan fitur undo cerdas tanpa kuota internet di perangkat Android Anda.
           </p>
 
           {/* DUA TOMBOL AKSI UTAMA — GOOGLE PLAY SEBAGAI PRIMADONA */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-12 max-w-xl mx-auto">
+          <div className="fk-hero-in flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-12 max-w-xl mx-auto" style={{ '--hero-i': 3 }}>
             <a
               href={playTestingWebUrl}
               target="_blank"
@@ -300,7 +301,7 @@ export default function GamePuzzleDedicatedLandingPage() {
           </div>
 
           {/* BANNER RESMI LANDSCAPE HEADER */}
-          <div className="rounded-3xl overflow-hidden border border-neutral-200/80 shadow-[0_4px_24px_-4px_rgba(0,0,0,0.08)] max-w-6xl mx-auto mb-12 bg-white">
+          <div className="fk-hero-in rounded-3xl overflow-hidden border border-neutral-200/80 shadow-[0_4px_24px_-4px_rgba(0,0,0,0.08)] max-w-6xl mx-auto mb-12 bg-white" style={{ '--hero-i': 4 }}>
             <img
               src="/screenshots/gamepuzzle/header.png"
               alt="2048 Puzzle Banner Header Resmi"
@@ -309,7 +310,7 @@ export default function GamePuzzleDedicatedLandingPage() {
           </div>
 
           {/* 4 STATS KEUNGGULAN UTAMA */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto p-6 sm:p-8 rounded-3xl bg-neutral-50 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
+          <div className="fk-hero-in grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto p-6 sm:p-8 rounded-3xl bg-neutral-50 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]" style={{ '--hero-i': 5 }}>
             <div className="p-3 text-center flex flex-col items-center">
               <div className="w-12 h-12 rounded-xl bg-neutral-950 text-white font-mono font-bold flex items-center justify-center text-sm mb-3 shadow-sm">
                 01
@@ -347,12 +348,14 @@ export default function GamePuzzleDedicatedLandingPage() {
       </section>
 
       {/* ── VIDEO SHOWCASE PRESENTASI GAMEPLAY ────────────────────────── */}
-      <PuzzleVideoShowcase />
+      <div data-reveal>
+        <PuzzleVideoShowcase />
+      </div>
 
       {/* ── PAIN POINTS SECTION (TANTANGAN GAME KASUAL BIASA) ──────────── */}
       <section className="py-20 bg-neutral-50/60 border-b border-neutral-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-14">
+          <div className="text-center max-w-3xl mx-auto mb-14" data-reveal>
             <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3 block">Tantangan Nyata Permainan Angka</span>
             <h2 className="heading-xl text-2xl sm:text-4xl text-neutral-950 mb-3">
               Kekurangan Game Puzzle Angka Biasa di Pasaran
@@ -364,7 +367,12 @@ export default function GamePuzzleDedicatedLandingPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {painPoints.map((item, idx) => (
-              <div key={idx} className="p-6 sm:p-7 rounded-3xl bg-white border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between">
+              <div
+                key={idx}
+                data-reveal
+                style={{ '--reveal-i': idx }}
+                className="p-6 sm:p-7 rounded-3xl bg-white border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between"
+              >
                 <div>
                   <div className="flex items-center gap-3.5 mb-3.5">
                     <div className="w-8 h-8 rounded-xl bg-neutral-950 text-white font-mono text-xs flex items-center justify-center font-bold shrink-0 shadow-sm">
@@ -385,17 +393,19 @@ export default function GamePuzzleDedicatedLandingPage() {
       </section>
 
       {/* ── REL GALERI SCREENSHOT EDGE-TO-EDGE ──────────────────────────── */}
-      <AppScreenshotGallery
-        title="Galeri Antarmuka 2048 Puzzle"
-        subtitle="Geser ke kanan atau kiri untuk melihat langsung alur papan permainan, variasi ukuran grid, sistem pencapaian, hingga mode malam."
-        label="TAMPILAN NYATA APLIKASI"
-        items={galleryScreenshots}
-      />
+      <div data-reveal>
+        <AppScreenshotGallery
+          title="Galeri Antarmuka 2048 Puzzle"
+          subtitle="Geser ke kanan atau kiri untuk melihat langsung alur papan permainan, variasi ukuran grid, sistem pencapaian, hingga mode malam."
+          label="TAMPILAN NYATA APLIKASI"
+          items={galleryScreenshots}
+        />
+      </div>
 
       {/* ── 7 MODE TANTANGAN UNIK (FITUR UNGGULAN VERSI 1.3.0) ─────────── */}
       <section className="py-20 sm:py-24 bg-white border-b border-neutral-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-16" data-reveal>
             <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3 block">Inovasi Permainan Versi 1.4.4</span>
             <h2 className="heading-xl text-2xl sm:text-4xl text-neutral-950 mb-4">
               7 Mode Tantangan yang Mengubah Cara Bermain Anda
@@ -409,6 +419,9 @@ export default function GamePuzzleDedicatedLandingPage() {
             {challengeModes.map((mode, idx) => (
               <div
                 key={idx}
+                data-reveal
+                data-spotlight
+                style={{ '--reveal-i': idx }}
                 className="p-6 sm:p-7 rounded-3xl bg-white border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between hover:border-black transition-all duration-200"
               >
                 <div>
@@ -434,7 +447,7 @@ export default function GamePuzzleDedicatedLandingPage() {
             ))}
 
             {/* KARTU PENGATURAN TAMBAHAN — TOMBOL 3D & UNDO CERDAS */}
-            <div className="p-6 sm:p-7 rounded-3xl bg-neutral-950 text-white flex flex-col justify-between shadow-xl">
+            <div data-reveal data-spotlight style={{ '--reveal-i': 7 }} className="p-6 sm:p-7 rounded-3xl bg-neutral-950 text-white flex flex-col justify-between shadow-xl">
               <div>
                 <div className="flex items-center justify-between mb-4">
                   <span className="w-8 h-8 rounded-lg bg-white text-neutral-950 font-mono text-xs flex items-center justify-center font-bold">
@@ -462,7 +475,7 @@ export default function GamePuzzleDedicatedLandingPage() {
       {/* ── PILIHAN UKURAN PAPAN PERMAINAN ──────────────────────────────── */}
       <section className="py-20 bg-neutral-50/60 border-b border-neutral-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-16" data-reveal>
             <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3 block">Variasi Tingkat Kesulitan</span>
             <h2 className="heading-xl text-2xl sm:text-4xl text-neutral-950 mb-4">
               Pilih Ukuran Papan Sesuai Target Waktu &amp; Strategi Anda
@@ -476,6 +489,8 @@ export default function GamePuzzleDedicatedLandingPage() {
             {boardSizes.map((board, idx) => (
               <div
                 key={idx}
+                data-reveal
+                style={{ '--reveal-i': idx }}
                 className="p-7 sm:p-8 rounded-3xl bg-white border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between"
               >
                 <div>
@@ -506,7 +521,7 @@ export default function GamePuzzleDedicatedLandingPage() {
       {/* ── KOMPARASI OBJEKTIF DUA SISI ─────────────────────────────────── */}
       <section className="py-20 sm:py-24 bg-white border-b border-neutral-200/80">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-16" data-reveal>
             <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3 block">Perbandingan Kualitas</span>
             <h2 className="heading-xl text-2xl sm:text-4xl text-neutral-950 mb-4">
               Game Angka Biasa vs 2048 Puzzle FokusKonten
@@ -516,7 +531,7 @@ export default function GamePuzzleDedicatedLandingPage() {
             </p>
           </div>
 
-          <div className="rounded-3xl border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] overflow-hidden divide-y divide-neutral-100 bg-white">
+          <div className="rounded-3xl border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] overflow-hidden divide-y divide-neutral-100 bg-white" data-reveal>
             {comparisons.map((row, idx) => (
               <div key={idx} className="p-5 sm:p-6 grid grid-cols-1 md:grid-cols-12 gap-3 sm:gap-4 items-center">
                 <div className="md:col-span-4">
@@ -540,7 +555,7 @@ export default function GamePuzzleDedicatedLandingPage() {
       {/* ── 3-LANGKAH PASANG CEPAT VIA GOOGLE PLAY ──────────────────────── */}
       <section className="py-20 bg-neutral-50/60 border-b border-neutral-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-16" data-reveal>
             <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3 block">Alur Pemasangan Mudah</span>
             <h2 className="heading-xl text-2xl sm:text-4xl text-neutral-950 mb-4">
               3 Langkah Mudah Mulai Bermain di Handphone Anda
@@ -551,7 +566,7 @@ export default function GamePuzzleDedicatedLandingPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12">
-            <div className="p-7 sm:p-8 rounded-3xl bg-white border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between">
+            <div data-reveal style={{ '--reveal-i': 0 }} className="p-7 sm:p-8 rounded-3xl bg-white border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between">
               <div>
                 <div className="w-10 h-10 rounded-xl bg-neutral-950 text-white font-mono font-bold flex items-center justify-center text-sm mb-5">
                   01
@@ -576,7 +591,7 @@ export default function GamePuzzleDedicatedLandingPage() {
               </a>
             </div>
 
-            <div className="p-7 sm:p-8 rounded-3xl bg-white border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between">
+            <div data-reveal style={{ '--reveal-i': 1 }} className="p-7 sm:p-8 rounded-3xl bg-white border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between">
               <div>
                 <div className="w-10 h-10 rounded-xl bg-neutral-950 text-white font-mono font-bold flex items-center justify-center text-sm mb-5">
                   02
@@ -601,7 +616,7 @@ export default function GamePuzzleDedicatedLandingPage() {
               </a>
             </div>
 
-            <div className="p-7 sm:p-8 rounded-3xl bg-white border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between">
+            <div data-reveal style={{ '--reveal-i': 2 }} className="p-7 sm:p-8 rounded-3xl bg-white border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between">
               <div>
                 <div className="w-10 h-10 rounded-xl bg-neutral-950 text-white font-mono font-bold flex items-center justify-center text-sm mb-5">
                   03
@@ -632,7 +647,7 @@ export default function GamePuzzleDedicatedLandingPage() {
       {/* ── FAQ SECTION (TANYA JAWAB UMUM) ───────────────────────────────── */}
       <section className="py-20 sm:py-24 bg-white border-b border-neutral-200/80">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-16">
+          <div className="text-center max-w-2xl mx-auto mb-16" data-reveal>
             <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3 block">Bantuan &amp; Informasi</span>
             <h2 className="heading-xl text-2xl sm:text-4xl text-neutral-950 mb-4">
               Pertanyaan yang Sering Diajukan
@@ -644,7 +659,7 @@ export default function GamePuzzleDedicatedLandingPage() {
 
           <div className="divide-y divide-neutral-200 border-t border-b border-neutral-200">
             {faqs.map((faq, idx) => (
-              <div key={idx} className="py-6 sm:py-7">
+              <div key={idx} data-reveal style={{ '--reveal-i': idx }} className="py-6 sm:py-7">
                 <h3 className="font-display text-base sm:text-lg font-bold text-neutral-950 mb-3">
                   {faq.q}
                 </h3>
@@ -658,42 +673,44 @@ export default function GamePuzzleDedicatedLandingPage() {
       </section>
 
       {/* ── FINAL CALL-TO-ACTION BANNER ─────────────────────────────────── */}
-      <section className="py-20 sm:py-24 bg-neutral-950 text-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block px-3.5 py-1.5 rounded-full bg-neutral-900 border border-neutral-800 text-neutral-300 text-xs font-mono mb-6">
-            Tantang Kemampuan Logika Anda Hari Ini
-          </span>
+      <section className="py-20 sm:py-24 bg-white border-t border-neutral-200/80 text-center">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8" data-reveal>
+          <div className="p-8 sm:p-12 rounded-3xl bg-neutral-50/70 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
+            <span className="inline-block px-3.5 py-1.5 rounded-full bg-neutral-100 border border-neutral-300 text-neutral-800 text-xs font-mono mb-6">
+              Tantang Kemampuan Logika Anda Hari Ini
+            </span>
 
-          <h2 className="heading-xl text-3xl sm:text-5xl text-white mb-6 tracking-tight">
-            Siap Menembus Angka 2048 &amp; Memecahkan Rekor Baru?
-          </h2>
+            <h2 className="heading-xl text-3xl sm:text-5xl text-neutral-950 mb-6 tracking-tight">
+              Siap Menembus Angka 2048 &amp; Memecahkan Rekor Baru?
+            </h2>
 
-          <p className="text-neutral-400 text-sm sm:text-base max-w-2xl mx-auto mb-10 leading-relaxed">
-            Pasang 2048 Puzzle sekarang melalui program pengujian resmi Google Play Store. Nikmati permainan asah otak yang murni, menantang, dan 100% offline.
-          </p>
+            <p className="text-neutral-600 text-sm sm:text-base max-w-2xl mx-auto mb-10 leading-relaxed font-sans">
+              Pasang 2048 Puzzle sekarang melalui program pengujian resmi Google Play Store. Nikmati permainan asah otak yang murni, menantang, dan 100% offline.
+            </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
-            <a
-              href={playTestingWebUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-display font-bold text-sm sm:text-base text-neutral-950 bg-white hover:bg-neutral-100 shadow-xl transition-all duration-200"
-            >
-              <svg className="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
-                <path d="M3.609 1.814L13.792 12 3.61 22.186a2.38 2.38 0 01-.61-1.636V3.45c0-.624.226-1.198.609-1.636z" fill="#00C3FF"/>
-                <path d="M14.851 13.059l2.42 2.42-11.89 6.845 9.47-9.265z" fill="#FF3A44"/>
-                <path d="M17.271 10.941l3.197 1.84c.895.516.895 1.364 0 1.88l-3.197 1.84-2.42-2.42 2.42-3.14z" fill="#FFCE00"/>
-                <path d="M14.851 10.000L5.38 3.48l11.89 6.845-2.42 2.419z" fill="#00E676"/>
-              </svg>
-              <span>Pasang via Google Play</span>
-            </a>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
+              <a
+                href={playTestingWebUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-display font-bold text-sm sm:text-base text-white bg-neutral-950 hover:bg-neutral-800 shadow-md hover:shadow-lg transition-all duration-200"
+              >
+                <svg className="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+                  <path d="M3.609 1.814L13.792 12 3.61 22.186a2.38 2.38 0 01-.61-1.636V3.45c0-.624.226-1.198.609-1.636z" fill="#00C3FF"/>
+                  <path d="M14.851 13.059l2.42 2.42-11.89 6.845 9.47-9.265z" fill="#FF3A44"/>
+                  <path d="M17.271 10.941l3.197 1.84c.895.516.895 1.364 0 1.88l-3.197 1.84-2.42-2.42 2.42-3.14z" fill="#FFCE00"/>
+                  <path d="M14.851 10.000L5.38 3.48l11.89 6.845-2.42 2.419z" fill="#00E676"/>
+                </svg>
+                <span>Pasang via Google Play</span>
+              </a>
 
-            <a
-              href={devMailUrl}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-display font-semibold text-sm sm:text-base text-white bg-neutral-900 border border-neutral-800 hover:bg-neutral-800 transition-all duration-200"
-            >
-              <span>Kirim Masukan</span>
-            </a>
+              <a
+                href={devMailUrl}
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-display font-semibold text-sm sm:text-base text-neutral-800 bg-white border border-neutral-300 hover:bg-neutral-50 transition-all duration-200"
+              >
+                <span>Kirim Masukan</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>

@@ -350,7 +350,7 @@ function TokoDigitalContent() {
           <span className="text-neutral-900 font-semibold">Toko Digital</span>
         </div>
 
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-5 pb-6 border-b border-neutral-200">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-5 pb-6 border-b border-neutral-200 fk-hero-in">
           {/* Category Title & Counter */}
           <div className="max-w-xl">
             <div className="flex items-center gap-2 mb-1.5 flex-wrap min-h-[22px]">
@@ -608,8 +608,8 @@ function TokoDigitalContent() {
                 </button>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-6">
-                {showcase.pwa.slice(0, 8).map((product) => (
-                  <ProductCard key={product.sku} product={product} />
+                {showcase.pwa.slice(0, 8).map((product, idx) => (
+                  <ProductCard key={product.sku} product={product} index={idx} />
                 ))}
               </div>
             </section>
@@ -632,8 +632,8 @@ function TokoDigitalContent() {
                 </button>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-6">
-                {showcase.powershell.slice(0, 8).map((product) => (
-                  <ProductCard key={product.sku} product={product} />
+                {showcase.powershell.slice(0, 8).map((product, idx) => (
+                  <ProductCard key={product.sku} product={product} index={idx} />
                 ))}
               </div>
             </section>
@@ -656,8 +656,8 @@ function TokoDigitalContent() {
                 </button>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-6">
-                {showcase.cdr.slice(0, 8).map((product) => (
-                  <ProductCard key={product.sku} product={product} />
+                {showcase.cdr.slice(0, 8).map((product, idx) => (
+                  <ProductCard key={product.sku} product={product} index={idx} />
                 ))}
               </div>
             </section>
@@ -680,8 +680,8 @@ function TokoDigitalContent() {
                 </button>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-6">
-                {showcase.others.slice(0, 8).map((product) => (
-                  <ProductCard key={product.sku} product={product} />
+                {showcase.others.slice(0, 8).map((product, idx) => (
+                  <ProductCard key={product.sku} product={product} index={idx} />
                 ))}
               </div>
             </section>
@@ -704,8 +704,8 @@ function TokoDigitalContent() {
                 </button>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-6">
-                {showcase.ecourse.map((product) => (
-                  <ProductCard key={product.sku} product={product} />
+                {showcase.ecourse.map((product, idx) => (
+                  <ProductCard key={product.sku} product={product} index={idx} />
                 ))}
               </div>
             </section>
@@ -748,7 +748,7 @@ function TokoDigitalContent() {
           <>
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-6">
               {paginatedProducts.map((product, idx) => (
-                <ProductCard key={product.sku} product={product} priority={idx < 4} />
+                <ProductCard key={product.sku} product={product} priority={idx < 4} index={idx} />
               ))}
             </div>
 

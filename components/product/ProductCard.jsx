@@ -16,7 +16,7 @@ function formatRupiah(num) {
   }).format(num || 0)
 }
 
-export default function ProductCard({ product, compact = false, priority = false }) {
+export default function ProductCard({ product, compact = false, priority = false, index = 0 }) {
   const [isOwned, setIsOwned] = useState(false)
   const [inCart, setInCart] = useState(false)
   const [isJustAdded, setIsJustAdded] = useState(false)
@@ -97,7 +97,12 @@ export default function ProductCard({ product, compact = false, priority = false
 
   if (compact) {
     return (
-      <div className="group bg-white rounded-xl border border-neutral-200/80 overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_20px_rgba(0,0,0,0.08)] hover:-translate-y-0.5 transition-all duration-200 flex flex-col justify-between relative">
+      <div
+        data-reveal
+        data-spotlight
+        style={{ '--reveal-i': index % 6 }}
+        className="product-card-motion group bg-white rounded-xl border border-neutral-200/80 overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_20px_rgba(0,0,0,0.08)] hover:-translate-y-0.5 transition-all duration-200 flex flex-col justify-between relative"
+      >
         {isOwned && (
           <div className="absolute top-2 left-2 z-10 px-1.5 py-0.5 rounded bg-neutral-950 text-white text-[9px] font-bold tracking-wide border border-neutral-800 flex items-center gap-1 shadow-sm">
             <span>✓</span>
@@ -226,7 +231,12 @@ export default function ProductCard({ product, compact = false, priority = false
   }
 
   return (
-    <div className="group bg-white rounded-2xl border border-neutral-200/80 overflow-hidden shadow-[0_4px_16px_rgba(0,0,0,0.06)] hover:shadow-[0_14px_30px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between relative">
+    <div
+      data-reveal
+      data-spotlight
+      style={{ '--reveal-i': index % 6 }}
+      className="product-card-motion group bg-white rounded-2xl border border-neutral-200/80 overflow-hidden shadow-[0_4px_16px_rgba(0,0,0,0.06)] hover:shadow-[0_14px_30px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between relative"
+    >
       {isOwned && (
         <div className="absolute top-3 left-3 z-10 px-2 py-0.5 rounded-lg bg-neutral-950 text-white text-[10px] font-bold tracking-wide border border-neutral-800 flex items-center gap-1.5 shadow-md">
           <span>✓</span>

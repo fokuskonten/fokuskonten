@@ -67,9 +67,12 @@ export default function PortfolioExplorer({ items }) {
 
       {/* ── PORTFOLIO CARDS GRID ─────────────────────────────────── */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {filteredItems.map((item) => (
+        {filteredItems.map((item, idx) => (
           <div
             key={item.id}
+            data-reveal
+            data-spotlight
+            style={{ '--reveal-i': idx }}
             className="bg-white rounded-3xl p-6 sm:p-8 border border-neutral-200 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] hover:border-neutral-400 hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between group"
           >
             <div>
