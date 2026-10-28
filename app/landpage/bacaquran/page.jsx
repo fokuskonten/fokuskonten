@@ -17,6 +17,7 @@ export default function BacaQuranDedicatedLandingPage() {
   const googleGroupUrl = 'https://groups.google.com/g/penguji-fokuskonten'
   const playTestingWebUrl = 'https://play.google.com/apps/testing/com.fokuskonten.bacaquran'
   const playStoreDirectUrl = 'https://play.google.com/store/apps/details?id=com.fokuskonten.bacaquran'
+  const directApkUrl = 'https://github.com/fokuskonten/fokuskonten/releases/download/apps-v1.0/BacaQuran_v1.2.1_Build5.apk'
   const waConsultUrl = `https://wa.me/6285183011318?text=${encodeURIComponent('Halo FokusKonten,\n\nSaya ingin tanya seputar aplikasi BacaQur\'an, program pengujian terbuka Android Play Store, dan cara pasang di handphone saya.')}`
 
   // Tantangan Nyata — Bahasa Lugas, Ringkas & Bebas Pleonasme
@@ -959,22 +960,72 @@ export default function BacaQuranDedicatedLandingPage() {
             </div>
           </div>
 
-          {/* DUA TOMBOL AKSI UTAMA DENGAN FALLBACK */}
-          <div className="max-w-xl mx-auto space-y-4">
-            <a
-              href={googleGroupUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-display font-bold text-sm sm:text-base text-white bg-neutral-950 hover:bg-neutral-800 shadow-md hover:shadow-lg transition-all duration-200 group"
-            >
-              <svg className="w-5 h-5 shrink-0 transition-transform duration-200 group-hover:scale-110" viewBox="0 0 24 24" fill="none">
-                <path d="M3.609 1.814L13.792 12 3.61 22.186a2.38 2.38 0 01-.61-1.636V3.45c0-.624.226-1.198.609-1.636z" fill="#00C3FF"/>
-                <path d="M14.851 13.059l2.42 2.42-11.89 6.845 9.47-9.265z" fill="#FF3A44"/>
-                <path d="M17.271 10.941l3.197 1.84c.895.516.895 1.364 0 1.88l-3.197 1.84-2.42-2.42 2.42-3.14z" fill="#FFCE00"/>
-                <path d="M14.851 10.000L5.38 3.48l11.89 6.845-2.42 2.419z" fill="#00E676"/>
-              </svg>
-              <span>Mulai Langkah 1: Gabung Grup Penguji</span>
-            </a>
+          {/* DUA PILIHAN CTA: JALUR RESMI PLAY STORE VS UNDUH APK MANDIRI */}
+          <div className="max-w-3xl mx-auto space-y-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+              {/* Opsi 1: Jalur Resmi Google Play */}
+              <div className="p-5 rounded-2xl border-2 border-emerald-600 bg-emerald-50/40 text-neutral-950 flex flex-col justify-between shadow-sm">
+                <div>
+                  <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold bg-emerald-100 text-emerald-800 mb-2.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+                    <span>JALUR RESMI (DIREKOMENDASIKAN)</span>
+                  </div>
+                  <h4 className="font-display font-bold text-neutral-950 text-sm mb-1.5">Google Play Closed Testing</h4>
+                  <p className="text-xs text-neutral-600 leading-relaxed mb-4">
+                    Terverifikasi aman oleh Google Play Protect. Bebas peringatan sistem dan otomatis menerima pembaruan versi terbaru.
+                  </p>
+                </div>
+                <a
+                  href={googleGroupUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl font-display font-bold text-xs sm:text-sm text-white bg-emerald-700 hover:bg-emerald-800 shadow-md hover:shadow-lg transition-all duration-200"
+                >
+                  <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none">
+                    <path d="M3.609 1.814L13.792 12 3.61 22.186a2.38 2.38 0 01-.61-1.636V3.45c0-.624.226-1.198.609-1.636z" fill="#00C3FF"/>
+                    <path d="M14.851 13.059l2.42 2.42-11.89 6.845 9.47-9.265z" fill="#FF3A44"/>
+                    <path d="M17.271 10.941l3.197 1.84c.895.516.895 1.364 0 1.88l-3.197 1.84-2.42-2.42 2.42-3.14z" fill="#FFCE00"/>
+                    <path d="M14.851 10.000L5.38 3.48l11.89 6.845-2.42 2.419z" fill="#00E676"/>
+                  </svg>
+                  <span>1. Gabung Google Grup</span>
+                </a>
+              </div>
+
+              {/* Opsi 2: Unduh APK Mandiri */}
+              <div className="p-5 rounded-2xl border border-neutral-300 bg-white flex flex-col justify-between shadow-sm">
+                <div>
+                  <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-semibold bg-neutral-100 text-neutral-700 mb-2.5">
+                    <span>OPSI MANDIRI</span>
+                  </div>
+                  <h4 className="font-display font-bold text-neutral-950 text-sm mb-1.5">Unduh Berkas APK Langsung</h4>
+                  <p className="text-xs text-neutral-600 leading-relaxed mb-4">
+                    Unduh file APK v1.2.1 (Build 5) resmi dan pasang langsung di perangkat Android tanpa bergabung ke Google Grup.
+                  </p>
+                </div>
+                <a
+                  href={directApkUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl font-display font-bold text-xs sm:text-sm text-neutral-900 bg-neutral-100 hover:bg-neutral-200 border border-neutral-300 transition-all duration-200"
+                >
+                  <svg className="w-4 h-4 shrink-0 text-neutral-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                  </svg>
+                  <span>Unduh APK (v1.2.1)</span>
+                </a>
+              </div>
+            </div>
+
+            {/* NOTICE PERINGATAN GOOGLE PLAY PROTECT */}
+            <div className="p-4 rounded-xl bg-amber-50 border border-amber-200 text-left">
+              <div className="flex items-start gap-3">
+                <span className="text-amber-600 font-bold text-base leading-none mt-0.5">!</span>
+                <div className="text-xs text-amber-900 leading-relaxed">
+                  <span className="font-bold block mb-0.5">Pemberitahuan Keamanan Google Play Protect:</span>
+                  Pemasangan langsung melalui berkas APK lokal (sideload) akan memunculkan dialog peringatan dari Google Play Protect karena aplikasi tidak diunduh langsung dari Play Store. Berkas biner ini 100% aman dan ditandatangani resmi oleh Keystore FokusKonten. <strong>Sangat disarankan menggunakan Jalur Google Group</strong> di atas agar terverifikasi resmi oleh Play Protect dan menerima pembaruan otomatis.
+                </div>
+              </div>
+            </div>
 
             <div className="flex items-center justify-center gap-2 text-xs text-neutral-500 pt-1">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
@@ -1035,6 +1086,18 @@ export default function BacaQuranDedicatedLandingPage() {
                 <path d="M14.851 10.000L5.38 3.48l11.89 6.845-2.42 2.419z" fill="#00E676"/>
               </svg>
               <span>Uji Coba Play Store (Gabung Grup)</span>
+            </a>
+
+            <a
+              href={directApkUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto px-8 py-4 rounded-xl font-display font-semibold text-sm sm:text-base text-neutral-800 bg-neutral-100/90 border border-neutral-300 hover:border-black hover:bg-neutral-100 shadow-sm transition-all duration-200 inline-flex items-center justify-center gap-2.5"
+            >
+              <svg className="w-5 h-5 text-neutral-700 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+              </svg>
+              <span>Unduh APK Mandiri (v1.2.1)</span>
             </a>
 
             <a

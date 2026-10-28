@@ -833,14 +833,13 @@ export default function TokoKelontongProDedicatedSalesPage() {
           <div className="max-w-2xl mx-auto space-y-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
               {/* Opsi 1: Google Group & Play Store (Rekomendasi Utama) */}
-              <div className="p-5 rounded-2xl border-2 border-neutral-900 bg-neutral-900 text-white flex flex-col justify-between shadow-lg">
+              <div className="p-5 rounded-2xl border-2 border-sky-600 bg-sky-50/40 flex flex-col justify-between shadow-xs">
                 <div>
-                  <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 mb-2.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                    <span>JALUR RESMI (DIREKOMENDASIKAN)</span>
+                  <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold bg-sky-600 text-white mb-2.5">
+                    <span>SANGAT DISARANKAN</span>
                   </div>
-                  <h4 className="font-display font-bold text-white text-sm mb-1.5">Google Play Closed Testing</h4>
-                  <p className="text-xs text-neutral-300 leading-relaxed mb-4">
+                  <h4 className="font-display font-bold text-neutral-950 text-sm mb-1.5">Jalur Resmi Google Play</h4>
+                  <p className="text-xs text-neutral-600 leading-relaxed mb-4">
                     Terverifikasi aman oleh Google Play Protect. Bebas peringatan sistem dan otomatis menerima pembaruan versi terbaru.
                   </p>
                 </div>
@@ -848,7 +847,7 @@ export default function TokoKelontongProDedicatedSalesPage() {
                   href={googleGroupUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl font-display font-bold text-xs sm:text-sm text-neutral-950 bg-white hover:bg-neutral-100 transition-all duration-200"
+                  className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl font-display font-bold text-xs sm:text-sm text-white bg-sky-700 hover:bg-sky-800 shadow-md hover:shadow-lg transition-all duration-200"
                 >
                   <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none">
                     <path d="M3.609 1.814L13.792 12 3.61 22.186a2.38 2.38 0 01-.61-1.636V3.45c0-.624.226-1.198.609-1.636z" fill="#00C3FF"/>
