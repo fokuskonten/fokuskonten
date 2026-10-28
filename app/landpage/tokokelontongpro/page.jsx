@@ -612,27 +612,12 @@ export default function TokoKelontongProDedicatedSalesPage() {
               >
                 {/* Visual Model Persona Proporsional Tinggi Menonjol */}
                 <div className={`bg-gradient-to-b ${aud.gradient} pt-8 px-6 flex justify-center items-end border-b border-neutral-100 relative overflow-hidden h-[420px] sm:h-[480px] lg:h-[500px]`}>
-                  {/* Floating Status Badge di Atas */}
-                  <div className="absolute top-4 left-4 right-4 flex items-center justify-between pointer-events-none z-10">
-                    <span className="px-3.5 py-1.5 rounded-full bg-white/95 text-neutral-900 text-xs font-mono font-semibold shadow-md backdrop-blur-sm border border-neutral-200/80 flex items-center gap-2">
-                      <span className="w-2 h-2 rounded-full bg-sky-500 animate-pulse"></span>
-                      <span>{aud.floatingBadge}</span>
-                    </span>
-                  </div>
-
                   {/* Foto Model Persona Utuh */}
                   <img
                     src={aud.img}
                     alt={aud.alt}
                     className="h-full w-auto object-contain object-bottom drop-shadow-2xl transition-transform duration-300 group-hover:scale-[1.03]"
                   />
-
-                  {/* Floating Pill Kategori di Bawah Foto */}
-                  <div className="absolute bottom-3 left-4 right-4 text-center pointer-events-none z-10">
-                    <span className="px-3 py-1 rounded-full bg-neutral-950/80 text-white text-[11px] font-mono tracking-wider shadow-sm backdrop-blur-sm">
-                      {aud.floatingPill}
-                    </span>
-                  </div>
                 </div>
 
                 {/* Deskripsi, Workflow Tags & Poin Peran Komprehensif */}
