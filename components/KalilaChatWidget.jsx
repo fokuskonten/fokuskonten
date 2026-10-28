@@ -192,7 +192,11 @@ export default function KalilaChatWidget() {
 
       const chatPayload = JSON.stringify({
         message: userText,
-        history: recentHistory
+        history: recentHistory,
+        pageContext: {
+          url: typeof window !== 'undefined' ? window.location.pathname : '',
+          title: typeof document !== 'undefined' ? document.title : ''
+        }
       })
 
       let res = null
