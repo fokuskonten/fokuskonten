@@ -156,7 +156,7 @@ export default function SupportPage() {
             <h2 className="heading-xl text-2xl sm:text-3xl text-white mb-2 text-balance">
               Butuh Konsultasi atau Bantuan Langsung?
             </h2>
-            <p className="text-neutral-400 text-sm leading-relaxed">
+            <p className="text-white text-sm leading-relaxed">
               Tim software engineer FokusKonten siap membantu menjawab pertanyaan teknis, mendiskusikan kebutuhan fitur baru, atau memandu instalasi software untuk usaha Anda.
             </p>
           </div>

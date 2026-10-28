@@ -82,7 +82,7 @@ export default function FAQPage() {
                 Pertanyaan yang Sering <span className="text-gradient-brand">Diajukan</span>
               </h1>
               <p className="text-neutral-600 text-sm sm:text-base leading-relaxed mb-8">
-                Temukan jawaban praktis seputar keandalan arsitektur offline-first, privasi data, lisensi beli putus tanpa langganan, dan pembuatan software FokusKonten.
+                Temukan jawaban praktis seputar cara kerja aplikasi tanpa internet (offline), keamanan data, lisensi beli putus tanpa langganan, dan layanan pembuatan software FokusKonten.
               </p>
 
               {/* Direct Support Card */}
@@ -93,7 +93,7 @@ export default function FAQPage() {
                 <h3 className="heading-md text-base sm:text-lg text-white mb-2">
                   Konsultasi Gratis via WhatsApp
                 </h3>
-                <p className="text-neutral-400 text-xs sm:text-sm leading-relaxed mb-5">
+                <p className="text-white text-xs sm:text-sm leading-relaxed mb-5">
                   Tim kami siap menjawab pertanyaan teknis, mendiskusikan fitur aplikasi kasir, maupun pembuatan software baru untuk usaha Anda.
                 </p>
                 <div className="flex flex-col gap-2.5">

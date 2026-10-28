@@ -13,10 +13,10 @@ const featuredProducts = [
     name: 'Apotek Pro',
     category: 'Android POS',
     badge: 'Apotek POS',
-    description: 'Sistem kasir dan manajemen apotek modern. Pencatatan stok obat, deteksi batch kadaluarsa, resep dokter, dan cetak struk printer Bluetooth thermal offline-first.',
+    description: 'Sistem kasir dan manajemen apotek modern. Pencatatan stok obat, deteksi batch kadaluarsa, resep dokter, dan cetak struk printer Bluetooth thermal offline.',
     icon: '/app-icons/apotekpro.png',
     href: '/landpage/apotekpro/',
-    actionText: 'Lihat Landing Page',
+    actionText: 'Lihat produk',
     type: 'app',
   },
   {
@@ -27,7 +27,7 @@ const featuredProducts = [
     description: 'Aplikasi kasir praktis toko kelontong & sembako. Scan barcode cepat, pencatatan hutang pelanggan, dan rekap omzet harian instan.',
     icon: '/app-icons/tokokelontongpro.png',
     href: '/landpage/tokokelontongpro/',
-    actionText: 'Lihat Landing Page',
+    actionText: 'Lihat produk',
     type: 'app',
   },
   {
@@ -38,7 +38,7 @@ const featuredProducts = [
     description: "Aplikasi baca Al-Qur'an digital dengan tampilan nyaman di mata, terjemahan lengkap, tanda tajwid, dan mode offline.",
     icon: '/app-icons/bacaquran.png',
     href: '/landpage/bacaquran/',
-    actionText: 'Lihat Landing Page',
+    actionText: 'Lihat produk',
     type: 'app',
   },
   {
@@ -49,7 +49,7 @@ const featuredProducts = [
     description: 'Game puzzle angka klasik 2048 yang ringan, responsif, melatih konsentrasi, dan asyik dimainkan kapan saja.',
     icon: '/app-icons/gamepuzzle.png',
     href: '/landpage/2048puzzle/',
-    actionText: 'Lihat Landing Page',
+    actionText: 'Lihat produk',
     type: 'app',
   },
   {
@@ -60,7 +60,7 @@ const featuredProducts = [
     description: 'Software desktop Windows (.EXE) untuk manajemen prospek WhatsApp, pipeline penjualan, dan tindak lanjut pesan otomatis.',
     icon: '/app-icons/whatsappcrm.png',
     href: '/landpage/whatsappcrm/',
-    actionText: 'Lihat Landing Page',
+    actionText: 'Lihat produk',
     type: 'desktop',
   },
 ]
@@ -73,32 +73,34 @@ const clientProjects = [
     badge: 'Pesanan Klien',
     description: 'Progressive Web App profil industri manufaktur presisi, katalog permesinan CNC Bubut & Milling 3-Axis, dan portal RFQ digital.',
     icon: '/app-icons/ptnti.png',
-    href: '/portfolio/pt-nurcahya-teknik-industry',
-    actionText: 'Lihat Studi Kasus',
+    href: 'https://pt-nurcahya-teknik-industry.pages.dev/',
+    actionText: 'Kunjungi website',
     type: 'web',
+    external: true,
   },
   {
     id: 'web-mcjob',
     name: 'Website MCJob.id',
     category: 'Web Platform',
     badge: 'Platform Mitra',
-    description: 'Portal web resmi ekosistem lowongan kerja terverifikasi, publikasi informasi perusahaan, dan rekrutmen talenta profesional.',
+    description: 'Portal web & PWA pendamping Master of Ceremony (MC) untuk kelancaran agenda panggung, invoice honor, dan operasional talenta.',
     icon: '/app-icons/mcjob.png',
     href: 'https://mcjob.my.id/',
-    actionText: 'Kunjungi Website',
+    actionText: 'Kunjungi website',
     type: 'web',
     external: true,
   },
   {
-    id: 'mcjob-platform-karir',
-    name: 'MCJob.id Platform Karir',
-    category: 'Web Platform',
+    id: 'mcjob-android-app',
+    name: 'MCJob.id Android App',
+    category: 'Android App',
     badge: 'Aplikasi Mitra',
-    description: 'Platform bursa lowongan kerja resmi dan terverifikasi untuk memudahkan pencari kerja dan perusahaan di Indonesia.',
+    description: 'Aplikasi Android native asisten Master of Ceremony (MC). Kelola jadwal panggung, invoice honor, pantau DP, dan portal Career MC di Mayar.',
     icon: '/app-icons/mcjob.png',
-    href: '/portfolio/mcjob-platform-karir',
-    actionText: 'Lihat Studi Kasus',
+    href: 'https://tentangmc.myr.id/',
+    actionText: 'Kunjungi portal Mayar',
     type: 'app',
+    external: true,
   },
 ]
 
@@ -108,10 +110,10 @@ const inDevelopmentProjects = [
     name: 'JumperTools',
     category: 'Windows Desktop',
     badge: 'Sedang Berjalan',
-    description: 'Perangkat lunak utilitas teknisi smartphone multi-chipset (Qualcomm EDL 9008, MediaTek Brom, Samsung Odin) untuk penanganan perangkat keras dan firmware.',
+    description: 'Software teknisi smartphone untuk penanganan firmware dan perbaikan hardware multi-chipset (Qualcomm, MediaTek, Samsung).',
     icon: '/app-icons/jumptools.png',
     href: '/landpage/jumptools/',
-    actionText: 'Lihat Landing Page',
+    actionText: 'Lihat produk',
     type: 'desktop',
   },
   {
@@ -119,10 +121,10 @@ const inDevelopmentProjects = [
     name: 'ReImage',
     category: 'Windows Desktop',
     badge: 'Sedang Berjalan',
-    description: 'Software desktop kompresi gambar berbasis Rust libcaesium. Konversi instan WebP, AVIF, JPEG, dan PNG tanpa penurunan mutu visual.',
+    description: 'Software kompresi gambar super cepat. Ubah format ke WebP, AVIF, JPG, dan PNG dengan ukuran kecil tanpa pecah.',
     icon: '/app-icons/reimage.png',
     href: '/landpage/reimage/',
-    actionText: 'Lihat Landing Page',
+    actionText: 'Lihat produk',
     type: 'desktop',
   },
   {
@@ -130,10 +132,10 @@ const inDevelopmentProjects = [
     name: 'Smart Vidkon Automation',
     category: 'Windows Desktop',
     badge: 'Sedang Berjalan',
-    description: 'Perangkat lunak orkestrasi video vertikal 9:16 berbasis akselerasi hardware GPU NVIDIA NVENC dan transkripsi suara otomatis kata per kata.',
+    description: 'Software pembuat video vertikal 9:16 otomatis dengan transkripsi suara kata per kata dan akselerasi GPU.',
     icon: '/app-icons/smartvidkon.png',
     href: '/portfolio/smart-vidkon-automation/',
-    actionText: 'Lihat Detail Proyek',
+    actionText: 'Lihat produk',
     type: 'desktop',
   },
   {
@@ -141,18 +143,18 @@ const inDevelopmentProjects = [
     name: 'Smart Motion Automation',
     category: 'Windows Desktop',
     badge: 'Sedang Berjalan',
-    description: 'Perangkat lunak orkestrasi timeline kinetik tipografi 60 FPS menggunakan engine React Remotion dengan visual router terintegrasi.',
+    description: 'Software pembuat video animasi teks kinetik 60 FPS menggunakan engine React Remotion.',
     icon: '/app-icons/smartmotion.png',
     href: '/portfolio/smart-motion-automation/',
-    actionText: 'Lihat Detail Proyek',
+    actionText: 'Lihat produk',
     type: 'desktop',
   },
 ]
 
 const features = [
   {
-    title: 'Arsitektur Offline-First',
-    desc: 'Seluruh aplikasi bisnis dirancang untuk bekerja secara penuh tanpa ketergantungan koneksi internet. Operasional toko tetap berjalan lancar meski jaringan mati.',
+    title: '100% Offline Tanpa Internet',
+    desc: 'Aplikasi kasir bekerja normal tanpa kuota internet. Transaksi dan cetak struk tetap lancar meski jaringan mati.',
     icon: (
       <svg className="w-6 h-6 text-neutral-950" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
@@ -205,7 +207,7 @@ export default function HomePage() {
             </h1>
 
             <p className="text-neutral-600 text-sm sm:text-base lg:text-lg leading-relaxed max-w-3xl lg:max-w-4xl mx-auto mb-8 sm:mb-12">
-              FokusKonten menghadirkan ekosistem software kasir POS (Apotek Pro, Kelontong Pro), platform bursa kerja MCJob.id, Al-Qur&apos;an digital, hingga software desktop CRM untuk efisiensi bisnis Anda.
+              FokusKonten menghadirkan aplikasi kasir (Apotek Pro, Kelontong Pro), software desktop CRM, hingga Al-Qur&apos;an digital yang praktis, cepat, dan siap pakai untuk bisnis Anda.
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
@@ -213,7 +215,7 @@ export default function HomePage() {
                 href="/aplikasi"
                 className="inline-flex items-center gap-2 px-7 py-4 rounded-xl font-display font-semibold text-sm text-white bg-black hover:bg-neutral-800 shadow-md shadow-black/20 transition-all duration-200"
               >
-                Jelajah Produk
+                Jelajahi Aplikasi
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
@@ -247,7 +249,7 @@ export default function HomePage() {
           <div className="max-w-4xl mx-auto text-center mb-14 sm:mb-16">
             <span className="label-brand mb-3.5 inline-block">Produk Unggulan</span>
             <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-900 mb-4">
-              Inovasi Produk &amp; Ekosistem FokusKonten
+              Produk &amp; Karya Unggulan FokusKonten
             </h2>
             <p className="text-neutral-600 text-sm sm:text-base leading-relaxed max-w-3xl mx-auto">
               Katalog aplikasi kasir POS, software manajemen prospek, dan aplikasi mobile resmi siap pakai untuk menunjang produktivitas dan bisnis Anda.
@@ -269,11 +271,8 @@ export default function HomePage() {
                         className="w-14 h-14 rounded-2xl object-contain bg-neutral-50 p-1 border border-neutral-100 shadow-sm group-hover:scale-105 transition-transform"
                       />
                     </Link>
-                    <div className="flex flex-col items-end gap-1">
-                      <span className="px-2.5 py-1 rounded-full text-[11px] font-mono font-semibold bg-neutral-950 text-white">
-                        {item.badge}
-                      </span>
-                      <span className="text-[11px] text-neutral-400 font-mono font-medium">
+                    <div>
+                      <span className="inline-block px-3 py-1 rounded-full text-[11px] font-mono font-semibold bg-neutral-100 text-neutral-800 border border-neutral-300">
                         {item.category}
                       </span>
                     </div>
@@ -338,22 +337,43 @@ export default function HomePage() {
               >
                 <div>
                   <div className="flex items-start justify-between gap-3 mb-5">
-                    <img
-                      src={item.icon}
-                      alt={item.name}
-                      className="w-14 h-14 rounded-2xl object-contain bg-neutral-50 p-1 border border-neutral-100 shadow-sm group-hover:scale-105 transition-transform"
-                    />
-                    <div className="flex flex-col items-end gap-1">
-                      <span className="px-2.5 py-1 rounded-full text-[11px] font-mono font-semibold bg-neutral-950 text-white">
-                        {item.badge}
-                      </span>
-                      <span className="text-[11px] text-neutral-400 font-mono font-medium">
+                    {item.external ? (
+                      <a href={item.href} target="_blank" rel="noopener noreferrer" className="shrink-0 block">
+                        <img
+                          src={item.icon}
+                          alt={item.name}
+                          className="w-14 h-14 rounded-2xl object-contain bg-neutral-50 p-1 border border-neutral-100 shadow-sm group-hover:scale-105 transition-transform"
+                        />
+                      </a>
+                    ) : (
+                      <Link href={item.href} className="shrink-0 block">
+                        <img
+                          src={item.icon}
+                          alt={item.name}
+                          className="w-14 h-14 rounded-2xl object-contain bg-neutral-50 p-1 border border-neutral-100 shadow-sm group-hover:scale-105 transition-transform"
+                        />
+                      </Link>
+                    )}
+                    <div>
+                      <span className="inline-block px-3 py-1 rounded-full text-[11px] font-mono font-semibold bg-neutral-100 text-neutral-800 border border-neutral-300">
                         {item.category}
                       </span>
                     </div>
                   </div>
 
-                  <h3 className="heading-lg text-xl text-neutral-900 mb-2">{item.name}</h3>
+                  {item.external ? (
+                    <a href={item.href} target="_blank" rel="noopener noreferrer" className="block group/title">
+                      <h3 className="heading-lg text-xl text-neutral-900 group-hover/title:text-black group-hover/title:underline transition-colors mb-2">
+                        {item.name}
+                      </h3>
+                    </a>
+                  ) : (
+                    <Link href={item.href} className="block group/title">
+                      <h3 className="heading-lg text-xl text-neutral-900 group-hover/title:text-black group-hover/title:underline transition-colors mb-2">
+                        {item.name}
+                      </h3>
+                    </Link>
+                  )}
                   <p className="text-neutral-600 text-xs sm:text-sm leading-relaxed mb-6 font-sans">
                     {item.description}
                   </p>
@@ -427,12 +447,9 @@ export default function HomePage() {
                       alt={item.name}
                       className="w-14 h-14 rounded-2xl object-contain bg-neutral-50 p-1 border border-neutral-100 shadow-sm group-hover:scale-105 transition-transform"
                     />
-                    <div className="flex flex-col items-end gap-1">
-                      <span className="px-2.5 py-1 rounded-full text-[11px] font-mono font-semibold bg-neutral-950 text-white">
+                    <div>
+                      <span className="inline-block px-3 py-1 rounded-full text-[11px] font-mono font-semibold bg-neutral-900 text-white">
                         {item.badge}
-                      </span>
-                      <span className="text-[11px] text-neutral-400 font-mono font-medium">
-                        {item.category}
                       </span>
                     </div>
                   </div>
@@ -463,12 +480,12 @@ export default function HomePage() {
       <section className="py-20 bg-neutral-50/70 border-t border-neutral-100">
         <div className="container-page">
           <div className="max-w-4xl mx-auto text-center mb-14">
-            <span className="label-brand mb-3 inline-block">Standar Kualitas &amp; Arsitektur</span>
+            <span className="label-brand mb-3 inline-block">Kualitas &amp; Keandalan Aplikasi</span>
             <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-900 mb-4">
-              Fondasi Software yang Kokoh &amp; Terpercaya
+              Aplikasi Cepat, Ringan, dan Siap Pakai
             </h2>
             <p className="text-neutral-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
-              Setiap aplikasi dibangun dengan prinsip keandalan tinggi untuk memastikan bisnis dan pengguna mendapatkan pengalaman terbaik.
+              Setiap aplikasi dirancang agar lancar dipakai sehari-hari, hemat memori, dan bebas dari kendala teknis.
             </p>
           </div>
 
@@ -496,7 +513,7 @@ export default function HomePage() {
               Butuh Aplikasi Android Khusus untuk Usaha Anda?
             </h2>
             <p className="text-neutral-400 text-sm sm:text-base leading-relaxed mb-8 max-w-2xl mx-auto">
-              Diskusikan kebutuhan aplikasi kasir, manajemen inventaris, toko online, atau aplikasi utilitas perusahaan Anda langsung dengan tim pengembang FokusKonten.
+              Diskusikan kebutuhan aplikasi kasir, manajemen inventaris, toko online, atau aplikasi pendukung operasional usaha Anda langsung dengan tim pengembang FokusKonten.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <a

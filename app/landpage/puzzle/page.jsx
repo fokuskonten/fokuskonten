@@ -205,7 +205,7 @@ export default function GamePuzzleDedicatedLandingPage() {
     {
       aspect: 'Konsumsi Baterai & Suhu HP',
       ordinary: 'Penggunaan resource berlebihan yang membuat handphone cepat hangat',
-      fokusKonten: 'Arsitektur native Android yang sangat ringan, RAM < 50 MB, dan dingin di perangkat',
+      fokusKonten: 'Aplikasi Android native yang sangat ringan, hemat baterai, dan dingin di HP',
     },
   ]
 
@@ -308,7 +308,7 @@ export default function GamePuzzleDedicatedLandingPage() {
             />
           </div>
 
-          {/* 4 STATS PILAR KEUNGGULAN UTAMA */}
+          {/* 4 STATS KEUNGGULAN UTAMA */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto p-6 sm:p-8 rounded-3xl bg-neutral-50 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
             <div className="p-3 text-center flex flex-col items-center">
               <div className="w-12 h-12 rounded-xl bg-neutral-950 text-white font-mono font-bold flex items-center justify-center text-sm mb-3 shadow-sm">
@@ -366,12 +366,14 @@ export default function GamePuzzleDedicatedLandingPage() {
             {painPoints.map((item, idx) => (
               <div key={idx} className="p-6 sm:p-7 rounded-3xl bg-white border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between">
                 <div>
-                  <div className="w-8 h-8 rounded-lg bg-neutral-950 text-white font-mono text-xs flex items-center justify-center font-bold mb-4">
-                    {String(idx + 1).padStart(2, '0')}
+                  <div className="flex items-center gap-3.5 mb-3.5">
+                    <div className="w-8 h-8 rounded-xl bg-neutral-950 text-white font-mono text-xs flex items-center justify-center font-bold shrink-0 shadow-sm">
+                      {String(idx + 1).padStart(2, '0')}
+                    </div>
+                    <h3 className="font-display text-base sm:text-lg font-bold text-neutral-950 leading-snug">
+                      {item.title}
+                    </h3>
                   </div>
-                  <h3 className="font-display text-base sm:text-lg font-bold text-neutral-950 mb-2.5 leading-snug">
-                    {item.title}
-                  </h3>
                   <p className="text-neutral-600 text-xs sm:text-sm leading-relaxed">
                     {item.desc}
                   </p>

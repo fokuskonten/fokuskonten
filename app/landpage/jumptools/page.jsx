@@ -35,7 +35,7 @@ export default function JumperToolsDedicatedLandingPage() {
     },
   ]
 
-  // 4 Pilar Chipset Protokol
+  // 4 Protokol Chipset Utama
   const chipsetPillars = [
     {
       id: '01',
@@ -62,7 +62,7 @@ export default function JumperToolsDedicatedLandingPage() {
       id: '04',
       brand: 'UNISOC / Spreadtrum (SPD)',
       badge: 'Flasher Berkas PAC',
-      desc: 'Dukungan penuh arsitektur prosesor UNISOC modern (SC9863A, T606, T612, T616). Ekstraksi paket berkas PAC resmi serta flashing aman tanpa risiko kegagalan sistem bootloader.',
+      desc: 'Dukungan penuh prosesor UNISOC modern (SC9863A, T606, T612, T616). Ekstraksi paket berkas PAC resmi serta flashing aman tanpa risiko kegagalan sistem bootloader.',
       specs: 'Dukungan Seri T606/T616 • Ekstraksi Berkas PAC Instan',
     },
   ]
@@ -116,7 +116,7 @@ export default function JumperToolsDedicatedLandingPage() {
     {
       feature: 'Manajemen Aplikasi Flasher',
       oldWay: 'Memasang puluhan software flasher pihak ketiga yang tercecer dan rawan virus',
-      jumptools: 'Satu aplikasi terpadu yang menyatukan protokol resmi 4 arsitektur chipset utama',
+      jumptools: 'Satu aplikasi terpadu yang menyatukan protokol resmi 4 jenis chipset smartphone utama',
     },
     {
       feature: 'Konektivitas & Ketergantungan Jaringan',
@@ -385,12 +385,12 @@ export default function JumperToolsDedicatedLandingPage() {
         </div>
       </section>
 
-      {/* ── 4 PILAR PROTOKOL CHIPSET TERINTEGRASI ────────────────────────── */}
+      {/* ── 4 PROTOKOL CHIPSET TERINTEGRASI ────────────────────────── */}
       <section className="py-20 sm:py-24 border-b border-neutral-200/80 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-14 sm:mb-16">
             <span className="font-mono text-xs font-semibold px-3 py-1 rounded-full bg-neutral-100 text-neutral-900 border border-neutral-300 mb-3 inline-block">
-              ARSITEKTUR MULTI-CHIPSET
+              DUKUNGAN LENGKAP MULTI-CHIPSET
             </span>
             <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-950 mb-4 tracking-tight">
               4 Protokol Flashing Utama dalam Satu Aplikasi

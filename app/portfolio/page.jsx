@@ -5,7 +5,7 @@ import Breadcrumb from '@/components/Breadcrumb'
 
 export const metadata = {
   title: 'Portofolio Karya & Proyek — FokusKonten',
-  description: 'Portofolio proyek rekayasa software Android native, web platform, dan aset digital produksi studio FokusKonten.',
+  description: 'Portofolio aplikasi Android native, web platform, dan aset digital produksi studio FokusKonten.',
   alternates: { canonical: 'https://fokuskonten.my.id/portfolio' },
 }
 
@@ -17,12 +17,12 @@ export default function PortfolioPage() {
 
         {/* ── HEADER ─────────────────────────────────────────── */}
         <div className="mb-12 text-center">
-          <span className="label-brand mb-3 inline-block">Portofolio Karya &amp; Rekayasa</span>
+          <span className="label-brand mb-3 inline-block">Portofolio Karya &amp; Aplikasi</span>
           <h1 className="heading-xl text-3xl sm:text-4xl lg:text-5xl text-neutral-950 mb-3 tracking-tight">
             Portofolio Software &amp; Digital
           </h1>
           <p className="text-neutral-600 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-            Koleksi proyek rekayasa software Android native, sistem aplikasi web &amp; desktop, serta aset kreatif digital resmi karya studio FokusKonten.
+            Koleksi aplikasi Android native, software desktop, web platform, dan aset kreatif digital resmi karya FokusKonten.
           </p>
         </div>
 
@@ -37,8 +37,8 @@ export default function PortfolioPage() {
           <h3 className="heading-xl text-2xl sm:text-3xl mb-3 text-balance">
             Siap Mewujudkan Solusi Software untuk Kebutuhan Anda?
           </h3>
-          <p className="text-neutral-400 text-sm sm:text-base mb-8 max-w-xl mx-auto leading-relaxed">
-            Diskusikan spesifikasi teknis, rancangan arsitektur aplikasi Android, dan integrasi database langsung bersama software engineer FokusKonten.
+          <p className="text-white text-sm sm:text-base mb-8 max-w-xl mx-auto leading-relaxed">
+            Diskusikan kebutuhan fitur, alur kerja, dan tampilan aplikasi Android Anda langsung bersama pengembang FokusKonten.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <a

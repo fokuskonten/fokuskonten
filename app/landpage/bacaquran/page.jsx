@@ -441,7 +441,7 @@ export default function BacaQuranDedicatedLandingPage() {
     {
       feature: 'Beban Memori & Baterai HP',
       oldWay: 'Aplikasi berat dengan animasi berlebihan yang membuat handphone cepat panas',
-      bacaQuran: 'Arsitektur ringan dan hemat daya baterai, performa gulir super mulus',
+      bacaQuran: 'Aplikasi ringan dan hemat daya baterai, performa gulir super mulus',
     },
     {
       feature: 'Biaya Pemakaian Software',
@@ -470,7 +470,7 @@ export default function BacaQuranDedicatedLandingPage() {
     },
     {
       q: 'Apakah aplikasi BacaQur\'an memungut biaya langganan bulanan?',
-      a: 'Sama sekali tidak ada biaya bulanan (Rp 0 Bebas Sewa). Seluruh ekosistem aplikasi ini dihadirkan untuk mempermudah rutinitas ibadah harian kaum Muslimin di Indonesia.',
+      a: 'Sama sekali tidak ada biaya bulanan (Rp 0 Bebas Sewa). Aplikasi ini dihadirkan murni untuk mempermudah rutinitas ibadah harian kaum Muslimin di Indonesia.',
     },
   ]
 

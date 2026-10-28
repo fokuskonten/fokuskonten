@@ -66,7 +66,7 @@ export default function BlogDetailPage({ params }) {
         ) : (
           <div className="text-neutral-700 text-sm sm:text-base leading-relaxed space-y-4">
             <p>
-              Artikel ini membahas tentang <strong>{post.title}</strong> dalam konteks {post.category}. FokusKonten terus berkomitmen menyajikan tutorial, standar rekayasa software terbaik, dan aset kreatif berkualitas bagi para kreator dan praktisi digital di Indonesia.
+              Artikel ini membahas tentang <strong>{post.title}</strong> dalam konteks {post.category}. FokusKonten terus berkomitmen menyajikan panduan praktis, standar pembuatan aplikasi terbaik, dan aset kreatif berkualitas bagi para praktisi digital di Indonesia.
             </p>
             {post.tags && post.tags.length > 0 && (
               <div className="mt-6 pt-4 border-t border-neutral-200">

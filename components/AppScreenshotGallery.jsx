@@ -181,39 +181,23 @@ export default function AppScreenshotGallery({
               className={isDesktop ? "w-[360px] sm:w-[480px] lg:w-[540px] shrink-0 snap-start flex flex-col group cursor-pointer" : "w-[280px] sm:w-[320px] shrink-0 snap-start flex flex-col group cursor-pointer"}
             >
               {isDesktop ? (
-                /* Mockup Frame Desktop / Laptop Window Bershadow */
-                <div className="relative rounded-2xl p-2.5 sm:p-3 bg-neutral-900 border-[2px] border-neutral-800 shadow-[0_20px_50px_-10px_rgba(0,0,0,0.25)] group-hover:shadow-[0_28px_65px_-10px_rgba(0,0,0,0.38)] group-hover:-translate-y-2 transition-all duration-300">
-                  {/* Title Bar Desktop */}
-                  <div className="flex items-center justify-between pb-2 px-1">
-                    <div className="flex items-center gap-1.5">
-                      <span className="w-2.5 h-2.5 rounded-full bg-neutral-700/90" />
-                      <span className="w-2.5 h-2.5 rounded-full bg-neutral-700/90" />
-                      <span className="w-2.5 h-2.5 rounded-full bg-neutral-700/90" />
-                    </div>
-                    <span className="text-[10px] font-mono text-neutral-400 font-semibold tracking-wider truncate max-w-[200px]">
-                      {item.title}
+                /* Frame Gambar Bershadow Elegan dengan Frame Tipis Hitam */
+                <div className="relative rounded-2xl overflow-hidden border border-neutral-900 bg-neutral-950 shadow-[0_20px_50px_-10px_rgba(0,0,0,0.22)] group-hover:shadow-[0_28px_65px_-10px_rgba(0,0,0,0.35)] group-hover:-translate-y-2 transition-all duration-300 aspect-[16/10]">
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    draggable="false"
+                    className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.02]"
+                  />
+                  
+                  {/* Overlay Hint Zoom saat Hover */}
+                  <div className="absolute inset-0 bg-neutral-950/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span className="px-3.5 py-1.5 rounded-full bg-white/95 text-neutral-950 text-xs font-mono font-semibold shadow-lg backdrop-blur-sm flex items-center gap-1.5">
+                      <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                      </svg>
+                      <span>Perbesar</span>
                     </span>
-                    <span className="w-8" />
-                  </div>
-
-                  {/* Layar Internal Desktop 16:10 */}
-                  <div className="relative rounded-xl overflow-hidden bg-neutral-950 aspect-[16/10]">
-                    <img
-                      src={item.img}
-                      alt={item.title}
-                      draggable="false"
-                      className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.02]"
-                    />
-                    
-                    {/* Overlay Hint Zoom saat Hover */}
-                    <div className="absolute inset-0 bg-neutral-950/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                      <span className="px-3.5 py-1.5 rounded-full bg-white/95 text-neutral-950 text-xs font-mono font-semibold shadow-lg backdrop-blur-sm flex items-center gap-1.5">
-                        <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
-                        </svg>
-                        <span>Perbesar</span>
-                      </span>
-                    </div>
                   </div>
                 </div>
               ) : (
@@ -248,13 +232,15 @@ export default function AppScreenshotGallery({
               )}
 
               {/* Keterangan Teks Bersih & Padat di Bawah Mockup */}
-              <div className="pt-4 px-2 text-center sm:text-left">
-                <div className="text-[11px] font-mono text-neutral-400 font-bold mb-1">
-                  LAYAR {String(idx + 1).padStart(2, '0')}
+              <div className="pt-4 px-2 text-left">
+                <div className="flex items-center gap-2 mb-1.5">
+                  <span className="px-2 py-0.5 rounded-md bg-neutral-950 text-white font-mono font-bold text-[10px] shrink-0 shadow-xs">
+                    LAYAR {String(idx + 1).padStart(2, '0')}
+                  </span>
+                  <h3 className="font-display font-bold text-sm sm:text-base text-neutral-950 group-hover:text-black transition-colors line-clamp-1">
+                    {item.title}
+                  </h3>
                 </div>
-                <h3 className="font-display font-bold text-sm sm:text-base text-neutral-950 mb-1 group-hover:text-black transition-colors line-clamp-1">
-                  {item.title}
-                </h3>
                 <p className="text-neutral-600 text-xs leading-relaxed font-sans line-clamp-2">
                   {item.desc}
                 </p>

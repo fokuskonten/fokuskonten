@@ -30,7 +30,7 @@ export const metadata = {
     url: 'https://fokuskonten.my.id',
     siteName: 'Fokus Konten',
     title: 'Fokus Konten — Software Engineer, AI Creator & Digital Assets',
-    description: 'Ekosistem software aplikasi Android, Windows Desktop EXE, web platform modern, dan katalog aset digital produksi nyata oleh Fokus Konten.',
+    description: 'Pengembang resmi aplikasi Android, software desktop Windows, website modern, dan ribuan aset digital karya Fokus Konten.',
     images: [{ url: '/assets/brand/og-image.jpg', width: 1200, height: 630, alt: 'Fokus Konten — Software Engineer & AI Creator' }],
   },
   twitter: {
@@ -61,7 +61,7 @@ const jsonLd = {
         'https://www.youtube.com/@fokuskonten',
         'https://github.com/fokuskonten',
       ],
-      description: 'Ekosistem resmi Fokus Konten: Software Engineering (Android Native, PWA, Desktop EXE, AI Code Tools) dan Digital Creative Assets (Template Percetakan CorelDRAW, Cinematic Footage, Preset Fotografi & Videografi).',
+      description: 'Katalog resmi Fokus Konten: Pembuatan Aplikasi Android Native, Software Desktop Windows, Website Modern, dan Ribuan Aset Digital Kreatif Siap Pakai.',
     },
     {
       '@type': 'WebSite',

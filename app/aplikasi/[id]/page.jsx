@@ -114,7 +114,7 @@ export default function AppDetailPage({ params }) {
               {portfolioLink && (
                 <div className="inline-flex flex-wrap items-center gap-2 px-3.5 py-2 rounded-xl bg-neutral-100 border border-neutral-300/80 text-xs text-neutral-800">
                   <span className="font-mono font-bold text-neutral-950">Studi Kasus Portofolio</span>
-                  <span>— Dokumentasi arsitektur dan spesifikasi teknis lengkap telah tersedia.</span>
+                  <span>— Panduan pemakaian dan rincian fitur lengkap telah tersedia.</span>
                   <Link
                     href={portfolioLink}
                     className="font-bold underline text-black hover:text-neutral-700 inline-flex items-center gap-1"
@@ -526,7 +526,7 @@ export default function AppDetailPage({ params }) {
                           </span>
                         </div>
                         <p className="text-neutral-300 text-[10.5px] leading-snug font-sans">
-                          100% Bebas Malware, Tanpa Iklan, Arsitektur Offline-First (Room SQLite), dan Terverifikasi Resmi Pengembang Android.
+                          100% Bebas Malware, Tanpa Iklan, Bekerja Penuh Tanpa Internet (Offline), dan Terverifikasi Resmi Pengembang Android.
                         </p>
                       </div>
                     </div>

@@ -37,6 +37,8 @@ function TokoDigitalContent() {
   // ── SMART DETECTION REALTIME (Zero Hardcoding Manual) ───────────────────────
   // Dihitung dinamis langsung dari data katalog aktif (catalogProducts)
   const {
+    desainGrafisCount,
+    bigBangCount,
     ecourseCount,
     videoCount,
     cdrCount,
@@ -49,6 +51,8 @@ function TokoDigitalContent() {
     totalDesign,
     totalEbook
   } = useMemo(() => {
+    let desainGrafis = 0
+    let bigBang = 0
     let ecourse = 0
     let video = 0
     let cdr = 0
@@ -60,9 +64,19 @@ function TokoDigitalContent() {
     let design = 0
     let ebook = 0
 
+    const DESIGN_FORMATS = ['CDR', 'XLSX', 'DOC', 'DOCX', 'PNG', 'PNG/HD', 'EPS', 'AI', 'AI/EPS']
+
     for (const p of catalogProducts) {
       const fmt = (p.format || '').toUpperCase()
       const cat = p.category || ''
+
+      if (DESIGN_FORMATS.includes(fmt)) {
+        desainGrafis++
+      }
+
+      if (fmt === 'THE BIG BANG' || fmt === 'BIGBANG' || fmt === 'THE_BIG_BANG' || cat === 'The Big Bang') {
+        bigBang++
+      }
 
       if (cat === 'Ecourse & Tutorial' || cat.toLowerCase().includes('ecourse')) {
         ecourse++
@@ -83,6 +97,8 @@ function TokoDigitalContent() {
     }
 
     return {
+      desainGrafisCount: desainGrafis,
+      bigBangCount: bigBang,
       ecourseCount: ecourse,
       videoCount: video,
       cdrCount: cdr,
@@ -97,31 +113,29 @@ function TokoDigitalContent() {
     }
   }, [])
 
-  // Format filter tabs dengan pemisahan tegas Ecourse dan Video Konten sesuai SSOT Drive
+  // Format filter tabs: SQL APP paling atas/pertama, PowerShell kedua, Desain Grafis ketiga
   const formatTabs = useMemo(() => {
     const list = []
-    for (const [fmt, rawCount] of realtimeFormats) {
-      if (fmt === 'PDF' || fmt === 'ISPLAN') continue
-      if (fmt === 'MP4') {
-        if (ecourseCount > 0) {
-          list.push({ id: 'ECOURSE', label: 'Ecourse', count: ecourseCount })
-        }
-        list.push({ id: 'VIDEO_KONTEN', label: 'Video Konten', count: videoCount })
-      } else if (fmt === 'The Big Bang' || fmt === 'BIGBANG' || fmt === 'THE_BIG_BANG') {
-        list.push({ id: 'The Big Bang', label: 'The Big Bang', count: rawCount })
-      } else if (fmt === 'POWERSHELL IRM' || fmt === 'POWERSHELL') {
-        list.push({ id: 'POWERSHELL IRM', label: 'PowerShell', count: pshCount || rawCount })
-      } else {
-        const smartCount = fmt === 'CDR' ? cdrCount : (fmt === 'PWA' || fmt === 'PHP/WEB') ? pwaCount : fmt === 'PPTX' ? pptxCount : fmt === 'PDF' ? pdfCount : rawCount
-        list.push({
-          id: fmt,
-          label: fmt === 'PDF' ? 'E-Book' : ((fmt === 'PWA' || fmt === 'PHP/WEB') ? 'PWA' : (fmt === 'EXE' ? 'Desktop .EXE' : `.${fmt}`)),
-          count: smartCount
-        })
-      }
+    if (pwaCount > 0) {
+      list.push({ id: 'PWA', label: 'SQL APP', count: pwaCount })
+    }
+    if (pshCount > 0) {
+      list.push({ id: 'POWERSHELL IRM', label: 'PowerShell', count: pshCount })
+    }
+    if (desainGrafisCount > 0) {
+      list.push({ id: 'DESAIN_GRAFIS', label: 'Desain Grafis', count: desainGrafisCount })
+    }
+    if (bigBangCount > 0) {
+      list.push({ id: 'The Big Bang', label: 'The Big Bang', count: bigBangCount })
+    }
+    if (ecourseCount > 0) {
+      list.push({ id: 'ECOURSE', label: 'Ecourse', count: ecourseCount })
+    }
+    if (videoCount > 0) {
+      list.push({ id: 'VIDEO_KONTEN', label: 'Video Konten', count: videoCount })
     }
     return list
-  }, [realtimeFormats, ecourseCount, videoCount, cdrCount, pwaCount, pshCount, pptxCount, pdfCount])
+  }, [pwaCount, pshCount, desainGrafisCount, bigBangCount, ecourseCount, videoCount])
 
   const sortOptions = [
     { id: 'newest', label: 'Terbaru' },
@@ -177,6 +191,8 @@ function TokoDigitalContent() {
         (selectedCategory === 'Desain' && !p.category?.startsWith('E-Book'))
 
       const fmtUpper = (selectedFormat || '').toUpperCase()
+      const isDesainGrafisMatch = (fmtUpper === 'DESAIN_GRAFIS' || fmtUpper === 'DESAIN' || fmtUpper === 'DESAIN GRAFIS') &&
+        ['CDR', 'XLSX', 'DOC', 'DOCX', 'PNG', 'PNG/HD', 'EPS', 'AI', 'AI/EPS'].includes((p.format || '').toUpperCase())
       const isEcourseMatch = fmtUpper === 'ECOURSE' && (p.category === 'Ecourse & Tutorial' || (p.category || '').toLowerCase().includes('ecourse'))
       const isVideoMatch = (fmtUpper === 'VIDEO_KONTEN' || fmtUpper === 'VIDEO KONTEN') && (p.category === 'Video Konten' || (p.category || '').toLowerCase().includes('video konten'))
       const isBigBangMatch = (fmtUpper === 'THE BIG BANG' || fmtUpper === 'BIGBANG' || fmtUpper === 'THE_BIG_BANG') &&
@@ -184,6 +200,7 @@ function TokoDigitalContent() {
 
       const matchFmt =
         selectedFormat === 'Semua' ||
+        isDesainGrafisMatch ||
         isEcourseMatch ||
         isVideoMatch ||
         isBigBangMatch ||
@@ -340,19 +357,21 @@ function TokoDigitalContent() {
               <span suppressHydrationWarning className="text-xs font-bold uppercase tracking-wider text-neutral-400">
                 {mounted && (selectedFormat.toUpperCase() === 'THE BIG BANG' || selectedFormat.toUpperCase() === 'BIGBANG')
                   ? 'Repositori Unggulan'
-                  : (selectedFormat === 'PDF' ? 'Koleksi E-Book' : ((selectedFormat === 'PWA' || selectedFormat === 'PHP/WEB') ? 'Aplikasi PWA' : (selectedFormat.toUpperCase() === 'POWERSHELL IRM' ? 'Utilitas PowerShell' : 'Katalog Desain')))}
+                  : (selectedFormat === 'PDF' ? 'Koleksi E-Book' : ((selectedFormat === 'PWA' || selectedFormat === 'PHP/WEB') ? 'SQL APP' : (selectedFormat.toUpperCase() === 'POWERSHELL IRM' ? 'PowerShell' : ((selectedFormat.toUpperCase() === 'DESAIN_GRAFIS' || selectedFormat.toUpperCase() === 'DESAIN') ? 'Katalog Desain Grafis' : 'Katalog Desain'))))}
               </span>
               {isFiltering && (
                 <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-neutral-900 text-white shadow-sm">
                   <span>
                     {selectedFormat !== 'Semua'
-                      ? (selectedFormat.toUpperCase() === 'ECOURSE'
-                          ? 'Ecourse & Panduan'
-                          : (selectedFormat.toUpperCase() === 'VIDEO_KONTEN'
-                              ? 'Video Konten'
-                              : (selectedFormat.toUpperCase() === 'THE BIG BANG' || selectedFormat.toUpperCase() === 'BIGBANG'
-                                  ? 'The Big Bang'
-                                  : (selectedFormat === 'PDF' ? 'E-Book' : ((selectedFormat === 'PWA' || selectedFormat === 'PHP/WEB') ? 'PWA' : (selectedFormat.toUpperCase() === 'POWERSHELL IRM' ? 'PowerShell' : `Format .${selectedFormat}`))))))
+                      ? (selectedFormat.toUpperCase() === 'DESAIN_GRAFIS' || selectedFormat.toUpperCase() === 'DESAIN'
+                          ? 'Desain Grafis'
+                          : (selectedFormat.toUpperCase() === 'ECOURSE'
+                              ? 'Ecourse & Panduan'
+                              : (selectedFormat.toUpperCase() === 'VIDEO_KONTEN'
+                                  ? 'Video Konten'
+                                  : (selectedFormat.toUpperCase() === 'THE BIG BANG' || selectedFormat.toUpperCase() === 'BIGBANG'
+                                      ? 'The Big Bang'
+                                      : (selectedFormat === 'PDF' ? 'E-Book' : ((selectedFormat === 'PWA' || selectedFormat === 'PHP/WEB') ? 'SQL APP' : (selectedFormat.toUpperCase() === 'POWERSHELL IRM' ? 'PowerShell' : `Format .${selectedFormat}`)))))))
                       : selectedCategory}
                   </span>
                   <button
@@ -368,25 +387,29 @@ function TokoDigitalContent() {
             </div>
             <h1 suppressHydrationWarning className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-neutral-950 font-display tracking-tight">
               {mounted && selectedFormat !== 'Semua'
-                ? (selectedFormat.toUpperCase() === 'ECOURSE'
-                    ? 'Katalog Ecourse & Panduan Bisnis'
-                    : (selectedFormat.toUpperCase() === 'VIDEO_KONTEN'
-                        ? 'Katalog Bahan Video Konten'
-                        : (selectedFormat.toUpperCase() === 'THE BIG BANG' || selectedFormat.toUpperCase() === 'BIGBANG'
-                            ? 'The Big Bang — Repositori Unggulan Master'
-                            : (selectedFormat === 'PDF' ? 'Katalog E-Book' : ((selectedFormat === 'PWA' || selectedFormat === 'PHP/WEB') ? 'Katalog Aplikasi PWA' : (selectedFormat.toUpperCase() === 'POWERSHELL IRM' ? 'Katalog Jasa & Utilitas PowerShell' : `Format .${selectedFormat}`))))))
+                ? (selectedFormat.toUpperCase() === 'DESAIN_GRAFIS' || selectedFormat.toUpperCase() === 'DESAIN'
+                    ? 'Katalog Desain Grafis'
+                    : (selectedFormat.toUpperCase() === 'ECOURSE'
+                        ? 'Katalog Ecourse & Panduan Bisnis'
+                        : (selectedFormat.toUpperCase() === 'VIDEO_KONTEN'
+                            ? 'Katalog Bahan Video Konten'
+                            : (selectedFormat.toUpperCase() === 'THE BIG BANG' || selectedFormat.toUpperCase() === 'BIGBANG'
+                                ? 'The Big Bang — Repositori Unggulan Master'
+                                : (selectedFormat === 'PDF' ? 'Katalog E-Book' : ((selectedFormat === 'PWA' || selectedFormat === 'PHP/WEB') ? 'Katalog SQL APP' : (selectedFormat.toUpperCase() === 'POWERSHELL IRM' ? 'Katalog PowerShell' : `Format .${selectedFormat}`)))))))
                 : (mounted && selectedCategory !== 'Semua' ? selectedCategory : 'Katalog Template & Desain')}
             </h1>
             <p suppressHydrationWarning className="text-sm text-neutral-500 mt-1 leading-relaxed">
               Menampilkan <strong>{mounted ? filteredProducts.length : totalActive}</strong> produk{' '}
               {mounted && selectedFormat !== 'Semua'
-                ? (selectedFormat.toUpperCase() === 'ECOURSE'
-                    ? 'materi pembelajaran & tutorial bisnis teruji.'
-                    : (selectedFormat.toUpperCase() === 'VIDEO_KONTEN'
-                        ? 'mentahan footage & amunisi video konten.'
-                        : (selectedFormat.toUpperCase() === 'THE BIG BANG' || selectedFormat.toUpperCase() === 'BIGBANG'
-                            ? 'koleksi repositori master: E-Book, Skematik Laptop, Teknisi Smartphone, dan Webmaster.'
-                            : (selectedFormat === 'PDF' ? 'koleksi literatur digital siap baca.' : ((selectedFormat === 'PWA' || selectedFormat === 'PHP/WEB') ? 'aplikasi sistem PWA teruji.' : (selectedFormat.toUpperCase() === 'POWERSHELL IRM' ? 'solusi otomasi & utilitas terminal 1-klik teruji.' : `format .${selectedFormat}`))))))
+                ? (selectedFormat.toUpperCase() === 'DESAIN_GRAFIS' || selectedFormat.toUpperCase() === 'DESAIN'
+                    ? 'template desain grafis siap pakai (CorelDRAW, Excel, Word, Vektor & PNG).'
+                    : (selectedFormat.toUpperCase() === 'ECOURSE'
+                        ? 'materi pembelajaran & tutorial bisnis teruji.'
+                        : (selectedFormat.toUpperCase() === 'VIDEO_KONTEN'
+                            ? 'mentahan footage & amunisi video konten.'
+                            : (selectedFormat.toUpperCase() === 'THE BIG BANG' || selectedFormat.toUpperCase() === 'BIGBANG'
+                                ? 'koleksi repositori master: E-Book, Skematik Laptop, Teknisi Smartphone, dan Webmaster.'
+                                : (selectedFormat === 'PDF' ? 'koleksi literatur digital siap baca.' : ((selectedFormat === 'PWA' || selectedFormat === 'PHP/WEB') ? 'aplikasi sistem SQL APP teruji.' : (selectedFormat.toUpperCase() === 'POWERSHELL IRM' ? 'solusi otomasi & utilitas terminal 1-klik teruji.' : `format .${selectedFormat}`)))))))
                 : (mounted && selectedCategory !== 'Semua' ? `kategori ${selectedCategory}` : 'siap pakai.')}
             </p>
           </div>
@@ -540,7 +563,9 @@ function TokoDigitalContent() {
               Semua Format ({totalActive})
             </button>
             {formatTabs.map((tab) => {
-              const isActive = mounted && selectedFormat.toUpperCase() === tab.id.toUpperCase()
+              const fmtUpper = (mounted ? selectedFormat : 'Semua').toUpperCase()
+              const isActive = fmtUpper === tab.id.toUpperCase() ||
+                (tab.id === 'DESAIN_GRAFIS' && ['CDR', 'XLSX', 'DOC', 'DOCX', 'PNG', 'PNG/HD', 'EPS', 'AI', 'AI/EPS', 'DESAIN'].includes(fmtUpper))
               return (
                 <button
                   key={tab.id}
@@ -566,53 +591,19 @@ function TokoDigitalContent() {
       {/* ── 3. SHOWCASE PILIHAN & BUNDLE (5 SKAT MINIMALIS) ───────────── */}
       {!isFiltering && currentPage === 1 && showcase && (
         <div className="w-full max-w-7xl 2xl:max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 mb-12 sm:mb-16 space-y-12">
-          {/* Skat 1: Jasa & Utilitas PowerShell */}
-          {showcase.powershell && showcase.powershell.length > 0 && (
-            <section className="space-y-4">
-              <div className="flex items-center justify-between pb-3 border-b border-neutral-200">
-                <div className="flex items-center gap-2.5">
-                  <h2 className="text-lg sm:text-xl font-bold text-neutral-950 tracking-tight">
-                    Jasa &amp; Utilitas PowerShell
-                  </h2>
-                  <span className="text-[11px] font-bold uppercase tracking-wider bg-neutral-900 text-white px-2.5 py-0.5 rounded-full font-mono">
-                    1-Klik Beres
-                  </span>
-                </div>
-                <button
-                  type="button"
-                  onClick={() => handleFormatSelect('POWERSHELL IRM')}
-                  className="text-xs sm:text-sm font-semibold text-neutral-600 hover:text-black transition-colors flex items-center gap-1"
-                >
-                  <span>Lihat Semua Jasa ({pshCount || 15})</span>
-                  <span>&rarr;</span>
-                </button>
-              </div>
-              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-6">
-                {showcase.powershell.slice(0, 8).map((product) => (
-                  <ProductCard key={product.sku} product={product} />
-                ))}
-              </div>
-            </section>
-          )}
-
-          {/* Skat 2: Aplikasi PWA Mandiri */}
+          {/* Skat 1: SQL APP (Paling Atas) */}
           {showcase.pwa && showcase.pwa.length > 0 && (
             <section className="space-y-4">
               <div className="flex items-center justify-between pb-3 border-b border-neutral-200">
-                <div className="flex items-center gap-2.5">
-                  <h2 className="text-lg sm:text-xl font-bold text-neutral-950 tracking-tight">
-                    Aplikasi PWA Mandiri
-                  </h2>
-                  <span className="text-[11px] font-bold uppercase tracking-wider bg-neutral-900 text-white px-2.5 py-0.5 rounded-full font-mono">
-                    Siap Pakai
-                  </span>
-                </div>
+                <h2 className="text-lg sm:text-xl font-bold text-neutral-950 tracking-tight">
+                  SQL APP
+                </h2>
                 <button
                   type="button"
                   onClick={() => handleFormatSelect('PWA')}
-                  className="text-xs sm:text-sm font-semibold text-neutral-600 hover:text-black transition-colors flex items-center gap-1"
+                  className="text-xs sm:text-sm font-semibold text-neutral-600 hover:text-black transition-colors flex items-center gap-1 shrink-0 whitespace-nowrap"
                 >
-                  <span>Lihat Semua PWA ({pwaCount})</span>
+                  <span>Lainnya</span>
                   <span>&rarr;</span>
                 </button>
               </div>
@@ -624,19 +615,43 @@ function TokoDigitalContent() {
             </section>
           )}
 
-          {/* Skat 2: Template CorelDraw (CDR) */}
+          {/* Skat 2: PowerShell (Kedua) */}
+          {showcase.powershell && showcase.powershell.length > 0 && (
+            <section className="space-y-4">
+              <div className="flex items-center justify-between pb-3 border-b border-neutral-200">
+                <h2 className="text-lg sm:text-xl font-bold text-neutral-950 tracking-tight">
+                  PowerShell
+                </h2>
+                <button
+                  type="button"
+                  onClick={() => handleFormatSelect('POWERSHELL IRM')}
+                  className="text-xs sm:text-sm font-semibold text-neutral-600 hover:text-black transition-colors flex items-center gap-1 shrink-0 whitespace-nowrap"
+                >
+                  <span>Lainnya</span>
+                  <span>&rarr;</span>
+                </button>
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-6">
+                {showcase.powershell.slice(0, 8).map((product) => (
+                  <ProductCard key={product.sku} product={product} />
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Skat 3: Desain Grafis (Ketiga) */}
           {showcase.cdr && showcase.cdr.length > 0 && (
             <section className="space-y-4">
               <div className="flex items-center justify-between pb-3 border-b border-neutral-200">
                 <h2 className="text-lg sm:text-xl font-bold text-neutral-950 tracking-tight">
-                  Template CorelDraw (CDR)
+                  Desain Grafis
                 </h2>
                 <button
                   type="button"
-                  onClick={() => handleFormatSelect('CDR')}
-                  className="text-xs sm:text-sm font-semibold text-neutral-600 hover:text-black transition-colors flex items-center gap-1"
+                  onClick={() => handleFormatSelect('DESAIN_GRAFIS')}
+                  className="text-xs sm:text-sm font-semibold text-neutral-600 hover:text-black transition-colors flex items-center gap-1 shrink-0 whitespace-nowrap"
                 >
-                  <span>Lihat Semua CDR ({cdrCount})</span>
+                  <span>Lainnya</span>
                   <span>&rarr;</span>
                 </button>
               </div>
@@ -648,7 +663,7 @@ function TokoDigitalContent() {
             </section>
           )}
 
-          {/* Skat 3: Video & Konten Kreatif */}
+          {/* Skat 4: Video & Konten Kreatif */}
           {showcase.others && showcase.others.length > 0 && (
             <section className="space-y-4">
               <div className="flex items-center justify-between pb-3 border-b border-neutral-200">
@@ -658,9 +673,9 @@ function TokoDigitalContent() {
                 <button
                   type="button"
                   onClick={() => handleFormatSelect('VIDEO_KONTEN')}
-                  className="text-xs sm:text-sm font-semibold text-neutral-600 hover:text-black transition-colors flex items-center gap-1"
+                  className="text-xs sm:text-sm font-semibold text-neutral-600 hover:text-black transition-colors flex items-center gap-1 shrink-0 whitespace-nowrap"
                 >
-                  <span>Lihat Semua Video ({videoCount})</span>
+                  <span>Lainnya</span>
                   <span>&rarr;</span>
                 </button>
               </div>
@@ -672,24 +687,19 @@ function TokoDigitalContent() {
             </section>
           )}
 
-          {/* Skat 4: Ecourse & Panduan Bisnis */}
+          {/* Skat 5: Ecourse & Panduan Bisnis */}
           {showcase.ecourse && showcase.ecourse.length > 0 && (
             <section className="space-y-4">
               <div className="flex items-center justify-between pb-3 border-b border-neutral-200">
-                <div className="flex items-center gap-2.5">
-                  <h2 className="text-lg sm:text-xl font-bold text-neutral-950 tracking-tight">
-                    Ecourse &amp; Panduan Bisnis
-                  </h2>
-                  <span className="text-[11px] font-bold uppercase tracking-wider bg-neutral-900 text-white px-2.5 py-0.5 rounded-full font-mono">
-                    Koleksi Baru
-                  </span>
-                </div>
+                <h2 className="text-lg sm:text-xl font-bold text-neutral-950 tracking-tight">
+                  Ecourse &amp; Panduan Bisnis
+                </h2>
                 <button
                   type="button"
                   onClick={() => handleCategorySelect('Ecourse & Tutorial')}
-                  className="text-xs sm:text-sm font-semibold text-neutral-600 hover:text-black transition-colors flex items-center gap-1"
+                  className="text-xs sm:text-sm font-semibold text-neutral-600 hover:text-black transition-colors flex items-center gap-1 shrink-0 whitespace-nowrap"
                 >
-                  <span>Lihat Semua Ecourse ({ecourseCount})</span>
+                  <span>Lainnya</span>
                   <span>&rarr;</span>
                 </button>
               </div>

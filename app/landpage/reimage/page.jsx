@@ -113,7 +113,7 @@ export default function ReImageDedicatedLandingPage() {
     },
   ]
 
-  // 4 Pilar Arsitektur Faktual
+  // 4 Keunggulan Utama Software
   const techPillars = [
     {
       num: '01',
@@ -406,7 +406,7 @@ export default function ReImageDedicatedLandingPage() {
         </div>
       </section>
 
-      {/* ── 4 PILAR KEUNGGULAN SOFTWARE ─────────────────────────────────── */}
+      {/* ── 4 KEUNGGULAN UTAMA SOFTWARE ─────────────────────────────────── */}
       <section className="py-20 sm:py-24 border-b border-neutral-200/80 bg-neutral-50/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-14 sm:mb-16">
@@ -414,7 +414,7 @@ export default function ReImageDedicatedLandingPage() {
               KEUNGGULAN UTAMA
             </span>
             <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-950 mb-4 tracking-tight">
-              Arsitektur Komputasi Mandiri Tanpa Server Luar
+              Pemrosesan Mandiri Langsung di Komputer Anda
             </h2>
             <p className="text-neutral-600 text-sm sm:text-base leading-relaxed">
               Seluruh proses konversi dan kompresi berjalan langsung di komputer Anda tanpa memerlukan sambungan internet.

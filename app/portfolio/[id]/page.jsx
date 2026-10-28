@@ -84,7 +84,7 @@ export default function PortfolioDetailPage({ params }) {
 
               <div className="relative z-10 my-auto py-6">
                 <span className="font-mono text-xs text-neutral-400 block mb-2">
-                  Studi Kasus &amp; Rekayasa
+                  Studi Kasus &amp; Pengembangan
                 </span>
                 <h2 className="heading-xl text-2xl sm:text-3xl lg:text-4xl text-white mb-2">
                   {item.title}
@@ -134,13 +134,13 @@ export default function PortfolioDetailPage({ params }) {
               )}
             </div>
 
-            {/* 3. Fitur Utama & Arsitektur Sistem */}
+            {/* 3. Fitur Utama & Kemampuan Sistem */}
             {item.features && item.features.length > 0 && (
               <div className="p-6 sm:p-8 rounded-2xl bg-white border border-neutral-200 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
                 <div className="mb-6">
                   <span className="label-brand mb-2 inline-block">Fitur &amp; Kemampuan</span>
                   <h2 className="font-display font-bold text-lg sm:text-xl text-neutral-950">
-                    Spesifikasi Rekayasa Fitur
+                    Rincian Fitur Utama
                   </h2>
                 </div>
 
@@ -263,7 +263,7 @@ export default function PortfolioDetailPage({ params }) {
               <h3 className="font-display font-bold text-base text-white mb-2">
                 Punya Proyek Serupa?
               </h3>
-              <p className="text-neutral-400 text-xs leading-relaxed mb-5">
+              <p className="text-white text-xs leading-relaxed mb-5">
                 Diskusikan alur logika, kebutuhan integrasi, dan estimasi waktu langsung bersama software engineer FokusKonten.
               </p>
               <a
@@ -310,13 +310,13 @@ export default function PortfolioDetailPage({ params }) {
         {/* ── GRAND FULL-WIDTH CTA CONTAINER (BAB 17.3 POIN 5) ── */}
         <div className="rounded-3xl bg-neutral-950 p-8 sm:p-14 text-center text-white w-full shadow-2xl border border-neutral-800">
           <span className="inline-block px-3.5 py-1 rounded-full text-xs font-display font-semibold bg-white text-neutral-950 shadow-sm mb-4">
-            Konsultasi Rekayasa
+            Konsultasi Pembuatan Aplikasi
           </span>
           <h3 className="heading-xl text-2xl sm:text-4xl mb-3 text-balance">
             Siap Mengembangkan Solusi Serupa untuk Bisnis Anda?
           </h3>
-          <p className="text-neutral-400 text-sm sm:text-base mb-8 max-w-xl mx-auto leading-relaxed">
-            Konsultasikan ide aplikasi, kebutuhan sistem kasir POS, atau lisensi aset digital kustom langsung bersama software engineer FokusKonten.
+          <p className="text-white text-sm sm:text-base mb-8 max-w-xl mx-auto leading-relaxed">
+            Konsultasikan ide aplikasi, kebutuhan sistem kasir POS, atau lisensi aset digital kustom langsung bersama pengembang FokusKonten.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <a

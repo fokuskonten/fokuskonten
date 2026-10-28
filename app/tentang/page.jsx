@@ -8,10 +8,10 @@ export const metadata = {
 
 const milestones = [
   { year: '2020', title: 'Awal Pendirian', desc: 'Memulai perancangan dan riset pengembangan aplikasi Android berbasis utilitas dan kebutuhan harian masyarakat.' },
-  { year: '2021', title: 'Publikasi Resmi Play Store', desc: 'Merilis aplikasi pertama secara resmi di Google Play Store dan membangun fondasi arsitektur aplikasi yang ringan dan stabil.' },
+  { year: '2021', title: 'Publikasi Resmi Play Store', desc: 'Merilis aplikasi pertama secara resmi di Google Play Store dan membangun aplikasi yang ringan, stabil, dan nyaman digunakan.' },
   { year: '2023', title: 'Ekspansi Solusi Bisnis & POS', desc: 'Mengembangkan lini aplikasi kasir dan manajemen usaha (Apotek Pro, Retail POS) berbasis offline-first untuk mendukung UMKM.' },
   { year: '2025', title: 'Standar Target SDK 36', desc: 'Mengadopsi standar sistem Android termutakhir (SDK 36 / Android 15 & 16) untuk seluruh katalog aplikasi demi performa dan privasi maksimal.' },
-  { year: '2026', title: 'Ekosistem Berkelanjutan', desc: 'Terus menyempurnakan fitur aplikasi bisnis, utilitas, dan layanan pembuatan aplikasi kustom berstandar profesional.' },
+  { year: '2026', title: 'Pengembangan Berkelanjutan', desc: 'Terus menyempurnakan fitur aplikasi usaha, alat produktivitas, dan layanan pembuatan aplikasi kustom yang siap pakai.' },
 ]
 
 export default function AboutPage() {

@@ -89,7 +89,7 @@
     },
     {
         "id": "reimage",
-        "name": "FokusKonten ReImage",
+        "name": "ReImage",
         "package": "com.fokuskonten.reimage",
         "category": "Utilitas",
         "status": "published",

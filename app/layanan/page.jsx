@@ -9,7 +9,7 @@ export const metadata = {
 const services = [
   {
     title: 'Aplikasi Kasir & POS Bisnis',
-    desc: 'Pembuatan software kasir untuk apotek, toko kelontong, retail, dan kafe. Dilengkapi fitur cetak struk Bluetooth thermal, scanner barcode, dan manajemen transaksi offline-first.',
+    desc: 'Pembuatan aplikasi kasir toko, apotek, retail, dan kafe yang bekerja 100% offline tanpa kuota internet. Dilengkapi cetak struk Bluetooth Thermal, scan barcode kamera cepat, hitung diskon dan pajak otomatis, serta rekap kas harian.',
     icon: (
       <svg className="w-6 h-6 text-neutral-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
@@ -17,8 +17,8 @@ const services = [
     ),
   },
   {
-    title: 'Aplikasi Inventaris & Stok',
-    desc: 'Sistem pencatatan barang masuk dan keluar, deteksi kadaluarsa obat/produk, peringatan stok menipis, serta rekap laba rugi otomatis.',
+    title: 'Aplikasi Inventaris & Manajemen Stok',
+    desc: 'Sistem kendali inventori cerdas dengan deteksi kadaluarsa obat/produk berbasis tanggal edar (FEFO/FIFO), pelacakan mutasi stok gudang, batas peringatan stok menipis otomatis, multi-satuan bertingkat, serta laporan laba rugi harian yang rapi dan instan.',
     icon: (
       <svg className="w-6 h-6 text-neutral-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
         <path strokeLinecap="round" strokeLinejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
@@ -26,8 +26,8 @@ const services = [
     ),
   },
   {
-    title: 'Aplikasi Android Kustom',
-    desc: 'Pengembangan aplikasi Android dari awal (scratch) sesuai kebutuhan operasional spesifik perusahaan, organisasi, atau personal branding Anda.',
+    title: 'Aplikasi Android & Software Kustom',
+    desc: 'Pembuatan aplikasi khusus yang disesuaikan dengan alur kerja bisnis Anda. Mulai dari otomasi CRM prospek, aplikasi web atau desktop, hingga alat bantu operasional toko yang cepat dan praktis.',
     icon: (
       <svg className="w-6 h-6 text-neutral-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
@@ -35,8 +35,8 @@ const services = [
     ),
   },
   {
-    title: 'Bantuan Publikasi Google Play',
-    desc: 'Pendampingan dan penyiapan berkas rilis (Target SDK 36, App Bundle AAB, aset grafis, dan Kebijakan Privasi) hingga aplikasi resmi tayang di Google Play Store.',
+    title: 'Bantuan Publikasi & Standar Google Play',
+    desc: 'Pendampingan teknis menyeluruh dari tahap audit pra-rilis, kepatuhan kebijakan Google Play Console termutakhir (Target SDK 36, Android 15/16), penandatanganan Keystore kriptografis .jks resmi, penyusunan Kebijakan Privasi standar Play Store, hingga rilis siap unduh.',
     icon: (
       <svg className="w-6 h-6 text-neutral-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -46,10 +46,26 @@ const services = [
 ]
 
 const steps = [
-  { step: '01', title: 'Konsultasi Kebutuhan', desc: 'Diskusikan fitur, alur kerja, dan target operasional aplikasi Anda secara langsung via WhatsApp.' },
-  { step: '02', title: 'Perancangan & UI/UX', desc: 'Penyusunan struktur database, alur transaksi, dan desain antarmuka pengguna yang ergonomis.' },
-  { step: '03', title: 'Pengembangan & Uji Coba', desc: 'Pengkodean aplikasi menggunakan standar Kotlin modern serta pengujian kestabilan di berbagai tipe perangkat.' },
-  { step: '04', title: 'Serah Terima & Rilis', desc: 'Pemasangan aplikasi di perangkat Anda atau publikasi resmi ke Google Play Store siap pakai.' },
+  {
+    step: '01',
+    title: 'Konsultasi & Audit Kebutuhan',
+    desc: 'Sesi pemetaan alur kerja operasional usaha Anda, analisis kebutuhan modul kasir/inventori, perancangan sistem kerja tanpa internet, serta estimasi jadwal pengerjaan yang terukur dan transparan.'
+  },
+  {
+    step: '02',
+    title: 'Perancangan Skema & UI/UX',
+    desc: 'Penyusunan struktur database lokal yang rapi, pemodelan data toko, serta perancangan tampilan antarmuka (UI/UX) yang bersih, cepat, dan mudah dipahami staf kasir.'
+  },
+  {
+    step: '03',
+    title: 'Pengembangan Native & Uji Coba',
+    desc: 'Pengkodean aplikasi menggunakan standar Kotlin modern, integrasi protokol printer Bluetooth Thermal, proteksi integritas transaksi kasir, serta uji kestabilan ketat pada berbagai spesifikasi perangkat Android fisik nyata.'
+  },
+  {
+    step: '04',
+    title: 'Penerbitan Lisensi & Serah Terima',
+    desc: 'Kompilasi berkas rilis final siap pasang (APK/AAB Play Store), penerbitan lisensi hardware terenkripsi, penyerahan panduan operasional langkah-demi-langkah, dan jaminan pendampingan purna jual resmi FokusKonten.'
+  },
 ]
 
 export default function ServicesPage() {
@@ -81,12 +97,16 @@ export default function ServicesPage() {
           {/* 4-Column Services Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full mb-20">
             {services.map((item, i) => (
-              <div key={i} className="bg-white rounded-3xl border border-neutral-200/80 p-7 shadow-card hover:shadow-xl hover:border-neutral-400 hover:-translate-y-1 transition-all flex flex-col justify-between">
+              <div key={i} className="bg-white rounded-3xl border border-neutral-200/80 p-6 sm:p-7 shadow-card hover:shadow-xl hover:border-neutral-400 hover:-translate-y-1 transition-all flex flex-col justify-between">
                 <div>
-                  <div className="w-12 h-12 rounded-2xl bg-neutral-100 flex items-center justify-center mb-5">
-                    {item.icon}
+                  <div className="flex items-center gap-3.5 mb-4">
+                    <div className="w-11 h-11 rounded-2xl bg-neutral-100 flex items-center justify-center shrink-0">
+                      {item.icon}
+                    </div>
+                    <h3 className="font-display font-semibold text-base sm:text-lg text-neutral-900 leading-snug">
+                      {item.title}
+                    </h3>
                   </div>
-                  <h3 className="font-display font-semibold text-lg text-neutral-900 mb-2">{item.title}</h3>
                   <p className="text-neutral-600 text-sm leading-relaxed">{item.desc}</p>
                 </div>
               </div>
@@ -102,10 +122,18 @@ export default function ServicesPage() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
               {steps.map((s) => (
-                <div key={s.step} className="bg-white rounded-3xl border border-neutral-200/80 p-7 shadow-sm hover:shadow-md transition-shadow">
-                  <span className="font-display font-bold text-3xl text-neutral-950 block mb-3">{s.step}</span>
-                  <h4 className="font-display font-semibold text-base text-neutral-900 mb-2">{s.title}</h4>
-                  <p className="text-neutral-500 text-xs sm:text-sm leading-relaxed">{s.desc}</p>
+                <div key={s.step} className="bg-white rounded-3xl border border-neutral-200/80 p-6 sm:p-7 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                  <div>
+                    <div className="flex items-center gap-3.5 mb-3.5">
+                      <span className="w-11 h-11 rounded-2xl bg-neutral-100 border border-neutral-200/80 flex items-center justify-center font-display font-black text-base sm:text-lg text-neutral-950 shrink-0 font-mono tracking-tight shadow-xs">
+                        {s.step}
+                      </span>
+                      <h4 className="font-display font-bold text-base sm:text-lg text-neutral-900 leading-snug">
+                        {s.title}
+                      </h4>
+                    </div>
+                    <p className="text-neutral-600 text-xs sm:text-sm leading-relaxed">{s.desc}</p>
+                  </div>
                 </div>
               ))}
             </div>
@@ -119,7 +147,7 @@ export default function ServicesPage() {
             <h3 className="heading-xl text-2xl sm:text-4xl mb-3 text-balance">
               Siap Mengembangkan Solusi Software untuk Usaha Anda?
             </h3>
-            <p className="text-neutral-400 text-sm sm:text-base mb-8 max-w-xl mx-auto leading-relaxed">
+            <p className="text-white text-sm sm:text-base mb-8 max-w-xl mx-auto leading-relaxed font-normal">
               Diskusikan alur transaksi, kebutuhan fitur, dan estimasi waktu pengerjaan langsung via WhatsApp bersama software engineer FokusKonten.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">

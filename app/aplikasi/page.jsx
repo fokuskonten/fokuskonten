@@ -29,8 +29,8 @@ export default function AppsPage() {
           <Breadcrumb items={[{ label: 'Aplikasi' }]} />
           <SectionHeading
             label="Katalog Resmi"
-            title="Produk &amp; Aplikasi Resmi FokusKonten"
-            description="Jelajahi lini produk software kasir POS, sistem manajemen prospek, dan aplikasi mobile resmi siap pakai karya FokusKonten."
+            title="Katalog Aplikasi Resmi FokusKonten"
+            description="Jelajahi lini software kasir POS, sistem manajemen prospek, dan aplikasi mobile resmi siap pakai karya FokusKonten."
           />
         </div>
       </section>

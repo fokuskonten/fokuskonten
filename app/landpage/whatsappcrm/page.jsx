@@ -319,9 +319,9 @@ export default function WhatsAppCrmDedicatedSalesPage() {
   return (
     <div className="bg-white min-h-screen text-neutral-900 font-sans antialiased">
 
-      {/* ── BREADCRUMB & STATUS NAVIGASI RESMI ─────────────────────────── */}
+      {/* ── BREADCRUMB NAVIGASI ─────────────────────────── */}
       <div className="pt-24 sm:pt-28 pb-4 bg-neutral-50/70 border-b border-neutral-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs font-mono">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center text-xs font-mono">
           <div className="flex items-center gap-2 text-neutral-500">
             <Link href="/" className="hover:text-black transition-colors">Beranda</Link>
             <span>/</span>
@@ -336,30 +336,12 @@ export default function WhatsAppCrmDedicatedSalesPage() {
               <span>WhatsApp Lead CRM Pro</span>
             </span>
           </div>
-          <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            <span className="text-neutral-600 font-mono text-[11px] sm:text-xs">
-              Lisensi Offline Permanen FKACT1 • Windows 10/11 x64
-            </span>
-          </div>
         </div>
       </div>
 
       {/* ── HERO SALES SECTION (WIDESCREEN MAX-W-7XL) ─────────────────── */}
       <section className="pt-12 sm:pt-16 pb-16 bg-white border-b border-neutral-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-
-          {/* Lencana Identitas Software Desktop */}
-          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-neutral-100 text-neutral-900 text-xs font-mono font-semibold mb-6 border border-neutral-200 shadow-xs">
-            <img
-              src="/app-icons/whatsappcrm.png"
-              alt="Logo Resmi CRM"
-              className="w-5 h-5 object-contain"
-            />
-            <span>Software Desktop Windows (.EXE)</span>
-            <span className="text-neutral-300">•</span>
-            <span>Beli Sekali Pakai Selamanya</span>
-          </div>
 
           {/* Judul Utama Persuasif Berwibawa */}
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-neutral-950 tracking-tight leading-tight sm:leading-none mb-6 text-balance max-w-5xl mx-auto">
@@ -485,12 +467,14 @@ export default function WhatsAppCrmDedicatedSalesPage() {
                 className="p-7 rounded-3xl bg-white border border-neutral-200/90 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between hover:border-neutral-400 transition-colors"
               >
                 <div>
-                  <div className="w-9 h-9 rounded-xl bg-neutral-950 text-white flex items-center justify-center font-mono font-bold text-xs mb-5">
-                    {item.num}
+                  <div className="flex items-center gap-3.5 mb-3.5">
+                    <div className="w-9 h-9 rounded-xl bg-neutral-950 text-white flex items-center justify-center font-mono font-bold text-xs shrink-0 shadow-sm">
+                      {item.num}
+                    </div>
+                    <h3 className="font-bold text-base text-neutral-950 leading-snug">
+                      {item.title}
+                    </h3>
                   </div>
-                  <h3 className="font-bold text-base text-neutral-950 mb-2 leading-snug">
-                    {item.title}
-                  </h3>
                   <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
                     {item.desc}
                   </p>
@@ -563,7 +547,7 @@ export default function WhatsAppCrmDedicatedSalesPage() {
                     {/* Alur Kerja & Modul Terkait (Workflow Tags) */}
                     <div className="mb-6">
                       <span className="text-[11px] font-mono uppercase tracking-wider text-neutral-400 font-bold block mb-2">
-                        Alur Kerja &amp; Kapabilitas Harian:
+                        Fitur Utama &amp; Pemakaian Harian:
                       </span>
                       <div className="flex flex-wrap gap-1.5">
                         {aud.tags.map((tag, tIdx) => (

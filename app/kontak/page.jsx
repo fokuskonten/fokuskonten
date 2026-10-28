@@ -43,7 +43,7 @@ export default function ContactPage() {
                 <h2 className="heading-xl text-2xl sm:text-3xl text-white mb-3 text-balance">
                   Konsultasi Langsung via WhatsApp
                 </h2>
-                <p className="text-neutral-300 text-sm sm:text-base leading-relaxed mb-8 max-w-lg">
+                <p className="text-white text-sm sm:text-base leading-relaxed mb-8 max-w-lg">
                   Mulai percakapan langsung bersama pengembang FokusKonten. Diskusikan alur transaksi kasir, stok obat, atau kebutuhan software khusus untuk usaha Anda secara transparan.
                 </p>
               </div>
@@ -128,7 +128,7 @@ export default function ContactPage() {
 
               {/* TikTok Card */}
               <a
-                href="https://tiktok.com/@fokukonten"
+                href="https://tiktok.com/@fokuskonten.my.id"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white rounded-2xl border border-neutral-200/80 shadow-sm hover:shadow-md hover:border-neutral-400 p-4.5 sm:p-5 transition-all group flex items-center justify-between gap-4"
@@ -141,7 +141,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-display font-semibold text-sm text-neutral-900 mb-0.5">TikTok</h3>
-                    <p className="text-neutral-500 text-xs">@fokukonten</p>
+                    <p className="text-neutral-500 text-xs">@fokuskonten.my.id</p>
                   </div>
                 </div>
                 <span className="text-xs font-semibold text-neutral-900 underline shrink-0">Ikuti Akun &rarr;</span>

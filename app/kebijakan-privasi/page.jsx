@@ -83,7 +83,7 @@ const sections = [
     title: '6. Hak Pengguna & Retensi Data (Data Retention & Deletion)',
     content: [
       'Sesuai dengan ketentuan Google Play mengenai Penghapusan Akun & Data (Account & Data Deletion Policy):',
-      'Karena aplikasi kami berarsitektur offline-first di mana database tersimpan di perangkat lokal pengguna, Anda memegang kendali penuh atas data Anda. Anda dapat menghapus data transaksi kapan saja melalui fitur "Reset Data" di dalam menu Pengaturan aplikasi, atau dengan menghapus data aplikasi / mencopot (uninstall) aplikasi dari perangkat Anda.',
+      'Karena aplikasi kami beroperasi penuh secara offline di mana database tersimpan di perangkat lokal pengguna, Anda memegang kendali penuh atas data Anda. Anda dapat menghapus data transaksi kapan saja melalui fitur "Reset Data" di dalam menu Pengaturan aplikasi, atau dengan menghapus data aplikasi / mencopot (uninstall) aplikasi dari perangkat Anda.',
       'Jika Anda pernah meminta sinkronisasi ke server kami dan ingin data Anda dihapus permanen dari sistem cadangan kami, silakan ajukan permohonan penghapusan data via email ke admin@fokuskonten.my.id.',
     ],
   },
@@ -272,9 +272,12 @@ export default function PrivacyPolicyPage() {
                 </a>
                 <a
                   href="mailto:admin@fokuskonten.my.id"
-                  className="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-display font-semibold text-xs bg-white text-neutral-950 hover:bg-neutral-100 transition-all shadow-sm font-mono"
+                  className="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-display font-semibold text-xs bg-white text-neutral-950 hover:bg-neutral-100 transition-all shadow-sm"
                 >
-                  admin@fokuskonten.my.id
+                  <svg className="w-4 h-4 text-neutral-950" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  Email Resmi
                 </a>
               </div>
             </div>

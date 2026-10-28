@@ -105,11 +105,6 @@ export default function ProductCard({ product, compact = false, priority = false
           </div>
         )}
         <div className="absolute top-2 right-2 z-10 flex items-center gap-1">
-          {product.badge && product.badge !== 'Unggulan' ? (
-            <span className="px-1.5 py-0.5 rounded bg-neutral-950 text-white text-[9px] font-bold tracking-wide border border-neutral-800 shadow-sm">
-              {product.badge}
-            </span>
-          ) : null}
           <span className="font-mono text-neutral-800 bg-white/95 backdrop-blur-sm border border-neutral-200/90 px-1.5 py-0.5 rounded font-black text-[9px] shadow-xs tracking-wide">
             {formatLabel}
           </span>
@@ -239,11 +234,6 @@ export default function ProductCard({ product, compact = false, priority = false
         </div>
       )}
       <div className="absolute top-3 right-3 z-10 flex items-center gap-1.5">
-        {product.badge && product.badge !== 'Unggulan' ? (
-          <span className="px-2.5 py-0.5 rounded-lg bg-neutral-950 text-white text-[10px] font-bold tracking-wide border border-neutral-800 shadow-md">
-            {product.badge}
-          </span>
-        ) : null}
         <span className="font-mono text-neutral-900 bg-white/95 backdrop-blur-sm border border-neutral-200/90 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-lg sm:rounded-xl font-black text-[9px] sm:text-[11px] shadow-sm tracking-wide">
           {formatLabel}
         </span>
@@ -305,17 +295,14 @@ export default function ProductCard({ product, compact = false, priority = false
       <div className="p-3 sm:p-4 pt-0">
         <div className="pt-2 sm:pt-2.5 border-t border-neutral-100 flex items-center justify-between gap-1 sm:gap-2">
           <div>
-            {/* Price Strikethrough + Discount */}
-            <div className="flex items-center gap-1 sm:gap-1.5 leading-none mb-0.5 sm:mb-1">
-              <span className="text-[10px] sm:text-xs text-neutral-400 line-through">
-                {formatRupiah(origPrice)}
-              </span>
-              {discountPercent && (
-                <span className="px-1 py-0.2 sm:px-1.5 sm:py-0.5 rounded bg-neutral-900 text-white text-[9px] sm:text-[10px] font-extrabold">
-                  -{discountPercent}%
+            {/* Price Strikethrough */}
+            {origPrice > product.price && (
+              <div className="leading-none mb-0.5 sm:mb-1">
+                <span className="text-[10px] sm:text-xs text-neutral-400 line-through">
+                  {formatRupiah(origPrice)}
                 </span>
-              )}
-            </div>
+              </div>
+            )}
             {/* Final Price */}
             <div className="text-xs sm:text-base font-black text-neutral-950 leading-tight font-display">
               {formatRupiah(product.price)}
