@@ -15,7 +15,7 @@ const featuredProducts = [
     badge: 'Apotek POS',
     description: 'Sistem kasir dan manajemen apotek modern. Pencatatan stok obat, deteksi batch kadaluarsa, resep dokter, dan cetak struk printer Bluetooth thermal offline-first.',
     icon: '/app-icons/apotekpro.png',
-    href: '/landpage/apotekpro',
+    href: '/landpage/apotekpro/',
     actionText: 'Lihat Landing Page',
     type: 'app',
   },
@@ -26,31 +26,9 @@ const featuredProducts = [
     badge: 'Retail POS',
     description: 'Aplikasi kasir praktis toko kelontong & sembako. Scan barcode cepat, pencatatan hutang pelanggan, dan rekap omzet harian instan.',
     icon: '/app-icons/tokokelontongpro.png',
-    href: '/landpage/tokokelontongpro',
+    href: '/landpage/tokokelontongpro/',
     actionText: 'Lihat Landing Page',
     type: 'app',
-  },
-  {
-    id: 'whatsappcrm',
-    name: 'WhatsApp Lead CRM',
-    category: 'Windows EXE',
-    badge: 'Desktop CRM',
-    description: 'Software desktop Windows (.EXE) untuk manajemen prospek WhatsApp, pipeline penjualan, dan tindak lanjut pesan otomatis.',
-    icon: '/app-icons/whatsappcrm.png',
-    href: '/landpage/whatsappcrm',
-    actionText: 'Lihat Landing Page',
-    type: 'desktop',
-  },
-  {
-    id: 'reimage',
-    name: 'FokusKonten ReImage',
-    category: 'Windows Desktop',
-    badge: 'Image Optimizer',
-    description: 'Software desktop kompresi gambar berbasis Rust libcaesium. Konversi instan WebP, AVIF, JPEG, dan PNG tanpa penurunan mutu visual.',
-    icon: '/app-icons/reimage.png',
-    href: '/landpage/reimage',
-    actionText: 'Lihat Landing Page',
-    type: 'desktop',
   },
   {
     id: 'bacaquran',
@@ -59,7 +37,7 @@ const featuredProducts = [
     badge: "Al-Qur'an Digital",
     description: "Aplikasi baca Al-Qur'an digital dengan tampilan nyaman di mata, terjemahan lengkap, tanda tajwid, dan mode offline.",
     icon: '/app-icons/bacaquran.png',
-    href: '/landpage/bacaquran',
+    href: '/landpage/bacaquran/',
     actionText: 'Lihat Landing Page',
     type: 'app',
   },
@@ -70,9 +48,20 @@ const featuredProducts = [
     badge: 'Game Logika',
     description: 'Game puzzle angka klasik 2048 yang ringan, responsif, melatih konsentrasi, dan asyik dimainkan kapan saja.',
     icon: '/app-icons/gamepuzzle.png',
-    href: '/landpage/2048puzzle',
+    href: '/landpage/2048puzzle/',
     actionText: 'Lihat Landing Page',
     type: 'app',
+  },
+  {
+    id: 'whatsappcrm',
+    name: 'WhatsApp Lead CRM',
+    category: 'Windows EXE',
+    badge: 'Desktop CRM',
+    description: 'Software desktop Windows (.EXE) untuk manajemen prospek WhatsApp, pipeline penjualan, dan tindak lanjut pesan otomatis.',
+    icon: '/app-icons/whatsappcrm.png',
+    href: '/landpage/whatsappcrm/',
+    actionText: 'Lihat Landing Page',
+    type: 'desktop',
   },
 ]
 
@@ -121,7 +110,18 @@ const inDevelopmentProjects = [
     badge: 'Sedang Berjalan',
     description: 'Perangkat lunak utilitas teknisi smartphone multi-chipset (Qualcomm EDL 9008, MediaTek Brom, Samsung Odin) untuk penanganan perangkat keras dan firmware.',
     icon: '/app-icons/jumptools.png',
-    href: '/landpage/jumptools',
+    href: '/landpage/jumptools/',
+    actionText: 'Lihat Landing Page',
+    type: 'desktop',
+  },
+  {
+    id: 'reimage',
+    name: 'ReImage',
+    category: 'Windows Desktop',
+    badge: 'Sedang Berjalan',
+    description: 'Software desktop kompresi gambar berbasis Rust libcaesium. Konversi instan WebP, AVIF, JPEG, dan PNG tanpa penurunan mutu visual.',
+    icon: '/app-icons/reimage.png',
+    href: '/landpage/reimage/',
     actionText: 'Lihat Landing Page',
     type: 'desktop',
   },
@@ -132,7 +132,7 @@ const inDevelopmentProjects = [
     badge: 'Sedang Berjalan',
     description: 'Perangkat lunak orkestrasi video vertikal 9:16 berbasis akselerasi hardware GPU NVIDIA NVENC dan transkripsi suara otomatis kata per kata.',
     icon: '/app-icons/smartvidkon.png',
-    href: '/portfolio/smart-vidkon-automation',
+    href: '/portfolio/smart-vidkon-automation/',
     actionText: 'Lihat Detail Proyek',
     type: 'desktop',
   },
@@ -143,7 +143,7 @@ const inDevelopmentProjects = [
     badge: 'Sedang Berjalan',
     description: 'Perangkat lunak orkestrasi timeline kinetik tipografi 60 FPS menggunakan engine React Remotion dengan visual router terintegrasi.',
     icon: '/app-icons/smartmotion.png',
-    href: '/portfolio/smart-motion-automation',
+    href: '/portfolio/smart-motion-automation/',
     actionText: 'Lihat Detail Proyek',
     type: 'desktop',
   },
@@ -199,10 +199,6 @@ export default function HomePage() {
 
         <div className="container-page relative z-10 w-full">
           <div className="max-w-4xl lg:max-w-5xl 2xl:max-w-6xl mx-auto text-center">
-            <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-neutral-950 text-white text-xs font-display font-medium mb-6 sm:mb-8 shadow-sm">
-              <span>Pengembang &amp; Publisher Software Resmi</span>
-            </div>
-
             <h1 className="heading-xl text-3xl sm:text-5xl lg:text-6xl text-neutral-900 mb-6 sm:mb-8 text-balance tracking-tight">
               Solusi Software &amp; Aplikasi Andal untuk{' '}
               <span className="text-gradient-brand">Bisnis dan Produktivitas</span>
@@ -217,20 +213,14 @@ export default function HomePage() {
                 href="/aplikasi"
                 className="inline-flex items-center gap-2 px-7 py-4 rounded-xl font-display font-semibold text-sm text-white bg-black hover:bg-neutral-800 shadow-md shadow-black/20 transition-all duration-200"
               >
-                Jelajahi Produk Kami
+                Jelajah Produk
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
               </Link>
               <Link
-                href="/toko-digital"
-                className="inline-flex items-center gap-2 px-7 py-4 rounded-xl font-display font-semibold text-sm text-neutral-800 bg-white border border-neutral-300 hover:border-black hover:text-black hover:shadow-sm transition-all duration-200"
-              >
-                Toko Aset Digital
-              </Link>
-              <Link
                 href="/layanan"
-                className="inline-flex items-center gap-2 px-6 py-4 rounded-xl font-display font-semibold text-sm text-neutral-700 bg-neutral-100 hover:bg-neutral-200 transition-colors"
+                className="inline-flex items-center gap-2 px-7 py-4 rounded-xl font-display font-semibold text-sm text-neutral-800 bg-white border border-neutral-300 hover:border-black hover:text-black hover:shadow-sm transition-all duration-200"
               >
                 Layanan Kustom
               </Link>
@@ -264,7 +254,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
             {featuredProducts.map((item) => (
               <div
                 key={item.id}
@@ -272,11 +262,13 @@ export default function HomePage() {
               >
                 <div>
                   <div className="flex items-start justify-between gap-3 mb-5">
-                    <img
-                      src={item.icon}
-                      alt={item.name}
-                      className="w-14 h-14 rounded-2xl object-contain bg-neutral-50 p-1 border border-neutral-100 shadow-sm group-hover:scale-105 transition-transform"
-                    />
+                    <Link href={item.href} className="shrink-0 block">
+                      <img
+                        src={item.icon}
+                        alt={item.name}
+                        className="w-14 h-14 rounded-2xl object-contain bg-neutral-50 p-1 border border-neutral-100 shadow-sm group-hover:scale-105 transition-transform"
+                      />
+                    </Link>
                     <div className="flex flex-col items-end gap-1">
                       <span className="px-2.5 py-1 rounded-full text-[11px] font-mono font-semibold bg-neutral-950 text-white">
                         {item.badge}
@@ -287,7 +279,11 @@ export default function HomePage() {
                     </div>
                   </div>
 
-                  <h3 className="heading-lg text-xl text-neutral-900 mb-2">{item.name}</h3>
+                  <Link href={item.href} className="block group/title">
+                    <h3 className="heading-lg text-xl text-neutral-900 group-hover/title:text-black group-hover/title:underline transition-colors mb-2">
+                      {item.name}
+                    </h3>
+                  </Link>
                   <p className="text-neutral-600 text-xs sm:text-sm leading-relaxed mb-6 font-sans">
                     {item.description}
                   </p>
@@ -418,7 +414,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {inDevelopmentProjects.map((item) => (
               <div
                 key={item.id}
