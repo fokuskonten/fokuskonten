@@ -429,16 +429,24 @@ export const portfolioData = {
     specs: {
       platform: 'Windows 10 / Windows 11 (64-bit)',
       format: 'Aplikasi Desktop (.EXE)',
-      arsitektur: 'Local Database Engine',
+      arsitektur: 'Local Database Engine (Native Edge WebView2)',
       bahasa: 'Bahasa Indonesia',
       tipe: 'Software Desktop Bisnis',
     },
     headerImage: '/screenshots/whatsappcrm/header.png',
     bannerOverlay: true,
     landingUrl: '/landpage/whatsappcrm',
+    exeDownload: {
+      url: 'https://github.com/fokuskonten/fokuskonten/releases/download/apps-v1.0/Setup_WhatsApp_Lead_CRM_Pro.exe',
+      version: 'v1.0.0',
+      size: '60.9 MB',
+      filename: 'Setup_WhatsApp_Lead_CRM_Pro.exe',
+      platform: 'Windows 10 / 11 (64-bit)',
+    },
     cta: {
-      primary: { label: 'Konsultasi & Pemesanan Lisensi', href: 'https://wa.me/6285183011318?text=Halo%20FokusKonten,%20saya%20ingin%20info%20WhatsApp%20Lead%20CRM', type: 'whatsapp' },
-      secondary: { label: 'Lihat Layanan Kami', href: '/layanan', type: 'internal' },
+      primary: { label: 'Unduh Installer Windows (.EXE)', href: 'https://github.com/fokuskonten/fokuskonten/releases/download/apps-v1.0/Setup_WhatsApp_Lead_CRM_Pro.exe', type: 'download' },
+      secondary: { label: 'Buka Halaman Presentasi', href: '/landpage/whatsappcrm', type: 'internal' },
+      tertiary: { label: 'Pesan Kunci Lisensi via WhatsApp', href: 'https://wa.me/6285183011318?text=Halo%20FokusKonten,%20saya%20mau%20pesan%20Kunci%20Lisensi%20Resmi%20WhatsApp%20Lead%20CRM%20Pro', type: 'whatsapp' },
     },
   },
   jumptools: {
