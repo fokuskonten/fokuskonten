@@ -184,12 +184,23 @@ export default function KalilaChatWidget() {
       const baseUrl = getApiBaseUrl()
       const aiUrl = baseUrl.endsWith('/api/v1') ? `${baseUrl}/ai/kalila` : `${baseUrl}/api/v1/ai/kalila`
       
+      // Kirim riwayat percakapan multi-turn terakhir untuk menjaga keutuhan konteks tanya-jawab
+      const recentHistory = messages
+        .filter(m => (m.role === 'user' || m.role === 'assistant') && m.content)
+        .slice(-6)
+        .map(m => ({ role: m.role, content: m.content }))
+
+      const chatPayload = JSON.stringify({
+        message: userText,
+        history: recentHistory
+      })
+
       let res = null
       try {
         res = await fetch(aiUrl, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ message: userText })
+          body: chatPayload
         })
       } catch (fetchErr) {
         console.warn('[KalilaWidget] Primary AI URL gagal, mencoba failover:', fetchErr.message)
@@ -206,7 +217,7 @@ export default function KalilaChatWidget() {
             res = await fetch(fallbackUrl, {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ message: userText })
+              body: chatPayload
             })
           } catch (fbErr) {
             console.warn('[KalilaWidget] Failover URL juga gagal:', fbErr.message)
