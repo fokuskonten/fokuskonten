@@ -27,7 +27,7 @@ export default function WhatsAppCrmVideoShowcase() {
             Demo &amp; Presentasi Resmi
           </span>
           <h2 className="heading-xl text-2xl sm:text-4xl text-neutral-950 mb-3 tracking-tight">
-            Tonton Langsung Cara Kerja WhatsApp Lead CRM Pro
+            Tonton Langsung Cara Kerja WhatsApp Lead CRM Aplikasi
           </h2>
           <p className="text-neutral-600 text-sm sm:text-base leading-relaxed font-sans max-w-2xl mx-auto">
             Saksikan rekaman nyata operasional software di komputer Windows: penarikan ribuan kontak Google Maps per kota, broadcast promo massal berproteksi jeda acak aman, pengelolaan pipeline prospek di papan Kanban, hingga robot AI lokal yang melayani pembeli 24 jam nonstop.
@@ -39,17 +39,21 @@ export default function WhatsAppCrmVideoShowcase() {
           {/* Mockup Laptop Display Bingkai Halus Widescreen 16:9 */}
           <div className="relative w-full aspect-[16/9] rounded-2xl sm:rounded-3xl border-[3px] border-neutral-800 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.3)] bg-neutral-950 overflow-hidden group">
             
-            {/* Title Bar Desktop Minimalis */}
+            {/* Title Bar Desktop Minimalis Windows */}
             <div className="absolute top-0 left-0 right-0 h-8 sm:h-9 bg-neutral-900/95 border-b border-neutral-800 flex items-center justify-between px-3.5 z-30 pointer-events-none">
-              <div className="flex items-center gap-1.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-neutral-700" />
-                <span className="w-2.5 h-2.5 rounded-full bg-neutral-700" />
-                <span className="w-2.5 h-2.5 rounded-full bg-neutral-700" />
+              <div className="flex items-center gap-2">
+                <img
+                  src="/app-icons/whatsappcrm.png"
+                  alt="Icon"
+                  className="w-4 h-4 object-contain"
+                />
+                <span className="text-xs sm:text-sm font-sans text-white font-bold tracking-wide">
+                  WhatsApp Lead CRM Aplikasi
+                </span>
               </div>
-              <span className="text-[11px] font-mono text-neutral-400 font-semibold tracking-wide">
-                WhatsApp Lead CRM Pro v1.0 • Desktop Walkthrough
-              </span>
-              <span className="w-8" />
+              <div className="flex items-center gap-2 text-neutral-400 text-xs font-mono">
+                <span className="hidden sm:inline">Windows Desktop</span>
+              </div>
             </div>
 
             {/* Video Element */}

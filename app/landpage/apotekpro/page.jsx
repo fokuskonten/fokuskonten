@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import AppScreenshotGallery from '@/components/AppScreenshotGallery'
 import DualReelVideoShowcase from '@/components/DualReelVideoShowcase'
+import PersonaPresentationSlider from '@/components/PersonaPresentationSlider'
 
 export const metadata = {
   description: 'Software kasir apotek dan manajemen stok obat Android resmi karya FokusKonten. Lacak batch kedaluwarsa FEFO otomatis, hitung resep racikan puyer dokter, buku defecta digital, dan cetak struk bluetooth 100% offline tanpa iuran bulanan.',
@@ -86,6 +87,53 @@ export default function ApotekProDedicatedSalesPage() {
       title: 'Analisis Performa & Obat Terlaris',
       desc: 'Lihat tren obat paling laris untuk perencanaan belanja stok berikutnya.',
       img: '/screenshots/apotekpro/raw/08_Analisis_Bisnis_dan_AI.png',
+    },
+  ]
+
+  // 2 Set Presentasi Interaktif Resmi (Masing-masing 4 Slide Talenta Resmi FokusKonten)
+  const presentationSlidesGroup1 = [
+    {
+      src: '/screenshots/apotekpro/presentation/persona1_1.webp',
+      alt: 'Apotek Pro Mobile - Kelola Apotek & Omset dari Genggaman',
+      caption: 'Kelola Apotek & Omset dari Genggaman',
+    },
+    {
+      src: '/screenshots/apotekpro/presentation/persona1_2.webp',
+      alt: 'Kasir POS Penjualan Cepat - Scan QR Member & Bayar QRIS Instan',
+      caption: 'Kasir POS Resep & Bayar QRIS Instan',
+    },
+    {
+      src: '/screenshots/apotekpro/presentation/persona1_3.webp',
+      alt: 'Kalkulator Dosis & Racikan - Hitung Dosis Pasien & Takaran Puyer Otomatis',
+      caption: 'Kalkulator Dosis & Racikan Puyer',
+    },
+    {
+      src: '/screenshots/apotekpro/presentation/persona1_4.webp',
+      alt: 'Riwayat & Bukti Transaksi - Cetak Nota & Ekspor Laporan Penjualan Otomatis',
+      caption: 'Riwayat & Bukti Transaksi Farmasi',
+    },
+  ]
+
+  const presentationSlidesGroup2 = [
+    {
+      src: '/screenshots/apotekpro/presentation/persona2_1.webp',
+      alt: 'Manajemen Stok Obat CDOB - Pantau Stok Kadaluarsa & Nilai Inventaris Realtime',
+      caption: 'Manajemen Stok CDOB & Alarm Expired',
+    },
+    {
+      src: '/screenshots/apotekpro/presentation/persona2_2.webp',
+      alt: 'Pembelian & Pengadaan Obat - Kelola Purchase Order, Defecta & Stok Gudang',
+      caption: 'Buku Defecta Digital & Pengadaan PBF',
+    },
+    {
+      src: '/screenshots/apotekpro/presentation/persona2_3.webp',
+      alt: 'Laporan Keuangan & PPN - Buku Kas, Arus Kas & Laba Rugi Otomatis',
+      caption: 'Laporan Keuangan & Pajak PPN Farmasi',
+    },
+    {
+      src: '/screenshots/apotekpro/presentation/persona2_4.webp',
+      alt: 'Pusat Analisis Bisnis & AI - Prediksi Tren Penjualan & Produk Terlaris',
+      caption: 'Pusat Analisis Bisnis & Prediksi Tren AI',
     },
   ]
 
@@ -410,13 +458,25 @@ export default function ApotekProDedicatedSalesPage() {
             </a>
           </div>
 
-          {/* BANNER FEATURE GRAPHIC RESMI */}
-          <div className="rounded-3xl overflow-hidden border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] max-w-6xl mx-auto mb-12 bg-white">
-            <img
-              src="/screenshots/apotekpro/Apotek_Pro_Feature_Graphic_1024x500.png"
-              alt="Apotek Pro Feature Graphic Banner Resmi"
-              className="w-full h-auto object-cover"
-            />
+          {/* ── SHOWCASE UTAMA: 2 SET PRESENTASI SLIDE RESMI (MASING-MASING 4 SLIDE) ── */}
+          <div className="max-w-6xl mx-auto mb-14 text-left">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+              <div className="flex flex-col">
+                <PersonaPresentationSlider
+                  slides={presentationSlidesGroup1}
+                  personaName="Apoteker & Front Office"
+                  themeColor="emerald"
+                />
+              </div>
+
+              <div className="flex flex-col">
+                <PersonaPresentationSlider
+                  slides={presentationSlidesGroup2}
+                  personaName="Pemilik Apotek & Manajer PBF"
+                  themeColor="sky"
+                />
+              </div>
+            </div>
           </div>
 
           {/* 4 STATS GRID DENGAN IKON 3D EMERALD MENONJOL */}

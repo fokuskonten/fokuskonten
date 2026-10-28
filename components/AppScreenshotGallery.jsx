@@ -18,6 +18,10 @@ export default function AppScreenshotGallery({
   const [startX, setStartX] = useState(0)
   const [scrollLeftState, setScrollLeftState] = useState(0)
 
+  const isDraggingRef = useRef(false)
+  const hasDraggedRef = useRef(false)
+  const dragDistRef = useRef(0)
+
   // Cek batas scroll kiri dan kanan
   const updateScrollState = () => {
     const el = scrollRef.current
@@ -88,27 +92,43 @@ export default function AppScreenshotGallery({
     return () => window.removeEventListener('keydown', handleKeyDown)
   }, [lightboxIndex, items.length])
 
-  // Mouse Drag to Scroll (Desktop Friendly)
+  // Mouse Drag to Scroll (Desktop & Trackpad Friendly)
   const handleMouseDown = (e) => {
+    if (e.button !== 0) return
     const el = scrollRef.current
     if (!el) return
+    isDraggingRef.current = true
+    hasDraggedRef.current = false
+    dragDistRef.current = 0
     setIsDragging(true)
     setStartX(e.pageX - el.offsetLeft)
     setScrollLeftState(el.scrollLeft)
   }
 
   const handleMouseMove = (e) => {
-    if (!isDragging) return
-    e.preventDefault()
+    if (!isDraggingRef.current) return
     const el = scrollRef.current
     if (!el) return
+    e.preventDefault()
     const x = e.pageX - el.offsetLeft
+    const dist = Math.abs(x - startX)
+    dragDistRef.current += dist
+    if (dragDistRef.current > 8) {
+      hasDraggedRef.current = true
+    }
     const walk = (x - startX) * 1.5
     el.scrollLeft = scrollLeftState - walk
   }
 
   const handleMouseUpOrLeave = () => {
+    if (!isDraggingRef.current) return
+    isDraggingRef.current = false
     setIsDragging(false)
+  }
+
+  const handleItemClick = (idx) => {
+    if (hasDraggedRef.current) return
+    setLightboxIndex(idx)
   }
 
   if (!items || items.length === 0) return null
@@ -172,66 +192,67 @@ export default function AppScreenshotGallery({
           className={`flex gap-6 sm:gap-8 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-8 pt-2 select-none px-4 sm:px-8 lg:px-12 xl:px-16 ${
             isDragging ? 'cursor-grabbing' : 'cursor-grab'
           }`}
-          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', touchAction: 'pan-y' }}
         >
           {items.map((item, idx) => (
             <div
               key={item.id || idx}
-              onClick={() => !isDragging && setLightboxIndex(idx)}
+              onClick={() => handleItemClick(idx)}
               className={isDesktop ? "w-[360px] sm:w-[480px] lg:w-[540px] shrink-0 snap-start flex flex-col group cursor-pointer" : "w-[280px] sm:w-[320px] shrink-0 snap-start flex flex-col group cursor-pointer"}
             >
               {isDesktop ? (
-                /* Frame Gambar Bershadow Elegan dengan Frame Tipis Hitam */
-                <div className="relative rounded-2xl overflow-hidden border border-neutral-900 bg-neutral-950 shadow-[0_20px_50px_-10px_rgba(0,0,0,0.22)] group-hover:shadow-[0_28px_65px_-10px_rgba(0,0,0,0.35)] group-hover:-translate-y-2 transition-all duration-300 aspect-[16/10]">
-                  <img
-                    src={item.img}
-                    alt={item.title}
-                    draggable="false"
-                    className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.02]"
-                  />
-                  
-                  {/* Overlay Hint Zoom saat Hover */}
-                  <div className="absolute inset-0 bg-neutral-950/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <span className="px-3.5 py-1.5 rounded-full bg-white/95 text-neutral-950 text-xs font-mono font-semibold shadow-lg backdrop-blur-sm flex items-center gap-1.5">
-                      <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
-                      </svg>
-                      <span>Perbesar</span>
-                    </span>
-                  </div>
-                </div>
-              ) : (
-                /* Mockup Frame Handphone Otentik Bershadow */
-                <div className="relative rounded-[2.6rem] p-2 sm:p-2.5 bg-neutral-900 border-[3px] border-neutral-800 shadow-[0_20px_50px_-10px_rgba(0,0,0,0.25)] group-hover:shadow-[0_28px_65px_-10px_rgba(0,0,0,0.38)] group-hover:-translate-y-2 transition-all duration-300">
-                  {/* Punch-hole kamera depan atas */}
-                  <div className="w-2.5 h-2.5 rounded-full bg-neutral-950 border border-neutral-700 mx-auto absolute top-3.5 left-1/2 -translate-x-1/2 z-20 pointer-events-none" />
-
-                  {/* Layar Smartphone Internal */}
-                  <div className="relative rounded-[2.1rem] overflow-hidden bg-white aspect-[9/20]">
+                /* Frame Antarmuka Desktop — List Putih Elegan, Full Screen & Bershadow Tegas */
+                <div 
+                  className="relative rounded-[2rem] sm:rounded-[2.2rem] p-1.5 sm:p-2 bg-white border border-neutral-200/90 shadow-[0_16px_45px_-8px_rgba(0,0,0,0.14)] group-hover:shadow-[0_24px_55px_-10px_rgba(0,0,0,0.24)] group-hover:-translate-y-2 transition-all duration-300 ring-1 ring-neutral-950/5"
+                  style={{ aspectRatio: item.aspectRatio || '1024 / 863' }}
+                >
+                  <div className="relative rounded-[1.4rem] sm:rounded-[1.6rem] overflow-hidden bg-neutral-50 w-full h-full">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={item.img}
                       alt={item.title}
-                      draggable="false"
-                      className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.02]"
+                      draggable={false}
+                      className="w-full h-full object-contain block transition-transform duration-300 group-hover:scale-[1.02] pointer-events-none select-none"
                     />
                     
                     {/* Overlay Hint Zoom saat Hover */}
-                    <div className="absolute inset-0 bg-neutral-950/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                      <span className="px-3.5 py-1.5 rounded-full bg-white/95 text-neutral-950 text-xs font-mono font-semibold shadow-lg backdrop-blur-sm flex items-center gap-1.5">
+                    <div className="absolute inset-0 bg-neutral-950/15 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[1px]">
+                      <span className="px-3.5 py-1.5 rounded-full bg-white/95 text-neutral-950 text-xs font-mono font-semibold shadow-lg backdrop-blur-sm flex items-center gap-1.5 border border-neutral-200">
                         <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
                           <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
                         </svg>
-                        <span>Perbesar</span>
+                        <span>Perbesar Layar Penuh</span>
                       </span>
                     </div>
                   </div>
-
-                  {/* Home Indicator Bar Bawah */}
-                  <div className="w-24 h-1 rounded-full bg-neutral-700/80 mx-auto mt-2 pointer-events-none" />
+                </div>
+              ) : (
+                /* Frame Antarmuka Mobile — List Putih Elegan, Full Screen, Bershadow Tegas & Bebas Punch-Hole Palsu */
+                <div className="relative rounded-[2rem] sm:rounded-[2.2rem] p-1.5 sm:p-2 bg-white border border-neutral-200/90 shadow-[0_16px_45px_-8px_rgba(0,0,0,0.14)] group-hover:shadow-[0_24px_55px_-10px_rgba(0,0,0,0.24)] group-hover:-translate-y-2 transition-all duration-300 ring-1 ring-neutral-950/5">
+                  {/* Layar Smartphone Full Screen Bersih Tanpa Punch-Hole / Home Bar Palsu */}
+                  <div className="relative rounded-[1.4rem] sm:rounded-[1.6rem] overflow-hidden bg-neutral-50 aspect-[9/20] w-full h-full">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={item.img}
+                      alt={item.title}
+                      draggable={false}
+                      className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.02] pointer-events-none select-none"
+                    />
+                    
+                    {/* Overlay Hint Zoom saat Hover */}
+                    <div className="absolute inset-0 bg-neutral-950/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[1px]">
+                      <span className="px-3.5 py-1.5 rounded-full bg-white/95 text-neutral-950 text-xs font-mono font-semibold shadow-lg backdrop-blur-sm flex items-center gap-1.5 border border-neutral-200">
+                        <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                        </svg>
+                        <span>Perbesar Layar</span>
+                      </span>
+                    </div>
+                  </div>
                 </div>
               )}
 
-              {/* Keterangan Teks Bersih & Padat di Bawah Mockup */}
+              {/* Keterangan Teks Bersih & Padat di Bawah Frame List Putih */}
               <div className="pt-4 px-2 text-left">
                 <div className="flex items-center gap-2 mb-1.5">
                   <span className="px-2 py-0.5 rounded-md bg-neutral-950 text-white font-mono font-bold text-[10px] shrink-0 shadow-xs">
@@ -271,7 +292,7 @@ export default function AppScreenshotGallery({
       {/* ── MODAL LIGHTBOX RESOLUSI PENUH ─────────────────────────────── */}
       {lightboxIndex !== null && (
         <div
-          className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4"
+          className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4 animate-in fade-in duration-200"
           onClick={() => setLightboxIndex(null)}
         >
           <div
@@ -301,12 +322,14 @@ export default function AppScreenshotGallery({
               </button>
             </div>
 
-            {/* Gambar Besar */}
+            {/* Gambar Besar — Rasio Asli Terjaga Sempurna Tanpa Pemotongan */}
             <div className="flex-1 overflow-auto flex items-center justify-center p-2 min-h-0">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={items[lightboxIndex].img}
                 alt={items[lightboxIndex].title}
-                className={`${isDesktop ? 'max-h-[72vh]' : 'max-h-[65vh]'} w-auto object-contain rounded-xl shadow-md border border-neutral-100`}
+                className={`${isDesktop ? 'max-h-[76vh]' : 'max-h-[65vh]'} w-auto max-w-full object-contain rounded-2xl shadow-lg border border-neutral-200 bg-neutral-50`}
+                style={{ aspectRatio: items[lightboxIndex].aspectRatio || (isDesktop ? '1024 / 863' : undefined) }}
               />
             </div>
 

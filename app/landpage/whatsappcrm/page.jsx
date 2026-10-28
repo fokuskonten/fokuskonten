@@ -1,76 +1,106 @@
 import Link from 'next/link'
 import AppScreenshotGallery from '@/components/AppScreenshotGallery'
 import WhatsAppCrmVideoShowcase from '@/components/WhatsAppCrmVideoShowcase'
+import PersonaPresentationSlider from '@/components/PersonaPresentationSlider'
 
 export const metadata = {
-  title: 'WhatsApp Lead CRM Pro — Mesin Otomasi Database Calon Pembeli & Follow-Up Penjualan',
+  title: 'WhatsApp Lead CRM — Mesin Otomasi Database Calon Pembeli & Follow-Up Penjualan',
   description: 'Software desktop Windows (.EXE) resmi karya FokusKonten. Tarik ribuan kontak tertarget dari Google Maps per kota, kirim broadcast promo massal dengan jeda acak aman, dan layani pelanggan 24 jam dengan robot AI lokal tanpa biaya sewa bulanan.',
   alternates: { canonical: 'https://fokuskonten.my.id/landpage/whatsappcrm' },
   openGraph: {
-    title: 'WhatsApp Lead CRM Pro — Solusi Otomasi WhatsApp Bisnis & Follow-Up Penjualan',
+    title: 'WhatsApp Lead CRM — Solusi Otomasi WhatsApp Bisnis & Follow-Up Penjualan',
     description: 'Tinggalkan cara manual simpan kontak satu per satu. Tarik ribuan nomor calon pembeli dari Google Maps, broadcast promo otomatis, dan pantau closingan penjualan di laptop sendiri.',
-    images: [{ url: '/screenshots/whatsappcrm/laptop_mockup.jpg', width: 1376, height: 768, alt: 'WhatsApp Lead CRM Pro Mesin Otomasi Penjualan' }],
+    images: [{ url: '/screenshots/whatsappcrm/header.png', width: 1376, height: 768, alt: 'WhatsApp Lead CRM Solusi Otomasi Penjualan' }],
   },
 }
 
 export default function WhatsAppCrmDedicatedSalesPage() {
-  const waOrderUrl = 'https://wa.me/6285183011318?text=Halo%20FokusKonten,%20saya%20mau%20pesan%20Kunci%20Lisensi%20Resmi%20WhatsApp%20Lead%20CRM%20Pro'
-  const waConsultUrl = 'https://wa.me/6285183011318?text=Halo%20FokusKonten,%20saya%20mau%20tanya-tanya%20dulu%20tentang%20fitur%20WhatsApp%20Lead%20CRM%20Pro'
+  const waOrderUrl = 'https://wa.me/6285183011318?text=Halo%20FokusKonten,%20saya%20mau%20pesan%20Kunci%20Lisensi%20Resmi%20WhatsApp%20Lead%20CRM'
+  const waConsultUrl = 'https://wa.me/6285183011318?text=Halo%20FokusKonten,%20saya%20mau%20tanya-tanya%20dulu%20tentang%20fitur%20WhatsApp%20Lead%20CRM'
   const demoVideoUrl = 'https://www.youtube-nocookie.com/embed/hdsWgj9GdLc?rel=0'
   const officialEmail = 'admin@fokuskonten.my.id'
-  const directExeUrl = 'https://github.com/fokuskonten/fokuskonten/releases/download/apps-v1.0/Setup_WhatsApp_Lead_CRM_Pro.exe'
+  const directExeUrl = 'https://github.com/fokuskonten/fokuskonten/releases/download/apps-v1.0/Setup_WhatsApp_Lead_CRM.exe'
   const exeSize = '60.9 MB'
   const exeVersion = 'v1.0.0'
 
-  // Galeri 8 Tangkapan Layar HD Otentik Desktop — Real Windows Window Mockup
+  // Galeri 11 Tangkapan Layar HD Otentik Desktop — Rasio Asli 1024x863 Terjaga 100%
   const galleryScreenshots = [
     {
       id: '01',
-      title: 'Dashboard Basis Data & Pipeline Prospek',
+      title: 'Basis Data & Pipeline Prospek',
       desc: 'Pantau status koneksi WhatsApp, ringkasan prospek baru, antrian follow-up, serta metrik closing dalam satu dashboard desktop yang terintegrasi.',
-      img: '/screenshots/whatsappcrm/screens/01_Dashboard_Pipeline_Prospek.jpg',
+      img: '/screenshots/whatsappcrm/screens/01_Dashboard_Pipeline_Prospek.png',
+      aspectRatio: '1024 / 863',
     },
     {
       id: '02',
       title: 'Penarik Kontak Google Maps (Lead Scraper)',
-      desc: 'Tarik ribuan data prospek tertarget berdasarkan kata kunci usaha dan kota tujuan, lengkap dengan nomor WhatsApp terverifikasi dan rating toko.',
-      img: '/screenshots/whatsappcrm/screens/02_Scraper_Google_Maps.jpg',
+      desc: 'Tarik ribuan data prospek UMKM tertarget berdasarkan kata kunci usaha dan kota tujuan langsung dari peta Google Maps secara live.',
+      img: '/screenshots/whatsappcrm/screens/02_Scraper_Google_Maps.png',
+      aspectRatio: '1024 / 863',
     },
     {
       id: '03',
-      title: 'Broadcast Promosi Massal & Jeda Acak Aman',
-      desc: 'Kirim pesan promosi dengan sapaan nama otomatis personal dan jeda waktu acak dinamis untuk menjaga keamanan nomor dari risiko pemblokiran.',
-      img: '/screenshots/whatsappcrm/screens/03_Broadcast_Pesan_Personal.jpg',
+      title: 'Titik Kalibrasi Radar GPS Google Maps',
+      desc: 'Tentukan titik koordinat lokasi target secara akurat dengan radius fleksibel untuk menjaring prospek usaha di sekitar wilayah Anda.',
+      img: '/screenshots/whatsappcrm/screens/10_Titik_Kalibrasi_GPS.png',
+      aspectRatio: '1024 / 863',
     },
     {
       id: '04',
-      title: 'Alur Follow-Up Otomatis (Cadence H+1, H+3, H+7)',
-      desc: 'Otomatisasi pengiriman pesan pengingat bertahap bagi calon pembeli yang belum merespon agar peluang closing tidak terbuang sia-sia.',
-      img: '/screenshots/whatsappcrm/screens/04_Auto_Pilot_Follow_Up.jpg',
+      title: 'Integrasi WhatsApp Web Langsung (Direct QR)',
+      desc: 'Hubungkan akun WhatsApp resmi Anda dengan aman via scan kode QR native WebView2 tanpa melalui gateway pihak ketiga yang berisiko.',
+      img: '/screenshots/whatsappcrm/screens/03_Integrasi_WhatsApp_Web.png',
+      aspectRatio: '1024 / 863',
     },
     {
       id: '05',
       title: 'Pelatihan Robot AI CS Lokal 24 Jam Nonstop',
-      desc: 'Konfigurasi DNA merek, katalog produk, dan instruksi penanganan tanya-jawab pelanggan tanpa biaya sewa API pihak ketiga.',
-      img: '/screenshots/whatsappcrm/screens/05_Pelatihan_AI_Lokal_CS.jpg',
+      desc: 'Suntikkan identitas brand, katalog produk, promo diskon, dan gaya komunikasi usaha Anda agar asisten AI melayani tanya-jawab pelanggan secara profesional.',
+      img: '/screenshots/whatsappcrm/screens/04_Pelatihan_AI_Lokal_CS.png',
+      aspectRatio: '1024 / 863',
     },
     {
       id: '06',
-      title: 'Ruang Chat AI Interaktif 100% Offline',
-      desc: 'Konsultasi taktik promosi, pembuatan skrip copywriting penawaran, dan penanganan keberatan harga langsung dari mesin kecerdasan buatan lokal.',
-      img: '/screenshots/whatsappcrm/screens/06_Ruang_Chat_AI_Interaktif.jpg',
+      title: 'Broadcast Promosi Massal & Jeda Acak Aman',
+      desc: 'Kirim pesan promosi dengan sapaan personal dan jeda pengetikan halus manusiawi (anti-banned) untuk menjangkau prospek baru secara otomatis.',
+      img: '/screenshots/whatsappcrm/screens/05_Broadcast_Pesan_Personal.png',
+      aspectRatio: '1024 / 863',
     },
     {
       id: '07',
-      title: 'Integrasi WhatsApp Web Langsung (Direct QR)',
-      desc: 'Hubungkan akun WhatsApp resmi Anda dengan aman via scan kode QR native tanpa melalui gateway pihak ketiga yang berisiko.',
-      img: '/screenshots/whatsappcrm/screens/07_Integrasi_WhatsApp_Web.jpg',
+      title: 'Alur Follow-Up Otomatis (Cadence H+1, H+3, H+7)',
+      desc: 'Otomatisasi pengiriman pesan pengingat bertahap dengan integrasi AI cerdas bagi calon pembeli yang belum merespons agar peluang closing tidak terbuang sia-sia.',
+      img: '/screenshots/whatsappcrm/screens/06_Auto_Pilot_Follow_Up.png',
+      aspectRatio: '1024 / 863',
     },
     {
       id: '08',
-      title: 'Aktivasi Lisensi Kriptografi Offline Permanen',
-      desc: 'Kunci serial lisensi resmi yang melekat pada perangkat Windows Anda, menjamin pemakaian permanen seumur hidup tanpa biaya langganan.',
-      img: '/screenshots/whatsappcrm/screens/08_Aktivasi_Lisensi_FKACT1.jpg',
+      title: 'Pusat Kendali Mesin AI Cerdas & Smart API Key Vault',
+      desc: 'Inferensi kilat tanpa beban RAM/CPU komputer dengan sistem rotasi sekoci otomatis untuk menjawab pesan pelanggan 24 jam nonstop.',
+      img: '/screenshots/whatsappcrm/screens/07_Pusat_Kendali_AI_Cerdas.png',
+      aspectRatio: '1024 / 863',
+    },
+    {
+      id: '09',
+      title: 'Ruang Chat AI Interaktif & Asisten Copywriting',
+      desc: 'Konsultasi taktik promosi, pembuatan skrip copywriting penawaran, penanganan keberatan harga, dan analisis pasar langsung bersama asisten AI.',
+      img: '/screenshots/whatsappcrm/screens/08_Ruang_Chat_AI_Interaktif.png',
+      aspectRatio: '1024 / 863',
+    },
+    {
+      id: '10',
+      title: 'Simulator Pengujian Pesan Cerdas AI',
+      desc: 'Uji kirim simulasi pesan cerdas hasil racikan AI langsung ke nomor WhatsApp pribadi Anda sebelum kampanye massal diluncurkan.',
+      img: '/screenshots/whatsappcrm/screens/11_Simulator_Pesan_AI.png',
+      aspectRatio: '1024 / 863',
+    },
+    {
+      id: '11',
+      title: 'Aktivasi Lisensi Resmi Offline Permanen (HWID)',
+      desc: 'Kunci serial lisensi resmi yang melekat secara kriptografis pada perangkat Windows Anda, menjamin pemakaian seumur hidup tanpa biaya langganan.',
+      img: '/screenshots/whatsappcrm/screens/09_Aktivasi_Lisensi_FKACT1.png',
+      aspectRatio: '1024 / 863',
     },
   ]
 
@@ -168,17 +198,62 @@ export default function WhatsAppCrmDedicatedSalesPage() {
     },
   ]
 
+  // 2 Set Presentasi Interaktif Resmi (Masing-masing 4 Slide Karya Stitch)
+  const presentationSlidesGroup1 = [
+    {
+      src: '/screenshots/whatsappcrm/presentation/persona1_1.webp',
+      alt: 'Mesin Pencari Pelanggan Otomatis - Scraping Data Target UMKM Langsung dari Google Maps',
+      caption: 'Mesin Pencari Pelanggan Otomatis',
+    },
+    {
+      src: '/screenshots/whatsappcrm/presentation/persona1_2.webp',
+      alt: 'WhatsApp Lead CRM - Banjir Kontak CALON Pembeli Otomatis',
+      caption: 'Banjir Kontak Calon Pembeli Otomatis',
+    },
+    {
+      src: '/screenshots/whatsappcrm/presentation/persona1_3.webp',
+      alt: 'WhatsApp Lead CRM - Software CRM Mandiri Tanpa Biaya Bulanan',
+      caption: 'Software CRM Mandiri Tanpa Biaya Bulanan',
+    },
+    {
+      src: '/screenshots/whatsappcrm/presentation/persona1_4.webp',
+      alt: 'WhatsApp Lead CRM - Otomasi Prospek & Closing',
+      caption: 'Otomasi Prospek & Closing',
+    },
+  ]
+
+  const presentationSlidesGroup2 = [
+    {
+      src: '/screenshots/whatsappcrm/presentation/persona2_1.webp',
+      alt: 'WhatsApp Lead CRM - Kumpul Prospek Cepat, Closing Lebih Rapat',
+      caption: 'Kumpul Prospek Cepat, Closing Lebih Rapat',
+    },
+    {
+      src: '/screenshots/whatsappcrm/presentation/persona2_2.webp',
+      alt: 'Tingkatkan Penjualan Bisnis Anda - Sistem CRM WhatsApp Mandiri 100% Tanpa Biaya Langganan',
+      caption: 'Sistem CRM Mandiri Tanpa Biaya Langganan',
+    },
+    {
+      src: '/screenshots/whatsappcrm/presentation/persona2_3.webp',
+      alt: 'Broadcast WhatsApp Anti-Banned - Kirim Ribuan Pesan Penawaran dengan Jeda Manusiawi',
+      caption: 'Broadcast WhatsApp Anti-Banned',
+    },
+    {
+      src: '/screenshots/whatsappcrm/presentation/persona2_4.webp',
+      alt: 'Auto-Pilot Follow Up & Asisten AI - Closing Otomatis 24/7 Tanpa Perlu Balas Manual',
+      caption: 'Auto-Pilot Follow Up & Asisten AI 24/7',
+    },
+  ]
+
   // Target Pengguna Resmi — Dual Persona Presentation Standar Emas
   const targetAudiences = [
     {
       role: 'Pebisnis Online Shop, Reseller & Brand Owner',
       badge: 'Pebisnis Online Shop, Reseller & Toko Mandiri',
       badgeColor: 'text-emerald-700',
-      img: '/screenshots/whatsappcrm/laptop_mockup.jpg',
-      alt: 'Suasana Kerja Pebisnis Mengoperasikan WhatsApp Lead CRM Pro',
+      img: '/screenshots/whatsappcrm/seller_happy.jpg',
+      alt: 'Pebisnis Online Shop Mengoperasikan WhatsApp Lead CRM',
       gradient: 'from-emerald-50/80 via-emerald-50/30 to-white',
-      floatingBadge: 'Otomasi Broadcast Promo & Follow-Up Terjadwal',
-      floatingPill: 'Papan Kanban Closing Penjualan & Follow-Up',
       desc: 'Sangat cocok bagi pemilik toko online, reseller, dan pemilik merek yang ingin melipatgandakan closingan harian tanpa lelah mengetik dan mengirim pesan promosi satu per satu.',
       tags: [
         'Scraper Google Maps',
@@ -200,10 +275,8 @@ export default function WhatsAppCrmDedicatedSalesPage() {
       badge: 'Tim Penjualan, Agen Pemasaran & Distributor B2B',
       badgeColor: 'text-sky-700',
       img: '/screenshots/whatsappcrm/team_presentation.jpg',
-      alt: 'Tim Sales WhatsApp Lead CRM Pro',
+      alt: 'Tim Sales & Marketing WhatsApp Lead CRM',
       gradient: 'from-sky-50/80 via-sky-50/30 to-white',
-      floatingBadge: 'Manajemen Database Prospek Ribuan Kontak',
-      floatingPill: 'Segmentasi Kontak Excel & Arsip Tertarget',
       desc: 'Dirancang untuk agen properti, asuransi, distributor, dan penyedia jasa yang mengelola ratusan prospek bernilai tinggi dan membutuhkan catatan tindak lanjut yang rapi.',
       tags: [
         'Tarik Kontak Kota',
@@ -261,33 +334,33 @@ export default function WhatsAppCrmDedicatedSalesPage() {
     },
   ]
 
-  // 3 Langkah Alur Aktivasi Lisensi Resmi
+  // 3 Langkah Alur Aktivasi Lisensi Resmi — Menggunakan Tampilan Nyata Desktop
   const activationSteps = [
     {
       step: '01',
       title: 'Unduh & Pasang di Laptop Windows',
       sub: 'Instalasi Cepat',
-      img: '/screenshots/whatsappcrm/steps/01_Langkah_Instalasi_CRM.png',
-      alt: 'Langkah 01 Instalasi WhatsApp Lead CRM Pro',
-      desc: 'Unduh berkas installer resmi WhatsApp Lead CRM Pro dan pasang di komputer atau laptop dengan sistem operasi Windows 10 atau Windows 11 (64-bit).',
+      img: '/screenshots/whatsappcrm/screens/01_Dashboard_Pipeline_Prospek.png',
+      alt: 'Langkah 01 Instalasi WhatsApp Lead CRM',
+      desc: 'Unduh berkas installer resmi WhatsApp Lead CRM (.EXE) dan pasang di komputer atau laptop dengan sistem operasi Windows 10 atau Windows 11 (64-bit).',
       note: 'Kompatibel Windows 10 & 11 (x64)',
     },
     {
       step: '02',
-      title: 'Pesan Kunci Lisensi Resmi via WhatsApp',
+      title: 'Pesan & Masukkan Kunci Lisensi Resmi',
       sub: 'Aktivasi Lisensi',
-      img: '/screenshots/whatsappcrm/steps/02_Langkah_Aktivasi_Lisensi.png',
-      alt: 'Langkah 02 Pemesanan Lisensi WhatsApp Lead CRM Pro',
-      desc: 'Hubungi admin resmi FokusKonten untuk memesan Kunci Lisensi Resmi Seumur Hidup. Kunci lisensi diterbitkan instan untuk laptop Anda.',
-      note: 'Lisensi Resmi Melekat pada Laptop',
+      img: '/screenshots/whatsappcrm/screens/09_Aktivasi_Lisensi_FKACT1.png',
+      alt: 'Langkah 02 Pemesanan dan Aktivasi Lisensi Resmi WhatsApp Lead CRM',
+      desc: 'Hubungi admin resmi FokusKonten untuk memesan Kunci Lisensi Resmi Seumur Hidup. Masukkan serial lisensi ke dialog aktivasi yang terikat permanen pada HWID laptop Anda.',
+      note: 'Lisensi Resmi Melekat Permanen di PC',
     },
     {
       step: '03',
-      title: 'Aktivasi Lisensi & Mulai Otomasi Penjualan',
+      title: 'Hubungkan WhatsApp & Mulai Otomasi Penjualan',
       sub: 'Mulai Otomasi',
-      img: '/screenshots/whatsappcrm/steps/03_Langkah_Mulai_Otomasi.png',
-      alt: 'Langkah 03 Mulai Otomasi Penjualan',
-      desc: 'Masukkan kunci serial lisensi ke aplikasi, hubungkan WhatsApp Web dengan scan QR satu kali, dan nikmati otomasi mesin penjualan seketika!',
+      img: '/screenshots/whatsappcrm/screens/03_Integrasi_WhatsApp_Web.png',
+      alt: 'Langkah 03 Pindai QR WhatsApp Web dan Mulai Otomasi Penjualan',
+      desc: 'Hubungkan WhatsApp Web cukup dengan scan kode QR native WebView2 satu kali, dan nikmati mesin otomasi penarik prospek dan broadcast seketika!',
       note: 'Siap Tarik Prospek & Broadcast',
     },
   ]
@@ -300,7 +373,7 @@ export default function WhatsAppCrmDedicatedSalesPage() {
     },
     {
       q: 'Apakah ada biaya tambahan atau iuran langganan bulanan?',
-      a: 'Sama sekali tidak ada. WhatsApp Lead CRM Pro menganut prinsip Zero Monthly Recurring Cost. Anda cukup membayar satu kali saat pembelian untuk mendapatkan lisensi resmi yang aktif seumur hidup tanpa tagihan perpanjangan.',
+      a: 'Sama sekali tidak ada. WhatsApp Lead CRM menganut prinsip Zero Monthly Recurring Cost. Anda cukup membayar satu kali saat pembelian untuk mendapatkan lisensi resmi yang aktif seumur hidup tanpa tagihan perpanjangan.',
     },
     {
       q: 'Spesifikasi laptop atau komputer seperti apa yang dibutuhkan?',
@@ -308,7 +381,7 @@ export default function WhatsAppCrmDedicatedSalesPage() {
     },
     {
       q: 'Apakah pengiriman pesan massal aman dari risiko pemblokiran nomor?',
-      a: 'WhatsApp Lead CRM Pro dilengkapi fitur proteksi jeda waktu acak dinamis (random delay) yang meniru pola pengiriman manusia, serta pemanggil sapaan nama otomatis agar isi pesan tidak seragam. Kami juga menyertakan panduan praktik terbaik pengiriman promo yang aman.',
+      a: 'WhatsApp Lead CRM dilengkapi fitur proteksi jeda waktu acak dinamis (random delay) yang meniru pola pengiriman manusia, serta pemanggil sapaan nama otomatis agar isi pesan tidak seragam. Kami juga menyertakan panduan praktik terbaik pengiriman promo yang aman.',
     },
     {
       q: 'Bagaimana cara menerima software dan kunci lisensi setelah transaksi?',
@@ -330,10 +403,10 @@ export default function WhatsAppCrmDedicatedSalesPage() {
             <span className="text-neutral-900 font-semibold inline-flex items-center gap-1.5">
               <img
                 src="/app-icons/whatsappcrm.png"
-                alt="Logo WhatsApp Lead CRM Pro"
+                alt="Logo WhatsApp Lead CRM"
                 className="w-4 h-4 object-contain inline-block"
               />
-              <span>WhatsApp Lead CRM Pro</span>
+              <span>WhatsApp Lead CRM</span>
             </span>
           </div>
         </div>
@@ -395,13 +468,25 @@ export default function WhatsAppCrmDedicatedSalesPage() {
             </div>
           </div>
 
-          {/* BANNER RESMI LANDSCAPE HEADER */}
-          <div className="rounded-3xl overflow-hidden border border-neutral-200/80 shadow-[0_4px_24px_-4px_rgba(0,0,0,0.08)] max-w-6xl mx-auto mb-12 bg-white">
-            <img
-              src="/screenshots/whatsappcrm/header.png"
-              alt="WhatsApp Lead CRM Pro Banner Header Resmi"
-              className="w-full h-auto object-cover"
-            />
+          {/* ── SHOWCASE UTAMA: 2 SET PRESENTASI SLIDE RESMI (MASING-MASING 4 SLIDE) ── */}
+          <div className="max-w-6xl mx-auto mb-14 text-left">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+              <div className="flex flex-col">
+                <PersonaPresentationSlider
+                  slides={presentationSlidesGroup1}
+                  personaName="Toko Online & Reseller"
+                  themeColor="emerald"
+                />
+              </div>
+
+              <div className="flex flex-col">
+                <PersonaPresentationSlider
+                  slides={presentationSlidesGroup2}
+                  personaName="Tim Sales & Pelaku UMKM"
+                  themeColor="sky"
+                />
+              </div>
+            </div>
           </div>
 
           {/* 4 Stats Grid Berwibawa */}
@@ -506,29 +591,13 @@ export default function WhatsAppCrmDedicatedSalesPage() {
                 key={i}
                 className="rounded-3xl overflow-hidden border border-neutral-200/90 shadow-[0_4px_24px_-4px_rgba(0,0,0,0.07)] bg-white flex flex-col justify-between hover:shadow-2xl hover:border-neutral-400 transition-all duration-300 group"
               >
-                {/* Visual Model Persona Proporsional Tinggi Menonjol */}
-                <div className={`bg-gradient-to-b ${aud.gradient} pt-8 px-6 flex justify-center items-end border-b border-neutral-100 relative overflow-hidden h-[420px] sm:h-[480px] lg:h-[500px]`}>
-                  {/* Floating Status Badge di Atas */}
-                  <div className="absolute top-4 left-4 right-4 flex items-center justify-between pointer-events-none z-10">
-                    <span className="px-3.5 py-1.5 rounded-full bg-white/95 text-neutral-900 text-xs font-mono font-semibold shadow-md backdrop-blur-sm border border-neutral-200/80 flex items-center gap-2">
-                      <span className={`w-2 h-2 rounded-full ${i === 0 ? 'bg-emerald-500' : 'bg-sky-500'} animate-pulse`}></span>
-                      <span>{aud.floatingBadge}</span>
-                    </span>
-                  </div>
-
-                  {/* Foto Model Persona */}
+                {/* Visual Model Persona Bersih Sesuai Standar Apotek Pro & Kelontong Pro */}
+                <div className={`bg-gradient-to-b ${aud.gradient} border-b border-neutral-100 relative overflow-hidden h-[360px] sm:h-[420px] lg:h-[440px] flex items-center justify-center`}>
                   <img
                     src={aud.img}
                     alt={aud.alt}
-                    className="h-full w-full object-cover object-top drop-shadow-2xl transition-transform duration-300 group-hover:scale-[1.02]"
+                    className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
                   />
-
-                  {/* Floating Pill Kategori di Bawah Foto */}
-                  <div className="absolute bottom-3 left-4 right-4 text-center pointer-events-none z-10">
-                    <span className="px-3.5 py-1 rounded-full bg-neutral-950/80 text-white text-[11px] font-mono tracking-wider shadow-sm backdrop-blur-sm">
-                      {aud.floatingPill}
-                    </span>
-                  </div>
                 </div>
 
                 {/* Deskripsi, Workflow Tags & Poin Peran Komprehensif */}
@@ -647,13 +716,13 @@ export default function WhatsAppCrmDedicatedSalesPage() {
       {/* ── REL GALERI SCREENSHOT DESKTOP EDGE-TO-EDGE ──────────────────── */}
       <AppScreenshotGallery
         isDesktop={true}
-        title="Galeri Antarmuka WhatsApp Lead CRM Pro"
+        title="Galeri Antarmuka WhatsApp Lead CRM"
         subtitle="Geser ke kanan atau kiri untuk melihat langsung alur kerja mesin penarik prospek, broadcast promo massal, papan pipeline penjualan, hingga asisten AI lokal."
         label="TAMPILAN NYATA SOFTWARE WINDOWS"
         items={galleryScreenshots}
       />
 
-      {/* ── SECTION: KOMPARASI CARA LAMA VS CRM PRO (MAX-W-6XL) ────────── */}
+      {/* ── SECTION: KOMPARASI CARA LAMA VS CRM (MAX-W-6XL) ─────────────── */}
       <section className="py-20 bg-neutral-50/70 border-b border-neutral-200/80">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14 max-w-3xl mx-auto">
@@ -661,7 +730,7 @@ export default function WhatsAppCrmDedicatedSalesPage() {
               Perbandingan Nyata
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-neutral-950 mb-4 tracking-tight">
-              Bandingkan: Cara Manual Lama vs WhatsApp Lead CRM Pro
+              Bandingkan: Cara Manual Lama vs WhatsApp Lead CRM
             </h2>
             <p className="text-neutral-600 text-sm sm:text-base leading-relaxed">
               Ketahui alasan mengapa beralih ke software desktop otomatis jauh lebih menghemat waktu, mengamankan data pelanggan, dan melipatgandakan closingan toko Anda:
@@ -721,11 +790,14 @@ export default function WhatsAppCrmDedicatedSalesPage() {
                     </div>
                   </div>
 
-                  <div className="rounded-2xl overflow-hidden border border-neutral-200/80 mb-5 bg-white shadow-xs">
+                  <div 
+                    className="rounded-2xl overflow-hidden border border-neutral-200/90 mb-5 bg-neutral-50 shadow-xs"
+                    style={{ aspectRatio: '1024 / 863' }}
+                  >
                     <img
                       src={s.img}
                       alt={s.alt}
-                      className="w-full h-auto object-cover"
+                      className="w-full h-full object-contain block"
                     />
                   </div>
 
@@ -757,7 +829,7 @@ export default function WhatsAppCrmDedicatedSalesPage() {
               <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-neutral-50 border border-neutral-200/90 shadow-sm flex items-center justify-center p-2.5">
                 <img
                   src="/app-icons/whatsappcrm.png"
-                  alt="Logo Resmi WhatsApp Lead CRM Pro"
+                  alt="Logo Resmi WhatsApp Lead CRM"
                   className="max-w-full max-h-full object-contain drop-shadow-sm"
                 />
               </div>
@@ -768,7 +840,7 @@ export default function WhatsAppCrmDedicatedSalesPage() {
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-extrabold text-neutral-950 mb-4 tracking-tight">
-              Miliki WhatsApp Lead CRM Pro Hari Ini
+              Miliki WhatsApp Lead CRM Hari Ini
             </h2>
             <p className="text-neutral-600 text-sm sm:text-base max-w-xl mx-auto mb-8 leading-relaxed">
               Investasi paling efisien dan cerdas untuk kemajuan bisnis Anda. Cukup satu kali bayar saat membeli, gunakan selamanya tanpa iuran bulanan.

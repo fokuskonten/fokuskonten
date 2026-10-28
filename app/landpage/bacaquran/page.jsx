@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import AppScreenshotGallery from '@/components/AppScreenshotGallery'
 import BacaQuranVideoShowcase from '@/components/BacaQuranVideoShowcase'
+import PersonaPresentationSlider from '@/components/PersonaPresentationSlider'
 
 export const metadata = {
   title: 'BacaQur\'an — Al-Qur\'an Digital 100% Offline, Tajwid Berwarna & Super-App Muslim',
@@ -40,79 +41,222 @@ export default function BacaQuranDedicatedLandingPage() {
     },
   ]
 
-  // Galeri 12 Tangkapan Layar HD Master Video Resmi BacaQur'an
+  // 2 Set Presentasi Interaktif Resmi (Masing-masing 4 Slide Talenta Muslim Resmi FokusKonten)
+  const presentationSlidesGroup1 = [
+    {
+      src: '/screenshots/bacaquran/presentation/persona1_1.webp',
+      alt: 'Al-Qur\'an Digital Lengkap - Teks Arab Utsmani, Terjemahan & Audio Murottal',
+      caption: 'Al-Qur\'an Digital 30 Juz & Audio Murottal',
+    },
+    {
+      src: '/screenshots/bacaquran/presentation/persona1_2.webp',
+      alt: 'Kustomisasi Tampilan & Audio Qari - Pilihan Font Kaligrafi & Murottal Qari Ternama',
+      caption: 'Kustomisasi Kaligrafi & Pilihan Qari Dunia',
+    },
+    {
+      src: '/screenshots/bacaquran/presentation/persona1_3.webp',
+      alt: '99 Asmaul Husna & Makna - Tulisan Arab Indah, Terjemahan & Audio Pelafalan',
+      caption: '99 Asmaul Husna Arab, Arti & Audio',
+    },
+    {
+      src: '/screenshots/bacaquran/presentation/persona1_4.webp',
+      alt: 'Kumpulan Doa Harian - Ratusan Doa Mustajab Bersumber Dalil Shahih',
+      caption: 'Kumpulan Doa Mustajab & Dzikir Shahih',
+    },
+  ]
+
+  const presentationSlidesGroup2 = [
+    {
+      src: '/screenshots/bacaquran/presentation/persona2_1.webp',
+      alt: 'Jadwal Sholat & Alarm Adzan - Pengingat Waktu Sholat Akurat & Hitung Mundur',
+      caption: 'Jadwal Sholat Hisab & 5 Mode Alarm Adzan',
+    },
+    {
+      src: '/screenshots/bacaquran/presentation/persona2_2.webp',
+      alt: 'Kompas Arah Kiblat Presisi - Penunjuk Arah Ka\'bah Akurat Berbasis Sensor',
+      caption: 'Kompas Arah Kiblat Giroskop Akurat',
+    },
+    {
+      src: '/screenshots/bacaquran/presentation/persona2_3.webp',
+      alt: 'Kalender Hijriyah & Puasa - Jadwal Hari Besar Islam, Ayyamul Bidh & Sunnah',
+      caption: 'Kalender Hijriyah & Pengingat Puasa Sunnah',
+    },
+    {
+      src: '/screenshots/bacaquran/presentation/persona2_4.webp',
+      alt: 'Dzikir & Tasbih Digital - Penghitung Tasbih Otomatis, Dzikir Pagi & Petang',
+      caption: 'Dzikir & Tasbih Digital Respon Getar Haptic',
+    },
+  ]
+
+  // Galeri 28 Tangkapan Layar HD Master Antarmuka BacaQur'an (100% Cropped & Bersih)
   const galleryScreenshots = [
     {
       id: '01',
       title: 'Dashboard Beranda Nuansa Cream & Hitung Mundur Shalat',
       desc: 'Tampilan beranda utama bersih: salam penyejuk, hitung mundur hisab shalat terdekat, dan menu cepat 19 fitur ibadah.',
-      img: '/screenshots/bacaquran/01_Dashboard_Beranda.jpg',
+      img: '/screenshots/bacaquran/gallery/01_dashboard_beranda.webp',
     },
     {
       id: '02',
-      title: 'Navigasi Cepat 114 Surah & Pembagian Juz',
-      desc: 'Daftar lengkap 114 surah Makkiyah dan Madaniyah dengan pencarian instan, arti nama surah, dan tab pembagian 30 juz.',
-      img: '/screenshots/bacaquran/02_Daftar_Surah_AlQuran.jpg',
+      title: 'Mushaf Standar Kemenag RI, Transliterasi & Audio Per Ayat',
+      desc: 'Teks ayat Arab beresolusi tajam, tanda waqaf jelas, transliterasi latin resmi, dan terjemahan bahasa Indonesia per ayat.',
+      img: '/screenshots/bacaquran/gallery/02_mushaf_quran_terjemahan.webp',
     },
     {
       id: '03',
-      title: 'Mushaf Standar Kemenag RI & Transliterasi Latin',
-      desc: 'Teks ayat Arab beresolusi tajam, tanda waqaf jelas, transliterasi latin resmi, dan terjemahan bahasa Indonesia per ayat.',
-      img: '/screenshots/bacaquran/03_Mushaf_Kemenag_AlFatihah.jpg',
+      title: 'Kustomisasi Ukuran Font, Kaligrafi & Pilihan Qari Internasional',
+      desc: 'Pengaturan fleksibel gaya font Utsmani/Naskh, ukuran font Arab dan latin, serta pilihan audio murottal Syaikh Misyari, Al-Ghamidi, dan Ali Jaber.',
+      img: '/screenshots/bacaquran/gallery/03_kustomisasi_mushaf_qari.webp',
     },
     {
       id: '04',
-      title: 'Jadwal Shalat Hisab Presisi & 5 Mode Alarm Adzan',
-      desc: 'Jadwal hisab Subuh hingga Isya berbasis koordinat lintang-bujur otomatis dengan opsi alarm adzan penuh, dering, atau getar.',
-      img: '/screenshots/bacaquran/04_Jadwal_Shalat_5Waktu.jpg',
+      title: 'Jadwal Shalat Hisab Presisi & 5 Mode Alarm Adzan Otomatis',
+      desc: 'Jadwal hisab Subuh hingga Isya berbasis koordinat otomatis dengan opsi alarm adzan penuh, dering, getar, atau hening.',
+      img: '/screenshots/bacaquran/gallery/04_jadwal_shalat_alarm.webp',
     },
     {
       id: '05',
       title: 'Kompas Kiblat Sensor Giroskop Presisi Ka\'bah',
-      desc: 'Penunjuk derajat Ka\'bah akurat dan stabil menggunakan sensor giroskop handphone tanpa membutuhkan kuota internet.',
-      img: '/screenshots/bacaquran/05_Kompas_Arah_Kiblat.jpg',
+      desc: 'Penunjuk derajat Ka\'bah akurat dan stabil menggunakan sensor giroskop internal tanpa membutuhkan sambungan internet.',
+      img: '/screenshots/bacaquran/gallery/05_kompas_arah_kiblat.webp',
     },
     {
       id: '06',
-      title: 'Kalender Hijriyah & Penanda Puasa Sunnah',
-      desc: 'Sinkronisasi tanggal Islam harian, puasa sunnah Ayyamul Bidh, Senin-Kamis, dan hari-hari besar Islam nasional.',
-      img: '/screenshots/bacaquran/06_Kalender_Hijriyah_Puasa.jpg',
+      title: 'Kalender Hijriyah & Penanda Jadwal Puasa Sunnah',
+      desc: 'Sinkronisasi tanggal Islam harian, puasa sunnah Ayyamul Bidh, puasa Senin-Kamis, dan peringatan hari-hari besar Islam.',
+      img: '/screenshots/bacaquran/gallery/06_kalender_hijriyah_puasa.webp',
     },
     {
       id: '07',
-      title: 'Kumpulan Doa Harian & Dzikir Pagi Petang',
-      desc: 'Ratusan doa mustajab bersumber dalil shahih lengkap dengan teks Arab, tulisan latin, arti bahasa Indonesia, dan audio.',
-      img: '/screenshots/bacaquran/07_Kumpulan_Doa_Harian.jpg',
+      title: 'Kumpulan Ratusan Doa Harian Bersumber Dalil Shahih',
+      desc: 'Kategori lengkap doa Al-Qur\'an, rezeki, orang tua, taubat, perlindungan, kesehatan, hingga doa perjalanan.',
+      img: '/screenshots/bacaquran/gallery/07_kumpulan_doa_harian.webp',
     },
     {
       id: '08',
-      title: 'Tasbih Digital Respon Getar Haptic',
-      desc: 'Penghitung wirid praktis dengan sentuhan bebas di layar handphone dan getaran lembut di tangan tanpa perlu menatap layar.',
-      img: '/screenshots/bacaquran/08_Dzikir_Tasbih_Digital.jpg',
+      title: 'Tasbih Digital Respon Getar Haptic & Target Wirid',
+      desc: 'Penghitung wirid praktis dengan sentuhan bebas di layar, getaran lembut di tangan, dan target hitungan 33x, 99x, 100x, atau bebas.',
+      img: '/screenshots/bacaquran/gallery/08_tasbih_digital_haptic.webp',
     },
     {
       id: '09',
-      title: '99 Asmaul Husna Lengkap Lafal Arab & Makna',
-      desc: 'Nama-nama agung Allah SWT tersusun rapi per kartu modern dengan lafal Arab, transliterasi, dan arti keagungan.',
-      img: '/screenshots/bacaquran/09_99_Asmaul_Husna.jpg',
+      title: 'Panduan Dzikir Pagi, Petang & Dzikir Setelah Shalat Fardhu',
+      desc: 'Rangkaian wirid terstruktur seusai shalat fardhu, istighfar, dan pelacak total capaian dzikir harian di perangkat.',
+      img: '/screenshots/bacaquran/gallery/09_dzikir_pagi_petang.webp',
     },
     {
       id: '10',
-      title: 'Hadits Arbain Shahih & Faidah Kandungan',
-      desc: 'Rujukan hadits tematik terpercaya dengan matan Arab berharakat, terjemahan lengkap, dan intisari faedah amal.',
-      img: '/screenshots/bacaquran/10_Hadits_Arbain_Shahih.jpg',
+      title: 'Koleksi Shalawat Nabi Pilihan Lengkap Teks & Terjemahan',
+      desc: 'Shalawat Ibrahimiyah, Shalawat Nariyah, Shalawat Badar, Shalawat Fatih, dan fadhilah keutamaan amalan shalawat.',
+      img: '/screenshots/bacaquran/gallery/10_koleksi_shalawat_nabi.webp',
     },
     {
       id: '11',
-      title: 'Kitab Ibadah & Surah Pilihan (Yasin, Al-Mulk, Al-Waqi\'ah)',
-      desc: 'Panduan ibadah dan kumpulan surah utama lengkap dengan keutamaan wirid, liturgi, dan ratib harian keluarga.',
-      img: '/screenshots/bacaquran/11_Kitab_Ibadah_Surah_Pilihan.jpg',
+      title: 'Bacaan Shalawat Munjiyat Berharakat & Penghitung Tasbih',
+      desc: 'Teks Arab berharakat jelas disertai transliterasi latin resmi, arti bahasa Indonesia, dan penghitung amalan wirid.',
+      img: '/screenshots/bacaquran/gallery/11_bacaan_shalawat_munjiyat.webp',
     },
     {
       id: '12',
-      title: 'Kurikulum Belajar Tajwid & Kelas Tahsin Terstruktur',
-      desc: 'Panduan kaidah hukum nun mati, mim mati, mad, waqaf, dan makharijul huruf dari pemula hingga mahir.',
-      img: '/screenshots/bacaquran/12_Belajar_Tajwid_Tahsin.jpg',
+      title: '99 Asmaul Husna Lengkap Lafal Kaligrafi Arab & Arti',
+      desc: 'Daftar nama-nama agung Allah SWT tersusun dalam kartu modern yang rapi dengan arti keagungan dan audio pelafalan.',
+      img: '/screenshots/bacaquran/gallery/12_99_asmaul_husna_grid.webp',
+    },
+    {
+      id: '13',
+      title: 'Detail Makna Teologis & Faedah Amalan Asmaul Husna',
+      desc: 'Penjelasan mendalam arti Ar-Rahman dan Ar-Rahim beserta faedah wirid harian untuk menumbuhkan ketenangan hati.',
+      img: '/screenshots/bacaquran/gallery/13_asmaul_husna_detail.webp',
+    },
+    {
+      id: '14',
+      title: 'Hadits Arbain An-Nawawiyah Shahih & Intisari Hukum',
+      desc: 'Rujukan kumpulan hadits pokok Islam terpercaya dengan matan Arab berharakat, perawi shahih, dan terjemahan lengkap.',
+      img: '/screenshots/bacaquran/gallery/14_hadits_arbain_shahih.webp',
+    },
+    {
+      id: '15',
+      title: 'Syarah & Faedah Kandungan Amal Hadits Nabawi',
+      desc: 'Kajian hadits pertama tentang keikhlasan niat lengkap dengan faedah hukum fiqih dan implementasi dalam kehidupan sehari-hari.',
+      img: '/screenshots/bacaquran/gallery/15_hadits_detail_faedah.webp',
+    },
+    {
+      id: '16',
+      title: 'Kitab Ibadah, Panduan Shalat Jenazah & Doa Khusus',
+      desc: 'Modul ibadah praktis mencakup tata cara shalat jenazah, doa qunut nazilah, sujud sahwi, dan wirid liturgi keluarga.',
+      img: '/screenshots/bacaquran/gallery/16_kitab_ibadah_panduan.webp',
+    },
+    {
+      id: '17',
+      title: 'Surah Pilihan Lengkap (Surah Yasin, Al-Mulk, Al-Waqi\'ah)',
+      desc: 'Akses cepat ke surah-surah utama yang sering dibaca rutin dengan keutamaan fadhilah dan pemutar audio qari.',
+      img: '/screenshots/bacaquran/gallery/17_surah_pilihan_utama.webp',
+    },
+    {
+      id: '18',
+      title: 'Kisah Inspiratif 25 Nabi & Rasul Allah Lengkap',
+      desc: 'Kronologi sirah kenabian mulai dari Nabi Adam AS hingga Nabi Muhammad SAW dengan ringkasan mukjizat dan teladan hidup.',
+      img: '/screenshots/bacaquran/gallery/18_kisah_25_nabi_rasul.webp',
+    },
+    {
+      id: '19',
+      title: 'Kisah Nabi Adam AS: Penciptaan, Ujian & Taubat Nasuha',
+      desc: 'Pemaparan komprehensif babak sejarah penciptaan manusia pertama, godaan iblis, doa taubat, dan hikmah moral abadi.',
+      img: '/screenshots/bacaquran/gallery/19_kisah_nabi_detail.webp',
+    },
+    {
+      id: '20',
+      title: 'Kurikulum Tajwid & Kaidah Hukum Bacaan Terstruktur',
+      desc: 'Panduan hukum Nun Mati, Tanwin, Mim Mati, Idgham, Ikhfa, dan Qalqalah dengan estimasi waktu belajar per modul.',
+      img: '/screenshots/bacaquran/gallery/20_kurikulum_belajar_tajwid.webp',
+    },
+    {
+      id: '21',
+      title: 'Mengenal 28 Huruf Hijaiyah Interaktif & Makharijul Huruf',
+      desc: 'Pelajaran dasar identifikasi bentuk huruf tunggal, perbedaan huruf mirip (Ba, Ta, Tsa), dan cara pelafalan yang fasih.',
+      img: '/screenshots/bacaquran/gallery/21_mengenal_huruf_hijaiyah.webp',
+    },
+    {
+      id: '22',
+      title: 'Kelas Tahsin Al-Qur\'an: Harakat, Makhraj & Kaidah Tartil',
+      desc: 'Kurikulum peningkatan mutu bacaan dari dasar hingga mahir dengan latihan makhraj tenggorokan, lidah, dan bibir.',
+      img: '/screenshots/bacaquran/gallery/22_tahsin_quran_tartil.webp',
+    },
+    {
+      id: '23',
+      title: 'Tracker Target & Progres Hafalan Al-Qur\'an (Tahfidz)',
+      desc: 'Pantau pencapaian hafalan ayat per hari, pertahankan streak hafalan harian, dan buat target hafalan juz secara mandiri.',
+      img: '/screenshots/bacaquran/gallery/23_tracker_hafalan_quran.webp',
+    },
+    {
+      id: '24',
+      title: 'Panduan Manasik Haji & Umrah Lengkap 100% Offline',
+      desc: 'Checklist tahapan ibadah di tanah suci: ihram, niat di miqat, tawaf 7 putaran, sa\'i Safa-Marwah, hingga tahallul cukur.',
+      img: '/screenshots/bacaquran/gallery/24_panduan_manasik_haji_umrah.webp',
+    },
+    {
+      id: '25',
+      title: 'Ensiklopedia Kajian Islam Tematik: Aqidah, Fiqih & Akhlak',
+      desc: 'Artikel ilmiah ringkas bersumber shahih: rukun iman, makna dua kalimat syahadat, tauhid asma wa sifat, dan adab islami.',
+      img: '/screenshots/bacaquran/gallery/25_ensiklopedia_kajian_islam.webp',
+    },
+    {
+      id: '26',
+      title: 'Checklist Amalan Sunnah & Evaluasi Shalat Fardhu',
+      desc: 'Catatan disiplin spiritual: shalat wajib berjamaah di awal waktu, tilawah harian, shalat dhuha, tahajjud, dan sedekah subuh.',
+      img: '/screenshots/bacaquran/gallery/26_checklist_amalan_harian.webp',
+    },
+    {
+      id: '27',
+      title: 'Infaq Digital & Penyaluran Sedekah Berkah Rp 0 Biaya',
+      desc: 'Materi keutamaan sedekah berdasarkan hadits shahih dan opsi dukungan sukarela pemeliharaan server database Al-Qur\'an.',
+      img: '/screenshots/bacaquran/gallery/27_infaq_digital_sedekah.webp',
+    },
+    {
+      id: '28',
+      title: 'Dukungan Program Pembangunan Masjid & Yatim Piatu',
+      desc: 'Penyaluran sedekah jariyah untuk fasilitas rumah tahfidz, santunan anak yatim, dan amal jariyah yang pahalanya terus mengalir.',
+      img: '/screenshots/bacaquran/gallery/28_donasi_masjid_anak_yatim.webp',
     },
   ]
 
@@ -534,14 +678,27 @@ export default function BacaQuranDedicatedLandingPage() {
             </a>
           </div>
 
-          {/* BANNER FEATURE GRAPHIC RESMI */}
-          <div className="rounded-3xl overflow-hidden border border-neutral-200/80 shadow-[0_4px_24px_-4px_rgba(0,0,0,0.08)] max-w-6xl mx-auto mb-12 bg-white">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/screenshots/bacaquran/header.png"
-              alt="BacaQur'an Header Banner Resmi"
-              className="w-full h-auto object-cover"
-            />
+          {/* ── SHOWCASE UTAMA: 2 SET PRESENTASI SLIDE RESMI (MASING-MASING 4 SLIDE) ── */}
+          <div className="max-w-6xl mx-auto mb-14 text-left">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+              {/* Presentasi 1: Tilawah & Mushaf Al-Qur'an */}
+              <div className="flex flex-col">
+                <PersonaPresentationSlider
+                  slides={presentationSlidesGroup1}
+                  personaName="Santri & Tilawah Al-Qur'an"
+                  themeColor="emerald"
+                />
+              </div>
+
+              {/* Presentasi 2: Keluarga Muslim & Ibadah Harian */}
+              <div className="flex flex-col">
+                <PersonaPresentationSlider
+                  slides={presentationSlidesGroup2}
+                  personaName="Keluarga Muslim & Ibadah Harian"
+                  themeColor="emerald"
+                />
+              </div>
+            </div>
           </div>
 
           {/* 4 STATS GRID DENGAN IKON 3D MENONJOL BEBAS TANPA KOTAK */}
@@ -639,9 +796,9 @@ export default function BacaQuranDedicatedLandingPage() {
 
       {/* ── REL GALERI MOCKUP MELEBAR PENUH (EDGE-TO-EDGE) ─────────────── */}
       <AppScreenshotGallery
-        label="Tangkapan Layar HD Master Video"
-        title="Galeri Antarmuka BacaQur'an Versi Terbaru"
-        subtitle="Geser ke samping untuk memeriksa langsung navigasi 114 surah, mushaf standar Kemenag RI, hisab shalat otomatis, kompas kiblat giroskop, tasbih digital haptic, hingga kurikulum tajwid dan kitab ibadah."
+        label="Tangkapan Layar HD Master Antarmuka"
+        title="Galeri Antarmuka Lengkap Super-App BacaQur'an"
+        subtitle="Geser ke samping untuk memeriksa langsung 28 antarmuka aplikasi: mushaf 30 juz standar Kemenag RI, hisab shalat otomatis, kompas kiblat giroskop, tasbih haptic, shalawat nabi, hadits arbain, sirah 25 nabi, hingga kurikulum tajwid dan tracker hafalan."
         items={galleryScreenshots}
       />
 

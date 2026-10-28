@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import AppScreenshotGallery from '@/components/AppScreenshotGallery'
 import DualReelKelontongShowcase from '@/components/DualReelKelontongShowcase'
+import PersonaPresentationSlider from '@/components/PersonaPresentationSlider'
 
 export const metadata = {
   title: 'Kelontong Pro — Aplikasi Kasir Toko Kelontong & Warung Sembako Android',
@@ -113,6 +114,53 @@ export default function TokoKelontongProDedicatedSalesPage() {
       title: 'Cadangan Data Toko Aman di Perangkat',
       desc: 'Simpan salinan data toko ke memori perangkat atau Google Drive agar aman saat ganti handphone.',
       img: '/screenshots/tokokelontongpro/12_Pengaturan_Sistem.png',
+    },
+  ]
+
+  // 2 Set Presentasi Interaktif Resmi (Masing-masing 4 Slide Talenta Resmi FokusKonten)
+  const presentationSlidesGroup1 = [
+    {
+      src: '/screenshots/tokokelontongpro/presentation/persona1_1.webp',
+      alt: 'Kelontong Pro Mobile - Aplikasi Kasir & Toko Kelontong Modern',
+      caption: 'Aplikasi Kasir & Toko Kelontong Modern',
+    },
+    {
+      src: '/screenshots/tokokelontongpro/presentation/persona1_2.webp',
+      alt: 'Kasir POS Penjualan Cepat - Scan Barcode, QR Member & Cetak Struk Instan',
+      caption: 'Kasir POS Penjualan Cepat & Scan Barcode',
+    },
+    {
+      src: '/screenshots/tokokelontongpro/presentation/persona1_3.webp',
+      alt: 'Manajemen Stok & Produk - Pantau Stok Habis, Barcode & Harga Jual Grosir',
+      caption: 'Manajemen Stok & Harga Jual Grosir',
+    },
+    {
+      src: '/screenshots/tokokelontongpro/presentation/persona1_4.webp',
+      alt: 'Riwayat Transaksi & Nota - Grafik Penjualan 7 Hari & Ekspor PDF / Excel',
+      caption: 'Riwayat Transaksi & Grafik Penjualan',
+    },
+  ]
+
+  const presentationSlidesGroup2 = [
+    {
+      src: '/screenshots/tokokelontongpro/presentation/persona2_1.webp',
+      alt: 'Stok & Inventaris Toko - Stock Opname, Alarm Stok & Cek Kedaluwarsa',
+      caption: 'Stock Opname & Alarm Kedaluwarsa',
+    },
+    {
+      src: '/screenshots/tokokelontongpro/presentation/persona2_2.webp',
+      alt: 'Kelontong Pro - Pembelian & Gudang Supplier - Purchase Order, Penerimaan Barang & Retur',
+      caption: 'Pembelian & Gudang Supplier',
+    },
+    {
+      src: '/screenshots/tokokelontongpro/presentation/persona2_3.webp',
+      alt: 'Laporan Keuangan Otomatis - Buku Kas, Laba Rugi & Rekap Arus Kas Toko',
+      caption: 'Laporan Keuangan & Laba Rugi Otomatis',
+    },
+    {
+      src: '/screenshots/tokokelontongpro/presentation/persona2_4.webp',
+      alt: 'Audit Trail & Rekam Log - Jejak Digital Aktivitas Kasir & Anti-Kecurangan',
+      caption: 'Audit Trail & Jejak Digital Kasir',
     },
   ]
 
@@ -416,13 +464,25 @@ export default function TokoKelontongProDedicatedSalesPage() {
             </a>
           </div>
 
-          {/* BANNER FEATURE GRAPHIC RESMI */}
-          <div className="rounded-3xl overflow-hidden border border-neutral-200/80 shadow-[0_4px_24px_-4px_rgba(0,0,0,0.08)] max-w-6xl mx-auto mb-12 bg-white">
-            <img
-              src="/screenshots/tokokelontongpro/hero_banner_pos.png"
-              alt="Kelontong Pro Commercial Hero Banner"
-              className="w-full h-auto object-cover"
-            />
+          {/* ── SHOWCASE UTAMA: 2 SET PRESENTASI SLIDE RESMI (MASING-MASING 4 SLIDE) ── */}
+          <div className="max-w-6xl mx-auto mb-14 text-left">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+              <div className="flex flex-col">
+                <PersonaPresentationSlider
+                  slides={presentationSlidesGroup1}
+                  personaName="Kasir Toko Kelontong"
+                  themeColor="emerald"
+                />
+              </div>
+
+              <div className="flex flex-col">
+                <PersonaPresentationSlider
+                  slides={presentationSlidesGroup2}
+                  personaName="Juragan Warung"
+                  themeColor="sky"
+                />
+              </div>
+            </div>
           </div>
 
           {/* 4 STATS GRID DENGAN IKON 3D MENONJOL BEBAS TANPA KOTAK */}
