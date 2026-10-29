@@ -52,7 +52,7 @@ export default function AppConsole({ items }) {
 
       <div className="grid grid-cols-1 md:grid-cols-[minmax(0,260px)_1fr]">
         {/* Daftar item: horizontal ikon di mobile, vertikal di desktop */}
-        <div role="tablist" aria-label="Produk unggulan" className="flex md:flex-col gap-1.5 p-3 border-b md:border-b-0 md:border-r border-neutral-100 overflow-x-auto md:max-h-[400px] md:overflow-y-auto">
+        <div role="tablist" aria-label="Produk unggulan" className="flex md:flex-col gap-1.5 p-3 border-b md:border-b-0 md:border-r border-neutral-100 overflow-x-auto md:max-h-[440px] md:overflow-y-auto">
           {items.map((it, i) => {
             const on = i === active
             return (
@@ -83,24 +83,49 @@ export default function AppConsole({ items }) {
           })}
         </div>
 
-        {/* Panel detail item aktif */}
-        <div key={active} role="tabpanel" className="fk-swap p-6 sm:p-8 min-h-[300px] flex flex-col">
-          <div className="text-[11px] sm:text-xs font-mono text-neutral-500 mb-5">
-            <span className="fk-type" style={{ '--n': path.length }}>{path}</span>
-          </div>
-          <div className="flex items-center gap-3.5 mb-4">
-            <img src={item.icon} alt={item.name} className="w-12 h-12 rounded-xl object-contain bg-neutral-50 p-1 border border-neutral-100 shadow-sm shrink-0" />
-            <div className="min-w-0 flex-1">
-              <div className="flex items-center justify-between gap-2 flex-wrap">
-                <h3 className="heading-lg text-xl sm:text-2xl text-neutral-950">{item.name}</h3>
-                <span className="shrink-0 inline-block px-2.5 py-0.5 rounded-full text-[11px] font-mono font-semibold bg-neutral-100 text-neutral-800 border border-neutral-300">
-                  {item.category}
-                </span>
+        {/* Panel detail item aktif (Pola Hibrida: Narasi Solusi + 4 Chip Fitur Utama) */}
+        <div key={active} role="tabpanel" className="fk-swap p-6 sm:p-8 min-h-[340px] flex flex-col justify-between">
+          <div>
+            <div className="text-[11px] sm:text-xs font-mono text-neutral-500 mb-4">
+              <span className="fk-type" style={{ '--n': path.length }}>{path}</span>
+            </div>
+            
+            <div className="flex items-center gap-3.5 mb-4">
+              <img src={item.icon} alt={item.name} className="w-12 h-12 rounded-xl object-contain bg-neutral-50 p-1 border border-neutral-100 shadow-sm shrink-0" />
+              <div className="min-w-0 flex-1">
+                <div className="flex items-center justify-between gap-2 flex-wrap">
+                  <h3 className="heading-lg text-xl sm:text-2xl text-neutral-950">{item.name}</h3>
+                  <span className="shrink-0 inline-block px-2.5 py-0.5 rounded-full text-[11px] font-mono font-semibold bg-neutral-100 text-neutral-800 border border-neutral-300">
+                    {item.category}
+                  </span>
+                </div>
               </div>
             </div>
+
+            {/* Narasi Deskripsi Nilai Bisnis / Problem-Solution */}
+            <p className="text-neutral-600 text-xs sm:text-sm leading-relaxed max-w-xl mb-5">
+              {item.description}
+            </p>
+
+            {/* 3-4 Chip Fitur Unggulan (Pola Hibrida Solusi + Fitur Kunci) */}
+            {Array.isArray(item.features) && item.features.length > 0 && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-2.5 mb-6">
+                {item.features.map((feat, idx) => (
+                  <div
+                    key={idx}
+                    className="flex items-center gap-2.5 px-3 py-2 rounded-xl bg-neutral-50/90 border border-neutral-200/90 text-neutral-800 text-xs font-medium"
+                  >
+                    <svg className="w-3.5 h-3.5 text-neutral-950 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="truncate">{feat}</span>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
-          <p className="text-neutral-600 text-sm leading-relaxed max-w-xl mb-6">{item.description}</p>
-          <div className="mt-auto">
+
+          <div className="pt-2">
             {item.external ? (
               <a href={item.href} target="_blank" rel="noopener noreferrer" className={ctaClass}>
                 {item.actionText}
