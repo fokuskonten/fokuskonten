@@ -2,95 +2,95 @@ import Link from 'next/link'
 import AppScreenshotGallery from '@/components/AppScreenshotGallery'
 
 export const metadata = {
-  title: 'JumperTools Pro — Universal Hardware & Firmware Suite (Tahap Pengembangan)',
-  description: 'Software desktop Windows x64 native untuk teknisi ponsel profesional. Solusi terpadu 11 modul perbaikan: flasher Qualcomm EDL 9008, MediaTek Brom, Samsung Odin, UNISOC SPD, manajer partisi GPT, ekstraktor ROM, pangkalan data Firehose, katalog Test Point, nota servis kasir CRM, perbaikan IMEI/QCN, custom recovery, dan inspeksi forensik hardware.',
+  title: 'JumperTools — Software Flasher & Diagnosa Smartphone Multi-Chipset',
+  description: 'Software desktop Windows x64 native untuk teknisi ponsel profesional. Solusi terpadu perbaikan firmware Qualcomm EDL 9008, MediaTek Brom, Samsung Odin, dan UNISOC SPD dengan proteksi partisi sinyal IMEI serta operasional 100% offline.',
   alternates: { canonical: 'https://fokuskonten.my.id/landpage/jumptools/' },
   openGraph: {
-    title: 'JumperTools Pro — Universal Smartphone Hardware & Flasher Suite',
-    description: 'Software desktop Windows x64 native untuk teknisi ponsel profesional. 11 modul lengkap tanpa ketergantungan box hardware mahal, proteksi partisi sinyal IMEI, dan 100% bekerja offline.',
-    images: [{ url: '/screenshots/jumptools/header.png', width: 1286, height: 1032, alt: 'JumperTools Pro Suite Antarmuka Resmi' }],
+    title: 'JumperTools — Universal Smartphone Hardware & Flasher Suite',
+    description: 'Software desktop Windows x64 native untuk teknisi ponsel profesional. Flashing multi-chipset Qualcomm, MediaTek, Samsung, dan UNISOC tanpa ketergantungan box hardware mahal.',
+    images: [{ url: '/screenshots/jumptools/header.png', width: 1286, height: 1032, alt: 'JumperTools Suite Antarmuka Resmi' }],
   },
 }
 
 export default function JumperToolsDedicatedLandingPage() {
-  const waContactUrl = `https://wa.me/6285183011318?text=${encodeURIComponent('Halo FokusKonten,\n\nSaya tertarik dengan software desktop *JumperTools Pro* (Universal Smartphone Flasher & Hardware Suite) yang saat ini dalam tahap pengembangan.\nMohon informasi update fitur, pengujian beta, dan konsultasi teknisi.')}`
-  const devMailUrl = 'mailto:admin@fokuskonten.my.id?subject=Inquiry%20JumperTools%20Pro%20Beta%20Development'
+  const waContactUrl = `https://wa.me/6285183011318?text=${encodeURIComponent('Halo FokusKonten,\n\nSaya tertarik dengan software desktop *JumperTools* (Universal Smartphone Flasher & Hardware Suite).\nMohon informasi aktivasi lisensi hardware, fitur multi-chipset, dan konsultasi teknisi.')}`
+  const devMailUrl = 'mailto:admin@fokuskonten.my.id?subject=Inquiry%20JumperTools%20Pro%20Official%20Suite'
 
   // Galeri 11 Tangkapan Layar HD Otentik Antarmuka Desktop — Rasio Asli 1286x1032 Terjaga 100%
   const galleryScreenshots = [
     {
       id: '01',
-      title: '01. Pusat Operasi Khusus & Unlock Perangkat',
+      title: 'Pusat Operasi Khusus & Unlock Perangkat',
       desc: 'Bypass FRP Google Account, hapus kunci pola/PIN/password, reset Mi Account Xiaomi, serta factory reset aman tanpa risiko mati total (hard-brick).',
       img: '/screenshots/jumptools/screens/01_Unlock_dan_Servis_Bypass.png',
       aspectRatio: '1286 / 1032',
     },
     {
       id: '02',
-      title: '02. Flasher Firmware Multi-Chipset',
+      title: 'Flasher Firmware Multi-Chipset',
       desc: 'Flasher firmware terpadu multi-protokol: Qualcomm Emergency Download (EDL 9008 via rawprogram/patch XML), MediaTek Scatter, Samsung Odin TAR/MD5/PIT, dan UNISOC PAC.',
       img: '/screenshots/jumptools/screens/02_Flasher_Firmware_Multi_Chipset.png',
       aspectRatio: '1286 / 1032',
     },
     {
       id: '03',
-      title: '03. Manajer Partisi GPT (eMMC & UFS)',
-      desc: 'Akses langsung tabel partisi fisik chip storage. Membaca, mencadangkan (dump) ke file .img, menghapus, atau menulis partisi tunggal dengan proteksi otomatis sektor radio/IMEI.',
+      title: 'Manajer Partisi GPT (eMMC & UFS)',
+      desc: 'Akses langsung tabel partisi fisik chip storage. Membaca, mencadangkan (dump) ke berkas .img, menghapus, atau menulis partisi tunggal dengan proteksi otomatis sektor radio/IMEI.',
       img: '/screenshots/jumptools/screens/03_Partisi_GPT_eMMC_UFS.png',
       aspectRatio: '1286 / 1032',
     },
     {
       id: '04',
-      title: '04. Ekstraktor Firmware & Unpacker ROM',
-      desc: 'Membongkar paket firmware terenkripsi: OFP Oppo/Realme, Payload.bin Google/OnePlus/Xiaomi, file Sparse Super.img, serta mengekstrak rawprogram XML Qualcomm secara instan.',
+      title: 'Ekstraktor Firmware & Unpacker ROM',
+      desc: 'Membongkar paket firmware terenkripsi: OFP Oppo/Realme, Payload.bin Google/OnePlus/Xiaomi, berkas Sparse Super.img, serta mengekstrak rawprogram XML Qualcomm secara instan.',
       img: '/screenshots/jumptools/screens/04_Ekstrak_Firmware_ROM.png',
       aspectRatio: '1286 / 1032',
     },
     {
       id: '05',
-      title: '05. Pencari Loader Qualcomm Firehose (EDL 9008)',
+      title: 'Pencari Loader Qualcomm Firehose (EDL 9008)',
       desc: 'Pangkalan data luring 1.416 programmer Firehose (.elf/.mbn) resmi. Dilengkapi filter HWID otomatis, deteksi chipset, dan protokol jabat tangan Sahara langsung ke bus USB.',
       img: '/screenshots/jumptools/screens/05_Firehose_EDL_Sahara_Protocol.png',
       aspectRatio: '1286 / 1032',
     },
     {
       id: '06',
-      title: '06. Katalog Test Point & Jalur ISP Pinout',
+      title: 'Katalog Test Point & Jalur ISP Pinout',
       desc: 'Diagram visual titik jumper darurat (Test Point BROM/EDL 9008) untuk 3.078+ model ponsel serta 1.565+ jalur solder langsung ISP eMMC/UFS (CLK, CMD, DAT0, VCC).',
       img: '/screenshots/jumptools/screens/06_Test_Point_dan_ISP_Pinout.png',
       aspectRatio: '1286 / 1032',
     },
     {
       id: '07',
-      title: '07. Manajemen Nota Servis & Kasir Servis CRM',
+      title: 'Manajemen Nota Servis & Kasir Servis CRM',
       desc: 'Sistem CRM meja servis terintegrasi dengan database SQLite lokal. Pencatatan nota servis masuk/keluar, status perbaikan, garansi, estimasi biaya, dan cetak struk thermal 58mm/80mm.',
       img: '/screenshots/jumptools/screens/07_Nota_Servis_Kasir_CRM.png',
       aspectRatio: '1286 / 1032',
     },
     {
       id: '08',
-      title: '08. Asisten Driver USB & Filter Windows',
+      title: 'Asisten Driver USB & Filter Windows',
       desc: 'Pemeriksa status driver port USB chipset smartphone secara berkala via Windows PnP. Dilengkapi tombol pasang filter UsbDk, LibUSB WinUSB, dan paket driver resmi sekali klik.',
       img: '/screenshots/jumptools/screens/08_Asisten_Driver_USB_Filter.png',
       aspectRatio: '1286 / 1032',
     },
     {
       id: '09',
-      title: '09. Perbaikan Sinyal, Baseband & Nomor IMEI',
+      title: 'Perbaikan Sinyal, Baseband & Nomor IMEI',
       desc: 'Pembuka port diagnostik Qualcomm (Diag COM), pencadangan & pemulihan partisi QCN (.qcn), serta backup/restore partisi vital NVRAM dan NVDATA MediaTek anti-hilang sinyal.',
       img: '/screenshots/jumptools/screens/09_Sinyal_IMEI_dan_QCN.png',
       aspectRatio: '1286 / 1032',
     },
     {
       id: '10',
-      title: '10. Pemasang Custom Recovery (TWRP / OrangeFox / PBRP)',
+      title: 'Pemasang Custom Recovery Fastboot',
       desc: 'Pemasangan kustom recovery TWRP, OrangeFox, dan PBRP secara permanen melalui protokol Fastboot, serta fitur Boot RAM sementara untuk uji coba tanpa menimpa partisi recovery bawaan.',
       img: '/screenshots/jumptools/screens/10_Custom_Recovery_TWRP.png',
       aspectRatio: '1286 / 1032',
     },
     {
       id: '11',
-      title: '11. Inspeksi Forensik & Kesehatan Hardware Ponsel',
+      title: 'Inspeksi Forensik & Kesehatan Hardware Ponsel',
       desc: 'Pembacaan identitas mendalam ponsel (SoC, model komersial, versi pita basis, patch keamanan Android, estimasi kesehatan baterai, dan sisa umur memori eMMC/UFS Health).',
       img: '/screenshots/jumptools/screens/11_Read_Info_Forensik_Hardware.png',
       aspectRatio: '1286 / 1032',
@@ -127,7 +127,7 @@ export default function JumperToolsDedicatedLandingPage() {
       num: '05',
       title: 'Firehose EDL Finder & Sahara Protocol',
       badge: 'Tab 5 — Firehose (EDL)',
-      desc: 'Pangkalan data luring 1.416 loader Firehose (.elf/.mbn) resmi. Dilengkapi sistem pencarian cerdas berbasis HWID, brand, model, dan pengiriman protokol jabat tangan Sahara langsung.',
+      desc: 'Pangkalan data luring 1.416 programmer Firehose (.elf/.mbn) resmi. Dilengkapi sistem pencarian cerdas berbasis HWID, brand, model, dan pengiriman protokol jabat tangan Sahara langsung.',
     },
     {
       num: '06',
@@ -251,16 +251,12 @@ export default function JumperToolsDedicatedLandingPage() {
   // FAQ Teknisi
   const faqs = [
     {
-      q: 'Apa status pengembangan JumperTools Pro saat ini?',
-      a: 'JumperTools Pro saat ini berada dalam tahap PENGEMBANGAN AKTIF (BETA / PRE-RELEASE). Arsitektur 11 modul utama telah selesai dirancang, biner engine C# .NET 8 WPF telah terintegrasi dengan driver native Windows, dan database 1.416 Firehose loader serta 3.078+ test point telah siap diuji coba secara berkala.',
+      q: 'Apakah JumperTools membutuhkan dongle atau box hardware fisik?',
+      a: 'Tidak. JumperTools adalah software biner native Windows x64 (.EXE). Anda hanya membutuhkan komputer Windows 64-bit dan kabel USB berkualitas tanpa perlu membeli box hardware tambahan yang bernilai jutaan rupiah.',
     },
     {
-      q: 'Apakah JumperTools Pro membutuhkan dongle atau box hardware fisik?',
-      a: 'Tidak. JumperTools Pro adalah software biner native Windows x64 (.EXE). Anda hanya membutuhkan komputer Windows 64-bit dan kabel USB berkualitas tanpa perlu membeli box hardware tambahan yang bernilai jutaan rupiah.',
-    },
-    {
-      q: 'Bagaimana cara mencoba atau berpartisipasi dalam uji coba versi Beta?',
-      a: 'Anda dapat menghubungi pengembang resmi FokusKonten melalui tautan WhatsApp yang tersedia di halaman ini untuk mendapatkan info jadwal rilis build pengujian lapangan dan konsultasi modul servis.',
+      q: 'Sistem operasi Windows versi berapa yang didukung?',
+      a: 'JumperTools berjalan optimal pada sistem operasi Windows 10 (64-bit) dan Windows 11 (64-bit). Diperlukan pemasangan driver resmi USB chipset (Qualcomm QDLoader, MTK VCOM, Samsung USB, dan UNISOC) yang dapat dipasang langsung melalui Tab Asisten Driver.',
     },
     {
       q: 'Apakah seluruh fiturnya benar-benar bekerja secara offline?',
@@ -288,75 +284,67 @@ export default function JumperToolsDedicatedLandingPage() {
               Produk &amp; Aplikasi
             </Link>
             <span>/</span>
-            <span className="text-neutral-950 font-semibold">JumperTools Pro</span>
+            <span className="text-neutral-950 font-semibold">JumperTools</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="w-2.5 h-2.5 rounded-full bg-amber-500 animate-pulse" />
-            <span className="font-semibold text-amber-900 bg-amber-100 border border-amber-300 px-2.5 py-0.5 rounded-full text-[11px]">
-              TAHAP PENGEMBANGAN AKTIF (BETA)
-            </span>
+            <span className="w-2 h-2 rounded-full bg-neutral-950" />
+            <span className="font-semibold text-neutral-950">APLIKASI DESKTOP WINDOWS (64-BIT)</span>
           </div>
         </div>
       </div>
 
-      {/* ── HERO SALES SECTION ─────────────────────────────────────────── */}
+      {/* ── HERO SALES SECTION (LANGSUNG H1 BERSIH SETARA APOTEK PRO) ──── */}
       <section className="pt-12 sm:pt-16 pb-16 bg-white border-b border-neutral-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
-          {/* Lencana Status Pengembangan */}
-          <div className="fk-hero-in inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-mono font-bold bg-amber-50 text-amber-900 border border-amber-300 shadow-sm mb-6" style={{ '--hero-i': 0 }}>
-            <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
-            <span>SOFTWARE DESKTOP MEJA SERVIS — TAHAP PENGEMBANGAN (PRE-RELEASE)</span>
-          </div>
-
-          <h1 className="fk-hero-in heading-xl text-3xl sm:text-5xl lg:text-6xl text-neutral-950 tracking-tight leading-tight sm:leading-none mb-6 text-balance max-w-5xl mx-auto" style={{ '--hero-i': 1 }}>
-            Suite Flasher &amp; Hardware Smartphone <br className="hidden sm:inline" />
-            11 Modul Terlengkap Tanpa Box Mahal
+          <h1 className="fk-hero-in heading-xl text-3xl sm:text-5xl lg:text-6xl text-neutral-950 tracking-tight leading-tight sm:leading-none mb-6 text-balance max-w-5xl mx-auto" style={{ '--hero-i': 0 }}>
+            Perbaikan Firmware &amp; Diagnosa Smartphone <br className="hidden sm:inline" />
+            Tanpa Box Hardware Mahal
           </h1>
 
-          <p className="fk-hero-in text-base sm:text-lg text-neutral-600 max-w-3xl mx-auto leading-relaxed mb-10 font-normal" style={{ '--hero-i': 2 }}>
-            Software desktop Windows 64-bit native (.NET 8 WPF) rancangan FokusKonten untuk teknisi ponsel profesional. Menyatukan flasher multi-chipset, manajer partisi GPT, database 1.416 Firehose, 3.078+ test point, perbaikan sinyal IMEI, dan kasir CRM nota servis dalam 1 aplikasi praktis 100% offline.
+          <p className="fk-hero-in text-base sm:text-lg text-neutral-600 max-w-3xl mx-auto leading-relaxed mb-10 font-normal" style={{ '--hero-i': 1 }}>
+            Software desktop Windows 64-bit untuk meja servis teknisi ponsel profesional. Menyatukan protokol resmi flashing Qualcomm, MediaTek, Samsung, dan UNISOC dalam satu aplikasi praktis dengan pengaman partisi IMEI otomatis dan 100% bekerja offline.
           </p>
 
           {/* DUA TOMBOL AKSI UTAMA */}
-          <div className="fk-hero-in flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-14 max-w-xl mx-auto" style={{ '--hero-i': 3 }}>
+          <div className="fk-hero-in flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-14 max-w-xl mx-auto" style={{ '--hero-i': 2 }}>
             <a
               href={waContactUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-display font-bold text-sm sm:text-base text-white bg-neutral-950 hover:bg-neutral-800 shadow-md hover:shadow-lg transition-all duration-200"
             >
-              <span>Konsultasi &amp; Info Pengembangan</span>
+              <span>Konsultasi &amp; Lisensi Teknisi</span>
               <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
             </a>
 
-            <a
-              href="#galeri-antarmuka"
+            <Link
+              href="/aplikasi/jumptools"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-display font-semibold text-sm sm:text-base text-neutral-800 bg-white border border-neutral-300 hover:border-black hover:bg-neutral-50 shadow-sm transition-all duration-200"
             >
-              <span>Lihat 11 Tangkapan Layar HD</span>
-            </a>
+              <span>Spesifikasi Modul</span>
+            </Link>
           </div>
 
-          {/* ── SASIS JENDELA DESKTOP WINDOWS CENTERPIECE ────────────────── */}
-          <div className="fk-hero-in max-w-5xl mx-auto rounded-3xl overflow-hidden border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] bg-white mb-12 text-left" style={{ '--hero-i': 4 }}>
+          {/* ── SASIS JENDELA DESKTOP WINDOWS CENTERPIECE (PUTIH BERSIH) ──── */}
+          <div className="fk-hero-in max-w-5xl mx-auto rounded-3xl overflow-hidden border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] bg-white mb-12 text-left" style={{ '--hero-i': 3 }}>
             {/* Titlebar Jendela Windows */}
             <div className="px-5 py-3.5 bg-neutral-50 border-b border-neutral-200/80 flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <div className="w-7 h-7 rounded-full bg-white p-0.5 border border-neutral-300 shrink-0">
                   <img
                     src="/app-icons/jumptools.png"
-                    alt="JumperTools Pro Totem Harimau"
+                    alt="JumperTools Icon"
                     className="w-full h-full object-contain"
                   />
                 </div>
                 <span className="font-mono text-xs font-semibold text-neutral-900 tracking-wide truncate">
-                  JumperTools Pro v1.0.0 — Universal Hardware &amp; Firmware Suite (win-x64)
+                  JumperTools v1.0.0 — Universal Flasher &amp; Hardware Suite (win-x64)
                 </span>
-                <span className="hidden sm:inline-block px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold bg-amber-100 text-amber-900 border border-amber-300">
-                  BETA DEVELOPMENT
+                <span className="hidden sm:inline-block px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold bg-neutral-100 text-neutral-800 border border-neutral-300">
+                  ONLINE: COM4
                 </span>
               </div>
               <div className="flex items-center gap-2 shrink-0">
@@ -366,40 +354,19 @@ export default function JumperToolsDedicatedLandingPage() {
               </div>
             </div>
 
-            {/* Ribbon Bar 11 Modul Tabs Ringkas */}
-            <div className="px-5 py-3 bg-white border-b border-neutral-200/80 flex flex-wrap items-center gap-2 text-xs font-mono overflow-x-auto">
-              <span className="px-3 py-1.5 rounded-lg bg-neutral-950 text-white font-bold whitespace-nowrap">
-                🔓 01. Unlock &amp; Servis
+            {/* Ribbon Bar Protokol Chipset */}
+            <div className="px-5 py-3 bg-white border-b border-neutral-200/80 flex flex-wrap items-center gap-2 text-xs font-mono">
+              <span className="px-3 py-1.5 rounded-lg bg-neutral-950 text-white font-bold">
+                Qualcomm EDL 9008
               </span>
-              <span className="px-3 py-1.5 rounded-lg bg-neutral-100 text-neutral-800 border border-neutral-200 font-medium whitespace-nowrap">
-                ⚡ 02. Flasher Firmware
+              <span className="px-3 py-1.5 rounded-lg bg-neutral-100 text-neutral-800 border border-neutral-200 font-medium">
+                MediaTek Brom / DA
               </span>
-              <span className="px-3 py-1.5 rounded-lg bg-neutral-100 text-neutral-800 border border-neutral-200 font-medium whitespace-nowrap">
-                📑 03. Partisi GPT
+              <span className="px-3 py-1.5 rounded-lg bg-neutral-100 text-neutral-800 border border-neutral-200 font-medium">
+                Samsung Odin / PIT
               </span>
-              <span className="px-3 py-1.5 rounded-lg bg-neutral-100 text-neutral-800 border border-neutral-200 font-medium whitespace-nowrap">
-                📦 04. Ekstrak ROM
-              </span>
-              <span className="px-3 py-1.5 rounded-lg bg-neutral-100 text-neutral-800 border border-neutral-200 font-medium whitespace-nowrap">
-                🔥 05. Firehose EDL
-              </span>
-              <span className="px-3 py-1.5 rounded-lg bg-neutral-100 text-neutral-800 border border-neutral-200 font-medium whitespace-nowrap">
-                📍 06. Test Point
-              </span>
-              <span className="px-3 py-1.5 rounded-lg bg-neutral-100 text-neutral-800 border border-neutral-200 font-medium whitespace-nowrap">
-                🧾 07. Nota Kasir CRM
-              </span>
-              <span className="px-3 py-1.5 rounded-lg bg-neutral-100 text-neutral-800 border border-neutral-200 font-medium whitespace-nowrap">
-                🧰 08. Driver USB
-              </span>
-              <span className="px-3 py-1.5 rounded-lg bg-neutral-100 text-neutral-800 border border-neutral-200 font-medium whitespace-nowrap">
-                📶 09. Sinyal IMEI
-              </span>
-              <span className="px-3 py-1.5 rounded-lg bg-neutral-100 text-neutral-800 border border-neutral-200 font-medium whitespace-nowrap">
-                ⚡ 10. Recovery
-              </span>
-              <span className="px-3 py-1.5 rounded-lg bg-neutral-100 text-neutral-800 border border-neutral-200 font-medium whitespace-nowrap">
-                📖 11. Read Info
+              <span className="px-3 py-1.5 rounded-lg bg-neutral-100 text-neutral-800 border border-neutral-200 font-medium">
+                UNISOC SPD PAC
               </span>
             </div>
 
@@ -408,12 +375,12 @@ export default function JumperToolsDedicatedLandingPage() {
               {/* 4 Kartu Parameter Servis */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
                 <div className="p-4 rounded-xl bg-neutral-50 border border-neutral-200/80">
-                  <span className="text-[11px] font-mono font-bold text-neutral-500 block mb-1">TOTAL MODUL</span>
-                  <span className="text-base sm:text-lg font-bold font-mono text-neutral-950">11 Tab Terpadu</span>
+                  <span className="text-[11px] font-mono font-bold text-neutral-500 block mb-1">PORT USB AKTIF</span>
+                  <span className="text-base sm:text-lg font-bold font-mono text-neutral-950">COM4 (QDLoader)</span>
                 </div>
                 <div className="p-4 rounded-xl bg-neutral-50 border border-neutral-200/80">
-                  <span className="text-[11px] font-mono font-bold text-neutral-500 block mb-1">PANGKALAN DATA</span>
-                  <span className="text-base sm:text-lg font-bold font-mono text-neutral-950">1.416 Firehose</span>
+                  <span className="text-[11px] font-mono font-bold text-neutral-500 block mb-1">STATUS PARTISI</span>
+                  <span className="text-base sm:text-lg font-bold font-mono text-neutral-950">Modem/EFS Aman</span>
                 </div>
                 <div className="p-4 rounded-xl bg-neutral-50 border border-neutral-200/80">
                   <span className="text-[11px] font-mono font-bold text-neutral-500 block mb-1">MODE OPERASIONAL</span>
@@ -428,19 +395,19 @@ export default function JumperToolsDedicatedLandingPage() {
               {/* Rincian Operasi Aman */}
               <div className="p-5 rounded-2xl bg-neutral-50 border border-neutral-200/80 space-y-3">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-neutral-200 text-xs font-mono text-neutral-600">
-                  <span className="font-semibold text-neutral-950">Arsitektur: C# .NET 8 WPF x64 Standalone Biner</span>
-                  <span>Protokol: Qualcomm EDL, MTK Brom, Samsung Odin, SPD PAC</span>
+                  <span className="font-semibold text-neutral-950">Status: Sistem Verifikasi Sektor Firmware Siaga</span>
+                  <span>Protokol: Emergency Download (EDL) Mode</span>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
                   <div>
-                    <span className="font-mono font-bold text-neutral-400 block mb-1">SAFETYNET RADIO GUARD</span>
-                    <p className="font-semibold text-neutral-950">Hard Block Partisi Radio &amp; IMEI</p>
-                    <p className="text-neutral-500 mt-0.5">Partisi kritis (NVRAM, EFS, Modem) otomatis dikunci dan dicadangkan sebelum flash.</p>
+                    <span className="font-mono font-bold text-neutral-400 block mb-1">PERLINDUNGAN JARINGAN</span>
+                    <p className="font-semibold text-neutral-950">Kunci Partisi Radio Otomatis</p>
+                    <p className="text-neutral-500 mt-0.5">Mencegah ponsel kehilangan sinyal seluler dan nomor IMEI.</p>
                   </div>
                   <div>
-                    <span className="font-mono font-bold text-neutral-400 block mb-1">MANAJEMEN KASIR MEJA SERVIS</span>
-                    <p className="font-semibold text-neutral-950">Database SQLite &amp; Struk Thermal</p>
-                    <p className="text-neutral-500 mt-0.5">Pencatatan nota servis, garansi pelanggan, dan cetak struk tanpa perlu aplikasi kasir tambahan.</p>
+                    <span className="font-mono font-bold text-neutral-400 block mb-1">VERIFIKASI INTEGRITAS</span>
+                    <p className="font-semibold text-neutral-950">Pemeriksaan Keaslian Berkas</p>
+                    <p className="text-neutral-500 mt-0.5">Memastikan tidak ada berkas corrupt yang terpasang ke memori ponsel.</p>
                   </div>
                 </div>
               </div>
@@ -448,13 +415,13 @@ export default function JumperToolsDedicatedLandingPage() {
           </div>
 
           {/* 4 STATS GRID KEUNGGULAN UTAMA */}
-          <div className="fk-hero-in grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto p-6 sm:p-8 rounded-3xl bg-neutral-50 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]" style={{ '--hero-i': 5 }}>
+          <div className="fk-hero-in grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto p-6 sm:p-8 rounded-3xl bg-neutral-50 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]" style={{ '--hero-i': 4 }}>
             <div className="p-3 flex flex-col items-center text-center">
               <div className="w-10 h-10 rounded-xl bg-neutral-950 text-white flex items-center justify-center font-mono font-bold text-sm mb-3">
-                11
+                01
               </div>
-              <div className="font-display text-2xl sm:text-3xl font-bold text-neutral-950">Modul Servis</div>
-              <div className="text-xs text-neutral-500 font-medium mt-1">Flasher s/d Nota Kasir</div>
+              <div className="font-display text-2xl sm:text-3xl font-bold text-neutral-950">4 Protokol</div>
+              <div className="text-xs text-neutral-500 font-medium mt-1">Multi-Chipset Terintegrasi</div>
             </div>
             <div className="p-3 flex flex-col items-center text-center">
               <div className="w-10 h-10 rounded-xl bg-neutral-950 text-white flex items-center justify-center font-mono font-bold text-sm mb-3">
@@ -468,35 +435,35 @@ export default function JumperToolsDedicatedLandingPage() {
                 03
               </div>
               <div className="font-display text-2xl sm:text-3xl font-bold text-neutral-950">100% Offline</div>
-              <div className="text-xs text-neutral-500 font-medium mt-1">Bekerja Mandiri Tanpa Kuota</div>
+              <div className="text-xs text-neutral-500 font-medium mt-1">Mandiri Tanpa Internet</div>
             </div>
             <div className="p-3 flex flex-col items-center text-center">
               <div className="w-10 h-10 rounded-xl bg-neutral-950 text-white flex items-center justify-center font-mono font-bold text-sm mb-3">
                 04
               </div>
               <div className="font-display text-2xl sm:text-3xl font-bold text-neutral-950">Beli Putus</div>
-              <div className="text-xs text-neutral-500 font-medium mt-1">Nol Biaya Kredit Bulanan</div>
+              <div className="text-xs text-neutral-500 font-medium mt-1">Nol Biaya Sewa Bulanan</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* ── GALERI 11 TANGKAPAN LAYAR HD (STANDAR CRM) ─────────────────── */}
-      <div id="galeri-antarmuka">
+      <section className="py-20 sm:py-24 border-b border-neutral-200/80 bg-neutral-50/50">
         <AppScreenshotGallery
-          title="11 Tangkapan Layar HD Antarmuka JumperTools Pro"
-          subtitle="Tinjauan visual langsung setiap modul kerja meja teknisi. Dari bypass akun, flasher multi-chipset, manajer partisi GPT, hingga cetak nota servis kasir CRM."
-          label="GALERI ANTARMUKA RESMI DESKTOP"
+          title="Galeri Antarmuka JumperTools"
+          subtitle="Tinjauan visual langsung alur kerja flasher firmware, manajer partisi GPT, hingga nota servis CRM kasir meja kerja."
+          label="DOKUMENTASI ANTARMUKA DESKTOP"
           items={galleryScreenshots}
           isDesktop={true}
         />
-      </div>
+      </section>
 
-      {/* ── 11 MODUL LENGKAP SUITE SERVIS HP ─────────────────────────────── */}
-      <section className="py-20 sm:py-24 border-b border-neutral-200/80 bg-neutral-50/50">
+      {/* ── 11 MODUL SPESIALIS MEJA SERVIS (TANPA EMOJI) ────────────────── */}
+      <section className="py-20 sm:py-24 border-b border-neutral-200/80 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-14 sm:mb-16" data-reveal>
-            <span className="font-mono text-xs font-semibold px-3 py-1 rounded-full bg-neutral-950 text-white mb-3 inline-block">
+            <span className="font-mono text-xs font-semibold px-3 py-1 rounded-full bg-neutral-100 text-neutral-900 border border-neutral-300 mb-3 inline-block">
               ARSITEKTUR LENGKAP SUITE
             </span>
             <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-950 mb-4 tracking-tight">
@@ -530,6 +497,46 @@ export default function JumperToolsDedicatedLandingPage() {
                   </h3>
                   <p className="text-neutral-600 text-xs sm:text-sm leading-relaxed font-sans">
                     {m.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── KERESAHAN NYATA TEKNISI (PAIN POINTS) ───────────────────────── */}
+      <section className="py-20 sm:py-24 border-b border-neutral-200/80 bg-neutral-50/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center mb-14 sm:mb-16" data-reveal>
+            <span className="font-mono text-xs font-semibold px-3 py-1 rounded-full bg-neutral-950 text-white mb-3 inline-block">
+              TANTANGAN MEJA KERJA
+            </span>
+            <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-950 mb-4 tracking-tight">
+              Keresahan Nyata yang Dihadapi Teknisi Servis
+            </h2>
+            <p className="text-neutral-600 text-sm sm:text-base leading-relaxed">
+              Penanganan perbaikan software ponsel sering kali terhambat oleh kerumitan alat dan tingginya biaya yang harus dikeluarkan.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            {painPoints.map((point, idx) => (
+              <div
+                key={idx}
+                data-reveal
+                style={{ '--reveal-i': idx }}
+                className="bg-white rounded-2xl p-6 sm:p-8 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between"
+              >
+                <div>
+                  <div className="font-mono text-xs font-bold text-neutral-400 mb-2">
+                    MASALAH 0{idx + 1}
+                  </div>
+                  <h3 className="heading-lg text-lg sm:text-xl text-neutral-950 mb-3 font-bold">
+                    {point.title}
+                  </h3>
+                  <p className="text-neutral-600 text-sm leading-relaxed font-sans">
+                    {point.desc}
                   </p>
                 </div>
               </div>
@@ -589,55 +596,15 @@ export default function JumperToolsDedicatedLandingPage() {
         </div>
       </section>
 
-      {/* ── KERESAHAN NYATA TEKNISI (PAIN POINTS) ───────────────────────── */}
-      <section className="py-20 sm:py-24 border-b border-neutral-200/80 bg-neutral-50/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center mb-14 sm:mb-16" data-reveal>
-            <span className="font-mono text-xs font-semibold px-3 py-1 rounded-full bg-neutral-950 text-white mb-3 inline-block">
-              TANTANGAN MEJA KERJA
-            </span>
-            <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-950 mb-4 tracking-tight">
-              Keresahan Nyata yang Dihadapi Teknisi Servis
-            </h2>
-            <p className="text-neutral-600 text-sm sm:text-base leading-relaxed">
-              Penanganan perbaikan software ponsel sering kali terhambat oleh kerumitan alat dan tingginya biaya yang harus dikeluarkan.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
-            {painPoints.map((point, idx) => (
-              <div
-                key={idx}
-                data-reveal
-                style={{ '--reveal-i': idx }}
-                className="bg-white rounded-2xl p-6 sm:p-8 border border-neutral-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] flex flex-col justify-between"
-              >
-                <div>
-                  <div className="font-mono text-xs font-bold text-neutral-400 mb-2">
-                    MASALAH 0{idx + 1}
-                  </div>
-                  <h3 className="heading-lg text-lg sm:text-xl text-neutral-950 mb-3 font-bold">
-                    {point.title}
-                  </h3>
-                  <p className="text-neutral-600 text-sm leading-relaxed font-sans">
-                    {point.desc}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── KOMPARASI HEAD-TO-HEAD (CARA LAMA VS JUMPTOOLS PRO) ─────────── */}
-      <section className="py-20 sm:py-24 border-b border-neutral-200/80 bg-white">
+      <section className="py-20 sm:py-24 border-b border-neutral-200/80 bg-neutral-50/50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-14 sm:mb-16" data-reveal>
             <span className="font-mono text-xs font-semibold px-3 py-1 rounded-full bg-neutral-950 text-white mb-3 inline-block">
               KOMPARASI MEJA SERVIS
             </span>
             <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-950 mb-4 tracking-tight">
-              Alat Konvensional vs JumperTools Pro
+              Alat Konvensional vs JumperTools
             </h2>
             <p className="text-neutral-600 text-sm sm:text-base leading-relaxed">
               Perbandingan nyata efisiensi dan keamanan operasional servis antara cara konvensional dengan solusi terintegrasi.
@@ -656,7 +623,7 @@ export default function JumperToolsDedicatedLandingPage() {
                   {c.oldWay}
                 </div>
                 <div className="lg:col-span-4 text-xs sm:text-sm text-neutral-950 font-medium font-sans">
-                  <div className="text-[11px] font-mono uppercase text-neutral-950 mb-1 font-bold">JumperTools Pro</div>
+                  <div className="text-[11px] font-mono uppercase text-neutral-950 mb-1 font-bold">JumperTools</div>
                   {c.jumptools}
                 </div>
               </div>
@@ -666,17 +633,17 @@ export default function JumperToolsDedicatedLandingPage() {
       </section>
 
       {/* ── FAQ TEKNISI ─────────────────────────────────────────────────── */}
-      <section className="py-20 sm:py-24 border-b border-neutral-200/80 bg-neutral-50/50">
+      <section className="py-20 sm:py-24 border-b border-neutral-200/80 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-14" data-reveal>
             <span className="font-mono text-xs font-semibold px-3 py-1 rounded-full bg-neutral-950 text-white mb-3 inline-block">
-              FAQ TEKNISI &amp; PENGEMBANGAN
+              FAQ TEKNISI
             </span>
             <h2 className="heading-xl text-2xl sm:text-4xl text-neutral-950 mb-3 tracking-tight">
-              Pertanyaan Seputar Fitur &amp; Tahap Pengembangan
+              Pertanyaan yang Sering Diajukan
             </h2>
             <p className="text-neutral-600 text-sm sm:text-base leading-relaxed">
-              Transparansi roadmap pengembangan dan pengoperasian mandiri di komputer bengkel Anda.
+              Jawaban ringkas dan faktual mengenai pengoperasian software dan aktivasi lisensi.
             </p>
           </div>
 
@@ -686,7 +653,7 @@ export default function JumperToolsDedicatedLandingPage() {
                 key={idx}
                 data-reveal
                 style={{ '--reveal-i': idx }}
-                className="bg-white rounded-2xl p-6 sm:p-7 border border-neutral-200/80 shadow-sm"
+                className="bg-neutral-50/70 rounded-2xl p-6 sm:p-7 border border-neutral-200/80 shadow-sm"
               >
                 <h3 className="font-display font-bold text-base sm:text-lg text-neutral-950 mb-2">
                   {faq.q}
@@ -700,19 +667,14 @@ export default function JumperToolsDedicatedLandingPage() {
         </div>
       </section>
 
-      {/* ── CTA PENUTUP (KONTAK PENGEMBANG) ───────────────────────────────── */}
-      <section className="py-20 sm:py-24 bg-white border-b border-neutral-200/80">
+      {/* ── CTA PENUTUP (KONTAK & LISENSI) ───────────────────────────────── */}
+      <section className="py-20 sm:py-24 bg-neutral-50/70 border-b border-neutral-200/80">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-reveal>
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono font-bold bg-amber-100 text-amber-900 border border-amber-300 mb-6">
-            <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
-            <span>KONSULTASI LANGSUNG DENGAN ARSITEK &amp; PENGEMBANG</span>
-          </div>
-
           <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-950 mb-4 tracking-tight">
-            Ingin Berdiskusi atau Mencoba Versi Pengembangan?
+            Siap Mengoptimalkan Meja Kerja Servis Anda?
           </h2>
           <p className="text-neutral-600 text-sm sm:text-base max-w-2xl mx-auto mb-8 leading-relaxed">
-            JumperTools Pro dikembangkan mandiri oleh FokusKonten untuk menghadirkan software servis berkualitas enterprise tanpa beban biaya sewa cloud berkala.
+            Dapatkan akses software mandiri untuk kemudahan penanganan firmware ponsel dengan dukungan teknis langsung dari pengembang.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-8">
@@ -722,7 +684,7 @@ export default function JumperToolsDedicatedLandingPage() {
               rel="noopener noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-display font-bold text-sm sm:text-base text-white bg-neutral-950 hover:bg-neutral-800 shadow-md hover:shadow-lg transition-all duration-200"
             >
-              <span>Hubungi Muhari (Pengembang) via WhatsApp</span>
+              <span>Hubungi Pengembang via WhatsApp</span>
               <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
