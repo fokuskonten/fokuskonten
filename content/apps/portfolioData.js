@@ -509,7 +509,7 @@ export const portfolioData = {
       format: 'Aplikasi Desktop Mandiri (.EXE)',
       tipe: 'Universal Smartphone Flasher & Repair Suite',
     },
-    headerImage: '/screenshots/jumptools/header.jpg',
+    headerImage: '/screenshots/jumptools/header.png',
     landingUrl: '/landpage/jumptools',
     cta: {
       primary: { label: 'Konsultasi & Lisensi JumperTools', href: 'https://wa.me/6285183011318?text=Halo%20FokusKonten,%20saya%20tertarik%20dengan%20JumperTools%20Pro', type: 'whatsapp' },
@@ -576,7 +576,7 @@ export const portfolioData = {
       format: 'Aplikasi Desktop Mandiri (.EXE)',
       tipe: 'Universal Smartphone Flasher & Repair Suite',
     },
-    headerImage: '/screenshots/jumptools/header.jpg',
+    headerImage: '/screenshots/jumptools/header.png',
     landingUrl: '/landpage/jumptools',
     cta: {
       primary: { label: 'Konsultasi & Lisensi JumperTools', href: 'https://wa.me/6285183011318?text=Halo%20FokusKonten,%20saya%20tertarik%20dengan%20JumperTools%20Pro', type: 'whatsapp' },
