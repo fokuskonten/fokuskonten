@@ -456,7 +456,7 @@ export const portfolioData = {
     badge: 'Universal Hardware & Flasher Suite',
     tagline: 'Software Desktop C# WPF .NET 8 Multi-Chipset Flashing, Unlocking & Diagnosa Smartphone',
     icon: '/app-icons/jumptools.png',
-    overview: 'JumperTools adalah software suite desktop Windows (.EXE) generasi baru yang dibangun dengan arsitektur C# .NET 8 WPF modern dengan Ribbon UI. Mengintegrasikan protokol flashing dan perbaikan tingkat rendah untuk multi-chipset (Qualcomm Emergency Download EDL 9008 Sahara/Firehose, MediaTek Brom & Preloader DA Bypass, Samsung Odin & PIT Partition, serta Spreadtrum/UNISOC SPD FDL) dalam satu aplikasi mandiri yang tangguh untuk teknisi ponsel profesional.',
+    overview: 'JumperTools Pro adalah software suite desktop Windows (.EXE) generasi baru yang dibangun dengan arsitektur C# .NET 8 WPF modern dengan Ribbon UI. Mengintegrasikan protokol flashing dan perbaikan tingkat rendah untuk multi-chipset (Qualcomm Emergency Download EDL 9008 Sahara/Firehose, MediaTek Brom & Preloader DA Bypass, Samsung Odin & PIT Partition, serta Spreadtrum/UNISOC SPD FDL) dalam satu aplikasi mandiri yang tangguh untuk teknisi ponsel profesional.',
     targetUsers: 'Teknisi Smartphone, Pemilik Konter Servis HP, Spesialis Flashing & Unbrick, Lab Hardware Ponsel.',
     highlights: [
       'Multi-Chipset Flasher (Qualcomm, MediaTek, Samsung, UNISOC SPD)',
@@ -509,7 +509,7 @@ export const portfolioData = {
       format: 'Aplikasi Desktop Mandiri (.EXE)',
       tipe: 'Universal Smartphone Flasher & Repair Suite',
     },
-    headerImage: '/screenshots/jumptools/header.png',
+    headerImage: '/screenshots/jumptools/header.jpg',
     landingUrl: '/landpage/jumptools',
     cta: {
       primary: { label: 'Konsultasi & Lisensi JumperTools', href: 'https://wa.me/6285183011318?text=Halo%20FokusKonten,%20saya%20tertarik%20dengan%20JumperTools%20Pro', type: 'whatsapp' },
@@ -523,7 +523,7 @@ export const portfolioData = {
     badge: 'Universal Hardware & Flasher Suite',
     tagline: 'Software Desktop C# WPF .NET 8 Multi-Chipset Flashing, Unlocking & Diagnosa Smartphone',
     icon: '/app-icons/jumptools.png',
-    overview: 'JumperTools (sebelumnya FokusKonten HP Tools) adalah software suite desktop Windows (.EXE) generasi baru yang dibangun dengan arsitektur C# .NET 8 WPF modern dengan Ribbon UI. Mengintegrasikan protokol flashing dan perbaikan tingkat rendah untuk multi-chipset (Qualcomm Emergency Download EDL 9008 Sahara/Firehose, MediaTek Brom & Preloader DA Bypass, Samsung Odin & PIT Partition, serta Spreadtrum/UNISOC SPD FDL) dalam satu aplikasi mandiri yang tangguh untuk teknisi ponsel profesional.',
+    overview: 'JumperTools Pro (sebelumnya FokusKonten HP Tools) adalah software suite desktop Windows (.EXE) generasi baru yang dibangun dengan arsitektur C# .NET 8 WPF modern dengan Ribbon UI. Mengintegrasikan protokol flashing dan perbaikan tingkat rendah untuk multi-chipset (Qualcomm Emergency Download EDL 9008 Sahara/Firehose, MediaTek Brom & Preloader DA Bypass, Samsung Odin & PIT Partition, serta Spreadtrum/UNISOC SPD FDL) dalam satu aplikasi mandiri yang tangguh untuk teknisi ponsel profesional.',
     targetUsers: 'Teknisi Smartphone, Pemilik Konter Servis HP, Spesialis Flashing & Unbrick, Lab Hardware Ponsel.',
     highlights: [
       'Multi-Chipset Flasher (Qualcomm, MediaTek, Samsung, UNISOC SPD)',
@@ -576,7 +576,7 @@ export const portfolioData = {
       format: 'Aplikasi Desktop Mandiri (.EXE)',
       tipe: 'Universal Smartphone Flasher & Repair Suite',
     },
-    headerImage: '/screenshots/jumptools/header.png',
+    headerImage: '/screenshots/jumptools/header.jpg',
     landingUrl: '/landpage/jumptools',
     cta: {
       primary: { label: 'Konsultasi & Lisensi JumperTools', href: 'https://wa.me/6285183011318?text=Halo%20FokusKonten,%20saya%20tertarik%20dengan%20JumperTools%20Pro', type: 'whatsapp' },

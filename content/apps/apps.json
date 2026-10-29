@@ -85,7 +85,7 @@
         "targetSdk": 36,
         "minSdk": 24,
         "icon": "/app-icons/jumptools.png",
-        "description": "Software desktop Windows (.EXE) C# .NET 8 WPF utilitas teknisi smartphone multi-chipset (11 modul: flasher, partisi GPT, ekstraktor ROM, Firehose EDL, test point, kasir CRM, sinyal IMEI, custom recovery). Tahap pengembangan aktif."
+        "description": "Software desktop Windows (.EXE) C# .NET 8 WPF utilitas teknisi smartphone multi-chipset (Qualcomm EDL 9008, MediaTek Brom, Samsung Odin, SPD) untuk flashing firmware, bypass, unbrick, dan diagnosa hardware."
     },
     {
         "id": "reimage",
