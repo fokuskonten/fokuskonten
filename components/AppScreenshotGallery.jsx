@@ -304,7 +304,7 @@ export default function AppScreenshotGallery({
             <div
               ref={containerRef}
               className={`relative w-full overflow-hidden bg-neutral-950 select-none ${
-                isDesktop ? 'rounded-xl aspect-[16/10]' : 'rounded-[2.25rem] aspect-[1080/2356]'
+                isDesktop ? 'rounded-xl aspect-[16/10]' : 'rounded-[2.25rem] aspect-[1080/2400]'
               } ${isDragging ? 'cursor-grabbing' : 'cursor-grab'}`}
               style={{
                 touchAction: 'pan-y', // Scroll halaman lancar saat disentuh ke arah vertikal
@@ -340,6 +340,11 @@ export default function AppScreenshotGallery({
                         loading={idx <= 2 ? 'eager' : 'lazy'}
                         decoding="async"
                         className="w-full h-full object-cover block pointer-events-none select-none"
+                        style={{
+                          imageRendering: '-webkit-optimize-contrast',
+                          WebkitBackfaceVisibility: 'hidden',
+                          transform: 'translateZ(0)',
+                        }}
                       />
                     </div>
                   )
@@ -474,7 +479,8 @@ export default function AppScreenshotGallery({
               draggable={false}
               className="max-h-[85vh] max-w-[90vw] object-contain rounded-2xl shadow-2xl border border-white/20 pointer-events-none select-none transition-transform duration-200"
               style={{
-                transform: `translateX(${dragOffset}px)`,
+                transform: `translateX(${dragOffset}px) translateZ(0)`,
+                imageRendering: '-webkit-optimize-contrast',
               }}
             />
           </div>
