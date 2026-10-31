@@ -92,14 +92,14 @@ export default function AppScreenshotGallery({
     }
   }, [activeIndex])
 
-  // Auto-play timer (5 detik, dijeda saat hover mouse, swipe aktif, atau modal terbuka)
+  // Auto-play timer (4 detik, otomatis bergulir, jeda saat hover/swipe/modal)
   useEffect(() => {
     if (items.length <= 1 || isPaused || isDragging || lightboxOpen) return
 
     timerRef.current = setInterval(() => {
       setIsTransitioning(true)
       setTrackIndex((prev) => prev + 1)
-    }, 5000)
+    }, 4200)
 
     return () => {
       if (timerRef.current) clearInterval(timerRef.current)
@@ -120,7 +120,7 @@ export default function AppScreenshotGallery({
     return () => window.removeEventListener('keydown', handleKeyDown)
   }, [lightboxOpen, goToNext, goToPrev])
 
-  // ── GESTUR SWIPE & POINTER DRAG REALTIME (SAMA DENGAN PRESENTASI SLIDER) ──
+  // ── GESTUR SWIPE & POINTER DRAG REALTIME ──
   const handlePointerDown = (e) => {
     if (e.button !== 0 && e.pointerType === 'mouse') return
     if (items.length <= 1) return
@@ -146,7 +146,7 @@ export default function AppScreenshotGallery({
     const deltaX = e.clientX - dragStartX.current
     const deltaY = e.clientY - dragStartY.current
 
-    // Cek arah gestur: Jika dominan vertikal, biarkan halaman bergulir (native page scroll)
+    // Cek arah gestur: Jika dominan vertikal, delegasikan ke gulir native halaman
     if (!isHorizontalRef.current) {
       if (Math.abs(deltaY) > Math.abs(deltaX) && Math.abs(deltaY) > 8) {
         isDraggingRef.current = false
@@ -176,7 +176,7 @@ export default function AppScreenshotGallery({
       e.currentTarget.releasePointerCapture?.(e.pointerId)
     } catch (_) {}
 
-    const threshold = 40 // Ambang batas geser 40px
+    const threshold = 35 // Ambang batas geser 35px
     if (dragOffset < -threshold) {
       goToNext()
     } else if (dragOffset > threshold) {
@@ -203,25 +203,16 @@ export default function AppScreenshotGallery({
 
   if (!items || items.length === 0) return null
 
-  // Dimensi & Style Kartu (Sama Persis dengan PersonaPresentationSlider)
-  const containerMaxWidth = isDesktop
-    ? 'max-w-4xl'
-    : 'max-w-md'
-
-  const cardAspectRatio = isDesktop
-    ? (items[0]?.aspectRatio || '1024 / 863')
-    : '768 / 1376'
-
   return (
-    <section className="py-20 sm:py-24 bg-white border-b border-neutral-200/80 overflow-hidden">
-      {/* ── HEADER SECTION TERSTRUKTUR RAPI ─────────────────────────── */}
+    <section className="py-20 sm:py-24 bg-neutral-50/70 border-b border-neutral-200/80 overflow-hidden">
+      {/* ── HEADER SECTION RESMI ─────────────────────────────────────── */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center mb-10 sm:mb-12">
         {label ? (
           <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3 block">
             {label}
           </span>
         ) : null}
-        <h2 className="heading-xl text-2xl sm:text-4xl text-neutral-950 mb-3 tracking-tight">
+        <h2 className="heading-xl text-2xl sm:text-4xl text-neutral-950 mb-3 tracking-tight font-display font-bold">
           {title}
         </h2>
         {subtitle && (
@@ -231,139 +222,207 @@ export default function AppScreenshotGallery({
         )}
       </div>
 
-      {/* ── KONTEN SLIDER TUNGGAL ELEGAN BEBAS DARI REDUNDANSI ───────── */}
+      {/* ── KONTEN SHOWCASE ENTERPRISE UTAMA ─────────────────────────── */}
       <div
-        className={`relative w-full ${containerMaxWidth} mx-auto px-4 sm:px-0 select-none flex flex-col group`}
+        className="max-w-4xl mx-auto px-4 sm:px-6 flex flex-col items-center select-none"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => !isDragging && setIsPaused(false)}
       >
-        {/* KARTU SLIDER: FRAMELESS, SHADOW TEGAS, POINTER SWIPE (HP & DESKTOP) */}
-        <div
-          ref={containerRef}
-          className={`relative w-full rounded-3xl overflow-hidden shadow-[0_16px_45px_-8px_rgba(0,0,0,0.18)] hover:shadow-[0_24px_55px_-10px_rgba(0,0,0,0.25)] border border-neutral-900/15 transition-all duration-300 hover:-translate-y-1 bg-white select-none ${
-            isDragging ? 'cursor-grabbing' : 'cursor-grab'
-          }`}
-          style={{
-            aspectRatio: cardAspectRatio,
-            touchAction: 'pan-y', // Mengizinkan scroll vertikal halaman di handphone
-          }}
-          onPointerDown={handlePointerDown}
-          onPointerMove={handlePointerMove}
-          onPointerUp={handlePointerUp}
-          onPointerCancel={handlePointerCancel}
-          onClick={handleCardClick}
-          title="Geser ke samping dengan tangan atau klik untuk memperbesar layar penuh"
-        >
-          {/* TRACK SLIDE REALTIME */}
-          <div
-            className="flex w-full h-full will-change-transform"
-            style={{
-              transform: `translateX(calc(-${trackIndex * 100}% + ${dragOffset}px))`,
-              transition: isTransitioning
-                ? 'transform 350ms cubic-bezier(0.25, 1, 0.5, 1)'
-                : 'none',
-            }}
-            onTransitionEnd={handleTransitionEnd}
-          >
-            {extendedItems.map((item, idx) => {
-              const imgSrc = item.img || item.src
-              const imgAlt = item.title || item.alt || `Layar Antarmuka ${idx}`
-              return (
-                <div key={idx} className="w-full h-full shrink-0 relative bg-white flex items-center justify-center p-2 sm:p-3">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={imgSrc}
-                    alt={imgAlt}
-                    draggable={false}
-                    loading={idx <= 2 ? "eager" : "lazy"}
-                    decoding="async"
-                    className="w-full h-full object-contain block pointer-events-none select-none"
-                  />
-                </div>
-              )
-            })}
-          </div>
-
-          {/* Tombol Panah Kiri Langsung di Atas Gambar */}
-          <button
-            type="button"
-            onClick={goToPrev}
-            onPointerDown={(e) => e.stopPropagation()}
-            aria-label="Layar Sebelumnya"
-            className="absolute left-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white/90 hover:bg-white text-neutral-950 border border-neutral-300 shadow-lg flex items-center justify-center backdrop-blur-sm transition-all duration-150 active:scale-95 cursor-pointer"
-          >
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-
-          {/* Tombol Panah Kanan Langsung di Atas Gambar */}
-          <button
-            type="button"
-            onClick={goToNext}
-            onPointerDown={(e) => e.stopPropagation()}
-            aria-label="Layar Berikutnya"
-            className="absolute right-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white/90 hover:bg-white text-neutral-950 border border-neutral-300 shadow-lg flex items-center justify-center backdrop-blur-sm transition-all duration-150 active:scale-95 cursor-pointer"
-          >
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
-
-          {/* Hint Petunjuk Geser & Zoom Tipis di Pojok Atas */}
-          <div className="absolute top-3 right-3 z-20 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-            <span className="px-2.5 py-1 rounded-lg bg-neutral-900/80 text-white text-[11px] font-mono tracking-wider backdrop-blur-sm border border-white/20 flex items-center gap-1.5 shadow-sm">
-              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M8 9l4-4 4 4m0 6l-4 4-4-4" />
-              </svg>
-              <span>Geser / Klik</span>
-            </span>
-          </div>
-        </div>
-
-        {/* ── NAVIGASI INDIKATOR TITIK & COUNTER (SAMA PERSIS DENGAN PRESENTASI SLIDER) ── */}
-        <div className="w-full pt-3 px-1 flex items-center justify-between text-neutral-700">
-          {/* Slide Counter */}
-          <div className="flex items-center gap-2 shrink-0">
-            <span className="text-xs font-mono font-semibold text-neutral-600">
-              Slide <span className="text-neutral-950 font-bold">{activeIndex + 1}</span> / {items.length}
+        {/* KARTU INFO FITUR TERPADU (DI ATAS PONSEL — MEMBERIKAN KONTEKS LENGKAP) */}
+        <div className="w-full max-w-md mx-auto mb-6 text-center px-2">
+          {/* Badge Nomor Fitur */}
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-neutral-200 shadow-xs mb-2.5">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+            <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-neutral-800">
+              Fitur {String(activeIndex + 1).padStart(2, '0')} dari {String(items.length).padStart(2, '0')}
             </span>
             {isPaused && (
-              <span className="text-[10px] font-mono text-neutral-500 bg-neutral-100 px-1.5 py-0.5 rounded border border-neutral-200">
-                Jeda
+              <span className="text-[9px] font-mono uppercase bg-neutral-100 text-neutral-500 px-1.5 py-0.2 rounded border border-neutral-200">
+                Dijeda
               </span>
             )}
           </div>
 
-          {/* Dots Navigation */}
+          {/* Judul Fitur Aktif */}
+          <h3 className="font-display font-bold text-lg sm:text-xl text-neutral-950 tracking-tight leading-snug line-clamp-1 min-h-[1.75rem]">
+            {currentSlide.title || `Antarmuka ${activeIndex + 1}`}
+          </h3>
+
+          {/* Deskripsi Fitur */}
+          {currentSlide.desc && (
+            <p className="text-xs sm:text-sm text-neutral-600 font-sans leading-relaxed line-clamp-2 mt-1 min-h-[2.5rem]">
+              {currentSlide.desc}
+            </p>
+          )}
+        </div>
+
+        {/* ── BINGKAI SMARTPHONE ENTERPRISE (TITANIUM FRAME & EDGE-TO-EDGE) ── */}
+        <div className="relative w-full flex items-center justify-center">
+          {/* Tombol Panah Melayang Kiri Luar (Desktop & Layar Lebar) */}
+          <button
+            type="button"
+            onClick={goToPrev}
+            aria-label="Layar Sebelumnya"
+            className="hidden sm:flex absolute -left-12 lg:-left-16 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white text-neutral-950 border border-neutral-300/80 shadow-[0_8px_25px_-4px_rgba(0,0,0,0.15)] items-center justify-center hover:bg-neutral-100 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer"
+          >
+            <svg className="w-5 h-5 text-neutral-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+
+          {/* Wadah Bingkai Ponsel (Center Stage) */}
+          <div
+            className={
+              isDesktop
+                ? 'relative w-full max-w-3xl rounded-2xl p-2.5 sm:p-3 bg-neutral-900 border border-neutral-700/80 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.35)]'
+                : 'relative w-[280px] xs:w-[305px] sm:w-[325px] rounded-[2.75rem] p-2 sm:p-2.5 bg-gradient-to-b from-neutral-800 via-neutral-900 to-black border-2 border-neutral-700/90 shadow-[0_25px_65px_-12px_rgba(0,0,0,0.4),0_0_0_1px_rgba(255,255,255,0.1)_inset]'
+            }
+          >
+            {/* Dynamic Island / Kamera Depan Smartphone (Khusus Mobile Frame) */}
+            {!isDesktop && (
+              <div className="absolute top-3.5 left-1/2 -translate-x-1/2 z-30 w-24 h-4 bg-black rounded-full flex items-center justify-end pr-2.5 pointer-events-none shadow-sm">
+                <span className="w-2.5 h-2.5 rounded-full bg-neutral-900 border border-neutral-800" />
+              </div>
+            )}
+
+            {/* Title Bar Desktop (Khusus Desktop Frame) */}
+            {isDesktop && (
+              <div className="flex items-center justify-between pb-2 px-1">
+                <div className="flex items-center gap-1.5">
+                  <span className="w-2.5 h-2.5 rounded-full bg-red-500/80" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-yellow-500/80" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-green-500/80" />
+                </div>
+                <span className="text-[11px] font-mono text-neutral-400 truncate max-w-[200px]">
+                  {currentSlide.title || 'FokusKonten Desktop Pro'}
+                </span>
+                <span className="w-8" />
+              </div>
+            )}
+
+            {/* Layar Internal Ponsel (Edge-to-Edge Screenshot, Bebas Gap Putih) */}
+            <div
+              ref={containerRef}
+              className={`relative w-full overflow-hidden bg-neutral-950 select-none ${
+                isDesktop ? 'rounded-xl aspect-[16/10]' : 'rounded-[2.25rem] aspect-[1080/2356]'
+              } ${isDragging ? 'cursor-grabbing' : 'cursor-grab'}`}
+              style={{
+                touchAction: 'pan-y', // Scroll halaman lancar saat disentuh ke arah vertikal
+              }}
+              onPointerDown={handlePointerDown}
+              onPointerMove={handlePointerMove}
+              onPointerUp={handlePointerUp}
+              onPointerCancel={handlePointerCancel}
+              onClick={handleCardClick}
+              title="Geser ke samping dengan tangan atau klik untuk layar penuh"
+            >
+              {/* Rel Track Slide Realtime */}
+              <div
+                className="flex w-full h-full will-change-transform"
+                style={{
+                  transform: `translateX(calc(-${trackIndex * 100}% + ${dragOffset}px))`,
+                  transition: isTransitioning
+                    ? 'transform 350ms cubic-bezier(0.25, 1, 0.5, 1)'
+                    : 'none',
+                }}
+                onTransitionEnd={handleTransitionEnd}
+              >
+                {extendedItems.map((item, idx) => {
+                  const imgSrc = item.img || item.src
+                  const imgAlt = item.title || item.alt || `Layar Antarmuka ${idx}`
+                  return (
+                    <div key={idx} className="w-full h-full shrink-0 relative bg-neutral-950 flex items-center justify-center">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={imgSrc}
+                        alt={imgAlt}
+                        draggable={false}
+                        loading={idx <= 2 ? 'eager' : 'lazy'}
+                        decoding="async"
+                        className="w-full h-full object-cover block pointer-events-none select-none"
+                      />
+                    </div>
+                  )
+                })}
+              </div>
+
+              {/* Hint Tipis Geser di Pojok Kanan Atas */}
+              <div className="absolute top-3.5 right-3.5 z-20 pointer-events-none opacity-0 hover:opacity-100 transition-opacity">
+                <span className="px-2 py-0.5 rounded-md bg-neutral-900/80 text-white text-[10px] font-mono tracking-wider backdrop-blur-sm border border-white/20 flex items-center gap-1 shadow-sm">
+                  <span>Geser</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Tombol Panah Melayang Kanan Luar (Desktop & Layar Lebar) */}
+          <button
+            type="button"
+            onClick={goToNext}
+            aria-label="Layar Berikutnya"
+            className="hidden sm:flex absolute -right-12 lg:-right-16 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white text-neutral-950 border border-neutral-300/80 shadow-[0_8px_25px_-4px_rgba(0,0,0,0.15)] items-center justify-center hover:bg-neutral-100 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer"
+          >
+            <svg className="w-5 h-5 text-neutral-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+
+        {/* ── BAR NAVIGASI BAWAH BERSIH & PROPOSIONAL (RAMAH HP & PC) ────── */}
+        <div className="w-full max-w-md mx-auto pt-5 pb-2 flex flex-col items-center gap-3">
+          {/* Kontrol Navigasi Utama: Prev • Counter • Next */}
+          <div className="flex items-center justify-between w-full px-4 sm:px-6">
+            {/* Tombol Panah Kiri Mobile */}
+            <button
+              type="button"
+              onClick={goToPrev}
+              aria-label="Layar Sebelumnya"
+              className="w-10 h-10 rounded-full bg-white text-neutral-950 border border-neutral-300 shadow-sm flex items-center justify-center hover:bg-neutral-100 active:scale-95 transition-all cursor-pointer"
+            >
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+
+            {/* Counter Tengah Elegan */}
+            <div className="px-4 py-1.5 rounded-full bg-white border border-neutral-200 shadow-xs flex items-center gap-2">
+              <span className="text-xs font-mono font-semibold text-neutral-600">
+                Slide <span className="text-neutral-950 font-bold">{activeIndex + 1}</span> / {items.length}
+              </span>
+            </div>
+
+            {/* Tombol Panah Kanan Mobile */}
+            <button
+              type="button"
+              onClick={goToNext}
+              aria-label="Layar Berikutnya"
+              className="w-10 h-10 rounded-full bg-white text-neutral-950 border border-neutral-300 shadow-sm flex items-center justify-center hover:bg-neutral-100 active:scale-95 transition-all cursor-pointer"
+            >
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+
+          {/* Dots Indicator Minimalis Auto-Centering */}
           <div
             ref={dotsContainerRef}
-            className="flex items-center gap-1.5 overflow-x-auto max-w-[140px] sm:max-w-[200px] py-1 px-1 justify-center scrollbar-none"
+            className="flex items-center gap-1.5 overflow-x-auto max-w-[200px] sm:max-w-[260px] py-1 px-2 justify-center scrollbar-none"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {items.map((_, idx) => (
               <button
                 key={idx}
                 type="button"
-                onClick={(e) => {
-                  e.stopPropagation()
-                  goToSlide(idx)
-                }}
-                aria-label={`Buka slide ${idx + 1}`}
-                className={`h-2 rounded-full transition-all duration-200 shrink-0 cursor-pointer ${
+                onClick={() => goToSlide(idx)}
+                aria-label={`Buka antarmuka ${idx + 1}`}
+                className={`h-1.5 rounded-full transition-all duration-200 shrink-0 cursor-pointer ${
                   idx === activeIndex
-                    ? 'w-6 bg-neutral-950'
-                    : 'w-2 bg-neutral-300 hover:bg-neutral-400'
+                    ? 'w-5 bg-neutral-950'
+                    : 'w-1.5 bg-neutral-300 hover:bg-neutral-400'
                 }`}
               />
             ))}
-          </div>
-
-          {/* Caption Slide */}
-          <div className="hidden sm:block text-right truncate max-w-[180px] sm:max-w-[240px]">
-            <span className="text-xs font-mono text-neutral-500 truncate block">
-              {currentSlide.title || currentSlide.caption || ''}
-            </span>
           </div>
         </div>
       </div>
@@ -371,17 +430,17 @@ export default function AppScreenshotGallery({
       {/* ── MODAL LIGHTBOX FULLSCREEN RESOLUSI TINGGI ────────────────── */}
       {lightboxOpen && (
         <div
-          className="fixed inset-0 z-50 bg-black/95 backdrop-blur-lg flex flex-col items-center justify-center p-4 animate-in fade-in duration-200"
+          className="fixed inset-0 z-50 bg-black/95 backdrop-blur-md flex flex-col items-center justify-center p-4 animate-in fade-in duration-200"
           onClick={() => setLightboxOpen(false)}
         >
           {/* Header Lightbox */}
           <div className="absolute top-4 left-4 right-4 flex items-center justify-between text-white z-30">
             <div className="flex items-center gap-3">
               <span className="text-xs font-mono px-2.5 py-1 rounded bg-white/10 border border-white/20">
-                Slide {activeIndex + 1} / {items.length}
+                Layar {activeIndex + 1} / {items.length}
               </span>
               <span className="text-xs text-neutral-300 font-mono hidden md:inline truncate max-w-md">
-                {currentSlide.title || currentSlide.caption}
+                {currentSlide.title || ''}
               </span>
             </div>
             <button
@@ -407,12 +466,11 @@ export default function AppScreenshotGallery({
             onPointerMove={handlePointerMove}
             onPointerUp={handlePointerUp}
             onPointerCancel={handlePointerCancel}
-            style={{ touchAction: 'none' }}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={currentSlide.img || currentSlide.src}
-              alt={currentSlide.title || currentSlide.alt || ''}
+              src={items[activeIndex]?.img || items[activeIndex]?.src}
+              alt={items[activeIndex]?.title || 'Layar Antarmuka Fullscreen'}
               draggable={false}
               className="max-h-[85vh] max-w-[90vw] object-contain rounded-2xl shadow-2xl border border-white/20 pointer-events-none select-none transition-transform duration-200"
               style={{
@@ -421,29 +479,29 @@ export default function AppScreenshotGallery({
             />
           </div>
 
-          {/* Tombol Navigasi Lightbox Kiri */}
-          <button
-            type="button"
-            onClick={goToPrev}
-            className="absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors backdrop-blur-sm cursor-pointer z-30"
-            aria-label="Sebelumnya"
+          {/* Caption & Navigation Bawah Lightbox */}
+          <div
+            className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white z-30"
+            onClick={(e) => e.stopPropagation()}
           >
-            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-
-          {/* Tombol Navigasi Lightbox Kanan */}
-          <button
-            type="button"
-            onClick={goToNext}
-            className="absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors backdrop-blur-sm cursor-pointer z-30"
-            aria-label="Berikutnya"
-          >
-            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
+            <button
+              type="button"
+              onClick={goToPrev}
+              className="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-mono transition-colors cursor-pointer"
+            >
+              ← Sebelumnya
+            </button>
+            <span className="text-xs font-mono text-neutral-400">
+              Gunakan ← → keyboard atau geser layar
+            </span>
+            <button
+              type="button"
+              onClick={goToNext}
+              className="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-mono transition-colors cursor-pointer"
+            >
+              Selanjutnya →
+            </button>
+          </div>
         </div>
       )}
     </section>
