@@ -2,6 +2,7 @@ import Link from 'next/link'
 import AppScreenshotGallery from '@/components/AppScreenshotGallery'
 import DualReelKelontongShowcase from '@/components/DualReelKelontongShowcase'
 import PersonaPresentationSlider from '@/components/PersonaPresentationSlider'
+import SmoothScrollLink from '@/components/SmoothScrollLink'
 
 export const metadata = {
   title: 'Kelontong Pro — Aplikasi Kasir Toko Kelontong & Warung Sembako Android',
@@ -448,8 +449,7 @@ export default function TokoKelontongProDedicatedSalesPage() {
             className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-12 max-w-xl mx-auto fk-hero-in"
             style={{ '--hero-i': 2 }}
           >
-            <a
-              href="#alur-pengujian"
+            <SmoothScrollLink targetId="alur-pengujian"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-display font-bold text-sm sm:text-base text-neutral-950 bg-white border-2 border-neutral-300 hover:border-black hover:bg-neutral-50 shadow-md hover:shadow-lg transition-all duration-200 group"
             >
               <svg className="w-6 h-6 shrink-0 transition-transform duration-200 group-hover:scale-110" viewBox="0 0 24 24" fill="none">
@@ -459,7 +459,7 @@ export default function TokoKelontongProDedicatedSalesPage() {
                 <path d="M14.851 10.000L5.38 3.48l11.89 6.845-2.42 2.419z" fill="#00E676"/>
               </svg>
               <span>Uji Coba Play Store (Gabung Grup)</span>
-            </a>
+            </SmoothScrollLink>
 
             <a
               href={waConsultUrl}
@@ -1050,8 +1050,7 @@ export default function TokoKelontongProDedicatedSalesPage() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-4">
-            <a
-              href="#alur-pengujian"
+            <SmoothScrollLink targetId="alur-pengujian"
               className="w-full sm:w-auto px-8 py-4 rounded-xl font-display font-bold text-sm sm:text-base text-neutral-950 bg-white hover:bg-neutral-50 transition-all duration-200 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.12)] border-2 border-neutral-200 hover:border-neutral-400 inline-flex items-center justify-center gap-3 group"
             >
               <svg className="w-5 h-5 shrink-0 transition-transform duration-200 group-hover:scale-110" viewBox="0 0 24 24" fill="none">
@@ -1061,7 +1060,7 @@ export default function TokoKelontongProDedicatedSalesPage() {
                 <path d="M14.851 10.000L5.38 3.48l11.89 6.845-2.42 2.419z" fill="#00E676"/>
               </svg>
               <span>Uji Coba Play Store (Gabung Grup)</span>
-            </a>
+            </SmoothScrollLink>
 
             <a
               href={waConsultUrl}

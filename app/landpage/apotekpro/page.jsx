@@ -2,6 +2,7 @@ import Link from 'next/link'
 import AppScreenshotGallery from '@/components/AppScreenshotGallery'
 import DualReelVideoShowcase from '@/components/DualReelVideoShowcase'
 import PersonaPresentationSlider from '@/components/PersonaPresentationSlider'
+import SmoothScrollLink from '@/components/SmoothScrollLink'
 
 export const metadata = {
   description: 'Software kasir apotek dan manajemen stok obat Android resmi karya FokusKonten. Lacak batch kedaluwarsa FEFO otomatis, hitung resep racikan puyer dokter, buku defecta digital, dan cetak struk bluetooth 100% offline tanpa iuran bulanan.',
@@ -442,8 +443,7 @@ export default function ApotekProDedicatedSalesPage() {
             className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-12 max-w-xl mx-auto fk-hero-in"
             style={{ '--hero-i': 2 }}
           >
-            <a
-              href="#alur-pengujian"
+            <SmoothScrollLink targetId="alur-pengujian"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-display font-bold text-sm sm:text-base text-neutral-950 bg-white border-2 border-neutral-300 hover:border-black hover:bg-neutral-50 shadow-md hover:shadow-lg transition-all duration-200 group"
             >
               <svg className="w-6 h-6 shrink-0 transition-transform duration-200 group-hover:scale-110" viewBox="0 0 24 24" fill="none">
@@ -453,7 +453,7 @@ export default function ApotekProDedicatedSalesPage() {
                 <path d="M14.851 10.000L5.38 3.48l11.89 6.845-2.42 2.419z" fill="#00E676"/>
               </svg>
               <span>Uji Coba Play Store (Gabung Grup)</span>
-            </a>
+            </SmoothScrollLink>
 
             <a
               href={waConsultUrl}
@@ -1012,8 +1012,7 @@ export default function ApotekProDedicatedSalesPage() {
             Mulai uji coba mandiri 100% offline di tablet atau handphone Android Anda sekarang juga. Tanpa komitmen dan tanpa biaya tersembunyi.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-4">
-            <a
-              href="#alur-pengujian"
+            <SmoothScrollLink targetId="alur-pengujian"
               className="w-full sm:w-auto px-8 py-4 rounded-xl font-display font-bold text-sm sm:text-base text-neutral-950 bg-white hover:bg-neutral-50 transition-all duration-200 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.12)] border-2 border-neutral-200 hover:border-neutral-400 inline-flex items-center justify-center gap-3 group"
             >
               <svg className="w-5 h-5 shrink-0 transition-transform duration-200 group-hover:scale-110" viewBox="0 0 24 24" fill="none">
@@ -1023,7 +1022,7 @@ export default function ApotekProDedicatedSalesPage() {
                 <path d="M14.851 10.000L5.38 3.48l11.89 6.845-2.42 2.419z" fill="#00E676"/>
               </svg>
               <span>Uji Coba Play Store (Gabung Grup)</span>
-            </a>
+            </SmoothScrollLink>
             <a
               href={directApkUrl}
               target="_blank"

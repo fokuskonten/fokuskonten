@@ -1,368 +1,451 @@
 'use client'
 
-import { useRef, useState, useEffect } from 'react'
+import { useState, useEffect, useRef, useMemo, useCallback } from 'react'
 
 export default function AppScreenshotGallery({
-  title = 'Galeri Antarmuka Apotek Pro',
-  subtitle = 'Geser ke kanan atau kiri untuk melihat langsung alur kerja kasir, kalkulator racikan resep, hingga pembukuan obat.',
+  title = 'Galeri Antarmuka Aplikasi',
+  subtitle = 'Geser ke kanan atau kiri untuk melihat langsung alur kerja antarmuka aplikasi.',
   label = '',
   items = [],
-  isDesktop = false
+  isDesktop = false,
 }) {
-  const scrollRef = useRef(null)
-  const [canScrollLeft, setCanScrollLeft] = useState(false)
-  const [canScrollRight, setCanScrollRight] = useState(true)
-  const [activeIndex, setActiveIndex] = useState(0)
-  const [lightboxIndex, setLightboxIndex] = useState(null)
-  const [isDragging, setIsDragging] = useState(false)
-  const [startX, setStartX] = useState(0)
-  const [scrollLeftState, setScrollLeftState] = useState(0)
+  // Bersihkan hash URL agar saat pengguna me-refresh halaman, browser tidak melompat ke bawah
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.location.hash) {
+      window.history.replaceState(null, '', window.location.pathname)
+    }
+  }, [])
 
+  // Seamless infinite loop: [Slide_Terakhir, ...items, Slide_Pertama]
+  const extendedItems = useMemo(() => {
+    if (!items || items.length <= 1) return items || []
+    return [items[items.length - 1], ...items, items[0]]
+  }, [items])
+
+  // Track index menunjuk ke slide riil pertama pada posisi 1
+  const [trackIndex, setTrackIndex] = useState(items.length > 1 ? 1 : 0)
+  const [isTransitioning, setIsTransitioning] = useState(true)
+  const [dragOffset, setDragOffset] = useState(0)
+  const [isDragging, setIsDragging] = useState(false)
+  const [isPaused, setIsPaused] = useState(false)
+  const [lightboxOpen, setLightboxOpen] = useState(false)
+
+  const timerRef = useRef(null)
+  const dragStartX = useRef(0)
+  const dragStartY = useRef(0)
   const isDraggingRef = useRef(false)
   const hasDraggedRef = useRef(false)
-  const dragDistRef = useRef(0)
+  const isHorizontalRef = useRef(false)
+  const containerRef = useRef(null)
+  const dotsContainerRef = useRef(null)
 
-  // Cek batas scroll kiri dan kanan
-  const updateScrollState = () => {
-    const el = scrollRef.current
-    if (!el) return
-    const { scrollLeft, scrollWidth, clientWidth } = el
-    setCanScrollLeft(scrollLeft > 15)
-    setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 15)
+  // Indeks aktif untuk dots & counter (0 s/d items.length - 1)
+  const activeIndex = useMemo(() => {
+    if (!items || items.length === 0) return 0
+    if (items.length === 1) return 0
+    return (trackIndex - 1 + items.length) % items.length
+  }, [trackIndex, items])
 
-    // Hitung active item index berdasarkan scroll
-    const child = el.children[0]
-    if (child) {
-      const itemWidth = child.getBoundingClientRect().width + 24 // 24px gap
-      const index = Math.round(scrollLeft / itemWidth)
-      setActiveIndex(Math.min(Math.max(index, 0), items.length - 1))
-    }
-  }
+  // Slide aktif saat ini
+  const currentSlide = items[activeIndex] || {}
 
-  useEffect(() => {
-    const el = scrollRef.current
-    if (!el) return
-    updateScrollState()
-    el.addEventListener('scroll', updateScrollState, { passive: true })
-    window.addEventListener('resize', updateScrollState)
-    return () => {
-      el.removeEventListener('scroll', updateScrollState)
-      window.removeEventListener('resize', updateScrollState)
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+  // Navigasi Next & Prev
+  const goToNext = useCallback((e) => {
+    e?.stopPropagation()
+    if (items.length <= 1) return
+    setIsTransitioning(true)
+    setTrackIndex((prev) => prev + 1)
   }, [items.length])
 
-  // Navigasi geser satu langkah
-  const scrollByDirection = (direction) => {
-    const el = scrollRef.current
-    if (!el) return
-    const child = el.children[0]
-    const itemWidth = child ? child.getBoundingClientRect().width + 24 : 320
-    el.scrollBy({
-      left: direction === 'left' ? -itemWidth : itemWidth,
-      behavior: 'smooth'
-    })
+  const goToPrev = useCallback((e) => {
+    e?.stopPropagation()
+    if (items.length <= 1) return
+    setIsTransitioning(true)
+    setTrackIndex((prev) => prev - 1)
+  }, [items.length])
+
+  const goToSlide = (slideIdx) => {
+    if (items.length <= 1) return
+    setIsTransitioning(true)
+    setTrackIndex(slideIdx + 1)
   }
 
-  // Lompat ke index tertentu
-  const scrollToIndex = (index) => {
-    const el = scrollRef.current
-    if (!el) return
-    const child = el.children[0]
-    const itemWidth = child ? child.getBoundingClientRect().width + 24 : 320
-    el.scrollTo({
-      left: index * itemWidth,
-      behavior: 'smooth'
-    })
+  // Silent wrap-around reset saat mencapai clone ujung
+  const handleTransitionEnd = () => {
+    if (items.length <= 1) return
+    if (trackIndex === extendedItems.length - 1) {
+      setIsTransitioning(false)
+      setTrackIndex(1)
+    } else if (trackIndex === 0) {
+      setIsTransitioning(false)
+      setTrackIndex(items.length)
+    }
   }
 
-  // Keyboard navigation untuk lightbox
+  // Auto-scroll ke dot aktif jika dots melebihi lebar kontainer
   useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (lightboxIndex === null) return
-      if (e.key === 'Escape') setLightboxIndex(null)
-      if (e.key === 'ArrowRight' && lightboxIndex < items.length - 1) {
-        setLightboxIndex(lightboxIndex + 1)
-      }
-      if (e.key === 'ArrowLeft' && lightboxIndex > 0) {
-        setLightboxIndex(lightboxIndex - 1)
+    if (dotsContainerRef.current) {
+      const activeDot = dotsContainerRef.current.children[activeIndex]
+      if (activeDot) {
+        activeDot.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' })
       }
     }
+  }, [activeIndex])
+
+  // Auto-play timer (5 detik, dijeda saat hover mouse, swipe aktif, atau modal terbuka)
+  useEffect(() => {
+    if (items.length <= 1 || isPaused || isDragging || lightboxOpen) return
+
+    timerRef.current = setInterval(() => {
+      setIsTransitioning(true)
+      setTrackIndex((prev) => prev + 1)
+    }, 5000)
+
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current)
+    }
+  }, [items.length, isPaused, isDragging, lightboxOpen])
+
+  // Navigasi keyboard pada Lightbox modal
+  useEffect(() => {
+    if (!lightboxOpen) return
+
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') setLightboxOpen(false)
+      if (e.key === 'ArrowRight') goToNext()
+      if (e.key === 'ArrowLeft') goToPrev()
+    }
+
     window.addEventListener('keydown', handleKeyDown)
     return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [lightboxIndex, items.length])
+  }, [lightboxOpen, goToNext, goToPrev])
 
-  // Mouse Drag to Scroll (Desktop & Trackpad Friendly)
-  const handleMouseDown = (e) => {
-    if (e.button !== 0) return
-    const el = scrollRef.current
-    if (!el) return
+  // ── GESTUR SWIPE & POINTER DRAG REALTIME (SAMA DENGAN PRESENTASI SLIDER) ──
+  const handlePointerDown = (e) => {
+    if (e.button !== 0 && e.pointerType === 'mouse') return
+    if (items.length <= 1) return
+
+    dragStartX.current = e.clientX
+    dragStartY.current = e.clientY
     isDraggingRef.current = true
     hasDraggedRef.current = false
-    dragDistRef.current = 0
+    isHorizontalRef.current = false
     setIsDragging(true)
-    setStartX(e.pageX - el.offsetLeft)
-    setScrollLeftState(el.scrollLeft)
+    setIsPaused(true)
+    setIsTransitioning(false)
+    setDragOffset(0)
+
+    try {
+      e.currentTarget.setPointerCapture?.(e.pointerId)
+    } catch (_) {}
   }
 
-  const handleMouseMove = (e) => {
+  const handlePointerMove = (e) => {
     if (!isDraggingRef.current) return
-    const el = scrollRef.current
-    if (!el) return
-    e.preventDefault()
-    const x = e.pageX - el.offsetLeft
-    const dist = Math.abs(x - startX)
-    dragDistRef.current += dist
-    if (dragDistRef.current > 8) {
-      hasDraggedRef.current = true
+
+    const deltaX = e.clientX - dragStartX.current
+    const deltaY = e.clientY - dragStartY.current
+
+    // Cek arah gestur: Jika dominan vertikal, biarkan halaman bergulir (native page scroll)
+    if (!isHorizontalRef.current) {
+      if (Math.abs(deltaY) > Math.abs(deltaX) && Math.abs(deltaY) > 8) {
+        isDraggingRef.current = false
+        setIsDragging(false)
+        setDragOffset(0)
+        setIsTransitioning(true)
+        return
+      }
+      if (Math.abs(deltaX) > 8) {
+        isHorizontalRef.current = true
+      }
     }
-    const walk = (x - startX) * 1.5
-    el.scrollLeft = scrollLeftState - walk
+
+    if (isHorizontalRef.current) {
+      hasDraggedRef.current = true
+      setDragOffset(deltaX)
+    }
   }
 
-  const handleMouseUpOrLeave = () => {
+  const handlePointerUp = (e) => {
     if (!isDraggingRef.current) return
     isDraggingRef.current = false
     setIsDragging(false)
+    setIsPaused(false)
+
+    try {
+      e.currentTarget.releasePointerCapture?.(e.pointerId)
+    } catch (_) {}
+
+    const threshold = 40 // Ambang batas geser 40px
+    if (dragOffset < -threshold) {
+      goToNext()
+    } else if (dragOffset > threshold) {
+      goToPrev()
+    } else {
+      setIsTransitioning(true)
+    }
+
+    setDragOffset(0)
   }
 
-  const handleItemClick = (idx) => {
+  const handlePointerCancel = () => {
+    isDraggingRef.current = false
+    setIsDragging(false)
+    setIsPaused(false)
+    setIsTransitioning(true)
+    setDragOffset(0)
+  }
+
+  const handleCardClick = () => {
     if (hasDraggedRef.current) return
-    setLightboxIndex(idx)
+    setLightboxOpen(true)
   }
 
   if (!items || items.length === 0) return null
 
+  // Dimensi & Style Kartu (Sama Persis dengan PersonaPresentationSlider)
+  const containerMaxWidth = isDesktop
+    ? 'max-w-4xl'
+    : 'max-w-md'
+
+  const cardAspectRatio = isDesktop
+    ? (items[0]?.aspectRatio || '1024 / 863')
+    : '768 / 1376'
+
   return (
     <section className="py-20 sm:py-24 bg-white border-b border-neutral-200/80 overflow-hidden">
-      {/* HEADER SECTION TENGAH PROPORSIONAL */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center mb-12">
+      {/* ── HEADER SECTION TERSTRUKTUR RAPI ─────────────────────────── */}
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center mb-10 sm:mb-12">
         {label ? (
-          <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3.5 block">{label}</span>
+          <span className="text-xs font-mono font-semibold uppercase tracking-widest text-neutral-500 mb-3 block">
+            {label}
+          </span>
         ) : null}
         <h2 className="heading-xl text-2xl sm:text-4xl text-neutral-950 mb-3 tracking-tight">
           {title}
         </h2>
-        <p className="text-neutral-600 text-sm sm:text-base leading-relaxed font-sans max-w-2xl mx-auto mb-6">
-          {subtitle}
-        </p>
+        {subtitle && (
+          <p className="text-neutral-600 text-sm sm:text-base leading-relaxed font-sans max-w-2xl mx-auto">
+            {subtitle}
+          </p>
+        )}
+      </div>
 
-        {/* Navigasi Panah & Counter Slide Ditengah Sempurna */}
-        <div className="flex items-center justify-center gap-3">
+      {/* ── KONTEN SLIDER TUNGGAL ELEGAN BEBAS DARI REDUNDANSI ───────── */}
+      <div
+        className={`relative w-full ${containerMaxWidth} mx-auto px-4 sm:px-0 select-none flex flex-col group`}
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => !isDragging && setIsPaused(false)}
+      >
+        {/* KARTU SLIDER: FRAMELESS, SHADOW TEGAS, POINTER SWIPE (HP & DESKTOP) */}
+        <div
+          ref={containerRef}
+          className={`relative w-full rounded-3xl overflow-hidden shadow-[0_16px_45px_-8px_rgba(0,0,0,0.18)] hover:shadow-[0_24px_55px_-10px_rgba(0,0,0,0.25)] border border-neutral-900/15 transition-all duration-300 hover:-translate-y-1 bg-white select-none ${
+            isDragging ? 'cursor-grabbing' : 'cursor-grab'
+          }`}
+          style={{
+            aspectRatio: cardAspectRatio,
+            touchAction: 'pan-y', // Mengizinkan scroll vertikal halaman di handphone
+          }}
+          onPointerDown={handlePointerDown}
+          onPointerMove={handlePointerMove}
+          onPointerUp={handlePointerUp}
+          onPointerCancel={handlePointerCancel}
+          onClick={handleCardClick}
+          title="Geser ke samping dengan tangan atau klik untuk memperbesar layar penuh"
+        >
+          {/* TRACK SLIDE REALTIME */}
+          <div
+            className="flex w-full h-full will-change-transform"
+            style={{
+              transform: `translateX(calc(-${trackIndex * 100}% + ${dragOffset}px))`,
+              transition: isTransitioning
+                ? 'transform 350ms cubic-bezier(0.25, 1, 0.5, 1)'
+                : 'none',
+            }}
+            onTransitionEnd={handleTransitionEnd}
+          >
+            {extendedItems.map((item, idx) => {
+              const imgSrc = item.img || item.src
+              const imgAlt = item.title || item.alt || `Layar Antarmuka ${idx}`
+              return (
+                <div key={idx} className="w-full h-full shrink-0 relative bg-white flex items-center justify-center p-2 sm:p-3">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={imgSrc}
+                    alt={imgAlt}
+                    draggable={false}
+                    loading={idx <= 2 ? "eager" : "lazy"}
+                    decoding="async"
+                    className="w-full h-full object-contain block pointer-events-none select-none"
+                  />
+                </div>
+              )
+            })}
+          </div>
+
+          {/* Tombol Panah Kiri Langsung di Atas Gambar */}
           <button
             type="button"
-            onClick={() => scrollByDirection('left')}
-            disabled={!canScrollLeft}
-            aria-label="Geser ke kiri"
-            className="w-10 h-10 rounded-full border border-neutral-300 bg-white hover:bg-neutral-50 hover:border-black disabled:opacity-30 disabled:hover:border-neutral-300 disabled:hover:bg-white flex items-center justify-center transition-all shadow-sm cursor-pointer disabled:cursor-not-allowed"
+            onClick={goToPrev}
+            onPointerDown={(e) => e.stopPropagation()}
+            aria-label="Layar Sebelumnya"
+            className="absolute left-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white/90 hover:bg-white text-neutral-950 border border-neutral-300 shadow-lg flex items-center justify-center backdrop-blur-sm transition-all duration-150 active:scale-95 cursor-pointer"
           >
-            <svg className="w-4 h-4 text-neutral-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
             </svg>
           </button>
 
-          <div className="px-4 py-1.5 rounded-full bg-neutral-100 text-neutral-800 text-xs font-mono font-semibold border border-neutral-200 shadow-sm flex items-center gap-1.5">
-            <span>{String(activeIndex + 1).padStart(2, '0')}</span>
-            <span className="text-neutral-400">/</span>
-            <span>{String(items.length).padStart(2, '0')}</span>
-          </div>
-
+          {/* Tombol Panah Kanan Langsung di Atas Gambar */}
           <button
             type="button"
-            onClick={() => scrollByDirection('right')}
-            disabled={!canScrollRight}
-            aria-label="Geser ke kanan"
-            className="w-10 h-10 rounded-full border border-neutral-300 bg-white hover:bg-neutral-50 hover:border-black disabled:opacity-30 disabled:hover:border-neutral-300 disabled:hover:bg-white flex items-center justify-center transition-all shadow-sm cursor-pointer disabled:cursor-not-allowed"
+            onClick={goToNext}
+            onPointerDown={(e) => e.stopPropagation()}
+            aria-label="Layar Berikutnya"
+            className="absolute right-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white/90 hover:bg-white text-neutral-950 border border-neutral-300 shadow-lg flex items-center justify-center backdrop-blur-sm transition-all duration-150 active:scale-95 cursor-pointer"
           >
-            <svg className="w-4 h-4 text-neutral-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+
+          {/* Hint Petunjuk Geser & Zoom Tipis di Pojok Atas */}
+          <div className="absolute top-3 right-3 z-20 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+            <span className="px-2.5 py-1 rounded-lg bg-neutral-900/80 text-white text-[11px] font-mono tracking-wider backdrop-blur-sm border border-white/20 flex items-center gap-1.5 shadow-sm">
+              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M8 9l4-4 4 4m0 6l-4 4-4-4" />
+              </svg>
+              <span>Geser / Klik</span>
+            </span>
+          </div>
+        </div>
+
+        {/* ── NAVIGASI INDIKATOR TITIK & COUNTER (SAMA PERSIS DENGAN PRESENTASI SLIDER) ── */}
+        <div className="w-full pt-3 px-1 flex items-center justify-between text-neutral-700">
+          {/* Slide Counter */}
+          <div className="flex items-center gap-2 shrink-0">
+            <span className="text-xs font-mono font-semibold text-neutral-600">
+              Slide <span className="text-neutral-950 font-bold">{activeIndex + 1}</span> / {items.length}
+            </span>
+            {isPaused && (
+              <span className="text-[10px] font-mono text-neutral-500 bg-neutral-100 px-1.5 py-0.5 rounded border border-neutral-200">
+                Jeda
+              </span>
+            )}
+          </div>
+
+          {/* Dots Navigation */}
+          <div
+            ref={dotsContainerRef}
+            className="flex items-center gap-1.5 overflow-x-auto max-w-[140px] sm:max-w-[200px] py-1 px-1 justify-center scrollbar-none"
+            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+          >
+            {items.map((_, idx) => (
+              <button
+                key={idx}
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation()
+                  goToSlide(idx)
+                }}
+                aria-label={`Buka slide ${idx + 1}`}
+                className={`h-2 rounded-full transition-all duration-200 shrink-0 cursor-pointer ${
+                  idx === activeIndex
+                    ? 'w-6 bg-neutral-950'
+                    : 'w-2 bg-neutral-300 hover:bg-neutral-400'
+                }`}
+              />
+            ))}
+          </div>
+
+          {/* Caption Slide */}
+          <div className="hidden sm:block text-right truncate max-w-[180px] sm:max-w-[240px]">
+            <span className="text-xs font-mono text-neutral-500 truncate block">
+              {currentSlide.title || currentSlide.caption || ''}
+            </span>
+          </div>
+        </div>
+      </div>
+
+      {/* ── MODAL LIGHTBOX FULLSCREEN RESOLUSI TINGGI ────────────────── */}
+      {lightboxOpen && (
+        <div
+          className="fixed inset-0 z-50 bg-black/95 backdrop-blur-lg flex flex-col items-center justify-center p-4 animate-in fade-in duration-200"
+          onClick={() => setLightboxOpen(false)}
+        >
+          {/* Header Lightbox */}
+          <div className="absolute top-4 left-4 right-4 flex items-center justify-between text-white z-30">
+            <div className="flex items-center gap-3">
+              <span className="text-xs font-mono px-2.5 py-1 rounded bg-white/10 border border-white/20">
+                Slide {activeIndex + 1} / {items.length}
+              </span>
+              <span className="text-xs text-neutral-300 font-mono hidden md:inline truncate max-w-md">
+                {currentSlide.title || currentSlide.caption}
+              </span>
+            </div>
+            <button
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation()
+                setLightboxOpen(false)
+              }}
+              className="p-2 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors cursor-pointer"
+              aria-label="Tutup"
+            >
+              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          {/* Area Gambar Fullscreen */}
+          <div
+            className="relative max-h-[85vh] max-w-[90vw] flex items-center justify-center select-none"
+            onClick={(e) => e.stopPropagation()}
+            onPointerDown={handlePointerDown}
+            onPointerMove={handlePointerMove}
+            onPointerUp={handlePointerUp}
+            onPointerCancel={handlePointerCancel}
+            style={{ touchAction: 'none' }}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={currentSlide.img || currentSlide.src}
+              alt={currentSlide.title || currentSlide.alt || ''}
+              draggable={false}
+              className="max-h-[85vh] max-w-[90vw] object-contain rounded-2xl shadow-2xl border border-white/20 pointer-events-none select-none transition-transform duration-200"
+              style={{
+                transform: `translateX(${dragOffset}px)`,
+              }}
+            />
+          </div>
+
+          {/* Tombol Navigasi Lightbox Kiri */}
+          <button
+            type="button"
+            onClick={goToPrev}
+            className="absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors backdrop-blur-sm cursor-pointer z-30"
+            aria-label="Sebelumnya"
+          >
+            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+
+          {/* Tombol Navigasi Lightbox Kanan */}
+          <button
+            type="button"
+            onClick={goToNext}
+            className="absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors backdrop-blur-sm cursor-pointer z-30"
+            aria-label="Berikutnya"
+          >
+            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
             </svg>
           </button>
         </div>
-      </div>
-
-      {/* TRACK GALERI GESER HORIZONTAL MELEBAR PENUH (EDGE-TO-EDGE / FULL-WIDTH) */}
-      <div className="w-full">
-        <div
-          ref={scrollRef}
-          onMouseDown={handleMouseDown}
-          onMouseMove={handleMouseMove}
-          onMouseUp={handleMouseUpOrLeave}
-          onMouseLeave={handleMouseUpOrLeave}
-          className={`flex gap-6 sm:gap-8 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-8 pt-2 select-none px-4 sm:px-8 lg:px-12 xl:px-16 ${
-            isDragging ? 'cursor-grabbing' : 'cursor-grab'
-          }`}
-          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', touchAction: 'pan-y' }}
-        >
-          {items.map((item, idx) => (
-            <div
-              key={item.id || idx}
-              onClick={() => handleItemClick(idx)}
-              className={isDesktop ? "w-[360px] sm:w-[480px] lg:w-[540px] shrink-0 snap-start flex flex-col group cursor-pointer" : "w-[280px] sm:w-[320px] shrink-0 snap-start flex flex-col group cursor-pointer"}
-            >
-              {isDesktop ? (
-                /* Frame Antarmuka Desktop — List Putih Elegan, Full Screen & Bershadow Tegas */
-                <div 
-                  className="relative rounded-[2rem] sm:rounded-[2.2rem] p-1.5 sm:p-2 bg-white border border-neutral-200/90 shadow-[0_16px_45px_-8px_rgba(0,0,0,0.14)] group-hover:shadow-[0_24px_55px_-10px_rgba(0,0,0,0.24)] group-hover:-translate-y-2 transition-all duration-300 ring-1 ring-neutral-950/5"
-                  style={{ aspectRatio: item.aspectRatio || '1024 / 863' }}
-                >
-                  <div className="relative rounded-[1.4rem] sm:rounded-[1.6rem] overflow-hidden bg-neutral-50 w-full h-full">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={item.img}
-                      alt={item.title}
-                      draggable={false}
-                      className="w-full h-full object-contain block transition-transform duration-300 group-hover:scale-[1.02] pointer-events-none select-none"
-                    />
-                    
-                    {/* Overlay Hint Zoom saat Hover */}
-                    <div className="absolute inset-0 bg-neutral-950/15 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[1px]">
-                      <span className="px-3.5 py-1.5 rounded-full bg-white/95 text-neutral-950 text-xs font-mono font-semibold shadow-lg backdrop-blur-sm flex items-center gap-1.5 border border-neutral-200">
-                        <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
-                        </svg>
-                        <span>Perbesar Layar Penuh</span>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              ) : (
-                /* Frame Antarmuka Mobile — List Putih Elegan, Full Screen, Bershadow Tegas & Bebas Punch-Hole Palsu */
-                <div className="relative rounded-[2rem] sm:rounded-[2.2rem] p-1.5 sm:p-2 bg-white border border-neutral-200/90 shadow-[0_16px_45px_-8px_rgba(0,0,0,0.14)] group-hover:shadow-[0_24px_55px_-10px_rgba(0,0,0,0.24)] group-hover:-translate-y-2 transition-all duration-300 ring-1 ring-neutral-950/5">
-                  {/* Layar Smartphone Full Screen Bersih Tanpa Punch-Hole / Home Bar Palsu */}
-                  <div className="relative rounded-[1.4rem] sm:rounded-[1.6rem] overflow-hidden bg-neutral-50 aspect-[9/20] w-full h-full">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={item.img}
-                      alt={item.title}
-                      draggable={false}
-                      className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.02] pointer-events-none select-none"
-                    />
-                    
-                    {/* Overlay Hint Zoom saat Hover */}
-                    <div className="absolute inset-0 bg-neutral-950/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[1px]">
-                      <span className="px-3.5 py-1.5 rounded-full bg-white/95 text-neutral-950 text-xs font-mono font-semibold shadow-lg backdrop-blur-sm flex items-center gap-1.5 border border-neutral-200">
-                        <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
-                        </svg>
-                        <span>Perbesar Layar</span>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              )}
-
-              {/* Keterangan Teks Bersih & Padat di Bawah Frame List Putih */}
-              <div className="pt-4 px-2 text-left">
-                <div className="flex items-center gap-2 mb-1.5">
-                  <span className="px-2 py-0.5 rounded-md bg-neutral-950 text-white font-mono font-bold text-[10px] shrink-0 shadow-xs">
-                    LAYAR {String(idx + 1).padStart(2, '0')}
-                  </span>
-                  <h3 className="font-display font-bold text-sm sm:text-base text-neutral-950 group-hover:text-black transition-colors line-clamp-1">
-                    {item.title}
-                  </h3>
-                </div>
-                <p className="text-neutral-600 text-xs leading-relaxed font-sans line-clamp-2">
-                  {item.desc}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* INDIKATOR TITIK INTERAKTIF DI BAWAH */}
-        <div className="flex items-center justify-center gap-2 pt-4">
-          {items.map((_, idx) => (
-            <button
-              key={idx}
-              type="button"
-              onClick={() => scrollToIndex(idx)}
-              aria-label={`Lihat layar ${idx + 1}`}
-              className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
-                activeIndex === idx
-                  ? 'w-8 bg-black'
-                  : 'w-2 bg-neutral-200 hover:bg-neutral-400'
-              }`}
-            />
-          ))}
-        </div>
-
-      </div>
-
-      {/* ── MODAL LIGHTBOX RESOLUSI PENUH ─────────────────────────────── */}
-      {lightboxIndex !== null && (
-        <div
-          className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4 animate-in fade-in duration-200"
-          onClick={() => setLightboxIndex(null)}
-        >
-          <div
-            className={`relative ${isDesktop ? 'max-w-5xl' : 'max-w-3xl'} w-full max-h-[92vh] bg-white rounded-3xl p-5 sm:p-7 shadow-2xl flex flex-col border border-neutral-200`}
-            onClick={(e) => e.stopPropagation()}
-          >
-            {/* Header Modal */}
-            <div className="flex items-center justify-between pb-3 border-b border-neutral-100 mb-4">
-              <div>
-                <span className="text-[11px] font-mono text-neutral-500 font-bold uppercase">
-                  Layar {lightboxIndex + 1} dari {items.length}
-                </span>
-                <h4 className="font-display font-bold text-lg text-neutral-950">
-                  {items[lightboxIndex].title}
-                </h4>
-              </div>
-
-              <button
-                type="button"
-                onClick={() => setLightboxIndex(null)}
-                aria-label="Tutup"
-                className="w-9 h-9 rounded-full bg-neutral-100 hover:bg-neutral-200 flex items-center justify-center text-neutral-800 transition-all cursor-pointer"
-              >
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-
-            {/* Gambar Besar — Rasio Asli Terjaga Sempurna Tanpa Pemotongan */}
-            <div className="flex-1 overflow-auto flex items-center justify-center p-2 min-h-0">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={items[lightboxIndex].img}
-                alt={items[lightboxIndex].title}
-                className={`${isDesktop ? 'max-h-[76vh]' : 'max-h-[65vh]'} w-auto max-w-full object-contain rounded-2xl shadow-lg border border-neutral-200 bg-neutral-50`}
-                style={{ aspectRatio: items[lightboxIndex].aspectRatio || (isDesktop ? '1024 / 863' : undefined) }}
-              />
-            </div>
-
-            {/* Footer Modal dengan Deskripsi & Navigasi */}
-            <div className="pt-4 border-t border-neutral-100 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-neutral-600">
-              <p className="font-sans line-clamp-2 sm:line-clamp-none max-w-md">
-                {items[lightboxIndex].desc}
-              </p>
-
-              <div className="flex items-center gap-2 shrink-0">
-                <button
-                  type="button"
-                  onClick={() => setLightboxIndex(Math.max(0, lightboxIndex - 1))}
-                  disabled={lightboxIndex === 0}
-                  className="px-3.5 py-1.5 rounded-lg border border-neutral-300 font-mono text-xs font-semibold hover:border-black disabled:opacity-30 disabled:hover:border-neutral-300 transition-all cursor-pointer disabled:cursor-not-allowed"
-                >
-                  &larr; Sebelumnya
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setLightboxIndex(Math.min(items.length - 1, lightboxIndex + 1))}
-                  disabled={lightboxIndex === items.length - 1}
-                  className="px-3.5 py-1.5 rounded-lg bg-black text-white font-mono text-xs font-semibold hover:bg-neutral-800 disabled:opacity-30 disabled:hover:bg-black transition-all cursor-pointer disabled:cursor-not-allowed"
-                >
-                  Selanjutnya &rarr;
-                </button>
-              </div>
-            </div>
-
-          </div>
-        </div>
       )}
-
     </section>
   )
 }

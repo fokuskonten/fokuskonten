@@ -236,6 +236,8 @@ export default function PersonaPresentationSlider({
                 src={slide.src}
                 alt={slide.alt || `${personaName} Slide`}
                 draggable={false}
+                loading={idx <= 2 ? "eager" : "lazy"}
+                decoding="async"
                 className="w-full h-full object-contain block pointer-events-none select-none"
               />
             </div>
