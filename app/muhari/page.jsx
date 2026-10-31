@@ -44,7 +44,7 @@ const activeProducts = [
     icon: '🛠️',
   },
   {
-    name: 'FokusKonten ReImage',
+    name: 'ReImage Pro',
     category: 'Desktop Utility',
     platform: 'Windows Desktop (.NET 8 + Rust)',
     desc: 'Software kompresi dan optimasi gambar lossy/lossless multi-core berbasis engine Rust libcaesium dengan konversi format massal ke WebP dan AVIF modern.',

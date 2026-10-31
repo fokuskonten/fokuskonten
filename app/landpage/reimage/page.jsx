@@ -1,19 +1,19 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'FokusKonten ReImage Pro — Software Kompresi Gambar Massal Cepat & Presisi',
+  title: 'ReImage Pro — Software Kompresi Gambar Massal Cepat & Presisi',
   description: 'Software desktop Windows x64 native untuk optimasi kompresi gambar massal, batas ukuran file presisi, dan konversi format WebP, JPEG, dan PNG tanpa penurunan mutu visual.',
   alternates: { canonical: 'https://fokuskonten.my.id/landpage/reimage/' },
   openGraph: {
-    title: 'FokusKonten ReImage Pro — Mesin Kompresi Gambar Desktop Windows',
+    title: 'ReImage Pro — Mesin Kompresi Gambar Desktop Windows',
     description: 'Software desktop Windows x64 native untuk optimasi kompresi gambar massal, reduksi byte presisi, dan konversi format WebP/JPG/PNG berkecepatan tinggi.',
-    images: [{ url: '/screenshots/reimage/rock_dove_circle.png', width: 1024, height: 1024, alt: 'FokusKonten ReImage Pro Totem Rock Dove' }],
+    images: [{ url: '/screenshots/reimage/rock_dove_circle.png', width: 1024, height: 1024, alt: 'ReImage Pro Totem Rock Dove' }],
   },
 }
 
 export default function ReImageDedicatedLandingPage() {
-  const waContactUrl = `https://wa.me/6285183011318?text=${encodeURIComponent('Halo FokusKonten,\n\nSaya tertarik dengan software desktop *FokusKonten ReImage Pro v2.1* (Rilis Resmi Komersial Windows x64).\nMohon info mengenai pembelian lisensi aktivasi offline dan master installer.')}`
-  const devMailUrl = 'mailto:admin@fokuskonten.my.id?subject=Inquiry%20FokusKonten%20ReImage%20Pro%20Early%20Access'
+  const waContactUrl = `https://wa.me/6285183011318?text=${encodeURIComponent('Halo FokusKonten,\n\nSaya tertarik dengan software desktop *ReImage Pro v2.1* (Rilis Resmi Komersial Windows x64).\nMohon info mengenai pembelian lisensi aktivasi offline dan master installer.')}`
+  const devMailUrl = 'mailto:admin@fokuskonten.my.id?subject=Inquiry%20ReImage%20Pro%20Early%20Access'
 
   // 4 Keresahan Nyata Pengguna
   const painPoints = [
@@ -233,12 +233,12 @@ export default function ReImageDedicatedLandingPage() {
                 <div className="w-7 h-7 rounded-full bg-white p-0.5 border border-neutral-300 shrink-0">
                   <img
                     src="/screenshots/reimage/rock_dove_circle.png"
-                    alt="FokusKonten ReImage Maskot Rock Dove"
+                    alt="ReImage Maskot Rock Dove"
                     className="w-full h-full object-contain"
                   />
                 </div>
                 <span className="font-mono text-xs font-semibold text-neutral-900 tracking-wide">
-                  FokusKonten ReImage Pro — Image Optimizer Utility (win-x64)
+                  ReImage Pro — Image Optimizer Utility (win-x64)
                 </span>
               </div>
               <div className="flex items-center gap-2">
@@ -454,10 +454,10 @@ export default function ReImageDedicatedLandingPage() {
               TRANSPARANSI PRODUK
             </span>
             <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-950 mb-4 tracking-tight">
-              Tahapan Pengembangan FokusKonten ReImage Pro
+              Tahapan Pengembangan ReImage Pro
             </h2>
             <p className="text-neutral-600 text-sm sm:text-base leading-relaxed">
-              Software FokusKonten ReImage Pro v2.1 kini telah dirilis secara komersial dengan kapabilitas Self-Contained x64 siap pakai.
+              Software ReImage Pro v2.1 kini telah dirilis secara komersial dengan kapabilitas Self-Contained x64 siap pakai.
             </p>
           </div>
 
@@ -497,7 +497,7 @@ export default function ReImageDedicatedLandingPage() {
               KOMPARASI EFISIENSI
             </span>
             <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-950 mb-4 tracking-tight">
-              Tool Online Biasa vs FokusKonten ReImage Pro
+              Tool Online Biasa vs ReImage Pro
             </h2>
             <p className="text-neutral-600 text-sm sm:text-base leading-relaxed">
               Perbandingan efisiensi waktu, kualitas gambar, dan keamanan data antara tool online biasa dengan software native lokal.
@@ -529,7 +529,7 @@ export default function ReImageDedicatedLandingPage() {
       <section className="py-20 sm:py-24 bg-neutral-50/70 border-b border-neutral-200/80">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-reveal>
           <h2 className="heading-xl text-3xl sm:text-4xl text-neutral-950 mb-4 tracking-tight">
-            Ingin Menguji Coba FokusKonten ReImage Pro?
+            Ingin Menguji Coba ReImage Pro?
           </h2>
           <p className="text-neutral-600 text-sm sm:text-base max-w-2xl mx-auto mb-8 leading-relaxed">
             Bergabunglah dalam program pratinjau awal (Early Access Preview) untuk menguji performa pengolahan gambar massal di komputer Anda.

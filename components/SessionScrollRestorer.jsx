@@ -10,16 +10,32 @@ function normalizeKey(path) {
   return cleanPath + (search ? `?${search}` : '')
 }
 
+function isPageReload() {
+  try {
+    const navEntries = performance.getEntriesByType?.('navigation')
+    if (navEntries && navEntries.length > 0) {
+      return navEntries[0].type === 'reload'
+    }
+    return performance.navigation?.type === 1
+  } catch (e) {
+    return false
+  }
+}
+
 export default function SessionScrollRestorer() {
   const pathname = usePathname()
   const searchParams = useSearchParams()
   const isRestoringRef = useRef(false)
-  const lastKeyRef = useRef('')
+  const isUnloadingRef = useRef(false)
+  const lastKnownXRef = useRef(0)
+  const lastKnownYRef = useRef(0)
+  const isInitialMountRef = useRef(true)
 
   const queryString = searchParams?.toString()
   const rawKey = pathname + (queryString ? `?${queryString}` : '')
   const pageKey = normalizeKey(rawKey)
 
+  // 1. PENCATATAN & PENYIMPANAN POSISI SCROLL (ANTI-OVERWRITE 0 SAAT UNLOAD/RELOAD)
   useEffect(() => {
     if (typeof window === 'undefined') return
 
@@ -27,14 +43,25 @@ export default function SessionScrollRestorer() {
       window.history.scrollRestoration = 'manual'
     }
 
-    let saveTimeout = null
-    const saveCurrentPosition = (isUnload = false) => {
-      if (isRestoringRef.current) return
-      const scrollX = window.scrollX || window.pageXOffset || 0
-      const scrollY = window.scrollY || window.pageYOffset || 0
+    let saveRaf = null
 
-      // Proteksi krusial: jangan timpa posisi positif dengan 0 saat unload/reload
-      if (isUnload && scrollY === 0) return
+    const savePositionToStorage = (overrideX = null, overrideY = null) => {
+      if (isRestoringRef.current) return
+
+      const scrollX = overrideX !== null ? overrideX : (window.scrollX || window.pageXOffset || 0)
+      const scrollY = overrideY !== null ? overrideY : (window.scrollY || window.pageYOffset || 0)
+
+      if (scrollY > 0) {
+        lastKnownYRef.current = scrollY
+      }
+      if (scrollX > 0) {
+        lastKnownXRef.current = scrollX
+      }
+
+      // Proteksi krusial: browser mobile sering mereset scrollY ke 0 sesaat sebelum unload/reload
+      if (isUnloadingRef.current && scrollY === 0 && lastKnownYRef.current > 50) {
+        return
+      }
 
       const currentPath = window.location.pathname
       const currentSearch = window.location.search
@@ -49,39 +76,80 @@ export default function SessionScrollRestorer() {
     }
 
     const handleScroll = () => {
-      if (isRestoringRef.current) return
-      if (saveTimeout) cancelAnimationFrame(saveTimeout)
-      saveTimeout = requestAnimationFrame(() => saveCurrentPosition(false))
+      if (isRestoringRef.current || isUnloadingRef.current) return
+
+      const currentY = window.scrollY || window.pageYOffset || 0
+      const currentX = window.scrollX || window.pageXOffset || 0
+
+      if (currentY > 0) {
+        lastKnownYRef.current = currentY
+      }
+      if (currentX > 0) {
+        lastKnownXRef.current = currentX
+      }
+
+      if (saveRaf) cancelAnimationFrame(saveRaf)
+      saveRaf = requestAnimationFrame(() => savePositionToStorage())
     }
 
-    const handleBeforeUnload = () => {
-      saveCurrentPosition(true)
+    const handleBeforeUnloadOrHide = () => {
+      isUnloadingRef.current = true
+      // Gunakan posisi positif terakhir yang diketahui agar posisi tetap tersimpan saat di-refresh
+      const finalX = lastKnownXRef.current || window.scrollX || 0
+      const finalY = lastKnownYRef.current || window.scrollY || 0
+      savePositionToStorage(finalX, finalY)
+    }
+
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'hidden') {
+        handleBeforeUnloadOrHide()
+      } else {
+        isUnloadingRef.current = false
+      }
     }
 
     window.addEventListener('scroll', handleScroll, { passive: true })
-    window.addEventListener('beforeunload', handleBeforeUnload)
-    window.addEventListener('pagehide', handleBeforeUnload)
+    window.addEventListener('beforeunload', handleBeforeUnloadOrHide)
+    window.addEventListener('pagehide', handleBeforeUnloadOrHide)
+    document.addEventListener('visibilitychange', handleVisibilityChange)
 
     return () => {
-      saveCurrentPosition(false)
-      if (saveTimeout) cancelAnimationFrame(saveTimeout)
+      if (saveRaf) cancelAnimationFrame(saveRaf)
       window.removeEventListener('scroll', handleScroll)
-      window.removeEventListener('beforeunload', handleBeforeUnload)
-      window.removeEventListener('pagehide', handleBeforeUnload)
+      window.removeEventListener('beforeunload', handleBeforeUnloadOrHide)
+      window.removeEventListener('pagehide', handleBeforeUnloadOrHide)
+      document.removeEventListener('visibilitychange', handleVisibilityChange)
     }
   }, [])
 
-  // Restore scroll position when pageKey changes, on mount, or on popstate (back/forward)
+  // 2. PEMULIHAN POSISI SCROLL FLEKSIBEL (USER-FRIENDLY & BEBAS FIGHTING DENGAN SENTUHAN JARI)
   useEffect(() => {
     if (typeof window === 'undefined') return
 
-    if (window.location.hash) {
+    const isReload = isPageReload()
+    const isInitial = isInitialMountRef.current
+    isInitialMountRef.current = false
+
+    // Jika bukan reload dan ada hash URL, navigasikan ke hash elemen
+    if (!isReload && window.location.hash) {
       const targetId = window.location.hash.replace('#', '')
       const el = document.getElementById(targetId)
       if (el) {
         el.scrollIntoView({ behavior: 'smooth' })
         return
       }
+    }
+
+    let retryTimer = null
+    let removeUserCancelListeners = null
+
+    const finishRestoration = () => {
+      isRestoringRef.current = false
+      if (retryTimer) clearTimeout(retryTimer)
+      if (removeUserCancelListeners) removeUserCancelListeners()
+      try {
+        document.documentElement.style.scrollBehavior = ''
+      } catch (_) {}
     }
 
     const doRestore = () => {
@@ -98,28 +166,49 @@ export default function SessionScrollRestorer() {
 
       if (savedPos && (savedPos.y > 0 || savedPos.x > 0)) {
         isRestoringRef.current = true
+        lastKnownXRef.current = savedPos.x || 0
+        lastKnownYRef.current = savedPos.y || 0
+
+        // Matikan sementara smooth scroll global agar tidak ada animasi gulir yang melawan saat refresh
+        try {
+          document.documentElement.style.scrollBehavior = 'auto'
+        } catch (_) {}
+
+        // Pasang sensor pembatalan: Begitu jari menyentuh layar, langsung serahkan kendali penuh ke user
+        const cancelOnUserInteraction = () => {
+          if (isRestoringRef.current) {
+            finishRestoration()
+          }
+        }
+
+        const events = ['touchstart', 'touchmove', 'wheel', 'pointerdown', 'keydown']
+        events.forEach((ev) => window.addEventListener(ev, cancelOnUserInteraction, { passive: true, capture: true }))
+        removeUserCancelListeners = () => {
+          events.forEach((ev) => window.removeEventListener(ev, cancelOnUserInteraction, { capture: true }))
+        }
+
         const targetY = savedPos.y
         const targetX = savedPos.x
-
         let attempts = 0
-        const maxAttempts = 25 // Poll hingga ~2 detik agar menunggu render daftar ebook selesai
+        const maxAttempts = 14 // ~900ms maksimum polling untuk menunggu layout/gambar render
 
         const tryScroll = () => {
+          if (!isRestoringRef.current) return
           attempts++
+
           const scrollableHeight = Math.max(
             document.body.scrollHeight,
             document.documentElement.scrollHeight
           ) - window.innerHeight
 
-          // Gulir sejauh mungkin yang sudah tersedia di DOM
           const currentY = Math.min(targetY, Math.max(0, scrollableHeight))
           window.scrollTo({ left: targetX, top: currentY, behavior: 'instant' })
 
+          // Jika posisi sudah tercapai atau batas polling habis, selesaikan pemulihan
           if (Math.abs(window.scrollY - targetY) < 15 || attempts >= maxAttempts) {
-            // Berhasil mencapai target atau batas waktu habis
-            isRestoringRef.current = false
+            finishRestoration()
           } else {
-            setTimeout(tryScroll, 80)
+            retryTimer = setTimeout(tryScroll, 65)
           }
         }
 
@@ -127,16 +216,17 @@ export default function SessionScrollRestorer() {
       }
     }
 
-    // Eksekusi pemulihan posisi
-    const timer = setTimeout(doRestore, 40)
+    // Jalankan pemulihan dengan jeda mikro agar DOM awal terpasang
+    const timer = setTimeout(doRestore, isInitial ? 25 : 50)
 
     const handlePopState = () => {
-      setTimeout(doRestore, 50)
+      setTimeout(doRestore, 40)
     }
     window.addEventListener('popstate', handlePopState)
 
     return () => {
       clearTimeout(timer)
+      finishRestoration()
       window.removeEventListener('popstate', handlePopState)
     }
   }, [pageKey, pathname])

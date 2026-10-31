@@ -9,13 +9,6 @@ export default function AppScreenshotGallery({
   items = [],
   isDesktop = false,
 }) {
-  // Bersihkan hash URL agar saat pengguna me-refresh halaman, browser tidak melompat ke bawah
-  useEffect(() => {
-    if (typeof window !== 'undefined' && window.location.hash) {
-      window.history.replaceState(null, '', window.location.pathname)
-    }
-  }, [])
-
   // Seamless infinite loop: [Slide_Terakhir, ...items, Slide_Pertama]
   const extendedItems = useMemo(() => {
     if (!items || items.length <= 1) return items || []
@@ -82,14 +75,16 @@ export default function AppScreenshotGallery({
     }
   }
 
-  // Auto-scroll ke dot aktif jika dots melebihi lebar kontainer
+  // Auto-scroll ke dot aktif HANYA di dalam kontainer horizontal dots (bebas 100% dari window scroll)
   useEffect(() => {
-    if (dotsContainerRef.current) {
-      const activeDot = dotsContainerRef.current.children[activeIndex]
-      if (activeDot) {
-        activeDot.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' })
-      }
-    }
+    const container = dotsContainerRef.current
+    if (!container) return
+    const activeDot = container.children[activeIndex]
+    if (!activeDot) return
+
+    // Hitung posisi horizontal aktif relatif terhadap kontainer dots agar tidak menyentuh window scroll
+    const targetLeft = activeDot.offsetLeft - (container.clientWidth / 2) + (activeDot.clientWidth / 2)
+    container.scrollTo({ left: Math.max(0, targetLeft), behavior: 'smooth' })
   }, [activeIndex])
 
   // Auto-play timer (4 detik, otomatis bergulir, jeda saat hover/swipe/modal)
@@ -412,7 +407,9 @@ export default function AppScreenshotGallery({
           {/* Dots Indicator Minimalis Auto-Centering */}
           <div
             ref={dotsContainerRef}
-            className="flex items-center gap-1.5 overflow-x-auto max-w-[200px] sm:max-w-[260px] py-1 px-2 justify-center scrollbar-none"
+            className={`flex items-center gap-1.5 overflow-x-auto max-w-[200px] sm:max-w-[260px] py-1 px-2 scrollbar-none ${
+              items.length > 12 ? 'justify-start' : 'justify-center'
+            }`}
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {items.map((_, idx) => (

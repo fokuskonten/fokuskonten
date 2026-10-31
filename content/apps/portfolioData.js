@@ -585,12 +585,12 @@ export const portfolioData = {
   },
   reimage: {
     id: 'reimage',
-    name: 'FokusKonten ReImage',
+    name: 'ReImage Pro',
     category: 'Utilitas & Optimasi',
     badge: 'Rilis Resmi v2.1.0 (win-x64)',
     tagline: 'Software Desktop Kompresi, Optimasi & Konversi Gambar Multi-Core Super Cepat',
     icon: '/app-icons/reimage.png',
-    overview: 'FokusKonten ReImage Pro adalah software aplikasi desktop Windows (.EXE) berperforma tinggi untuk fotografer, pengelola website, dan desainer. Memadukan antarmuka modern C# .NET 8 WPF dengan engine C-FFI Rust libcaesium multi-core, aplikasi ini mampu mereduksi ukuran file gambar hingga 90% tanpa penurunan kualitas visual yang tampak mata, mendukung kompresi batch ribuan foto, konversi ke format modern WebP/JPG/PNG, serta fitur target ukuran file presisi (byte target). Dilengkapi maskot resmi Burung Dara Berkelas (Rock Dove).',
+    overview: 'ReImage Pro adalah software aplikasi desktop Windows (.EXE) berperforma tinggi untuk fotografer, pengelola website, dan desainer. Memadukan antarmuka modern C# .NET 8 WPF dengan engine C-FFI Rust libcaesium multi-core, aplikasi ini mampu mereduksi ukuran file gambar hingga 90% tanpa penurunan kualitas visual yang tampak mata, mendukung kompresi batch ribuan foto, konversi ke format modern WebP/JPG/PNG, serta fitur target ukuran file presisi (byte target). Dilengkapi maskot resmi Burung Dara Berkelas (Rock Dove).',
     targetUsers: 'Fotografer, Webmaster, Seller Marketplace (Shopee/Tokopedia), Desainer Grafis, Admin E-Commerce.',
     highlights: [
       'Engine Kompresi Rust libcaesium Multi-Core Ultra Cepat',
@@ -646,7 +646,7 @@ export const portfolioData = {
     },
     landingUrl: '/landpage/reimage',
     cta: {
-      primary: { label: 'Konsultasi & Lisensi ReImage', href: 'https://wa.me/6285183011318?text=Halo%20FokusKonten,%20saya%20tertarik%20dengan%20FokusKonten%20ReImage%20Pro', type: 'whatsapp' },
+      primary: { label: 'Konsultasi & Lisensi ReImage', href: 'https://wa.me/6285183011318?text=Halo%20FokusKonten,%20saya%20tertarik%20dengan%20ReImage%20Pro', type: 'whatsapp' },
       secondary: { label: 'Lihat Layanan Kami', href: '/layanan', type: 'internal' },
     },
   },
