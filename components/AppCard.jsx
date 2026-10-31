@@ -39,7 +39,7 @@ export default function AppCard({ app, index = 0 }) {
               </span>
               {app.id === 'reimage' && (
                 <span className="inline-block text-[11px] font-mono font-semibold px-2.5 py-0.5 rounded-full bg-neutral-900 text-white">
-                  Sedang Berjalan
+                  Rilis Resmi v2.1.0
                 </span>
               )}
             </div>

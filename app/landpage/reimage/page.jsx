@@ -12,7 +12,7 @@ export const metadata = {
 }
 
 export default function ReImageDedicatedLandingPage() {
-  const waContactUrl = `https://wa.me/6285183011318?text=${encodeURIComponent('Halo FokusKonten,\n\nSaya tertarik dengan software desktop *FokusKonten ReImage Pro* (Proyek Berjalan / Early Access Preview).\nMohon info mengenai pengujian performa dan akses lisensi rilis pratinjaunya.')}`
+  const waContactUrl = `https://wa.me/6285183011318?text=${encodeURIComponent('Halo FokusKonten,\n\nSaya tertarik dengan software desktop *FokusKonten ReImage Pro v2.1* (Rilis Resmi Komersial Windows x64).\nMohon info mengenai pembelian lisensi aktivasi offline dan master installer.')}`
   const devMailUrl = 'mailto:admin@fokuskonten.my.id?subject=Inquiry%20FokusKonten%20ReImage%20Pro%20Early%20Access'
 
   // 4 Keresahan Nyata Pengguna
@@ -100,16 +100,16 @@ export default function ReImageDedicatedLandingPage() {
     {
       step: '03',
       title: 'Pengujian Beban Massal & Kalibrasi',
-      status: 'Tahap Berjalan',
-      statusBadge: 'AKTIF',
+      status: 'Selesai 100%',
+      statusBadge: 'SELESAI',
       desc: 'Siklus pengujian fisik pada ribuan aset gambar produk e-commerce untuk memastikan kestabilan konsumsi memori dan ketajaman visual.',
     },
     {
       step: '04',
-      title: 'Rilis Pratinjau Terbuka (Public Preview)',
-      status: 'Fase Berikutnya',
-      statusBadge: 'SEGERA',
-      desc: 'Penyediaan berkas installer mandiri Windows, pendaftaran lisensi pengguna awal, serta integrasi panduan pengoperasian teknis.',
+      title: 'Rilis Resmi Komersial v2.1.0',
+      status: 'Tersedia Sekarang',
+      statusBadge: 'RILIS RESMI',
+      desc: 'Penyediaan master installer Inno Setup mandiri (Self-Contained x64, 57 MB), lisensi offline machine-bound HWID, dan panduan operasional lengkap.',
     },
   ]
 
@@ -185,7 +185,7 @@ export default function ReImageDedicatedLandingPage() {
           </div>
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-neutral-950" />
-            <span className="font-semibold text-neutral-950">PROYEK BERJALAN • EARLY ACCESS PREVIEW</span>
+            <span className="font-semibold text-neutral-950">RILIS RESMI KOMERSIAL • V2.1.0 WINDOWS X64</span>
           </div>
         </div>
       </div>
@@ -211,7 +211,7 @@ export default function ReImageDedicatedLandingPage() {
               rel="noopener noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-display font-bold text-sm sm:text-base text-white bg-neutral-950 hover:bg-neutral-800 shadow-md hover:shadow-lg transition-all duration-200"
             >
-              <span>Daftar Pengujian Beta via WhatsApp</span>
+              <span>Konsultasi & Lisensi via WhatsApp</span>
               <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
@@ -457,7 +457,7 @@ export default function ReImageDedicatedLandingPage() {
               Tahapan Pengembangan FokusKonten ReImage Pro
             </h2>
             <p className="text-neutral-600 text-sm sm:text-base leading-relaxed">
-              Software ini saat ini berada pada tahap pengujian performa beban kerja massal sebelum rilis umum resmi dibuka.
+              Software FokusKonten ReImage Pro v2.1 kini telah dirilis secara komersial dengan kapabilitas Self-Contained x64 siap pakai.
             </p>
           </div>
 
@@ -542,7 +542,7 @@ export default function ReImageDedicatedLandingPage() {
               rel="noopener noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-display font-bold text-sm sm:text-base text-white bg-neutral-950 hover:bg-neutral-800 shadow-md hover:shadow-lg transition-all duration-200"
             >
-              <span>Daftar Pengujian Beta via WhatsApp</span>
+              <span>Konsultasi & Lisensi via WhatsApp</span>
               <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>

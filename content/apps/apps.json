@@ -93,11 +93,11 @@
         "package": "com.fokuskonten.reimage",
         "category": "Utilitas",
         "status": "published",
-        "version": "1.0.0",
+        "version": "2.1.0",
         "targetSdk": 36,
         "minSdk": 24,
         "icon": "/app-icons/reimage.png",
-        "description": "Software desktop Windows (.EXE) native .NET 8 WPF x64 + Rust libcaesium multi-core untuk optimasi kompresi lossless/lossy, reduksi byte target presisi, dan konversi format gambar WebP/JPG/PNG super cepat."
+        "description": "Software desktop Windows (.EXE) native .NET 8 WPF x64 + Rust libcaesium multi-core untuk optimasi kompresi lossless/lossy, reduksi byte target presisi, pasfoto 300 DPI, 3D LUT Cinematic, watermark, dan konversi format gambar WebP/JPG/PNG super cepat."
     },
     {
         "id": "smartvidkon",
