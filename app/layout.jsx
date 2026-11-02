@@ -32,7 +32,7 @@ export const metadata = {
     siteName: 'Fokus Konten',
     title: 'Fokus Konten — Software Engineer, AI Creator & Digital Assets',
     description: 'Pengembang resmi aplikasi Android, software desktop Windows, website modern, dan ribuan aset digital karya Fokus Konten.',
-    images: [{ url: '/assets/brand/og-image.jpg', width: 1200, height: 630, alt: 'Fokus Konten — Software Engineer & AI Creator' }],
+    images: [{ url: '/assets/brand/og-image.jpg', width: 1200, height: 630, alt: 'Fokus Konten — Muhari (Solo Software Engineer & AI Creator)' }],
   },
   twitter: {
     card: 'summary_large_image',
