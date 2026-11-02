@@ -1,6 +1,6 @@
 {
-  "totalActive": 348,
-  "totalDesign": 348,
+  "totalActive": 333,
+  "totalDesign": 333,
   "totalEbook": 0,
   "designCategories": [
     [
@@ -42,10 +42,6 @@
     [
       "Kemasan & Goodie Bag",
       17
-    ],
-    [
-      "Jasa Digital",
-      15
     ],
     [
       "Buku & Yasin",
@@ -135,10 +131,6 @@
       17
     ],
     [
-      "Jasa Digital",
-      15
-    ],
-    [
       "Buku & Yasin",
       14
     ],
@@ -203,10 +195,6 @@
     [
       "XLSX",
       24
-    ],
-    [
-      "POWERSHELL IRM",
-      15
     ],
     [
       "DOCX",
@@ -622,122 +610,9 @@
         "shopeeUrl": "https://shopee.co.id/product/106517440/46101861650"
       }
     ],
-    "powershell": [
-      {
-        "sku": "FK-PSH-101",
-        "title": "Jasa Modding Tampilan Terminal Windows Ala Hacker Matrix Cyberpunk - Setup PowerShell Oh My Posh Keren 1 Klik",
-        "category": "Jasa Digital",
-        "format": "POWERSHELL IRM",
-        "price": 2000,
-        "originalPrice": 40000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/FK-PSH-101/FK-PSH-101_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .POWERSHELL IRM",
-        "shopeeCode": "54869588113",
-        "shopeeItemId": "54869588113",
-        "shopeeUrl": "https://shopee.co.id/product/106517440/54869588113"
-      },
-      {
-        "sku": "FK-PSH-115",
-        "title": "Jasa Kembalikan Menu Klik Kanan Klasik Penuh Windows 10 di Windows 11 - 1 Klik Beres Langsung Aktif Resmi FokusKonten",
-        "category": "Jasa Digital",
-        "format": "POWERSHELL IRM",
-        "price": 2000,
-        "originalPrice": 40000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/FK-PSH-115/FK-PSH-115_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .POWERSHELL IRM",
-        "shopeeCode": "48019615874",
-        "shopeeItemId": "48019615874",
-        "shopeeUrl": "https://shopee.co.id/product/106517440/48019615874"
-      },
-      {
-        "sku": "FK-PSH-63",
-        "title": "Jasa Ganti Edisi Windows Home Menjadi Windows Pro - Bantuan Upgrade Win 11 & 10 Tanpa Instal Ulang 1-Klik",
-        "category": "Jasa Digital",
-        "format": "POWERSHELL IRM",
-        "price": 2000,
-        "originalPrice": 40000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/FK-PSH-63/FK-PSH-63_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .POWERSHELL IRM",
-        "shopeeCode": "51569597293",
-        "shopeeItemId": "51569597293",
-        "shopeeUrl": "https://shopee.co.id/product/106517440/51569597293"
-      },
-      {
-        "sku": "FK-PSH-30",
-        "title": "Jasa Kompres PDF CPNS BUMN Di Bawah 300KB 500KB - Bantuan Kecilkan Dokumen Ijazah KTP 1-Klik Teks Tajam",
-        "category": "Jasa Digital",
-        "format": "POWERSHELL IRM",
-        "price": 2000,
-        "originalPrice": 40000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/FK-PSH-30/FK-PSH-30_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .POWERSHELL IRM",
-        "shopeeCode": "52619592978",
-        "shopeeItemId": "52619592978",
-        "shopeeUrl": "https://shopee.co.id/product/106517440/52619592978"
-      },
-      {
-        "sku": "FK-PSH-37",
-        "title": "Jasa Pasang Bersih Microsoft Office Custom Anti Bloatware - Bantuan Setting Word Excel Hemat SSD 1-Klik",
-        "category": "Jasa Digital",
-        "format": "POWERSHELL IRM",
-        "price": 2000,
-        "originalPrice": 40000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/FK-PSH-37/FK-PSH-37_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .POWERSHELL IRM",
-        "shopeeCode": "58119593048",
-        "shopeeItemId": "58119593048",
-        "shopeeUrl": "https://shopee.co.id/product/106517440/58119593048"
-      },
-      {
-        "sku": "FK-PSH-24",
-        "title": "Jasa Konfigurasi WinRAR Lisensi Resmi Bebas Notifikasi - Pasang Baru dan Hapus Pop Up Evaluasi 1-Klik FokusKonten",
-        "category": "Jasa Digital",
-        "format": "POWERSHELL IRM",
-        "price": 2000,
-        "originalPrice": 40000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/FK-PSH-24/FK-PSH-24_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .POWERSHELL IRM",
-        "shopeeCode": "52119592958",
-        "shopeeItemId": "52119592958",
-        "shopeeUrl": "https://shopee.co.id/product/106517440/52119592958"
-      },
-      {
-        "sku": "FK-PSH-22",
-        "title": "Jasa Optimasi Spotify Desktop Bebas Iklan Audio Banner SpotX - Bantuan Dengar Musik Nyaman Tanpa Jeda 1-Klik",
-        "category": "Jasa Digital",
-        "format": "POWERSHELL IRM",
-        "price": 2000,
-        "originalPrice": 40000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/FK-PSH-22/FK-PSH-22_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .POWERSHELL IRM",
-        "shopeeCode": "50269602287",
-        "shopeeItemId": "50269602287",
-        "shopeeUrl": "https://shopee.co.id/product/106517440/50269602287"
-      },
-      {
-        "sku": "FK-PSH-17",
-        "title": "Jasa Pembuatan Multi Boot USB Flashdisk Ventoy Pro - Bantuan Flashdisk Teknisi Multi ISO 1-Klik",
-        "category": "Jasa Digital",
-        "format": "POWERSHELL IRM",
-        "price": 2000,
-        "originalPrice": 40000,
-        "coverImage": "https://cdn.jsdelivr.net/gh/mcjobs-id/fokuskonten-assets@main/toko-digital/FK-PSH-17/FK-PSH-17_cover.webp",
-        "badge": "Unggulan",
-        "tag": "Format .POWERSHELL IRM",
-        "shopeeCode": "49569617293",
-        "shopeeItemId": "49569617293",
-        "shopeeUrl": "https://shopee.co.id/product/106517440/49569617293"
-      }
-    ]
+    "powershell": []
   },
-  "totalProducts": 348,
-  "lastUpdated": "2026-11-02T07:47:55.621Z",
+  "totalProducts": 333,
+  "lastUpdated": "2026-11-02T07:54:44.880Z",
   "totalEcourse": 0
 }
