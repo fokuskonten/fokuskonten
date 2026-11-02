@@ -52,32 +52,15 @@ function UserInvoiceContent() {
     // b. Dari akun profil pembeli aktif di browser
     // c. Dari riwayat transaksi lokal brankas perangkat ini (perangkat asli pembuat order)
     const queryEmail = (searchParams.get('email') || '').trim().toLowerCase()
-    const activeEmail = (queryEmail || prof?.email || matchingLocalOrder?.customerEmail || '').trim().toLowerCase()
+    let activeEmail = (queryEmail || prof?.email || matchingLocalOrder?.customerEmail || '').trim().toLowerCase()
 
-    // STRICT CHECK: Jika sama sekali tidak ada email pembeli (profil asing, perangkat orang lain tanpa login)
-    // -> Kembalikan 404 (Ghost Not Found)
-    if (!activeEmail) {
-      setIsLoaded(true)
-      setIsAuthorized(false)
-      return
-    }
-
-    // Jika identitas ditemukan (via lokal atau param) tapi profil belum terisi di browser ini, sinkronkan
-    const emailToSave = queryEmail || matchingLocalOrder?.customerEmail
-    if (emailToSave && !prof?.email) {
-      setBuyerProfile({
-        name: matchingLocalOrder?.customerName || '',
-        email: emailToSave,
-        phone: matchingLocalOrder?.customerPhone || ''
-      })
-    }
-
-    // Verifikasi ke backend dengan menyertakan email pembeli aktif
+    // Verifikasi ke backend dengan menyertakan email pembeli aktif jika ada
     const apiUrl = getApiBaseUrl()
     const controller = new AbortController()
     const timer = setTimeout(() => controller.abort(), 6000)
+    const emailParam = activeEmail ? `?email=${encodeURIComponent(activeEmail)}` : ''
 
-    fetch(`${apiUrl}/digital-orders/${encodeURIComponent(orderId)}/status?email=${encodeURIComponent(activeEmail)}`, {
+    fetch(`${apiUrl}/digital-orders/${encodeURIComponent(orderId)}/status${emailParam}`, {
       signal: controller.signal
     })
       .then(res => {
@@ -87,6 +70,14 @@ function UserInvoiceContent() {
       .then(data => {
         clearTimeout(timer)
         if (data.success) {
+          const resolvedEmail = data.buyerEmail || activeEmail || ''
+          if (resolvedEmail && !prof?.email) {
+            setBuyerProfile({
+              name: data.buyerName || matchingLocalOrder?.customerName || '',
+              email: resolvedEmail,
+              phone: matchingLocalOrder?.customerPhone || ''
+            })
+          }
           const ordData = {
             orderId: data.orderId,
             sku: data.sku,
@@ -94,7 +85,7 @@ function UserInvoiceContent() {
             format: data.format || 'CDR',
             price: data.amount,
             customerName: data.buyerName || matchingLocalOrder?.customerName || prof?.name || '-',
-            customerEmail: data.buyerEmail || activeEmail,
+            customerEmail: resolvedEmail,
             paymentType: data.paymentMethod,
             paymentCode: data.paymentCode || null,
             status: (data.paymentStatus || 'pending').toLowerCase(),
