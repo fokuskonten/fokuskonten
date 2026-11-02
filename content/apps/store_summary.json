@@ -1,6 +1,6 @@
 {
-  "totalActive": 381,
-  "totalDesign": 381,
+  "totalActive": 348,
+  "totalDesign": 348,
   "totalEbook": 0,
   "designCategories": [
     [
@@ -10,10 +10,6 @@
     [
       "Dokumen & Template Bisnis",
       34
-    ],
-    [
-      "The Big Bang",
-      33
     ],
     [
       "Lembar Kerja Edukasi",
@@ -107,10 +103,6 @@
       34
     ],
     [
-      "The Big Bang",
-      33
-    ],
-    [
       "Lembar Kerja Edukasi",
       31
     ],
@@ -195,10 +187,6 @@
     [
       "CDR",
       198
-    ],
-    [
-      "The Big Bang",
-      33
     ],
     [
       "PDF",
@@ -749,7 +737,7 @@
       }
     ]
   },
-  "totalProducts": 381,
-  "lastUpdated": "2026-10-31T13:45:29.633Z",
+  "totalProducts": 348,
+  "lastUpdated": "2026-11-02T07:45:33.488Z",
   "totalEcourse": 0
 }
